@@ -4,15 +4,12 @@ uid: 'excel!Excel.ValueFilterCondition:enum'
 package: excel!
 fullName: Excel.ValueFilterCondition
 summary: >-
-  Enum representing all accepted conditions by which a value filter can be
-  applied. Used to configure the type of PivotFilter that is applied to the
-  field. `PivotFilter.exclusive` can be set to `true` to invert many of these
+  Enum representing all accepted conditions by which a value filter can be applied. Used to configure the type of
+  PivotFilter that is applied to the field. `PivotFilter.exclusive` can be set to `true` to invert many of these
   conditions.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -24,20 +21,16 @@ fields:
       Between `lowerBound` and `upperBound` criteria.
 
 
-      Required Criteria: {`value`<!-- -->, `lowerBound`<!-- -->,
-      `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!--
-      -->}<!-- -->.
+      Required Criteria: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria:
+      {`exclusive`<!-- -->}<!-- -->.
     value: '"Between"'
   - name: bottomN
     uid: 'excel!Excel.ValueFilterCondition.bottomN:member'
     package: excel!
-    summary: >-
-      In bottom N (`threshold`<!-- -->) \[items, percent, sum\] of value
-      category.
+    summary: |-
+      In bottom N (`threshold`<!-- -->) \[items, percent, sum\] of value category.
 
-
-      Required Criteria: {`value`<!-- -->, `threshold`<!-- -->,
-      `selectionType`<!-- -->}<!-- -->.
+      Required Criteria: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
     value: '"BottomN"'
   - name: equals
     uid: 'excel!Excel.ValueFilterCondition.equals:member'
@@ -46,8 +39,8 @@ fields:
       Equals comparator criterion.
 
 
-      Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
-      Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!--
+      -->.
     value: '"Equals"'
   - name: greaterThan
     uid: 'excel!Excel.ValueFilterCondition.greaterThan:member'
@@ -84,12 +77,10 @@ fields:
   - name: topN
     uid: 'excel!Excel.ValueFilterCondition.topN:member'
     package: excel!
-    summary: >-
+    summary: |-
       In top N (`threshold`<!-- -->) \[items, percent, sum\] of value category.
 
-
-      Required Criteria: {`value`<!-- -->, `threshold`<!-- -->,
-      `selectionType`<!-- -->}<!-- -->.
+      Required Criteria: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
     value: '"TopN"'
   - name: unknown
     uid: 'excel!Excel.ValueFilterCondition.unknown:member'

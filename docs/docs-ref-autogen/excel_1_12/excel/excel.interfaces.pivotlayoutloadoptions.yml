@@ -3,13 +3,10 @@ name: Excel.Interfaces.PivotLayoutLoadOptions
 uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotLayoutLoadOptions
-summary: >-
+summary: |-
   Represents the visual layout of the PivotTable.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
     package: excel!
     fullName: autoFormat
-    summary: >-
-      Specifies if formatting will be automatically formatted when it’s
-      refreshed or when fields are moved.
+    summary: |-
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#enableFieldList:member'
     package: excel!
     fullName: enableFieldList
-    summary: >-
+    summary: |-
       Specifies if the field list can be shown in the UI.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,13 +61,11 @@ properties:
     package: excel!
     fullName: layoutType
     summary: >-
-      This property indicates the PivotLayoutType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,14 +78,11 @@ properties:
     package: excel!
     fullName: preserveFormatting
     summary: >-
-      Specifies if formatting is preserved when the report is refreshed or
-      recalculated by operations such as pivoting, sorting, or changing page
-      field items.
+      Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
+      sorting, or changing page field items.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,13 +94,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
     package: excel!
     fullName: showColumnGrandTotals
-    summary: >-
+    summary: |-
       Specifies if the PivotTable report shows grand totals for columns.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -128,13 +109,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
     package: excel!
     fullName: showRowGrandTotals
-    summary: >-
+    summary: |-
       Specifies if the PivotTable report shows grand totals for rows.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,13 +125,11 @@ properties:
     package: excel!
     fullName: subtotalLocation
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

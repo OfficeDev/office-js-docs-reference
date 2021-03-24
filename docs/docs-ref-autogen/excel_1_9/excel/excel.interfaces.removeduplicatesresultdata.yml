@@ -3,9 +3,7 @@ name: Excel.Interfaces.RemoveDuplicatesResultData
 uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
 package: excel!
 fullName: Excel.Interfaces.RemoveDuplicatesResultData
-summary: >-
-  An interface describing the data returned by calling
-  `removeDuplicatesResult.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#removed:member'
     package: excel!
     fullName: removed
-    summary: >-
+    summary: |-
       Number of duplicated rows removed by the operation.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#uniqueRemaining:member'
     package: excel!
     fullName: uniqueRemaining
-    summary: >-
+    summary: |-
       Number of remaining unique rows present in the resulting range.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

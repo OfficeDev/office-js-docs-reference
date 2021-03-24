@@ -3,17 +3,14 @@ name: Office.MailboxEnums.Days
 uid: 'outlook!Office.MailboxEnums.Days:enum'
 package: outlook!
 fullName: Office.MailboxEnums.Days
-summary: >-
+summary: |-
   Specifies the day of week or type of day.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 fields:

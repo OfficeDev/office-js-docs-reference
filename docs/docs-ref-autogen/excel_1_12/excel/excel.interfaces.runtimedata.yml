@@ -3,9 +3,7 @@ name: Excel.Interfaces.RuntimeData
 uid: 'excel!Excel.Interfaces.RuntimeData:interface'
 package: excel!
 fullName: Excel.Interfaces.RuntimeData
-summary: >-
-  An interface describing the data returned by calling `runtime.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `runtime.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.RuntimeData#enableEvents:member'
     package: excel!
     fullName: enableEvents
-    summary: >-
+    summary: |-
       Toggle JavaScript events in the current task pane or content add-in.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

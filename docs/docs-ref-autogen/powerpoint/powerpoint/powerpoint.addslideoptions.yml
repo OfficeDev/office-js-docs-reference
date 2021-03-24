@@ -3,13 +3,10 @@ name: PowerPoint.AddSlideOptions
 uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.AddSlideOptions
-summary: >-
+summary: |-
   Represents the available options when adding a new slide.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,18 +17,13 @@ properties:
     package: powerpoint!
     fullName: layoutId
     summary: >-
-      Specifies the ID of a Slide Layout to be used for the new slide. If no
-      `layoutId` is provided, but a `slideMasterId` is provided, then the ID of
-      the first layout from the specified Slide Master will be used. If no
-      `slideMasterId` is provided, but a `layoutId` is provided, then the
-      specified layout needs to be available for the default Slide Master (as
-      specified in the `slideMasterId` description). Otherwise, an error will be
-      thrown.
+      Specifies the ID of a Slide Layout to be used for the new slide. If no `layoutId` is provided, but a
+      `slideMasterId` is provided, then the ID of the first layout from the specified Slide Master will be used. If no
+      `slideMasterId` is provided, but a `layoutId` is provided, then the specified layout needs to be available for the
+      default Slide Master (as specified in the `slideMasterId` description). Otherwise, an error will be thrown.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -44,15 +36,12 @@ properties:
     package: powerpoint!
     fullName: slideMasterId
     summary: >-
-      Specifies the ID of a Slide Master to be used for the new slide. If no
-      `slideMasterId` is provided, then the previous slide's Slide Master will
-      be used. If there is no previous slide, then the presentation's first
-      Slide Master will be used.
+      Specifies the ID of a Slide Master to be used for the new slide. If no `slideMasterId` is provided, then the
+      previous slide's Slide Master will be used. If there is no previous slide, then the presentation's first Slide
+      Master will be used.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

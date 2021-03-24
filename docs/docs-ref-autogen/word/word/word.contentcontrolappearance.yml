@@ -3,13 +3,10 @@ name: Word.ContentControlAppearance
 uid: 'word!Word.ContentControlAppearance:enum'
 package: word!
 fullName: Word.ContentControlAppearance
-summary: >-
+summary: |-
   ContentControl appearance.
 
-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: 'Content control appearance options are bounding box, tags, or hidden.'
 isPreview: false
 isDeprecated: false
@@ -17,9 +14,7 @@ fields:
   - name: boundingBox
     uid: 'word!Word.ContentControlAppearance.boundingBox:member'
     package: word!
-    summary: >-
-      Represents a content control shown as a shaded rectangle or bounding box
-      (with optional title).
+    summary: Represents a content control shown as a shaded rectangle or bounding box (with optional title).
     value: '"BoundingBox"'
   - name: hidden
     uid: 'word!Word.ContentControlAppearance.hidden:member'

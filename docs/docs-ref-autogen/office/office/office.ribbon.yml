@@ -3,9 +3,7 @@ name: Office.Ribbon
 uid: 'office!Office.Ribbon:interface'
 package: office!
 fullName: Office.Ribbon
-summary: >-
-  An interface that contains all the functionality provided to manage the state
-  of the Office ribbon.
+summary: An interface that contains all the functionality provided to manage the state of the Office ribbon.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,10 @@ methods:
     package: office!
     fullName: requestCreateControls(tabDefinition)
     summary: >-
-      Registers a custom contextual tab with Office and defines the tab's
-      controls. This method only requests that the tab be registered. The actual
-      registration is controlled by the Office application and may not be
-      complete when the returned `Promise` object is resolved. For more
-      information and code examples, see [Create custom contextual
-      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
-      -->.
+      Registers a custom contextual tab with Office and defines the tab's controls. This method only requests that the
+      tab be registered. The actual registration is controlled by the Office application and may not be complete when
+      the returned `Promise` object is resolved. For more information and code examples, see [Create custom contextual
+      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -31,10 +26,9 @@ methods:
       parameters:
         - id: tabDefinition
           description: >-
-            Specifies the tab's properties and child controls and their
-            properties. Pass a JSON string that conforms to the Office
-            dynamic-ribbon JSON schema to `JSON.parse`<!-- -->, and then pass
-            the returned object to this method.
+            Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to
+            the Office dynamic-ribbon JSON schema to `JSON.parse`<!-- -->, and then pass the returned object to this
+            method.
           type: Object
       return:
         type: Promise&lt;void&gt;
@@ -44,15 +38,11 @@ methods:
     package: office!
     fullName: requestUpdate(input)
     summary: >-
-      Sends a request to Office to update the ribbon. Note that this API is only
-      to request an update. The actual UI update to the ribbon is controlled by
-      the Office application and hence the exact timing of the ribbon update (or
-      refresh) cannot be determined by the completion of this API. For code
-      examples, see [Enable and Disable Add-in
-      Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands)
-      and [Create custom contextual
-      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!--
-      -->.
+      Sends a request to Office to update the ribbon. Note that this API is only to request an update. The actual UI
+      update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or
+      refresh) cannot be determined by the completion of this API. For code examples, see [Enable and Disable Add-in
+      Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
+      contextual tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,8 +51,8 @@ methods:
       parameters:
         - id: input
           description: >-
-            Represents the updates to be made to the ribbon. Note that only the
-            changes specified in the input parameter are made.
+            Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter
+            are made.
           type: '<xref uid="office!Office.RibbonUpdaterData:interface" />'
       return:
         type: Promise&lt;void&gt;

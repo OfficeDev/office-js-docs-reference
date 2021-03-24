@@ -4,9 +4,8 @@ uid: 'office!Office.RangeCoordinates:interface'
 package: office!
 fullName: Office.RangeCoordinates
 summary: >-
-  Specifies a cell, or row, or column, by its zero-based row and/or column
-  number. Example: `{row: 3, column: 4}` specifies the cell in the 3rd
-  (zero-based) row in the 4th (zero-based) column.
+  Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}`
+  specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,9 +15,7 @@ properties:
     uid: 'office!Office.RangeCoordinates#column:member'
     package: office!
     fullName: column
-    summary: >-
-      The zero-based column of the range. If not specified, all cells, in the
-      row specified by `row` are included.
+    summary: 'The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -30,9 +27,7 @@ properties:
     uid: 'office!Office.RangeCoordinates#row:member'
     package: office!
     fullName: row
-    summary: >-
-      The zero-based row of the range. If not specified, all cells, in the
-      column specified by `column` are included.
+    summary: 'The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.'
     remarks: ''
     isPreview: false
     isDeprecated: false

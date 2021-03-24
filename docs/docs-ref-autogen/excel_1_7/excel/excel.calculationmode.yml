@@ -3,10 +3,7 @@ name: Excel.CalculationMode
 uid: 'excel!Excel.CalculationMode:enum'
 package: excel!
 fullName: Excel.CalculationMode
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,15 +12,13 @@ fields:
     uid: 'excel!Excel.CalculationMode.automatic:member'
     package: excel!
     summary: >-
-      The default recalculation behavior where Excel calculates new formula
-      results every time the relevant data is changed.
+      The default recalculation behavior where Excel calculates new formula results every time the relevant data is
+      changed.
     value: '"Automatic"'
   - name: automaticExceptTables
     uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     package: excel!
-    summary: >-
-      Calculates new formula results every time the relevant data is changed,
-      unless the formula is in a data table.
+    summary: 'Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.'
     value: '"AutomaticExceptTables"'
   - name: manual
     uid: 'excel!Excel.CalculationMode.manual:member'

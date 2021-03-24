@@ -4,14 +4,11 @@ uid: 'excel!Excel.DataValidationRule:interface'
 package: excel!
 fullName: Excel.DataValidationRule
 summary: >-
-  A data validation rule contains different types of data validation. You can
-  only use one of them at a time according the `Excel.DataValidationType`<!--
-  -->.
+  A data validation rule contains different types of data validation. You can only use one of them at a time according
+  the `Excel.DataValidationType`<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,13 +18,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#custom:member'
     package: excel!
     fullName: custom
-    summary: >-
+    summary: |-
       Custom data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,13 +33,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#date:member'
     package: excel!
     fullName: date
-    summary: >-
+    summary: |-
       Date data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -57,13 +48,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#decimal:member'
     package: excel!
     fullName: decimal
-    summary: >-
+    summary: |-
       Decimal data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,13 +63,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#list:member'
     package: excel!
     fullName: list
-    summary: >-
+    summary: |-
       List data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,13 +112,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#textLength:member'
     package: excel!
     fullName: textLength
-    summary: >-
+    summary: |-
       Text length data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,13 +127,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#time:member'
     package: excel!
     fullName: time
-    summary: >-
+    summary: |-
       Time data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -163,13 +142,10 @@ properties:
     uid: 'excel!Excel.DataValidationRule#wholeNumber:member'
     package: excel!
     fullName: wholeNumber
-    summary: >-
+    summary: |-
       Whole number data validation criteria.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,14 +3,10 @@ name: Excel.ShapeZOrder
 uid: 'excel!Excel.ShapeZOrder:enum'
 package: excel!
 fullName: Excel.ShapeZOrder
-summary: >-
-  Specifies where in the z-order a shape should be moved relative to other
-  shapes.
+summary: |-
+  Specifies where in the z-order a shape should be moved relative to other shapes.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

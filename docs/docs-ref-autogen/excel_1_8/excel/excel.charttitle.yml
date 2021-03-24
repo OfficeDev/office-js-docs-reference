@@ -3,13 +3,10 @@ name: Excel.ChartTitle
 uid: 'excel!Excel.ChartTitle:class'
 package: excel!
 fullName: Excel.ChartTitle
-summary: >-
+summary: |-
   Represents a chart title object of a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,14 +30,10 @@ properties:
     uid: 'excel!Excel.ChartTitle#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart title, which includes fill and font
-      formatting.
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,14 +45,10 @@ properties:
     uid: 'excel!Excel.ChartTitle#height:member'
     package: excel!
     fullName: height
-    summary: >-
-      Returns the height, in points, of the chart title. Null if chart title is
-      not visible.
+    summary: |-
+      Returns the height, in points, of the chart title. Null if chart title is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,36 +60,31 @@ properties:
     uid: 'excel!Excel.ChartTitle#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
+    summary: |-
       Specifies the horizontal alignment for chart title.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" |
-        "Left" | "Right" | "Justify" | "Distributed";
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> |
-          "Center" | "Left" | "Right" | "Justify" | "Distributed"
+          <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" /> | "Center" | "Left" | "Right" | "Justify" |
+          "Distributed"
   - name: left
     uid: 'excel!Excel.ChartTitle#left:member'
     package: excel!
     fullName: left
     summary: >-
-      Specifies the distance, in points, from the left edge of chart title to
-      the left edge of chart area. Null if chart title is not visible.
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
+      title is not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -112,13 +96,10 @@ properties:
     uid: 'excel!Excel.ChartTitle#overlay:member'
     package: excel!
     fullName: overlay
-    summary: >-
+    summary: |-
       Specifies if the chart title will overlay the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,37 +111,25 @@ properties:
     uid: 'excel!Excel.ChartTitle#position:member'
     package: excel!
     fullName: position
-    summary: >-
-      Represents the position of chart title. See Excel.ChartTitlePosition for
-      details.
+    summary: |-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" |
-        "Left" | "Right";
+      content: 'position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartTitlePosition:enum" /> | "Automatic" |
-          "Top" | "Bottom" | "Left" | "Right"
+        type: '<xref uid="excel!Excel.ChartTitlePosition:enum" /> | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
   - name: showShadow
     uid: 'excel!Excel.ChartTitle#showShadow:member'
     package: excel!
     fullName: showShadow
-    summary: >-
-      Represents a boolean value that determines if the chart title has a
-      shadow.
+    summary: |-
+      Represents a boolean value that determines if the chart title has a shadow.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -172,13 +141,10 @@ properties:
     uid: 'excel!Excel.ChartTitle#text:member'
     package: excel!
     fullName: text
-    summary: >-
+    summary: |-
       Specifies the chart's title text.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -191,14 +157,11 @@ properties:
     package: excel!
     fullName: textOrientation
     summary: >-
-      Specifies the angle to which the text is oriented for the chart title. The
-      value should either be an integer from -90 to 90 or the integer 180 for
-      vertically-oriented text.
+      Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
+      -90 to 90 or the integer 180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -231,13 +194,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of chart title to the
-      top of chart area. Null if chart title is not visible.
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      is not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -249,36 +210,27 @@ properties:
     uid: 'excel!Excel.ChartTitle#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment of chart title. See
-      Excel.ChartTextVerticalAlignment for details.
+    summary: |-
+      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" |
-        "Bottom" | "Top" | "Justify" | "Distributed";
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
       return:
         type: >-
-          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center"
-          | "Bottom" | "Top" | "Justify" | "Distributed"
+          <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" /> | "Center" | "Bottom" | "Top" | "Justify" |
+          "Distributed"
   - name: visible
     uid: 'excel!Excel.ChartTitle#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the chart title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -290,14 +242,10 @@ properties:
     uid: 'excel!Excel.ChartTitle#width:member'
     package: excel!
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the chart title. Null if chart title is
-      not visible.
+    summary: |-
+      Specifies the width, in points, of the chart title. Null if chart title is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -310,14 +258,10 @@ methods:
     uid: 'excel!Excel.ChartTitle#getSubstring:member(1)'
     package: excel!
     fullName: 'getSubstring(start, length)'
-    summary: >-
-      Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n' also
-      counts one character.
+    summary: |-
+      Get the substring of a chart title. Line break '<!-- -->\\<!-- -->n' also counts one character.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -358,21 +302,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ChartTitleLoadOptions):
-        Excel.ChartTitle;
+      content: 'load(options?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.ChartTitleLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.ChartTitle:class" />'
         description: ''
@@ -381,8 +321,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -390,22 +330,17 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTitle;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.ChartTitle:class" />'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           // Get the text of Chart Title from Chart1.
-
           Excel.run(function (ctx) { 
               var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               
@@ -420,14 +355,9 @@ methods:
                   }
               });
           });
-
           ```
-
           ```javascript
-
-          // Set the text of Chart Title to "My Chart" and Make it show on top
-          of the chart without overlaying.
-
+          // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
           Excel.run(function (ctx) { 
               var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               
@@ -444,15 +374,14 @@ methods:
                   }
               });
           });
-
           ```
   - name: load(propertyNamesAndPaths)
     uid: 'excel!Excel.ChartTitle#load:member(3)'
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -465,10 +394,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -482,9 +409,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -492,20 +418,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ChartTitleUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ChartTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.ChartTitleUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -514,9 +435,7 @@ methods:
     uid: 'excel!Excel.ChartTitle#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -533,14 +452,10 @@ methods:
     uid: 'excel!Excel.ChartTitle#setFormula:member(1)'
     package: excel!
     fullName: setFormula(formula)
-    summary: >-
-      Sets a string value that represents the formula of chart title using
-      A1-style notation.
+    summary: |-
+      Sets a string value that represents the formula of chart title using A1-style notation.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -558,13 +473,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.ChartTitle object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.ChartTitleData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartTitleData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: OneNote.Interfaces.InkAnalysisLineData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineData
-summary: >-
-  An interface describing the data returned by calling
-  "inkAnalysisLine.toJSON()".
+summary: An interface describing the data returned by calling "inkAnalysisLine.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the InkAnalysisLine object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,39 +28,29 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: >-
+    summary: |-
       Reference to the parent InkAnalysisParagraph. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface" />'
   - name: words
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words:member'
     package: onenote!
     fullName: words
-    summary: >-
+    summary: |-
       Gets the ink analysis words in this ink analysis line. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
-          />[]
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface" />[]'

@@ -4,9 +4,8 @@ uid: 'office!Office.SelectionMode:enum'
 package: office!
 fullName: Office.SelectionMode
 summary: >-
-  Specifies whether to select (highlight) the location to navigate to (when
-  using the [Document](xref:office!Office.Document:interface)<!--
-  -->.goToByIdAsync method).
+  Specifies whether to select (highlight) the location to navigate to (when using the
+  [Document](xref:office!Office.Document:interface)<!-- -->.goToByIdAsync method).
 remarks: ''
 isPreview: false
 isDeprecated: false

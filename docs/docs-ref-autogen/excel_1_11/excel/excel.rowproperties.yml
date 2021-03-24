@@ -3,13 +3,10 @@ name: Excel.RowProperties
 uid: 'excel!Excel.RowProperties:interface'
 package: excel!
 fullName: Excel.RowProperties
-summary: >-
+summary: |-
   Represents the returned properties of getRowProperties.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.RowProperties#address:member'
     package: excel!
     fullName: address
-    summary: >-
+    summary: |-
       Represents the `address` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.RowProperties#addressLocal:member'
     package: excel!
     fullName: addressLocal
-    summary: >-
+    summary: |-
       Represents the `addressLocal` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.RowProperties#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: >-
+    summary: |-
       Represents the `rowIndex` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

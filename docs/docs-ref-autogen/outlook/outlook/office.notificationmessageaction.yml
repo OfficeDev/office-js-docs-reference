@@ -3,26 +3,21 @@ name: Office.NotificationMessageAction
 uid: 'outlook!Office.NotificationMessageAction:interface'
 package: outlook!
 fullName: Office.NotificationMessageAction
-summary: >-
+summary: |-
   The definition of the action for a notification message.
 
+  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
 
-  **Important**: In modern Outlook on the web, the `NotificationMessageAction`
-  object is available in Compose mode only.
-
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 
 
   #### Examples
@@ -47,8 +42,7 @@ remarks: >-
 
   // Show notification.
 
-  Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey",
-  insightMessage, (result) => {
+  Office.context.mailbox.item.notificationMessages.replaceAsync("messageKey", insightMessage, (result) => {
       console.log("Added notification:");
       console.log(result);
   });
@@ -58,8 +52,7 @@ remarks: >-
 
   // IMPORTANT: At present, this only works in Outlook on Windows.
 
-  Office.context.mailbox.item.getInitializationContextAsync(function
-  (asyncResult) {
+  Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
       console.log("Initialization context:");
       console.log(asyncResult);
 
@@ -90,9 +83,7 @@ properties:
     uid: 'outlook!Office.NotificationMessageAction#actionType:member'
     package: outlook!
     fullName: actionType
-    summary: >-
-      The type of action to be performed. `ActionType.ShowTaskPane` is the only
-      supported action.
+    summary: The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -117,12 +108,11 @@ properties:
     package: outlook!
     fullName: contextData
     summary: >-
-      Any JSON data the button needs to pass on. This data can be retrieved by
-      calling `item.getInitializationContextAsync`<!-- -->.
+      Any JSON data the button needs to pass on. This data can be retrieved by calling
+      `item.getInitializationContextAsync`<!-- -->.
 
 
-      **Important**: In Outlook on the web, the ability to retrieve
-      `contextData` is not yet available.
+      **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
     remarks: ''
     isPreview: true
     isDeprecated: false

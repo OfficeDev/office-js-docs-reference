@@ -18,9 +18,7 @@ constructors:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        constructor(context: ClientRequestContext, handlers: EventHandlers<T>,
-        handler: (args: T) => Promise<any>);
+      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);'
       parameters:
         - id: context
           description: ''

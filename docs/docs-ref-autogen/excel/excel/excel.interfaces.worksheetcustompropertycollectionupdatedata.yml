@@ -4,16 +4,15 @@ uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interfa
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
 summary: >-
-  An interface for updating data on the WorksheetCustomPropertyCollection
-  object, for use in `worksheetCustomPropertyCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the WorksheetCustomPropertyCollection object, for use in
+  `worksheetCustomPropertyCollection.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData#items:member
+    uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData#items:member'
     package: excel!
     fullName: items
     summary: ''
@@ -23,7 +22,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.WorksheetCustomPropertyData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
-          />[]
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface" />[]'

@@ -13,13 +13,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideData#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the unique ID of the slide.
 
-
-      \[ [API set: PowerPointApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

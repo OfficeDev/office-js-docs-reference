@@ -3,9 +3,7 @@ name: Excel.Interfaces.RangeFillUpdateData
 uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeFillUpdateData
-summary: >-
-  An interface for updating data on the RangeFill object, for use in
-  `rangeFill.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the RangeFill object, for use in `rangeFill.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,11 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the background, in the form
-      \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
+      HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500"), or as a named
+      HTML color (e.g., "orange")
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,43 +31,34 @@ properties:
     package: excel!
     fullName: pattern
     summary: >-
-      The pattern of a range. See `Excel.FillPattern` for details.
-      LinearGradient and RectangularGradient are not supported. A `null` value
-      indicates that the entire range doesn't have a uniform pattern setting.
+      The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not
+      supported. A `null` value indicates that the entire range doesn't have a uniform pattern setting.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" |
-        "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" |
-        "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
-        "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" |
-        "LinearGradient" | "RectangularGradient";
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
+        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
+        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
       return:
         type: >-
-          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" |
-          "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
-          "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical"
-          | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8"
-          | "LinearGradient" | "RectangularGradient"
+          <xref uid="excel!Excel.FillPattern:enum" /> | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal"
+          | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" |
+          "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
   - name: patternColor
     uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
     package: excel!
     fullName: patternColor
     summary: >-
-      The HTML color code representing the color of the range pattern, in the
-      form \#RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+      The HTML color code representing the color of the range pattern, in the form \#RRGGBB (e.g., "FFA500"), or as a
+      named HTML color (e.g., "orange").
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -84,15 +71,12 @@ properties:
     package: excel!
     fullName: patternTintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a pattern color for the range
-      fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the
-      original color. A `null` value indicates that the range doesn't have
-      uniform `patternTintAndShade` settings.
+      Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest)
+      and 1 (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform
+      `patternTintAndShade` settings.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,15 +89,12 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a color for the range fill.
-      The value is between -1 (darkest) and 1 (brightest), with 0 for the
-      original color. A `null` value indicates that the range doesn't have
-      uniform `tintAndShade` settings.
+      Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform
+      `tintAndShade` settings.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

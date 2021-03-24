@@ -3,9 +3,7 @@ name: Visio.Interfaces.ShapeDataItemCollectionData
 uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeDataItemCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "shapeDataItemCollection.toJSON()".
+summary: An interface describing the data returned by calling "shapeDataItemCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

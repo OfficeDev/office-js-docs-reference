@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartAxesData
 uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxesData
-summary: >-
-  An interface describing the data returned by calling `chartAxes.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `chartAxes.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesData#categoryAxis:member'
     package: excel!
     fullName: categoryAxis
-    summary: >-
+    summary: |-
       Represents the category axis in a chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesData#seriesAxis:member'
     package: excel!
     fullName: seriesAxis
-    summary: >-
+    summary: |-
       Represents the series axis of a 3-dimensional chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
     package: excel!
     fullName: valueAxis
-    summary: >-
+    summary: |-
       Represents the value axis in an axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,14 +3,10 @@ name: Office.EnhancedLocationsChangedEventArgs
 uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.EnhancedLocationsChangedEventArgs
-summary: >-
-  Provides the current enhanced locations when the
-  `Office.EventType.EnhancedLocationsChanged` event is raised.
+summary: |-
+  Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
 
-
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +16,10 @@ properties:
     uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
     package: outlook!
     fullName: enhancedLocations
-    summary: >-
+    summary: |-
       Gets the set of enhanced locations.
 
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,13 +31,10 @@ properties:
     uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
     package: outlook!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

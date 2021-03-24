@@ -4,17 +4,17 @@ uid: 'outlook!Office.UserProfile:interface'
 package: outlook!
 fullName: Office.UserProfile
 summary: >-
-  Information about the user associated with the mailbox. This includes their
-  account type, display name, email address, and time zone.
+  Information about the user associated with the mailbox. This includes their account type, display name, email address,
+  and time zone.
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,38 +23,31 @@ properties:
     uid: 'outlook!Office.UserProfile#accountType:member'
     package: outlook!
     fullName: accountType
-    summary: >-
+    summary: |-
       Gets the account type of the user associated with the mailbox.
 
+      **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
 
-      **Note**: This member is currently only supported in Outlook 2016 or later
-      on Mac, build 16.9.1212 and greater.
-
-
-      \[ [API set: Mailbox
-      1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       The possible account types are listed in the following table.
 
 
-      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr>
-      <td>enterprise</td> <td>The mailbox is on an on-premises Exchange
-      server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with
-      a Gmail account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is
-      associated with a Microsoft 365 work or school account.</td> </tr> <tr>
-      <td>outlookCom</td> <td>The mailbox is associated with a personal
-      Outlook.com account.</td> </tr> </table>
+      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
+      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with a Microsoft 365 work or school
+      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
+      account.</td> </tr> </table>
 
 
       #### Examples
@@ -78,13 +71,13 @@ properties:
     summary: Gets the user's display name.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -110,13 +103,13 @@ properties:
     summary: Gets the user's SMTP email address.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -143,17 +136,17 @@ properties:
       Gets the user's time zone in Windows format.
 
 
-      The system time zone is usually returned. However, in Outlook on the web,
-      the default time zone in the calendar preferences is returned instead.
+      The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
+      preferences is returned instead.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples

@@ -13,9 +13,7 @@ properties:
     uid: 'office!Office.Control#enabled:member'
     package: office!
     fullName: enabled
-    summary: >-
-      Indicates whether the control should be enabled or disabled. The default
-      is true.
+    summary: Indicates whether the control should be enabled or disabled. The default is true.
     remarks: ''
     isPreview: false
     isDeprecated: false

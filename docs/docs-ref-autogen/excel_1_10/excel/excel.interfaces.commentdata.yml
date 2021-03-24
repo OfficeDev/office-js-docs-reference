@@ -3,9 +3,7 @@ name: Excel.Interfaces.CommentData
 uid: 'excel!Excel.Interfaces.CommentData:interface'
 package: excel!
 fullName: Excel.Interfaces.CommentData
-summary: >-
-  An interface describing the data returned by calling `comment.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
     package: excel!
     fullName: authorEmail
-    summary: >-
+    summary: |-
       Gets the email of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
     package: excel!
     fullName: authorName
-    summary: >-
+    summary: |-
       Gets the name of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentData#content:member'
     package: excel!
     fullName: content
-    summary: >-
+    summary: |-
       The comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +59,11 @@ properties:
     package: excel!
     fullName: creationDate
     summary: >-
-      Gets the creation time of the comment. Returns null if the comment was
-      converted from a note, since the comment does not have a creation date.
+      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      does not have a creation date.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentData#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the comment identifier.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentData#replies:member'
     package: excel!
     fullName: replies
-    summary: >-
+    summary: |-
       Represents a collection of reply objects associated with the comment.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

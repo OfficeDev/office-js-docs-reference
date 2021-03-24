@@ -3,14 +3,10 @@ name: Excel.ShapeScaleType
 uid: 'excel!Excel.ShapeScaleType:enum'
 package: excel!
 fullName: Excel.ShapeScaleType
-summary: >-
-  Specifies whether the shape is scaled relative to its original or current
-  size.
+summary: |-
+  Specifies whether the shape is scaled relative to its original or current size.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.ConditionalRangeBorderCollectionData
 uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeBorderCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `conditionalRangeBorderCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `conditionalRangeBorderCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,6 +20,4 @@ properties:
     syntax:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]'

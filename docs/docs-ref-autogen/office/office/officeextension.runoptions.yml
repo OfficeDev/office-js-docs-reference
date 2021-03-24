@@ -14,10 +14,9 @@ properties:
     package: office!
     fullName: previousObjects
     summary: >-
-      A previously-created context, or API object, or array of objects. The
-      batch will use the same RequestContext as the passed-in object, which
-      means that any changes applied to the object will be picked up by
-      `context.sync()`<!-- -->.
+      A previously-created context, or API object, or array of objects. The batch will use the same RequestContext as
+      the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`<!--
+      -->.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,6 +38,4 @@ properties:
     syntax:
       content: 'session?: RequestUrlAndHeaderInfo | T;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.RequestUrlAndHeaderInfo:interface"
-          /> | T
+        type: '<xref uid="office!OfficeExtension.RequestUrlAndHeaderInfo:interface" /> | T'

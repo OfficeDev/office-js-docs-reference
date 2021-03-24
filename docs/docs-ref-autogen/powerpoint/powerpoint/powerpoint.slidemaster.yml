@@ -3,13 +3,10 @@ name: PowerPoint.SlideMaster
 uid: 'powerpoint!PowerPoint.SlideMaster:class'
 package: powerpoint!
 fullName: PowerPoint.SlideMaster
-summary: >-
+summary: |-
   Represents the Slide Master of a slide.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: powerpoint!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'powerpoint!PowerPoint.SlideMaster#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the unique ID of the Slide Master.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -51,13 +45,10 @@ properties:
     uid: 'powerpoint!PowerPoint.SlideMaster#layouts:member'
     package: powerpoint!
     fullName: layouts
-    summary: >-
+    summary: |-
       Gets the collection of layouts provided by the Slide Master for slides.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -69,13 +60,10 @@ properties:
     uid: 'powerpoint!PowerPoint.SlideMaster#name:member'
     package: powerpoint!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the unique name of the Slide Master.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -89,22 +77,17 @@ methods:
     package: powerpoint!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: PowerPoint.Interfaces.SlideMasterLoadOptions):
-        PowerPoint.SlideMaster;
+      content: 'load(options?: PowerPoint.Interfaces.SlideMasterLoadOptions): PowerPoint.SlideMaster;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
-            />
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideMaster:class" />'
         description: ''
@@ -113,8 +96,8 @@ methods:
     package: powerpoint!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -122,9 +105,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.SlideMaster;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideMaster:class" />'
@@ -134,8 +115,8 @@ methods:
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -148,10 +129,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -165,22 +144,17 @@ methods:
     package: powerpoint!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original PowerPoint.SlideMaster
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `PowerPoint.Interfaces.SlideMasterData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original PowerPoint.SlideMaster object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `PowerPoint.Interfaces.SlideMasterData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.SlideMasterData;'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
-          />
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

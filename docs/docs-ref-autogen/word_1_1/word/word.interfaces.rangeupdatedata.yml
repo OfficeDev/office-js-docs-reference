@@ -3,9 +3,7 @@ name: Word.Interfaces.RangeUpdateData
 uid: 'word!Word.Interfaces.RangeUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.RangeUpdateData
-summary: >-
-  An interface for updating data on the Range object, for use in `range.set({
-  ... })`<!-- -->.
+summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.RangeUpdateData#font:member'
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties.
+    summary: |-
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +29,11 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

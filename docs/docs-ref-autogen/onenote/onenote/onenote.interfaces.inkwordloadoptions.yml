@@ -3,13 +3,10 @@ name: OneNote.Interfaces.InkWordLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkWordLoadOptions
-summary: >-
+summary: |-
   A container for the ink in a word in a paragraph.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the InkWord object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: >-
+    summary: |-
       The id of the recognized language in this ink word. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,34 +58,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: >-
+    summary: |-
       The parent paragraph containing the ink word.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
   - name: wordAlternates
     uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#wordAlternates:member'
     package: onenote!
     fullName: wordAlternates
-    summary: >-
-      The words that were recognized in this ink word, in order of likelihood.
-      Read-only.
+    summary: |-
+      The words that were recognized in this ink word, in order of likelihood. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

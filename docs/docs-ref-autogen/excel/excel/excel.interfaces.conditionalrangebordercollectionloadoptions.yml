@@ -3,27 +3,22 @@ name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
-summary: >-
+summary: |-
   Represents the border objects that make up range border.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#$all:member
+    uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#$all:member'
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -32,19 +27,15 @@ properties:
       return:
         type: boolean
   - name: color
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#color:member
+    uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#color:member'
     package: excel!
     fullName: color
     summary: >-
-      For EACH ITEM in the collection: HTML color code representing the color of
-      the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML
-      color (e.g., "orange").
+      For EACH ITEM in the collection: HTML color code representing the color of the border line, in the form \#RRGGBB
+      (e.g., "FFA500") or as a named HTML color (e.g., "orange").
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,19 +44,15 @@ properties:
       return:
         type: boolean
   - name: sideIndex
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#sideIndex:member
+    uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#sideIndex:member'
     package: excel!
     fullName: sideIndex
     summary: >-
-      For EACH ITEM in the collection: Constant value that indicates the
-      specific side of the border. See `Excel.ConditionalRangeBorderIndex` for
-      details.
+      For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
+      `Excel.ConditionalRangeBorderIndex` for details.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,19 +61,15 @@ properties:
       return:
         type: boolean
   - name: style
-    uid: >-
-      excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#style:member
+    uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions#style:member'
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: One of the constants of line style
-      specifying the line style for the border. See `Excel.BorderLineStyle` for
-      details.
+      For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See
+      `Excel.BorderLineStyle` for details.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

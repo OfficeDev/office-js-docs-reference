@@ -3,13 +3,10 @@ name: PowerPoint.Tag
 uid: 'powerpoint!PowerPoint.Tag:class'
 package: powerpoint!
 fullName: PowerPoint.Tag
-summary: >-
+summary: |-
   Represents a single tag in the slide.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: powerpoint!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -34,14 +31,11 @@ properties:
     package: powerpoint!
     fullName: key
     summary: >-
-      Gets the unique ID of the tag. The `key` is unique within the owning
-      `TagCollection` and always stored as uppercase letters within the
-      document.
+      Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as
+      uppercase letters within the document.
 
 
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -53,13 +47,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Tag#value:member'
     package: powerpoint!
     fullName: value
-    summary: >-
+    summary: |-
       Gets the value of the tag.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -73,8 +64,8 @@ methods:
     package: powerpoint!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -83,9 +74,7 @@ methods:
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface" />
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.TagLoadOptions:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
         description: ''
@@ -94,8 +83,8 @@ methods:
     package: powerpoint!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -103,9 +92,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): PowerPoint.Tag;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
@@ -115,8 +102,8 @@ methods:
     package: powerpoint!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -129,10 +116,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -146,13 +131,11 @@ methods:
     package: powerpoint!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original PowerPoint.Tag object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `PowerPoint.Interfaces.TagData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original PowerPoint.Tag object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `PowerPoint.Interfaces.TagData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: true
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartPointData
 uid: 'excel!Excel.Interfaces.ChartPointData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPointData
-summary: >-
-  An interface describing the data returned by calling `chartPoint.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `chartPoint.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Encapsulates the format properties chart point.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointData#value:member'
     package: excel!
     fullName: value
-    summary: >-
+    summary: |-
       Returns the value of a chart point.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

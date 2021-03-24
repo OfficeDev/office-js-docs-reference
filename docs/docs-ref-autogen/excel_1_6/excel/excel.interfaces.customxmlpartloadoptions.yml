@@ -3,13 +3,10 @@ name: Excel.Interfaces.CustomXmlPartLoadOptions
 uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.CustomXmlPartLoadOptions
-summary: >-
+summary: |-
   Represents a custom XML part object in a workbook.
 
-
-  \[ [API set: ExcelApi
-  1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       The custom XML part's ID.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions#namespaceUri:member'
     package: excel!
     fullName: namespaceUri
-    summary: >-
+    summary: |-
       The custom XML part's namespace URI.
 
-
-      \[ [API set: ExcelApi
-      1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

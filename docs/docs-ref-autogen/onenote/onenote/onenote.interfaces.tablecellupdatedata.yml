@@ -3,9 +3,7 @@ name: OneNote.Interfaces.TableCellUpdateData
 uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableCellUpdateData
-summary: >-
-  An interface for updating data on the TableCell object, for use in
-  "tableCell.set(<!-- -->{ ... }<!-- -->)".
+summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellUpdateData#shadingColor:member'
     package: onenote!
     fullName: shadingColor
-    summary: >-
+    summary: |-
       Gets and sets the shading color of the cell
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

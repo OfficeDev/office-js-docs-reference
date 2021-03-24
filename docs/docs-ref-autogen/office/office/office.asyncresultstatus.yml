@@ -4,9 +4,7 @@ uid: 'office!Office.AsyncResultStatus:enum'
 package: office!
 fullName: Office.AsyncResultStatus
 summary: Specifies the result of an asynchronous call.
-remarks: >-
-  Returned by the `status` property of the
-  [AsyncResult](xref:office!Office.AsyncResult:interface) object.
+remarks: 'Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.'
 isPreview: false
 isDeprecated: false
 fields:

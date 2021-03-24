@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartTitleFormatData
 uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartTitleFormatData
-summary: >-
-  An interface describing the data returned by calling
-  `chartTitleFormat.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartTitleFormat.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleFormatData#border:member'
     package: excel!
     fullName: border
-    summary: >-
-      Represents the border format of chart title, which includes color,
-      linestyle, and weight.
+    summary: |-
+      Represents the border format of chart title, which includes color, linestyle, and weight.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTitleFormatData#font:member'
     package: excel!
     fullName: font
-    summary: >-
-      Represents the font attributes (font name, font size, color, etc.) for an
-      object.
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for an object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

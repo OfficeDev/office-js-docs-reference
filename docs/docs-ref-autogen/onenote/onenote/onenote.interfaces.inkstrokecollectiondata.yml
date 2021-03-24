@@ -3,9 +3,7 @@ name: OneNote.Interfaces.InkStrokeCollectionData
 uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkStrokeCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "inkStrokeCollection.toJSON()".
+summary: An interface describing the data returned by calling "inkStrokeCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

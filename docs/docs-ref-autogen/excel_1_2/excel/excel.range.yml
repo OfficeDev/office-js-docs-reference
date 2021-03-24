@@ -4,18 +4,13 @@ uid: 'excel!Excel.Range:class'
 package: excel!
 fullName: Excel.Range
 summary: >-
-  Range represents a set of one or more contiguous cells such as a cell, a row,
-  a column, block of cells, etc. To learn more about how ranges are used
-  throughout the API, read [Work with ranges using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges)
-  and [Work with ranges using the Excel JavaScript API
-  (advanced)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!--
-  -->.
+  Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn
+  more about how ranges are used throughout the API, read [Work with ranges using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) and [Work with ranges using the Excel
+  JavaScript API (advanced)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,14 +20,10 @@ properties:
     uid: 'excel!Excel.Range#address:member'
     package: excel!
     fullName: address
-    summary: >-
-      Specifies the range reference in A1-style. Address value will contain the
-      Sheet reference (e.g., "Sheet1!A1:B4").
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -44,14 +35,10 @@ properties:
     uid: 'excel!Excel.Range#addressLocal:member'
     package: excel!
     fullName: addressLocal
-    summary: >-
-      Specifies the range reference for the specified range in the language of
-      the user.
+    summary: |-
+      Specifies the range reference for the specified range in the language of the user.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -64,13 +51,11 @@ properties:
     package: excel!
     fullName: cellCount
     summary: >-
-      Specifies the number of cells in the range. This API will return -1 if the
-      cell count exceeds 2^31-1 (2,147,483,647).
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -82,13 +67,10 @@ properties:
     uid: 'excel!Excel.Range#columnCount:member'
     package: excel!
     fullName: columnCount
-    summary: >-
+    summary: |-
       Specifies the total number of columns in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -100,13 +82,10 @@ properties:
     uid: 'excel!Excel.Range#columnHidden:member'
     package: excel!
     fullName: columnHidden
-    summary: >-
+    summary: |-
       Represents if all columns of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -118,13 +97,10 @@ properties:
     uid: 'excel!Excel.Range#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: >-
+    summary: |-
       Specifies the column number of the first cell in the range. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -137,8 +113,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,14 +126,10 @@ properties:
     uid: 'excel!Excel.Range#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the range's font, fill, borders,
-      alignment, and other properties.
+    summary: |-
+      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -169,14 +141,10 @@ properties:
     uid: 'excel!Excel.Range#formulas:member'
     package: excel!
     fullName: formulas
-    summary: >-
-      Represents the formula in A1-style notation. If a cell has no formula, its
-      value is returned instead.
+    summary: |-
+      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -189,15 +157,12 @@ properties:
     package: excel!
     fullName: formulasLocal
     summary: >-
-      Represents the formula in A1-style notation, in the user's language and
-      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula
-      would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its
-      value is returned instead.
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -209,14 +174,10 @@ properties:
     uid: 'excel!Excel.Range#formulasR1C1:member'
     package: excel!
     fullName: formulasR1C1
-    summary: >-
-      Represents the formula in R1C1-style notation. If a cell has no formula,
-      its value is returned instead.
+    summary: |-
+      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -228,13 +189,10 @@ properties:
     uid: 'excel!Excel.Range#hidden:member'
     package: excel!
     fullName: hidden
-    summary: >-
+    summary: |-
       Represents if all cells of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -246,13 +204,10 @@ properties:
     uid: 'excel!Excel.Range#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       Represents Excel's number format code for the given range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -260,17 +215,13 @@ properties:
       content: 'numberFormat: any[][];'
       return:
         type: 'any[][]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The example below sets number-format, values and formulas on a grid
-          that contains 2x3 grid.
-
+          // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "F5:G7";
@@ -291,19 +242,15 @@ properties:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - name: rowCount
     uid: 'excel!Excel.Range#rowCount:member'
     package: excel!
     fullName: rowCount
-    summary: >-
+    summary: |-
       Returns the total number of rows in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -315,13 +262,10 @@ properties:
     uid: 'excel!Excel.Range#rowHidden:member'
     package: excel!
     fullName: rowHidden
-    summary: >-
+    summary: |-
       Represents if all rows of the current range are hidden.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -333,13 +277,10 @@ properties:
     uid: 'excel!Excel.Range#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: >-
+    summary: |-
       Returns the row number of the first cell in the range. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -351,13 +292,10 @@ properties:
     uid: 'excel!Excel.Range#sort:member'
     package: excel!
     fullName: sort
-    summary: >-
+    summary: |-
       Represents the range sort of the current range.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,14 +345,11 @@ properties:
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The Text value will not depend on the
-      cell width. The \# sign substitution that happens in Excel UI will not
-      affect the text value returned by the API.
+      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -427,14 +362,11 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -446,13 +378,10 @@ properties:
     uid: 'excel!Excel.Range#valueTypes:member'
     package: excel!
     fullName: valueTypes
-    summary: >-
+    summary: |-
       Specifies the type of data in each cell.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -464,13 +393,10 @@ properties:
     uid: 'excel!Excel.Range#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       The worksheet containing the current range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -483,13 +409,10 @@ methods:
     uid: 'excel!Excel.Range#clear:member(1)'
     package: excel!
     fullName: clear(applyTo)
-    summary: >-
+    summary: |-
       Clear range values, format, fill, border, etc.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -497,9 +420,7 @@ methods:
       content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
       parameters:
         - id: applyTo
-          description: >-
-            Optional. Determines the type of clear action. See
-            Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
@@ -527,25 +448,18 @@ methods:
     uid: 'excel!Excel.Range#clear:member(2)'
     package: excel!
     fullName: clear(applyToString)
-    summary: >-
+    summary: |-
       Clear range values, format, fill, border, etc.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" |
-        "RemoveHyperlinks"): void;
+      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       parameters:
         - id: applyToString
-          description: >-
-            Optional. Determines the type of clear action. See
-            Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
       return:
         type: void
@@ -554,13 +468,10 @@ methods:
     uid: 'excel!Excel.Range#delete:member(1)'
     package: excel!
     fullName: delete(shift)
-    summary: >-
+    summary: |-
       Deletes the cells associated with the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -568,9 +479,7 @@ methods:
       content: 'delete(shift: Excel.DeleteShiftDirection): void;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            Excel.DeleteShiftDirection for details.
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type: '<xref uid="excel!Excel.DeleteShiftDirection:enum" />'
       return:
         type: void
@@ -597,13 +506,10 @@ methods:
     uid: 'excel!Excel.Range#delete:member(2)'
     package: excel!
     fullName: delete(shiftString)
-    summary: >-
+    summary: |-
       Deletes the cells associated with the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -611,9 +517,7 @@ methods:
       content: 'delete(shiftString: "Up" | "Left"): void;'
       parameters:
         - id: shiftString
-          description: >-
-            Specifies which way to shift the cells. See
-            Excel.DeleteShiftDirection for details.
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type: '"Up" | "Left"'
       return:
         type: void
@@ -623,13 +527,11 @@ methods:
     package: excel!
     fullName: getBoundingRect(anotherRange)
     summary: >-
-      Gets the smallest range object that encompasses the given ranges. For
-      example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E15".
+      Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
+      "D10:E15" is "B2:E15".
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -668,15 +570,12 @@ methods:
     package: excel!
     fullName: 'getCell(row, column)'
     summary: >-
-      Gets the range object containing the single cell based on row and column
-      numbers. The cell can be outside the bounds of its parent range, so long
-      as it stays within the worksheet grid. The returned cell is located
-      relative to the top left cell of the range.
+      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
+      to the top left cell of the range.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -718,13 +617,10 @@ methods:
     uid: 'excel!Excel.Range#getColumn:member(1)'
     package: excel!
     fullName: getColumn(column)
-    summary: >-
+    summary: |-
       Gets a column contained in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -761,13 +657,10 @@ methods:
     uid: 'excel!Excel.Range#getColumnsAfter:member(1)'
     package: excel!
     fullName: getColumnsAfter(count)
-    summary: >-
+    summary: |-
       Gets a certain number of columns to the right of the current Range object.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -776,10 +669,9 @@ methods:
       parameters:
         - id: count
           description: >-
-            Optional. The number of columns to include in the resulting range.
-            In general, use a positive number to create a range outside the
-            current range. You can also use a negative number to create a range
-            within the current range. The default value is 1.
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -788,13 +680,10 @@ methods:
     uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
     package: excel!
     fullName: getColumnsBefore(count)
-    summary: >-
+    summary: |-
       Gets a certain number of columns to the left of the current Range object.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -803,10 +692,9 @@ methods:
       parameters:
         - id: count
           description: >-
-            Optional. The number of columns to include in the resulting range.
-            In general, use a positive number to create a range outside the
-            current range. You can also use a negative number to create a range
-            within the current range. The default value is 1.
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -816,14 +704,11 @@ methods:
     package: excel!
     fullName: getEntireColumn()
     summary: >-
-      Gets an object that represents the entire column of the range (for
-      example, if the current range represents cells "B4:E11", its
-      `getEntireColumn` is a range that represents columns "B:E").
+      Gets an object that represents the entire column of the range (for example, if the current range represents cells
+      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -831,19 +716,14 @@ methods:
       content: 'getEntireColumn(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // Note: the grid properties of the Range (values, numberFormat,
-          formulas) 
-
+          // Note: the grid properties of the Range (values, numberFormat, formulas) 
           // contains null since the Range in question is unbounded.
-
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "D:F";
@@ -859,21 +739,17 @@ methods:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - name: getEntireRow()
     uid: 'excel!Excel.Range#getEntireRow:member(1)'
     package: excel!
     fullName: getEntireRow()
     summary: >-
-      Gets an object that represents the entire row of the range (for example,
-      if the current range represents cells "B4:E11", its `GetEntireRow` is a
-      range that represents rows "4:11").
+      Gets an object that represents the entire row of the range (for example, if the current range represents cells
+      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -910,14 +786,10 @@ methods:
     uid: 'excel!Excel.Range#getIntersection:member(1)'
     package: excel!
     fullName: getIntersection(anotherRange)
-    summary: >-
-      Gets the range object that represents the rectangular intersection of the
-      given ranges.
+    summary: |-
+      Gets the range object that represents the rectangular intersection of the given ranges.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -925,9 +797,7 @@ methods:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       parameters:
         - id: anotherRange
-          description: >-
-            The range object or range address that will be used to determine the
-            intersection of ranges.
+          description: The range object or range address that will be used to determine the intersection of ranges.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -957,14 +827,10 @@ methods:
     uid: 'excel!Excel.Range#getLastCell:member(1)'
     package: excel!
     fullName: getLastCell()
-    summary: >-
-      Gets the last cell within the range. For example, the last cell of "B2:D5"
-      is "D5".
+    summary: |-
+      Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -997,14 +863,10 @@ methods:
     uid: 'excel!Excel.Range#getLastColumn:member(1)'
     package: excel!
     fullName: getLastColumn()
-    summary: >-
-      Gets the last column within the range. For example, the last column of
-      "B2:D5" is "D2:D5".
+    summary: |-
+      Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1037,14 +899,10 @@ methods:
     uid: 'excel!Excel.Range#getLastRow:member(1)'
     package: excel!
     fullName: getLastRow()
-    summary: >-
-      Gets the last row within the range. For example, the last row of "B2:D5"
-      is "B5:D5".
+    summary: |-
+      Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1078,15 +936,12 @@ methods:
     package: excel!
     fullName: 'getOffsetRange(rowOffset, columnOffset)'
     summary: >-
-      Gets an object which represents a range that's offset from the specified
-      range. The dimension of the returned range will match this range. If the
-      resulting range is forced outside the bounds of the worksheet grid, an
-      error will be thrown.
+      Gets an object which represents a range that's offset from the specified range. The dimension of the returned
+      range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
+      will be thrown.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1095,15 +950,13 @@ methods:
       parameters:
         - id: rowOffset
           description: >-
-            The number of rows (positive, negative, or 0) by which the range is
-            to be offset. Positive values are offset downward, and negative
-            values are offset upward.
+            The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset
+            downward, and negative values are offset upward.
           type: number
         - id: columnOffset
           description: >-
-            The number of columns (positive, negative, or 0) by which the range
-            is to be offset. Positive values are offset to the right, and
-            negative values are offset to the left.
+            The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are
+            offset to the right, and negative values are offset to the left.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1134,14 +987,11 @@ methods:
     package: excel!
     fullName: 'getResizedRange(deltaRows, deltaColumns)'
     summary: >-
-      Gets a Range object similar to the current Range object, but with its
-      bottom-right corner expanded (or contracted) by some number of rows and
-      columns.
+      Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
+      by some number of rows and columns.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1150,15 +1000,13 @@ methods:
       parameters:
         - id: deltaRows
           description: >-
-            The number of rows by which to expand the bottom-right corner,
-            relative to the current range. Use a positive number to expand the
-            range, or a negative number to decrease it.
+            The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive
+            number to expand the range, or a negative number to decrease it.
           type: number
         - id: deltaColumns
           description: >-
-            The number of columns by which to expand the bottom-right corner,
-            relative to the current range. Use a positive number to expand the
-            range, or a negative number to decrease it.
+            The number of columns by which to expand the bottom-right corner, relative to the current range. Use a
+            positive number to expand the range, or a negative number to decrease it.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1167,13 +1015,10 @@ methods:
     uid: 'excel!Excel.Range#getRow:member(1)'
     package: excel!
     fullName: getRow(row)
-    summary: >-
+    summary: |-
       Gets a row contained in the range.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1210,13 +1055,10 @@ methods:
     uid: 'excel!Excel.Range#getRowsAbove:member(1)'
     package: excel!
     fullName: getRowsAbove(count)
-    summary: >-
+    summary: |-
       Gets a certain number of rows above the current Range object.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1225,10 +1067,9 @@ methods:
       parameters:
         - id: count
           description: >-
-            Optional. The number of rows to include in the resulting range. In
-            general, use a positive number to create a range outside the current
-            range. You can also use a negative number to create a range within
-            the current range. The default value is 1.
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1237,13 +1078,10 @@ methods:
     uid: 'excel!Excel.Range#getRowsBelow:member(1)'
     package: excel!
     fullName: getRowsBelow(count)
-    summary: >-
+    summary: |-
       Gets a certain number of rows below the current Range object.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1252,10 +1090,9 @@ methods:
       parameters:
         - id: count
           description: >-
-            Optional. The number of rows to include in the resulting range. In
-            general, use a positive number to create a range outside the current
-            range. You can also use a negative number to create a range within
-            the current range. The default value is 1.
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1265,13 +1102,11 @@ methods:
     package: excel!
     fullName: getUsedRange(valuesOnly)
     summary: >-
-      Returns the used range of the given range object. If there are no used
-      cells within the range, this function will throw an ItemNotFound error.
+      Returns the used range of the given range object. If there are no used cells within the range, this function will
+      throw an ItemNotFound error.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1279,9 +1114,7 @@ methods:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       parameters:
         - id: valuesOnly
-          description: >-
-            Considers only cells with values as used cells. \[Api set: ExcelApi
-            1.2\]
+          description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1357,14 +1190,11 @@ methods:
     package: excel!
     fullName: insert(shift)
     summary: >-
-      Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new Range
-      object at the now blank space.
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new Range object at the now blank space.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1372,9 +1202,7 @@ methods:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       parameters:
         - id: shift
-          description: >-
-            Specifies which way to shift the cells. See
-            Excel.InsertShiftDirection for details.
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type: '<xref uid="excel!Excel.InsertShiftDirection:enum" />'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1403,14 +1231,11 @@ methods:
     package: excel!
     fullName: insert(shiftString)
     summary: >-
-      Inserts a cell or a range of cells into the worksheet in place of this
-      range, and shifts the other cells to make space. Returns a new Range
-      object at the now blank space.
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new Range object at the now blank space.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1418,9 +1243,7 @@ methods:
       content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       parameters:
         - id: shiftString
-          description: >-
-            Specifies which way to shift the cells. See
-            Excel.InsertShiftDirection for details.
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type: '"Down" | "Right"'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1430,8 +1253,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1449,8 +1272,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1458,9 +1281,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Range;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1492,8 +1313,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1506,10 +1327,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -1522,13 +1341,10 @@ methods:
     uid: 'excel!Excel.Range#merge:member(1)'
     package: excel!
     fullName: merge(across)
-    summary: >-
+    summary: |-
       Merge the range cells into one region in the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1537,8 +1353,8 @@ methods:
       parameters:
         - id: across
           description: >-
-            Optional. Set true to merge cells in each row of the specified range
-            as separate merged cells. The default value is false.
+            Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default
+            value is false.
           type: boolean
       return:
         type: void
@@ -1565,13 +1381,10 @@ methods:
     uid: 'excel!Excel.Range#select:member(1)'
     package: excel!
     fullName: select()
-    summary: >-
+    summary: |-
       Selects the specified range in the Excel UI.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1603,9 +1416,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: >-
       This method has the following additional signature:
 
@@ -1666,20 +1478,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -1688,9 +1495,7 @@ methods:
     uid: 'excel!Excel.Range#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1708,13 +1513,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Range object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1728,13 +1531,11 @@ methods:
     package: excel!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1747,13 +1548,10 @@ methods:
     uid: 'excel!Excel.Range#unmerge:member(1)'
     package: excel!
     fullName: unmerge()
-    summary: >-
+    summary: |-
       Unmerge the range cells into separate cells.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1785,11 +1583,9 @@ methods:
     package: excel!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

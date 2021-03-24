@@ -4,13 +4,11 @@ uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
 package: office!
 fullName: Office.DialogParentMessageReceivedEventArgs
 summary: >-
-  Provides information about the message from the parent page that raised the
-  `DialogParentMessageReceived` event.
+  Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.
 
 
-  To add an event handler for the `DialogParentMessageReceived` event, use the
-  `addHandlerAsync` method of the [Office.UI](xref:office!Office.UI:interface)
-  object.
+  To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
+  [Office.UI](xref:office!Office.UI:interface) object.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +18,7 @@ properties:
     uid: 'office!Office.DialogParentMessageReceivedEventArgs#message:member'
     package: office!
     fullName: message
-    summary: >-
-      Gets the content of the message sent from the parent page, which can be
-      any string or stringified data.
+    summary: 'Gets the content of the message sent from the parent page, which can be any string or stringified data.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,8 +31,8 @@ properties:
     package: office!
     fullName: type
     summary: >-
-      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration
-      value that identifies the kind of event that was raised.
+      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     remarks: ''
     isPreview: false
     isDeprecated: false

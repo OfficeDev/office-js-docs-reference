@@ -3,13 +3,10 @@ name: Excel.SortBy
 uid: 'excel!Excel.SortBy:enum'
 package: excel!
 fullName: Excel.SortBy
-summary: >-
+summary: |-
   Represents the sort direction.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

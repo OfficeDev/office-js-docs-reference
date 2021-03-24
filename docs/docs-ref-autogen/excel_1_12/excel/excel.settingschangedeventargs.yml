@@ -3,13 +3,10 @@ name: Excel.SettingsChangedEventArgs
 uid: 'excel!Excel.SettingsChangedEventArgs:interface'
 package: excel!
 fullName: Excel.SettingsChangedEventArgs
-summary: >-
+summary: |-
   Provides information about the setting that raised the SettingsChanged event
 
-
-  \[ [API set: ExcelApi
-  1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.SettingsChangedEventArgs#settings:member'
     package: excel!
     fullName: settings
-    summary: >-
-      Gets the Setting object that represents the binding that raised the
-      SettingsChanged event
+    summary: |-
+      Gets the Setting object that represents the binding that raised the SettingsChanged event
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,13 +3,10 @@ name: Excel.ConditionalDataBarAxisFormat
 uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
 package: excel!
 fullName: Excel.ConditionalDataBarAxisFormat
-summary: >-
+summary: |-
   Represents the format options for a data bar axis.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

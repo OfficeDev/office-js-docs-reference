@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.5.0",
+    "toolVersion": "7.13.2",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -69,6 +69,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
                   "propertyTypeTokenRange": {
@@ -105,6 +106,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": true,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -141,6 +143,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
@@ -335,6 +338,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "formatting",
                   "propertyTypeTokenRange": {
@@ -360,6 +364,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "sourceSlideIds",
                   "propertyTypeTokenRange": {
@@ -385,6 +390,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "targetSlideId",
                   "propertyTypeTokenRange": {
@@ -439,6 +445,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$skip",
                       "propertyTypeTokenRange": {
@@ -464,6 +471,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$top",
                       "propertyTypeTokenRange": {
@@ -505,6 +513,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "title",
                       "propertyTypeTokenRange": {
@@ -546,6 +555,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
                       "propertyTypeTokenRange": {
@@ -571,6 +581,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "title",
                       "propertyTypeTokenRange": {
@@ -617,6 +628,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
                       "propertyTypeTokenRange": {
@@ -658,6 +670,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
                       "propertyTypeTokenRange": {
@@ -683,6 +696,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
                       "propertyTypeTokenRange": {
@@ -729,6 +743,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
                       "propertyTypeTokenRange": {
@@ -770,6 +785,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
                       "propertyTypeTokenRange": {
@@ -811,6 +827,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
                       "propertyTypeTokenRange": {
@@ -836,6 +853,7 @@
                           "text": ";"
                         }
                       ],
+                      "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
                       "propertyTypeTokenRange": {
@@ -889,6 +907,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
                   "propertyTypeTokenRange": {
@@ -932,6 +951,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
@@ -985,6 +1005,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1030,6 +1051,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1075,6 +1097,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1112,6 +1135,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "slides",
                   "propertyTypeTokenRange": {
@@ -1138,6 +1162,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "title",
                   "propertyTypeTokenRange": {
@@ -1165,6 +1190,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
@@ -1253,6 +1279,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "application",
                   "propertyTypeTokenRange": {
@@ -1280,6 +1307,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "presentation",
                   "propertyTypeTokenRange": {
@@ -1609,6 +1637,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
                   "propertyTypeTokenRange": {
@@ -1635,6 +1664,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
@@ -1663,6 +1693,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "id",
                   "propertyTypeTokenRange": {
@@ -1699,6 +1730,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1744,6 +1776,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1789,6 +1822,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1826,6 +1860,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
@@ -1884,6 +1919,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
                   "propertyTypeTokenRange": {
@@ -1915,6 +1951,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
@@ -1952,6 +1989,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -1997,6 +2035,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -2042,6 +2081,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -2083,6 +2123,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "releaseTag": "Public",
                   "name": "items",
                   "propertyTypeTokenRange": {
@@ -2128,6 +2169,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
@@ -2173,6 +2215,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -2219,6 +2262,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
@@ -2256,6 +2300,7 @@
                       "text": ";"
                     }
                   ],
+                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,

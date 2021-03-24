@@ -3,13 +3,10 @@ name: Excel.TextFrame
 uid: 'excel!Excel.TextFrame:class'
 package: excel!
 fullName: Excel.TextFrame
-summary: >-
+summary: |-
   Represents the text frame of a shape object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,36 +17,30 @@ properties:
     package: excel!
     fullName: autoSizeSetting
     summary: >-
-      The automatic sizing settings for the text frame. A text frame can be set
-      to automatically fit the text to the text frame, to automatically fit the
-      text frame to the text, or not perform any automatic sizing.
+      The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
+      text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        autoSizeSetting: Excel.ShapeAutoSize | "AutoSizeNone" |
-        "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
+        autoSizeSetting: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
+        "AutoSizeMixed";
       return:
         type: >-
-          <xref uid="excel!Excel.ShapeAutoSize:enum" /> | "AutoSizeNone" |
-          "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+          <xref uid="excel!Excel.ShapeAutoSize:enum" /> | "AutoSizeNone" | "AutoSizeTextToFitShape" |
+          "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - name: bottomMargin
     uid: 'excel!Excel.TextFrame#bottomMargin:member'
     package: excel!
     fullName: bottomMargin
-    summary: >-
+    summary: |-
       Represents the bottom margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -62,8 +53,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,13 +66,10 @@ properties:
     uid: 'excel!Excel.TextFrame#hasText:member'
     package: excel!
     fullName: hasText
-    summary: >-
+    summary: |-
       Specifies if the text frame contains text.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,61 +81,46 @@ properties:
     uid: 'excel!Excel.TextFrame#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment of the text frame. See
-      `Excel.ShapeTextHorizontalAlignment` for details.
+    summary: |-
+      Represents the horizontal alignment of the text frame. See `Excel.ShapeTextHorizontalAlignment` for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment: Excel.ShapeTextHorizontalAlignment | "Left" |
-        "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
-        "ThaiDistributed";
+        horizontalAlignment: Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow"
+        | "Distributed" | "ThaiDistributed";
       return:
         type: >-
-          <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" /> | "Left"
-          | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
-          "ThaiDistributed"
+          <xref uid="excel!Excel.ShapeTextHorizontalAlignment:enum" /> | "Left" | "Center" | "Right" | "Justify" |
+          "JustifyLow" | "Distributed" | "ThaiDistributed"
   - name: horizontalOverflow
     uid: 'excel!Excel.TextFrame#horizontalOverflow:member'
     package: excel!
     fullName: horizontalOverflow
     summary: >-
-      Represents the horizontal overflow behavior of the text frame. See
-      `Excel.ShapeTextHorizontalOverflow` for details.
+      Represents the horizontal overflow behavior of the text frame. See `Excel.ShapeTextHorizontalOverflow` for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        horizontalOverflow: Excel.ShapeTextHorizontalOverflow | "Overflow" |
-        "Clip";
+      content: 'horizontalOverflow: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeTextHorizontalOverflow:enum" /> |
-          "Overflow" | "Clip"
+        type: '<xref uid="excel!Excel.ShapeTextHorizontalOverflow:enum" /> | "Overflow" | "Clip"'
   - name: leftMargin
     uid: 'excel!Excel.TextFrame#leftMargin:member'
     package: excel!
     fullName: leftMargin
-    summary: >-
+    summary: |-
       Represents the left margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -160,60 +133,47 @@ properties:
     package: excel!
     fullName: orientation
     summary: >-
-      Represents the angle to which the text is oriented for the text frame. See
-      `Excel.ShapeTextOrientation` for details.
+      Represents the angle to which the text is oriented for the text frame. See `Excel.ShapeTextOrientation` for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        orientation: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" |
-        "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
-        "MongolianVertical" | "WordArtVerticalRTL";
+        orientation: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type: >-
-          <xref uid="excel!Excel.ShapeTextOrientation:enum" /> | "Horizontal" |
-          "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
-          "MongolianVertical" | "WordArtVerticalRTL"
+          <xref uid="excel!Excel.ShapeTextOrientation:enum" /> | "Horizontal" | "Vertical" | "Vertical270" |
+          "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
   - name: readingOrder
     uid: 'excel!Excel.TextFrame#readingOrder:member'
     package: excel!
     fullName: readingOrder
     summary: >-
-      Represents the reading order of the text frame, either left-to-right or
-      right-to-left. See `Excel.ShapeTextReadingOrder` for details.
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      `Excel.ShapeTextReadingOrder` for details.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readingOrder: Excel.ShapeTextReadingOrder | "LeftToRight" |
-        "RightToLeft";
+      content: 'readingOrder: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeTextReadingOrder:enum" /> | "LeftToRight"
-          | "RightToLeft"
+        type: '<xref uid="excel!Excel.ShapeTextReadingOrder:enum" /> | "LeftToRight" | "RightToLeft"'
   - name: rightMargin
     uid: 'excel!Excel.TextFrame#rightMargin:member'
     package: excel!
     fullName: rightMargin
-    summary: >-
+    summary: |-
       Represents the right margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -226,14 +186,11 @@ properties:
     package: excel!
     fullName: textRange
     summary: >-
-      Represents the text that is attached to a shape in the text frame, and
-      properties and methods for manipulating the text. See `Excel.TextRange`
-      for details.
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See `Excel.TextRange` for details.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -245,13 +202,10 @@ properties:
     uid: 'excel!Excel.TextFrame#topMargin:member'
     package: excel!
     fullName: topMargin
-    summary: >-
+    summary: |-
       Represents the top margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -263,60 +217,43 @@ properties:
     uid: 'excel!Excel.TextFrame#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
-      Represents the vertical alignment of the text frame. See
-      `Excel.ShapeTextVerticalAlignment` for details.
+    summary: |-
+      Represents the vertical alignment of the text frame. See `Excel.ShapeTextVerticalAlignment` for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" |
-        "Bottom" | "Justified" | "Distributed";
+      content: 'verticalAlignment: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";'
       return:
         type: >-
-          <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" /> | "Top" |
-          "Middle" | "Bottom" | "Justified" | "Distributed"
+          <xref uid="excel!Excel.ShapeTextVerticalAlignment:enum" /> | "Top" | "Middle" | "Bottom" | "Justified" |
+          "Distributed"
   - name: verticalOverflow
     uid: 'excel!Excel.TextFrame#verticalOverflow:member'
     package: excel!
     fullName: verticalOverflow
-    summary: >-
-      Represents the vertical overflow behavior of the text frame. See
-      `Excel.ShapeTextVerticalOverflow` for details.
+    summary: |-
+      Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalOverflow: Excel.ShapeTextVerticalOverflow | "Overflow" |
-        "Ellipsis" | "Clip";
+      content: 'verticalOverflow: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeTextVerticalOverflow:enum" /> | "Overflow"
-          | "Ellipsis" | "Clip"
+        type: '<xref uid="excel!Excel.ShapeTextVerticalOverflow:enum" /> | "Overflow" | "Ellipsis" | "Clip"'
 methods:
   - name: deleteText()
     uid: 'excel!Excel.TextFrame#deleteText:member(1)'
     package: excel!
     fullName: deleteText()
-    summary: >-
+    summary: |-
       Deletes all the text in the text frame.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -348,8 +285,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -367,8 +304,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -376,9 +313,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.TextFrame;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.TextFrame:class" />'
@@ -388,8 +323,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -402,10 +337,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -419,9 +352,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -429,20 +361,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.TextFrameUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TextFrameUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.TextFrameUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -451,9 +378,7 @@ methods:
     uid: 'excel!Excel.TextFrame#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -471,13 +396,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.TextFrame object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.TextFrameData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.TextFrame object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

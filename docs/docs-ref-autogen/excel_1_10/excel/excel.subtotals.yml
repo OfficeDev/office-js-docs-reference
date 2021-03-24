@@ -3,13 +3,10 @@ name: Excel.Subtotals
 uid: 'excel!Excel.Subtotals:interface'
 package: excel!
 fullName: Excel.Subtotals
-summary: >-
+summary: |-
   Subtotals for the Pivot Field.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.Subtotals#automatic:member'
     package: excel!
     fullName: automatic
-    summary: >-
-      If Automatic is set to true, then all other values will be ignored when
-      setting the Subtotals.
+    summary: |-
+      If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

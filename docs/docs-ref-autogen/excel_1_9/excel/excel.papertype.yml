@@ -3,10 +3,7 @@ name: Excel.PaperType
 uid: 'excel!Excel.PaperType:enum'
 package: excel!
 fullName: Excel.PaperType
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

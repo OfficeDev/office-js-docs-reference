@@ -3,9 +3,7 @@ name: OneNote.Interfaces.PageCollectionData
 uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "pageCollection.toJSON()".
+summary: An interface describing the data returned by calling "pageCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

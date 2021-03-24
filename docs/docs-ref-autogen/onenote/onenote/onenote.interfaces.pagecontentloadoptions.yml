@@ -4,13 +4,11 @@ uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageContentLoadOptions
 summary: >-
-  Represents a region on a page that contains top-level content types such as
-  Outline or Image. A PageContent object can be assigned an XY position.
+  Represents a region on a page that contains top-level content types such as Outline or Image. A PageContent object can
+  be assigned an XY position.
 
 
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -32,13 +30,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,14 +45,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#image:member'
     package: onenote!
     fullName: image
-    summary: >-
-      Gets the Image in the PageContent object. Throws an exception if
-      PageContentType is not Image.
+    summary: |-
+      Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,34 +60,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#ink:member'
     package: onenote!
     fullName: ink
-    summary: >-
-      Gets the ink in the PageContent object. Throws an exception if
-      PageContentType is not Ink.
+    summary: |-
+      Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'ink?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />'
   - name: left
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#left:member'
     package: onenote!
     fullName: left
-    summary: >-
+    summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,14 +90,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#outline:member'
     package: onenote!
     fullName: outline
-    summary: >-
-      Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType is not Outline.
+    summary: |-
+      Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,13 +105,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#parentPage:member'
     package: onenote!
     fullName: parentPage
-    summary: >-
+    summary: |-
       Gets the page that contains the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,13 +120,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#top:member'
     package: onenote!
     fullName: top
-    summary: >-
+    summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -163,13 +135,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions#type:member'
     package: onenote!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

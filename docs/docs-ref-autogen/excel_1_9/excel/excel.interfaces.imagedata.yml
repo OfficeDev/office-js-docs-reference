@@ -13,35 +13,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ImageData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Returns the format of the image.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" |
-        "PNG" | "SVG";
+      content: 'format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" |
-          "JPEG" | "GIF" | "PNG" | "SVG"
+        type: '<xref uid="excel!Excel.PictureFormat:enum" /> | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - name: id
     uid: 'excel!Excel.Interfaces.ImageData#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the shape identifier for the image object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

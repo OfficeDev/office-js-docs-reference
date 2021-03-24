@@ -3,13 +3,10 @@ name: Excel.Interfaces.CommentLoadOptions
 uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.CommentLoadOptions
-summary: >-
+summary: |-
   Represents a comment in the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
     package: excel!
     fullName: authorEmail
-    summary: >-
+    summary: |-
       Gets the email of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
     package: excel!
     fullName: authorName
-    summary: >-
+    summary: |-
       Gets the name of the comment's author.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
     package: excel!
     fullName: content
-    summary: >-
+    summary: |-
       The comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#contentType:member'
     package: excel!
     fullName: contentType
-    summary: >-
+    summary: |-
       Gets the content type of the comment.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,13 +91,11 @@ properties:
     package: excel!
     fullName: creationDate
     summary: >-
-      Gets the creation time of the comment. Returns null if the comment was
-      converted from a note, since the comment does not have a creation date.
+      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      does not have a creation date.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -125,13 +107,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the comment identifier.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -143,13 +122,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#mentions:member'
     package: excel!
     fullName: mentions
-    summary: >-
+    summary: |-
       Gets the entities (e.g., people) that are mentioned in comments.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -161,14 +137,10 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentLoadOptions#resolved:member'
     package: excel!
     fullName: resolved
-    summary: >-
-      The comment thread status. A value of "true" means the comment thread is
-      resolved.
+    summary: |-
+      The comment thread status. A value of "true" means the comment thread is resolved.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,14 +153,11 @@ properties:
     package: excel!
     fullName: richContent
     summary: >-
-      Gets the rich comment content (e.g., mentions in comments). This string is
-      not meant to be displayed to end-users. Your add-in should only use this
-      to parse rich comment content.
+      Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users.
+      Your add-in should only use this to parse rich comment content.
 
 
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

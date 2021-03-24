@@ -5,8 +5,7 @@ package: office!
 fullName: Office.CoercionType
 summary: Specifies how to coerce data returned or set by the invoked method.
 remarks: >-
-  Application and platform support for each `CoercionType` is specified in the
-  following requirement set descriptions.
+  Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.
 
 
   -
@@ -15,8 +14,8 @@ remarks: >-
 
 
   - [ImageCoercion
-  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets)
-  (when using `Office.CoercionType.Image`<!-- -->)
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets) (when
+  using `Office.CoercionType.Image`<!-- -->)
 
 
   -
@@ -52,26 +51,21 @@ fields:
   - name: Html
     uid: 'office!Office.CoercionType.Html:member'
     package: office!
-    summary: >-
+    summary: |-
       Return or set data as HTML.
 
-
-      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for
-      Outlook (compose mode).
+      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
   - name: Image
     uid: 'office!Office.CoercionType.Image:member'
     package: office!
-    summary: >-
-      Data is returned or set as an image stream. **Note**: Only applies to data
-      in Excel, Word, and PowerPoint.
+    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
   - name: Matrix
     uid: 'office!Office.CoercionType.Matrix:member'
     package: office!
     summary: >-
-      Return or set data as tabular data with no headers. Data is returned or
-      set as an array of arrays containing one-dimensional runs of characters.
-      For example, three rows of string values in two columns would be:
-      \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
+      Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing
+      one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1",
+      "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
 
 
       **Note**: Only applies to data in Excel and Word.
@@ -86,34 +80,30 @@ fields:
     uid: 'office!Office.CoercionType.SlideRange:member'
     package: office!
     summary: >-
-      Return a JSON object that contains an array of the ids, titles, and
-      indexes of the selected slides. For example,
-      `{"slides":[{"id":257,"title":"Slide
-      2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
+      Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
+      `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
       two slides.
 
 
       **Note**: Only applies to data in PowerPoint when calling the
-      [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedData
-      method to get the current slide or selected range of slides.
+      [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedData method to get the current slide or
+      selected range of slides.
   - name: Table
     uid: 'office!Office.CoercionType.Table:member'
     package: office!
     summary: >-
-      Return or set data as tabular data with optional headers. Data is returned
-      or set as an array of arrays with optional headers.
+      Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with
+      optional headers.
 
 
       **Note**: Only applies to data in Excel and Word.
   - name: Text
     uid: 'office!Office.CoercionType.Text:member'
     package: office!
-    summary: >-
-      Return or set data as text (string). Data is returned or set as a
-      one-dimensional run of characters.
+    summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
   - name: XmlSvg
     uid: 'office!Office.CoercionType.XmlSvg:member'
     package: office!
     summary: >-
-      Data is returned or set as XML data containing an SVG image. **Note**:
-      Only applies to data in Excel, Word, and PowerPoint.
+      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
+      PowerPoint.

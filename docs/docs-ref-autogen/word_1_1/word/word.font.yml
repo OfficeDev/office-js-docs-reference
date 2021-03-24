@@ -3,13 +3,10 @@ name: Word.Font
 uid: 'word!Word.Font:class'
 package: word!
 fullName: Word.Font
-summary: >-
+summary: |-
   Represents a font.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +17,11 @@ properties:
     package: word!
     fullName: bold
     summary: >-
-      Gets or sets a value that indicates whether the font is bold. True if the
-      font is formatted as bold, otherwise, false.
+      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -68,13 +63,11 @@ properties:
     package: word!
     fullName: color
     summary: >-
-      Gets or sets the color for the specified font. You can provide the value
-      in the '\#RRGGBB' format or the color name.
+      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
+      name.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -116,8 +109,8 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,14 +123,11 @@ properties:
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a double
-      strikethrough. True if the font is formatted as double strikethrough text,
-      otherwise, false.
+      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
+      double strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,21 +140,15 @@ properties:
     package: word!
     fullName: highlightColor
     summary: >-
-      Gets or sets the highlight color. To set it, use a value either in the
-      '\#RRGGBB' format or the color name. To remove highlight color, set it to
-      null. The returned highlight color can be in the '\#RRGGBB' format, an
-      empty string for mixed highlight colors, or null for no highlight color.
-      *Note**: Only the default highlight colors are available in Office for
-      Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue",
-      "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
-      "LightGray", and "Black". When the add-in runs in Office for Windows
-      Desktop, any other color is converted to the closest color when applied to
-      the font.
+      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
+      string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are
+      available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
+      "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
+      in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -206,13 +190,11 @@ properties:
     package: word!
     fullName: italic
     summary: >-
-      Gets or sets a value that indicates whether the font is italicized. True
-      if the font is italicized, otherwise, false.
+      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
+      false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -224,13 +206,10 @@ properties:
     uid: 'word!Word.Font#name:member'
     package: word!
     fullName: name
-    summary: >-
+    summary: |-
       Gets or sets a value that represents the name of the font.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -271,13 +250,10 @@ properties:
     uid: 'word!Word.Font#size:member'
     package: word!
     fullName: size
-    summary: >-
+    summary: |-
       Gets or sets a value that represents the font size in points.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -319,13 +295,11 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a strikethrough.
-      True if the font is formatted as strikethrough text, otherwise, false.
+      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
+      strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -367,13 +341,11 @@ properties:
     package: word!
     fullName: subscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a subscript. True
-      if the font is formatted as subscript, otherwise, false.
+      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -386,13 +358,11 @@ properties:
     package: word!
     fullName: superscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a superscript.
-      True if the font is formatted as superscript, otherwise, false.
+      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
+      superscript, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -404,32 +374,24 @@ properties:
     uid: 'word!Word.Font#underline:member'
     package: word!
     fullName: underline
-    summary: >-
-      Gets or sets a value that indicates the font's underline type. 'None' if
-      the font is not underlined.
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine"
-        | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" |
-        "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-        "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" |
-        "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
+        underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick"
+        | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine"
+        | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type: >-
-          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" |
-          "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
-          "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" |
-          "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
-          "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave"
-          | "WaveHeavy" | "WaveDouble"
+          <xref uid="word!Word.UnderlineType:enum" /> | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" |
+          "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
+          "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
+          "WaveHeavy" | "WaveDouble"
         description: |-
 
 
@@ -465,8 +427,8 @@ methods:
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -484,8 +446,8 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -493,9 +455,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Font;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="word!Word.Font:class" />'
@@ -505,8 +465,8 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -519,10 +479,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -536,9 +494,8 @@ methods:
     package: word!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -546,20 +503,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.FontUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.FontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="word!Word.Interfaces.FontUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -568,9 +520,7 @@ methods:
     uid: 'word!Word.Font#set:member(2)'
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -588,13 +538,11 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.Font object is an
-      API object, the `toJSON` method returns a plain JavaScript object (typed
-      as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.FontData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -608,13 +556,11 @@ methods:
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -628,11 +574,9 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

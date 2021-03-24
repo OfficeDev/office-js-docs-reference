@@ -3,10 +3,7 @@ name: Word.ListLevelType
 uid: 'word!Word.ListLevelType:enum'
 package: word!
 fullName: Word.ListLevelType
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

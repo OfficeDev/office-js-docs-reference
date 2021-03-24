@@ -14,9 +14,8 @@ properties:
     package: office!
     fullName: asyncContext
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the
-      asyncContext property of the AsyncResult object that is passed to a
-      callback.
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -29,13 +28,10 @@ properties:
     package: office!
     fullName: displayInIframe
     summary: >-
-      Determines whether the dialog box should be displayed within an IFrame.
-      This setting is only applicable in Office on the web, and is ignored by
-      other platforms. If false (default), the dialog will be displayed as a new
-      browser window (pop-up). Recommended for authentication pages that cannot
-      be displayed in an IFrame. If true, the dialog will be displayed as a
-      floating overlay with an IFrame. This is best for user experience and
-      performance.
+      Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office
+      on the web, and is ignored by other platforms. If false (default), the dialog will be displayed as a new browser
+      window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the dialog
+      will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,9 +43,7 @@ properties:
     uid: 'office!Office.DialogOptions#height:member'
     package: office!
     fullName: height
-    summary: >-
-      Defines the height of the dialog as a percentage of the current display.
-      Defaults to 80%. 250px minimum.
+    summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -62,14 +56,12 @@ properties:
     package: office!
     fullName: promptBeforeOpen
     summary: >-
-      Determines if the pop-up blocker dialog will be shown to the user.
-      Defaults to true.
+      Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
 
 
-      `true` - The framework displays a pop-up to trigger the navigation and
-      avoid the browser's pop-up blocker. `false` - The dialog will not be shown
-      and the developer must handle pop-ups (by providing a user interface
-      artifact to trigger the navigation).
+      `true` - The framework displays a pop-up to trigger the navigation and avoid the browser's pop-up blocker. `false`
+      - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to
+      trigger the navigation).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -81,9 +73,7 @@ properties:
     uid: 'office!Office.DialogOptions#width:member'
     package: office!
     fullName: width
-    summary: >-
-      Defines the width of the dialog as a percentage of the current display.
-      Defaults to 80%. 150px minimum.
+    summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     remarks: ''
     isPreview: false
     isDeprecated: false

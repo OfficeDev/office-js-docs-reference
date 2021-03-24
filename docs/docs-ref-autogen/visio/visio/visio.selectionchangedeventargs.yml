@@ -3,25 +3,17 @@ name: Visio.SelectionChangedEventArgs
 uid: 'visio!Visio.SelectionChangedEventArgs:interface'
 package: visio!
 fullName: Visio.SelectionChangedEventArgs
-summary: >-
-  Provides information about the shape collection that raised the
-  SelectionChanged event.
+summary: |-
+  Provides information about the shape collection that raised the SelectionChanged event.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
-remarks: >-
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: |-
 
 
   #### Examples
 
-
   ```javascript
-
-  var eventResult; // Global Variable to store the EventHandlerResult returned
-  on attaching handler.
-
+  var eventResult; // Global Variable to store the EventHandlerResult returned on attaching handler.
 
   function AttachHandler() {
       Visio.run(session, function(ctx) {
@@ -45,7 +37,6 @@ remarks: >-
       }
   }
 
-
   function RemoveHandler() {
       if (!eventResult || !eventResult.context) {
           console.log("Handler has not been attached");
@@ -65,7 +56,6 @@ remarks: >-
           }
       });
   }
-
   ```
 isPreview: false
 isDeprecated: false
@@ -75,14 +65,10 @@ properties:
     uid: 'visio!Visio.SelectionChangedEventArgs#pageName:member'
     package: visio!
     fullName: pageName
-    summary: >-
-      Gets the name of the page which has the ShapeCollection object that raised
-      the SelectionChanged event.
+    summary: |-
+      Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,13 +80,10 @@ properties:
     uid: 'visio!Visio.SelectionChangedEventArgs#shapeNames:member'
     package: visio!
     fullName: shapeNames
-    summary: >-
+    summary: |-
       Gets the array of shape names that raised the SelectionChanged event.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartLegendUpdateData
 uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLegendUpdateData
-summary: >-
-  An interface for updating data on the ChartLegend object, for use in
-  `chartLegend.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,35 +13,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart legend, which includes fill and font
-      formatting.
+    summary: |-
+      Represents the formatting of a chart legend, which includes fill and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#height:member'
     package: excel!
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the legend on the chart. Null if
-      legend is not visible.
+    summary: |-
+      Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#left:member'
     package: excel!
     fullName: left
-    summary: >-
-      Specifies the left, in points, of the legend on the chart. Null if legend
-      is not visible.
+    summary: |-
+      Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,14 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
     package: excel!
     fullName: overlay
-    summary: >-
-      Specifies if the chart legend should overlap with the main body of the
-      chart.
+    summary: |-
+      Specifies if the chart legend should overlap with the main body of the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,36 +73,27 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: >-
-      Specifies the position of the legend on the chart. See
-      Excel.ChartLegendPosition for details.
+    summary: |-
+      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" |
-        "Left" | "Right" | "Corner" | "Custom";
+      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
       return:
         type: >-
-          <xref uid="excel!Excel.ChartLegendPosition:enum" /> | "Invalid" |
-          "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+          <xref uid="excel!Excel.ChartLegendPosition:enum" /> | "Invalid" | "Top" | "Bottom" | "Left" | "Right" |
+          "Corner" | "Custom"
   - name: showShadow
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#showShadow:member'
     package: excel!
     fullName: showShadow
-    summary: >-
+    summary: |-
       Specifies if the legend has a shadow on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -134,13 +105,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#top:member'
     package: excel!
     fullName: top
-    summary: >-
+    summary: |-
       Specifies the top of a chart legend.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -152,13 +120,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the ChartLegend is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,14 +135,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#width:member'
     package: excel!
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the legend on the chart. Null if legend
-      is not visible.
+    summary: |-
+      Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

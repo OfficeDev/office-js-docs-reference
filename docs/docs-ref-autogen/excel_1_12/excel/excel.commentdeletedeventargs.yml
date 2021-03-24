@@ -3,14 +3,10 @@ name: Excel.CommentDeletedEventArgs
 uid: 'excel!Excel.CommentDeletedEventArgs:interface'
 package: excel!
 fullName: Excel.CommentDeletedEventArgs
-summary: >-
-  Provides information about the comments that raised the "CommentDeleted"
-  event.
+summary: |-
+  Provides information about the comments that raised the "CommentDeleted" event.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,14 +16,10 @@ properties:
     uid: 'excel!Excel.CommentDeletedEventArgs#commentDetails:member'
     package: excel!
     fullName: commentDetails
-    summary: >-
-      Gets the `CommentDetail` array that contains the comment ID and IDs of its
-      related replies.
+    summary: |-
+      Gets the `CommentDetail` array that contains the comment ID and IDs of its related replies.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,13 +31,10 @@ properties:
     uid: 'excel!Excel.CommentDeletedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
+    summary: |-
       Specifies the source of the event. See `Excel.EventSource` for details.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -57,13 +46,10 @@ properties:
     uid: 'excel!Excel.CommentDeletedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Excel.EventType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,13 +61,10 @@ properties:
     uid: 'excel!Excel.CommentDeletedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
+    summary: |-
       Gets the Id of the worksheet in which the event happened.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

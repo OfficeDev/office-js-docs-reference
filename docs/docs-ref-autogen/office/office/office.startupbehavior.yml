@@ -3,9 +3,7 @@ name: Office.StartupBehavior
 uid: 'office!Office.StartupBehavior:enum'
 package: office!
 fullName: Office.StartupBehavior
-summary: >-
-  Provides options to determine the startup behavior of the add-in upon next
-  start-up.
+summary: Provides options to determine the startup behavior of the add-in upon next start-up.
 remarks: ''
 isPreview: false
 isDeprecated: false

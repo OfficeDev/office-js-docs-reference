@@ -3,13 +3,10 @@ name: Excel.PivotTableStyleCollection
 uid: 'excel!Excel.PivotTableStyleCollection:class'
 package: excel!
 fullName: Excel.PivotTableStyleCollection
-summary: >-
+summary: |-
   Represents a collection of PivotTable styles.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -46,13 +43,10 @@ methods:
     uid: 'excel!Excel.PivotTableStyleCollection#add:member(1)'
     package: excel!
     fullName: 'add(name, makeUniqueName)'
-    summary: >-
+    summary: |-
       Creates a blank `PivotTableStyle` with the specified name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,13 +55,13 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new PivotTable style. Will throw an
-            `InvalidArgument` error if the name is already in use.
+            The unique name for the new PivotTable style. Will throw an `InvalidArgument` error if the name is already
+            in use.
           type: string
         - id: makeUniqueName
           description: >-
-            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will
-            append numbers to the name in order to make it unique, if needed.
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make
+            it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
@@ -76,13 +70,10 @@ methods:
     uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of PivotTable styles in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -95,13 +86,10 @@ methods:
     uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     package: excel!
     fullName: getDefault()
-    summary: >-
+    summary: |-
       Gets the default PivotTable style for the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,20 +97,15 @@ methods:
       content: 'getDefault(): Excel.PivotTableStyle;'
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: >-
-          The `PivotTableStyle` object that is the current default PivotTable
-          style.
+        description: The `PivotTableStyle` object that is the current default PivotTable style.
   - name: getItem(name)
     uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: >-
+    summary: |-
       Gets a `PivotTableStyle` by name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -140,17 +123,14 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist,
-      then this function will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
       and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -168,23 +148,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.PivotTableStyleCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions):
+        load(options?: Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
         Excel.PivotTableStyleCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
@@ -194,20 +171,16 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNames?: string | string[]):
-        Excel.PivotTableStyleCollection;
+      content: 'load(propertyNames?: string | string[]): Excel.PivotTableStyleCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
@@ -217,22 +190,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.PivotTableStyleCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PivotTableStyleCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.PivotTableStyleCollection:class" />'
@@ -241,13 +210,10 @@ methods:
     uid: 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
     package: excel!
     fullName: setDefault(newDefaultStyle)
-    summary: >-
+    summary: |-
       Sets the default PivotTable style for use in the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -255,9 +221,7 @@ methods:
       content: 'setDefault(newDefaultStyle: PivotTableStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: >-
-            The `PivotTableStyle` object, or name of the `PivotTableStyle`
-            object, that should be the new default.
+          description: 'The `PivotTableStyle` object, or name of the `PivotTableStyle` object, that should be the new default.'
           type: '<xref uid="excel!Excel.PivotTableStyle:class" /> | string'
       return:
         type: void
@@ -267,24 +231,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.PivotTableStyleCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.PivotTableStyleCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.PivotTableStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableStyleCollectionData`<!-- -->) that
+      contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.PivotTableStyleCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.PivotTableStyleCollectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.PivotTableStyleCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

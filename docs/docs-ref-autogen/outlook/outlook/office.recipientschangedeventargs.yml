@@ -3,14 +3,10 @@ name: Office.RecipientsChangedEventArgs
 uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.RecipientsChangedEventArgs
-summary: >-
-  Provides change status of recipients fields when the
-  `Office.EventType.RecipientsChanged` event is raised.
+summary: |-
+  Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +16,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
     package: outlook!
     fullName: changedRecipientFields
-    summary: >-
+    summary: |-
       Gets an object that indicates change state of recipients fields.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,13 +31,10 @@ properties:
     uid: 'outlook!Office.RecipientsChangedEventArgs#type:member'
     package: outlook!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

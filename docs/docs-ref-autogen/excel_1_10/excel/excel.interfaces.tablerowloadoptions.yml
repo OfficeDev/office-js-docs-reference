@@ -7,16 +7,12 @@ summary: >-
   Represents a row in a table.
 
 
-  Note that unlike Ranges or Columns, which will adjust if new rows/columns are
-  added before them, a TableRow object represent the physical location of the
-  table row, but not the data. That is, if the data is sorted or if new rows are
-  added, a table row will continue to point at the index for which it was
-  created.
+  Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+  represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are
+  added, a table row will continue to point at the index for which it was created.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -27,9 +23,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,14 +36,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
     package: excel!
     fullName: index
-    summary: >-
-      Returns the index number of the row within the rows collection of the
-      table. Zero-indexed.
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,14 +52,11 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could
-      be of type string, number, or a boolean. Cells that contain an error will
-      return the error string.
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

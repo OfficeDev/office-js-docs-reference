@@ -11,9 +11,7 @@ fields:
   - name: Compressed
     uid: 'office!Office.FileType.Compressed:member'
     package: office!
-    summary: >-
-      Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML
-      (OOXML) format as a byte array.
+    summary: 'Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.'
   - name: Pdf
     uid: 'office!Office.FileType.Pdf:member'
     package: office!

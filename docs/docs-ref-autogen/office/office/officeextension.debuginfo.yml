@@ -25,9 +25,7 @@ properties:
     uid: 'office!OfficeExtension.DebugInfo#errorLocation:member'
     package: office!
     fullName: errorLocation
-    summary: >-
-      The object type and property or method name (or similar information), if
-      available.
+    summary: 'The object type and property or method name (or similar information), if available.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -40,12 +38,11 @@ properties:
     package: office!
     fullName: fullStatements
     summary: >-
-      All statements in the batch request (including any potentially-sensitive
-      information that was specified in the request), if available.
+      All statements in the batch request (including any potentially-sensitive information that was specified in the
+      request), if available.
 
 
-      These statements may not match the code exactly as written, but will be a
-      close approximation.
+      These statements may not match the code exactly as written, but will be a close approximation.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -85,8 +82,8 @@ properties:
       The statement that caused the error, if available.
 
 
-      This statement will never contain any potentially-sensitive data and may
-      not match the code exactly as written, but will be a close approximation.
+      This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
+      but will be a close approximation.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -99,12 +96,11 @@ properties:
     package: office!
     fullName: surroundingStatements
     summary: >-
-      The statements that closely precede and follow the statement that caused
-      the error, if available.
+      The statements that closely precede and follow the statement that caused the error, if available.
 
 
-      These statements will never contain any potentially-sensitive data and may
-      not match the code exactly as written, but will be a close approximation.
+      These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
+      but will be a close approximation.
     remarks: ''
     isPreview: false
     isDeprecated: false

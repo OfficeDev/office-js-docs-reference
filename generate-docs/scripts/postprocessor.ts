@@ -214,15 +214,8 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
     }] as any;
 
     let generalFilter: string[] = ["Interfaces"];
-    let enumFilter: string[];
-    if (hostName === "outlook") {
-        enumFilter = ["MailboxEnums"];
-        generalFilter = generalFilter.concat(enumFilter).concat(['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message']);
-    } else {
-        enumFilter = generateEnumList(fsx.readFileSync(`../api-extractor-inputs-${hostName}/${hostName}.d.ts`).toString());
-        generalFilter = generalFilter.concat(enumFilter);
-    }
-
+    let enumFilter: string[] = generateEnumList(fsx.readFileSync(`../api-extractor-inputs-${hostName}/${hostName}.d.ts`).toString());
+    generalFilter = generalFilter.concat(enumFilter);
 
     // create custom folders
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
@@ -231,6 +224,8 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
     // create filter lists for types we shouldn't expose
     if (hostName === "excel") {
         generalFilter = generalFilter.concat(excelIconSetFilter);
+    } else if (hostName === "outlook") {
+        generalFilter = generalFilter.concat(enumFilter).concat(['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message']);
     }
 
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -246,9 +241,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
             }
 
             // get items in the namespace for the new TOC
-            packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                membersToMove.items = namespaceItem.items;
-            });
+            membersToMove.items = packageItem.items;
 
             if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                 customFunctionsRoot.items.push({
@@ -258,44 +251,46 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                 });
             } else {
                 let primaryList = [] as any;
-                if (packageName.toLocaleLowerCase().includes("excel")) {
-                    // Excel has more subfolders and needs special casing to order them correctly.
-                    let enumList = membersToMove.items.filter(item => {
-                        return enumFilter.indexOf(item.name) >= 0;
-                    });
-                    let iconSetList = membersToMove.items.filter(item => {
-                        return excelIconSetFilter.indexOf(item.name) >= 0;
-                    });
-                    primaryList = membersToMove.items.filter(item => {
-                        return generalFilter.indexOf(item.name) < 0;
-                    });
-
-                    let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                    let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                    primaryList.unshift(excelIconSetRoot);
-                    primaryList.unshift(excelEnumRoot);
-                    if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
-                        primaryList.unshift(customFunctionsRoot);
-                    }
-                } else if (membersToMove.items) {
+                if (membersToMove.items) {
                     let enumList = membersToMove.items.filter(item => {
                         return enumFilter.indexOf(item.name) >= 0;
                     });
                     primaryList = membersToMove.items.filter(item => {
-                        return generalFilter.indexOf(item.name) < 0;
+                        // Remove previous chosen items and anything with the "Interfaces" namespace (those are Rich API duplicates for load/set).
+                        return generalFilter.indexOf(item.name) < 0 && item.uid.indexOf(".Interfaces.") < 0;
                     });
 
                     if (enumList) {
-                        let enumRoot;
-                        if (hostName === "outlook") {
-                            enumRoot = membersToMove.items.find(item => {
-                                return item.name === "MailboxEnums";
+                        const enumRootName = packageName.toLocaleLowerCase().includes("outlook") ? "MailboxEnums" : "Enums";
+                        let enumRoot = {"name": enumRootName, "uid": "", "items": enumList};
+                        if (packageName.toLocaleLowerCase().includes("excel")) {
+                            // Excel has also has subfolders for icon sets and custom functions. They need to be correctly ordered.
+                            let iconSetList = membersToMove.items.filter(item => {
+                                return excelIconSetFilter.indexOf(item.name) >= 0;
                             });
+        
+                            let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                            primaryList.unshift(excelIconSetRoot);
+                            primaryList.unshift(enumRoot);            
+                            if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
+                                primaryList.unshift(customFunctionsRoot);
+                            }
                         } else {
-                            enumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                            primaryList.unshift(enumRoot);
                         }
-                        primaryList.unshift(enumRoot);
-                    }
+                    }                    
+
+                    // Address any nested namespaces
+                    primaryList.forEach((namespaceItem, namespaceIndex) => {
+                        // Scan UID for namespace to add to name.
+                        if (namespaceItem.uid) {
+                            let regex = /\w+\.(\w+\.\w+)/g
+                            let matchResults = regex.exec(namespaceItem.uid);
+                            if (matchResults) {
+                                namespaceItem.name = matchResults[1];
+                            }
+                        }
+                    });
                 }
 
                 newToc.items[0].items.push({
@@ -320,54 +315,76 @@ function fixCommonToc(tocPath: string): Toc {
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
     let newToc = <Toc>{};
+    let membersToMove = <IMembers>{};
 
     newToc.items = [{
         "name": "API reference",
         "items": [] as any
     }];
+    
+    // add API reference overview to Common API
+    newToc.items[0].items = [{
+        "name": "API reference overview",
+        "href": "../overview/overview.md"
+    }] as any;
+
+    // Create roots for items we want to reorder.
+    let commonRoot = {
+        "name": 'Common API',
+        "uid": "office!",
+        "items": [] as any
+    }
+    newToc.items[0].items.push(commonRoot);
 
     // create folders for common (shared) API subcategories
-    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
-            if (packageItem.name === 'office') {
-                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                    if (namespaceItem.name.toLocaleLowerCase() === 'office') {
-                        let enumList = namespaceItem.items.filter(item => {
-                            return sharedEnumFilter.indexOf(item.name) >= 0;
-                        });
-                        let primaryList = namespaceItem.items.filter(item => {
-                            return sharedEnumFilter.indexOf(item.name) < 0;
-                        });
-                        sharedEnumRoot.items = enumList;
-                        primaryList.unshift(sharedEnumRoot);
-                        namespaceItem.items = primaryList as any;
+            membersToMove.items = packageItem.items;
+            if (packageItem.name.toLocaleLowerCase() === 'office') {
+                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {                    
+                    // Scan UID for namespace to add to name.
+                     if (namespaceItem.uid) {
+                        let regex = /\w+\.(\w+\.\w+)/g
+                        let matchResults = regex.exec(namespaceItem.uid);
+                        if (matchResults) {
+                            namespaceItem.name = matchResults[1];
+                        }
                     }
                 });
-                newToc.items[0].items.push({
-                    "name": 'Common API',
+
+                let enumList = membersToMove.items.filter(item => {
+                    return sharedEnumFilter.indexOf(item.name) >= 0;
+                });
+                let officeExtensionList = membersToMove.items.filter(item => {
+                    return item.uid.indexOf("office!OfficeExtension.") >= 0;
+                });
+                let primaryList = membersToMove.items.filter(item => {
+                    return sharedEnumFilter.indexOf(item.name) < 0 && item.uid.indexOf("office!OfficeExtension.") < 0;
+                });
+
+                let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                primaryList.unshift(sharedEnumRoot);            
+                commonRoot.items.push({
+                    "name": 'Office',
                     "uid": packageItem.uid,
-                    "items": packageItem.items
+                    "items": primaryList
+                });
+                commonRoot.items.push({
+                    "name": 'OfficeExtension',
+                    "items": officeExtensionList
                 });
             } else if (packageItem.name === 'office-runtime') {
-                newToc.items[0].items[0].items.push({
+                commonRoot.items.push({
                     "name": 'OfficeRuntime',
-                    "uid": "office-runtime!",
-                    "items": packageItem.items[0].items
+                    "uid": packageItem.uid,
+                    "items": packageItem.items
                 });
             }
         });
     });
-
-
-    // add API reference overview to Common API
-    newToc.items[0].items.unshift({
-        "name": "API reference overview",
-        "href": "../overview/overview.md"
-    } as any);
 
     return newToc;
 }

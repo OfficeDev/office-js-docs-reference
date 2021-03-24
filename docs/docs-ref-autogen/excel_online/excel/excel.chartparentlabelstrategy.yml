@@ -3,14 +3,10 @@ name: Excel.ChartParentLabelStrategy
 uid: 'excel!Excel.ChartParentLabelStrategy:enum'
 package: excel!
 fullName: Excel.ChartParentLabelStrategy
-summary: >-
-  Represents the parent label strategy of the chart series layout. This only
-  applies to treemap charts
+summary: |-
+  Represents the parent label strategy of the chart series layout. This only applies to treemap charts
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

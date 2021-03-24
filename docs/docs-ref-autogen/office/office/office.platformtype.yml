@@ -3,9 +3,7 @@ name: Office.PlatformType
 uid: 'office!Office.PlatformType:enum'
 package: office!
 fullName: Office.PlatformType
-summary: >-
-  Specifies the OS or other platform on which the Office host application is
-  running.
+summary: Specifies the OS or other platform on which the Office host application is running.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -14,9 +14,8 @@ properties:
     package: visio!
     fullName: $skip
     summary: >-
-      Specify the number of items in the collection that are to be skipped and
-      not included in the result. If top is specified, the selection of result
-      will start after skipping the specified number of items.
+      Specify the number of items in the collection that are to be skipped and not included in the result. If top is
+      specified, the selection of result will start after skipping the specified number of items.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,9 +27,7 @@ properties:
     uid: 'visio!Visio.Interfaces.CollectionLoadOptions#$top:member'
     package: visio!
     fullName: $top
-    summary: >-
-      Specify the number of items in the queried collection to be included in
-      the result.
+    summary: Specify the number of items in the queried collection to be included in the result.
     remarks: ''
     isPreview: false
     isDeprecated: false

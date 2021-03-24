@@ -3,14 +3,10 @@ name: Excel.Interfaces.SlicerCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerCollectionLoadOptions
-summary: >-
-  Represents a collection of all the slicer objects on the workbook or a
-  worksheet.
+summary: |-
+  Represents a collection of all the slicer objects on the workbook or a worksheet.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#caption:member'
     package: excel!
     fullName: caption
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the caption of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,14 +46,11 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      For EACH ITEM in the collection: Represents the height, in points, of the
-      slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
+      For EACH ITEM in the collection: Represents the height, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +62,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the unique id of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,14 +77,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#isFilterCleared:member'
     package: excel!
     fullName: isFilterCleared
-    summary: >-
-      For EACH ITEM in the collection: True if all filters currently applied on
-      the slicer are cleared.
+    summary: |-
+      For EACH ITEM in the collection: True if all filters currently applied on the slicer are cleared.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -111,15 +93,12 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      For EACH ITEM in the collection: Represents the distance, in points, from
-      the left side of the slicer to the left of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when
-      set with negative value as input.
+      For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left
+      of the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set
+      with negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -131,13 +110,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the name of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,14 +126,11 @@ properties:
     package: excel!
     fullName: sortBy
     summary: >-
-      For EACH ITEM in the collection: Represents the sort order of the items in
-      the slicer. Possible values are: "DataSourceOrder", "Ascending",
-      "Descending".
+      For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,16 +143,12 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Constant value that represents the Slicer
-      style. Possible values are: "SlicerStyleLight1" through
-      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2",
-      "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style
-      present in the workbook can also be specified.
+      For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1"
+      through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -192,15 +161,12 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      For EACH ITEM in the collection: Represents the distance, in points, from
-      the top edge of the slicer to the top of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when
-      set with negative value as input.
+      For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the top of
+      the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set with
+      negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -213,14 +179,11 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      For EACH ITEM in the collection: Represents the width, in points, of the
-      slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
+      For EACH ITEM in the collection: Represents the width, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -232,14 +195,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
-      For EACH ITEM in the collection: Represents the worksheet containing the
-      slicer.
+    summary: |-
+      For EACH ITEM in the collection: Represents the worksheet containing the slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

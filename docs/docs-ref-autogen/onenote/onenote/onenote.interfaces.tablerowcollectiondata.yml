@@ -3,9 +3,7 @@ name: OneNote.Interfaces.TableRowCollectionData
 uid: 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableRowCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "tableRowCollection.toJSON()".
+summary: An interface describing the data returned by calling "tableRowCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

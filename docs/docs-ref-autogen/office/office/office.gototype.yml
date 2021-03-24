@@ -18,18 +18,16 @@ fields:
   - name: Index
     uid: 'office!Office.GoToType.Index:member'
     package: office!
-    summary: >-
-      Goes to the specified index by slide number or
-      [Office.Index](xref:office!Office.Index:enum)<!-- -->.
-
+    summary: |-
+      Goes to the specified index by slide number or [Office.Index](xref:office!Office.Index:enum)<!-- -->.
 
       Supported hosts: PowerPoint
   - name: NamedItem
     uid: 'office!Office.GoToType.NamedItem:member'
     package: office!
     summary: >-
-      Goes to a named item using that item's name. In Excel, you can use any
-      structured reference for a named range or table: "Worksheet2!Table1"
+      Goes to a named item using that item's name. In Excel, you can use any structured reference for a named range or
+      table: "Worksheet2!Table1"
 
 
       Supported hosts: Excel

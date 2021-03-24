@@ -3,13 +3,10 @@ name: Excel.IconSetConditionalFormat
 uid: 'excel!Excel.IconSetConditionalFormat:class'
 package: excel!
 fullName: Excel.IconSetConditionalFormat
-summary: >-
+summary: |-
   Represents an IconSet criteria for conditional formatting.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,15 +31,12 @@ properties:
     package: excel!
     fullName: criteria
     summary: >-
-      An array of Criteria and IconSets for the rules and potential custom icons
-      for conditional icons. Note that for the first criterion only the custom
-      icon can be modified, while type, formula, and operator will be ignored
-      when set.
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
+      set.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,14 +99,10 @@ properties:
     uid: 'excel!Excel.IconSetConditionalFormat#reverseIconOrder:member'
     package: excel!
     fullName: reverseIconOrder
-    summary: >-
-      If true, reverses the icon orders for the IconSet. Note that this cannot
-      be set if custom icons are used.
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -124,13 +114,10 @@ properties:
     uid: 'excel!Excel.IconSetConditionalFormat#showIconOnly:member'
     package: excel!
     fullName: showIconOnly
-    summary: >-
+    summary: |-
       If true, hides the values and only shows icons.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,33 +129,25 @@ properties:
     uid: 'excel!Excel.IconSetConditionalFormat#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       If set, displays the IconSet option for the conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" |
-        "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" |
-        "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" |
-        "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights"
-        | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" |
-        "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
+        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+        "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+        "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type: >-
-          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" |
-          "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
-          "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" |
-          "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" |
-          "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" |
-          "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" |
-          "FiveBoxes"
+          <xref uid="excel!Excel.IconSet:enum" /> | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" |
+          "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows"
+          | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" |
+          "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes"
         description: >-
 
 
@@ -226,22 +205,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.IconSetConditionalFormatLoadOptions):
-        Excel.IconSetConditionalFormat;
+      content: 'load(options?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
         description: ''
@@ -250,8 +224,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -259,9 +233,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.IconSetConditionalFormat;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.IconSetConditionalFormat:class" />'
@@ -271,8 +243,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -285,10 +257,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -302,9 +272,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -312,23 +281,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -337,9 +298,7 @@ methods:
     uid: 'excel!Excel.IconSetConditionalFormat#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -357,13 +316,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.IconSetConditionalFormat object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.IconSetConditionalFormatData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
@@ -371,8 +327,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.IconSetConditionalFormatData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.IconSetConditionalFormatData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.IconSetConditionalFormatData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

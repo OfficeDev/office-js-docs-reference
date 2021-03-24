@@ -3,10 +3,7 @@ name: Word.ListNumbering
 uid: 'word!Word.ListNumbering:enum'
 package: word!
 fullName: Word.ListNumbering
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

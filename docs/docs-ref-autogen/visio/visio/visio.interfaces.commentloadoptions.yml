@@ -3,13 +3,10 @@ name: Visio.Interfaces.CommentLoadOptions
 uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.CommentLoadOptions
-summary: >-
+summary: |-
   Represents the Comment.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentLoadOptions#author:member'
     package: visio!
     fullName: author
-    summary: >-
+    summary: |-
       A string that specifies the name of the author of the comment.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentLoadOptions#date:member'
     package: visio!
     fullName: date
-    summary: >-
+    summary: |-
       A string that specifies the date when the comment was created.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'visio!Visio.Interfaces.CommentLoadOptions#text:member'
     package: visio!
     fullName: text
-    summary: >-
+    summary: |-
       A string that contains the comment text.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

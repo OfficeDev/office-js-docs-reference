@@ -3,13 +3,10 @@ name: Word.Section
 uid: 'word!Word.Section:class'
 package: word!
 fullName: Word.Section
-summary: >-
+summary: |-
   Represents a section in a Word document.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +17,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the section. This does not include the
-      header/footer and other section metadata. Read-only.
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,8 +34,8 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,13 +48,10 @@ methods:
     uid: 'word!Word.Section#getFooter:member(1)'
     package: word!
     fullName: getFooter(type)
-    summary: >-
+    summary: |-
       Gets one of the section's footers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,9 +59,7 @@ methods:
       content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
       parameters:
         - id: type
-          description: >-
-            Required. The type of footer to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -96,13 +86,10 @@ methods:
     uid: 'word!Word.Section#getFooter:member(2)'
     package: word!
     fullName: getFooter(typeString)
-    summary: >-
+    summary: |-
       Gets one of the section's footers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,9 +97,7 @@ methods:
       content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
         - id: typeString
-          description: >-
-            Required. The type of footer to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
+          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -163,13 +148,10 @@ methods:
     uid: 'word!Word.Section#getHeader:member(1)'
     package: word!
     fullName: getHeader(type)
-    summary: >-
+    summary: |-
       Gets one of the section's headers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -177,9 +159,7 @@ methods:
       content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
       parameters:
         - id: type
-          description: >-
-            Required. The type of header to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -206,13 +186,10 @@ methods:
     uid: 'word!Word.Section#getHeader:member(2)'
     package: word!
     fullName: getHeader(typeString)
-    summary: >-
+    summary: |-
       Gets one of the section's headers.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -220,9 +197,7 @@ methods:
       content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
         - id: typeString
-          description: >-
-            Required. The type of header to return. This value can be:
-            'Primary', 'FirstPage', or 'EvenPages'.
+          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -274,8 +249,8 @@ methods:
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -293,8 +268,8 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -302,9 +277,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.Section;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="word!Word.Section:class" />'
@@ -314,8 +287,8 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -328,10 +301,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -345,9 +316,8 @@ methods:
     package: word!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -355,20 +325,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.SectionUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="word!Word.Interfaces.SectionUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -377,9 +342,7 @@ methods:
     uid: 'word!Word.Section#set:member(2)'
     package: word!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -397,13 +360,11 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.Section object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -417,13 +378,11 @@ methods:
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -437,11 +396,9 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

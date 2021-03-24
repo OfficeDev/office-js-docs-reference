@@ -3,10 +3,7 @@ name: OneNote.ParagraphType
 uid: 'onenote!OneNote.ParagraphType:enum'
 package: onenote!
 fullName: OneNote.ParagraphType
-summary: >-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

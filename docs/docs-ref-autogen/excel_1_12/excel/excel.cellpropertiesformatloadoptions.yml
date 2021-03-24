@@ -3,13 +3,10 @@ name: Excel.CellPropertiesFormatLoadOptions
 uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
 package: excel!
 fullName: Excel.CellPropertiesFormatLoadOptions
-summary: >-
+summary: |-
   Represents which properties to load on the format object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
     package: excel!
     fullName: autoIndent
-    summary: >-
+    summary: |-
       Specifies whether to load on the `autoIndent` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
     package: excel!
     fullName: borders
-    summary: >-
+    summary: |-
       Specifies whether to load on the `borders` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Specifies whether to load on the `fill` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +61,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
     package: excel!
     fullName: font
-    summary: >-
+    summary: |-
       Specifies whether to load on the `font` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,13 +76,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
+    summary: |-
       Specifies whether to load on the `horizontalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,13 +91,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
     package: excel!
     fullName: indentLevel
-    summary: >-
+    summary: |-
       Specifies whether to load on the `indentLevel` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,13 +106,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Specifies whether to load on the `protection` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,13 +121,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
     package: excel!
     fullName: readingOrder
-    summary: >-
+    summary: |-
       Specifies whether to load on the `readingOrder` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -163,13 +136,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
     package: excel!
     fullName: shrinkToFit
-    summary: >-
+    summary: |-
       Specifies whether to load on the `shrinkToFit` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,13 +151,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
     package: excel!
     fullName: textOrientation
-    summary: >-
+    summary: |-
       Specifies whether to load on the `textOrientation` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -199,13 +166,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
     package: excel!
     fullName: useStandardHeight
-    summary: >-
+    summary: |-
       Specifies whether to load on the `useStandardHeight` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -217,13 +181,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
     package: excel!
     fullName: useStandardWidth
-    summary: >-
+    summary: |-
       Specifies whether to load on the `useStandardWidth` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -235,13 +196,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
+    summary: |-
       Specifies whether to load on the `verticalAlignment` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -253,13 +211,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
     package: excel!
     fullName: wrapText
-    summary: >-
+    summary: |-
       Specifies whether to load on the `wrapText` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

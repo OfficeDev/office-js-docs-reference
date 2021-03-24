@@ -3,13 +3,10 @@ name: Excel.TimelineStyleCollection
 uid: 'excel!Excel.TimelineStyleCollection:class'
 package: excel!
 fullName: Excel.TimelineStyleCollection
-summary: >-
+summary: |-
   Represents a collection of timeline styles.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -46,13 +43,10 @@ methods:
     uid: 'excel!Excel.TimelineStyleCollection#add:member(1)'
     package: excel!
     fullName: 'add(name, makeUniqueName)'
-    summary: >-
+    summary: |-
       Creates a blank `TimelineStyle` with the specified name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,13 +55,13 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new timeline style. Will throw an
-            `InvalidArgument` error if the name is already in use.
+            The unique name for the new timeline style. Will throw an `InvalidArgument` error if the name is already in
+            use.
           type: string
         - id: makeUniqueName
           description: >-
-            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will
-            append numbers to the name in order to make it unique, if needed.
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make
+            it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
@@ -76,13 +70,10 @@ methods:
     uid: 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of timeline styles in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -95,13 +86,10 @@ methods:
     uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
     package: excel!
     fullName: getDefault()
-    summary: >-
+    summary: |-
       Gets the default timeline style for the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -114,13 +102,10 @@ methods:
     uid: 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: >-
+    summary: |-
       Gets a `TimelineStyle` by name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -138,16 +123,13 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then
-      this function will return an object with its `isNullObject` property set
-      to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then this function will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -165,22 +147,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.TimelineStyleCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.TimelineStyleCollection;
+        load(options?: Excel.Interfaces.TimelineStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TimelineStyleCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.TimelineStyleCollection:class" />'
@@ -190,8 +170,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -199,9 +179,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.TimelineStyleCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.TimelineStyleCollection:class" />'
@@ -211,22 +189,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.TimelineStyleCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TimelineStyleCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.TimelineStyleCollection:class" />'
@@ -235,13 +209,10 @@ methods:
     uid: 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
     package: excel!
     fullName: setDefault(newDefaultStyle)
-    summary: >-
+    summary: |-
       Sets the default timeline style for use in the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -249,9 +220,7 @@ methods:
       content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: >-
-            The `TimelineStyle` object, or name of the `TimelineStyle` object,
-            that should be the new default.
+          description: 'The `TimelineStyle` object, or name of the `TimelineStyle` object, that should be the new default.'
           type: '<xref uid="excel!Excel.TimelineStyle:class" /> | string'
       return:
         type: void
@@ -261,23 +230,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.TimelineStyleCollection` object is an API object, the `toJSON`
-      method returns a plain JavaScript object (typed as
-      `Excel.Interfaces.TimelineStyleCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TimelineStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.TimelineStyleCollectionData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TimelineStyleCollectionData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.TimelineStyleCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

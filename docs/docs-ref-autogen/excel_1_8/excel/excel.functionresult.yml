@@ -3,13 +3,10 @@ name: Excel.FunctionResult
 uid: 'excel!Excel.FunctionResult:class'
 package: excel!
 fullName: Excel.FunctionResult
-summary: >-
+summary: |-
   An object containing the result of a function-evaluation operation
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +31,11 @@ properties:
     package: excel!
     fullName: error
     summary: >-
-      Error value (such as "\#DIV/0") representing the error. If the error
-      string is not set, then the function succeeded, and its result is written
-      to the Value field. The error is always in the English locale.
+      Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
+      succeeded, and its result is written to the Value field. The error is always in the English locale.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +48,11 @@ properties:
     package: excel!
     fullName: value
     summary: >-
-      The value of function evaluation. The value field will be populated only
-      if no error has occurred (i.e., the Error property is not set).
+      The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
+      property is not set).
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,21 +66,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.FunctionResultLoadOptions):
-        FunctionResult<T>;
+      content: 'load(options?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.FunctionResultLoadOptions:interface" />
+          type: '<xref uid="excel!Excel.Interfaces.FunctionResultLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.FunctionResult:class" />&lt;T&gt;'
         description: ''
@@ -97,8 +85,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,9 +94,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): FunctionResult<T>;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.FunctionResult:class" />&lt;T&gt;'
@@ -118,8 +104,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -132,10 +118,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -149,21 +133,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original FunctionResult<T>
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Interfaces.FunctionResultData<T>`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original FunctionResult<T> object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Interfaces.FunctionResultData<T>`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Interfaces.FunctionResultData<T>;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.FunctionResultData:interface"
-          />&lt;T&gt;
+        type: '<xref uid="excel!Excel.Interfaces.FunctionResultData:interface" />&lt;T&gt;'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

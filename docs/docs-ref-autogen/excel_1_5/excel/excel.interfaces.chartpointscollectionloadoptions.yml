@@ -3,13 +3,10 @@ name: Excel.Interfaces.ChartPointsCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions
-summary: >-
+summary: |-
   A collection of all the chart points within a series inside a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,34 +30,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      For EACH ITEM in the collection: Encapsulates the format properties chart
-      point.
+    summary: |-
+      For EACH ITEM in the collection: Encapsulates the format properties chart point.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />'
   - name: value
     uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
     package: excel!
     fullName: value
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the value of a chart point.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,7 @@ name: Word.RangeLocation
 uid: 'word!Word.RangeLocation:enum'
 package: word!
 fullName: Word.RangeLocation
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,9 +12,8 @@ fields:
     uid: 'word!Word.RangeLocation.after:member'
     package: word!
     summary: >-
-      The point after the object. If the object is a paragraph content control
-      or table content control, it is the point after the EOP or Table
-      characters.
+      The point after the object. If the object is a paragraph content control or table content control, it is the point
+      after the EOP or Table characters.
     value: '"After"'
   - name: before
     uid: 'word!Word.RangeLocation.before:member'
@@ -33,21 +29,18 @@ fields:
     uid: 'word!Word.RangeLocation.end:member'
     package: word!
     summary: >-
-      The ending point of the object. For paragraph, it is the point before the
-      EOP. For content control, it is the point before the closing tag.
+      The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the
+      point before the closing tag.
     value: '"End"'
   - name: start
     uid: 'word!Word.RangeLocation.start:member'
     package: word!
-    summary: >-
-      The starting point of the object. For content control, it is the point
-      after the opening tag.
+    summary: 'The starting point of the object. For content control, it is the point after the opening tag.'
     value: '"Start"'
   - name: whole
     uid: 'word!Word.RangeLocation.whole:member'
     package: word!
     summary: >-
-      The object's whole range. If the object is a paragraph content control or
-      table content control, the EOP or Table characters after the content
-      control are also included.
+      The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table
+      characters after the content control are also included.
     value: '"Whole"'

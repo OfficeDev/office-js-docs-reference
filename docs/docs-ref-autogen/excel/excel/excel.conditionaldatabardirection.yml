@@ -3,13 +3,10 @@ name: Excel.ConditionalDataBarDirection
 uid: 'excel!Excel.ConditionalDataBarDirection:enum'
 package: excel!
 fullName: Excel.ConditionalDataBarDirection
-summary: >-
+summary: |-
   Represents the data bar direction within a cell.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

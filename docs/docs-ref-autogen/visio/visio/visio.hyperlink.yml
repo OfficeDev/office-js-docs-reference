@@ -3,13 +3,10 @@ name: Visio.Hyperlink
 uid: 'visio!Visio.Hyperlink:class'
 package: visio!
 fullName: Visio.Hyperlink
-summary: >-
+summary: |-
   Represents the Hyperlink.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'visio!Visio.Hyperlink#address:member'
     package: visio!
     fullName: address
-    summary: >-
+    summary: |-
       Gets the address of the Hyperlink object. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,8 +32,8 @@ properties:
     package: visio!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +45,10 @@ properties:
     uid: 'visio!Visio.Hyperlink#description:member'
     package: visio!
     fullName: description
-    summary: >-
+    summary: |-
       Gets the description of a hyperlink. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,14 +60,10 @@ properties:
     uid: 'visio!Visio.Hyperlink#extraInfo:member'
     package: visio!
     fullName: extraInfo
-    summary: >-
-      Gets the extra URL request information used to resolve the hyperlink's
-      URL. Read-only.
+    summary: |-
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'visio!Visio.Hyperlink#subAddress:member'
     package: visio!
     fullName: subAddress
-    summary: >-
+    summary: |-
       Gets the sub-address of the Hyperlink object. Read-only.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,30 +92,26 @@ methods:
     package: visio!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.Hyperlink` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` -
-      Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): Visio.Hyperlink` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
@@ -174,8 +154,8 @@ methods:
     package: visio!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -183,9 +163,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Visio.Hyperlink;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="visio!Visio.Hyperlink:class" />'
@@ -195,22 +173,18 @@ methods:
     package: visio!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        Visio.Hyperlink;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Hyperlink;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="visio!Visio.Hyperlink:class" />'
@@ -220,13 +194,11 @@ methods:
     package: visio!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Visio.Hyperlink object
-      is an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Visio.Interfaces.HyperlinkData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Visio.Interfaces.HyperlinkData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

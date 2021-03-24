@@ -3,9 +3,7 @@ name: OneNote.Interfaces.SectionCollectionData
 uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.SectionCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "sectionCollection.toJSON()".
+summary: An interface describing the data returned by calling "sectionCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -3,9 +3,7 @@ name: Word.Interfaces.InlinePictureUpdateData
 uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.InlinePictureUpdateData
-summary: >-
-  An interface for updating data on the InlinePicture object, for use in
-  `inlinePicture.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member'
     package: word!
     fullName: altTextDescription
-    summary: >-
-      Gets or sets a string that represents the alternative text associated with
-      the inline image.
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +28,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#altTextTitle:member'
     package: word!
     fullName: altTextTitle
-    summary: >-
+    summary: |-
       Gets or sets a string that contains the title for the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +43,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#height:member'
     package: word!
     fullName: height
-    summary: >-
+    summary: |-
       Gets or sets a number that describes the height of the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,14 +58,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member'
     package: word!
     fullName: hyperlink
-    summary: >-
-      Gets or sets a hyperlink on the image. Use a '\#' to separate the address
-      part from the optional location part.
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,14 +73,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member'
     package: word!
     fullName: lockAspectRatio
-    summary: >-
-      Gets or sets a value that indicates whether the inline image retains its
-      original proportions when you resize it.
+    summary: |-
+      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,13 +88,10 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureUpdateData#width:member'
     package: word!
     fullName: width
-    summary: >-
+    summary: |-
       Gets or sets a number that describes the width of the inline image.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

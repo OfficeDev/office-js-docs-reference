@@ -3,13 +3,10 @@ name: Excel.ColumnProperties
 uid: 'excel!Excel.ColumnProperties:interface'
 package: excel!
 fullName: Excel.ColumnProperties
-summary: >-
+summary: |-
   Represents the returned properties of getColumnProperties.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.ColumnProperties#address:member'
     package: excel!
     fullName: address
-    summary: >-
+    summary: |-
       Represents the `address` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.ColumnProperties#addressLocal:member'
     package: excel!
     fullName: addressLocal
-    summary: >-
+    summary: |-
       Represents the `addressLocal` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.ColumnProperties#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: >-
+    summary: |-
       Represents the `columnIndex` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

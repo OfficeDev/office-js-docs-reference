@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideLayoutData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLayoutData
-summary: >-
-  An interface describing the data returned by calling
-  `slideLayout.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideLayout.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutData#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the unique ID of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLayoutData#name:member'
     package: powerpoint!
     fullName: name
-    summary: >-
+    summary: |-
       Gets the name of the slide layout.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

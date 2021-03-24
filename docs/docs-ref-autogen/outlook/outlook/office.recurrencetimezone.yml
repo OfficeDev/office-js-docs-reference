@@ -3,22 +3,19 @@ name: Office.RecurrenceTimeZone
 uid: 'outlook!Office.RecurrenceTimeZone:interface'
 package: outlook!
 fullName: Office.RecurrenceTimeZone
-summary: >-
+summary: |-
   Represents the time zone of the recurrence.
 
-
-  \[ [API set: Mailbox
-  1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 
 
   #### Examples
@@ -43,14 +40,11 @@ remarks: >-
   }
 
 
-  // The following example shows the results of the getAsync call that retrieves
-  the recurrence for a series.
+  // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
 
-  // NOTE: In this example, seriesTimeObject is a placeholder for the JSON
-  representing the
+  // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
 
-  // recurrence.seriesTime property. You should use the SeriesTime object's
-  methods to get the
+  // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
 
   // recurrence date and time properties.
 
@@ -77,16 +71,14 @@ properties:
     syntax:
       content: 'name: MailboxEnums.RecurrenceTimeZone | string;'
       return:
-        type: >-
-          <xref uid="outlook!Office.MailboxEnums.RecurrenceTimeZone:enum" /> |
-          string
+        type: '<xref uid="outlook!Office.MailboxEnums.RecurrenceTimeZone:enum" /> | string'
   - name: offset
     uid: 'outlook!Office.RecurrenceTimeZone#offset:member'
     package: outlook!
     fullName: offset
     summary: >-
-      Integer value representing the difference in minutes between the local
-      time zone and UTC at the date that the meeting series began.
+      Integer value representing the difference in minutes between the local time zone and UTC at the date that the
+      meeting series began.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,7 @@ name: Excel.SpecialCellType
 uid: 'excel!Excel.SpecialCellType:enum'
 package: excel!
 fullName: Excel.SpecialCellType
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -44,9 +41,7 @@ fields:
   - name: sameDataValidation
     uid: 'excel!Excel.SpecialCellType.sameDataValidation:member'
     package: excel!
-    summary: >-
-      Cells with the same data validation criteria as the first cell in the
-      range.
+    summary: Cells with the same data validation criteria as the first cell in the range.
     value: '"SameDataValidation"'
   - name: visible
     uid: 'excel!Excel.SpecialCellType.visible:member'

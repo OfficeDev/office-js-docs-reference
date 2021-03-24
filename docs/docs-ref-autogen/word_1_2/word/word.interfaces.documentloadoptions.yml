@@ -4,14 +4,11 @@ uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.DocumentLoadOptions
 summary: >-
-  The Document object is the top level object. A Document object contains one or
-  more sections, content controls, and the body that contains the contents of
-  the document.
+  The Document object is the top level object. A Document object contains one or more sections, content controls, and
+  the body that contains the contents of the document.
 
 
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,9 +19,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,14 +33,11 @@ properties:
     package: word!
     fullName: allowCloseOnUntitled
     summary: >-
-      Gets or sets a value that indicates that, when opening a new document,
-      whether it is allowed to close this document even if this document is
-      untitled. True to close, false otherwise.
+      Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
+      document even if this document is untitled. True to close, false otherwise.
 
 
-      \[ [API set:
-      WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -57,13 +50,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc..
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -76,14 +67,11 @@ properties:
     package: word!
     fullName: saved
     summary: >-
-      Indicates whether the changes in the document have been saved. A value of
-      true indicates that the document hasn't changed since it was saved.
-      Read-only.
+      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
+      changed since it was saved. Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -4,52 +4,41 @@ uid: 'outlook!Office.Entities:interface'
 package: outlook!
 fullName: Office.Entities
 summary: >-
-  Represents a collection of entities found in an email message or appointment.
-  Read mode only.
+  Represents a collection of entities found in an email message or appointment. Read mode only.
 
 
-  The `Entities` object is a container for the entity arrays returned by the
-  `getEntities` and `getEntitiesByType` methods when the item (either an email
-  message or an appointment) contains one or more entities that have been found
-  by the server. You can use these entities in your code to provide additional
-  context information to the viewer, such as a map to an address found in the
-  item, or to open a dialer for a phone number found in the item.
+  The `Entities` object is a container for the entity arrays returned by the `getEntities` and `getEntitiesByType`
+  methods when the item (either an email message or an appointment) contains one or more entities that have been found
+  by the server. You can use these entities in your code to provide additional context information to the viewer, such
+  as a map to an address found in the item, or to open a dialer for a phone number found in the item.
 
 
-  If no entities of the type specified in the property are present in the item,
-  the property associated with that entity is null. For example, if a message
-  contains a street address and a phone number, the addresses property and
-  phoneNumbers property would contain information, and the other properties
-  would be null.
+  If no entities of the type specified in the property are present in the item, the property associated with that entity
+  is null. For example, if a message contains a street address and a phone number, the addresses property and
+  phoneNumbers property would contain information, and the other properties would be null.
 
 
-  To be recognized as an address, the string must contain a United States postal
-  address that has at least a subset of the elements of a street number, street
-  name, city, state, and zip code.
+  To be recognized as an address, the string must contain a United States postal address that has at least a subset of
+  the elements of a street number, street name, city, state, and zip code.
 
 
-  To be recognized as a phone number, the string must contain a North American
-  phone number format.
+  To be recognized as a phone number, the string must contain a North American phone number format.
 
 
-  Entity recognition relies on natural language recognition that is based on
-  machine learning of large amounts of data. The recognition of an entity is
-  non-deterministic and success sometimes relies on the particular context in
-  the item.
+  Entity recognition relies on natural language recognition that is based on machine learning of large amounts of data.
+  The recognition of an entity is non-deterministic and success sometimes relies on the particular context in the item.
 
 
-  When the property arrays are returned by the `getEntitiesByType` method, only
-  the property for the specified entity contains data; all other properties are
-  null.
+  When the property arrays are returned by the `getEntitiesByType` method, only the property for the specified entity
+  contains data; all other properties are null.
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 isPreview: false
 isDeprecated: false
 type: interface
@@ -58,9 +47,7 @@ properties:
     uid: 'outlook!Office.Entities#addresses:member'
     package: outlook!
     fullName: addresses
-    summary: >-
-      Gets the physical addresses (street or mailing addresses) found in an
-      email message or appointment.
+    summary: Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -68,19 +55,14 @@ properties:
       content: 'addresses: string[];'
       return:
         type: 'string[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var addresses =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-
+          var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
           ```
   - name: contacts
     uid: 'outlook!Office.Entities#contacts:member'
@@ -94,19 +76,14 @@ properties:
       content: 'contacts: Contact[];'
       return:
         type: '<xref uid="outlook!Office.Contact:interface" />[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var contacts =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-
+          var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
           ```
   - name: emailAddresses
     uid: 'outlook!Office.Entities#emailAddresses:member'
@@ -120,19 +97,14 @@ properties:
       content: 'emailAddresses: string[];'
       return:
         type: 'string[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var emailAddresses =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
-
+          var emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
           ```
   - name: meetingSuggestions
     uid: 'outlook!Office.Entities#meetingSuggestions:member'
@@ -146,19 +118,14 @@ properties:
       content: 'meetingSuggestions: MeetingSuggestion[];'
       return:
         type: '<xref uid="outlook!Office.MeetingSuggestion:interface" />[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var meetingSuggestions =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
-
+          var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
           ```
   - name: phoneNumbers
     uid: 'outlook!Office.Entities#phoneNumbers:member'
@@ -172,19 +139,14 @@ properties:
       content: 'phoneNumbers: PhoneNumber[];'
       return:
         type: '<xref uid="outlook!Office.PhoneNumber:interface" />[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var phoneNumbers =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
-
+          var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
           ```
   - name: taskSuggestions
     uid: 'outlook!Office.Entities#taskSuggestions:member'
@@ -198,19 +160,14 @@ properties:
       content: 'taskSuggestions: string[];'
       return:
         type: 'string[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           var item = Office.context.mailbox.item;
-
-          var taskSuggestions =
-          item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
-
+          var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
           ```
   - name: urls
     uid: 'outlook!Office.Entities#urls:member'

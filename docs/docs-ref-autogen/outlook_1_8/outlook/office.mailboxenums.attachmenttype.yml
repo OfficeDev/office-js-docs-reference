@@ -6,8 +6,8 @@ fullName: Office.MailboxEnums.AttachmentType
 summary: Specifies an attachment's type.
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 fields:
@@ -19,9 +19,8 @@ fields:
 
 
       **Important**: In Read mode, the `id` property of the attachment's
-      [details](xref:outlook!Office.AttachmentDetails:interface) object contains
-      a URL to the file. From requirement set 1.8, the `url` property included
-      in the attachment's
+      [details](xref:outlook!Office.AttachmentDetails:interface) object contains a URL to the file. From requirement set
+      1.8, the `url` property included in the attachment's
       [details](https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8)
       object contains a URL to the file in Compose mode.
     value: '"cloud"'

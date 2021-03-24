@@ -637,9 +637,7 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function getDataCommonPostprocess(response: any, callArgs: any):
-        any;
+      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
       parameters:
         - id: response
           description: ''
@@ -670,29 +668,21 @@ functions:
     uid: 'excel!Excel.run:function(1)'
     package: excel!
     summary: >-
-      Executes a batch script that performs actions on the Excel object model,
-      using a new RequestContext. When the promise is resolved, any tracked
-      objects that were automatically allocated during execution will be
-      released.
+      Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(batch: (context: Excel.RequestContext) =>
-        Promise<T>): Promise<T>;
+      content: 'export function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;'
       parameters:
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Excel application. Since the
-            Office add-in and the Excel application run in two different
-            processes, the RequestContext is required to get access to the Excel
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -700,35 +690,29 @@ functions:
     uid: 'excel!Excel.run:function(2)'
     package: excel!
     summary: >-
-      Executes a batch script that performs actions on the Excel object model,
-      using the RequestContext of a previously-created API object. When the
-      promise is resolved, any tracked objects that were automatically allocated
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(object: OfficeExtension.ClientObject, batch:
-        (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-
-            A previously-created API object. The batch will use the same
-            RequestContext as the passed-in object, which means that any changes
-            applied to the object will be picked up by "context.sync()".
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
           type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Excel application. Since the
-            Office add-in and the Excel application run in two different
-            processes, the RequestContext is required to get access to the Excel
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -736,35 +720,29 @@ functions:
     uid: 'excel!Excel.run:function(3)'
     package: excel!
     summary: >-
-      Executes a batch script that performs actions on the Excel object model,
-      using the RequestContext of previously-created API objects.
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of
+      previously-created API objects.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch:
-        (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
-            An array of previously-created API objects. The array will be
-            validated to make sure that all of the objects share the same
-            context. The batch will use this shared RequestContext, which means
-            that any changes applied to these objects will be picked up by
-            "context.sync()".
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
           type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Excel application. Since the
-            Office add-in and the Excel application run in two different
-            processes, the RequestContext is required to get access to the Excel
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -772,35 +750,29 @@ functions:
     uid: 'excel!Excel.run:function(4)'
     package: excel!
     summary: >-
-      Executes a batch script that performs actions on the Excel object model,
-      using the RequestContext of a previously-created API object. When the
-      promise is resolved, any tracked objects that were automatically allocated
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(options: Excel.RunOptions, batch: (context:
-        Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>):
+        Promise<T>;
       parameters:
         - id: options
           description: >-
-            The additional options for this Excel.run which specify previous
-            objects, whether to delay the request for cell edit, session info,
-            etc.
+            The additional options for this Excel.run which specify previous objects, whether to delay the request for
+            cell edit, session info, etc.
           type: '<xref uid="excel!Excel.RunOptions:interface" />'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Excel application. Since the
-            Office add-in and the Excel application run in two different
-            processes, the RequestContext is required to get access to the Excel
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -808,35 +780,29 @@ functions:
     uid: 'excel!Excel.run:function(5)'
     package: excel!
     summary: >-
-      Executes a batch script that performs actions on the Excel object model,
-      using the RequestContext of a previously-created object. When the promise
-      is resolved, any tracked objects that were automatically allocated during
-      execution will be released.
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(context: OfficeExtension.ClientRequestContext,
-        batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: context
           description: >-
-            A previously-created object. The batch will use the same
-            RequestContext as the passed-in object, which means that any changes
-            applied to the object will be picked up by "context.sync()".
+            A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
+            that any changes applied to the object will be picked up by "context.sync()".
           type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Excel application. Since the
-            Office add-in and the Excel application run in two different
-            processes, the RequestContext is required to get access to the Excel
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="excel!Excel.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="excel!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''

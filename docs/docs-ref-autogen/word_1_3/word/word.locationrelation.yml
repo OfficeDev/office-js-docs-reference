@@ -3,10 +3,7 @@ name: Word.LocationRelation
 uid: 'word!Word.LocationRelation:enum'
 package: word!
 fullName: Word.LocationRelation
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -35,24 +32,22 @@ fields:
     uid: 'word!Word.LocationRelation.contains:member'
     package: word!
     summary: >-
-      Indicates that this instance contains the range, with the exception of the
-      start and end character of this instance.
+      Indicates that this instance contains the range, with the exception of the start and end character of this
+      instance.
     value: '"Contains"'
   - name: containsEnd
     uid: 'word!Word.LocationRelation.containsEnd:member'
     package: word!
     summary: >-
-      Indicates that this instance contains the range and that it shares the
-      same end character. The range does not share the same start character as
-      this instance.
+      Indicates that this instance contains the range and that it shares the same end character. The range does not
+      share the same start character as this instance.
     value: '"ContainsEnd"'
   - name: containsStart
     uid: 'word!Word.LocationRelation.containsStart:member'
     package: word!
     summary: >-
-      Indicates that this instance contains the range and that it shares the
-      same start character. The range does not share the same end character as
-      this instance.
+      Indicates that this instance contains the range and that it shares the same start character. The range does not
+      share the same end character as this instance.
     value: '"ContainsStart"'
   - name: equal
     uid: 'word!Word.LocationRelation.equal:member'
@@ -63,38 +58,32 @@ fields:
     uid: 'word!Word.LocationRelation.inside:member'
     package: word!
     summary: >-
-      Indicates that this instance is inside the range. The range does not share
-      the same start and end characters as this instance.
+      Indicates that this instance is inside the range. The range does not share the same start and end characters as
+      this instance.
     value: '"Inside"'
   - name: insideEnd
     uid: 'word!Word.LocationRelation.insideEnd:member'
     package: word!
     summary: >-
-      Indicates that this instance is inside the range and that it shares the
-      same end character. The range does not share the same start character as
-      this instance.
+      Indicates that this instance is inside the range and that it shares the same end character. The range does not
+      share the same start character as this instance.
     value: '"InsideEnd"'
   - name: insideStart
     uid: 'word!Word.LocationRelation.insideStart:member'
     package: word!
     summary: >-
-      Indicates that this instance is inside the range and that it shares the
-      same start character. The range does not share the same end character as
-      this instance.
+      Indicates that this instance is inside the range and that it shares the same start character. The range does not
+      share the same end character as this instance.
     value: '"InsideStart"'
   - name: overlapsAfter
     uid: 'word!Word.LocationRelation.overlapsAfter:member'
     package: word!
-    summary: >-
-      Indicates that this instance starts inside the range and overlaps the
-      range’s last character.
+    summary: Indicates that this instance starts inside the range and overlaps the range’s last character.
     value: '"OverlapsAfter"'
   - name: overlapsBefore
     uid: 'word!Word.LocationRelation.overlapsBefore:member'
     package: word!
-    summary: >-
-      Indicates that this instance starts before the range and overlaps the
-      range’s first character.
+    summary: Indicates that this instance starts before the range and overlaps the range’s first character.
     value: '"OverlapsBefore"'
   - name: unrelated
     uid: 'word!Word.LocationRelation.unrelated:member'

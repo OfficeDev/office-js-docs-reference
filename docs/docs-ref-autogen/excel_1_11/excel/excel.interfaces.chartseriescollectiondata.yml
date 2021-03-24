@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartSeriesCollectionData
 uid: 'excel!Excel.Interfaces.ChartSeriesCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `chartSeriesCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `chartSeriesCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

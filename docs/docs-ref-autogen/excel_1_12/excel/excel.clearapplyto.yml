@@ -5,8 +5,7 @@ package: excel!
 fullName: Excel.ClearApplyTo
 summary: >-
   \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
-  HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -35,6 +34,6 @@ fields:
     uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     package: excel!
     summary: >-
-      Removes hyperlinks and formatting for the cell but leaves content,
-      conditional formats, and data validation intact.
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
+      intact.
     value: '"RemoveHyperlinks"'

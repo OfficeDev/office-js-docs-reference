@@ -3,13 +3,10 @@ name: OneNote.Interfaces.TableCellLoadOptions
 uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableCellLoadOptions
-summary: >-
+summary: |-
   Represents a cell in a OneNote table.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#cellIndex:member'
     package: onenote!
     fullName: cellIndex
-    summary: >-
+    summary: |-
       Gets the index of the cell in its row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the cell. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,54 +58,40 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: >-
+    summary: |-
       Gets the collection of Paragraph objects in the TableCell.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface" />'
   - name: parentRow
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#parentRow:member'
     package: onenote!
     fullName: parentRow
-    summary: >-
+    summary: |-
       Gets the parent row of the cell.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface" />'
   - name: rowIndex
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: >-
+    summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -126,13 +103,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions#shadingColor:member'
     package: onenote!
     fullName: shadingColor
-    summary: >-
+    summary: |-
       Gets and sets the shading color of the cell
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

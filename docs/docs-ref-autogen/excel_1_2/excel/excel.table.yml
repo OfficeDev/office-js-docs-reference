@@ -4,15 +4,11 @@ uid: 'excel!Excel.Table:class'
 package: excel!
 fullName: Excel.Table
 summary: >-
-  Represents an Excel table. To learn more about the table object model, read
-  [Work with tables using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!--
-  -->.
+  Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
+  JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,13 +18,10 @@ properties:
     uid: 'excel!Excel.Table#columns:member'
     package: excel!
     fullName: columns
-    summary: >-
+    summary: |-
       Represents a collection of all the columns in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,8 +34,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +48,11 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Returns a value that uniquely identifies the table in a given workbook.
-      The value of the identifier remains the same even when the table is
-      renamed.
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,15 +68,11 @@ properties:
       Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the
-      [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
-      article.
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -98,13 +84,10 @@ properties:
     uid: 'excel!Excel.Table#rows:member'
     package: excel!
     fullName: rows
-    summary: >-
+    summary: |-
       Represents a collection of all the rows in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -116,14 +99,10 @@ properties:
     uid: 'excel!Excel.Table#showHeaders:member'
     package: excel!
     fullName: showHeaders
-    summary: >-
-      Specifies if the header row is visible. This value can be set to show or
-      remove the header row.
+    summary: |-
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -135,14 +114,10 @@ properties:
     uid: 'excel!Excel.Table#showTotals:member'
     package: excel!
     fullName: showTotals
-    summary: >-
-      Specifies if the total row is visible. This value can be set to show or
-      remove the total row.
+    summary: |-
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -154,13 +129,10 @@ properties:
     uid: 'excel!Excel.Table#sort:member'
     package: excel!
     fullName: sort
-    summary: >-
+    summary: |-
       Represents the sorting for the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -173,16 +145,12 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are:
-      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1"
-      through "TableStyleMedium28", "TableStyleDark1" through
-      "TableStyleDark11". A custom user-defined style present in the workbook
-      can also be specified.
+      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -218,13 +186,10 @@ properties:
     uid: 'excel!Excel.Table#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       The worksheet containing the current table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -237,13 +202,10 @@ methods:
     uid: 'excel!Excel.Table#clearFilters:member(1)'
     package: excel!
     fullName: clearFilters()
-    summary: >-
+    summary: |-
       Clears all the filters currently applied on the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -256,13 +218,10 @@ methods:
     uid: 'excel!Excel.Table#convertToRange:member(1)'
     package: excel!
     fullName: convertToRange()
-    summary: >-
+    summary: |-
       Converts the table into a normal range of cells. All data is preserved.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -292,13 +251,10 @@ methods:
     uid: 'excel!Excel.Table#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: >-
+    summary: |-
       Deletes the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -328,13 +284,10 @@ methods:
     uid: 'excel!Excel.Table#getDataBodyRange:member(1)'
     package: excel!
     fullName: getDataBodyRange()
-    summary: >-
+    summary: |-
       Gets the range object associated with the data body of the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -367,13 +320,10 @@ methods:
     uid: 'excel!Excel.Table#getHeaderRowRange:member(1)'
     package: excel!
     fullName: getHeaderRowRange()
-    summary: >-
+    summary: |-
       Gets the range object associated with header row of the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -406,13 +356,10 @@ methods:
     uid: 'excel!Excel.Table#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: >-
+    summary: |-
       Gets the range object associated with the entire table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -445,13 +392,10 @@ methods:
     uid: 'excel!Excel.Table#getTotalRowRange:member(1)'
     package: excel!
     fullName: getTotalRowRange()
-    summary: >-
+    summary: |-
       Gets the range object associated with totals row of the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -485,8 +429,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -504,8 +448,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -513,9 +457,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Table;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Table:class" />'
@@ -561,8 +503,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -575,10 +517,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -591,13 +531,10 @@ methods:
     uid: 'excel!Excel.Table#reapplyFilters:member(1)'
     package: excel!
     fullName: reapplyFilters()
-    summary: >-
+    summary: |-
       Reapplies all the filters currently on the table.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -611,9 +548,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -621,20 +557,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.TableUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.TableUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -643,9 +574,7 @@ methods:
     uid: 'excel!Excel.Table#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -663,13 +592,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Table object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

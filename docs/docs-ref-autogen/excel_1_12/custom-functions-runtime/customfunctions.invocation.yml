@@ -14,17 +14,15 @@ properties:
     package: custom-functions-runtime!
     fullName: address
     summary: >-
-      The cell address where the function is being called, if requested,
-      otherwise undefined.
+      The cell address where the function is being called, if requested, otherwise undefined.
 
 
-      To request the address for the function, in the metadata JSON file, the
-      function options should specify: `{ "requiresAddress": true }`
+      To request the address for the function, in the metadata JSON file, the function options should specify: `{
+      "requiresAddress": true }`
 
 
-      If the metadata JSON file is being generated from JSDoc comments, include
-      the tag `@requiresAddress`<!-- -->. \[ [API set: CustomFunctionsRuntime
-      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->. \[
+      [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,23 +31,19 @@ properties:
       return:
         type: string
   - name: parameterAddresses
-    uid: >-
-      custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member
+    uid: 'custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member'
     package: custom-functions-runtime!
     fullName: parameterAddresses
     summary: >-
-      The range addresses where the function parameters are located, if
-      requested, otherwise undefined.
+      The range addresses where the function parameters are located, if requested, otherwise undefined.
 
 
-      To request the parameter addresses for the function, in the metadata JSON
-      file, the function options should specify: `{
-      "requiresParameterAddresses": true }`
+      To request the parameter addresses for the function, in the metadata JSON file, the function options should
+      specify: `{ "requiresParameterAddresses": true }`
 
 
-      If the metadata JSON file is being generated from JSDoc comments, include
-      the tag `@requiresParameterAddresses`<!-- -->. \[ [API set:
-      CustomFunctionsRuntime
+      If the metadata JSON file is being generated from JSDoc comments, include the tag
+      `@requiresParameterAddresses`<!-- -->. \[ [API set: CustomFunctionsRuntime
       1.3](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
     remarks: ''
     isPreview: false

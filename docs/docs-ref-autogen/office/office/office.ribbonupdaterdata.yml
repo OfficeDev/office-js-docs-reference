@@ -3,9 +3,7 @@ name: Office.RibbonUpdaterData
 uid: 'office!Office.RibbonUpdaterData:interface'
 package: office!
 fullName: Office.RibbonUpdaterData
-summary: >-
-  Specifies changes to the ribbon, such as the enabled or disabled status of a
-  button.
+summary: 'Specifies changes to the ribbon, such as the enabled or disabled status of a button.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,9 +13,7 @@ properties:
     uid: 'office!Office.RibbonUpdaterData#tabs:member'
     package: office!
     fullName: tabs
-    summary: >-
-      Collection of tabs whose state is set with the call of `requestUpdate`<!--
-      -->.
+    summary: Collection of tabs whose state is set with the call of `requestUpdate`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false

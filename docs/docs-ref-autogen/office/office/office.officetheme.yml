@@ -7,11 +7,9 @@ summary: >-
   Provides access to the properties for Office theme colors.
 
 
-  Using Office theme colors lets you coordinate the color scheme of your add-in
-  with the current Office theme selected by the user with File &gt; Office
-  Account &gt; Office Theme UI, which is applied across all Office host
-  applications. Using Office theme colors is appropriate for mail and task pane
-  add-ins.
+  Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected
+  by the user with File &gt; Office Account &gt; Office Theme UI, which is applied across all Office host applications.
+  Using Office theme colors is appropriate for mail and task pane add-ins.
 remarks: |-
   **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
 
@@ -39,9 +37,7 @@ properties:
     uid: 'office!Office.OfficeTheme#bodyBackgroundColor:member'
     package: office!
     fullName: bodyBackgroundColor
-    summary: >-
-      Gets the Office theme body background color as a hexadecimal color triplet
-      (e.g., "FFA500").
+    summary: 'Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,9 +49,7 @@ properties:
     uid: 'office!Office.OfficeTheme#bodyForegroundColor:member'
     package: office!
     fullName: bodyForegroundColor
-    summary: >-
-      Gets the Office theme body foreground color as a hexadecimal color triplet
-      (e.g., "FFA500").
+    summary: 'Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,9 +61,7 @@ properties:
     uid: 'office!Office.OfficeTheme#controlBackgroundColor:member'
     package: office!
     fullName: controlBackgroundColor
-    summary: >-
-      Gets the Office theme control background color as a hexadecimal color
-      triplet (e.g., "FFA500").
+    summary: 'Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -81,9 +73,7 @@ properties:
     uid: 'office!Office.OfficeTheme#controlForegroundColor:member'
     package: office!
     fullName: controlForegroundColor
-    summary: >-
-      Gets the Office theme control foreground color as a hexadecimal color
-      triplet (e.g., "FFA500").
+    summary: 'Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").'
     remarks: ''
     isPreview: false
     isDeprecated: false

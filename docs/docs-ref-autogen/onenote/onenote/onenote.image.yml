@@ -3,14 +3,10 @@ name: OneNote.Image
 uid: 'onenote!OneNote.Image:class'
 package: onenote!
 fullName: OneNote.Image
-summary: >-
-  Represents an Image. An Image can be a direct child of a PageContent object or
-  a Paragraph object.
+summary: |-
+  Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +17,8 @@ properties:
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'onenote!OneNote.Image#description:member'
     package: onenote!
     fullName: description
-    summary: >-
+    summary: |-
       Gets or sets the description of the Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'onenote!OneNote.Image#height:member'
     package: onenote!
     fullName: height
-    summary: >-
+    summary: |-
       Gets or sets the height of the Image layout.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +60,10 @@ properties:
     uid: 'onenote!OneNote.Image#hyperlink:member'
     package: onenote!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Gets or sets the hyperlink of the Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'onenote!OneNote.Image#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the Image object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,14 +90,10 @@ properties:
     uid: 'onenote!OneNote.Image#ocrData:member'
     package: onenote!
     fullName: ocrData
-    summary: >-
-      Gets the data obtained by OCR (Optical Character Recognition) of this
-      Image, such as OCR text and language.
+    summary: |-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -169,14 +149,11 @@ properties:
     package: onenote!
     fullName: pageContent
     summary: >-
-      Gets the PageContent object that contains the Image. Throws if the Image
-      is not a direct child of a PageContent. This object defines the position
-      of the Image on the page. Read-only.
+      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
+      This object defines the position of the Image on the page. Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -189,13 +166,11 @@ properties:
     package: onenote!
     fullName: paragraph
     summary: >-
-      Gets the Paragraph object that contains the Image. Throws if the Image is
-      not a direct child of a Paragraph. Read-only.
+      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+      Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -207,13 +182,10 @@ properties:
     uid: 'onenote!OneNote.Image#width:member'
     package: onenote!
     fullName: width
-    summary: >-
+    summary: |-
       Gets or sets the width of the Image layout.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -231,9 +203,7 @@ methods:
       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -285,30 +255,26 @@ methods:
     package: onenote!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Image` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.Image` -
-      Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.Image` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -325,8 +291,8 @@ methods:
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -334,9 +300,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): OneNote.Image;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
@@ -467,22 +431,18 @@ methods:
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        OneNote.Image;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Image;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
@@ -492,9 +452,8 @@ methods:
     package: onenote!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -502,20 +461,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ImageUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -524,9 +478,7 @@ methods:
     uid: 'onenote!OneNote.Image#set:member(2)'
     package: onenote!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -544,13 +496,11 @@ methods:
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original OneNote.Image object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `OneNote.Interfaces.ImageData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.ImageData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -564,13 +514,11 @@ methods:
     package: onenote!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      context.trackedObjects.add(thisObject). If you are using this object
-      across ".sync" calls and outside the sequential execution of a ".run"
-      batch, and get an "InvalidObjectPath" error when setting a property or
-      invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -584,12 +532,10 @@ methods:
     package: onenote!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects
-      slows down the host application, so please remember to free any objects
-      you add, once you're done using them. You will need to call
-      "context.sync()" before the memory release takes effect.
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

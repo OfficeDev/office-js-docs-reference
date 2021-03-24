@@ -3,9 +3,7 @@ name: Word.Interfaces.ContentControlCollectionData
 uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
 package: word!
 fullName: Word.Interfaces.ContentControlCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `contentControlCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `contentControlCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

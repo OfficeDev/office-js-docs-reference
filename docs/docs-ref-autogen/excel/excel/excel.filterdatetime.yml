@@ -3,13 +3,10 @@ name: Excel.FilterDatetime
 uid: 'excel!Excel.FilterDatetime:interface'
 package: excel!
 fullName: Excel.FilterDatetime
-summary: >-
+summary: |-
   Represents how to filter a date when filtering on values.
 
-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.FilterDatetime#date:member'
     package: excel!
     fullName: date
-    summary: >-
+    summary: |-
       The date in ISO8601 format used to filter data.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,22 +32,17 @@ properties:
     package: excel!
     fullName: specificity
     summary: >-
-      How specific the date should be used to keep data. For example, if the
-      date is 2005-04-02 and the specifity is set to "month", the filter
-      operation will keep all rows with a date in the month of April 2005.
+      How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set
+      to "month", the filter operation will keep all rows with a date in the month of April 2005.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        specificity: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day"
-        | "Hour" | "Minute" | "Second";
+      content: 'specificity: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second";'
       return:
         type: >-
-          <xref uid="excel!Excel.FilterDatetimeSpecificity:enum" /> | "Year" |
-          "Month" | "Day" | "Hour" | "Minute" | "Second"
+          <xref uid="excel!Excel.FilterDatetimeSpecificity:enum" /> | "Year" | "Month" | "Day" | "Hour" | "Minute" |
+          "Second"

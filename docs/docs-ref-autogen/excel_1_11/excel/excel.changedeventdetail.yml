@@ -3,14 +3,10 @@ name: Excel.ChangedEventDetail
 uid: 'excel!Excel.ChangedEventDetail:interface'
 package: excel!
 fullName: Excel.ChangedEventDetail
-summary: >-
-  Provide information about the detail of
-  WorksheetChangedEvent/TableChangedEvent
+summary: |-
+  Provide information about the detail of WorksheetChangedEvent/TableChangedEvent
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,14 +17,11 @@ properties:
     package: excel!
     fullName: valueAfter
     summary: >-
-      Represents the value after changed. The data returned could be of type
-      string, number, or a boolean. Cells that contain an error will return the
-      error string.
+      Represents the value after changed. The data returned could be of type string, number, or a boolean. Cells that
+      contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,14 +34,11 @@ properties:
     package: excel!
     fullName: valueBefore
     summary: >-
-      Represents the value before changed. The data returned could be of type
-      string, number, or a boolean. Cells that contain an error will return the
-      error string.
+      Represents the value before changed. The data returned could be of type string, number, or a boolean. Cells that
+      contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,43 +50,37 @@ properties:
     uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
     package: excel!
     fullName: valueTypeAfter
-    summary: >-
+    summary: |-
       Represents the type of value after changed
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" |
-        "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
+        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
+        "Error" | "RichValue";
       return:
         type: >-
-          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" |
-          "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
+          "Boolean" | "Error" | "RichValue"
   - name: valueTypeBefore
     uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
     package: excel!
     fullName: valueTypeBefore
-    summary: >-
+    summary: |-
       Represents the type of value before changed
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" |
-        "Integer" | "Double" | "Boolean" | "Error" | "RichValue";
+        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
+        "Error" | "RichValue";
       return:
         type: >-
-          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" |
-          "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+          <xref uid="excel!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
+          "Boolean" | "Error" | "RichValue"

@@ -3,9 +3,7 @@ name: Excel.Interfaces.RangeAreasUpdateData
 uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeAreasUpdateData
-summary: >-
-  An interface for updating data on the RangeAreas object, for use in
-  `rangeAreas.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,34 +13,27 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member'
     package: excel!
     fullName: dataValidation
-    summary: >-
+    summary: |-
       Returns a dataValidation object for all ranges in the RangeAreas.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.DataValidationUpdateData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
     package: excel!
     fullName: format
     summary: >-
-      Returns a RangeFormat object, encapsulating the the font, fill, borders,
-      alignment, and other properties for all ranges in the RangeAreas object.
+      Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
+      ranges in the RangeAreas object.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,15 +46,12 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the style for all ranges in this RangeAreas object. If the
-      styles of the cells are inconsistent, null will be returned. For custom
-      styles, the style name will be returned. For built-in styles, a string
-      representing a value in the BuiltInStyle enum will be returned.
+      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
+      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
+      value in the BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,14 +3,10 @@ name: Excel.CellPropertiesLoadOptions
 uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
 package: excel!
 fullName: Excel.CellPropertiesLoadOptions
-summary: >-
-  Represents which cell properties to load, when used as part of a
-  "range.getCellProperties" method.
+summary: |-
+  Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +16,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#address:member'
     package: excel!
     fullName: address
-    summary: >-
+    summary: |-
       Specifies whether to load on the `address` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +67,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
     package: excel!
     fullName: addressLocal
-    summary: >-
+    summary: |-
       Specifies whether to load on the `addressLocal` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,13 +82,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Specifies whether to load on the `format` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,13 +97,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
     package: excel!
     fullName: hidden
-    summary: >-
+    summary: |-
       Specifies whether to load on the `hidden` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -128,13 +112,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#hyperlink:member'
     package: excel!
     fullName: hyperlink
-    summary: >-
+    summary: |-
       Specifies whether to load on the `hyperlink` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -146,13 +127,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesLoadOptions#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Specifies whether to load on the `style` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

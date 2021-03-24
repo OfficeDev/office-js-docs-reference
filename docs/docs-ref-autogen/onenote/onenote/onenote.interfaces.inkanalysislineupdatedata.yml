@@ -4,8 +4,8 @@ uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
 summary: >-
-  An interface for updating data on the InkAnalysisLine object, for use in
-  "inkAnalysisLine.set(<!-- -->{ ... }<!-- -->)".
+  An interface for updating data on the InkAnalysisLine object, for use in "inkAnalysisLine.set(<!-- -->{ ... }<!--
+  -->)".
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,20 +15,14 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: >-
+    summary: |-
       Reference to the parent InkAnalysisParagraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface" />'

@@ -3,50 +3,38 @@ name: Office.MailboxEnums.ComposeType
 uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
-summary: >-
+summary: |-
   Compose type.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
 isPreview: true
 isDeprecated: false
 fields:
   - name: Forward
     uid: 'outlook!Office.MailboxEnums.ComposeType.Forward:member'
     package: outlook!
-    summary: >-
+    summary: |-
       Forward.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"forward"'
   - name: NewMail
     uid: 'outlook!Office.MailboxEnums.ComposeType.NewMail:member'
     package: outlook!
-    summary: >-
+    summary: |-
       New mail.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"newMail"'
   - name: Reply
     uid: 'outlook!Office.MailboxEnums.ComposeType.Reply:member'
     package: outlook!
-    summary: >-
+    summary: |-
       Reply.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"reply"'

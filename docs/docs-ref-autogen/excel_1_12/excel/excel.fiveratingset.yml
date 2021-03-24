@@ -3,10 +3,7 @@ name: Excel.FiveRatingSet
 uid: 'excel!Excel.FiveRatingSet:interface'
 package: excel!
 fullName: Excel.FiveRatingSet
-summary: >-
-  \[ [API set: ExcelApi
-  1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

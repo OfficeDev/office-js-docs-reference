@@ -3,13 +3,10 @@ name: Excel.ConditionalFormatRule
 uid: 'excel!Excel.ConditionalFormatRule:class'
 package: excel!
 fullName: Excel.ConditionalFormatRule
-summary: >-
+summary: |-
   Represents a rule, for all traditional rule/format pairings.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'excel!Excel.ConditionalFormatRule#formula:member'
     package: excel!
     fullName: formula
-    summary: >-
+    summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,14 +67,10 @@ properties:
     uid: 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
     package: excel!
     fullName: formulaLocal
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in
-      the user's language.
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in the user's language.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,14 +82,10 @@ properties:
     uid: 'excel!Excel.ConditionalFormatRule#formulaR1C1:member'
     package: excel!
     fullName: formulaR1C1
-    summary: >-
-      The formula, if required, to evaluate the conditional format rule on in
-      R1C1-style notation.
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -113,22 +99,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ConditionalFormatRuleLoadOptions):
-        Excel.ConditionalFormatRule;
+      content: 'load(options?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.ConditionalFormatRule:class" />'
         description: ''
@@ -137,8 +118,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -146,9 +127,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormatRule;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.ConditionalFormatRule:class" />'
@@ -158,8 +137,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -172,10 +151,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -189,9 +166,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -199,23 +175,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -224,9 +192,7 @@ methods:
     uid: 'excel!Excel.ConditionalFormatRule#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -244,13 +210,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.ConditionalFormatRule object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.ConditionalFormatRuleData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
@@ -258,8 +221,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatRuleData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ConditionalFormatRuleData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalFormatRuleData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

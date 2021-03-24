@@ -3,9 +3,7 @@ name: Word.Interfaces.DocumentCreatedUpdateData
 uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.DocumentCreatedUpdateData
-summary: >-
-  An interface for updating data on the DocumentCreated object, for use in
-  `documentCreated.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,12 +14,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc..
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
 
 
-      \[ [API set: WordApiHiddenDocument
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
     remarks: ''
     isPreview: false
@@ -38,8 +35,7 @@ properties:
       Gets the properties of the document.
 
 
-      \[ [API set: WordApiHiddenDocument
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
     remarks: ''
     isPreview: false
@@ -47,6 +43,4 @@ properties:
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />'

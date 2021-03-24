@@ -3,13 +3,10 @@ name: Excel.SettableColumnProperties
 uid: 'excel!Excel.SettableColumnProperties:interface'
 package: excel!
 fullName: Excel.SettableColumnProperties
-summary: >-
+summary: |-
   Represents the input parameter of setColumnProperties.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.SettableColumnProperties#columnHidden:member'
     package: excel!
     fullName: columnHidden
-    summary: >-
+    summary: |-
       Represents the `columnHidden` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.SettableColumnProperties#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

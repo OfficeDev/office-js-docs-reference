@@ -3,14 +3,10 @@ name: OneNote.Paragraph
 uid: 'onenote!OneNote.Paragraph:class'
 package: onenote!
 fullName: OneNote.Paragraph
-summary: >-
-  A container for the visible content on a page. A Paragraph can contain any one
-  ParagraphType type of content.
+summary: |-
+  A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +17,8 @@ properties:
     package: onenote!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the Paragraph object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,14 +45,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#image:member'
     package: onenote!
     fullName: image
-    summary: >-
-      Gets the Image object in the Paragraph. Throws an exception if
-      ParagraphType is not Image. Read-only.
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,14 +60,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#inkWords:member'
     package: onenote!
     fullName: inkWords
-    summary: >-
-      Gets the Ink collection in the Paragraph. Throws an exception if
-      ParagraphType is not Ink. Read-only.
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,13 +75,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#outline:member'
     package: onenote!
     fullName: outline
-    summary: >-
+    summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,13 +90,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: >-
+    summary: |-
       The collection of paragraphs under this paragraph. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -126,14 +105,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#parentParagraph:member'
     package: onenote!
     fullName: parentParagraph
-    summary: >-
-      Gets the parent paragraph object. Throws if a parent paragraph does not
-      exist. Read-only.
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,14 +120,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#parentParagraphOrNull:member'
     package: onenote!
     fullName: parentParagraphOrNull
-    summary: >-
-      Gets the parent paragraph object. Returns null if a parent paragraph does
-      not exist. Read-only.
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -165,13 +136,11 @@ properties:
     package: onenote!
     fullName: parentTableCell
     summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If
-      parent is not a TableCell, throws ItemNotFound. Read-only.
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
+      ItemNotFound. Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -184,13 +153,11 @@ properties:
     package: onenote!
     fullName: parentTableCellOrNull
     summary: >-
-      Gets the TableCell object that contains the Paragraph if one exists. If
-      parent is not a TableCell, returns null. Read-only.
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+      Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -202,14 +169,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#richText:member'
     package: onenote!
     fullName: richText
-    summary: >-
-      Gets the RichText object in the Paragraph. Throws an exception if
-      ParagraphType is not RichText. Read-only
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,14 +184,10 @@ properties:
     uid: 'onenote!OneNote.Paragraph#table:member'
     package: onenote!
     fullName: table
-    summary: >-
-      Gets the Table object in the Paragraph. Throws an exception if
-      ParagraphType is not Table. Read-only.
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -240,43 +199,31 @@ properties:
     uid: 'onenote!OneNote.Paragraph#type:member'
     package: onenote!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the Paragraph object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: OneNote.ParagraphType | "RichText" | "Image" | "Table" |
-        "Ink" | "Other";
+      content: 'readonly type: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.ParagraphType:enum" /> | "RichText" |
-          "Image" | "Table" | "Ink" | "Other"
+        type: '<xref uid="onenote!OneNote.ParagraphType:enum" /> | "RichText" | "Image" | "Table" | "Ink" | "Other"'
 methods:
   - name: 'addNoteTag(type, status)'
     uid: 'onenote!OneNote.Paragraph#addNoteTag:member(1)'
     package: onenote!
     fullName: 'addNoteTag(type, status)'
-    summary: >-
+    summary: |-
       Add NoteTag to the paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        addNoteTag(type: OneNote.NoteTagType, status: OneNote.NoteTagStatus):
-        OneNote.NoteTag;
+      content: 'addNoteTag(type: OneNote.NoteTagType, status: OneNote.NoteTagStatus): OneNote.NoteTag;'
       parameters:
         - id: type
           description: The type of the NoteTag.
@@ -291,35 +238,27 @@ methods:
     uid: 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
     package: onenote!
     fullName: 'addNoteTag(typeString, status)'
-    summary: >-
+    summary: |-
       Add NoteTag to the paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" |
-        "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical"
-        | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" |
-        "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
-        "TaskRemoved"): OneNote.NoteTag;
+        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+        "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed"
+        | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
       parameters:
         - id: typeString
           description: The type of the NoteTag.
           type: >-
-            "Unknown" | "ToDo" | "Important" | "Question" | "Contact" |
-            "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" |
-            "ToDoPriority1" | "ToDoPriority2"
+            "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" |
+            "Critical" | "ToDoPriority1" | "ToDoPriority2"
         - id: status
           description: The status of the NoteTag.
-          type: >-
-            "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" |
-            "TaskNotSyncedYet" | "TaskRemoved"
+          type: '"Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
       return:
         type: '<xref uid="onenote!OneNote.NoteTag:class" />'
         description: ''
@@ -327,13 +266,10 @@ methods:
     uid: 'onenote!OneNote.Paragraph#delete:member(1)'
     package: onenote!
     fullName: delete()
-    summary: >-
+    summary: |-
       Deletes the paragraph
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -385,13 +321,10 @@ methods:
     uid: 'onenote!OneNote.Paragraph#getParagraphInfo:member(1)'
     package: onenote!
     fullName: getParagraphInfo()
-    summary: >-
+    summary: |-
       Get list information of paragraph
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -406,30 +339,24 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(1)'
     package: onenote!
     fullName: 'insertHtmlAsSibling(insertLocation, html)'
-    summary: >-
+    summary: |-
       Inserts the specified HTML content
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html:
-        string): void;
+      content: 'insertHtmlAsSibling(insertLocation: OneNote.InsertLocation, html: string): void;'
       parameters:
         - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
           type: '<xref uid="onenote!OneNote.InsertLocation:enum" />'
         - id: html
           description: >-
-            An HTML string that describes the visual presentation of the
-            content. See [Supported
-            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            An HTML string that describes the visual presentation of the content. See [Supported
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
+            the OneNote add-ins JavaScript API.
           type: string
       return:
         type: void
@@ -476,30 +403,24 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(2)'
     package: onenote!
     fullName: 'insertHtmlAsSibling(insertLocationString, html)'
-    summary: >-
+    summary: |-
       Inserts the specified HTML content
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertHtmlAsSibling(insertLocationString: "Before" | "After", html:
-        string): void;
+      content: 'insertHtmlAsSibling(insertLocationString: "Before" | "After", html: string): void;'
       parameters:
         - id: insertLocationString
           description: The location of new contents relative to the current Paragraph.
           type: '"Before" | "After"'
         - id: html
           description: >-
-            An HTML string that describes the visual presentation of the
-            content. See [Supported
-            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html)
-            for the OneNote add-ins JavaScript API.
+            An HTML string that describes the visual presentation of the content. See [Supported
+            HTML](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html) for
+            the OneNote add-ins JavaScript API.
           type: string
       return:
         type: void
@@ -508,21 +429,17 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertImageAsSibling:member(1)'
     package: onenote!
     fullName: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
-    summary: >-
+    summary: |-
       Inserts the image at the specified insert location..
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertImageAsSibling(insertLocation: OneNote.InsertLocation,
-        base64EncodedImage: string, width: number, height: number):
-        OneNote.Image;
+        insertImageAsSibling(insertLocation: OneNote.InsertLocation, base64EncodedImage: string, width: number, height:
+        number): OneNote.Image;
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
@@ -531,14 +448,10 @@ methods:
           description: HTML string to append.
           type: string
         - id: width
-          description: >-
-            Optional. Width in the unit of Points. The default value is null and
-            image width will be respected.
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
           type: number
         - id: height
-          description: >-
-            Optional. Height in the unit of Points. The default value is null
-            and image height will be respected.
+          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type: number
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
@@ -581,29 +494,21 @@ methods:
               }
           });
           ```
-  - name: >-
-      insertImageAsSibling(insertLocationString, base64EncodedImage, width,
-      height)
+  - name: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
     uid: 'onenote!OneNote.Paragraph#insertImageAsSibling:member(2)'
     package: onenote!
-    fullName: >-
-      insertImageAsSibling(insertLocationString, base64EncodedImage, width,
-      height)
-    summary: >-
+    fullName: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
+    summary: |-
       Inserts the image at the specified insert location..
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertImageAsSibling(insertLocationString: "Before" | "After",
-        base64EncodedImage: string, width: number, height: number):
-        OneNote.Image;
+        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number,
+        height: number): OneNote.Image;
       parameters:
         - id: insertLocationString
           description: The location of the table relative to the current Paragraph.
@@ -612,14 +517,10 @@ methods:
           description: HTML string to append.
           type: string
         - id: width
-          description: >-
-            Optional. Width in the unit of Points. The default value is null and
-            image width will be respected.
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
           type: number
         - id: height
-          description: >-
-            Optional. Height in the unit of Points. The default value is null
-            and image height will be respected.
+          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type: number
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
@@ -628,20 +529,15 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(1)'
     package: onenote!
     fullName: 'insertRichTextAsSibling(insertLocation, paragraphText)'
-    summary: >-
+    summary: |-
       Inserts the paragraph text at the specifiec insert location.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertRichTextAsSibling(insertLocation: OneNote.InsertLocation,
-        paragraphText: string): OneNote.RichText;
+      content: 'insertRichTextAsSibling(insertLocation: OneNote.InsertLocation, paragraphText: string): OneNote.RichText;'
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
@@ -694,20 +590,15 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(2)'
     package: onenote!
     fullName: 'insertRichTextAsSibling(insertLocationString, paragraphText)'
-    summary: >-
+    summary: |-
       Inserts the paragraph text at the specifiec insert location.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertRichTextAsSibling(insertLocationString: "Before" | "After",
-        paragraphText: string): OneNote.RichText;
+      content: 'insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;'
       parameters:
         - id: insertLocationString
           description: The location of the table relative to the current Paragraph.
@@ -722,21 +613,17 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(1)'
     package: onenote!
     fullName: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
-    summary: >-
-      Adds a table with the specified number of rows and columns before or after
-      the current paragraph.
+    summary: |-
+      Adds a table with the specified number of rows and columns before or after the current paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount:
-        number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(insertLocation: OneNote.InsertLocation, rowCount: number, columnCount: number, values?:
+        string[][]): OneNote.Table;
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
@@ -748,9 +635,7 @@ methods:
           description: The number of columns in the table.
           type: number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type: 'string[][]'
       return:
         type: '<xref uid="onenote!OneNote.Table:class" />'
@@ -759,21 +644,17 @@ methods:
     uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(2)'
     package: onenote!
     fullName: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
-    summary: >-
-      Adds a table with the specified number of rows and columns before or after
-      the current paragraph.
+    summary: |-
+      Adds a table with the specified number of rows and columns before or after the current paragraph.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount:
-        number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?:
+        string[][]): OneNote.Table;
       parameters:
         - id: insertLocationString
           description: The location of the table relative to the current Paragraph.
@@ -785,9 +666,7 @@ methods:
           description: The number of columns in the table.
           type: number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are
-            specified in the array.
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type: 'string[][]'
       return:
         type: '<xref uid="onenote!OneNote.Table:class" />'
@@ -797,42 +676,34 @@ methods:
     package: onenote!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): OneNote.Paragraph` - Where option is a
-      comma-delimited string or an array of strings that specify the properties
-      to load.
+      `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph`
-      - Where option.select is a comma-delimited string that specifies the
-      properties to load, and options.expand is a comma-delimited string that
+      `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
       specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): OneNote.Paragraph` - Only available on collection types. It is
-      similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(option?: OneNote.Interfaces.ParagraphLoadOptions):
-        OneNote.Paragraph;
+      content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
       parameters:
         - id: option
           description: ''
-          type: >-
-            <xref
-            uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />
+          type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.Paragraph:class" />'
         description: ''
@@ -841,8 +712,8 @@ methods:
     package: onenote!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -850,9 +721,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): OneNote.Paragraph;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="onenote!OneNote.Paragraph:class" />'
@@ -934,22 +803,18 @@ methods:
     package: onenote!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }):
-        OneNote.Paragraph;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Paragraph;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that
-            specifies the properties to load, and propertyNamesAndPaths.expand
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type: '{ select?: string; expand?: string; }'
       return:
         type: '<xref uid="onenote!OneNote.Paragraph:class" />'
@@ -959,9 +824,8 @@ methods:
     package: onenote!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -969,22 +833,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ParagraphUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="onenote!OneNote.Interfaces.ParagraphUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -993,9 +850,7 @@ methods:
     uid: 'onenote!OneNote.Paragraph#set:member(2)'
     package: onenote!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1013,13 +868,11 @@ methods:
     package: onenote!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original OneNote.Paragraph
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1033,13 +886,11 @@ methods:
     package: onenote!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      context.trackedObjects.add(thisObject). If you are using this object
-      across ".sync" calls and outside the sequential execution of a ".run"
-      batch, and get an "InvalidObjectPath" error when setting a property or
-      invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1053,12 +904,10 @@ methods:
     package: onenote!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects
-      slows down the host application, so please remember to free any objects
-      you add, once you're done using them. You will need to call
-      "context.sync()" before the memory release takes effect.
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

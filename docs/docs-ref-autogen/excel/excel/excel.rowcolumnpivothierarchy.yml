@@ -3,13 +3,10 @@ name: Excel.RowColumnPivotHierarchy
 uid: 'excel!Excel.RowColumnPivotHierarchy:class'
 package: excel!
 fullName: Excel.RowColumnPivotHierarchy
-summary: >-
+summary: |-
   Represents the Excel RowColumnPivotHierarchy.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'excel!Excel.RowColumnPivotHierarchy#fields:member'
     package: excel!
     fullName: fields
-    summary: >-
+    summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +45,10 @@ properties:
     uid: 'excel!Excel.RowColumnPivotHierarchy#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       ID of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +60,10 @@ properties:
     uid: 'excel!Excel.RowColumnPivotHierarchy#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Name of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,13 +75,10 @@ properties:
     uid: 'excel!Excel.RowColumnPivotHierarchy#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       Position of the RowColumnPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,22 +92,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions):
-        Excel.RowColumnPivotHierarchy;
+      content: 'load(options?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.RowColumnPivotHierarchy:class" />'
         description: ''
@@ -131,8 +111,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -140,9 +120,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchy;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.RowColumnPivotHierarchy:class" />'
@@ -152,8 +130,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -166,10 +144,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -183,9 +159,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -193,23 +168,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RowColumnPivotHierarchyUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RowColumnPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -218,9 +185,7 @@ methods:
     uid: 'excel!Excel.RowColumnPivotHierarchy#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -237,13 +202,10 @@ methods:
     uid: 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
     package: excel!
     fullName: setToDefault()
-    summary: >-
+    summary: |-
       Reset the RowColumnPivotHierarchy back to its default values.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -257,13 +219,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.RowColumnPivotHierarchyData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
@@ -271,8 +230,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.RowColumnPivotHierarchyData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

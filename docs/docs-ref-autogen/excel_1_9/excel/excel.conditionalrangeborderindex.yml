@@ -3,10 +3,7 @@ name: Excel.ConditionalRangeBorderIndex
 uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
 package: excel!
 fullName: Excel.ConditionalRangeBorderIndex
-summary: >-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

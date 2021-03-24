@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartAxisTitleUpdateData
 uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxisTitleUpdateData
-summary: >-
-  An interface for updating data on the ChartAxisTitle object, for use in
-  `chartAxisTitle.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,34 +13,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Specifies the formatting of chart axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface" />'
   - name: text
     uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#text:member'
     package: excel!
     fullName: text
-    summary: >-
+    summary: |-
       Specifies the axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +44,11 @@ properties:
     package: excel!
     fullName: textOrientation
     summary: >-
-      Specifies the angle to which the text is oriented for the chart axis
-      title. The value should either be an integer from -90 to 90 or the integer
-      180 for vertically-oriented text.
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the axis title is visibile.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

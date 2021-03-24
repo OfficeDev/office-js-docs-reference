@@ -3,13 +3,10 @@ name: OneNote.Interfaces.RichTextLoadOptions
 uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.RichTextLoadOptions
-summary: >-
+summary: |-
   Represents a RichText object in a Paragraph.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: >-
+    summary: |-
       The language id of the text. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,33 +58,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: >-
+    summary: |-
       Gets the Paragraph object that contains the RichText object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
   - name: text
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
     package: onenote!
     fullName: text
-    summary: >-
+    summary: |-
       Gets the text content of the RichText object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

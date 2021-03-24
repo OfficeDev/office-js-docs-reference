@@ -3,9 +3,7 @@ name: Office.Slice
 uid: 'office!Office.Slice:interface'
 package: office!
 fullName: Office.Slice
-summary: >-
-  Represents a slice of a document file. The Slice object is accessed with the
-  `File.getSliceAsync` method.
+summary: Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,12 +14,11 @@ properties:
     package: office!
     fullName: data
     summary: >-
-      Gets the raw data of the file slice in `Office.FileType.Text` or
-      `Office.FileType.Compressed` format as specified by the `fileType`
-      parameter of the call to the `Document.getFileAsync` method.
+      Gets the raw data of the file slice in `Office.FileType.Text` or `Office.FileType.Compressed` format as specified
+      by the `fileType` parameter of the call to the `Document.getFileAsync` method.
     remarks: >-
-      Files in the "compressed" format will return a byte array that can be
-      transformed to a base64-encoded string if required.
+      Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if
+      required.
     isPreview: false
     isDeprecated: false
     syntax:

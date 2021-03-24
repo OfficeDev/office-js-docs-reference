@@ -3,22 +3,19 @@ name: Office.EnhancedLocation
 uid: 'outlook!Office.EnhancedLocation:interface'
 package: outlook!
 fullName: Office.EnhancedLocation
-summary: >-
+summary: |-
   Represents the set of locations on an appointment.
 
-
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `ReadItem`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,29 +24,25 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#addAsync:member(1)'
     package: outlook!
     fullName: 'addAsync(locationIdentifiers, options, callback)'
-    summary: >-
+    summary: |-
       Adds to the set of locations associated with the appointment.
 
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - `InvalidFormatError`<!-- -->: The format of the specified data object is
-      not valid.
+      - `InvalidFormatError`<!-- -->: The format of the specified data object is not valid.
 
 
       #### Examples
@@ -71,8 +64,7 @@ methods:
         }
       ];
 
-      Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result)
-      => {
+      Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result) => {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log(`Successfully added locations ${JSON.stringify(locations)}`);
         } else {
@@ -85,29 +77,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: locationIdentifiers
           description: The locations to be added to the current list of locations.
           type: '<xref uid="outlook!Office.LocationIdentifier:interface" />[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-            Check the `status` property of `asyncResult` to determine if the
-            call succeeded.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
+            `asyncResult` to determine if the call succeeded.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -115,22 +101,19 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: >-
+    summary: |-
       Gets the set of locations associated with the appointment.
 
-
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose or Read
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -169,19 +152,16 @@ methods:
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;<xref uid="outlook!Office.LocationDetails:interface" />[]&gt;)
-            =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.LocationDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -193,23 +173,20 @@ methods:
       Removes the set of locations associated with the appointment.
 
 
-      If there are multiple locations with the same name, all matching locations
-      will be removed even if only one was specified in
-      `locationIdentifiers`<!-- -->.
+      If there are multiple locations with the same name, all matching locations will be removed even if only one was
+      specified in `locationIdentifiers`<!-- -->.
 
 
-      \[ [API set: Mailbox
-      1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -231,8 +208,7 @@ methods:
         }
       ];
 
-      Office.context.mailbox.item.enhancedLocation.removeAsync(locations,
-      (result) => {
+      Office.context.mailbox.item.enhancedLocation.removeAsync(locations, (result) => {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
         } else {
@@ -245,29 +221,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: locationIdentifiers
           description: The locations to be removed from the current list of locations.
           type: '<xref uid="outlook!Office.LocationIdentifier:interface" />[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-            Check the `status` property of `asyncResult` to determine if the
-            call succeeded.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Check the `status` property of
+            `asyncResult` to determine if the call succeeded.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

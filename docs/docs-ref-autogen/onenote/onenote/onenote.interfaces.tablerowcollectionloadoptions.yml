@@ -3,13 +3,10 @@ name: OneNote.Interfaces.TableRowCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableRowCollectionLoadOptions
-summary: >-
+summary: |-
   Contains a collection of TableRow objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#cellCount:member'
     package: onenote!
     fullName: cellCount
-    summary: >-
-      For EACH ITEM in the collection: Gets the number of cells in the row.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,34 +43,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#cells:member'
     package: onenote!
     fullName: cells
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the cells in the row.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the ID of the row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -86,17 +70,13 @@ properties:
       return:
         type: boolean
   - name: parentTable
-    uid: >-
-      onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#parentTable:member
+    uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#parentTable:member'
     package: onenote!
     fullName: parentTable
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the parent table.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,14 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the row in its parent
-      table. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

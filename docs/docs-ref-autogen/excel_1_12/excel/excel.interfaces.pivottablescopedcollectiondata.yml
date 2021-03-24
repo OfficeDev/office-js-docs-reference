@@ -3,9 +3,7 @@ name: Excel.Interfaces.PivotTableScopedCollectionData
 uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotTableScopedCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `pivotTableScopedCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `pivotTableScopedCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

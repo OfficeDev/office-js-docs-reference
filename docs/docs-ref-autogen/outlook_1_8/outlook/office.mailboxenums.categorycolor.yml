@@ -7,17 +7,15 @@ summary: >-
   Specifies the category color.
 
 
-  **Note**: The actual color depends on how the Outlook client renders it. In
-  this case, the colors noted on each preset are for the Outlook desktop client.
+  **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset
+  are for the Outlook desktop client.
 
 
-  \[ [API set: Mailbox
-  1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: false
 isDeprecated: false
 fields:

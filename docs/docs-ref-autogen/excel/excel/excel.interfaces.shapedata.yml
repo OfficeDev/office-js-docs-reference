@@ -13,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#altTextDescription:member'
     package: excel!
     fullName: altTextDescription
-    summary: >-
+    summary: |-
       Specifies the alternative description text for a `Shape` object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#altTextTitle:member'
     package: excel!
     fullName: altTextTitle
-    summary: >-
+    summary: |-
       Specifies the alternative title text for a `Shape` object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#connectionSiteCount:member'
     package: excel!
     fullName: connectionSiteCount
-    summary: >-
+    summary: |-
       Returns the number of connection sites on this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,13 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Returns the fill formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -86,135 +74,91 @@ properties:
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Specifies the geometric shape type of this geometric shape. See
-      `Excel.GeometricShapeType` for details. Returns `null` if the shape type
-      is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns
+      `null` if the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        geometricShapeType?: Excel.GeometricShapeType | "LineInverse" |
-        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
-        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
-        "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
-        "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
-        | "Star32" | "RoundRectangle" | "Round1Rectangle" |
-        "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle"
-        | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" |
-        "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge"
-        | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" |
-        "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" |
-        "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" |
-        "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" |
-        "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" |
-        "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" |
-        "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" |
-        "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" |
-        "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame"
-        | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" |
-        "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-        "AccentCallout1" | "AccentCallout2" | "AccentCallout3" |
-        "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
-        "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3"
-        | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" |
-        "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" |
-        "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" |
-        "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" |
-        "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
-        "FlowChartPreparation" | "FlowChartManualInput" |
-        "FlowChartManualOperation" | "FlowChartConnector" |
-        "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-        "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-        "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-        "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-        "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-        "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-        "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-        "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning"
-        | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-        "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" |
-        "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
-        "ChartStar" | "ChartPlus";
+        geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
       return:
         type: >-
-          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
-          "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
-          "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
-          "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
-          | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle"
-          | "Round2SameRectangle" | "Round2DiagonalRectangle" |
-          "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" |
-          "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" |
-          "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" |
-          "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow"
-          | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" |
-          "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
-          "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow"
-          | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" |
-          "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
-          "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" |
-          "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-          "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" |
-          "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" |
-          "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1"
-          | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" |
-          "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-          "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
-          "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud"
-          | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-          "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
-          "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" |
-          "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
-          "FlowChartInternalStorage" | "FlowChartDocument" |
-          "FlowChartMultidocument" | "FlowChartTerminator" |
-          "FlowChartPreparation" | "FlowChartManualInput" |
-          "FlowChartManualOperation" | "FlowChartConnector" |
-          "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-          "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-          "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-          "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-          "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-          "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" |
-          "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" |
-          "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" |
-          "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" |
-          "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" |
-          "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" |
+          "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
+          "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10"
+          | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
+          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
+          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
+          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
+          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
+          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
+          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
+          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
+          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
+          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
+          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
+          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
+          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
           "ChartPlus"
   - name: height
     uid: 'excel!Excel.Interfaces.ShapeData#height:member'
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value or zero as an input.
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -226,13 +170,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the shape identifier.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -245,14 +186,11 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the left side
-      of the worksheet. Throws an `InvalidArgument` exception when set with a
-      negative value as an input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -265,15 +203,12 @@ properties:
     package: excel!
     fullName: level
     summary: >-
-      Specifies the level of the specified shape. For example, a level of 0
-      means that the shape is not part of any groups, a level of 1 means the
-      shape is part of a top-level group, and a level of 2 means the shape is
-      part of a sub-group of the top level.
+      Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -285,13 +220,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#lineFormat:member'
     package: excel!
     fullName: lineFormat
-    summary: >-
+    summary: |-
       Returns the line formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -303,13 +235,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#lockAspectRatio:member'
     package: excel!
     fullName: lockAspectRatio
-    summary: >-
+    summary: |-
       Specifies if the aspect ratio of this shape is locked.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -321,13 +250,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -339,33 +265,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#placement:member'
     package: excel!
     fullName: placement
-    summary: >-
+    summary: |-
       Represents how the object is attached to the cells below it.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'placement?: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";'
       return:
-        type: >-
-          <xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" |
-          "Absolute"
+        type: '<xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" | "Absolute"'
   - name: rotation
     uid: 'excel!Excel.Interfaces.ShapeData#rotation:member'
     package: excel!
     fullName: rotation
-    summary: >-
+    summary: |-
       Specifies the rotation, in degrees, of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -378,14 +296,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of
-      the worksheet. Throws an `InvalidArgument` exception when set with a
-      negative value as an input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -397,35 +312,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Returns the type of this shape. See `Excel.ShapeType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" |
-        "Group" | "Line";
+      content: 'type?: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" |
-          "GeometricShape" | "Group" | "Line"
+        type: '<xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"'
   - name: visible
     uid: 'excel!Excel.Interfaces.ShapeData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the shape is visible.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -438,13 +343,11 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value or zero as an input.
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value
+      or zero as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -456,14 +359,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeData#zOrderPosition:member'
     package: excel!
     fullName: zOrderPosition
-    summary: >-
-      Returns the position of the specified shape in the z-order, with 0
-      representing the bottom of the order stack.
+    summary: |-
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

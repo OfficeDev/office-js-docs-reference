@@ -4,8 +4,7 @@ uid: 'custom-functions-runtime!CustomFunctions.Error:class'
 package: custom-functions-runtime!
 fullName: CustomFunctions.Error
 summary: >-
-  Use this class to handle errors and write custom error messages. \[ [API set:
-  CustomFunctionsRuntime
+  Use this class to handle errors and write custom error messages. \[ [API set: CustomFunctionsRuntime
   1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
 remarks: ''
 isPreview: false
@@ -25,9 +24,7 @@ constructors:
       parameters:
         - id: code
           description: ''
-          type: >-
-            <xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum"
-            />
+          type: '<xref uid="custom-functions-runtime!CustomFunctions.ErrorCode:enum" />'
         - id: message
           description: ''
           type: string
@@ -37,8 +34,7 @@ properties:
     package: custom-functions-runtime!
     fullName: code
     summary: >-
-      The error code returned by your custom function. \[ [API set:
-      CustomFunctionsRuntime
+      The error code returned by your custom function. \[ [API set: CustomFunctionsRuntime
       1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
     remarks: ''
     isPreview: false
@@ -52,9 +48,8 @@ properties:
     package: custom-functions-runtime!
     fullName: message
     summary: >-
-      Your custom error message, such as "This stock price is unavailable".
-      Custom messages are only available with certain error codes. \[ [API set:
-      CustomFunctionsRuntime
+      Your custom error message, such as "This stock price is unavailable". Custom messages are only available with
+      certain error codes. \[ [API set: CustomFunctionsRuntime
       1.2](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
     remarks: ''
     isPreview: false

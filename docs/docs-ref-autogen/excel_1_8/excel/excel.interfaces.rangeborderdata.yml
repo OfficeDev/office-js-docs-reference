@@ -3,9 +3,7 @@ name: Excel.Interfaces.RangeBorderData
 uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeBorderData
-summary: >-
-  An interface describing the data returned by calling
-  `rangeBorder.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `rangeBorder.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,11 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the border line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,69 +30,54 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeBorderData#sideIndex:member'
     package: excel!
     fullName: sideIndex
-    summary: >-
-      Constant value that indicates the specific side of the border. See
-      Excel.BorderIndex for details.
+    summary: |-
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        sideIndex?: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" |
-        "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" |
-        "DiagonalUp";
+        sideIndex?: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
+        "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
       return:
         type: >-
-          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom"
-          | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
-          "DiagonalDown" | "DiagonalUp"
+          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
+          "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
   - name: style
     uid: 'excel!Excel.Interfaces.RangeBorderData#style:member'
     package: excel!
     fullName: style
     summary: >-
-      One of the constants of line style specifying the line style for the
-      border. See Excel.BorderLineStyle for details.
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" |
-        "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
       return:
         type: >-
-          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" |
-          "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
-          "SlantDashDot"
+          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+          "Dot" | "Double" | "SlantDashDot"
   - name: weight
     uid: 'excel!Excel.Interfaces.RangeBorderData#weight:member'
     package: excel!
     fullName: weight
-    summary: >-
-      Specifies the weight of the border around a range. See Excel.BorderWeight
-      for details.
+    summary: |-
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
-        type: >-
-          <xref uid="excel!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" |
-          "Medium" | "Thick"
+        type: '<xref uid="excel!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" | "Medium" | "Thick"'

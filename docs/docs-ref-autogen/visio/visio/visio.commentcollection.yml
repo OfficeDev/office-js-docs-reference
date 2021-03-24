@@ -3,13 +3,10 @@ name: Visio.CommentCollection
 uid: 'visio!Visio.CommentCollection:class'
 package: visio!
 fullName: Visio.CommentCollection
-summary: >-
+summary: |-
   Represents the CommentCollection for a given Shape.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: visio!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -46,13 +43,10 @@ methods:
     uid: 'visio!Visio.CommentCollection#getCount:member(1)'
     package: visio!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of Comments.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -65,13 +59,10 @@ methods:
     uid: 'visio!Visio.CommentCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: >-
+    summary: |-
       Gets the Comment using its name.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,30 +80,26 @@ methods:
     package: visio!
     fullName: load(option)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call "context.sync()" before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
     remarks: >-
       In addition to this signature, this method has the following signatures:
 
 
-      `load(option?: string | string[]): Visio.CommentCollection` - Where option
-      is a comma-delimited string or an array of strings that specify the
-      properties to load.
+      `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; }):
-      Visio.CommentCollection` - Where option.select is a comma-delimited string
-      that specifies the properties to load, and options.expand is a
-      comma-delimited string that specifies the navigation properties to load.
+      `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
 
 
-      `load(option?: { select?: string; expand?: string; top?: number; skip?:
-      number }): Visio.CommentCollection` - Only available on collection types.
-      It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip
-      specifies the number of items that are to be skipped and not included in
-      the result. If option.top is specified, the result set will start after
-      skipping the specified number of items.
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
@@ -147,15 +134,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        load(option?: Visio.Interfaces.CommentCollectionLoadOptions &
-        Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
       parameters:
         - id: option
           description: ''
           type: >-
-            <xref
-            uid="visio!Visio.Interfaces.CommentCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="visio!Visio.Interfaces.CommentCollectionLoadOptions:interface" /> & <xref
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="visio!Visio.CommentCollection:class" />'
@@ -165,8 +150,8 @@ methods:
     package: visio!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -174,9 +159,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Visio.CommentCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="visio!Visio.CommentCollection:class" />'
@@ -203,15 +186,11 @@ methods:
     package: visio!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Visio.CommentCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Visio.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
-      array with shallow copies of any loaded properties from the collection's
-      items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Visio.CommentCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Visio.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -4,16 +4,15 @@ uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterCollectionUpdateData
 summary: >-
-  An interface for updating data on the SlideMasterCollection object, for use in
-  `slideMasterCollection.set({ ... })`<!-- -->.
+  An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: items
-    uid: >-
-      powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member
+    uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member'
     package: powerpoint!
     fullName: items
     summary: ''
@@ -23,6 +22,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.SlideMasterData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
-          />[]
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface" />[]'

@@ -3,13 +3,10 @@ name: Excel.SlicerStyleCollection
 uid: 'excel!Excel.SlicerStyleCollection:class'
 package: excel!
 fullName: Excel.SlicerStyleCollection
-summary: >-
+summary: |-
   Represents a collection of SlicerStyle objects.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -46,13 +43,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
     package: excel!
     fullName: 'add(name, makeUniqueName)'
-    summary: >-
+    summary: |-
       Creates a blank SlicerStyle with the specified name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -61,13 +55,11 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new SlicerStyle. Will throw an invalid
-            argument exception if the name is already in use.
+            The unique name for the new SlicerStyle. Will throw an invalid argument exception if the name is already in
+            use.
           type: string
         - id: makeUniqueName
-          description: >-
-            Optional, defaults to false. If true, will append numbers to the
-            name in order to make it unique, if needed.
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
@@ -76,13 +68,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of slicer styles in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -95,13 +84,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
     package: excel!
     fullName: getDefault()
-    summary: >-
+    summary: |-
       Gets the default SlicerStyle for the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -114,13 +100,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: >-
+    summary: |-
       Gets a SlicerStyle by name.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -137,14 +120,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: >-
-      Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return
-      a null object.
+    summary: |-
+      Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -162,22 +141,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.SlicerStyleCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.SlicerStyleCollection;
+        load(options?: Excel.Interfaces.SlicerStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SlicerStyleCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.SlicerStyleCollection:class" />'
@@ -187,8 +164,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -196,9 +173,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerStyleCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.SlicerStyleCollection:class" />'
@@ -208,22 +183,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.SlicerStyleCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SlicerStyleCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.SlicerStyleCollection:class" />'
@@ -232,13 +203,10 @@ methods:
     uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
     package: excel!
     fullName: setDefault(newDefaultStyle)
-    summary: >-
+    summary: |-
       Sets the default SlicerStyle for use in the parent object's scope.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -246,9 +214,7 @@ methods:
       content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: >-
-            The SlicerStyle object or name of the SlicerStyle object that should
-            be the new default.
+          description: The SlicerStyle object or name of the SlicerStyle object that should be the new default.
           type: '<xref uid="excel!Excel.SlicerStyle:class" /> | string'
       return:
         type: void
@@ -258,23 +224,17 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.SlicerStyleCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.SlicerStyleCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the
-      collection's items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.SlicerStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerStyleCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Excel.Interfaces.SlicerStyleCollectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -3,13 +3,10 @@ name: Excel.Interfaces.DocumentPropertiesLoadOptions
 uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
-summary: >-
+summary: |-
   Represents workbook properties.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
     package: excel!
     fullName: author
-    summary: >-
+    summary: |-
       The author of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
     package: excel!
     fullName: category
-    summary: >-
+    summary: |-
       The category of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
     package: excel!
     fullName: comments
-    summary: >-
+    summary: |-
       The comments of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
     package: excel!
     fullName: company
-    summary: >-
+    summary: |-
       The company of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: >-
+    summary: |-
       Gets the creation date of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -124,13 +105,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
     package: excel!
     fullName: keywords
-    summary: >-
+    summary: |-
       The keywords of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,13 +120,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
     package: excel!
     fullName: lastAuthor
-    summary: >-
+    summary: |-
       Gets the last author of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -160,13 +135,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
     package: excel!
     fullName: manager
-    summary: >-
+    summary: |-
       The manager of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -178,13 +150,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
     package: excel!
     fullName: revisionNumber
-    summary: >-
+    summary: |-
       Gets the revision number of the workbook. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -196,13 +165,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
     package: excel!
     fullName: subject
-    summary: >-
+    summary: |-
       The subject of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -214,13 +180,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
     package: excel!
     fullName: title
-    summary: >-
+    summary: |-
       The title of the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

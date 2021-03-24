@@ -4,16 +4,12 @@ uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ShapeLoadOptions
 summary: >-
-  Represents a generic shape object in the worksheet. A shape could be a
-  geometric shape, a line, a group of shapes, etc. To learn more about the shape
-  object model, read [Work with shapes using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!--
-  -->.
+  Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
+  etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -24,9 +20,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,13 +33,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextDescription:member'
     package: excel!
     fullName: altTextDescription
-    summary: >-
+    summary: |-
       Specifies the alternative description text for a Shape object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,13 +48,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#altTextTitle:member'
     package: excel!
     fullName: altTextTitle
-    summary: >-
+    summary: |-
       Specifies the alternative title text for a Shape object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +63,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#connectionSiteCount:member'
     package: excel!
     fullName: connectionSiteCount
-    summary: >-
+    summary: |-
       Returns the number of connection sites on this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,13 +78,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Returns the fill formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -111,35 +94,28 @@ properties:
     package: excel!
     fullName: geometricShape
     summary: >-
-      Returns the geometric shape associated with the shape. An error will be
-      thrown if the shape type is not "GeometricShape".
+      Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
+      "GeometricShape".
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.GeometricShapeLoadOptions:interface" />'
   - name: geometricShapeType
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#geometricShapeType:member'
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Specifies the geometric shape type of this geometric shape. See
-      Excel.GeometricShapeType for details. Returns null if the shape type is
-      not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
+      if the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -151,14 +127,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#group:member'
     package: excel!
     fullName: group
-    summary: >-
-      Returns the shape group associated with the shape. An error will be thrown
-      if the shape type is not "GroupShape".
+    summary: |-
+      Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -171,13 +143,11 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the shape. Throws an invalid argument
-      exception when set with a negative value or zero as input.
+      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -189,13 +159,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the shape identifier.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -207,14 +174,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#image:member'
     package: excel!
     fullName: image
-    summary: >-
-      Returns the image associated with the shape. An error will be thrown if
-      the shape type is not "Image".
+    summary: |-
+      Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -227,14 +190,11 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the left side
-      of the worksheet. Throws an invalid argument exception when set with a
-      negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -247,15 +207,12 @@ properties:
     package: excel!
     fullName: level
     summary: >-
-      Specifies the level of the specified shape. For example, a level of 0
-      means that the shape is not part of any groups, a level of 1 means the
-      shape is part of a top-level group, and a level of 2 means the shape is
-      part of a sub-group of the top level.
+      Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -267,14 +224,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#line:member'
     package: excel!
     fullName: line
-    summary: >-
-      Returns the line associated with the shape. An error will be thrown if the
-      shape type is not "Line".
+    summary: |-
+      Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -286,33 +239,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lineFormat:member'
     package: excel!
     fullName: lineFormat
-    summary: >-
+    summary: |-
       Returns the line formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface" />'
   - name: lockAspectRatio
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#lockAspectRatio:member'
     package: excel!
     fullName: lockAspectRatio
-    summary: >-
+    summary: |-
       Specifies if the aspect ratio of this shape is locked.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -324,13 +269,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -342,13 +284,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#parentGroup:member'
     package: excel!
     fullName: parentGroup
-    summary: >-
+    summary: |-
       Specifies the parent group of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -360,13 +299,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#rotation:member'
     package: excel!
     fullName: rotation
-    summary: >-
+    summary: |-
       Specifies the rotation, in degrees, of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -378,13 +314,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member'
     package: excel!
     fullName: textFrame
-    summary: >-
+    summary: |-
       Returns the text frame object of this shape. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -397,14 +330,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of
-      the worksheet. Throws an invalid argument exception when set with a
-      negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -416,13 +346,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Returns the type of this shape. See Excel.ShapeType for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -434,13 +361,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the shape is visible.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -453,13 +377,11 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the shape. Throws an invalid argument
-      exception when set with a negative value or zero as input.
+      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -471,14 +393,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#zOrderPosition:member'
     package: excel!
     fullName: zOrderPosition
-    summary: >-
-      Returns the position of the specified shape in the z-order, with 0
-      representing the bottom of the order stack.
+    summary: |-
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

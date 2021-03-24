@@ -3,14 +3,10 @@ name: Office.OfficeThemeChangedEventArgs
 uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
 package: outlook!
 fullName: Office.OfficeThemeChangedEventArgs
-summary: >-
-  Provides the updated Office theme that raised the
-  `Office.EventType.OfficeThemeChanged` event.
+summary: |-
+  Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,13 +16,10 @@ properties:
     uid: 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
     package: outlook!
     fullName: officeTheme
-    summary: >-
+    summary: |-
       Gets the updated Office theme.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -38,13 +31,10 @@ properties:
     uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     package: outlook!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

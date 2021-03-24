@@ -3,9 +3,7 @@ name: Excel.Interfaces.DataPivotHierarchyUpdateData
 uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
-summary: >-
-  An interface for updating data on the DataPivotHierarchy object, for use in
-  `dataPivotHierarchy.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the DataPivotHierarchy object, for use in `dataPivotHierarchy.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member'
     package: excel!
     fullName: field
-    summary: >-
+    summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Name of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       Number format of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       Position of the DataPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,13 +73,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member'
     package: excel!
     fullName: showAs
-    summary: >-
+    summary: |-
       Specifies if the data should be shown as a specific summary calculation.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,24 +88,19 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member'
     package: excel!
     fullName: summarizeBy
-    summary: >-
+    summary: |-
       Specifies if all items of the DataPivotHierarchy are shown.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" |
-        "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers"
-        | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
+        summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min"
+        | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
       return:
         type: >-
-          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" |
-          "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product"
-          | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" |
-          "Variance" | "VarianceP"
+          <xref uid="excel!Excel.AggregationFunction:enum" /> | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" |
+          "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" |
+          "VarianceP"
