@@ -3,14 +3,10 @@ name: Word.List
 uid: 'word!Word.List:class'
 package: word!
 fullName: Word.List
-summary: >-
-  Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class)
-  objects.
+summary: |-
+  Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
-
-  \[ [API set: WordApi
-  1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +17,8 @@ properties:
     package: word!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'word!Word.List#id:member'
     package: word!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the list's id.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +46,11 @@ properties:
     package: word!
     fullName: levelExistences
     summary: >-
-      Checks whether each of the 9 levels exists in the list. A true value
-      indicates the level exists, which means there is at least one list item at
-      that level. Read-only.
+      Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
+      is at least one list item at that level. Read-only.
 
 
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,14 +62,10 @@ properties:
     uid: 'word!Word.List#levelTypes:member'
     package: word!
     fullName: levelTypes
-    summary: >-
-      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number',
-      or 'Picture'. Read-only.
+    summary: |-
+      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,13 +77,10 @@ properties:
     uid: 'word!Word.List#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: >-
+    summary: |-
       Gets paragraphs in the list. Read-only.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -111,13 +94,11 @@ methods:
     package: word!
     fullName: getLevelFont(level)
     summary: >-
-      Gets the font of the bullet, number, or picture at the specified level in
-      the list.
+      Gets the font of the bullet, number, or picture at the specified level in the list.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -134,13 +115,10 @@ methods:
     uid: 'word!Word.List#getLevelParagraphs:member(1)'
     package: word!
     fullName: getLevelParagraphs(level)
-    summary: >-
+    summary: |-
       Gets the paragraphs that occur at the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -158,13 +136,11 @@ methods:
     package: word!
     fullName: getLevelPicture(level)
     summary: >-
-      Gets the base64 encoded string representation of the picture at the
-      specified level in the list.
+      Gets the base64 encoded string representation of the picture at the specified level in the list.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -181,13 +157,10 @@ methods:
     uid: 'word!Word.List#getLevelString:member(1)'
     package: word!
     fullName: getLevelString(level)
-    summary: >-
+    summary: |-
       Gets the bullet, number, or picture at the specified level as a string.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -204,20 +177,15 @@ methods:
     uid: 'word!Word.List#insertParagraph:member(1)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
-    summary: >-
+    summary: |-
       Inserts a paragraph at the specified location.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocation:
-        Word.InsertLocation): Word.Paragraph;
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -232,20 +200,17 @@ methods:
     uid: 'word!Word.List#insertParagraph:member(2)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: >-
+    summary: |-
       Inserts a paragraph at the specified location.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" |
-        "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
+        Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -261,8 +226,8 @@ methods:
     package: word!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -280,8 +245,8 @@ methods:
     package: word!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -289,9 +254,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Word.List;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="word!Word.List:class" />'
@@ -301,8 +264,8 @@ methods:
     package: word!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -315,10 +278,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -332,13 +293,11 @@ methods:
     package: word!
     fullName: 'resetLevelFont(level, resetFontName)'
     summary: >-
-      Resets the font of the bullet, number, or picture at the specified level
-      in the list.
+      Resets the font of the bullet, number, or picture at the specified level in the list.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -350,8 +309,8 @@ methods:
           type: number
         - id: resetFontName
           description: >-
-            Optional. Indicates whether to reset the font name. Default is false
-            that indicates the font name is kept unchanged.
+            Optional. Indicates whether to reset the font name. Default is false that indicates the font name is kept
+            unchanged.
           type: boolean
       return:
         type: void
@@ -360,14 +319,10 @@ methods:
     uid: 'word!Word.List#setLevelAlignment:member(1)'
     package: word!
     fullName: 'setLevelAlignment(level, alignment)'
-    summary: >-
-      Sets the alignment of the bullet, number, or picture at the specified
-      level in the list.
+    summary: |-
+      Sets the alignment of the bullet, number, or picture at the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -378,9 +333,7 @@ methods:
           description: Required. The level in the list.
           type: number
         - id: alignment
-          description: >-
-            Required. The level alignment that can be 'Left', 'Centered', or
-            'Right'.
+          description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
           type: '<xref uid="word!Word.Alignment:enum" />'
       return:
         type: void
@@ -389,29 +342,23 @@ methods:
     uid: 'word!Word.List#setLevelAlignment:member(2)'
     package: word!
     fullName: 'setLevelAlignment(level, alignmentString)'
-    summary: >-
-      Sets the alignment of the bullet, number, or picture at the specified
-      level in the list.
+    summary: |-
+      Sets the alignment of the bullet, number, or picture at the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" |
-        "Left" | "Centered" | "Right" | "Justified"): void;
+        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" |
+        "Justified"): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
         - id: alignmentString
-          description: >-
-            Required. The level alignment that can be 'Left', 'Centered', or
-            'Right'.
+          description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
           type: '"Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
       return:
         type: void
@@ -420,21 +367,15 @@ methods:
     uid: 'word!Word.List#setLevelBullet:member(1)'
     package: word!
     fullName: 'setLevelBullet(level, listBullet, charCode, fontName)'
-    summary: >-
-      Sets the bullet format at the specified level in the list. If the bullet
-      is 'Custom', the charCode is required.
+    summary: |-
+      Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setLevelBullet(level: number, listBullet: Word.ListBullet, charCode?:
-        number, fontName?: string): void;
+      content: 'setLevelBullet(level: number, listBullet: Word.ListBullet, charCode?: number, fontName?: string): void;'
       parameters:
         - id: level
           description: Required. The level in the list.
@@ -443,14 +384,10 @@ methods:
           description: Required. The bullet.
           type: '<xref uid="word!Word.ListBullet:enum" />'
         - id: charCode
-          description: >-
-            Optional. The bullet character's code value. Used only if the bullet
-            is 'Custom'.
+          description: Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
           type: number
         - id: fontName
-          description: >-
-            Optional. The bullet's font name. Used only if the bullet is
-            'Custom'.
+          description: Optional. The bullet's font name. Used only if the bullet is 'Custom'.
           type: string
       return:
         type: void
@@ -459,40 +396,29 @@ methods:
     uid: 'word!Word.List#setLevelBullet:member(2)'
     package: word!
     fullName: 'setLevelBullet(level, listBulletString, charCode, fontName)'
-    summary: >-
-      Sets the bullet format at the specified level in the list. If the bullet
-      is 'Custom', the charCode is required.
+    summary: |-
+      Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" |
-        "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark", charCode?:
-        number, fontName?: string): void;
+        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow"
+        | "Checkmark", charCode?: number, fontName?: string): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
         - id: listBulletString
           description: Required. The bullet.
-          type: >-
-            "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" |
-            "Checkmark"
+          type: '"Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark"'
         - id: charCode
-          description: >-
-            Optional. The bullet character's code value. Used only if the bullet
-            is 'Custom'.
+          description: Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
           type: number
         - id: fontName
-          description: >-
-            Optional. The bullet's font name. Used only if the bullet is
-            'Custom'.
+          description: Optional. The bullet's font name. Used only if the bullet is 'Custom'.
           type: string
       return:
         type: void
@@ -501,33 +427,26 @@ methods:
     uid: 'word!Word.List#setLevelIndents:member(1)'
     package: word!
     fullName: 'setLevelIndents(level, textIndent, bulletNumberPictureIndent)'
-    summary: >-
+    summary: |-
       Sets the two indents of the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setLevelIndents(level: number, textIndent: number,
-        bulletNumberPictureIndent: number): void;
+      content: 'setLevelIndents(level: number, textIndent: number, bulletNumberPictureIndent: number): void;'
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
         - id: textIndent
-          description: >-
-            Required. The text indent in points. It is the same as paragraph
-            left indent.
+          description: Required. The text indent in points. It is the same as paragraph left indent.
           type: number
         - id: bulletNumberPictureIndent
           description: >-
-            Required. The relative indent, in points, of the bullet, number, or
-            picture. It is the same as paragraph first line indent.
+            Required. The relative indent, in points, of the bullet, number, or picture. It is the same as paragraph
+            first line indent.
           type: number
       return:
         type: void
@@ -536,20 +455,17 @@ methods:
     uid: 'word!Word.List#setLevelNumbering:member(1)'
     package: word!
     fullName: 'setLevelNumbering(level, listNumbering, formatString)'
-    summary: >-
+    summary: |-
       Sets the numbering format at the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setLevelNumbering(level: number, listNumbering: Word.ListNumbering,
-        formatString?: Array<string | number>): void;
+        setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array<string | number>):
+        void;
       parameters:
         - id: level
           description: Required. The level in the list.
@@ -559,11 +475,10 @@ methods:
           type: '<xref uid="word!Word.ListNumbering:enum" />'
         - id: formatString
           description: >-
-            Optional. The numbering string format defined as an array of strings
-            and/or integers. Each integer is a level of number type that is
-            higher than or equal to this level. For example, an array of \["(",
-            level - 1, ".", level, ")"\] can define the format of "(2.c)", where
-            2 is the parent's item number and c is this level's item number.
+            Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a
+            level of number type that is higher than or equal to this level. For example, an array of \["(", level - 1,
+            ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
+            level's item number.
           type: Array&lt;string | number&gt;
       return:
         type: void
@@ -572,37 +487,30 @@ methods:
     uid: 'word!Word.List#setLevelNumbering:member(2)'
     package: word!
     fullName: 'setLevelNumbering(level, listNumberingString, formatString)'
-    summary: >-
+    summary: |-
       Sets the numbering format at the specified level in the list.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic"
-        | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter",
-        formatString?: Array<string | number>): void;
+        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
+        "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
       parameters:
         - id: level
           description: Required. The level in the list.
           type: number
         - id: listNumberingString
           description: Required. The ordinal format.
-          type: >-
-            "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" |
-            "LowerLetter"
+          type: '"None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter"'
         - id: formatString
           description: >-
-            Optional. The numbering string format defined as an array of strings
-            and/or integers. Each integer is a level of number type that is
-            higher than or equal to this level. For example, an array of \["(",
-            level - 1, ".", level, ")"\] can define the format of "(2.c)", where
-            2 is the parent's item number and c is this level's item number.
+            Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a
+            level of number type that is higher than or equal to this level. For example, an array of \["(", level - 1,
+            ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
+            level's item number.
           type: Array&lt;string | number&gt;
       return:
         type: void
@@ -616,8 +524,7 @@ methods:
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -628,9 +535,7 @@ methods:
           description: Required. The level in the list.
           type: number
         - id: base64EncodedImage
-          description: >-
-            Optional. The base64 encoded image to be set. If not given, the
-            default picture is set.
+          description: 'Optional. The base64 encoded image to be set. If not given, the default picture is set.'
           type: string
       return:
         type: void
@@ -639,14 +544,10 @@ methods:
     uid: 'word!Word.List#setLevelStartingNumber:member(1)'
     package: word!
     fullName: 'setLevelStartingNumber(level, startingNumber)'
-    summary: >-
-      Sets the starting number at the specified level in the list. Default value
-      is 1.
+    summary: |-
+      Sets the starting number at the specified level in the list. Default value is 1.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -667,13 +568,11 @@ methods:
     package: word!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Word.List object is an
-      API object, the `toJSON` method returns a plain JavaScript object (typed
-      as `Word.Interfaces.ListData`<!-- -->) that contains shallow copies of any
-      loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.List object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ListData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -687,13 +586,11 @@ methods:
     package: word!
     fullName: track()
     summary: >-
-      Track the object for automatic adjustment based on surrounding changes in
-      the document. This call is a shorthand for
-      `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this
-      object across `.sync` calls and outside the sequential execution of a
-      ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to
-      the tracked object collection when the object was first created.
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -707,11 +604,9 @@ methods:
     package: word!
     fullName: untrack()
     summary: >-
-      Release the memory associated with this object, if it has previously been
-      tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked
-      objects slows down the host application, so please remember to free any
-      objects you add, once you're done using them. You will need to call
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

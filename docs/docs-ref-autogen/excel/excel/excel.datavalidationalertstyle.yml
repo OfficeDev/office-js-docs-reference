@@ -3,14 +3,10 @@ name: Excel.DataValidationAlertStyle
 uid: 'excel!Excel.DataValidationAlertStyle:enum'
 package: excel!
 fullName: Excel.DataValidationAlertStyle
-summary: >-
-  Represents the data validation error alert style. The default is `Stop`<!--
-  -->.
+summary: |-
+  Represents the data validation error alert style. The default is `Stop`<!-- -->.
 
-
-  \[ [API set: ExcelApi
-  1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

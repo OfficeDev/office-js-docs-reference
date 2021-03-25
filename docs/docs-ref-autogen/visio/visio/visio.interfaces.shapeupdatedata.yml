@@ -3,9 +3,7 @@ name: Visio.Interfaces.ShapeUpdateData
 uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeUpdateData
-summary: >-
-  An interface for updating data on the Shape object, for use in "shape.set(<!--
-  -->{ ... }<!-- -->)".
+summary: 'An interface for updating data on the Shape object, for use in "shape.set(<!-- -->{ ... }<!-- -->)".'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,14 +13,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeUpdateData#select:member'
     package: visio!
     fullName: select
-    summary: >-
-      Returns true, if shape is selected. User can set true to select the shape
-      explicitly.
+    summary: |-
+      Returns true, if shape is selected. User can set true to select the shape explicitly.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +28,10 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeUpdateData#view:member'
     package: visio!
     fullName: view
-    summary: >-
+    summary: |-
       Returns the view of the shape.
 
-
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

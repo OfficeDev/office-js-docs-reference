@@ -88,29 +88,21 @@ functions:
     uid: 'visio!Visio.run:function(1)'
     package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model,
-      using a new request context. When the promise is resolved, any tracked
-      objects that were automatically allocated during execution will be
-      released.
+      Executes a batch script that performs actions on the Visio object model, using a new request context. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(batch: (context: Visio.RequestContext) =>
-        Promise<T>): Promise<T>;
+      content: 'export function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;'
       parameters:
         - id: batch
           description: >-
-            A function that takes in an Visio.RequestContext and returns a
-            promise (typically, just the result of "context.sync()"). The
-            context parameter facilitates requests to the Visio application.
-            Since the Office add-in and the Visio application run in two
-            different processes, the request context is required to get access
-            to the Visio object model from the add-in.
-          type: >-
-            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
+            add-in and the Visio application run in two different processes, the request context is required to get
+            access to the Visio object model from the add-in.
+          type: '(context: <xref uid="visio!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -118,34 +110,29 @@ functions:
     uid: 'visio!Visio.run:function(2)'
     package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model,
-      using the request context of a previously-created API object.
+      Executes a batch script that performs actions on the Visio object model, using the request context of a
+      previously-created API object.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(object: OfficeExtension.ClientObject |
-        OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext)
-        => Promise<T>): Promise<T>;
+        export function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
+        Visio.RequestContext) => Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-
-            A previously-created API object. The batch will use the same request
-            context as the passed-in object, which means that any changes
-            applied to the object will be picked up by "context.sync()".
+            A previously-created API object. The batch will use the same request context as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
           type: >-
             <xref uid="office!OfficeExtension.ClientObject:class" /> | <xref
             uid="office!OfficeExtension.EmbeddedSession:class" />
         - id: batch
           description: >-
-            A function that takes in an Visio.RequestContext and returns a
-            promise (typically, just the result of "context.sync()"). When the
-            promise is resolved, any tracked objects that were automatically
-            allocated during execution will be released.
-          type: >-
-            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="visio!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -153,33 +140,28 @@ functions:
     uid: 'visio!Visio.run:function(3)'
     package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model,
-      using the request context of previously-created API objects.
+      Executes a batch script that performs actions on the Visio object model, using the request context of
+      previously-created API objects.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(objects: OfficeExtension.ClientObject[], batch:
-        (context: Visio.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
+        Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
-            An array of previously-created API objects. The array will be
-            validated to make sure that all of the objects share the same
-            context. The batch will use this shared request context, which means
-            that any changes applied to these objects will be picked up by
-            "context.sync()".
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared request context, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
           type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
-            A function that takes in a Visio.RequestContext and returns a
-            promise (typically, just the result of "context.sync()"). When the
-            promise is resolved, any tracked objects that were automatically
-            allocated during execution will be released.
-          type: >-
-            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="visio!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''
@@ -187,53 +169,42 @@ functions:
     uid: 'visio!Visio.run:function(4)'
     package: visio!
     summary: >-
-      Executes a batch script that performs actions on the Visio object model,
-      using the RequestContext of a previously-created object. When the promise
-      is resolved, any tracked objects that were automatically allocated during
-      execution will be released.
+      Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
+      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
     remarks: >-
-      In addition to this signature, the method also has the following
-      signatures:
+      In addition to this signature, the method also has the following signatures:
 
 
-      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>):
-      Promise<T>;`
+      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
 
 
-      `run<T>(object: OfficeExtension.ClientObject |
-      OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) =>
-      Promise<T>): Promise<T>;`
-
-
-      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context:
+      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
       Visio.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
+      Promise<T>;`
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        export function run<T>(contextObject:
-        OfficeExtension.ClientRequestContext, batch: (context:
+        export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context:
         Visio.RequestContext) => Promise<T>): Promise<T>;
       parameters:
         - id: contextObject
           description: >-
-            A previously-created Visio.RequestContext. This context will get
-            re-used by the batch function (instead of having a new context
-            created). This means that the batch will be able to pick up changes
-            made to existing API objects, if those objects were derived from
-            this same context.
+            A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of
+            having a new context created). This means that the batch will be able to pick up changes made to existing
+            API objects, if those objects were derived from this same context.
           type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise
-            (typically, just the result of "context.sync()"). The context
-            parameter facilitates requests to the Visio application. Since the
-            Office add-in and the Visio application run in two different
-            processes, the RequestContext is required to get access to the Visio
-            object model from the add-in.
-          type: >-
-            (context: <xref uid="visio!Visio.RequestContext:class" />) =&gt;
-            Promise&lt;T&gt;
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
+            add-in and the Visio application run in two different processes, the RequestContext is required to get
+            access to the Visio object model from the add-in.
+          type: '(context: <xref uid="visio!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
         description: ''

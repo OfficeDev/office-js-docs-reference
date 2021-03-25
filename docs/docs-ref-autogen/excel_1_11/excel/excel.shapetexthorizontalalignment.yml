@@ -3,13 +3,10 @@ name: Excel.ShapeTextHorizontalAlignment
 uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
 package: excel!
 fullName: Excel.ShapeTextHorizontalAlignment
-summary: >-
+summary: |-
   Specifies the horizontal alignment for the text frame in a shape.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

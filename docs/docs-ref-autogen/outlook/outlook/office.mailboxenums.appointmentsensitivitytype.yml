@@ -3,61 +3,46 @@ name: Office.MailboxEnums.AppointmentSensitivityType
 uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
-summary: >-
+summary: |-
   Specifies the sensitivity type of an appointment.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Compose or Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
 isPreview: true
 isDeprecated: false
 fields:
   - name: Confidential
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
     package: outlook!
-    summary: >-
+    summary: |-
       Treat the item as confidential.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
     package: outlook!
-    summary: >-
+    summary: |-
       The item needs no special treatment.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"normal"'
   - name: Personal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
     package: outlook!
-    summary: >-
+    summary: |-
       Treat the item as personal.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
     package: outlook!
-    summary: >-
+    summary: |-
       Treat the item as private.
 
-
-      \[ [API set: Mailbox
-      Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"private"'

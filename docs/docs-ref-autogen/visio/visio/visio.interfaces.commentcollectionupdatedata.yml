@@ -4,8 +4,8 @@ uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
 package: visio!
 fullName: Visio.Interfaces.CommentCollectionUpdateData
 summary: >-
-  An interface for updating data on the CommentCollection object, for use in
-  "commentCollection.set(<!-- -->{ ... }<!-- -->)".
+  An interface for updating data on the CommentCollection object, for use in "commentCollection.set(<!-- -->{ ... }<!--
+  -->)".
 remarks: ''
 isPreview: false
 isDeprecated: false

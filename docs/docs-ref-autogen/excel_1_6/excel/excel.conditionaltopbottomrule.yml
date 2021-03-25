@@ -3,13 +3,10 @@ name: Excel.ConditionalTopBottomRule
 uid: 'excel!Excel.ConditionalTopBottomRule:interface'
 package: excel!
 fullName: Excel.ConditionalTopBottomRule
-summary: >-
+summary: |-
   Represents the rule of the top/bottom conditional format.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.ConditionalTopBottomRule#rank:member'
     package: excel!
     fullName: rank
-    summary: >-
-      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent
-      ranks.
+    summary: |-
+      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,22 +31,18 @@ properties:
     uid: 'excel!Excel.ConditionalTopBottomRule#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Format values based on the top or bottom rank.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" |
-        "TopPercent" | "BottomItems" | "BottomPercent";
+        type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
+        "BottomPercent";
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalTopBottomCriterionType:enum" /> |
-          "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
-          "BottomPercent"
+          <xref uid="excel!Excel.ConditionalTopBottomCriterionType:enum" /> | "Invalid" | "TopItems" | "TopPercent" |
+          "BottomItems" | "BottomPercent"

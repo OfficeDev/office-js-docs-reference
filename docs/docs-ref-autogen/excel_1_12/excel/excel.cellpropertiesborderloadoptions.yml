@@ -3,13 +3,10 @@ name: Excel.CellPropertiesBorderLoadOptions
 uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
 package: excel!
 fullName: Excel.CellPropertiesBorderLoadOptions
-summary: >-
+summary: |-
   Specifies which properties to load on the `format.borders` object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
     package: excel!
     fullName: color
-    summary: >-
+    summary: |-
       Specifies whether to load on the `color` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Specifies whether to load on the `style` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,13 +46,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
     package: excel!
     fullName: tintAndShade
-    summary: >-
+    summary: |-
       Specifies whether to load on the `tintAndShade` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +61,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
     package: excel!
     fullName: weight
-    summary: >-
+    summary: |-
       Specifies whether to load on the `weight` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

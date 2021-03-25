@@ -3,9 +3,7 @@ name: Excel.Interfaces.SlicerData
 uid: 'excel!Excel.Interfaces.SlicerData:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerData
-summary: >-
-  An interface describing the data returned by calling `slicer.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `slicer.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#caption:member'
     package: excel!
     fullName: caption
-    summary: >-
+    summary: |-
       Represents the caption of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +29,11 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument
-      is invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Represents the unique id of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -71,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#isFilterCleared:member'
     package: excel!
     fullName: isFilterCleared
-    summary: >-
+    summary: |-
       True if all filters currently applied on the slicer are cleared.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,15 +76,11 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Represents the distance, in points, from the left side of the slicer to
-      the left of the worksheet. Throws an "The argument is invalid or missing
-      or has an incorrect format." exception when set with negative value as
-      input.
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,13 +92,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Represents the name of slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -128,13 +107,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
     package: excel!
     fullName: slicerItems
-    summary: >-
+    summary: |-
       Represents the collection of SlicerItems that are part of the slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,38 +123,29 @@ properties:
     package: excel!
     fullName: sortBy
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are:
-      "DataSourceOrder", "Ascending", "Descending".
+      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
+      "Descending".
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" |
-        "Descending";
+      content: 'sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" |
-          "Ascending" | "Descending"
+        type: '<xref uid="excel!Excel.SlicerSortType:enum" /> | "DataSourceOrder" | "Ascending" | "Descending"'
   - name: style
     uid: 'excel!Excel.Interfaces.SlicerData#style:member'
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Slicer style. Possible values are:
-      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1"
-      through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -191,14 +158,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the
-      top of the worksheet. Throws an "The argument is invalid or missing or has
-      an incorrect format." exception when set with negative value as input.
+      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -211,14 +175,11 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is
-      invalid or missing or has an incorrect format." exception when set with
-      negative value or zero as input.
+      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -230,13 +191,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerData#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       Represents the worksheet containing the slicer.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

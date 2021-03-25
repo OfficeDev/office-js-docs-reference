@@ -3,10 +3,7 @@ name: Excel.ChartLegendPosition
 uid: 'excel!Excel.ChartLegendPosition:enum'
 package: excel!
 fullName: Excel.ChartLegendPosition
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

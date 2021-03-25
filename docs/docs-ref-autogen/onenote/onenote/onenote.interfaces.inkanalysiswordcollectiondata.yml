@@ -3,9 +3,7 @@ name: OneNote.Interfaces.InkAnalysisWordCollectionData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  "inkAnalysisWordCollection.toJSON()".
+summary: An interface describing the data returned by calling "inkAnalysisWordCollection.toJSON()".
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,6 +20,4 @@ properties:
     syntax:
       content: 'items?: OneNote.Interfaces.InkAnalysisWordData[];'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface"
-          />[]
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisWordData:interface" />[]'

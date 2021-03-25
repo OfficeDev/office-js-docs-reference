@@ -4,13 +4,11 @@ uid: 'excel!Excel.TopBottomSelectionType:enum'
 package: excel!
 fullName: Excel.TopBottomSelectionType
 summary: >-
-  A simple enum for top/bottom filters to select whether to filter by the top N
-  or bottom N percent, number, or sum of values.
+  A simple enum for top/bottom filters to select whether to filter by the top N or bottom N percent, number, or sum of
+  values.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -7,8 +7,7 @@ summary: >-
   Represents the type of change recorded in the task change record.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -73,7 +72,6 @@ fields:
     uid: 'excel!Excel.DocumentTaskChangeAction.unknown:member'
     package: excel!
     summary: >-
-      Represents an unknown change type. This value will be returned when the
-      version of Excel running doesn't understand the type of the change record
-      that is in the loaded file.
+      Represents an unknown change type. This value will be returned when the version of Excel running doesn't
+      understand the type of the change record that is in the loaded file.
     value: '"unknown"'

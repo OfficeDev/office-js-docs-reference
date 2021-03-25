@@ -4,14 +4,11 @@ uid: 'excel!Excel.DateFilterCondition:enum'
 package: excel!
 fullName: Excel.DateFilterCondition
 summary: >-
-  Enum representing all accepted conditions by which a date filter can be
-  applied. Used to configure the type of PivotFilter that is applied to the
-  field.
+  Enum representing all accepted conditions by which a date filter can be applied. Used to configure the type of
+  PivotFilter that is applied to the field.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,22 +16,18 @@ fields:
   - name: after
     uid: 'excel!Excel.DateFilterCondition.after:member'
     package: excel!
-    summary: >-
+    summary: |-
       Date is after comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
     value: '"After"'
   - name: afterOrEqualTo
     uid: 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
     package: excel!
-    summary: >-
+    summary: |-
       Date is after or equal to comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
     value: '"AfterOrEqualTo"'
   - name: allDatesInPeriodApril
     uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
@@ -119,22 +112,18 @@ fields:
   - name: before
     uid: 'excel!Excel.DateFilterCondition.before:member'
     package: excel!
-    summary: >-
+    summary: |-
       Date is before comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
     value: '"Before"'
   - name: beforeOrEqualTo
     uid: 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
     package: excel!
-    summary: >-
+    summary: |-
       Date is before or equal to comparator date.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
     value: '"BeforeOrEqualTo"'
   - name: between
     uid: 'excel!Excel.DateFilterCondition.between:member'
@@ -143,8 +132,8 @@ fields:
       Between `lowerBound` and `upperBound` dates.
 
 
-      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
-      Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->,
+      `exclusive`<!-- -->}<!-- -->.
     value: '"Between"'
   - name: equals
     uid: 'excel!Excel.DateFilterCondition.equals:member'
@@ -153,8 +142,8 @@ fields:
       Equals comparator criterion.
 
 
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!--
+      -->}<!-- -->.
     value: '"Equals"'
   - name: lastMonth
     uid: 'excel!Excel.DateFilterCondition.lastMonth:member'

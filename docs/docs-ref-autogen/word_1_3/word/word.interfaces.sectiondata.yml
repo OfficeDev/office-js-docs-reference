@@ -3,9 +3,7 @@ name: Word.Interfaces.SectionData
 uid: 'word!Word.Interfaces.SectionData:interface'
 package: word!
 fullName: Word.Interfaces.SectionData
-summary: >-
-  An interface describing the data returned by calling `section.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the section. This does not include the
-      header/footer and other section metadata. Read-only.
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
 summary: >-
-  An interface for updating data on the ChartGridlinesFormat object, for use in
-  `chartGridlinesFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,19 +15,14 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member'
     package: excel!
     fullName: line
-    summary: >-
+    summary: |-
       Represents chart line formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface" />'

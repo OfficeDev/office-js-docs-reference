@@ -3,9 +3,7 @@ name: Excel.Interfaces.DocumentTaskUpdateData
 uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.DocumentTaskUpdateData
-summary: >-
-  An interface for updating data on the DocumentTask object, for use in
-  `documentTask.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,12 @@ properties:
     package: excel!
     fullName: percentComplete
     summary: >-
-      Specifies the completion percentage of the task. This is a value between 0
-      and 100, where 100 represents a completed task.
+      Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a
+      completed task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -35,13 +32,11 @@ properties:
     package: excel!
     fullName: priority
     summary: >-
-      Specifies the priority of the task. This is a value between 0 and 10,
-      where 0 represents the highest priority.
+      Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -58,8 +53,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -76,8 +70,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

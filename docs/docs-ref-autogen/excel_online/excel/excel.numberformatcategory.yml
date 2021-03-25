@@ -3,13 +3,10 @@ name: Excel.NumberFormatCategory
 uid: 'excel!Excel.NumberFormatCategory:enum'
 package: excel!
 fullName: Excel.NumberFormatCategory
-summary: >-
+summary: |-
   Represents a category of number formats.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,16 +14,12 @@ fields:
   - name: accounting
     uid: 'excel!Excel.NumberFormatCategory.accounting:member'
     package: excel!
-    summary: >-
-      Accounting formats line up the currency symbols and decimal points in a
-      column.
+    summary: Accounting formats line up the currency symbols and decimal points in a column.
     value: '"Accounting"'
   - name: currency
     uid: 'excel!Excel.NumberFormatCategory.currency:member'
     package: excel!
-    summary: >-
-      Currency formats are used for general monetary values. Use Accounting
-      formats to align decimal points in a column.
+    summary: Currency formats are used for general monetary values. Use Accounting formats to align decimal points in a column.
     value: '"Currency"'
   - name: custom
     uid: 'excel!Excel.NumberFormatCategory.custom:member'
@@ -37,17 +30,16 @@ fields:
     uid: 'excel!Excel.NumberFormatCategory.date:member'
     package: excel!
     summary: >-
-      Date formats display date and time serial numbers as date values. Date
-      formats that begin with an asterisk (*) respond to changes in regional
-      date and time settings that are specified for the operating system.
-      Formats without an asterisk are not affected by operating system settings.
+      Date formats display date and time serial numbers as date values. Date formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
     value: '"Date"'
   - name: fraction
     uid: 'excel!Excel.NumberFormatCategory.fraction:member'
     package: excel!
     summary: >-
-      Fraction formats display the cell value as a whole number with the
-      remainder rounded to the nearest fraction value.
+      Fraction formats display the cell value as a whole number with the remainder rounded to the nearest fraction
+      value.
     value: '"Fraction"'
   - name: general
     uid: 'excel!Excel.NumberFormatCategory.general:member'
@@ -58,22 +50,18 @@ fields:
     uid: 'excel!Excel.NumberFormatCategory.number:member'
     package: excel!
     summary: >-
-      Number is used for general display of numbers. Currency and Accounting
-      offer specialized formatting for monetary value.
+      Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary
+      value.
     value: '"Number"'
   - name: percentage
     uid: 'excel!Excel.NumberFormatCategory.percentage:member'
     package: excel!
-    summary: >-
-      Percentage formats multiply the cell value by 100 and displays the result
-      with a percent symbol.
+    summary: Percentage formats multiply the cell value by 100 and displays the result with a percent symbol.
     value: '"Percentage"'
   - name: scientific
     uid: 'excel!Excel.NumberFormatCategory.scientific:member'
     package: excel!
-    summary: >-
-      Scientific formats display the cell value as a number between 1 and 10
-      multiplied by a power of 10.
+    summary: Scientific formats display the cell value as a number between 1 and 10 multiplied by a power of 10.
     value: '"Scientific"'
   - name: special
     uid: 'excel!Excel.NumberFormatCategory.special:member'
@@ -83,16 +71,13 @@ fields:
   - name: text
     uid: 'excel!Excel.NumberFormatCategory.text:member'
     package: excel!
-    summary: >-
-      Text format cells are treated as text even when a number is in the cell.
-      The cell is displayed exactly as entered.
+    summary: Text format cells are treated as text even when a number is in the cell. The cell is displayed exactly as entered.
     value: '"Text"'
   - name: time
     uid: 'excel!Excel.NumberFormatCategory.time:member'
     package: excel!
     summary: >-
-      Time formats display date and time serial numbers as date values. Time
-      formats that begin with an asterisk (*) respond to changes in regional
-      date and time settings that are specified for the operating system.
-      Formats without an asterisk are not affected by operating system settings.
+      Time formats display date and time serial numbers as date values. Time formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
     value: '"Time"'

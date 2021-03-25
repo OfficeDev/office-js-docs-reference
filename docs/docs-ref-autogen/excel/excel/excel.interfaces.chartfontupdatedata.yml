@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartFontUpdateData
 uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartFontUpdateData
-summary: >-
-  An interface for updating data on the ChartFont object, for use in
-  `chartFont.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#bold:member'
     package: excel!
     fullName: bold
-    summary: >-
+    summary: |-
       Represents the bold status of font.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#color:member'
     package: excel!
     fullName: color
-    summary: >-
-      HTML color code representation of the text color (e.g., \#FF0000
-      represents Red).
+    summary: |-
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#italic:member'
     package: excel!
     fullName: italic
-    summary: >-
+    summary: |-
       Represents the italic status of the font.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Font name (e.g., "Calibri")
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +73,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#size:member'
     package: excel!
     fullName: size
-    summary: >-
+    summary: |-
       Size of the font (e.g., 11)
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,20 +88,14 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartFontUpdateData#underline:member'
     package: excel!
     fullName: underline
-    summary: >-
-      Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for
-      details.
+    summary: |-
+      Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'underline?: Excel.ChartUnderlineStyle | "None" | "Single";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartUnderlineStyle:enum" /> | "None" |
-          "Single"
+        type: '<xref uid="excel!Excel.ChartUnderlineStyle:enum" /> | "None" | "Single"'

@@ -3,14 +3,10 @@ name: Word.Interfaces.CustomXmlPartCollectionLoadOptions
 uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
-summary: >-
-  Contains the collection of
-  [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
+summary: |-
+  Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
 
-
-  \[ [API set: WordApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -36,13 +31,11 @@ properties:
     package: word!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read
-      only.
+      For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -51,18 +44,15 @@ properties:
       return:
         type: boolean
   - name: namespaceUri
-    uid: >-
-      word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member
+    uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
     package: word!
     fullName: namespaceUri
     summary: >-
-      For EACH ITEM in the collection: Gets the namespace URI of the custom XML
-      part. Read only.
+      For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
 
 
       \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

@@ -3,21 +3,17 @@ name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of InkAnalysisWord objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#$all:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#$all:member'
     package: onenote!
     fullName: $all
     summary: ''
@@ -32,14 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord
-      object. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -48,18 +40,13 @@ properties:
       return:
         type: boolean
   - name: languageId
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#languageId:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: >-
-      For EACH ITEM in the collection: The id of the recognized language in this
-      inkAnalysisWord. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: The id of the recognized language in this inkAnalysisWord. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -68,40 +55,30 @@ properties:
       return:
         type: boolean
   - name: line
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member'
     package: onenote!
     fullName: line
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface" />'
   - name: strokePointers
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#strokePointers:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#strokePointers:member'
     package: onenote!
     fullName: strokePointers
     summary: >-
-      For EACH ITEM in the collection: Weak references to the ink strokes that
-      were recognized as part of this ink analysis word. Read-only.
+      For EACH ITEM in the collection: Weak references to the ink strokes that were recognized as part of this ink
+      analysis word. Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,18 +87,15 @@ properties:
       return:
         type: boolean
   - name: wordAlternates
-    uid: >-
-      onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#wordAlternates:member
+    uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#wordAlternates:member'
     package: onenote!
     fullName: wordAlternates
     summary: >-
-      For EACH ITEM in the collection: The words that were recognized in this
-      ink word, in order of likelihood. Read-only.
+      For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
+      Read-only.
 
 
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

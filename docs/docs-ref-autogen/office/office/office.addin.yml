@@ -3,9 +3,7 @@ name: Office.Addin
 uid: 'office!Office.Addin:interface'
 package: office!
 fullName: Office.Addin
-summary: >-
-  Represents add-in level functionality for operating or configuring various
-  aspects of the add-in.
+summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -53,24 +51,17 @@ methods:
       parameters:
         - id: listener
           description: >-
-            The listener function that is called when the event is emitted. This
-            function takes in a message for the receiving component.
-          type: >-
-            (message: <xref
-            uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt;
-            void
+            The listener function that is called when the event is emitted. This function takes in a message for the
+            receiving component.
+          type: '(message: <xref uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt; void'
       return:
         type: Promise&lt;() =&gt; Promise&lt;void&gt;&gt;
-        description: >-
-          A promise that resolves to a function when the listener is added.
-          Calling it removes the listener.
+        description: A promise that resolves to a function when the listener is added. Calling it removes the listener.
   - name: setStartupBehavior(behavior)
     uid: 'office!Office.Addin#setStartupBehavior:member(1)'
     package: office!
     fullName: setStartupBehavior(behavior)
-    summary: >-
-      Sets the startup behavior for the add-in for when the document is opened
-      next time.
+    summary: Sets the startup behavior for the add-in for when the document is opened next time.
     remarks: ''
     isPreview: false
     isDeprecated: false

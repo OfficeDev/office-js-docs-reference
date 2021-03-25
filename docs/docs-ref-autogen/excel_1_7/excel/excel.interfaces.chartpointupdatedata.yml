@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartPointUpdateData
 uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartPointUpdateData
-summary: >-
-  An interface for updating data on the ChartPoint object, for use in
-  `chartPoint.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,54 +13,40 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#dataLabel:member'
     package: excel!
     fullName: dataLabel
-    summary: >-
+    summary: |-
       Returns the data label of a chart point.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelUpdateData:interface" />'
   - name: format
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Encapsulates the format properties chart point.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartPointFormatUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartPointFormatUpdateData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointFormatUpdateData:interface" />'
   - name: hasDataLabel
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#hasDataLabel:member'
     package: excel!
     fullName: hasDataLabel
-    summary: >-
-      Represents whether a data point has a data label. Not applicable for
-      surface charts.
+    summary: |-
+      Represents whether a data point has a data label. Not applicable for surface charts.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,14 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#markerBackgroundColor:member'
     package: excel!
     fullName: markerBackgroundColor
-    summary: >-
-      HTML color code representation of the marker background color of data
-      point (e.g., \#FF0000 represents Red).
+    summary: |-
+      HTML color code representation of the marker background color of data point (e.g., \#FF0000 represents Red).
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,14 +73,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#markerForegroundColor:member'
     package: excel!
     fullName: markerForegroundColor
-    summary: >-
-      HTML color code representation of the marker foreground color of data
-      point (e.g., \#FF0000 represents Red).
+    summary: |-
+      HTML color code representation of the marker foreground color of data point (e.g., \#FF0000 represents Red).
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -112,13 +88,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#markerSize:member'
     package: excel!
     fullName: markerSize
-    summary: >-
+    summary: |-
       Represents marker size of data point.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,24 +103,18 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointUpdateData#markerStyle:member'
     package: excel!
     fullName: markerStyle
-    summary: >-
-      Represents marker style of a chart data point. See Excel.ChartMarkerStyle
-      for details.
+    summary: |-
+      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None"
-        | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" |
-        "Circle" | "Plus" | "Picture";
+        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" |
+        "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" |
-          "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" |
-          "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" |
+          "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"

@@ -3,9 +3,7 @@ name: Excel.Interfaces.BindingCollectionData
 uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.BindingCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `bindingCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `bindingCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

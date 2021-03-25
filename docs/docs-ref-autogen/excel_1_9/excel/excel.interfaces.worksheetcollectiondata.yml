@@ -3,9 +3,7 @@ name: Excel.Interfaces.WorksheetCollectionData
 uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.WorksheetCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `worksheetCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `worksheetCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

@@ -4,15 +4,11 @@ uid: 'excel!Excel.Chart:class'
 package: excel!
 fullName: Excel.Chart
 summary: >-
-  Represents a chart object in a workbook. To learn more about the Chart object
-  model, see [Work with charts using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!--
-  -->.
+  Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using the
+  Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,13 +18,10 @@ properties:
     uid: 'excel!Excel.Chart#axes:member'
     package: excel!
     fullName: axes
-    summary: >-
+    summary: |-
       Represents chart axes.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,8 +34,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +47,10 @@ properties:
     uid: 'excel!Excel.Chart#dataLabels:member'
     package: excel!
     fullName: dataLabels
-    summary: >-
+    summary: |-
       Represents the datalabels on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -72,13 +62,10 @@ properties:
     uid: 'excel!Excel.Chart#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Encapsulates the format properties for the chart area.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -90,13 +77,10 @@ properties:
     uid: 'excel!Excel.Chart#height:member'
     package: excel!
     fullName: height
-    summary: >-
+    summary: |-
       Specifies the height, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,14 +92,10 @@ properties:
     uid: 'excel!Excel.Chart#left:member'
     package: excel!
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the chart to the worksheet
-      origin.
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,13 +107,10 @@ properties:
     uid: 'excel!Excel.Chart#legend:member'
     package: excel!
     fullName: legend
-    summary: >-
+    summary: |-
       Represents the legend for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -167,13 +144,10 @@ properties:
     uid: 'excel!Excel.Chart#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of a chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,19 +155,14 @@ properties:
       content: 'name: string;'
       return:
         type: string
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // Rename the chart to new name, resize the chart to 200 points in
-          both height and weight. 
-
+          // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
           // Move Chart1 to 100 points to the top and left. 
-
           Excel.run(function (ctx) { 
               var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.name = "New Name";
@@ -208,19 +177,15 @@ properties:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
-
           ```
   - name: series
     uid: 'excel!Excel.Chart#series:member'
     package: excel!
     fullName: series
-    summary: >-
+    summary: |-
       Represents either a single series or collection of series in the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -232,14 +197,10 @@ properties:
     uid: 'excel!Excel.Chart#title:member'
     package: excel!
     fullName: title
-    summary: >-
-      Specifies the title of the specified chart, including the text,
-      visibility, position, and formatting of the title.
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -252,13 +213,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the object to the
-      top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -270,13 +229,10 @@ properties:
     uid: 'excel!Excel.Chart#width:member'
     package: excel!
     fullName: width
-    summary: >-
+    summary: |-
       Specifies the width, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -288,13 +244,10 @@ properties:
     uid: 'excel!Excel.Chart#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: >-
+    summary: |-
       The worksheet containing the current chart.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -307,13 +260,10 @@ methods:
     uid: 'excel!Excel.Chart#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: >-
+    summary: |-
       Deletes the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -343,21 +293,18 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingMode)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit
-      the specified dimensions. The aspect ratio is preserved as part of the
-      resizing.
+      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      is preserved as part of the resizing.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getImage(width?: number, height?: number, fittingMode?:
-        Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode):
+        OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
           description: (Optional) The desired width of the resulting image.
@@ -367,8 +314,8 @@ methods:
           type: number
         - id: fittingMode
           description: >-
-            (Optional) The method used to scale the chart to the specified to
-            the specified dimensions (if both height and width are set).
+            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            and width are set).
           type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
@@ -394,21 +341,18 @@ methods:
     package: excel!
     fullName: 'getImage(width, height, fittingModeString)'
     summary: >-
-      Renders the chart as a base64-encoded image by scaling the chart to fit
-      the specified dimensions. The aspect ratio is preserved as part of the
-      resizing.
+      Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
+      is preserved as part of the resizing.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getImage(width?: number, height?: number, fittingModeString?: "Fit" |
-        "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"):
+        OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
           description: (Optional) The desired width of the resulting image.
@@ -418,8 +362,8 @@ methods:
           type: number
         - id: fittingModeString
           description: >-
-            (Optional) The method used to scale the chart to the specified to
-            the specified dimensions (if both height and width are set).
+            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
@@ -429,8 +373,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -448,8 +392,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -457,9 +401,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Chart;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
@@ -488,8 +430,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -502,10 +444,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -519,9 +459,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -529,20 +468,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ChartUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.ChartUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -551,9 +485,7 @@ methods:
     uid: 'excel!Excel.Chart#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -570,13 +502,10 @@ methods:
     uid: 'excel!Excel.Chart#setData:member(1)'
     package: excel!
     fullName: 'setData(sourceData, seriesBy)'
-    summary: >-
+    summary: |-
       Resets the source data for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -588,9 +517,8 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
-            Specifies the way columns or rows are used as data series on the
-            chart. Can be one of the following: Auto (default), Rows, and
-            Columns. See Excel.ChartSeriesBy for details.
+            Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
+            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
         type: void
@@ -617,29 +545,23 @@ methods:
     uid: 'excel!Excel.Chart#setData:member(2)'
     package: excel!
     fullName: 'setData(sourceData, seriesByString)'
-    summary: >-
+    summary: |-
       Resets the source data for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" |
-        "Rows"): void;
+      content: 'setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;'
       parameters:
         - id: sourceData
           description: The range object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesByString
           description: >-
-            Specifies the way columns or rows are used as data series on the
-            chart. Can be one of the following: Auto (default), Rows, and
-            Columns. See Excel.ChartSeriesBy for details.
+            Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
+            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type: '"Auto" | "Columns" | "Rows"'
       return:
         type: void
@@ -648,13 +570,10 @@ methods:
     uid: 'excel!Excel.Chart#setPosition:member(1)'
     package: excel!
     fullName: 'setPosition(startCell, endCell)'
-    summary: >-
+    summary: |-
       Positions the chart relative to cells on the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -663,14 +582,13 @@ methods:
       parameters:
         - id: startCell
           description: >-
-            The start cell. This is where the chart will be moved to. The start
-            cell is the top-left or top-right cell, depending on the user's
-            right-to-left display settings.
+            The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell,
+            depending on the user's right-to-left display settings.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: endCell
           description: >-
-            (Optional) The end cell. If specified, the chart's width and height
-            will be set to fully cover up this cell/range.
+            (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this
+            cell/range.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
@@ -702,13 +620,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Chart object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.ChartData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

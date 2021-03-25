@@ -3,13 +3,10 @@ name: Excel.CommentCollection
 uid: 'excel!Excel.CommentCollection:class'
 package: excel!
 fullName: Excel.CommentCollection
-summary: >-
+summary: |-
   Represents a collection of comment objects that are part of the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,42 +44,35 @@ methods:
     package: excel!
     fullName: 'add(cellAddress, content, contentType)'
     summary: >-
-      Creates a new comment with the given content on the given cell. An
-      `InvalidArgument` error is thrown if the provided range is larger than one
-      cell.
+      Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
+      provided range is larger than one cell.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        add(cellAddress: Range | string, content: CommentRichContent | string,
-        contentType?: Excel.ContentType): Excel.Comment;
+        add(cellAddress: Range | string, content: CommentRichContent | string, contentType?: Excel.ContentType):
+        Excel.Comment;
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object
-            or a string. If it's a string, it must contain the full address,
-            including the sheet name. An `InvalidArgument` error is thrown if
-            the provided range is larger than one cell.
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
-            The comment's content. This can be either a string or
-            CommentRichContent object. Strings are used for plain text.
-            CommentRichContent objects allow for other comment features, such as
-            mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
-            CommentRichContent object\]
+            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
+            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
+            1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
           description: >-
-            Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
-            ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
             ContentType.Mention\]
           type: '<xref uid="excel!Excel.ContentType:enum" />'
       return:
@@ -112,42 +102,35 @@ methods:
     package: excel!
     fullName: 'add(cellAddress, content, contentTypeString)'
     summary: >-
-      Creates a new comment with the given content on the given cell. An
-      `InvalidArgument` error is thrown if the provided range is larger than one
-      cell.
+      Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
+      provided range is larger than one cell.
 
 
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        add(cellAddress: Range | string, content: CommentRichContent | string,
-        contentTypeString?: "Plain" | "Mention"): Excel.Comment;
+        add(cellAddress: Range | string, content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"):
+        Excel.Comment;
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object
-            or a string. If it's a string, it must contain the full address,
-            including the sheet name. An `InvalidArgument` error is thrown if
-            the provided range is larger than one cell.
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
-            The comment's content. This can be either a string or
-            CommentRichContent object. Strings are used for plain text.
-            CommentRichContent objects allow for other comment features, such as
-            mentions. \[Api set: ExcelApi 1.10 for string, 1.11 for
-            CommentRichContent object\]
+            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
+            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
+            1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString
           description: >-
-            Optional. The type of content contained within the comment. The
-            default value is enum `ContentType.Plain`<!-- -->. \[Api set:
-            ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            Optional. The type of content contained within the comment. The default value is enum
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
             ContentType.Mention\]
           type: '"Plain" | "Mention"'
       return:
@@ -157,13 +140,10 @@ methods:
     uid: 'excel!Excel.CommentCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Gets the number of comments in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -176,13 +156,10 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(commentId)
-    summary: >-
+    summary: |-
       Gets a comment from the collection based on its ID.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -199,13 +176,10 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: >-
+    summary: |-
       Gets a comment from the collection based on its position.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -222,13 +196,10 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     package: excel!
     fullName: getItemByCell(cellAddress)
-    summary: >-
+    summary: |-
       Gets the comment from the specified cell.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -237,10 +208,9 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell which the comment is on. This can be a Range object or a
-            string. If it's a string, it must contain the full address,
-            including the sheet name. An `InvalidArgument` error is thrown if
-            the provided range is larger than one cell.
+            The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain
+            the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
+            larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'
@@ -249,13 +219,10 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
     package: excel!
     fullName: getItemByReplyId(replyId)
-    summary: >-
+    summary: |-
       Gets the comment to which the given reply is connected.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -273,22 +240,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.CommentCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.CommentCollection;
+        load(options?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CommentCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.CommentCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.CommentCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.CommentCollection:class" />'
@@ -298,8 +263,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -307,9 +272,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.CommentCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.CommentCollection:class" />'
@@ -319,22 +282,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.CommentCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.CommentCollection:class" />'
@@ -344,15 +303,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.CommentCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
-      array with shallow copies of any loaded properties from the collection's
-      items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false

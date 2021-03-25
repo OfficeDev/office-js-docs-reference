@@ -4,8 +4,8 @@ uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.WorksheetCustomPropertyUpdateData
 summary: >-
-  An interface for updating data on the WorksheetCustomProperty object, for use
-  in `worksheetCustomProperty.set({ ... })`<!-- -->.
+  An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ...
+  })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +15,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
     package: excel!
     fullName: value
-    summary: >-
+    summary: |-
       Gets or sets the value of the custom property.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

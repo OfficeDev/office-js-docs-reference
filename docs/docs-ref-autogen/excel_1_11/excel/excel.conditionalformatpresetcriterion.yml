@@ -3,13 +3,10 @@ name: Excel.ConditionalFormatPresetCriterion
 uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
 package: excel!
 fullName: Excel.ConditionalFormatPresetCriterion
-summary: >-
+summary: |-
   Represents the criteria for the Preset Criteria conditional format type.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -110,14 +107,12 @@ fields:
     summary: ''
     value: '"ThisWeek"'
   - name: threeStdDevAboveAverage
-    uid: >-
-      excel!Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage:member
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage:member'
     package: excel!
     summary: ''
     value: '"ThreeStdDevAboveAverage"'
   - name: threeStdDevBelowAverage
-    uid: >-
-      excel!Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage:member
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage:member'
     package: excel!
     summary: ''
     value: '"ThreeStdDevBelowAverage"'

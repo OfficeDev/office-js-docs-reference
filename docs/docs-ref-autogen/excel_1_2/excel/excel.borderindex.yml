@@ -3,10 +3,7 @@ name: Excel.BorderIndex
 uid: 'excel!Excel.BorderIndex:enum'
 package: excel!
 fullName: Excel.BorderIndex
-summary: >-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

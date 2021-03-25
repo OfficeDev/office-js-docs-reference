@@ -4,8 +4,8 @@ uid: 'outlook!Office.ReplyFormData:interface'
 package: outlook!
 fullName: Office.ReplyFormData
 summary: >-
-  A ReplyFormData object that contains body or attachment data and a callback
-  function. Used when displaying a reply form.
+  A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
+  form.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,9 +16,8 @@ properties:
     package: outlook!
     fullName: attachments
     summary: >-
-      An array of
-      [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface)
-      that are either file or item attachments.
+      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file or item
+      attachments.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,25 +30,22 @@ properties:
     package: outlook!
     fullName: callback
     summary: >-
-      When the reply display call completes, the function passed in the callback
-      parameter is called with a single parameter, `asyncResult`<!-- -->, which
-      is an `Office.AsyncResult` object.
+      When the reply display call completes, the function passed in the callback parameter is called with a single
+      parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
-        type: >-
-          (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-          />&lt;any&gt;) =&gt; void
+        type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
   - name: htmlBody
     uid: 'outlook!Office.ReplyFormData#htmlBody:member'
     package: outlook!
     fullName: htmlBody
     summary: >-
-      A string that contains text and HTML and that represents the body of the
-      reply form. The string is limited to 32 KB.
+      A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32
+      KB.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -62,9 +58,8 @@ properties:
     package: outlook!
     fullName: options
     summary: >-
-      An object literal that contains the following property. `asyncContext`<!--
-      -->: Developers can provide any object they wish to access in the callback
-      method.
+      An object literal that contains the following property. `asyncContext`<!-- -->: Developers can provide any object
+      they wish to access in the callback method.
     remarks: ''
     isPreview: false
     isDeprecated: false

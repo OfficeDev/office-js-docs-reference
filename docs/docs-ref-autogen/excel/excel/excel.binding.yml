@@ -3,13 +3,10 @@ name: Excel.Binding
 uid: 'excel!Excel.Binding:class'
 package: excel!
 fullName: Excel.Binding
-summary: >-
+summary: |-
   Represents an Office.js binding that is defined in the workbook.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +30,10 @@ properties:
     uid: 'excel!Excel.Binding#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Represents the binding identifier.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,20 +45,15 @@ properties:
     uid: 'excel!Excel.Binding#onDataChanged:member'
     package: excel!
     fullName: onDataChanged
-    summary: >-
+    summary: |-
       Occurs when data or formatting within the binding is changed.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onDataChanged:
-        OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -100,22 +89,16 @@ properties:
       Occurs when the selected content in the binding is changed.
 
 
-      *Note**: If multiple, discontiguous cells are selected,
-      `Binding.onSelectionChanged` only reports row and column information for
-      one selection. Use `Worksheet.onSelectionChanged` for multiple selected
-      ranges.
+      *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
+      information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
 
 
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onSelectionChanged:
-        OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -124,34 +107,26 @@ properties:
     uid: 'excel!Excel.Binding#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Returns the type of the binding. See `Excel.BindingType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
       return:
-        type: >-
-          <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" |
-          "Text"
+        type: '<xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"'
 methods:
   - name: delete()
     uid: 'excel!Excel.Binding#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: >-
+    summary: |-
       Deletes the binding.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -164,14 +139,10 @@ methods:
     uid: 'excel!Excel.Binding#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: >-
-      Returns the range represented by the binding. Will throw an error if the
-      binding is not of the correct type.
+    summary: |-
+      Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -203,14 +174,10 @@ methods:
     uid: 'excel!Excel.Binding#getTable:member(1)'
     package: excel!
     fullName: getTable()
-    summary: >-
-      Returns the table represented by the binding. Will throw an error if the
-      binding is not of the correct type.
+    summary: |-
+      Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -242,14 +209,10 @@ methods:
     uid: 'excel!Excel.Binding#getText:member(1)'
     package: excel!
     fullName: getText()
-    summary: >-
-      Returns the text represented by the binding. Will throw an error if the
-      binding is not of the correct type.
+    summary: |-
+      Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -282,8 +245,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -301,8 +264,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -310,9 +273,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Binding;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'
@@ -340,8 +301,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -354,10 +315,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -371,13 +330,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Binding object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

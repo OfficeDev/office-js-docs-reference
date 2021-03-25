@@ -4,13 +4,11 @@ uid: 'outlook!Office.MessageCompose:interface'
 package: outlook!
 fullName: Office.MessageCompose
 summary: >-
-  The message compose mode of
-  [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
+  The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed
-  through existing interfaces. You should treat this as a mode of
-  `Office.context.mailbox.item`<!-- -->. Refer to the [Object
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+  this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
   Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item)
   page for more information.
 
@@ -32,28 +30,24 @@ properties:
     package: outlook!
     fullName: bcc
     summary: >-
-      Gets an object that provides methods to get or update the recipients on
-      the **Bcc** (blind carbon copy) line of a message.
+      Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line of a
+      message.
 
 
-      Depending on the client/platform (i.e., Windows, Mac, etc.), limits may
-      apply on how many recipients you can get or update. See the
-      [Recipients](xref:outlook!Office.Recipients:interface) object for more
-      details.
+      Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get
+      or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -61,8 +55,7 @@ properties:
 
       ```javascript
 
-      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com',
-      'bob@contoso.com'] );
+      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
       Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
 
@@ -104,8 +97,7 @@ properties:
         .toString();
       var emailArray = [email];
 
-      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult)
-      {
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Succeeded in setting Bcc field.");
         } else {
@@ -124,22 +116,19 @@ properties:
     uid: 'outlook!Office.MessageCompose#body:member'
     package: outlook!
     fullName: body
-    summary: >-
+    summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
-
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -156,8 +145,7 @@ properties:
               // Do something with the result.
           });
 
-      // The following is an example of the result parameter passed to the
-      callback function.
+      // The following is an example of the result parameter passed to the callback function.
 
       {
           "value": "TEXT of whole body (including threads below)",
@@ -177,25 +165,23 @@ properties:
     package: outlook!
     fullName: cc
     summary: >-
-      Provides access to the Cc (carbon copy) recipients of a message. The type
-      of object and level of access depend on the mode of the current item.
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on
+      the mode of the current item.
 
 
-      The `cc` property returns a `Recipients` object that provides methods to
-      get or update the recipients on the **Cc** line of the message. However,
-      depending on the client/platform (i.e., Windows, Mac, etc.), limits may
-      apply on how many recipients you can get or update. See the
-      [Recipients](xref:outlook!Office.Recipients:interface) object for more
-      details.
+      The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
+      **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
+      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      object for more details.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -203,8 +189,7 @@ properties:
 
       ```javascript
 
-      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com',
-      'bob@contoso.com'] );
+      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
       Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
 
@@ -246,8 +231,7 @@ properties:
         .toString();
       var emailArray = [email];
 
-      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult)
-      {
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Succeeded in setting Cc field.");
         } else {
@@ -267,29 +251,25 @@ properties:
     package: outlook!
     fullName: conversationId
     summary: >-
-      Gets an identifier for the email conversation that contains a particular
-      message.
+      Gets an identifier for the email conversation that contains a particular message.
 
 
-      You can get an integer for this property if your mail app is activated in
-      read forms or responses in compose forms. If subsequently the user changes
-      the subject of the reply message, upon sending the reply, the conversation
-      ID for that message will change and that value you obtained earlier will
-      no longer apply.
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
 
 
-      You get null for this property for a new item in a compose form. If the
-      user sets a subject and saves the item, the `conversationId` property will
-      return a value.
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the `conversationId` property will return a value.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -300,8 +280,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
-      console.log(`Conversation ID:
-      ${Office.context.mailbox.item.conversationId}`);
+      console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
     isPreview: false
@@ -314,26 +293,21 @@ properties:
     uid: 'outlook!Office.MessageCompose#from:member'
     package: outlook!
     fullName: from
-    summary: >-
+    summary: |-
       Gets the email address of the sender of a message.
 
+      The `from` property returns a `From` object that provides a method to get the from value.
 
-      The `from` property returns a `From` object that provides a method to get
-      the from value.
-
-
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -368,18 +342,17 @@ properties:
       Gets the type of item that an instance represents.
 
 
-      The `itemType` property returns one of the `ItemType` enumeration values,
-      indicating whether the item object instance is a message or an
-      appointment.
+      The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
+      instance is a message or an appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -403,22 +376,19 @@ properties:
     uid: 'outlook!Office.MessageCompose#notificationMessages:member'
     package: outlook!
     fullName: notificationMessages
-    summary: >-
+    summary: |-
       Gets the notification messages for an item.
 
-
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -436,8 +406,7 @@ properties:
           type: "progressIndicator",
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
       ```
 
@@ -455,8 +424,7 @@ properties:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
       ```
 
@@ -474,8 +442,7 @@ properties:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
       ```
 
@@ -513,8 +480,7 @@ properties:
 
       var id = $("#notificationId").val();
 
-      Office.context.mailbox.item.notificationMessages.removeAsync(id,
-      handleResult);
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
       ```
     isPreview: false
@@ -531,39 +497,32 @@ properties:
       Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the `seriesId` returns the
-      Exchange Web Services (EWS) ID of the parent (series) item that this item
-      belongs to. However, on iOS and Android, the seriesId returns the REST ID
-      of the parent item.
+      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
+      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
+      parent item.
 
 
-      **Note**: The identifier returned by the `seriesId` property is the same
-      as the Exchange Web Services item identifier. The `seriesId` property is
-      not identical to the Outlook IDs used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using
-      `Office.context.mailbox.convertToRestId`<!-- -->. For more details, see
-      [Use the Outlook REST APIs from an Outlook
-      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!--
-      -->.
+      **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
+      identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The `seriesId` property returns `null` for items that do not have parent
-      items such as single appointments, series items, or meeting requests and
-      returns `undefined` for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -596,25 +555,21 @@ properties:
     uid: 'outlook!Office.MessageCompose#subject:member'
     package: outlook!
     fullName: subject
-    summary: >-
+    summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
+      The `subject` property gets or sets the entire subject of the item, as sent by the email server.
 
-      The `subject` property gets or sets the entire subject of the item, as
-      sent by the email server.
-
-
-      The `subject` property returns a `Subject` object that provides methods to
-      get and set the subject.
+      The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -662,25 +617,23 @@ properties:
     package: outlook!
     fullName: to
     summary: >-
-      Provides access to the recipients on the **To** line of a message. The
-      type of object and level of access depend on the mode of the current item.
+      Provides access to the recipients on the **To** line of a message. The type of object and level of access depend
+      on the mode of the current item.
 
 
-      The `to` property returns a `Recipients` object that provides methods to
-      get or update the recipients on the **To** line of the message. However,
-      depending on the client/platform (i.e., Windows, Mac, etc.), limits may
-      apply on how many recipients you can get or update. See the
-      [Recipients](xref:outlook!Office.Recipients:interface) object for more
-      details.
+      The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the
+      **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
+      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      object for more details.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -688,8 +641,7 @@ properties:
 
       ```javascript
 
-      Office.context.mailbox.item.to.setAsync( ['alice@contoso.com',
-      'bob@contoso.com'] );
+      Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
       Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
 
@@ -731,8 +683,7 @@ properties:
         .toString();
       var emailArray = [email];
 
-      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult)
-      {
+      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Succeeded in setting To field.");
         } else {
@@ -756,33 +707,29 @@ methods:
       Adds a file to a message or appointment as an attachment.
 
 
-      The `addFileAttachmentAsync` method uploads the file at the specified URI
-      and attaches it to the item in the compose form.
+      The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
+      compose form.
 
 
-      You can subsequently use the identifier with the `removeAttachmentAsync`
-      method to remove the attachment in the same session.
+      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
+      same session.
 
 
-      **Important**: In recent builds of Outlook on Windows, a bug was
-      introduced that incorrectly appends an `Authorization: Bearer` header to
-      this action (whether using this API or the Outlook UI). To work around
-      this issue, you can try using the `addFileAttachmentFromBase64` API
-      introduced with requirement set 1.8.
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
+      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
@@ -791,12 +738,10 @@ methods:
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
 
 
-      - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is
-      not allowed.
+      - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is not allowed.
 
 
-      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has
-      too many attachments.
+      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
 
 
       #### Examples
@@ -864,42 +809,33 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?:
-        Office.AsyncContextOptions & { isInline: boolean }, callback?:
-        (asyncResult: Office.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions & {
+        isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
-            The URI that provides the location of the file to attach to the
-            message or appointment. The maximum length is 2048 characters.
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
           type: string
         - id: attachmentName
           description: >-
-            The name of the attachment that is shown while the attachment is
-            uploading. The maximum length is 255 characters.
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
-            `isInline`<!-- -->: If true, indicates that the attachment will be
-            shown inline in the message body, and should not be displayed in the
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true,
+            indicates that the attachment will be shown inline in the message body, and should not be displayed in the
             attachment list.
-          type: >-
-            <xref uid="office!Office.AsyncContextOptions:interface" /> & {
-            isInline: boolean }
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. On success, the attachment identifier
-            will be provided in the `asyncResult.value` property. If uploading
-            the attachment fails, the `asyncResult` object will contain an
-            `Error` object that provides a description of the error.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
+            the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain
+            an `Error` object that provides a description of the error.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -908,8 +844,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are
-      available only with task pane.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
 
       Refer to the Item object model [events
@@ -917,18 +852,16 @@ methods:
       for supported events.
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -945,42 +878,34 @@ methods:
       }
 
 
-      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
-      myHandlerFunction, myCallback);
+      Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 
       ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType | string, handler: any,
-        options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
           type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: handler
           description: >-
-            The function to handle the event. The function must accept a single
-            parameter, which is an object literal. The type property on the
-            parameter will match the `eventType` parameter passed to
-            `addHandlerAsync`<!-- -->.
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
           type: any
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -989,48 +914,39 @@ methods:
     package: outlook!
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     summary: >-
-      Adds an Exchange item, such as a message, as an attachment to the message
-      or appointment.
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
 
-      The `addItemAttachmentAsync` method attaches the item with the specified
-      Exchange identifier to the item in the compose form. If you specify a
-      callback method, the method is called with one parameter,
-      `asyncResult`<!-- -->, which contains either the attachment identifier or
-      a code that indicates any error that occurred while attaching the item.
-      You can use the options parameter to pass state information to the
-      callback method, if needed.
+      The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      which contains either the attachment identifier or a code that indicates any error that occurred while attaching
+      the item. You can use the options parameter to pass state information to the callback method, if needed.
 
 
-      You can subsequently use the identifier with the `removeAttachmentAsync`
-      method to remove the attachment in the same session.
+      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
+      same session.
 
 
-      If your Office Add-in is running in Outlook on the web, the
-      `addItemAttachmentAsync` method can attach items to items other than the
-      item that you are editing; however, this is not supported and is not
-      recommended.
+      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
+      items other than the item that you are editing; however, this is not supported and is not recommended.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
 
 
-      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has
-      too many attachments.
+      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
 
 
       #### Examples
@@ -1080,37 +996,29 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
-          description: >-
-            The Exchange identifier of the item to attach. The maximum length is
-            100 characters.
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
           type: any
         - id: attachmentName
           description: >-
-            The name of the attachment that is shown while the attachment is
-            uploading. The maximum length is 255 characters.
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. On success, the attachment identifier
-            will be provided in the `asyncResult.value` property. If adding the
-            attachment fails, the `asyncResult` object will contain an `Error`
-            object that provides a description of the error.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
+            the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an
+            `Error` object that provides a description of the error.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1122,33 +1030,28 @@ methods:
       Closes the current item that is being composed
 
 
-      The behaviors of the close method depends on the current state of the item
-      being composed. If the item has unsaved changes, the client prompts the
-      user to save, discard, or close the action.
+      The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved
+      changes, the client prompts the user to save, discard, or close the action.
 
 
-      In the Outlook desktop client, if the message is an inline reply, the
-      close method has no effect.
+      In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
 
 
-      **Note**: In Outlook on the web, if the item is an appointment and it has
-      previously been saved using `saveAsync`<!-- -->, the user is prompted to
-      save, discard, or cancel even if no changes have occurred since the item
-      was last saved.
+      **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using
+      `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
+      item was last saved.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `Restricted`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -1174,34 +1077,29 @@ methods:
     package: outlook!
     fullName: 'getSelectedDataAsync(coercionType, options, callback)'
     summary: >-
-      Asynchronously returns selected data from the subject or body of a
-      message.
+      Asynchronously returns selected data from the subject or body of a message.
 
 
-      If there is no selection but the cursor is in the body or subject, the
-      method returns an empty string for the selected data. If a field other
-      than the body or subject is selected, the method returns the
-      `InvalidSelection` error.
+      If there is no selection but the cursor is in the body or subject, the method returns an empty string for the
+      selected data. If a field other than the body or subject is selected, the method returns the `InvalidSelection`
+      error.
 
 
-      To access the selected data from the callback method, call
-      `asyncResult.value.data`<!-- -->. To access the source property that the
-      selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
-      which will be either `body` or `subject`<!-- -->.
+      To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
+      property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
+      `body` or `subject`<!-- -->.
 
 
-      \[ [API set: Mailbox
-      1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -1228,69 +1126,56 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: Office.CoercionType | string,
-        options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
-            Requests a format for the data. If `Text`<!-- -->, the method
-            returns the plain text as a string, removing any HTML tags present.
-            If `Html`<!-- -->, the method returns the selected text, whether it
-            is plaintext or HTML.
+            Requests a format for the data. If `Text`<!-- -->, the method returns the plain text as a string, removing
+            any HTML tags present. If `Html`<!-- -->, the method returns the selected text, whether it is plaintext or
+            HTML.
           type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
-            An object literal that contains one or more of the following
-            properties. `asyncContext`<!-- -->: Developers can provide any
-            object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
-          The selected data as a string with format determined by
-          `coercionType`<!-- -->.
+        description: The selected data as a string with format determined by `coercionType`<!-- -->.
   - name: 'getSelectedDataAsync(coercionType, callback)'
     uid: 'outlook!Office.MessageCompose#getSelectedDataAsync:member(2)'
     package: outlook!
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     summary: >-
-      Asynchronously returns selected data from the subject or body of a
-      message.
+      Asynchronously returns selected data from the subject or body of a message.
 
 
-      If there is no selection but the cursor is in the body or subject, the
-      method returns an empty string for the selected data. If a field other
-      than the body or subject is selected, the method returns the
-      `InvalidSelection` error.
+      If there is no selection but the cursor is in the body or subject, the method returns an empty string for the
+      selected data. If a field other than the body or subject is selected, the method returns the `InvalidSelection`
+      error.
 
 
-      To access the selected data from the callback method, call
-      `asyncResult.value.data`<!-- -->. To access the source property that the
-      selection comes from, call `asyncResult.value.sourceProperty`<!-- -->,
-      which will be either `body` or `subject`<!-- -->.
+      To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
+      property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
+      `body` or `subject`<!-- -->.
 
 
-      \[ [API set: Mailbox
-      1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -1301,8 +1186,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
 
-      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
-      function(asyncResult) {
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var text = asyncResult.value.data;
           var prop = asyncResult.value.sourceProperty;
@@ -1317,58 +1201,49 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: Office.CoercionType | string,
-        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult:
+        Office.AsyncResult<any>) => void): void;
       parameters:
         - id: coercionType
           description: >-
-            Requests a format for the data. If `Text`<!-- -->, the method
-            returns the plain text as a string, removing any HTML tags present.
-            If `Html`<!-- -->, the method returns the selected text, whether it
-            is plaintext or HTML.
+            Requests a format for the data. If `Text`<!-- -->, the method returns the plain text as a string, removing
+            any HTML tags present. If `Html`<!-- -->, the method returns the selected text, whether it is plaintext or
+            HTML.
           type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
-          The selected data as a string with format determined by
-          `coercionType`<!-- -->.
+        description: The selected data as a string with format determined by `coercionType`<!-- -->.
   - name: 'loadCustomPropertiesAsync(callback, userContext)'
     uid: 'outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)'
     package: outlook!
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     summary: >-
-      Asynchronously loads custom properties for this add-in on the selected
-      item.
+      Asynchronously loads custom properties for this add-in on the selected item.
 
 
-      Custom properties are stored as key/value pairs on a per-app, per-item
-      basis. This method returns a `CustomProperties` object in the callback,
-      which provides methods to access the custom properties specific to the
-      current item and the current add-in. Custom properties are not encrypted
-      on the item, so this should not be used as secure storage.
+      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
+      `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
+      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
+      as secure storage.
 
 
-      The custom properties are provided as a `CustomProperties` object in the
-      asyncResult.value property. This object can be used to get, set, and
-      remove custom properties from the item and save changes to the custom
-      property set back to the server.
+      The custom properties are provided as a `CustomProperties` object in the asyncResult.value property. This object
+      can be used to get, set, and remove custom properties from the item and save changes to the custom property set
+      back to the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       #### Examples
@@ -1376,23 +1251,17 @@ methods:
 
       ```javascript
 
-      // The following example shows how to use the loadCustomPropertiesAsync
-      method
+      // The following example shows how to use the loadCustomPropertiesAsync method
 
-      // to asynchronously load custom properties that are specific to the
-      current item.
+      // to asynchronously load custom properties that are specific to the current item.
 
-      // The example also shows how to use the saveAsync method to save these
-      properties
+      // The example also shows how to use the saveAsync method to save these properties
 
-      // back to the server. After loading the custom properties, the example
-      uses the
+      // back to the server. After loading the custom properties, the example uses the
 
-      // get method to read the custom property myProp, the set method to write
-      the
+      // get method to read the custom property myProp, the set method to write the
 
-      // custom property otherProp, and then finally calls the saveAsync method
-      to save
+      // custom property otherProp, and then finally calls the saveAsync method to save
 
       // the custom properties.
 
@@ -1448,23 +1317,20 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (asyncResult:
-        Office.AsyncResult<CustomProperties>) => void, userContext?: any): void;
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;<xref uid="outlook!Office.CustomProperties:interface" />&gt;)
-            =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
-            Optional. Developers can provide any object they wish to access in
-            the callback function. This object can be accessed by the
-            `asyncResult.asyncContext` property in the callback function.
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the `asyncResult.asyncContext` property in the callback function.
           type: any
       return:
         type: void
@@ -1477,28 +1343,23 @@ methods:
       Removes an attachment from a message or appointment.
 
 
-      The `removeAttachmentAsync` method removes the attachment with the
-      specified identifier from the item. As a best practice, you should use the
-      attachment identifier to remove an attachment only if the same mail app
-      has added that attachment in the same session. In Outlook on the web and
-      mobile devices, the attachment identifier is valid only within the same
-      session. A session is over when the user closes the app, or if the user
-      starts composing an inline form then subsequently pops out the form to
-      continue in a separate window.
+      The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
 
 
-      \[ [API set: Mailbox
-      1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
@@ -1548,32 +1409,25 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: attachmentId
           description: >-
-            The identifier of the attachment to remove. The maximum string
-            length of the `attachmentId` is 200 characters in Outlook on the web
-            and on Windows.
+            The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
+            characters in Outlook on the web and on Windows.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->. If removing the attachment fails, the
-            `asyncResult.error` property will contain an error code with the
-            reason for the failure.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If removing the attachment fails, the `asyncResult.error`
+            property will contain an error code with the reason for the failure.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1582,8 +1436,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events
-      are available only with task pane.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
 
       Refer to the Item object model [events
@@ -1591,43 +1444,36 @@ methods:
       for supported events.
 
 
-      \[ [API set: Mailbox
-      1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType | string, options?:
-        Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
           type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter,
-            `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1639,38 +1485,31 @@ methods:
       Asynchronously saves an item.
 
 
-      When invoked, this method saves the current message as a draft and returns
-      the item ID via the callback method. In Outlook on the web or Outlook in
-      online mode, the item is saved to the server. In Outlook in cached mode,
-      the item is saved to the local cache.
+      When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In
+      Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item
+      is saved to the local cache.
 
 
-      Since appointments have no draft state, if `saveAsync` is called on an
-      appointment in compose mode, the item will be saved as a normal
-      appointment on the user's calendar. For new appointments that have not
-      been saved before, no invitation will be sent. Saving an existing
-      appointment will send an update to added or removed attendees.
+      Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will
+      be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
 
 
-      **Note**: If your add-in calls `saveAsync` on an item in compose mode in
-      order to get an item ID to use with EWS or the REST API, be aware that
-      when Outlook is in cached mode, it may take some time before the item is
-      actually synced to the server. Until the item is synced, using the itemId
-      will return an error.
+      **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS
+      or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the itemId will return an error.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
@@ -1681,23 +1520,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
+        saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following
-            properties. `asyncContext`<!-- -->: Developers can provide any
-            object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1709,38 +1544,31 @@ methods:
       Asynchronously saves an item.
 
 
-      When invoked, this method saves the current message as a draft and returns
-      the item id via the callback method. In Outlook on the web or Outlook in
-      online mode, the item is saved to the server. In Outlook in cached mode,
-      the item is saved to the local cache.
+      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
+      Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item
+      is saved to the local cache.
 
 
-      Since appointments have no draft state, if `saveAsync` is called on an
-      appointment in compose mode, the item will be saved as a normal
-      appointment on the user's calendar. For new appointments that have not
-      been saved before, no invitation will be sent. Saving an existing
-      appointment will send an update to added or removed attendees.
+      Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will
+      be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
+      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
 
 
-      **Note**: If your add-in calls `saveAsync` on an item in compose mode in
-      order to get an item ID to use with EWS or the REST API, be aware that
-      when Outlook is in cached mode, it may take some time before the item is
-      actually synced to the server. Until the item is synced, using the
-      `itemId` will return an error.
+      **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS
+      or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
+      synced to the server. Until the item is synced, using the `itemId` will return an error.
 
 
-      \[ [API set: Mailbox
-      1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
@@ -1778,18 +1606,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void):
-        void;
+      content: 'saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback`
-            parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1801,25 +1624,21 @@ methods:
       Asynchronously inserts data into the body or subject of a message.
 
 
-      The `setSelectedDataAsync` method inserts the specified string at the
-      cursor location in the subject or body of the item, or, if text is
-      selected in the editor, it replaces the selected text. If the cursor is
-      not in the body or subject field, an error is returned. After insertion,
-      the cursor is placed at the end of the inserted content.
+      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
+      the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
+      or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
 
 
-      \[ [API set: Mailbox
-      1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-      \]
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `ReadWriteItem`
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Message Compose
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
 
 
       **Errors**:
@@ -1833,8 +1652,7 @@ methods:
 
       ```javascript
 
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
-      coercionType : "html" });
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
 
       ```
 
@@ -1849,8 +1667,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/set-selected-data.yaml
 
-      Office.context.mailbox.item.setSelectedDataAsync("Replaced",
-      function(asyncResult) {
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Selected text has been updated successfully.");
         } else {
@@ -1863,41 +1680,32 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions
-        & CoercionTypeOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-
-            The data to be inserted. Data is not to exceed 1,000,000 characters.
-            If more than 1,000,000 characters are passed in, an
-            `ArgumentOutOfRange` exception is thrown.
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an `ArgumentOutOfRange` exception is thrown.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the
-            following properties. `asyncContext`<!-- -->: Developers can provide
-            any object they wish to access in the callback method.
-            `coercionType`<!-- -->: If text, the current style is applied in
-            Outlook on the web and desktop clients. If the field is an HTML
-            editor, only the text data is inserted, even if the data is HTML. If
-            html and the field supports HTML (the subject doesn't), the current
-            style is applied in Outlook on the web and the default style is
-            applied in Outlook on desktop clients. If the field is a text field,
-            an `InvalidDataFormat` error is returned. If `coercionType` is not
-            set, the result depends on the field: if the field is HTML then HTML
-            is used; if the field is text, then plain text is used.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method. `coercionType`<!-- -->: If
+            text, the current style is applied in Outlook on the web and desktop clients. If the field is an HTML
+            editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the
+            subject doesn't), the current style is applied in Outlook on the web and the default style is applied in
+            Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If
+            `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the
+            field is text, then plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the
-            `callback` parameter is called with a single parameter of type
-            `Office.AsyncResult`<!-- -->.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

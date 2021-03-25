@@ -4,14 +4,11 @@ uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.SettingCollectionLoadOptions
 summary: >-
-  Represents a collection of key-value pair setting objects that are part of the
-  workbook. The scope is limited to per file and add-in (task-pane or content)
-  combination.
+  Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per
+  file and add-in (task-pane or content) combination.
 
 
-  \[ [API set: ExcelApi
-  1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -36,14 +32,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions#key:member'
     package: excel!
     fullName: key
-    summary: >-
-      For EACH ITEM in the collection: The key that represents the id of the
-      Setting.
+    summary: |-
+      For EACH ITEM in the collection: The key that represents the id of the Setting.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -55,14 +47,10 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions#value:member'
     package: excel!
     fullName: value
-    summary: >-
-      For EACH ITEM in the collection: Represents the value stored for this
-      setting.
+    summary: |-
+      For EACH ITEM in the collection: Represents the value stored for this setting.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

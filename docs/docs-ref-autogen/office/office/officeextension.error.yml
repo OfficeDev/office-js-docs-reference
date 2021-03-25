@@ -4,8 +4,8 @@ uid: 'office!OfficeExtension.Error:class'
 package: office!
 fullName: OfficeExtension.Error
 summary: >-
-  The error object returned by `context.sync()`<!-- -->, if a promise is
-  rejected due to an error while processing the request.
+  The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing the
+  request.
 remarks: |-
 
 
@@ -52,9 +52,7 @@ properties:
     uid: 'office!OfficeExtension.Error#debugInfo:member'
     package: office!
     fullName: debugInfo
-    summary: >-
-      Debug info (useful for detailed logging of the error, i.e., via
-      `JSON.stringify(...)`<!-- -->).
+    summary: 'Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -115,11 +113,9 @@ properties:
     package: office!
     fullName: traceMessages
     summary: >-
-      Trace messages (if any) that were added via a `context.trace()` invocation
-      before calling `context.sync()`<!-- -->. If there was an error, this
-      contains all trace messages that were executed before the error occurred.
-      These messages can help you monitor the program execution sequence and
-      detect the case of the error.
+      Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`<!--
+      -->. If there was an error, this contains all trace messages that were executed before the error occurred. These
+      messages can help you monitor the program execution sequence and detect the case of the error.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,41 +123,23 @@ properties:
       content: 'traceMessages: string[];'
       return:
         type: 'string[]'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following example shows how you can instrument a batch of
-          commands
-
+          // The following example shows how you can instrument a batch of commands
           // to determine where an error occurred. The first batch successfully
-
-          // inserts the first two paragraphs into the document and cause no
-          errors.
-
-          // The second batch successfully inserts the third and fourth
-          paragraphs
-
-          // but fails in the call to insert the fifth paragraph. All other
-          commands
-
-          // after the failed command in the batch are not executed, including
-          the
-
+          // inserts the first two paragraphs into the document and cause no errors.
+          // The second batch successfully inserts the third and fourth paragraphs
+          // but fails in the call to insert the fifth paragraph. All other commands
+          // after the failed command in the batch are not executed, including the
           // command that adds the fifth trace message. In this case, the error
-
-          // occurred after the fourth paragraph was inserted, and before adding
-          the
-
+          // occurred after the fourth paragraph was inserted, and before adding the
           // fifth trace message.
 
-
           // Run a batch operation against the Word object model.
-
           Word.run(function (context) {
 
               // Create a proxy object for the document body.
@@ -195,15 +173,11 @@ properties:
                   context.trace('5th paragraph successful');
               }).then(context.sync);
           })
-
           .catch(function (error) {
               if (error instanceof OfficeExtension.Error) {
                   console.log('Trace messages: ' + error.traceMessages);
               }
           });
 
-
-          // Output: "Trace messages: 3rd paragraph successful,4th paragraph
-          successful"
-
+          // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
           ```

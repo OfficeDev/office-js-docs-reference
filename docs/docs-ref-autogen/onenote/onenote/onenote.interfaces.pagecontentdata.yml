@@ -13,13 +13,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#image:member'
     package: onenote!
     fullName: image
-    summary: >-
-      Gets the Image in the PageContent object. Throws an exception if
-      PageContentType is not Image.
+    summary: |-
+      Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,14 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
     package: onenote!
     fullName: ink
-    summary: >-
-      Gets the ink in the PageContent object. Throws an exception if
-      PageContentType is not Ink.
+    summary: |-
+      Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,13 +58,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#left:member'
     package: onenote!
     fullName: left
-    summary: >-
+    summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -87,14 +73,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#outline:member'
     package: onenote!
     fullName: outline
-    summary: >-
-      Gets the Outline in the PageContent object. Throws an exception if
-      PageContentType is not Outline.
+    summary: |-
+      Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#top:member'
     package: onenote!
     fullName: top
-    summary: >-
+    summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -124,19 +103,14 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageContentData#type:member'
     package: onenote!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the PageContent object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" |
-          "Image" | "Ink" | "Other"
+        type: '<xref uid="onenote!OneNote.PageContentType:enum" /> | "Outline" | "Image" | "Ink" | "Other"'

@@ -3,10 +3,7 @@ name: Excel.ChartAxisDisplayUnit
 uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
 package: excel!
 fullName: Excel.ChartAxisDisplayUnit
-summary: >-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -44,9 +41,7 @@ fields:
   - name: none
     uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
     package: excel!
-    summary: >-
-      Default option. This will reset display unit to the axis, and set unit
-      label invisible.
+    summary: 'Default option. This will reset display unit to the axis, and set unit label invisible.'
     value: '"None"'
   - name: tenMillions
     uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'

@@ -3,13 +3,10 @@ name: Excel.ConditionalRangeBorder
 uid: 'excel!Excel.ConditionalRangeBorder:class'
 package: excel!
 fullName: Excel.ConditionalRangeBorder
-summary: >-
+summary: |-
   Represents the border of an object.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +17,11 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the border line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,8 +34,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,70 +47,57 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
     package: excel!
     fullName: sideIndex
-    summary: >-
-      Constant value that indicates the specific side of the border. See
-      Excel.ConditionalRangeBorderIndex for details.
+    summary: |-
+      Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly sideIndex: Excel.ConditionalRangeBorderIndex | "EdgeTop" |
-        "EdgeBottom" | "EdgeLeft" | "EdgeRight";
+      content: 'readonly sideIndex: Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight";'
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" /> |
-          "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
+          <xref uid="excel!Excel.ConditionalRangeBorderIndex:enum" /> | "EdgeTop" | "EdgeBottom" | "EdgeLeft" |
+          "EdgeRight"
   - name: style
     uid: 'excel!Excel.ConditionalRangeBorder#style:member'
     package: excel!
     fullName: style
     summary: >-
-      One of the constants of line style specifying the line style for the
-      border. See Excel.BorderLineStyle for details.
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        style: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" |
-        "Dash" | "DashDot" | "DashDotDot" | "Dot";
+        style: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+        "Dot";
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> |
-          "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
+          <xref uid="excel!Excel.ConditionalRangeBorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" |
+          "DashDotDot" | "Dot"
 methods:
   - name: load(options)
     uid: 'excel!Excel.ConditionalRangeBorder#load:member(1)'
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.ConditionalRangeBorderLoadOptions):
-        Excel.ConditionalRangeBorder;
+      content: 'load(options?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
         description: ''
@@ -124,8 +106,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -133,9 +115,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorder;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeBorder:class" />'
@@ -145,8 +125,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -159,10 +139,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -176,9 +154,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -186,23 +163,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -211,9 +180,7 @@ methods:
     uid: 'excel!Excel.ConditionalRangeBorder#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -231,13 +198,10 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      Excel.ConditionalRangeBorder object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.ConditionalRangeBorderData`<!-- -->) that contains
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalRangeBorder object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
@@ -245,8 +209,6 @@ methods:
     syntax:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeBorderData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

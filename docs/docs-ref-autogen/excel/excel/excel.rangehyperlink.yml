@@ -3,13 +3,10 @@ name: Excel.RangeHyperlink
 uid: 'excel!Excel.RangeHyperlink:interface'
 package: excel!
 fullName: Excel.RangeHyperlink
-summary: >-
+summary: |-
   Represents the necessary strings to get/set a hyperlink (XHL) object.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.RangeHyperlink#address:member'
     package: excel!
     fullName: address
-    summary: >-
+    summary: |-
       Represents the URL target for the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +68,10 @@ properties:
     uid: 'excel!Excel.RangeHyperlink#documentReference:member'
     package: excel!
     fullName: documentReference
-    summary: >-
+    summary: |-
       Represents the document reference target for the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -129,13 +120,10 @@ properties:
     uid: 'excel!Excel.RangeHyperlink#screenTip:member'
     package: excel!
     fullName: screenTip
-    summary: >-
+    summary: |-
       Represents the string displayed when hovering over the hyperlink.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -184,14 +172,10 @@ properties:
     uid: 'excel!Excel.RangeHyperlink#textToDisplay:member'
     package: excel!
     fullName: textToDisplay
-    summary: >-
-      Represents the string that is displayed in the top left most cell in the
-      range.
+    summary: |-
+      Represents the string that is displayed in the top left most cell in the range.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

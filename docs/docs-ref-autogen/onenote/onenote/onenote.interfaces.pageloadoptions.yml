@@ -3,13 +3,10 @@ name: OneNote.Interfaces.PageLoadOptions
 uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.PageLoadOptions
-summary: >-
+summary: |-
   Represents a OneNote page.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#classNotebookPageSource:member'
     package: onenote!
     fullName: classNotebookPageSource
-    summary: >-
+    summary: |-
       Gets the ClassNotebookPageSource to the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: >-
+    summary: |-
       The client url of the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -67,34 +58,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#contents:member'
     package: onenote!
     fullName: contents
-    summary: >-
+    summary: |-
       The collection of PageContent objects on the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the page. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,34 +88,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member'
     package: onenote!
     fullName: inkAnalysisOrNull
-    summary: >-
-      Text interpretation for the ink on the page. Returns null if there is no
-      ink analysis information. Read only.
+    summary: |-
+      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />'
   - name: pageLevel
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#pageLevel:member'
     package: onenote!
     fullName: pageLevel
-    summary: >-
+    summary: |-
       Gets or sets the indentation level of the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,13 +118,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member'
     package: onenote!
     fullName: parentSection
-    summary: >-
+    summary: |-
       Gets the section that contains the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -163,13 +133,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#title:member'
     package: onenote!
     fullName: title
-    summary: >-
+    summary: |-
       Gets or sets the title of the page.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,13 +148,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageLoadOptions#webUrl:member'
     package: onenote!
     fullName: webUrl
-    summary: >-
+    summary: |-
       The web url of the page. Read only
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -7,8 +7,7 @@ summary: >-
   Represents a collection of change records for a task.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -20,9 +19,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -31,19 +29,16 @@ properties:
       return:
         type: boolean
   - name: assignee
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#assignee:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#assignee:member'
     package: excel!
     fullName: assignee
     summary: >-
-      For EACH ITEM in the collection: Represents the user assigned to the task
-      for an `assign` change record type, or the user unassigned from the task
-      for an `unassign` change record type.
+      For EACH ITEM in the collection: Represents the user assigned to the task for an `assign` change record type, or
+      the user unassigned from the task for an `unassign` change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -52,18 +47,15 @@ properties:
       return:
         type: boolean
   - name: changedBy
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#changedBy:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#changedBy:member'
     package: excel!
     fullName: changedBy
     summary: >-
-      For EACH ITEM in the collection: Represents the user who created or
-      changed the task.
+      For EACH ITEM in the collection: Represents the user who created or changed the task.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -72,18 +64,16 @@ properties:
       return:
         type: boolean
   - name: commentId
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#commentId:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#commentId:member'
     package: excel!
     fullName: commentId
     summary: >-
-      For EACH ITEM in the collection: Represents the ID of the `Comment` or
-      `CommentReply` to which the task change is anchored.
+      For EACH ITEM in the collection: Represents the ID of the `Comment` or `CommentReply` to which the task change is
+      anchored.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -92,18 +82,16 @@ properties:
       return:
         type: boolean
   - name: createdDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#createdDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#createdDateTime:member'
     package: excel!
     fullName: createdDateTime
     summary: >-
-      For EACH ITEM in the collection: Represents the creation date and time of
-      the task change record. All dates are in UTC.
+      For EACH ITEM in the collection: Represents the creation date and time of the task change record. All dates are in
+      UTC.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -112,20 +100,17 @@ properties:
       return:
         type: boolean
   - name: dueDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#dueDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#dueDateTime:member'
     package: excel!
     fullName: dueDateTime
     summary: >-
-      For EACH ITEM in the collection: Represents the task's due date and time,
-      in UTC time zone. It is used for the `setSchedule` change record type. Can
-      be set to `null` to remove the due date and time. It should be set
-      together with `startDateTime` to avoid conflicts.
+      For EACH ITEM in the collection: Represents the task's due date and time, in UTC time zone. It is used for the
+      `setSchedule` change record type. Can be set to `null` to remove the due date and time. It should be set together
+      with `startDateTime` to avoid conflicts.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -142,8 +127,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -152,22 +136,18 @@ properties:
       return:
         type: boolean
   - name: percentComplete
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#percentComplete:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#percentComplete:member'
     package: excel!
     fullName: percentComplete
     summary: >-
-      For EACH ITEM in the collection: Represents the task's completion
-      percentage. It is used for the `setPercentComplete` change record type.
-      This is a value between 0 and 100, where 100 represents a completed task.
-      Changing this value to 100 also completes the associated comment. Changing
-      the completion from 100 to a lower value reactivates the associated
-      comment.
+      For EACH ITEM in the collection: Represents the task's completion percentage. It is used for the
+      `setPercentComplete` change record type. This is a value between 0 and 100, where 100 represents a completed task.
+      Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower
+      value reactivates the associated comment.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -176,20 +156,17 @@ properties:
       return:
         type: boolean
   - name: priority
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#priority:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#priority:member'
     package: excel!
     fullName: priority
     summary: >-
-      For EACH ITEM in the collection: Represents the task's priority. It is
-      used for the `setPriority` change record type. This is a value between 0
-      and 10, with 5 being the default priority if not set, and where 0
-      represents the highest priority.
+      For EACH ITEM in the collection: Represents the task's priority. It is used for the `setPriority` change record
+      type. This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the
+      highest priority.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -198,20 +175,17 @@ properties:
       return:
         type: boolean
   - name: startDateTime
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#startDateTime:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#startDateTime:member'
     package: excel!
     fullName: startDateTime
     summary: >-
-      For EACH ITEM in the collection: Represents the task's start date and
-      time, in UTC time zone. It is used for the `setSchedule` change record
-      type. Can be set to `null` to remove the start date and time. It should be
-      set together with `dueDateTime` to avoid conflicts.
+      For EACH ITEM in the collection: Represents the task's start date and time, in UTC time zone. It is used for the
+      `setSchedule` change record type. Can be set to `null` to remove the start date and time. It should be set
+      together with `dueDateTime` to avoid conflicts.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -220,18 +194,15 @@ properties:
       return:
         type: boolean
   - name: title
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#title:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#title:member'
     package: excel!
     fullName: title
     summary: >-
-      For EACH ITEM in the collection: Represents the task's title. It is used
-      for the `setTitle` change record type.
+      For EACH ITEM in the collection: Represents the task's title. It is used for the `setTitle` change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -244,14 +215,12 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      For EACH ITEM in the collection: Represents the action type of the task
-      change record. Some examples of action types are `assign`<!-- -->,
-      `undo`<!-- -->, and `setPriority`<!-- -->.
+      For EACH ITEM in the collection: Represents the action type of the task change record. Some examples of action
+      types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!-- -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -260,18 +229,16 @@ properties:
       return:
         type: boolean
   - name: undoHistoryId
-    uid: >-
-      excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#undoHistoryId:member
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions#undoHistoryId:member'
     package: excel!
     fullName: undoHistoryId
     summary: >-
-      For EACH ITEM in the collection: Represents the `DocumentTaskChange.id`
-      property that was undone for the `undo` change record type.
+      For EACH ITEM in the collection: Represents the `DocumentTaskChange.id` property that was undone for the `undo`
+      change record type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

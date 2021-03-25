@@ -7,6 +7,7 @@ items:
         uid: outlook!
         items:
           - name: MailboxEnums
+            uid: ''
             items:
               - name: ActionType
                 uid: 'outlook!Office.MailboxEnums.ActionType:enum'
@@ -52,6 +53,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
               - name: WeekNumber
                 uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
+              - name: RecurrenceTimeZone
+                uid: 'outlook!Office.RecurrenceTimeZone:interface'
           - name: AppointmentCompose
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
@@ -140,8 +143,6 @@ items:
             uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
           - name: RecurrenceProperties
             uid: 'outlook!Office.RecurrenceProperties:interface'
-          - name: RecurrenceTimeZone
-            uid: 'outlook!Office.RecurrenceTimeZone:interface'
           - name: ReplyFormAttachment
             uid: 'outlook!Office.ReplyFormAttachment:interface'
           - name: ReplyFormData
@@ -168,6 +169,7 @@ items:
         uid: office!
         items:
           - name: Office
+            uid: office!
             items:
               - name: Enums
                 uid: ''
@@ -228,15 +230,12 @@ items:
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
               - name: Addin
                 uid: 'office!Office.Addin:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
+              - name: AddinCommands.Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: AddinCommands.EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: AddinCommands.Source
+                uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
               - name: AsyncResult

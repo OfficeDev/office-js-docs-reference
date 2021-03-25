@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartAxesUpdateData
 uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxesUpdateData
-summary: >-
-  An interface for updating data on the ChartAxes object, for use in
-  `chartAxes.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#categoryAxis:member'
     package: excel!
     fullName: categoryAxis
-    summary: >-
+    summary: |-
       Represents the category axis in a chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member'
     package: excel!
     fullName: seriesAxis
-    summary: >-
+    summary: |-
       Represents the series axis of a 3-D chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#valueAxis:member'
     package: excel!
     fullName: valueAxis
-    summary: >-
+    summary: |-
       Represents the value axis in an axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

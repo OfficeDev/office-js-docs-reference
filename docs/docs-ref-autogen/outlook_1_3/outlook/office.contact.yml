@@ -4,23 +4,21 @@ uid: 'outlook!Office.Contact:interface'
 package: outlook!
 fullName: Office.Contact
 summary: >-
-  Represents the details about a contact (similar to what's on a physical
-  contact or business card) extracted from the item's body. Read mode only.
+  Represents the details about a contact (similar to what's on a physical contact or business card) extracted from the
+  item's body. Read mode only.
 
 
-  The list of contacts extracted from the body of an email message or
-  appointment is returned in the `contacts` property of the
-  [Entities](xref:outlook!Office.Entities:interface) object returned by the
-  `getEntities` or `getEntitiesByType` method of the current item.
+  The list of contacts extracted from the body of an email message or appointment is returned in the `contacts` property
+  of the [Entities](xref:outlook!Office.Entities:interface) object returned by the `getEntities` or `getEntitiesByType`
+  method of the current item.
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-  -->**: `Restricted`
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `Restricted`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-  -->**: Read
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
 
 
   #### Examples
@@ -80,9 +78,7 @@ properties:
     uid: 'outlook!Office.Contact#addresses:member'
     package: outlook!
     fullName: addresses
-    summary: >-
-      An array of strings containing the mailing and street addresses associated
-      with the contact. Nullable.
+    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,9 +90,7 @@ properties:
     uid: 'outlook!Office.Contact#businessName:member'
     package: outlook!
     fullName: businessName
-    summary: >-
-      A string containing the name of the business associated with the contact.
-      Nullable.
+    summary: A string containing the name of the business associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -108,9 +102,7 @@ properties:
     uid: 'outlook!Office.Contact#emailAddresses:member'
     package: outlook!
     fullName: emailAddresses
-    summary: >-
-      An array of strings containing the SMTP email addresses associated with
-      the contact. Nullable.
+    summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -122,9 +114,7 @@ properties:
     uid: 'outlook!Office.Contact#personName:member'
     package: outlook!
     fullName: personName
-    summary: >-
-      A string containing the name of the person associated with the contact.
-      Nullable.
+    summary: A string containing the name of the person associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -136,9 +126,7 @@ properties:
     uid: 'outlook!Office.Contact#phoneNumbers:member'
     package: outlook!
     fullName: phoneNumbers
-    summary: >-
-      An array containing a `PhoneNumber` object for each phone number
-      associated with the contact. Nullable.
+    summary: An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -150,9 +138,7 @@ properties:
     uid: 'outlook!Office.Contact#urls:member'
     package: outlook!
     fullName: urls
-    summary: >-
-      An array of strings containing the Internet URLs associated with the
-      contact. Nullable.
+    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     remarks: ''
     isPreview: false
     isDeprecated: false

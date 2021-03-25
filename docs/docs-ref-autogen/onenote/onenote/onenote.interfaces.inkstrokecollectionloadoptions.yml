@@ -3,13 +3,10 @@ name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of InkStroke objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -28,38 +25,28 @@ properties:
       return:
         type: boolean
   - name: floatingInk
-    uid: >-
-      onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member
+    uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member'
     package: onenote!
     fullName: floatingInk
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkStroke object.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />
+        type: '<xref uid="onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets the ID of the InkStroke object.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkStroke object. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

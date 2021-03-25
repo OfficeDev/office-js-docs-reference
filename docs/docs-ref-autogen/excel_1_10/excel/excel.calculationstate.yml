@@ -3,13 +3,10 @@ name: Excel.CalculationState
 uid: 'excel!Excel.CalculationState:enum'
 package: excel!
 fullName: Excel.CalculationState
-summary: >-
+summary: |-
   Represents the state of calculation across the entire Excel application.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -27,7 +24,5 @@ fields:
   - name: pending
     uid: 'excel!Excel.CalculationState.pending:member'
     package: excel!
-    summary: >-
-      Changes that trigger calculation have been made, but a recalculation has
-      not yet been performed.
+    summary: 'Changes that trigger calculation have been made, but a recalculation has not yet been performed.'
     value: '"Pending"'

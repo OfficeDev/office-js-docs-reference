@@ -3,13 +3,10 @@ name: Excel.ConditionalCellValueRule
 uid: 'excel!Excel.ConditionalCellValueRule:interface'
 package: excel!
 fullName: Excel.ConditionalCellValueRule
-summary: >-
+summary: |-
   Represents a cell value conditional format rule.
 
-
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
     package: excel!
     fullName: formula1
-    summary: >-
+    summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,13 +54,10 @@ properties:
     uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
     package: excel!
     fullName: formula2
-    summary: >-
+    summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,26 +69,21 @@ properties:
     uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
     package: excel!
     fullName: operator
-    summary: >-
+    summary: |-
       The operator of the cell value conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" |
-        "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
-        "GreaterThanOrEqual" | "LessThanOrEqual";
+        operator: Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+        "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual";
       return:
         type: >-
-          <xref uid="excel!Excel.ConditionalCellValueOperator:enum" /> |
-          "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-          "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
+          <xref uid="excel!Excel.ConditionalCellValueOperator:enum" /> | "Invalid" | "Between" | "NotBetween" |
+          "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
         description: >-
 
 

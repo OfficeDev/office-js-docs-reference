@@ -14,13 +14,11 @@ properties:
     package: word!
     fullName: font
     summary: >-
-      Gets the text format of the range. Use this to get and set font name,
-      size, color, and other properties. Read-only.
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -32,13 +30,10 @@ properties:
     uid: 'word!Word.Interfaces.RangeData#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: >-
+    summary: |-
       Gets the collection of inline picture objects in the range. Read-only.
 
-
-      \[ [API set: WordApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,14 +46,11 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the range. Use this property for custom
-      styles and localized style names. To use the built-in styles that are
-      portable between locales, see the "styleBuiltIn" property.
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -70,13 +62,10 @@ properties:
     uid: 'word!Word.Interfaces.RangeData#text:member'
     package: word!
     fullName: text
-    summary: >-
+    summary: |-
       Gets the text of the range. Read-only.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

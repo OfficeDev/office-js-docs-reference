@@ -3,14 +3,10 @@ name: Excel.SlicerCollection
 uid: 'excel!Excel.SlicerCollection:class'
 package: excel!
 fullName: Excel.SlicerCollection
-summary: >-
-  Represents a collection of all the slicer objects on the workbook or a
-  worksheet.
+summary: |-
+  Represents a collection of all the slicer objects on the workbook or a worksheet.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,8 +17,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -47,47 +43,34 @@ methods:
     uid: 'excel!Excel.SlicerCollection#add:member(1)'
     package: excel!
     fullName: 'add(slicerSource, sourceField, slicerDestination)'
-    summary: >-
+    summary: |-
       Adds a new slicer to the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        add(slicerSource: string | PivotTable | Table, sourceField: string |
-        PivotField | number | TableColumn, slicerDestination?: string |
-        Worksheet): Excel.Slicer;
+        add(slicerSource: string | PivotTable | Table, sourceField: string | PivotField | number | TableColumn,
+        slicerDestination?: string | Worksheet): Excel.Slicer;
       parameters:
         - id: slicerSource
           description: >-
-            The data source that the new slicer will be based on. It can be a
-            PivotTable object, a Table object or a string. When a PivotTable
-            object is passed, the data source is the source of the PivotTable
-            object. When a Table object is passed, the data source is the Table
-            object. When a string is passed, it is interpreted as the name/id of
-            a PivotTable/Table.
-          type: >-
-            string | <xref uid="excel!Excel.PivotTable:class" /> | <xref
-            uid="excel!Excel.Table:class" />
+            The data source that the new slicer will be based on. It can be a PivotTable object, a Table object or a
+            string. When a PivotTable object is passed, the data source is the source of the PivotTable object. When a
+            Table object is passed, the data source is the Table object. When a string is passed, it is interpreted as
+            the name/id of a PivotTable/Table.
+          type: 'string | <xref uid="excel!Excel.PivotTable:class" /> | <xref uid="excel!Excel.Table:class" />'
         - id: sourceField
           description: >-
-            The field in the data source to filter by. It can be a PivotField
-            object, a TableColumn object, the id of a PivotField or the id/name
-            of TableColumn.
-          type: >-
-            string | <xref uid="excel!Excel.PivotField:class" /> | number |
-            <xref uid="excel!Excel.TableColumn:class" />
+            The field in the data source to filter by. It can be a PivotField object, a TableColumn object, the id of a
+            PivotField or the id/name of TableColumn.
+          type: 'string | <xref uid="excel!Excel.PivotField:class" /> | number | <xref uid="excel!Excel.TableColumn:class" />'
         - id: slicerDestination
           description: >-
-            Optional. The worksheet where the new slicer will be created in. It
-            can be a Worksheet object or the name/id of a worksheet. This
-            parameter can be omitted if the slicer collection is retrieved from
-            worksheet.
+            Optional. The worksheet where the new slicer will be created in. It can be a Worksheet object or the name/id
+            of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
           type: 'string | <xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: '<xref uid="excel!Excel.Slicer:class" />'
@@ -118,13 +101,10 @@ methods:
     uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
+    summary: |-
       Returns the number of slicers in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -137,13 +117,10 @@ methods:
     uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
+    summary: |-
       Gets a slicer object using its name or id.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,13 +158,10 @@ methods:
     uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: >-
+    summary: |-
       Gets a slicer based on its position in the collection.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -204,14 +178,10 @@ methods:
     uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a slicer using its name or id. If the slicer does not exist, will
-      return a null object.
+    summary: |-
+      Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -229,22 +199,20 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Excel.Interfaces.SlicerCollectionLoadOptions &
-        Excel.Interfaces.CollectionLoadOptions): Excel.SlicerCollection;
+        load(options?: Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SlicerCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref
-            uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions:interface"
-            /> & <xref
+            <xref uid="excel!Excel.Interfaces.SlicerCollectionLoadOptions:interface" /> & <xref
             uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="excel!Excel.SlicerCollection:class" />'
@@ -254,8 +222,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -263,9 +231,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerCollection;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.SlicerCollection:class" />'
@@ -275,22 +241,18 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption):
-        Excel.SlicerCollection;
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.SlicerCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.SlicerCollection:class" />'
@@ -300,15 +262,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original
-      `Excel.SlicerCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as
-      `Excel.Interfaces.SlicerCollectionData`<!-- -->) that contains an "items"
-      array with shallow copies of any loaded properties from the collection's
-      items.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.SlicerCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Excel.Interfaces.SlicerCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false

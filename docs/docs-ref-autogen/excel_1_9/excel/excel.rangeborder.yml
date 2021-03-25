@@ -3,13 +3,10 @@ name: Excel.RangeBorder
 uid: 'excel!Excel.RangeBorder:class'
 package: excel!
 fullName: Excel.RangeBorder
-summary: >-
+summary: |-
   Represents the border of an object.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,13 +17,11 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the border line, of the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,8 +34,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,51 +47,42 @@ properties:
     uid: 'excel!Excel.RangeBorder#sideIndex:member'
     package: excel!
     fullName: sideIndex
-    summary: >-
-      Constant value that indicates the specific side of the border. See
-      Excel.BorderIndex for details.
+    summary: |-
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" |
-        "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
-        "DiagonalDown" | "DiagonalUp";
+        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
+        "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
       return:
         type: >-
-          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom"
-          | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
-          "DiagonalDown" | "DiagonalUp"
+          <xref uid="excel!Excel.BorderIndex:enum" /> | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" |
+          "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
   - name: style
     uid: 'excel!Excel.RangeBorder#style:member'
     package: excel!
     fullName: style
     summary: >-
-      One of the constants of line style specifying the line style for the
-      border. See Excel.BorderLineStyle for details.
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" |
-        "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
+        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
       return:
         type: >-
-          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" |
-          "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
-          "SlantDashDot"
+          <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+          "Dot" | "Double" | "SlantDashDot"
         description: |-
 
 
@@ -127,15 +113,12 @@ properties:
     package: excel!
     fullName: tintAndShade
     summary: >-
-      Specifies a double that lightens or darkens a color for Range Border, the
-      value is between -1 (darkest) and 1 (brightest), with 0 for the original
-      color. A null value indicates that the border doesn't have uniform
+      Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
       tintAndShade setting.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,44 +130,34 @@ properties:
     uid: 'excel!Excel.RangeBorder#weight:member'
     package: excel!
     fullName: weight
-    summary: >-
-      Specifies the weight of the border around a range. See Excel.BorderWeight
-      for details.
+    summary: |-
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'weight: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
-        type: >-
-          <xref uid="excel!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" |
-          "Medium" | "Thick"
+        type: '<xref uid="excel!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" | "Medium" | "Thick"'
 methods:
   - name: load(options)
     uid: 'excel!Excel.RangeBorder#load:member(1)'
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.RangeBorderLoadOptions):
-        Excel.RangeBorder;
+      content: 'load(options?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.RangeBorderLoadOptions:interface"
-            />
+          type: '<xref uid="excel!Excel.Interfaces.RangeBorderLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.RangeBorder:class" />'
         description: ''
@@ -193,8 +166,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -202,9 +175,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorder;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.RangeBorder:class" />'
@@ -214,8 +185,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -228,10 +199,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -245,9 +214,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -255,22 +223,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.RangeBorderUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.RangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
-          type: >-
-            <xref uid="excel!Excel.Interfaces.RangeBorderUpdateData:interface"
-            />
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.RangeBorderUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -279,9 +240,7 @@ methods:
     uid: 'excel!Excel.RangeBorder#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -299,13 +258,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.RangeBorder
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.RangeBorderData`<!-- -->) that contains
-      shallow copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeBorderData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

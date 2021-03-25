@@ -3,13 +3,10 @@ name: OneNote.Interfaces.TableRowLoadOptions
 uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableRowLoadOptions
-summary: >-
+summary: |-
   Represents a row in a table.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,13 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
     package: onenote!
     fullName: cellCount
-    summary: >-
+    summary: |-
       Gets the number of cells in the row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,34 +43,25 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
     package: onenote!
     fullName: cells
-    summary: >-
+    summary: |-
       Gets the cells in the row.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface" />'
   - name: id
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       Gets the ID of the row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,13 +73,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
     package: onenote!
     fullName: parentTable
-    summary: >-
+    summary: |-
       Gets the parent table.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -106,13 +88,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: >-
+    summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

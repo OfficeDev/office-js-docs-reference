@@ -4,25 +4,21 @@ uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
 summary: >-
-  An interface for updating data on the FilterPivotHierarchy object, for use in
-  `filterPivotHierarchy.set({ ... })`<!-- -->.
+  An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: enableMultipleFilterItems
-    uid: >-
-      excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member
+    uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#enableMultipleFilterItems:member'
     package: excel!
     fullName: enableMultipleFilterItems
-    summary: >-
+    summary: |-
       Determines whether to allow multiple filter items.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Name of the FilterPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       Position of the FilterPivotHierarchy.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

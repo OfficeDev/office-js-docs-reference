@@ -3,9 +3,7 @@ name: PowerPoint.Interfaces.SlideMasterCollectionData
 uid: 'powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideMasterCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `slideMasterCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `slideMasterCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -22,6 +20,4 @@ properties:
     syntax:
       content: 'items?: PowerPoint.Interfaces.SlideMasterData[];'
       return:
-        type: >-
-          <xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
-          />[]
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideMasterData:interface" />[]'

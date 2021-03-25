@@ -3,9 +3,7 @@ name: Excel.Interfaces.WorksheetData
 uid: 'excel!Excel.Interfaces.WorksheetData:interface'
 package: excel!
 fullName: Excel.Interfaces.WorksheetData
-summary: >-
-  An interface describing the data returned by calling `worksheet.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `worksheet.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#autoFilter:member'
     package: excel!
     fullName: autoFilter
-    summary: >-
+    summary: |-
       Represents the `AutoFilter` object of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,13 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     package: excel!
     fullName: charts
-    summary: >-
+    summary: |-
       Returns a collection of charts that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#comments:member'
     package: excel!
     fullName: comments
-    summary: >-
+    summary: |-
       Returns a collection of all the Comments objects on the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -69,36 +58,27 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#customProperties:member'
     package: excel!
     fullName: customProperties
-    summary: >-
+    summary: |-
       Gets a collection of worksheet-level custom properties.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'customProperties?: Excel.Interfaces.WorksheetCustomPropertyData[];'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface"
-          />[]
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetCustomPropertyData:interface" />[]'
   - name: enableCalculation
     uid: 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
     package: excel!
     fullName: enableCalculation
     summary: >-
-      Determines if Excel should recalculate the worksheet when necessary. True
-      if Excel recalculates the worksheet when necessary. False if Excel doesn't
-      recalculate the sheet.
+      Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,14 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member'
     package: excel!
     fullName: horizontalPageBreaks
-    summary: >-
-      Gets the horizontal page break collection for the worksheet. This
-      collection only contains manual page breaks.
+    summary: |-
+      Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -130,14 +106,11 @@ properties:
     package: excel!
     fullName: id
     summary: >-
-      Returns a value that uniquely identifies the worksheet in a given
-      workbook. The value of the identifier remains the same even when the
-      worksheet is renamed or moved.
+      Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
+      the same even when the worksheet is renamed or moved.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -149,13 +122,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The display name of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -167,13 +137,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#names:member'
     package: excel!
     fullName: names
-    summary: >-
+    summary: |-
       Collection of names scoped to the current worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -185,13 +152,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#pageLayout:member'
     package: excel!
     fullName: pageLayout
-    summary: >-
+    summary: |-
       Gets the `PageLayout` object of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -203,13 +167,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     package: excel!
     fullName: pivotTables
-    summary: >-
+    summary: |-
       Collection of PivotTables that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,13 +182,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#position:member'
     package: excel!
     fullName: position
-    summary: >-
+    summary: |-
       The zero-based position of the worksheet within the workbook.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -239,33 +197,25 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#protection:member'
     package: excel!
     fullName: protection
-    summary: >-
+    summary: |-
       Returns the sheet protection object for a worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetProtectionData:interface" />'
   - name: shapes
     uid: 'excel!Excel.Interfaces.WorksheetData#shapes:member'
     package: excel!
     fullName: shapes
-    summary: >-
+    summary: |-
       Returns the collection of all the Shape objects on the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -277,13 +227,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#showGridlines:member'
     package: excel!
     fullName: showGridlines
-    summary: >-
+    summary: |-
       Specifies if gridlines are visible to the user.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -295,13 +242,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#showHeadings:member'
     package: excel!
     fullName: showHeadings
-    summary: >-
+    summary: |-
       Specifies if headings are visible to the user.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -313,13 +257,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#slicers:member'
     package: excel!
     fullName: slicers
-    summary: >-
+    summary: |-
       Returns a collection of slicers that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -331,14 +272,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
     package: excel!
     fullName: standardHeight
-    summary: >-
-      Returns the standard (default) height of all the rows in the worksheet, in
-      points.
+    summary: |-
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -351,15 +288,12 @@ properties:
     package: excel!
     fullName: standardWidth
     summary: >-
-      Specifies the standard (default) width of all the columns in the
-      worksheet. One unit of column width is equal to the width of one character
-      in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -372,17 +306,13 @@ properties:
     package: excel!
     fullName: tabColor
     summary: >-
-      The tab color of the worksheet. When retrieving the tab color, if the
-      worksheet is invisible, the value will be `null`<!-- -->. If the worksheet
-      is visible but the tab color is set to auto, an empty string will be
-      returned. Otherwise, the property will be set to a color, in the form
-      \#RRGGBB (e.g., "FFA500"). When setting the color, use an empty-string to
-      set an "auto" color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      `null`<!-- -->. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
+      Otherwise, the property will be set to a color, in the form \#RRGGBB (e.g., "FFA500"). When setting the color, use
+      an empty-string to set an "auto" color, or a real color otherwise.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -394,13 +324,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#tables:member'
     package: excel!
     fullName: tables
-    summary: >-
+    summary: |-
       Collection of tables that are part of the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -412,14 +339,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member'
     package: excel!
     fullName: verticalPageBreaks
-    summary: >-
-      Gets the vertical page break collection for the worksheet. This collection
-      only contains manual page breaks.
+    summary: |-
+      Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -436,16 +359,11 @@ properties:
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        visibility?: Excel.SheetVisibility | "Visible" | "Hidden" |
-        "VeryHidden";
+      content: 'visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden"
-          | "VeryHidden"
+        type: '<xref uid="excel!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"'

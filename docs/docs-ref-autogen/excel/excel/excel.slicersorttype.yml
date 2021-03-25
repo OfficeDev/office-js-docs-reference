@@ -3,13 +3,10 @@ name: Excel.SlicerSortType
 uid: 'excel!Excel.SlicerSortType:enum'
 package: excel!
 fullName: Excel.SlicerSortType
-summary: >-
+summary: |-
   Specifies the slicer sort behavior for `Slicer.sortBy`<!-- -->.
 
-
-  \[ [API set: ExcelApi
-  1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

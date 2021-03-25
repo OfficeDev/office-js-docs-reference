@@ -3,27 +3,20 @@ name: Excel.Interfaces.HeaderFooterGroupUpdateData
 uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
-summary: >-
-  An interface for updating data on the HeaderFooterGroup object, for use in
-  `headerFooterGroup.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: defaultForAllPages
-    uid: >-
-      excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member
+    uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#defaultForAllPages:member'
     package: excel!
     fullName: defaultForAllPages
-    summary: >-
-      The general header/footer, used for all pages unless even/odd or first
-      page is specified.
+    summary: |-
+      The general header/footer, used for all pages unless even/odd or first page is specified.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +28,10 @@ properties:
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#evenPages:member'
     package: excel!
     fullName: evenPages
-    summary: >-
-      The header/footer to use for even pages, odd header/footer needs to be
-      specified for odd pages.
+    summary: |-
+      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,14 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#firstPage:member'
     package: excel!
     fullName: firstPage
-    summary: >-
-      The first page header/footer, for all other pages general or even/odd is
-      used.
+    summary: |-
+      The first page header/footer, for all other pages general or even/odd is used.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,14 +58,10 @@ properties:
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#oddPages:member'
     package: excel!
     fullName: oddPages
-    summary: >-
-      The header/footer to use for odd pages, even header/footer needs to be
-      specified for even pages.
+    summary: |-
+      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,37 +73,29 @@ properties:
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
     package: excel!
     fullName: state
-    summary: >-
-      The state by which headers/footers are set. See Excel.HeaderFooterState
-      for details.
+    summary: |-
+      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" |
-        "OddAndEven" | "FirstOddAndEven";
+      content: 'state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
       return:
         type: >-
-          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" |
-          "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+          <xref uid="excel!Excel.HeaderFooterState:enum" /> | "Default" | "FirstAndDefault" | "OddAndEven" |
+          "FirstOddAndEven"
   - name: useSheetMargins
     uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#useSheetMargins:member'
     package: excel!
     fullName: useSheetMargins
     summary: >-
-      Gets or sets a flag indicating if headers/footers are aligned with the
-      page margins set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
+      for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -135,13 +108,11 @@ properties:
     package: excel!
     fullName: useSheetScale
     summary: >-
-      Gets or sets a flag indicating if headers/footers should be scaled by the
-      page percentage scale set in the page layout options for the worksheet.
+      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
+      layout options for the worksheet.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

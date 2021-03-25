@@ -3,13 +3,10 @@ name: Excel.Interfaces.StyleLoadOptions
 uid: 'excel!Excel.Interfaces.StyleLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.StyleLoadOptions
-summary: >-
+summary: |-
   An object encapsulating a style's format and other properties.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,35 +30,25 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#borders:member'
     package: excel!
     fullName: borders
-    summary: >-
-      A Border collection of four Border objects that represent the style of the
-      four borders.
+    summary: |-
+      A Border collection of four Border objects that represent the style of the four borders.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface" />'
   - name: builtIn
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#builtIn:member'
     package: excel!
     fullName: builtIn
-    summary: >-
+    summary: |-
       Specifies if the style is a built-in style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +60,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       The Fill of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -92,13 +75,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#font:member'
     package: excel!
     fullName: font
-    summary: >-
+    summary: |-
       A Font object that represents the font of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,13 +90,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#formulaHidden:member'
     package: excel!
     fullName: formulaHidden
-    summary: >-
+    summary: |-
       Specifies if the formula will be hidden when the worksheet is protected.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -128,14 +105,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the style. See
-      Excel.HorizontalAlignment for details.
+    summary: |-
+      Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -148,13 +121,11 @@ properties:
     package: excel!
     fullName: includeAlignment
     summary: >-
-      Specifies if the style includes the AutoIndent, HorizontalAlignment,
-      VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+      Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      TextOrientation properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -166,14 +137,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeBorder:member'
     package: excel!
     fullName: includeBorder
-    summary: >-
-      Specifies if the style includes the Color, ColorIndex, LineStyle, and
-      Weight border properties.
+    summary: |-
+      Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -186,14 +153,11 @@ properties:
     package: excel!
     fullName: includeFont
     summary: >-
-      Specifies if the style includes the Background, Bold, Color, ColorIndex,
-      FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and
-      Underline font properties.
+      Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Strikethrough, Subscript, Superscript, and Underline font properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -205,13 +169,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeNumber:member'
     package: excel!
     fullName: includeNumber
-    summary: >-
+    summary: |-
       Specifies if the style includes the NumberFormat property.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -224,13 +185,11 @@ properties:
     package: excel!
     fullName: includePatterns
     summary: >-
-      Specifies if the style includes the Color, ColorIndex, InvertIfNegative,
-      Pattern, PatternColor, and PatternColorIndex interior properties.
+      Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      PatternColorIndex interior properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -242,14 +201,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeProtection:member'
     package: excel!
     fullName: includeProtection
-    summary: >-
-      Specifies if the style includes the FormulaHidden and Locked protection
-      properties.
+    summary: |-
+      Specifies if the style includes the FormulaHidden and Locked protection properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -261,13 +216,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#indentLevel:member'
     package: excel!
     fullName: indentLevel
-    summary: >-
+    summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -279,13 +231,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#locked:member'
     package: excel!
     fullName: locked
-    summary: >-
+    summary: |-
       Specifies if the object is locked when the worksheet is protected.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -297,13 +246,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The name of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -315,13 +261,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       The format code of the number format for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -333,13 +276,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#numberFormatLocal:member'
     package: excel!
     fullName: numberFormatLocal
-    summary: >-
+    summary: |-
       The localized format code of the number format for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -351,13 +291,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#readingOrder:member'
     package: excel!
     fullName: readingOrder
-    summary: >-
+    summary: |-
       The reading order for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -369,14 +306,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#shrinkToFit:member'
     package: excel!
     fullName: shrinkToFit
-    summary: >-
-      Specifies if text automatically shrinks to fit in the available column
-      width.
+    summary: |-
+      Specifies if text automatically shrinks to fit in the available column width.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -388,14 +321,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment for the style. See
-      Excel.VerticalAlignment for details.
+    summary: |-
+      Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,13 +336,10 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleLoadOptions#wrapText:member'
     package: excel!
     fullName: wrapText
-    summary: >-
+    summary: |-
       Specifies if Excel wraps the text in the object.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

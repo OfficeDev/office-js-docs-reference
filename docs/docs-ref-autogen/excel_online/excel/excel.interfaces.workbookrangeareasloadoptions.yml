@@ -3,14 +3,10 @@ name: Excel.Interfaces.WorkbookRangeAreasLoadOptions
 uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.WorkbookRangeAreasLoadOptions
-summary: >-
-  Represents a collection of one or more rectangular ranges in multiple
-  worksheets.
+summary: |-
+  Represents a collection of one or more rectangular ranges in multiple worksheets.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -36,14 +31,11 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the
-      worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4,
-      Sheet1!D1:D4"). Read-only.
+      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
+      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

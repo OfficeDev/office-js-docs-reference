@@ -4,12 +4,10 @@ uid: 'excel!Excel.LinkedDataType:class'
 package: excel!
 fullName: Excel.LinkedDataType
 summary: >-
-  Represents a linked data type. A linked data type is a data type connected to
-  an online data source.
+  Represents a linked data type. A linked data type is a data type connected to an online data source.
 
 
-  \[ [API set: ExcelApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
 remarks: ''
 isPreview: true
@@ -21,8 +19,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -35,13 +33,12 @@ properties:
     package: excel!
     fullName: dataProvider
     summary: >-
-      The name of the data provider for the linked data type. This may change
-      when information is retrieved from the service.
+      The name of the data provider for the linked data type. This may change when information is retrieved from the
+      service.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -54,14 +51,12 @@ properties:
     package: excel!
     fullName: lastRefreshed
     summary: >-
-      The local time-zone date and time since the workbook was opened when the
-      linked data type was last refreshed. Returns `undefined` if the linked
-      data type has not been refreshed.
+      The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
+      Returns `undefined` if the linked data type has not been refreshed.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -74,13 +69,11 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      The name of the linked data type. This may change when information is
-      retrieved from the service.
+      The name of the linked data type. This may change when information is retrieved from the service.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -93,13 +86,11 @@ properties:
     package: excel!
     fullName: periodicRefreshInterval
     summary: >-
-      The frequency, in seconds, at which the linked data type is refreshed if
-      `refreshMode` is set to "Periodic".
+      The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -116,19 +107,14 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        readonly refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" |
-        "Manual" | "OnLoad" | "Periodic";
+      content: 'readonly refreshMode: Excel.LinkedDataTypeRefreshMode | "Unknown" | "Manual" | "OnLoad" | "Periodic";'
       return:
-        type: >-
-          <xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" /> | "Unknown"
-          | "Manual" | "OnLoad" | "Periodic"
+        type: '<xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" /> | "Unknown" | "Manual" | "OnLoad" | "Periodic"'
   - name: serviceId
     uid: 'excel!Excel.LinkedDataType#serviceId:member'
     package: excel!
@@ -138,8 +124,7 @@ properties:
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -152,14 +137,12 @@ properties:
     package: excel!
     fullName: supportedRefreshModes
     summary: >-
-      Returns an array with all the refresh modes supported by the linked data
-      type. The contents of the array may change when information is retrieved
-      from the service.
+      Returns an array with all the refresh modes supported by the linked data type. The contents of the array may
+      change when information is retrieved from the service.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -173,21 +156,17 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        load(options?: Excel.Interfaces.LinkedDataTypeLoadOptions):
-        Excel.LinkedDataType;
+      content: 'load(options?: Excel.Interfaces.LinkedDataTypeLoadOptions): Excel.LinkedDataType;'
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
-          type: >-
-            <xref
-            uid="excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface" />
+          type: '<xref uid="excel!Excel.Interfaces.LinkedDataTypeLoadOptions:interface" />'
       return:
         type: '<xref uid="excel!Excel.LinkedDataType:class" />'
         description: ''
@@ -196,8 +175,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -205,9 +184,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.LinkedDataType;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.LinkedDataType:class" />'
@@ -217,8 +194,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -231,10 +208,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -248,13 +223,12 @@ methods:
     package: excel!
     fullName: requestRefresh()
     summary: >-
-      Makes a request to refresh the linked data type. If the service is busy or
-      otherwise temporarily inaccessible, the request will not be fulfilled.
+      Makes a request to refresh the linked data type. If the service is busy or otherwise temporarily inaccessible, the
+      request will not be fulfilled.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -268,27 +242,21 @@ methods:
     package: excel!
     fullName: requestSetRefreshMode(refreshMode)
     summary: >-
-      Makes a request to change the refresh mode for this linked data type. If
-      the given refresh mode is not supported by this linked data type the mode
-      is left unchanged. If set to "Periodic", the refresh interval is set to a
+      Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
+      by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
       predetermined value based on the particular linked data type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        requestSetRefreshMode(refreshMode: Excel.LinkedDataTypeRefreshMode):
-        void;
+      content: 'requestSetRefreshMode(refreshMode: Excel.LinkedDataTypeRefreshMode): void;'
       parameters:
         - id: refreshMode
-          description: >-
-            The intended mode to which this linked data type is requested to
-            change.
+          description: The intended mode to which this linked data type is requested to change.
           type: '<xref uid="excel!Excel.LinkedDataTypeRefreshMode:enum" />'
       return:
         type: void
@@ -298,27 +266,21 @@ methods:
     package: excel!
     fullName: requestSetRefreshMode(refreshModeString)
     summary: >-
-      Makes a request to change the refresh mode for this linked data type. If
-      the given refresh mode is not supported by this linked data type the mode
-      is left unchanged. If set to "Periodic", the refresh interval is set to a
+      Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
+      by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
       predetermined value based on the particular linked data type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        requestSetRefreshMode(refreshModeString: "Unknown" | "Manual" | "OnLoad"
-        | "Periodic"): void;
+      content: 'requestSetRefreshMode(refreshModeString: "Unknown" | "Manual" | "OnLoad" | "Periodic"): void;'
       parameters:
         - id: refreshModeString
-          description: >-
-            The intended mode to which this linked data type is requested to
-            change.
+          description: The intended mode to which this linked data type is requested to change.
           type: '"Unknown" | "Manual" | "OnLoad" | "Periodic"'
       return:
         type: void
@@ -328,14 +290,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.LinkedDataType
-      object is an API object, the `toJSON` method returns a plain JavaScript
-      object (typed as `Excel.Interfaces.LinkedDataTypeData`<!-- -->) that
-      contains shallow copies of any loaded child properties from the original
-      object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.LinkedDataType object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     remarks: ''
     isPreview: true
     isDeprecated: false

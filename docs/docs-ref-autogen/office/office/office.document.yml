@@ -13,13 +13,10 @@ properties:
     uid: 'office!Office.Document#bindings:member'
     package: office!
     fullName: bindings
-    summary: >-
-      Gets an object that provides access to the bindings defined in the
-      document.
+    summary: Gets an object that provides access to the bindings defined in the document.
     remarks: >-
-      You don't instantiate the Document object directly in your script. To call
-      members of the Document object to interact with the current document or
-      worksheet, use `Office.context.document` in your script.
+      You don't instantiate the Document object directly in your script. To call members of the Document object to
+      interact with the current document or worksheet, use `Office.context.document` in your script.
 
 
       #### Examples
@@ -92,51 +89,30 @@ properties:
       content: 'mode: DocumentMode;'
       return:
         type: '<xref uid="office!Office.DocumentMode:enum" />'
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
           function displayDocumentMode() {
               write(Office.context.document.mode);
           }
 
-
           // Function that writes to a div with id='message' on the page.
-
           function write(message){
               document.getElementById('message').innerText += message; 
           }
-
           ```
-
           ```javascript
-
-          // The following example initializes the add-in and then gets
-          properties of the
-
-          // Document object that are available in the context of a Project
-          document.
-
-          // A Project document is the opened, active project. To access members
-          of the
-
-          // ProjectDocument object, use the Office.context.document object as
-          shown in
-
+          // The following example initializes the add-in and then gets properties of the
+          // Document object that are available in the context of a Project document.
+          // A Project document is the opened, active project. To access members of the
+          // ProjectDocument object, use the Office.context.document object as shown in
           // the code examples for ProjectDocument methods and events.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and
-
-          // that the following page control is defined in the content div in
-          the page body:
-
+          // The example assumes your add-in has a reference to the jQuery library and
+          // that the following page control is defined in the content div in the page body:
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -159,15 +135,14 @@ properties:
                   $('#message').html(output);
               }
           })();
-
           ```
   - name: settings
     uid: 'office!Office.Document#settings:member'
     package: office!
     fullName: settings
     summary: >-
-      Gets an object that represents the saved custom settings of the content or
-      task pane add-in for the current document.
+      Gets an object that represents the saved custom settings of the content or task pane add-in for the current
+      document.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -179,9 +154,7 @@ properties:
     uid: 'office!Office.Document#url:member'
     package: office!
     fullName: url
-    summary: >-
-      Gets the URL of the document that the host application currently has open.
-      Returns null if the URL is unavailable.
+    summary: Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -215,22 +188,20 @@ methods:
       [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
 
-      You can add multiple event handlers for the specified eventType as long as
-      the name of each event handler function is unique.
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions, callback?:
+        (result: AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: >-
-            For a Document object event, the eventType parameter can be
-            specified as `Office.EventType.Document.SelectionChanged` or
-            `Office.EventType.Document.ActiveViewChanged`<!-- -->, or the
-            corresponding text value of this enumeration.
+            For a Document object event, the eventType parameter can be specified as
+            `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
+            the corresponding text value of this enumeration.
           type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
@@ -239,19 +210,13 @@ methods:
             -->. Required.
           type: any
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -265,8 +230,8 @@ methods:
       [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
 
-      You can add multiple event handlers for the specified eventType as long as
-      the name of each event handler function is unique.
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
 
 
       #### Examples
@@ -274,8 +239,7 @@ methods:
 
       ```javascript
 
-      // The following example adds an event handler for the SelectionChanged
-      event of a document
+      // The following example adds an event handler for the SelectionChanged event of a document
 
       function addSelectionChangedEventHandler() {
           Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
@@ -298,14 +262,11 @@ methods:
 
       ```javascript
 
-      // The following code example adds a handler for the
-      ResourceSelectionChanged event.
+      // The following code example adds a handler for the ResourceSelectionChanged event.
 
-      // When the resource selection changes in the document, it gets the GUID
-      of the selected resource.
+      // When the resource selection changes in the document, it gets the GUID of the selected resource.
 
-      // The example assumes your add-in has a reference to the jQuery library
-      and that the
+      // The example assumes your add-in has a reference to the jQuery library and that the
 
       // following page control is defined in the content div in the page body:
 
@@ -346,11 +307,9 @@ methods:
       })();
 
 
-      // For a complete code sample that shows how to use a
-      ResourceSelectionChanged
+      // For a complete code sample that shows how to use a ResourceSelectionChanged
 
-      // event handler in a Project add-in, see "Create your first task pane
-      add-in
+      // event handler in a Project add-in, see "Create your first task pane add-in
 
       // for Project 2013 by using a text editor."
 
@@ -361,19 +320,15 @@ methods:
 
       ```javascript
 
-      // The following code example adds a handler for the TaskSelectionChanged
-      event.
+      // The following code example adds a handler for the TaskSelectionChanged event.
 
-      // When the task selection changes in the document, it gets the GUID of
-      the
+      // When the task selection changes in the document, it gets the GUID of the
 
       // selected task.
 
-      // The example assumes your add-in has a reference to the jQuery library
-      and that
+      // The example assumes your add-in has a reference to the jQuery library and that
 
-      // the following page control is defined in the content div in the page
-      body:
+      // the following page control is defined in the content div in the page body:
 
       // <span id="message"></span>
 
@@ -418,14 +373,11 @@ methods:
 
       // The following code example adds a handler for the ViewSelectionChanged
 
-      // event. When the active view changes, it gets the name and type of the
-      active view.
+      // event. When the active view changes, it gets the name and type of the active view.
 
-      // The example assumes your add-in has a reference to the jQuery library
-      and that
+      // The example assumes your add-in has a reference to the jQuery library and that
 
-      // the following page control is defined in the content div in the page
-      body:
+      // the following page control is defined in the content div in the page body:
 
       // <span id="message"></span>
 
@@ -468,11 +420,9 @@ methods:
       })();
 
 
-      // For an example that shows how to use a ViewSelectionChanged event
-      handler in a
+      // For an example that shows how to use a ViewSelectionChanged event handler in a
 
-      // Project add-in, see "Create your first task pane add-in for Project
-      2013 by
+      // Project add-in, see "Create your first task pane add-in for Project 2013 by
 
       // using a text editor."
 
@@ -483,24 +433,19 @@ methods:
 
       ```javascript
 
-      // The following code example uses addHandlerAsync to add an event handler
-      for the ViewSelectionChanged event.
+      // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
 
-      // When the active view changes, the handler checks the view type. It
-      enables a button if the view is a resource
+      // When the active view changes, the handler checks the view type. It enables a button if the view is a resource
 
-      // view and disables the button if it isn't a resource view. Choosing the
-      button gets the GUID of the selected
+      // view and disables the button if it isn't a resource view. Choosing the button gets the GUID of the selected
 
       // resource and displays it in the add-in.
 
-      // The example assumes that your add-in has a reference to the jQuery
-      library and that the following page controls
+      // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
 
       // are defined in the content div in the page body:
 
-      // <input id="get-info" type="button" value="Get info" disabled="disabled"
-      /><br />
+      // <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
 
       // <span id="message"></span>
 
@@ -573,11 +518,9 @@ methods:
       })();
 
 
-      // For a complete code sample that shows how to use a ViewSelectionChanged
-      event handler in a Project add-in,
+      // For a complete code sample that shows how to use a ViewSelectionChanged event handler in a Project add-in,
 
-      // see "Create your first task pane add-in for Project by using a text
-      editor."
+      // see "Create your first task pane add-in for Project by using a text editor."
 
       //
       https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
@@ -587,15 +530,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?:
-        (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void):
+        void;
       parameters:
         - id: eventType
           description: >-
-            For a Document object event, the eventType parameter can be
-            specified as `Office.EventType.Document.SelectionChanged` or
-            `Office.EventType.Document.ActiveViewChanged`<!-- -->, or the
-            corresponding text value of this enumeration.
+            For a Document object event, the eventType parameter can be specified as
+            `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
+            the corresponding text value of this enumeration.
           type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
@@ -605,13 +547,9 @@ methods:
           type: any
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -630,27 +568,20 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<"edit" | "read">) => void): void;
+        getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) =>
+        void): void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the state of the
-            presentation's current view. The value returned can be either "edit"
-            or "read". "edit" corresponds to any of the views in which you can
-            edit slides, such as Normal or Outline View. "read" corresponds to
-            either Slide Show or Reading View.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;"edit" | "read"&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
+            corresponds to either Slide Show or Reading View.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;"edit" | "read"&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -688,23 +619,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) =>
-        void): void;
+      content: 'getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the state of the
-            presentation's current view. The value returned can be either "edit"
-            or "read". "edit" corresponds to any of the views in which you can
-            edit slides, such as Normal or Outline View. "read" corresponds to
-            either Slide Show or Reading View.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;"edit" | "read"&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
+            corresponds to either Slide Show or Reading View.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;"edit" | "read"&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -713,9 +637,8 @@ methods:
     package: office!
     fullName: 'getFileAsync(fileType, options, callback)'
     summary: >-
-      Returns the entire document file in slices of up to 4194304 bytes (4 MB).
-      For add-ins on iPad, file slice is supported up to 65536 (64 KB). Note
-      that specifying file slice size of above permitted limit will result in an
+      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is
+      supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
       **Requirement sets**:
@@ -735,30 +658,23 @@ methods:
       (when using `Office.FileType.Text`<!-- -->)
 
 
-      For add-ins running in Office host applications other than Office on iPad,
-      the `getFileAsync` method supports getting files in slices of up to
-      4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the
-      `getFileAsync` method supports getting files in slices of up to 65536 (64
-      KB).
+      For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports
+      getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the
+      `getFileAsync` method supports getting files in slices of up to 65536 (64 KB).
 
 
-      The `fileType` parameter can be specified by using the
-      [Office.FileType](xref:office!Office.FileType:enum) enumeration or text
-      values. But the possible values vary with the host:
+      The `fileType` parameter can be specified by using the [Office.FileType](xref:office!Office.FileType:enum)
+      enumeration or text values. But the possible values vary with the host:
 
 
-      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office on the web </th><th> Office on iPad </th><th>
-      Office on Mac </th></tr> <tr><td><strong> Excel </strong></td><td>
-      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!--
-      -->, `Pdf` </td><td> </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text`
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> `Compressed`<!--
-      -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
-      `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf`
-      </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->,
-      `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->,
-      `Text` </td><td> `Compressed` </td><td> `Compressed`<!-- -->, `Pdf`<!--
-      -->, `Text` </td></tr> </table>
+      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
+      </th><th> Office on iPad </th><th> Office on Mac </th></tr> <tr><td><strong> Excel </strong></td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> </td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
+      `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
+      `Compressed`<!-- -->, `Pdf` </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->, `Pdf`<!--
+      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed` </td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> </table>
 
 
       #### Examples
@@ -766,11 +682,10 @@ methods:
 
       ```javascript
 
-      // The following example gets the document in Office Open XML
-      ("compressed") format in 65536 bytes (64 KB) slices.
+      // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
 
-      // Note: The implementation of app.showNotification in this example is
-      from the Visual Studio template for Office Add-ins.
+      // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office
+      Add-ins.
 
       function getDocumentAsCompressed() {
           Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
@@ -793,8 +708,7 @@ methods:
       }
 
 
-      function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices,
-      docdataSlices, slicesReceived) {
+      function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived) {
           file.getSliceAsync(nextSlice, function (sliceResult) {
               if (sliceResult.status == "succeeded") {
                   if (!gotAllSlices) { // Failed to get all slices, no need to continue.
@@ -864,26 +778,23 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getFileAsync(fileType: FileType, options?: GetFileOptions, callback?:
-        (result: AsyncResult<Office.File>) => void): void;
+        getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) =>
+        void): void;
       parameters:
         - id: fileType
           description: The format in which the file will be returned
           type: '<xref uid="office!Office.FileType:enum" />'
         - id: options
-          description: >-
-            Provides options for setting the size of slices that the document
-            will be divided into.
+          description: Provides options for setting the size of slices that the document will be divided into.
           type: '<xref uid="office!Office.GetFileOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the File object.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the File object.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.File:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.File:interface"
+            />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -892,9 +803,8 @@ methods:
     package: office!
     fullName: 'getFileAsync(fileType, callback)'
     summary: >-
-      Returns the entire document file in slices of up to 4194304 bytes (4 MB).
-      For add-ins on iPad, file slice is supported up to 65536 (64 KB). Note
-      that specifying file slice size of above permitted limit will result in an
+      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iPad, file slice is
+      supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
       **Requirement sets**:
@@ -914,49 +824,39 @@ methods:
       (when using `Office.FileType.Text`<!-- -->)
 
 
-      For add-ins running in Office host applications other than Office on iPad,
-      the `getFileAsync` method supports getting files in slices of up to
-      4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the
-      `getFileAsync` method supports getting files in slices of up to 65536 (64
-      KB).
+      For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports
+      getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the
+      `getFileAsync` method supports getting files in slices of up to 65536 (64 KB).
 
 
-      The `fileType` parameter can be specified by using the
-      [Office.FileType](xref:office!Office.FileType:enum) enumeration or text
-      values. But the possible values vary with the host:
+      The `fileType` parameter can be specified by using the [Office.FileType](xref:office!Office.FileType:enum)
+      enumeration or text values. But the possible values vary with the host:
 
 
-      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on
-      Windows </th><th> Office on the web </th><th> Office on iPad </th><th>
-      Office on Mac </th></tr> <tr><td><strong> Excel </strong></td><td>
-      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!--
-      -->, `Pdf` </td><td> </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text`
-      </td></tr> <tr><td><strong> PowerPoint </strong></td><td> `Compressed`<!--
-      -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
-      `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf`
-      </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->,
-      `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->,
-      `Text` </td><td> `Compressed` </td><td> `Compressed`<!-- -->, `Pdf`<!--
-      -->, `Text` </td></tr> </table>
+      *Supported FileTypes, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
+      </th><th> Office on iPad </th><th> Office on Mac </th></tr> <tr><td><strong> Excel </strong></td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> </td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
+      `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
+      `Compressed`<!-- -->, `Pdf` </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->, `Pdf`<!--
+      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed` </td><td>
+      `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFileAsync(fileType: FileType, callback?: (result:
-        AsyncResult<Office.File>) => void): void;
+      content: 'getFileAsync(fileType: FileType, callback?: (result: AsyncResult<Office.File>) => void): void;'
       parameters:
         - id: fileType
           description: The format in which the file will be returned
           type: '<xref uid="office!Office.FileType:enum" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the File object.
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the File object.
           type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.File:interface" />&gt;) =&gt; void
+            (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.File:interface"
+            />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -970,27 +870,22 @@ methods:
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
-      You get the file's URL with the url property `asyncResult.value.url`<!--
-      -->.
+      You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<Office.FileProperties>) => void): void;
+        getFilePropertiesAsync(options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<Office.FileProperties>) => void): void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only
-            parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the file's properties
-            (with the URL found at `asyncResult.value.url`<!-- -->).
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="office!Office.FileProperties:interface" />&gt;) =&gt; void
@@ -1007,8 +902,7 @@ methods:
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
-      You get the file's URL with the url property `asyncResult.value.url`<!--
-      -->.
+      You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
 
 
       #### Examples
@@ -1016,13 +910,11 @@ methods:
 
       ```javascript
 
-      // To read the URL of the current file, you need to write a callback
-      function that returns the URL.
+      // To read the URL of the current file, you need to write a callback function that returns the URL.
 
       // The following example shows how to:
 
-      // 1. Pass an anonymous callback function that returns the value of the
-      file's URL
+      // 1. Pass an anonymous callback function that returns the value of the file's URL
 
       //    to the callback parameter of the getFilePropertiesAsync method.
 
@@ -1045,17 +937,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getFilePropertiesAsync(callback?: (result:
-        AsyncResult<Office.FileProperties>) => void): void;
+      content: 'getFilePropertiesAsync(callback?: (result: AsyncResult<Office.FileProperties>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            A function that is invoked when the callback returns, whose only
-            parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the file's properties
-            (with the URL found at `asyncResult.value.url`<!-- -->).
+            A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="office!Office.FileProperties:interface" />&gt;) =&gt; void
@@ -1066,10 +954,8 @@ methods:
     uid: 'office!Office.Document#getMaxResourceIndexAsync:member(1)'
     package: office!
     fullName: 'getMaxResourceIndexAsync(options, callback)'
-    summary: >-
-      Project documents only. Get the maximum index of the collection of
-      resources in the current project.
-
+    summary: |-
+      Project documents only. Get the maximum index of the collection of resources in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
@@ -1077,24 +963,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<number>) => void): void;
+        getMaxResourceIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) =>
+        void): void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the highest index number
-            in the current project's resource collection.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;number&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's resource collection.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;number&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1102,56 +982,36 @@ methods:
     uid: 'office!Office.Document#getMaxResourceIndexAsync:member(2)'
     package: office!
     fullName: getMaxResourceIndexAsync(callback)
-    summary: >-
-      Project documents only. Get the maximum index of the collection of
-      resources in the current project.
-
+    summary: |-
+      Project documents only. Get the maximum index of the collection of resources in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getMaxResourceIndexAsync(callback?: (result: AsyncResult<number>) =>
-        void): void;
+      content: 'getMaxResourceIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the highest index number
-            in the current project's resource collection.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;number&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's resource collection.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;number&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getResourceTaskIndexAsync to get
-          the maximum index of the collection 
-
-          // of resources in the current project. Then it uses the returned
-          value and the getResourceByIndexAsync
-
-          // method to get each resource GUID. The example assumes that your
-          add-in has a reference to the 
-
-          // jQuery library and that the following page controls are defined in
-          the content div in the page body:
-
+          // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
+          // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
+          // method to get each resource GUID. The example assumes that your add-in has a reference to the 
+          // jQuery library and that the following page controls are defined in the content div in the page body:
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -1221,16 +1081,13 @@ methods:
                   app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getMaxTaskIndexAsync(options, callback)'
     uid: 'office!Office.Document#getMaxTaskIndexAsync:member(1)'
     package: office!
     fullName: 'getMaxTaskIndexAsync(options, callback)'
-    summary: >-
-      Project documents only. Get the maximum index of the collection of tasks
-      in the current project.
-
+    summary: |-
+      Project documents only. Get the maximum index of the collection of tasks in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
@@ -1238,24 +1095,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<number>) => void): void;
+        getMaxTaskIndexAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<number>) => void):
+        void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the highest index number
-            in the current project's task collection.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;number&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's task collection.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;number&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1263,58 +1114,37 @@ methods:
     uid: 'office!Office.Document#getMaxTaskIndexAsync:member(2)'
     package: office!
     fullName: getMaxTaskIndexAsync(callback)
-    summary: >-
-      Project documents only. Get the maximum index of the collection of tasks
-      in the current project.
-
+    summary: |-
+      Project documents only. Get the maximum index of the collection of tasks in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getMaxTaskIndexAsync(callback?: (result: AsyncResult<number>) => void):
-        void;
+      content: 'getMaxTaskIndexAsync(callback?: (result: AsyncResult<number>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the highest index number
-            in the current project's task collection.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;number&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's task collection.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;number&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getMaxTaskIndexAsync to get the
-          maximum index
-
-          // of the collection of tasks in the current project. Then it uses the
-          returned value
-
+          // The following code example calls getMaxTaskIndexAsync to get the maximum index
+          // of the collection of tasks in the current project. Then it uses the returned value
           // with the getTaskByIndexAsync method to get each task GUID.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the
-
-          // following page controls are defined in the content div in the page
-          body:
-
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -1383,7 +1213,6 @@ methods:
                   app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getProjectFieldAsync(fieldId, options, callback)'
     uid: 'office!Office.Document#getProjectFieldAsync:member(1)'
@@ -1395,28 +1224,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getProjectFieldAsync(fieldId: number, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
-        void): void;
+        getProjectFieldAsync(fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
       parameters:
         - id: fieldId
           description: Project level fields.
           type: number
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the `fieldValue`
-            property, which represents the value of the specified field.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1429,51 +1251,32 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getProjectFieldAsync(fieldId: number, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: 'getProjectFieldAsync(fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: fieldId
           description: Project level fields.
           type: number
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the `fieldValue`
-            property, which represents the value of the specified field.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example gets the values of three specified
-          fields for the active project, 
-
+          // The following code example gets the values of three specified fields for the active project, 
           // and then displays the values in the add-in.
-
-          // The example calls getProjectFieldAsync recursively, after the
-          previous call returns successfully.
-
+          // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
           // It also tracks the calls to determine when all calls are sent.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the 
-
-          // following page control is defined in the content div in the page
-          body:
-
+          // The example assumes your add-in has a reference to the jQuery library and that the 
+          // following page control is defined in the content div in the page body:
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -1529,16 +1332,13 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
     uid: 'office!Office.Document#getResourceByIndexAsync:member(1)'
     package: office!
     fullName: 'getResourceByIndexAsync(resourceIndex, options, callback)'
-    summary: >-
-      Project documents only. Get the GUID of the resource that has the
-      specified index in the resource collection.
-
+    summary: |-
+      Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
@@ -1546,30 +1346,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getResourceByIndexAsync(resourceIndex: number, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getResourceByIndexAsync(resourceIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<string>) => void): void;
       parameters:
         - id: resourceIndex
-          description: >-
-            The index of the resource in the collection of resources for the
-            project.
+          description: The index of the resource in the collection of resources for the project.
           type: number
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1577,35 +1368,25 @@ methods:
     uid: 'office!Office.Document#getResourceByIndexAsync:member(2)'
     package: office!
     fullName: 'getResourceByIndexAsync(resourceIndex, callback)'
-    summary: >-
-      Project documents only. Get the GUID of the resource that has the
-      specified index in the resource collection.
-
+    summary: |-
+      Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getResourceByIndexAsync(resourceIndex: number, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getResourceByIndexAsync(resourceIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
       parameters:
         - id: resourceIndex
-          description: >-
-            The index of the resource in the collection of resources for the
-            project.
+          description: The index of the resource in the collection of resources for the project.
           type: number
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: >-
@@ -1616,14 +1397,12 @@ methods:
 
           ```javascript
 
-          // The following code example calls getMaxResourceIndexAsync to get
-          the maximum index in the project's resource
+          // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's
+          resource
 
-          // collection, and then calls getResourceByIndexAsync to get the GUID
-          for each resource.
+          // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
 
-          // The example assumes that your add-in has a reference to the jQuery
-          library and that the following 
+          // The example assumes that your add-in has a reference to the jQuery library and that the following 
 
           // page controls are defined in the content div in the page body:
 
@@ -1706,55 +1485,13 @@ methods:
     uid: 'office!Office.Document#getResourceFieldAsync:member(1)'
     package: office!
     fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
-    summary: >-
-      Project documents only. Get resource field for provided resource Id.
-      (Ex.ResourceName)
+    summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
-      parameters:
-        - id: resourceId
-          description: Either a string or value of the Resource Id.
-          type: string
-        - id: fieldId
-          description: Resource Fields.
-          type: number
-        - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
-        - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
-    uid: 'office!Office.Document#getResourceFieldAsync:member(2)'
-    package: office!
-    fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
-    summary: >-
-      Project documents only. Get resource field for provided resource Id.
-      (Ex.ResourceName)
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        getResourceFieldAsync(resourceId: string, fieldId: number, callback?:
+        getResourceFieldAsync(resourceId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?:
         (result: AsyncResult<string>) => void): void;
       parameters:
         - id: resourceId
@@ -1763,43 +1500,58 @@ methods:
         - id: fieldId
           description: Resource Fields.
           type: number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: ''
+  - name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
+    uid: 'office!Office.Document#getResourceFieldAsync:member(2)'
+    package: office!
+    fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
+    summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getResourceFieldAsync(resourceId: string, fieldId: number, callback?: (result: AsyncResult<string>) => void):
+        void;
+      parameters:
+        - id: resourceId
+          description: Either a string or value of the Resource Id.
+          type: string
+        - id: fieldId
+          description: Resource Fields.
+          type: number
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedResourceAsync to get
-          the GUID of the resource
-
-          // that's currently selected in a resource view. Then it gets three
-          resource field values by calling 
-
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource
+          // that's currently selected in a resource view. Then it gets three resource field values by calling 
           // getResourceFieldAsync recursively.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the following 
-
+          // The example assumes your add-in has a reference to the jQuery library and that the following 
           // page controls are defined in the content div in the page body:
-
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -1881,7 +1633,6 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getSelectedDataAsync(coercionType, options, callback)'
     uid: 'office!Office.Document#getSelectedDataAsync:member(1)'
@@ -1921,38 +1672,29 @@ methods:
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
+      AsyncResult object to return the following information.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr>
-      <td>AsyncResult.value</td> <td>Always returns undefined because there is
-      no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
-      <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td>AsyncResult.error</td> <td>Access an Error object that provides error
-      information if the operation failed.</td> </tr> <tr>
-      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that
-      is returned in the AsyncResult object without being altered.</td> </tr>
-      </table>
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
+      Error object that provides error information if the operation failed.</td> </tr> <tr>
+      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.</td> </tr> </table>
 
 
-      The possible values for the
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary
-      by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
-      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr>
-      <td>Excel, PowerPoint, Project, and Word</td>
-      <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and
-      Word</td> <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr>
-      <tr> <td>Excel and Word</td> <td>`Office.CoercionType.Table` (TableData
-      object)</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Html`</td>
-      </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td>
-      <td>`Office.CoercionType.SlideRange`</td> </tr> <tr> <td>Excel,
-      PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr>
-      </table>
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       #### Examples
@@ -1960,11 +1702,9 @@ methods:
 
       ```javascript
 
-      // The following example uses the getSelectedDataAsync method of the
-      Document object to retrieve the
+      // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
 
-      // user's current selection as text, and then display it in the add-in's
-      page.
+      // user's current selection as text, and then display it in the add-in's page.
 
 
       // Display the user's current selection.
@@ -1991,13 +1731,11 @@ methods:
 
       ```javascript
 
-      // To read the value of the current selection, you need to write a
-      callback function that reads the selection.
+      // To read the value of the current selection, you need to write a callback function that reads the selection.
 
       // The following example shows how to:
 
-      // 1. Pass an anonymous callback function that reads the value of the
-      current selection
+      // 1. Pass an anonymous callback function that reads the value of the current selection
 
       //    to the callback parameter of the getSelectedDataAsync method.
 
@@ -2032,16 +1770,13 @@ methods:
 
       ```javascript
 
-      // The following code example gets the values of the selected cells. It
-      uses the optional
+      // The following code example gets the values of the selected cells. It uses the optional
 
       // asyncContext parameter to pass some text to the callback function.
 
-      // The example assumes your add-in has a reference to the jQuery library
-      and that the
+      // The example assumes your add-in has a reference to the jQuery library and that the
 
-      // following page controls are defined in the content div in the page
-      body:
+      // following page controls are defined in the content div in the page body:
 
       // <input id="get-info" type="button" value="Get info" /><br />
 
@@ -2089,32 +1824,22 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?:
-        GetSelectedDataOptions, callback?: (result: AsyncResult<T>) => void):
-        void;
+        getSelectedDataAsync<T>(coercionType: Office.CoercionType, options?: GetSelectedDataOptions, callback?: (result:
+        AsyncResult<T>) => void): void;
       parameters:
         - id: coercionType
-          description: >-
-            The type of data structure to return. See the remarks section for
-            each host's supported coercion types.
+          description: The type of data structure to return. See the remarks section for each host's supported coercion types.
           type: '<xref uid="office!Office.CoercionType:enum" />'
         - id: options
-          description: >-
-            Provides options for customizing what data is returned and how it is
-            formatted.
+          description: Provides options for customizing what data is returned and how it is formatted.
           type: '<xref uid="office!Office.GetSelectedDataOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the data in the current
-            selection. This is returned in the data structure or format you
-            specified with the coercionType parameter. (See Remarks for more
-            information about data coercion.)
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;T&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the data in the current selection. This is returned in the data structure or format you specified with
+            the coercionType parameter. (See Remarks for more information about data coercion.)
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;T&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2156,62 +1881,44 @@ methods:
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
-      In the callback function that is passed to the getSelectedDataAsync
-      method, you can use the properties of the AsyncResult object to return the
-      following information.
+      In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
+      AsyncResult object to return the following information.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr>
-      <td>AsyncResult.value</td> <td>Always returns undefined because there is
-      no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
-      <td>Determine the success or failure of the operation.</td> </tr> <tr>
-      <td>AsyncResult.error</td> <td>Access an Error object that provides error
-      information if the operation failed.</td> </tr> <tr>
-      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that
-      is returned in the AsyncResult object without being altered.</td> </tr>
-      </table>
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
+      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
+      Error object that provides error information if the operation failed.</td> </tr> <tr>
+      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.</td> </tr> </table>
 
 
-      The possible values for the
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary
-      by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
-      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr>
-      <td>Excel, PowerPoint, Project, and Word</td>
-      <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and
-      Word</td> <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr>
-      <tr> <td>Excel and Word</td> <td>`Office.CoercionType.Table` (TableData
-      object)</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Html`</td>
-      </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td>
-      <td>`Office.CoercionType.SlideRange`</td> </tr> <tr> <td>Excel,
-      PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr>
-      </table>
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedDataAsync<T>(coercionType: Office.CoercionType, callback?:
-        (result: AsyncResult<T>) => void): void;
+      content: 'getSelectedDataAsync<T>(coercionType: Office.CoercionType, callback?: (result: AsyncResult<T>) => void): void;'
       parameters:
         - id: coercionType
-          description: >-
-            The type of data structure to return. See the remarks section for
-            each host's supported coercion types.
+          description: The type of data structure to return. See the remarks section for each host's supported coercion types.
           type: '<xref uid="office!Office.CoercionType:enum" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the data in the current
-            selection. This is returned in the data structure or format you
-            specified with the coercionType parameter. (See Remarks for more
-            information about data coercion.)
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;T&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the data in the current selection. This is returned in the data structure or format you specified with
+            the coercionType parameter. (See Remarks for more information about data coercion.)
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;T&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2225,24 +1932,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedResourceAsync(options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<string>) => void): void;
+        getSelectedResourceAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
+        void): void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2255,20 +1956,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedResourceAsync(callback?: (result: AsyncResult<string>) =>
-        void): void;
+      content: 'getSelectedResourceAsync(callback?: (result: AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: >-
@@ -2279,16 +1974,14 @@ methods:
 
           ```javascript
 
-          // The following code example calls getSelectedResourceAsync to get
-          the GUID of the resource that's 
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
 
-          // currently selected in a resource view. Then it gets three resource
-          field values by calling 
+          // currently selected in a resource view. Then it gets three resource field values by calling 
 
           // getResourceFieldAsync recursively.
 
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the following page controls are
+          // The example assumes your add-in has a reference to the jQuery library and that the following page controls
+          are
 
           // defined in the content div in the page body:
 
@@ -2389,24 +2082,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<string>) => void): void;
+        getSelectedTaskAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) => void):
+        void;
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2419,45 +2106,28 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void):
-        void;
+      content: 'getSelectedTaskAsync(callback?: (result: AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the resource
-            as a string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedTaskAsync to get the
-          GUID of the task that's currently
-
-          // selected in a task view. Then it gets task properties by calling
-          getTaskAsync.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the following page
-
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+          // selected in a task view. Then it gets task properties by calling getTaskAsync.
+          // The example assumes your add-in has a reference to the jQuery library and that the following page
           // controls are defined in the content div in the page body:
-
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -2519,40 +2189,28 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getSelectedViewAsync(options, callback)'
     uid: 'office!Office.Document#getSelectedViewAsync:member(1)'
     package: office!
     fullName: 'getSelectedViewAsync(options, callback)'
-    summary: >-
-      Project documents only. Get the current selected View Type (Ex. Gantt) and
-      View Name.
+    summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?:
-        (result: AsyncResult<any>) => void): void;
+      content: 'getSelectedViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `viewName` - The name of the view, as a ProjectViewTypes
-            constant. `viewType` - The type of view, as the integer value of a
-            ProjectViewTypes constant.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
+            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2560,53 +2218,33 @@ methods:
     uid: 'office!Office.Document#getSelectedViewAsync:member(2)'
     package: office!
     fullName: getSelectedViewAsync(callback)
-    summary: >-
-      Project documents only. Get the current selected View Type (Ex. Gantt) and
-      View Name.
+    summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void):
-        void;
+      content: 'getSelectedViewAsync(callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `viewName` - The name of the view, as a ProjectViewTypes
-            constant. `viewType` - The type of view, as the integer value of a
-            ProjectViewTypes constant.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
+            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls adds a ViewSelectionChanged event
-          handler that
-
-          // calls getSelectedViewAsync to get the name and type of the active
-          view in the document.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that
-
-          // the following page control is defined in the content div in the
-          page body:
-
+          // The following code example calls adds a ViewSelectionChanged event handler that
+          // calls getSelectedViewAsync to get the name and type of the active view in the document.
+          // The example assumes your add-in has a reference to the jQuery library and that
+          // the following page control is defined in the content div in the page body:
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -2644,45 +2282,35 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getTaskAsync(taskId, options, callback)'
     uid: 'office!Office.Document#getTaskAsync:member(1)'
     package: office!
     fullName: 'getTaskAsync(taskId, options, callback)'
-    summary: >-
-      Project documents only. Get the Task Name, WSS Task Id, and ResourceNames
-      for given taskId.
+    summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<any>) => void): void;
+        getTaskAsync(taskId: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
+        void): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
           type: string
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `taskName` - The name of the task. `wssTaskId` - The ID
-            of the task in the synchronized SharePoint task list. If the project
-            is not synchronized with a SharePoint task list, the value is 0.
-            `resourceNames` - The comma-separated list of the names of resources
-            that are assigned to the task.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
+            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
+            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
+            task.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2690,62 +2318,40 @@ methods:
     uid: 'office!Office.Document#getTaskAsync:member(2)'
     package: office!
     fullName: 'getTaskAsync(taskId, callback)'
-    summary: >-
-      Project documents only. Get the Task Name, WSS Task Id, and ResourceNames
-      for given taskId.
+    summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) =>
-        void): void;
+      content: 'getTaskAsync(taskId: string, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
           type: string
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `taskName` - The name of the task. `wssTaskId` - The ID
-            of the task in the synchronized SharePoint task list. If the project
-            is not synchronized with a SharePoint task list, the value is 0.
-            `resourceNames` - The comma-separated list of the names of resources
-            that are assigned to the task.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
+            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
+            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
+            task.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedTaskAsync to get the
-          task GUID of the currently
-
-          // selected task. Then it calls getTaskAsync to get the properties for
-          the task that are
-
+          // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
+          // selected task. Then it calls getTaskAsync to get the properties for the task that are
           // available from the JavaScript API for Office.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the
-
-          // following page controls are defined in the content div in the page
-          body:
-
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -2807,16 +2413,13 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getTaskByIndexAsync(taskIndex, options, callback)'
     uid: 'office!Office.Document#getTaskByIndexAsync:member(1)'
     package: office!
     fullName: 'getTaskByIndexAsync(taskIndex, options, callback)'
-    summary: >-
-      Project documents only. Get the GUID of the task that has the specified
-      index in the task collection.
-
+    summary: |-
+      Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
@@ -2824,28 +2427,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getTaskByIndexAsync(taskIndex: number, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<string>) =>
-        void): void;
+        getTaskByIndexAsync(taskIndex: number, options?: Office.AsyncContextOptions, callback?: (result:
+        AsyncResult<string>) => void): void;
       parameters:
         - id: taskIndex
           description: The index of the task in the collection of tasks for the project.
           type: number
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the task as a
-            string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the task as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2853,33 +2449,25 @@ methods:
     uid: 'office!Office.Document#getTaskByIndexAsync:member(2)'
     package: office!
     fullName: 'getTaskByIndexAsync(taskIndex, callback)'
-    summary: >-
-      Project documents only. Get the GUID of the task that has the specified
-      index in the task collection.
-
+    summary: |-
+      Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getTaskByIndexAsync(taskIndex: number, callback?: (result:
-        AsyncResult<string>) => void): void;
+      content: 'getTaskByIndexAsync(taskIndex: number, callback?: (result: AsyncResult<string>) => void): void;'
       parameters:
         - id: taskIndex
           description: The index of the task in the collection of tasks for the project.
           type: number
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the GUID of the task as a
-            string.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;string&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the task as a string.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: |-
@@ -2969,55 +2557,13 @@ methods:
     uid: 'office!Office.Document#getTaskFieldAsync:member(1)'
     package: office!
     fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
-    summary: >-
-      Project documents only. Get task field for provided task Id. (Ex.
-      StartDate).
+    summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getTaskFieldAsync(taskId: string, fieldId: number, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) =>
-        void): void;
-      parameters:
-        - id: taskId
-          description: Either a string or value of the Task Id.
-          type: string
-        - id: fieldId
-          description: Task Fields.
-          type: number
-        - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
-        - id: callback
-          description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the `fieldValue`
-            property, which represents the value of the specified field.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
-      return:
-        type: void
-        description: ''
-  - name: 'getTaskFieldAsync(taskId, fieldId, callback)'
-    uid: 'office!Office.Document#getTaskFieldAsync:member(2)'
-    package: office!
-    fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
-    summary: >-
-      Project documents only. Get task field for provided task Id. (Ex.
-      StartDate).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result:
+        getTaskFieldAsync(taskId: string, fieldId: number, options?: Office.AsyncContextOptions, callback?: (result:
         AsyncResult<any>) => void): void;
       parameters:
         - id: taskId
@@ -3026,41 +2572,55 @@ methods:
         - id: fieldId
           description: Task Fields.
           type: number
+        - id: options
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the `fieldValue`
-            property, which represents the value of the specified field.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: ''
+  - name: 'getTaskFieldAsync(taskId, fieldId, callback)'
+    uid: 'office!Office.Document#getTaskFieldAsync:member(2)'
+    package: office!
+    fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
+    summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTaskFieldAsync(taskId: string, fieldId: number, callback?: (result: AsyncResult<any>) => void): void;'
+      parameters:
+        - id: taskId
+          description: Either a string or value of the Task Id.
+          type: string
+        - id: fieldId
+          description: Task Fields.
+          type: number
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
+      return:
+        type: void
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedTaskAsync to get the
-          GUID of the task that's currently
-
-          // selected in a task view. Then it gets two task field values by
-          calling getTaskFieldAsync recursively.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the following page
-
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+          // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
+          // The example assumes your add-in has a reference to the jQuery library and that the following page
           // controls are defined in the content div in the page body:
-
           // <input id="get-info" type="button" value="Get info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -3139,40 +2699,28 @@ methods:
                   $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'getWSSUrlAsync(options, callback)'
     uid: 'office!Office.Document#getWSSUrlAsync:member(1)'
     package: office!
     fullName: 'getWSSUrlAsync(options, callback)'
-    summary: >-
-      Project documents only. Get the WSS Url and list name for the Tasks List,
-      the MPP is synced too.
+    summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result:
-        AsyncResult<any>) => void): void;
+      content: 'getWSSUrlAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `listName` - the name of the synchronized SharePoint
-            task list. `serverUrl` - the URL of the synchronized SharePoint task
-            list.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
+            `serverUrl` - the URL of the synchronized SharePoint task list.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3180,9 +2728,7 @@ methods:
     uid: 'office!Office.Document#getWSSUrlAsync:member(2)'
     package: office!
     fullName: getWSSUrlAsync(callback)
-    summary: >-
-      Project documents only. Get the WSS Url and list name for the Tasks List,
-      the MPP is synced too.
+    summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -3191,16 +2737,11 @@ methods:
       parameters:
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result contains the following
-            properties: `listName` - the name of the synchronized SharePoint
-            task list. `serverUrl` - the URL of the synchronized SharePoint task
-            list.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
+            `serverUrl` - the URL of the synchronized SharePoint task list.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3220,27 +2761,24 @@ methods:
       The behavior caused by the selectionMode option varies by host:
 
 
-      In Excel: `Office.SelectionMode.Selected` selects all content in the
-      binding, or named item. Office.SelectionMode.None for text bindings,
-      selects the cell; for matrix bindings, table bindings, and named items,
-      selects the first data cell (not first cell in header row for tables).
+      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
+      Office.SelectionMode.None for text bindings, selects the cell; for matrix bindings, table bindings, and named
+      items, selects the first data cell (not first cell in header row for tables).
 
 
-      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or
-      first textbox on the slide. `Office.SelectionMode.None` doesn't select
-      anything.
+      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
+      `Office.SelectionMode.None` doesn't select anything.
 
 
-      In Word: `Office.SelectionMode.Selected` selects all content in the
-      binding. Office.SelectionMode.None for text bindings, moves the cursor to
-      the beginning of the text; for matrix bindings and table bindings, selects
-      the first data cell (not first cell in header row for tables).
+      In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
+      bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
+      data cell (not first cell in header row for tables).
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        goToByIdAsync(id: string | number, goToType: GoToType, options?:
-        GoToByIdOptions, callback?: (result: AsyncResult<any>) => void): void;
+        goToByIdAsync(id: string | number, goToType: GoToType, options?: GoToByIdOptions, callback?: (result:
+        AsyncResult<any>) => void): void;
       parameters:
         - id: id
           description: The identifier of the object or location to go to.
@@ -3249,19 +2787,14 @@ methods:
           description: The type of the location to go to.
           type: '<xref uid="office!Office.GoToType:enum" />'
         - id: options
-          description: >-
-            Provides options for whether to select the location that is
-            navigated to.
+          description: Provides options for whether to select the location that is navigated to.
           type: '<xref uid="office!Office.GoToByIdOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the current view.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the current view.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3281,21 +2814,18 @@ methods:
       The behavior caused by the selectionMode option varies by host:
 
 
-      In Excel: `Office.SelectionMode.Selected` selects all content in the
-      binding, or named item. Office.SelectionMode.None for text bindings,
-      selects the cell; for matrix bindings, table bindings, and named items,
-      selects the first data cell (not first cell in header row for tables).
+      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
+      Office.SelectionMode.None for text bindings, selects the cell; for matrix bindings, table bindings, and named
+      items, selects the first data cell (not first cell in header row for tables).
 
 
-      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or
-      first textbox on the slide. `Office.SelectionMode.None` doesn't select
-      anything.
+      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
+      `Office.SelectionMode.None` doesn't select anything.
 
 
-      In Word: `Office.SelectionMode.Selected` selects all content in the
-      binding. Office.SelectionMode.None for text bindings, moves the cursor to
-      the beginning of the text; for matrix bindings and table bindings, selects
-      the first data cell (not first cell in header row for tables).
+      In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
+      bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
+      data cell (not first cell in header row for tables).
 
 
       #### Examples
@@ -3307,13 +2837,11 @@ methods:
 
       // The following example shows how to:
 
-      // 1. Create a table binding using the addFromSelectionAsync method as a
-      sample binding to work with.
+      // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
 
       // 2. Specify that binding as the binding to go to.
 
-      // 3. Pass an anonymous callback function that returns the status of the
-      operation
+      // 3. Pass an anonymous callback function that returns the status of the operation
 
       //    to the callback parameter of the goToByIdAsync method.
 
@@ -3348,8 +2876,7 @@ methods:
 
       // 1. Specify a table by name as the table to go to.
 
-      // 2. Pass an anonymous callback function that returns the status of the
-      operation
+      // 2. Pass an anonymous callback function that returns the status of the operation
 
       //    to the callback parameter of the goToByIdAsync method.
 
@@ -3371,21 +2898,17 @@ methods:
 
       // The following example shows how to:
 
-      // 1. Get the id of the currently selected slides using the
-      getSelectedDataAsync method.
+      // 1. Get the id of the currently selected slides using the getSelectedDataAsync method.
 
       // 2. Specify the returned id as the slide to go to.
 
-      // 3. Pass an anonymous callback function that returns the status of the
-      operation
+      // 3. Pass an anonymous callback function that returns the status of the operation
 
       //    to the callback parameter of the goToByIdAsync method.
 
-      // 4. Display the value of the stringified JSON object returned by
-      asyncResult.value,
+      // 4. Display the value of the stringified JSON object returned by asyncResult.value,
 
-      //    which contains information about the selected slides, on the
-      add-in's page.
+      //    which contains information about the selected slides, on the add-in's page.
 
       var firstSlideId = 0;
 
@@ -3416,11 +2939,9 @@ methods:
 
       // The following example shows how to:
 
-      // 1. Specify the index of the first, last, previous, or next slide to go
-      to.
+      // 1. Specify the index of the first, last, previous, or next slide to go to.
 
-      // 2. Pass an anonymous callback function that returns the status of the
-      operation
+      // 2. Pass an anonymous callback function that returns the status of the operation
 
       //    to the callback parameter of the goToByIdAsync method.
 
@@ -3446,9 +2967,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        goToByIdAsync(id: string | number, goToType: GoToType, callback?:
-        (result: AsyncResult<any>) => void): void;
+      content: 'goToByIdAsync(id: string | number, goToType: GoToType, callback?: (result: AsyncResult<any>) => void): void;'
       parameters:
         - id: id
           description: The identifier of the object or location to go to.
@@ -3458,13 +2977,10 @@ methods:
           type: '<xref uid="office!Office.GoToType:enum" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The `value` property of the result is the current view.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;any&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the current view.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3480,29 +2996,20 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?:
-        RemoveHandlerOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+        removeHandlerAsync(eventType: Office.EventType, options?: RemoveHandlerOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
-          description: >-
-            The event type. For document can be 'Document.SelectionChanged' or
-            'Document.ActiveViewChanged'.
+          description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type: '<xref uid="office!Office.EventType:enum" />'
         - id: options
-          description: >-
-            Provides options to determine which event handler or handlers are
-            removed.
+          description: Provides options to determine which event handler or handlers are removed.
           type: '<xref uid="office!Office.RemoveHandlerOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3536,25 +3043,19 @@ methods:
 
       ```javascript
 
-      // The following code example uses addHandlerAsync to add an event handler
-      for the
+      // The following code example uses addHandlerAsync to add an event handler for the
 
-      // ResourceSelectionChanged event and removeHandlerAsync to remove the
-      handler.
+      // ResourceSelectionChanged event and removeHandlerAsync to remove the handler.
 
-      // When a resource is selected in a resource view, the handler displays
-      the
+      // When a resource is selected in a resource view, the handler displays the
 
       // resource GUID. When the handler is removed, the GUID is not displayed.
 
-      // The example assumes that your add-in has a reference to the jQuery
-      library and
+      // The example assumes that your add-in has a reference to the jQuery library and
 
-      // that the following page control is defined in the content div in the
-      page body:
+      // that the following page control is defined in the content div in the page body:
 
-      // <input id="remove-handler" type="button" value="Remove handler" /><br
-      />
+      // <input id="remove-handler" type="button" value="Remove handler" /><br />
 
       // <span id="message"></span>
 
@@ -3615,24 +3116,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (result:
-        AsyncResult<void>) => void): void;
+      content: 'removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: eventType
-          description: >-
-            The event type. For document can be 'Document.SelectionChanged' or
-            'Document.ActiveViewChanged'.
+          description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type: '<xref uid="office!Office.EventType:enum" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3649,10 +3142,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue:
-        string | number | boolean | object, options?:
-        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) =>
-        void): void;
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
+        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -3664,19 +3155,13 @@ methods:
           description: Value of the target field.
           type: string | number | boolean | object
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3693,9 +3178,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue:
-        string | number | boolean | object, callback?: (result:
-        AsyncResult<void>) => void): void;
+        setResourceFieldAsync(resourceId: string, fieldId: number, fieldValue: string | number | boolean | object,
+        callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -3708,50 +3192,27 @@ methods:
           type: string | number | boolean | object
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedResourceAsync to get
-          the GUID of the resource that's
-
-          // currently selected in a resource view. Then it sets two resource
-          field values by calling
-
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
+          // currently selected in a resource view. Then it sets two resource field values by calling
           // setResourceFieldAsync recursively.
-
-          // The getSelectedTaskAsync method used in the example requires that a
-          task view
-
-          // (for example, Task Usage) is the active view and that a task is
-          selected. See the addHandlerAsync
-
-          // method for an example that activates a button based on the active
-          view type.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the
-
-          // following page controls are defined in the content div in the page
-          body:
-
+          // The getSelectedTaskAsync method used in the example requires that a task view
+          // (for example, Task Usage) is the active view and that a task is selected. See the addHandlerAsync
+          // method for an example that activates a button based on the active view type.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
           // <input id="set-info" type="button" value="Set info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -3819,7 +3280,6 @@ methods:
                   app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```
   - name: 'setSelectedDataAsync(data, options, callback)'
     uid: 'office!Office.Document#setSelectedDataAsync:member(1)'
@@ -3872,95 +3332,69 @@ methods:
       **Application-specific behaviors**
 
 
-      The following application-specific actions apply when writing data to a
-      selection.
+      The following application-specific actions apply when writing data to a selection.
 
 
-      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion
-      point is at a valid location, the specified `data` is inserted at the
-      insertion point</td> <td>If `data` is a string, the specified text is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of
-      arrays ("matrix") or a TableData object, a new Word table is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is HTML, the
-      specified HTML is inserted. (**Important**: If any of the HTML you insert
-      is invalid, Word won't raise an error. Word will insert as much of the
-      HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td>
-      <td></td> <td>If `data` is Office Open XML, the specified XML is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a base64
-      encoded image stream, the specified image is inserted.</td> </tr> <tr>
-      <td></td> <td>If there is a selection</td> <td>It will be replaced with
-      the specified `data` following the same rules as above.</td> </tr> <tr>
-      <td></td> <td>Insert images</td> <td>Inserted images are placed inline.
-      The imageLeft and imageTop parameters are ignored. The image aspect ratio
-      is always locked. If only one of the imageWidth and imageHeight parameter
-      is given, the other value will be automatically scaled to keep the
-      original aspect ratio.</td> </tr>
+      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion point is at a valid location, the
+      specified `data` is inserted at the insertion point</td> <td>If `data` is a string, the specified text is
+      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of arrays ("matrix") or a TableData
+      object, a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is HTML, the specified
+      HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will
+      insert as much of the HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td> <td></td> <td>If
+      `data` is Office Open XML, the specified XML is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a
+      base64 encoded image stream, the specified image is inserted.</td> </tr> <tr> <td></td> <td>If there is a
+      selection</td> <td>It will be replaced with the specified `data` following the same rules as above.</td> </tr>
+      <tr> <td></td> <td>Insert images</td> <td>Inserted images are placed inline. The imageLeft and imageTop parameters
+      are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is
+      given, the other value will be automatically scaled to keep the original aspect ratio.</td> </tr>
 
 
-      <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If `data` is
-      a string, the specified text is inserted as the value of the current
-      cell.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of
-      arrays ("matrix"), the specified set of rows and columns are inserted, if
-      no other data in surrounding cells will be overwritten.</td> </tr> <tr>
-      <td></td> <td></td> <td>If `data` is a TableData object, a new Excel table
-      with the specified set of rows and headers is inserted, if no other data
-      in surrounding cells will be overwritten.</td> </tr> <tr> <td></td> <td>If
-      multiple cells are selected</td> <td>If the shape does not match the shape
-      of `data`<!-- -->, an error is returned.</td> </tr> <tr> <td></td>
-      <td></td> <td>If the shape of the selection exactly matches the shape of
-      `data`<!-- -->, the values of the selected cells are updated based on the
-      values in `data`<!-- -->.</td> </tr> <tr> <td></td> <td>Insert images</td>
-      <td>Inserted images are floating. The position imageLeft and imageTop
-      parameters are relative to currently selected cell(s). Negative imageLeft
-      and imageTop values are allowed and possibly readjusted by Excel to
-      position the image inside a worksheet. Image aspect ratio is locked unless
-      both imageWidth and imageHeight parameters are provided. If only one of
-      the imageWidth and imageHeight parameter is given, the other value will be
-      automatically scaled to keep the original aspect ratio.</td> </tr> <tr>
-      <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
+      <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If `data` is a string, the specified text is
+      inserted as the value of the current cell.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of arrays
+      ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be
+      overwritten.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a TableData object, a new Excel table with the
+      specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+      </tr> <tr> <td></td> <td>If multiple cells are selected</td> <td>If the shape does not match the shape of
+      `data`<!-- -->, an error is returned.</td> </tr> <tr> <td></td> <td></td> <td>If the shape of the selection
+      exactly matches the shape of `data`<!-- -->, the values of the selected cells are updated based on the values in
+      `data`<!-- -->.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are floating. The position
+      imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop
+      values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio
+      is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and
+      imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect
+      ratio.</td> </tr> <tr> <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
 
 
-      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described
-      for Excel above, these limits apply when writing data in Excel on the
-      web</td> <td>The total number of cells you can write to a worksheet with
-      the `data` parameter can't exceed 20,000 in a single call to this
-      method.</td> </tr> <tr> <td></td> <td></td> <td>The number of formatting
-      groups passed to the `cellFormat` parameter can't exceed 100. A single
-      formatting group consists of a set of formatting applied to a specified
-      range of cells.</td> </tr>
+      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described for Excel above, these limits apply when
+      writing data in Excel on the web</td> <td>The total number of cells you can write to a worksheet with the `data`
+      parameter can't exceed 20,000 in a single call to this method.</td> </tr> <tr> <td></td> <td></td> <td>The number
+      of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of
+      a set of formatting applied to a specified range of cells.</td> </tr>
 
 
-      <tr> <td>PowerPoint</td> <td>Insert image</td> <td>Inserted images are
-      floating. The position imageLeft and imageTop parameters are optional but
-      if provided, both should be present. If a single value is provided, it
-      will be ignored. Negative imageLeft and imageTop values are allowed and
-      can position an image outside of a slide. If no optional parameter is
-      given and slide has a placeholder, the image will replace the placeholder
-      in the slide. Image aspect ratio will be locked unless both imageWidth and
-      imageHeight parameters are provided. If only one of the imageWidth and
-      imageHeight parameter is given, the other value will be automatically
-      scaled to keep the original aspect ratio.</td> </tr> </table>
+      <tr> <td>PowerPoint</td> <td>Insert image</td> <td>Inserted images are floating. The position imageLeft and
+      imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will
+      be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no
+      optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide.
+      Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of
+      the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the
+      original aspect ratio.</td> </tr> </table>
 
 
       **Hosts**
 
 
-      The possible values for the
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary
-      by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
-      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr>
-      <td>Excel, PowerPoint, Project, and Word</td>
-      <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and
-      Word</td> <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr>
-      <tr> <td>Excel and Word</td> <td>`Office.CoercionType.Table` (TableData
-      object)</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Html`</td>
-      </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td>
-      <td>`Office.CoercionType.SlideRange`</td> </tr> <tr> <td>Excel,
-      PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr>
-      </table>
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       #### Examples
@@ -3968,8 +3402,7 @@ methods:
 
       ```javascript
 
-      // The following example sets the selected text or cell to "Hello
-      World!", 
+      // The following example sets the selected text or cell to "Hello World!", 
 
       // and if that fails, displays the value of the error.message property.
 
@@ -3991,14 +3424,11 @@ methods:
       }
 
 
-      // Specifying the optional coercionType parameter lets you specify the
-      kind of data you want to write
+      // Specifying the optional coercionType parameter lets you specify the kind of data you want to write
 
-      // to a selection. The following example writes data as an array of three
-      rows of two columns, 
+      // to a selection. The following example writes data as an array of three rows of two columns, 
 
-      // specifying the coercionType as `Matrix` for that data structure, and if
-      that fails, 
+      // specifying the coercionType as `Matrix` for that data structure, and if that fails, 
 
       // displays the value of the error.message property.
 
@@ -4022,11 +3452,9 @@ methods:
       }
 
 
-      // The following example writes data as a one column table with a header
-      and four rows, 
+      // The following example writes data as a one column table with a header and four rows, 
 
-      // specifying the coercionType as `Table` for that data structure, and if
-      that fails, 
+      // specifying the coercionType as `Table` for that data structure, and if that fails, 
 
       // displays the value of the error.message property.
 
@@ -4054,11 +3482,9 @@ methods:
       }
 
 
-      // In Word if you want to write HTML to the selection, you can specify the
-      coercionType parameter as `Html`
+      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as `Html`
 
-      // as shown in the following example, which uses HTML <b> tags to make
-      "Hello" bold.
+      // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
 
       function writeHtmlData() {
           Office.context.document.setSelectedDataAsync(
@@ -4077,11 +3503,9 @@ methods:
       }
 
 
-      // In Word, PowerPoint, or Excel, if you want to write an image to the
-      selection, you can specify the coercionType
+      // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
 
-      // parameter as `Image` as shown in the following example. Note that
-      imageLeft and imageTop are ignored by Word.
+      // parameter as `Image` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
 
       function insertPictureAtSelection(base64EncodedImageStr) {
 
@@ -4100,11 +3524,11 @@ methods:
       }
 
 
-      // In Word, PowerPoint, or Excel, if you want to write an scalable vector
-      graphic (SVG) to the selection, you can specify the 
+      // In Word, PowerPoint, or Excel, if you want to write an scalable vector graphic (SVG) to the selection, you can
+      specify the 
 
-      // coercionType parameter as `XmlSvg` as shown in the following example.
-      Note that imageLeft and imageTop are ignored by Word.
+      // coercionType parameter as `XmlSvg` as shown in the following example. Note that imageLeft and imageTop are
+      ignored by Word.
 
       function insertSvgAtSelection(base64EncodedImageStr) {
           Office.context.document.setSelectedDataAsync(getImageAsBase64String(), {
@@ -4125,76 +3549,57 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string | TableData | any[][], options?:
-        SetSelectedDataOptions, callback?: (result: AsyncResult<void>) => void):
-        void;
+        setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result:
+        AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or
-            [Office.CoercionType](xref:office!Office.CoercionType:enum) value,
-            2d array or TableData object.
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
+            array or TableData object.
 
 
             If the value passed for `data` is:
 
 
-            - A string: Plain text or anything that can be coerced to a string
-            will be inserted. In Excel, you can also specify data as a valid
-            formula to add that formula to the selected cell. For example,
-            setting data to "=SUM(A1:A5)" will total the values in the specified
-            range. However, when you set a formula on the bound cell, after
-            doing so, you can't read the added formula (or any pre-existing
-            formula) from the bound cell. If you call the
-            Document.getSelectedDataAsync method on the selected cell to read
-            its data, the method can return only the data displayed in the cell
-            (the formula's result).
+            - A string: Plain text or anything that can be coerced to a string will be inserted. In Excel, you can also
+            specify data as a valid formula to add that formula to the selected cell. For example, setting data to
+            "=SUM(A1:A5)" will total the values in the specified range. However, when you set a formula on the bound
+            cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If
+            you call the Document.getSelectedDataAsync method on the selected cell to read its data, the method can
+            return only the data displayed in the cell (the formula's result).
 
 
-            - An array of arrays ("matrix"): Tabular data without headers will
-            be inserted. For example, to write data to three rows in two
-            columns, you can pass an array like this: \[\["R1C1", "R1C2"\],
-            \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\]. To write a single column
-            of three rows, pass an array like this: \[\["R1C1"\], \["R2C1"\],
-            \["R3C1"\]\]
+            - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data
+            to three rows in two columns, you can pass an array like this: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\],
+            \["R3C1", "R3C2"\]\]. To write a single column of three rows, pass an array like this: \[\["R1C1"\],
+            \["R2C1"\], \["R3C1"\]\]
 
 
-            In Excel, you can also specify data as an array of arrays that
-            contains valid formulas to add them to the selected cells. For
-            example if no other data will be overwritten, setting data to
-            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas
-            to the selection. Just as when setting a formula on a single cell as
-            "text", you can't read the added formulas (or any pre-existing
-            formulas) after they have been set - you can only read the formulas'
-            results.
+            In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the
+            selected cells. For example if no other data will be overwritten, setting data to
+            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas to the selection. Just as when setting a
+            formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after
+            they have been set - you can only read the formulas' results.
 
 
-            - A TableData object: A table with headers will be inserted. In
-            Excel, if you specify formulas in the TableData object you pass for
-            the data parameter, you might not get the results you expect due to
-            the "calculated columns" feature of Excel, which automatically
-            duplicates formulas within a column. To work around this when you
-            want to write `data` that contains formulas to a selected table, try
-            specifying the data as an array of arrays (instead of a TableData
-            object), and specify the coercionType as Microsoft.Office.Matrix or
-            "matrix". However, this technique will block the "calculated
-            columns" feature only when one of the following conditions is met:
-            (1) you are writing to all the cells of the column, or (2) there are
-            already at least two different formulas in the column.
+            - A TableData object: A table with headers will be inserted. In Excel, if you specify formulas in the
+            TableData object you pass for the data parameter, you might not get the results you expect due to the
+            "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work
+            around this when you want to write `data` that contains formulas to a selected table, try specifying the
+            data as an array of arrays (instead of a TableData object), and specify the coercionType as
+            Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature
+            only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
+            there are already at least two different formulas in the column.
           type: 'string | <xref uid="office!Office.TableData:class" /> | any[][]'
         - id: options
           description: Provides options for how to insert data to the selection.
           type: '<xref uid="office!Office.SetSelectedDataOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The AsyncResult.value property always returns undefined because
-            there is no object or data to retrieve.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The AsyncResult.value property
+            always returns undefined because there is no object or data to retrieve.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -4249,165 +3654,119 @@ methods:
       **Application-specific behaviors**
 
 
-      The following application-specific actions apply when writing data to a
-      selection.
+      The following application-specific actions apply when writing data to a selection.
 
 
-      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion
-      point is at a valid location, the specified `data` is inserted at the
-      insertion point</td> <td>If `data` is a string, the specified text is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of
-      arrays ("matrix") or a TableData object, a new Word table is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is HTML, the
-      specified HTML is inserted. (**Important**: If any of the HTML you insert
-      is invalid, Word won't raise an error. Word will insert as much of the
-      HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td>
-      <td></td> <td>If `data` is Office Open XML, the specified XML is
-      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a base64
-      encoded image stream, the specified image is inserted.</td></tr></td>
-      </tr> <tr> <td></td> <td>If there is a selection</td> <td>It will be
-      replaced with the specified `data` following the same rules as above.</td>
-      </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are placed
-      inline. The imageLeft and imageTop parameters are ignored. The image
-      aspect ratio is always locked. If only one of the imageWidth and
-      imageHeight parameter is given, the other value will be automatically
-      scaled to keep the original aspect ratio.</td> </tr>
+      <table> <tr> <td>Word</td> <td>If there is no selection and the insertion point is at a valid location, the
+      specified `data` is inserted at the insertion point</td> <td>If `data` is a string, the specified text is
+      inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of arrays ("matrix") or a TableData
+      object, a new Word table is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is HTML, the specified
+      HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will
+      insert as much of the HTML as it can and omits any invalid data).</td> </tr> <tr> <td></td> <td></td> <td>If
+      `data` is Office Open XML, the specified XML is inserted.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a
+      base64 encoded image stream, the specified image is inserted.</td></tr></td> </tr> <tr> <td></td> <td>If there is
+      a selection</td> <td>It will be replaced with the specified `data` following the same rules as above.</td> </tr>
+      <tr> <td></td> <td>Insert images</td> <td>Inserted images are placed inline. The imageLeft and imageTop parameters
+      are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is
+      given, the other value will be automatically scaled to keep the original aspect ratio.</td> </tr>
 
 
-      <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If `data` is
-      a string, the specified text is inserted as the value of the current
-      cell.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of
-      arrays ("matrix"), the specified set of rows and columns are inserted, if
-      no other data in surrounding cells will be overwritten.</td> </tr> <tr>
-      <td></td> <td></td> <td>If `data` is a TableData object, a new Excel table
-      with the specified set of rows and headers is inserted, if no other data
-      in surrounding cells will be overwritten.</td> </tr> <tr> <td></td> <td>If
-      multiple cells are selected</td><td>If the shape does not match the shape
-      of `data`<!-- -->, an error is returned.</td> </tr> <tr> <td></td>
-      <td></td> <td>If the shape of the selection exactly matches the shape of
-      `data`<!-- -->, the values of the selected cells are updated based on the
-      values in `data`<!-- -->.</td> </tr> <tr> <td></td> <td>Insert images</td>
-      <td>Inserted images are floating. The position imageLeft and imageTop
-      parameters are relative to currently selected cell(s). Negative imageLeft
-      and imageTop values are allowed and possibly readjusted by Excel to
-      position the image inside a worksheet. Image aspect ratio is locked unless
-      both imageWidth and imageHeight parameters are provided. If only one of
-      the imageWidth and imageHeight parameter is given, the other value will be
-      automatically scaled to keep the original aspect ratio.</td> </tr> <tr>
-      <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
+      <tr> <td>Excel</td> <td>If a single cell is selected</td> <td>If `data` is a string, the specified text is
+      inserted as the value of the current cell.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is an array of arrays
+      ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be
+      overwritten.</td> </tr> <tr> <td></td> <td></td> <td>If `data` is a TableData object, a new Excel table with the
+      specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+      </tr> <tr> <td></td> <td>If multiple cells are selected</td><td>If the shape does not match the shape of
+      `data`<!-- -->, an error is returned.</td> </tr> <tr> <td></td> <td></td> <td>If the shape of the selection
+      exactly matches the shape of `data`<!-- -->, the values of the selected cells are updated based on the values in
+      `data`<!-- -->.</td> </tr> <tr> <td></td> <td>Insert images</td> <td>Inserted images are floating. The position
+      imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop
+      values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio
+      is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and
+      imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect
+      ratio.</td> </tr> <tr> <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
 
 
-      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described
-      for Excel above, these limits apply when writing data in Excel on the
-      web</td> <td>The total number of cells you can write to a worksheet with
-      the `data` parameter can't exceed 20,000 in a single call to this
-      method.</td> </tr> <tr> <td></td> <td></td> <td>The number of formatting
-      groups passed to the `cellFormat` parameter can't exceed 100. A single
-      formatting group consists of a set of formatting applied to a specified
-      range of cells.</td> </tr>
+      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described for Excel above, these limits apply when
+      writing data in Excel on the web</td> <td>The total number of cells you can write to a worksheet with the `data`
+      parameter can't exceed 20,000 in a single call to this method.</td> </tr> <tr> <td></td> <td></td> <td>The number
+      of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of
+      a set of formatting applied to a specified range of cells.</td> </tr>
 
 
-      <tr> <td>PowerPoint</td> <td>Insert image</td> <td>Inserted images are
-      floating. The position imageLeft and imageTop parameters are optional but
-      if provided, both should be present. If a single value is provided, it
-      will be ignored. Negative imageLeft and imageTop values are allowed and
-      can position an image outside of a slide. If no optional parameter is
-      given and slide has a placeholder, the image will replace the placeholder
-      in the slide. Image aspect ratio will be locked unless both imageWidth and
-      imageHeight parameters are provided. If only one of the imageWidth and
-      imageHeight parameter is given, the other value will be automatically
-      scaled to keep the original aspect ratio.</td> </tr> </table>
+      <tr> <td>PowerPoint</td> <td>Insert image</td> <td>Inserted images are floating. The position imageLeft and
+      imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will
+      be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no
+      optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide.
+      Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of
+      the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the
+      original aspect ratio.</td> </tr> </table>
 
 
       **Hosts**
 
 
-      The possible values for the
-      [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary
-      by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
-      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr>
-      <td>Excel, PowerPoint, Project, and Word</td>
-      <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and
-      Word</td> <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr>
-      <tr> <td>Excel and Word</td> <td>`Office.CoercionType.Table` (TableData
-      object)</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Html`</td>
-      </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td>
-      <td>`Office.CoercionType.SlideRange`</td> </tr> <tr> <td>Excel,
-      PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr>
-      </table>
+      <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
+      Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
+      <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
+      <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setSelectedDataAsync(data: string | TableData | any[][], callback?:
-        (result: AsyncResult<void>) => void): void;
+      content: 'setSelectedDataAsync(data: string | TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or
-            [Office.CoercionType](xref:office!Office.CoercionType:enum) value,
-            2d array or TableData object.
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
+            array or TableData object.
 
 
             If the value passed for `data` is:
 
 
-            - A string: Plain text or anything that can be coerced to a string
-            will be inserted. In Excel, you can also specify data as a valid
-            formula to add that formula to the selected cell. For example,
-            setting data to "=SUM(A1:A5)" will total the values in the specified
-            range. However, when you set a formula on the bound cell, after
-            doing so, you can't read the added formula (or any pre-existing
-            formula) from the bound cell. If you call the
-            Document.getSelectedDataAsync method on the selected cell to read
-            its data, the method can return only the data displayed in the cell
-            (the formula's result).
+            - A string: Plain text or anything that can be coerced to a string will be inserted. In Excel, you can also
+            specify data as a valid formula to add that formula to the selected cell. For example, setting data to
+            "=SUM(A1:A5)" will total the values in the specified range. However, when you set a formula on the bound
+            cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If
+            you call the Document.getSelectedDataAsync method on the selected cell to read its data, the method can
+            return only the data displayed in the cell (the formula's result).
 
 
-            - An array of arrays ("matrix"): Tabular data without headers will
-            be inserted. For example, to write data to three rows in two
-            columns, you can pass an array like this: \[\["R1C1", "R1C2"\],
-            \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\]. To write a single column
-            of three rows, pass an array like this: \[\["R1C1"\], \["R2C1"\],
-            \["R3C1"\]\]
+            - An array of arrays ("matrix"): Tabular data without headers will be inserted. For example, to write data
+            to three rows in two columns, you can pass an array like this: \[\["R1C1", "R1C2"\], \["R2C1", "R2C2"\],
+            \["R3C1", "R3C2"\]\]. To write a single column of three rows, pass an array like this: \[\["R1C1"\],
+            \["R2C1"\], \["R3C1"\]\]
 
 
-            In Excel, you can also specify data as an array of arrays that
-            contains valid formulas to add them to the selected cells. For
-            example if no other data will be overwritten, setting data to
-            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas
-            to the selection. Just as when setting a formula on a single cell as
-            "text", you can't read the added formulas (or any pre-existing
-            formulas) after they have been set - you can only read the formulas'
-            results.
+            In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the
+            selected cells. For example if no other data will be overwritten, setting data to
+            \[\["=SUM(A1:A5)","=AVERAGE(A1:A5)"\]\] will add those two formulas to the selection. Just as when setting a
+            formula on a single cell as "text", you can't read the added formulas (or any pre-existing formulas) after
+            they have been set - you can only read the formulas' results.
 
 
-            - A TableData object: A table with headers will be inserted. In
-            Excel, if you specify formulas in the TableData object you pass for
-            the data parameter, you might not get the results you expect due to
-            the "calculated columns" feature of Excel, which automatically
-            duplicates formulas within a column. To work around this when you
-            want to write `data` that contains formulas to a selected table, try
-            specifying the data as an array of arrays (instead of a TableData
-            object), and specify the coercionType as Microsoft.Office.Matrix or
-            "matrix". However, this technique will block the "calculated
-            columns" feature only when one of the following conditions is met:
-            (1) you are writing to all the cells of the column, or (2) there are
-            already at least two different formulas in the column.
+            - A TableData object: A table with headers will be inserted. In Excel, if you specify formulas in the
+            TableData object you pass for the data parameter, you might not get the results you expect due to the
+            "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work
+            around this when you want to write `data` that contains formulas to a selected table, try specifying the
+            data as an array of arrays (instead of a TableData object), and specify the coercionType as
+            Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature
+            only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
+            there are already at least two different formulas in the column.
           type: 'string | <xref uid="office!Office.TableData:class" /> | any[][]'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->. The AsyncResult.value property always returns undefined because
-            there is no object or data to retrieve.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The AsyncResult.value property
+            always returns undefined because there is no object or data to retrieve.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -4424,9 +3783,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string |
-        number | boolean | object, options?: Office.AsyncContextOptions,
-        callback?: (result: AsyncResult<void>) => void): void;
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, options?:
+        Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -4438,19 +3796,13 @@ methods:
           description: Value of the target field.
           type: string | number | boolean | object
         - id: options
-          description: >-
-            Provides an option for preserving context data of any type,
-            unchanged, for use in a callback.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -4467,9 +3819,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string |
-        number | boolean | object, callback?: (result: AsyncResult<void>) =>
-        void): void;
+        setTaskFieldAsync(taskId: string, fieldId: number, fieldValue: string | number | boolean | object, callback?:
+        (result: AsyncResult<void>) => void): void;
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -4482,50 +3833,27 @@ methods:
           type: string | number | boolean | object
         - id: callback
           description: >-
-            Optional. A function that is invoked when the callback returns,
-            whose only parameter is of type
-            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!--
-            -->.
-          type: >-
-            (result: <xref uid="office!Office.AsyncResult:interface"
-            />&lt;void&gt;) =&gt; void
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
-        description: >-
+        description: |-
 
 
           #### Examples
 
-
           ```javascript
-
-          // The following code example calls getSelectedTaskAsync to get the
-          GUID of the task that's
-
-          // currently selected in a task view. Then it sets two task field
-          values by calling
-
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
+          // currently selected in a task view. Then it sets two task field values by calling
           // setTaskFieldAsync recursively.
-
-          // The getSelectedTaskAsync method used in the example requires that a
-          task view
-
-          // (for example, Task Usage) is the active view and that a task is
-          selected. See the
-
-          // addHandlerAsync method for an example that activates a button based
-          on the active view type.
-
-          // The example assumes your add-in has a reference to the jQuery
-          library and that the
-
-          // following page controls are defined in the content div in the page
-          body:
-
+          // The getSelectedTaskAsync method used in the example requires that a task view
+          // (for example, Task Usage) is the active view and that a task is selected. See the
+          // addHandlerAsync method for an example that activates a button based on the active view type.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
           // <input id="set-info" type="button" value="Set info" /><br />
-
           // <span id="message"></span>
-
 
           (function () {
               "use strict";
@@ -4593,5 +3921,4 @@ methods:
                   app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
               }
           })();
-
           ```

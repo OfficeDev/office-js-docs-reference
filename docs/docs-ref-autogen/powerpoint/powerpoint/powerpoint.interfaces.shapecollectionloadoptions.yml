@@ -3,13 +3,10 @@ name: PowerPoint.Interfaces.ShapeCollectionLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.ShapeCollectionLoadOptions
-summary: >-
+summary: |-
   Represents the collection of shapes.
 
-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-  \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: powerpoint!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -34,14 +30,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.ShapeCollectionLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Gets the unique ID of the shape. The `id`
-      is unique within the slide.
+    summary: |-
+      For EACH ITEM in the collection: Gets the unique ID of the shape. The `id` is unique within the slide.
 
-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets)
-      \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

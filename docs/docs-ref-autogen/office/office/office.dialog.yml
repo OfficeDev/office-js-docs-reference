@@ -4,8 +4,8 @@ uid: 'office!Office.Dialog:interface'
 package: office!
 fullName: Office.Dialog
 summary: >-
-  The object that is returned when `UI.displayDialogAsync` is called. It exposes
-  methods for registering event handlers and closing the dialog.
+  The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers
+  and closing the dialog.
 remarks: >-
   **Requirement set**:
   [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
@@ -17,32 +17,27 @@ methods:
     uid: 'office!Office.Dialog#addEventHandler:member(1)'
     package: office!
     fullName: 'addEventHandler(eventType, handler)'
-    summary: >-
+    summary: |-
       Registers an event handler. The two supported events are:
 
+      - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.
 
-      - DialogMessageReceived. Triggered when the dialog box sends a message to
-      its parent.
-
-
-      - DialogEventReceived. Triggered when the dialog box has been closed or
-      otherwise unloaded.
+      - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        addEventHandler(eventType: Office.EventType, handler: (args: {message:
-        string | boolean} | {error: number}) => void): void;
+        addEventHandler(eventType: Office.EventType, handler: (args: {message: string | boolean} | {error: number}) =>
+        void): void;
       parameters:
         - id: eventType
           description: Must be either DialogMessageReceived or DialogEventReceived.
           type: '<xref uid="office!Office.EventType:enum" />'
         - id: handler
           description: >-
-            A function which accepts either an object with a `message` property,
-            if eventType is DialogMessageReceived, or an object with an `error`
-            property, if eventType is DialogEventReceived.
+            A function which accepts either an object with a `message` property, if eventType is DialogMessageReceived,
+            or an object with an `error` property, if eventType is DialogEventReceived.
           type: '(args: {message: string | boolean} | {error: number}) =&gt; void'
       return:
         type: void
@@ -55,9 +50,8 @@ methods:
       Called from a parent page to close the corresponding dialog box.
 
 
-      This method is asynchronous. It does not take a callback parameter and it
-      does not return a Promise object, so it cannot be awaited with either the
-      `await` keyword or the `then` function. See this best practice for more
+      This method is asynchronous. It does not take a callback parameter and it does not return a Promise object, so it
+      cannot be awaited with either the `await` keyword or the `then` function. See this best practice for more
       information: [Opening another dialog immediately after closing
       one](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one)
     remarks: ''
@@ -73,11 +67,10 @@ methods:
     package: office!
     fullName: messageChild(message)
     summary: >-
-      Delivers a message from the host page, such as a task pane or a UI-less
-      function file, to a dialog that was opened from the page.
+      Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened
+      from the page.
     remarks: >-
-      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9),
-      PowerPoint, Word
+      **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
 
 
       **Requirement sets**:
@@ -96,9 +89,8 @@ methods:
       parameters:
         - id: message
           description: >-
-            Accepts a message from the host page to deliver to the dialog.
-            Anything that can be serialized to a string, including JSON and XML,
-            can be sent.
+            Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string,
+            including JSON and XML, can be sent.
           type: string
       return:
         type: void

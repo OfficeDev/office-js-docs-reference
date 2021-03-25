@@ -4,8 +4,8 @@ uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableRowCollectionUpdateData
 summary: >-
-  An interface for updating data on the TableRowCollection object, for use in
-  "tableRowCollection.set(<!-- -->{ ... }<!-- -->)".
+  An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
+  }<!-- -->)".
 remarks: ''
 isPreview: false
 isDeprecated: false

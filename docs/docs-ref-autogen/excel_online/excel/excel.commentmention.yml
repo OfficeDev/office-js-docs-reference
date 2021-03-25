@@ -3,13 +3,10 @@ name: Excel.CommentMention
 uid: 'excel!Excel.CommentMention:interface'
 package: excel!
 fullName: Excel.CommentMention
-summary: >-
+summary: |-
   Represents the entity that is mentioned in comments.
 
-
-  \[ [API set: ExcelApi
-  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.CommentMention#email:member'
     package: excel!
     fullName: email
-    summary: >-
+    summary: |-
       The email address of the entity that is mentioned in comment.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,14 +31,10 @@ properties:
     uid: 'excel!Excel.CommentMention#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      The id of the entity. The id matches one of the ids in
-      `CommentRichContent.richContent`<!-- -->.
+    summary: |-
+      The id of the entity. The id matches one of the ids in `CommentRichContent.richContent`<!-- -->.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,13 +46,10 @@ properties:
     uid: 'excel!Excel.CommentMention#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The name of the entity that is mentioned in comment.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

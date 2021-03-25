@@ -4,13 +4,11 @@ uid: 'outlook!Office.ItemRead:interface'
 package: outlook!
 fullName: Office.ItemRead
 summary: >-
-  The read mode of
-  [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
+  The read mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed
-  through existing interfaces. You should treat this as a mode of
-  `Office.context.mailbox.item`<!-- -->. Refer to the [Object
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+  this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
   Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.item)
   page for more information.
 

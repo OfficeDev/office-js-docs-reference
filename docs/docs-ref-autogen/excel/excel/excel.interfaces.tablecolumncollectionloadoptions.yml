@@ -3,13 +3,10 @@ name: Excel.Interfaces.TableColumnCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
-summary: >-
+summary: |-
   Represents a collection of all the columns that are part of the table.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,14 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#filter:member'
     package: excel!
     fullName: filter
-    summary: >-
-      For EACH ITEM in the collection: Retrieves the filter applied to the
-      column.
+    summary: |-
+      For EACH ITEM in the collection: Retrieves the filter applied to the column.
 
-
-      \[ [API set: ExcelApi
-      1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,14 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Returns a unique key that identifies the
-      column within the table.
+    summary: |-
+      For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,13 +61,11 @@ properties:
     package: excel!
     fullName: index
     summary: >-
-      For EACH ITEM in the collection: Returns the index number of the column
-      within the columns collection of the table. Zero-indexed.
+      For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the
+      table. Zero-indexed.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -96,8 +82,7 @@ properties:
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -110,16 +95,12 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      For EACH ITEM in the collection: Represents the raw values of the
-      specified range. The data returned could be a string, number, or boolean.
-      Cells that contain an error will return the error string. If the returned
-      value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel
-      interprets this value as a formula.
+      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a
+      string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts
+      with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

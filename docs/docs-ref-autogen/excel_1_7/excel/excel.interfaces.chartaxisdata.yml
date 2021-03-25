@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartAxisData
 uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxisData
-summary: >-
-  An interface describing the data returned by calling `chartAxis.toJSON()`<!--
-  -->.
+summary: An interface describing the data returned by calling `chartAxis.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,77 +13,57 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#axisGroup:member'
     package: excel!
     fullName: axisGroup
-    summary: >-
-      Specifies the group for the specified axis. See Excel.ChartAxisGroup for
-      details.
+    summary: |-
+      Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" |
-          "Secondary"
+        type: '<xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" | "Secondary"'
   - name: baseTimeUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#baseTimeUnit:member'
     package: excel!
     fullName: baseTimeUnit
-    summary: >-
+    summary: |-
       Specifies the base unit for the specified category axis.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
+        type: '<xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
   - name: categoryType
     uid: 'excel!Excel.Interfaces.ChartAxisData#categoryType:member'
     package: excel!
     fullName: categoryType
-    summary: >-
+    summary: |-
       Specifies the category axis type.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        categoryType?: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" |
-        "DateAxis";
+      content: 'categoryType?: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisCategoryType:enum" /> | "Automatic" |
-          "TextAxis" | "DateAxis"
+        type: '<xref uid="excel!Excel.ChartAxisCategoryType:enum" /> | "Automatic" | "TextAxis" | "DateAxis"'
   - name: customDisplayUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#customDisplayUnit:member'
     package: excel!
     fullName: customDisplayUnit
     summary: >-
-      Specifies the custom axis display unit value. To set this property, please
-      use the SetCustomDisplayUnit(double) method.
+      Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double)
+      method.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -97,40 +75,29 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#displayUnit:member'
     package: excel!
     fullName: displayUnit
-    summary: >-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for
-      details.
+    summary: |-
+      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" |
-        "Thousands" | "TenThousands" | "HundredThousands" | "Millions" |
-        "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
+        displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" |
-          "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
-          "Millions" | "TenMillions" | "HundredMillions" | "Billions" |
-          "Trillions" | "Custom"
+          <xref uid="excel!Excel.ChartAxisDisplayUnit:enum" /> | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+          "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
   - name: format
     uid: 'excel!Excel.Interfaces.ChartAxisData#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart object, which includes line and font
-      formatting.
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -142,14 +109,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#height:member'
     package: excel!
     fullName: height
-    summary: >-
-      Specifies the height, in points, of the chart axis. Null if the axis is
-      not visible.
+    summary: |-
+      Specifies the height, in points, of the chart axis. Null if the axis is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -162,13 +125,11 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Specifies the distance, in points, from the left edge of the axis to the
-      left of chart area. Null if the axis is not visible.
+      Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
+      not visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -180,13 +141,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#logBase:member'
     package: excel!
     fullName: logBase
-    summary: >-
+    summary: |-
       Specifies the base of the logarithm when using logarithmic scales.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -198,14 +156,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorGridlines:member'
     package: excel!
     fullName: majorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the major gridlines for the
-      specified axis.
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -217,60 +171,42 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorTickMark:member'
     package: excel!
     fullName: majorTickMark
-    summary: >-
-      Specifies the type of major tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+    summary: |-
+      Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" |
-        "Outside";
+      content: 'majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
-          "Inside" | "Outside"
+        type: '<xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" | "Inside" | "Outside"'
   - name: majorTimeUnitScale
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorTimeUnitScale:member'
     package: excel!
     fullName: majorTimeUnitScale
-    summary: >-
-      Specifies the major unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+    summary: |-
+      Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        majorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" |
-        "Years";
+      content: 'majorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
+        type: '<xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
   - name: majorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#majorUnit:member'
     package: excel!
     fullName: majorUnit
     summary: >-
-      Represents the interval between two major tick marks. Can be set to a
-      numeric value or an empty string. The returned value is always a number.
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -283,14 +219,11 @@ properties:
     package: excel!
     fullName: maximum
     summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -303,14 +236,11 @@ properties:
     package: excel!
     fullName: minimum
     summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -322,14 +252,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorGridlines:member'
     package: excel!
     fullName: minorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the
-      specified axis.
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -341,61 +267,42 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorTickMark:member'
     package: excel!
     fullName: minorTickMark
-    summary: >-
-      Specifies the type of minor tick mark for the specified axis. See
-      Excel.ChartAxisTickMark for details.
+    summary: |-
+      Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" |
-        "Outside";
+      content: 'minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" |
-          "Inside" | "Outside"
+        type: '<xref uid="excel!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" | "Inside" | "Outside"'
   - name: minorTimeUnitScale
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorTimeUnitScale:member'
     package: excel!
     fullName: minorTimeUnitScale
-    summary: >-
-      Specifies the minor unit scale value for the category axis when the
-      CategoryType property is set to TimeScale.
+    summary: |-
+      Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        minorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" |
-        "Years";
+      content: 'minorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months"
-          | "Years"
+        type: '<xref uid="excel!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
   - name: minorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisData#minorUnit:member'
     package: excel!
     fullName: minorUnit
     summary: >-
-      Represents the interval between two minor tick marks. Can be set to a
-      numeric value or an empty string (for automatic axis values). The returned
-      value is always a number.
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,13 +314,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#reversePlotOrder:member'
     package: excel!
     fullName: reversePlotOrder
-    summary: >-
+    summary: |-
       Specifies if Excel plots data points from last to first.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -425,34 +329,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#scaleType:member'
     package: excel!
     fullName: scaleType
-    summary: >-
-      Specifies the value axis scale type. See Excel.ChartAxisScaleType for
-      details.
+    summary: |-
+      Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisScaleType:enum" /> | "Linear" |
-          "Logarithmic"
+        type: '<xref uid="excel!Excel.ChartAxisScaleType:enum" /> | "Linear" | "Logarithmic"'
   - name: showDisplayUnitLabel
     uid: 'excel!Excel.Interfaces.ChartAxisData#showDisplayUnitLabel:member'
     package: excel!
     fullName: showDisplayUnitLabel
-    summary: >-
+    summary: |-
       Specifies if the axis display unit label is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -465,37 +360,28 @@ properties:
     package: excel!
     fullName: tickLabelPosition
     summary: >-
-      Specifies the position of tick-mark labels on the specified axis. See
-      Excel.ChartAxisTickLabelPosition for details.
+      Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" |
-        "High" | "Low" | "None";
+      content: 'tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisTickLabelPosition:enum" /> |
-          "NextToAxis" | "High" | "Low" | "None"
+        type: '<xref uid="excel!Excel.ChartAxisTickLabelPosition:enum" /> | "NextToAxis" | "High" | "Low" | "None"'
   - name: tickLabelSpacing
     uid: 'excel!Excel.Interfaces.ChartAxisData#tickLabelSpacing:member'
     package: excel!
     fullName: tickLabelSpacing
     summary: >-
-      Specifies the number of categories or series between tick-mark labels. Can
-      be a value from 1 through 31999 or an empty string for automatic setting.
-      The returned value is always a number.
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -507,13 +393,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#tickMarkSpacing:member'
     package: excel!
     fullName: tickMarkSpacing
-    summary: >-
+    summary: |-
       Specifies the number of categories or series between tick marks.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -525,13 +408,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#title:member'
     package: excel!
     fullName: title
-    summary: >-
+    summary: |-
       Represents the axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -544,13 +424,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the axis to the
-      top of chart area. Null if the axis is not visible.
+      Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not
+      visible.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -562,35 +440,25 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Specifies the axis type. See Excel.ChartAxisType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        type?: Excel.ChartAxisType | "Invalid" | "Category" | "Value" |
-        "Series";
+      content: 'type?: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartAxisType:enum" /> | "Invalid" | "Category"
-          | "Value" | "Series"
+        type: '<xref uid="excel!Excel.ChartAxisType:enum" /> | "Invalid" | "Category" | "Value" | "Series"'
   - name: visible
     uid: 'excel!Excel.Interfaces.ChartAxisData#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the axis is visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -602,14 +470,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisData#width:member'
     package: excel!
     fullName: width
-    summary: >-
-      Specifies the width, in points, of the chart axis. Null if the axis is not
-      visible.
+    summary: |-
+      Specifies the width, in points, of the chart axis. Null if the axis is not visible.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,13 +3,10 @@ name: Office.MailboxEnums.ActionType
 uid: 'outlook!Office.MailboxEnums.ActionType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ActionType
-summary: >-
+summary: |-
   Specifies the type of action in a notification message.
 
-
-  \[ [API set: Mailbox
-  Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
-  \]
+  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false

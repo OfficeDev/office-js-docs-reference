@@ -3,13 +3,10 @@ name: Excel.CommentChangeType
 uid: 'excel!Excel.CommentChangeType:enum'
 package: excel!
 fullName: Excel.CommentChangeType
-summary: >-
+summary: |-
   Represents how the comments in the event were changed.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false

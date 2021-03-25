@@ -3,9 +3,7 @@ name: Excel.Interfaces.ChartUpdateData
 uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartUpdateData
-summary: >-
-  An interface for updating data on the Chart object, for use in `chart.set({
-  ... })`<!-- -->.
+summary: 'An interface for updating data on the Chart object, for use in `chart.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#axes:member'
     package: excel!
     fullName: axes
-    summary: >-
+    summary: |-
       Represents chart axes.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,13 +29,11 @@ properties:
     package: excel!
     fullName: categoryLabelLevel
     summary: >-
-      Specifies a ChartCategoryLabelLevel enumeration constant referring to the
-      level of where the category labels are being sourced from.
+      Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
+      being sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,141 +45,99 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#chartType:member'
     package: excel!
     fullName: chartType
-    summary: >-
+    summary: |-
       Specifies the type of the chart. See Excel.ChartType for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" |
-        "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
-        "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked"
-        | "BarStacked100" | "3DBarClustered" | "3DBarStacked" |
-        "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
-        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" |
-        "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
-        "XYScatterSmoothNoMarkers" | "XYScatterLines" |
-        "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-        "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-        "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" |
-        "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" |
-        "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC"
-        | "CylinderColClustered" | "CylinderColStacked" |
-        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked"
-        | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
-        "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
-        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" |
-        "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" |
-        "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" |
-        "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" |
-        "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" |
-        "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" |
-        "Sunburst" | "Funnel";
+        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
       return:
         type: >-
-          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" |
-          "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
-          "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" |
-          "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
-          "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100"
-          | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" |
-          "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
-          "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" |
-          "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
-          "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-          "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" |
-          "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" |
-          "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-          "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
-          "CylinderColStacked100" | "CylinderBarClustered" |
-          "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" |
-          "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" |
-          "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
-          "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
-          "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" |
-          "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine"
-          | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" |
-          "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" |
-          "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" | "ColumnClustered" | "ColumnStacked" |
+          "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" |
+          "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
+          "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded"
+          | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" |
+          "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" |
+          "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+          "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+          "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+          "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
+          "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+          "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+          "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie"
+          | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap"
+          | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
   - name: dataLabels
     uid: 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
     package: excel!
     fullName: dataLabels
-    summary: >-
+    summary: |-
       Represents the datalabels on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface" />'
   - name: displayBlanksAs
     uid: 'excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member'
     package: excel!
     fullName: displayBlanksAs
-    summary: >-
+    summary: |-
       Specifies the way that blank cells are plotted on a chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        displayBlanksAs?: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" |
-        "Interplotted";
+      content: 'displayBlanksAs?: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ChartDisplayBlanksAs:enum" /> | "NotPlotted" |
-          "Zero" | "Interplotted"
+        type: '<xref uid="excel!Excel.ChartDisplayBlanksAs:enum" /> | "NotPlotted" | "Zero" | "Interplotted"'
   - name: format
     uid: 'excel!Excel.Interfaces.ChartUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: >-
+    summary: |-
       Encapsulates the format properties for the chart area.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface" />'
   - name: height
     uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
     package: excel!
     fullName: height
-    summary: >-
+    summary: |-
       Specifies the height, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -198,14 +149,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#left:member'
     package: excel!
     fullName: left
-    summary: >-
-      The distance, in points, from the left side of the chart to the worksheet
-      origin.
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -217,13 +164,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#legend:member'
     package: excel!
     fullName: legend
-    summary: >-
+    summary: |-
       Represents the legend for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -235,13 +179,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of a chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -253,53 +194,40 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#pivotOptions:member'
     package: excel!
     fullName: pivotOptions
-    summary: >-
+    summary: |-
       Encapsulates the options for a pivot chart.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'pivotOptions?: Excel.Interfaces.ChartPivotOptionsUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface" />'
   - name: plotArea
     uid: 'excel!Excel.Interfaces.ChartUpdateData#plotArea:member'
     package: excel!
     fullName: plotArea
-    summary: >-
+    summary: |-
       Represents the plotArea for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface" />'
   - name: plotBy
     uid: 'excel!Excel.Interfaces.ChartUpdateData#plotBy:member'
     package: excel!
     fullName: plotBy
-    summary: >-
+    summary: |-
       Specifies the way columns or rows are used as data series on the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -311,14 +239,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#plotVisibleOnly:member'
     package: excel!
     fullName: plotVisibleOnly
-    summary: >-
-      True if only visible cells are plotted. False if both visible and hidden
-      cells are plotted.
+    summary: |-
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -331,13 +255,11 @@ properties:
     package: excel!
     fullName: seriesNameLevel
     summary: >-
-      Specifies a ChartSeriesNameLevel enumeration constant referring to the
-      level of where the series names are being sourced from.
+      Specifies a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being
+      sourced from.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -349,13 +271,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#showAllFieldButtons:member'
     package: excel!
     fullName: showAllFieldButtons
-    summary: >-
+    summary: |-
       Specifies whether to display all field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -368,15 +287,12 @@ properties:
     package: excel!
     fullName: showDataLabelsOverMaximum
     summary: >-
-      Specifies whether to show the data labels when the value is greater than
-      the maximum value on the value axis. If value axis became smaller than the
-      size of data points, you can use this property to set whether to show the
-      data labels. This property applies to 2-D charts only.
+      Specifies whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -388,13 +304,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#style:member'
     package: excel!
     fullName: style
-    summary: >-
+    summary: |-
       Specifies the chart style for the chart.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -406,14 +319,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#title:member'
     package: excel!
     fullName: title
-    summary: >-
-      Specifies the title of the specified chart, including the text,
-      visibility, position, and formatting of the title.
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -426,13 +335,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of the object to the
-      top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -444,13 +351,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartUpdateData#width:member'
     package: excel!
     fullName: width
-    summary: >-
+    summary: |-
       Specifies the width, in points, of the chart object.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,7 @@ name: Excel.Interfaces.PageBreakCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
-summary: >-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,9 +14,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -31,14 +27,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: >-
-      For EACH ITEM in the collection: Specifies the column index for the page
-      break
+    summary: |-
+      For EACH ITEM in the collection: Specifies the column index for the page break
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,14 +42,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Specifies the row index for the page
-      break
+    summary: |-
+      For EACH ITEM in the collection: Specifies the row index for the page break
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -18,9 +18,7 @@ constructors:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        constructor(context: ClientRequestContext, parentObject: ClientObject,
-        name: string, eventInfo: EventInfo<T>);
+      content: 'constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);'
       parameters:
         - id: context
           description: ''
@@ -50,23 +48,18 @@ methods:
           description: A promise-based function that takes in any relevant event arguments.
           type: '(args: T) =&gt; Promise&lt;any&gt;'
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlerResult:class"
-          />&lt;T&gt;
+        type: '<xref uid="office!OfficeExtension.EventHandlerResult:class" />&lt;T&gt;'
         description: ''
   - name: remove(handler)
     uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
     package: office!
     fullName: remove(handler)
     summary: >-
-      Removes the specified function from the event handler list so that it will
-      not be called on subsequent events.
+      Removes the specified function from the event handler list so that it will not be called on subsequent events.
 
 
-      **Note**: The same
-      [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class)
-      object that the handler was added in must be used when removing the
-      handler. More information can be found in [Remove an event
+      **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
+      handler was added in must be used when removing the handler. More information can be found in [Remove an event
       handler](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
       -->.
     remarks: ''
@@ -76,9 +69,7 @@ methods:
       content: 'remove(handler: (args: T) => Promise<any>): void;'
       parameters:
         - id: handler
-          description: >-
-            A reference to a function previously provided to the `add` method as
-            an event handler.
+          description: A reference to a function previously provided to the `add` method as an event handler.
           type: '(args: T) =&gt; Promise&lt;any&gt;'
       return:
         type: void

@@ -3,13 +3,10 @@ name: Visio.Position
 uid: 'visio!Visio.Position:interface'
 package: visio!
 fullName: Visio.Position
-summary: >-
+summary: |-
   Represents the Position of the object in the view.
 
-
-  \[ [API set:
-  1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-  \]
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,14 +17,11 @@ properties:
     package: visio!
     fullName: x
     summary: >-
-      An integer that specifies the x-coordinate of the object, which is the
-      signed value of the distance in pixels from the viewport's center to the
-      left boundary of the page.
+      An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
+      the viewport's center to the left boundary of the page.
 
 
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -40,14 +34,11 @@ properties:
     package: visio!
     fullName: 'y'
     summary: >-
-      An integer that specifies the y-coordinate of the object, which is the
-      signed value of the distance in pixels from the viewport's center to the
-      top boundary of the page.
+      An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
+      the viewport's center to the top boundary of the page.
 
 
-      \[ [API set:
-      1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
-      \]
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

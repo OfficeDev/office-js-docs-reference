@@ -4,27 +4,23 @@ uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interfac
 package: excel!
 fullName: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
 summary: >-
-  Represents the the preset criteria conditional format such as above average,
-  below average, unique values, contains blank, nonblank, error, and noerror.
+  Represents the the preset criteria conditional format such as above average, below average, unique values, contains
+  blank, nonblank, error, and noerror.
 
 
-  \[ [API set: ExcelApi
-  1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: $all
-    uid: >-
-      excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#$all:member
+    uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#$all:member'
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,40 +29,28 @@ properties:
       return:
         type: boolean
   - name: format
-    uid: >-
-      excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member
+    uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Returns a format object, encapsulating the conditional formats font, fill,
-      borders, and other properties.
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface" />'
   - name: rule
-    uid: >-
-      excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#rule:member
+    uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#rule:member'
     package: excel!
     fullName: rule
-    summary: >-
+    summary: |-
       The rule of the conditional format.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

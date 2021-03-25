@@ -3,14 +3,10 @@ name: Excel.Interfaces.TableCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableCollectionLoadOptions
-summary: >-
-  Represents a collection of all the tables that are part of the workbook or
-  worksheet, depending on how it was reached.
+summary: |-
+  Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,37 +30,27 @@ properties:
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member'
     package: excel!
     fullName: columns
-    summary: >-
-      For EACH ITEM in the collection: Represents a collection of all the
-      columns in the table.
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all the columns in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface" />'
   - name: id
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
     summary: >-
-      For EACH ITEM in the collection: Returns a value that uniquely identifies
-      the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed.
+      For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
+      of the identifier remains the same even when the table is renamed.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -81,15 +66,11 @@ properties:
       For EACH ITEM in the collection: Name of the table.
 
 
-      The set name of the table must follow the guidelines specified in the
-      [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114)
-      article.
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -101,36 +82,27 @@ properties:
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member'
     package: excel!
     fullName: rows
-    summary: >-
-      For EACH ITEM in the collection: Represents a collection of all the rows
-      in the table.
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all the rows in the table.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface" />'
   - name: showHeaders
     uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
     package: excel!
     fullName: showHeaders
     summary: >-
-      For EACH ITEM in the collection: Specifies if the header row is visible.
-      This value can be set to show or remove the header row.
+      For EACH ITEM in the collection: Specifies if the header row is visible. This value can be set to show or remove
+      the header row.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -143,13 +115,11 @@ properties:
     package: excel!
     fullName: showTotals
     summary: >-
-      For EACH ITEM in the collection: Specifies if the total row is visible.
-      This value can be set to show or remove the total row.
+      For EACH ITEM in the collection: Specifies if the total row is visible. This value can be set to show or remove
+      the total row.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -162,16 +132,13 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Constant value that represents the Table
-      style. Possible values are: "TableStyleLight1" through
-      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28",
-      "TableStyleDark1" through "TableStyleDark11". A custom user-defined style
-      present in the workbook can also be specified.
+      For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
+      "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28",
+      "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be
+      specified.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

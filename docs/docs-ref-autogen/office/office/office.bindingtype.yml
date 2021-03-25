@@ -12,15 +12,12 @@ fields:
     uid: 'office!Office.BindingType.Matrix:member'
     package: office!
     summary: >-
-      Tabular data without a header row. Data is returned as an array of arrays,
-      for example in this form: \[\[row1column1, row1column2\],\[row2column1,
-      row2column2\]\]
+      Tabular data without a header row. Data is returned as an array of arrays, for example in this form:
+      \[\[row1column1, row1column2\],\[row2column1, row2column2\]\]
   - name: Table
     uid: 'office!Office.BindingType.Table:member'
     package: office!
-    summary: >-
-      Tabular data with a header row. Data is returned as a
-      [TableData](xref:office!Office.TableData:class) object.
+    summary: 'Tabular data with a header row. Data is returned as a [TableData](xref:office!Office.TableData:class) object.'
   - name: Text
     uid: 'office!Office.BindingType.Text:member'
     package: office!

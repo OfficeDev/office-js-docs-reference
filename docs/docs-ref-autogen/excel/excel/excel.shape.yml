@@ -4,16 +4,12 @@ uid: 'excel!Excel.Shape:class'
 package: excel!
 fullName: Excel.Shape
 summary: >-
-  Represents a generic shape object in the worksheet. A shape could be a
-  geometric shape, a line, a group of shapes, etc. To learn more about the shape
-  object model, read [Work with shapes using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!--
-  -->.
+  Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
+  etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.
 
 
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,13 +19,10 @@ properties:
     uid: 'excel!Excel.Shape#altTextDescription:member'
     package: excel!
     fullName: altTextDescription
-    summary: >-
+    summary: |-
       Specifies the alternative description text for a `Shape` object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,13 +34,10 @@ properties:
     uid: 'excel!Excel.Shape#altTextTitle:member'
     package: excel!
     fullName: altTextTitle
-    summary: >-
+    summary: |-
       Specifies the alternative title text for a `Shape` object.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -59,13 +49,10 @@ properties:
     uid: 'excel!Excel.Shape#connectionSiteCount:member'
     package: excel!
     fullName: connectionSiteCount
-    summary: >-
+    summary: |-
       Returns the number of connection sites on this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,8 +65,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,13 +78,10 @@ properties:
     uid: 'excel!Excel.Shape#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       Returns the fill formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -133,13 +117,11 @@ properties:
     package: excel!
     fullName: geometricShape
     summary: >-
-      Returns the geometric shape associated with the shape. An error will be
-      thrown if the shape type is not "GeometricShape".
+      Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
+      "GeometricShape".
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -152,135 +134,89 @@ properties:
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Specifies the geometric shape type of this geometric shape. See
-      `Excel.GeometricShapeType` for details. Returns `null` if the shape type
-      is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns
+      `null` if the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        geometricShapeType: Excel.GeometricShapeType | "LineInverse" |
-        "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram"
-        | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
-        "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" |
-        "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24"
-        | "Star32" | "RoundRectangle" | "Round1Rectangle" |
-        "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle"
-        | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" |
-        "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge"
-        | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" |
-        "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" |
-        "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" |
-        "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" |
-        "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
-        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" |
-        "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" |
-        "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
-        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" |
-        "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" |
-        "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame"
-        | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" |
-        "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
-        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
-        "AccentCallout1" | "AccentCallout2" | "AccentCallout3" |
-        "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
-        "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3"
-        | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" |
-        "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" |
-        "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" |
-        "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
-        | "FlowChartDecision" | "FlowChartInputOutput" |
-        "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
-        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
-        "FlowChartPreparation" | "FlowChartManualInput" |
-        "FlowChartManualOperation" | "FlowChartConnector" |
-        "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-        "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-        "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-        "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-        "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-        "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-        "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-        "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-        "ActionButtonInformation" | "ActionButtonForwardNext" |
-        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning"
-        | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
-        "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
-        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" |
-        "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
-        "ChartStar" | "ChartPlus";
+        geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
       return:
         type: >-
-          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" |
-          "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
-          "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" |
-          "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4"
-          | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
-          "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle"
-          | "Round2SameRectangle" | "Round2DiagonalRectangle" |
-          "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
-          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" |
-          "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" |
-          "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
-          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" |
-          "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow"
-          | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" |
-          "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
-          "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow"
-          | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" |
-          "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
-          "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
-          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" |
-          "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
-          "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" |
-          "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" |
-          "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1"
-          | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" |
-          "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
-          "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
-          "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud"
-          | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
-          "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
-          "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" |
-          "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
-          "FlowChartInternalStorage" | "FlowChartDocument" |
-          "FlowChartMultidocument" | "FlowChartTerminator" |
-          "FlowChartPreparation" | "FlowChartManualInput" |
-          "FlowChartManualOperation" | "FlowChartConnector" |
-          "FlowChartPunchedCard" | "FlowChartPunchedTape" |
-          "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" |
-          "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
-          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
-          "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
-          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" |
-          "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
-          "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
-          "ActionButtonInformation" | "ActionButtonForwardNext" |
-          "ActionButtonBackPrevious" | "ActionButtonEnd" |
-          "ActionButtonBeginning" | "ActionButtonReturn" |
-          "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" |
-          "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" |
-          "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" |
-          "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
+          <xref uid="excel!Excel.GeometricShapeType:enum" /> | "LineInverse" | "Triangle" | "RightTriangle" |
+          "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" |
+          "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10"
+          | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+          "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+          "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+          "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+          "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" |
+          "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
+          "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
+          "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
+          "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+          "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
+          "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
+          "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+          "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
+          "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
+          "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
+          "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
+          "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+          "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
+          "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+          "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+          "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+          "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+          "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+          "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+          "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+          "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+          "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide"
+          | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" |
           "ChartPlus"
   - name: group
     uid: 'excel!Excel.Shape#group:member'
     package: excel!
     fullName: group
-    summary: >-
-      Returns the shape group associated with the shape. An error will be thrown
-      if the shape type is not "GroupShape".
+    summary: |-
+      Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -315,13 +251,11 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value or zero as an input.
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -333,13 +267,10 @@ properties:
     uid: 'excel!Excel.Shape#id:member'
     package: excel!
     fullName: id
-    summary: >-
+    summary: |-
       Specifies the shape identifier.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -351,14 +282,10 @@ properties:
     uid: 'excel!Excel.Shape#image:member'
     package: excel!
     fullName: image
-    summary: >-
-      Returns the image associated with the shape. An error will be thrown if
-      the shape type is not "Image".
+    summary: |-
+      Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -371,14 +298,11 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the left side
-      of the worksheet. Throws an `InvalidArgument` exception when set with a
-      negative value as an input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -391,15 +315,12 @@ properties:
     package: excel!
     fullName: level
     summary: >-
-      Specifies the level of the specified shape. For example, a level of 0
-      means that the shape is not part of any groups, a level of 1 means the
-      shape is part of a top-level group, and a level of 2 means the shape is
-      part of a sub-group of the top level.
+      Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -411,14 +332,10 @@ properties:
     uid: 'excel!Excel.Shape#line:member'
     package: excel!
     fullName: line
-    summary: >-
-      Returns the line associated with the shape. An error will be thrown if the
-      shape type is not "Line".
+    summary: |-
+      Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -456,13 +373,10 @@ properties:
     uid: 'excel!Excel.Shape#lineFormat:member'
     package: excel!
     fullName: lineFormat
-    summary: >-
+    summary: |-
       Returns the line formatting of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -474,13 +388,10 @@ properties:
     uid: 'excel!Excel.Shape#lockAspectRatio:member'
     package: excel!
     fullName: lockAspectRatio
-    summary: >-
+    summary: |-
       Specifies if the aspect ratio of this shape is locked.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -512,13 +423,10 @@ properties:
     uid: 'excel!Excel.Shape#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies the name of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -530,20 +438,15 @@ properties:
     uid: 'excel!Excel.Shape#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: >-
+    summary: |-
       Occurs when the shape is activated.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onActivated:
-        OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -552,20 +455,15 @@ properties:
     uid: 'excel!Excel.Shape#onDeactivated:member'
     package: excel!
     fullName: onDeactivated
-    summary: >-
+    summary: |-
       Occurs when the shape is deactivated.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly onDeactivated:
-        OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
@@ -574,13 +472,10 @@ properties:
     uid: 'excel!Excel.Shape#parentGroup:member'
     package: excel!
     fullName: parentGroup
-    summary: >-
+    summary: |-
       Specifies the parent group of this shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -592,33 +487,25 @@ properties:
     uid: 'excel!Excel.Shape#placement:member'
     package: excel!
     fullName: placement
-    summary: >-
+    summary: |-
       Represents how the object is attached to the cells below it.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'placement: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";'
       return:
-        type: >-
-          <xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" |
-          "Absolute"
+        type: '<xref uid="excel!Excel.Placement:enum" /> | "TwoCell" | "OneCell" | "Absolute"'
   - name: rotation
     uid: 'excel!Excel.Shape#rotation:member'
     package: excel!
     fullName: rotation
-    summary: >-
+    summary: |-
       Specifies the rotation, in degrees, of the shape.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -654,13 +541,10 @@ properties:
     uid: 'excel!Excel.Shape#textFrame:member'
     package: excel!
     fullName: textFrame
-    summary: >-
+    summary: |-
       Returns the text frame object of this shape. Read only.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -673,14 +557,11 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of
-      the worksheet. Throws an `InvalidArgument` exception when set with a
-      negative value as an input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -692,35 +573,25 @@ properties:
     uid: 'excel!Excel.Shape#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Returns the type of this shape. See `Excel.ShapeType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readonly type: Excel.ShapeType | "Unsupported" | "Image" |
-        "GeometricShape" | "Group" | "Line";
+      content: 'readonly type: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" |
-          "GeometricShape" | "Group" | "Line"
+        type: '<xref uid="excel!Excel.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"'
   - name: visible
     uid: 'excel!Excel.Shape#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
+    summary: |-
       Specifies if the shape is visible.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -733,13 +604,11 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the shape. Throws an `InvalidArgument`
-      exception when set with a negative value or zero as an input.
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value
+      or zero as an input.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -751,14 +620,10 @@ properties:
     uid: 'excel!Excel.Shape#zOrderPosition:member'
     package: excel!
     fullName: zOrderPosition
-    summary: >-
-      Returns the position of the specified shape in the z-order, with 0
-      representing the bottom of the order stack.
+    summary: |-
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -771,14 +636,10 @@ methods:
     uid: 'excel!Excel.Shape#copyTo:member(1)'
     package: excel!
     fullName: copyTo(destinationSheet)
-    summary: >-
-      Copies and pastes a `Shape` object. The pasted shape is copied to the same
-      pixel location as this shape.
+    summary: |-
+      Copies and pastes a `Shape` object. The pasted shape is copied to the same pixel location as this shape.
 
-
-      \[ [API set: ExcelApi
-      1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -786,9 +647,7 @@ methods:
       content: 'copyTo(destinationSheet?: Worksheet | string): Excel.Shape;'
       parameters:
         - id: destinationSheet
-          description: >-
-            The sheet to which the shape object will be pasted. The default
-            value is the copied shape's worksheet.
+          description: The sheet to which the shape object will be pasted. The default value is the copied shape's worksheet.
           type: '<xref uid="excel!Excel.Worksheet:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -797,13 +656,10 @@ methods:
     uid: 'excel!Excel.Shape#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: >-
+    summary: |-
       Removes the shape from the worksheet.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -842,22 +698,17 @@ methods:
     package: excel!
     fullName: getAsImage(format)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded
-      string. The DPI is 96. The only supported formats are
-      `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->,
-      `Excel.PictureFormat.JPEG`<!-- -->, and `Excel.PictureFormat.GIF`<!-- -->.
+      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
+      -->, and `Excel.PictureFormat.GIF`<!-- -->.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        getAsImage(format: Excel.PictureFormat):
-        OfficeExtension.ClientResult<string>;
+      content: 'getAsImage(format: Excel.PictureFormat): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: format
           description: Specifies the format of the image.
@@ -892,22 +743,19 @@ methods:
     package: excel!
     fullName: getAsImage(formatString)
     summary: >-
-      Converts the shape to an image and returns the image as a base64-encoded
-      string. The DPI is 96. The only supported formats are
-      `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->,
-      `Excel.PictureFormat.JPEG`<!-- -->, and `Excel.PictureFormat.GIF`<!-- -->.
+      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
+      -->, and `Excel.PictureFormat.GIF`<!-- -->.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" |
-        "SVG"): OfficeExtension.ClientResult<string>;
+        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
+        OfficeExtension.ClientResult<string>;
       parameters:
         - id: formatString
           description: Specifies the format of the image.
@@ -919,13 +767,10 @@ methods:
     uid: 'excel!Excel.Shape#incrementLeft:member(1)'
     package: excel!
     fullName: incrementLeft(increment)
-    summary: >-
+    summary: |-
       Moves the shape horizontally by the specified number of points.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -934,11 +779,9 @@ methods:
       parameters:
         - id: increment
           description: >-
-            The increment, in points, the shape will be horizontally moved. A
-            positive value moves the shape to the right and a negative value
-            moves it to the left. If the sheet is right-to-left oriented, this
-            is reversed: positive values will move the shape to the left and
-            negative values will move it to the right.
+            The increment, in points, the shape will be horizontally moved. A positive value moves the shape to the
+            right and a negative value moves it to the left. If the sheet is right-to-left oriented, this is reversed:
+            positive values will move the shape to the left and negative values will move it to the right.
           type: number
       return:
         type: void
@@ -966,14 +809,11 @@ methods:
     package: excel!
     fullName: incrementRotation(increment)
     summary: >-
-      Rotates the shape clockwise around the z-axis by the specified number of
-      degrees. Use the `rotation` property to set the absolute rotation of the
-      shape.
+      Rotates the shape clockwise around the z-axis by the specified number of degrees. Use the `rotation` property to
+      set the absolute rotation of the shape.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -982,9 +822,8 @@ methods:
       parameters:
         - id: increment
           description: >-
-            How many degrees the shape will be rotated. A positive value rotates
-            the shape clockwise and a negative value rotates it
-            counterclockwise.
+            How many degrees the shape will be rotated. A positive value rotates the shape clockwise and a negative
+            value rotates it counterclockwise.
           type: number
       return:
         type: void
@@ -1011,13 +850,10 @@ methods:
     uid: 'excel!Excel.Shape#incrementTop:member(1)'
     package: excel!
     fullName: incrementTop(increment)
-    summary: >-
+    summary: |-
       Moves the shape vertically by the specified number of points.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1026,9 +862,8 @@ methods:
       parameters:
         - id: increment
           description: >-
-            The increment, in points, the shape will be vertically moved. A
-            positive value moves the shape down and a negative value moves it
-            up.
+            The increment, in points, the shape will be vertically moved. A positive value moves the shape down and a
+            negative value moves it up.
           type: number
       return:
         type: void
@@ -1056,8 +891,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1075,8 +910,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1084,9 +919,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Shape;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -1096,8 +929,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1110,10 +943,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -1127,39 +958,30 @@ methods:
     package: excel!
     fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     summary: >-
-      Scales the height of the shape by a specified factor. For images, you can
-      indicate whether you want to scale the shape relative to the original or
-      the current size. Shapes other than pictures are always scaled relative to
-      their current height.
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        scaleHeight(scaleFactor: number, scaleType: Excel.ShapeScaleType,
-        scaleFrom?: Excel.ShapeScaleFrom): void;
+      content: 'scaleHeight(scaleFactor: number, scaleType: Excel.ShapeScaleType, scaleFrom?: Excel.ShapeScaleFrom): void;'
       parameters:
         - id: scaleFactor
-          description: >-
-            Specifies the ratio between the height of the shape after you resize
-            it and the current or original height.
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
           type: number
         - id: scaleType
           description: >-
-            Specifies whether the shape is scaled relative to its original or
-            current size. The original size scaling option only works for
-            images.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type: '<xref uid="excel!Excel.ShapeScaleType:enum" />'
         - id: scaleFrom
           description: >-
-            Optional. Specifies which part of the shape retains its position
-            when the shape is scaled. If omitted, it represents the shape's
-            upper left corner retains its position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type: '<xref uid="excel!Excel.ShapeScaleFrom:enum" />'
       return:
         type: void
@@ -1188,40 +1010,32 @@ methods:
     package: excel!
     fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
     summary: >-
-      Scales the height of the shape by a specified factor. For images, you can
-      indicate whether you want to scale the shape relative to the original or
-      the current size. Shapes other than pictures are always scaled relative to
-      their current height.
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current height.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
-        "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
+        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
-          description: >-
-            Specifies the ratio between the height of the shape after you resize
-            it and the current or original height.
+          description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
           type: number
         - id: scaleTypeString
           description: >-
-            Specifies whether the shape is scaled relative to its original or
-            current size. The original size scaling option only works for
-            images.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
           description: >-
-            Optional. Specifies which part of the shape retains its position
-            when the shape is scaled. If omitted, it represents the shape's
-            upper left corner retains its position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
       return:
         type: void
@@ -1231,39 +1045,30 @@ methods:
     package: excel!
     fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
     summary: >-
-      Scales the width of the shape by a specified factor. For images, you can
-      indicate whether you want to scale the shape relative to the original or
-      the current size. Shapes other than pictures are always scaled relative to
-      their current width.
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current width.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        scaleWidth(scaleFactor: number, scaleType: Excel.ShapeScaleType,
-        scaleFrom?: Excel.ShapeScaleFrom): void;
+      content: 'scaleWidth(scaleFactor: number, scaleType: Excel.ShapeScaleType, scaleFrom?: Excel.ShapeScaleFrom): void;'
       parameters:
         - id: scaleFactor
-          description: >-
-            Specifies the ratio between the width of the shape after you resize
-            it and the current or original width.
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
           type: number
         - id: scaleType
           description: >-
-            Specifies whether the shape is scaled relative to its original or
-            current size. The original size scaling option only works for
-            images.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type: '<xref uid="excel!Excel.ShapeScaleType:enum" />'
         - id: scaleFrom
           description: >-
-            Optional. Specifies which part of the shape retains its position
-            when the shape is scaled. If omitted, it represents the shape's
-            upper left corner retains its position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type: '<xref uid="excel!Excel.ShapeScaleFrom:enum" />'
       return:
         type: void
@@ -1273,40 +1078,32 @@ methods:
     package: excel!
     fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
     summary: >-
-      Scales the width of the shape by a specified factor. For images, you can
-      indicate whether you want to scale the shape relative to the original or
-      the current size. Shapes other than pictures are always scaled relative to
-      their current width.
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
+      shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
+      current width.
 
 
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" |
-        "OriginalSize", scaleFrom?: "ScaleFromTopLeft" | "ScaleFromMiddle" |
-        "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
+        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       parameters:
         - id: scaleFactor
-          description: >-
-            Specifies the ratio between the width of the shape after you resize
-            it and the current or original width.
+          description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
           type: number
         - id: scaleTypeString
           description: >-
-            Specifies whether the shape is scaled relative to its original or
-            current size. The original size scaling option only works for
-            images.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type: '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
           description: >-
-            Optional. Specifies which part of the shape retains its position
-            when the shape is scaled. If omitted, it represents the shape's
-            upper left corner retains its position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type: '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
       return:
         type: void
@@ -1316,9 +1113,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -1326,20 +1122,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.ShapeUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.ShapeUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -1348,9 +1139,7 @@ methods:
     uid: 'excel!Excel.Shape#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1367,14 +1156,10 @@ methods:
     uid: 'excel!Excel.Shape#setZOrder:member(1)'
     package: excel!
     fullName: setZOrder(position)
-    summary: >-
-      Moves the specified shape up or down the collection's z-order, which
-      shifts it in front of or behind other shapes.
+    summary: |-
+      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1383,8 +1168,8 @@ methods:
       parameters:
         - id: position
           description: >-
-            Where to move the shape in the z-order stack relative to the other
-            shapes. See `Excel.ShapeZOrder` for details.
+            Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for
+            details.
           type: '<xref uid="excel!Excel.ShapeZOrder:enum" />'
       return:
         type: void
@@ -1411,26 +1196,20 @@ methods:
     uid: 'excel!Excel.Shape#setZOrder:member(2)'
     package: excel!
     fullName: setZOrder(positionString)
-    summary: >-
-      Moves the specified shape up or down the collection's z-order, which
-      shifts it in front of or behind other shapes.
+    summary: |-
+      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack"
-        | "SendBackward"): void;
+      content: 'setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
       parameters:
         - id: positionString
           description: >-
-            Where to move the shape in the z-order stack relative to the other
-            shapes. See `Excel.ShapeZOrder` for details.
+            Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for
+            details.
           type: '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
       return:
         type: void
@@ -1440,13 +1219,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Shape object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.ShapeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Shape object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

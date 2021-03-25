@@ -3,13 +3,10 @@ name: Excel.CellPropertiesFontLoadOptions
 uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
 package: excel!
 fullName: Excel.CellPropertiesFontLoadOptions
-summary: >-
+summary: |-
   Specifies which properties to load on the `format.font` object.
 
-
-  \[ [API set: ExcelApi
-  1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,13 +16,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#bold:member'
     package: excel!
     fullName: bold
-    summary: >-
+    summary: |-
       Specifies whether to load on the `bold` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,13 +31,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#color:member'
     package: excel!
     fullName: color
-    summary: >-
+    summary: |-
       Specifies whether to load on the `color` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -91,13 +82,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#italic:member'
     package: excel!
     fullName: italic
-    summary: >-
+    summary: |-
       Specifies whether to load on the `italic` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -109,13 +97,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       Specifies whether to load on the `name` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,13 +112,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#size:member'
     package: excel!
     fullName: size
-    summary: >-
+    summary: |-
       Specifies whether to load on the `size` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -145,13 +127,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#strikethrough:member'
     package: excel!
     fullName: strikethrough
-    summary: >-
+    summary: |-
       Specifies whether to load on the `strikethrough` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -163,13 +142,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#subscript:member'
     package: excel!
     fullName: subscript
-    summary: >-
+    summary: |-
       Specifies whether to load on the `subscript` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -181,13 +157,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#superscript:member'
     package: excel!
     fullName: superscript
-    summary: >-
+    summary: |-
       Specifies whether to load on the `superscript` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -199,13 +172,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#tintAndShade:member'
     package: excel!
     fullName: tintAndShade
-    summary: >-
+    summary: |-
       Specifies whether to load on the `tintAndShade` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -217,13 +187,10 @@ properties:
     uid: 'excel!Excel.CellPropertiesFontLoadOptions#underline:member'
     package: excel!
     fullName: underline
-    summary: >-
+    summary: |-
       Specifies whether to load on the `underline` property.
 
-
-      \[ [API set: ExcelApi
-      1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

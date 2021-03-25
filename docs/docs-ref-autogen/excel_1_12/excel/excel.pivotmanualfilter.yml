@@ -4,14 +4,11 @@ uid: 'excel!Excel.PivotManualFilter:interface'
 package: excel!
 fullName: Excel.PivotManualFilter
 summary: >-
-  Configurable template for a manual filter to apply to a PivotField. The
-  `condition` defines what criteria need to be set in order for the filter to
-  operate.
+  Configurable template for a manual filter to apply to a PivotField. The `condition` defines what criteria need to be
+  set in order for the filter to operate.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,14 +18,10 @@ properties:
     uid: 'excel!Excel.PivotManualFilter#selectedItems:member'
     package: excel!
     fullName: selectedItems
-    summary: >-
-      A list of selected items to manually filter. These must be existing and
-      valid items from the chosen field.
+    summary: |-
+      A list of selected items to manually filter. These must be existing and valid items from the chosen field.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

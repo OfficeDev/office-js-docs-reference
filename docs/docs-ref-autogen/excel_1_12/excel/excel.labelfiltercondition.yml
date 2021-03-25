@@ -4,15 +4,12 @@ uid: 'excel!Excel.LabelFilterCondition:enum'
 package: excel!
 fullName: Excel.LabelFilterCondition
 summary: >-
-  Enum representing all accepted conditions by which a label filter can be
-  applied. Used to configure the type of PivotFilter that is applied to the
-  field. `PivotFilter.criteria.exclusive` can be set to true to invert many of
-  these conditions.
+  Enum representing all accepted conditions by which a label filter can be applied. Used to configure the type of
+  PivotFilter that is applied to the field. `PivotFilter.criteria.exclusive` can be set to true to invert many of these
+  conditions.
 
 
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,12 +17,10 @@ fields:
   - name: beginsWith
     uid: 'excel!Excel.LabelFilterCondition.beginsWith:member'
     package: excel!
-    summary: >-
+    summary: |-
       Label begins with substring criterion.
 
-
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
     value: '"BeginsWith"'
   - name: between
     uid: 'excel!Excel.LabelFilterCondition.between:member'
@@ -34,38 +29,32 @@ fields:
       Between `lowerBound` and `upperBound` criteria.
 
 
-      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->.
-      Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!--
+      -->}<!-- -->.
     value: '"Between"'
   - name: contains
     uid: 'excel!Excel.LabelFilterCondition.contains:member'
     package: excel!
-    summary: >-
+    summary: |-
       Label contains substring criterion.
 
-
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
     value: '"Contains"'
   - name: endsWith
     uid: 'excel!Excel.LabelFilterCondition.endsWith:member'
     package: excel!
-    summary: >-
+    summary: |-
       Label ends with substring criterion.
 
-
-      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
     value: '"EndsWith"'
   - name: equals
     uid: 'excel!Excel.LabelFilterCondition.equals:member'
     package: excel!
-    summary: >-
+    summary: |-
       Equals comparator criterion.
 
-
-      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria:
-      {`exclusive`<!-- -->}<!-- -->.
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
     value: '"Equals"'
   - name: greaterThan
     uid: 'excel!Excel.LabelFilterCondition.greaterThan:member'

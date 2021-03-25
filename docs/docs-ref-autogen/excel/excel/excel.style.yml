@@ -3,13 +3,10 @@ name: Excel.Style
 uid: 'excel!Excel.Style:class'
 package: excel!
 fullName: Excel.Style
-summary: >-
+summary: |-
   An object encapsulating a style's format and other properties.
 
-
-  \[ [API set: ExcelApi
-  1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.Style#autoIndent:member'
     package: excel!
     fullName: autoIndent
-    summary: >-
-      Specifies if text is automatically indented when the text alignment in a
-      cell is set to equal distribution.
+    summary: |-
+      Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,14 +31,10 @@ properties:
     uid: 'excel!Excel.Style#borders:member'
     package: excel!
     fullName: borders
-    summary: >-
-      A collection of four border objects that represent the style of the four
-      borders.
+    summary: |-
+      A collection of four border objects that represent the style of the four borders.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -57,13 +46,10 @@ properties:
     uid: 'excel!Excel.Style#builtIn:member'
     package: excel!
     fullName: builtIn
-    summary: >-
+    summary: |-
       Specifies if the style is a built-in style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -76,8 +62,8 @@ properties:
     package: excel!
     fullName: context
     summary: >-
-      The request context associated with the object. This connects the add-in's
-      process to the Office host application's process.
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -89,13 +75,10 @@ properties:
     uid: 'excel!Excel.Style#fill:member'
     package: excel!
     fullName: fill
-    summary: >-
+    summary: |-
       The fill of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,13 +90,10 @@ properties:
     uid: 'excel!Excel.Style#font:member'
     package: excel!
     fullName: font
-    summary: >-
+    summary: |-
       A `Font` object that represents the font of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -152,13 +132,10 @@ properties:
     uid: 'excel!Excel.Style#formulaHidden:member'
     package: excel!
     fullName: formulaHidden
-    summary: >-
+    summary: |-
       Specifies if the formula will be hidden when the worksheet is protected.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -170,27 +147,21 @@ properties:
     uid: 'excel!Excel.Style#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: >-
-      Represents the horizontal alignment for the style. See
-      `Excel.HorizontalAlignment` for details.
+    summary: |-
+      Represents the horizontal alignment for the style. See `Excel.HorizontalAlignment` for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" |
-        "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" |
-        "Distributed";
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
       return:
         type: >-
-          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" |
-          "Left" | "Center" | "Right" | "Fill" | "Justify" |
-          "CenterAcrossSelection" | "Distributed"
+          <xref uid="excel!Excel.HorizontalAlignment:enum" /> | "General" | "Left" | "Center" | "Right" | "Fill" |
+          "Justify" | "CenterAcrossSelection" | "Distributed"
         description: >-
 
 
@@ -220,14 +191,11 @@ properties:
     package: excel!
     fullName: includeAlignment
     summary: >-
-      Specifies if the style includes the auto indent, horizontal alignment,
-      vertical alignment, wrap text, indent level, and text orientation
-      properties.
+      Specifies if the style includes the auto indent, horizontal alignment, vertical alignment, wrap text, indent
+      level, and text orientation properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -239,14 +207,10 @@ properties:
     uid: 'excel!Excel.Style#includeBorder:member'
     package: excel!
     fullName: includeBorder
-    summary: >-
-      Specifies if the style includes the color, color index, line style, and
-      weight border properties.
+    summary: |-
+      Specifies if the style includes the color, color index, line style, and weight border properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -259,14 +223,11 @@ properties:
     package: excel!
     fullName: includeFont
     summary: >-
-      Specifies if the style includes the background, bold, color, color index,
-      font style, italic, name, size, strikethrough, subscript, superscript, and
-      underline font properties.
+      Specifies if the style includes the background, bold, color, color index, font style, italic, name, size,
+      strikethrough, subscript, superscript, and underline font properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -278,13 +239,10 @@ properties:
     uid: 'excel!Excel.Style#includeNumber:member'
     package: excel!
     fullName: includeNumber
-    summary: >-
+    summary: |-
       Specifies if the style includes the number format property.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -297,14 +255,11 @@ properties:
     package: excel!
     fullName: includePatterns
     summary: >-
-      Specifies if the style includes the color, color index, invert if
-      negative, pattern, pattern color, and pattern color index interior
-      properties.
+      Specifies if the style includes the color, color index, invert if negative, pattern, pattern color, and pattern
+      color index interior properties.
 
 
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -316,14 +271,10 @@ properties:
     uid: 'excel!Excel.Style#includeProtection:member'
     package: excel!
     fullName: includeProtection
-    summary: >-
-      Specifies if the style includes the formula hidden and locked protection
-      properties.
+    summary: |-
+      Specifies if the style includes the formula hidden and locked protection properties.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -335,13 +286,10 @@ properties:
     uid: 'excel!Excel.Style#indentLevel:member'
     package: excel!
     fullName: indentLevel
-    summary: >-
+    summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -353,13 +301,10 @@ properties:
     uid: 'excel!Excel.Style#locked:member'
     package: excel!
     fullName: locked
-    summary: >-
+    summary: |-
       Specifies if the object is locked when the worksheet is protected.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -371,13 +316,10 @@ properties:
     uid: 'excel!Excel.Style#name:member'
     package: excel!
     fullName: name
-    summary: >-
+    summary: |-
       The name of the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -389,13 +331,10 @@ properties:
     uid: 'excel!Excel.Style#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: >-
+    summary: |-
       The format code of the number format for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -407,13 +346,10 @@ properties:
     uid: 'excel!Excel.Style#numberFormatLocal:member'
     package: excel!
     fullName: numberFormatLocal
-    summary: >-
+    summary: |-
       The localized format code of the number format for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -425,36 +361,25 @@ properties:
     uid: 'excel!Excel.Style#readingOrder:member'
     package: excel!
     fullName: readingOrder
-    summary: >-
+    summary: |-
       The reading order for the style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" |
-        "RightToLeft";
+      content: 'readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
       return:
-        type: >-
-          <xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" |
-          "LeftToRight" | "RightToLeft"
+        type: '<xref uid="excel!Excel.ReadingOrder:enum" /> | "Context" | "LeftToRight" | "RightToLeft"'
   - name: shrinkToFit
     uid: 'excel!Excel.Style#shrinkToFit:member'
     package: excel!
     fullName: shrinkToFit
-    summary: >-
-      Specifies if text automatically shrinks to fit in the available column
-      width.
+    summary: |-
+      Specifies if text automatically shrinks to fit in the available column width.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -466,13 +391,10 @@ properties:
     uid: 'excel!Excel.Style#textOrientation:member'
     package: excel!
     fullName: textOrientation
-    summary: >-
+    summary: |-
       The text orientation for the style.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -484,36 +406,25 @@ properties:
     uid: 'excel!Excel.Style#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: >-
-      Specifies the vertical alignment for the style. See
-      `Excel.VerticalAlignment` for details.
+    summary: |-
+      Specifies the vertical alignment for the style. See `Excel.VerticalAlignment` for details.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom"
-        | "Justify" | "Distributed";
+      content: 'verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
       return:
-        type: >-
-          <xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" |
-          "Bottom" | "Justify" | "Distributed"
+        type: '<xref uid="excel!Excel.VerticalAlignment:enum" /> | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
   - name: wrapText
     uid: 'excel!Excel.Style#wrapText:member'
     package: excel!
     fullName: wrapText
-    summary: >-
+    summary: |-
       Specifies if Excel wraps the text in the object.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -526,13 +437,10 @@ methods:
     uid: 'excel!Excel.Style#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: >-
+    summary: |-
       Deletes this style.
 
-
-      \[ [API set: ExcelApi
-      1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -569,8 +477,8 @@ methods:
     package: excel!
     fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -615,8 +523,8 @@ methods:
     package: excel!
     fullName: load(propertyNames)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -624,9 +532,7 @@ methods:
       content: 'load(propertyNames?: string | string[]): Excel.Style;'
       parameters:
         - id: propertyNames
-          description: >-
-            A comma-delimited string or an array of strings that specify the
-            properties to load.
+          description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
         type: '<xref uid="excel!Excel.Style:class" />'
@@ -636,8 +542,8 @@ methods:
     package: excel!
     fullName: load(propertyNamesAndPaths)
     summary: >-
-      Queues up a command to load the specified properties of the object. You
-      must call `context.sync()` before reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -650,10 +556,8 @@ methods:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            `propertyNamesAndPaths.select` is a comma-delimited string that
-            specifies the properties to load, and `propertyNamesAndPaths.expand`
-            is a comma-delimited string that specifies the navigation properties
-            to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: |-
             {
                         select?: string;
@@ -667,9 +571,8 @@ methods:
     package: excel!
     fullName: 'set(properties, options)'
     summary: >-
-      Sets multiple properties of an object at the same time. You can pass
-      either a plain object with the appropriate properties, or another API
-      object of the same type.
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |-
       This method has the following additional signature:
 
@@ -677,20 +580,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        set(properties: Interfaces.StyleUpdateData, options?:
-        OfficeExtension.UpdateOptions): void;
+      content: 'set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       parameters:
         - id: properties
           description: >-
-            A JavaScript object with properties that are structured
-            isomorphically to the properties of the object on which the method
-            is called.
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type: '<xref uid="excel!Excel.Interfaces.StyleUpdateData:interface" />'
         - id: options
-          description: >-
-            Provides an option to suppress errors if the properties object tries
-            to set any read-only properties.
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
@@ -699,9 +597,7 @@ methods:
     uid: 'excel!Excel.Style#set:member(2)'
     package: excel!
     fullName: set(properties)
-    summary: >-
-      Sets multiple properties on the object at the same time, based on an
-      existing loaded object.
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -719,13 +615,11 @@ methods:
     package: excel!
     fullName: toJSON()
     summary: >-
-      Overrides the JavaScript `toJSON()` method in order to provide more useful
-      output when an API object is passed to `JSON.stringify()`<!-- -->.
-      (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the
-      object that is passed to it.) Whereas the original Excel.Style object is
-      an API object, the `toJSON` method returns a plain JavaScript object
-      (typed as `Excel.Interfaces.StyleData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Style object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,9 +3,7 @@ name: Excel.Interfaces.PivotLayoutUpdateData
 uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotLayoutUpdateData
-summary: >-
-  An interface for updating data on the PivotLayout object, for use in
-  `pivotLayout.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,33 +14,26 @@ properties:
     package: excel!
     fullName: layoutType
     summary: >-
-      This property indicates the PivotLayoutType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
-        type: >-
-          <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" |
-          "Tabular" | "Outline"
+        type: '<xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"'
   - name: showColumnGrandTotals
     uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#showColumnGrandTotals:member'
     package: excel!
     fullName: showColumnGrandTotals
-    summary: >-
+    summary: |-
       Specifies if the PivotTable report shows grand totals for columns.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +45,10 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#showRowGrandTotals:member'
     package: excel!
     fullName: showRowGrandTotals
-    summary: >-
+    summary: |-
       Specifies if the PivotTable report shows grand totals for rows.
 
-
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,21 +61,15 @@ properties:
     package: excel!
     fullName: subtotalLocation
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the
-      PivotTable. If fields have different states, this will be null.
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
 
 
-      \[ [API set: ExcelApi
-      1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" |
-        "Off";
+      content: 'subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
       return:
-        type: >-
-          <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" |
-          "AtBottom" | "Off"
+        type: '<xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" | "AtBottom" | "Off"'

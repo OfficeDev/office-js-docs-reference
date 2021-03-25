@@ -3,9 +3,7 @@ name: Word.Interfaces.DocumentUpdateData
 uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.DocumentUpdateData
-summary: >-
-  An interface for updating data on the Document object, for use in
-  `document.set({ ... })`<!-- -->.
+summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,13 +14,11 @@ properties:
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes
-      headers, footers, footnotes, textboxes, etc..
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,19 +30,14 @@ properties:
     uid: 'word!Word.Interfaces.DocumentUpdateData#properties:member'
     package: word!
     fullName: properties
-    summary: >-
+    summary: |-
       Gets the properties of the document.
 
-
-      \[ [API set: WordApi
-      1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
-        type: >-
-          <xref
-          uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />'

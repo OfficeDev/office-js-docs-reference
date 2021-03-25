@@ -4,14 +4,11 @@ uid: 'excel!Excel.CommentRichContent:interface'
 package: excel!
 fullName: Excel.CommentRichContent
 summary: >-
-  Represents the content contained within a comment or comment reply. Rich
-  content incudes the text string and any other objects contained within the
-  comment body, such as mentions.
+  Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other
+  objects contained within the comment body, such as mentions.
 
 
-  \[ [API set: ExcelApi
-  1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,14 +18,10 @@ properties:
     uid: 'excel!Excel.CommentRichContent#mentions:member'
     package: excel!
     fullName: mentions
-    summary: >-
-      An array containing all the entities (e.g., people) mentioned within the
-      comment.
+    summary: |-
+      An array containing all the entities (e.g., people) mentioned within the comment.
 
-
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,14 +66,11 @@ properties:
     package: excel!
     fullName: richContent
     summary: >-
-      Specifies the rich content of the comment (e.g., comment content with
-      mentions, the first mentioned entity has an ID attribute of 0, and the
-      second mentioned entity has an ID attribute of 1).
+      Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an
+      ID attribute of 0, and the second mentioned entity has an ID attribute of 1).
 
 
-      \[ [API set: ExcelApi
-      1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

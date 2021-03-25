@@ -3,9 +3,7 @@ name: Excel.Interfaces.TableStyleCollectionData
 uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
 package: excel!
 fullName: Excel.Interfaces.TableStyleCollectionData
-summary: >-
-  An interface describing the data returned by calling
-  `tableStyleCollection.toJSON()`<!-- -->.
+summary: An interface describing the data returned by calling `tableStyleCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

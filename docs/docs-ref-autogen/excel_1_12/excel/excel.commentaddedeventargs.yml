@@ -3,13 +3,10 @@ name: Excel.CommentAddedEventArgs
 uid: 'excel!Excel.CommentAddedEventArgs:interface'
 package: excel!
 fullName: Excel.CommentAddedEventArgs
-summary: >-
+summary: |-
   Provides information about the comments that raised the "CommentAdded" event.
 
-
-  \[ [API set: ExcelApi
-  1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,14 +16,10 @@ properties:
     uid: 'excel!Excel.CommentAddedEventArgs#commentDetails:member'
     package: excel!
     fullName: commentDetails
-    summary: >-
-      Gets the `CommentDetail` array that contains the comment ID and IDs of its
-      related replies.
+    summary: |-
+      Gets the `CommentDetail` array that contains the comment ID and IDs of its related replies.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -38,13 +31,10 @@ properties:
     uid: 'excel!Excel.CommentAddedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
+    summary: |-
       Specifies the source of the event. See `Excel.EventSource` for details.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -56,13 +46,10 @@ properties:
     uid: 'excel!Excel.CommentAddedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
+    summary: |-
       Gets the type of the event. See `Excel.EventType` for details.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -74,13 +61,10 @@ properties:
     uid: 'excel!Excel.CommentAddedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
+    summary: |-
       Gets the Id of the worksheet in which the event happened.
 
-
-      \[ [API set: ExcelApi
-      1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

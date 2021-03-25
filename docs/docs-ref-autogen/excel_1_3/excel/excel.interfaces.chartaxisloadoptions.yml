@@ -3,13 +3,10 @@ name: Excel.Interfaces.ChartAxisLoadOptions
 uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxisLoadOptions
-summary: >-
+summary: |-
   Represents a single axis in a chart.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,56 +30,42 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the formatting of a chart object, which includes line and font
-      formatting.
+    summary: |-
+      Represents the formatting of a chart object, which includes line and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartAxisFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface" />
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface" />'
   - name: majorGridlines
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member'
     package: excel!
     fullName: majorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the major gridlines for the
-      specified axis.
+    summary: |-
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface" />'
   - name: majorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorUnit:member'
     package: excel!
     fullName: majorUnit
     summary: >-
-      Represents the interval between two major tick marks. Can be set to a
-      numeric value or an empty string. The returned value is always a number.
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -96,14 +78,11 @@ properties:
     package: excel!
     fullName: maximum
     summary: >-
-      Represents the maximum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -116,14 +95,11 @@ properties:
     package: excel!
     fullName: minimum
     summary: >-
-      Represents the minimum value on the value axis. Can be set to a numeric
-      value or an empty string (for automatic axis values). The returned value
-      is always a number.
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -135,36 +111,27 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member'
     package: excel!
     fullName: minorGridlines
-    summary: >-
-      Returns a Gridlines object that represents the minor gridlines for the
-      specified axis.
+    summary: |-
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface" />'
   - name: minorUnit
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorUnit:member'
     package: excel!
     fullName: minorUnit
     summary: >-
-      Represents the interval between two minor tick marks. Can be set to a
-      numeric value or an empty string (for automatic axis values). The returned
-      value is always a number.
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -176,19 +143,14 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#title:member'
     package: excel!
     fullName: title
-    summary: >-
+    summary: |-
       Represents the axis title.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'title?: Excel.Interfaces.ChartAxisTitleLoadOptions;'
       return:
-        type: >-
-          <xref uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface" />'

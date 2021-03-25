@@ -4,27 +4,23 @@ uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interfac
 package: excel!
 fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
 summary: >-
-  An interface for updating data on the ConditionalDataBarPositiveFormat object,
-  for use in `conditionalDataBarPositiveFormat.set({ ... })`<!-- -->.
+  An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in
+  `conditionalDataBarPositiveFormat.set({ ... })`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: borderColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#borderColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#borderColor:member'
     package: excel!
     fullName: borderColor
     summary: >-
-      HTML color code representing the color of the border line, in the form
-      \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange"). Value
-      is "" (an empty string) if no border is present or set.
+      HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange"). Value is "" (an empty string) if no border is present or set.
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -33,18 +29,15 @@ properties:
       return:
         type: string
   - name: fillColor
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#fillColor:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#fillColor:member'
     package: excel!
     fullName: fillColor
     summary: >-
-      HTML color code representing the fill color, in the form \#RRGGBB (e.g.,
-      "FFA500") or as a named HTML color (e.g., "orange").
+      HTML color code representing the fill color, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
+      "orange").
 
 
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,17 +46,13 @@ properties:
       return:
         type: string
   - name: gradientFill
-    uid: >-
-      excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#gradientFill:member
+    uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData#gradientFill:member'
     package: excel!
     fullName: gradientFill
-    summary: >-
+    summary: |-
       Specifies if the data bar has a gradient.
 
-
-      \[ [API set: ExcelApi
-      1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

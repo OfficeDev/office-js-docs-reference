@@ -3,13 +3,10 @@ name: OneNote.Interfaces.TableCellCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
-summary: >-
+summary: |-
   Contains a collection of TableCell objects.
 
-
-  \[ [API set: OneNoteApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-  \]
+  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,14 +28,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
     package: onenote!
     fullName: cellIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the cell in its row.
-      Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -50,13 +43,10 @@ properties:
     uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the ID of the cell. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -65,60 +55,43 @@ properties:
       return:
         type: boolean
   - name: paragraphs
-    uid: >-
-      onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member
+    uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: >-
-      For EACH ITEM in the collection: Gets the collection of Paragraph objects
-      in the TableCell.
+    summary: |-
+      For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface" />'
   - name: parentRow
     uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
     package: onenote!
     fullName: parentRow
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the parent row of the cell.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
       return:
-        type: >-
-          <xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface"
-          />
+        type: '<xref uid="onenote!OneNote.Interfaces.TableRowLoadOptions:interface" />'
   - name: rowIndex
     uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: >-
-      For EACH ITEM in the collection: Gets the index of the cell's row in the
-      table. Read-only.
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -127,18 +100,13 @@ properties:
       return:
         type: boolean
   - name: shadingColor
-    uid: >-
-      onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#shadingColor:member
+    uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
     package: onenote!
     fullName: shadingColor
-    summary: >-
-      For EACH ITEM in the collection: Gets and sets the shading color of the
-      cell
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the shading color of the cell
 
-
-      \[ [API set: OneNoteApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets)
-      \]
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

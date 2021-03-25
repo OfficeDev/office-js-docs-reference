@@ -3,13 +3,10 @@ name: Excel.Interfaces.ChartDataLabelsLoadOptions
 uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
-summary: >-
+summary: |-
   Represents a collection of all the data labels on a chart point.
 
-
-  \[ [API set: ExcelApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,36 +30,27 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Specifies the format of chart data labels, which includes fill and font
-      formatting.
+    summary: |-
+      Specifies the format of chart data labels, which includes fill and font formatting.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
-        type: >-
-          <xref
-          uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface"
-          />
+        type: '<xref uid="excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface" />'
   - name: position
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
     package: excel!
     fullName: position
     summary: >-
-      DataLabelPosition value that represents the position of the data label.
-      See Excel.ChartDataLabelPosition for details.
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
 
 
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -75,13 +62,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#separator:member'
     package: excel!
     fullName: separator
-    summary: >-
+    summary: |-
       String representing the separator used for the data labels on a chart.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,13 +77,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member'
     package: excel!
     fullName: showBubbleSize
-    summary: >-
+    summary: |-
       Specifies if the data label bubble size is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -111,13 +92,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member'
     package: excel!
     fullName: showCategoryName
-    summary: >-
+    summary: |-
       Specifies if the data label category name is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -129,13 +107,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: >-
+    summary: |-
       Specifies if the data label legend key is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -147,13 +122,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member'
     package: excel!
     fullName: showPercentage
-    summary: >-
+    summary: |-
       Specifies if the data label percentage is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -165,13 +137,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member'
     package: excel!
     fullName: showSeriesName
-    summary: >-
+    summary: |-
       Specifies if the data label series name is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -183,13 +152,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member'
     package: excel!
     fullName: showValue
-    summary: >-
+    summary: |-
       Specifies if the data label value is visible.
 
-
-      \[ [API set: ExcelApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

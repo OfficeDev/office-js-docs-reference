@@ -4,13 +4,11 @@ uid: 'office!Office.ProjectViewTypes:enum'
 package: office!
 fullName: Office.ProjectViewTypes
 summary: >-
-  Specifies the types of views that the
-  [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync
+  Specifies the types of views that the [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync
   method can recognize.
 remarks: >-
-  The [Document](xref:office!Office.Document:interface)<!--
-  -->.getSelectedViewAsync method returns the ProjectViewTypes constant value
-  and name that corresponds to the active view.
+  The [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync method returns the ProjectViewTypes
+  constant value and name that corresponds to the active view.
 isPreview: false
 isDeprecated: false
 fields:

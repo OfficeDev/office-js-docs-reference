@@ -3,13 +3,10 @@ name: Word.Interfaces.FontLoadOptions
 uid: 'word!Word.Interfaces.FontLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.FontLoadOptions
-summary: >-
+summary: |-
   Represents a font.
 
-
-  \[ [API set: WordApi
-  1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -20,9 +17,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties
-      (e.g.: `Range.address`<!-- -->) but not the navigational properties (e.g.:
-      `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,13 +31,11 @@ properties:
     package: word!
     fullName: bold
     summary: >-
-      Gets or sets a value that indicates whether the font is bold. True if the
-      font is formatted as bold, otherwise, false.
+      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -54,13 +48,11 @@ properties:
     package: word!
     fullName: color
     summary: >-
-      Gets or sets the color for the specified font. You can provide the value
-      in the '\#RRGGBB' format or the color name.
+      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
+      name.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -73,14 +65,11 @@ properties:
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a double
-      strikethrough. True if the font is formatted as double strikethrough text,
-      otherwise, false.
+      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
+      double strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -93,21 +82,15 @@ properties:
     package: word!
     fullName: highlightColor
     summary: >-
-      Gets or sets the highlight color. To set it, use a value either in the
-      '\#RRGGBB' format or the color name. To remove highlight color, set it to
-      null. The returned highlight color can be in the '\#RRGGBB' format, an
-      empty string for mixed highlight colors, or null for no highlight color.
-      *Note**: Only the default highlight colors are available in Office for
-      Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue",
-      "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
-      "LightGray", and "Black". When the add-in runs in Office for Windows
-      Desktop, any other color is converted to the closest color when applied to
-      the font.
+      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
+      string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are
+      available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
+      "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
+      in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -120,13 +103,11 @@ properties:
     package: word!
     fullName: italic
     summary: >-
-      Gets or sets a value that indicates whether the font is italicized. True
-      if the font is italicized, otherwise, false.
+      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
+      false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -138,13 +119,10 @@ properties:
     uid: 'word!Word.Interfaces.FontLoadOptions#name:member'
     package: word!
     fullName: name
-    summary: >-
+    summary: |-
       Gets or sets a value that represents the name of the font.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -156,13 +134,10 @@ properties:
     uid: 'word!Word.Interfaces.FontLoadOptions#size:member'
     package: word!
     fullName: size
-    summary: >-
+    summary: |-
       Gets or sets a value that represents the font size in points.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -175,13 +150,11 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a strikethrough.
-      True if the font is formatted as strikethrough text, otherwise, false.
+      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
+      strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -194,13 +167,11 @@ properties:
     package: word!
     fullName: subscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a subscript. True
-      if the font is formatted as subscript, otherwise, false.
+      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -213,13 +184,11 @@ properties:
     package: word!
     fullName: superscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a superscript.
-      True if the font is formatted as superscript, otherwise, false.
+      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
+      superscript, otherwise, false.
 
 
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -231,14 +200,10 @@ properties:
     uid: 'word!Word.Interfaces.FontLoadOptions#underline:member'
     package: word!
     fullName: underline
-    summary: >-
-      Gets or sets a value that indicates the font's underline type. 'None' if
-      the font is not underlined.
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 
-
-      \[ [API set: WordApi
-      1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -3,10 +3,7 @@ name: Word.Alignment
 uid: 'word!Word.Alignment:enum'
 package: word!
 fullName: Word.Alignment
-summary: >-
-  \[ [API set:
-  WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
-  \]
+summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
