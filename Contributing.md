@@ -16,7 +16,7 @@ Here are some ways you can contribute to this documentation:
 * To make small changes to an article, [Contribute using GitHub](#contribute-using-github).
 * To make large changes, or changes that involve code, [Contribute using Git](#contribute-using-git).
 * Report documentation bugs via GitHub Issues.
-* Request new documentation at the [Office Developer Platform UserVoice](http://officespdev.uservoice.com) site.
+* Request new documentation at the [Microsoft 365 on Q&A](https://docs.microsoft.com/answers/products/m365) site.
 
 ## Contribute using GitHub
 
