@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: position
     summary: |-
-      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+      Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: visible
     summary: |-
-      Specifies if the ChartLegend is visible.
+      Specifies if the chart legend is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

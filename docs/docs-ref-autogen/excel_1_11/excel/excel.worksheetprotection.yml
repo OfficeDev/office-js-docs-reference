@@ -228,7 +228,7 @@ methods:
       content: 'unprotect(password?: string): void;'
       parameters:
         - id: password
-          description: sheet protection password.
+          description: Sheet protection password.
           type: string
       return:
         type: void

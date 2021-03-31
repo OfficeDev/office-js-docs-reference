@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartTrendlineCollection:class'
 package: excel!
 fullName: Excel.ChartTrendlineCollection
 summary: |-
-  Represents a collection of Chart Trendlines.
+  Represents a collection of chart trendlines.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -54,7 +54,7 @@ methods:
       content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
       parameters:
         - id: type
-          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+          description: Specifies the trendline type. The default value is "Linear". See `Excel.ChartTrendline` for details.
           type: '<xref uid="excel!Excel.ChartTrendlineType:enum" />'
       return:
         type: '<xref uid="excel!Excel.ChartTrendline:class" />'
@@ -98,7 +98,7 @@ methods:
         Excel.ChartTrendline;
       parameters:
         - id: typeString
-          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+          description: Specifies the trendline type. The default value is "Linear". See `Excel.ChartTrendline` for details.
           type: '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
       return:
         type: '<xref uid="excel!Excel.ChartTrendline:class" />'
@@ -124,7 +124,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: |-
-      Get trendline object by index, which is the insertion order in items array.
+      Gets a trendline object by index, which is the insertion order in the items array.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -134,7 +134,7 @@ methods:
       content: 'getItem(index: number): Excel.ChartTrendline;'
       parameters:
         - id: index
-          description: Represents the insertion order in items array.
+          description: Represents the insertion order in the items array.
           type: number
       return:
         type: '<xref uid="excel!Excel.ChartTrendline:class" />'

@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ValueFilterCondition
 summary: >-
   Enum representing all accepted conditions by which a value filter can be applied. Used to configure the type of
-  PivotFilter that is applied to the field. `PivotFilter.exclusive` can be set to true to invert many of these
+  PivotFilter that is applied to the field. `PivotFilter.exclusive` can be set to `true` to invert many of these
   conditions.
 
 
@@ -85,5 +85,5 @@ fields:
   - name: unknown
     uid: 'excel!Excel.ValueFilterCondition.unknown:member'
     package: excel!
-    summary: ValueFilterCondition is unknown or unsupported.
+    summary: '`ValueFilterCondition` is unknown or unsupported.'
     value: '"Unknown"'

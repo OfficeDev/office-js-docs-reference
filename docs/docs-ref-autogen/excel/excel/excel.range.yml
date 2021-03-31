@@ -1675,10 +1675,9 @@ methods:
       direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;'
@@ -1703,8 +1702,7 @@ methods:
       direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -2153,10 +2151,9 @@ methods:
       matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;'
@@ -2181,8 +2178,7 @@ methods:
       matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

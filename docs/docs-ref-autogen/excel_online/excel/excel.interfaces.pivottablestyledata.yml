@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the PivotTableStyle.
+      Gets the name of the PivotTable style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this PivotTableStyle object is read-only.
+      Specifies if this `PivotTableStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

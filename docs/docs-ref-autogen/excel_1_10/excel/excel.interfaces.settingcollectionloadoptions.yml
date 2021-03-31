@@ -33,7 +33,7 @@ properties:
     package: excel!
     fullName: key
     summary: |-
-      For EACH ITEM in the collection: The key that represents the id of the Setting.
+      For EACH ITEM in the collection: The key that represents the ID of the setting.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

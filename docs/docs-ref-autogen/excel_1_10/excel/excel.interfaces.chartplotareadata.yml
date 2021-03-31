@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: format
     summary: |-
-      Specifies the formatting of a chart plotArea.
+      Specifies the formatting of a chart plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: height
     summary: |-
-      Specifies the height value of plotArea.
+      Specifies the height value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -44,7 +44,7 @@ properties:
     package: excel!
     fullName: insideHeight
     summary: |-
-      Specifies the insideHeight value of plotArea.
+      Specifies the inside height value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -59,7 +59,7 @@ properties:
     package: excel!
     fullName: insideLeft
     summary: |-
-      Specifies the insideLeft value of plotArea.
+      Specifies the inside left value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: insideTop
     summary: |-
-      Specifies the insideTop value of plotArea.
+      Specifies the inside top value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -89,7 +89,7 @@ properties:
     package: excel!
     fullName: insideWidth
     summary: |-
-      Specifies the insideWidth value of plotArea.
+      Specifies the inside width value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -104,7 +104,7 @@ properties:
     package: excel!
     fullName: left
     summary: |-
-      Specifies the left value of plotArea.
+      Specifies the left value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -119,7 +119,7 @@ properties:
     package: excel!
     fullName: position
     summary: |-
-      Specifies the position of plotArea.
+      Specifies the position of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -134,7 +134,7 @@ properties:
     package: excel!
     fullName: top
     summary: |-
-      Specifies the top value of plotArea.
+      Specifies the top value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -149,7 +149,7 @@ properties:
     package: excel!
     fullName: width
     summary: |-
-      Specifies the width value of plotArea.
+      Specifies the width value of a plot area.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

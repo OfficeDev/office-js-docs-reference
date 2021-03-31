@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableSortLoadOptions
 summary: |-
-  Manages sorting operations on Table objects.
+  Manages sorting operations on `Table` objects.
 
   \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: method
     summary: |-
-      Represents Chinese character ordering method last used to sort the table.
+      Represents the Chinese character ordering method last used to sort the table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

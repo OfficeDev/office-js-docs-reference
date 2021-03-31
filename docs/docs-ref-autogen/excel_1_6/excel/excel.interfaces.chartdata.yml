@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      Represents the datalabels on the chart.
+      Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -133,8 +133,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#title:member'
     package: excel!
     fullName: title
-    summary: |-
-      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

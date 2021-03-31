@@ -320,6 +320,24 @@ properties:
       content: 'tabColor?: string;'
       return:
         type: string
+  - name: tabId
+    uid: 'excel!Excel.Interfaces.WorksheetData#tabId:member'
+    package: excel!
+    fullName: tabId
+    summary: >-
+      Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is
+      different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabId?: number;'
+      return:
+        type: number
   - name: tables
     uid: 'excel!Excel.Interfaces.WorksheetData#tables:member'
     package: excel!

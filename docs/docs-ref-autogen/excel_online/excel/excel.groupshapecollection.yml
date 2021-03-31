@@ -60,7 +60,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: |-
-      Gets a shape using its Name or ID.
+      Gets a shape using its name or ID.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -70,7 +70,7 @@ methods:
       content: 'getItem(key: string): Excel.Shape;'
       parameters:
         - id: key
-          description: The Name or ID of the shape to be retrieved.
+          description: The name or ID of the shape to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'

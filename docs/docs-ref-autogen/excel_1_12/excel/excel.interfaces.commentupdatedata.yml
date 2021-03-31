@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: |-
-      The comment thread status. A value of "true" means the comment thread is resolved.
+      The comment thread status. A value of `true` means that the comment thread is resolved.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

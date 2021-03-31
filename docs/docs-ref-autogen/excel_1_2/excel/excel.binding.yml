@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Represents binding identifier.
+      Represents the binding identifier.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Returns the type of the binding. See Excel.BindingType for details.
+      Returns the type of the binding. See `Excel.BindingType` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -124,7 +124,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: |-
-      Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
+      Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -159,7 +159,7 @@ methods:
     package: excel!
     fullName: getTable()
     summary: |-
-      Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
+      Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -194,7 +194,7 @@ methods:
     package: excel!
     fullName: getText()
     summary: |-
-      Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
+      Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

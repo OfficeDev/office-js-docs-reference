@@ -3,8 +3,10 @@ name: Excel.NamedItemCollection
 uid: 'excel!Excel.NamedItemCollection:class'
 package: excel!
 fullName: Excel.NamedItemCollection
-summary: |-
-  A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.
+summary: >-
+  A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was
+  reached.
+
 
   \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -44,7 +46,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: |-
-      Gets a NamedItem object using its name.
+      Gets a `NamedItem` object using its name.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

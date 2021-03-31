@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: format
     summary: |-
-      Specifies the formatting of chart axis title.
+      Specifies the formatting of the chart axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

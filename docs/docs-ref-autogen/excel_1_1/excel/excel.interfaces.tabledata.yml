@@ -111,7 +111,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      Constant value that represents the table style. Possible values are: "TableStyleLight1" through
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 

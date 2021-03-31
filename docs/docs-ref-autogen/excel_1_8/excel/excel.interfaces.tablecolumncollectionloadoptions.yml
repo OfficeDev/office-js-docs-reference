@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: filter
     summary: |-
-      For EACH ITEM in the collection: Retrieve the filter applied to the column.
+      For EACH ITEM in the collection: Retrieves the filter applied to the column.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,8 +95,9 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
-      type string, number, or a boolean. Cells that contain an error will return the error string.
+      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a
+      string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts
+      with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

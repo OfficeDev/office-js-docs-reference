@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: color
     summary: |-
-      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
+      The HTML color string used to filter cells. Used with `cellColor` and `fontColor` filtering.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -32,12 +32,12 @@ properties:
     package: excel!
     fullName: criterion1
     summary: >-
-      The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example "<!--
-      -->&gt;<!-- -->50" for number greater than 50 or "=*s" for values ending in "s".
+      The first criterion used to filter data. Used as an operator in the case of `custom` filtering. For example "<!--
+      -->&gt;<!-- -->50" for numbers greater than 50, or "=*s" for values ending in "s".
 
 
-      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to
-      "topItems").
+      Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to
+      `topItems`<!-- -->).
 
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -53,7 +53,7 @@ properties:
     package: excel!
     fullName: criterion2
     summary: |-
-      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
+      The second criterion used to filter data. Only used as an operator in the case of `custom` filtering.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -68,7 +68,7 @@ properties:
     package: excel!
     fullName: dynamicCriteria
     summary: >-
-      The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
+      The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply on this column. Used with `dynamic`
       filtering.
 
 
@@ -119,7 +119,7 @@ properties:
     package: excel!
     fullName: icon
     summary: |-
-      The icon used to filter cells. Used with "icon" filtering.
+      The icon used to filter cells. Used with `icon` filtering.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -134,7 +134,7 @@ properties:
     package: excel!
     fullName: operator
     summary: |-
-      The operator used to combine criterion 1 and 2 when using "custom" filtering.
+      The operator used to combine criterion 1 and 2 when using `custom` filtering.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -149,7 +149,7 @@ properties:
     package: excel!
     fullName: values
     summary: |-
-      The set of values to be used as part of "values" filtering.
+      The set of values to be used as part of `values` filtering.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

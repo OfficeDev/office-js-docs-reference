@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Id of the PivotField.
+      ID of the PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

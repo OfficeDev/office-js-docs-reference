@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableStyleLoadOptions
 summary: |-
-  Represents a TableStyle, which defines the style elements by region of the Table.
+  Represents a table style, which defines the style elements by region of the table.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the TableStyle.
+      Gets the name of the table style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this TableStyle object is read-only.
+      Specifies if this `TableStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

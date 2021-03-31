@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: |-
-      Represents Excel's number format code for the given range. Cleared if null is passed in.
+      Represents Excel's number format code for the given range. Cleared if `null` is passed in.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

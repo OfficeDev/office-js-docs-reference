@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: columnIndex
     summary: |-
-      For EACH ITEM in the collection: Specifies the column index for the page break
+      For EACH ITEM in the collection: Specifies the column index for the page break.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -43,7 +43,7 @@ properties:
     package: excel!
     fullName: rowIndex
     summary: |-
-      For EACH ITEM in the collection: Specifies the row index for the page break
+      For EACH ITEM in the collection: Specifies the row index for the page break.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

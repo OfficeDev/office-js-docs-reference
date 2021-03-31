@@ -17,8 +17,8 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
-      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+      Returns an array of addresses in A1-style. Address values contain the worksheet name for each rectangular block of
+      cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -34,8 +34,8 @@ properties:
     package: excel!
     fullName: areas
     summary: >-
-      Returns the `RangeAreasCollection` object. Each `RangeAreas` object in the collection represents one or more
-      rectangle ranges in one worksheet.
+      Returns the `RangeAreasCollection` object. Each `RangeAreas` in the collection represent one or more rectangle
+      ranges in one worksheet.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -122,7 +122,7 @@ methods:
       content: 'getRangeAreasBySheet(key: string): Excel.RangeAreas;'
       parameters:
         - id: key
-          description: The name or id of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -133,7 +133,10 @@ methods:
     fullName: getRangeAreasOrNullObjectBySheet(key)
     summary: >-
       Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist,
-      will return a null object.
+      then this function will return an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -144,7 +147,7 @@ methods:
       content: 'getRangeAreasOrNullObjectBySheet(key: string): Excel.RangeAreas;'
       parameters:
         - id: key
-          description: The name or id of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'

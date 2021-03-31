@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: creationDate
     summary: >-
-      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      Gets the creation time of the comment. Returns `null` if the comment was converted from a note, since the comment
       does not have a creation date.
 
 
@@ -157,7 +157,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: |-
-      The comment thread status. A value of "true" means the comment thread is resolved.
+      The comment thread status. A value of `true` means that the comment thread is resolved.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

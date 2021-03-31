@@ -96,7 +96,7 @@ methods:
     package: excel!
     fullName: getItem(name)
     summary: |-
-      Gets a style by name.
+      Gets a `Style` by name.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

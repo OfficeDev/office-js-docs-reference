@@ -31,8 +31,8 @@ properties:
     package: excel!
     fullName: addresses
     summary: >-
-      Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block
-      of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+      Returns an array of addresses in A1-style. Address values contain the worksheet name for each rectangular block of
+      cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

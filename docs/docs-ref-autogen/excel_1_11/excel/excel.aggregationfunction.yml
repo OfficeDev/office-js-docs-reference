@@ -4,7 +4,7 @@ uid: 'excel!Excel.AggregationFunction:enum'
 package: excel!
 fullName: Excel.AggregationFunction
 summary: |-
-  Aggregation Function for the Data Pivot Field.
+  Aggregation function for the DataPivotField.
 
   \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

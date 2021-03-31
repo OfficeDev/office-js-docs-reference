@@ -41,7 +41,7 @@ methods:
       content: 'freezeAt(frozenRange: Range | string): void;'
       parameters:
         - id: frozenRange
-          description: 'A range that represents the cells to be frozen, or null to remove all frozen panes.'
+          description: 'A range that represents the cells to be frozen, or `null` to remove all frozen panes.'
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
@@ -151,8 +151,8 @@ methods:
     package: excel!
     fullName: getLocation()
     summary: >-
-      Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to
-      cells that are frozen in the top- and left-most pane.
+      Gets a range that describes the frozen cells in the active worksheet view. The frozen range corresponds to cells
+      that are frozen in the top- and left-most pane.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -169,8 +169,12 @@ methods:
     package: excel!
     fullName: getLocationOrNullObject()
     summary: >-
-      Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to
-      cells that are frozen in the top- and left-most pane. If there is no frozen pane, returns a null object.
+      Gets a range that describes the frozen cells in the active worksheet view. The frozen range corresponds to cells
+      that are frozen in the top- and left-most pane. If there is no frozen pane, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

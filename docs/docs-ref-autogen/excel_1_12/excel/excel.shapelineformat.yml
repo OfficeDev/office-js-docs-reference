@@ -19,7 +19,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      Represents the line color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
+      Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
 
 
@@ -50,8 +50,8 @@ properties:
     package: excel!
     fullName: dashStyle
     summary: >-
-      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash
-      styles. See Excel.ShapeLineStyle for details.
+      Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent dash
+      styles. See `Excel.ShapeLineStyle` for details.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -72,8 +72,8 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
-      styles. See Excel.ShapeLineStyle for details.
+      Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent
+      styles. See `Excel.ShapeLineStyle` for details.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -92,7 +92,7 @@ properties:
     fullName: transparency
     summary: >-
       Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
-      Returns null when the shape has inconsistent transparencies.
+      Returns `null` when the shape has inconsistent transparencies.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: visible
     summary: >-
-      Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent
+      Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent
       visibilities.
 
 
@@ -125,8 +125,8 @@ properties:
     package: excel!
     fullName: weight
     summary: >-
-      Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent
-      line weights.
+      Represents the weight of the line, in points. Returns `null` when the line is not visible or there are
+      inconsistent line weights.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

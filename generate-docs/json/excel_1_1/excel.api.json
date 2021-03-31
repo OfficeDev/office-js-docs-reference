@@ -53,7 +53,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Application#calculate:member(1)",
-                  "docComment": "/**\n * Recalculate all currently opened workbooks in Excel.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param calculationType - Specifies the calculation type to use. See Excel.CalculationType for details.\n */\n",
+                  "docComment": "/**\n * Recalculate all currently opened workbooks in Excel.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param calculationType - Specifies the calculation type to use. See `Excel.CalculationType` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -99,7 +99,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Application#calculate:member(2)",
-                  "docComment": "/**\n * Recalculate all currently opened workbooks in Excel.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param calculationTypeString - Specifies the calculation type to use. See Excel.CalculationType for details.\n */\n",
+                  "docComment": "/**\n * Recalculate all currently opened workbooks in Excel.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param calculationTypeString - Specifies the calculation type to use. See `Excel.CalculationType` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -144,7 +144,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Application#calculationMode:member",
-                  "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
+                  "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -538,7 +538,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Binding#getRange:member(1)",
-                  "docComment": "/**\n * Returns the range represented by the binding. Will throw an error if binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -568,7 +568,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Binding#getTable:member(1)",
-                  "docComment": "/**\n * Returns the table represented by the binding. Will throw an error if binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -598,7 +598,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Binding#getText:member(1)",
-                  "docComment": "/**\n * Returns the text represented by the binding. Will throw an error if binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -632,7 +632,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Binding#id:member",
-                  "docComment": "/**\n * Represents binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -828,7 +828,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Binding#type:member",
-                  "docComment": "/**\n * Returns the type of the binding. See Excel.BindingType for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns the type of the binding. See `Excel.BindingType` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -944,7 +944,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.BindingCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a binding object by ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param id - Id of the binding object to be retrieved.\n */\n",
+                  "docComment": "/**\n * Gets a binding object by ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param id - ID of the binding object to be retrieved.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1953,7 +1953,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.Chart:class",
-              "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2031,7 +2031,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Chart#dataLabels:member",
-                  "docComment": "/**\n * Represents the datalabels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the data labels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2500,7 +2500,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Chart#setData:member(1)",
-                  "docComment": "/**\n * Resets the source data for the chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param sourceData - The range object corresponding to the source data.\n *\n * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.\n */\n",
+                  "docComment": "/**\n * Resets the source data for the chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param sourceData - The range object corresponding to the source data.\n *\n * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2562,7 +2562,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Chart#setData:member(2)",
-                  "docComment": "/**\n * Resets the source data for the chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param sourceData - The range object corresponding to the source data.\n *\n * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.\n */\n",
+                  "docComment": "/**\n * Resets the source data for the chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param sourceData - The range object corresponding to the source data.\n *\n * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2623,7 +2623,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Chart#setPosition:member(1)",
-                  "docComment": "/**\n * Positions the chart relative to cells on the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param startCell - The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.\n *\n * @param endCell - (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.\n */\n",
+                  "docComment": "/**\n * Positions the chart relative to cells on the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param startCell - The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.\n *\n * @param endCell - Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2693,7 +2693,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Chart#title:member",
-                  "docComment": "/**\n * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3419,7 +3419,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartAxes#seriesAxis:member",
-                  "docComment": "/**\n * Represents the series axis of a 3-dimensional chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the series axis of a 3-D chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3837,7 +3837,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartAxis#majorGridlines:member",
-                  "docComment": "/**\n * Returns a Gridlines object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns an object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3946,7 +3946,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartAxis#minorGridlines:member",
-                  "docComment": "/**\n * Returns a Gridlines object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns an object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4614,7 +4614,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartAxisTitle#format:member",
-                  "docComment": "/**\n * Specifies the formatting of chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the formatting of the chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5030,7 +5030,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartAxisTitleFormat#font:member",
-                  "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5364,7 +5364,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.ChartCollection#add:member(1)",
-                  "docComment": "/**\n * Creates a new chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param type - Represents the type of a chart. See Excel.ChartType for details.\n *\n * @param sourceData - The Range object corresponding to the source data.\n *\n * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.\n */\n",
+                  "docComment": "/**\n * Creates a new chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param type - Represents the type of a chart. See `Excel.ChartType` for details.\n *\n * @param sourceData - The `Range` object corresponding to the source data.\n *\n * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5443,7 +5443,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.ChartCollection#add:member(2)",
-                  "docComment": "/**\n * Creates a new chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param typeString - Represents the type of a chart. See Excel.ChartType for details.\n *\n * @param sourceData - The Range object corresponding to the source data.\n *\n * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.\n */\n",
+                  "docComment": "/**\n * Creates a new chart.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param typeString - Represents the type of a chart. See `Excel.ChartType` for details.\n *\n * @param sourceData - The `Range` object corresponding to the source data.\n *\n * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5963,7 +5963,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartDataLabelFormat#font:member",
-                  "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6759,7 +6759,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartDataLabels#position:member",
-                  "docComment": "/**\n * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7147,7 +7147,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.ChartFill#clear:member(1)",
-                  "docComment": "/**\n * Clear the fill color of a chart element.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Clears the fill color of a chart element.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7204,7 +7204,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.ChartFill#setSolidColor:member(1)",
-                  "docComment": "/**\n * Sets the fill formatting of a chart element to a uniform color.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n */\n",
+                  "docComment": "/**\n * Sets the fill formatting of a chart element to a uniform color.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param color - HTML color code representing the color of the background, in the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7285,7 +7285,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.ChartFont:class",
-              "docComment": "/**\n * This object represents the font attributes (font name, font size, color, etc.) for a chart object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * This object represents the font attributes (such as font name, font size, and color) for a chart object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -7747,7 +7747,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartFont#underline:member",
-                  "docComment": "/**\n * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8781,7 +8781,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartLegend#position:member",
-                  "docComment": "/**\n * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8951,7 +8951,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartLegend#visible:member",
-                  "docComment": "/**\n * Specifies if the ChartLegend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies if the chart legend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9063,7 +9063,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartLegendFormat#font:member",
-                  "docComment": "/**\n * Represents the font attributes such as font name, font size, color, etc. of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the font attributes such as font name, font size, and color of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9559,7 +9559,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.ChartLineFormat#clear:member(1)",
-                  "docComment": "/**\n * Clear the line format of a chart element.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Clears the line format of a chart element.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10316,7 +10316,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.ChartPointFormat:class",
-              "docComment": "/**\n * Represents formatting object for chart points.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents the formatting object for chart points.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -11436,7 +11436,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "excel!Excel.ChartSeriesBy:enum",
-              "docComment": "/**\n * Specifies whether the series are by rows or by columns. On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, \"auto\" will simply default to \"columns\".\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Specifies whether the series are by rows or by columns. In Excel on desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, \"auto\" will simply default to \"columns\".\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -11449,7 +11449,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartSeriesBy.auto:member",
-                  "docComment": "/**\n * On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, \"auto\" will simply default to \"columns\".\n */\n",
+                  "docComment": "/**\n * In Excel on desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, \"auto\" will simply default to \"columns\".\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12688,7 +12688,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.ChartTitleFormat:class",
-              "docComment": "/**\n * Provides access to the office art formatting for chart title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Provides access to the formatting options for a chart title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -12766,7 +12766,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartTitleFormat#font:member",
-                  "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15376,6 +15376,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.mergedRangeConflict:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "mergedRangeConflict = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"MergedRangeConflict\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "mergedRangeConflict",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.nonBlankCellOffSheet:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -15474,6 +15495,27 @@
                   ],
                   "releaseTag": "Public",
                   "name": "requestAborted",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.unsupportedFeature:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "unsupportedFeature = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"UnsupportedFeature\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "unsupportedFeature",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -15850,7 +15892,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ApplicationData#calculationMode:member",
-                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
+                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15923,7 +15965,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member",
-                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
+                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15965,7 +16007,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member",
-                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
+                      "docComment": "/**\n * Returns the calculation mode used in the workbook, as defined by the constants in `Excel.CalculationMode`. Possible values are: `Automatic`, where Excel controls recalculation; `AutomaticExceptTables`, where Excel controls recalculation but ignores changes in tables; `Manual`, where calculation is done when the user requests it.\n *\n * [Api set: ExcelApi 1.1 for get, 1.8 for set]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16100,7 +16142,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingCollectionLoadOptions#id:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16126,7 +16168,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingCollectionLoadOptions#type:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the type of the binding. See `Excel.BindingType` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16215,7 +16257,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingData#id:member",
-                      "docComment": "/**\n * Represents binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16241,7 +16283,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingData#type:member",
-                      "docComment": "/**\n * Returns the type of the binding. See Excel.BindingType for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns the type of the binding. See `Excel.BindingType` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16314,7 +16356,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingLoadOptions#id:member",
-                      "docComment": "/**\n * Represents binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the binding identifier.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16340,7 +16382,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.BindingLoadOptions#type:member",
-                      "docComment": "/**\n * Returns the type of the binding. See Excel.BindingType for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns the type of the binding. See `Excel.BindingType` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16594,7 +16636,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxesData#seriesAxis:member",
-                      "docComment": "/**\n * Represents the series axis of a 3-dimensional chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the series axis of a 3-D chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16717,7 +16759,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member",
-                      "docComment": "/**\n * Represents the series axis of a 3-dimensional chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the series axis of a 3-D chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16814,7 +16856,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member",
-                      "docComment": "/**\n * Represents the series axis of a 3-dimensional chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the series axis of a 3-D chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16911,7 +16953,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisData#majorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17016,7 +17058,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisData#minorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17401,7 +17443,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17506,7 +17548,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17602,7 +17644,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleData#format:member",
-                      "docComment": "/**\n * Specifies the formatting of chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the formatting of the chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17697,7 +17739,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member",
-                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17766,7 +17808,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member",
-                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17809,7 +17851,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData#font:member",
-                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17878,7 +17920,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member",
-                      "docComment": "/**\n * Specifies the formatting of chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the formatting of the chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17973,7 +18015,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisTitleUpdateData#format:member",
-                      "docComment": "/**\n * Specifies the formatting of chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the formatting of the chart axis title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -18095,7 +18137,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the major gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -18200,7 +18242,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member",
-                      "docComment": "/**\n * Returns a Gridlines object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns an object that represents the minor gridlines for the specified axis.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -18486,7 +18528,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the datalabels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the data labels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -18672,7 +18714,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -18841,7 +18883,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartData#dataLabels:member",
-                      "docComment": "/**\n * Represents the datalabels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the data labels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19031,7 +19073,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartData#title:member",
-                      "docComment": "/**\n * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19141,7 +19183,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelFormatData#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19210,7 +19252,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19253,7 +19295,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelFormatUpdateData#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for a chart data label.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19323,7 +19365,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelsData#position:member",
-                      "docComment": "/**\n * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19605,7 +19647,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member",
-                      "docComment": "/**\n * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19856,7 +19898,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member",
-                      "docComment": "/**\n * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20290,7 +20332,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontData#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20324,7 +20366,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartFontLoadOptions:interface",
-                  "docComment": "/**\n * This object represents the font attributes (font name, font size, color, etc.) for a chart object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * This object represents the font attributes (such as font name, font size, and color) for a chart object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20493,7 +20535,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontLoadOptions#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20665,7 +20707,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontUpdateData#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21183,7 +21225,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendData#position:member",
-                      "docComment": "/**\n * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21214,7 +21256,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendData#visible:member",
-                      "docComment": "/**\n * Specifies if the ChartLegend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if the chart legend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21380,7 +21422,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendFormatData#font:member",
-                      "docComment": "/**\n * Represents the font attributes such as font name, font size, color, etc. of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes such as font name, font size, and color of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21449,7 +21491,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendFormatLoadOptions#font:member",
-                      "docComment": "/**\n * Represents the font attributes such as font name, font size, color, etc. of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes such as font name, font size, and color of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21492,7 +21534,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendFormatUpdateData#font:member",
-                      "docComment": "/**\n * Represents the font attributes such as font name, font size, color, etc. of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes such as font name, font size, and color of a chart legend.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21614,7 +21656,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendLoadOptions#position:member",
-                      "docComment": "/**\n * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21640,7 +21682,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member",
-                      "docComment": "/**\n * Specifies if the ChartLegend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if the chart legend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21735,7 +21777,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendUpdateData#position:member",
-                      "docComment": "/**\n * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21766,7 +21808,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLegendUpdateData#visible:member",
-                      "docComment": "/**\n * Specifies if the ChartLegend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if the chart legend is visible.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21947,7 +21989,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartLoadOptions:interface",
-                  "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22013,7 +22055,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member",
-                      "docComment": "/**\n * Represents the datalabels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the data labels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22199,7 +22241,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartLoadOptions#title:member",
-                      "docComment": "/**\n * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22485,7 +22527,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface",
-                  "docComment": "/**\n * Represents formatting object for chart points.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the formatting object for chart points.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23665,7 +23707,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartTitleFormatData#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -23695,7 +23737,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface",
-                  "docComment": "/**\n * Provides access to the office art formatting for chart title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Provides access to the formatting options for a chart title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23734,7 +23776,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -23777,7 +23819,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member",
-                      "docComment": "/**\n * Represents the font attributes (font name, font size, color, etc.) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the font attributes (such as font name, font size, and color) for an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24329,7 +24371,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartUpdateData#dataLabels:member",
-                      "docComment": "/**\n * Represents the datalabels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the data labels on the chart.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24488,7 +24530,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartUpdateData#title:member",
-                      "docComment": "/**\n * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26478,7 +26520,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.NamedItemCollectionLoadOptions:interface",
-                  "docComment": "/**\n * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was reached.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26543,7 +26585,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemCollectionLoadOptions#type:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26710,7 +26752,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemData#type:member",
-                      "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
+                      "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26861,7 +26903,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemLoadOptions#type:member",
-                      "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
+                      "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26979,6 +27021,130 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `namedSheetViewCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NamedSheetViewCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NamedSheetViewCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.NamedSheetViewData",
+                          "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NamedSheetViewCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NamedSheetViewCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.NamedSheetViewData",
+                          "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `namedSheetView.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NamedSheetViewData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NamedSheetViewData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.NamedSheetViewUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the NamedSheetView object, for use in `namedSheetView.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NamedSheetViewUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NamedSheetViewUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -28122,7 +28288,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#color:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: HTML color code representing the color of the border line, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28148,7 +28314,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#sideIndex:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28174,7 +28340,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28200,7 +28366,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#weight:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28289,7 +28455,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderData#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28315,7 +28481,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderData#sideIndex:member",
-                      "docComment": "/**\n * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28346,7 +28512,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderData#style:member",
-                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28377,7 +28543,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderData#weight:member",
-                      "docComment": "/**\n * Specifies the weight of the border around a range. See Excel.BorderWeight for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28450,7 +28616,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderLoadOptions#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28476,7 +28642,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderLoadOptions#sideIndex:member",
-                      "docComment": "/**\n * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28502,7 +28668,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderLoadOptions#style:member",
-                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28528,7 +28694,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderLoadOptions#weight:member",
-                      "docComment": "/**\n * Specifies the weight of the border around a range. See Excel.BorderWeight for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28570,7 +28736,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderUpdateData#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28596,7 +28762,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderUpdateData#style:member",
-                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28627,7 +28793,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeBorderUpdateData#weight:member",
-                      "docComment": "/**\n * Specifies the weight of the border around a range. See Excel.BorderWeight for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28768,7 +28934,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#address:member",
-                      "docComment": "/**\n * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28794,7 +28960,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#addressLocal:member",
-                      "docComment": "/**\n * Specifies the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29055,7 +29221,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#text:member",
-                      "docComment": "/**\n * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Text values of the specified range. The text value will not depend on the cell width. The number sign (#) substitution that happens in the Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29081,7 +29247,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29154,7 +29320,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFillData#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the background, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29222,7 +29388,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFillLoadOptions#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the background, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29264,7 +29430,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFillUpdateData#color:member",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the background, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29306,7 +29472,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontData#bold:member",
-                      "docComment": "/**\n * Represents the bold status of font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the bold status of the font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29436,7 +29602,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontData#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29509,7 +29675,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontLoadOptions#bold:member",
-                      "docComment": "/**\n * Represents the bold status of font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the bold status of the font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29639,7 +29805,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontLoadOptions#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29681,7 +29847,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontUpdateData#bold:member",
-                      "docComment": "/**\n * Represents the bold status of font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the bold status of the font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29811,7 +29977,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontUpdateData#underline:member",
-                      "docComment": "/**\n * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29943,7 +30109,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member",
-                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29974,7 +30140,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member",
-                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30005,7 +30171,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatData#wrapText:member",
-                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30154,7 +30320,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member",
-                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30180,7 +30346,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatLoadOptions#verticalAlignment:member",
-                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30206,7 +30372,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member",
-                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30329,7 +30495,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment:member",
-                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30360,7 +30526,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment:member",
-                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30391,7 +30557,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFormatUpdateData#wrapText:member",
-                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30459,7 +30625,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#address:member",
-                      "docComment": "/**\n * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30485,7 +30651,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member",
-                      "docComment": "/**\n * Specifies the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30746,7 +30912,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#text:member",
-                      "docComment": "/**\n * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Text values of the specified range. The text value will not depend on the cell width. The number sign (#) substitution that happens in the Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30772,7 +30938,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30972,7 +31138,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeUpdateData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32387,7 +32553,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32627,7 +32793,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableColumnCollectionLoadOptions#values:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32794,7 +32960,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableColumnData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32940,7 +33106,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableColumnLoadOptions#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33008,7 +33174,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableColumnUpdateData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33216,7 +33382,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33442,7 +33608,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33518,7 +33684,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Represents a collection of all the rows that are part of the table.\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents a collection of all the rows that are part of the table.\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33583,7 +33749,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableRowCollectionLoadOptions#values:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33698,7 +33864,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableRowData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33727,7 +33893,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.TableRowLoadOptions:interface",
-                  "docComment": "/**\n * Represents a row in a table.\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents a row in a table.\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33792,7 +33958,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableRowLoadOptions#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33834,7 +34000,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableRowUpdateData#values:member",
-                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34187,7 +34353,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableUpdateData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34519,7 +34685,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorkbookData#names:member",
-                      "docComment": "/**\n * Represents a collection of workbook scoped named items (named ranges and constants).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents a collection of workbook-scoped named items (named ranges and constants).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34615,7 +34781,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.WorkbookLoadOptions:interface",
-                  "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35001,7 +35167,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: The Visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: The visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35354,7 +35520,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetData#visibility:member",
-                      "docComment": "/**\n * The Visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
+                      "docComment": "/**\n * The visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35559,7 +35725,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member",
-                      "docComment": "/**\n * The Visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
+                      "docComment": "/**\n * The visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -35668,7 +35834,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetUpdateData#visibility:member",
-                      "docComment": "/**\n * The Visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
+                      "docComment": "/**\n * The visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -36088,7 +36254,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.NamedItem#type:member",
-                  "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
+                  "docComment": "/**\n * Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.\n *\n * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36181,7 +36347,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.NamedItemCollection:class",
-              "docComment": "/**\n * A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was reached.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was reached.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -36231,7 +36397,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.NamedItemCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a NamedItem object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param name - Nameditem name.\n */\n",
+                  "docComment": "/**\n * Gets a `NamedItem` object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param name - Nameditem name.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36722,7 +36888,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#address:member",
-                  "docComment": "/**\n * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., \"Sheet1!A1:B4\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36749,7 +36915,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#addressLocal:member",
-                  "docComment": "/**\n * Specifies the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the range reference for the specified range in the language of the user.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36803,7 +36969,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#clear:member(1)",
-                  "docComment": "/**\n * Clear range values, format, fill, border, etc.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param applyTo - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.\n */\n",
+                  "docComment": "/**\n * Clear range values, format, fill, border, etc.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param applyTo - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36849,7 +37015,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#clear:member(2)",
-                  "docComment": "/**\n * Clear range values, format, fill, border, etc.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param applyToString - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.\n */\n",
+                  "docComment": "/**\n * Clear range values, format, fill, border, etc.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param applyToString - Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36976,7 +37142,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#delete:member(1)",
-                  "docComment": "/**\n * Deletes the cells associated with the range.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shift - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.\n */\n",
+                  "docComment": "/**\n * Deletes the cells associated with the range.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shift - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37022,7 +37188,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#delete:member(2)",
-                  "docComment": "/**\n * Deletes the cells associated with the range.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shiftString - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.\n */\n",
+                  "docComment": "/**\n * Deletes the cells associated with the range.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shiftString - Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37149,7 +37315,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#getBoundingRect:member(1)",
-                  "docComment": "/**\n * Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of \"B2:C5\" and \"D10:E15\" is \"B2:E15\".\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param anotherRange - The range object or address or range name.\n */\n",
+                  "docComment": "/**\n * Gets the smallest range object that encompasses the given ranges. For example, the `GetBoundingRect` of \"B2:C5\" and \"D10:E15\" is \"B2:E15\".\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param anotherRange - The range object, address, or range name.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37615,7 +37781,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#insert:member(1)",
-                  "docComment": "/**\n * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shift - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.\n */\n",
+                  "docComment": "/**\n * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new `Range` object at the now blank space.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shift - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37662,7 +37828,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#insert:member(2)",
-                  "docComment": "/**\n * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shiftString - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.\n */\n",
+                  "docComment": "/**\n * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new `Range` object at the now blank space.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param shiftString - Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38065,7 +38231,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#text:member",
-                  "docComment": "/**\n * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Text values of the specified range. The text value will not depend on the cell width. The number sign (#) substitution that happens in the Excel UI will not affect the text value returned by the API.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38182,7 +38348,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#values:member",
-                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38298,7 +38464,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeBorder#color:member",
-                  "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\").\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38600,7 +38766,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeBorder#sideIndex:member",
-                  "docComment": "/**\n * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38632,7 +38798,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeBorder#style:member",
-                  "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38694,7 +38860,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeBorder#weight:member",
-                  "docComment": "/**\n * Specifies the weight of the border around a range. See Excel.BorderWeight for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38810,7 +38976,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.RangeBorderCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a border object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param index - Index value of the border object to be retrieved. See Excel.BorderIndex for details.\n */\n",
+                  "docComment": "/**\n * Gets a border object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param index - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38857,7 +39023,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.RangeBorderCollection#getItem:member(2)",
-                  "docComment": "/**\n * Gets a border object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param indexString - Index value of the border object to be retrieved. See Excel.BorderIndex for details.\n */\n",
+                  "docComment": "/**\n * Gets a border object using its name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param indexString - Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39218,7 +39384,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFill#color:member",
-                  "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g., \"FFA500\") or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * HTML color code representing the color of the background, in the form #RRGGBB (e.g., \"FFA500\"), or as a named HTML color (e.g., \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39579,7 +39745,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFont#bold:member",
-                  "docComment": "/**\n * Represents the bold status of font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the bold status of the font.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40019,7 +40185,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFont#underline:member",
-                  "docComment": "/**\n * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40192,7 +40358,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFormat#horizontalAlignment:member",
-                  "docComment": "/**\n * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40501,7 +40667,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFormat#verticalAlignment:member",
-                  "docComment": "/**\n * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40533,7 +40699,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFormat#wrapText:member",
-                  "docComment": "/**\n * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41748,7 +41914,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Table#getHeaderRowRange:member(1)",
-                  "docComment": "/**\n * Gets the range object associated with header row of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the range object associated with the header row of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41808,7 +41974,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Table#getTotalRowRange:member(1)",
-                  "docComment": "/**\n * Gets the range object associated with totals row of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the range object associated with the totals row of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42221,7 +42387,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Table#style:member",
-                  "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Constant value that represents the table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42307,7 +42473,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableCollection#add:member(1)",
-                  "docComment": "/**\n * Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param address - A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3. Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]\n *\n * @param hasHeaders - Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.\n */\n",
+                  "docComment": "/**\n * Creates a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param address - A `Range` object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3. Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]\n *\n * @param hasHeaders - A boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e., when this property set to `false`), Excel will automatically generate a header and shift the data down by one row.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -42428,7 +42594,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a table by Name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - Name or ID of the table to be retrieved.\n */\n",
+                  "docComment": "/**\n * Gets a table by name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - Name or ID of the table to be retrieved.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43295,7 +43461,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.TableColumn#values:member",
-                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43351,7 +43517,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableColumnCollection#add:member(1)",
-                  "docComment": "/**\n * Adds a new column to the table.\n *\n * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]\n *\n * @param index - Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.\n *\n * @param values - Optional. A 2-dimensional array of unformatted values of the table column.\n *\n * @param name - Optional. Specifies the name of the new column. If null, the default name will be used.\n */\n",
+                  "docComment": "/**\n * Adds a new column to the table.\n *\n * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]\n *\n * @param index - Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.\n *\n * @param values - Optional. A 2D array of unformatted values of the table column.\n *\n * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43496,7 +43662,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableColumnCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a column object by Name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - Column Name or ID.\n */\n",
+                  "docComment": "/**\n * Gets a column object by name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - Column name or ID.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43806,7 +43972,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.TableRow:class",
-              "docComment": "/**\n * Represents a row in a table.\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents a row in a table.\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -44219,7 +44385,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.TableRow#values:member",
-                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts with a plus (\"+\"), minus (\"-\"), or equal sign (\"=\"), Excel interprets this value as a formula.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -44253,7 +44419,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.TableRowCollection:class",
-              "docComment": "/**\n * Represents a collection of all the rows that are part of the table.\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents a collection of all the rows that are part of the table.\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -44275,7 +44441,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableRowCollection#add:member(1)",
-                  "docComment": "/**\n * Adds one or more rows to the table. The return object will be the top of the newly added row(s).\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]\n *\n * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.\n *\n * @param values - Optional. A 2-dimensional array of unformatted values of the table row.\n */\n",
+                  "docComment": "/**\n * Adds one or more rows to the table. The return object will be the top of the newly added row(s).\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]\n *\n * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.\n *\n * @param values - Optional. A 2D array of unformatted values of the table row.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -44405,7 +44571,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.TableRowCollection#getItemAt:member(1)",
-                  "docComment": "/**\n * Gets a row based on its position in the collection.\n *\n * Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param index - Index value of the object to be retrieved. Zero-indexed.\n */\n",
+                  "docComment": "/**\n * Gets a row based on its position in the collection.\n *\n * Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow` object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param index - Index value of the object to be retrieved. Zero-indexed.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -44789,7 +44955,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.Workbook:class",
-              "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -45064,7 +45230,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Workbook#names:member",
-                  "docComment": "/**\n * Represents a collection of workbook scoped named items (named ranges and constants).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents a collection of workbook-scoped named items (named ranges and constants).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45429,7 +45595,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Worksheet#getCell:member(1)",
-                  "docComment": "/**\n * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param row - The row number of the cell to be retrieved. Zero-indexed.\n *\n * @param column - the column number of the cell to be retrieved. Zero-indexed.\n */\n",
+                  "docComment": "/**\n * Gets the `Range` object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param row - The row number of the cell to be retrieved. Zero-indexed.\n *\n * @param column - The column number of the cell to be retrieved. Zero-indexed.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45490,7 +45656,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Worksheet#getRange:member(1)",
-                  "docComment": "/**\n * Gets the range object, representing a single rectangular block of cells, specified by the address or name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param address - Optional. The string representing the address or name of the range. For example, \"A1:B2\". If not specified, the entire worksheet range is returned.\n */\n",
+                  "docComment": "/**\n * Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param address - Optional. The string representing the address or name of the range. For example, \"A1:B2\". If not specified, the entire worksheet range is returned.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45922,7 +46088,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Worksheet#visibility:member",
-                  "docComment": "/**\n * The Visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
+                  "docComment": "/**\n * The visibility of the worksheet.\n *\n * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45983,7 +46149,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.WorksheetCollection#add:member(1)",
-                  "docComment": "/**\n * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call \".activate() on it.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param name - Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.\n */\n",
+                  "docComment": "/**\n * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call `.activate()` on it.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param name - Optional. The name of the worksheet to be added. If specified, the name should be unique. If not specified, Excel determines the name of the new worksheet.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46087,7 +46253,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.WorksheetCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a worksheet object using its Name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - The Name or ID of the worksheet.\n */\n",
+                  "docComment": "/**\n * Gets a worksheet object using its name or ID.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param key - The name or ID of the worksheet.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

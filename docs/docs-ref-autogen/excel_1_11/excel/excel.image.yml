@@ -4,7 +4,7 @@ uid: 'excel!Excel.Image:class'
 package: excel!
 fullName: Excel.Image
 summary: |-
-  Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
+  Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`<!-- -->.
 
   \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -83,7 +83,7 @@ properties:
     package: excel!
     fullName: shape
     summary: |-
-      Returns the Shape object associated with the image.
+      Returns the `Shape` object associated with the image.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

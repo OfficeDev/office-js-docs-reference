@@ -155,9 +155,9 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
-      custom styles, the style name will be returned. For built-in styles, a string representing a value in the
-      BuiltInStyle enum will be returned.
+      Represents the style of the current range. If the styles of the cells are inconsistent, `null` will be returned.
+      For custom styles, the style name will be returned. For built-in styles, a string representing a value in the
+      `BuiltInStyle` enum will be returned.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -173,8 +173,9 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
+      Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
+      that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
+      or equal sign ("="), Excel interprets this value as a formula.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

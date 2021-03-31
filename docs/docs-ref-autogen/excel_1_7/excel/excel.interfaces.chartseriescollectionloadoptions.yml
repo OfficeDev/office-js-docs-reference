@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: |-
-      For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
+      For EACH ITEM in the collection: Represents the chart type of a series. See `Excel.ChartType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -47,7 +47,7 @@ properties:
     fullName: doughnutHoleSize
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
-      doughnutExploded charts. Throws an invalid argument exception on invalid charts.
+      doughnut exploded charts. Throws an `InvalidArgument` error on invalid charts.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -127,7 +127,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: |-
-      For EACH ITEM in the collection: Specifies the markers background color of a chart series.
+      For EACH ITEM in the collection: Specifies the marker background color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -142,7 +142,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: |-
-      For EACH ITEM in the collection: Specifies the markers foreground color of a chart series.
+      For EACH ITEM in the collection: Specifies the marker foreground color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -172,7 +172,7 @@ properties:
     package: excel!
     fullName: markerStyle
     summary: >-
-      For EACH ITEM in the collection: Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for
+      For EACH ITEM in the collection: Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle` for
       details.
 
 

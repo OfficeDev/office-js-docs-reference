@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.WorkbookLoadOptions
 summary: >-
-  Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To
+  Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 

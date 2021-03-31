@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      For EACH ITEM in the collection: The Visibility of the worksheet.
+      For EACH ITEM in the collection: The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting

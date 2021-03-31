@@ -31,9 +31,9 @@ properties:
     package: excel!
     fullName: showAxisFieldButtons
     summary: >-
-      Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds
-      to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is
-      available when a PivotChart is selected.
+      Specifies whether to display the axis field buttons on a PivotChart. The `showAxisFieldButtons` property
+      corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
+      which is available when a PivotChart is selected.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

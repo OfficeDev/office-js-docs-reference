@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: |-
-      For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
+      For EACH ITEM in the collection: Specifies the type of the chart. See `Excel.ChartType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      For EACH ITEM in the collection: Represents the datalabels on the chart.
+      For EACH ITEM in the collection: Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -106,7 +106,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      For EACH ITEM in the collection: The unique id of chart.
+      For EACH ITEM in the collection: The unique ID of chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -196,7 +196,7 @@ properties:
     package: excel!
     fullName: title
     summary: >-
-      For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility,
+      For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
       position, and formatting of the title.
 
 

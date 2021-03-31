@@ -59,7 +59,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: |-
-      HTML color code representation of the marker background color of data point (e.g., \#FF0000 represents Red).
+      HTML color code representation of the marker background color of a data point (e.g., \#FF0000 represents Red).
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: |-
-      HTML color code representation of the marker foreground color of data point (e.g., \#FF0000 represents Red).
+      HTML color code representation of the marker foreground color of a data point (e.g., \#FF0000 represents Red).
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -89,7 +89,7 @@ properties:
     package: excel!
     fullName: markerSize
     summary: |-
-      Represents marker size of data point.
+      Represents marker size of a data point.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -104,7 +104,7 @@ properties:
     package: excel!
     fullName: markerStyle
     summary: |-
-      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+      Represents marker style of a chart data point. See `Excel.ChartMarkerStyle` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

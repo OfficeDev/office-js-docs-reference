@@ -5,8 +5,8 @@ package: excel!
 fullName: Excel.CellPropertiesFont
 summary: >-
   Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
-  `getColumnProperties` or the `format.font` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!-- -->,
-  and `setColumnProperties`<!-- -->.
+  `getColumnProperties`<!-- -->, or the `format.font` input parameter of `setCellProperties`<!-- -->,
+  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 
 
   \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

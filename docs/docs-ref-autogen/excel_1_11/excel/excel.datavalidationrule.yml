@@ -4,8 +4,8 @@ uid: 'excel!Excel.DataValidationRule:interface'
 package: excel!
 fullName: Excel.DataValidationRule
 summary: >-
-  Data validation rule contains different types of data validation. You can only use one of them at a time according the
-  Excel.DataValidationType.
+  A data validation rule contains different types of data validation. You can only use one of them at a time according
+  the `Excel.DataValidationType`<!-- -->.
 
 
   \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -113,7 +113,7 @@ properties:
     package: excel!
     fullName: textLength
     summary: |-
-      TextLength data validation criteria.
+      Text length data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -143,7 +143,7 @@ properties:
     package: excel!
     fullName: wholeNumber
     summary: |-
-      WholeNumber data validation criteria.
+      Whole number data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

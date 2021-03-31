@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
 summary: >-
   Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's
-  top-left corner. They are ordered top to bottom and then left to right.
+  top-left corner. They are ordered top-to-bottom and then left-to-right.
 
 
   \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -67,7 +67,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      For EACH ITEM in the collection: Id of the PivotTable.
+      For EACH ITEM in the collection: ID of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

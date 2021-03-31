@@ -55,8 +55,8 @@ properties:
     package: excel!
     fullName: exclusive
     summary: >-
-      If true, filter *excludes* items that meet criteria. The default is false (filter to include items that meet
-      criteria).
+      If `true`<!-- -->, filter *excludes* items that meet criteria. The default is `false` (filter to include items
+      that meet criteria).
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -72,8 +72,8 @@ properties:
     package: excel!
     fullName: lowerBound
     summary: >-
-      The lower-bound of the range for the Between filter condition. Note: A numeric string is treated as a number when
-      being compared against other numeric strings.
+      The lower-bound of the range for the `between` filter condition. Note: A numeric string is treated as a number
+      when being compared against other numeric strings.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -89,7 +89,7 @@ properties:
     package: excel!
     fullName: substring
     summary: |-
-      The substring used for `BeginsWith`<!-- -->, `EndsWith`<!-- -->, and `Contains` filter conditions.
+      The substring used for `beginsWith`<!-- -->, `endsWith`<!-- -->, and `contains` filter conditions.
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -104,8 +104,8 @@ properties:
     package: excel!
     fullName: upperBound
     summary: >-
-      The upper-bound of the range for the Between filter condition. Note: A numeric string is treated as a number when
-      being compared against other numeric strings.
+      The upper-bound of the range for the `between` filter condition. Note: A numeric string is treated as a number
+      when being compared against other numeric strings.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

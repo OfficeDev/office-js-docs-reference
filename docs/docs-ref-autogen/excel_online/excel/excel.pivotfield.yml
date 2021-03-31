@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Id of the PivotField.
+      ID of the PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -119,7 +119,7 @@ methods:
       content: 'applyFilter(filter: Excel.PivotFilters): void;'
       parameters:
         - id: filter
-          description: A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
+          description: 'A configured specific PivotFilter, or a PivotFilters interface containing multiple configured filters.'
           type: '<xref uid="excel!Excel.PivotFilters:interface" />'
       return:
         type: void
@@ -244,8 +244,8 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: >-
-          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
-          if the field has any applied filters.
+          True if the field has a filter of type `filterType` applied. If `filterType` is not specified, `true` is
+          returned if the field has any applied filters.
   - name: isFiltered(filterTypeString)
     uid: 'excel!Excel.PivotField#isFiltered:member(2)'
     package: excel!
@@ -268,8 +268,8 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: >-
-          True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned
-          if the field has any applied filters.
+          True if the field has a filter of type `filterType` applied. If `filterType` is not specified, `true` is
+          returned if the field has any applied filters.
   - name: load(options)
     uid: 'excel!Excel.PivotField#load:member(1)'
     package: excel!

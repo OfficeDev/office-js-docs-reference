@@ -69,7 +69,7 @@ methods:
       content: 'getItem(id: string): Excel.Binding;'
       parameters:
         - id: id
-          description: Id of the binding object to be retrieved.
+          description: ID of the binding object to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Binding:class" />'

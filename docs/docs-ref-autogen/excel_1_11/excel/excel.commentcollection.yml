@@ -59,15 +59,15 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            The cell to which the comment is added. This can be a `Range` object or a string. If it's a string, it must
             contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
             range is larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
-            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
-            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, 1.11 for CommentRichContent object\]
+            The comment's content. This can be either a string or `CommentRichContent` object. Strings are used for
+            plain text. `CommentRichContent` objects allow for other comment features, such as mentions. \[Api set:
+            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
           description: >-
@@ -117,15 +117,15 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            The cell to which the comment is added. This can be a `Range` object or a string. If it's a string, it must
             contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
             range is larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: content
           description: >-
-            The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
-            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, 1.11 for CommentRichContent object\]
+            The comment's content. This can be either a string or `CommentRichContent` object. Strings are used for
+            plain text. `CommentRichContent` objects allow for other comment features, such as mentions. \[Api set:
+            ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString
           description: >-
@@ -208,9 +208,9 @@ methods:
       parameters:
         - id: cellAddress
           description: >-
-            The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain
-            the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
-            larger than one cell.
+            The cell which the comment is on. This can be a `Range` object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'

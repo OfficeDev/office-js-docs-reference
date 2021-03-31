@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: underline
     summary: |-
-      The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+      The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -214,6 +214,8 @@ items:
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: KeyboardDirection
+                uid: 'excel!Excel.KeyboardDirection:enum'
               - name: LabelFilterCondition
                 uid: 'excel!Excel.LabelFilterCondition:enum'
               - name: LinkedDataTypeState
@@ -649,6 +651,10 @@ items:
             uid: 'excel!Excel.NamedItemArrayValues:class'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:class'
+          - name: NamedSheetView
+            uid: 'excel!Excel.NamedSheetView:class'
+          - name: NamedSheetViewCollection
+            uid: 'excel!Excel.NamedSheetViewCollection:class'
           - name: NumberFormatInfo
             uid: 'excel!Excel.NumberFormatInfo:class'
           - name: PageBreak

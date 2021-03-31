@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: rule
     summary: |-
-      Specifies the Rule object on this conditional format.
+      Specifies the rule object on this conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

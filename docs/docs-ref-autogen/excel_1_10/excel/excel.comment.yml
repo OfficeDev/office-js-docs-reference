@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: creationDate
     summary: >-
-      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      Gets the creation time of the comment. Returns `null` if the comment was converted from a note, since the comment
       does not have a creation date.
 
 

@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Id of the RowColumnPivotHierarchy.
+      ID of the RowColumnPivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

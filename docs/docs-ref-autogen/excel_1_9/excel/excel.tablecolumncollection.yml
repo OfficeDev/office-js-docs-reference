@@ -79,10 +79,10 @@ methods:
             Columns with a higher index will be shifted to the side. Zero-indexed.
           type: number
         - id: values
-          description: Optional. A 2-dimensional array of unformatted values of the table column.
+          description: Optional. A 2D array of unformatted values of the table column.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
         - id: name
-          description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
+          description: 'Optional. Specifies the name of the new column. If `null`<!-- -->, the default name will be used.'
           type: string
       return:
         type: '<xref uid="excel!Excel.TableColumn:class" />'
@@ -128,7 +128,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: |-
-      Gets a column object by Name or ID.
+      Gets a column object by name or ID.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -138,7 +138,7 @@ methods:
       content: 'getItem(key: number | string): Excel.TableColumn;'
       parameters:
         - id: key
-          description: Column Name or ID.
+          description: Column name or ID.
           type: number | string
       return:
         type: '<xref uid="excel!Excel.TableColumn:class" />'
@@ -203,8 +203,12 @@ methods:
     uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: |-
-      Gets a column object by Name or ID. If the column does not exist, will return a null object.
+    summary: >-
+      Gets a column object by name or ID. If the column doesn't exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -214,7 +218,7 @@ methods:
       content: 'getItemOrNullObject(key: number | string): Excel.TableColumn;'
       parameters:
         - id: key
-          description: Column Name or ID.
+          description: Column name or ID.
           type: number | string
       return:
         type: '<xref uid="excel!Excel.TableColumn:class" />'

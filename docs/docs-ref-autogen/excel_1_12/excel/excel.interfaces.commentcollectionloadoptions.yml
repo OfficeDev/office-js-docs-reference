@@ -91,8 +91,8 @@ properties:
     package: excel!
     fullName: creationDate
     summary: >-
-      For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted
-      from a note, since the comment does not have a creation date.
+      For EACH ITEM in the collection: Gets the creation time of the comment. Returns `null` if the comment was
+      converted from a note, since the comment does not have a creation date.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -138,7 +138,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: >-
-      For EACH ITEM in the collection: The comment thread status. A value of "true" means the comment thread is
+      For EACH ITEM in the collection: The comment thread status. A value of `true` means that the comment thread is
       resolved.
 
 

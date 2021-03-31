@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: formula
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on.
+      The formula, if required, on which to evaluate the conditional format rule.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: formulaLocal
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on in the user's language.
+      The formula, if required, on which to evaluate the conditional format rule in the user's language.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: formulaR1C1
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
+      The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

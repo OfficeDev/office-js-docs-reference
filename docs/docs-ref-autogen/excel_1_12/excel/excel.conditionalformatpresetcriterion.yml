@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
 package: excel!
 fullName: Excel.ConditionalFormatPresetCriterion
 summary: |-
-  Represents the criteria for the Preset Criteria conditional format type.
+  Represents the criteria of the preset criteria conditional format type.
 
   \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

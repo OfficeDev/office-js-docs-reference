@@ -63,7 +63,7 @@ properties:
     package: excel!
     fullName: movingAveragePeriod
     summary: |-
-      Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
+      Represents the period of a chart trendline. Only applicable to trendlines with the type `MovingAverage`<!-- -->.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,8 +78,8 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
-      automatic values. The returned value is always a string
+      Represents the name of the trendline. Can be set to a string value, a `null` value represents automatic values.
+      The returned value is always a string
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: polynomialOrder
     summary: |-
-      Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
+      Represents the order of a chart trendline. Only applicable to trendlines with the type `Polynomial`<!-- -->.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

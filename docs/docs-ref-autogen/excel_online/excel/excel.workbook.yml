@@ -4,7 +4,7 @@ uid: 'excel!Excel.Workbook:class'
 package: excel!
 fullName: Excel.Workbook
 summary: >-
-  Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To
+  Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 
@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: autoSave
     summary: |-
-      Specifies if the workbook is in autosave mode.
+      Specifies if the workbook is in AutoSave mode.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -97,7 +97,7 @@ properties:
     package: excel!
     fullName: comments
     summary: |-
-      Represents a collection of Comments associated with the workbook.
+      Represents a collection of comments associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -171,7 +171,7 @@ properties:
     package: excel!
     fullName: isDirty
     summary: >-
-      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
+      Specifies if changes have been made since the workbook was last saved. You can set this property to `true` if you
       want to close a modified workbook without either saving it or being prompted to save it.
 
 
@@ -203,7 +203,7 @@ properties:
     package: excel!
     fullName: names
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
+      Represents a collection of workbook-scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -218,7 +218,7 @@ properties:
     package: excel!
     fullName: onAutoSaveSettingChanged
     summary: |-
-      Occurs when the autoSave setting is changed on the workbook.
+      Occurs when the AutoSave setting is changed on the workbook.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -389,7 +389,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      True if the workbook is open in Read-only mode.
+      Returns `true` if the workbook is open in read-only mode.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -404,7 +404,7 @@ properties:
     package: excel!
     fullName: settings
     summary: |-
-      Represents a collection of Settings associated with the workbook.
+      Represents a collection of settings associated with the workbook.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -419,7 +419,7 @@ properties:
     package: excel!
     fullName: slicers
     summary: |-
-      Represents a collection of Slicers associated with the workbook.
+      Represents a collection of slicers associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -543,7 +543,7 @@ properties:
     fullName: usePrecisionAsDisplayed
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
-      Data will permanently lose accuracy when switching this property from false to true.
+      Data will permanently lose accuracy when switching this property from `false` to `true`<!-- -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -685,8 +685,13 @@ methods:
     uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
     package: excel!
     fullName: getActiveChartOrNullObject()
-    summary: |-
-      Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active chart, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -719,8 +724,13 @@ methods:
     uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
     package: excel!
     fullName: getActiveSlicerOrNullObject()
-    summary: |-
-      Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
+    summary: >-
+      Gets the currently active slicer in the workbook. If there is no active slicer, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -736,8 +746,9 @@ methods:
     package: excel!
     fullName: getIsActiveCollabSession()
     summary: >-
-      True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
-      between when the workbook status changes and when the changes are reflected on the result of the method.
+      Returns `true` if the workbook is being edited by multiple users (through co-authoring). Please be aware there
+      might be some delay between when the workbook status changes and when the changes are reflected on the result of
+      the method.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -790,8 +801,8 @@ methods:
     package: excel!
     fullName: getSelectedRanges()
     summary: >-
-      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
-      RangeAreas object that represents all the selected ranges.
+      Gets the currently selected one or more ranges from the workbook. Unlike `getSelectedRange()`<!-- -->, this method
+      returns a `RangeAreas` object that represents all the selected ranges.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -904,7 +915,7 @@ methods:
       content: 'save(saveBehavior?: Excel.SaveBehavior): void;'
       parameters:
         - id: saveBehavior
-          description: workbook save behavior.
+          description: Workbook save behavior.
           type: '<xref uid="excel!Excel.SaveBehavior:enum" />'
       return:
         type: void
@@ -939,7 +950,7 @@ methods:
       content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
       parameters:
         - id: saveBehaviorString
-          description: workbook save behavior.
+          description: Workbook save behavior.
           type: '"Save" | "Prompt"'
       return:
         type: void

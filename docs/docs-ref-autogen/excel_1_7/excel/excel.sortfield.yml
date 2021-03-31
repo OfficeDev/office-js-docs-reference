@@ -62,7 +62,7 @@ properties:
     package: excel!
     fullName: icon
     summary: |-
-      Specifies the icon that is the target of the condition if the sorting is on the cell's icon.
+      Specifies the icon that is the target of the condition, if the sorting is on the cell's icon.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

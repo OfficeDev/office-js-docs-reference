@@ -4,7 +4,7 @@ uid: 'excel!Excel.TimelineStyle:class'
 package: excel!
 fullName: Excel.TimelineStyle
 summary: |-
-  Represents a Timeline style, which defines style elements by region in the Timeline.
+  Represents a `TimelineStyle`<!-- -->, which defines style elements by region in the timeline.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the TimelineStyle.
+      Gets the name of the timeline style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this TimelineStyle object is read-only.
+      Specifies if this `TimelineStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -62,7 +62,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: |-
-      Deletes the TableStyle.
+      Deletes the table style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,7 +78,7 @@ methods:
     package: excel!
     fullName: duplicate()
     summary: |-
-      Creates a duplicate of this TimelineStyle with copies of all the style elements.
+      Creates a duplicate of this timeline style with copies of all the style elements.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -88,7 +88,7 @@ methods:
       content: 'duplicate(): Excel.TimelineStyle;'
       return:
         type: '<xref uid="excel!Excel.TimelineStyle:class" />'
-        description: The new TimelineStyle object that has been duplicated from this TimelineStyle.
+        description: The new `TimelineStyle` object that has been duplicated from this timeline style.
   - name: load(options)
     uid: 'excel!Excel.TimelineStyle#load:member(1)'
     package: excel!

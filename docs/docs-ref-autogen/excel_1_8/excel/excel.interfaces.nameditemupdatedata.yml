@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: formula
     summary: |-
-      The formula of the named item. Formula always starts with a '=' sign.
+      The formula of the named item. Formulas always start with an equal sign ("=").
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

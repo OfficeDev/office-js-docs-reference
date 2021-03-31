@@ -26,11 +26,11 @@
 |[FilterCriteria](/javascript/api/excel/excel.filtercriteria)|[color](/javascript/api/excel/excel.filtercriteria#color)|The HTML color string used to filter cells.|
 ||[criterion1](/javascript/api/excel/excel.filtercriteria#criterion1)|The first criterion used to filter data.|
 ||[criterion2](/javascript/api/excel/excel.filtercriteria#criterion2)|The second criterion used to filter data.|
-||[dynamicCriteria](/javascript/api/excel/excel.filtercriteria#dynamiccriteria)|The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column.|
+||[dynamicCriteria](/javascript/api/excel/excel.filtercriteria#dynamiccriteria)|The dynamic criteria from the `Excel.DynamicFilterCriteria` set to apply on this column.|
 ||[filterOn](/javascript/api/excel/excel.filtercriteria#filteron)|The property used by the filter to determine whether the values should stay visible.|
 ||[icon](/javascript/api/excel/excel.filtercriteria#icon)|The icon used to filter cells.|
-||[operator](/javascript/api/excel/excel.filtercriteria#operator)|The operator used to combine criterion 1 and 2 when using "custom" filtering.|
-||[values](/javascript/api/excel/excel.filtercriteria#values)|The set of values to be used as part of "values" filtering.|
+||[operator](/javascript/api/excel/excel.filtercriteria#operator)|The operator used to combine criterion 1 and 2 when using `custom` filtering.|
+||[values](/javascript/api/excel/excel.filtercriteria#values)|The set of values to be used as part of `values` filtering.|
 |[FilterDatetime](/javascript/api/excel/excel.filterdatetime)|[date](/javascript/api/excel/excel.filterdatetime#date)|The date in ISO8601 format used to filter data.|
 ||[specificity](/javascript/api/excel/excel.filterdatetime#specificity)|How specific the date should be used to keep data.|
 |[FiveArrowsGraySet](/javascript/api/excel/excel.fivearrowsgrayset)|[grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#graydownarrow)||
@@ -471,11 +471,11 @@
 ||[threeTriangles](/javascript/api/excel/excel.iconcollections#threetriangles)||
 |[Range](/javascript/api/excel/excel.range)|[columnHidden](/javascript/api/excel/excel.range#columnhidden)|Represents if all columns of the current range are hidden.|
 ||[formulasR1C1](/javascript/api/excel/excel.range#formulasr1c1)|Represents the formula in R1C1-style notation.|
-||[getColumnsAfter(count?: number)](/javascript/api/excel/excel.range#getcolumnsafter-count-)|Gets a certain number of columns to the right of the current Range object.|
-||[getColumnsBefore(count?: number)](/javascript/api/excel/excel.range#getcolumnsbefore-count-)|Gets a certain number of columns to the left of the current Range object.|
-||[getResizedRange(deltaRows: number, deltaColumns: number)](/javascript/api/excel/excel.range#getresizedrange-deltarows--deltacolumns-)|Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
-||[getRowsAbove(count?: number)](/javascript/api/excel/excel.range#getrowsabove-count-)|Gets a certain number of rows above the current Range object.|
-||[getRowsBelow(count?: number)](/javascript/api/excel/excel.range#getrowsbelow-count-)|Gets a certain number of rows below the current Range object.|
+||[getColumnsAfter(count?: number)](/javascript/api/excel/excel.range#getcolumnsafter-count-)|Gets a certain number of columns to the right of the current `Range` object.|
+||[getColumnsBefore(count?: number)](/javascript/api/excel/excel.range#getcolumnsbefore-count-)|Gets a certain number of columns to the left of the current `Range` object.|
+||[getResizedRange(deltaRows: number, deltaColumns: number)](/javascript/api/excel/excel.range#getresizedrange-deltarows--deltacolumns-)|Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
+||[getRowsAbove(count?: number)](/javascript/api/excel/excel.range#getrowsabove-count-)|Gets a certain number of rows above the current `Range` object.|
+||[getRowsBelow(count?: number)](/javascript/api/excel/excel.range#getrowsbelow-count-)|Gets a certain number of rows below the current `Range` object.|
 ||[getUsedRange(valuesOnly?: boolean)](/javascript/api/excel/excel.range#getusedrange-valuesonly-)|Returns the used range of the given range object.|
 ||[merge(across?: boolean)](/javascript/api/excel/excel.range#merge-across-)|Merge the range cells into one region in the worksheet.|
 ||[hidden](/javascript/api/excel/excel.range#hidden)|Represents if all cells of the current range are hidden.|
@@ -487,13 +487,13 @@
 ||[columnWidth](/javascript/api/excel/excel.rangeformat#columnwidth)|Specifies the width of all colums within the range.|
 ||[protection](/javascript/api/excel/excel.rangeformat#protection)|Returns the format protection object for a range.|
 ||[rowHeight](/javascript/api/excel/excel.rangeformat#rowheight)|The height of all rows in the range.|
-|[RangeReference](/javascript/api/excel/excel.rangereference)|[address](/javascript/api/excel/excel.rangereference#address)|The address of the range; for example 'SheetName!A1:B5'.|
+|[RangeReference](/javascript/api/excel/excel.rangereference)|[address](/javascript/api/excel/excel.rangereference#address)|The address of the range, for example "SheetName!A1:B5".|
 |[RangeSort](/javascript/api/excel/excel.rangesort)|[apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation, method?: Excel.SortMethod)](/javascript/api/excel/excel.rangesort#apply-fields--matchcase--hasheaders--orientation--method-)|Perform a sort operation.|
-|[SelectionChangedEventArgs](/javascript/api/excel/excel.selectionchangedeventargs)|[workbook](/javascript/api/excel/excel.selectionchangedeventargs#workbook)|Gets the workbook object that raised the SelectionChanged event.|
+|[SelectionChangedEventArgs](/javascript/api/excel/excel.selectionchangedeventargs)|[workbook](/javascript/api/excel/excel.selectionchangedeventargs#workbook)|Gets the workbook object that raised the selection changed event.|
 |[SortField](/javascript/api/excel/excel.sortfield)|[ascending](/javascript/api/excel/excel.sortfield#ascending)|Specifies if the sorting is done in an ascending fashion.|
 ||[color](/javascript/api/excel/excel.sortfield#color)|Specifies the color that is the target of the condition if the sorting is on font or cell color.|
 ||[dataOption](/javascript/api/excel/excel.sortfield#dataoption)|Represents additional sorting options for this field.|
-||[icon](/javascript/api/excel/excel.sortfield#icon)|Specifies the icon that is the target of the condition if the sorting is on the cell's icon.|
+||[icon](/javascript/api/excel/excel.sortfield#icon)|Specifies the icon that is the target of the condition, if the sorting is on the cell's icon.|
 ||[key](/javascript/api/excel/excel.sortfield#key)|Specifies the column (or row, depending on the sort orientation) that the condition is on.|
 ||[sortOn](/javascript/api/excel/excel.sortfield#sorton)|Specifies the type of sorting of this condition.|
 |[Table](/javascript/api/excel/excel.table)|[clearFilters()](/javascript/api/excel/excel.table#clearfilters--)|Clears all the filters currently applied on the table.|
@@ -501,12 +501,12 @@
 ||[sort](/javascript/api/excel/excel.table#sort)|Represents the sorting for the table.|
 ||[worksheet](/javascript/api/excel/excel.table#worksheet)|The worksheet containing the current table.|
 ||[reapplyFilters()](/javascript/api/excel/excel.table#reapplyfilters--)|Reapplies all the filters currently on the table.|
-|[TableColumn](/javascript/api/excel/excel.tablecolumn)|[filter](/javascript/api/excel/excel.tablecolumn#filter)|Retrieve the filter applied to the column.|
+|[TableColumn](/javascript/api/excel/excel.tablecolumn)|[filter](/javascript/api/excel/excel.tablecolumn#filter)|Retrieves the filter applied to the column.|
 |[TableSort](/javascript/api/excel/excel.tablesort)|[apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod)](/javascript/api/excel/excel.tablesort#apply-fields--matchcase--method-)|Perform a sort operation.|
 ||[clear()](/javascript/api/excel/excel.tablesort#clear--)|Clears the sorting that is currently on the table.|
 ||[fields](/javascript/api/excel/excel.tablesort#fields)|Specifies the current conditions used to last sort the table.|
 ||[matchCase](/javascript/api/excel/excel.tablesort#matchcase)|Specifies if the casing impacts the last sort of the table.|
-||[method](/javascript/api/excel/excel.tablesort#method)|Represents Chinese character ordering method last used to sort the table.|
+||[method](/javascript/api/excel/excel.tablesort#method)|Represents the Chinese character ordering method last used to sort the table.|
 ||[reapply()](/javascript/api/excel/excel.tablesort#reapply--)|Reapplies the current sorting parameters to the table.|
 |[ThreeArrowsGraySet](/javascript/api/excel/excel.threearrowsgrayset)|[grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#graydownarrow)||
 ||[graySideArrow](/javascript/api/excel/excel.threearrowsgrayset#graysidearrow)||
@@ -541,18 +541,18 @@
 |[Workbook](/javascript/api/excel/excel.workbook)|[functions](/javascript/api/excel/excel.workbook#functions)|Represents a collection of worksheet functions that can be used for computation.|
 ||[onSelectionChanged](/javascript/api/excel/excel.workbook#onselectionchanged)|Occurs when the selection in the document is changed.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[getUsedRange(valuesOnly?: boolean)](/javascript/api/excel/excel.worksheet#getusedrange-valuesonly-)|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.|
-||[protection](/javascript/api/excel/excel.worksheet#protection)|Returns sheet protection object for a worksheet.|
+||[protection](/javascript/api/excel/excel.worksheet#protection)|Returns the sheet protection object for a worksheet.|
 |[WorksheetProtection](/javascript/api/excel/excel.worksheetprotection)|[protect(options?: Excel.WorksheetProtectionOptions, password?: string)](/javascript/api/excel/excel.worksheetprotection#protect-options--password-)|Protects a worksheet.|
 ||[options](/javascript/api/excel/excel.worksheetprotection#options)|Specifies the protection options for the worksheet.|
 ||[protected](/javascript/api/excel/excel.worksheetprotection#protected)|Specifies if the worksheet is protected.|
-|[WorksheetProtectionOptions](/javascript/api/excel/excel.worksheetprotectionoptions)|[allowAutoFilter](/javascript/api/excel/excel.worksheetprotectionoptions#allowautofilter)|Represents the worksheet protection option of allowing using auto filter feature.|
-||[allowDeleteColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowdeletecolumns)|Represents the worksheet protection option of allowing deleting columns.|
-||[allowDeleteRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowdeleterows)|Represents the worksheet protection option of allowing deleting rows.|
-||[allowFormatCells](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatcells)|Represents the worksheet protection option of allowing formatting cells.|
-||[allowFormatColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatcolumns)|Represents the worksheet protection option of allowing formatting columns.|
-||[allowFormatRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatrows)|Represents the worksheet protection option of allowing formatting rows.|
-||[allowInsertColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowinsertcolumns)|Represents the worksheet protection option of allowing inserting columns.|
-||[allowInsertHyperlinks](/javascript/api/excel/excel.worksheetprotectionoptions#allowinserthyperlinks)|Represents the worksheet protection option of allowing inserting hyperlinks.|
-||[allowInsertRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowinsertrows)|Represents the worksheet protection option of allowing inserting rows.|
-||[allowPivotTables](/javascript/api/excel/excel.worksheetprotectionoptions#allowpivottables)|Represents the worksheet protection option of allowing using PivotTable feature.|
-||[allowSort](/javascript/api/excel/excel.worksheetprotectionoptions#allowsort)|Represents the worksheet protection option of allowing using sort feature.|
+|[WorksheetProtectionOptions](/javascript/api/excel/excel.worksheetprotectionoptions)|[allowAutoFilter](/javascript/api/excel/excel.worksheetprotectionoptions#allowautofilter)|Represents the worksheet protection option allowing use of the AutoFilter feature.|
+||[allowDeleteColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowdeletecolumns)|Represents the worksheet protection option allowing deleting of columns.|
+||[allowDeleteRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowdeleterows)|Represents the worksheet protection option allowing deleting of rows.|
+||[allowFormatCells](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatcells)|Represents the worksheet protection option allowing formatting of cells.|
+||[allowFormatColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatcolumns)|Represents the worksheet protection option allowing formatting of columns.|
+||[allowFormatRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowformatrows)|Represents the worksheet protection option allowing formatting of rows.|
+||[allowInsertColumns](/javascript/api/excel/excel.worksheetprotectionoptions#allowinsertcolumns)|Represents the worksheet protection option allowing inserting of columns.|
+||[allowInsertHyperlinks](/javascript/api/excel/excel.worksheetprotectionoptions#allowinserthyperlinks)|Represents the worksheet protection option allowing inserting of hyperlinks.|
+||[allowInsertRows](/javascript/api/excel/excel.worksheetprotectionoptions#allowinsertrows)|Represents the worksheet protection option allowing inserting of rows.|
+||[allowPivotTables](/javascript/api/excel/excel.worksheetprotectionoptions#allowpivottables)|Represents the worksheet protection option allowing use of the PivotTable feature.|
+||[allowSort](/javascript/api/excel/excel.worksheetprotectionoptions#allowsort)|Represents the worksheet protection option allowing use of the sort feature.|

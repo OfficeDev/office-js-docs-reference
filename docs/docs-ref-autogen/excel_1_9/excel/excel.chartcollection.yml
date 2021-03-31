@@ -205,14 +205,14 @@ methods:
       content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       parameters:
         - id: type
-          description: Represents the type of a chart. See Excel.ChartType for details.
+          description: Represents the type of a chart. See `Excel.ChartType` for details.
           type: '<xref uid="excel!Excel.ChartType:enum" />'
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
-            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy`
             for details.
           type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
@@ -270,7 +270,7 @@ methods:
         sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       parameters:
         - id: typeString
-          description: Represents the type of a chart. See Excel.ChartType for details.
+          description: Represents the type of a chart. See `Excel.ChartType` for details.
           type: >-
             "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
             "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
@@ -288,11 +288,11 @@ methods:
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
         - id: seriesBy
           description: >-
-            Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
+            Optional. Specifies the way columns or rows are used as data series on the chart. See `Excel.ChartSeriesBy`
             for details.
           type: '"Auto" | "Columns" | "Rows"'
       return:
@@ -397,7 +397,10 @@ methods:
     fullName: getItemOrNullObject(name)
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
-      the chart does not exist, will return a null object.
+      the chart doesn't exist, then this function will return an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

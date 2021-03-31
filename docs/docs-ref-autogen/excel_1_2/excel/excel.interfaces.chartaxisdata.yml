@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: majorGridlines
     summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis.
+      Returns an object that represents the major gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: minorGridlines
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis.
+      Returns an object that represents the minor gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

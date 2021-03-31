@@ -324,7 +324,7 @@ methods:
       content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
       parameters:
         - id: values
-          description: The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
+          description: The list of values to show. This must be an array of strings or an array of `Excel.FilterDateTime` objects.
           type: 'Array&lt;string | <xref uid="excel!Excel.FilterDatetime:interface" />&gt;'
       return:
         type: void

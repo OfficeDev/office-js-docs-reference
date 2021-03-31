@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: caption
     summary: |-
-      Represents the caption of slicer.
+      Represents the caption of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,8 +29,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
+      Represents the height, in points, of the slicer. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Represents the unique id of slicer.
+      Represents the unique ID of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: isFilterCleared
     summary: |-
-      True if all filters currently applied on the slicer are cleared.
+      Value is `true` if all filters currently applied on the slicer are cleared.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -76,8 +76,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
+      `InvalidArgument` error when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Represents the name of slicer.
+      Represents the name of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: slicerItems
     summary: |-
-      Represents the collection of SlicerItems that are part of the slicer.
+      Represents the collection of slicer items that are part of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -140,7 +140,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
 
@@ -158,8 +158,8 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
-      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an
+      `InvalidArgument` error when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -175,8 +175,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
-      format." exception when set with negative value or zero as input.
+      Represents the width, in points, of the slicer. Throws an `InvalidArgument` error when set with a negative value
+      or zero as an input.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

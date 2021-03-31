@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: names
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
+      Represents a collection of workbook-scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

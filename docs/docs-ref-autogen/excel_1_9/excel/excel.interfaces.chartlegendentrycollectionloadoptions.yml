@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
 summary: |-
-  Represents a collection of legendEntries.
+  Represents a collection of legend entries.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: height
     summary: |-
-      For EACH ITEM in the collection: Specifies the height of the legendEntry on the chart legend.
+      For EACH ITEM in the collection: Specifies the height of the legend entry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: index
     summary: |-
-      For EACH ITEM in the collection: Specifies the index of the legendEntry in the chart legend.
+      For EACH ITEM in the collection: Specifies the index of the legend entry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: left
     summary: |-
-      For EACH ITEM in the collection: Specifies the left of a chart legendEntry.
+      For EACH ITEM in the collection: Specifies the left value of a chart legend entry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: top
     summary: |-
-      For EACH ITEM in the collection: Specifies the top of a chart legendEntry.
+      For EACH ITEM in the collection: Specifies the top of a chart legend entry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -91,7 +91,7 @@ properties:
     package: excel!
     fullName: visible
     summary: |-
-      For EACH ITEM in the collection: Represents the visible of a chart legend entry.
+      For EACH ITEM in the collection: Represents the visibility of a chart legend entry.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -106,7 +106,7 @@ properties:
     package: excel!
     fullName: width
     summary: |-
-      For EACH ITEM in the collection: Represents the width of the legendEntry on the chart Legend.
+      For EACH ITEM in the collection: Represents the width of the legend entry on the chart Legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

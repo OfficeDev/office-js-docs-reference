@@ -89,7 +89,7 @@ properties:
     package: excel!
     fullName: underline
     summary: |-
-      Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
+      Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
