@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: address
     summary: |-
-      Represents the url target for the hyperlink.
+      Represents the URL target for the hyperlink.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

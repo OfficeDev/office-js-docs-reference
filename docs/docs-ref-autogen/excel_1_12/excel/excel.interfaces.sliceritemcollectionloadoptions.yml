@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.SlicerItemCollectionLoadOptions
 summary: |-
-  Represents a collection of all the slicer item objects on the slicer.
+  Represents a collection of all the slicer item objects in the slicer.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: hasData
     summary: |-
-      For EACH ITEM in the collection: True if the slicer item has data.
+      For EACH ITEM in the collection: Value is `true` if the slicer item has data.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,9 +46,9 @@ properties:
     package: excel!
     fullName: isSelected
     summary: >-
-      For EACH ITEM in the collection: True if the slicer item is selected. Setting this value will not clear other
-      SlicerItems' selected state. By default, if the slicer item is the only one selected, when it is deselected, all
-      items will be selected.
+      For EACH ITEM in the collection: Value is `true` if the slicer item is selected. Setting this value will not clear
+      the selected state of other slicer items. By default, if the slicer item is the only one selected, when it is
+      deselected, all items will be selected.
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -79,7 +79,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      For EACH ITEM in the collection: Represents the title displayed in the UI.
+      For EACH ITEM in the collection: Represents the title displayed in the Excel UI.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

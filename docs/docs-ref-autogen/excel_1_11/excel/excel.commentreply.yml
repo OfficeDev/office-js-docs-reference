@@ -146,7 +146,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: |-
-      The comment reply status. A value of "true" means the reply is in the resolved state.
+      The comment reply status. A value of `true` means the reply is in the resolved state.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: altTextDescription
     summary: |-
-      Specifies the alternative description text for a Shape object.
+      Specifies the alternative description text for a `Shape` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: altTextTitle
     summary: |-
-      Specifies the alternative title text for a Shape object.
+      Specifies the alternative title text for a `Shape` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -59,8 +59,8 @@ properties:
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
-      if the shape type is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns
+      `null` if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -139,8 +139,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -156,8 +156,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -233,8 +233,8 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -265,8 +265,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value
+      or zero as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

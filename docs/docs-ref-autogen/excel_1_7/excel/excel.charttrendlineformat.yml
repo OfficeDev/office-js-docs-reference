@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartTrendlineFormat:class'
 package: excel!
 fullName: Excel.ChartTrendlineFormat
 summary: |-
-  Represents the format properties for chart trendline.
+  Represents the format properties for the chart trendline.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

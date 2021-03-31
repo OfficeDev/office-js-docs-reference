@@ -4,7 +4,7 @@ uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
 package: excel!
 fullName: Excel.BindingDataChangedEventArgs
 summary: |-
-  Provides information about the binding that raised the DataChanged event.
+  Provides information about the binding that raised the data changed event.
 
   \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

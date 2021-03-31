@@ -59,8 +59,8 @@ methods:
     package: excel!
     fullName: 'add(name, index)'
     summary: >-
-      Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble
-      sizes for it (depending on chart type).
+      Add a new series to the collection. The new added series is not visible until values, x-axis values, or bubble
+      sizes for it are set (depending on chart type).
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

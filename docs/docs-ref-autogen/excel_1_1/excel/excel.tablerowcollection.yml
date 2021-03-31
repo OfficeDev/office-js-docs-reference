@@ -7,9 +7,9 @@ summary: >-
   Represents a collection of all the rows that are part of the table.
 
 
-  Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
-  represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are
-  added, a table row will continue to point at the index for which it was created.
+  Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
+  object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new
+  rows are added, a table row will continue to point at the index for which it was created.
 
 
   \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -68,9 +68,9 @@ methods:
       Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
 
-      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
-      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
-      are added, a table row will continue to point at the index for which it was created.
+      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
+      object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
+      new rows are added, a table row will continue to point at the index for which it was created.
 
 
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
@@ -89,7 +89,7 @@ methods:
             Any rows below the inserted row are shifted downwards. Zero-indexed.
           type: number
         - id: values
-          description: Optional. A 2-dimensional array of unformatted values of the table row.
+          description: Optional. A 2D array of unformatted values of the table row.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'
@@ -122,9 +122,9 @@ methods:
       Gets a row based on its position in the collection.
 
 
-      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
-      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
-      are added, a table row will continue to point at the index for which it was created.
+      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
+      object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
+      new rows are added, a table row will continue to point at the index for which it was created.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

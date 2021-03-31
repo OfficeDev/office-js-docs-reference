@@ -47,7 +47,7 @@ properties:
     package: excel!
     fullName: source
     summary: |-
-      Gets the source of the event. See Excel.EventSource for details.
+      Gets the source of the event. See `Excel.EventSource` for details.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -62,7 +62,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -77,7 +77,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: |-
-      Gets the id of the worksheet in which the data changed.
+      Gets the ID of the worksheet in which the data changed.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

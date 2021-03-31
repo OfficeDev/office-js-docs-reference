@@ -32,7 +32,7 @@ methods:
     package: excel!
     fullName: clear()
     summary: |-
-      Clear the fill color of a chart element.
+      Clears the fill color of a chart element.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,7 +78,7 @@ methods:
       parameters:
         - id: color
           description: >-
-            HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a
+            HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500") or as a
             named HTML color (e.g., "orange").
           type: string
       return:

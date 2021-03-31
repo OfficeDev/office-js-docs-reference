@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
+      Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for

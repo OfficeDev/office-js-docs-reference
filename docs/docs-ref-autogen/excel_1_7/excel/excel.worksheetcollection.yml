@@ -173,7 +173,7 @@ methods:
     fullName: add(name)
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
-      to activate the newly added worksheet, call ".activate() on it.
+      to activate the newly added worksheet, call `.activate()` on it.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -185,7 +185,7 @@ methods:
       parameters:
         - id: name
           description: >-
-            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
+            Optional. The name of the worksheet to be added. If specified, the name should be unique. If not specified,
             Excel determines the name of the new worksheet.
           type: string
       return:
@@ -259,7 +259,7 @@ methods:
       content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If `true`<!-- -->, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -279,7 +279,7 @@ methods:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If `true`<!-- -->, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -325,7 +325,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: |-
-      Gets a worksheet object using its Name or ID.
+      Gets a worksheet object using its name or ID.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -335,7 +335,7 @@ methods:
       content: 'getItem(key: string): Excel.Worksheet;'
       parameters:
         - id: key
-          description: The Name or ID of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -344,8 +344,13 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: |-
-      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
+    summary: >-
+      Gets a worksheet object using its name or ID. If the worksheet does not exist, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -355,7 +360,7 @@ methods:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
       parameters:
         - id: key
-          description: The Name or ID of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
@@ -375,7 +380,7 @@ methods:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
       parameters:
         - id: visibleOnly
-          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If `true`<!-- -->, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'

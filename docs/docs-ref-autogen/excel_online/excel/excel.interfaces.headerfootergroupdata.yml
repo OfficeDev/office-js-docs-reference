@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: state
     summary: |-
-      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
+      The state by which headers/footers are set. See `Excel.HeaderFooterState` for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

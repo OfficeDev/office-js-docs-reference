@@ -4,8 +4,8 @@ uid: 'excel!Excel.ChartFormatString:class'
 package: excel!
 fullName: Excel.ChartFormatString
 summary: >-
-  Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object,
-  etc.
+  Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle`
+  object.
 
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -33,7 +33,7 @@ properties:
     package: excel!
     fullName: font
     summary: |-
-      Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
+      Represents the font attributes, such as font name, font size, and color of a chart characters object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

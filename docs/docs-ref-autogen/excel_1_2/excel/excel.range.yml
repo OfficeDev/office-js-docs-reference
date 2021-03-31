@@ -21,7 +21,7 @@ properties:
     package: excel!
     fullName: address
     summary: |-
-      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
+      Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -36,7 +36,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: |-
-      Specifies the range reference for the specified range in the language of the user.
+      Represents the range reference for the specified range in the language of the user.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -345,8 +345,8 @@ properties:
     package: excel!
     fullName: text
     summary: >-
-      Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API.
+      Text values of the specified range. The text value will not depend on the cell width. The number sign (\#)
+      substitution that happens in the Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -362,8 +362,9 @@ properties:
     package: excel!
     fullName: values
     summary: >-
-      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cells that contain an error will return the error string.
+      Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
+      that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
+      or equal sign ("="), Excel interprets this value as a formula.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -420,7 +421,7 @@ methods:
       content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
       parameters:
         - id: applyTo
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
           type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
@@ -459,7 +460,7 @@ methods:
       content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       parameters:
         - id: applyToString
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
           type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
       return:
         type: void
@@ -479,7 +480,7 @@ methods:
       content: 'delete(shift: Excel.DeleteShiftDirection): void;'
       parameters:
         - id: shift
-          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
           type: '<xref uid="excel!Excel.DeleteShiftDirection:enum" />'
       return:
         type: void
@@ -517,7 +518,7 @@ methods:
       content: 'delete(shiftString: "Up" | "Left"): void;'
       parameters:
         - id: shiftString
-          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
           type: '"Up" | "Left"'
       return:
         type: void
@@ -527,8 +528,8 @@ methods:
     package: excel!
     fullName: getBoundingRect(anotherRange)
     summary: >-
-      Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
-      "D10:E15" is "B2:E15".
+      Gets the smallest range object that encompasses the given ranges. For example, the `GetBoundingRect` of "B2:C5"
+      and "D10:E15" is "B2:E15".
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -539,7 +540,7 @@ methods:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       parameters:
         - id: anotherRange
-          description: The range object or address or range name.
+          description: 'The range object, address, or range name.'
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -658,7 +659,7 @@ methods:
     package: excel!
     fullName: getColumnsAfter(count)
     summary: |-
-      Gets a certain number of columns to the right of the current Range object.
+      Gets a certain number of columns to the right of the current `Range` object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -681,7 +682,7 @@ methods:
     package: excel!
     fullName: getColumnsBefore(count)
     summary: |-
-      Gets a certain number of columns to the left of the current Range object.
+      Gets a certain number of columns to the left of the current `Range` object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -987,8 +988,8 @@ methods:
     package: excel!
     fullName: 'getResizedRange(deltaRows, deltaColumns)'
     summary: >-
-      Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
-      by some number of rows and columns.
+      Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or
+      contracted) by some number of rows and columns.
 
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1056,7 +1057,7 @@ methods:
     package: excel!
     fullName: getRowsAbove(count)
     summary: |-
-      Gets a certain number of rows above the current Range object.
+      Gets a certain number of rows above the current `Range` object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -1079,7 +1080,7 @@ methods:
     package: excel!
     fullName: getRowsBelow(count)
     summary: |-
-      Gets a certain number of rows below the current Range object.
+      Gets a certain number of rows below the current `Range` object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -1103,7 +1104,7 @@ methods:
     fullName: getUsedRange(valuesOnly)
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
-      throw an ItemNotFound error.
+      throw an `ItemNotFound` error.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1191,7 +1192,7 @@ methods:
     fullName: insert(shift)
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
-      space. Returns a new Range object at the now blank space.
+      space. Returns a new `Range` object at the now blank space.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1202,7 +1203,7 @@ methods:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       parameters:
         - id: shift
-          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
           type: '<xref uid="excel!Excel.InsertShiftDirection:enum" />'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1232,7 +1233,7 @@ methods:
     fullName: insert(shiftString)
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
-      space. Returns a new Range object at the now blank space.
+      space. Returns a new `Range` object at the now blank space.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1243,7 +1244,7 @@ methods:
       content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       parameters:
         - id: shiftString
-          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
           type: '"Down" | "Right"'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -1353,8 +1354,8 @@ methods:
       parameters:
         - id: across
           description: >-
-            Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default
-            value is false.
+            Optional. Set `true` to merge cells in each row of the specified range as separate merged cells. The default
+            value is `false`<!-- -->.
           type: boolean
       return:
         type: void

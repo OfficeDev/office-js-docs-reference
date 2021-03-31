@@ -45,7 +45,7 @@ methods:
     fullName: add(name)
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
-      to activate the newly added worksheet, call ".activate() on it.
+      to activate the newly added worksheet, call `.activate()` on it.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -57,7 +57,7 @@ methods:
       parameters:
         - id: name
           description: >-
-            Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified,
+            Optional. The name of the worksheet to be added. If specified, the name should be unique. If not specified,
             Excel determines the name of the new worksheet.
           type: string
       return:
@@ -121,7 +121,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: |-
-      Gets a worksheet object using its Name or ID.
+      Gets a worksheet object using its name or ID.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -131,7 +131,7 @@ methods:
       content: 'getItem(key: string): Excel.Worksheet;'
       parameters:
         - id: key
-          description: The Name or ID of the worksheet.
+          description: The name or ID of the worksheet.
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'

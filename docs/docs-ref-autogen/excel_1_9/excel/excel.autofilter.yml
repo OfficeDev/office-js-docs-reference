@@ -4,8 +4,8 @@ uid: 'excel!Excel.AutoFilter:class'
 package: excel!
 fullName: Excel.AutoFilter
 summary: >-
-  Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the cell
-  contents.
+  Represents the `AutoFilter` object. AutoFilter turns the values in Excel column into specific filters based on the
+  cell contents.
 
 
   \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -89,7 +89,7 @@ methods:
       content: 'apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;'
       parameters:
         - id: range
-          description: The range over which the AutoFilter will apply on.
+          description: The range on which the AutoFilter will apply.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: columnIndex
           description: The zero-based column index to which the AutoFilter is applied.
@@ -141,7 +141,7 @@ methods:
     package: excel!
     fullName: getRange()
     summary: |-
-      Returns the Range object that represents the range to which the AutoFilter applies.
+      Returns the `Range` object that represents the range to which the AutoFilter applies.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -157,8 +157,11 @@ methods:
     package: excel!
     fullName: getRangeOrNullObject()
     summary: >-
-      Returns the Range object that represents the range to which the AutoFilter applies. If there is no Range object
-      associated with the AutoFilter, this method returns a null object.
+      Returns the `Range` object that represents the range to which the AutoFilter applies. If there is no `Range`
+      object associated with the AutoFilter, then this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

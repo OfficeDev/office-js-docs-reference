@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: seriesAxis
     summary: |-
-      Represents the series axis of a 3-dimensional chart.
+      Represents the series axis of a 3-D chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -110,10 +110,10 @@ methods:
       content: 'getItem(type: Excel.ChartAxisType, group?: Excel.ChartAxisGroup): Excel.ChartAxis;'
       parameters:
         - id: type
-          description: Specifies the axis type. See Excel.ChartAxisType for details.
+          description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '<xref uid="excel!Excel.ChartAxisType:enum" />'
         - id: group
-          description: Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+          description: Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
           type: '<xref uid="excel!Excel.ChartAxisGroup:enum" />'
       return:
         type: '<xref uid="excel!Excel.ChartAxis:class" />'
@@ -135,10 +135,10 @@ methods:
         Excel.ChartAxis;
       parameters:
         - id: typeString
-          description: Specifies the axis type. See Excel.ChartAxisType for details.
+          description: Specifies the axis type. See `Excel.ChartAxisType` for details.
           type: '"Invalid" | "Category" | "Value" | "Series"'
         - id: group
-          description: Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+          description: Optional. Specifies the axis group. See `Excel.ChartAxisGroup` for details.
           type: '"Primary" | "Secondary"'
       return:
         type: '<xref uid="excel!Excel.ChartAxis:class" />'

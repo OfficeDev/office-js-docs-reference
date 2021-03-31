@@ -4,7 +4,7 @@ uid: 'excel!Excel.SlicerItemCollection:class'
 package: excel!
 fullName: Excel.SlicerItemCollection
 summary: |-
-  Represents a collection of all the slicer item objects on the slicer.
+  Represents a collection of all the slicer item objects in the slicer.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -99,8 +99,13 @@ methods:
     uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: |-
-      Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.
+    summary: >-
+      Gets a slicer item using its key or name. If the slicer item doesn't exist, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

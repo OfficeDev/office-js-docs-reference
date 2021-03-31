@@ -4,8 +4,8 @@ uid: 'excel!Excel.RangeAreas:class'
 package: excel!
 fullName: Excel.RangeAreas
 summary: >-
-  RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
-  discontinguous ranges, read [Work with multiple ranges simultaneously in Excel
+  `RangeAreas` represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
+  discontiguous ranges, read [Work with multiple ranges simultaneously in Excel
   add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
 
 
@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: address
     summary: >-
-      Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
+      Returns the `RangeAreas` reference in A1-style. Address value will contain the worksheet name for each rectangular
       block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
 
 
@@ -37,7 +37,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: |-
-      Returns the RangeAreas reference in the user locale.
+      Returns the `RangeAreas` reference in the user locale.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: areaCount
     summary: |-
-      Returns the number of rectangular ranges that comprise this RangeAreas object.
+      Returns the number of rectangular ranges that comprise this `RangeAreas` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -67,7 +67,7 @@ properties:
     package: excel!
     fullName: areas
     summary: |-
-      Returns a collection of rectangular ranges that comprise this RangeAreas object.
+      Returns a collection of rectangular ranges that comprise this `RangeAreas` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -82,7 +82,7 @@ properties:
     package: excel!
     fullName: cellCount
     summary: >-
-      Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual
+      Returns the number of cells in the `RangeAreas` object, summing up the cell counts of all of the individual
       rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
 
 
@@ -99,7 +99,7 @@ properties:
     package: excel!
     fullName: conditionalFormats
     summary: |-
-      Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
+      Returns a collection of conditional formats that intersect with any cells in this `RangeAreas` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -128,7 +128,7 @@ properties:
     package: excel!
     fullName: dataValidation
     summary: |-
-      Returns a dataValidation object for all ranges in the RangeAreas.
+      Returns a data validation object for all ranges in the `RangeAreas`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -143,8 +143,8 @@ properties:
     package: excel!
     fullName: format
     summary: >-
-      Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
-      ranges in the RangeAreas object.
+      Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all
+      ranges in the `RangeAreas` object.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -184,7 +184,7 @@ properties:
     package: excel!
     fullName: isEntireColumn
     summary: |-
-      Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
+      Specifies if all the ranges on this `RangeAreas` object represent entire columns (e.g., "A:C, Q:Z").
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -199,7 +199,7 @@ properties:
     package: excel!
     fullName: isEntireRow
     summary: |-
-      Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
+      Specifies if all the ranges on this `RangeAreas` object represent entire rows (e.g., "1:3, 5:7").
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -214,9 +214,9 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
-      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
-      value in the BuiltInStyle enum will be returned.
+      Represents the style for all ranges in this `RangeAreas` object. If the styles of the cells are inconsistent,
+      `null` will be returned. For custom styles, the style name will be returned. For built-in styles, a string
+      representing a value in the `BuiltInStyle` enum will be returned.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -232,7 +232,7 @@ properties:
     package: excel!
     fullName: worksheet
     summary: |-
-      Returns the worksheet for the current RangeAreas.
+      Returns the worksheet for the current `RangeAreas`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -248,7 +248,7 @@ methods:
     package: excel!
     fullName: calculate()
     summary: |-
-      Calculates all cells in the RangeAreas.
+      Calculates all cells in the `RangeAreas`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -263,8 +263,10 @@ methods:
     uid: 'excel!Excel.RangeAreas#clear:member(1)'
     package: excel!
     fullName: clear(applyTo)
-    summary: |-
-      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
+    summary: >-
+      Clears values, format, fill, border, and other properties on each of the areas that comprise this `RangeAreas`
+      object.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -274,7 +276,7 @@ methods:
       content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
       parameters:
         - id: applyTo
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
           type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
       return:
         type: void
@@ -283,8 +285,10 @@ methods:
     uid: 'excel!Excel.RangeAreas#clear:member(2)'
     package: excel!
     fullName: clear(applyToString)
-    summary: |-
-      Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
+    summary: >-
+      Clears values, format, fill, border, and other properties on each of the areas that comprise this `RangeAreas`
+      object.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -294,7 +298,7 @@ methods:
       content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       parameters:
         - id: applyToString
-          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details. Default is "All".
           type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
       return:
         type: void
@@ -304,7 +308,7 @@ methods:
     package: excel!
     fullName: convertDataTypeToText()
     summary: |-
-      Converts all cells in the RangeAreas with datatypes into text.
+      Converts all cells in the `RangeAreas` with data types into text.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -320,7 +324,7 @@ methods:
     package: excel!
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     summary: |-
-      Converts all cells in the RangeAreas into linked datatype.
+      Converts all cells in the `RangeAreas` into linked data types.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -330,10 +334,10 @@ methods:
       content: 'convertToLinkedDataType(serviceID: number, languageCulture: string): void;'
       parameters:
         - id: serviceID
-          description: The Service ID which will be used to query the data.
+          description: The service ID which will be used to query the data.
           type: number
         - id: languageCulture
-          description: Language Culture to query the service for.
+          description: Language culture to query the service for.
           type: string
       return:
         type: void
@@ -343,9 +347,9 @@ methods:
     package: excel!
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
-      automatically if it is smaller than the source.
+      Copies cell data or formatting from the source range or `RangeAreas` to the current `RangeAreas`<!-- -->. The
+      destination `RangeAreas` can be a different size than the source range or `RangeAreas`<!-- -->. The destination
+      will be expanded automatically if it is smaller than the source.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -359,17 +363,17 @@ methods:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
-            able to be created by removing full rows or columns from a rectangular range.
+            The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form
+            must able to be created by removing full rows or columns from a rectangular range.
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
         - id: copyType
           description: The type of cell data or formatting to copy over. Default is "All".
           type: '<xref uid="excel!Excel.RangeCopyType:enum" />'
         - id: skipBlanks
-          description: True if to skip blank cells in the source range or RangeAreas. Default is false.
+          description: True if to skip blank cells in the source range or `RangeAreas`<!-- -->. Default is false.
           type: boolean
         - id: transpose
-          description: True if to transpose the cells in the destination RangeAreas. Default is false.
+          description: True if to transpose the cells in the destination `RangeAreas`<!-- -->. Default is false.
           type: boolean
       return:
         type: void
@@ -379,9 +383,9 @@ methods:
     package: excel!
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     summary: >-
-      Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
-      automatically if it is smaller than the source.
+      Copies cell data or formatting from the source range or `RangeAreas` to the current `RangeAreas`<!-- -->. The
+      destination `RangeAreas` can be a different size than the source range or `RangeAreas`<!-- -->. The destination
+      will be expanded automatically if it is smaller than the source.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -395,17 +399,17 @@ methods:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
-            able to be created by removing full rows or columns from a rectangular range.
+            The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form
+            must able to be created by removing full rows or columns from a rectangular range.
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
           type: '"All" | "Formulas" | "Values" | "Formats"'
         - id: skipBlanks
-          description: True if to skip blank cells in the source range or RangeAreas. Default is false.
+          description: True if to skip blank cells in the source range or `RangeAreas`<!-- -->. Default is false.
           type: boolean
         - id: transpose
-          description: True if to transpose the cells in the destination RangeAreas. Default is false.
+          description: True if to transpose the cells in the destination `RangeAreas`<!-- -->. Default is false.
           type: boolean
       return:
         type: void
@@ -415,8 +419,8 @@ methods:
     package: excel!
     fullName: getEntireColumn()
     summary: >-
-      Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
+      Returns a `RangeAreas` object that represents the entire columns of the `RangeAreas` (for example, if the current
+      `RangeAreas` represents cells "B4:E11, H2", it returns a `RangeAreas` that represents columns "B:E, H:H").
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -433,8 +437,8 @@ methods:
     package: excel!
     fullName: getEntireRow()
     summary: >-
-      Returns a RangeAreas object that represents the entire rows of the RangeAreas (for example, if the current
-      RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
+      Returns a `RangeAreas` object that represents the entire rows of the `RangeAreas` (for example, if the current
+      `RangeAreas` represents cells "B4:E11", it returns a `RangeAreas` that represents rows "4:11").
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -451,8 +455,8 @@ methods:
     package: excel!
     fullName: getIntersection(anotherRange)
     summary: >-
-      Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, an ItemNotFound error will be thrown.
+      Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`<!-- -->. If
+      no intersection is found, an `ItemNotFound` error will be thrown.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -463,7 +467,7 @@ methods:
       content: 'getIntersection(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;'
       parameters:
         - id: anotherRange
-          description: 'The range, RangeAreas object or range address that will be used to determine the intersection.'
+          description: 'The range, `RangeAreas` object, or range address that will be used to determine the intersection.'
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -473,8 +477,11 @@ methods:
     package: excel!
     fullName: getIntersectionOrNullObject(anotherRange)
     summary: >-
-      Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no
-      intersection is found, a null object is returned.
+      Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`<!-- -->. If
+      no intersection is found, then this function will return an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -485,7 +492,7 @@ methods:
       content: 'getIntersectionOrNullObject(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;'
       parameters:
         - id: anotherRange
-          description: 'The range, RangeAreas, or address that will be used to determine the intersection.'
+          description: 'The range, `RangeAreas` object, or address that will be used to determine the intersection.'
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -495,8 +502,8 @@ methods:
     package: excel!
     fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
     summary: >-
-      Returns an RangeAreas object that is shifted by the specific row and column offset. The dimension of the returned
-      RangeAreas will match the original object. If the resulting RangeAreas is forced outside the bounds of the
+      Returns a `RangeAreas` object that is shifted by the specific row and column offset. The dimension of the returned
+      `RangeAreas` will match the original object. If the resulting `RangeAreas` is forced outside the bounds of the
       worksheet grid, an error will be thrown.
 
 
@@ -509,12 +516,12 @@ methods:
       parameters:
         - id: rowOffset
           description: >-
-            The number of rows (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values are
+            The number of rows (positive, negative, or 0) by which the `RangeAreas` is to be offset. Positive values are
             offset downward, and negative values are offset upward.
           type: number
         - id: columnOffset
           description: >-
-            The number of columns (positive, negative, or 0) by which the RangeAreas is to be offset. Positive values
+            The number of columns (positive, negative, or 0) by which the `RangeAreas` is to be offset. Positive values
             are offset to the right, and negative values are offset to the left.
           type: number
       return:
@@ -525,8 +532,8 @@ methods:
     package: excel!
     fullName: 'getSpecialCells(cellType, cellValueType)'
     summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error
-      if no special cells are found that match the criteria.
+      Returns a `RangeAreas` object that represents all the cells that match the specified type and value. Throws an
+      error if no special cells are found that match the criteria.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -541,9 +548,9 @@ methods:
           type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
           type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -553,8 +560,8 @@ methods:
     package: excel!
     fullName: 'getSpecialCells(cellTypeString, cellValueType)'
     summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error
-      if no special cells are found that match the criteria.
+      Returns a `RangeAreas` object that represents all the cells that match the specified type and value. Throws an
+      error if no special cells are found that match the criteria.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -575,9 +582,9 @@ methods:
             "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
           type: >-
             "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
             "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
@@ -590,8 +597,11 @@ methods:
     package: excel!
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null
-      object if no special cells are found that match the criteria.
+      Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
+      cells are found that match the criteria, then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -608,9 +618,9 @@ methods:
           type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
           type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -620,8 +630,11 @@ methods:
     package: excel!
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     summary: >-
-      Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null
-      object if no special cells are found that match the criteria.
+      Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
+      cells are found that match the criteria, then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -643,9 +656,9 @@ methods:
             "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
-            If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
-            include in the result. These values can be combined together to return more than one type. The default is to
-            select all constants or formulas, no matter what the type.
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
           type: >-
             "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
             "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
@@ -658,7 +671,7 @@ methods:
     package: excel!
     fullName: getTables(fullyContained)
     summary: |-
-      Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
+      Returns a scoped collection of tables that overlap with any range in this `RangeAreas` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -668,7 +681,9 @@ methods:
       content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
       parameters:
         - id: fullyContained
-          description: 'If true, returns only tables that are fully contained within the range bounds. Default is false.'
+          description: >-
+            If `true`<!-- -->, returns only tables that are fully contained within the range bounds. Default is
+            `false`<!-- -->.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TableScopedCollection:class" />'
@@ -678,8 +693,9 @@ methods:
     package: excel!
     fullName: getUsedRangeAreas(valuesOnly)
     summary: >-
-      Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
+      Returns the used `RangeAreas` that comprises all the used areas of individual rectangular ranges in the
+      `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, the `ItemNotFound` error will be
+      thrown.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -690,7 +706,7 @@ methods:
       content: 'getUsedRangeAreas(valuesOnly?: boolean): Excel.RangeAreas;'
       parameters:
         - id: valuesOnly
-          description: Whether to only consider cells with values as used cells. Default is false.
+          description: Whether to only consider cells with values as used cells. Default is `false`<!-- -->.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'
@@ -700,8 +716,12 @@ methods:
     package: excel!
     fullName: getUsedRangeAreasOrNullObject(valuesOnly)
     summary: >-
-      Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas
-      object. If there are no used cells within the RangeAreas, a null object will be returned.
+      Returns the used `RangeAreas` that comprises all the used areas of individual rectangular ranges in the
+      `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -833,7 +853,7 @@ methods:
     package: excel!
     fullName: setDirty()
     summary: |-
-      Sets the RangeAreas to be recalculated when the next recalculation occurs.
+      Sets the `RangeAreas` to be recalculated when the next recalculation occurs.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

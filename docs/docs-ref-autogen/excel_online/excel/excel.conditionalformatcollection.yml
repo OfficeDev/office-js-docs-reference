@@ -54,7 +54,7 @@ methods:
       content: 'add(type: Excel.ConditionalFormatType): Excel.ConditionalFormat;'
       parameters:
         - id: type
-          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
+          description: The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
           type: '<xref uid="excel!Excel.ConditionalFormatType:enum" />'
       return:
         type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
@@ -102,7 +102,7 @@ methods:
         "ContainsText" | "CellValue"): Excel.ConditionalFormat;
       parameters:
         - id: typeString
-          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
+          description: The type of conditional format being added. See `Excel.ConditionalFormatType` for details.
           type: >-
             "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" |
             "CellValue"
@@ -200,12 +200,12 @@ methods:
       content: 'getItem(id: string): Excel.ConditionalFormat;'
       parameters:
         - id: id
-          description: The id of the conditional format.
+          description: The ID of the conditional format.
           type: string
       return:
         type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
         description: |-
-          Conditional Format object.
+          Conditional format object.
 
           #### Examples
 

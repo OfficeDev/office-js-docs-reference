@@ -4,7 +4,7 @@ uid: 'excel!Excel.TableStyle:class'
 package: excel!
 fullName: Excel.TableStyle
 summary: |-
-  Represents a TableStyle, which defines the style elements by region of the Table.
+  Represents a table style, which defines the style elements by region of the table.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the TableStyle.
+      Gets the name of the table style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this TableStyle object is read-only.
+      Specifies if this `TableStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -62,7 +62,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: |-
-      Deletes the TableStyle.
+      Deletes the table style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,7 +78,7 @@ methods:
     package: excel!
     fullName: duplicate()
     summary: |-
-      Creates a duplicate of this TableStyle with copies of all the style elements.
+      Creates a duplicate of this table style with copies of all the style elements.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -88,7 +88,7 @@ methods:
       content: 'duplicate(): Excel.TableStyle;'
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
-        description: The new TableStyle object that has been duplicated from this TableStyle.
+        description: The new `TableStyle` object that has been duplicated from this table style.
   - name: load(options)
     uid: 'excel!Excel.TableStyle#load:member(1)'
     package: excel!

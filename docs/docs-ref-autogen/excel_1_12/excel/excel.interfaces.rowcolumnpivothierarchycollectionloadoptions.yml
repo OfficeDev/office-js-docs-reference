@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      For EACH ITEM in the collection: Id of the RowColumnPivotHierarchy.
+      For EACH ITEM in the collection: ID of the RowColumnPivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

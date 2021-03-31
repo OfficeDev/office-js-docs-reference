@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
 package: excel!
 fullName: Excel.ConditionalColorScaleCriterion
 summary: |-
-  Represents a Color Scale Criterion which contains a type, value, and a color.
+  Represents a color scale criterion which contains a type, value, and a color.
 
   \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -32,7 +32,7 @@ properties:
     package: excel!
     fullName: formula
     summary: |-
-      A number, a formula, or null (if Type is LowestValue).
+      A number, a formula, or `null` (if `type` is `lowestValue`<!-- -->).
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

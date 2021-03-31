@@ -61,8 +61,8 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: >-
-      Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
-      property is valid only when TextOrientation of data label is 0.
+      Specifies the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+      This property is valid only when the `TextOrientation` of data label is 0.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -78,8 +78,8 @@ properties:
     package: excel!
     fullName: linkNumberFormat
     summary: >-
-      Specifies if the number format is linked to the cells. If true, the number format will change in the labels when
-      it changes in the cells.
+      Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the
+      labels when it changes in the cells.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -109,10 +109,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
     package: excel!
     fullName: position
-    summary: >-
-      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
-      details.
-
+    summary: |-
+      Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -249,8 +247,8 @@ properties:
     package: excel!
     fullName: verticalAlignment
     summary: >-
-      Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
-      property is valid only when TextOrientation of data label is -90, 90, or 180.
+      Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This
+      property is valid only when `TextOrientation` of the data label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

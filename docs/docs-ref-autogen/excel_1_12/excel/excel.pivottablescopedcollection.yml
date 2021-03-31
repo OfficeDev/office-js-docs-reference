@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.PivotTableScopedCollection
 summary: >-
   Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's
-  top-left corner. They are ordered top to bottom and then left to right.
+  top-left corner. They are ordered top-to-bottom and then left-to-right.
 
 
   \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -62,8 +62,8 @@ methods:
     package: excel!
     fullName: getFirst()
     summary: >-
-      Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top to bottom and left
-      to right, such that top-left table is the first PivotTable in the collection.
+      Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and
+      left-to-right, such that top-left table is the first PivotTable in the collection.
 
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -99,8 +99,12 @@ methods:
     uid: 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: |-
-      Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
+    summary: >-
+      Gets a PivotTable by name. If the PivotTable does not exist, then this function returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

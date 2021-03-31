@@ -4,9 +4,9 @@ uid: 'excel!Excel.ChartSeriesBy:enum'
 package: excel!
 fullName: Excel.ChartSeriesBy
 summary: >-
-  Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data
-  shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default
-  to "columns".
+  Specifies whether the series are by rows or by columns. In Excel on desktop, the "auto" option will inspect the source
+  data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply
+  default to "columns".
 
 
   \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -18,8 +18,8 @@ fields:
     uid: 'excel!Excel.ChartSeriesBy.auto:member'
     package: excel!
     summary: >-
-      On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by
-      rows or columns; in Excel on the web, "auto" will simply default to "columns".
+      In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data
+      is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
     value: '"Auto"'
   - name: columns
     uid: 'excel!Excel.ChartSeriesBy.columns:member'

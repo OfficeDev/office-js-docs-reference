@@ -74,7 +74,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Id of the PivotTable.
+      ID of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

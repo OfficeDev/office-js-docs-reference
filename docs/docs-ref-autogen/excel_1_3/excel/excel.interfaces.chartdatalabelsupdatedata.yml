@@ -28,10 +28,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: >-
-      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
-      details.
-
+    summary: |-
+      Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -11,10 +11,10 @@ fields:
   - name: hidden
     uid: 'excel!Excel.RowHiddenChangeType.hidden:member'
     package: excel!
-    summary: Hidden indicates the row is hidden.
+    summary: '`Hidden` indicates that the row is hidden.'
     value: '"Hidden"'
   - name: unhidden
     uid: 'excel!Excel.RowHiddenChangeType.unhidden:member'
     package: excel!
-    summary: Unhidden indicates the row is not hidden.
+    summary: '`Unhidden` indicates that the row is not hidden.'
     value: '"Unhidden"'

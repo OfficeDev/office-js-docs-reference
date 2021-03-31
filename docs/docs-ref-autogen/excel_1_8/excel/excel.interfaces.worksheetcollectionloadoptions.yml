@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: protection
     summary: |-
-      For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
+      For EACH ITEM in the collection: Returns the sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -174,9 +174,9 @@ properties:
     fullName: tabColor
     summary: >-
       For EACH ITEM in the collection: The tab color of the worksheet. When retrieving the tab color, if the worksheet
-      is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty
-      string will be returned. Otherwise, the property will be set to a color, in the form "\#123456" When setting the
-      color, use an empty-string to set an "auto" color, or a real color otherwise.
+      is invisible, the value will be `null`<!-- -->. If the worksheet is visible but the tab color is set to auto, an
+      empty string will be returned. Otherwise, the property will be set to a color, in the form \#RRGGBB (e.g.,
+      "FFA500"). When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -207,7 +207,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      For EACH ITEM in the collection: The Visibility of the worksheet.
+      For EACH ITEM in the collection: The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting

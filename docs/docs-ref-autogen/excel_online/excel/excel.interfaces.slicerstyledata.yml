@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the SlicerStyle.
+      Gets the name of the slicer style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this SlicerStyle object is read-only.
+      Specifies if this `SlicerStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -4,7 +4,7 @@ uid: 'excel!Excel.PivotTableStyle:class'
 package: excel!
 fullName: Excel.PivotTableStyle
 summary: |-
-  Represents a PivotTable Style, which defines style elements by PivotTable region.
+  Represents a PivotTable style, which defines style elements by PivotTable region.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      Gets the name of the PivotTableStyle.
+      Gets the name of the PivotTable style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: readOnly
     summary: |-
-      Specifies if this PivotTableStyle object is read-only.
+      Specifies if this `PivotTableStyle` object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -62,7 +62,7 @@ methods:
     package: excel!
     fullName: delete()
     summary: |-
-      Deletes the PivotTableStyle.
+      Deletes the PivotTable style.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,7 +78,7 @@ methods:
     package: excel!
     fullName: duplicate()
     summary: |-
-      Creates a duplicate of this PivotTableStyle with copies of all the style elements.
+      Creates a duplicate of this PivotTable style with copies of all the style elements.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -88,7 +88,7 @@ methods:
       content: 'duplicate(): Excel.PivotTableStyle;'
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: The new PivotTableStyle object that has been duplicated from this PivotTableStyle.
+        description: The new `PivotTableStyle` object that has been duplicated from this PivotTable style.
   - name: load(options)
     uid: 'excel!Excel.PivotTableStyle#load:member(1)'
     package: excel!

@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: font
     summary: >-
-      Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title
+      Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title
       object.
 
 

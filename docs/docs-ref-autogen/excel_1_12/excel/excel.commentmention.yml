@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: email
     summary: |-
-      The email address of the entity that is mentioned in comment.
+      The email address of the entity that is mentioned in a comment.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -32,7 +32,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      The id of the entity. The id matches one of the ids in `CommentRichContent.richContent`<!-- -->.
+      The ID of the entity. The ID matches one of the IDs in `CommentRichContent.richContent`<!-- -->.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -47,7 +47,7 @@ properties:
     package: excel!
     fullName: name
     summary: |-
-      The name of the entity that is mentioned in comment.
+      The name of the entity that is mentioned in a comment.
 
       \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -115,7 +115,7 @@ properties:
     package: excel!
     fullName: protection
     summary: |-
-      Returns sheet protection object for a worksheet.
+      Returns the sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -182,7 +182,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      The Visibility of the worksheet.
+      The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
@@ -269,7 +269,7 @@ methods:
     package: excel!
     fullName: 'getCell(row, column)'
     summary: >-
-      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      Gets the `Range` object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid.
 
 
@@ -284,7 +284,7 @@ methods:
           description: The row number of the cell to be retrieved. Zero-indexed.
           type: number
         - id: column
-          description: the column number of the cell to be retrieved. Zero-indexed.
+          description: The column number of the cell to be retrieved. Zero-indexed.
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
@@ -314,7 +314,7 @@ methods:
     package: excel!
     fullName: getRange(address)
     summary: |-
-      Gets the range object, representing a single rectangular block of cells, specified by the address or name.
+      Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -388,8 +388,8 @@ methods:
       parameters:
         - id: valuesOnly
           description: >-
-            Optional. If true, considers only cells with values as used cells (ignoring formatting). \[Api set: ExcelApi
-            1.2\]
+            Optional. If `true`<!-- -->, considers only cells with values as used cells (ignoring formatting). \[Api
+            set: ExcelApi 1.2\]
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Range:class" />'

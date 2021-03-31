@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: allowAutoFilter
     summary: |-
-      Represents the worksheet protection option of allowing using auto filter feature.
+      Represents the worksheet protection option allowing use of the AutoFilter feature.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -32,7 +32,7 @@ properties:
     package: excel!
     fullName: allowDeleteColumns
     summary: |-
-      Represents the worksheet protection option of allowing deleting columns.
+      Represents the worksheet protection option allowing deleting of columns.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -47,7 +47,7 @@ properties:
     package: excel!
     fullName: allowDeleteRows
     summary: |-
-      Represents the worksheet protection option of allowing deleting rows.
+      Represents the worksheet protection option allowing deleting of rows.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -62,7 +62,7 @@ properties:
     package: excel!
     fullName: allowFormatCells
     summary: |-
-      Represents the worksheet protection option of allowing formatting cells.
+      Represents the worksheet protection option allowing formatting of cells.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -77,7 +77,7 @@ properties:
     package: excel!
     fullName: allowFormatColumns
     summary: |-
-      Represents the worksheet protection option of allowing formatting columns.
+      Represents the worksheet protection option allowing formatting of columns.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -92,7 +92,7 @@ properties:
     package: excel!
     fullName: allowFormatRows
     summary: |-
-      Represents the worksheet protection option of allowing formatting rows.
+      Represents the worksheet protection option allowing formatting of rows.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -107,7 +107,7 @@ properties:
     package: excel!
     fullName: allowInsertColumns
     summary: |-
-      Represents the worksheet protection option of allowing inserting columns.
+      Represents the worksheet protection option allowing inserting of columns.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -122,7 +122,7 @@ properties:
     package: excel!
     fullName: allowInsertHyperlinks
     summary: |-
-      Represents the worksheet protection option of allowing inserting hyperlinks.
+      Represents the worksheet protection option allowing inserting of hyperlinks.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -137,7 +137,7 @@ properties:
     package: excel!
     fullName: allowInsertRows
     summary: |-
-      Represents the worksheet protection option of allowing inserting rows.
+      Represents the worksheet protection option allowing inserting of rows.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -152,7 +152,7 @@ properties:
     package: excel!
     fullName: allowPivotTables
     summary: |-
-      Represents the worksheet protection option of allowing using PivotTable feature.
+      Represents the worksheet protection option allowing use of the PivotTable feature.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -167,7 +167,7 @@ properties:
     package: excel!
     fullName: allowSort
     summary: |-
-      Represents the worksheet protection option of allowing using sort feature.
+      Represents the worksheet protection option allowing use of the sort feature.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

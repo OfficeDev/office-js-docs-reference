@@ -47,7 +47,7 @@ methods:
     package: excel!
     fullName: clear()
     summary: |-
-      Clear the line format of a chart element.
+      Clears the line format of a chart element.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: key
     summary: |-
-      The key that represents the id of the Setting.
+      The key that represents the ID of the setting.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

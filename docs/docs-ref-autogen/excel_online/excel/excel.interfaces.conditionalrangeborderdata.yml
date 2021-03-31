@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named
       HTML color (e.g., "orange").
 
 
@@ -30,8 +30,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData#sideIndex:member'
     package: excel!
     fullName: sideIndex
-    summary: |-
-      Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
+    summary: >-
+      Constant value that indicates the specific side of the border. See `Excel.ConditionalRangeBorderIndex` for
+      details.
+
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -48,7 +50,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for
       details.
 
 

@@ -47,10 +47,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member'
     package: excel!
     fullName: borders
-    summary: >-
-      For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four
-      borders.
-
+    summary: |-
+      For EACH ITEM in the collection: A collection of four border objects that represent the style of the four borders.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -80,7 +78,7 @@ properties:
     package: excel!
     fullName: fill
     summary: |-
-      For EACH ITEM in the collection: The Fill of the style.
+      For EACH ITEM in the collection: The fill of the style.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,7 +93,7 @@ properties:
     package: excel!
     fullName: font
     summary: |-
-      For EACH ITEM in the collection: A Font object that represents the font of the style.
+      For EACH ITEM in the collection: A `Font` object that represents the font of the style.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -125,8 +123,8 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: >-
-      For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment
-      for details.
+      For EACH ITEM in the collection: Represents the horizontal alignment for the style. See
+      `Excel.HorizontalAlignment` for details.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -142,8 +140,8 @@ properties:
     package: excel!
     fullName: includeAlignment
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the AutoIndent, HorizontalAlignment,
-      VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+      For EACH ITEM in the collection: Specifies if the style includes the auto indent, horizontal alignment, vertical
+      alignment, wrap text, indent level, and text orientation properties.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -159,7 +157,7 @@ properties:
     package: excel!
     fullName: includeBorder
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight
+      For EACH ITEM in the collection: Specifies if the style includes the color, color index, line style, and weight
       border properties.
 
 
@@ -176,8 +174,8 @@ properties:
     package: excel!
     fullName: includeFont
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the Background, Bold, Color, ColorIndex,
-      FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+      For EACH ITEM in the collection: Specifies if the style includes the background, bold, color, color index, font
+      style, italic, name, size, strikethrough, subscript, superscript, and underline font properties.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -193,7 +191,7 @@ properties:
     package: excel!
     fullName: includeNumber
     summary: |-
-      For EACH ITEM in the collection: Specifies if the style includes the NumberFormat property.
+      For EACH ITEM in the collection: Specifies if the style includes the number format property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -208,8 +206,8 @@ properties:
     package: excel!
     fullName: includePatterns
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern,
-      PatternColor, and PatternColorIndex interior properties.
+      For EACH ITEM in the collection: Specifies if the style includes the color, color index, invert if negative,
+      pattern, pattern color, and pattern color index interior properties.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -225,7 +223,7 @@ properties:
     package: excel!
     fullName: includeProtection
     summary: >-
-      For EACH ITEM in the collection: Specifies if the style includes the FormulaHidden and Locked protection
+      For EACH ITEM in the collection: Specifies if the style includes the formula hidden and locked protection
       properties.
 
 
@@ -362,7 +360,7 @@ properties:
     package: excel!
     fullName: verticalAlignment
     summary: >-
-      For EACH ITEM in the collection: Specifies the vertical alignment for the style. See Excel.VerticalAlignment for
+      For EACH ITEM in the collection: Specifies the vertical alignment for the style. See `Excel.VerticalAlignment` for
       details.
 
 

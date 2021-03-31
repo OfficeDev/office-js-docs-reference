@@ -78,7 +78,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: >-
-      For EACH ITEM in the collection: HTML color code representation of the marker background color of data point
+      For EACH ITEM in the collection: HTML color code representation of the marker background color of a data point
       (e.g., \#FF0000 represents Red).
 
 
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: >-
-      For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point
+      For EACH ITEM in the collection: HTML color code representation of the marker foreground color of a data point
       (e.g., \#FF0000 represents Red).
 
 
@@ -112,7 +112,7 @@ properties:
     package: excel!
     fullName: markerSize
     summary: |-
-      For EACH ITEM in the collection: Represents marker size of data point.
+      For EACH ITEM in the collection: Represents marker size of a data point.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -127,7 +127,7 @@ properties:
     package: excel!
     fullName: markerStyle
     summary: >-
-      For EACH ITEM in the collection: Represents marker style of a chart data point. See Excel.ChartMarkerStyle for
+      For EACH ITEM in the collection: Represents marker style of a chart data point. See `Excel.ChartMarkerStyle` for
       details.
 
 

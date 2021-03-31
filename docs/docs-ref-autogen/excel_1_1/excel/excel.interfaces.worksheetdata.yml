@@ -91,7 +91,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      The Visibility of the worksheet.
+      The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting

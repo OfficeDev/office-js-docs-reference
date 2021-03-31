@@ -44,7 +44,7 @@ properties:
     package: excel!
     fullName: displayUnit
     summary: |-
-      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
+      Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: majorGridlines
     summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis.
+      Returns an object that represents the major gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: majorTickMark
     summary: |-
-      Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of major tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -122,8 +122,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member'
     package: excel!
     fullName: majorTimeUnitScale
-    summary: |-
-      Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+    summary: >-
+      Specifies the major unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -189,7 +191,7 @@ properties:
     package: excel!
     fullName: minorGridlines
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis.
+      Returns an object that represents the minor gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -204,7 +206,7 @@ properties:
     package: excel!
     fullName: minorTickMark
     summary: |-
-      Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of minor tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -218,8 +220,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member'
     package: excel!
     fullName: minorTimeUnitScale
-    summary: |-
-      Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+    summary: >-
+      Specifies the minor unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -266,7 +270,7 @@ properties:
     package: excel!
     fullName: scaleType
     summary: |-
-      Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
+      Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -296,7 +300,7 @@ properties:
     package: excel!
     fullName: tickLabelPosition
     summary: >-
-      Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      Specifies the position of tick-mark labels on the specified axis. See `Excel.ChartAxisTickLabelPosition` for
       details.
 
 

@@ -130,7 +130,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      Constant value that represents the table style. Possible values are: "TableStyleLight1" through
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 
@@ -242,7 +242,7 @@ methods:
     package: excel!
     fullName: getHeaderRowRange()
     summary: |-
-      Gets the range object associated with header row of the table.
+      Gets the range object associated with the header row of the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -314,7 +314,7 @@ methods:
     package: excel!
     fullName: getTotalRowRange()
     summary: |-
-      Gets the range object associated with totals row of the table.
+      Gets the range object associated with the totals row of the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

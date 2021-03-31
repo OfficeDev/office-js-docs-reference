@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: |-
-      Represents the chart type of a series. See Excel.ChartType for details.
+      Represents the chart type of a series. See `Excel.ChartType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -75,8 +75,8 @@ properties:
     package: excel!
     fullName: doughnutHoleSize
     summary: >-
-      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
-      invalid argument exception on invalid charts.
+      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts. Throws
+      an `InvalidArgument` error on invalid charts.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -154,7 +154,7 @@ properties:
     package: excel!
     fullName: markerBackgroundColor
     summary: |-
-      Specifies the markers background color of a chart series.
+      Specifies the marker background color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -209,7 +209,7 @@ properties:
     package: excel!
     fullName: markerForegroundColor
     summary: |-
-      Specifies the markers foreground color of a chart series.
+      Specifies the marker foreground color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -319,7 +319,7 @@ properties:
     package: excel!
     fullName: markerStyle
     summary: |-
-      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
+      Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -652,7 +652,7 @@ methods:
       content: 'setBubbleSizes(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
@@ -718,7 +718,7 @@ methods:
     package: excel!
     fullName: setValues(sourceData)
     summary: |-
-      Sets the values for a chart series. For scatter chart, it means Y axis values.
+      Sets the values for a chart series. For scatter charts, it refers to y-axis values.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -728,7 +728,7 @@ methods:
       content: 'setValues(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void
@@ -764,7 +764,7 @@ methods:
     package: excel!
     fullName: setXAxisValues(sourceData)
     summary: |-
-      Sets the values of the X axis for a chart series. Only works for scatter charts.
+      Sets the values of the x-axis for a chart series. Only works for scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -774,7 +774,7 @@ methods:
       content: 'setXAxisValues(sourceData: Range): void;'
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The `Range` object corresponding to the source data.
           type: '<xref uid="excel!Excel.Range:class" />'
       return:
         type: void

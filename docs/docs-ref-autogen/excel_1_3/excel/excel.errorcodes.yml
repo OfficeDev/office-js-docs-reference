@@ -83,6 +83,11 @@ fields:
     package: excel!
     summary: ''
     value: '"ItemNotFound"'
+  - name: mergedRangeConflict
+    uid: 'excel!Excel.ErrorCodes.mergedRangeConflict:member'
+    package: excel!
+    summary: ''
+    value: '"MergedRangeConflict"'
   - name: nonBlankCellOffSheet
     uid: 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
     package: excel!
@@ -108,6 +113,11 @@ fields:
     package: excel!
     summary: ''
     value: '"RequestAborted"'
+  - name: unsupportedFeature
+    uid: 'excel!Excel.ErrorCodes.unsupportedFeature:member'
+    package: excel!
+    summary: ''
+    value: '"UnsupportedFeature"'
   - name: unsupportedOperation
     uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
     package: excel!

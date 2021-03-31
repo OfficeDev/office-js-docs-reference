@@ -11,10 +11,10 @@ fields:
   - name: local
     uid: 'excel!Excel.EventSource.local:member'
     package: excel!
-    summary: Local means event comes from local user session.
+    summary: Local means the event comes from a local user session.
     value: '"Local"'
   - name: remote
     uid: 'excel!Excel.EventSource.remote:member'
     package: excel!
-    summary: Remote means event comes from remote user session.
+    summary: Remote means the event comes from a remote user session.
     value: '"Remote"'

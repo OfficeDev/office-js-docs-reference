@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: 'add(content, contentType)'
     summary: |-
-      Creates a comment reply for comment.
+      Creates a comment reply for a comment.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -55,7 +55,7 @@ methods:
       parameters:
         - id: content
           description: >-
-            The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with
+            The comment's content. This can be either a string or a `CommentRichContent` object (e.g., for comments with
             mentions). \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentType
@@ -91,7 +91,7 @@ methods:
     package: excel!
     fullName: 'add(content, contentTypeString)'
     summary: |-
-      Creates a comment reply for comment.
+      Creates a comment reply for a comment.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -102,7 +102,7 @@ methods:
       parameters:
         - id: content
           description: >-
-            The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with
+            The comment's content. This can be either a string or a `CommentRichContent` object (e.g., for comments with
             mentions). \[Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object\]
           type: '<xref uid="excel!Excel.CommentRichContent:interface" /> | string'
         - id: contentTypeString

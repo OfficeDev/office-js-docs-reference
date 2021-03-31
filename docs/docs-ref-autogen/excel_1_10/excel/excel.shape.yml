@@ -20,7 +20,7 @@ properties:
     package: excel!
     fullName: altTextDescription
     summary: |-
-      Specifies the alternative description text for a Shape object.
+      Specifies the alternative description text for a `Shape` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -35,7 +35,7 @@ properties:
     package: excel!
     fullName: altTextTitle
     summary: |-
-      Specifies the alternative title text for a Shape object.
+      Specifies the alternative title text for a `Shape` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -134,8 +134,8 @@ properties:
     package: excel!
     fullName: geometricShapeType
     summary: >-
-      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
-      if the shape type is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns
+      `null` if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -251,8 +251,8 @@ properties:
     package: excel!
     fullName: height
     summary: >-
-      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value or zero as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -298,8 +298,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -557,8 +557,8 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
-      argument exception when set with a negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an
+      `InvalidArgument` exception when set with a negative value as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -574,7 +574,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Returns the type of this shape. See Excel.ShapeType for details.
+      Returns the type of this shape. See `Excel.ShapeType` for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -604,8 +604,8 @@ properties:
     package: excel!
     fullName: width
     summary: >-
-      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
-      or zero as input.
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value
+      or zero as an input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -637,7 +637,7 @@ methods:
     package: excel!
     fullName: copyTo(destinationSheet)
     summary: |-
-      Copies and pastes a Shape object. The pasted shape is copied to the same pixel location as this shape.
+      Copies and pastes a `Shape` object. The pasted shape is copied to the same pixel location as this shape.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -647,7 +647,7 @@ methods:
       content: 'copyTo(destinationSheet?: Worksheet | string): Excel.Shape;'
       parameters:
         - id: destinationSheet
-          description: The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
+          description: The sheet to which the shape object will be pasted. The default value is the copied shape's worksheet.
           type: '<xref uid="excel!Excel.Worksheet:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -822,8 +822,8 @@ methods:
       parameters:
         - id: increment
           description: >-
-            How many degrees the shape will be rotated. A positive value rotates the shape clockwise; a negative value
-            rotates it counterclockwise.
+            How many degrees the shape will be rotated. A positive value rotates the shape clockwise and a negative
+            value rotates it counterclockwise.
           type: number
       return:
         type: void
@@ -862,8 +862,8 @@ methods:
       parameters:
         - id: increment
           description: >-
-            The increment, in points, the shape will be vertically moved. in points. A positive value moves the shape
-            down and a negative value moves it up.
+            The increment, in points, the shape will be vertically moved. A positive value moves the shape down and a
+            negative value moves it up.
           type: number
       return:
         type: void
@@ -1168,7 +1168,7 @@ methods:
       parameters:
         - id: position
           description: >-
-            Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
+            Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for
             details.
           type: '<xref uid="excel!Excel.ShapeZOrder:enum" />'
       return:
@@ -1208,7 +1208,7 @@ methods:
       parameters:
         - id: positionString
           description: >-
-            Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
+            Where to move the shape in the z-order stack relative to the other shapes. See `Excel.ShapeZOrder` for
             details.
           type: '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
       return:
