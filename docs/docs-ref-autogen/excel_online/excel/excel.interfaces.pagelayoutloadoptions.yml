@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PageLayoutLoadOptions
 summary: >-
-  Represents layout and print settings that are not dependent any printer-specific implementation. These settings
+  Represents layout and print settings that are not dependent on any printer-specific implementation. These settings
   include margins, orientation, page numbering, title rows, and print area.
 
 
@@ -97,7 +97,7 @@ properties:
     package: excel!
     fullName: draftMode
     summary: |-
-      The worksheet's draft mode option. If true the sheet will be printed without graphics.
+      The worksheet's draft mode option. If `true`<!-- -->, the sheet will be printed without graphics.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -112,7 +112,7 @@ properties:
     package: excel!
     fullName: firstPageNumber
     summary: |-
-      The worksheet's first page number to print. Null value represents "auto" page numbering.
+      The worksheet's first page number to print. A `null` value represents "auto" page numbering.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

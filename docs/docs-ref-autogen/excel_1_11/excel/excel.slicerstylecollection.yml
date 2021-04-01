@@ -4,7 +4,7 @@ uid: 'excel!Excel.SlicerStyleCollection:class'
 package: excel!
 fullName: Excel.SlicerStyleCollection
 summary: |-
-  Represents a collection of SlicerStyle objects.
+  Represents a collection of `SlicerStyle` objects.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: 'add(name, makeUniqueName)'
     summary: |-
-      Creates a blank SlicerStyle with the specified name.
+      Creates a blank slicer style with the specified name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -55,15 +55,17 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new SlicerStyle. Will throw an invalid argument exception if the name is already in
-            use.
+            The unique name for the new slicer style. Will throw an `InvalidArgument` exception if the name is already
+            in use.
           type: string
         - id: makeUniqueName
-          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          description: >-
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make
+            it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
-        description: The newly created SlicerStyle.
+        description: The newly created `SlicerStyle`<!-- -->.
   - name: getCount()
     uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
     package: excel!
@@ -85,7 +87,7 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: |-
-      Gets the default SlicerStyle for the parent object's scope.
+      Gets the default `SlicerStyle` for the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,13 +97,13 @@ methods:
       content: 'getDefault(): Excel.SlicerStyle;'
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
-        description: The SlicerStyle object that is the current default SlicerStyle.
+        description: The `SlicerStyle` object that is the current default slicer style.
   - name: getItem(name)
     uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
     summary: |-
-      Gets a SlicerStyle by name.
+      Gets a `SlicerStyle` by name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -111,17 +113,21 @@ methods:
       content: 'getItem(name: string): Excel.SlicerStyle;'
       parameters:
         - id: name
-          description: Name of the SlicerStyle to be retrieved.
+          description: Name of the slicer style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
-        description: The SlicerStyle object whose name matches the input.
+        description: The `SlicerStyle` object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: |-
-      Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
+    summary: >-
+      Gets a `SlicerStyle` by name. If the slicer style doesn't exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -131,11 +137,11 @@ methods:
       content: 'getItemOrNullObject(name: string): Excel.SlicerStyle;'
       parameters:
         - id: name
-          description: Name of the SlicerStyle to be retrieved.
+          description: Name of the slicer style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.SlicerStyle:class" />'
-        description: The SlicerStyle object whose name matches the input.
+        description: The `SlicerStyle` object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
     package: excel!
@@ -204,7 +210,7 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: |-
-      Sets the default SlicerStyle for use in the parent object's scope.
+      Sets the default slicer style for use in the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -214,7 +220,7 @@ methods:
       content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: The SlicerStyle object or name of the SlicerStyle object that should be the new default.
+          description: 'The `SlicerStyle` object, or name of the `SlicerStyle` object, that should be the new default.'
           type: '<xref uid="excel!Excel.SlicerStyle:class" /> | string'
       return:
         type: void

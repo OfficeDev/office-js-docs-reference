@@ -78,8 +78,8 @@ properties:
     package: excel!
     fullName: subtotalLocation
     summary: >-
-      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
-      this will be null.
+      This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different
+      states, this will be `null`<!-- -->.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

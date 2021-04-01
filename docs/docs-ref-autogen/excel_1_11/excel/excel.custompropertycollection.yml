@@ -4,7 +4,7 @@ uid: 'excel!Excel.CustomPropertyCollection:class'
 package: excel!
 fullName: Excel.CustomPropertyCollection
 summary: |-
-  Contains the collection of customProperty objects.
+  Contains the collection of custom properties.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -127,8 +127,10 @@ methods:
     uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+    summary: >-
+      Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does
+      not exist.
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -148,8 +150,11 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
-      does not exist.
+      Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then
+      this function will return an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

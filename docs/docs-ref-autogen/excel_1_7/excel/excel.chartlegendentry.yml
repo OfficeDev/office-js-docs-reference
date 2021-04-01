@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartLegendEntry:class'
 package: excel!
 fullName: Excel.ChartLegendEntry
 summary: |-
-  Represents the legendEntry in legendEntryCollection.
+  Represents the legend entry in `legendEntryCollection`<!-- -->.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: visible
     summary: |-
-      Represents the visible of a chart legend entry.
+      Represents the visibility of a chart legend entry.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      For EACH ITEM in the collection: Id of the PivotTable.
+      For EACH ITEM in the collection: ID of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

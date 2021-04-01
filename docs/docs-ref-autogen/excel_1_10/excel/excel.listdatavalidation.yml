@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: inCellDropDown
     summary: |-
-      Displays the list in cell drop down or not, it defaults to true.
+      Specifies whether to display the list in a cell drop-down. The default is `true`<!-- -->.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -32,8 +32,8 @@ properties:
     package: excel!
     fullName: source
     summary: >-
-      Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a
-      string that contains comma separated number, boolean or date.
+      Source of the list for data validation When setting the value, it can be passed in as a `Range` object, or a
+      string that contains a comma-separated number, boolean, or date.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

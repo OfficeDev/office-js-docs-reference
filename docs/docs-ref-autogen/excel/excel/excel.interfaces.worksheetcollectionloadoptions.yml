@@ -234,6 +234,24 @@ properties:
       content: 'tabColor?: boolean;'
       return:
         type: boolean
+  - name: tabId
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tabId:member'
+    package: excel!
+    fullName: tabId
+    summary: >-
+      For EACH ITEM in the collection: Returns a value representing this worksheet that can be read by Open Office XML.
+      This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabId?: boolean;'
+      return:
+        type: boolean
   - name: tables
     uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
     package: excel!

@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: addGeometricShape(geometricShapeType)
     summary: |-
-      Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+      Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -54,7 +54,7 @@ methods:
       content: 'addGeometricShape(geometricShapeType: Excel.GeometricShapeType): Excel.Shape;'
       parameters:
         - id: geometricShapeType
-          description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+          description: Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
           type: '<xref uid="excel!Excel.GeometricShapeType:enum" />'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -85,7 +85,7 @@ methods:
     package: excel!
     fullName: addGeometricShape(geometricShapeTypeString)
     summary: |-
-      Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+      Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -126,7 +126,7 @@ methods:
         "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
       parameters:
         - id: geometricShapeTypeString
-          description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+          description: Represents the type of the geometric shape. See `Excel.GeometricShapeType` for details.
           type: >-
             "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" |
             "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" |
@@ -167,8 +167,8 @@ methods:
     package: excel!
     fullName: addGroup(values)
     summary: >-
-      Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of
-      shapes.
+      Groups a subset of shapes in this collection's worksheet. Returns a `Shape` object that represents the new group
+      of shapes.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -179,7 +179,7 @@ methods:
       content: 'addGroup(values: Array<string | Shape>): Excel.Shape;'
       parameters:
         - id: values
-          description: An array of shape ID or shape objects.
+          description: An array of shape IDs or shape objects.
           type: 'Array&lt;string | <xref uid="excel!Excel.Shape:class" />&gt;'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -213,7 +213,7 @@ methods:
     package: excel!
     fullName: addImage(base64ImageString)
     summary: >-
-      Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that
+      Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that
       represents the new image.
 
 
@@ -267,7 +267,7 @@ methods:
     package: excel!
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     summary: |-
-      Adds a line to worksheet. Returns a Shape object that represents the new line.
+      Adds a line to worksheet. Returns a `Shape` object that represents the new line.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -291,7 +291,7 @@ methods:
           description: 'The distance, in points, from the end of the line to the top of the worksheet.'
           type: number
         - id: connectorType
-          description: Represents the connector type. See Excel.ConnectorType for details.
+          description: Represents the connector type. See `Excel.ConnectorType` for details.
           type: '<xref uid="excel!Excel.ConnectorType:enum" />'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -319,7 +319,7 @@ methods:
     package: excel!
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
     summary: |-
-      Adds a line to worksheet. Returns a Shape object that represents the new line.
+      Adds a line to worksheet. Returns a `Shape` object that represents the new line.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -343,7 +343,7 @@ methods:
           description: 'The distance, in points, from the end of the line to the top of the worksheet.'
           type: number
         - id: connectorTypeString
-          description: Represents the connector type. See Excel.ConnectorType for details.
+          description: Represents the connector type. See `Excel.ConnectorType` for details.
           type: '"Straight" | "Elbow" | "Curve"'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
@@ -353,8 +353,8 @@ methods:
     package: excel!
     fullName: addTextBox(text)
     summary: >-
-      Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the
-      new text box.
+      Adds a text box to the worksheet with the provided text as the content. Returns a `Shape` object that represents
+      the new text box.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -413,7 +413,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: |-
-      Gets a shape using its Name or ID.
+      Gets a shape using its name or ID.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

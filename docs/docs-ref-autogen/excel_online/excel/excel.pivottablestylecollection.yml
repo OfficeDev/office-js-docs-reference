@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: 'add(name, makeUniqueName)'
     summary: |-
-      Creates a blank PivotTableStyle with the specified name.
+      Creates a blank `PivotTableStyle` with the specified name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -55,15 +55,17 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new PivotTableStyle. Will throw an invalid argument exception if the name is already
+            The unique name for the new PivotTable style. Will throw an `InvalidArgument` error if the name is already
             in use.
           type: string
         - id: makeUniqueName
-          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          description: >-
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make
+            it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: The newly created PivotTableStyle.
+        description: The newly created `PivotTableStyle`<!-- -->.
   - name: getCount()
     uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
     package: excel!
@@ -85,7 +87,7 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: |-
-      Gets the default PivotTableStyle for the parent object's scope.
+      Gets the default PivotTable style for the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,13 +97,13 @@ methods:
       content: 'getDefault(): Excel.PivotTableStyle;'
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: The PivotTableStyle object that is the current default PivotTableStyle.
+        description: The `PivotTableStyle` object that is the current default PivotTable style.
   - name: getItem(name)
     uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
     summary: |-
-      Gets a PivotTableStyle by name.
+      Gets a `PivotTableStyle` by name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -111,17 +113,22 @@ methods:
       content: 'getItem(name: string): Excel.PivotTableStyle;'
       parameters:
         - id: name
-          description: Name of the PivotTableStyle to be retrieved.
+          description: Name of the PivotTable style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: The PivotTableStyle object whose name matches the input.
+        description: The `PivotTableStyle` object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: |-
-      Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.
+    summary: >-
+      Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this function will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -131,11 +138,11 @@ methods:
       content: 'getItemOrNullObject(name: string): Excel.PivotTableStyle;'
       parameters:
         - id: name
-          description: Name of the PivotTableStyle to be retrieved.
+          description: Name of the PivotTable style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.PivotTableStyle:class" />'
-        description: The PivotTableStyle object whose name matches the input.
+        description: The `PivotTableStyle` object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.PivotTableStyleCollection#load:member(1)'
     package: excel!
@@ -204,7 +211,7 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: |-
-      Sets the default PivotTableStyle for use in the parent object's scope.
+      Sets the default PivotTable style for use in the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -214,7 +221,7 @@ methods:
       content: 'setDefault(newDefaultStyle: PivotTableStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: The PivotTableStyle object or name of the PivotTableStyle object that should be the new default.
+          description: 'The `PivotTableStyle` object, or name of the `PivotTableStyle` object, that should be the new default.'
           type: '<xref uid="excel!Excel.PivotTableStyle:class" /> | string'
       return:
         type: void

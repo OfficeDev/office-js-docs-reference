@@ -4,7 +4,7 @@ uid: 'excel!Excel.Chart:class'
 package: excel!
 fullName: Excel.Chart
 summary: >-
-  Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using the
+  Represents a chart object in a workbook. To learn more about the chart object model, see [Work with charts using the
   Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
 
 
@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      Represents the datalabels on the chart.
+      Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -197,8 +197,10 @@ properties:
     uid: 'excel!Excel.Chart#title:member'
     package: excel!
     fullName: title
-    summary: |-
-      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -307,14 +309,14 @@ methods:
         OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
-          description: (Optional) The desired width of the resulting image.
+          description: Optional. The desired width of the resulting image.
           type: number
         - id: height
-          description: (Optional) The desired height of the resulting image.
+          description: Optional. The desired height of the resulting image.
           type: number
         - id: fittingMode
           description: >-
-            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            Optional. The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
           type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
@@ -355,14 +357,14 @@ methods:
         OfficeExtension.ClientResult<string>;
       parameters:
         - id: width
-          description: (Optional) The desired width of the resulting image.
+          description: Optional. The desired width of the resulting image.
           type: number
         - id: height
-          description: (Optional) The desired height of the resulting image.
+          description: Optional. The desired height of the resulting image.
           type: number
         - id: fittingModeString
           description: >-
-            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            Optional. The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
@@ -518,7 +520,7 @@ methods:
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
-            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+            (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
           type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
         type: void
@@ -561,7 +563,7 @@ methods:
         - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
-            (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+            (default), Rows, and Columns. See `Excel.ChartSeriesBy` for details.
           type: '"Auto" | "Columns" | "Rows"'
       return:
         type: void
@@ -587,7 +589,7 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | string'
         - id: endCell
           description: >-
-            (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this
+            Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this
             cell/range.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:

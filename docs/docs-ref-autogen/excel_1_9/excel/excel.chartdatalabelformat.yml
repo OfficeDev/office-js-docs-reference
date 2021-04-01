@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
+      Represents the font attributes (such as font name, font size, and color) for a chart data label.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

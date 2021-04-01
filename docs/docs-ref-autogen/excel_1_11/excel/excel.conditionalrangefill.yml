@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representing the color of the fill, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
+      HTML color code representing the color of the fill, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
 
 

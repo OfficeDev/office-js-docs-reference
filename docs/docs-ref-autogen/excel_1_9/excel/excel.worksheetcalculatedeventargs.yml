@@ -4,7 +4,7 @@ uid: 'excel!Excel.WorksheetCalculatedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetCalculatedEventArgs
 summary: |-
-  Provides information about the worksheet that raised the Calculated event.
+  Provides information about the worksheet that raised the calculated event.
 
   \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See `Excel.EventType` for details.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -32,7 +32,7 @@ properties:
     package: excel!
     fullName: worksheetId
     summary: |-
-      Gets the id of the worksheet in which the calculation occurred.
+      Gets the ID of the worksheet in which the calculation occurred.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

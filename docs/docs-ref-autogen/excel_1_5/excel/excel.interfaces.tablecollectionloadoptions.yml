@@ -129,7 +129,7 @@ properties:
     fullName: showBandedColumns
     summary: >-
       For EACH ITEM in the collection: Specifies if the columns show banded formatting in which odd columns are
-      highlighted differently from even ones to make reading the table easier.
+      highlighted differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -146,7 +146,7 @@ properties:
     fullName: showBandedRows
     summary: >-
       For EACH ITEM in the collection: Specifies if the rows show banded formatting in which odd rows are highlighted
-      differently from even ones to make reading the table easier.
+      differently from even ones, to make reading the table easier.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -228,7 +228,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
+      For EACH ITEM in the collection: Constant value that represents the table style. Possible values are:
       "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28",
       "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be
       specified.

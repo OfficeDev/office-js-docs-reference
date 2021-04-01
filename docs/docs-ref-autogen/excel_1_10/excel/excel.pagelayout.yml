@@ -4,7 +4,7 @@ uid: 'excel!Excel.PageLayout:class'
 package: excel!
 fullName: Excel.PageLayout
 summary: >-
-  Represents layout and print settings that are not dependent any printer-specific implementation. These settings
+  Represents layout and print settings that are not dependent on any printer-specific implementation. These settings
   include margins, orientation, page numbering, title rows, and print area.
 
 
@@ -135,7 +135,7 @@ properties:
     package: excel!
     fullName: draftMode
     summary: |-
-      The worksheet's draft mode option. If true the sheet will be printed without graphics.
+      The worksheet's draft mode option. If `true`<!-- -->, the sheet will be printed without graphics.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -150,7 +150,7 @@ properties:
     package: excel!
     fullName: firstPageNumber
     summary: |-
-      The worksheet's first page number to print. Null value represents "auto" page numbering.
+      The worksheet's first page number to print. A `null` value represents "auto" page numbering.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -426,8 +426,8 @@ methods:
     package: excel!
     fullName: getPrintArea()
     summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
-      worksheet. If there is no print area, an ItemNotFound error will be thrown.
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, an `ItemNotFound` error will be thrown.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -444,8 +444,11 @@ methods:
     package: excel!
     fullName: getPrintAreaOrNullObject()
     summary: >-
-      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
-      worksheet. If there is no print area, a null object will be returned.
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, then this function will return an object with its `isNullObject` property
+      set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -477,8 +480,12 @@ methods:
     uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
     package: excel!
     fullName: getPrintTitleColumnsOrNullObject()
-    summary: |-
-      Gets the range object representing the title columns. If not set, this will return a null object.
+    summary: >-
+      Gets the range object representing the title columns. If not set, then this function will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -509,8 +516,12 @@ methods:
     uid: 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
     package: excel!
     fullName: getPrintTitleRowsOrNullObject()
-    summary: |-
-      Gets the range object representing the title rows. If not set, this will return a null object.
+    summary: >-
+      Gets the range object representing the title rows. If not set, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -647,7 +658,7 @@ methods:
       content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
       parameters:
         - id: printArea
-          description: 'The range, or RangeAreas of the content to print.'
+          description: The range or ranges of the content to print.
           type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
       return:
         type: void
@@ -687,7 +698,7 @@ methods:
           description: Measurement unit for the margins provided.
           type: '<xref uid="excel!Excel.PrintMarginUnit:enum" />'
         - id: marginOptions
-          description: 'Margin values to set, margins not provided will remain unchanged.'
+          description: Margin values to set. Margins not provided remain unchanged.
           type: '<xref uid="excel!Excel.PageLayoutMarginOptions:interface" />'
       return:
         type: void
@@ -712,7 +723,7 @@ methods:
           description: Measurement unit for the margins provided.
           type: '"Points" | "Inches" | "Centimeters"'
         - id: marginOptions
-          description: 'Margin values to set, margins not provided will remain unchanged.'
+          description: Margin values to set. Margins not provided remain unchanged.
           type: '<xref uid="excel!Excel.PageLayoutMarginOptions:interface" />'
       return:
         type: void
@@ -732,7 +743,7 @@ methods:
       content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
       parameters:
         - id: printTitleColumns
-          description: 'The columns to be repeated to the left of each page, range must span the entire column to be valid.'
+          description: The columns to be repeated to the left of each page. The range must span the entire column to be valid.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
@@ -752,7 +763,7 @@ methods:
       content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
       parameters:
         - id: printTitleRows
-          description: 'The rows to be repeated at the top of each page, range must span the entire row to be valid.'
+          description: The rows to be repeated at the top of each page. The range must span the entire row to be valid.
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void

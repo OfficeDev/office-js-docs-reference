@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      Represents binding identifier.
+      Represents the binding identifier.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Returns the type of the binding. See Excel.BindingType for details.
+      Returns the type of the binding. See `Excel.BindingType` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

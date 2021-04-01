@@ -80,7 +80,7 @@ properties:
     package: excel!
     fullName: type
     summary: >-
-      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
+      Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
@@ -144,8 +144,11 @@ properties:
     package: excel!
     fullName: worksheetOrNullObject
     summary: >-
-      Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
-      workbook instead.
+      Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this
+      function will return an object with its `isNullObject` property set to `true`<!-- -->. For further information,
+      see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

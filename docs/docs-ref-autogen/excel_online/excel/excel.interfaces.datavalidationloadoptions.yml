@@ -49,7 +49,7 @@ properties:
     package: excel!
     fullName: ignoreBlanks
     summary: |-
-      Specifies if data validation will be performed on blank cells, it defaults to true.
+      Specifies if data validation will be performed on blank cells. Default is `true`<!-- -->.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -94,7 +94,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Type of the data validation, see Excel.DataValidationType for details.
+      Type of the data validation, see `Excel.DataValidationType` for details.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -109,9 +109,9 @@ properties:
     package: excel!
     fullName: valid
     summary: >-
-      Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
-      are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
-      within the range.
+      Represents if all cell values are valid according to the data validation rules. Returns `true` if all cell values
+      are valid, or `false` if all cell values are invalid. Returns `null` if there are both valid and invalid cell
+      values within the range.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

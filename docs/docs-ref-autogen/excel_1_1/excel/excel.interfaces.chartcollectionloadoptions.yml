@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      For EACH ITEM in the collection: Represents the datalabels on the chart.
+      For EACH ITEM in the collection: Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -151,7 +151,7 @@ properties:
     package: excel!
     fullName: title
     summary: >-
-      For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility,
+      For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
       position, and formatting of the title.
 
 

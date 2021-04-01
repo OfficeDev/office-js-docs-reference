@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartLoadOptions
 summary: >-
-  Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using the
+  Represents a chart object in a workbook. To learn more about the chart object model, see [Work with charts using the
   Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
 
 
@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: |-
-      Specifies the type of the chart. See Excel.ChartType for details.
+      Specifies the type of the chart. See `Excel.ChartType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -63,7 +63,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      Represents the datalabels on the chart.
+      Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      The unique id of chart.
+      The unique ID of chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -197,8 +197,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
     package: excel!
     fullName: title
-    summary: |-
-      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

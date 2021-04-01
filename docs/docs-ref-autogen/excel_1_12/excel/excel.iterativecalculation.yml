@@ -4,7 +4,7 @@ uid: 'excel!Excel.IterativeCalculation:class'
 package: excel!
 fullName: Excel.IterativeCalculation
 summary: |-
-  Represents the Iterative Calculation settings.
+  Represents the iterative calculation settings.
 
   \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

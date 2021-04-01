@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: lineStyle
     summary: |-
-      Represents the line style of the border. See Excel.ChartLineStyle for details.
+      Represents the line style of the border. See `Excel.ChartLineStyle` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

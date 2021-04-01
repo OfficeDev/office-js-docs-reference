@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: legacyId
     summary: |-
-      Returns a numeric id.
+      Returns a numeric ID.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -145,8 +145,8 @@ properties:
     package: excel!
     fullName: showBandedColumns
     summary: >-
-      Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to
-      make reading the table easier.
+      Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones,
+      to make reading the table easier.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -162,7 +162,7 @@ properties:
     package: excel!
     fullName: showBandedRows
     summary: >-
-      Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make
+      Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make
       reading the table easier.
 
 
@@ -241,7 +241,7 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      Constant value that represents the table style. Possible values are: "TableStyleLight1" through
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
 

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Workbook:class'
 package: excel!
 fullName: Excel.Workbook
 summary: >-
-  Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To
+  Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
 
@@ -79,7 +79,7 @@ properties:
     package: excel!
     fullName: names
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
+      Represents a collection of workbook-scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

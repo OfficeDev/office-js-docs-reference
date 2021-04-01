@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: font
     summary: |-
-      Represents the font attributes such as font name, font size, color, etc. of a chart legend.
+      Represents the font attributes such as font name, font size, and color of a chart legend.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

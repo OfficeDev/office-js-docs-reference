@@ -61,7 +61,7 @@ fields:
   - name: flashFill
     uid: 'excel!Excel.AutoFillType.flashFill:member'
     package: excel!
-    summary: Populates the adjacent cells by using Excel's FlashFill feature.
+    summary: Populates the adjacent cells by using Excel's Flash Fill feature.
     value: '"FlashFill"'
   - name: growthTrend
     uid: 'excel!Excel.AutoFillType.growthTrend:member'

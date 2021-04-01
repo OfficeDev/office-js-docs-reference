@@ -69,7 +69,7 @@ methods:
       content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
       parameters:
         - id: index
-          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+          description: Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
           type: '<xref uid="excel!Excel.BorderIndex:enum" />'
       return:
         type: '<xref uid="excel!Excel.RangeBorder:class" />'
@@ -114,7 +114,7 @@ methods:
         | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
       parameters:
         - id: indexString
-          description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+          description: Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
           type: >-
             "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown"
             | "DiagonalUp"

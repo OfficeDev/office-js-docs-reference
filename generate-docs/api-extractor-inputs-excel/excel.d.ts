@@ -3976,7 +3976,7 @@ export declare namespace Excel {
         changeType: Excel.CommentChangeType | "CommentEdited" | "CommentResolved" | "CommentReopened" | "ReplyAdded" | "ReplyDeleted" | "ReplyEdited";
         /**
          *
-         * Gets the `CommentDetail` array which contains the comment ID and IDs of its related replies.
+         * Get the `CommentDetail` array which contains the comment ID and IDs of its related replies.
          *
          * [Api set: ExcelApi 1.12]
          */
@@ -5028,6 +5028,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         tabColor: string;
+        /**
+         *
+         * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly tabId: number;
         /**
          *
          * The visibility of the worksheet.
@@ -6392,8 +6400,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6402,7 +6409,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param directionString - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6491,8 +6498,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6501,7 +6507,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param directionString - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -9013,8 +9019,7 @@ export declare namespace Excel {
         /**
          * Resize the table to the new range. The new range must overlap with the original table range and the headers (or the top of the table) must be in the same row.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param newRange - The range object or range address that will be used to determine the new size of the table.
          */
@@ -25851,8 +25856,7 @@ export declare namespace Excel {
         richValue = "RichValue"
     }
     /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     enum KeyboardDirection {
         left = "Left",
@@ -36506,6 +36510,14 @@ export declare namespace Excel {
             tabColor?: string;
             /**
              *
+             * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabId?: number;
+            /**
+             *
              * The visibility of the worksheet.
              *
              * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
@@ -43270,6 +43282,14 @@ export declare namespace Excel {
             tabColor?: boolean;
             /**
              *
+             * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabId?: boolean;
+            /**
+             *
              * The visibility of the worksheet.
              *
              * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
@@ -43389,6 +43409,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             tabColor?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabId?: boolean;
             /**
              *
              * For EACH ITEM in the collection: The visibility of the worksheet.

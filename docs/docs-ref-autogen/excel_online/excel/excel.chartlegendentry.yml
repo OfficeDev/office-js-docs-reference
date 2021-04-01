@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartLegendEntry:class'
 package: excel!
 fullName: Excel.ChartLegendEntry
 summary: |-
-  Represents the legendEntry in legendEntryCollection.
+  Represents the legend entry in `legendEntryCollection`<!-- -->.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: height
     summary: |-
-      Specifies the height of the legendEntry on the chart legend.
+      Specifies the height of the legend entry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: index
     summary: |-
-      Specifies the index of the legendEntry in the chart legend.
+      Specifies the index of the legend entry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: left
     summary: |-
-      Specifies the left of a chart legendEntry.
+      Specifies the left value of a chart legend entry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: top
     summary: |-
-      Specifies the top of a chart legendEntry.
+      Specifies the top of a chart legend entry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -91,7 +91,7 @@ properties:
     package: excel!
     fullName: visible
     summary: |-
-      Represents the visible of a chart legend entry.
+      Represents the visibility of a chart legend entry.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -106,7 +106,7 @@ properties:
     package: excel!
     fullName: width
     summary: |-
-      Represents the width of the legendEntry on the chart Legend.
+      Represents the width of the legend entry on the chart Legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

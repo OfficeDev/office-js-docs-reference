@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: horizontalAlignment
     summary: |-
-      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+      Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -91,7 +91,7 @@ properties:
     package: excel!
     fullName: verticalAlignment
     summary: |-
-      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+      Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -106,8 +106,8 @@ properties:
     package: excel!
     fullName: wrapText
     summary: >-
-      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
-      wrap setting
+      Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a
+      uniform wrap setting
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

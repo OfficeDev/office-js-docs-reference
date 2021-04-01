@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: foregroundColor
     summary: >-
-      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a
+      Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
       named HTML color (e.g., "orange")
 
 
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: transparency
     summary: >-
-      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
       if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
       gradient fill type.
 
@@ -49,7 +49,7 @@ properties:
     package: excel!
     fullName: type
     summary: |-
-      Returns the fill type of the shape. See Excel.ShapeFillType for details.
+      Returns the fill type of the shape. See `Excel.ShapeFillType` for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

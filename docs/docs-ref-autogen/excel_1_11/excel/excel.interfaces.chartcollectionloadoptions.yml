@@ -46,8 +46,8 @@ properties:
     package: excel!
     fullName: categoryLabelLevel
     summary: >-
-      For EACH ITEM in the collection: Specifies a ChartCategoryLabelLevel enumeration constant referring to the level
-      of where the category labels are being sourced from.
+      For EACH ITEM in the collection: Specifies a chart category label level enumeration constant, referring to the
+      level of the source category labels.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -63,7 +63,7 @@ properties:
     package: excel!
     fullName: chartType
     summary: |-
-      For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
+      For EACH ITEM in the collection: Specifies the type of the chart. See `Excel.ChartType` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,7 +78,7 @@ properties:
     package: excel!
     fullName: dataLabels
     summary: |-
-      For EACH ITEM in the collection: Represents the datalabels on the chart.
+      For EACH ITEM in the collection: Represents the data labels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -138,7 +138,7 @@ properties:
     package: excel!
     fullName: id
     summary: |-
-      For EACH ITEM in the collection: The unique id of chart.
+      For EACH ITEM in the collection: The unique ID of chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -213,7 +213,7 @@ properties:
     package: excel!
     fullName: plotArea
     summary: |-
-      For EACH ITEM in the collection: Represents the plotArea for the chart.
+      For EACH ITEM in the collection: Represents the plot area for the chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -275,8 +275,8 @@ properties:
     package: excel!
     fullName: seriesNameLevel
     summary: >-
-      For EACH ITEM in the collection: Specifies a ChartSeriesNameLevel enumeration constant referring to the level of
-      where the series names are being sourced from.
+      For EACH ITEM in the collection: Specifies a chart series name level enumeration constant, referring to the level
+      of the source series names.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -308,8 +308,8 @@ properties:
     fullName: showDataLabelsOverMaximum
     summary: >-
       For EACH ITEM in the collection: Specifies whether to show the data labels when the value is greater than the
-      maximum value on the value axis. If value axis became smaller than the size of data points, you can use this
-      property to set whether to show the data labels. This property applies to 2-D charts only.
+      maximum value on the value axis. If the value axis becomes smaller than the size of the data points, you can use
+      this property to set whether to show the data labels. This property applies to 2-D charts only.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -340,7 +340,7 @@ properties:
     package: excel!
     fullName: title
     summary: >-
-      For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility,
+      For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
       position, and formatting of the title.
 
 

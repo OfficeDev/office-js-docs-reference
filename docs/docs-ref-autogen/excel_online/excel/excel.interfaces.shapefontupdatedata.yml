@@ -13,8 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeFontUpdateData#bold:member'
     package: excel!
     fullName: bold
-    summary: |-
-      Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
+    summary: >-
+      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
+      fragments.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -29,8 +31,8 @@ properties:
     package: excel!
     fullName: color
     summary: >-
-      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns null if the TextRange
-      includes text fragments with different colors.
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
+      `TextRange` includes text fragments with different colors.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -46,7 +48,7 @@ properties:
     package: excel!
     fullName: italic
     summary: >-
-      Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text
+      Represents the italic status of font. Returns `null` if the `TextRange` includes both italic and non-italic text
       fragments.
 
 
@@ -63,7 +65,7 @@ properties:
     package: excel!
     fullName: name
     summary: >-
-      Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the
+      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
       corresponding font name; otherwise it is the Latin font name.
 
 
@@ -80,8 +82,8 @@ properties:
     package: excel!
     fullName: size
     summary: >-
-      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
-      font sizes.
+      Represents font size in points (e.g., 11). Returns `null` if the `TextRange` includes text fragments with
+      different font sizes.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -97,8 +99,8 @@ properties:
     package: excel!
     fullName: underline
     summary: >-
-      Type of underline applied to the font. Returns null if the TextRange includes text fragments with different
-      underline styles. See Excel.ShapeFontUnderlineStyle for details.
+      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
+      underline styles. See `Excel.ShapeFontUnderlineStyle` for details.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeAreasCollectionLoadOptions
 summary: |-
-  Contains the collection of cross-worksheets level Ranges.
+  Contains the collection of cross-workbook level ranges.
 
   \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: address
     summary: >-
-      For EACH ITEM in the collection: Returns the RangeAreas reference in A1-style. Address value will contain the
+      For EACH ITEM in the collection: Returns the `RangeAreas` reference in A1-style. Address value will contain the
       worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
 
 
@@ -48,7 +48,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: |-
-      For EACH ITEM in the collection: Returns the RangeAreas reference in the user locale.
+      For EACH ITEM in the collection: Returns the `RangeAreas` reference in the user locale.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -63,7 +63,7 @@ properties:
     package: excel!
     fullName: areaCount
     summary: |-
-      For EACH ITEM in the collection: Returns the number of rectangular ranges that comprise this RangeAreas object.
+      For EACH ITEM in the collection: Returns the number of rectangular ranges that comprise this `RangeAreas` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -78,8 +78,8 @@ properties:
     package: excel!
     fullName: cellCount
     summary: >-
-      For EACH ITEM in the collection: Returns the number of cells in the RangeAreas object, summing up the cell counts
-      of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
+      For EACH ITEM in the collection: Returns the number of cells in the `RangeAreas` object, summing up the cell
+      counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: dataValidation
     summary: |-
-      For EACH ITEM in the collection: Returns a dataValidation object for all ranges in the RangeAreas.
+      For EACH ITEM in the collection: Returns a data validation object for all ranges in the `RangeAreas`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -110,8 +110,8 @@ properties:
     package: excel!
     fullName: format
     summary: >-
-      For EACH ITEM in the collection: Returns a RangeFormat object, encapsulating the the font, fill, borders,
-      alignment, and other properties for all ranges in the RangeAreas object.
+      For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the the font, fill, borders,
+      alignment, and other properties for all ranges in the `RangeAreas` object.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -127,7 +127,7 @@ properties:
     package: excel!
     fullName: isEntireColumn
     summary: >-
-      For EACH ITEM in the collection: Specifies if all the ranges on this RangeAreas object represent entire columns
+      For EACH ITEM in the collection: Specifies if all the ranges on this `RangeAreas` object represent entire columns
       (e.g., "A:C, Q:Z").
 
 
@@ -144,7 +144,7 @@ properties:
     package: excel!
     fullName: isEntireRow
     summary: >-
-      For EACH ITEM in the collection: Specifies if all the ranges on this RangeAreas object represent entire rows
+      For EACH ITEM in the collection: Specifies if all the ranges on this `RangeAreas` object represent entire rows
       (e.g., "1:3, 5:7").
 
 
@@ -161,9 +161,9 @@ properties:
     package: excel!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Represents the style for all ranges in this RangeAreas object. If the styles of
-      the cells are inconsistent, null will be returned. For custom styles, the style name will be returned. For
-      built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
+      For EACH ITEM in the collection: Represents the style for all ranges in this `RangeAreas` object. If the styles of
+      the cells are inconsistent, `null` will be returned. For custom styles, the style name will be returned. For
+      built-in styles, a string representing a value in the `BuiltInStyle` enum will be returned.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -179,7 +179,7 @@ properties:
     package: excel!
     fullName: worksheet
     summary: |-
-      For EACH ITEM in the collection: Returns the worksheet for the current RangeAreas.
+      For EACH ITEM in the collection: Returns the worksheet for the current `RangeAreas`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -136,7 +136,7 @@ properties:
     package: excel!
     fullName: resolved
     summary: >-
-      For EACH ITEM in the collection: The comment reply status. A value of "true" means the reply is in the resolved
+      For EACH ITEM in the collection: The comment reply status. A value of `true` means the reply is in the resolved
       state.
 
 

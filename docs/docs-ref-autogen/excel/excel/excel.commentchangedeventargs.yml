@@ -36,7 +36,7 @@ properties:
     package: excel!
     fullName: commentDetails
     summary: |-
-      Gets the `CommentDetail` array which contains the comment ID and IDs of its related replies.
+      Get the `CommentDetail` array which contains the comment ID and IDs of its related replies.
 
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

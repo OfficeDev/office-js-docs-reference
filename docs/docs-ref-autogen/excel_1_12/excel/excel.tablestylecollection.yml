@@ -4,7 +4,7 @@ uid: 'excel!Excel.TableStyleCollection:class'
 package: excel!
 fullName: Excel.TableStyleCollection
 summary: |-
-  Represents a collection of TableStyles.
+  Represents a collection of table styles.
 
   \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -44,7 +44,7 @@ methods:
     package: excel!
     fullName: 'add(name, makeUniqueName)'
     summary: |-
-      Creates a blank TableStyle with the specified name.
+      Creates a blank `TableStyle` with the specified name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -55,15 +55,17 @@ methods:
       parameters:
         - id: name
           description: >-
-            The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in
+            The unique name for the new table style. Will throw an `InvalidArgument` error if the name is already in
             use.
           type: string
         - id: makeUniqueName
-          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          description: >-
+            Optional. Defaults to `false`<!-- -->. If `true`<!-- -->, will append numbers to the name in order to make
+            it unique, if needed.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
-        description: The newly created TableStyle.
+        description: The newly created `TableStyle`<!-- -->.
   - name: getCount()
     uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
     package: excel!
@@ -85,7 +87,7 @@ methods:
     package: excel!
     fullName: getDefault()
     summary: |-
-      Gets the default TableStyle for the parent object's scope.
+      Gets the default table style for the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -95,13 +97,13 @@ methods:
       content: 'getDefault(): Excel.TableStyle;'
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
-        description: The TableStyle object that is the current default TableStyle.
+        description: The `TableStyle` object that is the current default table style.
   - name: getItem(name)
     uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
     summary: |-
-      Gets a TableStyle by name.
+      Gets a `TableStyle` by name.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -111,17 +113,21 @@ methods:
       content: 'getItem(name: string): Excel.TableStyle;'
       parameters:
         - id: name
-          description: Name of the TableStyle to be retrieved.
+          description: Name of the table style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
-        description: The TableStyle object whose name matches the input.
+        description: The `TableStyle` object whose name matches the input.
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: |-
-      Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
+    summary: >-
+      Gets a `TableStyle` by name. If the table style does not exist, then this function will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -131,11 +137,11 @@ methods:
       content: 'getItemOrNullObject(name: string): Excel.TableStyle;'
       parameters:
         - id: name
-          description: Name of the TableStyle to be retrieved.
+          description: Name of the table style to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.TableStyle:class" />'
-        description: The TableStyle object whose name matches the input.
+        description: The `TableStyle` object whose name matches the input.
   - name: load(options)
     uid: 'excel!Excel.TableStyleCollection#load:member(1)'
     package: excel!
@@ -204,7 +210,7 @@ methods:
     package: excel!
     fullName: setDefault(newDefaultStyle)
     summary: |-
-      Sets the default TableStyle for use in the parent object's scope.
+      Sets the default table style for use in the parent object's scope.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -214,7 +220,7 @@ methods:
       content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
       parameters:
         - id: newDefaultStyle
-          description: The TableStyle object or name of the TableStyle object that should be the new default.
+          description: 'The `TableStyle` object, or name of the `TableStyle` object, that should be the new default.'
           type: '<xref uid="excel!Excel.TableStyle:class" /> | string'
       return:
         type: void

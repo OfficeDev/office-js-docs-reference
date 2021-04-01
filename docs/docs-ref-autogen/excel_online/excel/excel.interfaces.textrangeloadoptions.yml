@@ -31,7 +31,7 @@ properties:
     package: excel!
     fullName: font
     summary: |-
-      Returns a ShapeFont object that represents the font attributes for the text range.
+      Returns a `ShapeFont` object that represents the font attributes for the text range.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartTitlePosition:enum'
 package: excel!
 fullName: Excel.ChartTitlePosition
 summary: |-
-  Represents the position of chart title.
+  Represents the position of the chart title.
 
   \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

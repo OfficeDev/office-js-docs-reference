@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: height
     summary: |-
-      Returns the height, in points, of the chart title. Null if chart title is not visible.
+      Returns the height, in points, of the chart title. Value is `null` if the chart title is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -76,8 +76,8 @@ properties:
     package: excel!
     fullName: left
     summary: >-
-      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
-      title is not visible.
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Value is
+      `null` if the chart title is not visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -108,7 +108,7 @@ properties:
     package: excel!
     fullName: position
     summary: |-
-      Represents the position of chart title. See Excel.ChartTitlePosition for details.
+      Represents the position of chart title. See `Excel.ChartTitlePosition` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -170,8 +170,8 @@ properties:
     package: excel!
     fullName: top
     summary: >-
-      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
-      is not visible.
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Value is `null` if
+      the chart title is not visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -187,7 +187,7 @@ properties:
     package: excel!
     fullName: verticalAlignment
     summary: |-
-      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+      Specifies the vertical alignment of chart title. See `Excel.ChartTextVerticalAlignment` for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -217,7 +217,7 @@ properties:
     package: excel!
     fullName: width
     summary: |-
-      Specifies the width, in points, of the chart title. Null if chart title is not visible.
+      Specifies the width, in points, of the chart title. Value is `null` if the chart title is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

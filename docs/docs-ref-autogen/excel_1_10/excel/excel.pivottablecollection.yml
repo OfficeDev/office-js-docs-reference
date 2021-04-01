@@ -129,8 +129,12 @@ methods:
     uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(name)
-    summary: |-
-      Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
+    summary: >-
+      Gets a PivotTable by name. If the PivotTable does not exist, then this function returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

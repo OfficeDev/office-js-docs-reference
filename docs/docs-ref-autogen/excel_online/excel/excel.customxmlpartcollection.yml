@@ -154,7 +154,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: |-
-      Gets the number of CustomXml parts in the collection.
+      Gets the number of custom XML parts in the collection.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -221,8 +221,11 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(id)
     summary: >-
-      Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
-      will be true.
+      Gets a custom XML part based on its ID. If the `CustomXmlPart` does not exist, then this function returns an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

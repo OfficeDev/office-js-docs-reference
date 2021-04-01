@@ -59,7 +59,7 @@ properties:
     package: excel!
     fullName: names
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants).
+      Represents a collection of workbook-scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -119,7 +119,7 @@ properties:
     package: excel!
     fullName: settings
     summary: |-
-      Represents a collection of Settings associated with the workbook.
+      Represents a collection of settings associated with the workbook.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

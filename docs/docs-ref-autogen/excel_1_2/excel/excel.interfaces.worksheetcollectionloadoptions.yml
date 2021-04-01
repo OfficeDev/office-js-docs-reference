@@ -93,7 +93,7 @@ properties:
     package: excel!
     fullName: protection
     summary: |-
-      For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
+      For EACH ITEM in the collection: Returns the sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -123,7 +123,7 @@ properties:
     package: excel!
     fullName: visibility
     summary: >-
-      For EACH ITEM in the collection: The Visibility of the worksheet.
+      For EACH ITEM in the collection: The visibility of the worksheet.
 
 
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting

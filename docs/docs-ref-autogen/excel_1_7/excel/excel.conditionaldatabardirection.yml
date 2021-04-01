@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalDataBarDirection:enum'
 package: excel!
 fullName: Excel.ConditionalDataBarDirection
 summary: |-
-  Represents the Data Bar direction within a cell.
+  Represents the data bar direction within a cell.
 
   \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''

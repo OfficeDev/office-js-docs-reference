@@ -4,7 +4,7 @@ uid: 'excel!Excel.ShapeGroup:class'
 package: excel!
 fullName: Excel.ShapeGroup
 summary: |-
-  Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`<!-- -->.
+  Represents a shape group inside a worksheet. To get the corresponding `Shape` object, use `ShapeGroup.shape`<!-- -->.
 
   \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 remarks: ''
@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: shape
     summary: |-
-      Returns the Shape object associated with the group.
+      Returns the `Shape` object associated with the group.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -61,7 +61,7 @@ properties:
     package: excel!
     fullName: shapes
     summary: |-
-      Returns the collection of Shape objects.
+      Returns the collection of `Shape` objects.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

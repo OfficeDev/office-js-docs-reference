@@ -17,7 +17,7 @@ properties:
     package: excel!
     fullName: bold
     summary: |-
-      Represents the bold status of font.
+      Represents the bold status of the font.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -106,7 +106,7 @@ properties:
     package: excel!
     fullName: underline
     summary: |-
-      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
