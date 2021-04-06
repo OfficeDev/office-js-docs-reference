@@ -45,12 +45,13 @@
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
-        "ManagedReference": "Content",
         "RestApi": "Content",
         "TSType": "Content",
         "TSPackage": "Content",
         "TSEnum": "Content",
-        "TSTypeAlias": "Content"
+        "TSTypeAlias": "Content",
+        "ReferenceContainer": "Content",
+        "ManagedReference": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
@@ -68,7 +69,7 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
@@ -79,7 +80,11 @@
     }
   ],
   "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
   "targets": {},
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  },
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
@@ -241,8 +246,5 @@
       "target_framework": "net45",
       "version": "latest"
     }
-  ],
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  ]
 }
