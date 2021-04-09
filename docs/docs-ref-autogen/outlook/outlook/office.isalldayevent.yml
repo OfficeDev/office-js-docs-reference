@@ -150,7 +150,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(isAllDayEvent: boolean, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        setAsync(isAllDayEvent: boolean, options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: isAllDayEvent
@@ -158,9 +158,46 @@ methods:
           type: boolean
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(isAllDayEvent, callback)'
+    uid: 'outlook!Office.IsAllDayEvent#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(isAllDayEvent, callback)'
+    summary: |-
+      Sets the all-day event status of an appointment.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the
+      Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setAsync(isAllDayEvent: boolean, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: isAllDayEvent
+          description: boolean value to set the all day event status.
+          type: boolean
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

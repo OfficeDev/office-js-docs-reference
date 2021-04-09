@@ -91,7 +91,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -111,7 +111,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -193,8 +193,91 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addFileAttachmentAsync(uri: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", attachmentName: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "uri",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "attachmentName",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "addFileAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the `options` parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the `options` parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -214,7 +297,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -285,6 +368,89 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "addItemAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the `options` parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addItemAttachmentAsync(itemId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", attachmentName: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "itemId",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "attachmentName",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -726,7 +892,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#removeAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
+                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -738,7 +904,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -802,6 +968,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "removeAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#removeAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeAttachmentAsync(attachmentId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "attachmentId",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -959,7 +1193,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: If text, the current style is applied in Outlook on the web and Windows. If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: If text, the current style is applied in Outlook on the web and Windows. If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -971,7 +1205,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -1044,6 +1278,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "setSelectedDataAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#setSelectedDataAsync:member(2)",
+                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setSelectedDataAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -2579,7 +2881,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#getAsync:member(1)",
-                  "docComment": "/**\n * Returns the current body in a specified format.\n *\n * This method returns the entire current body in the format specified by `coercionType`.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param coercionType - The format for the returned body.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties: `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.\n */\n",
+                  "docComment": "/**\n * Returns the current body in a specified format.\n *\n * This method returns the entire current body in the format specified by `coercionType`.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param coercionType - The format for the returned body.\n *\n * @param options - An object literal that contains one or more of the following properties: `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2596,7 +2898,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -2667,12 +2969,85 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "outlook!Office.Body#getTypeAsync:member(1)",
-                  "docComment": "/**\n * Gets a value that indicates whether the content is in HTML or text format.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.\n */\n",
+                  "canonicalReference": "outlook!Office.Body#getAsync:member(2)",
+                  "docComment": "/**\n * Returns the current body in a specified format.\n *\n * This method returns the entire current body in the format specified by `coercionType`.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param coercionType - The format for the returned body.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "getTypeAsync(options?: "
+                      "text": "getAsync(coercionType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.CoercionType",
+                      "canonicalReference": "office!Office.CoercionType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "coercionType",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#getTypeAsync:member(1)",
+                  "docComment": "/**\n * Gets a value that indicates whether the content is in HTML or text format.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getTypeAsync(options: "
                     },
                     {
                       "kind": "Reference",
@@ -2745,8 +3120,70 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#getTypeAsync:member(2)",
+                  "docComment": "/**\n * Gets a value that indicates whether the content is in HTML or text format.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The content type is returned as one of the `CoercionType` values in the `asyncResult.value` property.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getTypeAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.CoercionType",
+                      "canonicalReference": "office!Office.CoercionType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "getTypeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependAsync:member(1)",
-                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.\n *\n * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to `Body.getAsync` method will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.\n *\n * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to `Body.getAsync` method will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2758,7 +3195,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -2838,8 +3275,76 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#prependAsync:member(2)",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.\n *\n * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to `Body.getAsync` method will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "prependAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "prependAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#setAsync:member(1)",
-                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2851,7 +3356,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -2931,8 +3436,76 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#setAsync:member(2)",
+                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent. The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#setSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Replaces the selection in the body with the specified text.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.\n *\n * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Replaces the selection in the body with the specified text.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.\n *\n * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2944,7 +3517,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -3017,6 +3590,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "setSelectedDataAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#setSelectedDataAsync:member(2)",
+                  "docComment": "/**\n * Replaces the selection in the body with the specified text.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.\n *\n * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setSelectedDataAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -3353,11 +3994,11 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.CustomProperties#saveAsync:member(1)",
-                  "docComment": "/**\n * Saves item-specific custom properties to the server.\n *\n * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object. The saving action is asynchronous.\n *\n * It's a good practice to have your callback function check for and handle errors from `saveAsync`. In particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would return an error. Your callback method should handle this error accordingly.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @param asyncContext - Optional. Any state data that is passed to the callback method.\n */\n",
+                  "docComment": "/**\n * Saves item-specific custom properties to the server.\n *\n * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object. The saving action is asynchronous.\n *\n * It's a good practice to have your callback function check for and handle errors from `saveAsync`. In particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would return an error. Your callback method should handle this error accordingly.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @param asyncContext - Optional. Any state data that is passed to the callback method.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "saveAsync(callback?: "
+                      "text": "saveAsync(callback: "
                     },
                     {
                       "kind": "Content",
@@ -3413,6 +4054,50 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "saveAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.CustomProperties#saveAsync:member(2)",
+                  "docComment": "/**\n * Saves item-specific custom properties to the server.\n *\n * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object. The saving action is asynchronous.\n *\n * It's a good practice to have your callback function check for and handle errors from `saveAsync`. In particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would return an error. Your callback method should handle this error accordingly.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param asyncContext - Optional. Any state data that is passed to the callback method.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "saveAsync(asyncContext?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "asyncContext",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
                       }
                     }
                   ],
@@ -4425,7 +5110,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Location#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the location of an appointment.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. Setting the location of an appointment overwrites the current location.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.\n *\n * @param location - The location of the appointment. The string is limited to 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Sets the location of an appointment.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. Setting the location of an appointment overwrites the current location.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.\n *\n * @param location - The location of the appointment. The string is limited to 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4437,7 +5122,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -4505,6 +5190,74 @@
                     }
                   ],
                   "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Location#setAsync:member(2)",
+                  "docComment": "/**\n * Sets the location of an appointment.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. Setting the location of an appointment overwrites the current location.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.\n *\n * @param location - The location of the appointment. The string is limited to 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(location: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "location",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
                 }
               ],
               "extendsTokenRanges": []
@@ -4525,7 +5278,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4559,7 +5312,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -4630,6 +5383,103 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
                         "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "addHandlerAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Mailbox#addHandlerAsync:member(2)",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addHandlerAsync(eventType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.EventType",
+                      "canonicalReference": "office!Office.EventType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", handler: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(type: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.EventType",
+                      "canonicalReference": "office!Office.EventType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 12,
+                    "endIndex": 13
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "eventType",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "parameterName": "handler",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 11
                       }
                     }
                   ],
@@ -5479,7 +6329,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5496,7 +6346,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -5560,6 +6410,79 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 6,
                         "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "removeHandlerAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Mailbox#removeHandlerAsync:member(2)",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeHandlerAsync(eventType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.EventType",
+                      "canonicalReference": "office!Office.EventType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "eventType",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
                       }
                     }
                   ],
@@ -6683,7 +7606,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6703,7 +7626,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -6785,8 +7708,91 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#addFileAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addFileAttachmentAsync(uri: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", attachmentName: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "uri",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "attachmentName",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "addFileAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addItemAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6806,7 +7812,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -6877,6 +7883,89 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "addItemAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#addItemAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Adds an Exchange item, such as a message, as an attachment to the message or appointment.\n *\n * The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addItemAttachmentAsync(itemId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", attachmentName: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "itemId",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "attachmentName",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -7317,7 +8406,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#removeAttachmentAsync:member(1)",
-                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
+                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7329,7 +8418,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -7393,6 +8482,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "removeAttachmentAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#removeAttachmentAsync:member(2)",
+                  "docComment": "/**\n * Removes an attachment from a message or appointment.\n *\n * The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to continue in a separate window.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200 characters in Outlook on the web and on Windows.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeAttachmentAsync(attachmentId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "attachmentId",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -7523,7 +8680,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#setSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: If text, the current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: If text, the current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7535,7 +8692,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -7608,6 +8765,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "setSelectedDataAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#setSelectedDataAsync:member(2)",
+                  "docComment": "/**\n * Asynchronously inserts data into the body or subject of a message.\n *\n * The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setSelectedDataAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -8910,7 +10135,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.NotificationMessages#addAsync:member(1)",
-                  "docComment": "/**\n * Adds a notification to an item.\n *\n * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a `NotificationMessageDetails` object.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Adds a notification to an item.\n *\n * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a `NotificationMessageDetails` object.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8931,7 +10156,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -9009,12 +10234,96 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "outlook!Office.NotificationMessages#getAllAsync:member(1)",
-                  "docComment": "/**\n * Returns all keys and messages for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.\n */\n",
+                  "canonicalReference": "outlook!Office.NotificationMessages#addAsync:member(2)",
+                  "docComment": "/**\n * Adds a notification to an item.\n *\n * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a `NotificationMessageDetails` object.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "getAllAsync(options?: "
+                      "text": "addAsync(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", JSONmessage: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "NotificationMessageDetails",
+                      "canonicalReference": "outlook!Office.NotificationMessageDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "JSONmessage",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.NotificationMessages#getAllAsync:member(1)",
+                  "docComment": "/**\n * Returns all keys and messages for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAllAsync(options: "
                     },
                     {
                       "kind": "Reference",
@@ -9087,8 +10396,70 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.NotificationMessages#getAllAsync:member(2)",
+                  "docComment": "/**\n * Returns all keys and messages for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAllAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "NotificationMessageDetails",
+                      "canonicalReference": "outlook!Office.NotificationMessageDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "getAllAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.NotificationMessages#removeAsync:member(1)",
-                  "docComment": "/**\n * Removes a notification message for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to remove.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Removes a notification message for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to remove.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9100,7 +10471,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -9171,8 +10542,76 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.NotificationMessages#removeAsync:member(2)",
+                  "docComment": "/**\n * Removes a notification message for an item.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to remove.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeAsync(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.NotificationMessages#replaceAsync:member(1)",
-                  "docComment": "/**\n * Replaces a notification message that has a given key with another message.\n *\n * If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to replace. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a `NotificationMessageDetails` object.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Replaces a notification message that has a given key with another message.\n *\n * If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to replace. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a `NotificationMessageDetails` object.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9193,7 +10632,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -9264,6 +10703,90 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "replaceAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.NotificationMessages#replaceAsync:member(2)",
+                  "docComment": "/**\n * Replaces a notification message that has a given key with another message.\n *\n * If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param key - The key for the notification message to replace. It can't be longer than 32 characters.\n *\n * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a `NotificationMessageDetails` object.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "replaceAsync(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", JSONmessage: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "NotificationMessageDetails",
+                      "canonicalReference": "outlook!Office.NotificationMessageDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "JSONmessage",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -9382,7 +10905,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#addAsync:member(1)",
-                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be added:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Mac, web browser: 100 recipients\n *\n * - Other: No limit\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be added:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Mac, web browser: 100 recipients\n *\n * - Other: No limit\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9412,7 +10935,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -9476,6 +10999,92 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 12
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Recipients#addAsync:member(2)",
+                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be added:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Mac, web browser: 100 recipients\n *\n * - Other: No limit\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addAsync(recipients: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(string | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "EmailUser",
+                      "canonicalReference": "outlook!Office.EmailUser:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "EmailAddressDetails",
+                      "canonicalReference": "outlook!Office.EmailAddressDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ")[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 12
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "recipients",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 6
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 7,
+                        "endIndex": 10
                       }
                     }
                   ],
@@ -10447,7 +12056,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Subject#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the subject of an appointment or message.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. Setting the subject overwrites the current subject, but leaves any prefixes, such as \"Fwd:\" or \"Re:\" in place.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.\n *\n * @param subject - The subject of the appointment or message. The string is limited to 255 characters.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Sets the subject of an appointment or message.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. Setting the subject overwrites the current subject, but leaves any prefixes, such as \"Fwd:\" or \"Re:\" in place.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.\n *\n * @param subject - The subject of the appointment or message. The string is limited to 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10459,7 +12068,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -10523,6 +12132,74 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Subject#setAsync:member(2)",
+                  "docComment": "/**\n * Sets the subject of an appointment or message.\n *\n * The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or message. Setting the subject overwrites the current subject, but leaves any prefixes, such as \"Fwd:\" or \"Re:\" in place.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.\n *\n * @param subject - The subject of the appointment or message. The string is limited to 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(subject: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "subject",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
@@ -10760,7 +12437,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Time#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the start or end time of an appointment.\n *\n * If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.\n *\n * The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.\n *\n * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidEndTime`: The appointment end time is before the appointment start time.\n *\n * @param dateTime - A date-time object in Coordinated Universal Time (UTC).\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Sets the start or end time of an appointment.\n *\n * If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.\n *\n * The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.\n *\n * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidEndTime`: The appointment end time is before the appointment start time.\n *\n * @param dateTime - A date-time object in Coordinated Universal Time (UTC).\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10773,7 +12450,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", options?: "
+                      "text": ", options: "
                     },
                     {
                       "kind": "Reference",
@@ -10837,6 +12514,75 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Time#setAsync:member(2)",
+                  "docComment": "/**\n * Sets the start or end time of an appointment.\n *\n * If the `setAsync` method is called on the start property, the `end` property will be adjusted to maintain the duration of the appointment as previously set. If the `setAsync` method is called on the `end` property, the duration of the appointment will be extended to the new end time.\n *\n * The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.\n *\n * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidEndTime`: The appointment end time is before the appointment start time.\n *\n * @param dateTime - A date-time object in Coordinated Universal Time (UTC).\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(dateTime: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Date",
+                      "canonicalReference": "!Date:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "dateTime",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
                       }
                     }
                   ],
