@@ -88,7 +88,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(categories: CategoryDetails[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        addAsync(categories: CategoryDetails[], options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
@@ -96,9 +96,53 @@ methods:
           type: '<xref uid="outlook!Office.CategoryDetails:interface" />[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addAsync(categories, callback)'
+    uid: 'outlook!Office.MasterCategories#addAsync:member(2)'
+    package: outlook!
+    fullName: 'addAsync(categories, callback)'
+    summary: >-
+      Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
+      use the same color.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      **Errors**:
+
+
+      - `DuplicateCategory`<!-- -->: One of the categories provided is already in the master category list.
+
+
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addAsync(categories: CategoryDetails[], callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: categories
+          description: The categories to be added to the master list on the mailbox.
+          type: '<xref uid="outlook!Office.CategoryDetails:interface" />[]'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -253,7 +297,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        removeAsync(categories: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
@@ -261,9 +305,49 @@ methods:
           type: 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If removing categories fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'removeAsync(categories, callback)'
+    uid: 'outlook!Office.MasterCategories#removeAsync:member(2)'
+    package: outlook!
+    fullName: 'removeAsync(categories, callback)'
+    summary: |-
+      Removes categories from the master list on a mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      **Errors**:
+
+
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeAsync(categories: string[], callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: categories
+          description: The categories to be removed from the master list on the mailbox.
+          type: 'string[]'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

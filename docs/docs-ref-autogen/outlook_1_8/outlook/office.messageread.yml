@@ -1241,7 +1241,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType | string, handler: any, options?: Office.AsyncContextOptions,
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options: Office.AsyncContextOptions,
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
@@ -1254,9 +1254,55 @@ methods:
           type: any
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addHandlerAsync(eventType, handler, callback)'
+    uid: 'outlook!Office.MessageRead#addHandlerAsync:member(2)'
+    package: outlook!
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
+    summary: >-
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
+
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      for supported events.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`<!-- -->.
+          type: any
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1629,14 +1675,52 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAllInternetHeadersAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        getAllInternetHeadersAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On success, the internet headers
+            data is provided in the `asyncResult.value` property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If
+            the call fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAllInternetHeadersAsync(callback)
+    uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(2)'
+    package: outlook!
+    fullName: getAllInternetHeadersAsync(callback)
+    summary: >-
+      Gets all the internet headers for the message as a string.
+
+
+      To learn more, see [Get and set internet headers on a message in an Outlook
+      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAllInternetHeadersAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1739,17 +1823,74 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<AttachmentContent>) => void): void;
+        getAttachmentContentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
       parameters:
         - id: attachmentId
           description: The identifier of the attachment you want to get.
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
+            `asyncResult.error` property will contain an error code with the reason for the failure.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'getAttachmentContentAsync(attachmentId, callback)'
+    uid: 'outlook!Office.MessageRead#getAttachmentContentAsync:member(2)'
+    package: outlook!
+    fullName: 'getAttachmentContentAsync(attachmentId, callback)'
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
+
+
+      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
+      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
+      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
+      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
+      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Read
+
+
+      **Errors**:
+
+
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
+      images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task
+      item).
+
+
+      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment you want to get.
+          type: string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -2671,7 +2812,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
+        removeHandlerAsync(eventType: Office.EventType | string, options: Office.AsyncContextOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
@@ -2679,9 +2820,50 @@ methods:
           type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'removeHandlerAsync(eventType, callback)'
+    uid: 'outlook!Office.MessageRead#removeHandlerAsync:member(2)'
+    package: outlook!
+    fullName: 'removeHandlerAsync(eventType, callback)'
+    summary: >-
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
+
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      for supported events.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: eventType
+          description: The event that should revoke the handler.
+          type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

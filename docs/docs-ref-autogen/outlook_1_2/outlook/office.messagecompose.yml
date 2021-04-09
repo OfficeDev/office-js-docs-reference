@@ -585,8 +585,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions & {
-        isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions & { isInline:
+        boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: uri
           description: >-
@@ -600,11 +600,81 @@ methods:
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true,
-            indicates that the attachment will be shown inline in the message body, and should not be displayed in the
-            attachment list.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true, indicates
+            that the attachment will be shown inline in the message body, and should not be displayed in the attachment
+            list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
+            the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain
+            an `Error` object that provides a description of the error.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addFileAttachmentAsync(uri, attachmentName, callback)'
+    uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(2)'
+    package: outlook!
+    fullName: 'addFileAttachmentAsync(uri, attachmentName, callback)'
+    summary: >-
+      Adds a file to a message or appointment as an attachment.
+
+
+      The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the
+      compose form.
+
+
+      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
+      same session.
+
+
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
+      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      **Errors**:
+
+
+      - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
+
+
+      - `FileTypeNotSupported`<!-- -->: The attachment has an extension that is not allowed.
+
+
+      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      parameters:
+        - id: uri
+          description: >-
+            The URI that provides the location of the file to attach to the message or appointment. The maximum length
+            is 2048 characters.
+          type: string
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type: string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -702,7 +772,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions, callback?:
         (asyncResult: Office.AsyncResult<string>) => void): void;
       parameters:
         - id: itemId
@@ -715,9 +785,72 @@ methods:
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
+            the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an
+            `Error` object that provides a description of the error.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
+    uid: 'outlook!Office.MessageCompose#addItemAttachmentAsync:member(2)'
+    package: outlook!
+    fullName: 'addItemAttachmentAsync(itemId, attachmentName, callback)'
+    summary: >-
+      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+
+
+      The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
+      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      which contains either the attachment identifier or a code that indicates any error that occurred while attaching
+      the item. You can use the options parameter to pass state information to the callback method, if needed.
+
+
+      You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
+      same session.
+
+
+      If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
+      items other than the item that you are editing; however, this is not supported and is not recommended.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      **Errors**:
+
+
+      - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      parameters:
+        - id: itemId
+          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
+          type: any
+        - id: attachmentName
+          description: >-
+            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
+            characters.
+          type: string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1065,7 +1198,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: attachmentId
@@ -1075,9 +1208,61 @@ methods:
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If removing the attachment fails, the `asyncResult.error`
+            property will contain an error code with the reason for the failure.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'removeAttachmentAsync(attachmentId, callback)'
+    uid: 'outlook!Office.MessageCompose#removeAttachmentAsync:member(2)'
+    package: outlook!
+    fullName: 'removeAttachmentAsync(attachmentId, callback)'
+    summary: >-
+      Removes an attachment from a message or appointment.
+
+
+      The `removeAttachmentAsync` method removes the attachment with the specified identifier from the item. As a best
+      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
+      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
+      only within the same session. A session is over when the user closes the app, or if the user starts composing an
+      inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      **Errors**:
+
+
+      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void):
+        void;
+      parameters:
+        - id: attachmentId
+          description: >-
+            The identifier of the attachment to remove. The maximum string length of the `attachmentId` is 200
+            characters in Outlook on the web and on Windows.
+          type: string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1151,7 +1336,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: data
@@ -1161,17 +1346,64 @@ methods:
           type: string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
-            Developers can provide any object they wish to access in the callback method. `coercionType`<!-- -->: If
-            text, the current style is applied in Outlook on the web and desktop clients. If the field is an HTML
-            editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the
-            subject doesn't), the current style is applied in Outlook on the web and the default style is applied in
-            Outlook on desktop clients. If the field is a text field, an `InvalidDataFormat` error is returned. If
-            `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the
-            field is text, then plain text is used.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: If text, the
+            current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the
+            text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't),
+            the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop
+            clients. If the field is a text field, an `InvalidDataFormat` error is returned. If `coercionType` is not
+            set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then
+            plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
             uid="outlook!Office.CoercionTypeOptions:interface" />
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setSelectedDataAsync(data, callback)'
+    uid: 'outlook!Office.MessageCompose#setSelectedDataAsync:member(2)'
+    package: outlook!
+    fullName: 'setSelectedDataAsync(data, callback)'
+    summary: >-
+      Asynchronously inserts data into the body or subject of a message.
+
+
+      The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
+      the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
+      or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
+
+
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      **Errors**:
+
+
+      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: data
+          description: >-
+            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
+            passed in, an `ArgumentOutOfRange` exception is thrown.
+          type: string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
