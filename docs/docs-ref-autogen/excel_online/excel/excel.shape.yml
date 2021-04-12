@@ -434,40 +434,6 @@ properties:
       content: 'name: string;'
       return:
         type: string
-  - name: onActivated
-    uid: 'excel!Excel.Shape#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: |-
-      Occurs when the shape is activated.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ShapeActivatedEventArgs:interface" />&gt;
-  - name: onDeactivated
-    uid: 'excel!Excel.Shape#onDeactivated:member'
-    package: excel!
-    fullName: onDeactivated
-    summary: |-
-      Occurs when the shape is deactivated.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ShapeDeactivatedEventArgs:interface" />&gt;
   - name: parentGroup
     uid: 'excel!Excel.Shape#parentGroup:member'
     package: excel!
@@ -1232,4 +1198,39 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ShapeData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.Shape#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: |-
+      Occurs when the shape is activated.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ShapeActivatedEventArgs:interface" />&gt;
+  - name: onDeactivated
+    uid: 'excel!Excel.Shape#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: |-
+      Occurs when the shape is deactivated.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ShapeDeactivatedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

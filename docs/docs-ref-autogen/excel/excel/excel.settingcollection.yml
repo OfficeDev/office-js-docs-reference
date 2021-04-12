@@ -40,43 +40,6 @@ properties:
       content: 'readonly items: Excel.Setting[];'
       return:
         type: '<xref uid="excel!Excel.Setting:class" />[]'
-  - name: onSettingsChanged
-    uid: 'excel!Excel.SettingCollection#onSettingsChanged:member'
-    package: excel!
-    fullName: onSettingsChanged
-    summary: |-
-      Occurs when the settings in the document are changed.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.SettingsChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-
-              await context.sync();
-              console.log("Settings changed handler registered.");
-          });
-
-          ```
 methods:
   - name: 'add(key, value)'
     uid: 'excel!Excel.SettingCollection#add:member(1)'
@@ -289,4 +252,42 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.SettingCollectionData:interface" />'
         description: ''
+events:
+  - name: onSettingsChanged
+    uid: 'excel!Excel.SettingCollection#onSettingsChanged:member'
+    package: excel!
+    fullName: onSettingsChanged
+    summary: |-
+      Occurs when the settings in the document are changed.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.SettingsChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+          await Excel.run(async (context) => {
+              const settings = context.workbook.settings; 
+              settings.onSettingsChanged.add(onChangedSetting);
+
+              await context.sync();
+              console.log("Settings changed handler registered.");
+          });
+
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
