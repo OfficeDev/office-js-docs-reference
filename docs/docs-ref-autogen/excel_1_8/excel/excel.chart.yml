@@ -267,74 +267,6 @@ properties:
               }
           });
           ```
-  - name: onActivated
-    uid: 'excel!Excel.Chart#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: |-
-      Occurs when the chart is activated.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The pie chart is the active chart. ID: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onDeactivated
-    uid: 'excel!Excel.Chart#onDeactivated:member'
-    package: excel!
-    fullName: onDeactivated
-    summary: |-
-      Occurs when the chart is deactivated.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The pie chart is NOT active.");
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
   - name: plotArea
     uid: 'excel!Excel.Chart#plotArea:member'
     package: excel!
@@ -900,4 +832,73 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ChartData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.Chart#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: |-
+      Occurs when the chart is activated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+              pieChart.onActivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The pie chart is the active chart. ID: " + event.chartId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onDeactivated
+    uid: 'excel!Excel.Chart#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: |-
+      Occurs when the chart is deactivated.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context){
+              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+              pieChart.onDeactivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The pie chart is NOT active.");
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
