@@ -106,145 +106,6 @@ properties:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
-  - name: onActivated
-    uid: 'excel!Excel.Worksheet#onActivated:member'
-    package: excel!
-    fullName: onActivated
-    summary: |-
-      Occurs when the worksheet is activated.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The activated worksheet ID is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onChanged
-    uid: 'excel!Excel.Worksheet#onChanged:member'
-    package: excel!
-    fullName: onChanged
-    summary: |-
-      Occurs when data changes in a specific worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
-
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onChanged.add(onChange);
-              await context.sync();
-
-              console.log("Added a worksheet-level data-changed event handler.");
-          });
-
-          ```
-  - name: onDeactivated
-    uid: 'excel!Excel.Worksheet#onDeactivated:member'
-    package: excel!
-    fullName: onDeactivated
-    summary: |-
-      Occurs when the worksheet is deactivated.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The deactivated worksheet is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - name: onSelectionChanged
-    uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
-    package: excel!
-    fullName: onSelectionChanged
-    summary: |-
-      Occurs when the selection changes on a specific worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onSelectionChanged.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The selected range has changed to: " + event.address);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
   - name: pivotTables
     uid: 'excel!Excel.Worksheet#pivotTables:member'
     package: excel!
@@ -1161,4 +1022,144 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
         description: ''
+events:
+  - name: onActivated
+    uid: 'excel!Excel.Worksheet#onActivated:member'
+    package: excel!
+    fullName: onActivated
+    summary: |-
+      Occurs when the worksheet is activated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onActivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The activated worksheet ID is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onChanged
+    uid: 'excel!Excel.Worksheet#onChanged:member'
+    package: excel!
+    fullName: onChanged
+    summary: |-
+      Occurs when data changes in a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+          await Excel.run(async (context) => {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onChanged.add(onChange);
+              await context.sync();
+
+              console.log("Added a worksheet-level data-changed event handler.");
+          });
+
+          ```
+  - name: onDeactivated
+    uid: 'excel!Excel.Worksheet#onDeactivated:member'
+    package: excel!
+    fullName: onDeactivated
+    summary: |-
+      Occurs when the worksheet is deactivated.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onDeactivated.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The deactivated worksheet is: " + event.worksheetId);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: |-
+      Occurs when the selection changes on a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.onSelectionChanged.add(function (event) {
+                  return Excel.run(function (context) {
+                      console.log("The selected range has changed to: " + event.address);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

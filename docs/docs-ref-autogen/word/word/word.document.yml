@@ -79,26 +79,6 @@ properties:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
-  - name: onContentControlAdded
-    uid: 'word!Word.Document#onContentControlAdded:member'
-    package: word!
-    fullName: onContentControlAdded
-    summary: >-
-      Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
-      properties.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
   - name: properties
     uid: 'word!Word.Document#properties:member'
     package: word!
@@ -553,4 +533,25 @@ methods:
       return:
         type: '<xref uid="word!Word.Document:class" />'
         description: ''
+events:
+  - name: onContentControlAdded
+    uid: 'word!Word.Document#onContentControlAdded:member'
+    package: word!
+    fullName: onContentControlAdded
+    summary: >-
+      Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
+      properties.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
