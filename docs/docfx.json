@@ -1237,89 +1237,35 @@
         "docs-ref-autogen/word_1_3/word/**": "word"
       },
       "products": {
-        "docs-ref-autogen/excel_*/excel/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
-        ],
-        "docs-ref-autogen/excel_online/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
-        ],
-        "docs-ref-autogen/office/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/onenote/onenote/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/b8a347ba-1b4a-45ca-8d86-0f08145ec3ac"
-        ],
-        "docs-ref-autogen/visio/visio/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/905aec6a-1788-4124-b9e7-6ba301fe12b8"
-        ],
-        "docs-ref-autogen/outlook_*/**": [
+        "docs-ref-autogen/outlook*/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b"
-        ],
-        "docs-ref-autogen/excel/custom-functions-runtime/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
         ],
         "docs-ref-autogen/onenote/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/b8a347ba-1b4a-45ca-8d86-0f08145ec3ac"
         ],
-        "docs-ref-autogen/word/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
-        ],
-        "docs-ref-autogen/common/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/powerpoint/powerpoint/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
-        ],
-        "docs-ref-autogen/outlook/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b"
-        ],
         "docs-ref-autogen/visio/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/905aec6a-1788-4124-b9e7-6ba301fe12b8"
         ],
-        "docs-ref-autogen/excel/**": [
+        "docs-ref-autogen/excel*/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
         ],
-        "docs-ref-autogen/excel_*/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
-        ],
-        "docs-ref-autogen/excel/office-runtime/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/word_*/word/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
-        ],
-        "docs-ref-autogen/word/word/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
-        ],
-        "docs-ref-autogen/powerpoint_*/powerpoint/**": [
+        "docs-ref-autogen/powerpoint*/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
-        ],
-        "docs-ref-autogen/outlook/outlook/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b"
-        ],
-        "docs-ref-autogen/office/office/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/excel/excel/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
-        ],
-        "docs-ref-autogen/word_*/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
-        ],
-        "docs-ref-autogen/powerpoint/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
-        ],
-        "docs-ref-autogen/outlook_*/outlook/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b"
-        ],
-        "docs-ref-autogen/excel_online/excel/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/60932d05-feee-4685-a73b-595e25dd9318"
         ],
         "docs-ref-autogen/overview/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
         ],
-        "docs-ref-autogen/powerpoint_*/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
+        "docs-ref-autogen/excel/office-runtime/**": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
+        ],
+        "docs-ref-autogen/common/**": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
+        ],
+        "docs-ref-autogen/word*/**": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
+        ],
+        "docs-ref-autogen/office/**": [
+            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
         ]
       }
     },
