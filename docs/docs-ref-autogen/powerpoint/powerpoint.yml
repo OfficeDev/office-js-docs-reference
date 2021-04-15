@@ -103,9 +103,7 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+      content: 'export function run<T>(batch: (context: PowerPoint.RequestContext) => Promise<T>): Promise<T>;'
       parameters:
         - id: batch
           description: >-
@@ -113,11 +111,9 @@ functions:
             "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
             Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
             to get access to the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+          type: '(context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: Promise&lt;T&gt;
         description: ''
   - name: 'PowerPoint.run(object, batch)'
     uid: 'powerpoint!PowerPoint.run:function(2)'
@@ -132,7 +128,7 @@ functions:
     syntax:
       content: >-
         export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+        Promise<T>): Promise<T>;
       parameters:
         - id: object
           description: >-
@@ -145,11 +141,9 @@ functions:
             "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
             Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
             to get access to the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+          type: '(context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: Promise&lt;T&gt;
         description: ''
   - name: 'PowerPoint.run(objects, batch)'
     uid: 'powerpoint!PowerPoint.run:function(3)'
@@ -163,7 +157,7 @@ functions:
     syntax:
       content: >-
         export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+        Promise<T>): Promise<T>;
       parameters:
         - id: objects
           description: >-
@@ -177,9 +171,7 @@ functions:
             "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
             Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
             to get access to the PowerPoint object model from the add-in.
-          type: >-
-            (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+          type: '(context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: Promise&lt;T&gt;
         description: ''
