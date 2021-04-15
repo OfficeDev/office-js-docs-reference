@@ -73,6 +73,37 @@ properties:
       content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type: '<xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+          await Excel.run(async (context) => {
+            // Change the PivotLayout.type to a new type.
+            const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+            pivotTable.layout.load("layoutType");
+            await context.sync();
+
+            // Cycle between the three layout types.
+            if (pivotTable.layout.layoutType === "Compact") {
+              pivotTable.layout.layoutType = "Outline";
+            } else if (pivotTable.layout.layoutType === "Outline") {
+              pivotTable.layout.layoutType = "Tabular";
+            } else {
+              pivotTable.layout.layoutType = "Compact";
+            }
+
+            await context.sync();
+            console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+          });
+
+          ```
   - name: preserveFormatting
     uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
     package: excel!
@@ -90,6 +121,33 @@ properties:
       content: 'preserveFormatting: boolean;'
       return:
         type: boolean
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+          await Excel.run(async (context) => {
+            // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
+            const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+            const pivotLayout = pivotTable.layout;
+
+            pivotLayout.load("preserveFormatting");
+            await context.sync();
+
+            let preserveFormattingToSet = !pivotLayout.preserveFormatting;
+            console.log(`Preserve the formatting PivotTable after a refresh? - ${preserveFormattingToSet}`);
+
+            pivotLayout.preserveFormatting = preserveFormattingToSet;
+            await context.sync();
+          });
+
+          ```
   - name: showColumnGrandTotals
     uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
     package: excel!
@@ -105,6 +163,37 @@ properties:
       content: 'showColumnGrandTotals: boolean;'
       return:
         type: boolean
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+          await Excel.run(async (context) => {
+            // Turn the grand totals on and off for the rows and columns.
+            const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+            const pivotLayout = pivotTable.layout;
+
+            pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+            await context.sync();
+
+            let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+            let showRowTotals = !pivotLayout.showRowGrandTotals;
+            console.log(`Show column grand totals? - ${showColumnTotals}`);
+            console.log(`Show row grand totals? - ${showRowTotals}`);
+
+            pivotLayout.showColumnGrandTotals = showColumnTotals;
+            pivotLayout.showRowGrandTotals = showRowTotals;
+
+            await context.sync();
+          });
+
+          ```
   - name: showRowGrandTotals
     uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
     package: excel!
@@ -120,6 +209,37 @@ properties:
       content: 'showRowGrandTotals: boolean;'
       return:
         type: boolean
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+          await Excel.run(async (context) => {
+            // Turn the grand totals on and off for the rows and columns.
+            const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+            const pivotLayout = pivotTable.layout;
+
+            pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+            await context.sync();
+
+            let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+            let showRowTotals = !pivotLayout.showRowGrandTotals;
+            console.log(`Show column grand totals? - ${showColumnTotals}`);
+            console.log(`Show row grand totals? - ${showRowTotals}`);
+
+            pivotLayout.showColumnGrandTotals = showColumnTotals;
+            pivotLayout.showRowGrandTotals = showRowTotals;
+
+            await context.sync();
+          });
+
+          ```
   - name: subtotalLocation
     uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
     package: excel!
@@ -174,6 +294,30 @@ methods:
 
           #### Examples
 
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+          await Excel.run(async (context) => {
+              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+              // the layout controls the ranges used by the PivotTable
+              const range = pivotTable.layout.getDataBodyRange();
+
+              // get all the data hierarchy totals
+              const grandTotalRange = range.getLastRow();
+              grandTotalRange.load("address");
+              await context.sync();
+              
+              // use the wholesale and farm sale totals to make a final sum
+              const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+              await context.sync();
+          });
+
+          ```
 
           ```typescript
 

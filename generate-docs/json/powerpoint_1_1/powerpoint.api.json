@@ -939,8 +939,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -952,8 +952,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -1027,8 +1027,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -1040,8 +1040,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -1126,8 +1126,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -1139,8 +1139,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
