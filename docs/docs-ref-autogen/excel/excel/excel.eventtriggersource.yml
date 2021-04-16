@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: Excel.EventTriggerSource
+uid: 'excel!Excel.EventTriggerSource:enum'
+package: excel!
+fullName: Excel.EventTriggerSource
+summary: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: thisLocalAddin
+    uid: 'excel!Excel.EventTriggerSource.thisLocalAddin:member'
+    package: excel!
+    summary: The event is triggered by the Office JS API of the current add-in.
+    value: '"ThisLocalAddin"'
+  - name: unknown
+    uid: 'excel!Excel.EventTriggerSource.unknown:member'
+    package: excel!
+    summary: The event trigger source is unknown or currently unsupported.
+    value: '"Unknown"'

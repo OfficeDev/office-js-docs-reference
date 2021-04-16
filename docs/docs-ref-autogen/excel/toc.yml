@@ -198,6 +198,8 @@ items:
                 uid: 'excel!Excel.ErrorCodes:enum'
               - name: EventSource
                 uid: 'excel!Excel.EventSource:enum'
+              - name: EventTriggerSource
+                uid: 'excel!Excel.EventTriggerSource:enum'
               - name: EventType
                 uid: 'excel!Excel.EventType:enum'
               - name: FillPattern
@@ -665,6 +667,8 @@ items:
             uid: 'excel!Excel.Identity:interface'
           - name: IdentityCollection
             uid: 'excel!Excel.IdentityCollection:class'
+          - name: IdentityEntity
+            uid: 'excel!Excel.IdentityEntity:class'
           - name: Image
             uid: 'excel!Excel.Image:class'
           - name: InsertWorksheetOptions
