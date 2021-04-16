@@ -773,6 +773,8 @@ export declare namespace Excel {
     export class IdentityCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.IdentityEntity[];
         /**
          * Adds a user identity to the collection.
          *
@@ -816,12 +818,28 @@ export declare namespace Excel {
          */
         remove(assignee: Identity): void;
         /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.IdentityCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.IdentityCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.IdentityCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.IdentityCollection;
+        /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.IdentityCollection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IdentityCollectionData`) that contains shallow copies of any loaded child properties from the original object.
+        * Whereas the original `Excel.IdentityCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IdentityCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
-        toJSON(): {
-            [key: string]: string;
-        };
+        toJSON(): Excel.Interfaces.IdentityCollectionData;
     }
     /**
      *
@@ -1118,6 +1136,71 @@ export declare namespace Excel {
          * @beta
          */
         id: string;
+    }
+    /**
+     *
+     * Represents information about a user's identity.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class IdentityEntity extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         *
+         * Represents the user's display name.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        displayName: string;
+        /**
+         *
+         * Represents the user's email address.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        email: string;
+        /**
+         *
+         * Represents the user's unique ID.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        id: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.IdentityEntityLoadOptions): Excel.IdentityEntity;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.IdentityEntity;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.IdentityEntity;
+        /**
+         * Create a new instance of Excel.IdentityEntity object
+         */
+        static newObject(context: OfficeExtension.ClientRequestContext): Excel.IdentityEntity;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.IdentityEntity object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IdentityEntityData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.IdentityEntityData;
     }
     /**
      *
@@ -3057,6 +3140,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         worksheetId: string;
+        /**
+         *
+         * Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        triggerSource: Excel.EventTriggerSource | "Unknown" | "ThisLocalAddin";
         /**
          *
          * Gets the range that represents the changed area of a specific worksheet.
@@ -25843,6 +25933,22 @@ export declare namespace Excel {
         veryHidden = "VeryHidden"
     }
     /**
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum EventTriggerSource {
+        /**
+         * The event trigger source is unknown or currently unsupported.
+         *
+         */
+        unknown = "Unknown",
+        /**
+         * The event is triggered by the Office JS API of the current add-in.
+         *
+         */
+        thisLocalAddin = "ThisLocalAddin"
+    }
+    /**
      * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
      */
     enum RangeValueType {
@@ -26203,7 +26309,7 @@ export declare namespace Excel {
          */
         worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
         /**
-         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
+         * `CommentAdded` represents the type of event that is registered on a comment collection and occurs when comments are added.
          *
          */
         commentAdded = "CommentAdded",
@@ -30963,6 +31069,10 @@ export declare namespace Excel {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the IdentityCollection object, for use in `identityCollection.set({ ... })`. */
+        export interface IdentityCollectionUpdateData {
+            items?: Excel.Interfaces.IdentityEntityData[];
+        }
         /** An interface for updating data on the DocumentTaskChange object, for use in `documentTaskChange.set({ ... })`. */
         export interface DocumentTaskChangeUpdateData {
             /**
@@ -31069,6 +31179,33 @@ export declare namespace Excel {
         /** An interface for updating data on the DocumentTaskChangeCollection object, for use in `documentTaskChangeCollection.set({ ... })`. */
         export interface DocumentTaskChangeCollectionUpdateData {
             items?: Excel.Interfaces.DocumentTaskChangeData[];
+        }
+        /** An interface for updating data on the IdentityEntity object, for use in `identityEntity.set({ ... })`. */
+        export interface IdentityEntityUpdateData {
+            /**
+             *
+             * Represents the user's display name.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: string;
+            /**
+             *
+             * Represents the user's email address.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            email?: string;
+            /**
+             *
+             * Represents the user's unique ID.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
         }
         /** An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`. */
         export interface DocumentTaskUpdateData {
@@ -35863,6 +36000,10 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `identityCollection.toJSON()`. */
+        export interface IdentityCollectionData {
+            items?: Excel.Interfaces.IdentityEntityData[];
+        }
         /** An interface describing the data returned by calling `documentTaskChange.toJSON()`. */
         export interface DocumentTaskChangeData {
             /**
@@ -35969,6 +36110,33 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `documentTaskChangeCollection.toJSON()`. */
         export interface DocumentTaskChangeCollectionData {
             items?: Excel.Interfaces.DocumentTaskChangeData[];
+        }
+        /** An interface describing the data returned by calling `identityEntity.toJSON()`. */
+        export interface IdentityEntityData {
+            /**
+             *
+             * Represents the user's display name.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: string;
+            /**
+             *
+             * Represents the user's email address.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            email?: string;
+            /**
+             *
+             * Represents the user's unique ID.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
         }
         /** An interface describing the data returned by calling `documentTask.toJSON()`. */
         export interface DocumentTaskData {
@@ -42483,6 +42651,43 @@ export declare namespace Excel {
         }
         /**
          *
+         * Represents a collection of user identities.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface IdentityCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the user's display name.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the user's email address.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            email?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Represents the user's unique ID.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
+        /**
+         *
          * Represents a recorded change to the task.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -42706,6 +42911,43 @@ export declare namespace Excel {
              * @beta
              */
             undoHistoryId?: boolean;
+        }
+        /**
+         *
+         * Represents information about a user's identity.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface IdentityEntityLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * Represents the user's display name.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            displayName?: boolean;
+            /**
+             *
+             * Represents the user's email address.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            email?: boolean;
+            /**
+             *
+             * Represents the user's unique ID.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
         }
         /**
          *
