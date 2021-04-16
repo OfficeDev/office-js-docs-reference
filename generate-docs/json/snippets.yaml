@@ -3431,6 +3431,72 @@
 
       await context.sync();
     });
+'Excel.PivotLayout#altTextDescription:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Set the alt text for the displayed PivotTable.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.altTextTitle = "Farm Sales PivotTable";
+      pivotLayout.altTextDescription = "A summary of fruit sales. It is pivoted on farm name, and fruit type. The aggregated data is both the sums of crates sold at the farms and the sums of crates sold wholesale.";
+      console.log("Adding alt text. Check the PivotTable settings to see the changes.");
+
+      await context.sync();
+    });
+'Excel.PivotLayout#displayBlankLineAfterEachItem:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Add a blank row after each PivotItem in the row hierarchy.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.displayBlankLineAfterEachItem(true);
+      console.log("Setting `PivotLayout.displayBlankLineAfterEachItem` to true.");
+
+      await context.sync();
+    });
+'Excel.PivotLayout#emptyCellText:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Set a default value for an empty cell in the PivotTable. This doesn't include cells left blank by the layout.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.emptyCellText = "--";
+
+      // Set the text alignment to match the rest of the PivotTable.
+      pivotLayout.getDataBodyRange().format.horizontalAlignment = Excel.HorizontalAlignment.right;
+      await context.sync();
+    });
+'Excel.PivotLayout#fillEmptyCells:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Toggle whether empty cells are filled with a default value.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.load("fillEmptyCells");
+      await context.sync();
+
+      let fillToSet = !pivotLayout.fillEmptyCells;
+      console.log(`Filling empty cells? - ${fillToSet}`);
+
+      pivotLayout.fillEmptyCells = fillToSet;
+      await context.sync();
+    });
 'Excel.PivotLayout#getDataBodyRange:member(1)':
   - >-
     // Link to full sample:
@@ -3452,6 +3518,146 @@
         masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
         await context.sync();
     });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+    await Excel.run(async (context) => {
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+        // the layout controls the ranges used by the PivotTable
+        const range = pivotTable.layout.getDataBodyRange();
+
+        // get all the data hierarchy totals
+        const grandTotalRange = range.getLastRow();
+        grandTotalRange.load("address");
+        await context.sync();
+        
+        // use the wholesale and farm sale totals to make a final sum
+        const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+        masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+        await context.sync();
+    });
+'Excel.PivotLayout#layoutType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Change the PivotLayout.type to a new type.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+      pivotTable.layout.load("layoutType");
+      await context.sync();
+
+      // Cycle between the three layout types.
+      if (pivotTable.layout.layoutType === "Compact") {
+        pivotTable.layout.layoutType = "Outline";
+      } else if (pivotTable.layout.layoutType === "Outline") {
+        pivotTable.layout.layoutType = "Tabular";
+      } else {
+        pivotTable.layout.layoutType = "Compact";
+      }
+
+      await context.sync();
+      console.log("Pivot layout is now " + pivotTable.layout.layoutType);
+    });
+'Excel.PivotLayout#preserveFormatting:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.load("preserveFormatting");
+      await context.sync();
+
+      let preserveFormattingToSet = !pivotLayout.preserveFormatting;
+      console.log(`Preserve the formatting PivotTable after a refresh? - ${preserveFormattingToSet}`);
+
+      pivotLayout.preserveFormatting = preserveFormattingToSet;
+      await context.sync();
+    });
+'Excel.PivotLayout#repeatAllItemLabels:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Repeat the PivotItem labels for each row used by another level of the row hierarchy.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.repeatAllItemLabels(true);
+      console.log("Setting `PivotLayout.repeatAllItemLabels` to true.");
+
+      await context.sync();
+    });
+'Excel.PivotLayout#showColumnGrandTotals:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Turn the grand totals on and off for the rows and columns.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+      await context.sync();
+
+      let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+      let showRowTotals = !pivotLayout.showRowGrandTotals;
+      console.log(`Show column grand totals? - ${showColumnTotals}`);
+      console.log(`Show row grand totals? - ${showRowTotals}`);
+
+      pivotLayout.showColumnGrandTotals = showColumnTotals;
+      pivotLayout.showRowGrandTotals = showRowTotals;
+
+      await context.sync();
+    });
+'Excel.PivotLayout#showFieldHeaders:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Turn the field headers on and off for the row and column hierarchies.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+      pivotLayout.load("showFieldHeaders");
+      await context.sync();
+
+      let showHeaders = !pivotLayout.showFieldHeaders;
+      console.log(`Show field headers? - ${showHeaders}`);
+      pivotLayout.showFieldHeaders = showHeaders;
+      await context.sync();
+    });
+'Excel.PivotLayout#showRowGrandTotals:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+
+    await Excel.run(async (context) => {
+      // Turn the grand totals on and off for the rows and columns.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      const pivotLayout = pivotTable.layout;
+
+      pivotLayout.load(["showRowGrandTotals", "showColumnGrandTotals"]);
+      await context.sync();
+
+      let showColumnTotals = !pivotLayout.showColumnGrandTotals;
+      let showRowTotals = !pivotLayout.showRowGrandTotals;
+      console.log(`Show column grand totals? - ${showColumnTotals}`);
+      console.log(`Show row grand totals? - ${showRowTotals}`);
+
+      pivotLayout.showColumnGrandTotals = showColumnTotals;
+      pivotLayout.showRowGrandTotals = showRowTotals;
+
+      await context.sync();
+    });
 'Excel.PivotTable#columnHierarchies:member':
   - >-
     // Link to full sample:
@@ -3466,7 +3672,7 @@
         await context.sync();
 
         if (column.isNullObject) {
-            // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
+            // adding the farm column to the column hierarchy automatically removes it from the row hierarchy
             pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
         } else {
             pivotTable.columnHierarchies.remove(column);
@@ -6719,6 +6925,41 @@
         });
         return context.sync();
     });
+'Excel.Worksheet#onFormulaChanged:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+
+    await Excel.run(async (context) => {
+      // Retrieve the worksheet named "Sample".
+      let sheet = context.workbook.worksheets.getItem("Sample");
+      
+      // Register the formula changed event handler for this worksheet.
+      sheet.onFormulaChanged.add(formulaChangeHandler);
+      await context.sync();
+      
+      console.log("Registered a formula changed event handler for this worksheet.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+
+    async function formulaChangeHandler(event:
+    Excel.WorksheetFormulaChangedEventArgs) {
+      await Excel.run(async (context) => {
+        // Retrieve details about the formula change event.
+        const cellAddress = event.formulaDetails[0].cellAddress;
+        const previousFormula = event.formulaDetails[0].previousFormula;
+        const source = event.source;
+        
+        // Print out the change event details.
+        console.log(
+          `The formula in cell ${cellAddress} changed. 
+          The previous formula was: ${previousFormula}. 
+          The source of the change was: ${source}.`
+        );
+      });
+    }
 'Excel.Worksheet#onRowHiddenChanged:member':
   - |-
     Excel.run(function (context) {
