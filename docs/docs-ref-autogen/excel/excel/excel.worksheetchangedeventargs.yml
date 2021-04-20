@@ -98,6 +98,23 @@ properties:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: triggerSource
+    uid: 'excel!Excel.WorksheetChangedEventArgs#triggerSource:member'
+    package: excel!
+    fullName: triggerSource
+    summary: >-
+      Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'triggerSource: Excel.EventTriggerSource | "Unknown" | "ThisLocalAddin";'
+      return:
+        type: '<xref uid="excel!Excel.EventTriggerSource:enum" /> | "Unknown" | "ThisLocalAddin"'
   - name: type
     uid: 'excel!Excel.WorksheetChangedEventArgs#type:member'
     package: excel!

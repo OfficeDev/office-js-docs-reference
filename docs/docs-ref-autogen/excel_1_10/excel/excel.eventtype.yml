@@ -47,8 +47,8 @@ fields:
     uid: 'excel!Excel.EventType.commentAdded:member'
     package: excel!
     summary: >-
-      CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are
-      added.
+      `CommentAdded` represents the type of event that is registered on a comment collection and occurs when comments
+      are added.
     value: '"CommentAdded"'
   - name: commentChanged
     uid: 'excel!Excel.EventType.commentChanged:member'

@@ -2974,8 +2974,8 @@ export declare namespace Excel {
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-                To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
-                and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+                To learn more about how ranges are used throughout the API, start with
+                {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -20153,7 +20153,7 @@ export declare namespace Excel {
          */
         worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
         /**
-         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
+         * `CommentAdded` represents the type of event that is registered on a comment collection and occurs when comments are added.
          *
          */
         commentAdded = "CommentAdded",
@@ -35363,8 +35363,8 @@ export declare namespace Excel {
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-                    To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
-                    and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+                    To learn more about how ranges are used throughout the API, start with
+                    {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */

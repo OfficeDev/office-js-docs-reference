@@ -38,6 +38,10 @@ methods:
       unique name but multiple categories can use the same color.
 
 
+      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
+      appointment item in Compose mode.
+
+
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -123,6 +127,10 @@ methods:
       unique name but multiple categories can use the same color.
 
 
+      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
+      appointment item in Compose mode.
+
+
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -163,8 +171,14 @@ methods:
       Gets an item's categories.
 
 
-      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
-      Outlook version so make sure to handle both cases.
+      **Important**:
+
+
+      - If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook
+      version so make sure to handle both cases.
+
+
+      - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -208,8 +222,14 @@ methods:
       Gets an item's categories.
 
 
-      **Important**: If there are no categories on the item, `null` or an empty array will be returned depending on the
-      Outlook version so make sure to handle both cases.
+      **Important**:
+
+
+      - If there are no categories on the item, `null` or an empty array will be returned depending on the Outlook
+      version so make sure to handle both cases.
+
+
+      - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -267,8 +287,13 @@ methods:
     uid: 'outlook!Office.Categories#removeAsync:member(1)'
     package: outlook!
     fullName: 'removeAsync(categories, options, callback)'
-    summary: |-
+    summary: >-
       Removes categories from an item.
+
+
+      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
+      mode.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -340,8 +365,13 @@ methods:
     uid: 'outlook!Office.Categories#removeAsync:member(2)'
     package: outlook!
     fullName: 'removeAsync(categories, callback)'
-    summary: |-
+    summary: >-
       Removes categories from an item.
+
+
+      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
+      mode.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
