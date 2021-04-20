@@ -5,9 +5,8 @@ package: excel!
 fullName: Excel.Range
 summary: >-
   Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn
-  more about how ranges are used throughout the API, read [Work with ranges using the Excel JavaScript
-  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) and [Work with ranges using the Excel
-  JavaScript API (advanced)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.
+  more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
 
 
   \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -94,7 +94,34 @@ methods:
           type: number
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
-        description: The shape at the given index. An error is thrown if index is out of range.
+        description: >-
+          The shape at the given index. An error is thrown if index is out of range.
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+
+          await PowerPoint.run(async function(context) {
+            const slide = context.presentation.slides.getItemAt(0);
+            const shape = slide.shapes.getItemAt(0);
+            shape.tags.add("MOUNTAIN", "Denali");
+
+            await context.sync();
+
+            const myShapeTag = shape.tags.getItem("MOUNTAIN");
+            myShapeTag.load("key, value");
+
+            await context.sync();
+
+            console.log("Added key " + JSON.stringify(myShapeTag.key) + " with value " + JSON.stringify(myShapeTag.value));
+          });
+
+          ```
   - name: getItemOrNullObject(id)
     uid: 'powerpoint!PowerPoint.ShapeCollection#getItemOrNullObject:member(1)'
     package: powerpoint!
