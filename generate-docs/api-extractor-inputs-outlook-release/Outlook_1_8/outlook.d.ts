@@ -3272,6 +3272,9 @@ export declare namespace Office {
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
          * Gets the MIME content type of the attachment.
+         *
+         * **Important**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained.
+         * If you require specific types, grab the attachment's extension and process accordingly.
          */
         contentType: string;
         /**
