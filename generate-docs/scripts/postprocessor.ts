@@ -79,6 +79,7 @@ tryCatch(async () => {
     });
 
     // fix all the individual TOC files
+    globalToc.items[0].items[0].href = "../overview/overview.md"; // Stay within a moniker
     const tocWithCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const hostVersionMap = [{host: "excel", versions: 13}, /*not including online*/
                             {host: "onenote", versions: 1},
