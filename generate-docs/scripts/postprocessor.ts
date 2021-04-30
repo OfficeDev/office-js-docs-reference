@@ -79,7 +79,7 @@ tryCatch(async () => {
     });
 
     // fix all the individual TOC files
-    scrubAndWriteToc(docsDestination + "/office", globalToc);
+    const tocWithCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const hostVersionMap = [{host: "excel", versions: 13}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 10},
@@ -88,14 +88,14 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), globalToc, category.host, category.versions);
+        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), tocWithCommon, category.host, category.versions);
         for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), globalToc, category.host, i);
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), tocWithCommon, category.host, i);
         }
     });
 
     // Special case for ExcelApi Online
-    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), globalToc, "excel", 99);
+    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithCommon, "excel", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);
@@ -184,7 +184,7 @@ async function tryCatch(call: () => Promise<void>) {
     }
 }
 
-function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: string, versionNumber?: number) {
+function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: string, versionNumber?: number): Toc {
     const tocPath = versionFolder + "/toc.yml";
     let latestToc;
     if (!hostName) {
@@ -284,9 +284,10 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                     });
                 }
 
-                newTocNode={
-                    "name": packageName,
-                    "items": primaryList
+                newTocNode= {
+                    name: packageName,
+                    uid: packageItem.uid,
+                    items: primaryList
                 };
             }
         });
