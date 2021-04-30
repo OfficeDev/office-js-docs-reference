@@ -49,7 +49,7 @@ items:
           - name: TagCollection
             uid: 'powerpoint!PowerPoint.TagCollection:class'
       - name: Visio
-        href: /javascript/api/visio?view=visio-js-1.1
+        href: /javascript/api/visio?view=visio-js-1.1&
       - name: Word
         href: /javascript/api/word?view=word-js-preview
       - name: Common APIs
