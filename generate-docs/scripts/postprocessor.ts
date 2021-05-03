@@ -89,9 +89,10 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), tocWithCommon, category.host, category.versions);
+        let tocToUse = category.host === "visio" ? globalToc : tocWithCommon; // Visio doesn't have access to Common APIs.
+        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), tocToUse, category.host, category.versions);
         for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), tocWithCommon, category.host, i);
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), tocToUse, category.host, i);
         }
     });
 
