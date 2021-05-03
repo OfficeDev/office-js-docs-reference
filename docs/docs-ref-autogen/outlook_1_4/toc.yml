@@ -4,9 +4,9 @@ items:
       - name: API reference overview
         href: ../overview/overview.md
       - name: Excel
-        href: /javascript/api/excel?view=excel-js-preview
+        href: /javascript/api/excel
       - name: OneNote
-        href: /javascript/api/onenote?view=onenote-js-1.1
+        href: /javascript/api/onenote
       - name: Outlook
         uid: outlook!
         items:
@@ -90,11 +90,11 @@ items:
           - name: UserProfile
             uid: 'outlook!Office.UserProfile:interface'
       - name: PowerPoint
-        href: /javascript/api/powerpoint?view=powerpoint-js-1.1
+        href: /javascript/api/powerpoint
       - name: Visio
-        href: /javascript/api/visio?view=visio-js-1.1&
+        href: /javascript/api/visio
       - name: Word
-        href: /javascript/api/word?view=word-js-preview
+        href: /javascript/api/word
       - name: Common APIs
         uid: office!
         items:

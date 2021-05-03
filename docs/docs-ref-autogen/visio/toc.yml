@@ -4,13 +4,13 @@ items:
       - name: API reference overview
         href: ../overview/overview.md
       - name: Excel
-        href: /javascript/api/excel?view=excel-js-preview
+        href: /javascript/api/excel
       - name: OneNote
-        href: /javascript/api/onenote?view=onenote-js-1.1
+        href: /javascript/api/onenote
       - name: Outlook
-        href: /javascript/api/outlook?view=outlook-js-preview
+        href: /javascript/api/outlook
       - name: PowerPoint
-        href: /javascript/api/powerpoint?view=powerpoint-js-1.1
+        href: /javascript/api/powerpoint
       - name: Visio
         uid: visio!
         items:
@@ -82,7 +82,7 @@ items:
           - name: ShapeView
             uid: 'visio!Visio.ShapeView:class'
       - name: Word
-        href: /javascript/api/word?view=word-js-preview
+        href: /javascript/api/word
       - name: Common APIs
         uid: office!
         items:

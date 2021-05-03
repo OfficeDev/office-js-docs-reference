@@ -261,15 +261,15 @@ items:
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
       - name: OneNote
-        href: /javascript/api/onenote?view=onenote-js-1.1
+        href: /javascript/api/onenote
       - name: Outlook
-        href: /javascript/api/outlook?view=outlook-js-preview
+        href: /javascript/api/outlook
       - name: PowerPoint
-        href: /javascript/api/powerpoint?view=powerpoint-js-1.1
+        href: /javascript/api/powerpoint
       - name: Visio
-        href: /javascript/api/visio?view=visio-js-1.1&
+        href: /javascript/api/visio
       - name: Word
-        href: /javascript/api/word?view=word-js-preview
+        href: /javascript/api/word
       - name: Common APIs
         uid: office!
         items:
