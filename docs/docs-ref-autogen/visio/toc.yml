@@ -3,6 +3,14 @@ items:
     items:
       - name: API reference overview
         href: ../overview/overview.md
+      - name: Excel
+        href: /javascript/api/excel
+      - name: OneNote
+        href: /javascript/api/onenote
+      - name: Outlook
+        href: /javascript/api/outlook
+      - name: PowerPoint
+        href: /javascript/api/powerpoint
       - name: Visio
         uid: visio!
         items:
@@ -73,3 +81,7 @@ items:
             uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
           - name: ShapeView
             uid: 'visio!Visio.ShapeView:class'
+      - name: Word
+        href: /javascript/api/word
+      - name: Common APIs
+        href: /javascript/api/office

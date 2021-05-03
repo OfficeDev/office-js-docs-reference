@@ -7,27 +7,27 @@ import * as path from "path";
 
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
-interface Toc {
+class Toc {
+    
+    items: [{
+        name: string,
+        items: ApplicationTocNode[]
+    }]
+}
+
+interface ApplicationTocNode {
+    name: string,
+    href?: string,
+    uid?: string
     items: [
         {
             name: string,
-            href?: string,
+            uid: string,
             items: [
                 {
                     name: string,
-                    uid: string,
-                    items: [
-                        {
-                            name: string,
-                            uid?: string,
-                            items: [
-                                {
-                                    name: string,
-                                    uid?: string
-                                }
-                            ]
-                        }
-                    ]
+                    uid?: string,
+                    items: IMembers
                 }
             ]
         }
@@ -58,13 +58,13 @@ tryCatch(async () => {
     console.log(`Creating global TOC`);
     let globalToc = <Toc>{items: [{"name": "API reference"}]};
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
-                                {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
-                                {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
-                                {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
-                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
-                                {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
-                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
-                                {"name": "Common APIs", "href": "/javascript/api/office?view=common-js"}] as any;
+                                {"name": "Excel", "href": "/javascript/api/excel"},
+                                {"name": "OneNote", "href": "/javascript/api/onenote"},
+                                {"name": "Outlook", "href": "/javascript/api/outlook"},
+                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint"},
+                                {"name": "Visio", "href": "/javascript/api/visio"},
+                                {"name": "Word", "href": "/javascript/api/word"},
+                                {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
     fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
 
@@ -79,7 +79,8 @@ tryCatch(async () => {
     });
 
     // fix all the individual TOC files
-    const commonToc = scrubAndWriteToc(docsDestination + "/office");
+    globalToc.items[0].items[0].href = "../overview/overview.md"; // Stay within a moniker
+    const tocWithCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const hostVersionMap = [{host: "excel", versions: 13}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 10},
@@ -88,14 +89,15 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), commonToc, category.host, category.versions);
+        let tocToUse = category.host === "visio" ? globalToc : tocWithCommon; // Visio doesn't have access to Common APIs.
+        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), tocToUse, category.host, category.versions);
         for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), commonToc, category.host, i);
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), tocToUse, category.host, i);
         }
     });
 
     // Special case for ExcelApi Online
-    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), commonToc, "excel", 99);
+    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithCommon, "excel", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);
@@ -184,34 +186,25 @@ async function tryCatch(call: () => Promise<void>) {
     }
 }
 
-function scrubAndWriteToc(versionFolder: string, commonToc?: Toc, hostName?: string, versionNumber?: number): Toc {
+function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: string, versionNumber?: number): Toc {
     const tocPath = versionFolder + "/toc.yml";
     let latestToc;
-    if (!commonToc) {
-        latestToc = fixCommonToc(tocPath);
+    if (!hostName) {
+        latestToc = fixCommonToc(tocPath, globalToc);
     } else {
-        latestToc = fixToc(tocPath, commonToc, hostName, versionNumber);
+        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     return latestToc;
 }
 
-function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber: number): Toc {
+function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
-    let newToc = <Toc>{};
+    let newTocNode = <ApplicationTocNode>{};
     let membersToMove = <IMembers>{};
-
-    newToc.items = [{
-        "name": "API reference",
-        "items": [] as any
-    }];
-    newToc.items[0].items = [{
-        "name": "API reference overview",
-        "href": "../overview/overview.md"
-    }] as any;
 
     let generalFilter: string[] = ["Interfaces"];
     let enumFilter: string[] = generateEnumList(fsx.readFileSync(`../api-extractor-inputs-${hostName}/${hostName}.d.ts`).toString());
@@ -293,48 +286,42 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                     });
                 }
 
-                newToc.items[0].items.push({
-                    "name": packageName,
-                    "uid": packageItem.uid,
-                    "items": primaryList
-                });
+                newTocNode= {
+                    name: packageName,
+                    uid: packageItem.uid,
+                    items: primaryList
+                };
             }
         });
     });
 
-    // Append the Common API TOC.
-    if (hostName !== "visio") {
-        newToc.items[0].items.push((commonToc.items[0] as any).items[1]);
-    }
+    const newToc = <Toc>{items: [] as any};
+    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+        newToc.items.push({name: topLevel.name, items: []});
+        topLevel.items.forEach((applicationNode) =>{
+            if (applicationNode.name === newTocNode.name) {
+                newToc.items[topLevelIndex].items.push(newTocNode);
+            } else {
+                newToc.items[topLevelIndex].items.push(applicationNode);
+            }
+        });
+    });
 
     return newToc;
 }
 
-function fixCommonToc(tocPath: string): Toc {
+function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
-    let newToc = <Toc>{};
     let membersToMove = <IMembers>{};
 
-    newToc.items = [{
-        "name": "API reference",
-        "items": [] as any
-    }];
-    
-    // add API reference overview to Common API
-    newToc.items[0].items = [{
-        "name": "API reference overview",
-        "href": "../overview/overview.md"
-    }] as any;
-
     // Create roots for items we want to reorder.
-    let commonRoot = {
-        "name": 'Common API',
-        "uid": "office!",
-        "items": [] as any
+    let newTocNode = {
+        name: 'Common APIs',
+        uid: "office!",
+        items: [] as any
     }
-    newToc.items[0].items.push(commonRoot);
 
     // create folders for common (shared) API subcategories
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
@@ -367,21 +354,33 @@ function fixCommonToc(tocPath: string): Toc {
 
                 let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                 primaryList.unshift(sharedEnumRoot);            
-                commonRoot.items.push({
+                newTocNode.items.push({
                     "name": 'Office',
                     "uid": packageItem.uid,
                     "items": primaryList
                 });
-                commonRoot.items.push({
+                newTocNode.items.push({
                     "name": 'OfficeExtension',
                     "items": officeExtensionList
                 });
             } else if (packageItem.name === 'office-runtime') {
-                commonRoot.items.push({
+                newTocNode.items.push({
                     "name": 'OfficeRuntime',
                     "uid": packageItem.uid,
                     "items": packageItem.items
                 });
+            }
+        });
+    });
+
+    const newToc = <Toc>{items: [] as any};
+    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+        newToc.items.push({name: topLevel.name, items: []});
+        topLevel.items.forEach((applicationNode) =>{
+            if (applicationNode.name === newTocNode.name) {
+                newToc.items[topLevelIndex].items.push(newTocNode);
+            } else {
+                newToc.items[topLevelIndex].items.push(applicationNode);
             }
         });
     });
