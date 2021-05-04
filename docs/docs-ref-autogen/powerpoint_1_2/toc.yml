@@ -3,6 +3,12 @@ items:
     items:
       - name: API reference overview
         href: ../overview/overview.md
+      - name: Excel
+        href: /javascript/api/excel
+      - name: OneNote
+        href: /javascript/api/onenote
+      - name: Outlook
+        href: /javascript/api/outlook
       - name: PowerPoint
         uid: powerpoint!
         items:
@@ -25,7 +31,11 @@ items:
             uid: 'powerpoint!PowerPoint.Slide:class'
           - name: SlideCollection
             uid: 'powerpoint!PowerPoint.SlideCollection:class'
-      - name: Common API
+      - name: Visio
+        href: /javascript/api/visio
+      - name: Word
+        href: /javascript/api/word
+      - name: Common APIs
         uid: office!
         items:
           - name: Office
