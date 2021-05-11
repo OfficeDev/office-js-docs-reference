@@ -25,6 +25,6 @@
     "inquirer": "^7.0.0",
     "isomorphic-fetch": "^3.0.0",
     "js-yaml": "3.13.1",
-    "lodash": "4.17.19"
+    "lodash": "^4.17.21"
   }
 }

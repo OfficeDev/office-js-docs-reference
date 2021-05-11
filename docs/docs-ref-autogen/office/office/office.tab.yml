@@ -42,7 +42,7 @@ properties:
     fullName: visible
     summary: Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'visible?: boolean;'
