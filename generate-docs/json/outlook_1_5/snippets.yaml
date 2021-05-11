@@ -41,7 +41,7 @@
         function(result) { console.log(result); });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -213,7 +213,7 @@
 'Office.AppointmentCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -561,7 +561,7 @@
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 
@@ -2318,7 +2318,7 @@
 'Office.Body#setSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -2348,7 +2348,7 @@
     );
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Set the signature for the current item.
 
@@ -3510,7 +3510,7 @@
         function(result) { console.log(result); });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -3777,7 +3777,7 @@
 'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -3869,7 +3869,7 @@
 'Office.MessageCompose#getComposeTypeAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Get the compose type of the current item (mail only).
 
@@ -4026,7 +4026,7 @@
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 

@@ -7,6 +7,7 @@ export declare namespace Office {
     export namespace MailboxEnums {
         
         
+        
         /**
          * Specifies an attachment's type.
          *
@@ -34,6 +35,7 @@ export declare namespace Office {
              */
             Cloud = "cloud"
         }
+        
         
         
         
@@ -95,8 +97,8 @@ export declare namespace Office {
             /**
              * The notification message is an error message.
              */
-            ErrorMessage = "errorMessage"
-        }
+            ErrorMessage = "errorMessage",
+                    }
         /**
          * Specifies an item's type.
          *
@@ -581,6 +583,8 @@ export declare namespace Office {
         
         
         
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -635,6 +639,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         
         
         /**
@@ -850,6 +856,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
     }
     /**
      * The `AppointmentForm` object is used to access the currently selected appointment.
@@ -3286,6 +3294,10 @@ export declare namespace Office {
         
         
         
+        
+        
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -3340,6 +3352,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        
+        
         
         
         /**
@@ -4105,6 +4119,7 @@ export declare namespace Office {
         
         
     }
+    
     /**
      * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
      *
@@ -4151,6 +4166,7 @@ export declare namespace Office {
          * Specifying this parameter for an unsupported type throws an exception.
          */
         persistent?: Boolean;
+        
     }
     /**
      * The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
