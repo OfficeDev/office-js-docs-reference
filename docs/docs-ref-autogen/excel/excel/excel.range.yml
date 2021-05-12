@@ -1533,7 +1533,37 @@ methods:
       content: 'getDirectDependents(): Excel.WorkbookRangeAreas;'
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-direct-dependents.yaml
+
+          await Excel.run(async (context) => {
+            // Direct dependents are cells that contain formulas that refer to other cells.
+            let range = context.workbook.getActiveCell();
+            let directDependents = range.getDirectDependents();
+            range.load("address");
+            directDependents.areas.load("address");
+            await context.sync();
+            
+            console.log(`Direct dependent cells of ${range.address}:`);
+            
+            // Use the direct dependents API to loop through direct dependents of the active cell.
+            for (let i = 0; i < directDependents.areas.items.length; i++) {
+              // Highlight and print the address of each dependent cell.
+              directDependents.areas.items[i].format.fill.color = "Yellow";
+              console.log(`  ${directDependents.areas.items[i].address}`);
+            }
+            await context.sync();
+          });
+
+          ```
   - name: getDirectPrecedents()
     uid: 'excel!Excel.Range#getDirectPrecedents:member(1)'
     package: excel!
