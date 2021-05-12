@@ -1147,6 +1147,42 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-workbook-activated.yaml
+
+          async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
+            await Excel.run(async (context) => {
+              // Callback function for when the workbook is activated.
+              console.log("The workbook was activated.");
+            });
+          }
+
+          ```
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-workbook-activated.yaml
+
+          await Excel.run(async (context) => {
+            const workbook = context.workbook;
+
+            // Register the workbook activated event handler.
+            workbook.onActivated.add(workbookActivated);
+
+            await context.sync();
+            console.log("Added event handler for workbook activated.");
+          });
+
+          ```
   - name: onAutoSaveSettingChanged
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
     package: excel!
