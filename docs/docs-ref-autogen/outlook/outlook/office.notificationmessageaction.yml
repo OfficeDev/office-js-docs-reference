@@ -115,7 +115,7 @@ properties:
       **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

@@ -6,7 +6,7 @@ fullName: Office.MailboxEnums.AppointmentSensitivityType
 summary: |-
   Specifies the sensitivity type of an appointment.
 
-  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
@@ -20,7 +20,7 @@ fields:
     summary: |-
       Treat the item as confidential.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
@@ -28,7 +28,7 @@ fields:
     summary: |-
       The item needs no special treatment.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"normal"'
   - name: Personal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
@@ -36,7 +36,7 @@ fields:
     summary: |-
       Treat the item as personal.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
@@ -44,5 +44,5 @@ fields:
     summary: |-
       Treat the item as private.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     value: '"private"'

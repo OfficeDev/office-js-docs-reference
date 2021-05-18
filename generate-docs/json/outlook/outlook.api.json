@@ -1559,7 +1559,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getInitializationContextAsync:member(1)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1628,7 +1628,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getInitializationContextAsync:member(2)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2105,7 +2105,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#isAllDayEvent:member",
-                  "docComment": "/**\n * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2960,7 +2960,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#sensitivity:member",
-                  "docComment": "/**\n * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3013,7 +3013,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#sessionData:member",
-                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4756,7 +4756,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4825,7 +4825,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#getInitializationContextAsync:member(2)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5147,7 +5147,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#isAllDayEvent:member",
-                  "docComment": "/**\n * Returns a boolean value indicating whether the event is all day.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Returns a boolean value indicating whether the event is all day.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5690,7 +5690,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#sensitivity:member",
-                  "docComment": "/**\n * Provides the sensitivity value of the appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Provides the sensitivity value of the appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10342,7 +10342,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.IsAllDayEvent:interface",
-              "docComment": "/**\n * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -10355,7 +10355,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.IsAllDayEvent#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10424,7 +10424,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.IsAllDayEvent#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10477,7 +10477,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.IsAllDayEvent#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10561,7 +10561,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.IsAllDayEvent#setAsync:member(2)",
-                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13355,7 +13355,7 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum",
-                  "docComment": "/**\n * Specifies the sensitivity type of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies the sensitivity type of an appointment.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13368,7 +13368,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member",
-                      "docComment": "/**\n * Treat the item as confidential.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as confidential.\n *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13389,7 +13389,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member",
-                      "docComment": "/**\n * The item needs no special treatment.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * The item needs no special treatment.\n *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13410,7 +13410,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member",
-                      "docComment": "/**\n * Treat the item as personal.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as personal.\n *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13431,7 +13431,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member",
-                      "docComment": "/**\n * Treat the item as private.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as private.\n *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20972,7 +20972,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getInitializationContextAsync:member(1)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21041,7 +21041,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getInitializationContextAsync:member(2)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is activated by an actionable message.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22264,7 +22264,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#sessionData:member",
-                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23899,7 +23899,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#getInitializationContextAsync:member(1)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23968,7 +23968,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#getInitializationContextAsync:member(2)",
-                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.\n *\n * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Microsoft 365.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24989,7 +24989,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.NotificationMessageAction#contextData:member",
-                  "docComment": "/**\n * Any JSON data the button needs to pass on. This data can be retrieved by calling `item.getInitializationContextAsync`.\n *\n * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Any JSON data the button needs to pass on. This data can be retrieved by calling `item.getInitializationContextAsync`.\n *\n * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25877,7 +25877,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs:interface",
-              "docComment": "/**\n * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25890,7 +25890,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member",
-                  "docComment": "/**\n * Gets the updated Office theme.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Gets the updated Office theme.\n *\n * [Api set: Mailbox preview]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25917,7 +25917,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox preview]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28249,7 +28249,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Sensitivity:interface",
-              "docComment": "/**\n * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -28262,7 +28262,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Sensitivity#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28340,7 +28340,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Sensitivity#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28402,7 +28402,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Sensitivity#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28491,7 +28491,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Sensitivity#setAsync:member(2)",
-                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29106,7 +29106,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SessionData:interface",
-              "docComment": "/**\n * Provides methods to manage an item's session data.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides methods to manage an item's session data.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -29119,7 +29119,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#clearAsync:member(1)",
-                  "docComment": "/**\n * Clears all session data key-value pairs.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Clears all session data key-value pairs.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29188,7 +29188,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#clearAsync:member(2)",
-                  "docComment": "/**\n * Clears all session data key-value pairs.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Clears all session data key-value pairs.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29241,7 +29241,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#getAllAsync:member(1)",
-                  "docComment": "/**\n * Gets all session data key-value pairs.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets all session data key-value pairs.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29294,7 +29294,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the session data value of the specified key.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the session data value of the specified key.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29362,7 +29362,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#removeAsync:member(1)",
-                  "docComment": "/**\n * Removes a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Removes a session data key-value pair.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29446,7 +29446,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#removeAsync:member(2)",
-                  "docComment": "/**\n * Removes a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Removes a session data key-value pair.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29514,7 +29514,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#setAsync:member(1)",
-                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29613,7 +29613,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#setAsync:member(2)",
-                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * [Api set: Mailbox preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

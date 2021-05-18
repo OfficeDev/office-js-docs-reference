@@ -2068,7 +2068,7 @@ export declare namespace Office {
          * The event handler receives an argument of type
          * {@link https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview | Office.OfficeThemeChangedEventArgs}.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @beta
          */

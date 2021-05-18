@@ -6,7 +6,7 @@ fullName: Office.Sensitivity
 summary: |-
   Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
 
-  \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -27,7 +27,7 @@ methods:
     summary: |-
       Gets the value of the appointment sensitivity.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -103,7 +103,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
 
 
-            \[Api set: Mailbox Preview\]
+            \[Api set: Mailbox preview\]
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
@@ -117,7 +117,7 @@ methods:
     summary: |-
       Sets the value of the appointment sensitivity.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -179,7 +179,7 @@ methods:
     summary: |-
       Sets the value of the appointment sensitivity.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:

@@ -19,7 +19,7 @@ export declare namespace Office {
         /**
          * Specifies the sensitivity type of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -31,25 +31,25 @@ export declare namespace Office {
             /**
              * The item needs no special treatment.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Normal = "normal",
             /**
              * Treat the item as personal.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Personal = "personal",
             /**
              * Treat the item as private.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Private = "private",
             /**
              * Treat the item as confidential.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Confidential = "confidential"
         }
@@ -1343,7 +1343,7 @@ export declare namespace Office {
         /**
          * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1454,7 +1454,7 @@ export declare namespace Office {
         /**
          * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1491,7 +1491,7 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1963,7 +1963,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1990,7 +1990,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -2732,7 +2732,7 @@ export declare namespace Office {
         /**
          * Returns a boolean value indicating whether the event is all day.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -2967,7 +2967,7 @@ export declare namespace Office {
         /**
          * Provides the sensitivity value of the appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -3244,7 +3244,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -3269,7 +3269,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -6532,7 +6532,7 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -7034,7 +7034,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -7061,7 +7061,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8215,7 +8215,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8241,7 +8241,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8560,7 +8560,7 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -8574,7 +8574,7 @@ export declare namespace Office {
         /**
          * Gets the boolean value indicating whether the event is all day or not.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8593,7 +8593,7 @@ export declare namespace Office {
         /**
          * Gets the boolean value indicating whether the event is all day or not.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8609,7 +8609,7 @@ export declare namespace Office {
         /**
          * Sets the all-day event status of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          * If an appointment is marked as an all-day event:
@@ -8631,7 +8631,7 @@ export declare namespace Office {
         /**
          * Sets the all-day event status of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          * If an appointment is marked as an all-day event:
@@ -8682,7 +8682,7 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @beta
          */
@@ -8931,7 +8931,7 @@ export declare namespace Office {
     /**
      * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @beta
      */
@@ -8939,13 +8939,13 @@ export declare namespace Office {
         /**
          * Gets the updated Office theme.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          */
         officeTheme: CommonAPI.OfficeTheme;
         /**
          * Gets the type of the event. See `Office.EventType` for details.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          */
         type: "officeThemeChanged";
     }
@@ -9715,7 +9715,7 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -9729,7 +9729,7 @@ export declare namespace Office {
         /**
          * Gets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9751,7 +9751,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9765,7 +9765,7 @@ export declare namespace Office {
         /**
          * Sets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9785,7 +9785,7 @@ export declare namespace Office {
         /**
          * Sets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9990,7 +9990,7 @@ export declare namespace Office {
     /**
      * Provides methods to  manage an item's session data.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -10004,7 +10004,7 @@ export declare namespace Office {
         /**
          * Clears all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10023,7 +10023,7 @@ export declare namespace Office {
         /**
          * Clears all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10040,7 +10040,7 @@ export declare namespace Office {
         /**
          * Gets all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10057,7 +10057,7 @@ export declare namespace Office {
         /**
          * Gets the session data value of the specified key.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10075,7 +10075,7 @@ export declare namespace Office {
         /**
          * Removes a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10095,7 +10095,7 @@ export declare namespace Office {
         /**
          * Removes a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10113,7 +10113,7 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10134,7 +10134,7 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *

@@ -4,6 +4,7 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 //////////////////// Begin PowerPoint APIs /////////////////////
 ////////////////////////////////////////////////////////////////
 
+
 export declare namespace PowerPoint {
     /**
      * [Api set: PowerPointApi 1.0]
@@ -344,13 +345,6 @@ export declare namespace PowerPoint {
          * @beta
          */
         readonly id: string;
-        /**
-         * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
-         *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -1363,6 +1357,8 @@ export declare namespace PowerPoint {
      */
     export function createPresentation(base64File?: string): Promise<void>;
 }
+
+
 
 
 ////////////////////////////////////////////////////////////////

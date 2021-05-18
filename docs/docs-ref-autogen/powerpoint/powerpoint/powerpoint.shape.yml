@@ -57,22 +57,6 @@ properties:
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
 methods:
-  - name: delete()
-    uid: 'powerpoint!PowerPoint.Shape#delete:member(1)'
-    package: powerpoint!
-    fullName: delete()
-    summary: |-
-      Deletes the shape from the shape collection. Does nothing if the shape does not exist.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
   - name: load(options)
     uid: 'powerpoint!PowerPoint.Shape#load:member(1)'
     package: powerpoint!
