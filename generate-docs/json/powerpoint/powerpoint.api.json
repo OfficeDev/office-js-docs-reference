@@ -3397,6 +3397,35 @@
                   "isStatic": false
                 },
                 {
+                  "kind": "Method",
+                  "canonicalReference": "powerpoint!PowerPoint.Shape#delete:member(1)",
+                  "docComment": "/**\n * Deletes the shape from the shape collection. Does nothing if the shape does not exist.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "delete(): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "delete"
+                },
+                {
                   "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.Shape#id:member",
                   "docComment": "/**\n * Gets the unique ID of the shape. The `id` is unique within the slide.\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",

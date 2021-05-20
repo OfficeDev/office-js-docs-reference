@@ -8248,7 +8248,7 @@ export declare namespace Office {
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      */
-     export interface NotificationMessageAction {
+    export interface NotificationMessageAction {
         /**
          * The type of action to be performed.
          * `ActionType.ShowTaskPane` is the only supported action.
