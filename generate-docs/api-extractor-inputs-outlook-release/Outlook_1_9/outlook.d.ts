@@ -5,6 +5,7 @@ import {Office as CommonAPI} from "../../api-extractor-inputs-office/office"
 
 export declare namespace Office {
     export namespace MailboxEnums {
+        
         /**
          * Specifies the formatting that applies to an attachment's content.
          * 
@@ -196,6 +197,7 @@ export declare namespace Office {
              */
             Preset24
         }
+        
         /**
          * Specifies the day of week or type of day.
          *
@@ -340,8 +342,8 @@ export declare namespace Office {
             /**
              * The notification message is an error message.
              */
-            ErrorMessage = "errorMessage"
-        }
+            ErrorMessage = "errorMessage",
+                    }
         /**
          * Specifies an item's type.
          *
@@ -1185,7 +1187,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Child interfaces:
      *
@@ -1200,7 +1202,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Parent interfaces:
      *
@@ -1572,7 +1574,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -1594,7 +1596,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -1701,6 +1703,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         close(): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -1947,6 +1951,8 @@ export declare namespace Office {
          *                 The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -2031,7 +2037,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2051,7 +2057,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2196,6 +2202,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
     }
     /**
      * The `AppointmentForm` object is used to access the currently selected appointment.
@@ -2376,7 +2384,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Parent interfaces:
      *
@@ -2701,7 +2709,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -2723,7 +2731,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3222,7 +3230,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -3242,7 +3250,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -4668,7 +4676,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Child interfaces:
      *
@@ -4683,7 +4691,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Child interfaces:
      *
@@ -5007,7 +5015,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -5028,7 +5036,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -5738,7 +5746,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -5757,7 +5765,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section} for supported events.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -5957,7 +5965,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Child interfaces:
      *
@@ -5972,7 +5980,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Parent interfaces:
      *
@@ -6311,7 +6319,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6333,7 +6341,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6438,6 +6446,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         close(): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -6534,6 +6544,8 @@ export declare namespace Office {
          *                 the failure.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
+        
+        
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -6698,6 +6710,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -6782,7 +6796,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6802,7 +6816,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -6945,7 +6959,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item | Object Model} page for more information.
      * 
      * Parent interfaces:
      *
@@ -7320,7 +7334,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -7342,7 +7356,7 @@ export declare namespace Office {
          /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -7883,7 +7897,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -7903,7 +7917,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          * 
-         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section} for supported events.
+         * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events | events section} for supported events.
          * 
          * [Api set: Mailbox 1.7]
          *
@@ -7919,6 +7933,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
      *
@@ -7965,6 +7980,7 @@ export declare namespace Office {
          * Specifying this parameter for an unsupported type throws an exception.
          */
         persistent?: Boolean;
+        
     }
     /**
      * The `NotificationMessages` object is returned as the `notificationMessages` property of an item.

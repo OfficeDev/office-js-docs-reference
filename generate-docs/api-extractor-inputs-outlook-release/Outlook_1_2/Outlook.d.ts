@@ -7,6 +7,7 @@ export declare namespace Office {
     export namespace MailboxEnums {
         
         
+        
         /**
          * Specifies an attachment's type.
          *
@@ -34,6 +35,7 @@ export declare namespace Office {
              */
             Cloud = "cloud"
         }
+        
         
         
         
@@ -507,6 +509,8 @@ export declare namespace Office {
         
         
         
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -561,6 +565,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         
         
         /**
@@ -707,6 +713,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
     }
     /**
      * The `AppointmentForm` object is used to access the currently selected appointment.
@@ -2788,6 +2796,10 @@ export declare namespace Office {
         
         
         
+        
+        
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2842,6 +2854,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        
+        
         
         
         /**
@@ -3534,6 +3548,7 @@ export declare namespace Office {
         
         
     }
+    
     
     
     

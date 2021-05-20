@@ -1412,7 +1412,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
       // Set the signature for the current item with inline image.
 
@@ -1427,7 +1427,6 @@ methods:
           if (result.status == Office.AsyncResultStatus.Succeeded) {
             var signature = $("#signature").val() + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
-            // Important: setSignatureAsync is currently in preview.
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
               { coercionType: "html" },

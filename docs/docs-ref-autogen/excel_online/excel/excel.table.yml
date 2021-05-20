@@ -675,7 +675,29 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: void
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/resize-table.yaml
+
+          await Excel.run(async (context) => {
+            // Retrieve the worksheet and a table on that worksheet.
+            const sheet = context.workbook.worksheets.getItem("Sample");
+            const expensesTable = sheet.tables.getItem("ExpensesTable");
+            
+            // Resize the table.
+            expensesTable.resize("A1:D20");
+            
+            await context.sync();
+          });
+
+          ```
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Table#set:member(1)'
     package: excel!

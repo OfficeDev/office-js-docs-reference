@@ -9,7 +9,7 @@ summary: >-
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
   this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
-  Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item)
+  Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item)
   page for more information.
 
 
@@ -1140,7 +1140,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
       // Set the signature for the current item with inline image.
 
@@ -1155,7 +1155,6 @@ methods:
           if (result.status == Office.AsyncResultStatus.Succeeded) {
             var signature = $("#signature").val() + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
-            // Important: setSignatureAsync is currently in preview.
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
               { coercionType: "html" },
@@ -1280,7 +1279,7 @@ methods:
 
 
       Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
       for supported events.
 
 
@@ -1350,7 +1349,7 @@ methods:
 
 
       Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
       for supported events.
 
 
@@ -2607,7 +2606,7 @@ methods:
 
 
       Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
       for supported events.
 
 
@@ -2653,7 +2652,7 @@ methods:
 
 
       Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
       for supported events.
 
 

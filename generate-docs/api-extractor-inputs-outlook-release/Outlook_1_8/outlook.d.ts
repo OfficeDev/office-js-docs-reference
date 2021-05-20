@@ -5,6 +5,7 @@ import {Office as CommonAPI} from "../../api-extractor-inputs-office/office"
 
 export declare namespace Office {
     export namespace MailboxEnums {
+        
         /**
          * Specifies the formatting that applies to an attachment's content.
          * 
@@ -196,6 +197,7 @@ export declare namespace Office {
              */
             Preset24
         }
+        
         /**
          * Specifies the day of week or type of day.
          *
@@ -340,8 +342,8 @@ export declare namespace Office {
             /**
              * The notification message is an error message.
              */
-            ErrorMessage = "errorMessage"
-        }
+            ErrorMessage = "errorMessage",
+                    }
         /**
          * Specifies an item's type.
          *
@@ -1701,6 +1703,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         close(): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -1947,6 +1951,8 @@ export declare namespace Office {
          *                 The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -2196,6 +2202,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
     }
     /**
      * The `AppointmentForm` object is used to access the currently selected appointment.
@@ -5970,6 +5978,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         close(): void;
+        
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -6066,6 +6076,8 @@ export declare namespace Office {
          *                 the failure.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
+        
+        
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -6230,6 +6242,8 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -7345,6 +7359,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
      *
@@ -7391,6 +7406,7 @@ export declare namespace Office {
          * Specifying this parameter for an unsupported type throws an exception.
          */
         persistent?: Boolean;
+        
     }
     /**
      * The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
