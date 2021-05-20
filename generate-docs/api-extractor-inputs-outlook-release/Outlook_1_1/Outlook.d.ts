@@ -7,6 +7,7 @@ export declare namespace Office {
     export namespace MailboxEnums {
         
         
+        
         /**
          * Specifies an attachment's type.
          *
@@ -34,6 +35,7 @@ export declare namespace Office {
              */
             Cloud = "cloud"
         }
+        
         
         
         
@@ -493,6 +495,10 @@ export declare namespace Office {
         
         
         
+        
+        
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -574,6 +580,8 @@ export declare namespace Office {
          *                 If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         
         
         
@@ -2665,6 +2673,12 @@ export declare namespace Office {
         
         
         
+        
+        
+        
+        
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -3299,6 +3313,7 @@ export declare namespace Office {
         
         
     }
+    
     
     
     

@@ -124,7 +124,7 @@ fields:
       -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: RecipientsChanged
     uid: 'office!Office.EventType.RecipientsChanged:member'
     package: office!

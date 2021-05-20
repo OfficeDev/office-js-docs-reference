@@ -6,11 +6,9 @@ import {Office as CommonAPI} from "../api-extractor-inputs-office/office"
 export declare namespace Office {
     export namespace MailboxEnums {
         /**
-         * Specifies the type of action in a notification message.
+         * Specifies the type of custom action in a notification message.
          *
-         * [Api set: Mailbox Preview]
-         *
-         * @beta
+         * [Api set: Mailbox 1.10]
          */
         enum ActionType {
             /**
@@ -21,7 +19,7 @@ export declare namespace Office {
         /**
          * Specifies the sensitivity type of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -33,25 +31,25 @@ export declare namespace Office {
             /**
              * The item needs no special treatment.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Normal = "normal",
             /**
              * Treat the item as personal.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Personal = "personal",
             /**
              * Treat the item as private.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Private = "private",
             /**
              * Treat the item as confidential.
              *
-             * [Api set: Mailbox Preview]
+             * [Api set: Mailbox preview]
              */
             Confidential = "confidential"
         }
@@ -248,31 +246,23 @@ export declare namespace Office {
         /**
          * Compose type.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         *
-         * @beta
          */
         enum ComposeType {
             /**
              * Reply.
-             *
-             * [Api set: Mailbox Preview]
              */
             Reply = "reply",
             /**
              * New mail.
-             *
-             * [Api set: Mailbox Preview]
              */
             NewMail = "newMail",
             /**
              * Forward.
-             *
-             * [Api set: Mailbox Preview]
              */
             Forward = "forward"
         }
@@ -424,9 +414,7 @@ export declare namespace Office {
             /**
              * The notification message is an informational message with actions.
              *
-             * [Api set: Mailbox Preview]
-             *
-             * @beta
+             * [Api set: Mailbox 1.10]
              */
             InsightMessage = "insightMessage"
         }
@@ -1355,7 +1343,7 @@ export declare namespace Office {
         /**
          * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1466,7 +1454,7 @@ export declare namespace Office {
         /**
          * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1503,7 +1491,7 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -1839,7 +1827,7 @@ export declare namespace Office {
          * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
          * If the signature is selected, this API call should disable it.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -1851,8 +1839,6 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         disableClientSignatureAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -1863,7 +1849,7 @@ export declare namespace Office {
          * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
          * If the signature is selected, this API call should disable it.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -1873,8 +1859,6 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         disableClientSignatureAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -1979,7 +1963,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -2006,7 +1990,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -2183,7 +2167,7 @@ export declare namespace Office {
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
          * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -2195,8 +2179,6 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
-         *
-         * @beta
          */
         isClientSignatureEnabledAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;
         /**
@@ -2207,7 +2189,7 @@ export declare namespace Office {
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
          * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -2217,8 +2199,6 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
-         *
-         * @beta
          */
         isClientSignatureEnabledAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;
         /**
@@ -2752,7 +2732,7 @@ export declare namespace Office {
         /**
          * Returns a boolean value indicating whether the event is all day.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -2987,7 +2967,7 @@ export declare namespace Office {
         /**
          * Provides the sensitivity value of the appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -3264,7 +3244,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -3289,7 +3269,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -4138,7 +4118,7 @@ export declare namespace Office {
          * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -4159,8 +4139,6 @@ export declare namespace Office {
          *                        removing any HTML tags present. If Html, the method sets the signature to HTML.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
-         *
-         * @beta
          */
         setSignatureAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -4175,7 +4153,7 @@ export declare namespace Office {
          * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
          * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -4192,8 +4170,6 @@ export declare namespace Office {
          * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
-         *
-         * @beta
          */
         setSignatureAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -6556,7 +6532,7 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -6880,7 +6856,7 @@ export declare namespace Office {
          * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
          * If the signature is selected, this API call should disable it.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -6892,8 +6868,6 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         disableClientSignatureAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -6904,7 +6878,7 @@ export declare namespace Office {
          * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
          * If the signature is selected, this API call should disable it.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -6914,8 +6888,6 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
-         *
-         * @beta
          */
         disableClientSignatureAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -7018,7 +6990,7 @@ export declare namespace Office {
          * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
          * The coercion type can be HTML or plain text.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -7034,15 +7006,13 @@ export declare namespace Office {
          *
          * @returns
          * An object with `ComposeType` and `CoercionType` enum values for the message item.
-         *
-         * @beta
          */
         getComposeTypeAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
          * The coercion type can be HTML or plain text.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -7056,8 +7026,6 @@ export declare namespace Office {
          *
          * @returns
          * An object with `ComposeType` and `CoercionType` enum values for the message item.
-         *
-         * @beta
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
@@ -7066,7 +7034,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -7093,7 +7061,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -7284,7 +7252,7 @@ export declare namespace Office {
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
          * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -7296,8 +7264,6 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
-         *
-         * @beta
          */
         isClientSignatureEnabledAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;
         /**
@@ -7308,7 +7274,7 @@ export declare namespace Office {
          * For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`.
          * If the settings are set to "(none)" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
@@ -7318,8 +7284,6 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
-         *
-         * @beta
          */
         isClientSignatureEnabledAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;
         /**
@@ -8251,7 +8215,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8277,7 +8241,7 @@ export declare namespace Office {
          * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
          * and Outlook on the web for Microsoft 365.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8596,7 +8560,7 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -8610,7 +8574,7 @@ export declare namespace Office {
         /**
          * Gets the boolean value indicating whether the event is all day or not.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8629,7 +8593,7 @@ export declare namespace Office {
         /**
          * Gets the boolean value indicating whether the event is all day or not.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -8645,7 +8609,7 @@ export declare namespace Office {
         /**
          * Sets the all-day event status of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          * If an appointment is marked as an all-day event:
@@ -8667,7 +8631,7 @@ export declare namespace Office {
         /**
          * Sets the all-day event status of an appointment.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          * If an appointment is marked as an all-day event:
@@ -8690,15 +8654,13 @@ export declare namespace Office {
      *
      * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox 1.10]
      *
      * @remarks
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-     *
-     * @beta
      */
     export interface NotificationMessageAction {
         /**
@@ -8719,6 +8681,10 @@ export declare namespace Office {
          * This data can be retrieved by calling `item.getInitializationContextAsync`.
          *
          * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @beta
          */
         contextData: any;
     }
@@ -8775,13 +8741,11 @@ export declare namespace Office {
          *
          * **Important**: In modern Outlook on the web, the `actions` property is available in Compose mode only.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox 1.10]
          *
          * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
-         * @beta
          */
         actions?: NotificationMessageAction[];
     }
@@ -8967,7 +8931,7 @@ export declare namespace Office {
     /**
      * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @beta
      */
@@ -8975,13 +8939,13 @@ export declare namespace Office {
         /**
          * Gets the updated Office theme.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          */
         officeTheme: CommonAPI.OfficeTheme;
         /**
          * Gets the type of the event. See `Office.EventType` for details.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          */
         type: "officeThemeChanged";
     }
@@ -9751,7 +9715,7 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -9765,7 +9729,7 @@ export declare namespace Office {
         /**
          * Gets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9787,7 +9751,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9801,7 +9765,7 @@ export declare namespace Office {
         /**
          * Sets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -9821,7 +9785,7 @@ export declare namespace Office {
         /**
          * Sets the value of the appointment sensitivity.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10026,7 +9990,7 @@ export declare namespace Office {
     /**
      * Provides methods to  manage an item's session data.
      *
-     * [Api set: Mailbox Preview]
+     * [Api set: Mailbox preview]
      *
      * @remarks
      *
@@ -10040,7 +10004,7 @@ export declare namespace Office {
         /**
          * Clears all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10059,7 +10023,7 @@ export declare namespace Office {
         /**
          * Clears all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10076,7 +10040,7 @@ export declare namespace Office {
         /**
          * Gets all session data key-value pairs.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10093,7 +10057,7 @@ export declare namespace Office {
         /**
          * Gets the session data value of the specified key.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10111,7 +10075,7 @@ export declare namespace Office {
         /**
          * Removes a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10131,7 +10095,7 @@ export declare namespace Office {
         /**
          * Removes a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10149,7 +10113,7 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *
@@ -10170,7 +10134,7 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
-         * [Api set: Mailbox Preview]
+         * [Api set: Mailbox preview]
          *
          * @remarks
          *

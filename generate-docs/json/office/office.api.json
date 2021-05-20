@@ -12059,7 +12059,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.OfficeThemeChanged:member",
-                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview | Office.OfficeThemeChangedEventArgs}.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview | Office.OfficeThemeChangedEventArgs}.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

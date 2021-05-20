@@ -18,10 +18,10 @@ while (indexOfApiSetTag >= 0) {
 
     // the declaration string is the line following the comment
     let declarationString = wholeDTS.substring(commentEnd, wholeDTS.indexOf("\n", commentEnd + 2));
-    let endPosition;
+    let endPosition = commentEnd + declarationString.length;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
         endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
-    } else {
+    } else if (declarationString.indexOf(";") >= 0) {
         endPosition = wholeDTS.indexOf(";", commentEnd);
     }
 
