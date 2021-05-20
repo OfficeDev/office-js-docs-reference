@@ -150,8 +150,8 @@ methods:
       return:
         type: '<xref uid="excel!Excel.NamedSheetView:class" />'
         description: >-
-          The sheet view with the given name, or the temporary view if the empty string was provided. If there is no
-          current temporary view and the empty string was provided, then an error is thrown.
+          The sheet view with the given name, or the temporary view if an empty string was provided. If there is no
+          current temporary view and an empty string was provided, then an `ItemNotFound` error is thrown.
   - name: getItemAt(index)
     uid: 'excel!Excel.NamedSheetViewCollection#getItemAt:member(1)'
     package: excel!
@@ -199,9 +199,7 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.NamedSheetView:class" />'
-        description: >-
-          The sheet view with the given name, or the temporary view if the empty string was provided. If there is no
-          current temporary view and the empty string was provided, then the `ItemNotFound` error is thrown.
+        description: 'The sheet view with the given name, or the temporary view if an empty string was provided.'
   - name: load(options)
     uid: 'excel!Excel.NamedSheetViewCollection#load:member(1)'
     package: excel!
