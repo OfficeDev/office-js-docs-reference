@@ -123,23 +123,6 @@ properties:
       content: 'isDirty?: boolean;'
       return:
         type: boolean
-  - name: linkedDataTypes
-    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#linkedDataTypes:member'
-    package: excel!
-    fullName: linkedDataTypes
-    summary: >-
-      Returns a collection of linked data types that are part of the workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'linkedDataTypes?: Excel.Interfaces.LinkedDataTypeCollectionLoadOptions;'
-      return:
-        type: '<xref uid="excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     package: excel!

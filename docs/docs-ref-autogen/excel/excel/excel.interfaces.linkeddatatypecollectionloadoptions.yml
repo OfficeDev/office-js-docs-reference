@@ -46,24 +46,6 @@ properties:
       content: 'dataProvider?: boolean;'
       return:
         type: boolean
-  - name: fontIconCodePoint
-    uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#fontIconCodePoint:member'
-    package: excel!
-    fullName: fontIconCodePoint
-    summary: >-
-      For EACH ITEM in the collection: Returns the code point for the font icon to be used in the data type options
-      pane. 1st-party only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'fontIconCodePoint?: boolean;'
-      return:
-        type: boolean
   - name: lastRefreshed
     uid: 'excel!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions#lastRefreshed:member'
     package: excel!
