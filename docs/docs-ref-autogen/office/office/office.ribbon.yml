@@ -4,7 +4,7 @@ uid: 'office!Office.Ribbon:interface'
 package: office!
 fullName: Office.Ribbon
 summary: An interface that contains all the functionality provided to manage the state of the Office ribbon.
-remarks: ''
+remarks: '**Requirement set**: Ribbon 1.1'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,7 +47,10 @@ methods:
 
       Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office
       application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of
-      this API. For code examples, see [Enable and Disable Add-in
+      this API.
+
+
+      For code examples, see [Enable and Disable Add-in
       Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
       contextual tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
     isPreview: false
