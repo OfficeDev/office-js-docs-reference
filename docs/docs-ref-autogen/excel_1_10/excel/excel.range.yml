@@ -2638,12 +2638,14 @@ methods:
           type: boolean
       return:
         type: void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
+
           Excel.run(function (ctx) { 
               var sheetName = "Sheet1";
               var rangeAddress = "A1:C3";
@@ -2656,6 +2658,29 @@ methods:
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
+
+          ```
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-merged-ranges.yaml
+
+          await Excel.run(async (context) => {
+            // Retrieve the worksheet and the table in that worksheet.
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const tableRange = sheet.getRange("B2:E6");
+
+            // Create a merged range in the first row of the table.
+            const chartTitle = tableRange.getRow(0);
+            chartTitle.merge(true);
+
+            // Format the merged range.
+            chartTitle.format.horizontalAlignment = "Center";
+
+            await context.sync();
+          });
+
           ```
   - name: 'removeDuplicates(columns, includesHeader)'
     uid: 'excel!Excel.Range#removeDuplicates:member(1)'
