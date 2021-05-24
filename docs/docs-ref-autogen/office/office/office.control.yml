@@ -4,7 +4,7 @@ uid: 'office!Office.Control:interface'
 package: office!
 fullName: Office.Control
 summary: Represents an individual control or command and the state it should have.
-remarks: ''
+remarks: '**Requirement set**: Ribbon 1.1'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,3 +33,15 @@ properties:
       content: 'id: string;'
       return:
         type: string
+  - name: visible
+    uid: 'office!Office.Control#visible:member'
+    package: office!
+    fullName: visible
+    summary: Indicates whether the control should be visible or hidden. The default is true.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
