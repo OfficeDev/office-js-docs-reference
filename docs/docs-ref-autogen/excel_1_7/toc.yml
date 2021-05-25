@@ -587,6 +587,8 @@ items:
                 uid: 'office!Office.GetSelectedDataOptions:interface'
               - name: GoToByIdOptions
                 uid: 'office!Office.GoToByIdOptions:interface'
+              - name: Group
+                uid: 'office!Office.Group:interface'
               - name: IPromiseConstructor
                 uid: 'office!Office.IPromiseConstructor:interface'
               - name: MatrixBinding
