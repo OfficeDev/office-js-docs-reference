@@ -39,6 +39,7 @@ interfaces:
   - 'office!Office.GetFileOptions:interface'
   - 'office!Office.GetSelectedDataOptions:interface'
   - 'office!Office.GoToByIdOptions:interface'
+  - 'office!Office.Group:interface'
   - 'office!Office.IPromiseConstructor:interface'
   - 'office!Office.MatrixBinding:interface'
   - 'office!Office.NodeDeletedEventArgs:interface'

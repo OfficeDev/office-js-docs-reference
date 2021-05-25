@@ -13084,6 +13084,79 @@
               ]
             },
             {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Group:interface",
+              "docComment": "/**\n * Represents a group of controls on a ribbon tab.\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Group "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Group",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Group#controls:member",
+                  "docComment": "/**\n * Specifies one or more of the controls in the group, such as menu items, buttons, etc.\n *\n * @remarks\n *\n * When the `Group` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is ignored.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "controls?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Control",
+                      "canonicalReference": "office!Office.Control:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "controls",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Group#id:member",
+                  "docComment": "/**\n * Identifier of the group as specified in the manifest.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
               "kind": "Enum",
               "canonicalReference": "office!Office.HostType:enum",
               "docComment": "/**\n * Specifies the host Office application in which the add-in is running.\n */\n",
@@ -28503,7 +28576,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Tab#controls:member",
-                  "docComment": "/**\n * Specifies the controls in the tab, such as menu items, buttons, etc.\n */\n",
+                  "docComment": "/**\n * Specifies one or more of the controls in the tab, such as menu items, buttons, etc.\n *\n * @remarks\n *\n * When the `Tab` object is part of a {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, this property specifies the IDs of the controls whose enabled status is to be changed. However, if there is a `groups` property on the tab, then this property is ignored and the `controls` properties of the specified groups must be used to change enabled status.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28526,6 +28599,37 @@
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "controls",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Tab#groups:member",
+                  "docComment": "/**\n * Specifies one or more of the control groups on the tab.\n *\n * @remarks\n *\n * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "groups?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Group",
+                      "canonicalReference": "office!Office.Group:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "groups",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
