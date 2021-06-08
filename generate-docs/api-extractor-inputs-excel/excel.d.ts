@@ -3394,6 +3394,47 @@ export declare namespace Excel {
     }
     /**
      *
+     * Provides information about the worksheet that raised the protection status changed event, which fires when the protection status is updated in a worksheet.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WorksheetProtectionChangedEventArgs {
+        /**
+         *
+         * Gets the current protection status of the worksheet.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        isProtected: boolean;
+        /**
+         *
+         * The source of the event. It can be local or remote (through co-authoring).
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         *
+         * Gets the type of the event. See Excel.EventType for details.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: "WorksheetProtectionChanged";
+        /**
+         *
+         * Gets the ID of the worksheet in which the protection status is changed.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetId: string;
+    }
+    /**
+     *
      * Provides information about the table that raised the filter applied event.
      *
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -5415,6 +5456,16 @@ export declare namespace Excel {
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         /**
          *
+         * Occurs when the worksheet protection state is changed.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;
+        /**
+         *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
          *
          * [Api set: ExcelApi 1.11]
@@ -5664,6 +5715,16 @@ export declare namespace Excel {
          * @beta
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
+        /**
+         *
+         * Occurs when the worksheet protection state is changed.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;
         /**
          *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
@@ -26355,7 +26416,22 @@ export declare namespace Excel {
          * WorksheetProtectionChanged represents the type of event registered on worksheet, and occurs when protection status is changed.
          *
          */
-        worksheetProtectionChanged = "WorksheetProtectionChanged"
+        worksheetProtectionChanged = "WorksheetProtectionChanged",
+        /**
+         * WorksheetNameChanged represents the type of event registered on a worksheet that occurs when its name changes.
+         *
+         */
+        worksheetNameChanged = "WorksheetNameChanged",
+        /**
+         * WorksheetVisibilityChanged represents the type of event registered on a worksheet that occurs when its visibility changes.
+         *
+         */
+        worksheetVisibilityChanged = "WorksheetVisibilityChanged",
+        /**
+         * WorksheetMoved represents the type of event registered on a worksheet that occurs when it is moved within a workbook.
+         *
+         */
+        worksheetMoved = "WorksheetMoved"
     }
     /**
      * [Api set: ExcelApi 1.7]
