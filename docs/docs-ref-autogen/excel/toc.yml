@@ -935,6 +935,8 @@ items:
             uid: 'excel!Excel.WorksheetFreezePanes:class'
           - name: WorksheetProtection
             uid: 'excel!Excel.WorksheetProtection:class'
+          - name: WorksheetProtectionChangedEventArgs
+            uid: 'excel!Excel.WorksheetProtectionChangedEventArgs:interface'
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
           - name: WorksheetRowHiddenChangedEventArgs

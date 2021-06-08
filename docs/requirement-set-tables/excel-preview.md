@@ -131,15 +131,21 @@
 |[WorkbookActivatedEventArgs](/javascript/api/excel/excel.workbookactivatedeventargs)|[type](/javascript/api/excel/excel.workbookactivatedeventargs#type)|Gets the type of the event.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#onfiltered)|Occurs when a filter is applied on a specific worksheet.|
 ||[onFormulaChanged](/javascript/api/excel/excel.worksheet#onformulachanged)|Occurs when one or more formulas are changed in this worksheet.|
+||[onProtectionChanged](/javascript/api/excel/excel.worksheet#onprotectionchanged)|Occurs when the worksheet protection state is changed.|
 ||[tabId](/javascript/api/excel/excel.worksheet#tabid)|Returns a value representing this worksheet that can be read by Open Office XML.|
 ||[tasks](/javascript/api/excel/excel.worksheet#tasks)|Returns a collection of tasks that are present in the worksheet.|
 |[WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs)|[triggerSource](/javascript/api/excel/excel.worksheetchangedeventargs#triggersource)|Represents the trigger source of the event.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#addfrombase64-base64file--sheetnamestoinsert--positiontype--relativeto-)|Inserts the specified worksheets of a workbook into the current workbook.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#onfiltered)|Occurs when any worksheet's filter is applied in the workbook.|
 ||[onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#onformulachanged)|Occurs when one or more formulas are changed in any worksheet of this collection.|
+||[onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onprotectionchanged)|Occurs when the worksheet protection state is changed.|
 |[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|[type](/javascript/api/excel/excel.worksheetfilteredeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetfilteredeventargs#worksheetid)|Gets the ID of the worksheet in which the filter is applied.|
 |[WorksheetFormulaChangedEventArgs](/javascript/api/excel/excel.worksheetformulachangedeventargs)|[formulaDetails](/javascript/api/excel/excel.worksheetformulachangedeventargs#formuladetails)|Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.|
 ||[source](/javascript/api/excel/excel.worksheetformulachangedeventargs#source)|The source of the event.|
 ||[type](/javascript/api/excel/excel.worksheetformulachangedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetformulachangedeventargs#worksheetid)|Gets the ID of the worksheet in which the formula changed.|
+|[WorksheetProtectionChangedEventArgs](/javascript/api/excel/excel.worksheetprotectionchangedeventargs)|[isProtected](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#isprotected)|Gets the current protection status of the worksheet.|
+||[source](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#source)|The source of the event.|
+||[type](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#type)|Gets the type of the event.|
+||[worksheetId](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#worksheetid)|Gets the ID of the worksheet in which the protection status is changed.|
