@@ -960,6 +960,7 @@ interfaces:
   - 'excel!Excel.WorksheetFilteredEventArgs:interface'
   - 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
   - 'excel!Excel.WorksheetFormulaChangedEventArgs:interface'
+  - 'excel!Excel.WorksheetProtectionChangedEventArgs:interface'
   - 'excel!Excel.WorksheetProtectionOptions:interface'
   - 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
   - 'excel!Excel.WorksheetRowSortedEventArgs:interface'

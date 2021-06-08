@@ -720,6 +720,25 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormulaChangedEventArgs:interface" />&gt;
+  - name: onProtectionChanged
+    uid: 'excel!Excel.WorksheetCollection#onProtectionChanged:member'
+    package: excel!
+    fullName: onProtectionChanged
+    summary: >-
+      Occurs when the worksheet protection state is changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.WorksheetCollection#onRowHiddenChanged:member'
     package: excel!

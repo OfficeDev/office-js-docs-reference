@@ -1839,6 +1839,25 @@ events:
           }
 
           ```
+  - name: onProtectionChanged
+    uid: 'excel!Excel.Worksheet#onProtectionChanged:member'
+    package: excel!
+    fullName: onProtectionChanged
+    summary: >-
+      Occurs when the worksheet protection state is changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
     package: excel!
