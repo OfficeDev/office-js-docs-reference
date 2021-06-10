@@ -34,8 +34,8 @@ properties:
     package: outlook!
     fullName: attachmentStatus
     summary: >-
-      Gets whether the attachments were added or removed. See
-      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum) for details.
+      Gets whether the attachments were added or removed. For details, refer to
+      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!-- -->.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -50,8 +50,10 @@ properties:
     uid: 'outlook!Office.AttachmentsChangedEventArgs#type:member'
     package: outlook!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Office.EventType` for details.
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''

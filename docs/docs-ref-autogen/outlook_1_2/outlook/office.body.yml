@@ -10,6 +10,14 @@ summary: >-
 
   \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  **Known issue with HTML table border colors**
+
+
+  Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a
+  cell's borders may not reflect the expected color. For the known behavior, visit [OfficeDev/office-js issue
+  \#1818](https://github.com/OfficeDev/office-js/issues/1818)<!-- -->.
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`

@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Appointment:interface",
-              "docComment": "/**\n * The subclass of {@link Office.Item | Item} dealing with appointments.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n */\n",
+              "docComment": "/**\n * The subclass of {@link Office.Item | Item} dealing with appointments.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -214,7 +214,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AppointmentCompose:interface",
-              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
+              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -617,7 +617,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -721,7 +721,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addHandlerAsync:member(2)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2649,7 +2649,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2738,7 +2738,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#removeHandlerAsync:member(2)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3554,7 +3554,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AppointmentRead:interface",
-              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
+              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -3585,7 +3585,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3689,7 +3689,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#addHandlerAsync:member(2)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5497,7 +5497,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5586,7 +5586,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#removeHandlerAsync:member(2)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5875,7 +5875,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentTimeChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6370,7 +6370,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member",
-                  "docComment": "/**\n * Gets whether the attachments were added or removed. See {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus} for details.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Gets whether the attachments were added or removed. For details, refer to {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus}.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6401,7 +6401,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentsChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6430,7 +6430,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Body:interface",
-              "docComment": "/**\n * The body object provides methods for adding and updating the content of the message or appointment. It is returned in the body property of the selected item.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * The body object provides methods for adding and updating the content of the message or appointment. It is returned in the body property of the selected item.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **Known issue with HTML table border colors**\n *\n * Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a cell's borders may not reflect the expected color. For the known behavior, visit {@link https://github.com/OfficeDev/office-js/issues/1818 | OfficeDev/office-js issue #1818}.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -9434,7 +9434,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.EnhancedLocationsChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10647,7 +10647,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.ItemCompose:interface",
-              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n */\n",
+              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -10676,7 +10676,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.ItemRead:interface",
-              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
+              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -11400,7 +11400,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section}.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11421,16 +11421,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "(type: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.EventType",
-                      "canonicalReference": "office!Office.EventType:enum"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ") => void"
+                      "text": "any"
                     },
                     {
                       "kind": "Content",
@@ -11473,8 +11464,8 @@
                   ],
                   "isOptional": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 14,
-                    "endIndex": 15
+                    "startIndex": 12,
+                    "endIndex": 13
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -11490,21 +11481,21 @@
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 5
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 8,
-                        "endIndex": 9
+                        "startIndex": 6,
+                        "endIndex": 7
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 8,
+                        "endIndex": 11
                       }
                     }
                   ],
@@ -11513,7 +11504,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#addHandlerAsync:member(2)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section}.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11534,16 +11525,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "(type: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.EventType",
-                      "canonicalReference": "office!Office.EventType:enum"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ") => void"
+                      "text": "any"
                     },
                     {
                       "kind": "Content",
@@ -11577,8 +11559,8 @@
                   ],
                   "isOptional": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 2,
@@ -11594,14 +11576,14 @@
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 5
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 8,
-                        "endIndex": 11
+                        "startIndex": 6,
+                        "endIndex": 9
                       }
                     }
                   ],
@@ -13088,7 +13070,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section}.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13177,7 +13159,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#removeHandlerAsync:member(2)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events | events section}.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19423,7 +19405,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Message:interface",
-              "docComment": "/**\n * A subclass of {@link Office.Item | Item} for messages.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Child interfaces:\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
+              "docComment": "/**\n * A subclass of {@link Office.Item | Item} for messages.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -19452,7 +19434,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MessageCompose:interface",
-              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Message | Message}\n */\n",
+              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Message | Message}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -19855,7 +19837,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19959,7 +19941,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addHandlerAsync:member(2)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21954,7 +21936,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22043,7 +22025,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#removeHandlerAsync:member(2)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22518,7 +22500,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MessageRead:interface",
-              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Message | Message}\n */\n",
+              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Message | Message}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -22549,7 +22531,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#addHandlerAsync:member(1)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22653,7 +22635,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#addHandlerAsync:member(2)",
-                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should invoke the handler.\n *\n * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24582,7 +24564,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#removeHandlerAsync:member(1)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24671,7 +24653,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#removeHandlerAsync:member(2)",
-                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.\n *\n * Refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section} for supported events.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.\n *\n * For supported events, refer to the Item object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events | events section}.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param eventType - The event that should revoke the handler.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25917,7 +25899,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox preview]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox preview]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26768,7 +26750,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.RecipientsChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -27427,7 +27409,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.RecurrenceChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

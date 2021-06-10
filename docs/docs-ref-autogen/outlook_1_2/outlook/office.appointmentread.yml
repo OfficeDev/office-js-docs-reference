@@ -8,9 +8,9 @@ summary: >-
 
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-  this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
+  this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item)
-  page for more information.
+  page.
 
 
   Parent interfaces:
@@ -42,7 +42,7 @@ properties:
 
 
       **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, see [Blocked attachments in
+      returned. For more information, refer to [Blocked attachments in
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
 
