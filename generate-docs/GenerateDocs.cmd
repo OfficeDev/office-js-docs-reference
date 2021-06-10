@@ -249,6 +249,9 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --ou
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul
 
+pushd tools
+call node coverage-tester.js
+popd
 
 pushd scripts
 call node postprocessor.js
