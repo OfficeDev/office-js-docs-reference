@@ -140,7 +140,7 @@ function rateClass(classYml: ApiYaml) : ClassCoverageRating {
     ymlCoverage.classRating = rateClassDescription(classYml);
 
     classYml.fields?.forEach((field) => {
-        // Note: examples in enum fields are intentionally not supported.
+        // Note: Examples in enum fields are intentionally not supported.
         ymlCoverage.apiRatings.set(field.name, {
             descriptionRating: rateDescriptionString(field.summary),
             hasExample: false
@@ -222,7 +222,7 @@ function rateFieldDescription(fieldYml: ApiPropertyYaml | ApiMethodYaml) : Cover
 /**
  * Apply a rudimentary system for descriptions.
  * Missing: No description.
- * Poor: 5 words or fewer - implies a terse description that's unlikely to be a complete sentence.
+ * Poor: 5 words or fewer - Implies a terse description that's unlikely to be a complete sentence.
  * Fine: A single sentence of notable length. Enough to describe the field, but likely missing the finer points.
  * Great: Multiple sentences, which implies notes about usage and edge cases.
  */
