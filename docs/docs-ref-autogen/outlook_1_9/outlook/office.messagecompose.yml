@@ -8,9 +8,9 @@ summary: >-
 
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-  this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
+  this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item)
-  page for more information.
+  page.
 
 
   Parent interfaces:
@@ -1275,12 +1275,12 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
 
 
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
-      for supported events.
+      For supported events, refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)<!--
+      -->.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1325,7 +1325,8 @@ methods:
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
+            The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!--
+            -->.
           type: any
         - id: options
           description: >-
@@ -1345,12 +1346,12 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
 
 
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
-      for supported events.
+      For supported events, refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)<!--
+      -->.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1376,7 +1377,8 @@ methods:
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
+            The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!--
+            -->.
           type: any
         - id: callback
           description: >-
@@ -2602,12 +2604,13 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
+      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      implementation.
 
 
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
-      for supported events.
+      For supported events, refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)<!--
+      -->.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -2648,12 +2651,13 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
+      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
+      implementation.
 
 
-      Refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)
-      for supported events.
+      For supported events, refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.9/office.context.mailbox.item#events)<!--
+      -->.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

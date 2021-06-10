@@ -24,11 +24,12 @@ fields:
     uid: 'office!Office.EventType.AppointmentTimeChanged:member'
     package: office!
     summary: >-
-      Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task
-      pane only.
+      Occurs when any date or time of the selected appointment or series is changed in Outlook. **Important**: Only
+      available with task pane implementation.
 
 
-      The event handler receives an argument of type
+      To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item`
+      object. The event handler receives an argument of type
       [Office.AppointmentTimeChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!--
       -->.
 
@@ -38,9 +39,11 @@ fields:
     uid: 'office!Office.EventType.AttachmentsChanged:member'
     package: office!
     summary: >-
-      Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+      Occurs when an attachment is added to or removed from an item. **Important**: Only available with task pane
+      implementation.
 
 
+      To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
       [Office.AttachmentsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!--
       -->.
@@ -82,10 +85,12 @@ fields:
     uid: 'office!Office.EventType.EnhancedLocationsChanged:member'
     package: office!
     summary: >-
-      Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+      Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane
+      implementation.
 
 
-      The event handler receives an argument of type
+      To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item`
+      object. The event handler receives an argument of type
       [Office.EnhancedLocationsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!--
       -->.
 
@@ -95,8 +100,11 @@ fields:
     uid: 'office!Office.EventType.ItemChanged:member'
     package: office!
     summary: >-
-      Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task
-      pane only.
+      Occurs when a different Outlook item is selected for viewing while the task pane is pinned. **Important**: Only
+      available with task pane implementation.
+
+
+      To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
 
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
@@ -116,10 +124,11 @@ fields:
     uid: 'office!Office.EventType.OfficeThemeChanged:member'
     package: office!
     summary: >-
-      Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
+      Occurs when the OfficeTheme is changed in Outlook. **Important**: Only available with task pane implementation.
 
 
-      The event handler receives an argument of type
+      To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox`
+      object. The event handler receives an argument of type
       [Office.OfficeThemeChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview)<!--
       -->.
 
@@ -129,10 +138,11 @@ fields:
     uid: 'office!Office.EventType.RecipientsChanged:member'
     package: office!
     summary: >-
-      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported
-      with task pane only.
+      Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
+      **Important**: Only available with task pane implementation.
 
 
+      To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
       [Office.RecipientsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!--
       -->.
@@ -143,9 +153,11 @@ fields:
     uid: 'office!Office.EventType.RecurrenceChanged:member'
     package: office!
     summary: >-
-      Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+      Occurs when the recurrence pattern of the selected series is changed in Outlook. **Important**: Only available
+      with task pane implementation.
 
 
+      To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
       [Office.RecurrenceChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!--
       -->.

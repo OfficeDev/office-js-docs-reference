@@ -189,8 +189,8 @@ export declare namespace Office {
      * The subclass of {@link Office.Item | Item} dealing with appointments.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -204,8 +204,8 @@ export declare namespace Office {
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -767,8 +767,8 @@ export declare namespace Office {
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -786,7 +786,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see 
+         * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, refer to 
          * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          */
@@ -1804,7 +1804,7 @@ export declare namespace Office {
      * You can determine the type of the item by using the `itemType` property.
      *
      * To see the full member list, refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
@@ -1828,8 +1828,8 @@ export declare namespace Office {
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -1843,8 +1843,8 @@ export declare namespace Office {
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -2389,8 +2389,8 @@ export declare namespace Office {
      * A subclass of {@link Office.Item | Item} for messages.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -2404,8 +2404,8 @@ export declare namespace Office {
      * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -2776,8 +2776,8 @@ export declare namespace Office {
      * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-     * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page for more information.
+     * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
