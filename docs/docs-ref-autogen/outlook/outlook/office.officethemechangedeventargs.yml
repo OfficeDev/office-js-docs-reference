@@ -31,8 +31,10 @@ properties:
     uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     package: outlook!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Office.EventType` for details.
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+
 
       \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: ''
