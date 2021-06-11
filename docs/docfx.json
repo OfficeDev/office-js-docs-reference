@@ -794,7 +794,7 @@
     "groups": {
       "common-js": {
         "dest": "common-js",
-        "moniker_range": "common-js"
+        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
       },
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
