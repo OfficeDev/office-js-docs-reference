@@ -169,7 +169,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "common-js",
+        "group": "office",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -794,7 +794,7 @@
     "groups": {
       "common-js": {
         "dest": "common-js",
-        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
+        "moniker_range": "common-js"
       },
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
@@ -931,6 +931,10 @@
       "word-js-1.3": {
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
+      },
+      "office": {
+        "dest": "office",
+        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || >=word-js-1.1"
       },
       "all": {
         "dest": "all",
