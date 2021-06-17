@@ -318,7 +318,7 @@ export declare namespace Office {
             Day = "day"
         }
         /**
-         * This bit mask represents a delegate's permissions on a shared folder.
+         * This bitmask represents a delegate's permissions on a shared folder, or a user's permissions on a shared mailbox.
          *
          * [Api set: Mailbox 1.8]
          *
@@ -328,27 +328,27 @@ export declare namespace Office {
          */
         enum DelegatePermissions {
             /**
-             * Delegate has permission to read items.
+             * Delegate or user has permission to read items.
              */
             Read = 1,
             /**
-             * Delegate has permission to create and write items.
+             * Delegate or user has permission to create and write items.
              */
             Write = 2,
             /**
-             * Delegate has permission to delete only the items they created.
+             * Delegate or user has permission to delete only the items they created.
              */
             DeleteOwn = 4,
             /**
-             * Delegate has permission to delete any items.
+             * Delegate or user has permission to delete any items.
              */
             DeleteAll = 8,
             /**
-             * Delegate has permission to edit only they items they created.
+             * Delegate or user has permission to edit only they items they created.
              */
             EditOwn = 16,
             /**
-             * Delegate has permission to edit any items.
+             * Delegate or user has permission to edit any items.
              */
             EditAll = 32
         }
@@ -2118,10 +2118,10 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -2141,10 +2141,10 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -3488,10 +3488,10 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -3511,10 +3511,10 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -5392,7 +5392,7 @@ export declare namespace Office {
          *
          * However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
          * {@link Office.SharedProperties | SharedProperties} object (introduced in requirement set 1.8). For more information,
-         * see the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * see the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -5957,7 +5957,7 @@ export declare namespace Office {
          * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
          *
          * **Important**: For guidance on delegate or shared scenarios, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * *REST Tokens*
          *
@@ -6040,7 +6040,7 @@ export declare namespace Office {
          * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
          *
          * **Important**: For guidance on delegate or shared scenarios, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
          *
@@ -7206,24 +7206,37 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
-         *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * [Api set: Mailbox 1.8]
          *
          * @remarks
+         *
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * b. **Shared mailbox**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
@@ -7236,24 +7249,37 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
-         *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * [Api set: Mailbox 1.8]
          *
          * @remarks
+         *
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * b. **Shared mailbox**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
@@ -8478,10 +8504,10 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -8500,10 +8526,10 @@ export declare namespace Office {
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
          * For more information around using this API, see the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -10177,10 +10203,10 @@ export declare namespace Office {
         setAsync(name: string, value: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
-     * Represents the properties of an appointment or message in a shared folder.
+     * Represents the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
      *
      * For more information on how this object is used, see the
-     * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+     * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
      *
      * [Api set: Mailbox 1.8]
      *
@@ -10212,7 +10238,7 @@ export declare namespace Office {
          */
         targetMailbox: string;
         /**
-         * The permissions that the delegate has on a shared folder.
+         * The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }
