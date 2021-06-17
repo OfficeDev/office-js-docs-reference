@@ -7208,14 +7208,6 @@ export declare namespace Office {
         /**
          * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
-         *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
@@ -7224,6 +7216,27 @@ export declare namespace Office {
          * [Api set: Mailbox 1.8]
          *
          * @remarks
+         *
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * b. **Shared mailbox**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
@@ -7238,14 +7251,6 @@ export declare namespace Office {
         /**
          * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
-         *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
@@ -7254,6 +7259,27 @@ export declare namespace Office {
          * [Api set: Mailbox 1.8]
          *
          * @remarks
+         *
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * b. **Shared mailbox**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
