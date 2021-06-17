@@ -4,11 +4,11 @@ uid: 'outlook!Office.SharedProperties:interface'
 package: outlook!
 fullName: Office.SharedProperties
 summary: >-
-  Represents the properties of an appointment or message in a shared folder.
+  Represents the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
 
 
-  For more information on how this object is used, see the [delegate
-  access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+  For more information on how this object is used, see the [shared folders and shared
+  mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
   \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -29,7 +29,7 @@ properties:
     uid: 'outlook!Office.SharedProperties#delegatePermissions:member'
     package: outlook!
     fullName: delegatePermissions
-    summary: The permissions that the delegate has on a shared folder.
+    summary: 'The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.'
     remarks: ''
     isPreview: false
     isDeprecated: false

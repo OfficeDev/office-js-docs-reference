@@ -282,7 +282,7 @@ export declare namespace Office {
             Day = "day"
         }
         /**
-         * This bit mask represents a delegate's permissions on a shared folder.
+         * This bitmask represents a delegate's permissions on a shared folder.
          *
          * [Api set: Mailbox 1.8]
          *
@@ -5186,8 +5186,9 @@ export declare namespace Office {
          * Your app must have `ReadWriteItem` permissions to call the `saveAsync` method.
          *
          * However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
-         * `SharedProperties` object (introduced in requirement set 1.8). For more information,
-         * see the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.sharedproperties?view=outlook-js-1.8 | SharedProperties} object
+         * (introduced in requirement set 1.8). For more information, see the
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -6936,14 +6937,6 @@ export declare namespace Office {
         /**
          * Gets the properties of an appointment or message in a shared folder.
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
-         *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
@@ -6953,6 +6946,17 @@ export declare namespace Office {
          *
          * @remarks
          * 
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
@@ -6966,14 +6970,6 @@ export declare namespace Office {
         /**
          * Gets the properties of an appointment or message in a shared folder.
          *
-         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or Windows unless the following conditions are met.
-         *
-         * 1. The owner shares at least one mailbox folder with the delegate.
-         *
-         * 2. The delegate drafts a message in the shared folder.
-         *
-         * After the message has been sent, it's usually found in the delegate's **Sent Items** folder.
-         *
          * For more information around using this API, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
@@ -6983,6 +6979,17 @@ export declare namespace Office {
          *
          * @remarks
          * 
+         * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.
+         *
+         * 3. The delegate opens the draft from the shared folder then continues composing.
+         *
+         * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
+         * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
+         *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
