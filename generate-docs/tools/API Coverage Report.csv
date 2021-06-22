@@ -5528,7 +5528,6 @@ Office.ContextInformation,version,Fine,true
 Office.Control,<class description>,Good,false
 Office.Control,enabled,Good,false
 Office.Control,id,Fine,false
-Office.Control,visible,Good,false
 Office.CustomXmlNode,<class description>,Good,false
 Office.CustomXmlNode,baseName,Fine,true
 Office.CustomXmlNode,namespaceUri,Fine,true
