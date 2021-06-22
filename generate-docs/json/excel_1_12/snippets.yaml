@@ -641,6 +641,33 @@
             console.log(`A chart was activated. ID: ${event.chartId}. Chart name: ${activatedChart.name}.`);
         });
     }
+'Excel.Chart#onDeactivated:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    await Excel.run(async (context) => {
+
+        const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+
+        // Register the onActivated and onDeactivated event handlers.
+        pieChart.onActivated.add(chartActivated);
+        pieChart.onDeactivated.add(chartDeactivated);
+
+        await context.sync();
+
+        console.log("Added handlers for Chart onActivated and onDeactivated events.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    async function chartDeactivated(event) {
+        await Excel.run(async (context) => {
+            // Callback function for when the chart is deactivated.
+            console.log("The pie chart is NOT active.");
+        });
+    }
 'Excel.Chart#setData:member(1)':
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
@@ -836,6 +863,41 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Excel.ChartCollection#onActivated:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    await Excel.run(async (context) => {
+
+        const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+
+        // Register the onActivated and onDeactivated event handlers.
+        pieChart.onActivated.add(chartActivated);
+        pieChart.onDeactivated.add(chartDeactivated);
+
+        await context.sync();
+
+        console.log("Added handlers for Chart onActivated and onDeactivated events.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    async function chartActivated(event) {
+        await Excel.run(async (context) => {
+            // Retrieve the worksheet.
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+            // Retrieve the activated chart by ID and load the name of the chart. 
+            const activatedChart = sheet.charts.getItem(event.chartId);
+            activatedChart.load(["name"]);
+            await context.sync();
+
+            // Print out the activated chart's data.
+            console.log(`A chart was activated. ID: ${event.chartId}. Chart name: ${activatedChart.name}.`);
+        });
+    }
 'Excel.ChartCollection#onAdded:member':
   - |-
     Excel.run(function (context){
@@ -848,6 +910,33 @@
         });
         return context.sync();
     });
+'Excel.ChartCollection#onDeactivated:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    await Excel.run(async (context) => {
+
+        const pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+
+        // Register the onActivated and onDeactivated event handlers.
+        pieChart.onActivated.add(chartActivated);
+        pieChart.onDeactivated.add(chartDeactivated);
+
+        await context.sync();
+
+        console.log("Added handlers for Chart onActivated and onDeactivated events.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+
+    async function chartDeactivated(event) {
+        await Excel.run(async (context) => {
+            // Callback function for when the chart is deactivated.
+            console.log("The pie chart is NOT active.");
+        });
+    }
 'Excel.ChartCollection#onDeleted:member':
   - |-
     Excel.run(function (context){
