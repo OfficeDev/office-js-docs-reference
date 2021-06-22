@@ -887,21 +887,6 @@ events:
           #### Examples
 
 
-          ```javascript
-
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The pie chart is the active chart. ID: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-
-          ```
-
           ```typescript
 
           // Link to full sample:
@@ -960,21 +945,4 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The pie chart is NOT active.");
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

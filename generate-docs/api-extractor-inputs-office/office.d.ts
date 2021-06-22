@@ -680,10 +680,6 @@ export declare namespace Office {
          */
         id: string;
         /**
-         * Indicates whether the control should be visible or hidden. The default is true.
-         */
-        visible?: boolean;
-        /**
          * Indicates whether the control should be enabled or disabled. The default is true.
          */
         enabled?: boolean;

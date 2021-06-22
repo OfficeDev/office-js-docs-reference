@@ -607,17 +607,6 @@
         }
     });
 'Excel.Chart#onActivated:member':
-  - |-
-    Excel.run(function (context){
-        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-        pieChart.onActivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The pie chart is the active chart. ID: " + event.chartId);
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -652,18 +641,6 @@
             console.log(`A chart was activated. ID: ${event.chartId}. Chart name: ${activatedChart.name}.`);
         });
     }
-'Excel.Chart#onDeactivated:member':
-  - |-
-    Excel.run(function (context){
-        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-        pieChart.onDeactivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The pie chart is NOT active.");
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
 'Excel.Chart#setData:member(1)':
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
@@ -859,18 +836,6 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-'Excel.ChartCollection#onActivated:member':
-  - |-
-    Excel.run(function (context){
-        context.workbook.worksheets.getActiveWorksheet()
-            .charts.onActivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The ID of the active chart is: " + event.chartId)
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
 'Excel.ChartCollection#onAdded:member':
   - |-
     Excel.run(function (context){
@@ -878,18 +843,6 @@
             .charts.onAdded.add(function (event) {
             return Excel.run(function (context) {
                 console.log("A chart has been added with ID: " + event.chartId);
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
-'Excel.ChartCollection#onDeactivated:member':
-  - |-
-    Excel.run(function (context){
-        context.workbook.worksheets.getActiveWorksheet()
-            .charts.onDeactivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The chart with this ID was deactivated: " + event.chartId);
                 return context.sync();
             });
         });

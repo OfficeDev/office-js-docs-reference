@@ -399,23 +399,6 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onActivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The ID of the active chart is: " + event.chartId)
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
   - name: onAdded
     uid: 'excel!Excel.ChartCollection#onAdded:member'
     package: excel!
@@ -467,23 +450,6 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onDeactivated.add(function (event) {
-                  return Excel.run(function (context) {
-                      console.log("The chart with this ID was deactivated: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
   - name: onDeleted
     uid: 'excel!Excel.ChartCollection#onDeleted:member'
     package: excel!
