@@ -420,18 +420,6 @@ Excel.ChartCollection#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection#onActivated:member:
-  - |-
-    Excel.run(function (context){
-        context.workbook.worksheets.getActiveWorksheet()
-            .charts.onActivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The ID of the active chart is: " + event.chartId)
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
 Excel.ChartCollection#onAdded:member:
   - |-
     Excel.run(function (context){
@@ -439,18 +427,6 @@ Excel.ChartCollection#onAdded:member:
             .charts.onAdded.add(function (event) {
             return Excel.run(function (context) {
                 console.log("A chart has been added with ID: " + event.chartId);
-                return context.sync();
-            });
-        });
-        return context.sync();
-    });
-Excel.ChartCollection#onDeactivated:member:
-  - |-
-    Excel.run(function (context){
-        context.workbook.worksheets.getActiveWorksheet()
-            .charts.onDeactivated.add(function (event) {
-            return Excel.run(function (context) {
-                console.log("The chart with this ID was deactivated: " + event.chartId);
                 return context.sync();
             });
         });
