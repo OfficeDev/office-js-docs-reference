@@ -958,6 +958,9 @@
       "product": [
         "office 365"
       ],
+      "products": [
+        "https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d"
+      ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "OfficeDev/office-js-docs-reference",
       "feedback_product_url": "/answers/products/m365"
@@ -1288,20 +1291,8 @@
         "docs-ref-autogen/powerpoint*/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/d20613c5-ede1-42ed-b6cc-1f39332ae70e"
         ],
-        "docs-ref-autogen/overview/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/excel/office-runtime/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
-        "docs-ref-autogen/common/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
-        ],
         "docs-ref-autogen/word*/**": [
             "https://authoring-docs-microsoft.poolparty.biz/devrel/7e593268-8d01-46ef-aa78-9d1388e6a294"
-        ],
-        "docs-ref-autogen/office/**": [
-            "https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7"
         ]
       }
     },
