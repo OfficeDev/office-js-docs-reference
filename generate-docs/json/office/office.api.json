@@ -4419,7 +4419,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Control:interface",
-              "docComment": "/**\n * Represents an individual control or command and the state it should have.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * Represents an individual control or command and the state it should have.\n *\n * For code samples showing how to use a `Control` object and its properties, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
