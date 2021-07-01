@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.PrintErrorType
+uid: 'excel!Excel.PrintErrorType:enum'
+package: excel!
+fullName: Excel.PrintErrorType
+summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: asDisplayed
+    uid: 'excel!Excel.PrintErrorType.asDisplayed:member'
+    package: excel!
+    summary: ''
+    value: '"AsDisplayed"'
+  - name: blank
+    uid: 'excel!Excel.PrintErrorType.blank:member'
+    package: excel!
+    summary: ''
+    value: '"Blank"'
+  - name: dash
+    uid: 'excel!Excel.PrintErrorType.dash:member'
+    package: excel!
+    summary: ''
+    value: '"Dash"'
+  - name: notAvailable
+    uid: 'excel!Excel.PrintErrorType.notAvailable:member'
+    package: excel!
+    summary: ''
+    value: '"NotAvailable"'

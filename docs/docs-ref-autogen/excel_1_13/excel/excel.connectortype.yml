@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Excel.ConnectorType
+uid: 'excel!Excel.ConnectorType:enum'
+package: excel!
+fullName: Excel.ConnectorType
+summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: curve
+    uid: 'excel!Excel.ConnectorType.curve:member'
+    package: excel!
+    summary: ''
+    value: '"Curve"'
+  - name: elbow
+    uid: 'excel!Excel.ConnectorType.elbow:member'
+    package: excel!
+    summary: ''
+    value: '"Elbow"'
+  - name: straight
+    uid: 'excel!Excel.ConnectorType.straight:member'
+    package: excel!
+    summary: ''
+    value: '"Straight"'

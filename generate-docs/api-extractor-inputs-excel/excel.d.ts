@@ -740,6 +740,167 @@ export declare namespace Excel {
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
      *
+     * Contains information about a linked workbook.
+                If a workbook has links pointing to data in another workbook, the second workbook is linked to the first workbook.
+                In this scenario, the second workbook is called the "linked workbook".
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class LinkedWorkbook extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         *
+         * The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Makes a request to break the links pointing to the linked workbook.
+                    Links in formulas are replaced with the latest fetched data.
+                    The current `LinkedWorkbook` object is invalidated and removed from `LinkedWorkbookCollection`.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        breakLinks(): void;
+        /**
+         * Makes a request to refresh the data retrieved from the linked workbook.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refresh(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.LinkedWorkbookLoadOptions): Excel.LinkedWorkbook;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.LinkedWorkbook;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.LinkedWorkbook;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.LinkedWorkbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.LinkedWorkbookData;
+    }
+    /**
+     *
+     * Represents a collection of linked workbook objects.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class LinkedWorkbookCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.LinkedWorkbook[];
+        /**
+         *
+         * Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the workbook.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        workbookLinksRefreshMode: Excel.WorkbookLinksRefreshMode | "Manual" | "Automatic";
+        /**
+         * Breaks all the links to the linked workbooks. Once the links are broken, any formulas referencing workbook links are removed entirely and replaced with the most recently retrieved values.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        breakAllLinks(): void;
+        /**
+         * Gets information about a linked workbook by its URL.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The URL of the linked workbook.
+         * @returns The linked workbook with the given URL.
+         */
+        getItem(key: string): Excel.LinkedWorkbook;
+        /**
+         * Gets information about a linked workbook by its URL. If the workbook does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The URL of the linked workbook.
+         * @returns The linked workbook with given URL or null object.
+         */
+        getItemOrNullObject(key: string): Excel.LinkedWorkbook;
+        /**
+         * Makes a request to refresh all the workbook links.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        refreshAll(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.LinkedWorkbookCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.LinkedWorkbookCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.LinkedWorkbookCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.LinkedWorkbookCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedWorkbookCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.LinkedWorkbookCollectionData;
+    }
+    /**
+     *
+     * Represents the refresh mode of the workbook links.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum WorkbookLinksRefreshMode {
+        /**
+         * The workbook links are updated manually.
+         *
+         */
+        manual = "Manual",
+        /**
+         * The workbook links are updated at a set interval determined by the Excel application.
+         *
+         */
+        automatic = "Automatic"
+    }
+    /**
+     *
      * Represents information about a task's schedule.
      *
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -3027,16 +3188,14 @@ export declare namespace Excel {
      *
      * Provides information about the workbook that raised the activated event.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.13]
      */
     export interface WorkbookActivatedEventArgs {
         /**
          *
          * Gets the type of the event. See `Excel.EventType` for details.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         type: "WorkbookActivated";
     }
@@ -3054,6 +3213,33 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         type: "WorkbookAutoSaveSettingChanged";
+    }
+    /**
+     *
+     * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ChangeDirectionState {
+        /**
+         *
+         * Represents the direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted.
+                    Note：`insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can't have a value at the same time. If one has a value, then the other will return `undefined`.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteShiftDirection: Excel.DeleteShiftDirection | "Up" | "Left";
+        /**
+         *
+         * Represents the direction (such as down or to the right) that the existing cells will shift when a new cell or cells are inserted.
+                    Note：`insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can't have a value at the same time. If one has a value, then the other will return `undefined`.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertShiftDirection: Excel.InsertShiftDirection | "Down" | "Right";
     }
     /**
      *
@@ -3140,6 +3326,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         worksheetId: string;
+        /**
+         *
+         * Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or inserted. This includes the following two scenarios.
+                    The direction(such as down or to the right) that existing cells will shift when a new cell or cells are inserted into a worksheet.
+                    The direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted from a worksheet.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        changeDirectionState: Excel.ChangeDirectionState;
         /**
          *
          * Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
@@ -3330,40 +3525,35 @@ export declare namespace Excel {
      *
      * Provides information about the worksheet and formulas that raised the formula changed event.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.13]
      */
     export interface WorksheetFormulaChangedEventArgs {
         /**
          *
          * Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed formulas.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         formulaDetails: Excel.FormulaChangedEventDetail[];
         /**
          *
          * The source of the event. It can be local or remote (through co-authoring).
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          *
          * Gets the type of the event. See `Excel.EventType` for details.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         type: "WorksheetFormulaChanged";
         /**
          *
          * Gets the ID of the worksheet in which the formula changed.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         worksheetId: string;
     }
@@ -3371,24 +3561,21 @@ export declare namespace Excel {
      *
      * Provides information about a changed formula during a formula changed event.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.13]
      */
     export interface FormulaChangedEventDetail {
         /**
          *
          * The address of the cell that contains the changed formula.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         cellAddress: string;
         /**
          *
          * Represents the previous formula, before it was changed.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         previousFormula: string;
     }
@@ -4543,6 +4730,14 @@ export declare namespace Excel {
         readonly linkedDataTypes: Excel.LinkedDataTypeCollection;
         /**
          *
+         * Returns a collection of linked workbooks. In formulas, the workbook links can used to reference data (cell values and names) outside of the current workbook.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;
+        /**
+         *
          * Represents a collection of workbook-scoped named items (named ranges and constants).
          *
          * [Api set: ExcelApi 1.1]
@@ -4801,8 +4996,7 @@ export declare namespace Excel {
                     
                      **Note**: This API is currently only supported for Office on Windows, Mac and Online.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          *
          * @param base64File - Required. The base64-encoded string representing the source workbook file.
          * @param options - Optional. The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted. By default, all the worksheets from the source workbook are inserted at the end of the current workbook.
@@ -4850,10 +5044,9 @@ export declare namespace Excel {
          *
          * Occurs when the the workbook is activated. Note: This event will not fire when the workbook is opened.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.13]
          *
          * @eventproperty
-         * @beta
          */
         readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;
         /**
@@ -5448,10 +5641,9 @@ export declare namespace Excel {
          *
          * Occurs when one or more formulas are changed in this worksheet. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.13]
          *
          * @eventproperty
-         * @beta
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         /**
@@ -5709,10 +5901,9 @@ export declare namespace Excel {
          *
          * Occurs when one or more formulas are changed in any worksheet of this collection. This event is for when the formula itself changes, not the data value resulting from the formula's calculation.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.13]
          *
          * @eventproperty
-         * @beta
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         /**
@@ -6007,32 +6198,28 @@ export declare namespace Excel {
      *
      * The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.13]
      */
     export interface InsertWorksheetOptions {
         /**
          *
          * The insert position, in the current workbook, of the new worksheets. See `Excel.WorksheetPositionType` for details. The default position is "End".
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         positionType?: Excel.WorksheetPositionType | "None" | "Before" | "After" | "Beginning" | "End";
         /**
          *
          * The worksheet in the current workbook that is referenced for the `WorksheetPositionType` parameter. The default is `null`. If the `relativeTo` parameter is not set, worksheets will be inserted based on `positionType`, at the start or end of the current workbook.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         relativeTo?: Worksheet | string;
         /**
          *
          * The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         sheetNamesToInsert?: string[];
     }
@@ -6525,8 +6712,7 @@ export declare namespace Excel {
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in the same worksheet or in multiple worksheets.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
@@ -6550,7 +6736,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.13]
          *
          * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6559,7 +6745,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that includes the current range and up to the edge of the range, based on the provided direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.13]
          *
          * @param directionString - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6610,8 +6796,7 @@ export declare namespace Excel {
         /**
          * Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, the API will fail to return the result. If the RangeAreas does not exist, will return a null object.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         getMergedAreasOrNullObject(): Excel.RangeAreas;
         /**
@@ -6642,7 +6827,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.13]
          *
          * @param direction - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -6651,7 +6836,7 @@ export declare namespace Excel {
         /**
          * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.13]
          *
          * @param directionString - The direction from the active cell.
          * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
@@ -9163,7 +9348,7 @@ export declare namespace Excel {
         /**
          * Resize the table to the new range. The new range must overlap with the original table range and the headers (or the top of the table) must be in the same row.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.13]
          *
          * @param newRange - The range object or range address that will be used to determine the new size of the table.
          */
@@ -16373,8 +16558,7 @@ export declare namespace Excel {
          *
          * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         refreshOnOpen: boolean;
         /**
@@ -16462,8 +16646,7 @@ export declare namespace Excel {
                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         altTextDescription: string;
         /**
@@ -16474,8 +16657,7 @@ export declare namespace Excel {
                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         altTextTitle: string;
         /**
@@ -16491,8 +16673,7 @@ export declare namespace Excel {
                     Note that this value persists if `fillEmptyCells` is set to `false`, and that setting this value does not set that property to `true`.
                     By default, this is an empty string.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         emptyCellText: string;
         /**
@@ -16507,8 +16688,7 @@ export declare namespace Excel {
          * Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`. Default is `false`.
                     Note that the value of `emptyCellText` persists when this property is set to `false`.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         fillEmptyCells: boolean;
         /**
@@ -16536,8 +16716,7 @@ export declare namespace Excel {
          *
          * Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          */
         showFieldHeaders: boolean;
         /**
@@ -16572,8 +16751,7 @@ export declare namespace Excel {
          * Sets whether or not to display a blank line after each item. This is set at the global level for the PivotTable and applied to individual PivotFields.
                     This function overwrites the setting for all fields in the PivotTable to the value of `display` parameter.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          *
          * @param display - True turns on the blank-line display setting. False turns it off.
          */
@@ -16652,8 +16830,7 @@ export declare namespace Excel {
         /**
          * Sets the "repeat all item labels" setting across all fields in the PivotTable.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.13]
          *
          * @param repeatLabels - True turns on the label-repetition display setting. False turns it off.
          */
@@ -26016,7 +26193,7 @@ export declare namespace Excel {
         richValue = "RichValue"
     }
     /**
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.13]
      */
     enum KeyboardDirection {
         left = "Left",
@@ -31117,6 +31294,7 @@ export declare namespace Excel {
         notImplemented = "NotImplemented",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
+        refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         unsupportedFeature = "UnsupportedFeature",
         unsupportedOperation = "UnsupportedOperation",
@@ -31136,6 +31314,18 @@ export declare namespace Excel {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`. */
+        export interface LinkedWorkbookCollectionUpdateData {
+            /**
+             *
+             * Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the workbook.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            workbookLinksRefreshMode?: Excel.WorkbookLinksRefreshMode | "Manual" | "Automatic";
+            items?: Excel.Interfaces.LinkedWorkbookData[];
         }
         /** An interface for updating data on the IdentityCollection object, for use in `identityCollection.set({ ... })`. */
         export interface IdentityCollectionUpdateData {
@@ -34146,8 +34336,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             refreshOnOpen?: boolean;
             /**
@@ -34176,8 +34365,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextDescription?: string;
             /**
@@ -34188,8 +34376,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextTitle?: string;
             /**
@@ -34205,8 +34392,7 @@ export declare namespace Excel {
                         Note that this value persists if `fillEmptyCells` is set to `false`, and that setting this value does not set that property to `true`.
                         By default, this is an empty string.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             emptyCellText?: string;
             /**
@@ -34221,8 +34407,7 @@ export declare namespace Excel {
              * Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`. Default is `false`.
                         Note that the value of `emptyCellText` persists when this property is set to `false`.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             fillEmptyCells?: boolean;
             /**
@@ -34250,8 +34435,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             showFieldHeaders?: boolean;
             /**
@@ -36067,6 +36251,21 @@ export declare namespace Excel {
         /** An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`. */
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
+        }
+        /** An interface describing the data returned by calling `linkedWorkbook.toJSON()`. */
+        export interface LinkedWorkbookData {
+            /**
+             *
+             * The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+        }
+        /** An interface describing the data returned by calling `linkedWorkbookCollection.toJSON()`. */
+        export interface LinkedWorkbookCollectionData {
+            items?: Excel.Interfaces.LinkedWorkbookData[];
         }
         /** An interface describing the data returned by calling `identityCollection.toJSON()`. */
         export interface IdentityCollectionData {
@@ -40265,8 +40464,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             refreshOnOpen?: boolean;
             /**
@@ -40295,8 +40493,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextDescription?: string;
             /**
@@ -40307,8 +40504,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextTitle?: string;
             /**
@@ -40324,8 +40520,7 @@ export declare namespace Excel {
                         Note that this value persists if `fillEmptyCells` is set to `false`, and that setting this value does not set that property to `true`.
                         By default, this is an empty string.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             emptyCellText?: string;
             /**
@@ -40340,8 +40535,7 @@ export declare namespace Excel {
              * Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`. Default is `false`.
                         Note that the value of `emptyCellText` persists when this property is set to `false`.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             fillEmptyCells?: boolean;
             /**
@@ -40369,8 +40563,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             showFieldHeaders?: boolean;
             /**
@@ -42719,6 +42912,50 @@ export declare namespace Excel {
         }
         /**
          *
+         * Contains information about a linked workbook.
+                    If a workbook has links pointing to data in another workbook, the second workbook is linked to the first workbook.
+                    In this scenario, the second workbook is called the "linked workbook".
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface LinkedWorkbookLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
+        /**
+         *
+         * Represents a collection of linked workbook objects.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface LinkedWorkbookCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+        }
+        /**
+         *
          * Represents a collection of user identities.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -43352,6 +43589,14 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
+            /**
+            *
+            * Returns a collection of linked workbooks. In formulas, the workbook links can used to reference data (cell values and names) outside of the current workbook.
+            *
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            linkedWorkbooks?: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions;
             /**
             *
             * Gets the workbook properties.
@@ -49119,8 +49364,7 @@ export declare namespace Excel {
              *
              * For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             refreshOnOpen?: boolean;
             /**
@@ -49188,8 +49432,7 @@ export declare namespace Excel {
              *
              * For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             refreshOnOpen?: boolean;
             /**
@@ -49258,8 +49501,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in the UI.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             refreshOnOpen?: boolean;
             /**
@@ -49297,8 +49539,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextDescription?: boolean;
             /**
@@ -49309,8 +49550,7 @@ export declare namespace Excel {
                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             altTextTitle?: boolean;
             /**
@@ -49326,8 +49566,7 @@ export declare namespace Excel {
                         Note that this value persists if `fillEmptyCells` is set to `false`, and that setting this value does not set that property to `true`.
                         By default, this is an empty string.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             emptyCellText?: boolean;
             /**
@@ -49342,8 +49581,7 @@ export declare namespace Excel {
              * Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`. Default is `false`.
                         Note that the value of `emptyCellText` persists when this property is set to `false`.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             fillEmptyCells?: boolean;
             /**
@@ -49371,8 +49609,7 @@ export declare namespace Excel {
              *
              * Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.13]
              */
             showFieldHeaders?: boolean;
             /**

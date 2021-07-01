@@ -200,6 +200,24 @@ properties:
       content: 'readonly linkedDataTypes: Excel.LinkedDataTypeCollection;'
       return:
         type: '<xref uid="excel!Excel.LinkedDataTypeCollection:class" />'
+  - name: linkedWorkbooks
+    uid: 'excel!Excel.Workbook#linkedWorkbooks:member'
+    package: excel!
+    fullName: linkedWorkbooks
+    summary: >-
+      Returns a collection of linked workbooks. In formulas, the workbook links can used to reference data (cell values
+      and names) outside of the current workbook.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;'
+      return:
+        type: '<xref uid="excel!Excel.LinkedWorkbookCollection:class" />'
   - name: name
     uid: 'excel!Excel.Workbook#name:member'
     package: excel!
@@ -871,17 +889,14 @@ methods:
     uid: 'excel!Excel.Workbook#insertWorksheetsFromBase64:member(1)'
     package: excel!
     fullName: 'insertWorksheetsFromBase64(base64File, options)'
-    summary: >-
+    summary: |-
       Inserts the specified worksheets from a source workbook into the current workbook.
-
 
       *Note**: This API is currently only supported for Office on Windows, Mac and Online.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1142,14 +1157,12 @@ events:
     uid: 'excel!Excel.Workbook#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: >-
+    summary: |-
       Occurs when the the workbook is activated. Note: This event will not fire when the workbook is opened.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;'

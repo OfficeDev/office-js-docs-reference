@@ -340,6 +340,8 @@ items:
                 uid: 'excel!Excel.ValueFilterCondition:enum'
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
+              - name: WorkbookLinksRefreshMode
+                uid: 'excel!Excel.WorkbookLinksRefreshMode:enum'
               - name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - name: Icon Sets
@@ -429,6 +431,8 @@ items:
             uid: 'excel!Excel.CellValueConditionalFormat:class'
           - name: ChangedEventDetail
             uid: 'excel!Excel.ChangedEventDetail:interface'
+          - name: ChangeDirectionState
+            uid: 'excel!Excel.ChangeDirectionState:interface'
           - name: Chart
             uid: 'excel!Excel.Chart:class'
           - name: ChartActivatedEventArgs
@@ -683,6 +687,10 @@ items:
             uid: 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
           - name: LinkedDataTypeCollection
             uid: 'excel!Excel.LinkedDataTypeCollection:class'
+          - name: LinkedWorkbook
+            uid: 'excel!Excel.LinkedWorkbook:class'
+          - name: LinkedWorkbookCollection
+            uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
           - name: NamedItem

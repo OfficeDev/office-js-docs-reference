@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatType
+uid: 'excel!Excel.ConditionalFormatType:enum'
+package: excel!
+fullName: Excel.ConditionalFormatType
+summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cellValue
+    uid: 'excel!Excel.ConditionalFormatType.cellValue:member'
+    package: excel!
+    summary: ''
+    value: '"CellValue"'
+  - name: colorScale
+    uid: 'excel!Excel.ConditionalFormatType.colorScale:member'
+    package: excel!
+    summary: ''
+    value: '"ColorScale"'
+  - name: containsText
+    uid: 'excel!Excel.ConditionalFormatType.containsText:member'
+    package: excel!
+    summary: ''
+    value: '"ContainsText"'
+  - name: custom
+    uid: 'excel!Excel.ConditionalFormatType.custom:member'
+    package: excel!
+    summary: ''
+    value: '"Custom"'
+  - name: dataBar
+    uid: 'excel!Excel.ConditionalFormatType.dataBar:member'
+    package: excel!
+    summary: ''
+    value: '"DataBar"'
+  - name: iconSet
+    uid: 'excel!Excel.ConditionalFormatType.iconSet:member'
+    package: excel!
+    summary: ''
+    value: '"IconSet"'
+  - name: presetCriteria
+    uid: 'excel!Excel.ConditionalFormatType.presetCriteria:member'
+    package: excel!
+    summary: ''
+    value: '"PresetCriteria"'
+  - name: topBottom
+    uid: 'excel!Excel.ConditionalFormatType.topBottom:member'
+    package: excel!
+    summary: ''
+    value: '"TopBottom"'

@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: Excel.FilterDatetimeSpecificity
+uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+package: excel!
+fullName: Excel.FilterDatetimeSpecificity
+summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: day
+    uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
+    package: excel!
+    summary: ''
+    value: '"Day"'
+  - name: hour
+    uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
+    package: excel!
+    summary: ''
+    value: '"Hour"'
+  - name: minute
+    uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
+    package: excel!
+    summary: ''
+    value: '"Minute"'
+  - name: month
+    uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
+    package: excel!
+    summary: ''
+    value: '"Month"'
+  - name: second
+    uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
+    package: excel!
+    summary: ''
+    value: '"Second"'
+  - name: year
+    uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
+    package: excel!
+    summary: ''
+    value: '"Year"'

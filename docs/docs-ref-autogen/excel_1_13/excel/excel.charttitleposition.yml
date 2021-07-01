@@ -1,0 +1,38 @@
+### YamlMime:TSEnum
+name: Excel.ChartTitlePosition
+uid: 'excel!Excel.ChartTitlePosition:enum'
+package: excel!
+fullName: Excel.ChartTitlePosition
+summary: |-
+  Represents the position of the chart title.
+
+  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'excel!Excel.ChartTitlePosition.automatic:member'
+    package: excel!
+    summary: ''
+    value: '"Automatic"'
+  - name: bottom
+    uid: 'excel!Excel.ChartTitlePosition.bottom:member'
+    package: excel!
+    summary: ''
+    value: '"Bottom"'
+  - name: left
+    uid: 'excel!Excel.ChartTitlePosition.left:member'
+    package: excel!
+    summary: ''
+    value: '"Left"'
+  - name: right
+    uid: 'excel!Excel.ChartTitlePosition.right:member'
+    package: excel!
+    summary: ''
+    value: '"Right"'
+  - name: top
+    uid: 'excel!Excel.ChartTitlePosition.top:member'
+    package: excel!
+    summary: ''
+    value: '"Top"'
