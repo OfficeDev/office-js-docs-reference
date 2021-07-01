@@ -21,6 +21,7 @@
         "excel-js-1.10",
         "excel-js-1.11",
         "excel-js-1.12",
+        "excel-js-1.13",
         "excel-js-online",
         "onenote-js-1.1",
         "outlook-js-preview",
@@ -189,6 +190,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_1_12/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/excel_1_13/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

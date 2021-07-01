@@ -21,6 +21,7 @@
           "excel_1_10/**",
           "excel_1_11/**",
           "excel_1_12/**",
+          "excel_1_13/**",
           "excel_online/**",
           "office/**",
           "onenote/**",
@@ -100,6 +101,8 @@
           "excel_1_11.yml",
           "excel_1_12/**",
           "excel_1_12.yml",
+          "excel_1_13/**",
+          "excel_1_13.yml",
           "excel_online/**",
           "excel_online.yml",
           "office/**",
@@ -605,6 +608,23 @@
       "src": "docs-ref-autogen",
       "dest": "api"
     },    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.13",
+      "src": "docs-ref-autogen/excel_1_13",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_13.yml"
+      ],
+      "group": "excel-js-1.13",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
     {
       "files": [
         "**/*.md",
