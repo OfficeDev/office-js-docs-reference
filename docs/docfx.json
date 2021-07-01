@@ -912,6 +912,10 @@
         "dest": "excel-js-1.12",
         "moniker_range": "excel-js-1.12"
       },
+      "excel-js-1.13": {
+        "dest": "excel-js-1.13",
+        "moniker_range": "excel-js-1.13"
+      },
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -1084,6 +1088,12 @@
         "docs-ref-autogen/excel_1_12/excel/**": [
           "excel 1.12"
         ],
+        "docs-ref-autogen/excel_1_13/**": [
+          "excel 1.13"
+        ],
+        "docs-ref-autogen/excel_1_13/excel/**": [
+          "excel 1.13"
+        ],
         "docs-ref-autogen/excel_online/**": [
           "excel online"
         ],
@@ -1237,6 +1247,8 @@
         "docs-ref-autogen/excel_1_9/**": "excel",
         "docs-ref-autogen/excel_1_10/**": "excel",
         "docs-ref-autogen/excel_1_11/**": "excel",
+        "docs-ref-autogen/excel_1_12/**": "excel",
+        "docs-ref-autogen/excel_1_13/**": "excel",
         "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/excel_1_1/excel/**": "excel",
         "docs-ref-autogen/excel_1_2/excel/**": "excel",
@@ -1250,6 +1262,7 @@
         "docs-ref-autogen/excel_1_10/excel/**": "excel",
         "docs-ref-autogen/excel_1_11/excel/**": "excel",
         "docs-ref-autogen/excel_1_12/excel/**": "excel",
+        "docs-ref-autogen/excel_1_13/excel/**": "excel",
         "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",
