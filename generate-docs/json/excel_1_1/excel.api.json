@@ -15635,6 +15635,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.refreshWorkbookLinksBlocked:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "refreshWorkbookLinksBlocked = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"RefreshWorkbookLinksBlocked\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "refreshWorkbookLinksBlocked",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.requestAborted:member",
                   "docComment": "",
                   "excerptTokens": [

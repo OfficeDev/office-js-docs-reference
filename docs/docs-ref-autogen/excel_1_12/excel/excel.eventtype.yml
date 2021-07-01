@@ -239,6 +239,18 @@ fields:
       `WorksheetFormulaChanged` represents the type of event registered on a worksheet and occurs when a formula is
       changed.
     value: '"WorksheetFormulaChanged"'
+  - name: worksheetMoved
+    uid: 'excel!Excel.EventType.worksheetMoved:member'
+    package: excel!
+    summary: >-
+      WorksheetMoved represents the type of event registered on a worksheet that occurs when it is moved within a
+      workbook.
+    value: '"WorksheetMoved"'
+  - name: worksheetNameChanged
+    uid: 'excel!Excel.EventType.worksheetNameChanged:member'
+    package: excel!
+    summary: WorksheetNameChanged represents the type of event registered on a worksheet that occurs when its name changes.
+    value: '"WorksheetNameChanged"'
   - name: worksheetProtectionChanged
     uid: 'excel!Excel.EventType.worksheetProtectionChanged:member'
     package: excel!
@@ -272,3 +284,10 @@ fields:
       `WorksheetSingleClicked` represents the type of event registered on a worksheet and occurs when a cell is
       left-clicked or tapped.
     value: '"WorksheetSingleClicked"'
+  - name: worksheetVisibilityChanged
+    uid: 'excel!Excel.EventType.worksheetVisibilityChanged:member'
+    package: excel!
+    summary: >-
+      WorksheetVisibilityChanged represents the type of event registered on a worksheet that occurs when its visibility
+      changes.
+    value: '"WorksheetVisibilityChanged"'

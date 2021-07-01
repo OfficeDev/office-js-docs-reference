@@ -1442,7 +1442,7 @@ export declare namespace Excel {
     export interface BindingSelectionChangedEventArgs {
         /**
          *
-         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1485,7 +1485,7 @@ export declare namespace Excel {
     export interface BindingDataChangedEventArgs {
         /**
          *
-         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1521,6 +1521,7 @@ export declare namespace Excel {
          */
         settings: Excel.SettingCollection;
     }
+    
     /**
      *
      * Provides information about the workbook's `onAutoSaveSettingChanged` event.
@@ -1800,6 +1801,8 @@ export declare namespace Excel {
          */
         getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;
     }
+    
+    
     /**
      *
      * Provides information about the worksheet that raised the activated event.
@@ -2004,7 +2007,7 @@ export declare namespace Excel {
         address: string;
         /**
          *
-         * Specifies if the selection is inside a table. The address will be useless if `IsInsideTable` is `false`.
+         * Specifies if the selection is inside a table. `IsInsideTable` must be set to `true` for the address to be useful.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -3073,6 +3076,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getSelectedRanges(): Excel.RangeAreas;
+        
         /**
          * Save current workbook.
          *
@@ -3110,6 +3114,7 @@ export declare namespace Excel {
             select?: string;
             expand?: string;
         }): Excel.Workbook;
+        
         /**
          *
          * Occurs when the AutoSave setting is changed on the workbook.
@@ -3335,7 +3340,7 @@ export declare namespace Excel {
         /**
          *
          * Determines if Excel should recalculate the worksheet when necessary.
-                    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+                    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3666,6 +3671,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+        
         /**
          *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
@@ -3868,6 +3874,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+        
         /**
          *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
@@ -4101,7 +4108,7 @@ export declare namespace Excel {
          */
         freezeAt(frozenRange: Range | string): void;
         /**
-         * Freeze the first column or columns of the worksheet in place.
+         * Freeze the first column or columns of the worksheet in place.
          *
          * [Api set: ExcelApi 1.7]
          *
@@ -4109,7 +4116,7 @@ export declare namespace Excel {
          */
         freezeColumns(count?: number): void;
         /**
-         * Freeze the top row or rows of the worksheet in place.
+         * Freeze the top row or rows of the worksheet in place.
          *
          * [Api set: ExcelApi 1.7]
          *
@@ -4146,6 +4153,7 @@ export declare namespace Excel {
             [key: string]: string;
         };
     }
+    
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
@@ -4222,7 +4230,7 @@ export declare namespace Excel {
         readonly columnCount: number;
         /**
          *
-         * Represents if all columns of the current range are hidden.
+         * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -4273,7 +4281,7 @@ export declare namespace Excel {
         readonly height: number;
         /**
          *
-         * Represents if all cells of the current range are hidden.
+         * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -4329,7 +4337,7 @@ export declare namespace Excel {
         readonly numberFormatCategories: Excel.NumberFormatCategory[][];
         /**
          *
-         * Represents Excel's number format code for the given range, based on the language settings of the user.​
+         * Represents Excel's number format code for the given range, based on the language settings of the user.
                     Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
                     Any returned text uses the locally-formatted strings based on the language specified in the system settings.
          *
@@ -4345,7 +4353,7 @@ export declare namespace Excel {
         readonly rowCount: number;
         /**
          *
-         * Represents if all rows of the current range are hidden.
+         * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -4626,6 +4634,7 @@ export declare namespace Excel {
          * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
+        
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in the same worksheet or in multiple worksheets.
          *
@@ -4648,7 +4657,7 @@ export declare namespace Excel {
         
         /**
          * Renders the range as a base64-encoded png image.
-                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
+                    **Important**: This API is currently unsupported in Excel for Mac. Visit {@link https://github.com/OfficeDev/office-js/issues/235 | OfficeDev/office-js Issue #235} for the current status.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -5449,7 +5458,7 @@ export declare namespace Excel {
         readonly areas: Excel.RangeAreasCollection;
         /**
          *
-         * Returns ranges that comprise this object in a `RangeCollection` object.
+         * Returns ranges that comprise this object in a `RangeCollection` object.
          *
          * [Api set: ExcelApi 1.12]
          */
@@ -8257,7 +8266,7 @@ export declare namespace Excel {
         pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
         /**
          *
-         * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+         * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -8872,7 +8881,7 @@ export declare namespace Excel {
         plotBy: Excel.ChartPlotBy | "Rows" | "Columns";
         /**
          *
-         * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+         * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -9485,7 +9494,7 @@ export declare namespace Excel {
         invertColor: string;
         /**
          *
-         * True if Excel inverts the pattern in the item when it corresponds to a negative number.
+         * True if Excel inverts the pattern in the item when it corresponds to a negative number.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -9597,7 +9606,7 @@ export declare namespace Excel {
         splitValue: number;
         /**
          *
-         * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+         * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -14322,6 +14331,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         name: string;
+        
         /**
          *
          * Specifies if the PivotTable uses custom lists when sorting.
@@ -14391,6 +14401,8 @@ export declare namespace Excel {
     export class PivotLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         /**
          *
          * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -14398,6 +14410,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         autoFormat: boolean;
+        
         /**
          *
          * Specifies if the field list can be shown in the UI.
@@ -14405,6 +14418,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          */
         enableFieldList: boolean;
+        
         /**
          *
          * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -14426,6 +14440,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         showColumnGrandTotals: boolean;
+        
         /**
          *
          * Specifies if the PivotTable report shows grand totals for rows.
@@ -14454,6 +14469,7 @@ export declare namespace Excel {
         set(properties: Interfaces.PivotLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.PivotLayout): void;
+        
         /**
          * Returns the range where the PivotTable's column labels reside.
          *
@@ -14513,6 +14529,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         getRowLabelRange(): Excel.Range;
+        
         /**
          * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
          *
@@ -15382,7 +15399,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          */
         sortByLabels(sortBy: SortBy): void;
         /**
@@ -15391,7 +15408,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -15405,7 +15422,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
+         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -23686,12 +23703,12 @@ export declare namespace Excel {
          */
         commentAdded = "CommentAdded",
         /**
-         * `CommentDeleted` represents the type of event that is registered on a comment collection and occurs when comments are deleted.
+         * `CommentDeleted` represents the type of event that is registered on a comment collection and occurs when comments are deleted.
          *
          */
         commentDeleted = "CommentDeleted",
         /**
-         * `CommentChanged` represents the type of event that is registered on a comment collection and occurs when comments are changed.
+         * `CommentChanged` represents the type of event that is registered on a comment collection and occurs when comments are changed.
          *
          */
         commentChanged = "CommentChanged",
@@ -23734,7 +23751,22 @@ export declare namespace Excel {
          * WorksheetProtectionChanged represents the type of event registered on worksheet, and occurs when protection status is changed.
          *
          */
-        worksheetProtectionChanged = "WorksheetProtectionChanged"
+        worksheetProtectionChanged = "WorksheetProtectionChanged",
+        /**
+         * WorksheetNameChanged represents the type of event registered on a worksheet that occurs when its name changes.
+         *
+         */
+        worksheetNameChanged = "WorksheetNameChanged",
+        /**
+         * WorksheetVisibilityChanged represents the type of event registered on a worksheet that occurs when its visibility changes.
+         *
+         */
+        worksheetVisibilityChanged = "WorksheetVisibilityChanged",
+        /**
+         * WorksheetMoved represents the type of event registered on a worksheet that occurs when it is moved within a workbook.
+         *
+         */
+        worksheetMoved = "WorksheetMoved"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -24061,7 +24093,7 @@ export declare namespace Excel {
          */
         fillDefault = "FillDefault",
         /**
-         * Populates the adjacent cells with data based on the selected data.
+         * Populates the adjacent cells with data based on the selected data.
          *
          */
         fillCopy = "FillCopy",
@@ -24071,12 +24103,12 @@ export declare namespace Excel {
          */
         fillSeries = "FillSeries",
         /**
-         * Populates the adjacent cells with the selected formulas.
+         * Populates the adjacent cells with the selected formulas.
          *
          */
         fillFormats = "FillFormats",
         /**
-         * Populates the adjacent cells with the selected values.
+         * Populates the adjacent cells with the selected values.
          *
          */
         fillValues = "FillValues",
@@ -24101,12 +24133,12 @@ export declare namespace Excel {
          */
         fillYears = "FillYears",
         /**
-         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend model.
+         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend model.
          *
          */
         linearTrend = "LinearTrend",
         /**
-         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend model.
+         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend model.
          *
          */
         growthTrend = "GrowthTrend",
@@ -28251,6 +28283,7 @@ export declare namespace Excel {
         notImplemented = "NotImplemented",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
+        refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         unsupportedFeature = "UnsupportedFeature",
         unsupportedOperation = "UnsupportedOperation",
@@ -28370,7 +28403,7 @@ export declare namespace Excel {
             /**
              *
              * Determines if Excel should recalculate the worksheet when necessary.
-                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -28450,7 +28483,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.RangeFormatUpdateData;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -28492,7 +28525,7 @@ export declare namespace Excel {
             numberFormat?: any[][];
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+             * Represents Excel's number format code for the given range, based on the language settings of the user.
                         Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
                         Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -28501,7 +28534,7 @@ export declare namespace Excel {
             numberFormatLocal?: any[][];
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -28943,7 +28976,7 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -29195,7 +29228,7 @@ export declare namespace Excel {
             plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -29506,7 +29539,7 @@ export declare namespace Excel {
             invertColor?: string;
             /**
              *
-             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -29618,7 +29651,7 @@ export declare namespace Excel {
             splitValue?: number;
             /**
              *
-             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -31075,6 +31108,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: string;
+            
             /**
              *
              * Specifies if the PivotTable uses custom lists when sorting.
@@ -31085,6 +31119,8 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
+            
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -31092,6 +31128,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * Specifies if the field list can be shown in the UI.
@@ -31099,6 +31136,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             enableFieldList?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -31120,6 +31158,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
+            
             /**
              *
              * Specifies if the PivotTable report shows grand totals for rows.
@@ -33286,7 +33325,7 @@ export declare namespace Excel {
             /**
              *
              * Determines if Excel should recalculate the worksheet when necessary.
-                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33432,7 +33471,7 @@ export declare namespace Excel {
             columnCount?: number;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -33483,7 +33522,7 @@ export declare namespace Excel {
             height?: number;
             /**
              *
-             * Represents if all cells of the current range are hidden.
+             * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -33539,7 +33578,7 @@ export declare namespace Excel {
             numberFormatCategories?: Excel.NumberFormatCategory[][];
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+             * Represents Excel's number format code for the given range, based on the language settings of the user.
                         Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
                         Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -33555,7 +33594,7 @@ export declare namespace Excel {
             rowCount?: number;
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -33715,7 +33754,7 @@ export declare namespace Excel {
             areas?: Excel.Interfaces.RangeAreasData[];
             /**
             *
-            * Returns ranges that comprise this object in a `RangeCollection` object.
+            * Returns ranges that comprise this object in a `RangeCollection` object.
             *
             * [Api set: ExcelApi 1.12]
             */
@@ -34349,7 +34388,7 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -34614,7 +34653,7 @@ export declare namespace Excel {
             plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -34939,7 +34978,7 @@ export declare namespace Excel {
             invertColor?: string;
             /**
              *
-             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -35051,7 +35090,7 @@ export declare namespace Excel {
             splitValue?: number;
             /**
              *
-             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36851,6 +36890,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: string;
+            
             /**
              *
              * Specifies if the PivotTable uses custom lists when sorting.
@@ -36861,6 +36901,8 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
+            
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -36868,6 +36910,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * Specifies if the field list can be shown in the UI.
@@ -36875,6 +36918,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             enableFieldList?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -36896,6 +36940,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
+            
             /**
              *
              * Specifies if the PivotTable report shows grand totals for rows.
@@ -39452,7 +39497,7 @@ export declare namespace Excel {
             /**
              *
              * Determines if Excel should recalculate the worksheet when necessary.
-                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39573,7 +39618,7 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Determines if Excel should recalculate the worksheet when necessary.
-                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+                        True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39735,7 +39780,7 @@ export declare namespace Excel {
             columnCount?: boolean;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -39786,7 +39831,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * Represents if all cells of the current range are hidden.
+             * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -39842,7 +39887,7 @@ export declare namespace Excel {
             numberFormatCategories?: boolean;
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+             * Represents Excel's number format code for the given range, based on the language settings of the user.
                         Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
                         Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -39858,7 +39903,7 @@ export declare namespace Excel {
             rowCount?: boolean;
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -41313,7 +41358,7 @@ export declare namespace Excel {
             pattern?: boolean;
             /**
              *
-             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -41652,7 +41697,7 @@ export declare namespace Excel {
             plotBy?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+             * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -41835,7 +41880,7 @@ export declare namespace Excel {
             plotBy?: boolean;
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42176,7 +42221,7 @@ export declare namespace Excel {
             invertColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if Excel inverts the pattern in the item when it corresponds to a negative number.
+             * For EACH ITEM in the collection: True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42288,7 +42333,7 @@ export declare namespace Excel {
             splitValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+             * For EACH ITEM in the collection: True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42505,7 +42550,7 @@ export declare namespace Excel {
             invertColor?: boolean;
             /**
              *
-             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42617,7 +42662,7 @@ export declare namespace Excel {
             splitValue?: boolean;
             /**
              *
-             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -45010,6 +45055,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
@@ -45071,6 +45117,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
@@ -45133,6 +45180,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: boolean;
+            
             /**
              *
              * Specifies if the PivotTable uses custom lists when sorting.
@@ -45152,6 +45200,8 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
             /**
              *
              * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
@@ -45159,6 +45209,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * Specifies if the field list can be shown in the UI.
@@ -45166,6 +45217,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.10]
              */
             enableFieldList?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -45187,6 +45239,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
+            
             /**
              *
              * Specifies if the PivotTable report shows grand totals for rows.
@@ -47686,7 +47739,7 @@ export declare namespace Excel {
             columnCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if all columns of the current range are hidden.
+             * For EACH ITEM in the collection: Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -47737,7 +47790,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if all cells of the current range are hidden.
+             * For EACH ITEM in the collection: Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -47793,7 +47846,7 @@ export declare namespace Excel {
             numberFormatCategories?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language settings of the user.​
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language settings of the user.
                         Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
                         Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -47809,7 +47862,7 @@ export declare namespace Excel {
             rowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if all rows of the current range are hidden.
+             * For EACH ITEM in the collection: Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */

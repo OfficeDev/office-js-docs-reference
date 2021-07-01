@@ -95,8 +95,11 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnHidden:member'
     package: excel!
     fullName: columnHidden
-    summary: |-
-      Represents if all columns of the current range are hidden.
+    summary: >-
+      Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden.
+      Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden
+      and other columns in the same range are not hidden.
+
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -188,8 +191,11 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#hidden:member'
     package: excel!
     fullName: hidden
-    summary: |-
-      Represents if all cells of the current range are hidden.
+    summary: >-
+      Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden.
+      Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and
+      other cells in the same range are not hidden.
+
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
@@ -264,7 +270,7 @@ properties:
     package: excel!
     fullName: numberFormatLocal
     summary: >-
-      Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
+      Represents Excel's number format code for the given range, based on the language settings of the user. Excel does
       not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
       text uses the locally-formatted strings based on the language specified in the system settings.
 
@@ -296,8 +302,11 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member'
     package: excel!
     fullName: rowHidden
-    summary: |-
-      Represents if all rows of the current range are hidden.
+    summary: >-
+      Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value
+      is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other
+      rows in the same range are not hidden.
+
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''

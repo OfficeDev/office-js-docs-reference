@@ -6,7 +6,7 @@
 |[Chart](/javascript/api/excel/excel.chart)|[categoryLabelLevel](/javascript/api/excel/excel.chart#categorylabellevel)|Specifies a chart category label level enumeration constant, referring to the level of the source category labels.|
 ||[displayBlanksAs](/javascript/api/excel/excel.chart#displayblanksas)|Specifies the way that blank cells are plotted on a chart.|
 ||[plotBy](/javascript/api/excel/excel.chart#plotby)|Specifies the way columns or rows are used as data series on the chart.|
-||[plotVisibleOnly](/javascript/api/excel/excel.chart#plotvisibleonly)|True if only visible cells are plotted. False if both visible and hidden cells are plotted.|
+||[plotVisibleOnly](/javascript/api/excel/excel.chart#plotvisibleonly)|True if only visible cells are plotted.|
 ||[onActivated](/javascript/api/excel/excel.chart#onactivated)|Occurs when the chart is activated.|
 ||[onDeactivated](/javascript/api/excel/excel.chart#ondeactivated)|Occurs when the chart is deactivated.|
 ||[plotArea](/javascript/api/excel/excel.chart#plotarea)|Represents the plot area for the chart.|
@@ -84,12 +84,12 @@
 |[ChartSeries](/javascript/api/excel/excel.chartseries)|[axisGroup](/javascript/api/excel/excel.chartseries#axisgroup)|Specifies the group for the specified series.|
 ||[explosion](/javascript/api/excel/excel.chartseries#explosion)|Specifies the explosion value for a pie-chart or doughnut-chart slice.|
 ||[firstSliceAngle](/javascript/api/excel/excel.chartseries#firstsliceangle)|Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).|
-||[invertIfNegative](/javascript/api/excel/excel.chartseries#invertifnegative)|True if Excel inverts the pattern in the item when it corresponds to a negative number.|
+||[invertIfNegative](/javascript/api/excel/excel.chartseries#invertifnegative)|True if Excel inverts the pattern in the item when it corresponds to a negative number.|
 ||[overlap](/javascript/api/excel/excel.chartseries#overlap)|Specifies how bars and columns are positioned.|
 ||[dataLabels](/javascript/api/excel/excel.chartseries#datalabels)|Represents a collection of all data labels in the series.|
 ||[secondPlotSize](/javascript/api/excel/excel.chartseries#secondplotsize)|Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie.|
 ||[splitType](/javascript/api/excel/excel.chartseries#splittype)|Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.|
-||[varyByCategories](/javascript/api/excel/excel.chartseries#varybycategories)|True if Excel assigns a different color or pattern to each data marker.|
+||[varyByCategories](/javascript/api/excel/excel.chartseries#varybycategories)|True if Excel assigns a different color or pattern to each data marker.|
 |[ChartTrendline](/javascript/api/excel/excel.charttrendline)|[backwardPeriod](/javascript/api/excel/excel.charttrendline#backwardperiod)|Represents the number of periods that the trendline extends backward.|
 ||[forwardPeriod](/javascript/api/excel/excel.charttrendline#forwardperiod)|Represents the number of periods that the trendline extends forward.|
 ||[label](/javascript/api/excel/excel.charttrendline#label)|Represents the label of a chart trendline.|

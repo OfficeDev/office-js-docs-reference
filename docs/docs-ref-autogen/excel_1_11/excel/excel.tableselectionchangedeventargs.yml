@@ -50,7 +50,7 @@ properties:
     package: excel!
     fullName: isInsideTable
     summary: |-
-      Specifies if the selection is inside a table. The address will be useless if `IsInsideTable` is `false`<!-- -->.
+      Specifies if the selection is inside a table. `IsInsideTable` must be set to `true` for the address to be useful.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
