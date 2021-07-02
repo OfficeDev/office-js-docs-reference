@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisTickLabelPosition
+uid: 'excel!Excel.ChartAxisTickLabelPosition:enum'
+package: excel!
+fullName: Excel.ChartAxisTickLabelPosition
+summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: high
+    uid: 'excel!Excel.ChartAxisTickLabelPosition.high:member'
+    package: excel!
+    summary: ''
+    value: '"High"'
+  - name: low
+    uid: 'excel!Excel.ChartAxisTickLabelPosition.low:member'
+    package: excel!
+    summary: ''
+    value: '"Low"'
+  - name: nextToAxis
+    uid: 'excel!Excel.ChartAxisTickLabelPosition.nextToAxis:member'
+    package: excel!
+    summary: ''
+    value: '"NextToAxis"'
+  - name: none
+    uid: 'excel!Excel.ChartAxisTickLabelPosition.none:member'
+    package: excel!
+    summary: ''
+    value: '"None"'

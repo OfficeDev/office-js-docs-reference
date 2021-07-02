@@ -27,6 +27,26 @@ properties:
       content: 'address: string;'
       return:
         type: string
+  - name: changeDirectionState
+    uid: 'excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member'
+    package: excel!
+    fullName: changeDirectionState
+    summary: >-
+      Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or
+      inserted. This includes the following two scenarios. The direction(such as down or to the right) that existing
+      cells will shift when a new cell or cells are inserted into a worksheet. The direction (such as up or to the left)
+      that the remaining cells will shift when a cell or cells are deleted from a worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changeDirectionState: Excel.ChangeDirectionState;'
+      return:
+        type: '<xref uid="excel!Excel.ChangeDirectionState:interface" />'
   - name: changeType
     uid: 'excel!Excel.WorksheetChangedEventArgs#changeType:member'
     package: excel!

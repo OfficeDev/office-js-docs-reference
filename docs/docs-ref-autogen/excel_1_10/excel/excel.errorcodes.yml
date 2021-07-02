@@ -108,6 +108,11 @@ fields:
     package: excel!
     summary: ''
     value: '"RangeExceedsLimit"'
+  - name: refreshWorkbookLinksBlocked
+    uid: 'excel!Excel.ErrorCodes.refreshWorkbookLinksBlocked:member'
+    package: excel!
+    summary: ''
+    value: '"RefreshWorkbookLinksBlocked"'
   - name: requestAborted
     uid: 'excel!Excel.ErrorCodes.requestAborted:member'
     package: excel!

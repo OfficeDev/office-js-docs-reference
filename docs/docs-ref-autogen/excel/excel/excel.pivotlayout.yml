@@ -26,10 +26,9 @@ properties:
       description of the content.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'altTextDescription: string;'
@@ -73,10 +72,9 @@ properties:
       description of the content.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'altTextTitle: string;'
@@ -121,10 +119,9 @@ properties:
       set that property to `true`<!-- -->. By default, this is an empty string.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'emptyCellText: string;'
@@ -178,10 +175,9 @@ properties:
       `false`<!-- -->. Note that the value of `emptyCellText` persists when this property is set to `false`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fillEmptyCells: boolean;'
@@ -373,14 +369,12 @@ properties:
     uid: 'excel!Excel.PivotLayout#showFieldHeaders:member'
     package: excel!
     fullName: showFieldHeaders
-    summary: >-
+    summary: |-
       Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'showFieldHeaders: boolean;'
@@ -485,10 +479,9 @@ methods:
       the value of `display` parameter.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'displayBlankLineAfterEachItem(display: boolean): void;'
@@ -825,14 +818,12 @@ methods:
     uid: 'excel!Excel.PivotLayout#repeatAllItemLabels:member(1)'
     package: excel!
     fullName: repeatAllItemLabels(repeatLabels)
-    summary: >-
+    summary: |-
       Sets the "repeat all item labels" setting across all fields in the PivotTable.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'repeatAllItemLabels(repeatLabels: boolean): void;'

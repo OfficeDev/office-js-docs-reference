@@ -3,7 +3,7 @@ name: Excel.KeyboardDirection
 uid: 'excel!Excel.KeyboardDirection:enum'
 package: excel!
 fullName: Excel.KeyboardDirection
-summary: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+summary: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

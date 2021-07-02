@@ -1,0 +1,43 @@
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: 'excel!Excel.PictureFormat:enum'
+package: excel!
+fullName: Excel.PictureFormat
+summary: |-
+  The format of the image.
+
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bmp
+    uid: 'excel!Excel.PictureFormat.bmp:member'
+    package: excel!
+    summary: Bitmap image.
+    value: '"BMP"'
+  - name: gif
+    uid: 'excel!Excel.PictureFormat.gif:member'
+    package: excel!
+    summary: Graphics Interchange Format.
+    value: '"GIF"'
+  - name: jpeg
+    uid: 'excel!Excel.PictureFormat.jpeg:member'
+    package: excel!
+    summary: Joint Photographic Experts Group.
+    value: '"JPEG"'
+  - name: png
+    uid: 'excel!Excel.PictureFormat.png:member'
+    package: excel!
+    summary: Portable Network Graphics.
+    value: '"PNG"'
+  - name: svg
+    uid: 'excel!Excel.PictureFormat.svg:member'
+    package: excel!
+    summary: Scalable Vector Graphic.
+    value: '"SVG"'
+  - name: unknown
+    uid: 'excel!Excel.PictureFormat.unknown:member'
+    package: excel!
+    summary: ''
+    value: '"UNKNOWN"'

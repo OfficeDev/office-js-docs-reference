@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.BorderWeight
+uid: 'excel!Excel.BorderWeight:enum'
+package: excel!
+fullName: Excel.BorderWeight
+summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: hairline
+    uid: 'excel!Excel.BorderWeight.hairline:member'
+    package: excel!
+    summary: ''
+    value: '"Hairline"'
+  - name: medium
+    uid: 'excel!Excel.BorderWeight.medium:member'
+    package: excel!
+    summary: ''
+    value: '"Medium"'
+  - name: thick
+    uid: 'excel!Excel.BorderWeight.thick:member'
+    package: excel!
+    summary: ''
+    value: '"Thick"'
+  - name: thin
+    uid: 'excel!Excel.BorderWeight.thin:member'
+    package: excel!
+    summary: ''
+    value: '"Thin"'

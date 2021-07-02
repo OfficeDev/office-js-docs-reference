@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: Excel.ShapeScaleFrom
+uid: 'excel!Excel.ShapeScaleFrom:enum'
+package: excel!
+fullName: Excel.ShapeScaleFrom
+summary: |-
+  Specifies which part of the shape retains its position when the shape is scaled.
+
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: scaleFromBottomRight
+    uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
+    package: excel!
+    summary: ''
+    value: '"ScaleFromBottomRight"'
+  - name: scaleFromMiddle
+    uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
+    package: excel!
+    summary: ''
+    value: '"ScaleFromMiddle"'
+  - name: scaleFromTopLeft
+    uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
+    package: excel!
+    summary: ''
+    value: '"ScaleFromTopLeft"'

@@ -105,6 +105,23 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
+  - name: refreshOnOpen
+    uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#refreshOnOpen:member'
+    package: excel!
+    fullName: refreshOnOpen
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the PivotTable refreshes when the workbook opens. Corresponds
+      to "Refresh on load" setting in the UI.
+
+
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refreshOnOpen?: boolean;'
+      return:
+        type: boolean
   - name: useCustomSortLists
     uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#useCustomSortLists:member'
     package: excel!

@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Excel.ProtectionSelectionMode
+uid: 'excel!Excel.ProtectionSelectionMode:enum'
+package: excel!
+fullName: Excel.ProtectionSelectionMode
+summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: none
+    uid: 'excel!Excel.ProtectionSelectionMode.none:member'
+    package: excel!
+    summary: Selection is not allowed for any cells.
+    value: '"None"'
+  - name: normal
+    uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
+    package: excel!
+    summary: Selection is allowed for all cells.
+    value: '"Normal"'
+  - name: unlocked
+    uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
+    package: excel!
+    summary: Selection is allowed only for cells that are not locked.
+    value: '"Unlocked"'
