@@ -719,7 +719,7 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/resize-table.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/resize-table.yaml
 
           await Excel.run(async (context) => {
             // Retrieve the worksheet and a table on that worksheet.
