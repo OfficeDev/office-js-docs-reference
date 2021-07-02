@@ -273,7 +273,7 @@ export declare namespace Excel {
     export interface BindingSelectionChangedEventArgs {
         /**
          *
-         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -316,7 +316,7 @@ export declare namespace Excel {
     export interface BindingDataChangedEventArgs {
         /**
          *
-         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -337,6 +337,9 @@ export declare namespace Excel {
          */
         workbook: Excel.Workbook;
     }
+    
+    
+    
     
     
     
@@ -560,6 +563,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -581,6 +585,7 @@ export declare namespace Excel {
             select?: string;
             expand?: string;
         }): Excel.Workbook;
+        
         
         /**
          *
@@ -778,6 +783,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
@@ -839,6 +845,7 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
+        
         
         
         
@@ -1006,6 +1013,7 @@ export declare namespace Excel {
         
     }
     
+    
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
@@ -1070,7 +1078,7 @@ export declare namespace Excel {
         readonly columnCount: number;
         /**
          *
-         * Represents if all columns of the current range are hidden.
+         * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1107,7 +1115,7 @@ export declare namespace Excel {
         
         /**
          *
-         * Represents if all cells of the current range are hidden.
+         * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1135,7 +1143,7 @@ export declare namespace Excel {
         readonly rowCount: number;
         /**
          *
-         * Represents if all rows of the current range are hidden.
+         * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1273,6 +1281,7 @@ export declare namespace Excel {
          * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
+        
         
         /**
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
@@ -5720,6 +5729,7 @@ export declare namespace Excel {
          */
         name: string;
         
+        
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -9892,6 +9902,7 @@ export declare namespace Excel {
         notImplemented = "NotImplemented",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
+        refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         unsupportedFeature = "UnsupportedFeature",
         unsupportedOperation = "UnsupportedOperation",
@@ -9986,7 +9997,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.RangeFormatUpdateData;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -10023,7 +10034,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -11206,9 +11217,15 @@ export declare namespace Excel {
              */
             name?: string;
             
+            
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
+            
+            
+            
+            
+            
             
             
             
@@ -11895,7 +11912,7 @@ export declare namespace Excel {
             columnCount?: number;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -11932,7 +11949,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Represents if all cells of the current range are hidden.
+             * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -11960,7 +11977,7 @@ export declare namespace Excel {
             rowCount?: number;
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -13460,9 +13477,15 @@ export declare namespace Excel {
              */
             name?: string;
             
+            
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
+            
+            
+            
+            
+            
             
             
             
@@ -14310,7 +14333,7 @@ export declare namespace Excel {
             columnCount?: boolean;
             /**
              *
-             * Represents if all columns of the current range are hidden.
+             * Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden and other columns in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -14347,7 +14370,7 @@ export declare namespace Excel {
             
             /**
              *
-             * Represents if all cells of the current range are hidden.
+             * Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and other cells in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -14375,7 +14398,7 @@ export declare namespace Excel {
             rowCount?: boolean;
             /**
              *
-             * Represents if all rows of the current range are hidden.
+             * Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other rows in the same range are not hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -16566,6 +16589,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             
+            
         }
         /**
          *
@@ -16597,6 +16621,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             name?: boolean;
+            
             
         }
         

@@ -2,8 +2,8 @@
 |:---|:---|:---|
 |[Binding](/javascript/api/excel/excel.binding)|[onDataChanged](/javascript/api/excel/excel.binding#ondatachanged)|Occurs when data or formatting within the binding is changed.|
 ||[onSelectionChanged](/javascript/api/excel/excel.binding#onselectionchanged)|Occurs when the selected content in the binding is changed.|
-|[BindingDataChangedEventArgs](/javascript/api/excel/excel.bindingdatachangedeventargs)|[binding](/javascript/api/excel/excel.bindingdatachangedeventargs#binding)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.|
-|[BindingSelectionChangedEventArgs](/javascript/api/excel/excel.bindingselectionchangedeventargs)|[binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#binding)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID with `BindingCollection.getItem(id)` to get the binding.|
+|[BindingDataChangedEventArgs](/javascript/api/excel/excel.bindingdatachangedeventargs)|[binding](/javascript/api/excel/excel.bindingdatachangedeventargs#binding)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event.|
+|[BindingSelectionChangedEventArgs](/javascript/api/excel/excel.bindingselectionchangedeventargs)|[binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#binding)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event.|
 ||[columnCount](/javascript/api/excel/excel.bindingselectionchangedeventargs#columncount)|Gets the number of columns selected.|
 ||[rowCount](/javascript/api/excel/excel.bindingselectionchangedeventargs#rowcount)|Gets the number of rows selected.|
 ||[startColumn](/javascript/api/excel/excel.bindingselectionchangedeventargs#startcolumn)|Gets the index of the first column of the selection (zero-based).|
@@ -469,7 +469,7 @@
 ||[threeTrafficLights1](/javascript/api/excel/excel.iconcollections#threetrafficlights1)||
 ||[threeTrafficLights2](/javascript/api/excel/excel.iconcollections#threetrafficlights2)||
 ||[threeTriangles](/javascript/api/excel/excel.iconcollections#threetriangles)||
-|[Range](/javascript/api/excel/excel.range)|[columnHidden](/javascript/api/excel/excel.range#columnhidden)|Represents if all columns of the current range are hidden.|
+|[Range](/javascript/api/excel/excel.range)|[columnHidden](/javascript/api/excel/excel.range#columnhidden)|Represents if all columns in the current range are hidden.|
 ||[formulasR1C1](/javascript/api/excel/excel.range#formulasr1c1)|Represents the formula in R1C1-style notation.|
 ||[getColumnsAfter(count?: number)](/javascript/api/excel/excel.range#getcolumnsafter-count-)|Gets a certain number of columns to the right of the current `Range` object.|
 ||[getColumnsBefore(count?: number)](/javascript/api/excel/excel.range#getcolumnsbefore-count-)|Gets a certain number of columns to the left of the current `Range` object.|
@@ -478,9 +478,9 @@
 ||[getRowsBelow(count?: number)](/javascript/api/excel/excel.range#getrowsbelow-count-)|Gets a certain number of rows below the current `Range` object.|
 ||[getUsedRange(valuesOnly?: boolean)](/javascript/api/excel/excel.range#getusedrange-valuesonly-)|Returns the used range of the given range object.|
 ||[merge(across?: boolean)](/javascript/api/excel/excel.range#merge-across-)|Merge the range cells into one region in the worksheet.|
-||[hidden](/javascript/api/excel/excel.range#hidden)|Represents if all cells of the current range are hidden.|
+||[hidden](/javascript/api/excel/excel.range#hidden)|Represents if all cells in the current range are hidden.|
 ||[sort](/javascript/api/excel/excel.range#sort)|Represents the range sort of the current range.|
-||[rowHidden](/javascript/api/excel/excel.range#rowhidden)|Represents if all rows of the current range are hidden.|
+||[rowHidden](/javascript/api/excel/excel.range#rowhidden)|Represents if all rows in the current range are hidden.|
 ||[unmerge()](/javascript/api/excel/excel.range#unmerge--)|Unmerge the range cells into separate cells.|
 |[RangeFormat](/javascript/api/excel/excel.rangeformat)|[autofitColumns()](/javascript/api/excel/excel.rangeformat#autofitcolumns--)|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 ||[autofitRows()](/javascript/api/excel/excel.rangeformat#autofitrows--)|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|

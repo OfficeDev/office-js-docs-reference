@@ -137,6 +137,9 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
     /**
      *
      * Represents the Excel application that manages the workbook.
@@ -318,6 +321,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -339,6 +343,7 @@ export declare namespace Excel {
             select?: string;
             expand?: string;
         }): Excel.Workbook;
+        
         
         
         /**
@@ -509,6 +514,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
@@ -582,12 +588,14 @@ export declare namespace Excel {
         
         
         
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
     }
+    
     
     
     
@@ -811,6 +819,7 @@ export declare namespace Excel {
          * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
+        
         
         
         
@@ -4795,6 +4804,7 @@ export declare namespace Excel {
         notImplemented = "NotImplemented",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
+        refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
         unsupportedFeature = "UnsupportedFeature",
         unsupportedOperation = "UnsupportedOperation",
@@ -5995,9 +6005,15 @@ export declare namespace Excel {
             
             
             
+            
         }
         /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
+            
+            
+            
+            
+            
             
             
             
@@ -8021,9 +8037,15 @@ export declare namespace Excel {
             
             
             
+            
         }
         /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
+            
+            
+            
+            
+            
             
             
             

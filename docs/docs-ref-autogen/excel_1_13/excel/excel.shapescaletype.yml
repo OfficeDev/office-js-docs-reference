@@ -1,0 +1,23 @@
+### YamlMime:TSEnum
+name: Excel.ShapeScaleType
+uid: 'excel!Excel.ShapeScaleType:enum'
+package: excel!
+fullName: Excel.ShapeScaleType
+summary: |-
+  Specifies whether the shape is scaled relative to its original or current size.
+
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: currentSize
+    uid: 'excel!Excel.ShapeScaleType.currentSize:member'
+    package: excel!
+    summary: ''
+    value: '"CurrentSize"'
+  - name: originalSize
+    uid: 'excel!Excel.ShapeScaleType.originalSize:member'
+    package: excel!
+    summary: ''
+    value: '"OriginalSize"'

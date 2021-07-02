@@ -80,7 +80,7 @@
 ||[getRangeAreasOrNullObjectBySheet(key: string)](/javascript/api/excel/excel.workbookrangeareas#getrangeareasornullobjectbysheet-key-)|Returns the `RangeAreas` object based on worksheet name or ID in the collection.|
 ||[addresses](/javascript/api/excel/excel.workbookrangeareas#addresses)|Returns an array of addresses in A1-style.|
 ||[areas](/javascript/api/excel/excel.workbookrangeareas#areas)|Returns the `RangeAreasCollection` object.|
-||[ranges](/javascript/api/excel/excel.workbookrangeareas#ranges)|Returns ranges that comprise this object in a `RangeCollection` object.|
+||[ranges](/javascript/api/excel/excel.workbookrangeareas#ranges)|Returns ranges that comprise this object in a `RangeCollection` object.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[customProperties](/javascript/api/excel/excel.worksheet#customproperties)|Gets a collection of worksheet-level custom properties.|
 |[WorksheetCustomProperty](/javascript/api/excel/excel.worksheetcustomproperty)|[delete()](/javascript/api/excel/excel.worksheetcustomproperty#delete--)|Deletes the custom property.|
 ||[key](/javascript/api/excel/excel.worksheetcustomproperty#key)|Gets the key of the custom property.|

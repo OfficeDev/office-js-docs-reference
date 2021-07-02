@@ -1,0 +1,23 @@
+### YamlMime:TSEnum
+name: Excel.CloseBehavior
+uid: 'excel!Excel.CloseBehavior:enum'
+package: excel!
+fullName: Excel.CloseBehavior
+summary: |-
+  Specifies the close behavior for `Workbook.close`<!-- -->.
+
+  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: save
+    uid: 'excel!Excel.CloseBehavior.save:member'
+    package: excel!
+    summary: Save the possible changes before closing the workbook.
+    value: '"Save"'
+  - name: skipSave
+    uid: 'excel!Excel.CloseBehavior.skipSave:member'
+    package: excel!
+    summary: Discard the possible changes when closing the workbook.
+    value: '"SkipSave"'

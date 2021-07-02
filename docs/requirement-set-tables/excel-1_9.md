@@ -278,7 +278,7 @@
 ||[getItemAt(index: number)](/javascript/api/excel/excel.rangecollection#getitemat-index-)|Returns the range object based on its position in the `RangeCollection`.|
 ||[items](/javascript/api/excel/excel.rangecollection#items)|Gets the loaded child items in this collection.|
 |[RangeFill](/javascript/api/excel/excel.rangefill)|[pattern](/javascript/api/excel/excel.rangefill#pattern)|The pattern of a range.|
-||[patternColor](/javascript/api/excel/excel.rangefill#patterncolor)|The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").|
+||[patternColor](/javascript/api/excel/excel.rangefill#patterncolor)|The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").|
 ||[patternTintAndShade](/javascript/api/excel/excel.rangefill#patterntintandshade)|Specifies a double that lightens or darkens a pattern color for the range fill.|
 ||[tintAndShade](/javascript/api/excel/excel.rangefill#tintandshade)|Specifies a double that lightens or darkens a color for the range fill.|
 |[RangeFont](/javascript/api/excel/excel.rangefont)|[strikethrough](/javascript/api/excel/excel.rangefont#strikethrough)|Specifies the strikethrough status of font.|

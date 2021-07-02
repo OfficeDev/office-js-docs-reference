@@ -501,6 +501,9 @@ Excel.ChangedEventDetail,valueAfter,Good,false
 Excel.ChangedEventDetail,valueBefore,Good,false
 Excel.ChangedEventDetail,valueTypeAfter,Fine,false
 Excel.ChangedEventDetail,valueTypeBefore,Fine,false
+Excel.ChangeDirectionState,<class description>,Fine,false
+Excel.ChangeDirectionState,deleteShiftDirection,Good,false
+Excel.ChangeDirectionState,insertShiftDirection,Good,false
 Excel.Chart,<class description>,Good,false
 Excel.Chart,axes,Fine,false
 Excel.Chart,categoryLabelLevel,Fine,false
@@ -2341,6 +2344,7 @@ Excel.ErrorCodes,nonBlankCellOffSheet,Missing,false
 Excel.ErrorCodes,notImplemented,Missing,false
 Excel.ErrorCodes,pivotTableRangeConflict,Missing,false
 Excel.ErrorCodes,rangeExceedsLimit,Missing,false
+Excel.ErrorCodes,refreshWorkbookLinksBlocked,Missing,false
 Excel.ErrorCodes,requestAborted,Missing,false
 Excel.ErrorCodes,unsupportedFeature,Missing,false
 Excel.ErrorCodes,unsupportedOperation,Missing,false
@@ -3386,6 +3390,27 @@ Excel.LinkedDataTypeState,disambiguationNeeded,Missing,false
 Excel.LinkedDataTypeState,fetchingData,Missing,false
 Excel.LinkedDataTypeState,none,Missing,false
 Excel.LinkedDataTypeState,validLinkedData,Missing,false
+Excel.LinkedWorkbook,<class description>,Good,false
+Excel.LinkedWorkbook,context,Good,false
+Excel.LinkedWorkbook,id,Good,false
+Excel.LinkedWorkbook,breakLinks(),Good,false
+Excel.LinkedWorkbook,load(options),Good,false
+Excel.LinkedWorkbook,load(propertyNames),Good,false
+Excel.LinkedWorkbook,load(propertyNamesAndPaths),Good,false
+Excel.LinkedWorkbook,refresh(),Fine,false
+Excel.LinkedWorkbook,toJSON(),Good,false
+Excel.LinkedWorkbookCollection,<class description>,Fine,false
+Excel.LinkedWorkbookCollection,context,Good,false
+Excel.LinkedWorkbookCollection,items,Fine,false
+Excel.LinkedWorkbookCollection,workbookLinksRefreshMode,Good,false
+Excel.LinkedWorkbookCollection,breakAllLinks(),Good,false
+Excel.LinkedWorkbookCollection,getItem(key),Fine,false
+Excel.LinkedWorkbookCollection,getItemOrNullObject(key),Good,false
+Excel.LinkedWorkbookCollection,load(options),Good,false
+Excel.LinkedWorkbookCollection,load(propertyNames),Good,false
+Excel.LinkedWorkbookCollection,load(propertyNamesAndPaths),Good,false
+Excel.LinkedWorkbookCollection,refreshAll(),Fine,false
+Excel.LinkedWorkbookCollection,toJSON(),Good,false
 Excel.ListDataValidation,<class description>,Fine,false
 Excel.ListDataValidation,inCellDropDown,Good,false
 Excel.ListDataValidation,source,Fine,false
@@ -5133,6 +5158,7 @@ Excel.Workbook,dataConnections,Fine,false
 Excel.Workbook,functions,Fine,false
 Excel.Workbook,isDirty,Good,false
 Excel.Workbook,linkedDataTypes,Fine,false
+Excel.Workbook,linkedWorkbooks,Good,false
 Excel.Workbook,name,Fine,false
 Excel.Workbook,names,Fine,false
 Excel.Workbook,pivotTables,Fine,true
@@ -5181,6 +5207,9 @@ Excel.WorkbookCreated,context,Good,false
 Excel.WorkbookCreated,load(propertyNames),Good,false
 Excel.WorkbookCreated,load(propertyNamesAndPaths),Good,false
 Excel.WorkbookCreated,toJSON(),Good,false
+Excel.WorkbookLinksRefreshMode,<class description>,Fine,false
+Excel.WorkbookLinksRefreshMode,automatic,Fine,false
+Excel.WorkbookLinksRefreshMode,manual,Fine,false
 Excel.WorkbookProtection,<class description>,Fine,false
 Excel.WorkbookProtection,context,Good,false
 Excel.WorkbookProtection,protected,Fine,false
@@ -5270,6 +5299,7 @@ Excel.WorksheetCalculatedEventArgs,type,Good,false
 Excel.WorksheetCalculatedEventArgs,worksheetId,Fine,false
 Excel.WorksheetChangedEventArgs,<class description>,Fine,false
 Excel.WorksheetChangedEventArgs,address,Fine,false
+Excel.WorksheetChangedEventArgs,changeDirectionState,Good,false
 Excel.WorksheetChangedEventArgs,changeType,Good,false
 Excel.WorksheetChangedEventArgs,details,Good,true
 Excel.WorksheetChangedEventArgs,source,Good,false

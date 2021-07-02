@@ -54,6 +54,23 @@ properties:
       content: 'name?: string;'
       return:
         type: string
+  - name: refreshOnOpen
+    uid: 'excel!Excel.Interfaces.PivotTableUpdateData#refreshOnOpen:member'
+    package: excel!
+    fullName: refreshOnOpen
+    summary: >-
+      Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in
+      the UI.
+
+
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refreshOnOpen?: boolean;'
+      return:
+        type: boolean
   - name: useCustomSortLists
     uid: 'excel!Excel.Interfaces.PivotTableUpdateData#useCustomSortLists:member'
     package: excel!
