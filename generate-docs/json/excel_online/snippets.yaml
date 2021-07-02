@@ -3510,7 +3510,7 @@
 'Excel.PivotLayout#altTextDescription:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Set the alt text for the displayed PivotTable.
@@ -3526,7 +3526,7 @@
 'Excel.PivotLayout#displayBlankLineAfterEachItem:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Add a blank row after each PivotItem in the row hierarchy.
@@ -3541,7 +3541,7 @@
 'Excel.PivotLayout#emptyCellText:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Set a default value for an empty cell in the PivotTable. This doesn't include cells left blank by the layout.
@@ -3557,7 +3557,7 @@
 'Excel.PivotLayout#fillEmptyCells:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Toggle whether empty cells are filled with a default value.
@@ -3617,7 +3617,7 @@
 'Excel.PivotLayout#layoutType:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Change the PivotLayout.type to a new type.
@@ -3640,7 +3640,7 @@
 'Excel.PivotLayout#preserveFormatting:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Set whether the PivotTable keeps the established format after it is refreshed and recalculated.
@@ -3659,7 +3659,7 @@
 'Excel.PivotLayout#repeatAllItemLabels:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Repeat the PivotItem labels for each row used by another level of the row hierarchy.
@@ -3674,7 +3674,7 @@
 'Excel.PivotLayout#showColumnGrandTotals:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Turn the grand totals on and off for the rows and columns.
@@ -3697,7 +3697,7 @@
 'Excel.PivotLayout#showFieldHeaders:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Turn the field headers on and off for the row and column hierarchies.
@@ -3714,7 +3714,7 @@
 'Excel.PivotLayout#showRowGrandTotals:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
     await Excel.run(async (context) => {
       // Turn the grand totals on and off for the rows and columns.
@@ -4047,7 +4047,7 @@
 'Excel.Range#getDirectDependents:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-direct-dependents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-direct-dependents.yaml
 
     await Excel.run(async (context) => {
       // Direct dependents are cells that contain formulas that refer to other cells.
@@ -4132,7 +4132,7 @@
 'Excel.Range#getExtendedRange:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-get-range-edge.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
 
     await Excel.run(async (context) => {
       // Get the selected range.
@@ -4281,7 +4281,7 @@
 'Excel.Range#getMergedAreasOrNullObject:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-merged-ranges.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
 
     await Excel.run(async (context) => {
       // Retrieve the worksheet and the table in that worksheet.
@@ -4351,7 +4351,7 @@
 'Excel.Range#getRangeEdge:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-get-range-edge.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
 
     await Excel.run(async (context) => {
       // Get the selected range.
@@ -4619,7 +4619,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-merged-ranges.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
 
     await Excel.run(async (context) => {
       // Retrieve the worksheet and the table in that worksheet.
@@ -6079,7 +6079,7 @@
 'Excel.Table#resize:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/resize-table.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/resize-table.yaml
 
     await Excel.run(async (context) => {
       // Retrieve the worksheet and a table on that worksheet.
@@ -6628,7 +6628,7 @@
 'Excel.Workbook#insertWorksheetsFromBase64:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/workbook-insert-external-worksheets.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
 
     // Retrieve the file and set up an HTML FileReader element. 
 
@@ -6650,7 +6650,7 @@
     reader.readAsDataURL(myFile.files[0]);
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/workbook-insert-external-worksheets.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
 
     await Excel.run(async (context) => {
         // Retrieve the source workbook.
@@ -6670,7 +6670,7 @@
 'Excel.Workbook#onActivated:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-workbook-activated.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
 
     async function workbookActivated(event: Excel.WorkbookActivatedEventArgs) {
       await Excel.run(async (context) => {
@@ -6680,7 +6680,7 @@
     }
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-workbook-activated.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
 
     await Excel.run(async (context) => {
       const workbook = context.workbook;
@@ -7166,7 +7166,7 @@
 'Excel.Worksheet#onFormulaChanged:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
 
     await Excel.run(async (context) => {
       // Retrieve the worksheet named "Sample".
@@ -7180,7 +7180,7 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
 
     async function formulaChangeHandler(event:
     Excel.WorksheetFormulaChangedEventArgs) {

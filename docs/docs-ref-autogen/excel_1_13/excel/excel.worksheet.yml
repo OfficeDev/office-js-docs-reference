@@ -1732,7 +1732,7 @@ events:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
 
           await Excel.run(async (context) => {
             // Retrieve the worksheet named "Sample".
@@ -1750,7 +1750,7 @@ events:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/events-formula-changed.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
 
           async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
             await Excel.run(async (context) => {

@@ -52,7 +52,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
           await Excel.run(async (context) => {
             // Change the PivotLayout.type to a new type.
@@ -98,7 +98,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
           await Excel.run(async (context) => {
             // Turn the grand totals on and off for the rows and columns.
@@ -144,7 +144,7 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-pivotlayout.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotlayout.yaml
 
           await Excel.run(async (context) => {
             // Turn the grand totals on and off for the rows and columns.
