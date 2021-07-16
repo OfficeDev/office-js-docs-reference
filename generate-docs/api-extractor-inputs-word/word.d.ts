@@ -1257,12 +1257,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1279,12 +1283,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1307,12 +1315,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1330,12 +1342,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1353,12 +1369,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1384,12 +1404,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
@@ -1407,12 +1431,16 @@ export declare namespace Word {
          * If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI),
          * an alias for that attribute value must prefix the element name in the xpath parameter. For example, suppose
          * the tree is the following:
+         *
+         * ```xml
          * <Day>
-         * <Month xmlns="http:\/\/calendartypes.org\/xsds\/GregorianCalendar">
-         * <Week>something</Week>
-         * </Month>
+         *   <Month xmlns="http://calendartypes.org/xsds/GregorianCalendar">
+         *     <Week>something</Week>
+         *   </Month>
          * </Day>
-         * The xpath to <Week> must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
+         * ```
+         *
+         * The xpath to `<Week>` must be \/Day\/greg:Month\/Week, where greg is an alias that is mapped to
          * "http:\/\/calendartypes.org\/xsds\/GregorianCalendar" in the namespaceMappings parameter.
          * @beta
          *
