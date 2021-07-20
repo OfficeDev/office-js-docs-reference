@@ -28,6 +28,7 @@ interfaces:
   - 'office!Office.CustomXmlParts:interface'
   - 'office!Office.CustomXmlPrefixMappings:interface'
   - 'office!Office.Dialog:interface'
+  - 'office!Office.DialogMessageOptions:interface'
   - 'office!Office.DialogOptions:interface'
   - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
   - 'office!Office.Document:interface'

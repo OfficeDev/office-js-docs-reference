@@ -26,12 +26,27 @@ properties:
       content: 'message: string;'
       return:
         type: string
+  - name: origin
+    uid: 'office!Office.DialogParentMessageReceivedEventArgs#origin:member'
+    package: office!
+    fullName: origin
+    summary: Gets the domain of the parent page that called `Dialog.messageChild`<!-- -->.
+    remarks: >-
+      **Requirement set**: [DialogOrigin
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets)<!--
+      -->. The property is `undefined` on clients that do not support this requirement set.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'origin: string | undefined;'
+      return:
+        type: string | undefined
   - name: type
     uid: 'office!Office.DialogParentMessageReceivedEventArgs#type:member'
     package: office!
     fullName: type
     summary: >-
-      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
       that was raised.
     remarks: ''
     isPreview: false

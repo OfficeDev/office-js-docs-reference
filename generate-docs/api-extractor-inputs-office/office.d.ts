@@ -1175,15 +1175,20 @@ export declare namespace Office {
         */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
-         * Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same domain as the parent.
-         *
+         * Delivers a message from the dialog box to its parent/opener page. 
+         * 
          * @remarks
-         *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-         *
-         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can be cast to a string or serialized to a string including JSON and XML can be sent.
+         * 
+         * **Requirement sets**: 
+         * 
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+         * 
+         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+         * 
+         * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
+         * @param messageOptions - Optional. Provides options for how to send the message. 
          */
-        messageParent(message: string): void;
+         messageParent(message: string, messageOptions?: DialogMessageOptions): void;
         /**
          * Closes the UI container where the JavaScript is executing.
          *
@@ -1191,11 +1196,11 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
          *
-        * **Requirement sets**: 
-        * 
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
-        * 
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.5}
+         * **Requirement sets**: 
+         * 
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+         * 
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.5}
          *
          * The behavior of this method is specified by the following:
          *
@@ -1792,7 +1797,7 @@ export declare namespace Office {
      *
      * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
      */
-    export interface Dialog {
+     export interface Dialog {
         /**
          * Called from a parent page to close the corresponding dialog box. 
          * 
@@ -1807,9 +1812,9 @@ export declare namespace Office {
          * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
          * 
          * @param eventType - Must be either DialogMessageReceived or DialogEventReceived.
-         * @param handler - A function which accepts either an object with a `message` property, if eventType is DialogMessageReceived, or an object with an `error` property, if eventType is DialogEventReceived.
+         * @param handler - A function which accepts either an object with a `message` and `origin` property, if `eventType` is `DialogMessageReceived`, or an object with an `error` property, if `eventType` is `DialogEventReceived`. Note that the `origin` property is `undefined` on clients that don’t support {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}. 
          */
-        addEventHandler(eventType: Office.EventType, handler: (args: {message: string | boolean} | {error: number}) => void): void;
+        addEventHandler(eventType: Office.EventType, handler: (args: {message: string, origin: string | undefined} | {error: number}) => void): void;
         /**
          * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.
          *
@@ -1817,15 +1822,18 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
          *
-         * **Requirement sets**: 
+         * **Requirement sets**:
          *
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
          *
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.9}
          *
+         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+         *
          * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
+         * @param messageOptions - Optional. Provides options for how to send the message. 
          */
-        messageChild(message: string): void;
+         messageChild(message: string, messageOptions?: DialogMessageOptions): void;
         /**
          * FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
          */
@@ -5262,19 +5270,41 @@ export declare namespace Office {
         type: EventType;
     }
     /**
+     * Provides options for how to send messages, in either direction, between a dialog and its parent.
+     * 
+     * @remarks
+     * 
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}
+     */
+     export interface DialogMessageOptions {
+        /**
+         * Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent. For example, https://target.domain.com.
+         */
+        targetOrigin: string;
+    }
+    /**
      * Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.
      *
      * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
      * {@link Office.UI} object.
      *
      */
-    export interface DialogParentMessageReceivedEventArgs {
+     export interface DialogParentMessageReceivedEventArgs {
         /**
          * Gets the content of the message sent from the parent page, which can be any string or stringified data.
          */
         message: string;
         /**
-         * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
+        * Gets the domain of the parent page that called `Dialog.messageChild`. 
+        * 
+        * @remarks
+        * 
+        * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}.
+        * The property is `undefined` on clients that do not support this requirement set.
+        */
+        origin: string | undefined;
+        /**
+         * Gets an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
          */
         type: EventType;
     }
