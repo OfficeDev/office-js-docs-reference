@@ -956,6 +956,8 @@ items:
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
               - name: Dialog
                 uid: 'office!Office.Dialog:interface'
+              - name: DialogMessageOptions
+                uid: 'office!Office.DialogMessageOptions:interface'
               - name: DialogOptions
                 uid: 'office!Office.DialogOptions:interface'
               - name: DialogParentMessageReceivedEventArgs
