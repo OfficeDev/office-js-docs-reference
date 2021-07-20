@@ -318,26 +318,35 @@ methods:
       return:
         type: void
         description: ''
-  - name: messageParent(message)
+  - name: 'messageParent(message, messageOptions)'
     uid: 'office!Office.UI#messageParent:member(1)'
     package: office!
-    fullName: messageParent(message)
-    summary: >-
-      Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
-      domain as the parent.
+    fullName: 'messageParent(message, messageOptions)'
+    summary: Delivers a message from the dialog box to its parent/opener page.
     remarks: >-
-      **Requirement set**:
+      **Requirement sets**:
+
+
+      -
       [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+
+
+      - If the `messageOptions` parameter is used, [DialogOrigin
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets) is
+      also required.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'messageParent(message: string): void;'
+      content: 'messageParent(message: string, messageOptions?: DialogMessageOptions): void;'
       parameters:
         - id: message
           description: >-
-            Accepts a message from the dialog to deliver to the add-in. Anything that can be cast to a string or
-            serialized to a string including JSON and XML can be sent.
+            Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string
+            including JSON and XML can be sent.
           type: string
+        - id: messageOptions
+          description: Optional. Provides options for how to send the message.
+          type: '<xref uid="office!Office.DialogMessageOptions:interface" />'
       return:
         type: void
         description: ''
