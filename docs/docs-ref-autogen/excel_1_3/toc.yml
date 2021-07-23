@@ -198,12 +198,16 @@ items:
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:class'
-          - name: Range
+          - name: Range (Class)
             uid: 'excel!Excel.Range:class'
+          - name: Range (Interface)
+            uid: 'excel!Excel.Range:interface'
           - name: RangeBorder
             uid: 'excel!Excel.RangeBorder:class'
           - name: RangeBorderCollection
             uid: 'excel!Excel.RangeBorderCollection:class'
+          - name: RangeCustom
+            uid: 'excel!Excel.RangeCustom:class'
           - name: RangeFill
             uid: 'excel!Excel.RangeFill:class'
           - name: RangeFont

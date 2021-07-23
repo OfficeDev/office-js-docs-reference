@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Excel.RangeCustom
+uid: 'excel!Excel.RangeCustom:class'
+package: excel!
+fullName: Excel.RangeCustom
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class

@@ -5602,8 +5602,10 @@ Office.CustomXmlPrefixMappings,getPrefixAsync(ns,Good,false
 Office.Dialog,<class description>,Good,false
 Office.Dialog,addEventHandler(eventType,Good,false
 Office.Dialog,close(),Good,false
-Office.Dialog,messageChild(message),Good,false
+Office.Dialog,messageChild(message,Good,false
 Office.Dialog,sendMessage(name),Good,false
+Office.DialogMessageOptions,<class description>,Good,false
+Office.DialogMessageOptions,targetOrigin,Good,false
 Office.DialogOptions,<class description>,Fine,false
 Office.DialogOptions,asyncContext,Fine,false
 Office.DialogOptions,displayInIframe,Good,false
@@ -5612,6 +5614,7 @@ Office.DialogOptions,promptBeforeOpen,Good,false
 Office.DialogOptions,width,Good,false
 Office.DialogParentMessageReceivedEventArgs,<class description>,Fine,false
 Office.DialogParentMessageReceivedEventArgs,message,Fine,false
+Office.DialogParentMessageReceivedEventArgs,origin,Good,false
 Office.DialogParentMessageReceivedEventArgs,type,Fine,false
 Office.Document,<class description>,Good,false
 Office.Document,bindings,Good,false
@@ -6378,7 +6381,7 @@ Office.UI,<class description>,Fine,false
 Office.UI,addHandlerAsync(eventType,Good,false
 Office.UI,closeContainer(),Good,false
 Office.UI,displayDialogAsync(startAddress,Good,false
-Office.UI,messageParent(message),Good,false
+Office.UI,messageParent(message,Good,false
 Office.UI,openBrowserWindow(url),Good,false
 Office.ValueFormat,<class description>,Good,false
 Office.ValueFormat,Formatted,Poor,false

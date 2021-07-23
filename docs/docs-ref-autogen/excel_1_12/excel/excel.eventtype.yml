@@ -64,6 +64,11 @@ fields:
       `CommentDeleted` represents the type of event that is registered on a comment collection and occurs when comments
       are deleted.
     value: '"CommentDeleted"'
+  - name: lineageActivityUpdateAvailable
+    uid: 'excel!Excel.EventType.lineageActivityUpdateAvailable:member'
+    package: excel!
+    summary: LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
+    value: '"LineageActivityUpdateAvailable"'
   - name: linkedDataTypeLinkedDataTypeAdded
     uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
     package: excel!
