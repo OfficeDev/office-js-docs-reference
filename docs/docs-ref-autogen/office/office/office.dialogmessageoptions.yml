@@ -17,7 +17,7 @@ properties:
     fullName: targetOrigin
     summary: >-
       Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent.
-      For example, https://target.domain.com.
+      For example, `https://resources.contoso.com`<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false

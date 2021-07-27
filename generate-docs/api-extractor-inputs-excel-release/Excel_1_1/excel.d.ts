@@ -947,10 +947,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeData;
     }
-    export class RangeCustom {
-    }
-    export interface Range extends OfficeExtension.ClientObject, RangeCustom {
-    }
     
     
     

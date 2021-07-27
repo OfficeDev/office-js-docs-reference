@@ -38615,48 +38615,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "excel!Excel.Range:interface",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface Range extends "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "RangeCustom",
-                  "canonicalReference": "excel!Excel.RangeCustom:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": " "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "Range",
-              "members": [],
-              "extendsTokenRanges": [
-                {
-                  "startIndex": 1,
-                  "endIndex": 2
-                },
-                {
-                  "startIndex": 3,
-                  "endIndex": 5
-                }
-              ]
-            },
-            {
               "kind": "Class",
               "canonicalReference": "excel!Excel.RangeBorder:class",
               "docComment": "/**\n * Represents the border of an object.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
@@ -39545,21 +39503,6 @@
                 "startIndex": 1,
                 "endIndex": 3
               },
-              "implementsTokenRanges": []
-            },
-            {
-              "kind": "Class",
-              "canonicalReference": "excel!Excel.RangeCustom:class",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export class RangeCustom "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "RangeCustom",
-              "members": [],
               "implementsTokenRanges": []
             },
             {

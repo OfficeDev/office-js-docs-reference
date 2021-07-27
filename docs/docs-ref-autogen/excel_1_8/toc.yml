@@ -442,16 +442,12 @@ items:
             uid: 'excel!Excel.PivotTableCollection:class'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-          - name: Range (Class)
+          - name: Range
             uid: 'excel!Excel.Range:class'
-          - name: Range (Interface)
-            uid: 'excel!Excel.Range:interface'
           - name: RangeBorder
             uid: 'excel!Excel.RangeBorder:class'
           - name: RangeBorderCollection
             uid: 'excel!Excel.RangeBorderCollection:class'
-          - name: RangeCustom
-            uid: 'excel!Excel.RangeCustom:class'
           - name: RangeFill
             uid: 'excel!Excel.RangeFill:class'
           - name: RangeFont

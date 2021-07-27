@@ -7833,7 +7833,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.DialogMessageOptions#targetOrigin:member",
-                  "docComment": "/**\n * Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent. For example, https://target.domain.com.\n */\n",
+                  "docComment": "/**\n * Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent. For example, `https://resources.contoso.com`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

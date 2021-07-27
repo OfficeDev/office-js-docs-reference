@@ -37,7 +37,6 @@ classes:
   - 'excel!Excel.Range:class'
   - 'excel!Excel.RangeBorder:class'
   - 'excel!Excel.RangeBorderCollection:class'
-  - 'excel!Excel.RangeCustom:class'
   - 'excel!Excel.RangeFill:class'
   - 'excel!Excel.RangeFont:class'
   - 'excel!Excel.RangeFormat:class'
@@ -432,7 +431,6 @@ interfaces:
   - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
   - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
   - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-  - 'excel!Excel.Range:interface'
   - 'excel!Excel.RunOptions:interface'
   - 'excel!Excel.Session:interface'
 functions:

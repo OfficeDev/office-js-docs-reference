@@ -2382,10 +2382,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeData;
     }
-    export class RangeCustom {
-    }
-    export interface Range extends OfficeExtension.ClientObject, RangeCustom {
-    }
     /**
      * Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.
      *
