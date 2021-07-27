@@ -532,6 +532,8 @@ Excel.Chart,width,Fine,false
 Excel.Chart,worksheet,Fine,false
 Excel.Chart,activate(),Fine,false
 Excel.Chart,delete(),Fine,true
+Excel.Chart,getDataTable(),Good,false
+Excel.Chart,getDataTableOrNullObject(),Good,false
 Excel.Chart,getImage(width,Good,false
 Excel.Chart,load(options),Good,false
 Excel.Chart,load(propertyNames),Good,true
@@ -863,6 +865,31 @@ Excel.ChartDataLabels,load(propertyNamesAndPaths),Good,false
 Excel.ChartDataLabels,set(properties,Good,false
 Excel.ChartDataLabels,set(properties),Fine,false
 Excel.ChartDataLabels,toJSON(),Good,false
+Excel.ChartDataTable,<class description>,Fine,false
+Excel.ChartDataTable,context,Good,false
+Excel.ChartDataTable,format,Fine,false
+Excel.ChartDataTable,showHorizontalBorder,Fine,false
+Excel.ChartDataTable,showLegendKey,Fine,false
+Excel.ChartDataTable,showOutlineBorder,Fine,false
+Excel.ChartDataTable,showVerticalBorder,Fine,false
+Excel.ChartDataTable,visible,Fine,false
+Excel.ChartDataTable,load(options),Good,false
+Excel.ChartDataTable,load(propertyNames),Good,false
+Excel.ChartDataTable,load(propertyNamesAndPaths),Good,false
+Excel.ChartDataTable,set(properties,Good,false
+Excel.ChartDataTable,set(properties),Fine,false
+Excel.ChartDataTable,toJSON(),Good,false
+Excel.ChartDataTableFormat,<class description>,Fine,false
+Excel.ChartDataTableFormat,border,Fine,false
+Excel.ChartDataTableFormat,context,Good,false
+Excel.ChartDataTableFormat,fill,Fine,false
+Excel.ChartDataTableFormat,font,Fine,false
+Excel.ChartDataTableFormat,load(options),Good,false
+Excel.ChartDataTableFormat,load(propertyNames),Good,false
+Excel.ChartDataTableFormat,load(propertyNamesAndPaths),Good,false
+Excel.ChartDataTableFormat,set(properties,Good,false
+Excel.ChartDataTableFormat,set(properties),Fine,false
+Excel.ChartDataTableFormat,toJSON(),Good,false
 Excel.ChartDeactivatedEventArgs,<class description>,Fine,false
 Excel.ChartDeactivatedEventArgs,chartId,Fine,false
 Excel.ChartDeactivatedEventArgs,type,Good,false
@@ -2364,6 +2391,7 @@ Excel.EventType,chartDeleted,Fine,false
 Excel.EventType,commentAdded,Fine,false
 Excel.EventType,commentChanged,Fine,false
 Excel.EventType,commentDeleted,Fine,false
+Excel.EventType,lineageActivityUpdateAvailable,Fine,false
 Excel.EventType,linkedDataTypeLinkedDataTypeAdded,Fine,false
 Excel.EventType,linkedDataTypeRefreshModeChanged,Fine,false
 Excel.EventType,linkedDataTypeRefreshRequestCompleted,Fine,false
@@ -3414,6 +3442,11 @@ Excel.LinkedWorkbookCollection,toJSON(),Good,false
 Excel.ListDataValidation,<class description>,Fine,false
 Excel.ListDataValidation,inCellDropDown,Good,false
 Excel.ListDataValidation,source,Fine,false
+Excel.LoadToType,<class description>,Fine,false
+Excel.LoadToType,connectionOnly,Poor,false
+Excel.LoadToType,pivotChart,Poor,false
+Excel.LoadToType,pivotTable,Poor,false
+Excel.LoadToType,table,Poor,false
 Excel.NamedItem,<class description>,Good,false
 Excel.NamedItem,arrayValues,Fine,false
 Excel.NamedItem,comment,Fine,false
@@ -3914,6 +3947,34 @@ Excel.ProtectionSelectionMode,<class description>,Fine,false
 Excel.ProtectionSelectionMode,none,Fine,false
 Excel.ProtectionSelectionMode,normal,Fine,false
 Excel.ProtectionSelectionMode,unlocked,Fine,false
+Excel.Query,<class description>,Fine,false
+Excel.Query,context,Good,false
+Excel.Query,error,Fine,false
+Excel.Query,loadedTo,Fine,false
+Excel.Query,loadedToDataModel,Fine,false
+Excel.Query,name,Good,false
+Excel.Query,refreshDate,Fine,false
+Excel.Query,rowsLoadedCount,Good,false
+Excel.Query,load(options),Good,false
+Excel.Query,load(propertyNames),Good,false
+Excel.Query,load(propertyNamesAndPaths),Good,false
+Excel.Query,toJSON(),Good,false
+Excel.QueryCollection,<class description>,Fine,false
+Excel.QueryCollection,context,Good,false
+Excel.QueryCollection,items,Fine,false
+Excel.QueryCollection,getCount(),Fine,false
+Excel.QueryCollection,getItem(key),Fine,false
+Excel.QueryCollection,load(options),Good,false
+Excel.QueryCollection,load(propertyNames),Good,false
+Excel.QueryCollection,load(propertyNamesAndPaths),Good,false
+Excel.QueryCollection,toJSON(),Good,false
+Excel.QueryError,<class description>,Fine,false
+Excel.QueryError,failedDownload,Poor,false
+Excel.QueryError,failedLoadToDataModel,Fine,false
+Excel.QueryError,failedLoadToWorksheet,Poor,false
+Excel.QueryError,failedToCompleteDownload,Poor,false
+Excel.QueryError,none,Poor,false
+Excel.QueryError,unknown,Poor,false
 Excel.Range,<class description>,Good,false
 Excel.Range,address,Good,false
 Excel.Range,addressLocal,Fine,false
@@ -4383,6 +4444,7 @@ Excel.Shape,altTextDescription,Fine,false
 Excel.Shape,altTextTitle,Fine,false
 Excel.Shape,connectionSiteCount,Fine,false
 Excel.Shape,context,Good,false
+Excel.Shape,displayName,Good,false
 Excel.Shape,fill,Fine,true
 Excel.Shape,geometricShape,Good,false
 Excel.Shape,geometricShapeType,Good,false
@@ -4947,6 +5009,8 @@ Excel.TableRowCollection,context,Good,false
 Excel.TableRowCollection,count,Fine,false
 Excel.TableRowCollection,items,Fine,false
 Excel.TableRowCollection,add(index,Good,true
+Excel.TableRowCollection,deleteRows(rows),Good,false
+Excel.TableRowCollection,deleteRowsAt(index,Good,false
 Excel.TableRowCollection,getCount(),Fine,false
 Excel.TableRowCollection,getItemAt(index),Good,true
 Excel.TableRowCollection,load(options),Good,false
@@ -5166,6 +5230,7 @@ Excel.Workbook,pivotTableStyles,Fine,false
 Excel.Workbook,previouslySaved,Fine,false
 Excel.Workbook,properties,Fine,true
 Excel.Workbook,protection,Fine,false
+Excel.Workbook,queries,Fine,false
 Excel.Workbook,readOnly,Fine,false
 Excel.Workbook,settings,Fine,false
 Excel.Workbook,showPivotFieldList,Fine,false
@@ -5602,8 +5667,10 @@ Office.CustomXmlPrefixMappings,getPrefixAsync(ns,Good,false
 Office.Dialog,<class description>,Good,false
 Office.Dialog,addEventHandler(eventType,Good,false
 Office.Dialog,close(),Good,false
-Office.Dialog,messageChild(message),Good,false
+Office.Dialog,messageChild(message,Good,false
 Office.Dialog,sendMessage(name),Good,false
+Office.DialogMessageOptions,<class description>,Good,false
+Office.DialogMessageOptions,targetOrigin,Good,false
 Office.DialogOptions,<class description>,Fine,false
 Office.DialogOptions,asyncContext,Fine,false
 Office.DialogOptions,displayInIframe,Good,false
@@ -5612,6 +5679,7 @@ Office.DialogOptions,promptBeforeOpen,Good,false
 Office.DialogOptions,width,Good,false
 Office.DialogParentMessageReceivedEventArgs,<class description>,Fine,false
 Office.DialogParentMessageReceivedEventArgs,message,Fine,false
+Office.DialogParentMessageReceivedEventArgs,origin,Good,false
 Office.DialogParentMessageReceivedEventArgs,type,Fine,false
 Office.Document,<class description>,Good,false
 Office.Document,bindings,Good,false
@@ -6378,7 +6446,7 @@ Office.UI,<class description>,Fine,false
 Office.UI,addHandlerAsync(eventType,Good,false
 Office.UI,closeContainer(),Good,false
 Office.UI,displayDialogAsync(startAddress,Good,false
-Office.UI,messageParent(message),Good,false
+Office.UI,messageParent(message,Good,false
 Office.UI,openBrowserWindow(url),Good,false
 Office.ValueFormat,<class description>,Good,false
 Office.ValueFormat,Formatted,Poor,false

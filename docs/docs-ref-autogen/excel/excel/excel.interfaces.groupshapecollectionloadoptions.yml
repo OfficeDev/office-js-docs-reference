@@ -71,6 +71,25 @@ properties:
       content: 'connectionSiteCount?: boolean;'
       return:
         type: boolean
+  - name: displayName
+    uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#displayName:member'
+    package: excel!
+    fullName: displayName
+    summary: >-
+      For EACH ITEM in the collection: Gets the display name of the shape. A newly created shape has a generated name
+      that is localized and may not match its `name`<!-- -->. In this scenario, you can use this API to get the name
+      that is displayed in the UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: boolean;'
+      return:
+        type: boolean
   - name: fill
     uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#fill:member'
     package: excel!
