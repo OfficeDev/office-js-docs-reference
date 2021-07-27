@@ -232,6 +232,8 @@ items:
                 uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
               - name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
+              - name: LoadToType
+                uid: 'excel!Excel.LoadToType:enum'
               - name: NamedItemScope
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
@@ -266,6 +268,8 @@ items:
                 uid: 'excel!Excel.PrintOrder:enum'
               - name: ProtectionSelectionMode
                 uid: 'excel!Excel.ProtectionSelectionMode:enum'
+              - name: QueryError
+                uid: 'excel!Excel.QueryError:enum'
               - name: RangeCopyType
                 uid: 'excel!Excel.RangeCopyType:enum'
               - name: RangeUnderlineStyle
@@ -465,6 +469,10 @@ items:
             uid: 'excel!Excel.ChartDataLabelFormat:class'
           - name: ChartDataLabels
             uid: 'excel!Excel.ChartDataLabels:class'
+          - name: ChartDataTable
+            uid: 'excel!Excel.ChartDataTable:class'
+          - name: ChartDataTableFormat
+            uid: 'excel!Excel.ChartDataTableFormat:class'
           - name: ChartDeactivatedEventArgs
             uid: 'excel!Excel.ChartDeactivatedEventArgs:interface'
           - name: ChartDeletedEventArgs
@@ -751,6 +759,10 @@ items:
             uid: 'excel!Excel.PivotValueFilter:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
+          - name: Query
+            uid: 'excel!Excel.Query:class'
+          - name: QueryCollection
+            uid: 'excel!Excel.QueryCollection:class'
           - name: Range
             uid: 'excel!Excel.Range:class'
           - name: RangeAreas

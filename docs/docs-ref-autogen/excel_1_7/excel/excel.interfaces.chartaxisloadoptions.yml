@@ -71,41 +71,6 @@ properties:
       content: 'categoryType?: boolean;'
       return:
         type: boolean
-  - name: crosses
-    uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#crosses:member'
-    package: excel!
-    fullName: crosses
-    summary: >-
-      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `Position` instead. Specifies
-      the specified axis where the other axis crosses. See `Excel.ChartAxisPosition` for details.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'crosses?: boolean;'
-      return:
-        type: boolean
-  - name: crossesAt
-    uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#crossesAt:member'
-    package: excel!
-    fullName: crossesAt
-    summary: >-
-      \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `PositionAt` instead.
-      Specifies the specified axis where the other axis crosses at. Set to this property should use
-      `SetCrossesAt(double)` method.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'crossesAt?: boolean;'
-      return:
-        type: boolean
   - name: customDisplayUnit
     uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#customDisplayUnit:member'
     package: excel!

@@ -41,7 +41,7 @@ properties:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'changeDirectionState: Excel.ChangeDirectionState;'
@@ -129,7 +129,7 @@ properties:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'triggerSource: Excel.EventTriggerSource | "Unknown" | "ThisLocalAddin";'

@@ -124,14 +124,12 @@ methods:
     uid: 'excel!Excel.AutoFilter#clearColumnCriteria:member(1)'
     package: excel!
     fullName: clearColumnCriteria(columnIndex)
-    summary: >-
-      Clears the filter criteria of the AutoFilter.
+    summary: |-
+      Clears the column filter criteria of the AutoFilter.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearColumnCriteria(columnIndex: number): void;'
