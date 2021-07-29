@@ -272,15 +272,24 @@ function handleLiteralParameterOverloads(dtsString: string): string {
     return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
 }
 
-function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, jsonKeyword: string) {
+function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keyword: string) {
+    const jsonRoot = "../json";
+    const yamlRoot = "../yaml"
+    
     let existingDts = fsx.readFileSync(dtsFilePath).toString();
     if (existingDts !== dtsContent) {
         fsx.writeFileSync(dtsFilePath, dtsContent);
-        let jsonRoot = "../json";
+        
         fsx.readdirSync(jsonRoot).forEach((jsonFolder) => {
-            if (jsonFolder.indexOf(jsonKeyword) >= 0) {
+            if (jsonFolder.indexOf(keyword) >= 0) {
                 console.log(`Removing ${jsonRoot}/${jsonFolder}`);
                 fsx.removeSync(`${jsonRoot}/${jsonFolder}`);
+            }
+        });
+        fsx.readdirSync(yamlRoot).forEach((yamlFolder) => {
+            if (yamlFolder.indexOf(keyword) >= 0) {
+                console.log(`Removing ${yamlRoot}/${yamlFolder}`);
+                fsx.removeSync(`${yamlRoot}/${yamlFolder}`);
             }
         });
     }

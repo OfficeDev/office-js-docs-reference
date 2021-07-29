@@ -14,11 +14,9 @@ IF NOT EXIST "json" (
     call md json
 )
 
-IF EXIST "yaml" (
-    rmdir "yaml" /s /q
+IF NOT EXIST "yaml" (
+    call md yaml
 )
-
-call md yaml
 
 call npm install
 
@@ -321,43 +319,43 @@ call node midprocessor.js
 popd
 
 
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office
+if NOT EXIST "yaml/office" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office )
 
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_1 --output-folder .\yaml\excel_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_2 --output-folder .\yaml\excel_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_3 --output-folder .\yaml\excel_1_3 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_4 --output-folder .\yaml\excel_1_4 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_5 --output-folder .\yaml\excel_1_5 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --output-folder .\yaml\excel_1_6 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_11 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_12 --output-folder .\yaml\excel_1_12 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_13 --output-folder .\yaml\excel_1_13 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_2 --output-folder .\yaml\outlook_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_3 --output-folder .\yaml\outlook_1_3 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_4 --output-folder .\yaml\outlook_1_4 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_5 --output-folder .\yaml\outlook_1_5 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_6 --output-folder .\yaml\outlook_1_6 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_7 --output-folder .\yaml\outlook_1_7 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_10 --output-folder .\yaml\outlook_1_10 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul
+if NOT EXIST "yaml/excel" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office )
+if NOT EXIST "yaml/excel_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_1 --output-folder .\yaml\excel_1_1 --office 2> nul )
+if NOT EXIST "yaml/excel_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_2 --output-folder .\yaml\excel_1_2 --office 2> nul )
+if NOT EXIST "yaml/excel_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_3 --output-folder .\yaml\excel_1_3 --office 2> nul )
+if NOT EXIST "yaml/excel_1_4" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_4 --output-folder .\yaml\excel_1_4 --office 2> nul )
+if NOT EXIST "yaml/excel_1_5" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_5 --output-folder .\yaml\excel_1_5 --office 2> nul )
+if NOT EXIST "yaml/excel_1_6" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --output-folder .\yaml\excel_1_6 --office 2> nul )
+if NOT EXIST "yaml/excel_1_7" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office 2> nul )
+if NOT EXIST "yaml/excel_1_8" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office 2> nul )
+if NOT EXIST "yaml/excel_1_9" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office 2> nul )
+if NOT EXIST "yaml/excel_1_10" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office 2> nul )
+if NOT EXIST "yaml/excel_1_11" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_11 --office 2> nul )
+if NOT EXIST "yaml/excel_1_12" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_12 --output-folder .\yaml\excel_1_12 --office 2> nul )
+if NOT EXIST "yaml/excel_1_13" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_13 --output-folder .\yaml\excel_1_13 --office 2> nul )
+if NOT EXIST "yaml/excel_online" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul )
+if NOT EXIST "yaml/onenote" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office )
+if NOT EXIST "yaml/outlook" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office )
+if NOT EXIST "yaml/outlook_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_2 --output-folder .\yaml\outlook_1_2 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_3 --output-folder .\yaml\outlook_1_3 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_4" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_4 --output-folder .\yaml\outlook_1_4 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_5" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_5 --output-folder .\yaml\outlook_1_5 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_6" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_6 --output-folder .\yaml\outlook_1_6 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_7" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_7 --output-folder .\yaml\outlook_1_7 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_8" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_9" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_10" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_10 --output-folder .\yaml\outlook_1_10 --office 2> nul )
+if NOT EXIST "yaml/powerpoint" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office )
+if NOT EXIST "yaml/powerpoint_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul )
+if NOT EXIST "yaml/powerpoint_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul )
+if NOT EXIST "yaml/visio" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office )
+if NOT EXIST "yaml/word" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office )
+if NOT EXIST "yaml/word_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul )
+if NOT EXIST "yaml/word_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul )
+if NOT EXIST "yaml/word_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul )
 
 pushd scripts
 call node postprocessor.js

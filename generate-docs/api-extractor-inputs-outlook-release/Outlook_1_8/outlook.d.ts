@@ -2206,8 +2206,6 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-        
-        
     }
     /**
      * The `AppointmentForm` object is used to access the currently selected appointment.
@@ -3625,7 +3623,9 @@ export declare namespace Office {
          *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-    }
+        
+        
+     }
     /**
      * Represents the categories on an item.
      * 
