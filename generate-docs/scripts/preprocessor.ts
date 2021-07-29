@@ -71,72 +71,83 @@ tryCatch(async () => {
     console.log("\nCreating separate d.ts files...");
 
     console.log("create file: office.d.ts");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-office/office.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Office namespace", "End Office namespace") +
-        '\n' +
-        '\n' +
-        dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API")
+            '\n' +
+            '\n' +
+            dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API"),
+        "office"
     );
 
     console.log("\ncreate file: excel.d.ts (preview)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-excel/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other"),
+        "excel"
     );
 
     console.log("\ncreate file: excel.d.ts (release)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true)
+        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true),
+        "excel"
     );
 
     console.log("create file: onenote.d.ts");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-onenote/onenote.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other"),
+        "onenote"
     );
 
     console.log("create file: outlook.d.ts (preview)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook"),
+        "outlook"
     );
 
     console.log("create file: outlook.d.ts (release)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true)
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
+        "outlook"
     );
 
     console.log("create file: powerpoint.d.ts (preview)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other"),
+        "powerpoint"
     );
 
     console.log("create file: powerpoint.d.ts (release)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-powerpoint-release/PowerPoint_1_2/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true)
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
+        "powerpoint"
     );
 
     console.log("create file: visio.d.ts");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-visio/visio.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other"),
+        "visio"
     );
 
     console.log("create file: word.d.ts (preview)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other"),
+        "word"
     );
 
     console.log("\ncreate file: word.d.ts (release)");
-    fsx.writeFileSync(
+    makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true)
+        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
+        "word"
     );
 
     // ----
@@ -153,7 +164,7 @@ tryCatch(async () => {
     definitionsForCfs = applyRegularExpressions(definitionsForCfs);
 
     console.log("create file: custom-functions-runtime.d.ts");
-    fsx.writeFileSync('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs);
+    makeDtsAndClearJsonIfNew('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs, "custom");
 
     // ----
     // Process Office Runtime d.ts
@@ -169,7 +180,7 @@ tryCatch(async () => {
     definitionsForORun = applyRegularExpressions(definitionsForORun);
 
     console.log("create file: office-runtime.d.ts");
-    fsx.writeFileSync('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun);
+    makeDtsAndClearJsonIfNew('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun, "runtime");
 
     console.log("\nPreprocessor script complete!");
 
@@ -259,6 +270,20 @@ function handleLiteralParameterOverloads(dtsString: string): string {
     }
 
     return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
+}
+
+function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, jsonKeyword: string) {
+    let existingDts = fsx.readFileSync(dtsFilePath).toString();
+    if (existingDts !== dtsContent) {
+        fsx.writeFileSync(dtsFilePath, dtsContent);
+        let jsonRoot = "../json";
+        fsx.readdirSync(jsonRoot).forEach((jsonFolder) => {
+            if (jsonFolder.indexOf(jsonKeyword) >= 0) {
+                console.log(`Removing ${jsonRoot}/${jsonFolder}`);
+                fsx.removeSync(`${jsonRoot}/${jsonFolder}`);
+            }
+        });
+    }
 }
 
 async function tryCatch(call: () => Promise<void>) {

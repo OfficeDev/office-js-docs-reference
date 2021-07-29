@@ -10,11 +10,9 @@ IF EXIST "tools\node_modules" (
     rmdir "tools\node_modules" /s /q
 )
 
-IF EXIST "json" (
-    rmdir "json" /s /q
+IF NOT EXIST "json" (
+    call md json
 )
-
-call md json
 
 IF EXIST "yaml" (
     rmdir "yaml" /s /q
@@ -51,14 +49,23 @@ call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts "ExcelApi 1.1" .\tool-inputs\excel-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts "Mailbox 1.10" ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts Outlook 1.9
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts "Mailbox 1.9" ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts Outlook 1.8
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts "Mailbox 1.8" ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts Outlook 1.7
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts "Mailbox 1.7" ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts Outlook 1.6
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts "Mailbox 1.6" ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts Outlook 1.5
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts "Mailbox 1.5" ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts Outlook 1.4
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts "Mailbox 1.4" ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts Outlook 1.3
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts "Mailbox 1.3" ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts Outlook 1.2
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts Outlook 1.1
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
@@ -110,106 +117,204 @@ call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 
 popd
 
-cd api-extractor-inputs-office
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/office" (
+    pushd api-extractor-inputs-office
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-excel
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-excel-release\excel_online
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_13
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_12
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_11
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_10
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_9
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_8
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_7
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_6
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_5
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_4
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/excel" (
+    pushd api-extractor-inputs-excel
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_online" (
+    pushd api-extractor-inputs-excel-release\excel_online
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_13" (
+    pushd api-extractor-inputs-excel-release\excel_1_13
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_12" (
+    pushd api-extractor-inputs-excel-release\excel_1_12
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_11" (
+    pushd api-extractor-inputs-excel-release\excel_1_11
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_10" (
+    pushd api-extractor-inputs-excel-release\excel_1_10
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_9" (
+    pushd api-extractor-inputs-excel-release\excel_1_9
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_8" (
+    pushd api-extractor-inputs-excel-release\excel_1_8
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_7" (
+    pushd api-extractor-inputs-excel-release\excel_1_7
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_6" (
+    pushd api-extractor-inputs-excel-release\excel_1_6
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_5" (
+    pushd api-extractor-inputs-excel-release\excel_1_5
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_4" (
+    pushd api-extractor-inputs-excel-release\excel_1_4
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_3" (
+    pushd api-extractor-inputs-excel-release\excel_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_2" (
+    pushd api-extractor-inputs-excel-release\excel_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_1" (
+    pushd api-extractor-inputs-excel-release\excel_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-onenote
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/onenote" (
+    pushd api-extractor-inputs-onenote
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-outlook
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-outlook-release\outlook_1_10
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.10
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_9
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.9
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_8
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.8
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_7
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.7
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_6
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.6
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_5
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.5
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_4
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.4
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_3
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_2
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_1
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/outlook" (
+    pushd api-extractor-inputs-outlook
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_10" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_10
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_9" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_9
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_8" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_8
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_7" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_7
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_6" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_6
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_5" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_5
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_4" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_4
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_3" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_2" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_1" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-powerpoint
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-powerpoint-release\PowerPoint_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\PowerPoint_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/powerpoint" (
+    pushd api-extractor-inputs-powerpoint
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/powerpoint_1_2" (
+    pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/powerpoint_1_1" (
+    pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-visio
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/visio" (
+    pushd api-extractor-inputs-visio
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-word
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-word-release\word_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\word_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\word_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/word" (
+    pushd api-extractor-inputs-word
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_3" (
+    pushd api-extractor-inputs-word-release\word_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_2" (
+    pushd api-extractor-inputs-word-release\word_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_1" (
+    pushd api-extractor-inputs-word-release\word_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-custom-functions-runtime
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/custom-functions-runtime.api.json" (
+    pushd api-extractor-inputs-custom-functions-runtime
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-office-runtime
-call ..\node_modules\.bin\api-extractor run
-
-cd ..
+if NOT EXIST "json/office-runtime.api.json" (
+    pushd api-extractor-inputs-office-runtime
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
 pushd scripts
 call node midprocessor.js
