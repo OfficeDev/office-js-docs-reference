@@ -817,3 +817,188 @@ methods:
       return:
         type: void
         description: ''
+  - name: 'setSignatureAsync(data, options, callback)'
+    uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
+    package: outlook!
+    fullName: 'setSignatureAsync(data, options, callback)'
+    summary: >-
+      Adds or replaces the signature of the item body.
+
+
+      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
+
+
+      **Important**: If your add-in implements the [event-based activation feature using \`LaunchEvent\` in the
+      manifest](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, and calls `setSignatureAsync`
+      in the event handler, the following behavior applies.
+
+
+      - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the
+      form. This means if the user closes the form without making other edits, they won't be prompted to save changes.
+
+
+      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.
+
+
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
+      message body is in plain text.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+      // Set the signature for the current item with inline image.
+
+      var modIcon1Base64 =
+      "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDRDMxMDg1MjBCNDZFMTExODE2MkM1RUI2M0M4MDYxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTUxQjgyRjQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTUxQjgyRTQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQxMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNEMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+uC/WfAAAAehJREFUeNpilCzfwEAEkAbiECA2A2J1IOaHin8E4ptAfBaIVwLxU0IGMRKw0B6IW4DYhoE4cASIK6E0VsCEQ1wUiNcB8QESLGOAqj0MxBuhZhBloS4QnwHiQAbygR/UDF1CFupCXSjHQDmQg5qli8tCUBBsQUoQ1AD8UDNFsVk4n0o+w+bT+egWglKjNymmeGhLkqLcG2oHAwtUoIuQDj5OVgZPLUmwRe5aEmAxqYqNpFgKssOcCeplM0KqdST5GfpDDRm0JfkYrj3/SE7QguyQY4ImYYLgCtAS10kHGMw6dzNsv/qC7OwCClJXYlR++v6b4er3j5QmIFcmaNlIL6AOslCIjhYKMTHQGTBBqxh6gXcgC6/R0cKbIAv30dHCfaAKGJTxHxJSqS3Fz9DkowNmywpyMcgA8fF7b8D8VWcfM6w8+4gYC+VB+RCk8hSh0gaUD4/dewvlvUWRe/z+GzGWgex4BGtiOAHxXhoHpzMoSGHZAhSPW2lo2VZYWkHOh4nEtLrIAE+hZmNUwK+B2BOIv1PRsu9QM1/jatNcBtVZ0IREKXgENesyoVYbzNIdFFi2A5tl+NqlL6BB4QBNzsSCU1A9nlAzMAALAQMOQl0qB23qWwKxIlIrDBQ394H4OBCvISYqAAIMACVibHDqsO7zAAAAAElFTkSuQmCC";
+
+      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
+        modIcon1Base64,
+        "myImage.png",
+        { isInline: true },
+        function(result) {
+          if (result.status == Office.AsyncResultStatus.Succeeded) {
+            var signature = $("#signature").val() + "<img src='cid:myImage.png'>";
+            console.log(`Setting signature to "${signature}".`);
+            Office.context.mailbox.item.body.setSignatureAsync(
+              signature,
+              { coercionType: "html" },
+              function(asyncResult) {
+                console.log(`setSignatureAsync: ${asyncResult.status}`);
+              }
+            );
+          } else {
+            console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
+          }
+        }
+      );
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+      // Set the signature for the current item.
+
+      var signature = $("#signature").val();
+
+      console.log(`Setting signature to "${signature}".`);
+
+      Office.context.mailbox.item.body.setSignatureAsync(signature, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("setSignatureAsync succeeded");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setSignatureAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: data
+          description: >-
+            The string that represents the signature to be set in the body of the mail. This string is limited to 30,000
+            characters.
+          type: string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The format the
+            signature should be set to. If Text, the method sets the signature to plain text, removing any HTML tags
+            present. If Html, the method sets the signature to HTML.
+          type: >-
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setSignatureAsync(data, callback)'
+    uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
+    package: outlook!
+    fullName: 'setSignatureAsync(data, callback)'
+    summary: >-
+      Adds or replaces the signature of the item body.
+
+
+      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
+
+
+      **Important**: If your add-in implements the [event-based activation feature using \`LaunchEvent\` in the
+      manifest](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, and calls `setSignatureAsync`
+      in the event handler, the following behavior applies.
+
+
+      - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the
+      form. This means if the user closes the form without making other edits, they won't be prompted to save changes.
+
+
+      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 30,000 characters.
+
+
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
+      message body is in plain text.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSignatureAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: data
+          description: >-
+            The string that represents the signature to be set in the body of the mail. This string is limited to 30,000
+            characters.
+          type: string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
