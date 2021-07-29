@@ -164,8 +164,8 @@ properties:
         & AppointmentRead;
       return:
         type: >-
-          <xref uid="outlook!Office.Item:interface" /> & <xref uid="outlook!Office.ItemCompose:interface" /> & <xref
-          uid="outlook!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
+          <xref uid="office!Office.Item:interface" /> & <xref uid="office!Office.ItemCompose:interface" /> & <xref
+          uid="office!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
           uid="outlook!Office.MessageCompose:interface" /> & <xref uid="outlook!Office.MessageRead:interface" /> & <xref
           uid="outlook!Office.Appointment:interface" /> & <xref uid="outlook!Office.AppointmentCompose:interface" /> &
           <xref uid="outlook!Office.AppointmentRead:interface" />
@@ -257,7 +257,7 @@ properties:
     syntax:
       content: 'masterCategories: MasterCategories;'
       return:
-        type: '<xref uid="outlook!Office.MasterCategories:interface" />'
+        type: '<xref uid="office!Office.MasterCategories:interface" />'
   - name: restUrl
     uid: 'outlook!Office.Mailbox#restUrl:member'
     package: outlook!
@@ -366,7 +366,7 @@ properties:
     syntax:
       content: 'userProfile: UserProfile;'
       return:
-        type: '<xref uid="outlook!Office.UserProfile:interface" />'
+        type: '<xref uid="office!Office.UserProfile:interface" />'
 methods:
   - name: 'addHandlerAsync(eventType, handler, options, callback)'
     uid: 'outlook!Office.Mailbox#addHandlerAsync:member(1)'
@@ -563,7 +563,7 @@ methods:
           type: string
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
-          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
+          type: '<xref uid="office!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''
@@ -603,7 +603,7 @@ methods:
           description: A `Date` object.
           type: Date
       return:
-        type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
+        type: '<xref uid="office!Office.LocalClientTime:interface" />'
         description: ''
   - name: 'convertToRestId(itemId, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToRestId:member(1)'
@@ -1231,7 +1231,7 @@ methods:
       parameters:
         - id: parameters
           description: An `AppointmentForm` describing the new appointment. All properties are optional.
-          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
+          type: '<xref uid="office!Office.AppointmentForm:interface" />'
       return:
         type: void
         description: ''
@@ -1323,7 +1323,7 @@ methods:
       parameters:
         - id: parameters
           description: An `AppointmentForm` describing the new appointment. All properties are optional.
-          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
+          type: '<xref uid="office!Office.AppointmentForm:interface" />'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
@@ -1387,7 +1387,7 @@ methods:
       parameters:
         - id: parameters
           description: An `AppointmentForm` describing the new appointment. All properties are optional.
-          type: '<xref uid="outlook!Office.AppointmentForm:interface" />'
+          type: '<xref uid="office!Office.AppointmentForm:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

@@ -61,7 +61,7 @@ properties:
     syntax:
       content: 'attendees: EmailUser[];'
       return:
-        type: '<xref uid="outlook!Office.EmailUser:interface" />[]'
+        type: '<xref uid="office!Office.EmailUser:interface" />[]'
   - name: end
     uid: 'outlook!Office.MeetingSuggestion#end:member'
     package: outlook!

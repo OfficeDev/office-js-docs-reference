@@ -72,7 +72,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="outlook!Office.Body:interface" />'
+        type: '<xref uid="office!Office.Body:interface" />'
   - name: end
     uid: 'outlook!Office.AppointmentCompose#end:member'
     package: outlook!
@@ -210,7 +210,7 @@ properties:
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
       return:
-        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
+        type: '<xref uid="office!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: location
     uid: 'outlook!Office.AppointmentCompose#location:member'
     package: outlook!
@@ -283,7 +283,7 @@ properties:
     syntax:
       content: 'location: Location;'
       return:
-        type: '<xref uid="outlook!Office.Location:interface" />'
+        type: '<xref uid="office!Office.Location:interface" />'
   - name: notificationMessages
     uid: 'outlook!Office.AppointmentCompose#notificationMessages:member'
     package: outlook!
@@ -748,7 +748,7 @@ properties:
     syntax:
       content: 'requiredAttendees: Recipients;'
       return:
-        type: '<xref uid="outlook!Office.Recipients:interface" />'
+        type: '<xref uid="office!Office.Recipients:interface" />'
   - name: seriesId
     uid: 'outlook!Office.AppointmentCompose#seriesId:member'
     package: outlook!
@@ -881,7 +881,7 @@ properties:
     syntax:
       content: 'start: Time;'
       return:
-        type: '<xref uid="outlook!Office.Time:interface" />'
+        type: '<xref uid="office!Office.Time:interface" />'
   - name: subject
     uid: 'outlook!Office.AppointmentCompose#subject:member'
     package: outlook!
@@ -942,7 +942,7 @@ properties:
     syntax:
       content: 'subject: Subject;'
       return:
-        type: '<xref uid="outlook!Office.Subject:interface" />'
+        type: '<xref uid="office!Office.Subject:interface" />'
 methods:
   - name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
@@ -1728,7 +1728,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -2227,7 +2227,7 @@ methods:
             plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="outlook!Office.CoercionTypeOptions:interface" />
+            uid="office!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

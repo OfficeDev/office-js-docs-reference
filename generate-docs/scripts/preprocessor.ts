@@ -274,7 +274,7 @@ function handleLiteralParameterOverloads(dtsString: string): string {
 
 function makeDtsAndClearJsonIfNew(dtsFilePath: string, dtsContent: string, keyword: string) {
     const jsonRoot = "../json";
-    const yamlRoot = "../yaml"
+    const yamlRoot = "../yaml";
     
     let existingDts = fsx.readFileSync(dtsFilePath).toString();
     if (existingDts !== dtsContent) {

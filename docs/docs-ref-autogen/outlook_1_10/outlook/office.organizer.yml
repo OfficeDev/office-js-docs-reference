@@ -81,7 +81,7 @@ methods:
             the appointment's organizer value, as an `EmailAddressDetails` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            uid="office!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -117,7 +117,7 @@ methods:
             the appointment's organizer value, as an `EmailAddressDetails` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            uid="office!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

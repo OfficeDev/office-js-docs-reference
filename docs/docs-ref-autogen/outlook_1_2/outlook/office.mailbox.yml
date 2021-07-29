@@ -164,8 +164,8 @@ properties:
         & AppointmentRead;
       return:
         type: >-
-          <xref uid="outlook!Office.Item:interface" /> & <xref uid="outlook!Office.ItemCompose:interface" /> & <xref
-          uid="outlook!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
+          <xref uid="office!Office.Item:interface" /> & <xref uid="office!Office.ItemCompose:interface" /> & <xref
+          uid="office!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
           uid="outlook!Office.MessageCompose:interface" /> & <xref uid="outlook!Office.MessageRead:interface" /> & <xref
           uid="outlook!Office.Appointment:interface" /> & <xref uid="outlook!Office.AppointmentCompose:interface" /> &
           <xref uid="outlook!Office.AppointmentRead:interface" />
@@ -185,7 +185,7 @@ properties:
     syntax:
       content: 'userProfile: UserProfile;'
       return:
-        type: '<xref uid="outlook!Office.UserProfile:interface" />'
+        type: '<xref uid="office!Office.UserProfile:interface" />'
 methods:
   - name: convertToLocalClientTime(timeValue)
     uid: 'outlook!Office.Mailbox#convertToLocalClientTime:member(1)'
@@ -223,7 +223,7 @@ methods:
           description: A `Date` object.
           type: Date
       return:
-        type: '<xref uid="outlook!Office.LocalClientTime:interface" />'
+        type: '<xref uid="office!Office.LocalClientTime:interface" />'
         description: ''
   - name: convertToUtcClientTime(input)
     uid: 'outlook!Office.Mailbox#convertToUtcClientTime:member(1)'

@@ -1781,7 +1781,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be

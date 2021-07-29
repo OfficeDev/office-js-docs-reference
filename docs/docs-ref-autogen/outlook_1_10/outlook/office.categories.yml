@@ -210,7 +210,7 @@ methods:
             contain an error code.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
+            uid="office!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -279,7 +279,7 @@ methods:
             contain an error code.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
+            uid="office!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''

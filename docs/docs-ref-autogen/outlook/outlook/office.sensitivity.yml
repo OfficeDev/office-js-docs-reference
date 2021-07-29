@@ -55,7 +55,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
+            uid="office!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -106,7 +106,7 @@ methods:
             \[Api set: Mailbox preview\]
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
+            uid="office!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -158,7 +158,7 @@ methods:
       parameters:
         - id: sensitivity
           description: The sensitivity value as enum or string.
-          type: '<xref uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
+          type: '<xref uid="office!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
@@ -198,7 +198,7 @@ methods:
       parameters:
         - id: sensitivity
           description: The sensitivity value as enum or string.
-          type: '<xref uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
+          type: '<xref uid="office!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

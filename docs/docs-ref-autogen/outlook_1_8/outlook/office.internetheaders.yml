@@ -114,7 +114,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            uid="office!Office.InternetHeaders:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -155,7 +155,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            uid="office!Office.InternetHeaders:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -224,7 +224,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            uid="office!Office.InternetHeaders:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -264,7 +264,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            uid="office!Office.InternetHeaders:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

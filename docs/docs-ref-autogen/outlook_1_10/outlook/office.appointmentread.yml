@@ -92,7 +92,7 @@ properties:
     syntax:
       content: 'attachments: AttachmentDetails[];'
       return:
-        type: '<xref uid="outlook!Office.AttachmentDetails:interface" />[]'
+        type: '<xref uid="office!Office.AttachmentDetails:interface" />[]'
   - name: body
     uid: 'outlook!Office.AppointmentRead#body:member'
     package: outlook!
@@ -140,7 +140,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="outlook!Office.Body:interface" />'
+        type: '<xref uid="office!Office.Body:interface" />'
   - name: categories
     uid: 'outlook!Office.AppointmentRead#categories:member'
     package: outlook!
@@ -418,7 +418,7 @@ properties:
     syntax:
       content: 'enhancedLocation: EnhancedLocation;'
       return:
-        type: '<xref uid="outlook!Office.EnhancedLocation:interface" />'
+        type: '<xref uid="office!Office.EnhancedLocation:interface" />'
   - name: itemClass
     uid: 'outlook!Office.AppointmentRead#itemClass:member'
     package: outlook!
@@ -986,7 +986,7 @@ properties:
     syntax:
       content: 'requiredAttendees: EmailAddressDetails[];'
       return:
-        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />[]'
+        type: '<xref uid="office!Office.EmailAddressDetails:interface" />[]'
   - name: seriesId
     uid: 'outlook!Office.AppointmentRead#seriesId:member'
     package: outlook!
@@ -1514,7 +1514,7 @@ methods:
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
             to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
             attachment data and a callback function.
-          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
+          type: 'string | <xref uid="office!Office.ReplyFormData:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1682,7 +1682,7 @@ methods:
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
             to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
             attachment data and a callback function.
-          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
+          type: 'string | <xref uid="office!Office.ReplyFormData:interface" />'
       return:
         type: void
         description: ''
@@ -1773,7 +1773,7 @@ methods:
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
             to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
             attachment data and a callback function.
-          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
+          type: 'string | <xref uid="office!Office.ReplyFormData:interface" />'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
@@ -1833,7 +1833,7 @@ methods:
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
             to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
             attachment data and a callback function.
-          type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
+          type: 'string | <xref uid="office!Office.ReplyFormData:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1951,7 +1951,7 @@ methods:
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
+            uid="office!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2008,7 +2008,7 @@ methods:
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
+            uid="office!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2097,7 +2097,7 @@ methods:
     syntax:
       content: 'getEntities(): Entities;'
       return:
-        type: '<xref uid="outlook!Office.Entities:interface" />'
+        type: '<xref uid="office!Office.Entities:interface" />'
         description: ''
   - name: getEntitiesByType(entityType)
     uid: 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
@@ -2712,7 +2712,7 @@ methods:
             item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2774,7 +2774,7 @@ methods:
             item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2886,7 +2886,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be

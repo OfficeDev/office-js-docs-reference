@@ -186,8 +186,8 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            (string | <xref uid="office!Office.EmailUser:interface" /> | <xref
+            uid="office!Office.EmailAddressDetails:interface" />)[]
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -244,7 +244,7 @@ methods:
             `EmailAddressDetails` objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
+            uid="office!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -399,7 +399,7 @@ methods:
             `EmailAddressDetails` objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
+            uid="office!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -452,8 +452,8 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            (string | <xref uid="office!Office.EmailUser:interface" /> | <xref
+            uid="office!Office.EmailAddressDetails:interface" />)[]
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
@@ -649,8 +649,8 @@ methods:
         - id: recipients
           description: The recipients to add to the recipients list.
           type: >-
-            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
-            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+            (string | <xref uid="office!Office.EmailUser:interface" /> | <xref
+            uid="office!Office.EmailAddressDetails:interface" />)[]
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter

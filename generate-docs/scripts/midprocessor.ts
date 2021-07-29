@@ -160,31 +160,31 @@ tryCatch(async () => {
         delete allSnippets[key];
     });
 
-    fsx.writeFileSync("../json/excel/snippets.yaml", yaml.safeDump(excelSnippets));
-    fsx.writeFileSync("../json/excel_online/snippets.yaml", yaml.safeDump(excelSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/excel/snippets.yaml", yaml.safeDump(excelSnippets), "excel");
+    writeSnippetFileAndClearYamlIfNew("../json/excel_online/snippets.yaml", yaml.safeDump(excelSnippets), "excel");
     for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/excel_1_${i}/snippets.yaml`, yaml.safeDump(excelSnippets));
+        writeSnippetFileAndClearYamlIfNew(`../json/excel_1_${i}/snippets.yaml`, yaml.safeDump(excelSnippets), "excel");
     }
 
-    fsx.writeFileSync("../json/office/snippets.yaml", yaml.safeDump(commonSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/office/snippets.yaml", yaml.safeDump(commonSnippets), "office");
 
-    fsx.writeFileSync("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets), "onenote");
 
-    fsx.writeFileSync("../json/outlook/snippets.yaml", yaml.safeDump(outlookSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/outlook/snippets.yaml", yaml.safeDump(outlookSnippets), "outlook");
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/outlook_1_${i}/snippets.yaml`, yaml.safeDump(outlookSnippets));
+        writeSnippetFileAndClearYamlIfNew(`../json/outlook_1_${i}/snippets.yaml`, yaml.safeDump(outlookSnippets), "outlook");
     }
 
-    fsx.writeFileSync("../json/powerpoint/snippets.yaml", yaml.safeDump(powerpointSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/powerpoint/snippets.yaml", yaml.safeDump(powerpointSnippets), "powerpoint");
     for (let i = CURRENT_POWERPOINT_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/powerpoint_1_${i}/snippets.yaml`, yaml.safeDump(powerpointSnippets));
+        writeSnippetFileAndClearYamlIfNew(`../json/powerpoint_1_${i}/snippets.yaml`, yaml.safeDump(powerpointSnippets), "powerpoint");
     }
 
-    fsx.writeFileSync("../json/visio/snippets.yaml", yaml.safeDump(visioSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/visio/snippets.yaml", yaml.safeDump(visioSnippets), "visio");
 
-    fsx.writeFileSync("../json/word/snippets.yaml", yaml.safeDump(wordSnippets));
+    writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets));
+        writeSnippetFileAndClearYamlIfNew(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets), "word");
     }
 
     console.log("Moving Custom Functions APIs to correct versions of Excel");
@@ -276,6 +276,22 @@ function cleanUpRichApiJson(jsonString : string) {
 
 function cleanUpOutlookMarkdown(markdownString : string) {
     return markdownString.replace(/CommonAPI/gm, "Office");
+}
+
+function writeSnippetFileAndClearYamlIfNew(snippetsFilePath: string, snippetsContent: string, keyword: string) {
+    const yamlRoot = "../yaml";
+    
+    let existingSnippets = fsx.readFileSync(snippetsFilePath).toString();
+    if (existingSnippets !== snippetsContent) {
+        fsx.writeFileSync(snippetsFilePath, snippetsContent);
+
+        fsx.readdirSync(yamlRoot).forEach((yamlFolder) => {
+            if (yamlFolder.indexOf(keyword) >= 0) {
+                console.log(`Removing ${yamlRoot}/${yamlFolder}`);
+                fsx.removeSync(`${yamlRoot}/${yamlFolder}`);
+            }
+        });
+    }
 }
 
 async function tryCatch(call: () => Promise<void>) {

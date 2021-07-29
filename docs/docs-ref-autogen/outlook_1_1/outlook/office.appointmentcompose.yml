@@ -72,7 +72,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="outlook!Office.Body:interface" />'
+        type: '<xref uid="office!Office.Body:interface" />'
   - name: end
     uid: 'outlook!Office.AppointmentCompose#end:member'
     package: outlook!
@@ -172,7 +172,7 @@ properties:
     syntax:
       content: 'end: Time;'
       return:
-        type: '<xref uid="outlook!Office.Time:interface" />'
+        type: '<xref uid="office!Office.Time:interface" />'
   - name: itemType
     uid: 'outlook!Office.AppointmentCompose#itemType:member'
     package: outlook!
@@ -283,7 +283,7 @@ properties:
     syntax:
       content: 'location: Location;'
       return:
-        type: '<xref uid="outlook!Office.Location:interface" />'
+        type: '<xref uid="office!Office.Location:interface" />'
   - name: optionalAttendees
     uid: 'outlook!Office.AppointmentCompose#optionalAttendees:member'
     package: outlook!
@@ -468,7 +468,7 @@ properties:
     syntax:
       content: 'requiredAttendees: Recipients;'
       return:
-        type: '<xref uid="outlook!Office.Recipients:interface" />'
+        type: '<xref uid="office!Office.Recipients:interface" />'
   - name: start
     uid: 'outlook!Office.AppointmentCompose#start:member'
     package: outlook!
@@ -539,7 +539,7 @@ properties:
     syntax:
       content: 'start: Time;'
       return:
-        type: '<xref uid="outlook!Office.Time:interface" />'
+        type: '<xref uid="office!Office.Time:interface" />'
   - name: subject
     uid: 'outlook!Office.AppointmentCompose#subject:member'
     package: outlook!
@@ -1072,7 +1072,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be

@@ -190,7 +190,7 @@ methods:
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="outlook!Office.CoercionTypeOptions:interface" />
+            uid="office!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -326,7 +326,7 @@ methods:
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="outlook!Office.CoercionTypeOptions:interface" />
+            uid="office!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
