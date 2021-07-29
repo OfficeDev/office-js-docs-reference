@@ -2996,167 +2996,6 @@
                   "name": "setSelectedDataAsync"
                 },
                 {
-                  "kind": "MethodSignature",
-                  "canonicalReference": "outlook!Office.AppointmentCompose#setSignatureAsync:member(1)",
-                  "docComment": "/**\n * Adds or replaces the signature of the item body.\n *\n * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.\n *\n * **Important**: If your add-in implements the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}, and calls `setSignatureAsync` in the event handler, the following behavior applies.\n *\n * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes the form without making other edits, they won't be prompted to save changes.\n *\n * [Api set: Mailbox 1.10]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 30,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The format the signature should be set to. If Text, the method sets the signature to plain text, removing any HTML tags present. If Html, the method sets the signature to HTML.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "setSignatureAsync(data: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", options: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": " & "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CoercionTypeOptions",
-                      "canonicalReference": "outlook!Office.CoercionTypeOptions:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "office!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 11,
-                    "endIndex": 12
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [
-                    {
-                      "parameterName": "data",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    },
-                    {
-                      "parameterName": "options",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 6
-                      }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 7,
-                        "endIndex": 10
-                      }
-                    }
-                  ],
-                  "name": "setSignatureAsync"
-                },
-                {
-                  "kind": "MethodSignature",
-                  "canonicalReference": "outlook!Office.AppointmentCompose#setSignatureAsync:member(2)",
-                  "docComment": "/**\n * Adds or replaces the signature of the item body.\n *\n * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.\n *\n * **Important**: If your add-in implements the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}, and calls `setSignatureAsync` in the event handler, the following behavior applies.\n *\n * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes the form without making other edits, they won't be prompted to save changes.\n *\n * [Api set: Mailbox 1.10]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 30,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "setSignatureAsync(data: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "office!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 7,
-                    "endIndex": 8
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "data",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 6
-                      }
-                    }
-                  ],
-                  "name": "setSignatureAsync"
-                },
-                {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#start:member",
                   "docComment": "/**\n * Gets or sets the date and time that the appointment is to begin.\n *\n * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.\n *\n * When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method to convert the local time on the client to UTC for the server.\n *\n * **Important**: In the Windows client, you can't use this property to update the start of a recurrence.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n */\n",
@@ -7168,6 +7007,167 @@
                     }
                   ],
                   "name": "setSelectedDataAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#setSignatureAsync:member(1)",
+                  "docComment": "/**\n * Adds or replaces the signature of the item body.\n *\n * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.\n *\n * **Important**: If your add-in implements the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}, and calls `setSignatureAsync` in the event handler, the following behavior applies.\n *\n * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes the form without making other edits, they won't be prompted to save changes.\n *\n * [Api set: Mailbox 1.10]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 30,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method. `coercionType`: The format the signature should be set to. If Text, the method sets the signature to plain text, removing any HTML tags present. If Html, the method sets the signature to HTML.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setSignatureAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CoercionTypeOptions",
+                      "canonicalReference": "outlook!Office.CoercionTypeOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 12
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 7,
+                        "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "setSignatureAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Body#setSignatureAsync:member(2)",
+                  "docComment": "/**\n * Adds or replaces the signature of the item body.\n *\n * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.\n *\n * **Important**: If your add-in implements the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}, and calls `setSignatureAsync` in the event handler, the following behavior applies.\n *\n * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes the form without making other edits, they won't be prompted to save changes.\n *\n * [Api set: Mailbox 1.10]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter is longer than 30,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setSignatureAsync(data: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "data",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "setSignatureAsync"
                 }
               ],
               "extendsTokenRanges": []
