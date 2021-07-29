@@ -240,21 +240,21 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
                 field.declarationString.lastIndexOf("(", paramIndex),
                 field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
             // Remove the variable modifiers for the link.
-            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\_/gm, "-").replace(/\.\.\./gm, "") + "-";
+            parameterLink += "_" + field.declarationString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\.\.\./gm, "") + "_";
             paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
         }
 
         if (parameterLink === "") {
-            parameterLink = "--";
+            parameterLink = "__";
         }
 
 
-        fieldLink = "/" + relativePath + className + "#" + field.name.replace(/\_/gm, "-") + parameterLink;
+        fieldLink = "/" + relativePath + className.toLowerCase() + "#" + field.name + parameterLink;
     } else {
-        fieldLink = "/" + relativePath + className + "#" + field.name;
+        fieldLink = "/" + relativePath + className.toLowerCase() + "#" + field.name;
     }
 
-    return fieldLink.toLowerCase();
+    return fieldLink;
 }
 
 export function parseDTS(fileName: string, fileContents: string): APISet {
