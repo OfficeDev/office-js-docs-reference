@@ -111,7 +111,7 @@ properties:
     syntax:
       content: 'bcc: Recipients;'
       return:
-        type: '<xref uid="office!Office.Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
   - name: body
     uid: 'outlook!Office.MessageCompose#body:member'
     package: outlook!
@@ -159,7 +159,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="office!Office.Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: categories
     uid: 'outlook!Office.MessageCompose#categories:member'
     package: outlook!
@@ -444,7 +444,7 @@ properties:
     syntax:
       content: 'from: From;'
       return:
-        type: '<xref uid="office!Office.From:interface" />'
+        type: '<xref uid="outlook!Office.From:interface" />'
   - name: internetHeaders
     uid: 'outlook!Office.MessageCompose#internetHeaders:member'
     package: outlook!
@@ -498,7 +498,7 @@ properties:
     syntax:
       content: 'internetHeaders: InternetHeaders;'
       return:
-        type: '<xref uid="office!Office.InternetHeaders:interface" />'
+        type: '<xref uid="outlook!Office.InternetHeaders:interface" />'
   - name: itemType
     uid: 'outlook!Office.MessageCompose#itemType:member'
     package: outlook!
@@ -536,7 +536,7 @@ properties:
     syntax:
       content: 'itemType: MailboxEnums.ItemType | string;'
       return:
-        type: '<xref uid="office!Office.MailboxEnums.ItemType:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.ItemType:enum" /> | string'
   - name: notificationMessages
     uid: 'outlook!Office.MessageCompose#notificationMessages:member'
     package: outlook!
@@ -653,7 +653,7 @@ properties:
     syntax:
       content: 'notificationMessages: NotificationMessages;'
       return:
-        type: '<xref uid="office!Office.NotificationMessages:interface" />'
+        type: '<xref uid="outlook!Office.NotificationMessages:interface" />'
   - name: seriesId
     uid: 'outlook!Office.MessageCompose#seriesId:member'
     package: outlook!
@@ -757,7 +757,7 @@ properties:
     syntax:
       content: 'sessionData: SessionData;'
       return:
-        type: '<xref uid="office!Office.SessionData:interface" />'
+        type: '<xref uid="outlook!Office.SessionData:interface" />'
   - name: subject
     uid: 'outlook!Office.MessageCompose#subject:member'
     package: outlook!
@@ -818,7 +818,7 @@ properties:
     syntax:
       content: 'subject: Subject;'
       return:
-        type: '<xref uid="office!Office.Subject:interface" />'
+        type: '<xref uid="outlook!Office.Subject:interface" />'
   - name: to
     uid: 'outlook!Office.MessageCompose#to:member'
     package: outlook!
@@ -904,7 +904,7 @@ properties:
     syntax:
       content: 'to: Recipients;'
       return:
-        type: '<xref uid="office!Office.Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
 methods:
   - name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)'
@@ -1867,7 +1867,7 @@ methods:
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.AttachmentContent:interface" />&gt;) =&gt; void
+            uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1924,7 +1924,7 @@ methods:
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.AttachmentContent:interface" />&gt;) =&gt; void
+            uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -1991,7 +1991,7 @@ methods:
             contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.AttachmentDetailsCompose:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.AttachmentDetailsCompose:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2024,7 +2024,7 @@ methods:
             contain an error code with the reason for the failure.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.AttachmentDetailsCompose:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.AttachmentDetailsCompose:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2639,7 +2639,7 @@ methods:
             item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.SharedProperties:interface" />&gt;) =&gt; void
+            uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2733,7 +2733,7 @@ methods:
             item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.SharedProperties:interface" />&gt;) =&gt; void
+            uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2949,7 +2949,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -3418,7 +3418,7 @@ methods:
             plain text is used.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

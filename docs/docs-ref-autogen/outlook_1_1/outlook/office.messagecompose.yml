@@ -111,7 +111,7 @@ properties:
     syntax:
       content: 'bcc: Recipients;'
       return:
-        type: '<xref uid="office!Office.Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
   - name: body
     uid: 'outlook!Office.MessageCompose#body:member'
     package: outlook!
@@ -159,7 +159,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="office!Office.Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: cc
     uid: 'outlook!Office.MessageCompose#cc:member'
     package: outlook!
@@ -387,7 +387,7 @@ properties:
     syntax:
       content: 'subject: Subject;'
       return:
-        type: '<xref uid="office!Office.Subject:interface" />'
+        type: '<xref uid="outlook!Office.Subject:interface" />'
   - name: to
     uid: 'outlook!Office.MessageCompose#to:member'
     package: outlook!
@@ -473,7 +473,7 @@ properties:
     syntax:
       content: 'to: Recipients;'
       return:
-        type: '<xref uid="office!Office.Recipients:interface" />'
+        type: '<xref uid="outlook!Office.Recipients:interface" />'
 methods:
   - name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)'
@@ -969,7 +969,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be

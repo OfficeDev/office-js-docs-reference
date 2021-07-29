@@ -164,8 +164,8 @@ properties:
         & AppointmentRead;
       return:
         type: >-
-          <xref uid="office!Office.Item:interface" /> & <xref uid="office!Office.ItemCompose:interface" /> & <xref
-          uid="office!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
+          <xref uid="outlook!Office.Item:interface" /> & <xref uid="outlook!Office.ItemCompose:interface" /> & <xref
+          uid="outlook!Office.ItemRead:interface" /> & <xref uid="outlook!Office.Message:interface" /> & <xref
           uid="outlook!Office.MessageCompose:interface" /> & <xref uid="outlook!Office.MessageRead:interface" /> & <xref
           uid="outlook!Office.Appointment:interface" /> & <xref uid="outlook!Office.AppointmentCompose:interface" /> &
           <xref uid="outlook!Office.AppointmentRead:interface" />
@@ -185,7 +185,7 @@ properties:
     syntax:
       content: 'userProfile: UserProfile;'
       return:
-        type: '<xref uid="office!Office.UserProfile:interface" />'
+        type: '<xref uid="outlook!Office.UserProfile:interface" />'
 methods:
   - name: 'convertToEwsId(itemId, restVersion)'
     uid: 'outlook!Office.Mailbox#convertToEwsId:member(1)'
@@ -252,7 +252,7 @@ methods:
           type: string
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
-          type: '<xref uid="office!Office.MailboxEnums.RestVersion:enum" /> | string'
+          type: '<xref uid="outlook!Office.MailboxEnums.RestVersion:enum" /> | string'
       return:
         type: string
         description: ''

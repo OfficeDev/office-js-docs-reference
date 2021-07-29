@@ -142,7 +142,7 @@ methods:
       parameters:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
-          type: '<xref uid="office!Office.CategoryDetails:interface" />[]'
+          type: '<xref uid="outlook!Office.CategoryDetails:interface" />[]'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -187,7 +187,7 @@ methods:
             contain an error code.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -244,7 +244,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.CategoryDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''

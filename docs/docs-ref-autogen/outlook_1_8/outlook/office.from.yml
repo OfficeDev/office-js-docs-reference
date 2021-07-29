@@ -84,7 +84,7 @@ methods:
             result is the item's from value, as an `EmailAddressDetails` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -125,7 +125,7 @@ methods:
             result is the item's from value, as an `EmailAddressDetails` object.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
+            uid="outlook!Office.EmailAddressDetails:interface" />&gt;) =&gt; void
       return:
         type: void
         description: ''

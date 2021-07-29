@@ -46,7 +46,7 @@ properties:
     syntax:
       content: 'color: MailboxEnums.CategoryColor | string;'
       return:
-        type: '<xref uid="office!Office.MailboxEnums.CategoryColor:enum" /> | string'
+        type: '<xref uid="outlook!Office.MailboxEnums.CategoryColor:enum" /> | string'
   - name: displayName
     uid: 'outlook!Office.CategoryDetails#displayName:member'
     package: outlook!

@@ -281,7 +281,11 @@ function cleanUpOutlookMarkdown(markdownString : string) {
 function writeSnippetFileAndClearYamlIfNew(snippetsFilePath: string, snippetsContent: string, keyword: string) {
     const yamlRoot = "../yaml";
     
-    let existingSnippets = fsx.readFileSync(snippetsFilePath).toString();
+    let existingSnippets = "";
+    if (fsx.existsSync(snippetsFilePath)) {
+        existingSnippets =  fsx.readFileSync(snippetsFilePath).toString();
+    }
+    
     if (existingSnippets !== snippetsContent) {
         fsx.writeFileSync(snippetsFilePath, snippetsContent);
 

@@ -110,7 +110,7 @@ methods:
             format for the data to be appended. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -464,7 +464,7 @@ methods:
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -616,7 +616,7 @@ methods:
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -752,7 +752,7 @@ methods:
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -935,7 +935,7 @@ methods:
             present. If Html, the method sets the signature to HTML.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
-            uid="office!Office.CoercionTypeOptions:interface" />
+            uid="outlook!Office.CoercionTypeOptions:interface" />
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

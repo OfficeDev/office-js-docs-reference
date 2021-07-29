@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'changedRecipientFields: RecipientsChangedFields;'
       return:
-        type: '<xref uid="office!Office.RecipientsChangedFields:interface" />'
+        type: '<xref uid="outlook!Office.RecipientsChangedFields:interface" />'
   - name: type
     uid: 'outlook!Office.RecipientsChangedEventArgs#type:member'
     package: outlook!

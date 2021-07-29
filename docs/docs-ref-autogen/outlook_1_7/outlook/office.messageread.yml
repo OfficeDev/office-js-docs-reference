@@ -92,7 +92,7 @@ properties:
     syntax:
       content: 'attachments: AttachmentDetails[];'
       return:
-        type: '<xref uid="office!Office.AttachmentDetails:interface" />[]'
+        type: '<xref uid="outlook!Office.AttachmentDetails:interface" />[]'
   - name: body
     uid: 'outlook!Office.MessageRead#body:member'
     package: outlook!
@@ -140,7 +140,7 @@ properties:
     syntax:
       content: 'body: Body;'
       return:
-        type: '<xref uid="office!Office.Body:interface" />'
+        type: '<xref uid="outlook!Office.Body:interface" />'
   - name: cc
     uid: 'outlook!Office.MessageRead#cc:member'
     package: outlook!
@@ -885,7 +885,7 @@ properties:
     syntax:
       content: 'sender: EmailAddressDetails;'
       return:
-        type: '<xref uid="office!Office.EmailAddressDetails:interface" />'
+        type: '<xref uid="outlook!Office.EmailAddressDetails:interface" />'
   - name: seriesId
     uid: 'outlook!Office.MessageRead#seriesId:member'
     package: outlook!
@@ -2223,7 +2223,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.CustomProperties:interface" />&gt;) =&gt; void
+            uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be

@@ -202,7 +202,7 @@ methods:
           description: >-
             A JSON object that contains the notification message to be added to the item. It contains a
             `NotificationMessageDetails` object.
-          type: '<xref uid="office!Office.NotificationMessageDetails:interface" />'
+          type: '<xref uid="outlook!Office.NotificationMessageDetails:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -277,7 +277,7 @@ methods:
             `NotificationMessageDetails` objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.NotificationMessageDetails:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.NotificationMessageDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -310,7 +310,7 @@ methods:
             `NotificationMessageDetails` objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="office!Office.NotificationMessageDetails:interface" />[]&gt;) =&gt; void
+            uid="outlook!Office.NotificationMessageDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -470,7 +470,7 @@ methods:
           description: >-
             A JSON object that contains the new notification message to replace the existing message. It contains a
             `NotificationMessageDetails` object.
-          type: '<xref uid="office!Office.NotificationMessageDetails:interface" />'
+          type: '<xref uid="outlook!Office.NotificationMessageDetails:interface" />'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
@@ -517,7 +517,7 @@ methods:
           description: >-
             A JSON object that contains the new notification message to replace the existing message. It contains a
             `NotificationMessageDetails` object.
-          type: '<xref uid="office!Office.NotificationMessageDetails:interface" />'
+          type: '<xref uid="outlook!Office.NotificationMessageDetails:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single

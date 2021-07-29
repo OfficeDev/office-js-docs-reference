@@ -26,7 +26,7 @@ properties:
     syntax:
       content: 'recurrence: Recurrence;'
       return:
-        type: '<xref uid="office!Office.Recurrence:interface" />'
+        type: '<xref uid="outlook!Office.Recurrence:interface" />'
   - name: type
     uid: 'outlook!Office.RecurrenceChangedEventArgs#type:member'
     package: outlook!
