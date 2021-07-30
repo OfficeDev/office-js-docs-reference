@@ -259,15 +259,7 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    const outlookSearchString = "outlook!";
-    const commonApiSearchString = "CommonAPI";
-    let startSearchIndex = jsonString.indexOf(commonApiSearchString);
-    do {
-        let outlookIndex = jsonString.indexOf(outlookSearchString, startSearchIndex);
-        jsonString = jsonString.substring(0, outlookIndex) + "office!" + jsonString.substring(outlookIndex + 8);
-        startSearchIndex = jsonString.indexOf(commonApiSearchString, outlookIndex + 8);
-    } while (startSearchIndex >= 0);
-    return jsonString;
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!");
 }
 
 function cleanUpRichApiJson(jsonString : string) {
