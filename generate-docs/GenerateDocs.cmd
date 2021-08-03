@@ -10,17 +10,13 @@ IF EXIST "tools\node_modules" (
     rmdir "tools\node_modules" /s /q
 )
 
-IF EXIST "json" (
-    rmdir "json" /s /q
+IF NOT EXIST "json" (
+    call md json
 )
 
-call md json
-
-IF EXIST "yaml" (
-    rmdir "yaml" /s /q
+IF NOT EXIST "yaml" (
+    call md yaml
 )
-
-call md yaml
 
 call npm install
 
@@ -51,14 +47,23 @@ call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts "ExcelApi 1.1" .\tool-inputs\excel-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts "Mailbox 1.10" ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts Outlook 1.9
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts "Mailbox 1.9" ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts Outlook 1.8
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts "Mailbox 1.8" ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts Outlook 1.7
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts "Mailbox 1.7" ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts Outlook 1.6
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts "Mailbox 1.6" ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts Outlook 1.5
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts "Mailbox 1.5" ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts Outlook 1.4
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts "Mailbox 1.4" ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts Outlook 1.3
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts "Mailbox 1.3" ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts Outlook 1.2
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts Outlook 1.1
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
@@ -110,156 +115,254 @@ call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 
 popd
 
-cd api-extractor-inputs-office
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/office" (
+    pushd api-extractor-inputs-office
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-excel
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-excel-release\excel_online
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_13
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_12
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_11
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_10
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_9
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_8
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_7
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_6
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_5
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_4
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\excel_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/excel" (
+    pushd api-extractor-inputs-excel
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_online" (
+    pushd api-extractor-inputs-excel-release\excel_online
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_13" (
+    pushd api-extractor-inputs-excel-release\excel_1_13
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_12" (
+    pushd api-extractor-inputs-excel-release\excel_1_12
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_11" (
+    pushd api-extractor-inputs-excel-release\excel_1_11
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_10" (
+    pushd api-extractor-inputs-excel-release\excel_1_10
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_9" (
+    pushd api-extractor-inputs-excel-release\excel_1_9
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_8" (
+    pushd api-extractor-inputs-excel-release\excel_1_8
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_7" (
+    pushd api-extractor-inputs-excel-release\excel_1_7
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_6" (
+    pushd api-extractor-inputs-excel-release\excel_1_6
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_5" (
+    pushd api-extractor-inputs-excel-release\excel_1_5
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_4" (
+    pushd api-extractor-inputs-excel-release\excel_1_4
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_3" (
+    pushd api-extractor-inputs-excel-release\excel_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_2" (
+    pushd api-extractor-inputs-excel-release\excel_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_1" (
+    pushd api-extractor-inputs-excel-release\excel_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-onenote
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/onenote" (
+    pushd api-extractor-inputs-onenote
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-outlook
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-outlook-release\outlook_1_10
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.10
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_9
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.9
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_8
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.8
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_7
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.7
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_6
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.6
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_5
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.5
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_4
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.4
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_3
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_2
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\outlook_1_1
-call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/outlook" (
+    pushd api-extractor-inputs-outlook
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_10" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_10
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_9" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_9
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_8" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_8
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_7" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_7
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_6" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_6
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_5" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_5
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_4" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_4
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_3" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_2" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_1" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-powerpoint
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-powerpoint-release\PowerPoint_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\PowerPoint_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/powerpoint" (
+    pushd api-extractor-inputs-powerpoint
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/powerpoint_1_2" (
+    pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/powerpoint_1_1" (
+    pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-visio
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/visio" (
+    pushd api-extractor-inputs-visio
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-word
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-word-release\word_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\word_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\word_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
+if NOT EXIST "json/word" (
+    pushd api-extractor-inputs-word
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_3" (
+    pushd api-extractor-inputs-word-release\word_1_3
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_2" (
+    pushd api-extractor-inputs-word-release\word_1_2
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/word_1_1" (
+    pushd api-extractor-inputs-word-release\word_1_1
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-custom-functions-runtime
-call ..\node_modules\.bin\api-extractor run
+if NOT EXIST "json/custom-functions-runtime.api.json" (
+    pushd api-extractor-inputs-custom-functions-runtime
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
-cd ..\api-extractor-inputs-office-runtime
-call ..\node_modules\.bin\api-extractor run
-
-cd ..
+if NOT EXIST "json/office-runtime.api.json" (
+    pushd api-extractor-inputs-office-runtime
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
 pushd scripts
 call node midprocessor.js
 popd
 
 
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office
+if NOT EXIST "yaml/office" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office )
 
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_1 --output-folder .\yaml\excel_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_2 --output-folder .\yaml\excel_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_3 --output-folder .\yaml\excel_1_3 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_4 --output-folder .\yaml\excel_1_4 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_5 --output-folder .\yaml\excel_1_5 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --output-folder .\yaml\excel_1_6 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_11 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_12 --output-folder .\yaml\excel_1_12 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_13 --output-folder .\yaml\excel_1_13 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_2 --output-folder .\yaml\outlook_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_3 --output-folder .\yaml\outlook_1_3 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_4 --output-folder .\yaml\outlook_1_4 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_5 --output-folder .\yaml\outlook_1_5 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_6 --output-folder .\yaml\outlook_1_6 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_7 --output-folder .\yaml\outlook_1_7 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_10 --output-folder .\yaml\outlook_1_10 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul
-call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul
-
-pushd tools
-call node coverage-tester.js
-popd
+if NOT EXIST "yaml/excel" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office )
+if NOT EXIST "yaml/excel_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_1 --output-folder .\yaml\excel_1_1 --office 2> nul )
+if NOT EXIST "yaml/excel_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_2 --output-folder .\yaml\excel_1_2 --office 2> nul )
+if NOT EXIST "yaml/excel_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_3 --output-folder .\yaml\excel_1_3 --office 2> nul )
+if NOT EXIST "yaml/excel_1_4" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_4 --output-folder .\yaml\excel_1_4 --office 2> nul )
+if NOT EXIST "yaml/excel_1_5" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_5 --output-folder .\yaml\excel_1_5 --office 2> nul )
+if NOT EXIST "yaml/excel_1_6" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --output-folder .\yaml\excel_1_6 --office 2> nul )
+if NOT EXIST "yaml/excel_1_7" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office 2> nul )
+if NOT EXIST "yaml/excel_1_8" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office 2> nul )
+if NOT EXIST "yaml/excel_1_9" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office 2> nul )
+if NOT EXIST "yaml/excel_1_10" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office 2> nul )
+if NOT EXIST "yaml/excel_1_11" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_11 --output-folder .\yaml\excel_1_11 --office 2> nul )
+if NOT EXIST "yaml/excel_1_12" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_12 --output-folder .\yaml\excel_1_12 --office 2> nul )
+if NOT EXIST "yaml/excel_1_13" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_13 --output-folder .\yaml\excel_1_13 --office 2> nul )
+if NOT EXIST "yaml/excel_online" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul )
+if NOT EXIST "yaml/onenote" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office )
+if NOT EXIST "yaml/outlook" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office )
+if NOT EXIST "yaml/outlook_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_2 --output-folder .\yaml\outlook_1_2 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_3 --output-folder .\yaml\outlook_1_3 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_4" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_4 --output-folder .\yaml\outlook_1_4 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_5" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_5 --output-folder .\yaml\outlook_1_5 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_6" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_6 --output-folder .\yaml\outlook_1_6 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_7" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_7 --output-folder .\yaml\outlook_1_7 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_8" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_9" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_10" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_10 --output-folder .\yaml\outlook_1_10 --office 2> nul )
+if NOT EXIST "yaml/powerpoint" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office )
+if NOT EXIST "yaml/powerpoint_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul )
+if NOT EXIST "yaml/powerpoint_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul )
+if NOT EXIST "yaml/visio" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office )
+if NOT EXIST "yaml/word" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office )
+if NOT EXIST "yaml/word_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul )
+if NOT EXIST "yaml/word_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul )
+if NOT EXIST "yaml/word_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul )
 
 pushd scripts
 call node postprocessor.js
+popd
+
+pushd tools
+call node coverage-tester.js
 popd
 
 pause
