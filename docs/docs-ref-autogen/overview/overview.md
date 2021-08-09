@@ -33,22 +33,22 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>Excel APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.13">ExcelApi 1.13</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.12">ExcelApi 1.12</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.11">ExcelApi 1.11</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.10">ExcelApi 1.10</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.9">ExcelApi 1.9</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.8">ExcelApi 1.8</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.7">ExcelApi 1.7</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.6">ExcelApi 1.6</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.5">ExcelApi 1.5</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.4">ExcelApi 1.4</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=excel-js-preview">Common APIs</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.13">ExcelApi 1.13</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.12">ExcelApi 1.12</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.11">ExcelApi 1.11</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.10">ExcelApi 1.10</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.9">ExcelApi 1.9</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.8">ExcelApi 1.8</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.7">ExcelApi 1.7</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.6">ExcelApi 1.6</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.5">ExcelApi 1.5</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.4">ExcelApi 1.4</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
+                <li><a href="/javascript/api/office?view=excel-js-preview">Common APIs</a></li>
             </ul>
         </div>
     </li>
@@ -61,18 +61,18 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>Outlook APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.10">Mailbox 1.10</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.9">Mailbox 1.9</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=outlook-js-preview">Common APIs</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.10">Mailbox 1.10</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.9">Mailbox 1.9</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
+                <li><a href="/javascript/api/office?view=outlook-js-preview">Common APIs</a></li>
             </ul>
         </div>
     </li>
@@ -85,11 +85,11 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>Word APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=word-js-preview">Common APIs</a></li>
+                <li><a href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
+                <li><a href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
+                <li><a href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
+                <li><a href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
+                <li><a href="/javascript/api/office?view=word-js-preview">Common APIs</a></li>
             </ul>
         </div>
     </li>
@@ -102,10 +102,10 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>PowerPoint APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>
+                <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
+                <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
+                <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
+                <li><a href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>
             </ul>
         </div>
     </li>
@@ -118,8 +118,8 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>OneNote APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=onenote-js-1.1">Common APIs</a></li>
+                <li><a href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
+                <li><a href="/javascript/api/office?view=onenote-js-1.1">Common APIs</a></li>
             </ul>
         </div>
     </li>
@@ -132,7 +132,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>Visio APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
+                <li><a href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
             </ul>
         </div>
     </li>
@@ -145,7 +145,7 @@ The following is a list of APIs for the [supported Office host applications](/of
         <div class="cardText">
             <h3>Project APIs</h3>
             <ul>
-                <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                <li><a href="/javascript/api/office?view=common-js">Common APIs only</a></li>
             </ul>
         </div>
     </li>
