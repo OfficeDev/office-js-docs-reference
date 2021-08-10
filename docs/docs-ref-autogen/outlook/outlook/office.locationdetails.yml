@@ -4,7 +4,7 @@ uid: 'outlook!Office.LocationDetails:interface'
 package: outlook!
 fullName: Office.LocationDetails
 summary: |-
-  Represents a location. Read only.
+  Represents a location. Read-only.
 
   \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
