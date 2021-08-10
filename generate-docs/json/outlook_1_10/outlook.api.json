@@ -10551,7 +10551,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.LocationDetails:interface",
-              "docComment": "/**\n * Represents a location. Read only.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents a location. Read-only.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

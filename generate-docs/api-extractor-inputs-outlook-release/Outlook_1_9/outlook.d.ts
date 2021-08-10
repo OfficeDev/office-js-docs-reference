@@ -4857,7 +4857,7 @@ export declare namespace Office {
         setAsync(location: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
-     * Represents a location. Read only.
+     * Represents a location. Read-only.
      * 
      * [Api set: Mailbox 1.8]
      *
