@@ -2317,7 +2317,7 @@ export declare namespace Office {
     *
     * @remarks
     *
-    * **Hosts**: Excel, Word
+    * **Hosts**: Word, Excel (deprecated, use {@link https://docs.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview | Excel.Binding} instead)
     *
     * **Requirement sets**:
     *
