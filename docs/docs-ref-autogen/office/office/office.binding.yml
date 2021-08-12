@@ -19,7 +19,8 @@ summary: >-
   MatrixBinding and TableBinding objects expose additional methods for matrix- and table-specific features, such as
   counting the number of rows and columns.
 remarks: >-
-  **Hosts**: Excel, Word
+  **Hosts**: Word, Excel (deprecated, use
+  [Excel.Binding](https://docs.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview) instead)
 
 
   **Requirement sets**:
