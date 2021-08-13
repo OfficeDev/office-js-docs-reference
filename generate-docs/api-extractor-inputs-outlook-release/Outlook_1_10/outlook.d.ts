@@ -10,7 +10,7 @@ export declare namespace Office {
          *
          * [Api set: Mailbox 1.10]
          */
-         enum ActionType {
+        enum ActionType {
             /**
              * The `showTaskPane` action.
              */
@@ -352,6 +352,50 @@ export declare namespace Office {
              * Specifies that the entity is a contact.
              */
             Contact = "contact"
+        }
+        /**
+         * Action types supported by {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        enum InfobarActionType {
+            /**
+             * Dismiss action was selected.
+             *
+             * [Api set: Mailbox 1.10]
+             */
+            Dismiss = 1
+        }
+        /**
+         * Type of notification allowed by {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        enum InfobarType {
+            /**
+             * Notification displays an informational message.
+             *
+             * [Api set: Mailbox 1.10]
+             */
+            Informational = 0,
+            /**
+             * Notification displays a progress indicator.
+             *
+             * [Api set: Mailbox 1.10]
+             */
+            ProgressIndicator = 1,
+            /**
+             * Notification displays an error message.
+             *
+             * [Api set: Mailbox 1.10]
+             */
+            Error = 2,
+            /**
+             * Notification displays an informational message with actions.
+             *
+             * [Api set: Mailbox 1.10]
+             */
+            Insight = 3
         }
         /**
          * Specifies the notification message type for an appointment or message.
@@ -4685,6 +4729,44 @@ export declare namespace Office {
          *                  The `value` property of the result is the item's from value, as an `EmailAddressDetails` object.
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
+    }
+    /**
+     * Provides basic details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+     *
+     * [Api set: Mailbox 1.10]
+     */
+    export interface InfobarClickedEventArgs {
+        /**
+         * Gets additional details about the notification message.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        infobarDetails: InfobarDetails;
+        /**
+         * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        type: "olkInfobarClicked";
+    }
+    /**
+     * Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+     *
+     * [Api set: Mailbox 1.10]
+     */
+    export interface InfobarDetails {
+        /**
+         * The action type. Currently, "Dismiss" is the only supported action.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        actionType: MailboxEnums.InfobarActionType;
+        /**
+         * The notification type.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        infobarType: MailboxEnums.InfobarType;
     }
     /**
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange

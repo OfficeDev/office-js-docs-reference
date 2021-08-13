@@ -76,6 +76,8 @@ export declare namespace Office {
              */
             Contact = "contact"
         }
+        
+        
         /**
          * Specifies the notification message type for an appointment or message.
          *
@@ -2225,6 +2227,8 @@ export declare namespace Office {
          */
         urls: string[];
     }
+    
+    
     
     
     /**

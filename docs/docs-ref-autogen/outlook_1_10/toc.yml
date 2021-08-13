@@ -31,6 +31,10 @@ items:
                 uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
               - name: EntityType
                 uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+              - name: InfobarActionType
+                uid: 'outlook!Office.MailboxEnums.InfobarActionType:enum'
+              - name: InfobarType
+                uid: 'outlook!Office.MailboxEnums.InfobarType:enum'
               - name: ItemNotificationMessageType
                 uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
               - name: ItemType
@@ -97,6 +101,10 @@ items:
             uid: 'outlook!Office.Entities:interface'
           - name: From
             uid: 'outlook!Office.From:interface'
+          - name: InfobarClickedEventArgs
+            uid: 'outlook!Office.InfobarClickedEventArgs:interface'
+          - name: InfobarDetails
+            uid: 'outlook!Office.InfobarDetails:interface'
           - name: InternetHeaders
             uid: 'outlook!Office.InternetHeaders:interface'
           - name: Item

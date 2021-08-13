@@ -96,6 +96,19 @@ fields:
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  - name: InfobarClicked
+    uid: 'office!Office.EventType.InfobarClicked:member'
+    package: office!
+    summary: >-
+      Occurs in Outlook when an action is selected on a notification message with a defined [custom
+      action](https://docs.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->.
+      Currently, "Dismiss" is the only supported action that fires this event.
+
+
+      **Important**: This event is only available with task pane implementation.
+
+
+      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: ItemChanged
     uid: 'office!Office.EventType.ItemChanged:member'
     package: office!
