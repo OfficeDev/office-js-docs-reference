@@ -1,0 +1,23 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.InfobarActionType
+uid: 'outlook!Office.MailboxEnums.InfobarActionType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.InfobarActionType
+summary: >-
+  Action types supported by
+  [Office.EventType.InfobarClicked](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+
+
+  \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Dismiss
+    uid: 'outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member'
+    package: outlook!
+    summary: |-
+      Dismiss action was selected.
+
+      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    value: '1'

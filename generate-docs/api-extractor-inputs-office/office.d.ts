@@ -2114,6 +2114,20 @@ export declare namespace Office {
          */
         EnhancedLocationsChanged,
         /**
+         * Occurs in Outlook when an action is selected on a notification message with a defined
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions | custom action}.
+         * Currently, "Dismiss" is the only supported action that fires this event.
+         *
+         * **Important**: This event is only available with task pane implementation.
+         *
+         * To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object.
+         * The event handler receives an argument of type
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10 | Office.InfobarClickedEventArgs}.
+         *
+         * [Api set: Mailbox 1.10]
+         */
+        InfobarClicked,
+        /**
          * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
          * **Important**: Only available with task pane implementation.
          *
