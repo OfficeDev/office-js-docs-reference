@@ -321,6 +321,8 @@ export declare namespace Office {
              */
             Contact = "contact"
         }
+        
+        
         /**
          * Specifies the notification message type for an appointment or message.
          *
@@ -4504,6 +4506,8 @@ export declare namespace Office {
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
     }
+    
+    
     /**
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
      * and is converted to a MIME message. These headers are stored as x-headers in the MIME message.

@@ -9831,6 +9831,145 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "outlook!Office.InfobarClickedEventArgs:interface",
+              "docComment": "/**\n * Provides basic details about the notification message that raised the `Office.EventType.InfobarClicked` event.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface InfobarClickedEventArgs "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "InfobarClickedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.InfobarClickedEventArgs#infobarDetails:member",
+                  "docComment": "/**\n * Gets additional details about the notification message.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "infobarDetails: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "InfobarDetails",
+                      "canonicalReference": "outlook!Office.InfobarDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "infobarDetails",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.InfobarClickedEventArgs#type:member",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "type: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkInfobarClicked\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.InfobarDetails:interface",
+              "docComment": "/**\n * Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface InfobarDetails "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "InfobarDetails",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.InfobarDetails#actionType:member",
+                  "docComment": "/**\n * The action type. Currently, \"Dismiss\" is the only supported action.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "actionType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.InfobarActionType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarActionType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "actionType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.InfobarDetails#infobarType:member",
+                  "docComment": "/**\n * The notification type.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "infobarType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.InfobarType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "infobarType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "outlook!Office.InternetHeaders:interface",
               "docComment": "/**\n * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.\n *\n * Internet headers are stored as key/value pairs on a per-item basis.\n *\n * **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **Recommended practices**\n *\n * Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create any more internet headers on that mailbox, which can result in unexpected behavior from clients that rely on this to function.\n *\n * Apply the following guidelines when you create internet headers in your add-in.\n *\n * - Create the minimum number of headers required.\n *\n * - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner (for example, based on user input, timestamp, etc.).\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
               "excerptTokens": [
@@ -14723,6 +14862,141 @@
                       ],
                       "releaseTag": "Public",
                       "name": "Url",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.InfobarActionType:enum",
+                  "docComment": "/**\n * Action types supported by {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum InfobarActionType "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "InfobarActionType",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member",
+                      "docComment": "/**\n * Dismiss action was selected.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Dismiss = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "1"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Dismiss",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.InfobarType:enum",
+                  "docComment": "/**\n * Type of notification allowed by {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum InfobarType "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "InfobarType",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Error:member",
+                      "docComment": "/**\n * Notification displays an error message.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Error = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "2"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Error",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Informational:member",
+                      "docComment": "/**\n * Notification displays an informational message.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Informational = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "0"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Informational",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Insight:member",
+                      "docComment": "/**\n * Notification displays an informational message with actions.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Insight = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "3"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Insight",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.ProgressIndicator:member",
+                      "docComment": "/**\n * Notification displays a progress indicator.\n *\n * [Api set: Mailbox 1.10]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "ProgressIndicator = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "1"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "ProgressIndicator",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2

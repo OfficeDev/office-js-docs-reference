@@ -126,6 +126,8 @@ export declare namespace Office {
              */
             Contact = "contact"
         }
+        
+        
         /**
          * Specifies the notification message type for an appointment or message.
          *
@@ -3281,6 +3283,8 @@ export declare namespace Office {
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
     }
+    
+    
     
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment. 

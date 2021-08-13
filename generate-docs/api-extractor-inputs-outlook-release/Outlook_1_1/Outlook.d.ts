@@ -77,6 +77,8 @@ export declare namespace Office {
             Contact = "contact"
         }
         
+        
+        
         /**
          * Specifies an item's type.
          *
@@ -1797,6 +1799,8 @@ export declare namespace Office {
          */
         urls: string[];
     }
+    
+    
     
     
     /**

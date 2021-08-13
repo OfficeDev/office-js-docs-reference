@@ -5738,6 +5738,7 @@ Office.EventType,DialogMessageReceived,EnumField,Fine,false
 Office.EventType,DialogParentMessageReceived,EnumField,Fine,false
 Office.EventType,DocumentSelectionChanged,EnumField,Fine,false
 Office.EventType,EnhancedLocationsChanged,EnumField,Good,false
+Office.EventType,InfobarClicked,EnumField,Good,false
 Office.EventType,ItemChanged,EnumField,Good,false
 Office.EventType,NodeDeleted,EnumField,Fine,false
 Office.EventType,NodeInserted,EnumField,Fine,false
@@ -7384,6 +7385,12 @@ Office.Entities,urls,Method,Fine,true
 Office.From,N/A,Class,Fine,false
 Office.From,getAsync(options,Method,Fine,false
 Office.From,getAsync(callback),Method,Fine,false
+Office.InfobarClickedEventArgs,N/A,Class,Fine,false
+Office.InfobarClickedEventArgs,infobarDetails,Method,Fine,false
+Office.InfobarClickedEventArgs,type,Method,Good,false
+Office.InfobarDetails,N/A,Class,Fine,false
+Office.InfobarDetails,actionType,Method,Good,false
+Office.InfobarDetails,infobarType,Method,Fine,false
 Office.InternetHeaders,N/A,Class,Good,false
 Office.InternetHeaders,getAsync(names,Method,Good,false
 Office.InternetHeaders,removeAsync(names,Method,Fine,false
@@ -7516,6 +7523,13 @@ Office.MailboxEnums.EntityType,MeetingSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,PhoneNumber,EnumField,Fine,false
 Office.MailboxEnums.EntityType,TaskSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,Url,EnumField,Fine,false
+Office.MailboxEnums.InfobarActionType,N/A,Class,Fine,false
+Office.MailboxEnums.InfobarActionType,Dismiss,EnumField,Fine,false
+Office.MailboxEnums.InfobarType,N/A,Class,Fine,false
+Office.MailboxEnums.InfobarType,Error,EnumField,Fine,false
+Office.MailboxEnums.InfobarType,Informational,EnumField,Fine,false
+Office.MailboxEnums.InfobarType,Insight,EnumField,Fine,false
+Office.MailboxEnums.InfobarType,ProgressIndicator,EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,N/A,Class,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,ErrorMessage,EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,InformationalMessage,EnumField,Fine,false
