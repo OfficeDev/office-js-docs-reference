@@ -14,6 +14,7 @@ CustomFunctions.ErrorCode,notAvailable,EnumField,Good,false
 CustomFunctions.ErrorCode,nullReference,EnumField,Good,false
 CustomFunctions.Invocation,N/A,Class,Fine,false
 CustomFunctions.Invocation,address,Method,Good,false
+CustomFunctions.Invocation,functionName,Method,Good,false
 CustomFunctions.Invocation,parameterAddresses,Method,Good,false
 CustomFunctions.StreamingInvocation,N/A,Class,Good,false
 CustomFunctions.StreamingInvocation,setResult,Method,Good,false
