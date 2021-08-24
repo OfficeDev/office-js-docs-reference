@@ -30,6 +30,20 @@ properties:
       content: 'address?: string;'
       return:
         type: string
+  - name: functionName
+    uid: 'custom-functions-runtime!CustomFunctions.Invocation#functionName:member'
+    package: custom-functions-runtime!
+    fullName: functionName
+    summary: >-
+      The name of this function. \[ [API set: CustomFunctionsRuntime
+      1.1](/office/dev/add-ins/excel/custom-functions-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'functionName?: string;'
+      return:
+        type: string
   - name: parameterAddresses
     uid: 'custom-functions-runtime!CustomFunctions.Invocation#parameterAddresses:member'
     package: custom-functions-runtime!
