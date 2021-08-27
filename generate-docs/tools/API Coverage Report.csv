@@ -7355,6 +7355,10 @@ Office.CustomProperties,remove(name),Method,Good,false
 Office.CustomProperties,saveAsync(callback,Method,Good,false
 Office.CustomProperties,saveAsync(asyncContext),Method,Good,false
 Office.CustomProperties,set(name,Method,Good,false
+Office.DelayDeliveryTime,N/A,Class,Fine,true
+Office.DelayDeliveryTime,getAsync(options,Method,Fine,false
+Office.DelayDeliveryTime,getAsync(callback),Method,Fine,false
+Office.DelayDeliveryTime,setAsync(datetime,Method,Fine,false
 Office.Diagnostics,N/A,Class,Good,false
 Office.Diagnostics,hostName,Method,Good,false
 Office.Diagnostics,hostVersion,Method,Good,false
@@ -7745,6 +7749,7 @@ Office.MessageCompose,body,Method,Fine,false
 Office.MessageCompose,categories,Method,Good,false
 Office.MessageCompose,cc,Method,Good,false
 Office.MessageCompose,conversationId,Method,Good,false
+Office.MessageCompose,delayDeliveryTime,Method,Fine,false
 Office.MessageCompose,from,Method,Fine,false
 Office.MessageCompose,internetHeaders,Method,Fine,false
 Office.MessageCompose,itemType,Method,Good,false

@@ -4568,6 +4568,85 @@ export declare namespace Office {
         set(name: string, value: string): void;
     }
     /**
+     * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
+     *
+     * [Api set: Mailbox preview]
+     *
+     * @remarks
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     */
+    export interface DelayDeliveryTime {
+        /**
+         * Gets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param options - An object literal that contains one or more of the following properties:
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         */
+        getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
+        /**
+         * Gets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         */
+        getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
+        /**
+         * Sets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param datetime - The future date and time when the message should be sent.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(datetime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Sets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param datetime - The future date and time when the message should be sent.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(datetime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
      * Provides diagnostic information to an Outlook add-in.
      *
      * @remarks
@@ -6549,6 +6628,20 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         conversationId: string;
+        /**
+         * Gets or sets the delayed delivery date and time of a message.
+         *
+         * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         */
+        delayDeliveryTime: DelayDeliveryTime;
         /**
          * Gets the email address of the sender of a message.
          *
