@@ -3,11 +3,8 @@ name: Excel.CustomProperty
 uid: 'excel!Excel.CustomProperty:class'
 package: excel!
 fullName: Excel.CustomProperty
-summary: |-
-  Represents a custom property.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a custom property.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are
       automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.CustomProperty#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      The type of the value used for the custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The type of the value used for the custom property.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,10 +56,7 @@ properties:
     summary: >-
       The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
       values are automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +68,8 @@ methods:
     uid: 'excel!Excel.CustomProperty#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the custom property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Deletes the custom property.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,10 +151,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.CustomProperty): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

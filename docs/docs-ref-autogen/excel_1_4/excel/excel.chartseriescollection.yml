@@ -3,11 +3,8 @@ name: Excel.ChartSeriesCollection
 uid: 'excel!Excel.ChartSeriesCollection:class'
 package: excel!
 fullName: Excel.ChartSeriesCollection
-summary: |-
-  Represents a collection of chart series.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of chart series.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartSeriesCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Returns the number of series in the collection.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of series in the collection.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +52,8 @@ methods:
     uid: 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Returns the number of series in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of series in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,11 +65,27 @@ methods:
     uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Retrieves a series based on its position in the collection.
-
+    summary: Retrieves a series based on its position in the collection.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Get the name of the first series in the series collection.
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('items');
+          return ctx.sync().then(function() {
+              console.log(seriesCollection.items[0].name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,26 +96,7 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.ChartSeries:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the name of the first series in the series collection.
-          Excel.run(function (ctx) { 
-              var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-              seriesCollection.load('items');
-              return ctx.sync().then(function() {
-                  console.log(seriesCollection.items[0].name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
     package: excel!

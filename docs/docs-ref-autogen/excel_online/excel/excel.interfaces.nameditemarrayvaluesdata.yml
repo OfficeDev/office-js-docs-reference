@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
     package: excel!
     fullName: types
-    summary: |-
-      Represents the types for each item in the named item array
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the types for each item in the named item array
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
     package: excel!
     fullName: values
-    summary: |-
-      Represents the values of each item in the named item array.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the values of each item in the named item array.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

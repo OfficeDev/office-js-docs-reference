@@ -3,11 +3,8 @@ name: Excel.ChartTitlePosition
 uid: 'excel!Excel.ChartTitlePosition:enum'
 package: excel!
 fullName: Excel.ChartTitlePosition
-summary: |-
-  Represents the position of the chart title.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the position of the chart title.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

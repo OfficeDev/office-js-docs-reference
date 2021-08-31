@@ -13,13 +13,10 @@ properties:
     uid: 'excel!Excel.Interfaces.LinkedWorkbookData#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
-
-
+    summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

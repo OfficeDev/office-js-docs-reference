@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemData#hasData:member'
     package: excel!
     fullName: hasData
-    summary: |-
-      Value is `true` if the slicer item has data.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value is `true` if the slicer item has data.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,10 +29,7 @@ properties:
       Value is `true` if the slicer item is selected. Setting this value will not clear the selected state of other
       slicer items. By default, if the slicer item is the only one selected, when it is deselected, all items will be
       selected.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +40,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemData#key:member'
     package: excel!
     fullName: key
-    summary: |-
-      Represents the unique value representing the slicer item.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the unique value representing the slicer item.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +52,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerItemData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Represents the title displayed in the Excel UI.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the title displayed in the Excel UI.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

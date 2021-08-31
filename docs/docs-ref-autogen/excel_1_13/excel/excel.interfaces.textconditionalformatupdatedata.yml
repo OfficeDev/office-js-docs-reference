@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns a format object, encapsulating the conditional format''s font, fill, borders, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member'
     package: excel!
     fullName: rule
-    summary: |-
-      The rule of the conditional format.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The rule of the conditional format.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

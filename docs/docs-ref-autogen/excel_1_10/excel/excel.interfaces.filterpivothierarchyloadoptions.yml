@@ -3,11 +3,8 @@ name: Excel.Interfaces.FilterPivotHierarchyLoadOptions
 uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.FilterPivotHierarchyLoadOptions
-summary: |-
-  Represents the Excel FilterPivotHierarchy.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel FilterPivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#enableMultipleFilterItems:member'
     package: excel!
     fullName: enableMultipleFilterItems
-    summary: |-
-      Determines whether to allow multiple filter items.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Determines whether to allow multiple filter items.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

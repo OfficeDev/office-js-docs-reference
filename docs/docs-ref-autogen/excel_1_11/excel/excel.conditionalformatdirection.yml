@@ -3,11 +3,8 @@ name: Excel.ConditionalFormatDirection
 uid: 'excel!Excel.ConditionalFormatDirection:enum'
 package: excel!
 fullName: Excel.ConditionalFormatDirection
-summary: |-
-  Represents the direction for a selection.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the direction for a selection.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

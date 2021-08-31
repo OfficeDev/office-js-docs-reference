@@ -3,11 +3,8 @@ name: Excel.PivotField
 uid: 'excel!Excel.PivotField:class'
 package: excel!
 fullName: Excel.PivotField
-summary: |-
-  Represents the Excel PivotField.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel PivotField.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.PivotField#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.PivotField#items:member'
     package: excel!
     fullName: items
-    summary: |-
-      Returns the PivotFields associated with the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the PivotFields associated with the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.PivotField#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.PivotField#showAllItems:member'
     package: excel!
     fullName: showAllItems
-    summary: |-
-      Determines whether to show all items of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Determines whether to show all items of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.PivotField#subtotals:member'
     package: excel!
     fullName: subtotals
-    summary: |-
-      Subtotals of the PivotField.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Subtotals of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,10 +91,7 @@ methods:
     summary: >-
       Sets one or more of the field's current PivotFilters and applies them to the field. If the provided filters are
       invalid or cannot be applied, an exception is thrown.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,53 +107,48 @@ methods:
     uid: 'excel!Excel.PivotField#clearAllFilters:member(1)'
     package: excel!
     fullName: clearAllFilters()
-    summary: |-
-      Clears all criteria from all of the field's filters. This removes any active filtering on the field.
-
+    summary: Clears all criteria from all of the field's filters. This removes any active filtering on the field.
+    remarks: >-
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+      await Excel.run(async (context) => {
+        // Clear all the PivotFilters.
+
+        // Get the PivotTable.
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+        pivotTable.hierarchies.load("name");
+        await context.sync();
+
+        // Clear the filters on each PivotField.
+        pivotTable.hierarchies.items.forEach((hierarchy) => {
+          hierarchy.fields.getItem(hierarchy.name).clearAllFilters();
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearAllFilters(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-          await Excel.run(async (context) => {
-            // Clear all the PivotFilters.
-
-            // Get the PivotTable.
-            const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-            pivotTable.hierarchies.load("name");
-            await context.sync();
-
-            // Clear the filters on each PivotField.
-            pivotTable.hierarchies.items.forEach((hierarchy) => {
-              hierarchy.fields.getItem(hierarchy.name).clearAllFilters();
-            });
-            await context.sync();
-          });
-
-          ```
+        description: ''
   - name: clearFilter(filterType)
     uid: 'excel!Excel.PivotField#clearFilter:member(1)'
     package: excel!
     fullName: clearFilter(filterType)
-    summary: |-
-      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,11 +164,8 @@ methods:
     uid: 'excel!Excel.PivotField#clearFilter:member(2)'
     package: excel!
     fullName: clearFilter(filterTypeString)
-    summary: |-
-      Clears all existing criteria from the field's filter of the given type (if one is currently applied).
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,11 +181,8 @@ methods:
     uid: 'excel!Excel.PivotField#getFilters:member(1)'
     package: excel!
     fullName: getFilters()
-    summary: |-
-      Gets all filters currently applied on the field.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets all filters currently applied on the field.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,11 +196,8 @@ methods:
     uid: 'excel!Excel.PivotField#isFiltered:member(1)'
     package: excel!
     fullName: isFiltered(filterType)
-    summary: |-
-      Checks if there are any applied filters on the field.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Checks if there are any applied filters on the field.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,11 +215,8 @@ methods:
     uid: 'excel!Excel.PivotField#isFiltered:member(2)'
     package: excel!
     fullName: isFiltered(filterTypeString)
-    summary: |-
-      Checks if there are any applied filters on the field.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Checks if there are any applied filters on the field.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,10 +306,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.PivotField): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,10 +347,7 @@ methods:
     summary: >-
       Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
       will be based on the PivotField itself.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,10 +366,7 @@ methods:
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
       sort when there are multiple values from the same DataPivotHierarchy.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,10 +397,7 @@ methods:
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
       sort when there are multiple values from the same DataPivotHierarchy.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

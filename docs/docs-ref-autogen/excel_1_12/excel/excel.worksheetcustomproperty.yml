@@ -3,11 +3,8 @@ name: Excel.WorksheetCustomProperty
 uid: 'excel!Excel.WorksheetCustomProperty:class'
 package: excel!
 fullName: Excel.WorksheetCustomProperty
-summary: |-
-  Represents a worksheet-level custom property.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a worksheet-level custom property.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255
       characters (larger values will cause an `InvalidArgument` error to be thrown.)
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.WorksheetCustomProperty#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      Gets or sets the value of the custom property.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the value of the custom property.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +54,8 @@ methods:
     uid: 'excel!Excel.WorksheetCustomProperty#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the custom property.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Deletes the custom property.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,10 +137,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.WorksheetCustomProperty): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

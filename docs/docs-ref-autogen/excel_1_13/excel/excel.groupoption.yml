@@ -3,8 +3,8 @@ name: Excel.GroupOption
 uid: 'excel!Excel.GroupOption:enum'
 package: excel!
 fullName: Excel.GroupOption
-summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

@@ -3,8 +3,8 @@ name: Excel.Interfaces.HeaderFooterLoadOptions
 uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.HeaderFooterLoadOptions
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,10 +30,7 @@ properties:
     summary: >-
       The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +44,7 @@ properties:
     summary: >-
       The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +58,7 @@ properties:
     summary: >-
       The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,10 +72,7 @@ properties:
     summary: >-
       The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,10 +86,7 @@ properties:
     summary: >-
       The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,10 +100,7 @@ properties:
     summary: >-
       The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

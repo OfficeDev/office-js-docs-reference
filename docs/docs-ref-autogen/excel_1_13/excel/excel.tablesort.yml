@@ -3,11 +3,8 @@ name: Excel.TableSort
 uid: 'excel!Excel.TableSort:class'
 package: excel!
 fullName: Excel.TableSort
-summary: |-
-  Manages sorting operations on `Table` objects.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Manages sorting operations on `Table` objects.
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.TableSort#fields:member'
     package: excel!
     fullName: fields
-    summary: |-
-      Specifies the current conditions used to last sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the current conditions used to last sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.TableSort#matchCase:member'
     package: excel!
     fullName: matchCase
-    summary: |-
-      Specifies if the casing impacts the last sort of the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the casing impacts the last sort of the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.TableSort#method:member'
     package: excel!
     fullName: method
-    summary: |-
-      Represents the Chinese character ordering method last used to sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the Chinese character ordering method last used to sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,11 +64,30 @@ methods:
     uid: 'excel!Excel.TableSort#apply:member(1)'
     package: excel!
     fullName: 'apply(fields, matchCase, method)'
-    summary: |-
-      Perform a sort operation.
-
+    summary: Perform a sort operation.
+    remarks: |-
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          table.sort.apply([ 
+                  {
+                      key: 2,
+                      ascending: true
+                  },
+              ], true);
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,38 +104,13 @@ methods:
           type: '<xref uid="excel!Excel.SortMethod:enum" />'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var table = ctx.workbook.tables.getItem(tableName);
-              table.sort.apply([ 
-                      {
-                          key: 2,
-                          ascending: true
-                      },
-                  ], true);
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'apply(fields, matchCase, methodString)'
     uid: 'excel!Excel.TableSort#apply:member(2)'
     package: excel!
     fullName: 'apply(fields, matchCase, methodString)'
-    summary: |-
-      Perform a sort operation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Perform a sort operation.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,10 +135,7 @@ methods:
     summary: >-
       Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
       state of the header buttons.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,11 +214,8 @@ methods:
     uid: 'excel!Excel.TableSort#reapply:member(1)'
     package: excel!
     fullName: reapply()
-    summary: |-
-      Reapplies the current sorting parameters to the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Reapplies the current sorting parameters to the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

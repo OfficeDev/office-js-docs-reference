@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      The display name of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The display name of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      The zero-based position of the worksheet within the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The zero-based position of the worksheet within the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,13 +37,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
     package: excel!
     fullName: visibility
-    summary: >-
-      The visibility of the worksheet.
-
-
+    summary: The visibility of the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

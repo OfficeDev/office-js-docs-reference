@@ -3,11 +3,8 @@ name: Excel.SlicerItem
 uid: 'excel!Excel.SlicerItem:class'
 package: excel!
 fullName: Excel.SlicerItem
-summary: |-
-  Represents a slicer item in a slicer.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a slicer item in a slicer.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.SlicerItem#hasData:member'
     package: excel!
     fullName: hasData
-    summary: |-
-      Value is `true` if the slicer item has data.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value is `true` if the slicer item has data.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,10 +43,7 @@ properties:
       Value is `true` if the slicer item is selected. Setting this value will not clear the selected state of other
       slicer items. By default, if the slicer item is the only one selected, when it is deselected, all items will be
       selected.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +54,8 @@ properties:
     uid: 'excel!Excel.SlicerItem#key:member'
     package: excel!
     fullName: key
-    summary: |-
-      Represents the unique value representing the slicer item.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the unique value representing the slicer item.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +66,8 @@ properties:
     uid: 'excel!Excel.SlicerItem#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Represents the title displayed in the Excel UI.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the title displayed in the Excel UI.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,10 +149,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.SlicerItem): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

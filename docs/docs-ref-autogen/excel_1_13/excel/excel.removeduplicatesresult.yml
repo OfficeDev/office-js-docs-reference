@@ -3,11 +3,8 @@ name: Excel.RemoveDuplicatesResult
 uid: 'excel!Excel.RemoveDuplicatesResult:class'
 package: excel!
 fullName: Excel.RemoveDuplicatesResult
-summary: |-
-  Represents the results from `Range.removeDuplicates`<!-- -->.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the results from `Range.removeDuplicates`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
     package: excel!
     fullName: removed
-    summary: |-
-      Number of duplicated rows removed by the operation.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number of duplicated rows removed by the operation.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,41 +39,38 @@ properties:
     uid: 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
     package: excel!
     fullName: uniqueRemaining
-    summary: |-
-      Number of remaining unique rows present in the resulting range.
-
+    summary: Number of remaining unique rows present in the resulting range.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:D11");
+
+          const deleteResult = range.removeDuplicates([0],true);    
+          deleteResult.load();    
+          await context.sync();
+
+          console.log(deleteResult.removed + " entries with duplicate names removed.");
+          console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly uniqueRemaining: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B2:D11");
-
-              const deleteResult = range.removeDuplicates([0],true);    
-              deleteResult.load();    
-              await context.sync();
-
-              console.log(deleteResult.removed + " entries with duplicate names removed.");
-              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
-          });
-
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.RemoveDuplicatesResult#load:member(1)'

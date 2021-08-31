@@ -3,8 +3,8 @@ name: Excel.PageBreakCollection
 uid: 'excel!Excel.PageBreakCollection:class'
 package: excel!
 fullName: Excel.PageBreakCollection
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -40,11 +40,26 @@ methods:
     uid: 'excel!Excel.PageBreakCollection#add:member(1)'
     package: excel!
     fullName: add(pageBreakRange)
-    summary: |-
-      Adds a page break before the top-left cell of the range specified.
-
+    summary: Adds a page break before the top-left cell of the range specified.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
+      await Excel.run(async (context) => {
+          const farmSheet = context.workbook.worksheets.getItem("Print");
+          farmSheet.horizontalPageBreaks.add("A21:E21");
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,33 +70,13 @@ methods:
           type: '<xref uid="excel!Excel.Range:class" /> | string'
       return:
         type: '<xref uid="excel!Excel.PageBreak:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
-
-          await Excel.run(async (context) => {
-              const farmSheet = context.workbook.worksheets.getItem("Print");
-              farmSheet.horizontalPageBreaks.add("A21:E21");
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.PageBreakCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of page breaks in the collection.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of page breaks in the collection.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,11 +88,8 @@ methods:
     uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(index)
-    summary: |-
-      Gets a page break object via the index.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a page break object via the index.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,11 +168,8 @@ methods:
     uid: 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
     package: excel!
     fullName: removePageBreaks()
-    summary: |-
-      Resets all manual page breaks in the collection.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Resets all manual page breaks in the collection.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

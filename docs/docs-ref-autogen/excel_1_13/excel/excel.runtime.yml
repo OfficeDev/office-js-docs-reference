@@ -3,11 +3,8 @@ name: Excel.Runtime
 uid: 'excel!Excel.Runtime:class'
 package: excel!
 fullName: Excel.Runtime
-summary: |-
-  Represents the Excel Runtime class.
-
-  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel Runtime class.
+remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,45 +27,42 @@ properties:
     uid: 'excel!Excel.Runtime#enableEvents:member'
     package: excel!
     fullName: enableEvents
-    summary: |-
-      Toggle JavaScript events in the current task pane or content add-in.
-
+    summary: Toggle JavaScript events in the current task pane or content add-in.
+    remarks: >-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
+
+      await Excel.run(async (context) => {
+          context.runtime.load("enableEvents");
+          await context.sync();
+
+          // check if events are enabled and toggle accordingly
+          const eventBoolean = !context.runtime.enableEvents
+          context.runtime.enableEvents = eventBoolean;
+          if (eventBoolean) {
+              console.log("Events are currently on.");
+          } else {
+              console.log("Events are currently off.");
+          }
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'enableEvents: boolean;'
       return:
         type: boolean
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
-
-          await Excel.run(async (context) => {
-              context.runtime.load("enableEvents");
-              await context.sync();
-
-              // check if events are enabled and toggle accordingly
-              const eventBoolean = !context.runtime.enableEvents
-              context.runtime.enableEvents = eventBoolean;
-              if (eventBoolean) {
-                  console.log("Events are currently on.");
-              } else {
-                  console.log("Events are currently off.");
-              }
-
-              await context.sync();
-          });
-
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.Runtime#load:member(1)'
@@ -144,10 +138,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Runtime): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

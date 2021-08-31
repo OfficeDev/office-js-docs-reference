@@ -3,11 +3,8 @@ name: Excel.ConditionalFormatRule
 uid: 'excel!Excel.ConditionalFormatRule:class'
 package: excel!
 fullName: Excel.ConditionalFormatRule
-summary: |-
-  Represents a rule, for all traditional rule/format pairings.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a rule, for all traditional rule/format pairings.'
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,48 +27,42 @@ properties:
     uid: 'excel!Excel.ConditionalFormatRule#formula:member'
     package: excel!
     fullName: formula
-    summary: |-
-      The formula, if required, on which to evaluate the conditional format rule.
-
+    summary: 'The formula, if required, on which to evaluate the conditional format rule.'
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'formula: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B8:E13");
-              const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          });
-
-          ```
   - name: formulaLocal
     uid: 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
     package: excel!
     fullName: formulaLocal
-    summary: |-
-      The formula, if required, on which to evaluate the conditional format rule in the user's language.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The formula, if required, on which to evaluate the conditional format rule in the user''s language.'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,11 +73,8 @@ properties:
     uid: 'excel!Excel.ConditionalFormatRule#formulaR1C1:member'
     package: excel!
     fullName: formulaR1C1
-    summary: |-
-      The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,10 +156,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalFormatRule): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

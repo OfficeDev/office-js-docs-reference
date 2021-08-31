@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#axes:member'
     package: excel!
     fullName: axes
-    summary: |-
-      Represents chart axes.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents chart axes.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#chartType:member'
     package: excel!
     fullName: chartType
-    summary: |-
-      Specifies the type of the chart. See `Excel.ChartType` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the type of the chart. See `Excel.ChartType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,11 +66,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#dataLabels:member'
     package: excel!
     fullName: dataLabels
-    summary: |-
-      Represents the data labels on the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the data labels on the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,11 +78,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Encapsulates the format properties for the chart area.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Encapsulates the format properties for the chart area.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,11 +90,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#height:member'
     package: excel!
     fullName: height
-    summary: |-
-      Specifies the height, in points, of the chart object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the height, in points, of the chart object.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,11 +102,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      The unique ID of chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The unique ID of chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,11 +114,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#left:member'
     package: excel!
     fullName: left
-    summary: |-
-      The distance, in points, from the left side of the chart to the worksheet origin.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The distance, in points, from the left side of the chart to the worksheet origin.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,11 +126,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#legend:member'
     package: excel!
     fullName: legend
-    summary: |-
-      Represents the legend for the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the legend for the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,11 +138,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Specifies the name of a chart object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the name of a chart object.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,11 +150,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#series:member'
     package: excel!
     fullName: series
-    summary: |-
-      Represents either a single series or collection of series in the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents either a single series or collection of series in the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,11 +162,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#showAllFieldButtons:member'
     package: excel!
     fullName: showAllFieldButtons
-    summary: |-
-      Specifies whether to display all field buttons on a PivotChart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies whether to display all field buttons on a PivotChart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,10 +177,7 @@ properties:
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,10 +191,7 @@ properties:
     summary: >-
       Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
       of the chart area (on a chart).
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,11 +202,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartData#width:member'
     package: excel!
     fullName: width
-    summary: |-
-      Specifies the width, in points, of the chart object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the width, in points, of the chart object.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

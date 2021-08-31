@@ -3,8 +3,8 @@ name: Excel.ChartTickLabelAlignment
 uid: 'excel!Excel.ChartTickLabelAlignment:enum'
 package: excel!
 fullName: Excel.ChartTickLabelAlignment
-summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

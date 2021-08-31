@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PageBreakData#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: |-
-      Specifies the column index for the page break.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the column index for the page break.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PageBreakData#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: |-
-      Specifies the row index for the page break.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the row index for the page break.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

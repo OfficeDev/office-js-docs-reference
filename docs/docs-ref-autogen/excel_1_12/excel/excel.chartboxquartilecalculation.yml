@@ -3,11 +3,8 @@ name: Excel.ChartBoxQuartileCalculation
 uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
 package: excel!
 fullName: Excel.ChartBoxQuartileCalculation
-summary: |-
-  Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

@@ -3,11 +3,8 @@ name: Excel.Interfaces.StyleCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.StyleCollectionLoadOptions
-summary: |-
-  Represents a collection of all the styles.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of all the styles.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member'
     package: excel!
     fullName: borders
-    summary: |-
-      For EACH ITEM in the collection: A collection of four border objects that represent the style of the four borders.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A collection of four border objects that represent the style of the four borders.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#builtIn:member'
     package: excel!
     fullName: builtIn
-    summary: |-
-      For EACH ITEM in the collection: Specifies if the style is a built-in style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if the style is a built-in style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      For EACH ITEM in the collection: The fill of the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The fill of the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      For EACH ITEM in the collection: A `Font` object that represents the font of the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: A `Font` object that represents the font of the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#formulaHidden:member'
     package: excel!
     fullName: formulaHidden
-    summary: |-
-      For EACH ITEM in the collection: Specifies if the formula will be hidden when the worksheet is protected.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if the formula will be hidden when the worksheet is protected.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,10 +90,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the horizontal alignment for the style. See
       `Excel.HorizontalAlignment` for details.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,10 +104,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the auto indent, horizontal alignment, vertical
       alignment, wrap text, indent level, and text orientation properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,10 +118,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the color, color index, line style, and weight
       border properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,10 +132,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the background, bold, color, color index, font
       style, italic, name, size, strikethrough, subscript, superscript, and underline font properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,11 +143,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeNumber:member'
     package: excel!
     fullName: includeNumber
-    summary: |-
-      For EACH ITEM in the collection: Specifies if the style includes the number format property.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if the style includes the number format property.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,10 +158,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the color, color index, invert if negative,
       pattern, pattern color, and pattern color index interior properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,10 +172,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the style includes the formula hidden and locked protection
       properties.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,11 +183,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#indentLevel:member'
     package: excel!
     fullName: indentLevel
-    summary: |-
-      For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,11 +195,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#locked:member'
     package: excel!
     fullName: locked
-    summary: |-
-      For EACH ITEM in the collection: Specifies if the object is locked when the worksheet is protected.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if the object is locked when the worksheet is protected.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -252,11 +207,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      For EACH ITEM in the collection: The name of the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The name of the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,11 +219,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      For EACH ITEM in the collection: The format code of the number format for the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The format code of the number format for the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,11 +231,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormatLocal:member'
     package: excel!
     fullName: numberFormatLocal
-    summary: |-
-      For EACH ITEM in the collection: The localized format code of the number format for the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The localized format code of the number format for the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,11 +243,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#readingOrder:member'
     package: excel!
     fullName: readingOrder
-    summary: |-
-      For EACH ITEM in the collection: The reading order for the style.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The reading order for the style.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -312,11 +255,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#shrinkToFit:member'
     package: excel!
     fullName: shrinkToFit
-    summary: |-
-      For EACH ITEM in the collection: Specifies if text automatically shrinks to fit in the available column width.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if text automatically shrinks to fit in the available column width.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -330,10 +270,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the vertical alignment for the style. See `Excel.VerticalAlignment` for
       details.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,11 +281,8 @@ properties:
     uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#wrapText:member'
     package: excel!
     fullName: wrapText
-    summary: |-
-      For EACH ITEM in the collection: Specifies if Excel wraps the text in the object.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if Excel wraps the text in the object.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

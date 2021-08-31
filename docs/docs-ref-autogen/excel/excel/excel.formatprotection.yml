@@ -3,11 +3,8 @@ name: Excel.FormatProtection
 uid: 'excel!Excel.FormatProtection:class'
 package: excel!
 fullName: Excel.FormatProtection
-summary: |-
-  Represents the format protection of a range object.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the format protection of a range object.
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range
       doesn't have a uniform formula hidden setting.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       Specifies if Excel locks the cells in the object. A `null` value indicates that the entire range doesn't have a
       uniform lock setting.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,10 +126,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.FormatProtection): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

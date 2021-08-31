@@ -3,11 +3,8 @@ name: Excel.ChartAxes
 uid: 'excel!Excel.ChartAxes:class'
 package: excel!
 fullName: Excel.ChartAxes
-summary: |-
-  Represents the chart axes.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the chart axes.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartAxes#categoryAxis:member'
     package: excel!
     fullName: categoryAxis
-    summary: |-
-      Represents the category axis in a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the category axis in a chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartAxes#seriesAxis:member'
     package: excel!
     fullName: seriesAxis
-    summary: |-
-      Represents the series axis of a 3-D chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the series axis of a 3-D chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,50 +51,43 @@ properties:
     uid: 'excel!Excel.ChartAxes#valueAxis:member'
     package: excel!
     fullName: valueAxis
-    summary: |-
-      Represents the value axis in an axis.
-
+    summary: Represents the value axis in an axis.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.axes.valueAxis.maximum = 5;
+          chart.axes.valueAxis.minimum = 0;
+          chart.axes.valueAxis.majorUnit = 1;
+          chart.axes.valueAxis.minorUnit = 0.2;
+          return ctx.sync().then(function() {
+                  console.log("Axis Settings Changed");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly valueAxis: Excel.ChartAxis;'
       return:
         type: '<xref uid="excel!Excel.ChartAxis:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.axes.valueAxis.maximum = 5;
-              chart.axes.valueAxis.minimum = 0;
-              chart.axes.valueAxis.majorUnit = 1;
-              chart.axes.valueAxis.minorUnit = 0.2;
-              return ctx.sync().then(function() {
-                      console.log("Axis Settings Changed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
 methods:
   - name: 'getItem(type, group)'
     uid: 'excel!Excel.ChartAxes#getItem:member(1)'
     package: excel!
     fullName: 'getItem(type, group)'
-    summary: |-
-      Returns the specific axis identified by type and group.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the specific axis identified by type and group.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,11 +106,8 @@ methods:
     uid: 'excel!Excel.ChartAxes#getItem:member(2)'
     package: excel!
     fullName: 'getItem(typeString, group)'
-    summary: |-
-      Returns the specific axis identified by type and group.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the specific axis identified by type and group.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,10 +198,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxes): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

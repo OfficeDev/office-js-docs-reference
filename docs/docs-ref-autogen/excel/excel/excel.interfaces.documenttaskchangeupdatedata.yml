@@ -16,11 +16,9 @@ properties:
     summary: >-
       Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task
       for an `unassign` change record type.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,13 +29,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#changedBy:member'
     package: excel!
     fullName: changedBy
-    summary: >-
-      Represents the user who created or changed the task.
-
-
+    summary: Represents the user who created or changed the task.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#commentId:member'
     package: excel!
     fullName: commentId
-    summary: >-
-      Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
-
-
+    summary: Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,13 +57,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#createdDateTime:member'
     package: excel!
     fullName: createdDateTime
-    summary: >-
-      Represents the creation date and time of the task change record. All dates are in UTC.
-
-
+    summary: Represents the creation date and time of the task change record. All dates are in UTC.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,11 +75,9 @@ properties:
       Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
       Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid
       conflicts.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -101,13 +88,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      ID for the task change record.
-
-
+    summary: ID for the task change record.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -122,11 +106,9 @@ properties:
       Represents the task's completion percentage. It is used for the `setPercentComplete` change record type. This is a
       value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the
       associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -140,11 +122,9 @@ properties:
     summary: >-
       Represents the task's priority. It is used for the `setPriority` change record type. This is a value between 0 and
       10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -159,11 +139,9 @@ properties:
       Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
       Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid
       conflicts.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -174,13 +152,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#title:member'
     package: excel!
     fullName: title
-    summary: >-
-      Represents the task's title. It is used for the `setTitle` change record type.
-
-
+    summary: Represents the task's title. It is used for the `setTitle` change record type.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -194,11 +169,9 @@ properties:
     summary: >-
       Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->,
       `undo`<!-- -->, and `setPriority`<!-- -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -214,13 +187,10 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeUpdateData#undoHistoryId:member'
     package: excel!
     fullName: undoHistoryId
-    summary: >-
-      Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
-
-
+    summary: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

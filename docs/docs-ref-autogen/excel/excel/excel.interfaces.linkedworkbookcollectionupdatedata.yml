@@ -30,11 +30,9 @@ properties:
     summary: >-
       Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the
       workbook.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

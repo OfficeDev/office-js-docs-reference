@@ -3,13 +3,10 @@ name: Excel.LinkedDataTypeCollection
 uid: 'excel!Excel.LinkedDataTypeCollection:class'
 package: excel!
 fullName: Excel.LinkedDataTypeCollection
-summary: >-
-  Represents a collection of linked data types.
-
-
+summary: Represents a collection of linked data types.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -45,13 +42,10 @@ methods:
     uid: 'excel!Excel.LinkedDataTypeCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
-      Gets the number of linked data types in the collection.
-
-
+    summary: Gets the number of linked data types in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -63,13 +57,10 @@ methods:
     uid: 'excel!Excel.LinkedDataTypeCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
-      Gets a linked data type by service ID.
-
-
+    summary: Gets a linked data type by service ID.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -85,13 +76,10 @@ methods:
     uid: 'excel!Excel.LinkedDataTypeCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: >-
-      Gets a linked data type by its index in the collection.
-
-
+    summary: Gets a linked data type by its index in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -112,11 +100,9 @@ methods:
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -198,11 +184,9 @@ methods:
     summary: >-
       Makes a request to refresh all the linked data types in the collection. If the service is busy or otherwise
       temporarily inaccessible, the request will not be fulfilled.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

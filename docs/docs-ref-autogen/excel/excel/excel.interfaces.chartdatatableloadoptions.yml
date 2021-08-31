@@ -3,13 +3,10 @@ name: Excel.Interfaces.ChartDataTableLoadOptions
 uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartDataTableLoadOptions
-summary: >-
-  Represents the data table object of a chart.
-
-
+summary: Represents the data table object of a chart.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -32,13 +29,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: >-
-      Represents the format of a chart data table, which includes fill, font, and border format.
-
-
+    summary: 'Represents the format of a chart data table, which includes fill, font, and border format.'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showHorizontalBorder:member'
     package: excel!
     fullName: showHorizontalBorder
-    summary: >-
-      Specifies whether to display horizontal border of the data table.
-
-
+    summary: Specifies whether to display horizontal border of the data table.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,13 +57,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: >-
-      Specifies whether to show legendkey of the data table.
-
-
+    summary: Specifies whether to show legendkey of the data table.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,13 +71,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showOutlineBorder:member'
     package: excel!
     fullName: showOutlineBorder
-    summary: >-
-      Specifies whether to display outline border of the data table.
-
-
+    summary: Specifies whether to display outline border of the data table.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -100,13 +85,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#showVerticalBorder:member'
     package: excel!
     fullName: showVerticalBorder
-    summary: >-
-      Specifies whether to display vertical border of the data table.
-
-
+    summary: Specifies whether to display vertical border of the data table.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -117,13 +99,10 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableLoadOptions#visible:member'
     package: excel!
     fullName: visible
-    summary: >-
-      Specifies whether to show data table of the chart.
-
-
+    summary: Specifies whether to show data table of the chart.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

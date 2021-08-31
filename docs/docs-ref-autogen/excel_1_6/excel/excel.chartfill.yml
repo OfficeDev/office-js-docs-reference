@@ -3,11 +3,8 @@ name: Excel.ChartFill
 uid: 'excel!Excel.ChartFill:class'
 package: excel!
 fullName: Excel.ChartFill
-summary: |-
-  Represents the fill formatting for a chart element.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the fill formatting for a chart element.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -31,46 +28,64 @@ methods:
     uid: 'excel!Excel.ChartFill#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: |-
-      Clears the fill color of a chart element.
-
+    summary: Clears the fill color of a chart element.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
+      Excel.run(function (ctx) { 
+          var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          gridlines.format.line.clear();
+          return ctx.sync().then(function() {
+                  console.log("Chart Major Gridlines Format Cleared");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
-          Excel.run(function (ctx) { 
-              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.clear();
-              return ctx.sync().then(function() {
-                      console.log("Chart Major Gridlines Format Cleared");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: setSolidColor(color)
     uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
     package: excel!
     fullName: setSolidColor(color)
-    summary: |-
-      Sets the fill formatting of a chart element to a uniform color.
-
+    summary: Sets the fill formatting of a chart element to a uniform color.
+    remarks: >-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-point.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+          let point = pointsCollection.getItemAt(2);
+
+          // Set color for chart point.
+          point.format.fill.setSolidColor('red');
+
+          await context.sync();        
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,30 +98,7 @@ methods:
           type: string
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-point.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
-              let point = pointsCollection.getItemAt(2);
-
-              // Set color for chart point.
-              point.format.fill.setSolidColor('red');
-
-              await context.sync();        
-          });
-
-          ```
+        description: ''
   - name: toJSON()
     uid: 'excel!Excel.ChartFill#toJSON:member(1)'
     package: excel!

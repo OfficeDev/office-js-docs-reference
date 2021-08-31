@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartData#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      The custom XML part's ID.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The custom XML part's ID.
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartData#namespaceUri:member'
     package: excel!
     fullName: namespaceUri
-    summary: |-
-      The custom XML part's namespace URI.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The custom XML part's namespace URI.
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

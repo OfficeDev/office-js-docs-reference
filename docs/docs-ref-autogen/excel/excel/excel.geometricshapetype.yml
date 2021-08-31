@@ -3,11 +3,8 @@ name: Excel.GeometricShapeType
 uid: 'excel!Excel.GeometricShapeType:enum'
 package: excel!
 fullName: Excel.GeometricShapeType
-summary: |-
-  Specifies the shape type for a `GeometricShape` object.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the shape type for a `GeometricShape` object.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

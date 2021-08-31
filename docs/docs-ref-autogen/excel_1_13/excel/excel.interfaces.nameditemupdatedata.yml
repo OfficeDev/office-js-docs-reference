@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemUpdateData#comment:member'
     package: excel!
     fullName: comment
-    summary: |-
-      Specifies the comment associated with this name.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the comment associated with this name.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemUpdateData#formula:member'
     package: excel!
     fullName: formula
-    summary: |-
-      The formula of the named item. Formulas always start with an equal sign ("=").
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The formula of the named item. Formulas always start with an equal sign ("=").
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.NamedItemUpdateData#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Specifies if the object is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the object is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

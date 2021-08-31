@@ -3,11 +3,8 @@ name: Excel.CommentCollection
 uid: 'excel!Excel.CommentCollection:class'
 package: excel!
 fullName: Excel.CommentCollection
-summary: |-
-  Represents a collection of comment objects that are part of the workbook.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of comment objects that are part of the workbook.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,10 +43,27 @@ methods:
     summary: >-
       Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
       provided range is larger than one cell.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+
+          // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+          sheet.comments.add("A2", "TODO: add data.");
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,26 +89,7 @@ methods:
           type: '<xref uid="excel!Excel.ContentType:enum" />'
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Comments");
-
-              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
-              sheet.comments.add("A2", "TODO: add data.");
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: 'add(cellAddress, content, contentTypeString)'
     uid: 'excel!Excel.CommentCollection#add:member(2)'
     package: excel!
@@ -102,10 +97,7 @@ methods:
     summary: >-
       Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
       provided range is larger than one cell.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,11 +128,8 @@ methods:
     uid: 'excel!Excel.CommentCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of comments in the collection.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of comments in the collection.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,11 +141,8 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(commentId)
-    summary: |-
-      Gets a comment from the collection based on its ID.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a comment from the collection based on its ID.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,11 +158,8 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a comment from the collection based on its position.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a comment from the collection based on its position.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,11 +175,8 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     package: excel!
     fullName: getItemByCell(cellAddress)
-    summary: |-
-      Gets the comment from the specified cell.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the comment from the specified cell.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,11 +195,8 @@ methods:
     uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
     package: excel!
     fullName: getItemByReplyId(replyId)
-    summary: |-
-      Gets the comment to which the given reply is connected.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the comment to which the given reply is connected.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

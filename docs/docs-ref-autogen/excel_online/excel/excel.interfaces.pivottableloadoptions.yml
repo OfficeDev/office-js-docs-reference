@@ -6,10 +6,7 @@ fullName: Excel.Interfaces.PivotTableLoadOptions
 summary: >-
   Represents an Excel PivotTable. To learn more about the PivotTable object model, read [Work with PivotTables using the
   Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#allowMultipleFiltersPerField:member'
     package: excel!
     fullName: allowMultipleFiltersPerField
-    summary: |-
-      Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#enableDataValueEditing:member'
     package: excel!
     fullName: enableDataValueEditing
-    summary: |-
-      Specifies if the PivotTable allows values in the data body to be edited by the user.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable allows values in the data body to be edited by the user.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +53,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the PivotTable.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the PivotTable.
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#layout:member'
     package: excel!
     fullName: layout
-    summary: |-
-      The PivotLayout describing the layout and visual structure of the PivotTable.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The PivotLayout describing the layout and visual structure of the PivotTable.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,11 +77,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the PivotTable.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,10 +92,7 @@ properties:
     summary: >-
       Specifies whether the PivotTable refreshes when the workbook opens. Corresponds to "Refresh on load" setting in
       the UI.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +103,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#useCustomSortLists:member'
     package: excel!
     fullName: useCustomSortLists
-    summary: |-
-      Specifies if the PivotTable uses custom lists when sorting.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable uses custom lists when sorting.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,11 +115,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: |-
-      The worksheet containing the current PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The worksheet containing the current PivotTable.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

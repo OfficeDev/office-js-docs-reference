@@ -3,11 +3,8 @@ name: Excel.CustomConditionalFormat
 uid: 'excel!Excel.CustomConditionalFormat:class'
 package: excel!
 fullName: Excel.CustomConditionalFormat
-summary: |-
-  Represents a custom conditional format type.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a custom conditional format type.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,78 +27,71 @@ properties:
     uid: 'excel!Excel.CustomConditionalFormat#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
+    summary: 'Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.'
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B8:E13");
-              const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          });
-
-          ```
   - name: rule
     uid: 'excel!Excel.CustomConditionalFormat#rule:member'
     package: excel!
     fullName: rule
-    summary: |-
-      Specifies the `Rule` object on this conditional format.
-
+    summary: Specifies the `Rule` object on this conditional format.
+    remarks: |-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {
+          var sheet = ctx.workbook.worksheets.getActiveWorksheet();
+          var range = sheet.getRange("A1:A5");
+          range.values = [[1], [20], [""], [5], ["test"]];
+          var cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          var cfCustom = cf.customOrNullObject;
+          cfCustom.rule.formula = "=ISBLANK(A1)";
+          cfCustom.format.fill.color = "#00FF00";
+          return ctx.sync().then(function () {
+              console.log("Added new custom conditional format highlighting all blank cells.");
+          });
+      }).catch(function (error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly rule: Excel.ConditionalFormatRule;'
       return:
         type: '<xref uid="excel!Excel.ConditionalFormatRule:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              var sheet = ctx.workbook.worksheets.getActiveWorksheet();
-              var range = sheet.getRange("A1:A5");
-              range.values = [[1], [20], [""], [5], ["test"]];
-              var cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              var cfCustom = cf.customOrNullObject;
-              cfCustom.rule.formula = "=ISBLANK(A1)";
-              cfCustom.format.fill.color = "#00FF00";
-              return ctx.sync().then(function () {
-                  console.log("Added new custom conditional format highlighting all blank cells.");
-              });
-          }).catch(function (error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.CustomConditionalFormat#load:member(1)'
@@ -177,10 +167,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.CustomConditionalFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

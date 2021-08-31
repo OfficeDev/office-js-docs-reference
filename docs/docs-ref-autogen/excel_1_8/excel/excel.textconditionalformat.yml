@@ -3,11 +3,8 @@ name: Excel.TextConditionalFormat
 uid: 'excel!Excel.TextConditionalFormat:class'
 package: excel!
 fullName: Excel.TextConditionalFormat
-summary: |-
-  Represents a specific text conditional format.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a specific text conditional format.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,78 +27,72 @@ properties:
     uid: 'excel!Excel.TextConditionalFormat#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
-
+    summary: 'Returns a format object, encapsulating the conditional format''s font, fill, borders, and other properties.'
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B16:D18");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.containsText);
+          conditionalFormat.textComparison.format.font.color = "red";
+          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type: '<xref uid="excel!Excel.ConditionalRangeFormat:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B16:D18");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.containsText);
-              conditionalFormat.textComparison.format.font.color = "red";
-              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
-
-              await context.sync();
-          });
-
-          ```
   - name: rule
     uid: 'excel!Excel.TextConditionalFormat#rule:member'
     package: excel!
     fullName: rule
-    summary: |-
-      The rule of the conditional format.
-
+    summary: The rule of the conditional format.
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B16:D18");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.containsText);
+          conditionalFormat.textComparison.format.font.color = "red";
+          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rule: Excel.ConditionalTextComparisonRule;'
       return:
         type: '<xref uid="excel!Excel.ConditionalTextComparisonRule:interface" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B16:D18");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.containsText);
-              conditionalFormat.textComparison.format.font.color = "red";
-              conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
-
-              await context.sync();
-          });
-
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.TextConditionalFormat#load:member(1)'
@@ -177,10 +168,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.TextConditionalFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

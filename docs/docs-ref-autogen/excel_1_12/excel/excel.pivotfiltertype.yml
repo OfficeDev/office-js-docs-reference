@@ -3,11 +3,8 @@ name: Excel.PivotFilterType
 uid: 'excel!Excel.PivotFilterType:enum'
 package: excel!
 fullName: Excel.PivotFilterType
-summary: |-
-  A simple enum that represents a type of filter for a PivotField.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: A simple enum that represents a type of filter for a PivotField.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

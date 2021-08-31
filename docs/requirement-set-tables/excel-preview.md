@@ -147,17 +147,37 @@
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#showPivotFieldList)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#use1904DateSystem)|True if the workbook uses the 1904 date system.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[onFiltered](/javascript/api/excel/excel.worksheet#onFiltered)|Occurs when a filter is applied on a specific worksheet.|
+||[onNameChanged](/javascript/api/excel/excel.worksheet#onNameChanged)|Occurs when the worksheet name is changed.|
 ||[onProtectionChanged](/javascript/api/excel/excel.worksheet#onProtectionChanged)|Occurs when the worksheet protection state is changed.|
+||[onVisibilityChanged](/javascript/api/excel/excel.worksheet#onVisibilityChanged)|Occurs when the worksheet visibility is changed.|
 ||[tabId](/javascript/api/excel/excel.worksheet#tabId)|Returns a value representing this worksheet that can be read by Open Office XML.|
 ||[tasks](/javascript/api/excel/excel.worksheet#tasks)|Returns a collection of tasks that are present in the worksheet.|
 |[WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs)|[changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#changeDirectionState)|Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or inserted.|
 ||[triggerSource](/javascript/api/excel/excel.worksheetchangedeventargs#triggerSource)|Represents the trigger source of the event.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet \| string)](/javascript/api/excel/excel.worksheetcollection#addFromBase64_base64File__sheetNamesToInsert__positionType__relativeTo_)|Inserts the specified worksheets of a workbook into the current workbook.|
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#onFiltered)|Occurs when any worksheet's filter is applied in the workbook.|
+||[onMoved](/javascript/api/excel/excel.worksheetcollection#onMoved)|Occurs when a worksheet is moved by a user within a workbook.|
+||[onNameChanged](/javascript/api/excel/excel.worksheetcollection#onNameChanged)|Occurs when the worksheet name is changed in the worksheet collection.|
 ||[onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onProtectionChanged)|Occurs when the worksheet protection state is changed.|
+||[onVisibilityChanged](/javascript/api/excel/excel.worksheetcollection#onVisibilityChanged)|Occurs when the worksheet visibility is changed in the worksheet collection.|
 |[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|[type](/javascript/api/excel/excel.worksheetfilteredeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetfilteredeventargs#worksheetId)|Gets the ID of the worksheet in which the filter is applied.|
+|[WorksheetMovedEventArgs](/javascript/api/excel/excel.worksheetmovedeventargs)|[positionAfter](/javascript/api/excel/excel.worksheetmovedeventargs#positionAfter)|Gets the new position of the worksheet, after the move.|
+||[positionBefore](/javascript/api/excel/excel.worksheetmovedeventargs#positionBefore)|Gets the previous position of the worksheet, prior to the move.|
+||[source](/javascript/api/excel/excel.worksheetmovedeventargs#source)|The source of the event.|
+||[type](/javascript/api/excel/excel.worksheetmovedeventargs#type)|Gets the type of the event.|
+||[worksheetId](/javascript/api/excel/excel.worksheetmovedeventargs#worksheetId)|Gets the ID of the worksheet that was moved.|
+|[WorksheetNameChangedEventArgs](/javascript/api/excel/excel.worksheetnamechangedeventargs)|[nameAfter](/javascript/api/excel/excel.worksheetnamechangedeventargs#nameAfter)|Gets the new name of the worksheet, after the name change.|
+||[nameBefore](/javascript/api/excel/excel.worksheetnamechangedeventargs#nameBefore)|Gets the previous name of the worksheet, before the name changed.|
+||[source](/javascript/api/excel/excel.worksheetnamechangedeventargs#source)|The source of the event.|
+||[type](/javascript/api/excel/excel.worksheetnamechangedeventargs#type)|Gets the type of the event.|
+||[worksheetId](/javascript/api/excel/excel.worksheetnamechangedeventargs#worksheetId)|Gets the ID of the worksheet with the new name.|
 |[WorksheetProtectionChangedEventArgs](/javascript/api/excel/excel.worksheetprotectionchangedeventargs)|[isProtected](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#isProtected)|Gets the current protection status of the worksheet.|
 ||[source](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#source)|The source of the event.|
 ||[type](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#worksheetId)|Gets the ID of the worksheet in which the protection status is changed.|
+|[WorksheetVisibilityChangedEventArgs](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs)|[source](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#source)|The source of the event.|
+||[type](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#type)|Gets the type of the event.|
+||[visibilityAfter](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#visibilityAfter)|Gets the new visibility setting of the worksheet, after the visibility change.|
+||[visibilityBefore](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#visibilityBefore)|Gets the previous visibility setting of the worksheet, before the visibility change.|
+||[worksheetId](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs#worksheetId)|Gets the ID of the worksheet whose visibility has changed.|

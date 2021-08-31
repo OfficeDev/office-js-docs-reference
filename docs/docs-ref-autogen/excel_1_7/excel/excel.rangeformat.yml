@@ -3,11 +3,8 @@ name: Excel.RangeFormat
 uid: 'excel!Excel.RangeFormat:class'
 package: excel!
 fullName: Excel.RangeFormat
-summary: |-
-  A format object encapsulating the range's font, fill, borders, alignment, and other properties.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'A format object encapsulating the range''s font, fill, borders, alignment, and other properties.'
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#borders:member'
     package: excel!
     fullName: borders
-    summary: |-
-      Collection of border objects that apply to the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of border objects that apply to the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#columnWidth:member'
     package: excel!
     fullName: columnWidth
-    summary: |-
-      Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.'
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Returns the fill object defined on the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the fill object defined on the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Returns the font object defined on the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the font object defined on the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: |-
-      Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +91,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#protection:member'
     package: excel!
     fullName: protection
-    summary: |-
-      Returns the format protection object for a range.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the format protection object for a range.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +103,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#rowHeight:member'
     package: excel!
     fullName: rowHeight
-    summary: |-
-      The height of all rows in the range. If the row heights are not uniform, `null` will be returned.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The height of all rows in the range. If the row heights are not uniform, `null` will be returned.'
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,39 +119,36 @@ properties:
       The text orientation of all the cells within the range. The text orientation should be an integer either from -90
       to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then `null` will be
       returned.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-text-orientation.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:E2");
+
+          // Set textOrientation to either an integer between -90 and 90
+          // or to 180 for vertically-oriented text.
+          range.format.textOrientation = 90;
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'textOrientation: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-text-orientation.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B2:E2");
-
-              // Set textOrientation to either an integer between -90 and 90
-              // or to 180 for vertically-oriented text.
-              range.format.textOrientation = 90;
-
-              await context.sync();
-          });
-
-          ```
   - name: useStandardHeight
     uid: 'excel!Excel.RangeFormat#useStandardHeight:member'
     package: excel!
@@ -185,10 +158,7 @@ properties:
       row height of the `Range` object equals the standard height of the sheet. Returns `null` if the range contains
       more than one row and the rows aren't all the same height. Returns `false` otherwise. Note: This property is only
       intended to be set to `true`<!-- -->. Setting it to `false` has no effect.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,10 +174,7 @@ properties:
       column width of the `Range` object equals the standard width of the sheet. Returns `null` if the range contains
       more than one column and the columns aren't all the same height. Returns `false` otherwise. Note: This property is
       only intended to be set to `true`<!-- -->. Setting it to `false` has no effect.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,11 +185,8 @@ properties:
     uid: 'excel!Excel.RangeFormat#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: |-
-      Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,10 +200,7 @@ properties:
     summary: >-
       Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a
       uniform wrap setting
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,10 +215,7 @@ methods:
     summary: >-
       Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
       columns.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,10 +230,7 @@ methods:
     summary: >-
       Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
       columns.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -418,10 +373,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.RangeFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

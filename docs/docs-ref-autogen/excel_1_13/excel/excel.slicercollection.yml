@@ -3,11 +3,8 @@ name: Excel.SlicerCollection
 uid: 'excel!Excel.SlicerCollection:class'
 package: excel!
 fullName: Excel.SlicerCollection
-summary: |-
-  Represents a collection of all the slicer objects in the workbook or a worksheet.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of all the slicer objects in the workbook or a worksheet.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,30 @@ methods:
     uid: 'excel!Excel.SlicerCollection#add:member(1)'
     package: excel!
     fullName: 'add(slicerSource, sourceField, slicerDestination)'
-    summary: |-
-      Adds a new slicer to the workbook.
-
+    summary: Adds a new slicer to the workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Pivot");
+          const slicer = sheet.slicers.add(
+              "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+              "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+          );
+          slicer.name = "Fruit Slicer";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,38 +90,13 @@ methods:
           type: 'string | <xref uid="excel!Excel.Worksheet:class" />'
       return:
         type: '<xref uid="excel!Excel.Slicer:class" />'
-        description: >-
-          The new slicer.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Pivot");
-              const slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          });
-
-          ```
+        description: The new slicer.
   - name: getCount()
     uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Returns the number of slicers in the collection.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of slicers in the collection.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,11 +108,30 @@ methods:
     uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a slicer object using its name or ID.
-
+    summary: Gets a slicer object using its name or ID.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.caption = "Fruit Types";
+          slicer.left = 395;
+          slicer.top = 15;
+          slicer.height = 135;
+          slicer.width = 150;
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,37 +142,13 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Slicer:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.caption = "Fruit Types";
-              slicer.left = 395;
-              slicer.top = 15;
-              slicer.height = 135;
-              slicer.width = 150;
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a slicer based on its position in the collection.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a slicer based on its position in the collection.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,10 +169,7 @@ methods:
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

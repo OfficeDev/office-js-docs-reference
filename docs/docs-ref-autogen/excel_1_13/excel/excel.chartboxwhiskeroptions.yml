@@ -3,11 +3,8 @@ name: Excel.ChartBoxwhiskerOptions
 uid: 'excel!Excel.ChartBoxwhiskerOptions:class'
 package: excel!
 fullName: Excel.ChartBoxwhiskerOptions
-summary: |-
-  Represents the properties of a box and whisker chart.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the properties of a box and whisker chart.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartBoxwhiskerOptions#quartileCalculation:member'
     package: excel!
     fullName: quartileCalculation
-    summary: |-
-      Specifies if the quartile calculation type of a box and whisker chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the quartile calculation type of a box and whisker chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartBoxwhiskerOptions#showInnerPoints:member'
     package: excel!
     fullName: showInnerPoints
-    summary: |-
-      Specifies if inner points are shown in a box and whisker chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if inner points are shown in a box and whisker chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.ChartBoxwhiskerOptions#showMeanLine:member'
     package: excel!
     fullName: showMeanLine
-    summary: |-
-      Specifies if the mean line is shown in a box and whisker chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the mean line is shown in a box and whisker chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.ChartBoxwhiskerOptions#showMeanMarker:member'
     package: excel!
     fullName: showMeanMarker
-    summary: |-
-      Specifies if the mean marker is shown in a box and whisker chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the mean marker is shown in a box and whisker chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.ChartBoxwhiskerOptions#showOutlierPoints:member'
     package: excel!
     fullName: showOutlierPoints
-    summary: |-
-      Specifies if outlier points are shown in a box and whisker chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if outlier points are shown in a box and whisker chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,10 +158,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartBoxwhiskerOptions): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

@@ -7,10 +7,7 @@ summary: >-
   Represents the data validation applied to the current range. To learn more about the data validation object model,
   read [Add data validation to Excel
   ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,11 +30,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#errorAlert:member'
     package: excel!
     fullName: errorAlert
-    summary: |-
-      Error alert when user enters invalid data.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Error alert when user enters invalid data.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +42,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#ignoreBlanks:member'
     package: excel!
     fullName: ignoreBlanks
-    summary: |-
-      Specifies if data validation will be performed on blank cells. Default is `true`<!-- -->.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if data validation will be performed on blank cells. Default is `true`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +54,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#prompt:member'
     package: excel!
     fullName: prompt
-    summary: |-
-      Prompt when users select a cell.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Prompt when users select a cell.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +66,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#rule:member'
     package: excel!
     fullName: rule
-    summary: |-
-      Data validation rule that contains different type of data validation criteria.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Data validation rule that contains different type of data validation criteria.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,11 +78,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Type of the data validation, see `Excel.DataValidationType` for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Type of the data validation, see `Excel.DataValidationType` for details.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,10 +94,7 @@ properties:
       Represents if all cell values are valid according to the data validation rules. Returns `true` if all cell values
       are valid, or `false` if all cell values are invalid. Returns `null` if there are both valid and invalid cell
       values within the range.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

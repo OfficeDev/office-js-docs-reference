@@ -3,11 +3,8 @@ name: Excel.ChartAxisTitleFormat
 uid: 'excel!Excel.ChartAxisTitleFormat:class'
 package: excel!
 fullName: Excel.ChartAxisTitleFormat
-summary: |-
-  Represents the chart axis title formatting.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the chart axis title formatting.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title
       object.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,10 +112,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxisTitleFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

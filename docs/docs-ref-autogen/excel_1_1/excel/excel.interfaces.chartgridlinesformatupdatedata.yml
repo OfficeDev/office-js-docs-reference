@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Represents chart line formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

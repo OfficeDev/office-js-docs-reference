@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Represents the visibility of a chart legend entry.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the visibility of a chart legend entry.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

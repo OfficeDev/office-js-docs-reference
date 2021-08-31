@@ -3,11 +3,8 @@ name: Excel.ColorScaleConditionalFormat
 uid: 'excel!Excel.ColorScaleConditionalFormat:class'
 package: excel!
 fullName: Excel.ColorScaleConditionalFormat
-summary: |-
-  Represents the color scale criteria for conditional formatting.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the color scale criteria for conditional formatting.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,44 +27,41 @@ properties:
     uid: 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
     package: excel!
     fullName: criteria
-    summary: |-
-      The criteria of the color scale. Midpoint is optional when using a two point color scale.
-
+    summary: The criteria of the color scale. Midpoint is optional when using a two point color scale.
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.colorScale);
+          const criteria = {
+              minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+              midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+              maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+          };
+          conditionalFormat.colorScale.criteria = criteria;
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'criteria: Excel.ConditionalColorScaleCriteria;'
       return:
         type: '<xref uid="excel!Excel.ConditionalColorScaleCriteria:interface" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B2:M5");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.colorScale);
-              const criteria = {
-                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
-                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
-                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
-              };
-              conditionalFormat.colorScale.criteria = criteria;
-
-              await context.sync();
-          });
-
-          ```
   - name: threeColorScale
     uid: 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
     package: excel!
@@ -75,10 +69,7 @@ properties:
     summary: >-
       If `true`<!-- -->, the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two
       (minimum, maximum).
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,10 +151,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ColorScaleConditionalFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

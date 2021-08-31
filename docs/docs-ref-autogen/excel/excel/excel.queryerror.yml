@@ -3,13 +3,10 @@ name: Excel.QueryError
 uid: 'excel!Excel.QueryError:enum'
 package: excel!
 fullName: Excel.QueryError
-summary: >-
-  An enum that specifies the query load error message.
-
-
+summary: An enum that specifies the query load error message.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

@@ -3,11 +3,8 @@ name: Excel.ChartMapProjectionType
 uid: 'excel!Excel.ChartMapProjectionType:enum'
 package: excel!
 fullName: Excel.ChartMapProjectionType
-summary: |-
-  Represents the region projection type of a chart series layout. This only applies to region map charts.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the region projection type of a chart series layout. This only applies to region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

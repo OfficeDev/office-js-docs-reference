@@ -6,11 +6,9 @@ fullName: Excel.WorksheetProtectionChangedEventArgs
 summary: >-
   Provides information about the worksheet that raised the protection status changed event, which fires when the
   protection status is updated in a worksheet.
-
-
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -19,13 +17,10 @@ properties:
     uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#isProtected:member'
     package: excel!
     fullName: isProtected
-    summary: >-
-      Gets the current protection status of the worksheet.
-
-
+    summary: Gets the current protection status of the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -36,13 +31,10 @@ properties:
     uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
-      The source of the event. It can be local or remote (through co-authoring).
-
-
+    summary: The source of the event. It can be local or remote (through co-authoring).
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,13 +45,10 @@ properties:
     uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Gets the type of the event. See Excel.EventType for details.
-
-
+    summary: Gets the type of the event. See Excel.EventType for details.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -70,13 +59,10 @@ properties:
     uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: >-
-      Gets the ID of the worksheet in which the protection status is changed.
-
-
+    summary: Gets the ID of the worksheet in which the protection status is changed.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

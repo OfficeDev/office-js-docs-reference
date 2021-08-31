@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderData#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representing the color of borders in the chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: HTML color code representing the color of borders in the chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderData#lineStyle:member'
     package: excel!
     fullName: lineStyle
-    summary: |-
-      Represents the line style of the border. See `Excel.ChartLineStyle` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the line style of the border. See `Excel.ChartLineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartBorderData#weight:member'
     package: excel!
     fullName: weight
-    summary: |-
-      Represents weight of the border, in points.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents weight of the border, in points.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

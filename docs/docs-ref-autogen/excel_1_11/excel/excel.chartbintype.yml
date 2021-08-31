@@ -3,11 +3,8 @@ name: Excel.ChartBinType
 uid: 'excel!Excel.ChartBinType:enum'
 package: excel!
 fullName: Excel.ChartBinType
-summary: |-
-  Specifies the bin type of a histogram chart or pareto chart series.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the bin type of a histogram chart or pareto chart series.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

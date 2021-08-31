@@ -6,11 +6,9 @@ fullName: Excel.LinkedWorkbook
 summary: >-
   Contains information about a linked workbook. If a workbook has links pointing to data in another workbook, the second
   workbook is linked to the first workbook. In this scenario, the second workbook is called the "linked workbook".
-
-
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -33,13 +31,10 @@ properties:
     uid: 'excel!Excel.LinkedWorkbook#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
-
-
+    summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -55,11 +50,9 @@ methods:
       Makes a request to break the links pointing to the linked workbook. Links in formulas are replaced with the latest
       fetched data. The current `LinkedWorkbook` object is invalidated and removed from `LinkedWorkbookCollection`<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -138,13 +131,10 @@ methods:
     uid: 'excel!Excel.LinkedWorkbook#refresh:member(1)'
     package: excel!
     fullName: refresh()
-    summary: >-
-      Makes a request to refresh the data retrieved from the linked workbook.
-
-
+    summary: Makes a request to refresh the data retrieved from the linked workbook.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

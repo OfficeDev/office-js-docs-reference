@@ -16,10 +16,7 @@ properties:
     summary: >-
       Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent dash
       styles. See `Excel.ShapeLineStyle` for details.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,10 +49,7 @@ properties:
     summary: >-
       Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent
       styles. See `Excel.ShapeLineStyle` for details.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,10 +65,7 @@ properties:
     summary: >-
       Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
       Returns `null` when the shape has inconsistent transparencies.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,10 +79,7 @@ properties:
     summary: >-
       Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent
       visibilities.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,10 +93,7 @@ properties:
     summary: >-
       Represents the weight of the line, in points. Returns `null` when the line is not visible or there are
       inconsistent line weights.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.WorksheetColumnSortedEventArgs
 uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetColumnSortedEventArgs
-summary: |-
-  Provides information about the column-sorted event and its related worksheet.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the column-sorted event and its related worksheet.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result
       of the sort operation are returned.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +27,8 @@ properties:
     uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: |-
-      Gets the source of the event. See `Excel.EventSource` for details.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +39,8 @@ properties:
     uid: 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Excel.EventType` for details.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +51,8 @@ properties:
     uid: 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: |-
-      Gets the ID of the worksheet where the sorting happened.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the worksheet where the sorting happened.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

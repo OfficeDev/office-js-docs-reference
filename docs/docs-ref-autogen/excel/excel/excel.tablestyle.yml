@@ -3,11 +3,8 @@ name: Excel.TableStyle
 uid: 'excel!Excel.TableStyle:class'
 package: excel!
 fullName: Excel.TableStyle
-summary: |-
-  Represents a table style, which defines the style elements by region of the table.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a table style, which defines the style elements by region of the table.'
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.TableStyle#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the name of the table style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the table style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.TableStyle#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      Specifies if this `TableStyle` object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if this `TableStyle` object is read-only.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +52,8 @@ methods:
     uid: 'excel!Excel.TableStyle#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the table style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Deletes the table style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ methods:
     uid: 'excel!Excel.TableStyle#duplicate:member(1)'
     package: excel!
     fullName: duplicate()
-    summary: |-
-      Creates a duplicate of this table style with copies of all the style elements.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Creates a duplicate of this table style with copies of all the style elements.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,10 +148,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.TableStyle): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

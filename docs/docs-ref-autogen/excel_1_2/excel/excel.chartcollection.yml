@@ -3,11 +3,8 @@ name: Excel.ChartCollection
 uid: 'excel!Excel.ChartCollection:class'
 package: excel!
 fullName: Excel.ChartCollection
-summary: |-
-  A collection of all the chart objects on a worksheet.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: A collection of all the chart objects on a worksheet.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Returns the number of charts in the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of charts in the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +52,30 @@ methods:
     uid: 'excel!Excel.ChartCollection#add:member(1)'
     package: excel!
     fullName: 'add(type, sourceData, seriesBy)'
-    summary: |-
-      Creates a new chart.
-
+    summary: Creates a new chart.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+      // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+      Excel.run(function (ctx) { 
+          var rangeSelection = "A1:B4";
+          var range = ctx.workbook.worksheets.getItem(sheetName)
+              .getRange(rangeSelection);
+          var chart = ctx.workbook.worksheets.getItem(sheetName)
+              .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
+                  console.log("New Chart Added");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,38 +94,13 @@ methods:
           type: '<xref uid="excel!Excel.ChartSeriesBy:enum" />'
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
-          Excel.run(function (ctx) { 
-              var rangeSelection = "A1:B4";
-              var range = ctx.workbook.worksheets.getItem(sheetName)
-                  .getRange(rangeSelection);
-              var chart = ctx.workbook.worksheets.getItem(sheetName)
-                  .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
-                      console.log("New Chart Added");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'add(typeString, sourceData, seriesBy)'
     uid: 'excel!Excel.ChartCollection#add:member(2)'
     package: excel!
     fullName: 'add(typeString, sourceData, seriesBy)'
-    summary: |-
-      Creates a new chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Creates a new chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,11 +154,27 @@ methods:
     uid: 'excel!Excel.ChartCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: |-
-      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
-
+    summary: 'Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.'
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Get the number of charts
+      Excel.run(function (ctx) { 
+          var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+          charts.load('count');
+          return ctx.sync().then(function() {
+              console.log("charts: Count= " + charts.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,35 +185,31 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the number of charts
-          Excel.run(function (ctx) { 
-              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
-              charts.load('count');
-              return ctx.sync().then(function() {
-                  console.log("charts: Count= " + charts.count);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a chart based on its position in the collection.
-
+    summary: Gets a chart based on its position in the collection.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+          return ctx.sync().then(function() {
+                  console.log(chart.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,25 +220,7 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.Chart:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-              return ctx.sync().then(function() {
-                      console.log(chart.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartCollection#load:member(1)'
     package: excel!

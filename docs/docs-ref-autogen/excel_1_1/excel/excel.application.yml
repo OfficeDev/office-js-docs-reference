@@ -3,11 +3,8 @@ name: Excel.Application
 uid: 'excel!Excel.Application:class'
 package: excel!
 fullName: Excel.Application
-summary: |-
-  Represents the Excel application that manages the workbook.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel application that manages the workbook.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,11 +18,9 @@ properties:
       Possible values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
       where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
       the user requests it.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,11 +46,8 @@ methods:
     uid: 'excel!Excel.Application#calculate:member(1)'
     package: excel!
     fullName: calculate(calculationType)
-    summary: |-
-      Recalculate all currently opened workbooks in Excel.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Recalculate all currently opened workbooks in Excel.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,11 +63,23 @@ methods:
     uid: 'excel!Excel.Application#calculate:member(2)'
     package: excel!
     fullName: calculate(calculationTypeString)
-    summary: |-
-      Recalculate all currently opened workbooks in Excel.
-
+    summary: Recalculate all currently opened workbooks in Excel.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {
+          ctx.workbook.application.calculate('Full');
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,22 +90,7 @@ methods:
           type: '"Recalculate" | "Full" | "FullRebuild"'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              ctx.workbook.application.calculate('Full');
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.Application#load:member(1)'
     package: excel!
@@ -194,10 +183,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Application): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

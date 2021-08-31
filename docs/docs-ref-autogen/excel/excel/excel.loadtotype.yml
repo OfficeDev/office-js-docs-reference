@@ -3,13 +3,10 @@ name: Excel.LoadToType
 uid: 'excel!Excel.LoadToType:enum'
 package: excel!
 fullName: Excel.LoadToType
-summary: >-
-  An enum that specifies the query load to destination.
-
-
+summary: An enum that specifies the query load to destination.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

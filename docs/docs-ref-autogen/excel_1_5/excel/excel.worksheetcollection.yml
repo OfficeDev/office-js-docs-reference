@@ -3,11 +3,8 @@ name: Excel.WorksheetCollection
 uid: 'excel!Excel.WorksheetCollection:class'
 package: excel!
 fullName: Excel.WorksheetCollection
-summary: |-
-  Represents a collection of worksheet objects that are part of the workbook.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of worksheet objects that are part of the workbook.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,10 +43,26 @@ methods:
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
       to activate the newly added worksheet, call `.activate()` on it.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sample Name';
+          var worksheet = ctx.workbook.worksheets.add(wSheetName);
+          worksheet.load('name');
+          return ctx.sync().then(function() {
+              console.log(worksheet.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,69 +75,44 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sample Name';
-              var worksheet = ctx.workbook.worksheets.add(wSheetName);
-              worksheet.load('name');
-              return ctx.sync().then(function() {
-                  console.log(worksheet.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getActiveWorksheet()
     uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
     package: excel!
     fullName: getActiveWorksheet()
-    summary: |-
-      Gets the currently active worksheet in the workbook.
-
+    summary: Gets the currently active worksheet in the workbook.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {  
+          var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+          activeWorksheet.load('name');
+          return ctx.sync().then(function() {
+                  console.log(activeWorksheet.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {  
-              var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
-              activeWorksheet.load('name');
-              return ctx.sync().then(function() {
-                      console.log(activeWorksheet.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getCount(visibleOnly)
     uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
     package: excel!
     fullName: getCount(visibleOnly)
-    summary: |-
-      Gets the number of worksheets in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of worksheets in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,11 +128,45 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     package: excel!
     fullName: getFirst(visibleOnly)
-    summary: |-
-      Gets the first worksheet in the collection.
-
+    summary: Gets the first worksheet in the collection.
+    remarks: >-
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+
+          // We don't want to include the default worksheet that was created
+          // when the workbook was created, so our "firstSheet" will be the one
+          // after the literal first. Note chaining of navigation methods.
+          const firstSheet = sheets.getFirst().getNext();
+          const lastSheet = sheets.getLast();
+          const firstTaxRateRange = firstSheet.getRange("B2");
+          const lastTaxRateRange = lastSheet.getRange("B2");
+
+          firstSheet.load("name");
+          lastSheet.load("name");
+          firstTaxRateRange.load("text");
+          lastTaxRateRange.load("text");
+
+          await context.sync();
+
+          let firstYear = firstSheet.name.substr(5, 4);
+          let lastYear = lastSheet.name.substr(5, 4);
+          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,52 +177,13 @@ methods:
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
-
-          await Excel.run(async (context) => {
-              const sheets = context.workbook.worksheets;
-
-              // We don't want to include the default worksheet that was created
-              // when the workbook was created, so our "firstSheet" will be the one
-              // after the literal first. Note chaining of navigation methods.
-              const firstSheet = sheets.getFirst().getNext();
-              const lastSheet = sheets.getLast();
-              const firstTaxRateRange = firstSheet.getRange("B2");
-              const lastTaxRateRange = lastSheet.getRange("B2");
-
-              firstSheet.load("name");
-              lastSheet.load("name");
-              firstTaxRateRange.load("text");
-              lastTaxRateRange.load("text");
-
-              await context.sync();
-
-              let firstYear = firstSheet.name.substr(5, 4);
-              let lastYear = lastSheet.name.substr(5, 4);
-              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getItem(key)
     uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a worksheet object using its name or ID.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a worksheet object using its name or ID.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,10 +205,7 @@ methods:
       and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,11 +221,45 @@ methods:
     uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
     package: excel!
     fullName: getLast(visibleOnly)
-    summary: |-
-      Gets the last worksheet in the collection.
-
+    summary: Gets the last worksheet in the collection.
+    remarks: >-
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+
+          // We don't want to include the default worksheet that was created
+          // when the workbook was created, so our "firstSheet" will be the one
+          // after the literal first. Note chaining of navigation methods.
+          const firstSheet = sheets.getFirst().getNext();
+          const lastSheet = sheets.getLast();
+          const firstTaxRateRange = firstSheet.getRange("B2");
+          const lastTaxRateRange = lastSheet.getRange("B2");
+
+          firstSheet.load("name");
+          lastSheet.load("name");
+          firstTaxRateRange.load("text");
+          lastTaxRateRange.load("text");
+
+          await context.sync();
+
+          let firstYear = firstSheet.name.substr(5, 4);
+          let lastYear = lastSheet.name.substr(5, 4);
+          console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,43 +270,7 @@ methods:
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Worksheet:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
-
-          await Excel.run(async (context) => {
-              const sheets = context.workbook.worksheets;
-
-              // We don't want to include the default worksheet that was created
-              // when the workbook was created, so our "firstSheet" will be the one
-              // after the literal first. Note chaining of navigation methods.
-              const firstSheet = sheets.getFirst().getNext();
-              const lastSheet = sheets.getLast();
-              const firstTaxRateRange = firstSheet.getRange("B2");
-              const lastTaxRateRange = lastSheet.getRange("B2");
-
-              firstSheet.load("name");
-              lastSheet.load("name");
-              firstTaxRateRange.load("text");
-              lastTaxRateRange.load("text");
-
-              await context.sync();
-
-              let firstYear = firstSheet.name.substr(5, 4);
-              let lastYear = lastSheet.name.substr(5, 4);
-              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.WorksheetCollection#load:member(1)'
     package: excel!

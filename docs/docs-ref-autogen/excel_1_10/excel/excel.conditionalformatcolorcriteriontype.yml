@@ -3,11 +3,8 @@ name: Excel.ConditionalFormatColorCriterionType
 uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
 package: excel!
 fullName: Excel.ConditionalFormatColorCriterionType
-summary: |-
-  Represents the types of color criterion for conditional formatting.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the types of color criterion for conditional formatting.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

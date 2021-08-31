@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Represents the border format of a chart data point, which includes color, style, and weight information.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the border format of a chart data point, which includes color, style, and weight information.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

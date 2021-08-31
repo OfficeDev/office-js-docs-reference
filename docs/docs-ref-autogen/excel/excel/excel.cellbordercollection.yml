@@ -7,10 +7,7 @@ summary: >-
   Represents the `format.borders` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
   `getColumnProperties`<!-- -->, or the `format.borders` input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,11 +16,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#bottom:member'
     package: excel!
     fullName: bottom
-    summary: |-
-      Represents the `format.borders.bottom` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.bottom` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +28,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#diagonalDown:member'
     package: excel!
     fullName: diagonalDown
-    summary: |-
-      Represents the `format.borders.diagonalDown` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.diagonalDown` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +40,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#diagonalUp:member'
     package: excel!
     fullName: diagonalUp
-    summary: |-
-      Represents the `format.borders.diagonalUp` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.diagonalUp` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +52,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#horizontal:member'
     package: excel!
     fullName: horizontal
-    summary: |-
-      Represents the `format.borders.horizontal` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.horizontal` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,11 +64,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#left:member'
     package: excel!
     fullName: left
-    summary: |-
-      Represents the `format.borders.left` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.left` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +76,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#right:member'
     package: excel!
     fullName: right
-    summary: |-
-      Represents the `format.borders.right` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.right` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +88,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#top:member'
     package: excel!
     fullName: top
-    summary: |-
-      Represents the `format.borders.top` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.top` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +100,8 @@ properties:
     uid: 'excel!Excel.CellBorderCollection#vertical:member'
     package: excel!
     fullName: vertical
-    summary: |-
-      Represents the `format.borders.vertical` property.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `format.borders.vertical` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

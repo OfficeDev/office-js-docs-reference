@@ -3,11 +3,8 @@ name: Excel.ChartAxisCategoryType
 uid: 'excel!Excel.ChartAxisCategoryType:enum'
 package: excel!
 fullName: Excel.ChartAxisCategoryType
-summary: |-
-  Specifies the type of the category axis.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the type of the category axis.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

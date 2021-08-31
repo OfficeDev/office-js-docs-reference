@@ -3,11 +3,8 @@ name: Excel.CommentReply
 uid: 'excel!Excel.CommentReply:class'
 package: excel!
 fullName: Excel.CommentReply
-summary: |-
-  Represents a comment reply in the workbook.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a comment reply in the workbook.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.CommentReply#authorEmail:member'
     package: excel!
     fullName: authorEmail
-    summary: |-
-      Gets the email of the comment reply's author.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the email of the comment reply's author.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.CommentReply#authorName:member'
     package: excel!
     fullName: authorName
-    summary: |-
-      Gets the name of the comment reply's author.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the comment reply's author.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,42 +37,39 @@ properties:
     uid: 'excel!Excel.CommentReply#content:member'
     package: excel!
     fullName: content
-    summary: |-
-      The comment reply's content. The string is plain text.
-
+    summary: The comment reply's content. The string is plain text.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          const comment = sheet.comments.getItemAt(0);
+          const reply = comment.replies.getItemAt(0);
+          reply.load("content");
+          // Sync to load the content of the comment reply.
+          await context.sync();
+
+          // Append "Please!" to the end of the comment reply.
+          reply.content += " Please!";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Comments");
-              const comment = sheet.comments.getItemAt(0);
-              const reply = comment.replies.getItemAt(0);
-              reply.load("content");
-              // Sync to load the content of the comment reply.
-              await context.sync();
-
-              // Append "Please!" to the end of the comment reply.
-              reply.content += " Please!";
-              await context.sync();
-          });
-
-          ```
   - name: context
     uid: 'excel!Excel.CommentReply#context:member'
     package: excel!
@@ -100,11 +88,8 @@ properties:
     uid: 'excel!Excel.CommentReply#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: |-
-      Gets the creation time of the comment reply.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the creation time of the comment reply.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,11 +100,8 @@ properties:
     uid: 'excel!Excel.CommentReply#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Specifies the comment reply identifier.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the comment reply identifier.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,46 +113,41 @@ methods:
     uid: 'excel!Excel.CommentReply#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the comment reply.
-
+    summary: Deletes the comment reply.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
+
+      await Excel.run(async (context) => {
+          // Remove the first comment reply from this worksheet's first comment.
+          const sheet = context.workbook.worksheets.getItem("Comments");
+          const comment = sheet.comments.getItemAt(0);
+          comment.replies.getItemAt(0).delete();
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-replies.yaml
-
-          await Excel.run(async (context) => {
-              // Remove the first comment reply from this worksheet's first comment.
-              const sheet = context.workbook.worksheets.getItem("Comments");
-              const comment = sheet.comments.getItemAt(0);
-              comment.replies.getItemAt(0).delete();
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getLocation()
     uid: 'excel!Excel.CommentReply#getLocation:member(1)'
     package: excel!
     fullName: getLocation()
-    summary: |-
-      Gets the cell where this comment reply is located.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the cell where this comment reply is located.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,11 +159,8 @@ methods:
     uid: 'excel!Excel.CommentReply#getParentComment:member(1)'
     package: excel!
     fullName: getParentComment()
-    summary: |-
-      Gets the parent comment of this reply.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,10 +242,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.CommentReply): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.PivotHierarchy
 uid: 'excel!Excel.PivotHierarchy:class'
 package: excel!
 fullName: Excel.PivotHierarchy
-summary: |-
-  Represents the Excel PivotHierarchy.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel PivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,60 +27,54 @@ properties:
     uid: 'excel!Excel.PivotHierarchy#fields:member'
     package: excel!
     fullName: fields
-    summary: |-
-      Returns the PivotFields associated with the PivotHierarchy.
-
+    summary: Returns the PivotFields associated with the PivotHierarchy.
+    remarks: >-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+      await Excel.run(async (context) => {
+        // Add a PivotFilter to filter on the values correlated with a row.
+
+        // Get the PivotTable.
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+        // Get the "Farm" field.
+        const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
+
+        // Filter to only include rows with more than 500 wholesale crates sold.
+        const filter: Excel.PivotValueFilter = {
+          condition: Excel.ValueFilterCondition.greaterThan,
+          comparator: 500,
+          value: "Sum of Crates Sold Wholesale"
+        };
+
+        // Apply the value filter to the field.
+        field.applyFilter({ valueFilter: filter });
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
         type: '<xref uid="excel!Excel.PivotFieldCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-          await Excel.run(async (context) => {
-            // Add a PivotFilter to filter on the values correlated with a row.
-
-            // Get the PivotTable.
-            const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-            // Get the "Farm" field.
-            const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
-
-            // Filter to only include rows with more than 500 wholesale crates sold.
-            const filter: Excel.PivotValueFilter = {
-              condition: Excel.ValueFilterCondition.greaterThan,
-              comparator: 500,
-              value: "Sum of Crates Sold Wholesale"
-            };
-
-            // Apply the value filter to the field.
-            field.applyFilter({ valueFilter: filter });
-
-            await context.sync();
-          });
-
-          ```
   - name: id
     uid: 'excel!Excel.PivotHierarchy#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +85,8 @@ properties:
     uid: 'excel!Excel.PivotHierarchy#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,10 +168,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.PivotHierarchy): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

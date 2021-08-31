@@ -3,8 +3,8 @@ name: Excel.PrintErrorType
 uid: 'excel!Excel.PrintErrorType:enum'
 package: excel!
 fullName: Excel.PrintErrorType
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

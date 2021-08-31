@@ -8,10 +8,7 @@ summary: >-
   key-value pair can be used to store state or lifecycle information needed by the content or task-pane add-in. Note
   that settings are persisted in the document and hence it is not a place to store any sensitive or protected
   information such as user information and password.
-
-
-  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -34,11 +31,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingLoadOptions#key:member'
     package: excel!
     fullName: key
-    summary: |-
-      The key that represents the ID of the setting.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The key that represents the ID of the setting.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +43,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingLoadOptions#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      Represents the value stored for this setting.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the value stored for this setting.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

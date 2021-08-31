@@ -3,11 +3,8 @@ name: Excel.DataValidationPrompt
 uid: 'excel!Excel.DataValidationPrompt:interface'
 package: excel!
 fullName: Excel.DataValidationPrompt
-summary: |-
-  Represents the user prompt properties for the data validation.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the user prompt properties for the data validation.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.DataValidationPrompt#message:member'
     package: excel!
     fullName: message
-    summary: |-
-      Specifies the message of the prompt.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the message of the prompt.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.DataValidationPrompt#showPrompt:member'
     package: excel!
     fullName: showPrompt
-    summary: |-
-      Specifies if a prompt is shown when a user selects a cell with data validation.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if a prompt is shown when a user selects a cell with data validation.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +37,8 @@ properties:
     uid: 'excel!Excel.DataValidationPrompt#title:member'
     package: excel!
     fullName: title
-    summary: |-
-      Specifies the title for the prompt.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the title for the prompt.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

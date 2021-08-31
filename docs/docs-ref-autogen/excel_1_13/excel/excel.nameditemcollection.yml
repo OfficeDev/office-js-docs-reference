@@ -6,10 +6,7 @@ fullName: Excel.NamedItemCollection
 summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was
   reached.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,11 +42,30 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#add:member(1)'
     package: excel!
     fullName: 'add(name, reference, comment)'
-    summary: |-
-      Adds a new name to the collection of the given scope.
-
+    summary: Adds a new name to the collection of the given scope.
+    remarks: >-
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const headerRange = sheet.getRange("A1:D1");
+
+          sheet.names.add("ExpensesHeader", headerRange);
+          const namedItems = sheet.names.load("name, type");
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,37 +82,13 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.NamedItem:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const headerRange = sheet.getRange("A1:D1");
-
-              sheet.names.add("ExpensesHeader", headerRange);
-              const namedItems = sheet.names.load("name, type");
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: 'addFormulaLocal(name, formula, comment)'
     uid: 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
     package: excel!
     fullName: 'addFormulaLocal(name, formula, comment)'
-    summary: |-
-      Adds a new name to the collection of the given scope using the user's locale for the formula.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a new name to the collection of the given scope using the user's locale for the formula.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,11 +110,8 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of named items in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of named items in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,11 +123,27 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: |-
-      Gets a `NamedItem` object using its name.
-
+    summary: Gets a `NamedItem` object using its name.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = 'Sheet1';
+          var nameditem = ctx.workbook.names.getItem(sheetName);
+          nameditem.load('type');
+          return ctx.sync().then(function() {
+                  console.log(nameditem.type);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,26 +154,7 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.NamedItem:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = 'Sheet1';
-              var nameditem = ctx.workbook.names.getItem(sheetName);
-              nameditem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(nameditem.type);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemOrNullObject(name)
     uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
     package: excel!
@@ -178,10 +164,7 @@ methods:
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

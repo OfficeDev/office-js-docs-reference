@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

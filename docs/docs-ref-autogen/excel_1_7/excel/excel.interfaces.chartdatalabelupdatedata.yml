@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#separator:member'
     package: excel!
     fullName: separator
-    summary: |-
-      String representing the separator used for the data label on a chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String representing the separator used for the data label on a chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showBubbleSize:member'
     package: excel!
     fullName: showBubbleSize
-    summary: |-
-      Specifies if the data label bubble size is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label bubble size is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +53,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showCategoryName:member'
     package: excel!
     fullName: showCategoryName
-    summary: |-
-      Specifies if the data label category name is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label category name is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: |-
-      Specifies if the data label legend key is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label legend key is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,11 +77,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showPercentage:member'
     package: excel!
     fullName: showPercentage
-    summary: |-
-      Specifies if the data label percentage is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label percentage is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +89,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showSeriesName:member'
     package: excel!
     fullName: showSeriesName
-    summary: |-
-      Specifies if the data label series name is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label series name is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,11 +101,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#showValue:member'
     package: excel!
     fullName: showValue
-    summary: |-
-      Specifies if the data label value is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label value is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

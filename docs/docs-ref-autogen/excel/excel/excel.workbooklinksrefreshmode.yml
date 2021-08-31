@@ -3,13 +3,10 @@ name: Excel.WorkbookLinksRefreshMode
 uid: 'excel!Excel.WorkbookLinksRefreshMode:enum'
 package: excel!
 fullName: Excel.WorkbookLinksRefreshMode
-summary: >-
-  Represents the refresh mode of the workbook links.
-
-
+summary: Represents the refresh mode of the workbook links.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

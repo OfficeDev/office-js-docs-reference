@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#autoText:member'
     package: excel!
     fullName: autoText
-    summary: |-
-      Specifies if the data label automatically generates appropriate text based on context.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label automatically generates appropriate text based on context.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Represents the format of chart data label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the format of chart data label.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#formula:member'
     package: excel!
     fullName: formula
-    summary: |-
-      String value that represents the formula of chart data label using A1-style notation.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String value that represents the formula of chart data label using A1-style notation.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#height:member'
     package: excel!
     fullName: height
-    summary: |-
-      Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns the height, in points, of the chart data label. Value is `null` if the chart data label is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,10 +64,7 @@ properties:
     summary: >-
       Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
       This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,10 +82,7 @@ properties:
     summary: >-
       Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Value
       is `null` if the chart data label is not visible.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,11 +93,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      String value that represents the format code for data label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String value that represents the format code for data label.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,11 +105,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,11 +121,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#separator:member'
     package: excel!
     fullName: separator
-    summary: |-
-      String representing the separator used for the data label on a chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String representing the separator used for the data label on a chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,11 +133,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showBubbleSize:member'
     package: excel!
     fullName: showBubbleSize
-    summary: |-
-      Specifies if the data label bubble size is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label bubble size is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,11 +145,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showCategoryName:member'
     package: excel!
     fullName: showCategoryName
-    summary: |-
-      Specifies if the data label category name is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label category name is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,11 +157,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: |-
-      Specifies if the data label legend key is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label legend key is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,11 +169,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showPercentage:member'
     package: excel!
     fullName: showPercentage
-    summary: |-
-      Specifies if the data label percentage is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label percentage is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,11 +181,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showSeriesName:member'
     package: excel!
     fullName: showSeriesName
-    summary: |-
-      Specifies if the data label series name is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label series name is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -235,11 +193,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#showValue:member'
     package: excel!
     fullName: showValue
-    summary: |-
-      Specifies if the data label value is visible.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label value is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,11 +205,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#text:member'
     package: excel!
     fullName: text
-    summary: |-
-      String representing the text of the data label on a chart.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String representing the text of the data label on a chart.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,10 +220,7 @@ properties:
     summary: >-
       Represents the angle to which the text is oriented for the chart data label. The value should either be an integer
       from -90 to 90 or the integer 180 for vertically-oriented text.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -285,10 +234,7 @@ properties:
     summary: >-
       Represents the distance, in points, from the top edge of chart data label to the top of chart area. Value is
       `null` if the chart data label is not visible.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,10 +248,7 @@ properties:
     summary: >-
       Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details. This
       property is valid only when `TextOrientation` of data label is 0.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,11 +261,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataLabelData#width:member'
     package: excel!
     fullName: width
-    summary: |-
-      Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns the width, in points, of the chart data label. Value is `null` if the chart data label is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

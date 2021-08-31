@@ -3,11 +3,8 @@ name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
-summary: |-
-  Represents a collection of PivotTable styles.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of PivotTable styles.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      For EACH ITEM in the collection: Gets the name of the PivotTable style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the name of the PivotTable style.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      For EACH ITEM in the collection: Specifies if this `PivotTableStyle` object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies if this `PivotTableStyle` object is read-only.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

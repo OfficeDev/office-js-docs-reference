@@ -3,13 +3,10 @@ name: Excel.LinkedWorkbookCollection
 uid: 'excel!Excel.LinkedWorkbookCollection:class'
 package: excel!
 fullName: Excel.LinkedWorkbookCollection
-summary: >-
-  Represents a collection of linked workbook objects.
-
-
+summary: Represents a collection of linked workbook objects.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -47,11 +44,9 @@ properties:
     summary: >-
       Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the
       workbook.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,11 +61,9 @@ methods:
     summary: >-
       Breaks all the links to the linked workbooks. Once the links are broken, any formulas referencing workbook links
       are removed entirely and replaced with the most recently retrieved values.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -82,13 +75,10 @@ methods:
     uid: 'excel!Excel.LinkedWorkbookCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
-      Gets information about a linked workbook by its URL.
-
-
+    summary: Gets information about a linked workbook by its URL.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,11 +100,9 @@ methods:
       [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -193,13 +181,10 @@ methods:
     uid: 'excel!Excel.LinkedWorkbookCollection#refreshAll:member(1)'
     package: excel!
     fullName: refreshAll()
-    summary: >-
-      Makes a request to refresh all the workbook links.
-
-
+    summary: Makes a request to refresh all the workbook links.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

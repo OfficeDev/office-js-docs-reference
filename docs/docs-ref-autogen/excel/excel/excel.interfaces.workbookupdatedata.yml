@@ -16,10 +16,7 @@ properties:
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
       charts track the index of the data points.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You can set this property to `true` if you
       want to close a modified workbook without either saving it or being prompted to save it.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
     package: excel!
     fullName: properties
-    summary: |-
-      Gets the workbook properties.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the workbook properties.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,13 +53,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookUpdateData#showPivotFieldList:member'
     package: excel!
     fullName: showPivotFieldList
-    summary: >-
-      Specifies whether the PivotTable's field list pane is shown at the workbook level.
-
-
+    summary: Specifies whether the PivotTable's field list pane is shown at the workbook level.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,13 +67,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookUpdateData#use1904DateSystem:member'
     package: excel!
     fullName: use1904DateSystem
-    summary: >-
-      True if the workbook uses the 1904 date system.
-
-
+    summary: True if the workbook uses the 1904 date system.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,10 +84,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
       Data will permanently lose accuracy when switching this property from `false` to `true`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

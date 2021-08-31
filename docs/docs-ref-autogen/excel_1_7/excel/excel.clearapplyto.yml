@@ -3,10 +3,10 @@ name: Excel.ClearApplyTo
 uid: 'excel!Excel.ClearApplyTo:enum'
 package: excel!
 fullName: Excel.ClearApplyTo
-summary: >-
+summary: ''
+remarks: >-
   \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
   HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

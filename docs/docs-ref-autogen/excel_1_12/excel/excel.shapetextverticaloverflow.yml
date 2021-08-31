@@ -3,11 +3,8 @@ name: Excel.ShapeTextVerticalOverflow
 uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
 package: excel!
 fullName: Excel.ShapeTextVerticalOverflow
-summary: |-
-  Specifies the vertical overflow for the text frame in a shape.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the vertical overflow for the text frame in a shape.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
