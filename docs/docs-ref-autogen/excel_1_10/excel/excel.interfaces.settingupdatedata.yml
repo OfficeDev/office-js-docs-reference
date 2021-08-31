@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingUpdateData#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      Represents the value stored for this setting.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the value stored for this setting.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

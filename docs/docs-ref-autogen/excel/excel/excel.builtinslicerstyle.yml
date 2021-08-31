@@ -3,13 +3,10 @@ name: Excel.BuiltInSlicerStyle
 uid: 'excel!Excel.BuiltInSlicerStyle:enum'
 package: excel!
 fullName: Excel.BuiltInSlicerStyle
-summary: >-
-  Represents a built-in slicer style.
-
-
+summary: Represents a built-in slicer style.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

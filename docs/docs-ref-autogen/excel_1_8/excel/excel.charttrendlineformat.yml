@@ -3,11 +3,8 @@ name: Excel.ChartTrendlineFormat
 uid: 'excel!Excel.ChartTrendlineFormat:class'
 package: excel!
 fullName: Excel.ChartTrendlineFormat
-summary: |-
-  Represents the format properties for the chart trendline.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the format properties for the chart trendline.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,66 +27,63 @@ properties:
     uid: 'excel!Excel.ChartTrendlineFormat#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Represents chart line formatting.
-
+    summary: Represents chart line formatting.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series; 
+
+          // Get the color of the chart trendline. 
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+          let line = trendline.format.line;
+          line.load("color");
+
+          await context.sync();
+
+          console.log("The trendline color is:" + line.color);
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series; 
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+
+          // Set format of the trendline to a solid, red line.
+          let line = trendline.format.line;
+          line.color = '#FF0000';
+
+          await context.sync();
+
+          console.log("The trendline color has been set to:" + line.color);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type: '<xref uid="excel!Excel.ChartLineFormat:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-              // Get the color of the chart trendline. 
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-              let line = trendline.format.line;
-              line.load("color");
-
-              await context.sync();
-
-              console.log("The trendline color is:" + line.color);
-          });
-
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-
-              // Set format of the trendline to a solid, red line.
-              let line = trendline.format.line;
-              line.color = '#FF0000';
-
-              await context.sync();
-
-              console.log("The trendline color has been set to:" + line.color);
-          });
-
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.ChartTrendlineFormat#load:member(1)'
@@ -165,10 +159,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartTrendlineFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.WorksheetCustomPropertyCollection
 uid: 'excel!Excel.WorksheetCustomPropertyCollection:class'
 package: excel!
 fullName: Excel.WorksheetCustomPropertyCollection
-summary: |-
-  Contains the collection of worksheet-level custom property.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Contains the collection of worksheet-level custom property.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -46,10 +43,33 @@ methods:
     summary: >-
       Adds a new custom property that maps to the provided key. This overwrites existing custom properties with that
       key.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
+
+      await Excel.run(async (context) => {
+        // Get the key/value pair from the task pane.
+        const userKey = $("#key").text();
+        const userValue = $("#value").text();
+
+        // Add the custom property.
+        const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
+        customWorksheetProperties.add(userKey, userValue);
+
+        await context.sync();
+
+        console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,41 +85,13 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.WorksheetCustomProperty:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
-
-          await Excel.run(async (context) => {
-            // Get the key/value pair from the task pane.
-            const userKey = $("#key").text();
-            const userValue = $("#value").text();
-
-            // Add the custom property.
-            const customWorksheetProperties = context.workbook.worksheets.getActiveWorksheet().customProperties;
-            customWorksheetProperties.add(userKey, userValue);
-
-            await context.sync();
-
-            console.log(`Successfully set custom worksheet property ${userKey}:${userValue}.`);
-          });
-
-          ```
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.WorksheetCustomPropertyCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of custom properties on this worksheet.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of custom properties on this worksheet.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,10 +106,7 @@ methods:
     summary: >-
       Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does
       not exist.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,10 +128,7 @@ methods:
       information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

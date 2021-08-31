@@ -3,11 +3,8 @@ name: Excel.RangeReference
 uid: 'excel!Excel.RangeReference:interface'
 package: excel!
 fullName: Excel.RangeReference
-summary: |-
-  Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a string reference of the form "SheetName!A1:B5", or a global or local named range.'
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.RangeReference#address:member'
     package: excel!
     fullName: address
-    summary: |-
-      The address of the range, for example "SheetName!A1:B5".
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The address of the range, for example "SheetName!A1:B5".'
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

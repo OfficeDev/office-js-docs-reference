@@ -3,8 +3,8 @@ name: Excel.ChartPlotBy
 uid: 'excel!Excel.ChartPlotBy:enum'
 package: excel!
 fullName: Excel.ChartPlotBy
-summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

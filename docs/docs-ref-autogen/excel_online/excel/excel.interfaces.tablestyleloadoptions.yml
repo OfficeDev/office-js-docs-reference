@@ -3,11 +3,8 @@ name: Excel.Interfaces.TableStyleLoadOptions
 uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableStyleLoadOptions
-summary: |-
-  Represents a table style, which defines the style elements by region of the table.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a table style, which defines the style elements by region of the table.'
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableStyleLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the name of the table style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the table style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableStyleLoadOptions#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      Specifies if this `TableStyle` object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if this `TableStyle` object is read-only.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

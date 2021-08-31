@@ -3,11 +3,8 @@ name: Excel.NamedSheetViewCollection
 uid: 'excel!Excel.NamedSheetViewCollection:class'
 package: excel!
 fullName: Excel.NamedSheetViewCollection
-summary: |-
-  Represents the collection of sheet views in the worksheet.
-
-  \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the collection of sheet views in the worksheet.
+remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#add:member(1)'
     package: excel!
     fullName: add(name)
-    summary: |-
-      Creates a new sheet view with the given name.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Creates a new sheet view with the given name.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +63,7 @@ methods:
       Creates and activates a new temporary sheet view. Temporary views are removed when closing the application,
       exiting the temporary view with the exit method, or switching to another sheet view. The temporary sheet view can
       also be acccessed with the empty string (""), if the temporary view exists.
-
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,11 +75,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#exit:member(1)'
     package: excel!
     fullName: exit()
-    summary: |-
-      Exits the currently active sheet view.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Exits the currently active sheet view.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +88,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#getActive:member(1)'
     package: excel!
     fullName: getActive()
-    summary: |-
-      Gets the worksheet's currently active sheet view.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the worksheet's currently active sheet view.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,11 +101,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of sheet views in this worksheet. Includes the temporary sheet view if it exists.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of sheet views in this worksheet. Includes the temporary sheet view if it exists.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,11 +114,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a sheet view using its name.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a sheet view using its name.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,11 +135,8 @@ methods:
     uid: 'excel!Excel.NamedSheetViewCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a sheet view by its index in the collection.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a sheet view by its index in the collection.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

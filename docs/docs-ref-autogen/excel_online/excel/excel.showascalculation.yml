@@ -3,11 +3,8 @@ name: Excel.ShowAsCalculation
 uid: 'excel!Excel.ShowAsCalculation:enum'
 package: excel!
 fullName: Excel.ShowAsCalculation
-summary: |-
-  The ShowAs calculation function for the DataPivotField.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: The ShowAs calculation function for the DataPivotField.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

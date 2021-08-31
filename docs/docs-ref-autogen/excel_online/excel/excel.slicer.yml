@@ -3,11 +3,8 @@ name: Excel.Slicer
 uid: 'excel!Excel.Slicer:class'
 package: excel!
 fullName: Excel.Slicer
-summary: |-
-  Represents a `Slicer` object in the workbook.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a `Slicer` object in the workbook.
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.Slicer#caption:member'
     package: excel!
     fullName: caption
-    summary: |-
-      Represents the caption of the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the caption of the slicer.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,10 +42,7 @@ properties:
     summary: >-
       Represents the height, in points, of the slicer. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +53,8 @@ properties:
     uid: 'excel!Excel.Slicer#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Represents the unique ID of the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the unique ID of the slicer.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'excel!Excel.Slicer#isFilterCleared:member'
     package: excel!
     fullName: isFilterCleared
-    summary: |-
-      Value is `true` if all filters currently applied on the slicer are cleared.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value is `true` if all filters currently applied on the slicer are cleared.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,10 +80,7 @@ properties:
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +91,8 @@ properties:
     uid: 'excel!Excel.Slicer#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Represents the name of the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the name of the slicer.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +103,8 @@ properties:
     uid: 'excel!Excel.Slicer#slicerItems:member'
     package: excel!
     fullName: slicerItems
-    summary: |-
-      Represents the collection of slicer items that are part of the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the collection of slicer items that are part of the slicer.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,10 +118,7 @@ properties:
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
       "Descending".
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,34 +133,31 @@ properties:
       Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
       A custom user-defined style present in the workbook can also be specified.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.style = "SlicerStyleLight6";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'style: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.style = "SlicerStyleLight6";
-              await context.sync();
-          });
-
-          ```
   - name: top
     uid: 'excel!Excel.Slicer#top:member'
     package: excel!
@@ -195,10 +165,7 @@ properties:
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an
       `InvalidArgument` error when set with a negative value as an input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,10 +179,7 @@ properties:
     summary: >-
       Represents the width, in points, of the slicer. Throws an `InvalidArgument` error when set with a negative value
       or zero as an input.
-
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,11 +190,8 @@ properties:
     uid: 'excel!Excel.Slicer#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: |-
-      Represents the worksheet containing the slicer.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the worksheet containing the slicer.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,77 +203,70 @@ methods:
     uid: 'excel!Excel.Slicer#clearFilters:member(1)'
     package: excel!
     fullName: clearFilters()
-    summary: |-
-      Clears all the filters currently applied on the slicer.
-
+    summary: Clears all the filters currently applied on the slicer.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.clearFilters();
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clearFilters(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.clearFilters();
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: delete()
     uid: 'excel!Excel.Slicer#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the slicer.
-
+    summary: Deletes the slicer.
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          sheet.slicers.getItemAt(0).delete();
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.slicers.getItemAt(0).delete();
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getSelectedItems()
     uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
     package: excel!
     fullName: getSelectedItems()
-    summary: |-
-      Returns an array of selected items' keys.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns an array of selected items' keys.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -394,10 +348,25 @@ methods:
     summary: >-
       Selects slicer items based on their keys. The previous selections are cleared. All items will be selected by
       default if the array is empty.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
+
+      await Excel.run(async (context) => {
+          const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+          slicer.selectItems(["Lemon", "Lime", "Orange"]);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -408,24 +377,7 @@ methods:
           type: 'string[]'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
-
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.selectItems(["Lemon", "Lime", "Orange"]);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Slicer#set:member(1)'
     package: excel!
@@ -433,10 +385,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Slicer): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

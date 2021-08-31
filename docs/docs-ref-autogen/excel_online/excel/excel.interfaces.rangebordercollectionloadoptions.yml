@@ -3,11 +3,8 @@ name: Excel.Interfaces.RangeBorderCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
-summary: |-
-  Represents the border objects that make up the range border.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the border objects that make up the range border.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,10 +30,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: HTML color code representing the color of the border line, in the form \#RRGGBB
       (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
       `Excel.BorderIndex` for details.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,10 +58,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See
       `Excel.BorderLineStyle` for details.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,10 +73,7 @@ properties:
       For EACH ITEM in the collection: Specifies a double that lightens or darkens a color for the range border, the
       value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A `null` value indicates that the
       border doesn't have a uniform `tintAndShade` setting.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,10 +87,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the weight of the border around a range. See `Excel.BorderWeight` for
       details.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

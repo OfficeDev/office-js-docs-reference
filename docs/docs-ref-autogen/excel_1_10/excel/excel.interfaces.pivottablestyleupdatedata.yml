@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the name of the PivotTable style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the PivotTable style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

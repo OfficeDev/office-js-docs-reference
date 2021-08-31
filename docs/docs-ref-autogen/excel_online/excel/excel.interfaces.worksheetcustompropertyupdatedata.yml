@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      Gets or sets the value of the custom property.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the value of the custom property.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

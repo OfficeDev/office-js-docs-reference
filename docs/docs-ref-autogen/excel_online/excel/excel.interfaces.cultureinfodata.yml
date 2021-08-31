@@ -16,10 +16,7 @@ properties:
     summary: >-
       Defines the culturally appropriate format of displaying date and time. This is based on current system culture
       settings.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on
       current system settings.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CultureInfoData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+    remarks: '\[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

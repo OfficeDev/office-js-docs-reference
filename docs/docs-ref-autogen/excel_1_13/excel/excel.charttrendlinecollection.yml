@@ -3,11 +3,8 @@ name: Excel.ChartTrendlineCollection
 uid: 'excel!Excel.ChartTrendlineCollection:class'
 package: excel!
 fullName: Excel.ChartTrendlineCollection
-summary: |-
-  Represents a collection of chart trendlines.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of chart trendlines.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,31 @@ methods:
     uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
     package: excel!
     fullName: add(type)
-    summary: |-
-      Adds a new trendline to trendline collection.
-
+    summary: Adds a new trendline to trendline collection.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+
+           // Add a trendline.  
+          seriesCollection.getItemAt(0).trendlines.add("Linear");
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,38 +75,13 @@ methods:
           type: '<xref uid="excel!Excel.ChartTrendlineType:enum" />'
       return:
         type: '<xref uid="excel!Excel.ChartTrendline:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series;
-
-               // Add a trendline.  
-              seriesCollection.getItemAt(0).trendlines.add("Linear");
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: add(typeString)
     uid: 'excel!Excel.ChartTrendlineCollection#add:member(2)'
     package: excel!
     fullName: add(typeString)
-    summary: |-
-      Adds a new trendline to trendline collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a new trendline to trendline collection.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +99,8 @@ methods:
     uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Returns the number of trendlines in the collection.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of trendlines in the collection.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,11 +112,8 @@ methods:
     uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(index)
-    summary: |-
-      Gets a trendline object by index, which is the insertion order in the items array.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets a trendline object by index, which is the insertion order in the items array.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

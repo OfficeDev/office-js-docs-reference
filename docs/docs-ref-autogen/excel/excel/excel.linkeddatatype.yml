@@ -3,13 +3,10 @@ name: Excel.LinkedDataType
 uid: 'excel!Excel.LinkedDataType:class'
 package: excel!
 fullName: Excel.LinkedDataType
-summary: >-
-  Represents a linked data type. A linked data type is a data type connected to an online data source.
-
-
+summary: Represents a linked data type. A linked data type is a data type connected to an online data source.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -35,11 +32,9 @@ properties:
     summary: >-
       The name of the data provider for the linked data type. This may change when information is retrieved from the
       service.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -53,11 +48,9 @@ properties:
     summary: >-
       The local time-zone date and time since the workbook was opened when the linked data type was last refreshed.
       Returns `undefined` if the linked data type has not been refreshed.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -68,13 +61,10 @@ properties:
     uid: 'excel!Excel.LinkedDataType#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      The name of the linked data type. This may change when information is retrieved from the service.
-
-
+    summary: The name of the linked data type. This may change when information is retrieved from the service.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -85,13 +75,10 @@ properties:
     uid: 'excel!Excel.LinkedDataType#periodicRefreshInterval:member'
     package: excel!
     fullName: periodicRefreshInterval
-    summary: >-
-      The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".
-
-
+    summary: 'The frequency, in seconds, at which the linked data type is refreshed if `refreshMode` is set to "Periodic".'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -102,13 +89,10 @@ properties:
     uid: 'excel!Excel.LinkedDataType#refreshMode:member'
     package: excel!
     fullName: refreshMode
-    summary: >-
-      The mechanism by which the data for the linked data type is retrieved.
-
-
+    summary: The mechanism by which the data for the linked data type is retrieved.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -119,13 +103,10 @@ properties:
     uid: 'excel!Excel.LinkedDataType#serviceId:member'
     package: excel!
     fullName: serviceId
-    summary: >-
-      The unique ID of the linked data type.
-
-
+    summary: The unique ID of the linked data type.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -139,11 +120,9 @@ properties:
     summary: >-
       Returns an array with all the refresh modes supported by the linked data type. The contents of the array may
       change when information is retrieved from the service.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -225,11 +204,9 @@ methods:
     summary: >-
       Makes a request to refresh the linked data type. If the service is busy or otherwise temporarily inaccessible, the
       request will not be fulfilled.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -245,11 +222,9 @@ methods:
       Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
       by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
       predetermined value based on the particular linked data type.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -269,11 +244,9 @@ methods:
       Makes a request to change the refresh mode for this linked data type. If the given refresh mode is not supported
       by this linked data type the mode is left unchanged. If set to "Periodic", the refresh interval is set to a
       predetermined value based on the particular linked data type.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.InsertWorksheetOptions
 uid: 'excel!Excel.InsertWorksheetOptions:interface'
 package: excel!
 fullName: Excel.InsertWorksheetOptions
-summary: |-
-  The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted.
-
-  \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted.
+remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       The insert position, in the current workbook, of the new worksheets. See `Excel.WorksheetPositionType` for
       details. The default position is "End".
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,10 +31,7 @@ properties:
       The worksheet in the current workbook that is referenced for the `WorksheetPositionType` parameter. The default is
       `null`<!-- -->. If the `relativeTo` parameter is not set, worksheets will be inserted based on `positionType`<!--
       -->, at the start or end of the current workbook.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,10 +45,7 @@ properties:
     summary: >-
       The names of individual worksheets to insert. By default, all the worksheets from the source workbook are
       inserted.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

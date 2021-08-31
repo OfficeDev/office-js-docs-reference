@@ -3,11 +3,8 @@ name: Excel.FunctionResult
 uid: 'excel!Excel.FunctionResult:class'
 package: excel!
 fullName: Excel.FunctionResult
-summary: |-
-  An object containing the result of a function-evaluation operation
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: An object containing the result of a function-evaluation operation
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
       succeeded, and its result is written to the Value field. The error is always in the English locale.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
       property is not set).
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

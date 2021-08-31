@@ -3,13 +3,10 @@ name: Excel.IdentityCollection
 uid: 'excel!Excel.IdentityCollection:class'
 package: excel!
 fullName: Excel.IdentityCollection
-summary: >-
-  Represents a collection of user identities.
-
-
+summary: Represents a collection of user identities.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -45,13 +42,10 @@ methods:
     uid: 'excel!Excel.IdentityCollection#add:member(1)'
     package: excel!
     fullName: add(assignee)
-    summary: >-
-      Adds a user identity to the collection.
-
-
+    summary: Adds a user identity to the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -67,13 +61,10 @@ methods:
     uid: 'excel!Excel.IdentityCollection#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: >-
-      Removes all user identities from the collection.
-
-
+    summary: Removes all user identities from the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -85,13 +76,10 @@ methods:
     uid: 'excel!Excel.IdentityCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
-      Gets the number of items in the collection.
-
-
+    summary: Gets the number of items in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -103,23 +91,20 @@ methods:
     uid: 'excel!Excel.IdentityCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: >-
-      Gets a document user identity by using its index in the collection.
-
-
+    summary: Gets a document user identity by using its index in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getItemAt(index: number): OfficeExtension.ClientResult<Excel.Identity>;'
+      content: 'getItemAt(index: number): Excel.IdentityEntity;'
       parameters:
         - id: index
           description: The items in the document user identity collection do not have a particular order.
           type: number
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.Identity:interface" />&gt;'
+        type: '<xref uid="excel!Excel.IdentityEntity:class" />'
         description: The document user identity at the given index.
   - name: load(options)
     uid: 'excel!Excel.IdentityCollection#load:member(1)'
@@ -188,13 +173,10 @@ methods:
     uid: 'excel!Excel.IdentityCollection#remove:member(1)'
     package: excel!
     fullName: remove(assignee)
-    summary: >-
-      Removes a user identity from the collection.
-
-
+    summary: Removes a user identity from the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

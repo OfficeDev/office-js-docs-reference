@@ -3,13 +3,10 @@ name: Excel.BuiltInTableStyle
 uid: 'excel!Excel.BuiltInTableStyle:enum'
 package: excel!
 fullName: Excel.BuiltInTableStyle
-summary: >-
-  Represents a built-in table style.
-
-
+summary: Represents a built-in table style.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

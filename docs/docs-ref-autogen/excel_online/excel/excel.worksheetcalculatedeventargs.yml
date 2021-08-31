@@ -3,11 +3,8 @@ name: Excel.WorksheetCalculatedEventArgs
 uid: 'excel!Excel.WorksheetCalculatedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetCalculatedEventArgs
-summary: |-
-  Provides information about the worksheet that raised the calculated event.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the worksheet that raised the calculated event.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       The address of the range that completed calculation. If multiple ranges completed calculation, the string is a
       comma-separated list of those range addresses.
-
-
-      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,11 +27,8 @@ properties:
     uid: 'excel!Excel.WorksheetCalculatedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Excel.EventType` for details.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +39,8 @@ properties:
     uid: 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: |-
-      Gets the ID of the worksheet in which the calculation occurred.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the worksheet in which the calculation occurred.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

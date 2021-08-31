@@ -3,8 +3,8 @@ name: Excel.SortOrientation
 uid: 'excel!Excel.SortOrientation:enum'
 package: excel!
 fullName: Excel.SortOrientation
-summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

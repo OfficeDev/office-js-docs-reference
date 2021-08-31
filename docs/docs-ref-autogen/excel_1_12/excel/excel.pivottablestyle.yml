@@ -3,11 +3,8 @@ name: Excel.PivotTableStyle
 uid: 'excel!Excel.PivotTableStyle:class'
 package: excel!
 fullName: Excel.PivotTableStyle
-summary: |-
-  Represents a PivotTable style, which defines style elements by PivotTable region.
-
-  \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a PivotTable style, which defines style elements by PivotTable region.'
+remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.PivotTableStyle#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the name of the PivotTable style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the PivotTable style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.PivotTableStyle#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      Specifies if this `PivotTableStyle` object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if this `PivotTableStyle` object is read-only.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +52,8 @@ methods:
     uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the PivotTable style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Deletes the PivotTable style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ methods:
     uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
     package: excel!
     fullName: duplicate()
-    summary: |-
-      Creates a duplicate of this PivotTable style with copies of all the style elements.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Creates a duplicate of this PivotTable style with copies of all the style elements.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,10 +148,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.PivotTableStyle): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

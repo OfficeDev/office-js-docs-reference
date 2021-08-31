@@ -3,8 +3,8 @@ name: Excel.HeaderFooter
 uid: 'excel!Excel.HeaderFooter:class'
 package: excel!
 fullName: Excel.HeaderFooter
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,10 +16,7 @@ properties:
     summary: >-
       The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,10 +30,7 @@ properties:
     summary: >-
       The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +58,7 @@ properties:
     summary: >-
       The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,10 +72,7 @@ properties:
     summary: >-
       The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,10 +86,7 @@ properties:
     summary: >-
       The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,10 +100,7 @@ properties:
     summary: >-
       The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,10 +182,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.HeaderFooter): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

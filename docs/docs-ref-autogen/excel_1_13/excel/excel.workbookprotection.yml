@@ -3,11 +3,8 @@ name: Excel.WorkbookProtection
 uid: 'excel!Excel.WorkbookProtection:class'
 package: excel!
 fullName: Excel.WorkbookProtection
-summary: |-
-  Represents the protection of a workbook object.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the protection of a workbook object.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.WorkbookProtection#protected:member'
     package: excel!
     fullName: protected
-    summary: |-
-      Specifies if the workbook is protected.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the workbook is protected.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,11 +107,53 @@ methods:
     uid: 'excel!Excel.WorkbookProtection#protect:member(1)'
     package: excel!
     fullName: protect(password)
-    summary: |-
-      Protects a workbook. Fails if the workbook has been protected.
-
+    summary: Protects a workbook. Fails if the workbook has been protected.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.load("protection/protected");
+
+          await context.sync();
+
+          if (!workbook.protection.protected) {
+              workbook.protection.protect();
+          }
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.load("protection/protected");
+
+          await context.sync();
+
+          if (!workbook.protection.protected) {
+              workbook.protection.protect(password);
+          }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,51 +164,7 @@ methods:
           type: string
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          await Excel.run(async (context) => {
-              let workbook = context.workbook;
-              workbook.load("protection/protected");
-
-              await context.sync();
-
-              if (!workbook.protection.protected) {
-                  workbook.protection.protect();
-              }
-          });
-
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          let password = await passwordHandler();
-
-          passwordHelper(password);
-
-          await Excel.run(async (context) => {
-              let workbook = context.workbook;
-              workbook.load("protection/protected");
-
-              await context.sync();
-
-              if (!workbook.protection.protected) {
-                  workbook.protection.protect(password);
-              }
-          });
-
-          ```
+        description: ''
   - name: toJSON()
     uid: 'excel!Excel.WorkbookProtection#toJSON:member(1)'
     package: excel!
@@ -195,11 +187,41 @@ methods:
     uid: 'excel!Excel.WorkbookProtection#unprotect:member(1)'
     package: excel!
     fullName: unprotect(password)
-    summary: |-
-      Unprotects a workbook.
-
+    summary: Unprotects a workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.protection.unprotect();
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.protection.unprotect(password);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,37 +232,5 @@ methods:
           type: string
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          await Excel.run(async (context) => {
-              let workbook = context.workbook;
-              workbook.protection.unprotect();
-          });
-
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          let password = await passwordHandler();
-
-          passwordHelper(password);
-
-          await Excel.run(async (context) => {
-              let workbook = context.workbook;
-              workbook.protection.unprotect(password);
-          });
-
-          ```
+        description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

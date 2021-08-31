@@ -3,13 +3,10 @@ name: Excel.Interfaces.IdentityCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.IdentityCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.IdentityCollectionLoadOptions
-summary: >-
-  Represents a collection of user identities.
-
-
+summary: Represents a collection of user identities.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -32,13 +29,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityCollectionLoadOptions#displayName:member'
     package: excel!
     fullName: displayName
-    summary: >-
-      For EACH ITEM in the collection: Represents the user's display name.
-
-
+    summary: 'For EACH ITEM in the collection: Represents the user''s display name.'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityCollectionLoadOptions#email:member'
     package: excel!
     fullName: email
-    summary: >-
-      For EACH ITEM in the collection: Represents the user's email address.
-
-
+    summary: 'For EACH ITEM in the collection: Represents the user''s email address.'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,13 +57,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      For EACH ITEM in the collection: Represents the user's unique ID.
-
-
+    summary: 'For EACH ITEM in the collection: Represents the user''s unique ID.'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

@@ -3,13 +3,10 @@ name: Excel.DocumentTaskCollection
 uid: 'excel!Excel.DocumentTaskCollection:class'
 package: excel!
 fullName: Excel.DocumentTaskCollection
-summary: >-
-  Represents a collection of tasks.
-
-
+summary: Represents a collection of tasks.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -45,13 +42,10 @@ methods:
     uid: 'excel!Excel.DocumentTaskCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
-      Gets the number of tasks in the collection.
-
-
+    summary: Gets the number of tasks in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -63,13 +57,10 @@ methods:
     uid: 'excel!Excel.DocumentTaskCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
-      Gets a task using its ID.
-
-
+    summary: Gets a task using its ID.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -85,13 +76,10 @@ methods:
     uid: 'excel!Excel.DocumentTaskCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: >-
-      Gets a task by its index in the collection.
-
-
+    summary: Gets a task by its index in the collection.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -107,13 +95,10 @@ methods:
     uid: 'excel!Excel.DocumentTaskCollection#getItemOrNullObject:member(1)'
     package: excel!
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a task using its ID.
-
-
+    summary: Gets a task using its ID.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

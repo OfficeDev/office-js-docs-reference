@@ -3,11 +3,8 @@ name: Excel.ChartLegendEntry
 uid: 'excel!Excel.ChartLegendEntry:class'
 package: excel!
 fullName: Excel.ChartLegendEntry
-summary: |-
-  Represents the legend entry in `legendEntryCollection`<!-- -->.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the legend entry in `legendEntryCollection`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartLegendEntry#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Represents the visibility of a chart legend entry.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the visibility of a chart legend entry.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,10 +110,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartLegendEntry): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

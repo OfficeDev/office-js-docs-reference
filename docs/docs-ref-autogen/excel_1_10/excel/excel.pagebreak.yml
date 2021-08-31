@@ -3,8 +3,8 @@ name: Excel.PageBreak
 uid: 'excel!Excel.PageBreak:class'
 package: excel!
 fullName: Excel.PageBreak
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.PageBreak#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: |-
-      Specifies the column index for the page break.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the column index for the page break.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,11 +39,8 @@ properties:
     uid: 'excel!Excel.PageBreak#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: |-
-      Specifies the row index for the page break.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the row index for the page break.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +52,8 @@ methods:
     uid: 'excel!Excel.PageBreak#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes a page break object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Deletes a page break object.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,11 +65,8 @@ methods:
     uid: 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
     package: excel!
     fullName: getCellAfterBreak()
-    summary: |-
-      Gets the first cell after the page break.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the first cell after the page break.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

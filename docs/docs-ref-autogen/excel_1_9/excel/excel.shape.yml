@@ -7,10 +7,7 @@ summary: >-
   Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
   etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,11 +16,8 @@ properties:
     uid: 'excel!Excel.Shape#altTextDescription:member'
     package: excel!
     fullName: altTextDescription
-    summary: |-
-      Specifies the alternative description text for a `Shape` object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the alternative description text for a `Shape` object.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +28,8 @@ properties:
     uid: 'excel!Excel.Shape#altTextTitle:member'
     package: excel!
     fullName: altTextTitle
-    summary: |-
-      Specifies the alternative title text for a `Shape` object.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the alternative title text for a `Shape` object.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +40,8 @@ properties:
     uid: 'excel!Excel.Shape#connectionSiteCount:member'
     package: excel!
     fullName: connectionSiteCount
-    summary: |-
-      Returns the number of connection sites on this shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of connection sites on this shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,40 +66,37 @@ properties:
     uid: 'excel!Excel.Shape#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Returns the fill formatting of this shape.
-
+    summary: Returns the fill formatting of this shape.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
+          shape.left = 300;
+          shape.top = 100;
+          shape.height = 100;
+          shape.width = 100;
+          shape.fill.foregroundColor = "yellow"
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fill: Excel.ShapeFill;'
       return:
         type: '<xref uid="excel!Excel.ShapeFill:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
-              shape.left = 300;
-              shape.top = 100;
-              shape.height = 100;
-              shape.width = 100;
-              shape.fill.foregroundColor = "yellow"
-              await context.sync();
-          });
-
-          ```
   - name: geometricShape
     uid: 'excel!Excel.Shape#geometricShape:member'
     package: excel!
@@ -119,10 +104,7 @@ properties:
     summary: >-
       Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
       "GeometricShape".
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,10 +118,7 @@ properties:
     summary: >-
       Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns
       `null` if the shape type is not "GeometricShape".
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,39 +192,36 @@ properties:
     uid: 'excel!Excel.Shape#group:member'
     package: excel!
     fullName: group
-    summary: |-
-      Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
-
+    summary: Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+
+          const shapeGroup = sheet.shapes.getItem("Group").group;
+          shapeGroup.ungroup();
+          console.log("Shapes ungrouped");
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly group: Excel.ShapeGroup;'
       return:
         type: '<xref uid="excel!Excel.ShapeGroup:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-
-              const shapeGroup = sheet.shapes.getItem("Group").group;
-              shapeGroup.ungroup();
-              console.log("Shapes ungrouped");
-
-              await context.sync();
-          });
-
-          ```
   - name: height
     uid: 'excel!Excel.Shape#height:member'
     package: excel!
@@ -253,10 +229,7 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
       value or zero as an input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,11 +240,8 @@ properties:
     uid: 'excel!Excel.Shape#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Specifies the shape identifier.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the shape identifier.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,11 +252,8 @@ properties:
     uid: 'excel!Excel.Shape#image:member'
     package: excel!
     fullName: image
-    summary: |-
-      Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -300,10 +267,7 @@ properties:
     summary: >-
       The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an
       `InvalidArgument` exception when set with a negative value as an input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,10 +282,7 @@ properties:
       Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
       groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
       sub-group of the top level.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -332,52 +293,46 @@ properties:
     uid: 'excel!Excel.Shape#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
-
+    summary: Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+      await Excel.run(async (context) => {
+          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+          const line = shapes.getItem("StraightLine").line;
+          line.beginArrowheadLength = Excel.ArrowheadLength.long;
+          line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+          line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+          line.endArrowheadLength = Excel.ArrowheadLength.long;
+          line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+          line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly line: Excel.Line;'
       return:
         type: '<xref uid="excel!Excel.Line:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.beginArrowheadLength = Excel.ArrowheadLength.long;
-              line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
-              line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
-
-              line.endArrowheadLength = Excel.ArrowheadLength.long;
-              line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
-              line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
-
-              await context.sync();
-          });
-
-          ```
   - name: lineFormat
     uid: 'excel!Excel.Shape#lineFormat:member'
     package: excel!
     fullName: lineFormat
-    summary: |-
-      Returns the line formatting of this shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the line formatting of this shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,46 +343,40 @@ properties:
     uid: 'excel!Excel.Shape#lockAspectRatio:member'
     package: excel!
     fullName: lockAspectRatio
-    summary: |-
-      Specifies if the aspect ratio of this shape is locked.
-
+    summary: Specifies if the aspect ratio of this shape is locked.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Octagon")
+          shape.lockAspectRatio = true;
+          shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'lockAspectRatio: boolean;'
       return:
         type: boolean
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.lockAspectRatio = true;
-              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              await context.sync();
-          });
-
-          ```
   - name: name
     uid: 'excel!Excel.Shape#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Specifies the name of the shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the name of the shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -438,11 +387,8 @@ properties:
     uid: 'excel!Excel.Shape#parentGroup:member'
     package: excel!
     fullName: parentGroup
-    summary: |-
-      Specifies the parent group of this shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the parent group of this shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -453,50 +399,44 @@ properties:
     uid: 'excel!Excel.Shape#rotation:member'
     package: excel!
     fullName: rotation
-    summary: |-
-      Specifies the rotation, in degrees, of the shape.
-
+    summary: 'Specifies the rotation, in degrees, of the shape.'
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
+          shape.left = 100;
+          shape.top = 300;
+          shape.height = 150;
+          shape.width = 200;
+          shape.rotation = 45;
+          shape.fill.clear();
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rotation: number;'
       return:
         type: number
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
-              shape.left = 100;
-              shape.top = 300;
-              shape.height = 150;
-              shape.width = 200;
-              shape.rotation = 45;
-              shape.fill.clear();
-              await context.sync();
-          });
-
-          ```
   - name: textFrame
     uid: 'excel!Excel.Shape#textFrame:member'
     package: excel!
     fullName: textFrame
-    summary: |-
-      Returns the text frame object of this shape. Read only.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the text frame object of this shape. Read only.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -510,10 +450,7 @@ properties:
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an
       `InvalidArgument` exception when set with a negative value as an input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -524,11 +461,8 @@ properties:
     uid: 'excel!Excel.Shape#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Returns the type of this shape. See `Excel.ShapeType` for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the type of this shape. See `Excel.ShapeType` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -539,11 +473,8 @@ properties:
     uid: 'excel!Excel.Shape#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Specifies if the shape is visible.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the shape is visible.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -557,10 +488,7 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value
       or zero as an input.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -571,11 +499,8 @@ properties:
     uid: 'excel!Excel.Shape#zOrderPosition:member'
     package: excel!
     fullName: zOrderPosition
-    summary: |-
-      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -587,43 +512,41 @@ methods:
     uid: 'excel!Excel.Shape#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Removes the shape from the worksheet.
-
+    summary: Removes the shape from the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+      await Excel.run(async (context) => {
+          context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
+          const sheet = context.workbook.worksheets.add("Shapes");
+
+          const shapes = sheet.shapes;
+
+          // load all the shapes in the collection without loading their properties
+          shapes.load("items/$none");
+          await context.sync();
+
+          shapes.items.forEach((shape) => shape.delete());
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
-
-          await Excel.run(async (context) => {
-              context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
-              const sheet = context.workbook.worksheets.add("Shapes");
-
-              const shapes = sheet.shapes;
-
-              // load all the shapes in the collection without loading their properties
-              shapes.load("items/$none");
-              await context.sync();
-
-              shapes.items.forEach((shape) => shape.delete());
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getAsImage(format)
     uid: 'excel!Excel.Shape#getAsImage:member(1)'
     package: excel!
@@ -632,10 +555,30 @@ methods:
       Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Image");
+          const result = shape.getAsImage(Excel.PictureFormat.png);
+          await context.sync();
+
+          const imageString = result.value;
+          // Your add-in would save this string as a .png file.
+          console.log("The image's base64-encoded string: " + imageString);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -646,29 +589,7 @@ methods:
           type: '<xref uid="excel!Excel.PictureFormat:enum" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Image");
-              const result = shape.getAsImage(Excel.PictureFormat.png);
-              await context.sync();
-
-              const imageString = result.value;
-              // Your add-in would save this string as a .png file.
-              console.log("The image's base64-encoded string: " + imageString);
-          });
-
-          ```
+        description: ''
   - name: getAsImage(formatString)
     uid: 'excel!Excel.Shape#getAsImage:member(2)'
     package: excel!
@@ -677,10 +598,7 @@ methods:
       Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -698,11 +616,27 @@ methods:
     uid: 'excel!Excel.Shape#incrementLeft:member(1)'
     package: excel!
     fullName: incrementLeft(increment)
-    summary: |-
-      Moves the shape horizontally by the specified number of points.
-
+    summary: Moves the shape horizontally by the specified number of points.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Square")
+          shape.incrementLeft(-25);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -716,25 +650,7 @@ methods:
           type: number
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Square")
-              shape.incrementLeft(-25);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: incrementRotation(increment)
     uid: 'excel!Excel.Shape#incrementRotation:member(1)'
     package: excel!
@@ -742,10 +658,26 @@ methods:
     summary: >-
       Rotates the shape clockwise around the z-axis by the specified number of degrees. Use the `rotation` property to
       set the absolute rotation of the shape.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Image");
+          shape.incrementRotation(180);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -758,34 +690,32 @@ methods:
           type: number
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Image");
-              shape.incrementRotation(180);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: incrementTop(increment)
     uid: 'excel!Excel.Shape#incrementTop:member(1)'
     package: excel!
     fullName: incrementTop(increment)
-    summary: |-
-      Moves the shape vertically by the specified number of points.
-
+    summary: Moves the shape vertically by the specified number of points.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Pentagon")
+          shape.incrementTop(25);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -798,25 +728,7 @@ methods:
           type: number
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Pentagon")
-              shape.incrementTop(25);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.Shape#load:member(1)'
     package: excel!
@@ -892,10 +804,27 @@ methods:
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current height.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Octagon")
+          shape.lockAspectRatio = true;
+          shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -916,26 +845,7 @@ methods:
           type: '<xref uid="excel!Excel.ShapeScaleFrom:enum" />'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.lockAspectRatio = true;
-              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
     uid: 'excel!Excel.Shape#scaleHeight:member(2)'
     package: excel!
@@ -944,10 +854,7 @@ methods:
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current height.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -979,10 +886,7 @@ methods:
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current width.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1012,10 +916,7 @@ methods:
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current width.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1046,10 +947,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Shape): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1087,11 +985,27 @@ methods:
     uid: 'excel!Excel.Shape#setZOrder:member(1)'
     package: excel!
     fullName: setZOrder(position)
-    summary: |-
-      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
-
+    summary: 'Moves the specified shape up or down the collection''s z-order, which shifts it in front of or behind other shapes.'
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.getItem("Octagon")
+          shape.setZOrder(Excel.ShapeZOrder.sendBackward);
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1104,34 +1018,13 @@ methods:
           type: '<xref uid="excel!Excel.ShapeZOrder:enum" />'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.setZOrder(Excel.ShapeZOrder.sendBackward);
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: setZOrder(positionString)
     uid: 'excel!Excel.Shape#setZOrder:member(2)'
     package: excel!
     fullName: setZOrder(positionString)
-    summary: |-
-      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Moves the specified shape up or down the collection''s z-order, which shifts it in front of or behind other shapes.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1168,11 +1061,8 @@ events:
     uid: 'excel!Excel.Shape#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: |-
-      Occurs when the shape is activated.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Occurs when the shape is activated.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1185,11 +1075,8 @@ events:
     uid: 'excel!Excel.Shape#onDeactivated:member'
     package: excel!
     fullName: onDeactivated
-    summary: |-
-      Occurs when the shape is deactivated.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Occurs when the shape is deactivated.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

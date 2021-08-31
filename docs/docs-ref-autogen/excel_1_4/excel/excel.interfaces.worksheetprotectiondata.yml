@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetProtectionData#options:member'
     package: excel!
     fullName: options
-    summary: |-
-      Specifies the protection options for the worksheet.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the protection options for the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetProtectionData#protected:member'
     package: excel!
     fullName: protected
-    summary: |-
-      Specifies if the worksheet is protected.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the worksheet is protected.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

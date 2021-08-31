@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#cellAddresses:member'
     package: excel!
     fullName: cellAddresses
-    summary: |-
-      Represents the cell addresses of the `RangeView`<!-- -->.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the cell addresses of the `RangeView`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#columnCount:member'
     package: excel!
     fullName: columnCount
-    summary: |-
-      The number of visible columns.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The number of visible columns.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#formulas:member'
     package: excel!
     fullName: formulas
-    summary: |-
-      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,10 +53,7 @@ properties:
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
       returned instead.
-
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,11 +64,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#formulasR1C1:member'
     package: excel!
     fullName: formulasR1C1
-    summary: |-
-      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,11 +76,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#index:member'
     package: excel!
     fullName: index
-    summary: |-
-      Returns a value that represents the index of the `RangeView`<!-- -->.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a value that represents the index of the `RangeView`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,11 +88,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Represents Excel's number format code for the given cell.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents Excel's number format code for the given cell.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,11 +100,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#rowCount:member'
     package: excel!
     fullName: rowCount
-    summary: |-
-      The number of visible rows.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The number of visible rows.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,11 +112,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#rows:member'
     package: excel!
     fullName: rows
-    summary: |-
-      Represents a collection of range views associated with the range.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of range views associated with the range.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,10 +127,7 @@ properties:
     summary: >-
       Text values of the specified range. The text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API.
-
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,10 +141,7 @@ properties:
     summary: >-
       Represents the raw values of the specified range view. The data returned could be of type string, number, or a
       boolean. Cells that contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,11 +152,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
     package: excel!
     fullName: valueTypes
-    summary: |-
-      Represents the type of data of each cell.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the type of data of each cell.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

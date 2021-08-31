@@ -3,11 +3,8 @@ name: Excel.RangeBorder
 uid: 'excel!Excel.RangeBorder:class'
 package: excel!
 fullName: Excel.RangeBorder
-summary: |-
-  Represents the border of an object.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the border of an object.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,10 +16,7 @@ properties:
     summary: >-
       HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500"), or as a named
       HTML color (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.RangeBorder#sideIndex:member'
     package: excel!
     fullName: sideIndex
-    summary: |-
-      Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +60,31 @@ properties:
     summary: >-
       One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for
       details.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // The example below adds grid border around the range.
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
+          range.format.borders.getItem('InsideVertical').style = 'Continuous';
+          range.format.borders.getItem('EdgeBottom').style = 'Continuous';
+          range.format.borders.getItem('EdgeLeft').style = 'Continuous';
+          range.format.borders.getItem('EdgeRight').style = 'Continuous';
+          range.format.borders.getItem('EdgeTop').style = 'Continuous';
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,31 +95,6 @@ properties:
         type: >-
           <xref uid="excel!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
           "Dot" | "Double" | "SlantDashDot"
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // The example below adds grid border around the range.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
-              range.format.borders.getItem('InsideVertical').style = 'Continuous';
-              range.format.borders.getItem('EdgeBottom').style = 'Continuous';
-              range.format.borders.getItem('EdgeLeft').style = 'Continuous';
-              range.format.borders.getItem('EdgeRight').style = 'Continuous';
-              range.format.borders.getItem('EdgeTop').style = 'Continuous';
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: tintAndShade
     uid: 'excel!Excel.RangeBorder#tintAndShade:member'
     package: excel!
@@ -116,10 +103,7 @@ properties:
       Specifies a double that lightens or darkens a color for the range border, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A `null` value indicates that the border doesn't have a uniform
       `tintAndShade` setting.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,11 +114,8 @@ properties:
     uid: 'excel!Excel.RangeBorder#weight:member'
     package: excel!
     fullName: weight
-    summary: |-
-      Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,10 +197,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.RangeBorder): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

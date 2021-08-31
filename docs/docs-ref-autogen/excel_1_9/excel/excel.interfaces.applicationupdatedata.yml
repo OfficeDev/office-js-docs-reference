@@ -18,11 +18,9 @@ properties:
       Possible values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->,
       where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
       the user requests it.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for get, 1.8 for
       set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +34,7 @@ properties:
     summary: >-
       Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

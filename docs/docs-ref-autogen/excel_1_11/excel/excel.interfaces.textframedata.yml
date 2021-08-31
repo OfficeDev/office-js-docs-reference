@@ -16,10 +16,7 @@ properties:
     summary: >-
       The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
       text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +31,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#bottomMargin:member'
     package: excel!
     fullName: bottomMargin
-    summary: |-
-      Represents the bottom margin, in points, of the text frame.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the bottom margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,11 +43,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#hasText:member'
     package: excel!
     fullName: hasText
-    summary: |-
-      Specifies if the text frame contains text.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the text frame contains text.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: |-
-      Represents the horizontal alignment of the text frame. See `Excel.ShapeTextHorizontalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the horizontal alignment of the text frame. See `Excel.ShapeTextHorizontalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,10 +74,7 @@ properties:
     summary: >-
       Represents the horizontal overflow behavior of the text frame. See `Excel.ShapeTextHorizontalOverflow` for
       details.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +85,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#leftMargin:member'
     package: excel!
     fullName: leftMargin
-    summary: |-
-      Represents the left margin, in points, of the text frame.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the left margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,10 +100,7 @@ properties:
     summary: >-
       Represents the angle to which the text is oriented for the text frame. See `Excel.ShapeTextOrientation` for
       details.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,10 +118,7 @@ properties:
     summary: >-
       Represents the reading order of the text frame, either left-to-right or right-to-left. See
       `Excel.ShapeTextReadingOrder` for details.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,11 +129,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#rightMargin:member'
     package: excel!
     fullName: rightMargin
-    summary: |-
-      Represents the right margin, in points, of the text frame.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the right margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,11 +141,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#topMargin:member'
     package: excel!
     fullName: topMargin
-    summary: |-
-      Represents the top margin, in points, of the text frame.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the top margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,11 +153,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: |-
-      Represents the vertical alignment of the text frame. See `Excel.ShapeTextVerticalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the vertical alignment of the text frame. See `Excel.ShapeTextVerticalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,11 +169,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TextFrameData#verticalOverflow:member'
     package: excel!
     fullName: verticalOverflow
-    summary: |-
-      Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

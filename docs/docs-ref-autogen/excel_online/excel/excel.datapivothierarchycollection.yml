@@ -3,11 +3,8 @@ name: Excel.DataPivotHierarchyCollection
 uid: 'excel!Excel.DataPivotHierarchyCollection:class'
 package: excel!
 fullName: Excel.DataPivotHierarchyCollection
-summary: |-
-  Represents a collection of DataPivotHierarchy items associated with the PivotTable.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of DataPivotHierarchy items associated with the PivotTable.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
     package: excel!
     fullName: add(pivotHierarchy)
-    summary: |-
-      Adds the PivotHierarchy to the current axis.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds the PivotHierarchy to the current axis.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +57,8 @@ methods:
     uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of pivot hierarchies in the collection.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of pivot hierarchies in the collection.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,11 +70,8 @@ methods:
     uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: |-
-      Gets a DataPivotHierarchy by its name or ID.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a DataPivotHierarchy by its name or ID.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,10 +93,7 @@ methods:
       and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,11 +172,8 @@ methods:
     uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
     package: excel!
     fullName: remove(DataPivotHierarchy)
-    summary: |-
-      Removes the PivotHierarchy from the current axis.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Removes the PivotHierarchy from the current axis.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

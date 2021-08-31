@@ -7,10 +7,7 @@ summary: >-
   An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
   object model, read [Work with worksheets using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,11 +30,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member'
     package: excel!
     fullName: autoFilter
-    summary: |-
-      Represents the `AutoFilter` object of the worksheet.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `AutoFilter` object of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +42,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
     package: excel!
     fullName: charts
-    summary: |-
-      Returns a collection of charts that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a collection of charts that are part of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,10 +57,7 @@ properties:
     summary: >-
       Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,10 +71,7 @@ properties:
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,11 +82,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      The display name of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The display name of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,11 +94,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member'
     package: excel!
     fullName: pageLayout
-    summary: |-
-      Gets the `PageLayout` object of the worksheet.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the `PageLayout` object of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,11 +106,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      The zero-based position of the worksheet within the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The zero-based position of the worksheet within the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,11 +118,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
     package: excel!
     fullName: protection
-    summary: |-
-      Returns the sheet protection object for a worksheet.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the sheet protection object for a worksheet.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,11 +130,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
     package: excel!
     fullName: showGridlines
-    summary: |-
-      Specifies if gridlines are visible to the user.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if gridlines are visible to the user.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,11 +142,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
     package: excel!
     fullName: showHeadings
-    summary: |-
-      Specifies if headings are visible to the user.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if headings are visible to the user.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,11 +154,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
     package: excel!
     fullName: standardHeight
-    summary: |-
-      Returns the standard (default) height of all the rows in the worksheet, in points.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns the standard (default) height of all the rows in the worksheet, in points.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,10 +170,7 @@ properties:
       Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
       the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
       used.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,10 +186,7 @@ properties:
       `null`<!-- -->. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
       Otherwise, the property will be set to a color, in the form \#RRGGBB (e.g., "FFA500"). When setting the color, use
       an empty-string to set an "auto" color, or a real color otherwise.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,11 +197,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
     package: excel!
     fullName: tables
-    summary: |-
-      Collection of tables that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of tables that are part of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,13 +209,10 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
     package: excel!
     fullName: visibility
-    summary: >-
-      The visibility of the worksheet.
-
-
+    summary: The visibility of the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

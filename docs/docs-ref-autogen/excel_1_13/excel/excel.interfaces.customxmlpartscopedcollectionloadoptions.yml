@@ -6,10 +6,7 @@ fullName: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
 summary: >-
   A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
   namespace). A scoped collection cannot be scoped any further.
-
-
-  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      For EACH ITEM in the collection: The custom XML part's ID.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The custom XML part''s ID.'
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
     package: excel!
     fullName: namespaceUri
-    summary: |-
-      For EACH ITEM in the collection: The custom XML part's namespace URI.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The custom XML part''s namespace URI.'
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

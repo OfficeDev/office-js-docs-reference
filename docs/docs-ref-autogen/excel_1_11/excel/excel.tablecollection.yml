@@ -3,11 +3,8 @@ name: Excel.TableCollection
 uid: 'excel!Excel.TableCollection:class'
 package: excel!
 fullName: Excel.TableCollection
-summary: |-
-  Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.'
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.TableCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Returns the number of tables in the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of tables in the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,10 +56,25 @@ methods:
       Creates a new table. The range object or source address determines the worksheet under which the table will be
       added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
       table), an error will be thrown.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
+          table.load('name');
+          return ctx.sync().then(function() {
+              console.log(table.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,34 +95,13 @@ methods:
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Table:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
-              table.load('name');
-              return ctx.sync().then(function() {
-                  console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.TableCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of tables in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of tables in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,11 +113,27 @@ methods:
     uid: 'excel!Excel.TableCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a table by name or ID.
-
+    summary: Gets a table by name or ID.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,35 +144,31 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Table:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var table = ctx.workbook.tables.getItem(tableName);
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a table based on its position in the collection.
-
+    summary: Gets a table based on its position in the collection.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.getItemAt(0);
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,25 +179,7 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.Table:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.getItemAt(0);
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemOrNullObject(key)
     uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
     package: excel!
@@ -207,10 +189,7 @@ methods:
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,11 +324,8 @@ events:
     uid: 'excel!Excel.TableCollection#onAdded:member'
     package: excel!
     fullName: onAdded
-    summary: |-
-      Occurs when a new table is added in a workbook.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Occurs when a new table is added in a workbook.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -362,11 +338,28 @@ events:
     uid: 'excel!Excel.TableCollection#onChanged:member'
     package: excel!
     fullName: onChanged
-    summary: |-
-      Occurs when data changes on any table in a workbook, or a worksheet.
-
+    summary: 'Occurs when data changes on any table in a workbook, or a worksheet.'
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
+
+      await Excel.run(async (context) => {
+          let tables = context.workbook.tables;
+          tables.onChanged.add(onChange);
+
+          await context.sync();
+          console.log("A handler has been registered for the table collection onChanged event");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -375,35 +368,12 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
-
-          await Excel.run(async (context) => {
-              let tables = context.workbook.tables;
-              tables.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the table collection onChanged event");
-          });
-
-          ```
   - name: onDeleted
     uid: 'excel!Excel.TableCollection#onDeleted:member'
     package: excel!
     fullName: onDeleted
-    summary: |-
-      Occurs when the specified table is deleted in a workbook.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Occurs when the specified table is deleted in a workbook.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

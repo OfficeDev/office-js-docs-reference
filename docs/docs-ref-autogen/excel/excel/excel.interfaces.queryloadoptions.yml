@@ -3,13 +3,10 @@ name: Excel.Interfaces.QueryLoadOptions
 uid: 'excel!Excel.Interfaces.QueryLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.QueryLoadOptions
-summary: >-
-  Represents a PowerQuery query.
-
-
+summary: Represents a PowerQuery query.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -32,13 +29,10 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryLoadOptions#error:member'
     package: excel!
     fullName: error
-    summary: >-
-      Gets the query error message from when the query was last refreshed.
-
-
+    summary: Gets the query error message from when the query was last refreshed.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryLoadOptions#loadedTo:member'
     package: excel!
     fullName: loadedTo
-    summary: >-
-      Gets the query 'loaded to' object type.
-
-
+    summary: Gets the query 'loaded to' object type.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,13 +57,10 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryLoadOptions#loadedToDataModel:member'
     package: excel!
     fullName: loadedToDataModel
-    summary: >-
-      Specifies if the query loaded to the Data Model.
-
-
+    summary: Specifies if the query loaded to the Data Model.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,13 +71,10 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      Gets the name of the query. Query names cannot contain periods or quotation marks.
-
-
+    summary: Gets the name of the query. Query names cannot contain periods or quotation marks.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -100,13 +85,10 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryLoadOptions#refreshDate:member'
     package: excel!
     fullName: refreshDate
-    summary: >-
-      Gets the date and time when the query was last refreshed.
-
-
+    summary: Gets the date and time when the query was last refreshed.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -120,11 +102,9 @@ properties:
     summary: >-
       Gets the number of rows that were loaded when the query was last refreshed. If last refresh has errors the value
       will be -1.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

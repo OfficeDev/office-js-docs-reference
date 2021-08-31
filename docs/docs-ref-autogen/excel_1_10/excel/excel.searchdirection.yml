@@ -3,11 +3,8 @@ name: Excel.SearchDirection
 uid: 'excel!Excel.SearchDirection:enum'
 package: excel!
 fullName: Excel.SearchDirection
-summary: |-
-  Specifies the search direction.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the search direction.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

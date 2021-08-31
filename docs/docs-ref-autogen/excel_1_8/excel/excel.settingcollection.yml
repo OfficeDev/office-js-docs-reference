@@ -6,10 +6,7 @@ fullName: Excel.SettingCollection
 summary: >-
   Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per
   file and add-in (task-pane or content) combination.
-
-
-  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,11 +42,28 @@ methods:
     uid: 'excel!Excel.SettingCollection#add:member(1)'
     package: excel!
     fullName: 'add(key, value)'
-    summary: |-
-      Sets or adds the specified setting to the workbook.
-
+    summary: Sets or adds the specified setting to the workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+
+          await context.sync();
+          console.log("Settings changed handler registered.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,35 +77,13 @@ methods:
           type: string | number | boolean | Date | Array&lt;any&gt; | any
       return:
         type: '<xref uid="excel!Excel.Setting:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-
-              await context.sync();
-              console.log("Settings changed handler registered.");
-          });
-
-          ```
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.SettingCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of settings in the collection.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of settings in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,11 +95,8 @@ methods:
     uid: 'excel!Excel.SettingCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a setting entry via the key.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a setting entry via the key.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,10 +117,36 @@ methods:
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          let needsReview = settings.getItem("NeedsReview");
+          needsReview.delete();
+          needsReview = settings.getItemOrNullObject("NeedsReview");
+
+          await context.sync();
+
+          if (needsReview.isNullObject) {
+              console.log("The setting has been deleted");
+          } else {
+              console.log("The setting was not deleted");
+          }
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,35 +157,7 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Setting:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/create-get-change-delete-settings.yaml
-
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
-
-              await context.sync();
-
-              if (needsReview.isNullObject) {
-                  console.log("The setting has been deleted");
-              } else {
-                  console.log("The setting was not deleted");
-              }
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.SettingCollection#load:member(1)'
     package: excel!
@@ -257,11 +244,28 @@ events:
     uid: 'excel!Excel.SettingCollection#onSettingsChanged:member'
     package: excel!
     fullName: onSettingsChanged
-    summary: |-
-      Occurs when the settings in the document are changed.
-
+    summary: Occurs when the settings in the document are changed.
+    remarks: >-
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+
+          await context.sync();
+          console.log("Settings changed handler registered.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -270,24 +274,4 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.SettingsChangedEventArgs:interface" />&gt;
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
-
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-
-              await context.sync();
-              console.log("Settings changed handler registered.");
-          });
-
-          ```
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

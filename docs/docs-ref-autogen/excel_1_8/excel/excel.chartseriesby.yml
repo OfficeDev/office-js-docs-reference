@@ -7,10 +7,7 @@ summary: >-
   Specifies whether the series are by rows or by columns. In Excel on desktop, the "auto" option will inspect the source
   data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply
   default to "columns".
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

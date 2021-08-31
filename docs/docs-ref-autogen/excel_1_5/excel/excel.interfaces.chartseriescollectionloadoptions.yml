@@ -3,11 +3,8 @@ name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
-summary: |-
-  Represents a collection of chart series.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of chart series.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,10 +30,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
       formatting.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the name of a series in a chart. The name's length should not be
       greater than 255 characters.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
     package: excel!
     fullName: points
-    summary: |-
-      For EACH ITEM in the collection: Returns a collection of all points in the series.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Returns a collection of all points in the series.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

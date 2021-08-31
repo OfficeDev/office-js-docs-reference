@@ -3,11 +3,8 @@ name: Excel.DataValidationType
 uid: 'excel!Excel.DataValidationType:enum'
 package: excel!
 fullName: Excel.DataValidationType
-summary: |-
-  Represents the data validation type enum.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the data validation type enum.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

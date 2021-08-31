@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#backwardPeriod:member'
     package: excel!
     fullName: backwardPeriod
-    summary: |-
-      Represents the number of periods that the trendline extends backward.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the number of periods that the trendline extends backward.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Represents the formatting of a chart trendline.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the formatting of a chart trendline.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#forwardPeriod:member'
     package: excel!
     fullName: forwardPeriod
-    summary: |-
-      Represents the number of periods that the trendline extends forward.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the number of periods that the trendline extends forward.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,10 +52,7 @@ properties:
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
       values). The returned value is always a number.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#label:member'
     package: excel!
     fullName: label
-    summary: |-
-      Represents the label of a chart trendline.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the label of a chart trendline.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
     package: excel!
     fullName: movingAveragePeriod
-    summary: |-
-      Represents the period of a chart trendline. Only applicable to trendlines with the type `MovingAverage`<!-- -->.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the period of a chart trendline. Only applicable to trendlines with the type `MovingAverage`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,10 +90,7 @@ properties:
     summary: >-
       Represents the name of the trendline. Can be set to a string value, a `null` value represents automatic values.
       The returned value is always a string
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,11 +101,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
     package: excel!
     fullName: polynomialOrder
-    summary: |-
-      Represents the order of a chart trendline. Only applicable to trendlines with the type `Polynomial`<!-- -->.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the order of a chart trendline. Only applicable to trendlines with the type `Polynomial`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,11 +113,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showEquation:member'
     package: excel!
     fullName: showEquation
-    summary: |-
-      True if the equation for the trendline is displayed on the chart.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: True if the equation for the trendline is displayed on the chart.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,11 +125,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showRSquared:member'
     package: excel!
     fullName: showRSquared
-    summary: |-
-      True if the r-squared value for the trendline is displayed on the chart.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: True if the r-squared value for the trendline is displayed on the chart.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -167,11 +137,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Represents the type of a chart trendline.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the type of a chart trendline.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

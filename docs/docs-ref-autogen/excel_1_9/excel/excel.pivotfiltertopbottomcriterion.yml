@@ -3,11 +3,8 @@ name: Excel.PivotFilterTopBottomCriterion
 uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
 package: excel!
 fullName: Excel.PivotFilterTopBottomCriterion
-summary: |-
-  Represents the criteria for the top/bottom values filter.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the criteria for the top/bottom values filter.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

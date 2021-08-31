@@ -3,11 +3,8 @@ name: Excel.ConditionalRangeFont
 uid: 'excel!Excel.ConditionalRangeFont:class'
 package: excel!
 fullName: Excel.ConditionalRangeFont
-summary: |-
-  This object represents the font attributes (font style, color, etc.) for an object.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'This object represents the font attributes (font style, color, etc.) for an object.'
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFont#bold:member'
     package: excel!
     fullName: bold
-    summary: |-
-      Specifies if the font is bold.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the font is bold.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFont#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'HTML color code representation of the text color (e.g., \#FF0000 represents Red).'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFont#italic:member'
     package: excel!
     fullName: italic
-    summary: |-
-      Specifies if the font is italic.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the font is italic.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
     package: excel!
     fullName: strikethrough
-    summary: |-
-      Specifies the strikethrough status of the font.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the strikethrough status of the font.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFont#underline:member'
     package: excel!
     fullName: underline
-    summary: |-
-      The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,11 +88,8 @@ methods:
     uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: |-
-      Resets the font formats.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Resets the font formats.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,10 +171,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalRangeFont): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Represents the border format of chart area, which includes color, linestyle, and weight.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the border format of chart area, which includes color, linestyle, and weight.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the font attributes (font name, font size, color, etc.) for the current object.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

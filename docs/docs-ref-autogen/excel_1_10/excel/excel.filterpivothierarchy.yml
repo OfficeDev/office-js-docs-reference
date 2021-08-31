@@ -3,11 +3,8 @@ name: Excel.FilterPivotHierarchy
 uid: 'excel!Excel.FilterPivotHierarchy:class'
 package: excel!
 fullName: Excel.FilterPivotHierarchy
-summary: |-
-  Represents the Excel FilterPivotHierarchy.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel FilterPivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
     package: excel!
     fullName: enableMultipleFilterItems
-    summary: |-
-      Determines whether to allow multiple filter items.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Determines whether to allow multiple filter items.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.FilterPivotHierarchy#fields:member'
     package: excel!
     fullName: fields
-    summary: |-
-      Returns the PivotFields associated with the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the PivotFields associated with the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.FilterPivotHierarchy#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.FilterPivotHierarchy#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.FilterPivotHierarchy#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the FilterPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,10 +158,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.FilterPivotHierarchy): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,11 +196,8 @@ methods:
     uid: 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
     package: excel!
     fullName: setToDefault()
-    summary: |-
-      Reset the FilterPivotHierarchy back to its default values.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Reset the FilterPivotHierarchy back to its default values.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

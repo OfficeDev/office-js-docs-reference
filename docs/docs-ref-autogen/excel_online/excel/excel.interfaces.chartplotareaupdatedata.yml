@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Specifies the formatting of a chart plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the formatting of a chart plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#height:member'
     package: excel!
     fullName: height
-    summary: |-
-      Specifies the height value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the height value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideHeight:member'
     package: excel!
     fullName: insideHeight
-    summary: |-
-      Specifies the inside height value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the inside height value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideLeft:member'
     package: excel!
     fullName: insideLeft
-    summary: |-
-      Specifies the inside left value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the inside left value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideTop:member'
     package: excel!
     fullName: insideTop
-    summary: |-
-      Specifies the inside top value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the inside top value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +73,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#insideWidth:member'
     package: excel!
     fullName: insideWidth
-    summary: |-
-      Specifies the inside width value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the inside width value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,11 +85,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#left:member'
     package: excel!
     fullName: left
-    summary: |-
-      Specifies the left value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the left value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,11 +97,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Specifies the position of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the position of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,11 +109,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#top:member'
     package: excel!
     fullName: top
-    summary: |-
-      Specifies the top value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the top value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,11 +121,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#width:member'
     package: excel!
     fullName: width
-    summary: |-
-      Specifies the width value of a plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the width value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

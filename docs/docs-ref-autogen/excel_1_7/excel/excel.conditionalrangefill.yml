@@ -3,11 +3,8 @@ name: Excel.ConditionalRangeFill
 uid: 'excel!Excel.ConditionalRangeFill:class'
 package: excel!
 fullName: Excel.ConditionalRangeFill
-summary: |-
-  Represents the background of a conditional range object.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the background of a conditional range object.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,10 +16,7 @@ properties:
     summary: >-
       HTML color code representing the color of the fill, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +42,8 @@ methods:
     uid: 'excel!Excel.ConditionalRangeFill#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: |-
-      Resets the fill.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Resets the fill.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,10 +125,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalRangeFill): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

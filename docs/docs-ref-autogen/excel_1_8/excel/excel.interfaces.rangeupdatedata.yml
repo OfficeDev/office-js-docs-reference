@@ -17,10 +17,7 @@ properties:
       Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden.
       Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden
       and other columns in the same range are not hidden.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +28,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#dataValidation:member'
     package: excel!
     fullName: dataValidation
-    summary: |-
-      Returns a data validation object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a data validation object.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +40,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns a format object, encapsulating the range''s font, fill, borders, alignment, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +52,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
     package: excel!
     fullName: formulas
-    summary: |-
-      Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,10 +68,7 @@ properties:
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
       returned instead.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +79,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
     package: excel!
     fullName: formulasR1C1
-    summary: |-
-      Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +91,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#hyperlink:member'
     package: excel!
     fullName: hyperlink
-    summary: |-
-      Represents the hyperlink for the current range.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the hyperlink for the current range.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +103,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Represents Excel's number format code for the given range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents Excel's number format code for the given range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,10 +119,7 @@ properties:
       Represents Excel's number format code for the given range, based on the language settings of the user. Excel does
       not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
       text uses the locally-formatted strings based on the language specified in the system settings.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,10 +134,7 @@ properties:
       Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value
       is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other
       rows in the same range are not hidden.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,10 +149,7 @@ properties:
       Represents the style of the current range. If the styles of the cells are inconsistent, `null` will be returned.
       For custom styles, the style name will be returned. For built-in styles, a string representing a value in the
       `BuiltInStyle` enum will be returned.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,10 +164,7 @@ properties:
       Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

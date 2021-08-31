@@ -3,10 +3,10 @@ name: Excel.RangeValueType
 uid: 'excel!Excel.RangeValueType:enum'
 package: excel!
 fullName: Excel.RangeValueType
-summary: >-
+summary: ''
+remarks: >-
   \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
   RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

@@ -3,13 +3,10 @@ name: Excel.RefreshModeChangedEventArgs
 uid: 'excel!Excel.RefreshModeChangedEventArgs:interface'
 package: excel!
 fullName: Excel.RefreshModeChangedEventArgs
-summary: >-
-  Represents information about a newly added linked data type, such as source and ID.
-
-
+summary: 'Represents information about a newly added linked data type, such as source and ID.'
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,13 +15,10 @@ properties:
     uid: 'excel!Excel.RefreshModeChangedEventArgs#refreshMode:member'
     package: excel!
     fullName: refreshMode
-    summary: >-
-      The linked data type refresh mode.
-
-
+    summary: The linked data type refresh mode.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -35,13 +29,10 @@ properties:
     uid: 'excel!Excel.RefreshModeChangedEventArgs#serviceId:member'
     package: excel!
     fullName: serviceId
-    summary: >-
-      The unique ID of the object whose refresh mode was changed.
-
-
+    summary: The unique ID of the object whose refresh mode was changed.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -52,13 +43,10 @@ properties:
     uid: 'excel!Excel.RefreshModeChangedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: >-
-      Gets the source of the event. See `Excel.EventSource` for details.
-
-
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -69,13 +57,10 @@ properties:
     uid: 'excel!Excel.RefreshModeChangedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Gets the type of the event. See `Excel.EventType` for details.
-
-
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

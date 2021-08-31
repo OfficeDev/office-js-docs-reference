@@ -3,8 +3,8 @@ name: Excel.EventSource
 uid: 'excel!Excel.EventSource:enum'
 package: excel!
 fullName: Excel.EventSource
-summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

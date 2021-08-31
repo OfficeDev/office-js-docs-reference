@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member'
     package: excel!
     fullName: bottom
-    summary: |-
-      Gets the bottom border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the bottom border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member'
     package: excel!
     fullName: left
-    summary: |-
-      Gets the left border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the left border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,11 +51,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member'
     package: excel!
     fullName: right
-    summary: |-
-      Gets the right border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the right border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,11 +63,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member'
     package: excel!
     fullName: top
-    summary: |-
-      Gets the top border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the top border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.WorksheetProtection
 uid: 'excel!Excel.WorksheetProtection:class'
 package: excel!
 fullName: Excel.WorksheetProtection
-summary: |-
-  Represents the protection of a sheet object.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the protection of a sheet object.
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.WorksheetProtection#options:member'
     package: excel!
     fullName: options
-    summary: |-
-      Specifies the protection options for the worksheet.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the protection options for the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.WorksheetProtection#protected:member'
     package: excel!
     fullName: protected
-    summary: |-
-      Specifies if the worksheet is protected.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the worksheet is protected.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,13 +119,54 @@ methods:
     uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
     package: excel!
     fullName: 'protect(options, password)'
-    summary: >-
-      Protects a worksheet. Fails if the worksheet has already been protected.
-
-
+    summary: Protects a worksheet. Fails if the worksheet has already been protected.
+    remarks: >-
       \[ [API set: ExcelApi 1.2 for options; 1.7 for
       password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.load("protection/protected");
+
+          await context.sync();
+
+          if (!activeSheet.protection.protected) {
+              activeSheet.protection.protect();
+          }
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.load("protection/protected");
+
+          await context.sync();
+
+          if (!activeSheet.protection.protected) {
+              activeSheet.protection.protect(null, password);
+          }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,51 +180,7 @@ methods:
           type: string
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          await Excel.run(async (context) => {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.load("protection/protected");
-
-              await context.sync();
-
-              if (!activeSheet.protection.protected) {
-                  activeSheet.protection.protect();
-              }
-          });
-
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-          let password = await passwordHandler();
-
-          passwordHelper(password);
-
-          await Excel.run(async (context) => {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.load("protection/protected");
-
-              await context.sync();
-
-              if (!activeSheet.protection.protected) {
-                  activeSheet.protection.protect(null, password);
-              }
-          });
-
-          ```
+        description: ''
   - name: toJSON()
     uid: 'excel!Excel.WorksheetProtection#toJSON:member(1)'
     package: excel!

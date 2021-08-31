@@ -3,8 +3,8 @@ name: Excel.HorizontalAlignment
 uid: 'excel!Excel.HorizontalAlignment:enum'
 package: excel!
 fullName: Excel.HorizontalAlignment
-summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

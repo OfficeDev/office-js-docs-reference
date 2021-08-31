@@ -3,11 +3,8 @@ name: Excel.NumberFormatCategory
 uid: 'excel!Excel.NumberFormatCategory:enum'
 package: excel!
 fullName: Excel.NumberFormatCategory
-summary: |-
-  Represents a category of number formats.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a category of number formats.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

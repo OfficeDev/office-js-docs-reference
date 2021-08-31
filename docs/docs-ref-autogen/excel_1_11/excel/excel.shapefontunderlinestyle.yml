@@ -3,11 +3,8 @@ name: Excel.ShapeFontUnderlineStyle
 uid: 'excel!Excel.ShapeFontUnderlineStyle:enum'
 package: excel!
 fullName: Excel.ShapeFontUnderlineStyle
-summary: |-
-  The type of underline applied to a font.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: The type of underline applied to a font.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

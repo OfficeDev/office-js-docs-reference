@@ -3,11 +3,8 @@ name: Excel.Interfaces.ChartAxisTitleLoadOptions
 uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxisTitleLoadOptions
-summary: |-
-  Represents the title of a chart axis.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the title of a chart axis.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Specifies the formatting of the chart axis title.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the formatting of the chart axis title.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#text:member'
     package: excel!
     fullName: text
-    summary: |-
-      Specifies the axis title.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the axis title.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,10 +54,7 @@ properties:
     summary: >-
       Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
       from -90 to 90 or the integer 180 for vertically-oriented text.
-
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Specifies if the axis title is visibile.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the axis title is visibile.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

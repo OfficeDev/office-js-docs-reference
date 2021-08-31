@@ -3,11 +3,8 @@ name: Excel.ChartTrendlineLabelFormat
 uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
 package: excel!
 fullName: Excel.ChartTrendlineLabelFormat
-summary: |-
-  Encapsulates the format properties for the chart trendline label.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Encapsulates the format properties for the chart trendline label.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Specifies the border format, which includes color, linestyle, and weight.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the border format, which includes color, linestyle, and weight.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Specifies the fill format of the current chart trendline label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the fill format of the current chart trendline label.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Specifies the font attributes (such as font name, font size, and color) for a chart trendline label.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the font attributes (such as font name, font size, and color) for a chart trendline label.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,10 +134,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartTrendlineLabelFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
