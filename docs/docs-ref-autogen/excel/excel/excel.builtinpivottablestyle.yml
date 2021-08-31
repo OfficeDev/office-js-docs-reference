@@ -3,13 +3,10 @@ name: Excel.BuiltInPivotTableStyle
 uid: 'excel!Excel.BuiltInPivotTableStyle:enum'
 package: excel!
 fullName: Excel.BuiltInPivotTableStyle
-summary: >-
-  Represents a built-in PivotTable style
-
-
+summary: Represents a built-in PivotTable style
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

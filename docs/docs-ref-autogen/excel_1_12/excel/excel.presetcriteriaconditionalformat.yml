@@ -6,10 +6,7 @@ fullName: Excel.PresetCriteriaConditionalFormat
 summary: >-
   Represents the the preset criteria conditional format such as above average, below average, unique values, contains
   blank, nonblank, error, and noerror.
-
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,57 +41,54 @@ properties:
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
     package: excel!
     fullName: rule
-    summary: |-
-      The rule of the conditional format.
-
+    summary: The rule of the conditional format.
+    remarks: >-
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.presetCriteria);
+          conditionalFormat.preset.format.font.color = "white";
+          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
+
+          await context.sync();
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'rule: Excel.ConditionalPresetCriteriaRule;'
       return:
         type: '<xref uid="excel!Excel.ConditionalPresetCriteriaRule:interface" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B2:M5");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.presetCriteria);
-              conditionalFormat.preset.format.font.color = "white";
-              conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
-
-              await context.sync();
-          });
-
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B8:E13");
-              const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          });
-
-          ```
 methods:
   - name: load(options)
     uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
@@ -175,10 +166,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.PresetCriteriaConditionalFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

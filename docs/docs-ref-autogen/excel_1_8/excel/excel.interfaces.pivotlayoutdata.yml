@@ -16,10 +16,7 @@ properties:
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member'
     package: excel!
     fullName: showColumnGrandTotals
-    summary: |-
-      Specifies if the PivotTable report shows grand totals for columns.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable report shows grand totals for columns.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutData#showRowGrandTotals:member'
     package: excel!
     fullName: showRowGrandTotals
-    summary: |-
-      Specifies if the PivotTable report shows grand totals for rows.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable report shows grand totals for rows.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,10 +54,7 @@ properties:
     summary: >-
       This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different
       states, this will be `null`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

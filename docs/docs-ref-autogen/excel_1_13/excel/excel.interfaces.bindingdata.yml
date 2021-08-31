@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.BindingData#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Represents the binding identifier.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the binding identifier.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.BindingData#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Returns the type of the binding. See `Excel.BindingType` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the type of the binding. See `Excel.BindingType` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.ChartPointsCollection
 uid: 'excel!Excel.ChartPointsCollection:class'
 package: excel!
 fullName: Excel.ChartPointsCollection
-summary: |-
-  A collection of all the chart points within a series inside a chart.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: A collection of all the chart points within a series inside a chart.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartPointsCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Returns the number of chart points in the series.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of chart points in the series.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +52,8 @@ methods:
     uid: 'excel!Excel.ChartPointsCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Returns the number of chart points in the series.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of chart points in the series.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,11 +65,27 @@ methods:
     uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Retrieve a point based on its position within the series.
-
+    summary: Retrieve a point based on its position within the series.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Set the border color for the first points in the points collection
+      Excel.run(function (ctx) { 
+          var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
+          return ctx.sync().then(function() {
+              console.log("Point Border Color Changed");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,26 +96,7 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.ChartPoint:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set the border color for the first points in the points collection
-          Excel.run(function (ctx) { 
-              var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
-              points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
-              return ctx.sync().then(function() {
-                  console.log("Point Border Color Changed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
     package: excel!

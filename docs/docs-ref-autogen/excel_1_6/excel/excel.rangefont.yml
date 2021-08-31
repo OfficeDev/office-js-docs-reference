@@ -3,11 +3,8 @@ name: Excel.RangeFont
 uid: 'excel!Excel.RangeFont:class'
 package: excel!
 fullName: Excel.RangeFont
-summary: |-
-  This object represents the font attributes (font name, font size, color, etc.) for an object.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'This object represents the font attributes (font name, font size, color, etc.) for an object.'
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.RangeFont#bold:member'
     package: excel!
     fullName: bold
-    summary: |-
-      Represents the bold status of the font.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the bold status of the font.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.RangeFont#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'HTML color code representation of the text color (e.g., \#FF0000 represents Red).'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.RangeFont#italic:member'
     package: excel!
     fullName: italic
-    summary: |-
-      Specifies the italic status of the font.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the italic status of the font.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.RangeFont#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Font name (e.g., "Calibri"). The name's length should not be greater than 31 characters.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Font name (e.g., "Calibri"). The name''s length should not be greater than 31 characters.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.RangeFont#size:member'
     package: excel!
     fullName: size
-    summary: |-
-      Font size.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Font size.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,11 +87,8 @@ properties:
     uid: 'excel!Excel.RangeFont#underline:member'
     package: excel!
     fullName: underline
-    summary: |-
-      Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Type of underline applied to the font. See `Excel.RangeUnderlineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,10 +209,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.RangeFont): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

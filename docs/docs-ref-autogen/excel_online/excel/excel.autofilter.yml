@@ -6,10 +6,7 @@ fullName: Excel.AutoFilter
 summary: >-
   Represents the `AutoFilter` object. AutoFilter turns the values in Excel column into specific filters based on the
   cell contents.
-
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.AutoFilter#criteria:member'
     package: excel!
     fullName: criteria
-    summary: |-
-      An array that holds all the filter criteria in the autofiltered range.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: An array that holds all the filter criteria in the autofiltered range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.AutoFilter#enabled:member'
     package: excel!
     fullName: enabled
-    summary: |-
-      Specifies if the AutoFilter is enabled.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the AutoFilter is enabled.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,11 +53,8 @@ properties:
     uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
     package: excel!
     fullName: isDataFiltered
-    summary: |-
-      Specifies if the AutoFilter has filter criteria.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the AutoFilter has filter criteria.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +66,29 @@ methods:
     uid: 'excel!Excel.AutoFilter#apply:member(1)'
     package: excel!
     fullName: 'apply(range, columnIndex, criteria)'
-    summary: |-
-      Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
-
+    summary: Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          const farmData = sheet.getUsedRange();
+
+          // This filter will only show the rows with the top 25% of values in column 3.
+          sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,36 +105,13 @@ methods:
           type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
       return:
         type: void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              const farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: clearColumnCriteria(columnIndex)
     uid: 'excel!Excel.AutoFilter#clearColumnCriteria:member(1)'
     package: excel!
     fullName: clearColumnCriteria(columnIndex)
-    summary: |-
-      Clears the column filter criteria of the AutoFilter.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears the column filter criteria of the AutoFilter.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,11 +130,8 @@ methods:
     uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     package: excel!
     fullName: clearCriteria()
-    summary: |-
-      Clears the filter criteria of the AutoFilter.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears the filter criteria of the AutoFilter.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,11 +143,8 @@ methods:
     uid: 'excel!Excel.AutoFilter#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: |-
-      Returns the `Range` object that represents the range to which the AutoFilter applies.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the `Range` object that represents the range to which the AutoFilter applies.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,10 +162,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,11 +241,8 @@ methods:
     uid: 'excel!Excel.AutoFilter#reapply:member(1)'
     package: excel!
     fullName: reapply()
-    summary: |-
-      Applies the specified Autofilter object currently on the range.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Applies the specified Autofilter object currently on the range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -283,11 +254,8 @@ methods:
     uid: 'excel!Excel.AutoFilter#remove:member(1)'
     package: excel!
     fullName: remove()
-    summary: |-
-      Removes the AutoFilter for the range.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Removes the AutoFilter for the range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

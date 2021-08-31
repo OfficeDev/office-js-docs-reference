@@ -7,10 +7,7 @@ summary: >-
   An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
   object model, read [Work with worksheets using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,11 +16,8 @@ properties:
     uid: 'excel!Excel.Worksheet#charts:member'
     package: excel!
     fullName: charts
-    summary: |-
-      Returns a collection of charts that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a collection of charts that are part of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +45,7 @@ properties:
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,11 +56,8 @@ properties:
     uid: 'excel!Excel.Worksheet#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      The display name of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The display name of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +68,8 @@ properties:
     uid: 'excel!Excel.Worksheet#names:member'
     package: excel!
     fullName: names
-    summary: |-
-      Collection of names scoped to the current worksheet.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of names scoped to the current worksheet.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,137 +80,123 @@ properties:
     uid: 'excel!Excel.Worksheet#pivotTables:member'
     package: excel!
     fullName: pivotTables
-    summary: |-
-      Collection of PivotTables that are part of the worksheet.
-
+    summary: Collection of PivotTables that are part of the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+
+      await Excel.run(async (context) => {
+        // Get the names of all the PivotTables in the current worksheet.
+        const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
+        pivotTables.load("name");
+        await context.sync();
+
+        // Display the names in the console.
+        console.log("PivotTables in the current worksheet:")
+        pivotTables.items.forEach((pivotTable) => {
+          console.log(`\t${pivotTable.name}`);
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
-
-          await Excel.run(async (context) => {
-            // Get the names of all the PivotTables in the current worksheet.
-            const pivotTables = context.workbook.worksheets.getActiveWorksheet().pivotTables;
-            pivotTables.load("name");
-            await context.sync();
-
-            // Display the names in the console.
-            console.log("PivotTables in the current worksheet:")
-            pivotTables.items.forEach((pivotTable) => {
-              console.log(`\t${pivotTable.name}`);
-            });
-          });
-
-          ```
   - name: position
     uid: 'excel!Excel.Worksheet#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      The zero-based position of the worksheet within the workbook.
-
+    summary: The zero-based position of the worksheet within the workbook.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Set worksheet position. 
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          worksheet.position = 2;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'position: number;'
       return:
         type: number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set worksheet position. 
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.position = 2;
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: protection
     uid: 'excel!Excel.Worksheet#protection:member'
     package: excel!
     fullName: protection
-    summary: |-
-      Returns the sheet protection object for a worksheet.
-
+    summary: Returns the sheet protection object for a worksheet.
+    remarks: |-
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function(ctx) {
+        // get a reference to Sheet1
+        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+        // Protect inserting or deleting rows in Sheet1
+        sheet.protection.protect({
+          allowInsertRows: false,
+          allowDeleteRows: false
+        });
+
+        return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+      ```javascript
+      // Unprotecting a worksheet with unprotect() will remove all 
+      // WorksheetProtectionOptions options applied to a worksheet.
+      // To remove only a subset of WorksheetProtectionOptions use the 
+      // protect() method and set the options you wish to remove to true.
+      Excel.run(function(ctx) {
+        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+        sheet.protection.protect({
+          allowInsertRows: false, // Protect row insertion
+          allowDeleteRows: true // Unprotect row deletion
+        });
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function(ctx) {
-            // get a reference to Sheet1
-            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-
-            // Protect inserting or deleting rows in Sheet1
-            sheet.protection.protect({
-              allowInsertRows: false,
-              allowDeleteRows: false
-            });
-
-            return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Unprotecting a worksheet with unprotect() will remove all 
-          // WorksheetProtectionOptions options applied to a worksheet.
-          // To remove only a subset of WorksheetProtectionOptions use the 
-          // protect() method and set the options you wish to remove to true.
-          Excel.run(function(ctx) {
-            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-            sheet.protection.protect({
-              allowInsertRows: false, // Protect row insertion
-              allowDeleteRows: true // Unprotect row deletion
-            });
-          });
-          ```
   - name: tables
     uid: 'excel!Excel.Worksheet#tables:member'
     package: excel!
     fullName: tables
-    summary: |-
-      Collection of tables that are part of the worksheet.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of tables that are part of the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,13 +207,10 @@ properties:
     uid: 'excel!Excel.Worksheet#visibility:member'
     package: excel!
     fullName: visibility
-    summary: >-
-      The visibility of the worksheet.
-
-
+    summary: The visibility of the worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,35 +222,32 @@ methods:
     uid: 'excel!Excel.Worksheet#activate:member(1)'
     package: excel!
     fullName: activate()
-    summary: |-
-      Activate the worksheet in the Excel UI.
-
+    summary: Activate the worksheet in the Excel UI.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          worksheet.activate();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'activate(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.activate();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: delete()
     uid: 'excel!Excel.Worksheet#delete:member(1)'
     package: excel!
@@ -291,34 +256,31 @@ methods:
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
       delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
       or visible before deleting it.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          worksheet.delete();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'getCell(row, column)'
     uid: 'excel!Excel.Worksheet#getCell:member(1)'
     package: excel!
@@ -326,10 +288,27 @@ methods:
     summary: >-
       Gets the `Range` object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var cell = worksheet.getCell(0,0);
+          cell.load('address');
+          return ctx.sync().then(function() {
+              console.log(cell.address);
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,36 +322,52 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var cell = worksheet.getCell(0,0);
-              cell.load('address');
-              return ctx.sync().then(function() {
-                  console.log(cell.address);
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getRange(address)
     uid: 'excel!Excel.Worksheet#getRange:member(1)'
     package: excel!
     fullName: getRange(address)
-    summary: |-
-      Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.
-
+    summary: 'Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.'
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Below example uses range address to get the range object.
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          range.load('cellCount');
+          return ctx.sync().then(function() {
+              console.log(range.cellCount);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+      ```javascript
+      // Below example uses a named-range to get the range object.
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeName = 'MyRange';
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -385,46 +380,7 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Below example uses range address to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Below example uses a named-range to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeName = 'MyRange';
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getUsedRange(valuesOnly)
     uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
     package: excel!
@@ -432,10 +388,27 @@ methods:
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          var usedRange = worksheet.getUsedRange();
+          usedRange.load('address');
+          return ctx.sync().then(function() {
+                  console.log(usedRange.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,27 +421,7 @@ methods:
           type: boolean
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              var usedRange = worksheet.getUsedRange();
-              usedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(usedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getUsedRangeOrNullObject(valuesOnly)
     uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     package: excel!
@@ -479,10 +432,7 @@ methods:
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -588,10 +538,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Worksheet): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

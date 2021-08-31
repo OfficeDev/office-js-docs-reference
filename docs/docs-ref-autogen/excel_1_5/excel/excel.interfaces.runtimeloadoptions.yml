@@ -3,11 +3,8 @@ name: Excel.Interfaces.RuntimeLoadOptions
 uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RuntimeLoadOptions
-summary: |-
-  Represents the Excel Runtime class.
-
-  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel Runtime class.
+remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface

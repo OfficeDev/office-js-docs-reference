@@ -3,11 +3,8 @@ name: Excel.ChartPlotAreaFormat
 uid: 'excel!Excel.ChartPlotAreaFormat:class'
 package: excel!
 fullName: Excel.ChartPlotAreaFormat
-summary: |-
-  Represents the format properties for a chart plot area.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the format properties for a chart plot area.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartPlotAreaFormat#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Specifies the border attributes of a chart plot area.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the border attributes of a chart plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartPlotAreaFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Specifies the fill format of an object, which includes background formatting information.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the fill format of an object, which includes background formatting information.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,10 +122,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartPlotAreaFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

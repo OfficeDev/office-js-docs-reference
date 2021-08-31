@@ -3,8 +3,8 @@ name: Excel.DynamicFilterCriteria
 uid: 'excel!Excel.DynamicFilterCriteria:enum'
 package: excel!
 fullName: Excel.DynamicFilterCriteria
-summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

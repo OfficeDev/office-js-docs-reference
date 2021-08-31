@@ -3,11 +3,8 @@ name: Excel.TableSelectionChangedEventArgs
 uid: 'excel!Excel.TableSelectionChangedEventArgs:interface'
 package: excel!
 fullName: Excel.TableSelectionChangedEventArgs
-summary: |-
-  Provides information about the table that raised the selection changed event.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the table that raised the selection changed event.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,44 +13,38 @@ properties:
     uid: 'excel!Excel.TableSelectionChangedEventArgs#address:member'
     package: excel!
     fullName: address
-    summary: |-
-      Gets the range address that represents the selected area of the table on a specific worksheet.
-
+    summary: Gets the range address that represents the selected area of the table on a specific worksheet.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
+
+      async function onSelectionChange(args) {
+          await Excel.run(async (context) => {
+              console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
+          });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'address: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
-
-          async function onSelectionChange(args) {
-              await Excel.run(async (context) => {
-                  console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
-              });
-          }
-
-          ```
   - name: isInsideTable
     uid: 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
     package: excel!
     fullName: isInsideTable
-    summary: |-
-      Specifies if the selection is inside a table. `IsInsideTable` must be set to `true` for the address to be useful.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the selection is inside a table. `IsInsideTable` must be set to `true` for the address to be useful.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.TableSelectionChangedEventArgs#tableId:member'
     package: excel!
     fullName: tableId
-    summary: |-
-      Gets the ID of the table in which the selection changed.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the table in which the selection changed.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,11 +67,8 @@ properties:
     uid: 'excel!Excel.TableSelectionChangedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Excel.EventType` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +79,8 @@ properties:
     uid: 'excel!Excel.TableSelectionChangedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: |-
-      Gets the ID of the worksheet in which the selection changed.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the worksheet in which the selection changed.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

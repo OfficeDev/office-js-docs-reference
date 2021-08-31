@@ -953,6 +953,10 @@ items:
             uid: 'excel!Excel.WorksheetFormulaChangedEventArgs:interface'
           - name: WorksheetFreezePanes
             uid: 'excel!Excel.WorksheetFreezePanes:class'
+          - name: WorksheetMovedEventArgs
+            uid: 'excel!Excel.WorksheetMovedEventArgs:interface'
+          - name: WorksheetNameChangedEventArgs
+            uid: 'excel!Excel.WorksheetNameChangedEventArgs:interface'
           - name: WorksheetProtection
             uid: 'excel!Excel.WorksheetProtection:class'
           - name: WorksheetProtectionChangedEventArgs
@@ -969,6 +973,8 @@ items:
             uid: 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
           - name: WorksheetSingleClickedEventArgs
             uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
+          - name: WorksheetVisibilityChangedEventArgs
+            uid: 'excel!Excel.WorksheetVisibilityChangedEventArgs:interface'
       - name: OneNote
         href: /javascript/api/onenote
       - name: Outlook

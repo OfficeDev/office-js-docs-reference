@@ -3,11 +3,8 @@ name: Excel.ConditionalFormatRuleType
 uid: 'excel!Excel.ConditionalFormatRuleType:enum'
 package: excel!
 fullName: Excel.ConditionalFormatRuleType
-summary: |-
-  Represents the types of conditional format values.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the types of conditional format values.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

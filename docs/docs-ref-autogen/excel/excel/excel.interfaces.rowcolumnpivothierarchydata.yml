@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
     package: excel!
     fullName: fields
-    summary: |-
-      Returns the PivotFields associated with the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the PivotFields associated with the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the RowColumnPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the RowColumnPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

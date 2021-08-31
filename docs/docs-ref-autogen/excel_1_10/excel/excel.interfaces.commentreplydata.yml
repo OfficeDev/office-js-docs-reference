@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
     package: excel!
     fullName: authorEmail
-    summary: |-
-      Gets the email of the comment reply's author.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the email of the comment reply's author.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
     package: excel!
     fullName: authorName
-    summary: |-
-      Gets the name of the comment reply's author.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the comment reply's author.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentReplyData#content:member'
     package: excel!
     fullName: content
-    summary: |-
-      The comment reply's content. The string is plain text.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The comment reply's content. The string is plain text.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: |-
-      Gets the creation time of the comment reply.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the creation time of the comment reply.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'excel!Excel.Interfaces.CommentReplyData#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Specifies the comment reply identifier.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the comment reply identifier.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Represents line formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

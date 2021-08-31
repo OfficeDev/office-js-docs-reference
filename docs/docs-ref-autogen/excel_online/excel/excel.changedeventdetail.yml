@@ -3,11 +3,8 @@ name: Excel.ChangedEventDetail
 uid: 'excel!Excel.ChangedEventDetail:interface'
 package: excel!
 fullName: Excel.ChangedEventDetail
-summary: |-
-  Provides information about the details of a `WorksheetChangedEvent` or `TableChangedEvent`<!-- -->.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the details of a `WorksheetChangedEvent` or `TableChangedEvent`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       Represents the value after the change. The data returned could be a string, number, or boolean. Cells that contain
       an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +30,7 @@ properties:
     summary: >-
       Represents the value before the change. The data returned could be a string, number, or boolean. Cells that
       contain an error will return the error string.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,11 +41,8 @@ properties:
     uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
     package: excel!
     fullName: valueTypeAfter
-    summary: |-
-      Represents the type of value after the change.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the type of value after the change.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,11 +57,8 @@ properties:
     uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
     package: excel!
     fullName: valueTypeBefore
-    summary: |-
-      Represents the type of value before the change.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the type of value before the change.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

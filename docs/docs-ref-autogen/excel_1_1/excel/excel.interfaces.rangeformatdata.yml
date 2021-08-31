@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFormatData#borders:member'
     package: excel!
     fullName: borders
-    summary: |-
-      Collection of border objects that apply to the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of border objects that apply to the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFormatData#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Returns the fill object defined on the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the fill object defined on the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Returns the font object defined on the overall range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the font object defined on the overall range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
     package: excel!
     fullName: horizontalAlignment
-    summary: |-
-      Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member'
     package: excel!
     fullName: verticalAlignment
-    summary: |-
-      Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,10 +80,7 @@ properties:
     summary: >-
       Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a
       uniform wrap setting
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

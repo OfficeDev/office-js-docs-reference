@@ -3,11 +3,8 @@ name: Excel.ChartBorder
 uid: 'excel!Excel.ChartBorder:class'
 package: excel!
 fullName: Excel.ChartBorder
-summary: |-
-  Represents the border formatting of a chart element.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the border formatting of a chart element.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartBorder#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representing the color of borders in the chart.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: HTML color code representing the color of borders in the chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartBorder#lineStyle:member'
     package: excel!
     fullName: lineStyle
-    summary: |-
-      Represents the line style of the border. See `Excel.ChartLineStyle` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the line style of the border. See `Excel.ChartLineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.ChartBorder#weight:member'
     package: excel!
     fullName: weight
-    summary: |-
-      Represents weight of the border, in points.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents weight of the border, in points.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +68,8 @@ methods:
     uid: 'excel!Excel.ChartBorder#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: |-
-      Clear the border format of a chart element.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Clear the border format of a chart element.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,10 +151,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartBorder): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.ChartMapOptions
 uid: 'excel!Excel.ChartMapOptions:class'
 package: excel!
 fullName: Excel.ChartMapOptions
-summary: |-
-  Encapsulates the properties for a region map chart.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Encapsulates the properties for a region map chart.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
     package: excel!
     fullName: labelStrategy
-    summary: |-
-      Specifies the series map labels strategy of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series map labels strategy of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartMapOptions#level:member'
     package: excel!
     fullName: level
-    summary: |-
-      Specifies the series mapping level of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series mapping level of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.ChartMapOptions#projectionType:member'
     package: excel!
     fullName: projectionType
-    summary: |-
-      Specifies the series projection type of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series projection type of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,10 +140,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartMapOptions): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

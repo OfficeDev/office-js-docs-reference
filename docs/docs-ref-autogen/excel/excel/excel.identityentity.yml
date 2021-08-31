@@ -3,13 +3,10 @@ name: Excel.IdentityEntity
 uid: 'excel!Excel.IdentityEntity:class'
 package: excel!
 fullName: Excel.IdentityEntity
-summary: >-
-  Represents information about a user's identity.
-
-
+summary: Represents information about a user's identity.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -32,13 +29,10 @@ properties:
     uid: 'excel!Excel.IdentityEntity#displayName:member'
     package: excel!
     fullName: displayName
-    summary: >-
-      Represents the user's display name.
-
-
+    summary: Represents the user's display name.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.IdentityEntity#email:member'
     package: excel!
     fullName: email
-    summary: >-
-      Represents the user's email address.
-
-
+    summary: Represents the user's email address.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,13 +57,10 @@ properties:
     uid: 'excel!Excel.IdentityEntity#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      Represents the user's unique ID.
-
-
+    summary: Represents the user's unique ID.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

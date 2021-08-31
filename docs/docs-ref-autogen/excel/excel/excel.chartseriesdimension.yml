@@ -3,11 +3,8 @@ name: Excel.ChartSeriesDimension
 uid: 'excel!Excel.ChartSeriesDimension:enum'
 package: excel!
 fullName: Excel.ChartSeriesDimension
-summary: |-
-  Represents the dimensions when getting values from chart series.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the dimensions when getting values from chart series.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

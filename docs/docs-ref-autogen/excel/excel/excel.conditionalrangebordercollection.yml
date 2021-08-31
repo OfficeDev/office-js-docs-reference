@@ -3,11 +3,8 @@ name: Excel.ConditionalRangeBorderCollection
 uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
 package: excel!
 fullName: Excel.ConditionalRangeBorderCollection
-summary: |-
-  Represents the border objects that make up range border.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the border objects that make up range border.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
     package: excel!
     fullName: bottom
-    summary: |-
-      Gets the bottom border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the bottom border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Number of border objects in the collection.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number of border objects in the collection.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,11 +63,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     package: excel!
     fullName: left
-    summary: |-
-      Gets the left border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the left border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,11 +75,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
     package: excel!
     fullName: right
-    summary: |-
-      Gets the right border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the right border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,11 +87,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
     package: excel!
     fullName: top
-    summary: |-
-      Gets the top border.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the top border.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,11 +100,8 @@ methods:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(index)
-    summary: |-
-      Gets a border object using its name.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a border object using its name.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,11 +117,8 @@ methods:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
     package: excel!
     fullName: getItem(indexString)
-    summary: |-
-      Gets a border object using its name.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a border object using its name.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,11 +134,8 @@ methods:
     uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a border object using its index.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a border object using its index.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

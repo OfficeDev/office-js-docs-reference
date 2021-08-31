@@ -6,10 +6,7 @@ fullName: Excel.NamedItemCollection
 summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was
   reached.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,11 +42,27 @@ methods:
     uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(name)
-    summary: |-
-      Gets a `NamedItem` object using its name.
-
+    summary: Gets a `NamedItem` object using its name.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = 'Sheet1';
+          var nameditem = ctx.workbook.names.getItem(sheetName);
+          nameditem.load('type');
+          return ctx.sync().then(function() {
+                  console.log(nameditem.type);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,26 +73,7 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.NamedItem:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = 'Sheet1';
-              var nameditem = ctx.workbook.names.getItem(sheetName);
-              nameditem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(nameditem.type);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.NamedItemCollection#load:member(1)'
     package: excel!

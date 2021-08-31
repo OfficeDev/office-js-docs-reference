@@ -3,13 +3,10 @@ name: Excel.PivotTableDateGroupBy
 uid: 'excel!Excel.PivotTableDateGroupBy:enum'
 package: excel!
 fullName: Excel.PivotTableDateGroupBy
-summary: >-
-  Represents the DateTime Grouping condition.
-
-
+summary: Represents the DateTime Grouping condition.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

@@ -3,11 +3,8 @@ name: Excel.ChartAxisFormat
 uid: 'excel!Excel.ChartAxisFormat:class'
 package: excel!
 fullName: Excel.ChartAxisFormat
-summary: |-
-  Encapsulates the format properties for the chart axis.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Encapsulates the format properties for the chart axis.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartAxisFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Specifies chart fill formatting.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies chart fill formatting.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartAxisFormat#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.ChartAxisFormat#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Specifies chart line formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,10 +134,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxisFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

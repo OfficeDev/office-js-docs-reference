@@ -98,6 +98,11 @@ fields:
     package: excel!
     summary: ''
     value: '"NotImplemented"'
+  - name: openWorkbookLinksBlocked
+    uid: 'excel!Excel.ErrorCodes.openWorkbookLinksBlocked:member'
+    package: excel!
+    summary: ''
+    value: '"OpenWorkbookLinksBlocked"'
   - name: pivotTableRangeConflict
     uid: 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
     package: excel!

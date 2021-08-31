@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#bold:member'
     package: excel!
     fullName: bold
-    summary: |-
-      Specifies if the font is bold.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the font is bold.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'HTML color code representation of the text color (e.g., \#FF0000 represents Red).'
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#italic:member'
     package: excel!
     fullName: italic
-    summary: |-
-      Specifies if the font is italic.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the font is italic.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#strikethrough:member'
     package: excel!
     fullName: strikethrough
-    summary: |-
-      Specifies the strikethrough status of the font.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the strikethrough status of the font.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#underline:member'
     package: excel!
     fullName: underline
-    summary: |-
-      The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The type of underline applied to the font. See `Excel.ConditionalRangeFontUnderlineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

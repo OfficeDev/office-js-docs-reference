@@ -3,11 +3,8 @@ name: Excel.ListDataValidation
 uid: 'excel!Excel.ListDataValidation:interface'
 package: excel!
 fullName: Excel.ListDataValidation
-summary: |-
-  Represents the List data validation criteria.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the List data validation criteria.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ListDataValidation#inCellDropDown:member'
     package: excel!
     fullName: inCellDropDown
-    summary: |-
-      Specifies whether to display the list in a cell drop-down. The default is `true`<!-- -->.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies whether to display the list in a cell drop-down. The default is `true`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,7 @@ properties:
     summary: >-
       Source of the list for data validation When setting the value, it can be passed in as a `Range` object, or a
       string that contains a comma-separated number, boolean, or date.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

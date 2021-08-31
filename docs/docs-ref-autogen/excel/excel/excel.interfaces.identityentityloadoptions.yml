@@ -3,13 +3,10 @@ name: Excel.Interfaces.IdentityEntityLoadOptions
 uid: 'excel!Excel.Interfaces.IdentityEntityLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.IdentityEntityLoadOptions
-summary: >-
-  Represents information about a user's identity.
-
-
+summary: Represents information about a user's identity.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: interface
@@ -32,13 +29,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityEntityLoadOptions#displayName:member'
     package: excel!
     fullName: displayName
-    summary: >-
-      Represents the user's display name.
-
-
+    summary: Represents the user's display name.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,13 +43,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityEntityLoadOptions#email:member'
     package: excel!
     fullName: email
-    summary: >-
-      Represents the user's email address.
-
-
+    summary: Represents the user's email address.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,13 +57,10 @@ properties:
     uid: 'excel!Excel.Interfaces.IdentityEntityLoadOptions#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      Represents the user's unique ID.
-
-
+    summary: Represents the user's unique ID.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

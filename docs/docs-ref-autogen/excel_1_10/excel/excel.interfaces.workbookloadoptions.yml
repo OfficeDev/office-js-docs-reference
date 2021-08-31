@@ -7,10 +7,7 @@ summary: >-
   Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,11 +30,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
     package: excel!
     fullName: application
-    summary: |-
-      Represents the Excel application instance that contains this workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the Excel application instance that contains this workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +42,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
     package: excel!
     fullName: autoSave
-    summary: |-
-      Specifies if the workbook is in AutoSave mode.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the workbook is in AutoSave mode.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +54,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
     package: excel!
     fullName: bindings
-    summary: |-
-      Represents a collection of bindings that are part of the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of bindings that are part of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +66,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
     package: excel!
     fullName: calculationEngineVersion
-    summary: |-
-      Returns a number about the version of Excel Calculation Engine.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a number about the version of Excel Calculation Engine.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,10 +81,7 @@ properties:
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
       charts track the index of the data points.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,10 +95,7 @@ properties:
     summary: >-
       Specifies if changes have been made since the workbook was last saved. You can set this property to `true` if you
       want to close a modified workbook without either saving it or being prompted to save it.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,11 +106,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the workbook name.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the workbook name.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,11 +118,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
     package: excel!
     fullName: previouslySaved
-    summary: |-
-      Specifies if the workbook has ever been saved locally or online.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the workbook has ever been saved locally or online.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,11 +130,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
     package: excel!
     fullName: properties
-    summary: |-
-      Gets the workbook properties.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the workbook properties.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,11 +142,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     package: excel!
     fullName: protection
-    summary: |-
-      Returns the protection object for a workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the protection object for a workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,11 +154,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      Returns `true` if the workbook is open in read-only mode.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns `true` if the workbook is open in read-only mode.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,11 +166,8 @@ properties:
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
     package: excel!
     fullName: tables
-    summary: |-
-      Represents a collection of tables associated with the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of tables associated with the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,10 +181,7 @@ properties:
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
       Data will permanently lose accuracy when switching this property from `false` to `true`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

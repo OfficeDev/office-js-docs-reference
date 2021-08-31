@@ -3,11 +3,8 @@ name: Excel.ChartGridlines
 uid: 'excel!Excel.ChartGridlines:class'
 package: excel!
 fullName: Excel.ChartGridlines
-summary: |-
-  Represents major or minor gridlines on a chart axis.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents major or minor gridlines on a chart axis.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartGridlines#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Represents the formatting of chart gridlines.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the formatting of chart gridlines.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartGridlines#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Specifies if the axis gridlines are visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the axis gridlines are visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,10 +141,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartGridlines): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

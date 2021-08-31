@@ -6,10 +6,7 @@ fullName: Excel.CustomXmlPartScopedCollection
 summary: >-
   A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
   namespace). A scoped collection cannot be scoped any further.
-
-
-  \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -45,66 +42,61 @@ methods:
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of CustomXML parts in this collection.
-
+    summary: Gets the number of CustomXML parts in this collection.
+    remarks: >-
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+
+      await Excel.run(async (context) => {
+          $("#display-xml").text("");
+          const contosoNamespace = "http://schemas.contoso.com/review/1.0";
+          const customXmlParts = context.workbook.customXmlParts;
+          const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
+          const numberOfPartsInNamespace = filteredXmlParts.getCount();
+
+          await context.sync();
+
+          if (numberOfPartsInNamespace.value == 1) {
+              const onlyXmlPartInNamespace = filteredXmlParts.getOnlyItem();
+              const xmlBlob = onlyXmlPartInNamespace.getXml();
+
+              await context.sync();
+
+              // Make it a bit more readable.
+              const readableXml = xmlBlob.value.replace(/></g, ">\n<");
+
+              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`);
+
+          } else {
+              console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
+          }        
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
-
-          await Excel.run(async (context) => {
-              $("#display-xml").text("");
-              const contosoNamespace = "http://schemas.contoso.com/review/1.0";
-              const customXmlParts = context.workbook.customXmlParts;
-              const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
-              const numberOfPartsInNamespace = filteredXmlParts.getCount();
-
-              await context.sync();
-
-              if (numberOfPartsInNamespace.value == 1) {
-                  const onlyXmlPartInNamespace = filteredXmlParts.getOnlyItem();
-                  const xmlBlob = onlyXmlPartInNamespace.getXml();
-
-                  await context.sync();
-
-                  // Make it a bit more readable.
-                  const readableXml = xmlBlob.value.replace(/></g, ">\n<");
-
-                  $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
-                      ${readableXml}`);
-
-              } else {
-                  console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
-              }        
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getItem(id)
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(id)
-    summary: |-
-      Gets a custom XML part based on its ID.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a custom XML part based on its ID.
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,10 +118,47 @@ methods:
       and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+          await context.sync();
+
+          if (xmlPartIDSetting.value) {   
+              let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+              const xmlBlob = customXmlPart.getXml();
+              customXmlPart.delete();
+              customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+
+              await context.sync();
+
+              if (customXmlPart.isNullObject) {
+                  $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+
+                  // Delete the unneeded setting too.
+                  xmlPartIDSetting.delete();            
+              } else {
+                  const readableXml = addLineBreaksToXML(xmlBlob.value);
+                  const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+                  $("#display-xml").text(strangeMessage);
+              }
+
+              await context.sync();
+          }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,101 +169,60 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
-
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings;
-              const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
-              await context.sync();
-
-              if (xmlPartIDSetting.value) {   
-                  let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
-                  const xmlBlob = customXmlPart.getXml();
-                  customXmlPart.delete();
-                  customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
-
-                  await context.sync();
-
-                  if (customXmlPart.isNullObject) {
-                      $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
-
-                      // Delete the unneeded setting too.
-                      xmlPartIDSetting.delete();            
-                  } else {
-                      const readableXml = addLineBreaksToXML(xmlBlob.value);
-                      const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
-                      $("#display-xml").text(strangeMessage);
-                  }
-
-                  await context.sync();
-              }
-          });
-
-          ```
+        description: ''
   - name: getOnlyItem()
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
     package: excel!
     fullName: getOnlyItem()
-    summary: |-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
-
+    summary: 'If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.'
+    remarks: >-
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+
+      await Excel.run(async (context) => {
+          $("#display-xml").text("");
+          const contosoNamespace = "http://schemas.contoso.com/review/1.0";
+          const customXmlParts = context.workbook.customXmlParts;
+          const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
+          const numberOfPartsInNamespace = filteredXmlParts.getCount();
+
+          await context.sync();
+
+          if (numberOfPartsInNamespace.value == 1) {
+              const onlyXmlPartInNamespace = filteredXmlParts.getOnlyItem();
+              const xmlBlob = onlyXmlPartInNamespace.getXml();
+
+              await context.sync();
+
+              // Make it a bit more readable.
+              const readableXml = xmlBlob.value.replace(/></g, ">\n<");
+
+              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`);
+
+          } else {
+              console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
+          }        
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getOnlyItem(): Excel.CustomXmlPart;'
       return:
         type: '<xref uid="excel!Excel.CustomXmlPart:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
-
-          await Excel.run(async (context) => {
-              $("#display-xml").text("");
-              const contosoNamespace = "http://schemas.contoso.com/review/1.0";
-              const customXmlParts = context.workbook.customXmlParts;
-              const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
-              const numberOfPartsInNamespace = filteredXmlParts.getCount();
-
-              await context.sync();
-
-              if (numberOfPartsInNamespace.value == 1) {
-                  const onlyXmlPartInNamespace = filteredXmlParts.getOnlyItem();
-                  const xmlBlob = onlyXmlPartInNamespace.getXml();
-
-                  await context.sync();
-
-                  // Make it a bit more readable.
-                  const readableXml = xmlBlob.value.replace(/></g, ">\n<");
-
-                  $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
-                      ${readableXml}`);
-
-              } else {
-                  console.log(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}. There should be exactly 1.`);
-              }        
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getOnlyItemOrNullObject()
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
     package: excel!
@@ -242,10 +230,7 @@ methods:
     summary: >-
       If the collection contains exactly one item, this method returns it. Otherwise, this method returns `null`<!--
       -->.
-
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

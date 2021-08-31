@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.FilterData#criteria:member'
     package: excel!
     fullName: criteria
-    summary: |-
-      The currently applied filter on the given column.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The currently applied filter on the given column.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

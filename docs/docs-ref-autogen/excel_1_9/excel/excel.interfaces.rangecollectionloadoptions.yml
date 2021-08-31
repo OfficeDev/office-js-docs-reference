@@ -3,8 +3,8 @@ name: Excel.Interfaces.RangeCollectionLoadOptions
 uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeCollectionLoadOptions
-summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,10 +30,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the range reference in A1-style. Address value contains the sheet
       reference (e.g., "Sheet1!A1:B4").
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,10 +44,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the range reference for the specified range in the language of the
       user.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,10 +58,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies the number of cells in the range. This API will return -1 if the cell
       count exceeds 2^31-1 (2,147,483,647).
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +69,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnCount:member'
     package: excel!
     fullName: columnCount
-    summary: |-
-      For EACH ITEM in the collection: Specifies the total number of columns in the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies the total number of columns in the range.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,10 +85,7 @@ properties:
       For EACH ITEM in the collection: Represents if all columns in the current range are hidden. Value is `true` when
       all columns in a range are hidden. Value is `false` when no columns in the range are hidden. Value is `null` when
       some columns in a range are hidden and other columns in the same range are not hidden.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,11 +96,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnIndex:member'
     package: excel!
     fullName: columnIndex
-    summary: |-
-      For EACH ITEM in the collection: Specifies the column number of the first cell in the range. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies the column number of the first cell in the range. Zero-indexed.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,11 +108,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member'
     package: excel!
     fullName: dataValidation
-    summary: |-
-      For EACH ITEM in the collection: Returns a data validation object.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Returns a data validation object.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,10 +123,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns a format object, encapsulating the range's font, fill, borders,
       alignment, and other properties.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,10 +137,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value
       is returned instead.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,10 +152,7 @@ properties:
       For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in
       German. If a cell has no formula, its value is returned instead.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,10 +166,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formula in R1C1-style notation. If a cell has no formula, its
       value is returned instead.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,10 +181,7 @@ properties:
       For EACH ITEM in the collection: Represents if all cells in the current range are hidden. Value is `true` when all
       cells in a range are hidden. Value is `false` when no cells in the range are hidden. Value is `null` when some
       cells in a range are hidden and other cells in the same range are not hidden.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,11 +192,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
     package: excel!
     fullName: hyperlink
-    summary: |-
-      For EACH ITEM in the collection: Represents the hyperlink for the current range.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents the hyperlink for the current range.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,11 +204,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireColumn:member'
     package: excel!
     fullName: isEntireColumn
-    summary: |-
-      For EACH ITEM in the collection: Represents if the current range is an entire column.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents if the current range is an entire column.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -258,11 +216,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireRow:member'
     package: excel!
     fullName: isEntireRow
-    summary: |-
-      For EACH ITEM in the collection: Represents if the current range is an entire row.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents if the current range is an entire row.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,11 +228,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
     package: excel!
     fullName: linkedDataTypeState
-    summary: |-
-      For EACH ITEM in the collection: Represents the data type state of each cell.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents the data type state of each cell.'
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -288,11 +240,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      For EACH ITEM in the collection: Represents Excel's number format code for the given range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents Excel''s number format code for the given range.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,10 +257,7 @@ properties:
       settings of the user. Excel does not perform any language or format coercion when getting or setting the
       `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified
       in the system settings.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,11 +268,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
     package: excel!
     fullName: rowCount
-    summary: |-
-      For EACH ITEM in the collection: Returns the total number of rows in the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Returns the total number of rows in the range.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,10 +284,7 @@ properties:
       For EACH ITEM in the collection: Represents if all rows in the current range are hidden. Value is `true` when all
       rows in a range are hidden. Value is `false` when no rows in the range are hidden. Value is `null` when some rows
       in a range are hidden and other rows in the same range are not hidden.
-
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,11 +295,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowIndex:member'
     package: excel!
     fullName: rowIndex
-    summary: |-
-      For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,10 +311,7 @@ properties:
       For EACH ITEM in the collection: Represents the style of the current range. If the styles of the cells are
       inconsistent, `null` will be returned. For custom styles, the style name will be returned. For built-in styles, a
       string representing a value in the `BuiltInStyle` enum will be returned.
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,10 +326,7 @@ properties:
       For EACH ITEM in the collection: Text values of the specified range. The text value will not depend on the cell
       width. The number sign (\#) substitution that happens in the Excel UI will not affect the text value returned by
       the API.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,10 +341,7 @@ properties:
       For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be a
       string, number, or boolean. Cells that contain an error will return the error string. If the returned value starts
       with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -424,11 +352,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#valueTypes:member'
     package: excel!
     fullName: valueTypes
-    summary: |-
-      For EACH ITEM in the collection: Specifies the type of data in each cell.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Specifies the type of data in each cell.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -439,11 +364,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member'
     package: excel!
     fullName: worksheet
-    summary: |-
-      For EACH ITEM in the collection: The worksheet containing the current range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The worksheet containing the current range.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

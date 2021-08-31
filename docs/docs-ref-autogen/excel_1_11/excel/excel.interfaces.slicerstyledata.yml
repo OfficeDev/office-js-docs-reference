@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerStyleData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the name of the slicer style.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the slicer style.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SlicerStyleData#readOnly:member'
     package: excel!
     fullName: readOnly
-    summary: |-
-      Specifies if this `SlicerStyle` object is read-only.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if this `SlicerStyle` object is read-only.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

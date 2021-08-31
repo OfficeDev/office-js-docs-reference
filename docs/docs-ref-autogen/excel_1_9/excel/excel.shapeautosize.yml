@@ -3,11 +3,8 @@ name: Excel.ShapeAutoSize
 uid: 'excel!Excel.ShapeAutoSize:enum'
 package: excel!
 fullName: Excel.ShapeAutoSize
-summary: |-
-  Determines the type of automatic sizing allowed.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Determines the type of automatic sizing allowed.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

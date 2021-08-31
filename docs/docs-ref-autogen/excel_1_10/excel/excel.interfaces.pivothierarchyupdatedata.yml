@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the PivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

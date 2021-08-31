@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#removed:member'
     package: excel!
     fullName: removed
-    summary: |-
-      Number of duplicated rows removed by the operation.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number of duplicated rows removed by the operation.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData#uniqueRemaining:member'
     package: excel!
     fullName: uniqueRemaining
-    summary: |-
-      Number of remaining unique rows present in the resulting range.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number of remaining unique rows present in the resulting range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

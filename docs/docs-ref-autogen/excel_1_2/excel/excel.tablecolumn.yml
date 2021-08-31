@@ -3,11 +3,8 @@ name: Excel.TableColumn
 uid: 'excel!Excel.TableColumn:class'
 package: excel!
 fullName: Excel.TableColumn
-summary: |-
-  Represents a column in a table.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a column in a table.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.TableColumn#filter:member'
     package: excel!
     fullName: filter
-    summary: |-
-      Retrieves the filter applied to the column.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Retrieves the filter applied to the column.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.TableColumn#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Returns a unique key that identifies the column within the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns a unique key that identifies the column within the table.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.TableColumn#index:member'
     package: excel!
     fullName: index
-    summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the index number of the column within the columns collection of the table. Zero-indexed.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,13 +63,10 @@ properties:
     uid: 'excel!Excel.TableColumn#name:member'
     package: excel!
     fullName: name
-    summary: >-
-      Specifies the name of the table column.
-
-
+    summary: Specifies the name of the table column.
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
       it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,10 +81,7 @@ properties:
       Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,178 +93,163 @@ methods:
     uid: 'excel!Excel.TableColumn#delete:member(1)'
     package: excel!
     fullName: delete()
-    summary: |-
-      Deletes the column from the table.
-
+    summary: Deletes the column from the table.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+          column.delete();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-              column.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getDataBodyRange()
     uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
     package: excel!
     fullName: getDataBodyRange()
-    summary: |-
-      Gets the range object associated with the data body of the column.
-
+    summary: Gets the range object associated with the data body of the column.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var dataBodyRange = column.getDataBodyRange();
+          dataBodyRange.load('address');
+          return ctx.sync().then(function() {
+              console.log(dataBodyRange.address);
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var dataBodyRange = column.getDataBodyRange();
-              dataBodyRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(dataBodyRange.address);
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getHeaderRowRange()
     uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
     package: excel!
     fullName: getHeaderRowRange()
-    summary: |-
-      Gets the range object associated with the header row of the column.
-
+    summary: Gets the range object associated with the header row of the column.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var headerRowRange = columns.getHeaderRowRange();
+          headerRowRange.load('address');
+          return ctx.sync().then(function() {
+              console.log(headerRowRange.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var headerRowRange = columns.getHeaderRowRange();
-              headerRowRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(headerRowRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getRange()
     uid: 'excel!Excel.TableColumn#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: |-
-      Gets the range object associated with the entire column.
-
+    summary: Gets the range object associated with the entire column.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var columnRange = columns.getRange();
+          columnRange.load('address');
+          return ctx.sync().then(function() {
+              console.log(columnRange.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var columnRange = columns.getRange();
-              columnRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(columnRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getTotalRowRange()
     uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
     package: excel!
     fullName: getTotalRowRange()
-    summary: |-
-      Gets the range object associated with the totals row of the column.
-
+    summary: Gets the range object associated with the totals row of the column.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var totalRowRange = columns.getTotalRowRange();
+          totalRowRange.load('address');
+          return ctx.sync().then(function() {
+              console.log(totalRowRange.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var totalRowRange = columns.getTotalRowRange();
-              totalRowRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(totalRowRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.TableColumn#load:member(1)'
     package: excel!
@@ -376,10 +343,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.TableColumn): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

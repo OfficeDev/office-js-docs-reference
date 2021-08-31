@@ -3,13 +3,10 @@ name: Excel.QueryCollection
 uid: 'excel!Excel.QueryCollection:class'
 package: excel!
 fullName: Excel.QueryCollection
-summary: >-
-  Represents the collection of queries in the workbook.
-
-
+summary: Represents the collection of queries in the workbook.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 type: class
@@ -45,13 +42,10 @@ methods:
     uid: 'excel!Excel.QueryCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: >-
-      Gets the number of queries in the workbook.
-
-
+    summary: Gets the number of queries in the workbook.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -63,13 +57,10 @@ methods:
     uid: 'excel!Excel.QueryCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: >-
-      Gets a query from the collection based on its name.
-
-
+    summary: Gets a query from the collection based on its name.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

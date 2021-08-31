@@ -6,10 +6,7 @@ fullName: Excel.NamedItem
 summary: >-
   Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
   below), range object, or a reference to a range. This object can be used to obtain range object associated with names.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.NamedItem#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      The name of the object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The name of the object.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,13 +41,10 @@ properties:
     uid: 'excel!Excel.NamedItem#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
-
-
+    summary: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,11 +57,8 @@ properties:
     uid: 'excel!Excel.NamedItem#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      Represents the value computed by the name's formula. For a named range, will return the range address.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the value computed by the name''s formula. For a named range, will return the range address.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,11 +69,8 @@ properties:
     uid: 'excel!Excel.NamedItem#visible:member'
     package: excel!
     fullName: visible
-    summary: |-
-      Specifies if the object is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the object is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,39 +85,36 @@ methods:
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
       range.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Returns the Range object that is associated with the name. 
+      // null if the name is not of the type Range.
+      // Note: This API currently supports only the Workbook scoped items.
+      Excel.run(function (ctx) { 
+          var names = ctx.workbook.names;
+          var range = names.getItem('MyRange').getRange();
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Returns the Range object that is associated with the name. 
-          // null if the name is not of the type Range.
-          // Note: This API currently supports only the Workbook scoped items.
-          Excel.run(function (ctx) { 
-              var names = ctx.workbook.names;
-              var range = names.getItem('MyRange').getRange();
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.NamedItem#load:member(1)'
     package: excel!
@@ -226,10 +208,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.NamedItem): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

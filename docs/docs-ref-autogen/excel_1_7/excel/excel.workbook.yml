@@ -7,10 +7,7 @@ summary: >-
   Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
   learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
   API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,11 +16,8 @@ properties:
     uid: 'excel!Excel.Workbook#application:member'
     package: excel!
     fullName: application
-    summary: |-
-      Represents the Excel application instance that contains this workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the Excel application instance that contains this workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +28,8 @@ properties:
     uid: 'excel!Excel.Workbook#bindings:member'
     package: excel!
     fullName: bindings
-    summary: |-
-      Represents a collection of bindings that are part of the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of bindings that are part of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,11 +54,8 @@ properties:
     uid: 'excel!Excel.Workbook#customXmlParts:member'
     package: excel!
     fullName: customXmlParts
-    summary: |-
-      Represents the collection of custom XML parts contained by this workbook.
-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the collection of custom XML parts contained by this workbook.
+    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,11 +66,8 @@ properties:
     uid: 'excel!Excel.Workbook#dataConnections:member'
     package: excel!
     fullName: dataConnections
-    summary: |-
-      Represents all data connections in the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents all data connections in the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,11 +78,8 @@ properties:
     uid: 'excel!Excel.Workbook#functions:member'
     package: excel!
     fullName: functions
-    summary: |-
-      Represents a collection of worksheet functions that can be used for computation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of worksheet functions that can be used for computation.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,11 +90,8 @@ properties:
     uid: 'excel!Excel.Workbook#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Gets the workbook name.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the workbook name.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,11 +102,8 @@ properties:
     uid: 'excel!Excel.Workbook#names:member'
     package: excel!
     fullName: names
-    summary: |-
-      Represents a collection of workbook-scoped named items (named ranges and constants).
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of workbook-scoped named items (named ranges and constants).
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,103 +114,94 @@ properties:
     uid: 'excel!Excel.Workbook#pivotTables:member'
     package: excel!
     fullName: pivotTables
-    summary: |-
-      Represents a collection of PivotTables associated with the workbook.
-
+    summary: Represents a collection of PivotTables associated with the workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+
+      await Excel.run(async (context) => {
+        // Get the names of all the PivotTables in the workbook.
+        const pivotTables = context.workbook.pivotTables;
+        pivotTables.load("name");
+        await context.sync();
+
+        // Display the names in the console.
+        console.log("PivotTables in the workbook:")
+        pivotTables.items.forEach((pivotTable) => {
+          console.log(`\t${pivotTable.name}`);
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type: '<xref uid="excel!Excel.PivotTableCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
-
-          await Excel.run(async (context) => {
-            // Get the names of all the PivotTables in the workbook.
-            const pivotTables = context.workbook.pivotTables;
-            pivotTables.load("name");
-            await context.sync();
-
-            // Display the names in the console.
-            console.log("PivotTables in the workbook:")
-            pivotTables.items.forEach((pivotTable) => {
-              console.log(`\t${pivotTable.name}`);
-            });
-          });
-
-          ```
   - name: properties
     uid: 'excel!Excel.Workbook#properties:member'
     package: excel!
     fullName: properties
-    summary: |-
-      Gets the workbook properties.
-
+    summary: Gets the workbook properties.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
+
+      await Excel.run(async (context) => {
+          let titleValue = "Excel document properties API";
+          let subjectValue = "Set and get document properties";
+          let keywordsValue = "Set and get operations";
+          let commentsValue = "This is an Excel document properties API code sample";
+          let categoryValue = "Office Add-ins";
+          let managerValue = "John";
+          let companyValue = "Microsoft";
+
+          let docProperties = context.workbook.properties;
+
+          // Set the writeable document properties.
+          docProperties.title = titleValue;
+          docProperties.subject = subjectValue;
+          docProperties.keywords = keywordsValue;
+          docProperties.comments = commentsValue;
+          docProperties.category = categoryValue;
+          docProperties.manager = managerValue;
+          docProperties.company = companyValue;
+
+          await context.sync();
+
+          console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
         type: '<xref uid="excel!Excel.DocumentProperties:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
-
-          await Excel.run(async (context) => {
-              let titleValue = "Excel document properties API";
-              let subjectValue = "Set and get document properties";
-              let keywordsValue = "Set and get operations";
-              let commentsValue = "This is an Excel document properties API code sample";
-              let categoryValue = "Office Add-ins";
-              let managerValue = "John";
-              let companyValue = "Microsoft";
-
-              let docProperties = context.workbook.properties;
-
-              // Set the writeable document properties.
-              docProperties.title = titleValue;
-              docProperties.subject = subjectValue;
-              docProperties.keywords = keywordsValue;
-              docProperties.comments = commentsValue;
-              docProperties.category = categoryValue;
-              docProperties.manager = managerValue;
-              docProperties.company = companyValue;
-
-              await context.sync();
-
-              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
-          });
-
-          ```
   - name: protection
     uid: 'excel!Excel.Workbook#protection:member'
     package: excel!
     fullName: protection
-    summary: |-
-      Returns the protection object for a workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the protection object for a workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -245,11 +212,8 @@ properties:
     uid: 'excel!Excel.Workbook#settings:member'
     package: excel!
     fullName: settings
-    summary: |-
-      Represents a collection of settings associated with the workbook.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of settings associated with the workbook.
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,59 +224,53 @@ properties:
     uid: 'excel!Excel.Workbook#styles:member'
     package: excel!
     fullName: styles
-    summary: |-
-      Represents a collection of styles associated with the workbook.
-
+    summary: Represents a collection of styles associated with the workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+      await Excel.run(async (context) => {
+          let styles = context.workbook.styles;
+
+          // Add a new style to the style collection.
+          // Styles is in the Home tab ribbon.
+          styles.add("Diagonal Orientation Style");
+                
+          let newStyle = styles.getItem("Diagonal Orientation Style");
+          
+          // The "Diagonal Orientation Style" properties.
+          newStyle.textOrientation = 38;
+          newStyle.autoIndent = true;
+          newStyle.includeProtection = true;
+          newStyle.shrinkToFit = true;
+          newStyle.locked = false;
+          
+          await context.sync();
+
+          console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
         type: '<xref uid="excel!Excel.StyleCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-
-          ```
   - name: tables
     uid: 'excel!Excel.Workbook#tables:member'
     package: excel!
     fullName: tables
-    summary: |-
-      Represents a collection of tables associated with the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of tables associated with the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,11 +281,8 @@ properties:
     uid: 'excel!Excel.Workbook#worksheets:member'
     package: excel!
     fullName: worksheets
-    summary: |-
-      Represents a collection of worksheets associated with the workbook.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of worksheets associated with the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,40 +294,38 @@ methods:
     uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
     package: excel!
     fullName: getActiveCell()
-    summary: |-
-      Gets the currently active cell from the workbook.
-
+    summary: Gets the currently active cell from the workbook.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
+      await Excel.run(async (context) => {
+
+          let myWorkbook = context.workbook;
+          let activeCell = myWorkbook.getActiveCell();
+          activeCell.load("address");
+
+          await context.sync();
+          
+          console.log("The active cell is " + activeCell.address);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getActiveCell(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
-
-          await Excel.run(async (context) => {
-
-              let myWorkbook = context.workbook;
-              let activeCell = myWorkbook.getActiveCell();
-              activeCell.load("address");
-
-              await context.sync();
-              
-              console.log("The active cell is " + activeCell.address);
-          });
-
-          ```
+        description: ''
   - name: getSelectedRange()
     uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     package: excel!
@@ -380,35 +333,32 @@ methods:
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
       will throw an error.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var selectedRange = ctx.workbook.getSelectedRange();
+          selectedRange.load('address');
+          return ctx.sync().then(function() {
+                  console.log(selectedRange.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var selectedRange = ctx.workbook.getSelectedRange();
-              selectedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(selectedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.Workbook#load:member(1)'
     package: excel!
@@ -483,10 +433,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.Workbook): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -543,11 +490,8 @@ events:
     uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     package: excel!
     fullName: onSelectionChanged
-    summary: |-
-      Occurs when the selection in the document is changed.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Occurs when the selection in the document is changed.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableData#columns:member'
     package: excel!
     fullName: columns
-    summary: |-
-      Represents a collection of all the columns in the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of all the columns in the table.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,10 +28,7 @@ properties:
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
       same even when the table is renamed.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,10 +45,7 @@ properties:
 
       The set name of the table must follow the guidelines specified in the [Rename an Excel
       table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,11 +56,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableData#rows:member'
     package: excel!
     fullName: rows
-    summary: |-
-      Represents a collection of all the rows in the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents a collection of all the rows in the table.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +68,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableData#showHeaders:member'
     package: excel!
     fullName: showHeaders
-    summary: |-
-      Specifies if the header row is visible. This value can be set to show or remove the header row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the header row is visible. This value can be set to show or remove the header row.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,11 +80,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableData#showTotals:member'
     package: excel!
     fullName: showTotals
-    summary: |-
-      Specifies if the total row is visible. This value can be set to show or remove the total row.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the total row is visible. This value can be set to show or remove the total row.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,11 +92,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableData#sort:member'
     package: excel!
     fullName: sort
-    summary: |-
-      Represents the sorting for the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the sorting for the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,10 +108,7 @@ properties:
       Constant value that represents the table style. Possible values are: "TableStyleLight1" through
       "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
       "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

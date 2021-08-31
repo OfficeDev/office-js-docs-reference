@@ -3,11 +3,8 @@ name: Excel.ChartAreaFormat
 uid: 'excel!Excel.ChartAreaFormat:class'
 package: excel!
 fullName: Excel.ChartAreaFormat
-summary: |-
-  Encapsulates the format properties for the overall chart area.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Encapsulates the format properties for the overall chart area.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartAreaFormat#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Represents the border format of chart area, which includes color, linestyle, and weight.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the border format of chart area, which includes color, linestyle, and weight.'
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.ChartAreaFormat#colorScheme:member'
     package: excel!
     fullName: colorScheme
-    summary: |-
-      Specifies the color scheme of the chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the color scheme of the chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,11 +61,8 @@ properties:
     uid: 'excel!Excel.ChartAreaFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Represents the fill format of an object, which includes background formatting information.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the fill format of an object, which includes background formatting information.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,11 +73,8 @@ properties:
     uid: 'excel!Excel.ChartAreaFormat#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the font attributes (font name, font size, color, etc.) for the current object.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,11 +85,8 @@ properties:
     uid: 'excel!Excel.ChartAreaFormat#roundedCorners:member'
     package: excel!
     fullName: roundedCorners
-    summary: |-
-      Specifies if the chart area of the chart has rounded corners.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the chart area of the chart has rounded corners.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,10 +168,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAreaFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

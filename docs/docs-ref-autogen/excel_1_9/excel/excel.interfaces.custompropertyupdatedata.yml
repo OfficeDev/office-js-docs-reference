@@ -16,10 +16,7 @@ properties:
     summary: >-
       The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
       values are automatically trimmed to 255 characters on other platforms).
-
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

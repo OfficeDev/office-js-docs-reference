@@ -3,11 +3,8 @@ name: Excel.DocumentProperties
 uid: 'excel!Excel.DocumentProperties:class'
 package: excel!
 fullName: Excel.DocumentProperties
-summary: |-
-  Represents workbook properties.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents workbook properties.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#author:member'
     package: excel!
     fullName: author
-    summary: |-
-      The author of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The author of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#category:member'
     package: excel!
     fullName: category
-    summary: |-
-      The category of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The category of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +37,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#comments:member'
     package: excel!
     fullName: comments
-    summary: |-
-      The comments of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The comments of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +49,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#company:member'
     package: excel!
     fullName: company
-    summary: |-
-      The company of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The company of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: |-
-      Gets the creation date of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the creation date of the workbook. Read only.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,51 +87,45 @@ properties:
     uid: 'excel!Excel.DocumentProperties#custom:member'
     package: excel!
     fullName: custom
-    summary: |-
-      Gets the collection of custom properties of the workbook. Read only.
-
+    summary: Gets the collection of custom properties of the workbook. Read only.
+    remarks: >-
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
+
+      await Excel.run(async (context) => {
+        // Load the keys and values of all custom properties.
+        const customDocProperties = context.workbook.properties.custom;
+        customDocProperties.load(["key", "value"]);
+        await context.sync();
+
+        // Log each custom property to the console.
+        // Note that your document may have more properties than those you have set using this snippet.
+        customDocProperties.items.forEach((property) => {
+          console.log(`${property.key}:${property.value}`);
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly custom: Excel.CustomPropertyCollection;'
       return:
         type: '<xref uid="excel!Excel.CustomPropertyCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/custom-properties.yaml
-
-          await Excel.run(async (context) => {
-            // Load the keys and values of all custom properties.
-            const customDocProperties = context.workbook.properties.custom;
-            customDocProperties.load(["key", "value"]);
-            await context.sync();
-
-            // Log each custom property to the console.
-            // Note that your document may have more properties than those you have set using this snippet.
-            customDocProperties.items.forEach((property) => {
-              console.log(`${property.key}:${property.value}`);
-            });
-          });
-
-          ```
   - name: keywords
     uid: 'excel!Excel.DocumentProperties#keywords:member'
     package: excel!
     fullName: keywords
-    summary: |-
-      The keywords of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The keywords of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,11 +136,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
     package: excel!
     fullName: lastAuthor
-    summary: |-
-      Gets the last author of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the last author of the workbook. Read only.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,11 +148,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#manager:member'
     package: excel!
     fullName: manager
-    summary: |-
-      The manager of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The manager of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,11 +160,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
     package: excel!
     fullName: revisionNumber
-    summary: |-
-      Gets the revision number of the workbook. Read only.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the revision number of the workbook. Read only.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,11 +172,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#subject:member'
     package: excel!
     fullName: subject
-    summary: |-
-      The subject of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The subject of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,11 +184,8 @@ properties:
     uid: 'excel!Excel.DocumentProperties#title:member'
     package: excel!
     fullName: title
-    summary: |-
-      The title of the workbook.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The title of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -306,10 +267,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.DocumentProperties): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

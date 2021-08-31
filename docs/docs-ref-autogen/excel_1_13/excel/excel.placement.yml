@@ -3,11 +3,8 @@ name: Excel.Placement
 uid: 'excel!Excel.Placement:enum'
 package: excel!
 fullName: Excel.Placement
-summary: |-
-  Specifies the way that an object is attached to its underlying cells.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the way that an object is attached to its underlying cells.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

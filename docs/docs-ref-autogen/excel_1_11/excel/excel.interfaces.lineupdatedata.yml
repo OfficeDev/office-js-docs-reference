@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member'
     package: excel!
     fullName: beginArrowheadLength
-    summary: |-
-      Represents the length of the arrowhead at the beginning of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the length of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member'
     package: excel!
     fullName: beginArrowheadStyle
-    summary: |-
-      Represents the style of the arrowhead at the beginning of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the style of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member'
     package: excel!
     fullName: beginArrowheadWidth
-    summary: |-
-      Represents the width of the arrowhead at the beginning of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the width of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#connectorType:member'
     package: excel!
     fullName: connectorType
-    summary: |-
-      Represents the connector type for the line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the connector type for the line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadLength:member'
     package: excel!
     fullName: endArrowheadLength
-    summary: |-
-      Represents the length of the arrowhead at the end of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the length of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +73,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member'
     package: excel!
     fullName: endArrowheadStyle
-    summary: |-
-      Represents the style of the arrowhead at the end of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the style of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,11 +85,8 @@ properties:
     uid: 'excel!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member'
     package: excel!
     fullName: endArrowheadWidth
-    summary: |-
-      Represents the width of the arrowhead at the end of the specified line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the width of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

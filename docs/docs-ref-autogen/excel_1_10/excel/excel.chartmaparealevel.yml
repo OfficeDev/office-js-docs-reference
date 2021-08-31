@@ -3,11 +3,8 @@ name: Excel.ChartMapAreaLevel
 uid: 'excel!Excel.ChartMapAreaLevel:enum'
 package: excel!
 fullName: Excel.ChartMapAreaLevel
-summary: |-
-  Represents the mapping level of a chart series. This only applies to region map charts.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the mapping level of a chart series. This only applies to region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

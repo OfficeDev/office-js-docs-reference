@@ -3,11 +3,8 @@ name: Excel.ShapeCollection
 uid: 'excel!Excel.ShapeCollection:class'
 package: excel!
 fullName: Excel.ShapeCollection
-summary: |-
-  Represents a collection of all the shapes in the worksheet.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of all the shapes in the worksheet.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,30 @@ methods:
     uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     package: excel!
     fullName: addGeometricShape(geometricShapeType)
-    summary: |-
-      Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
-
+    summary: Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+          shape.left = 5;
+          shape.top = 5;
+          shape.height = 175;
+          shape.width = 200;
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,37 +74,13 @@ methods:
           type: '<xref uid="excel!Excel.GeometricShapeType:enum" />'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
-              shape.left = 5;
-              shape.top = 5;
-              shape.height = 175;
-              shape.width = 200;
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: addGeometricShape(geometricShapeTypeString)
     uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(2)'
     package: excel!
     fullName: addGeometricShape(geometricShapeTypeString)
-    summary: |-
-      Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,10 +161,32 @@ methods:
     summary: >-
       Groups a subset of shapes in this collection's worksheet. Returns a `Shape` object that represents the new group
       of shapes.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Shapes");
+          const square = sheet.shapes.getItem("Square");
+          const pentagon = sheet.shapes.getItem("Pentagon");
+          const octagon = sheet.shapes.getItem("Octagon");
+
+          const shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
+          shapeGroup.name = "Group";
+          console.log("Shapes grouped");
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,31 +197,7 @@ methods:
           type: 'Array&lt;string | <xref uid="excel!Excel.Shape:class" />&gt;'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-groups.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const square = sheet.shapes.getItem("Square");
-              const pentagon = sheet.shapes.getItem("Pentagon");
-              const octagon = sheet.shapes.getItem("Octagon");
-
-              const shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
-              shapeGroup.name = "Group";
-              console.log("Shapes grouped");
-
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: addImage(base64ImageString)
     uid: 'excel!Excel.ShapeCollection#addImage:member(1)'
     package: excel!
@@ -215,10 +205,40 @@ methods:
     summary: >-
       Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that
       represents the new image.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+      const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+
+      const reader = new FileReader();
+
+
+      reader.onload = (event) => {
+          Excel.run((context) => {
+              const startIndex = reader.result.toString().indexOf("base64,");
+              const mybase64 = reader.result.toString().substr(startIndex + 7);
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const image = sheet.shapes.addImage(mybase64);
+              image.name = "Image";
+              return context.sync();
+          });
+      };
+
+
+      // Read in the image file as a data URL.
+
+      reader.readAsDataURL(myFile.files[0]);
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -229,48 +249,32 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```javascript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
-
-          const myFile = <HTMLInputElement>document.getElementById("selectedFile");
-
-          const reader = new FileReader();
-
-
-          reader.onload = (event) => {
-              Excel.run((context) => {
-                  const startIndex = reader.result.toString().indexOf("base64,");
-                  const mybase64 = reader.result.toString().substr(startIndex + 7);
-                  const sheet = context.workbook.worksheets.getItem("Shapes");
-                  const image = sheet.shapes.addImage(mybase64);
-                  image.name = "Image";
-                  return context.sync();
-              });
-          };
-
-
-          // Read in the image file as a data URL.
-
-          reader.readAsDataURL(myFile.files[0]);
-
-          ```
+        description: ''
   - name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     uid: 'excel!Excel.ShapeCollection#addLine:member(1)'
     package: excel!
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
-    summary: |-
-      Adds a line to worksheet. Returns a `Shape` object that represents the new line.
-
+    summary: Adds a line to worksheet. Returns a `Shape` object that represents the new line.
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+      await Excel.run(async (context) => {
+          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+          const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+          line.name = "StraightLine";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,34 +299,13 @@ methods:
           type: '<xref uid="excel!Excel.ConnectorType:enum" />'
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
-              line.name = "StraightLine";
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
     uid: 'excel!Excel.ShapeCollection#addLine:member(2)'
     package: excel!
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
-    summary: |-
-      Adds a line to worksheet. Returns a `Shape` object that represents the new line.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a line to worksheet. Returns a `Shape` object that represents the new line.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,10 +338,30 @@ methods:
     summary: >-
       Adds a text box to the worksheet with the provided text as the content. Returns a `Shape` object that represents
       the new text box.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+      await Excel.run(async (context) => {
+          const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+          const textbox = shapes.addTextBox("A box with text");
+          textbox.left = 100;
+          textbox.top = 100;
+          textbox.height = 20;
+          textbox.width = 175;
+          textbox.name = "Textbox";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -369,38 +372,13 @@ methods:
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
-
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const textbox = shapes.addTextBox("A box with text");
-              textbox.left = 100;
-              textbox.top = 100;
-              textbox.height = 20;
-              textbox.width = 175;
-              textbox.name = "Textbox";
-              await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Returns the number of shapes in the worksheet.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of shapes in the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,11 +390,8 @@ methods:
     uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     package: excel!
     fullName: getItem(key)
-    summary: |-
-      Gets a shape using its name or ID.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a shape using its name or ID.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -432,11 +407,8 @@ methods:
     uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a shape using its position in the collection.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a shape using its position in the collection.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

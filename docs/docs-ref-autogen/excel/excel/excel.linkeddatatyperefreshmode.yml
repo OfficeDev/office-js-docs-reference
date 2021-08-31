@@ -3,13 +3,10 @@ name: Excel.LinkedDataTypeRefreshMode
 uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
 package: excel!
 fullName: Excel.LinkedDataTypeRefreshMode
-summary: >-
-  Representation of a refresh mode.
-
-
+summary: Representation of a refresh mode.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

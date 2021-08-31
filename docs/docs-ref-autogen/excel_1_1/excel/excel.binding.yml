@@ -3,11 +3,8 @@ name: Excel.Binding
 uid: 'excel!Excel.Binding:class'
 package: excel!
 fullName: Excel.Binding
-summary: |-
-  Represents an Office.js binding that is defined in the workbook.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents an Office.js binding that is defined in the workbook.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Binding#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Represents the binding identifier.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the binding identifier.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Binding#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Returns the type of the binding. See `Excel.BindingType` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the type of the binding. See `Excel.BindingType` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,107 +52,98 @@ methods:
     uid: 'excel!Excel.Binding#getRange:member(1)'
     package: excel!
     fullName: getRange()
-    summary: |-
-      Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
-
+    summary: Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var range = binding.getRange();
+          range.load('cellCount');
+          return ctx.sync().then(function() {
+              console.log(range.cellCount);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRange(): Excel.Range;'
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var range = binding.getRange();
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getTable()
     uid: 'excel!Excel.Binding#getTable:member(1)'
     package: excel!
     fullName: getTable()
-    summary: |-
-      Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
-
+    summary: Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var table = binding.getTable();
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getTable(): Excel.Table;'
       return:
         type: '<xref uid="excel!Excel.Table:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var table = binding.getTable();
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getText()
     uid: 'excel!Excel.Binding#getText:member(1)'
     package: excel!
     fullName: getText()
-    summary: |-
-      Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
-
+    summary: Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var binding = ctx.workbook.bindings.getItemAt(0);
+          var text = binding.getText();
+          binding.load('text');
+          return ctx.sync().then(function() {
+              console.log(text);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var text = binding.getText();
-              binding.load('text');
-              return ctx.sync().then(function() {
-                  console.log(text);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.Binding#load:member(1)'
     package: excel!

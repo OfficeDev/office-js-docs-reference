@@ -3,11 +3,8 @@ name: Excel.ConditionalTopBottomRule
 uid: 'excel!Excel.ConditionalTopBottomRule:interface'
 package: excel!
 fullName: Excel.ConditionalTopBottomRule
-summary: |-
-  Represents the rule of the top/bottom conditional format.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the rule of the top/bottom conditional format.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ConditionalTopBottomRule#rank:member'
     package: excel!
     fullName: rank
-    summary: |-
-      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'excel!Excel.ConditionalTopBottomRule#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Format values based on the top or bottom rank.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Format values based on the top or bottom rank.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

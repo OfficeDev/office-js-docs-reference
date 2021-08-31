@@ -3,11 +3,8 @@ name: Excel.ChartLineFormat
 uid: 'excel!Excel.ChartLineFormat:class'
 package: excel!
 fullName: Excel.ChartLineFormat
-summary: |-
-  Encapsulates the formatting options for line elements.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Encapsulates the formatting options for line elements.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartLineFormat#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      HTML color code representing the color of lines in the chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: HTML color code representing the color of lines in the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,37 +40,34 @@ methods:
     uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
     package: excel!
     fullName: clear()
-    summary: |-
-      Clears the line format of a chart element.
-
+    summary: Clears the line format of a chart element.
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Set to show legend of Chart1 and make it on top of the chart.
+      Excel.run(function (ctx) { 
+          var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          gridlines.format.line.clear();
+          return ctx.sync().then(function() {
+                  console.log("Chart Major Gridlines Format Cleared");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set to show legend of Chart1 and make it on top of the chart.
-          Excel.run(function (ctx) { 
-              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.clear();
-              return ctx.sync().then(function() {
-                      console.log("Chart Major Gridlines Format Cleared");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartLineFormat#load:member(1)'
     package: excel!
@@ -170,10 +161,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartLineFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

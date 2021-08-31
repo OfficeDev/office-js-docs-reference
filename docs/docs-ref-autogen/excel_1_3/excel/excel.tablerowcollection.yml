@@ -10,10 +10,7 @@ summary: >-
   Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
   object represents the physical location of the table row, but not the data. That is, if the data is sorted or if new
   rows are added, a table row will continue to point at the index for which it was created.
-
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -36,11 +33,8 @@ properties:
     uid: 'excel!Excel.TableRowCollection#count:member'
     package: excel!
     fullName: count
-    summary: |-
-      Returns the number of rows in the table.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the number of rows in the table.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,11 +65,32 @@ methods:
       Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
       object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
       new rows are added, a table row will continue to point at the index for which it was created.
-
-
+    remarks: >-
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
       rows.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var tables = ctx.workbook.tables;
+          var values = [["Sample", "Values", "For", "New", "Row"]];
+          var row = tables.getItem("Table1").rows.add(null, values);
+          row.load('index');
+          return ctx.sync().then(function() {
+              console.log(row.index);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,27 +108,7 @@ methods:
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              var values = [["Sample", "Values", "For", "New", "Row"]];
-              var row = tables.getItem("Table1").rows.add(null, values);
-              row.load('index');
-              return ctx.sync().then(function() {
-                  console.log(row.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemAt(index)
     uid: 'excel!Excel.TableRowCollection#getItemAt:member(1)'
     package: excel!
@@ -125,10 +120,25 @@ methods:
       Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
       object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
       new rows are added, a table row will continue to point at the index for which it was created.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
+          tablerow.load('name');
+          return ctx.sync().then(function() {
+                  console.log(tablerow.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,25 +149,7 @@ methods:
           type: number
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-              tablerow.load('name');
-              return ctx.sync().then(function() {
-                      console.log(tablerow.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.TableRowCollection#load:member(1)'
     package: excel!

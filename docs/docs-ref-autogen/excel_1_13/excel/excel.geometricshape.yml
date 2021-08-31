@@ -6,10 +6,7 @@ fullName: Excel.GeometricShape
 summary: >-
   Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation symbol,
   flowchart item, star, banner, callout, or any other basic shape in Excel.
-
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.GeometricShape#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      Returns the shape identifier.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the shape identifier.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.GeometricShape#shape:member'
     package: excel!
     fullName: shape
-    summary: |-
-      Returns the `Shape` object for the geometric shape.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the `Shape` object for the geometric shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -15,11 +15,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData#line:member'
     package: excel!
     fullName: line
-    summary: |-
-      Represents the chart line formatting.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

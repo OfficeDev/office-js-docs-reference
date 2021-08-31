@@ -986,6 +986,8 @@ interfaces:
   - 'excel!Excel.WorksheetFilteredEventArgs:interface'
   - 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
   - 'excel!Excel.WorksheetFormulaChangedEventArgs:interface'
+  - 'excel!Excel.WorksheetMovedEventArgs:interface'
+  - 'excel!Excel.WorksheetNameChangedEventArgs:interface'
   - 'excel!Excel.WorksheetProtectionChangedEventArgs:interface'
   - 'excel!Excel.WorksheetProtectionOptions:interface'
   - 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
@@ -993,6 +995,7 @@ interfaces:
   - 'excel!Excel.WorksheetSearchCriteria:interface'
   - 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
   - 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
+  - 'excel!Excel.WorksheetVisibilityChangedEventArgs:interface'
 functions:
   - name: Excel.createWorkbook(base64)
     uid: 'excel!Excel.createWorkbook:function(1)'

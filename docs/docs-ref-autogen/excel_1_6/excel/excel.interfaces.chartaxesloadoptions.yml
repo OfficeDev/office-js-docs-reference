@@ -3,11 +3,8 @@ name: Excel.Interfaces.ChartAxesLoadOptions
 uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAxesLoadOptions
-summary: |-
-  Represents the chart axes.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the chart axes.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#categoryAxis:member'
     package: excel!
     fullName: categoryAxis
-    summary: |-
-      Represents the category axis in a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the category axis in a chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member'
     package: excel!
     fullName: seriesAxis
-    summary: |-
-      Represents the series axis of a 3-D chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the series axis of a 3-D chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member'
     package: excel!
     fullName: valueAxis
-    summary: |-
-      Represents the value axis in an axis.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the value axis in an axis.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

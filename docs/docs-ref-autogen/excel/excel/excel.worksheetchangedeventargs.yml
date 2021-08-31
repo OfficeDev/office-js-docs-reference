@@ -3,11 +3,8 @@ name: Excel.WorksheetChangedEventArgs
 uid: 'excel!Excel.WorksheetChangedEventArgs:interface'
 package: excel!
 fullName: Excel.WorksheetChangedEventArgs
-summary: |-
-  Provides information about the worksheet that raised the changed event.
-
-  \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the worksheet that raised the changed event.
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#address:member'
     package: excel!
     fullName: address
-    summary: |-
-      Gets the range address that represents the changed area of a specific worksheet.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the range address that represents the changed area of a specific worksheet.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,11 +30,9 @@ properties:
       inserted. This includes the following two scenarios. The direction(such as down or to the right) that existing
       cells will shift when a new cell or cells are inserted into a worksheet. The direction (such as up or to the left)
       that the remaining cells will shift when a cell or cells are deleted from a worksheet.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -51,11 +43,8 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#changeType:member'
     package: excel!
     fullName: changeType
-    summary: |-
-      Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the change type that represents how the changed event is triggered. See `Excel.DataChangeType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,44 +63,37 @@ properties:
       Represents the information about the change detail. This property can be retrieved when the changed event is
       triggered on a single cell. If the changed event is triggered on multiple cells, this property cannot be
       retrieved.
-
-
+    remarks: |-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // This function would be used as an event handler for the Worksheet.onChanged event.
+      function onWorksheetChanged(eventArgs) {
+          Excel.run(function (context) {
+              var details = eventArgs.details;
+              var address = eventArgs.address;
+
+              // Print the before and after types and values to the console.
+              console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+                  + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+              return context.sync();
+          });
+      }
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'details: Excel.ChangedEventDetail;'
       return:
         type: '<xref uid="excel!Excel.ChangedEventDetail:interface" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // This function would be used as an event handler for the Worksheet.onChanged event.
-          function onWorksheetChanged(eventArgs) {
-              Excel.run(function (context) {
-                  var details = eventArgs.details;
-                  var address = eventArgs.address;
-
-                  // Print the before and after types and values to the console.
-                  console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
-                      + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
-                  return context.sync();
-              });
-          }
-          ```
   - name: source
     uid: 'excel!Excel.WorksheetChangedEventArgs#source:member'
     package: excel!
     fullName: source
-    summary: |-
-      Gets the source of the event. See `Excel.EventSource` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,13 +104,10 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#triggerSource:member'
     package: excel!
     fullName: triggerSource
-    summary: >-
-      Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
-
-
+    summary: 'Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.'
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -139,11 +118,8 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#type:member'
     package: excel!
     fullName: type
-    summary: |-
-      Gets the type of the event. See `Excel.EventType` for details.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,11 +130,8 @@ properties:
     uid: 'excel!Excel.WorksheetChangedEventArgs#worksheetId:member'
     package: excel!
     fullName: worksheetId
-    summary: |-
-      Gets the ID of the worksheet in which the data changed.
-
-      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the worksheet in which the data changed.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

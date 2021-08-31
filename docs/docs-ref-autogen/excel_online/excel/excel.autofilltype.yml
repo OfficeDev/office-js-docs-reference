@@ -3,11 +3,8 @@ name: Excel.AutoFillType
 uid: 'excel!Excel.AutoFillType:enum'
 package: excel!
 fullName: Excel.AutoFillType
-summary: |-
-  The behavior types when AutoFill is used on a range in the workbook.
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: The behavior types when AutoFill is used on a range in the workbook.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

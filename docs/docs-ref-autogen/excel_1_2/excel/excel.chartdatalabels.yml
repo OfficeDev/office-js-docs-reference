@@ -3,11 +3,8 @@ name: Excel.ChartDataLabels
 uid: 'excel!Excel.ChartDataLabels:class'
 package: excel!
 fullName: Excel.ChartDataLabels
-summary: |-
-  Represents a collection of all the data labels on a chart point.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of all the data labels on a chart point.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#format:member'
     package: excel!
     fullName: format
-    summary: |-
-      Specifies the format of chart data labels, which includes fill and font formatting.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the format of chart data labels, which includes fill and font formatting.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#separator:member'
     package: excel!
     fullName: separator
-    summary: |-
-      String representing the separator used for the data labels on a chart.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: String representing the separator used for the data labels on a chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,11 +67,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showBubbleSize:member'
     package: excel!
     fullName: showBubbleSize
-    summary: |-
-      Specifies if the data label bubble size is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label bubble size is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,11 +79,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showCategoryName:member'
     package: excel!
     fullName: showCategoryName
-    summary: |-
-      Specifies if the data label category name is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label category name is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,11 +91,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: |-
-      Specifies if the data label legend key is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label legend key is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,11 +103,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showPercentage:member'
     package: excel!
     fullName: showPercentage
-    summary: |-
-      Specifies if the data label percentage is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label percentage is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,11 +115,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showSeriesName:member'
     package: excel!
     fullName: showSeriesName
-    summary: |-
-      Specifies if the data label series name is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label series name is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,11 +127,8 @@ properties:
     uid: 'excel!Excel.ChartDataLabels#showValue:member'
     package: excel!
     fullName: showValue
-    summary: |-
-      Specifies if the data label value is visible.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data label value is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,10 +231,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartDataLabels): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

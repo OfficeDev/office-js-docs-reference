@@ -3,11 +3,8 @@ name: Excel.RangeSort
 uid: 'excel!Excel.RangeSort:class'
 package: excel!
 fullName: Excel.RangeSort
-summary: |-
-  Manages sorting operations on `Range` objects.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Manages sorting operations on `Range` objects.
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -31,11 +28,8 @@ methods:
     uid: 'excel!Excel.RangeSort#apply:member(1)'
     package: excel!
     fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
-    summary: |-
-      Perform a sort operation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Perform a sort operation.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,11 +59,8 @@ methods:
     uid: 'excel!Excel.RangeSort#apply:member(2)'
     package: excel!
     fullName: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
-    summary: |-
-      Perform a sort operation.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Perform a sort operation.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.DataPivotHierarchy
 uid: 'excel!Excel.DataPivotHierarchy:class'
 package: excel!
 fullName: Excel.DataPivotHierarchy
-summary: |-
-  Represents the Excel DataPivotHierarchy.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the Excel DataPivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.DataPivotHierarchy#field:member'
     package: excel!
     fullName: field
-    summary: |-
-      Returns the PivotFields associated with the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the PivotFields associated with the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.DataPivotHierarchy#id:member'
     package: excel!
     fullName: id
-    summary: |-
-      ID of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: ID of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,48 +51,42 @@ properties:
     uid: 'excel!Excel.DataPivotHierarchy#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the DataPivotHierarchy.
-
+    summary: Name of the DataPivotHierarchy.
+    remarks: >-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
+      await Excel.run(async (context) => {
+          const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
+          dataHierarchies.load("no-properties-needed");
+          await context.sync();
+
+          dataHierarchies.items[0].name = "Farm Sales";
+          dataHierarchies.items[1].name = "Wholesale";
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
-
-          await Excel.run(async (context) => {
-              const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
-              dataHierarchies.load("no-properties-needed");
-              await context.sync();
-
-              dataHierarchies.items[0].name = "Farm Sales";
-              dataHierarchies.items[1].name = "Wholesale";
-              await context.sync();
-          });
-
-          ```
   - name: numberFormat
     uid: 'excel!Excel.DataPivotHierarchy#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Number format of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number format of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,11 +97,8 @@ properties:
     uid: 'excel!Excel.DataPivotHierarchy#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,60 +109,54 @@ properties:
     uid: 'excel!Excel.DataPivotHierarchy#showAs:member'
     package: excel!
     fullName: showAs
-    summary: |-
-      Specifies if the data should be shown as a specific summary calculation.
-
+    summary: Specifies if the data should be shown as a specific summary calculation.
+    remarks: >-
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
+
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+          const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
+          const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+          farmDataHierarchy.load("showAs");
+          wholesaleDataHierarchy.load("showAs");
+          await context.sync();
+
+          // show the crates of each fruit type sold at the farm as a percentage of the column's total
+          let farmShowAs = farmDataHierarchy.showAs;
+          farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+          farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+          farmDataHierarchy.showAs = farmShowAs;
+
+          let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+          wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+          wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+          wholesaleDataHierarchy.showAs = wholesaleShowAs;
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'showAs: Excel.ShowAsRule;'
       return:
         type: '<xref uid="excel!Excel.ShowAsRule:interface" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
-
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
-              const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
-
-              farmDataHierarchy.load("showAs");
-              wholesaleDataHierarchy.load("showAs");
-              await context.sync();
-
-              // show the crates of each fruit type sold at the farm as a percentage of the column's total
-              let farmShowAs = farmDataHierarchy.showAs;
-              farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
-              farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
-              farmDataHierarchy.showAs = farmShowAs;
-
-              let wholesaleShowAs = wholesaleDataHierarchy.showAs;
-              wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
-              wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
-              wholesaleDataHierarchy.showAs = wholesaleShowAs;
-              await context.sync();
-          });
-
-          ```
   - name: summarizeBy
     uid: 'excel!Excel.DataPivotHierarchy#summarizeBy:member'
     package: excel!
     fullName: summarizeBy
-    summary: |-
-      Specifies if all items of the DataPivotHierarchy are shown.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if all items of the DataPivotHierarchy are shown.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,10 +243,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.DataPivotHierarchy): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -308,11 +281,8 @@ methods:
     uid: 'excel!Excel.DataPivotHierarchy#setToDefault:member(1)'
     package: excel!
     fullName: setToDefault()
-    summary: |-
-      Reset the DataPivotHierarchy back to its default values.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Reset the DataPivotHierarchy back to its default values.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

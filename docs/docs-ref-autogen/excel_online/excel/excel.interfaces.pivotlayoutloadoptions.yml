@@ -3,11 +3,8 @@ name: Excel.Interfaces.PivotLayoutLoadOptions
 uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.PivotLayoutLoadOptions
-summary: |-
-  Represents the visual layout of the PivotTable.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the visual layout of the PivotTable.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -38,10 +35,7 @@ properties:
       information is useful for people with vision or cognitive impairments who may not be able to see or understand the
       table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
       description of the content.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,10 +54,7 @@ properties:
       information is useful for people with vision or cognitive impairments who may not be able to see or understand the
       table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
       description of the content.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,11 +65,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#autoFormat:member'
     package: excel!
     fullName: autoFormat
-    summary: |-
-      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,10 +81,7 @@ properties:
       The text that is automatically filled into any empty cell in the PivotTable if `fillEmptyCells == true`<!-- -->.
       Note that this value persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting this value does not
       set that property to `true`<!-- -->. By default, this is an empty string.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,11 +92,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#enableFieldList:member'
     package: excel!
     fullName: enableFieldList
-    summary: |-
-      Specifies if the field list can be shown in the UI.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the field list can be shown in the UI.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,10 +107,7 @@ properties:
     summary: >-
       Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`<!-- -->. Default is
       `false`<!-- -->. Note that the value of `emptyCellText` persists when this property is set to `false`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,10 +121,7 @@ properties:
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,10 +135,7 @@ properties:
     summary: >-
       Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
       sorting, or changing page field items.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,11 +146,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
     package: excel!
     fullName: showColumnGrandTotals
-    summary: |-
-      Specifies if the PivotTable report shows grand totals for columns.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable report shows grand totals for columns.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,11 +158,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showFieldHeaders:member'
     package: excel!
     fullName: showFieldHeaders
-    summary: |-
-      Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
-
-      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,11 +170,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
     package: excel!
     fullName: showRowGrandTotals
-    summary: |-
-      Specifies if the PivotTable report shows grand totals for rows.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable report shows grand totals for rows.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,10 +185,7 @@ properties:
     summary: >-
       This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different
       states, this will be `null`<!-- -->.
-
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.DataValidationOperator
 uid: 'excel!Excel.DataValidationOperator:enum'
 package: excel!
 fullName: Excel.DataValidationOperator
-summary: |-
-  Represents the data validation operator enum.
-
-  \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the data validation operator enum.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

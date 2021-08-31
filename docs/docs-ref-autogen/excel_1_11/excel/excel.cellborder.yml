@@ -7,10 +7,7 @@ summary: >-
   Represents the properties of a single border returned by `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
   `getColumnProperties`<!-- -->, or the border property input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
-
-
-  \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,11 +16,8 @@ properties:
     uid: 'excel!Excel.CellBorder#color:member'
     package: excel!
     fullName: color
-    summary: |-
-      Represents the `color` property of a single border.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `color` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,11 +28,8 @@ properties:
     uid: 'excel!Excel.CellBorder#style:member'
     package: excel!
     fullName: style
-    summary: |-
-      Represents the `style` property of a single border.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `style` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,11 +44,8 @@ properties:
     uid: 'excel!Excel.CellBorder#tintAndShade:member'
     package: excel!
     fullName: tintAndShade
-    summary: |-
-      Represents the `tintAndShade` property of a single border.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `tintAndShade` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,11 +56,8 @@ properties:
     uid: 'excel!Excel.CellBorder#weight:member'
     package: excel!
     fullName: weight
-    summary: |-
-      Represents the `weight` property of a single border.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the `weight` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

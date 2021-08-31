@@ -6,10 +6,7 @@ fullName: Excel.Interfaces.SettingCollectionLoadOptions
 summary: >-
   Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per
   file and add-in (task-pane or content) combination.
-
-
-  \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -32,11 +29,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions#key:member'
     package: excel!
     fullName: key
-    summary: |-
-      For EACH ITEM in the collection: The key that represents the ID of the setting.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The key that represents the ID of the setting.'
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions#value:member'
     package: excel!
     fullName: value
-    summary: |-
-      For EACH ITEM in the collection: Represents the value stored for this setting.
-
-      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Represents the value stored for this setting.'
+    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

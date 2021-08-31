@@ -3,11 +3,8 @@ name: Excel.ConditionalRangeFormat
 uid: 'excel!Excel.ConditionalRangeFormat:class'
 package: excel!
 fullName: Excel.ConditionalRangeFormat
-summary: |-
-  A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
-
-  \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: 'A format object encapsulating the conditional formats range''s font, fill, borders, and other properties.'
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
     package: excel!
     fullName: borders
-    summary: |-
-      Collection of border objects that apply to the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Collection of border objects that apply to the overall conditional format range.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Returns the fill object defined on the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the fill object defined on the overall conditional format range.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFormat#font:member'
     package: excel!
     fullName: font
-    summary: |-
-      Returns the font object defined on the overall conditional format range.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the font object defined on the overall conditional format range.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Represents Excel's number format code for the given range. Cleared if `null` is passed in.
-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,10 +146,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ConditionalRangeFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

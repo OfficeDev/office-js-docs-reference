@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#field:member'
     package: excel!
     fullName: field
-    summary: |-
-      Returns the PivotFields associated with the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the PivotFields associated with the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: |-
-      Number format of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Number format of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#position:member'
     package: excel!
     fullName: position
-    summary: |-
-      Position of the DataPivotHierarchy.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Position of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#showAs:member'
     package: excel!
     fullName: showAs
-    summary: |-
-      Specifies if the data should be shown as a specific summary calculation.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the data should be shown as a specific summary calculation.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +73,8 @@ properties:
     uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy:member'
     package: excel!
     fullName: summarizeBy
-    summary: |-
-      Specifies if all items of the DataPivotHierarchy are shown.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if all items of the DataPivotHierarchy are shown.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Excel.RangeAreasCollection
 uid: 'excel!Excel.RangeAreasCollection:class'
 package: excel!
 fullName: Excel.RangeAreasCollection
-summary: |-
-  Contains the collection of cross-workbook level ranges.
-
-  \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Contains the collection of cross-workbook level ranges.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'excel!Excel.RangeAreasCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
-    summary: |-
-      Gets the number of `RangeAreas` objects in this collection.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of `RangeAreas` objects in this collection.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +53,8 @@ methods:
     uid: 'excel!Excel.RangeAreasCollection#getItemAt:member(1)'
     package: excel!
     fullName: getItemAt(index)
-    summary: |-
-      Returns the `RangeAreas` object based on position in the collection.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Returns the `RangeAreas` object based on position in the collection.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,8 +3,8 @@ name: Excel.FilterOperator
 uid: 'excel!Excel.FilterOperator:enum'
 package: excel!
 fullName: Excel.FilterOperator
-summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

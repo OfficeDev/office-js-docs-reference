@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableUpdateData#allowMultipleFiltersPerField:member'
     package: excel!
     fullName: allowMultipleFiltersPerField
-    summary: |-
-      Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableUpdateData#enableDataValueEditing:member'
     package: excel!
     fullName: enableDataValueEditing
-    summary: |-
-      Specifies if the PivotTable allows values in the data body to be edited by the user.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable allows values in the data body to be edited by the user.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableUpdateData#name:member'
     package: excel!
     fullName: name
-    summary: |-
-      Name of the PivotTable.
-
-      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Name of the PivotTable.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotTableUpdateData#useCustomSortLists:member'
     package: excel!
     fullName: useCustomSortLists
-    summary: |-
-      Specifies if the PivotTable uses custom lists when sorting.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the PivotTable uses custom lists when sorting.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

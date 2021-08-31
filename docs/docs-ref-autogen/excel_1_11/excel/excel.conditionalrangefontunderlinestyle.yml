@@ -3,8 +3,8 @@ name: Excel.ConditionalRangeFontUnderlineStyle
 uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
 package: excel!
 fullName: Excel.ConditionalRangeFontUnderlineStyle
-summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

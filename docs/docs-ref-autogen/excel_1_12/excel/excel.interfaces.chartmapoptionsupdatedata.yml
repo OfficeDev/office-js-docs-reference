@@ -13,11 +13,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy:member'
     package: excel!
     fullName: labelStrategy
-    summary: |-
-      Specifies the series map labels strategy of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series map labels strategy of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member'
     package: excel!
     fullName: level
-    summary: |-
-      Specifies the series mapping level of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series mapping level of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,11 +41,8 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType:member'
     package: excel!
     fullName: projectionType
-    summary: |-
-      Specifies the series projection type of a region map chart.
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the series projection type of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

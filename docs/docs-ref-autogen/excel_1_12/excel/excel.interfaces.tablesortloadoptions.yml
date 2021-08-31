@@ -3,11 +3,8 @@ name: Excel.Interfaces.TableSortLoadOptions
 uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.TableSortLoadOptions
-summary: |-
-  Manages sorting operations on `Table` objects.
-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Manages sorting operations on `Table` objects.
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableSortLoadOptions#fields:member'
     package: excel!
     fullName: fields
-    summary: |-
-      Specifies the current conditions used to last sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the current conditions used to last sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableSortLoadOptions#matchCase:member'
     package: excel!
     fullName: matchCase
-    summary: |-
-      Specifies if the casing impacts the last sort of the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies if the casing impacts the last sort of the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'excel!Excel.Interfaces.TableSortLoadOptions#method:member'
     package: excel!
     fullName: method
-    summary: |-
-      Represents the Chinese character ordering method last used to sort the table.
-
-      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the Chinese character ordering method last used to sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

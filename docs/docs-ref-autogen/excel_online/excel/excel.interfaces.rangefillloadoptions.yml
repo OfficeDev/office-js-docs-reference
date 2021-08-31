@@ -3,11 +3,8 @@ name: Excel.Interfaces.RangeFillLoadOptions
 uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeFillLoadOptions
-summary: |-
-  Represents the background of a range object.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the background of a range object.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,10 +30,7 @@ properties:
     summary: >-
       HTML color code representing the color of the background, in the form \#RRGGBB (e.g., "FFA500"), or as a named
       HTML color (e.g., "orange")
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not
       supported. A `null` value indicates that the entire range doesn't have a uniform pattern setting.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,10 +58,7 @@ properties:
     summary: >-
       The HTML color code representing the color of the range pattern, in the form \#RRGGBB (e.g., "FFA500"), or as a
       named HTML color (e.g., "orange").
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,10 +73,7 @@ properties:
       Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest)
       and 1 (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform
       `patternTintAndShade` settings.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,10 +88,7 @@ properties:
       Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A `null` value indicates that the range doesn't have uniform
       `tintAndShade` settings.
-
-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

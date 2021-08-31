@@ -3,11 +3,8 @@ name: Excel.ChartAxisTitleFormat
 uid: 'excel!Excel.ChartAxisTitleFormat:class'
 package: excel!
 fullName: Excel.ChartAxisTitleFormat
-summary: |-
-  Represents the chart axis title formatting.
-
-  \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-remarks: ''
+summary: Represents the chart axis title formatting.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
     package: excel!
     fullName: border
-    summary: |-
-      Specifies the chart axis title's border format, which includes color, linestyle, and weight.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Specifies the chart axis title''s border format, which includes color, linestyle, and weight.'
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
     package: excel!
     fullName: fill
-    summary: |-
-      Specifies the chart axis title's fill formatting.
-
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    summary: Specifies the chart axis title's fill formatting.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,10 +54,7 @@ properties:
     summary: >-
       Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title
       object.
-
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,10 +136,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Excel.ChartAxisTitleFormat): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
