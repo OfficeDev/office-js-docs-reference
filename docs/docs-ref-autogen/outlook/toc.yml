@@ -89,6 +89,8 @@ items:
             uid: 'outlook!Office.Contact:interface'
           - name: CustomProperties
             uid: 'outlook!Office.CustomProperties:interface'
+          - name: DelayDeliveryTime
+            uid: 'outlook!Office.DelayDeliveryTime:interface'
           - name: Diagnostics
             uid: 'outlook!Office.Diagnostics:interface'
           - name: EmailAddressDetails

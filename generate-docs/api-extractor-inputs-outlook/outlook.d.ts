@@ -2385,7 +2385,7 @@ export declare namespace Office {
          *
          * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
-         * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
+         * For a workaround, see {@link https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
          * [Api set: Mailbox 1.3]
          *
@@ -2421,7 +2421,7 @@ export declare namespace Office {
          *
          * **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
-         * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
+         * For a workaround, see {@link https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
          * [Api set: Mailbox 1.3]
          *
@@ -2696,7 +2696,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
          * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see
-         * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+         * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
          */
         attachments: AttachmentDetails[];
@@ -4566,6 +4566,85 @@ export declare namespace Office {
          * @param value - The value of the property to be set.
          */
         set(name: string, value: string): void;
+    }
+    /**
+     * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
+     *
+     * [Api set: Mailbox preview]
+     *
+     * @remarks
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+     *
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     */
+    export interface DelayDeliveryTime {
+        /**
+         * Gets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param options - An object literal that contains one or more of the following properties:
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         */
+        getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
+        /**
+         * Gets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         */
+        getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
+        /**
+         * Sets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param datetime - The future date and time when the message should be sent.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(datetime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Sets the delivery date and time of a message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * @param datetime - The future date and time when the message should be sent.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(datetime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
      * Provides diagnostic information to an Outlook add-in.
@@ -6550,6 +6629,20 @@ export declare namespace Office {
          */
         conversationId: string;
         /**
+         * Gets or sets the delayed delivery date and time of a message.
+         *
+         * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         */
+        delayDeliveryTime: DelayDeliveryTime;
+        /**
          * Gets the email address of the sender of a message.
          *
          * The `from` property returns a `From` object that provides a method to get the from value.
@@ -7682,7 +7775,7 @@ export declare namespace Office {
          *
          * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned.
          * For more information, see
-         * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+         * {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.
          *
          */
         attachments: AttachmentDetails[];
