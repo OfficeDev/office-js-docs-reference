@@ -400,6 +400,51 @@ properties:
       content: 'conversationId: string;'
       return:
         type: string
+  - name: delayDeliveryTime
+    uid: 'outlook!Office.MessageCompose#delayDeliveryTime:member'
+    package: outlook!
+    fullName: delayDeliveryTime
+    summary: >-
+      Gets or sets the delayed delivery date and time of a message.
+
+
+      The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery
+      date and time of the message.
+
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var date_1 = new Date();
+
+      var date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+
+      Office.context.mailbox.item.delayDeliveryTime.setAsync(
+          date_2,
+          function(callback) {
+              console.log(callback);
+          });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delayDeliveryTime: DelayDeliveryTime;'
+      return:
+        type: '<xref uid="outlook!Office.DelayDeliveryTime:interface" />'
   - name: from
     uid: 'outlook!Office.MessageCompose#from:member'
     package: outlook!

@@ -674,8 +674,7 @@ methods:
 
 
       For more detail, see how to [Create a custom number
-      format](https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4)<!--
-      -->.
+      format](https://support.microsoft.com/office/78f2a361-936b-4c03-8772-09fab54be7f4)<!-- -->.
 
 
       To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
@@ -842,8 +841,7 @@ methods:
 
 
       For more detail, see how to [Create a custom number
-      format](https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4)<!--
-      -->.
+      format](https://support.microsoft.com/office/78f2a361-936b-4c03-8772-09fab54be7f4)<!-- -->.
 
 
       To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the

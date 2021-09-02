@@ -207,7 +207,10 @@ function rateClassDescription(classYml: ApiYaml) : CoverageRating {
 
 function rateFieldDescription(fieldYml: ApiPropertyYaml | ApiMethodYaml) : CoverageRating {
     let rating : CoverageRating;
-    let indexOfExample = fieldYml.syntax.return.description?.indexOf("#### Examples");
+    let indexOfExample = Math.max(
+        fieldYml.remarks?.indexOf("#### Examples"), 
+        fieldYml.syntax.return.description?.indexOf("#### Examples")
+    );
     
     if (indexOfExample > 0) {
         rating = {

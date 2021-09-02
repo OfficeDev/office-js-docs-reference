@@ -1715,7 +1715,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#attachments:member",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, refer to {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, refer to {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7532,7 +7532,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#attachments:member",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
