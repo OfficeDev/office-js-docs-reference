@@ -19,6 +19,7 @@ interfaces:
   - 'outlook!Office.CoercionTypeOptions:interface'
   - 'outlook!Office.Contact:interface'
   - 'outlook!Office.CustomProperties:interface'
+  - 'outlook!Office.DelayDeliveryTime:interface'
   - 'outlook!Office.Diagnostics:interface'
   - 'outlook!Office.EmailAddressDetails:interface'
   - 'outlook!Office.EmailUser:interface'

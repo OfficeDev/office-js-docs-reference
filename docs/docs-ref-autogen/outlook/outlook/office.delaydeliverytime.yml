@@ -1,0 +1,181 @@
+### YamlMime:TSType
+name: Office.DelayDeliveryTime
+uid: 'outlook!Office.DelayDeliveryTime:interface'
+package: outlook!
+fullName: Office.DelayDeliveryTime
+summary: |-
+  The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.
+
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  #### Examples
+
+
+  ```javascript
+
+  var date_1 = new Date();
+
+  var date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+
+  Office.context.mailbox.item.delayDeliveryTime.setAsync(
+      date_2,
+      function(callback) {
+          console.log(callback);
+      });
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.DelayDeliveryTime#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
+    summary: |-
+      Gets the delivery date and time of a message.
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Date>) => void):
+        void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties: `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.DelayDeliveryTime#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: |-
+      Gets the delivery date and time of a message.
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Date>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(datetime, options, callback)'
+    uid: 'outlook!Office.DelayDeliveryTime#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(datetime, options, callback)'
+    summary: |-
+      Sets the delivery date and time of a message.
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(datetime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: datetime
+          description: The future date and time when the message should be sent.
+          type: Date
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
+            property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(datetime, callback)'
+    uid: 'outlook!Office.DelayDeliveryTime#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(datetime, callback)'
+    summary: |-
+      Sets the delivery date and time of a message.
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAsync(datetime: Date, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: datetime
+          description: The future date and time when the message should be sent.
+          type: Date
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
+            property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''

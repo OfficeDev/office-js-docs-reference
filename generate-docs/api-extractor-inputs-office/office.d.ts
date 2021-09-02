@@ -5707,7 +5707,7 @@ export declare namespace Office {
          *
          * `format: {numberFormat:"0.00%"}`
          *
-         * For more detail, see how to {@link https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
+         * For more detail, see how to {@link https://support.microsoft.com/office/78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
          *
          * To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
          * `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
@@ -5806,7 +5806,7 @@ export declare namespace Office {
          *
          * `format: {numberFormat:"0.00%"}`
          *
-         * For more detail, see how to {@link https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
+         * For more detail, see how to {@link https://support.microsoft.com/office/78f2a361-936b-4c03-8772-09fab54be7f4 | Create a custom number format}.
          *
          * To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
          * `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
@@ -6036,7 +6036,7 @@ export declare namespace Office {
      * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
      *
      * For more information about working with fields in Project, see
-     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In
+     * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In
      * Project Help, search for Available fields.
      */
     enum ProjectResourceFields {
@@ -6850,7 +6850,7 @@ export declare namespace Office {
      * A ProjectTaskFields constant can be used as a parameter of the {@link Office.Document | Document}.getTaskFieldAsync method.
      *
      * For more information about working with fields in Project, see the
-     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference.
+     * {@link https://support.microsoft.com/office/615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference.
      * In Project Help, search for Available fields.
      */
     enum ProjectTaskFields {
