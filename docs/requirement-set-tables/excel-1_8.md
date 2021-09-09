@@ -165,7 +165,7 @@
 ||[source](/javascript/api/excel/excel.listdatavalidation#source)|Source of the list for data validation|
 |[PivotField](/javascript/api/excel/excel.pivotfield)|[name](/javascript/api/excel/excel.pivotfield#name)|Name of the PivotField.|
 ||[id](/javascript/api/excel/excel.pivotfield#id)|ID of the PivotField.|
-||[items](/javascript/api/excel/excel.pivotfield#items)|Returns the PivotFields associated with the PivotField.|
+||[items](/javascript/api/excel/excel.pivotfield#items)|Returns the PivotItems associated with the PivotField.|
 ||[showAllItems](/javascript/api/excel/excel.pivotfield#showAllItems)|Determines whether to show all items of the PivotField.|
 ||[sortByLabels(sortBy: SortBy)](/javascript/api/excel/excel.pivotfield#sortByLabels_sortBy_)|Sorts the PivotField.|
 ||[subtotals](/javascript/api/excel/excel.pivotfield#subtotals)|Subtotals of the PivotField.|
