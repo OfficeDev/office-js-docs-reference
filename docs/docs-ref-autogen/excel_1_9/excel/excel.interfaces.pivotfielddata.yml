@@ -25,7 +25,7 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotFieldData#items:member'
     package: excel!
     fullName: items
-    summary: Returns the PivotFields associated with the PivotField.
+    summary: Returns the PivotItems associated with the PivotField.
     remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
