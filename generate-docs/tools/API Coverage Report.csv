@@ -1,4 +1,4 @@
-Class,Field,Type,Description Rating, Has Example?
+Class,Field,Type,Description Rating,Has Example?
 CustomFunctions.CancelableInvocation,N/A,Class,Good,false
 CustomFunctions.CancelableInvocation,onCanceled,Method,Good,false
 CustomFunctions.Error,N/A,Class,Good,false
