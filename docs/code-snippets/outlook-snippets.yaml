@@ -758,9 +758,9 @@ Office.EmailAddressDetails#recipientType:member:
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-Office.EmailUser:
+Office.EmailUser:interface:
   - |-
-    / The following example is an excerpt from a larger sample.
+    // The following example is an excerpt from a larger sample.
     // For the full sample, visit https://docs.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
 
     // Gets instances of the task suggestion entity on the item.

@@ -7387,7 +7387,7 @@ Office.EmailAddressDetails,appointmentResponse,Method,Good,true
 Office.EmailAddressDetails,displayName,Method,Fine,true
 Office.EmailAddressDetails,emailAddress,Method,Poor,true
 Office.EmailAddressDetails,recipientType,Method,Fine,true
-Office.EmailUser,N/A,Class,Good,false
+Office.EmailUser,N/A,Class,Good,true
 Office.EmailUser,displayName,Method,Fine,false
 Office.EmailUser,emailAddress,Method,Poor,false
 Office.EnhancedLocation,N/A,Class,Fine,false
