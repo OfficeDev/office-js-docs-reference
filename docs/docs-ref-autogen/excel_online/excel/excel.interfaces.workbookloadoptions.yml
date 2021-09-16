@@ -102,6 +102,20 @@ properties:
       content: 'isDirty?: boolean;'
       return:
         type: boolean
+  - name: linkedWorkbooks
+    uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#linkedWorkbooks:member'
+    package: excel!
+    fullName: linkedWorkbooks
+    summary: >-
+      Returns a collection of linked workbooks. In formulas, the workbook links can be used to reference data (cell
+      values and names) outside of the current workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedWorkbooks?: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.LinkedWorkbookCollectionLoadOptions:interface" />'
   - name: name
     uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     package: excel!

@@ -1,0 +1,154 @@
+### YamlMime:TSType
+name: Excel.WebImageCellValue
+uid: 'excel!Excel.WebImageCellValue:interface'
+package: excel!
+fullName: Excel.WebImageCellValue
+summary: >-
+  Represents the value of a cell containing an image downloaded from the internet.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'excel!Excel.WebImageCellValue#address:member'
+    package: excel!
+    fullName: address
+    summary: >-
+      Represents the URL from which the image will be downloaded. This image must be hosted on a server that supports
+      HTTPS.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address: string;'
+      return:
+        type: string
+  - name: altText
+    uid: 'excel!Excel.WebImageCellValue#altText:member'
+    package: excel!
+    fullName: altText
+    summary: >-
+      Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altText?: string;'
+      return:
+        type: string
+  - name: attribution
+    uid: 'excel!Excel.WebImageCellValue#attribution:member'
+    package: excel!
+    fullName: attribution
+    summary: >-
+      Represents attribution information to describe the source and license requirements for using this image.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attribution?: CellValueAttributionAttributes[];'
+      return:
+        type: '<xref uid="excel!Excel.CellValueAttributionAttributes:interface" />[]'
+  - name: primitive
+    uid: 'excel!Excel.WebImageCellValue#primitive:member'
+    package: excel!
+    fullName: primitive
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitive: "#VALUE!";'
+      return:
+        type: '"#VALUE!"'
+  - name: primitiveType
+    uid: 'excel!Excel.WebImageCellValue#primitiveType:member'
+    package: excel!
+    fullName: primitiveType
+    summary: >-
+      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitiveType: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: provider
+    uid: 'excel!Excel.WebImageCellValue#provider:member'
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information that describes the entity or individual who provided the image. This information can be
+      used for branding in image cards.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="excel!Excel.CellValueProviderAttributes:interface" />'
+  - name: relatedImagesAddress
+    uid: 'excel!Excel.WebImageCellValue#relatedImagesAddress:member'
+    package: excel!
+    fullName: relatedImagesAddress
+    summary: >-
+      Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relatedImagesAddress?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'excel!Excel.WebImageCellValue#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
+      Represents the type of this cell value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.webImage | "WebImage";'
+      return:
+        type: '<xref uid="excel!Excel.CellValueType.webImage:member" /> | "WebImage"'

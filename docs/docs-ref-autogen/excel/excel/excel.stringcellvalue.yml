@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Excel.StringCellValue
+uid: 'excel!Excel.StringCellValue:interface'
+package: excel!
+fullName: Excel.StringCellValue
+summary: >-
+  Represents the value of a cell containing a string.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: primitive
+    uid: 'excel!Excel.StringCellValue#primitive:member'
+    package: excel!
+    fullName: primitive
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitive: string;'
+      return:
+        type: string
+  - name: primitiveType
+    uid: 'excel!Excel.StringCellValue#primitiveType:member'
+    package: excel!
+    fullName: primitiveType
+    summary: >-
+      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitiveType: RangeValueType.string | "String";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.string:member" /> | "String"'
+  - name: type
+    uid: 'excel!Excel.StringCellValue#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
+      Represents the type of this cell value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.string | "String";'
+      return:
+        type: '<xref uid="excel!Excel.CellValueType.string:member" /> | "String"'

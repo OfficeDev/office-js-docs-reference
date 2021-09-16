@@ -326,6 +326,8 @@ items:
                 uid: 'excel!Excel.ValueFilterCondition:enum'
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
+              - name: WorkbookLinksRefreshMode
+                uid: 'excel!Excel.WorkbookLinksRefreshMode:enum'
               - name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - name: Icon Sets
@@ -647,6 +649,10 @@ items:
             uid: 'excel!Excel.IterativeCalculation:class'
           - name: Line
             uid: 'excel!Excel.Line:class'
+          - name: LinkedWorkbook
+            uid: 'excel!Excel.LinkedWorkbook:class'
+          - name: LinkedWorkbookCollection
+            uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
           - name: NamedItem

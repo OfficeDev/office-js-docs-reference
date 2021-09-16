@@ -27,9 +27,9 @@ properties:
     fullName: changeDirectionState
     summary: >-
       Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or
-      inserted. This includes the following two scenarios. The direction(such as down or to the right) that existing
-      cells will shift when a new cell or cells are inserted into a worksheet. The direction (such as up or to the left)
-      that the remaining cells will shift when a cell or cells are deleted from a worksheet.
+      inserted. This includes the following two scenarios. 1. The direction (such as down or to the right) that existing
+      cells will shift when a new cell or cells are inserted into a worksheet. 2. The direction (such as up or to the
+      left) that the remaining cells will shift when a cell or cells are deleted from a worksheet.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

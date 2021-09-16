@@ -107,12 +107,10 @@ properties:
     package: excel!
     fullName: linkedWorkbooks
     summary: >-
-      Returns a collection of linked workbooks. In formulas, the workbook links can used to reference data (cell values
-      and names) outside of the current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      Returns a collection of linked workbooks. In formulas, the workbook links can be used to reference data (cell
+      values and names) outside of the current workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'linkedWorkbooks?: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions;'

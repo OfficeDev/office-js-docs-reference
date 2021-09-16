@@ -45,7 +45,7 @@ properties:
     fullName: dashStyle
     summary: >-
       Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent dash
-      styles. See `Excel.ShapeLineStyle` for details.
+      styles. See `Excel.ShapeLineDashStyle` for details.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

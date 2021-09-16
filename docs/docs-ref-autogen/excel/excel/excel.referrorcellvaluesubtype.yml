@@ -1,0 +1,120 @@
+### YamlMime:TSEnum
+name: Excel.RefErrorCellValueSubType
+uid: 'excel!Excel.RefErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.RefErrorCellValueSubType
+summary: >-
+  Represents types of \#REF! errors.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: externalLinksRefNotExist
+    uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksRefNotExist:member'
+    package: excel!
+    summary: >-
+      An error caused by the reference or name not existing in the linked workbook. Displays as error type \#REF! in
+      Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"ExternalLinksRefNotExist"'
+  - name: hlookupRowIndexGreaterThanNumRows
+    uid: 'excel!Excel.RefErrorCellValueSubType.hlookupRowIndexGreaterThanNumRows:member'
+    package: excel!
+    summary: >-
+      An error caused by a row\_index\_num parameter of HLOOKUP that's greater than the number of rows in the
+      table\_array parameter. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"HlookupRowIndexGreaterThanNumRows"'
+  - name: subArrayEndColOutofBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColOutofBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_col parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayEndColOutofBounds"'
+  - name: subArrayEndColPrecedesStartCol
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColPrecedesStartCol:member'
+    package: excel!
+    summary: >-
+      An error caseud by an end\_col parameter of SUBARRAY preceding the start\_col parameter. Displays as error type
+      \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayEndColPrecedesStartCol"'
+  - name: subArrayEndRowOutofBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowOutofBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayEndRowOutofBounds"'
+  - name: subArrayEndRowPrecedesStartRow
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowPrecedesStartRow:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_row parameter of SUBARRAY preceding the start\_row parameter. Displays as error type
+      \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayEndRowPrecedesStartRow"'
+  - name: subArrayStartColOutofBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartColOutofBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by a start\_col parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayStartColOutofBounds"'
+  - name: subArrayStartRowOutofBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartRowOutofBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by a start\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"SubArrayStartRowOutofBounds"'
+  - name: unknown
+    uid: 'excel!Excel.RefErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: >-
+      An unknown type of error. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Unknown"'
+  - name: vlookupColIndexGreaterThanNumCols
+    uid: 'excel!Excel.RefErrorCellValueSubType.vlookupColIndexGreaterThanNumCols:member'
+    package: excel!
+    summary: >-
+      An error caused by a column\_index\_num parameter of VLOOKUP that's greater than the number of columns in the
+      table\_array parameter. Displays as error type \#REF! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"VlookupColIndexGreaterThanNumCols"'

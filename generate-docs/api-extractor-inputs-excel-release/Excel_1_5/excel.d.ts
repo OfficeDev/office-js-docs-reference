@@ -265,6 +265,9 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
     /**
      * Provides information about the selection that raised the selection changed event.
                 
@@ -550,6 +553,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly functions: Excel.Functions;
+        
         /**
          * Represents a collection of workbook-scoped named items (named ranges and constants).
          *
@@ -1163,9 +1167,8 @@ export declare namespace Excel {
     
     
     /**
-     * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-                To learn more about how ranges are used throughout the API, start with
-                {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+     * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
+                To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
      *
      * @remarks
      * [Api set: ExcelApi 1.1]
@@ -3871,7 +3874,7 @@ export declare namespace Excel {
          *
          * @param height - Optional. The desired height of the resulting image.
          * @param width - Optional. The desired width of the resulting image.
-         * @param fittingMode - Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
+         * @param fittingMode - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
@@ -3883,7 +3886,7 @@ export declare namespace Excel {
          *
          * @param height - Optional. The desired height of the resulting image.
          * @param width - Optional. The desired width of the resulting image.
-         * @param fittingModeString - Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
+         * @param fittingModeString - Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
          */
         getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
@@ -6520,17 +6523,65 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum ChartDataLabelPosition {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         invalid = "Invalid",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         center = "Center",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         insideEnd = "InsideEnd",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         insideBase = "InsideBase",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         outsideEnd = "OutsideEnd",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         left = "Left",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         right = "Right",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         top = "Top",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bestFit = "BestFit",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         callout = "Callout"
     }
     
@@ -6544,12 +6595,40 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum ChartLegendPosition {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         invalid = "Invalid",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         top = "Top",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         left = "Left",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         right = "Right",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         corner = "Corner",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         custom = "Custom"
     }
     
@@ -6566,9 +6645,19 @@ export declare namespace Excel {
     enum ChartSeriesBy {
         /**
          * In Excel on desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         auto = "Auto",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         columns = "Columns",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         rows = "Rows"
     }
     
@@ -6579,95 +6668,396 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum ChartType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         invalid = "Invalid",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         columnClustered = "ColumnClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         columnStacked = "ColumnStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         columnStacked100 = "ColumnStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DColumnClustered = "3DColumnClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DColumnStacked = "3DColumnStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DColumnStacked100 = "3DColumnStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         barClustered = "BarClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         barStacked = "BarStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         barStacked100 = "BarStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DBarClustered = "3DBarClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DBarStacked = "3DBarStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DBarStacked100 = "3DBarStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         lineStacked = "LineStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         lineStacked100 = "LineStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         lineMarkers = "LineMarkers",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         lineMarkersStacked = "LineMarkersStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         lineMarkersStacked100 = "LineMarkersStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pieOfPie = "PieOfPie",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pieExploded = "PieExploded",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DPieExploded = "3DPieExploded",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         barOfPie = "BarOfPie",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         xyscatterSmooth = "XYScatterSmooth",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         xyscatterSmoothNoMarkers = "XYScatterSmoothNoMarkers",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         xyscatterLines = "XYScatterLines",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         xyscatterLinesNoMarkers = "XYScatterLinesNoMarkers",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         areaStacked = "AreaStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         areaStacked100 = "AreaStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DAreaStacked = "3DAreaStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DAreaStacked100 = "3DAreaStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         doughnutExploded = "DoughnutExploded",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         radarMarkers = "RadarMarkers",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         radarFilled = "RadarFilled",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         surface = "Surface",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         surfaceWireframe = "SurfaceWireframe",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         surfaceTopView = "SurfaceTopView",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         surfaceTopViewWireframe = "SurfaceTopViewWireframe",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bubble = "Bubble",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bubble3DEffect = "Bubble3DEffect",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         stockHLC = "StockHLC",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         stockOHLC = "StockOHLC",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         stockVHLC = "StockVHLC",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         stockVOHLC = "StockVOHLC",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderColClustered = "CylinderColClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderColStacked = "CylinderColStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderColStacked100 = "CylinderColStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderBarClustered = "CylinderBarClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderBarStacked = "CylinderBarStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderBarStacked100 = "CylinderBarStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         cylinderCol = "CylinderCol",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneColClustered = "ConeColClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneColStacked = "ConeColStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneColStacked100 = "ConeColStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneBarClustered = "ConeBarClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneBarStacked = "ConeBarStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneBarStacked100 = "ConeBarStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         coneCol = "ConeCol",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidColClustered = "PyramidColClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidColStacked = "PyramidColStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidColStacked100 = "PyramidColStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidBarClustered = "PyramidBarClustered",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidBarStacked = "PyramidBarStacked",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidBarStacked100 = "PyramidBarStacked100",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pyramidCol = "PyramidCol",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DColumn = "3DColumn",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         line = "Line",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DLine = "3DLine",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DPie = "3DPie",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         pie = "Pie",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         xyscatter = "XYScatter",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         _3DArea = "3DArea",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         area = "Area",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         doughnut = "Doughnut",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         radar = "Radar",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         histogram = "Histogram",
-        boxwhisker = "Boxwhisker",
-        pareto = "Pareto",
-        regionMap = "RegionMap",
-        treemap = "Treemap",
-        waterfall = "Waterfall",
-        sunburst = "Sunburst",
-        funnel = "Funnel"
-    }
+                                                            }
     /**
      * @remarks
      * [Api set: ExcelApi 1.1]
      */
     enum ChartUnderlineStyle {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         single = "Single"
     }
     
@@ -6692,8 +7082,20 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum BindingType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         range = "Range",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         table = "Table",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         text = "Text"
     }
     /**
@@ -6701,13 +7103,45 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum BorderIndex {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         edgeTop = "EdgeTop",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         edgeBottom = "EdgeBottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         edgeLeft = "EdgeLeft",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         edgeRight = "EdgeRight",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         insideVertical = "InsideVertical",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         insideHorizontal = "InsideHorizontal",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         diagonalDown = "DiagonalDown",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         diagonalUp = "DiagonalUp"
     }
     /**
@@ -6715,13 +7149,45 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum BorderLineStyle {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         continuous = "Continuous",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         dash = "Dash",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         dashDot = "DashDot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         dashDotDot = "DashDotDot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         dot = "Dot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         slantDashDot = "SlantDashDot"
     }
     /**
@@ -6729,9 +7195,25 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum BorderWeight {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         hairline = "Hairline",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         thin = "Thin",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         medium = "Medium",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         thick = "Thick"
     }
     /**
@@ -6741,14 +7223,20 @@ export declare namespace Excel {
     enum CalculationMode {
         /**
          * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         automatic = "Automatic",
         /**
          * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         automaticExceptTables = "AutomaticExceptTables",
         /**
          * Calculations only occur when the user or add-in requests them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         manual = "Manual"
     }
@@ -6759,40 +7247,46 @@ export declare namespace Excel {
     enum CalculationType {
         /**
          * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         recalculate = "Recalculate",
         /**
          * This will mark all cells as dirty and then recalculate them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         full = "Full",
         /**
          * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         fullRebuild = "FullRebuild"
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
+     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
      */
     enum ClearApplyTo {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         all = "All",
         /**
          * Clears all formatting for the range.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         formats = "Formats",
         /**
          * Clears the contents of the range.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
         contents = "Contents",
-        /**
-         * Clears all hyperlinks, but leaves all content and formatting intact.
-         */
-        hyperlinks = "Hyperlinks",
-        /**
-         * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
-         */
-        removeHyperlinks = "RemoveHyperlinks"
-    }
+                    }
     
     
     
@@ -6816,7 +7310,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum DeleteShiftDirection {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         up = "Up",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         left = "Left"
     }
     /**
@@ -6824,40 +7326,180 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum DynamicFilterCriteria {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         unknown = "Unknown",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         aboveAverage = "AboveAverage",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodApril = "AllDatesInPeriodApril",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodAugust = "AllDatesInPeriodAugust",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodDecember = "AllDatesInPeriodDecember",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodFebruray = "AllDatesInPeriodFebruray",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodJanuary = "AllDatesInPeriodJanuary",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodJuly = "AllDatesInPeriodJuly",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodJune = "AllDatesInPeriodJune",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodMarch = "AllDatesInPeriodMarch",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodMay = "AllDatesInPeriodMay",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodNovember = "AllDatesInPeriodNovember",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodOctober = "AllDatesInPeriodOctober",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodQuarter1 = "AllDatesInPeriodQuarter1",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodQuarter2 = "AllDatesInPeriodQuarter2",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodQuarter3 = "AllDatesInPeriodQuarter3",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodQuarter4 = "AllDatesInPeriodQuarter4",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         allDatesInPeriodSeptember = "AllDatesInPeriodSeptember",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         belowAverage = "BelowAverage",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         lastMonth = "LastMonth",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         lastQuarter = "LastQuarter",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         lastWeek = "LastWeek",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         lastYear = "LastYear",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         nextMonth = "NextMonth",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         nextQuarter = "NextQuarter",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         nextWeek = "NextWeek",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         nextYear = "NextYear",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         thisMonth = "ThisMonth",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         thisQuarter = "ThisQuarter",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         thisWeek = "ThisWeek",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         thisYear = "ThisYear",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         today = "Today",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         tomorrow = "Tomorrow",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         yearToDate = "YearToDate",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         yesterday = "Yesterday"
     }
     /**
@@ -6865,11 +7507,35 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum FilterDatetimeSpecificity {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         year = "Year",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         month = "Month",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         day = "Day",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         hour = "Hour",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         minute = "Minute",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         second = "Second"
     }
     /**
@@ -6877,15 +7543,55 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum FilterOn {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         bottomItems = "BottomItems",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         bottomPercent = "BottomPercent",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         cellColor = "CellColor",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         dynamic = "Dynamic",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fontColor = "FontColor",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         values = "Values",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         topItems = "TopItems",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         topPercent = "TopPercent",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         icon = "Icon",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         custom = "Custom"
     }
     /**
@@ -6893,7 +7599,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum FilterOperator {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         and = "And",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         or = "Or"
     }
     /**
@@ -6901,13 +7615,45 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum HorizontalAlignment {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         general = "General",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         left = "Left",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         center = "Center",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         right = "Right",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         fill = "Fill",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         justify = "Justify",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         centerAcrossSelection = "CenterAcrossSelection",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         distributed = "Distributed"
     }
     /**
@@ -6915,26 +7661,110 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum IconSet {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         invalid = "Invalid",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeArrows = "ThreeArrows",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeArrowsGray = "ThreeArrowsGray",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeFlags = "ThreeFlags",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeTrafficLights1 = "ThreeTrafficLights1",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeTrafficLights2 = "ThreeTrafficLights2",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeSigns = "ThreeSigns",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeSymbols = "ThreeSymbols",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeSymbols2 = "ThreeSymbols2",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fourArrows = "FourArrows",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fourArrowsGray = "FourArrowsGray",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fourRedToBlack = "FourRedToBlack",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fourRating = "FourRating",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fourTrafficLights = "FourTrafficLights",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fiveArrows = "FiveArrows",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fiveArrowsGray = "FiveArrowsGray",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fiveRating = "FiveRating",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fiveQuarters = "FiveQuarters",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeStars = "ThreeStars",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         threeTriangles = "ThreeTriangles",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fiveBoxes = "FiveBoxes"
     }
     /**
@@ -6942,8 +7772,20 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum ImageFittingMode {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fit = "Fit",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fitAndCenter = "FitAndCenter",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fill = "Fill"
     }
     /**
@@ -6951,7 +7793,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum InsertShiftDirection {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         down = "Down",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         right = "Right"
     }
     /**
@@ -6959,7 +7809,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.4]
      */
     enum NamedItemScope {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.4]
+         */
         worksheet = "Worksheet",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.4]
+         */
         workbook = "Workbook"
     }
     /**
@@ -6967,23 +7825,66 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
      */
     enum NamedItemType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         string = "String",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         integer = "Integer",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         boolean = "Boolean",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         range = "Range",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         error = "Error",
-        array = "Array"
-    }
+            }
     /**
      * @remarks
      * [Api set: ExcelApi 1.1]
      */
     enum RangeUnderlineStyle {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         single = "Single",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         singleAccountant = "SingleAccountant",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         doubleAccountant = "DoubleAccountant"
     }
     /**
@@ -6991,8 +7892,20 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum SheetVisibility {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         visible = "Visible",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         hidden = "Hidden",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         veryHidden = "VeryHidden"
     }
     /**
@@ -7000,15 +7913,42 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
      */
     enum RangeValueType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         unknown = "Unknown",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         empty = "Empty",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         string = "String",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         integer = "Integer",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         boolean = "Boolean",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         error = "Error",
-        richValue = "RichValue"
-    }
+            }
     
     
     /**
@@ -7016,7 +7956,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum SortOrientation {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         rows = "Rows",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         columns = "Columns"
     }
     /**
@@ -7024,9 +7972,25 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum SortOn {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         value = "Value",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         cellColor = "CellColor",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         fontColor = "FontColor",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         icon = "Icon"
     }
     /**
@@ -7034,7 +7998,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum SortDataOption {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         normal = "Normal",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         textAsNumber = "TextAsNumber"
     }
     /**
@@ -7042,7 +8014,15 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.2]
      */
     enum SortMethod {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         pinYin = "PinYin",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
         strokeCount = "StrokeCount"
     }
     /**
@@ -7050,10 +8030,30 @@ export declare namespace Excel {
      * [Api set: ExcelApi 1.1]
      */
     enum VerticalAlignment {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         top = "Top",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         center = "Center",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         justify = "Justify",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
         distributed = "Distributed"
     }
     
@@ -10927,6 +11927,7 @@ export declare namespace Excel {
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
         requestAborted = "RequestAborted",
+        responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
         unsupportedFeature = "UnsupportedFeature",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
@@ -10945,6 +11946,11 @@ export declare namespace Excel {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`. */
+        export interface LinkedWorkbookCollectionUpdateData {
+            
+            items?: Excel.Interfaces.LinkedWorkbookData[];
         }
         /** An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`. */
         export interface RuntimeUpdateData {
@@ -12719,6 +13725,14 @@ export declare namespace Excel {
         /** An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`. */
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
+        }
+        /** An interface describing the data returned by calling `linkedWorkbook.toJSON()`. */
+        export interface LinkedWorkbookData {
+            
+        }
+        /** An interface describing the data returned by calling `linkedWorkbookCollection.toJSON()`. */
+        export interface LinkedWorkbookCollectionData {
+            items?: Excel.Interfaces.LinkedWorkbookData[];
         }
         /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
@@ -15132,6 +16146,8 @@ export declare namespace Excel {
              */
             value?: T;
         }
+        
+        
         /**
          * Represents the Excel Runtime class.
          *
@@ -15198,6 +16214,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
+            
             
             
             /**
@@ -15383,9 +16400,8 @@ export declare namespace Excel {
             protected?: boolean;
         }
         /**
-         * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-                    To learn more about how ranges are used throughout the API, start with
-                    {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
+         * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
+                    To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]

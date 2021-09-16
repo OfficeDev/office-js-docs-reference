@@ -1421,7 +1421,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BindingType.range:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1442,7 +1442,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BindingType.table:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1463,7 +1463,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BindingType.text:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1499,7 +1499,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.diagonalDown:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1520,7 +1520,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.diagonalUp:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1541,7 +1541,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.edgeBottom:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1562,7 +1562,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.edgeLeft:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1583,7 +1583,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.edgeRight:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1604,7 +1604,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.edgeTop:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1625,7 +1625,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.insideHorizontal:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1646,7 +1646,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderIndex.insideVertical:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1682,7 +1682,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.continuous:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1703,7 +1703,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.dash:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1724,7 +1724,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.dashDot:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1745,7 +1745,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.dashDotDot:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1766,7 +1766,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.dot:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1787,7 +1787,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.double:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1808,7 +1808,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.none:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1829,7 +1829,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderLineStyle.slantDashDot:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1865,7 +1865,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderWeight.hairline:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1886,7 +1886,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderWeight.medium:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1907,7 +1907,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderWeight.thick:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1928,7 +1928,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.BorderWeight.thin:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1964,7 +1964,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationMode.automatic:member",
-                  "docComment": "/**\n * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.\n */\n",
+                  "docComment": "/**\n * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1985,7 +1985,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationMode.automaticExceptTables:member",
-                  "docComment": "/**\n * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.\n */\n",
+                  "docComment": "/**\n * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2006,7 +2006,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationMode.manual:member",
-                  "docComment": "/**\n * Calculations only occur when the user or add-in requests them.\n */\n",
+                  "docComment": "/**\n * Calculations only occur when the user or add-in requests them.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2042,7 +2042,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationType.full:member",
-                  "docComment": "/**\n * This will mark all cells as dirty and then recalculate them.\n */\n",
+                  "docComment": "/**\n * This will mark all cells as dirty and then recalculate them.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2063,7 +2063,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationType.fullRebuild:member",
-                  "docComment": "/**\n * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.\n */\n",
+                  "docComment": "/**\n * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2084,7 +2084,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.CalculationType.recalculate:member",
-                  "docComment": "/**\n * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.\n */\n",
+                  "docComment": "/**\n * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6442,7 +6442,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.bestFit:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6463,7 +6463,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.bottom:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6484,7 +6484,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.callout:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6505,7 +6505,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.center:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6526,7 +6526,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.insideBase:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6547,7 +6547,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.insideEnd:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6568,7 +6568,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.invalid:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6589,7 +6589,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.left:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6610,7 +6610,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.none:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6631,7 +6631,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.outsideEnd:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6652,7 +6652,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.right:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6673,7 +6673,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartDataLabelPosition.top:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9542,7 +9542,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.bottom:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9563,7 +9563,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.corner:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9584,7 +9584,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.custom:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9605,7 +9605,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.invalid:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9626,7 +9626,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.left:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9647,7 +9647,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.right:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9668,7 +9668,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartLegendPosition.top:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11603,7 +11603,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartSeriesBy.auto:member",
-                  "docComment": "/**\n * In Excel on desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, \"auto\" will simply default to \"columns\".\n */\n",
+                  "docComment": "/**\n * In Excel on desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns. In Excel on the web, \"auto\" will simply default to \"columns\".\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11624,7 +11624,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartSeriesBy.columns:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11645,7 +11645,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartSeriesBy.rows:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13245,7 +13245,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DArea:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13266,7 +13266,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DAreaStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13287,7 +13287,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DAreaStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13308,7 +13308,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DBarClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13329,7 +13329,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DBarStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13350,7 +13350,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DBarStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13371,7 +13371,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DColumn:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13392,7 +13392,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DColumnClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13413,7 +13413,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DColumnStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13434,7 +13434,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DColumnStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13455,7 +13455,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DLine:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13476,7 +13476,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DPie:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13497,7 +13497,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType._3DPieExploded:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13518,7 +13518,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.area:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13539,7 +13539,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.areaStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13560,7 +13560,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.areaStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13581,7 +13581,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.barClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13602,7 +13602,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.barOfPie:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13623,7 +13623,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.barStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13644,7 +13644,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.barStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13664,29 +13664,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.boxwhisker:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "boxwhisker = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Boxwhisker\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "boxwhisker",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.bubble:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13707,7 +13686,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.bubble3DEffect:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13728,7 +13707,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.columnClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13749,7 +13728,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.columnStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13770,7 +13749,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.columnStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13791,7 +13770,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneBarClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13812,7 +13791,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneBarStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13833,7 +13812,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneBarStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13854,7 +13833,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneCol:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13875,7 +13854,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneColClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13896,7 +13875,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneColStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13917,7 +13896,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.coneColStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13938,7 +13917,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderBarClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13959,7 +13938,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderBarStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13980,7 +13959,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderBarStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14001,7 +13980,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderCol:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14022,7 +14001,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderColClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14043,7 +14022,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderColStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14064,7 +14043,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.cylinderColStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14085,7 +14064,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.doughnut:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14106,7 +14085,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.doughnutExploded:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14126,29 +14105,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.funnel:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "funnel = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Funnel\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "funnel",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.histogram:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14169,7 +14127,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.invalid:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14190,7 +14148,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.line:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14211,7 +14169,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.lineMarkers:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14232,7 +14190,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.lineMarkersStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14253,7 +14211,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.lineMarkersStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14274,7 +14232,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.lineStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14295,7 +14253,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.lineStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14315,29 +14273,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.pareto:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "pareto = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Pareto\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "pareto",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pie:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14358,7 +14295,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pieExploded:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14379,7 +14316,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pieOfPie:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14400,7 +14337,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidBarClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14421,7 +14358,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidBarStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14442,7 +14379,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidBarStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14463,7 +14400,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidCol:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14484,7 +14421,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidColClustered:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14505,7 +14442,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidColStacked:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14526,7 +14463,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.pyramidColStacked100:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14547,7 +14484,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.radar:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14568,7 +14505,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.radarFilled:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14589,7 +14526,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.radarMarkers:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14609,29 +14546,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.regionMap:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "regionMap = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"RegionMap\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "regionMap",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.stockHLC:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14652,7 +14568,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.stockOHLC:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14673,7 +14589,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.stockVHLC:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14694,7 +14610,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.stockVOHLC:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14714,29 +14630,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.sunburst:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "sunburst = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Sunburst\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "sunburst",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.surface:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14757,7 +14652,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.surfaceTopView:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14778,7 +14673,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.surfaceTopViewWireframe:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14799,7 +14694,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.surfaceWireframe:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14819,50 +14714,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.treemap:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "treemap = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Treemap\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "treemap",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ChartType.waterfall:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "waterfall = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Waterfall\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "waterfall",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.xyscatter:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14883,7 +14736,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.xyscatterLines:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14904,7 +14757,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.xyscatterLinesNoMarkers:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14925,7 +14778,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.xyscatterSmooth:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14946,7 +14799,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartType.xyscatterSmoothNoMarkers:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14982,7 +14835,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartUnderlineStyle.none:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15003,7 +14856,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ChartUnderlineStyle.single:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15026,7 +14879,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "excel!Excel.ClearApplyTo:enum",
-              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -15039,7 +14892,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ClearApplyTo.all:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15060,7 +14913,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ClearApplyTo.contents:member",
-                  "docComment": "/**\n * Clears the contents of the range.\n */\n",
+                  "docComment": "/**\n * Clears the contents of the range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15081,7 +14934,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ClearApplyTo.formats:member",
-                  "docComment": "/**\n * Clears all formatting for the range.\n */\n",
+                  "docComment": "/**\n * Clears all formatting for the range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15094,48 +14947,6 @@
                   ],
                   "releaseTag": "Public",
                   "name": "formats",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ClearApplyTo.hyperlinks:member",
-                  "docComment": "/**\n * Clears all hyperlinks, but leaves all content and formatting intact.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "hyperlinks = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Hyperlinks\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "hyperlinks",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.ClearApplyTo.removeHyperlinks:member",
-                  "docComment": "/**\n * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "removeHyperlinks = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"RemoveHyperlinks\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "removeHyperlinks",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -15159,7 +14970,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.DeleteShiftDirection.left:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15180,7 +14991,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.DeleteShiftDirection.up:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15698,6 +15509,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.responsePayloadSizeLimitExceeded:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "responsePayloadSizeLimitExceeded = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"ResponsePayloadSizeLimitExceeded\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "responsePayloadSizeLimitExceeded",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.unsupportedFeature:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -15835,7 +15667,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.center:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15856,7 +15688,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.centerAcrossSelection:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15877,7 +15709,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.distributed:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15898,7 +15730,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.fill:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15919,7 +15751,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.general:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15940,7 +15772,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.justify:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15961,7 +15793,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.left:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15982,7 +15814,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.HorizontalAlignment.right:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16018,7 +15850,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.InsertShiftDirection.down:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16039,7 +15871,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.InsertShiftDirection.right:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26653,6 +26485,115 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `linkedWorkbookCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface LinkedWorkbookCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "LinkedWorkbookCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.LinkedWorkbookData",
+                          "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface LinkedWorkbookCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "LinkedWorkbookCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.LinkedWorkbookData",
+                          "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.LinkedWorkbookData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `linkedWorkbook.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface LinkedWorkbookData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "LinkedWorkbookData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.NamedItemArrayValuesData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `namedItemArrayValues.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -30782,7 +30723,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions:interface",
-                  "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36869,29 +36810,8 @@
               "members": [
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.NamedItemType.array:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "array = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Array\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "array",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.boolean:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36912,7 +36832,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.double:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36933,7 +36853,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.error:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36954,7 +36874,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.integer:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36975,7 +36895,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.range:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36996,7 +36916,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.NamedItemType.string:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37062,7 +36982,7 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.Range:class",
-              "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn more about how ranges are used throughout the API, start with {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges | Ranges in the Excel JavaScript API}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -40942,7 +40862,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeUnderlineStyle.double:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40963,7 +40883,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeUnderlineStyle.doubleAccountant:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40984,7 +40904,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeUnderlineStyle.none:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41005,7 +40925,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeUnderlineStyle.single:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41026,7 +40946,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeUnderlineStyle.singleAccountant:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41062,7 +40982,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.boolean:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41083,7 +41003,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.double:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41104,7 +41024,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.empty:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41125,7 +41045,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.error:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41146,7 +41066,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.integer:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41166,29 +41086,8 @@
                 },
                 {
                   "kind": "EnumMember",
-                  "canonicalReference": "excel!Excel.RangeValueType.richValue:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "richValue = "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"RichValue\""
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "richValue",
-                  "initializerTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  }
-                },
-                {
-                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.string:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41209,7 +41108,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.RangeValueType.unknown:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41908,7 +41807,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.SheetVisibility.hidden:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41929,7 +41828,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.SheetVisibility.veryHidden:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41950,7 +41849,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.SheetVisibility.visible:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45044,7 +44943,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.VerticalAlignment.bottom:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45065,7 +44964,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.VerticalAlignment.center:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45086,7 +44985,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.VerticalAlignment.distributed:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45107,7 +45006,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.VerticalAlignment.justify:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45128,7 +45027,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.VerticalAlignment.top:member",
-                  "docComment": "",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
