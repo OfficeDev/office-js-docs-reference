@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Excel.EmptyCellValue
+uid: 'excel!Excel.EmptyCellValue:interface'
+package: excel!
+fullName: Excel.EmptyCellValue
+summary: >-
+  Represents the value of a cell that's empty and has no formulas or data.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: primitive
+    uid: 'excel!Excel.EmptyCellValue#primitive:member'
+    package: excel!
+    fullName: primitive
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitive: "";'
+      return:
+        type: '""'
+  - name: primitiveType
+    uid: 'excel!Excel.EmptyCellValue#primitiveType:member'
+    package: excel!
+    fullName: primitiveType
+    summary: >-
+      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'primitiveType: RangeValueType.empty | "Empty";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.empty:member" /> | "Empty"'
+  - name: type
+    uid: 'excel!Excel.EmptyCellValue#type:member'
+    package: excel!
+    fullName: type
+    summary: >-
+      Represents the type of this cell value.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.empty | "Empty";'
+      return:
+        type: '<xref uid="excel!Excel.CellValueType.empty:member" /> | "Empty"'

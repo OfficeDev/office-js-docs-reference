@@ -9,6 +9,62 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: allowEditRanges
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionData#allowEditRanges:member'
+    package: excel!
+    fullName: allowEditRanges
+    summary: Specifies the `AllowEditRangeCollection` found in this worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'allowEditRanges?: Excel.Interfaces.AllowEditRangeData[];'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.AllowEditRangeData:interface" />[]'
+  - name: canPauseProtection
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionData#canPauseProtection:member'
+    package: excel!
+    fullName: canPauseProtection
+    summary: Specifies if protection can be paused for this worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'canPauseProtection?: boolean;'
+      return:
+        type: boolean
+  - name: isPasswordProtected
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionData#isPasswordProtected:member'
+    package: excel!
+    fullName: isPasswordProtected
+    summary: Specifies if the sheet is password protected.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPasswordProtected?: boolean;'
+      return:
+        type: boolean
+  - name: isPaused
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionData#isPaused:member'
+    package: excel!
+    fullName: isPaused
+    summary: Specifies if worksheet protection is paused.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPaused?: boolean;'
+      return:
+        type: boolean
   - name: options
     uid: 'excel!Excel.Interfaces.WorksheetProtectionData#options:member'
     package: excel!

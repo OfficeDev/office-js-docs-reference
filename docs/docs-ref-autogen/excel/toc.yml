@@ -40,6 +40,8 @@ items:
                 uid: 'excel!Excel.AutoFillType:enum'
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
+              - name: BlockedErrorCellValueSubType
+                uid: 'excel!Excel.BlockedErrorCellValueSubType:enum'
               - name: BorderIndex
                 uid: 'excel!Excel.BorderIndex:enum'
               - name: BorderLineStyle
@@ -54,12 +56,18 @@ items:
                 uid: 'excel!Excel.BuiltInStyle:enum'
               - name: BuiltInTableStyle
                 uid: 'excel!Excel.BuiltInTableStyle:enum'
+              - name: BusyErrorCellValueSubType
+                uid: 'excel!Excel.BusyErrorCellValueSubType:enum'
+              - name: CalcErrorCellValueSubType
+                uid: 'excel!Excel.CalcErrorCellValueSubType:enum'
               - name: CalculationMode
                 uid: 'excel!Excel.CalculationMode:enum'
               - name: CalculationState
                 uid: 'excel!Excel.CalculationState:enum'
               - name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
+              - name: CellValueType
+                uid: 'excel!Excel.CellValueType:enum'
               - name: ChartAxisCategoryType
                 uid: 'excel!Excel.ChartAxisCategoryType:enum'
               - name: ChartAxisDisplayUnit
@@ -170,6 +178,8 @@ items:
                 uid: 'excel!Excel.ConditionalTextOperator:enum'
               - name: ConditionalTopBottomCriterionType
                 uid: 'excel!Excel.ConditionalTopBottomCriterionType:enum'
+              - name: ConnectErrorCellValueSubType
+                uid: 'excel!Excel.ConnectErrorCellValueSubType:enum'
               - name: ConnectorType
                 uid: 'excel!Excel.ConnectorType:enum'
               - name: ContentType
@@ -194,6 +204,8 @@ items:
                 uid: 'excel!Excel.DocumentTaskChangeAction:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
+              - name: ErrorCellValueType
+                uid: 'excel!Excel.ErrorCellValueType:enum'
               - name: ErrorCodes
                 uid: 'excel!Excel.ErrorCodes:enum'
               - name: EventSource
@@ -202,6 +214,8 @@ items:
                 uid: 'excel!Excel.EventTriggerSource:enum'
               - name: EventType
                 uid: 'excel!Excel.EventType:enum'
+              - name: FieldErrorCellValueSubType
+                uid: 'excel!Excel.FieldErrorCellValueSubType:enum'
               - name: FillPattern
                 uid: 'excel!Excel.FillPattern:enum'
               - name: FilterDatetimeSpecificity
@@ -278,6 +292,8 @@ items:
                 uid: 'excel!Excel.RangeValueType:enum'
               - name: ReadingOrder
                 uid: 'excel!Excel.ReadingOrder:enum'
+              - name: RefErrorCellValueSubType
+                uid: 'excel!Excel.RefErrorCellValueSubType:enum'
               - name: RibbonTab
                 uid: 'excel!Excel.RibbonTab:enum'
               - name: RowHiddenChangeType
@@ -336,10 +352,14 @@ items:
                 uid: 'excel!Excel.SpecialCellType:enum'
               - name: SpecialCellValueType
                 uid: 'excel!Excel.SpecialCellValueType:enum'
+              - name: SpillErrorCellValueSubType
+                uid: 'excel!Excel.SpillErrorCellValueSubType:enum'
               - name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
               - name: TopBottomSelectionType
                 uid: 'excel!Excel.TopBottomSelectionType:enum'
+              - name: ValueErrorCellValueSubType
+                uid: 'excel!Excel.ValueErrorCellValueSubType:enum'
               - name: ValueFilterCondition
                 uid: 'excel!Excel.ValueFilterCondition:enum'
               - name: VerticalAlignment
@@ -393,6 +413,12 @@ items:
                 uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
               - name: ThreeTrianglesSet
                 uid: 'excel!Excel.ThreeTrianglesSet:interface'
+          - name: AllowEditRange
+            uid: 'excel!Excel.AllowEditRange:class'
+          - name: AllowEditRangeCollection
+            uid: 'excel!Excel.AllowEditRangeCollection:class'
+          - name: AllowEditRangeOptions
+            uid: 'excel!Excel.AllowEditRangeOptions:interface'
           - name: Application
             uid: 'excel!Excel.Application:class'
           - name: AutoFilter
@@ -407,6 +433,14 @@ items:
             uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
           - name: BindingSelectionChangedEventArgs
             uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
+          - name: BlockedErrorCellValue
+            uid: 'excel!Excel.BlockedErrorCellValue:interface'
+          - name: BooleanCellValue
+            uid: 'excel!Excel.BooleanCellValue:interface'
+          - name: BusyErrorCellValue
+            uid: 'excel!Excel.BusyErrorCellValue:interface'
+          - name: CalcErrorCellValue
+            uid: 'excel!Excel.CalcErrorCellValue:interface'
           - name: CellBorder
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
@@ -431,8 +465,12 @@ items:
             uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
           - name: CellPropertiesProtection
             uid: 'excel!Excel.CellPropertiesProtection:interface'
+          - name: CellValueAttributionAttributes
+            uid: 'excel!Excel.CellValueAttributionAttributes:interface'
           - name: CellValueConditionalFormat
             uid: 'excel!Excel.CellValueConditionalFormat:class'
+          - name: CellValueProviderAttributes
+            uid: 'excel!Excel.CellValueProviderAttributes:interface'
           - name: ChangedEventDetail
             uid: 'excel!Excel.ChangedEventDetail:interface'
           - name: ChangeDirectionState
@@ -597,6 +635,8 @@ items:
             uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
           - name: ConditionalTopBottomRule
             uid: 'excel!Excel.ConditionalTopBottomRule:interface'
+          - name: ConnectErrorCellValue
+            uid: 'excel!Excel.ConnectErrorCellValue:interface'
           - name: CultureInfo
             uid: 'excel!Excel.CultureInfo:class'
           - name: CustomConditionalFormat
@@ -633,6 +673,8 @@ items:
             uid: 'excel!Excel.DateTimeDataValidation:interface'
           - name: DatetimeFormatInfo
             uid: 'excel!Excel.DatetimeFormatInfo:class'
+          - name: Div0ErrorCellValue
+            uid: 'excel!Excel.Div0ErrorCellValue:interface'
           - name: DocumentProperties
             uid: 'excel!Excel.DocumentProperties:class'
           - name: DocumentTask
@@ -645,6 +687,12 @@ items:
             uid: 'excel!Excel.DocumentTaskCollection:class'
           - name: DocumentTaskSchedule
             uid: 'excel!Excel.DocumentTaskSchedule:interface'
+          - name: DoubleCellValue
+            uid: 'excel!Excel.DoubleCellValue:interface'
+          - name: EmptyCellValue
+            uid: 'excel!Excel.EmptyCellValue:interface'
+          - name: FieldErrorCellValue
+            uid: 'excel!Excel.FieldErrorCellValue:interface'
           - name: Filter
             uid: 'excel!Excel.Filter:class'
           - name: FilterCriteria
@@ -657,6 +705,8 @@ items:
             uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
           - name: FormatProtection
             uid: 'excel!Excel.FormatProtection:class'
+          - name: FormattedNumberCellValue
+            uid: 'excel!Excel.FormattedNumberCellValue:interface'
           - name: FormulaChangedEventDetail
             uid: 'excel!Excel.FormulaChangedEventDetail:interface'
           - name: FunctionResult
@@ -665,6 +715,8 @@ items:
             uid: 'excel!Excel.Functions:class'
           - name: GeometricShape
             uid: 'excel!Excel.GeometricShape:class'
+          - name: GettingDataErrorCellValue
+            uid: 'excel!Excel.GettingDataErrorCellValue:interface'
           - name: GroupShapeCollection
             uid: 'excel!Excel.GroupShapeCollection:class'
           - name: HeaderFooter
@@ -701,6 +753,8 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
+          - name: NaErrorCellValue
+            uid: 'excel!Excel.NaErrorCellValue:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -711,8 +765,14 @@ items:
             uid: 'excel!Excel.NamedSheetView:class'
           - name: NamedSheetViewCollection
             uid: 'excel!Excel.NamedSheetViewCollection:class'
+          - name: NameErrorCellValue
+            uid: 'excel!Excel.NameErrorCellValue:interface'
+          - name: NullErrorCellValue
+            uid: 'excel!Excel.NullErrorCellValue:interface'
           - name: NumberFormatInfo
             uid: 'excel!Excel.NumberFormatInfo:class'
+          - name: NumErrorCellValue
+            uid: 'excel!Excel.NumErrorCellValue:interface'
           - name: PageBreak
             uid: 'excel!Excel.PageBreak:class'
           - name: PageBreakCollection
@@ -791,6 +851,8 @@ items:
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
             uid: 'excel!Excel.RangeViewCollection:class'
+          - name: RefErrorCellValue
+            uid: 'excel!Excel.RefErrorCellValue:interface'
           - name: RefreshModeChangedEventArgs
             uid: 'excel!Excel.RefreshModeChangedEventArgs:interface'
           - name: RefreshRequestCompletedEventArgs
@@ -863,6 +925,10 @@ items:
             uid: 'excel!Excel.SlicerStyleCollection:class'
           - name: SortField
             uid: 'excel!Excel.SortField:interface'
+          - name: SpillErrorCellValue
+            uid: 'excel!Excel.SpillErrorCellValue:interface'
+          - name: StringCellValue
+            uid: 'excel!Excel.StringCellValue:interface'
           - name: Style
             uid: 'excel!Excel.Style:class'
           - name: StyleCollection
@@ -911,6 +977,12 @@ items:
             uid: 'excel!Excel.TimelineStyleCollection:class'
           - name: TopBottomConditionalFormat
             uid: 'excel!Excel.TopBottomConditionalFormat:class'
+          - name: ValueErrorCellValue
+            uid: 'excel!Excel.ValueErrorCellValue:interface'
+          - name: ValueTypeNotAvailableCellValue
+            uid: 'excel!Excel.ValueTypeNotAvailableCellValue:interface'
+          - name: WebImageCellValue
+            uid: 'excel!Excel.WebImageCellValue:interface'
           - name: Workbook
             uid: 'excel!Excel.Workbook:class'
           - name: WorkbookActivatedEventArgs

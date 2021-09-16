@@ -27,7 +27,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableUpdateData#showHorizontalBorder:member'
     package: excel!
     fullName: showHorizontalBorder
-    summary: Specifies whether to display horizontal border of the data table.
+    summary: Specifies whether to display the horizontal border of the data table.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -41,7 +41,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableUpdateData#showLegendKey:member'
     package: excel!
     fullName: showLegendKey
-    summary: Specifies whether to show legendkey of the data table.
+    summary: Specifies whether to show the legend key of the data table.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -55,7 +55,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableUpdateData#showOutlineBorder:member'
     package: excel!
     fullName: showOutlineBorder
-    summary: Specifies whether to display outline border of the data table.
+    summary: Specifies whether to display the outline border of the data table.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -69,7 +69,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableUpdateData#showVerticalBorder:member'
     package: excel!
     fullName: showVerticalBorder
-    summary: Specifies whether to display vertical border of the data table.
+    summary: Specifies whether to display the vertical border of the data table.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -83,7 +83,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ChartDataTableUpdateData#visible:member'
     package: excel!
     fullName: visible
-    summary: Specifies whether to show data table of the chart.
+    summary: Specifies whether to show the data table of the chart.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -9,6 +9,34 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: allowEditRanges
+    uid: 'excel!Excel.WorksheetProtection#allowEditRanges:member'
+    package: excel!
+    fullName: allowEditRanges
+    summary: Specifies the `AllowEditRangeCollection` found in this worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly allowEditRanges: Excel.AllowEditRangeCollection;'
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRangeCollection:class" />'
+  - name: canPauseProtection
+    uid: 'excel!Excel.WorksheetProtection#canPauseProtection:member'
+    package: excel!
+    fullName: canPauseProtection
+    summary: Specifies if protection can be paused for this worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly canPauseProtection: boolean;'
+      return:
+        type: boolean
   - name: context
     uid: 'excel!Excel.WorksheetProtection#context:member'
     package: excel!
@@ -23,6 +51,34 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: isPasswordProtected
+    uid: 'excel!Excel.WorksheetProtection#isPasswordProtected:member'
+    package: excel!
+    fullName: isPasswordProtected
+    summary: Specifies if the sheet is password protected.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isPasswordProtected: boolean;'
+      return:
+        type: boolean
+  - name: isPaused
+    uid: 'excel!Excel.WorksheetProtection#isPaused:member'
+    package: excel!
+    fullName: isPaused
+    summary: Specifies if worksheet protection is paused.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly isPaused: boolean;'
+      return:
+        type: boolean
   - name: options
     uid: 'excel!Excel.WorksheetProtection#options:member'
     package: excel!
@@ -48,6 +104,27 @@ properties:
       return:
         type: boolean
 methods:
+  - name: checkPassword(password)
+    uid: 'excel!Excel.WorksheetProtection#checkPassword:member(1)'
+    package: excel!
+    fullName: checkPassword(password)
+    summary: >-
+      Specifies if the password can be used to unlock worksheet protection. This method does not change the worksheet
+      protection state.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'checkPassword(password?: string): OfficeExtension.ClientResult<boolean>;'
+      parameters:
+        - id: password
+          description: The password associated with the protected worksheet.
+          type: string
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        description: 'Returns `true` if the password can be used to unlock worksheet protection. Otherwise, returns `false`<!-- -->.'
   - name: load(options)
     uid: 'excel!Excel.WorksheetProtection#load:member(1)'
     package: excel!
@@ -115,6 +192,28 @@ methods:
       return:
         type: '<xref uid="excel!Excel.WorksheetProtection:class" />'
         description: ''
+  - name: pauseProtection(password)
+    uid: 'excel!Excel.WorksheetProtection#pauseProtection:member(1)'
+    package: excel!
+    fullName: pauseProtection(password)
+    summary: >-
+      Pauses worksheet protection for the given worksheet object for the user in a given session. If the password is
+      incorrect, then this method throws an `UnsupportedOperation` error and fails to pause protection. This method does
+      not change the protection state if worksheet protection is not enabled or already paused.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pauseProtection(password?: string): void;'
+      parameters:
+        - id: password
+          description: The password associated with the protected worksheet.
+          type: string
+      return:
+        type: void
+        description: ''
   - name: 'protect(options, password)'
     uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
     package: excel!
@@ -177,6 +276,48 @@ methods:
           type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
         - id: password
           description: Optional. Sheet protection password.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: resumeProtection()
+    uid: 'excel!Excel.WorksheetProtection#resumeProtection:member(1)'
+    package: excel!
+    fullName: resumeProtection()
+    summary: >-
+      Resumes worksheet protection for the given worksheet object for the user in a given session. Worksheet protection
+      must be paused for this method to work. If worksheet protection is not paused, then this method will not change
+      the protection state of the worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resumeProtection(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setPassword(password)
+    uid: 'excel!Excel.WorksheetProtection#setPassword:member(1)'
+    package: excel!
+    fullName: setPassword(password)
+    summary: >-
+      Changes the password associated with the `WorksheetProtection` object. Setting the password as an empty string
+      ("") or as `null` will remove password protection from the `WorksheetProtection` object. Worksheet protection must
+      be enabled and paused for this method to work properly. If worksheet protection is disabled, this method throws an
+      `InvalidOperation` error and fails to change the password. If worksheet protection is enabled and not paused, this
+      method throws an `AccessDenied` error and fails to change the password.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setPassword(password?: string): void;'
+      parameters:
+        - id: password
+          description: The password associated with the `WorksheetProtection` object.
           type: string
       return:
         type: void
@@ -247,6 +388,28 @@ methods:
         - id: password
           description: Sheet protection password.
           type: string
+      return:
+        type: void
+        description: ''
+  - name: updateOptions(options)
+    uid: 'excel!Excel.WorksheetProtection#updateOptions:member(1)'
+    package: excel!
+    fullName: updateOptions(options)
+    summary: >-
+      Change the worksheet protection options associated to the `WorksheetProtection` object. Worksheet protection must
+      be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this
+      method throws an `AccessDenied` error and fails to change the worksheet protection options.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updateOptions(options: Excel.WorksheetProtectionOptions): void;'
+      parameters:
+        - id: options
+          description: The options interface associated with the `WorksheetProtection` object.
+          type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
       return:
         type: void
         description: ''

@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Excel.FieldErrorCellValueSubType
+uid: 'excel!Excel.FieldErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.FieldErrorCellValueSubType
+summary: >-
+  Represents types of \#FIELD! errors.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dataProviderError
+    uid: 'excel!Excel.FieldErrorCellValueSubType.dataProviderError:member'
+    package: excel!
+    summary: >-
+      An error caused by an error from a data provider. Displays as error type \#FIELD! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"DataProviderError"'
+  - name: unknown
+    uid: 'excel!Excel.FieldErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: >-
+      An unknown type of error. Displays as error type \#FIELD! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Unknown"'
+  - name: webImageMissingFilePart
+    uid: 'excel!Excel.FieldErrorCellValueSubType.webImageMissingFilePart:member'
+    package: excel!
+    summary: >-
+      An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro
+      package. Displays as error type \#FIELD! in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"WebImageMissingFilePart"'
