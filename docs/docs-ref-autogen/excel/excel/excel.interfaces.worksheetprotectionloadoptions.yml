@@ -23,6 +23,48 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: canPauseProtection
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#canPauseProtection:member'
+    package: excel!
+    fullName: canPauseProtection
+    summary: Specifies if protection can be paused for this worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'canPauseProtection?: boolean;'
+      return:
+        type: boolean
+  - name: isPasswordProtected
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#isPasswordProtected:member'
+    package: excel!
+    fullName: isPasswordProtected
+    summary: Specifies if the sheet is password protected.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPasswordProtected?: boolean;'
+      return:
+        type: boolean
+  - name: isPaused
+    uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#isPaused:member'
+    package: excel!
+    fullName: isPaused
+    summary: Specifies if worksheet protection is paused.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'isPaused?: boolean;'
+      return:
+        type: boolean
   - name: options
     uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions#options:member'
     package: excel!

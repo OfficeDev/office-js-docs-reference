@@ -110,7 +110,7 @@ methods:
     uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     package: excel!
     fullName: clearCriteria()
-    summary: Clears the filter criteria of the AutoFilter.
+    summary: Clears the filter criteria and sort state of the AutoFilter.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

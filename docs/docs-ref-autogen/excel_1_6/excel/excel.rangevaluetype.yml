@@ -35,11 +35,6 @@ fields:
     package: excel!
     summary: ''
     value: '"Integer"'
-  - name: richValue
-    uid: 'excel!Excel.RangeValueType.richValue:member'
-    package: excel!
-    summary: ''
-    value: '"RichValue"'
   - name: string
     uid: 'excel!Excel.RangeValueType.string:member'
     package: excel!

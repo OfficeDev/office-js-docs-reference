@@ -131,7 +131,7 @@ methods:
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-

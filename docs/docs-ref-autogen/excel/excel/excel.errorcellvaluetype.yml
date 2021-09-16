@@ -1,0 +1,155 @@
+### YamlMime:TSEnum
+name: Excel.ErrorCellValueType
+uid: 'excel!Excel.ErrorCellValueType:enum'
+package: excel!
+fullName: Excel.ErrorCellValueType
+summary: >-
+  Represents the types of the `ErrorCellValue` object.
+
+
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: blocked
+    uid: 'excel!Excel.ErrorCellValueType.blocked:member'
+    package: excel!
+    summary: >-
+      Represents a `BlockedErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Blocked"'
+  - name: busy
+    uid: 'excel!Excel.ErrorCellValueType.busy:member'
+    package: excel!
+    summary: >-
+      Represents a `BusyErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Busy"'
+  - name: calc
+    uid: 'excel!Excel.ErrorCellValueType.calc:member'
+    package: excel!
+    summary: >-
+      Represents a `CalcErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Calc"'
+  - name: connect
+    uid: 'excel!Excel.ErrorCellValueType.connect:member'
+    package: excel!
+    summary: >-
+      Represents a `ConnectErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Connect"'
+  - name: div0
+    uid: 'excel!Excel.ErrorCellValueType.div0:member'
+    package: excel!
+    summary: >-
+      Represents a `Div0ErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Div0"'
+  - name: field
+    uid: 'excel!Excel.ErrorCellValueType.field:member'
+    package: excel!
+    summary: >-
+      Represents a `FieldErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Field"'
+  - name: gettingData
+    uid: 'excel!Excel.ErrorCellValueType.gettingData:member'
+    package: excel!
+    summary: >-
+      Represents a `GettingDataErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"GettingData"'
+  - name: na
+    uid: 'excel!Excel.ErrorCellValueType.na:member'
+    package: excel!
+    summary: >-
+      Represents a `NaErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Na"'
+  - name: name
+    uid: 'excel!Excel.ErrorCellValueType.name:member'
+    package: excel!
+    summary: >-
+      Represents a `NameErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Name"'
+  - name: 'null'
+    uid: 'excel!Excel.ErrorCellValueType.null:member'
+    package: excel!
+    summary: >-
+      Represents a `NullErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Null"'
+  - name: num
+    uid: 'excel!Excel.ErrorCellValueType.num:member'
+    package: excel!
+    summary: >-
+      Represents a `NumErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Num"'
+  - name: ref
+    uid: 'excel!Excel.ErrorCellValueType.ref:member'
+    package: excel!
+    summary: >-
+      Represents a `RefErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Ref"'
+  - name: spill
+    uid: 'excel!Excel.ErrorCellValueType.spill:member'
+    package: excel!
+    summary: >-
+      Represents a `SpillErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Spill"'
+  - name: value
+    uid: 'excel!Excel.ErrorCellValueType.value:member'
+    package: excel!
+    summary: >-
+      Represents a `ValueErrorCellValue`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    value: '"Value"'

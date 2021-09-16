@@ -169,12 +169,10 @@ properties:
     package: excel!
     fullName: linkedWorkbooks
     summary: >-
-      Returns a collection of linked workbooks. In formulas, the workbook links can used to reference data (cell values
-      and names) outside of the current workbook.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      Returns a collection of linked workbooks. In formulas, the workbook links can be used to reference data (cell
+      values and names) outside of the current workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly linkedWorkbooks: Excel.LinkedWorkbookCollection;'
@@ -781,7 +779,7 @@ methods:
     summary: |-
       Inserts the specified worksheets from a source workbook into the current workbook.
 
-      *Note**: This API is currently only supported for Office on Windows, Mac and Online.
+      *Note**: This API is currently only supported for Office on Windows, Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 
@@ -854,7 +852,7 @@ methods:
           type: '<xref uid="excel!Excel.InsertWorksheetOptions:interface" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
-        description: An array of ids corresponding to each newly inserted worksheet.
+        description: An array of IDs corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: 'excel!Excel.Workbook#load:member(1)'
     package: excel!

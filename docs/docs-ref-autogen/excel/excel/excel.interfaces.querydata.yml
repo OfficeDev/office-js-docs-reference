@@ -31,7 +31,7 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryData#loadedTo:member'
     package: excel!
     fullName: loadedTo
-    summary: Gets the query 'loaded to' object type.
+    summary: Gets the query loaded to object type.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -45,7 +45,7 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryData#loadedToDataModel:member'
     package: excel!
     fullName: loadedToDataModel
-    summary: Specifies if the query loaded to the Data Model.
+    summary: Specifies if the query loaded to the data model.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

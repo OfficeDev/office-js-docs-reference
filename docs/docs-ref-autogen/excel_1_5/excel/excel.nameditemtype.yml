@@ -10,11 +10,6 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 fields:
-  - name: array
-    uid: 'excel!Excel.NamedItemType.array:member'
-    package: excel!
-    summary: ''
-    value: '"Array"'
   - name: boolean
     uid: 'excel!Excel.NamedItemType.boolean:member'
     package: excel!

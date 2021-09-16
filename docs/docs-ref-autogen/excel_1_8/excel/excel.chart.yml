@@ -448,9 +448,7 @@ methods:
           description: Optional. The desired height of the resulting image.
           type: number
         - id: fittingMode
-          description: >-
-            Optional. The method used to scale the chart to the specified to the specified dimensions (if both height
-            and width are set).
+          description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
@@ -477,9 +475,7 @@ methods:
           description: Optional. The desired height of the resulting image.
           type: number
         - id: fittingModeString
-          description: >-
-            Optional. The method used to scale the chart to the specified to the specified dimensions (if both height
-            and width are set).
+          description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'

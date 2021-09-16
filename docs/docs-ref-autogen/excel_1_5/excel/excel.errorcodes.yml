@@ -123,6 +123,11 @@ fields:
     package: excel!
     summary: ''
     value: '"RequestAborted"'
+  - name: responsePayloadSizeLimitExceeded
+    uid: 'excel!Excel.ErrorCodes.responsePayloadSizeLimitExceeded:member'
+    package: excel!
+    summary: ''
+    value: '"ResponsePayloadSizeLimitExceeded"'
   - name: unsupportedFeature
     uid: 'excel!Excel.ErrorCodes.unsupportedFeature:member'
     package: excel!

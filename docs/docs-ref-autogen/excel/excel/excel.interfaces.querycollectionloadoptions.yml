@@ -43,7 +43,7 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryCollectionLoadOptions#loadedTo:member'
     package: excel!
     fullName: loadedTo
-    summary: 'For EACH ITEM in the collection: Gets the query ''loaded to'' object type.'
+    summary: 'For EACH ITEM in the collection: Gets the query loaded to object type.'
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -57,7 +57,7 @@ properties:
     uid: 'excel!Excel.Interfaces.QueryCollectionLoadOptions#loadedToDataModel:member'
     package: excel!
     fullName: loadedToDataModel
-    summary: 'For EACH ITEM in the collection: Specifies if the query loaded to the Data Model.'
+    summary: 'For EACH ITEM in the collection: Specifies if the query loaded to the data model.'
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
