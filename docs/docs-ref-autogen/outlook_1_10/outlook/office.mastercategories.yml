@@ -13,10 +13,10 @@ summary: >-
 
   **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add
   or remove categories.
-
-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadWriteMailbox`
@@ -36,10 +36,10 @@ methods:
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -114,10 +114,10 @@ methods:
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -155,11 +155,11 @@ methods:
     uid: 'outlook!Office.MasterCategories#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: |-
-      Gets the master list of categories on a mailbox.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the master list of categories on a mailbox.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -195,11 +195,11 @@ methods:
     uid: 'outlook!Office.MasterCategories#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: |-
-      Gets the master list of categories on a mailbox.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the master list of categories on a mailbox.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -252,11 +252,11 @@ methods:
     uid: 'outlook!Office.MasterCategories#removeAsync:member(1)'
     package: outlook!
     fullName: 'removeAsync(categories, options, callback)'
-    summary: |-
-      Removes categories from the master list on a mailbox.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Removes categories from the master list on a mailbox.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -321,11 +321,11 @@ methods:
     uid: 'outlook!Office.MasterCategories#removeAsync:member(2)'
     package: outlook!
     fullName: 'removeAsync(categories, callback)'
-    summary: |-
-      Removes categories from the master list on a mailbox.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Removes categories from the master list on a mailbox.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`

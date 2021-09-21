@@ -3,11 +3,11 @@ name: Office.MailboxEnums.AttachmentContentFormat
 uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentContentFormat
-summary: |-
-  Specifies the formatting that applies to an attachment's content.
-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Specifies the formatting that applies to an attachment's content.
 remarks: >-
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read

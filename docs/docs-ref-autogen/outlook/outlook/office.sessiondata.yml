@@ -3,11 +3,11 @@ name: Office.SessionData
 uid: 'outlook!Office.SessionData:interface'
 package: outlook!
 fullName: Office.SessionData
-summary: |-
-  Provides methods to manage an item's session data.
-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Provides methods to manage an item's session data.
 remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -24,11 +24,11 @@ methods:
     uid: 'outlook!Office.SessionData#clearAsync:member(1)'
     package: outlook!
     fullName: 'clearAsync(options, callback)'
-    summary: |-
-      Clears all session data key-value pairs.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Clears all session data key-value pairs.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -80,11 +80,11 @@ methods:
     uid: 'outlook!Office.SessionData#clearAsync:member(2)'
     package: outlook!
     fullName: clearAsync(callback)
-    summary: |-
-      Clears all session data key-value pairs.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Clears all session data key-value pairs.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -110,11 +110,11 @@ methods:
     uid: 'outlook!Office.SessionData#getAllAsync:member(1)'
     package: outlook!
     fullName: getAllAsync(callback)
-    summary: |-
-      Gets all session data key-value pairs.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets all session data key-value pairs.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -159,11 +159,11 @@ methods:
     uid: 'outlook!Office.SessionData#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(name, callback)'
-    summary: |-
-      Gets the session data value of the specified key.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the session data value of the specified key.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -213,11 +213,11 @@ methods:
     uid: 'outlook!Office.SessionData#removeAsync:member(1)'
     package: outlook!
     fullName: 'removeAsync(name, options, callback)'
-    summary: |-
-      Removes a session data key-value pair.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Removes a session data key-value pair.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -275,11 +275,11 @@ methods:
     uid: 'outlook!Office.SessionData#removeAsync:member(2)'
     package: outlook!
     fullName: 'removeAsync(name, callback)'
-    summary: |-
-      Removes a session data key-value pair.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Removes a session data key-value pair.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -308,11 +308,11 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(name, value, options, callback)'
-    summary: |-
-      Sets a session data key-value pair.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets a session data key-value pair.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -373,11 +373,11 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(name, value, callback)'
-    summary: |-
-      Sets a session data key-value pair.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets a session data key-value pair.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

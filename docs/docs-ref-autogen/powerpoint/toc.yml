@@ -15,24 +15,56 @@ items:
           - name: Enums
             uid: ''
             items:
+              - name: ConnectorType
+                uid: 'powerpoint!PowerPoint.ConnectorType:enum'
               - name: ErrorCodes
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
+              - name: GeometricShapeType
+                uid: 'powerpoint!PowerPoint.GeometricShapeType:enum'
               - name: InsertSlideFormatting
                 uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
+              - name: ParagraphHorizontalAlignment
+                uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum'
+              - name: ShapeAutoSize
+                uid: 'powerpoint!PowerPoint.ShapeAutoSize:enum'
+              - name: ShapeFillType
+                uid: 'powerpoint!PowerPoint.ShapeFillType:enum'
+              - name: ShapeFontUnderlineStyle
+                uid: 'powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum'
+              - name: ShapeLineDashStyle
+                uid: 'powerpoint!PowerPoint.ShapeLineDashStyle:enum'
+              - name: ShapeLineStyle
+                uid: 'powerpoint!PowerPoint.ShapeLineStyle:enum'
+              - name: ShapeType
+                uid: 'powerpoint!PowerPoint.ShapeType:enum'
+              - name: TextVerticalAlignment
+                uid: 'powerpoint!PowerPoint.TextVerticalAlignment:enum'
           - name: AddSlideOptions
             uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
           - name: Application
             uid: 'powerpoint!PowerPoint.Application:class'
+          - name: BulletFormat
+            uid: 'powerpoint!PowerPoint.BulletFormat:class'
           - name: InsertSlideOptions
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
+          - name: ParagraphFormat
+            uid: 'powerpoint!PowerPoint.ParagraphFormat:class'
           - name: Presentation
             uid: 'powerpoint!PowerPoint.Presentation:class'
           - name: RequestContext
             uid: 'powerpoint!PowerPoint.RequestContext:class'
           - name: Shape
             uid: 'powerpoint!PowerPoint.Shape:class'
+          - name: ShapeAddOptions
+            uid: 'powerpoint!PowerPoint.ShapeAddOptions:interface'
           - name: ShapeCollection
             uid: 'powerpoint!PowerPoint.ShapeCollection:class'
+          - name: ShapeFill
+            uid: 'powerpoint!PowerPoint.ShapeFill:class'
+          - name: ShapeFont
+            uid: 'powerpoint!PowerPoint.ShapeFont:class'
+          - name: ShapeLineFormat
+            uid: 'powerpoint!PowerPoint.ShapeLineFormat:class'
           - name: Slide
             uid: 'powerpoint!PowerPoint.Slide:class'
           - name: SlideCollection
@@ -49,6 +81,10 @@ items:
             uid: 'powerpoint!PowerPoint.Tag:class'
           - name: TagCollection
             uid: 'powerpoint!PowerPoint.TagCollection:class'
+          - name: TextFrame
+            uid: 'powerpoint!PowerPoint.TextFrame:class'
+          - name: TextRange
+            uid: 'powerpoint!PowerPoint.TextRange:class'
       - name: Visio
         href: /javascript/api/visio
       - name: Word

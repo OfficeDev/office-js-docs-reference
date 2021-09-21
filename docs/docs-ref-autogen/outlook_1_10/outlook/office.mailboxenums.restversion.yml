@@ -3,11 +3,11 @@ name: Office.MailboxEnums.RestVersion
 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
 package: outlook!
 fullName: Office.MailboxEnums.RestVersion
-summary: |-
-  Specifies the version of the REST API that corresponds to a REST-formatted item ID.
-
-  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Specifies the version of the REST API that corresponds to a REST-formatted item ID.
 remarks: >-
+  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read

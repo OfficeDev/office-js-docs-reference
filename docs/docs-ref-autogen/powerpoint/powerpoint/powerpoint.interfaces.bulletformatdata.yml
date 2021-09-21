@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.BulletFormatData
+uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.BulletFormatData
+summary: An interface describing the data returned by calling `bulletFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: visible
+    uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatData#visible:member'
+    package: powerpoint!
+    fullName: visible
+    summary: >-
+      Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments
+      with different bullet visibility values.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

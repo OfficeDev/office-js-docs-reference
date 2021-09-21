@@ -3,11 +3,11 @@ name: Office.EnhancedLocation
 uid: 'outlook!Office.EnhancedLocation:interface'
 package: outlook!
 fullName: Office.EnhancedLocation
-summary: |-
-  Represents the set of locations on an appointment.
-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Represents the set of locations on an appointment.
 remarks: >-
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -24,11 +24,11 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#addAsync:member(1)'
     package: outlook!
     fullName: 'addAsync(locationIdentifiers, options, callback)'
-    summary: |-
-      Adds to the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Adds to the set of locations associated with the appointment.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -101,11 +101,11 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#addAsync:member(2)'
     package: outlook!
     fullName: 'addAsync(locationIdentifiers, callback)'
-    summary: |-
-      Adds to the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Adds to the set of locations associated with the appointment.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -143,11 +143,11 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: |-
-      Gets the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the set of locations associated with the appointment.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -211,11 +211,11 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: |-
-      Gets the set of locations associated with the appointment.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the set of locations associated with the appointment.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -249,10 +249,10 @@ methods:
 
       If there are multiple locations with the same name, all matching locations will be removed even if only one was
       specified in `locationIdentifiers`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -325,10 +325,10 @@ methods:
 
       If there are multiple locations with the same name, all matching locations will be removed even if only one was
       specified in `locationIdentifiers`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`

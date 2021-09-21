@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: PowerPoint.ParagraphHorizontalAlignment
+uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum'
+package: powerpoint!
+fullName: PowerPoint.ParagraphHorizontalAlignment
+summary: >-
+  Represents the horizontal alignment of the [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) in a
+  [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->.
+
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.center:member'
+    package: powerpoint!
+    summary: Align text in the center.
+    value: '"Center"'
+  - name: distributed
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.distributed:member'
+    package: powerpoint!
+    summary: Distributes the text words across an entire text line.
+    value: '"Distributed"'
+  - name: justify
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.justify:member'
+    package: powerpoint!
+    summary: Align text so that it is justified across the whole line.
+    value: '"Justify"'
+  - name: justifyLow
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.justifyLow:member'
+    package: powerpoint!
+    summary: Specifies the alignment or adjustment of kashida length in Arabic text.
+    value: '"JustifyLow"'
+  - name: left
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.left:member'
+    package: powerpoint!
+    summary: Align text to the left margin.
+    value: '"Left"'
+  - name: right
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.right:member'
+    package: powerpoint!
+    summary: Align text to the right margin.
+    value: '"Right"'
+  - name: thaiDistributed
+    uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.thaiDistributed:member'
+    package: powerpoint!
+    summary: 'Distributes Thai text specially, because each character is treated as a word.'
+    value: '"ThaiDistributed"'

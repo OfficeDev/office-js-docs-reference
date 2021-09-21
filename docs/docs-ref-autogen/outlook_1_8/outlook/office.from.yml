@@ -3,11 +3,11 @@ name: Office.From
 uid: 'outlook!Office.From:interface'
 package: outlook!
 fullName: Office.From
-summary: |-
-  Provides a method to get the from value of a message in an Outlook add-in.
-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Provides a method to get the from value of a message in an Outlook add-in.
 remarks: >-
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -33,10 +33,10 @@ methods:
 
       The from value of the item is provided as an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -101,10 +101,10 @@ methods:
 
       The from value of the item is provided as an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the `asyncResult.value` property.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

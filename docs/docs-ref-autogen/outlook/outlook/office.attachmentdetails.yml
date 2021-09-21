@@ -7,9 +7,10 @@ summary: |-
   Represents an attachment on an item from the server. Read mode only.
 
   An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
