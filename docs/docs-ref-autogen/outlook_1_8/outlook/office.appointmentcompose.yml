@@ -29,11 +29,11 @@ properties:
     uid: 'outlook!Office.AppointmentCompose#body:member'
     package: outlook!
     fullName: body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -77,11 +77,11 @@ properties:
     uid: 'outlook!Office.AppointmentCompose#categories:member'
     package: outlook!
     fullName: categories
-    summary: |-
-      Gets an object that provides methods for managing the item's categories.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets an object that provides methods for managing the item's categories.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -290,10 +290,10 @@ properties:
       Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
       [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object that provides methods to get, remove, or
       add locations on an item.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -504,11 +504,11 @@ properties:
     uid: 'outlook!Office.AppointmentCompose#notificationMessages:member'
     package: outlook!
     fullName: notificationMessages
-    summary: |-
-      Gets the notification messages for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the notification messages for an item.
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -719,10 +719,10 @@ properties:
 
       The `organizer` property returns an [Organizer](xref:outlook!Office.Organizer:interface) object that provides a
       method to get the organizer value.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -775,10 +775,10 @@ properties:
 
       **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
       request of a single appointment and NOT a part of a series.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -987,10 +987,10 @@ properties:
 
       The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
       items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1179,10 +1179,10 @@ methods:
       **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1295,10 +1295,10 @@ methods:
       **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1365,10 +1365,10 @@ methods:
       **Note**: If you're using a data URL API (e.g., `readAsDataURL`<!-- -->), you need to strip out the data URL
       prefix then send the rest of the string to this API. For example, if the full string is represented by
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1493,10 +1493,10 @@ methods:
       **Note**: If you're using a data URL API (e.g., `readAsDataURL`<!-- -->), you need to strip out the data URL
       prefix then send the rest of the string to this API. For example, if the full string is represented by
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1553,10 +1553,10 @@ methods:
       For supported events, refer to the Item object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1624,10 +1624,10 @@ methods:
       For supported events, refer to the Item object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1680,10 +1680,10 @@ methods:
 
       If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
       items other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1793,10 +1793,10 @@ methods:
 
       If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
       items other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1854,10 +1854,10 @@ methods:
       **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using
       `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
       item was last saved.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -1899,10 +1899,10 @@ methods:
       retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
       attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2012,10 +2012,10 @@ methods:
       retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
       attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2060,11 +2060,11 @@ methods:
     uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)'
     package: outlook!
     fullName: 'getAttachmentsAsync(options, callback)'
-    summary: |-
-      Gets the item's attachments as an array.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the item's attachments as an array.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2127,11 +2127,11 @@ methods:
     uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(2)'
     package: outlook!
     fullName: getAttachmentsAsync(callback)
-    summary: |-
-      Gets the item's attachments as an array.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the item's attachments as an array.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2170,10 +2170,10 @@ methods:
       **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
       EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2222,10 +2222,10 @@ methods:
       **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
       EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2288,10 +2288,10 @@ methods:
       To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the
       `source` property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be
       either `body` or `subject`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2364,10 +2364,10 @@ methods:
       To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the
       `source` property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be
       either `body` or `subject`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2431,10 +2431,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2531,10 +2531,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2710,10 +2710,10 @@ methods:
       that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -2806,10 +2806,10 @@ methods:
       that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -2857,10 +2857,10 @@ methods:
       For supported events, refer to the Item object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2904,10 +2904,10 @@ methods:
       For supported events, refer to the Item object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2962,10 +2962,10 @@ methods:
       in Outlook for Mac by using Office JS
       API](https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -3048,10 +3048,10 @@ methods:
       in Outlook for Mac by using Office JS
       API](https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -3118,10 +3118,10 @@ methods:
       The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
       the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
       or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -3211,10 +3211,10 @@ methods:
       The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
       the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
       or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`

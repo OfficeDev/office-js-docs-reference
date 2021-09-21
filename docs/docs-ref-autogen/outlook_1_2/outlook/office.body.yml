@@ -6,10 +6,10 @@ fullName: Office.Body
 summary: >-
   The body object provides methods for adding and updating the content of the message or appointment. It is returned in
   the body property of the selected item.
-
-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **Known issue with HTML table border colors**
 
 
@@ -34,11 +34,11 @@ methods:
     uid: 'outlook!Office.Body#getTypeAsync:member(1)'
     package: outlook!
     fullName: 'getTypeAsync(options, callback)'
-    summary: |-
-      Gets a value that indicates whether the content is in HTML or text format.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -90,11 +90,11 @@ methods:
     uid: 'outlook!Office.Body#getTypeAsync:member(2)'
     package: outlook!
     fullName: getTypeAsync(callback)
-    summary: |-
-      Gets a value that indicates whether the content is in HTML or text format.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets a value that indicates whether the content is in HTML or text format.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -139,10 +139,10 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -220,10 +220,10 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -271,10 +271,10 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
       (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -352,10 +352,10 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
       (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`

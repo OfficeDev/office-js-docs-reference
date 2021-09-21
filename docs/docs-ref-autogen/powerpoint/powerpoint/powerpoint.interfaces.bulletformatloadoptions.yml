@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.BulletFormatLoadOptions
+uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.BulletFormatLoadOptions
+summary: >-
+  Represents the bullet formatting properties of a text that is attached to the
+  [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!-- -->.
+
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#$all:member'
+    package: powerpoint!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions#visible:member'
+    package: powerpoint!
+    fullName: visible
+    summary: >-
+      Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments
+      with different bullet visibility values.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

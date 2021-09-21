@@ -3,11 +3,11 @@ name: Office.NotificationMessageDetails
 uid: 'outlook!Office.NotificationMessageDetails:interface'
 package: outlook!
 fullName: Office.NotificationMessageDetails
-summary: |-
-  An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
-
-  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
 remarks: >-
+  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`

@@ -3,11 +3,11 @@ name: Office.AttachmentContent
 uid: 'outlook!Office.AttachmentContent:interface'
 package: outlook!
 fullName: Office.AttachmentContent
-summary: |-
-  Represents the content of an attachment on a message or appointment item.
-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Represents the content of an attachment on a message or appointment item.
 remarks: >-
+  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`

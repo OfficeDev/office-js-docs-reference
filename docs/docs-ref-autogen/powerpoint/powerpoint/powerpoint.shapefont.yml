@@ -1,0 +1,224 @@
+### YamlMime:TSType
+name: PowerPoint.ShapeFont
+uid: 'powerpoint!PowerPoint.ShapeFont:class'
+package: powerpoint!
+fullName: PowerPoint.ShapeFont
+summary: |-
+  Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: bold
+    uid: 'powerpoint!PowerPoint.ShapeFont#bold:member'
+    package: powerpoint!
+    fullName: bold
+    summary: >-
+      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
+      fragments.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'powerpoint!PowerPoint.ShapeFont#color:member'
+    package: powerpoint!
+    fullName: color
+    summary: >-
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
+      `TextRange` includes text fragments with different colors.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'powerpoint!PowerPoint.ShapeFont#context:member'
+    package: powerpoint!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: italic
+    uid: 'powerpoint!PowerPoint.ShapeFont#italic:member'
+    package: powerpoint!
+    fullName: italic
+    summary: >-
+      Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text
+      fragments.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'powerpoint!PowerPoint.ShapeFont#name:member'
+    package: powerpoint!
+    fullName: name
+    summary: >-
+      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: size
+    uid: 'powerpoint!PowerPoint.ShapeFont#size:member'
+    package: powerpoint!
+    fullName: size
+    summary: >-
+      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
+      font sizes.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'size: number;'
+      return:
+        type: number
+  - name: underline
+    uid: 'powerpoint!PowerPoint.ShapeFont#underline:member'
+    package: powerpoint!
+    fullName: underline
+    summary: >-
+      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
+      underline styles. See
+      [PowerPoint.ShapeFontUnderlineStyle](xref:powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum) for details.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        underline: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
+        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
+        | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
+          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
+          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"
+methods:
+  - name: load(options)
+    uid: 'powerpoint!PowerPoint.ShapeFont#load:member(1)'
+    package: powerpoint!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.ShapeFontLoadOptions): PowerPoint.ShapeFont;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontLoadOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFont:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'powerpoint!PowerPoint.ShapeFont#load:member(2)'
+    package: powerpoint!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.ShapeFont;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFont:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'powerpoint!PowerPoint.ShapeFont#load:member(3)'
+    package: powerpoint!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.ShapeFont;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFont:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'powerpoint!PowerPoint.ShapeFont#toJSON:member(1)'
+    package: powerpoint!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original PowerPoint.ShapeFont object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeFontData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.ShapeFontData;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeFontData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

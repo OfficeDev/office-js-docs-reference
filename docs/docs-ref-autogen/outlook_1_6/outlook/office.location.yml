@@ -3,11 +3,11 @@ name: Office.Location
 uid: 'outlook!Office.Location:interface'
 package: outlook!
 fullName: Office.Location
-summary: |-
-  Provides methods to get and set the location of a meeting in an Outlook add-in.
-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Provides methods to get and set the location of a meeting in an Outlook add-in.
 remarks: >-
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -30,10 +30,10 @@ methods:
 
       The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
       The location of the appointment is provided as a string in the `asyncResult.value` property.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -90,10 +90,10 @@ methods:
 
       The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
       The location of the appointment is provided as a string in the `asyncResult.value` property.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -144,10 +144,10 @@ methods:
 
       The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -217,10 +217,10 @@ methods:
 
       The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment.
       Setting the location of an appointment overwrites the current location.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

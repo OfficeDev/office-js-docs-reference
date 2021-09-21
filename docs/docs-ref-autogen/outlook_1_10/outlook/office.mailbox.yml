@@ -173,11 +173,11 @@ properties:
     uid: 'outlook!Office.Mailbox#masterCategories:member'
     package: outlook!
     fullName: masterCategories
-    summary: |-
-      Gets an object that provides methods to manage the categories master list associated with a mailbox.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets an object that provides methods to manage the categories master list associated with a mailbox.
     remarks: >-
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
@@ -277,10 +277,10 @@ properties:
       [SharedProperties](https://docs.microsoft.com/javascript/api/outlook/office.sharedproperties?view=outlook-js-1.8)
       object (introduced in requirement set 1.8). For more information, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -379,10 +379,10 @@ methods:
       For supported events, refer to the Mailbox object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.10/office.context.mailbox#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -462,10 +462,10 @@ methods:
       For supported events, refer to the Mailbox object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.10/office.context.mailbox#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -512,10 +512,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -613,9 +613,10 @@ methods:
       Converts an item ID formatted for EWS into REST format.
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -844,10 +845,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -927,10 +928,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1045,10 +1046,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1129,10 +1130,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1264,10 +1265,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1366,10 +1367,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1410,10 +1411,10 @@ methods:
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
-
-
-      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1519,10 +1520,10 @@ methods:
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1649,10 +1650,10 @@ methods:
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
-
-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1799,10 +1800,10 @@ methods:
 
 
       **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1908,11 +1909,11 @@ methods:
 
       **Important**: For guidance on delegate or shared scenarios, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
+    remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2261,10 +2262,10 @@ methods:
       For supported events, refer to the Mailbox object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.10/office.context.mailbox#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -2306,10 +2307,10 @@ methods:
       For supported events, refer to the Mailbox object model [events
       section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.10/office.context.mailbox#events)<!--
       -->.
-
-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

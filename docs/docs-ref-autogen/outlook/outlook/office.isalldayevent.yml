@@ -3,11 +3,11 @@ name: Office.IsAllDayEvent
 uid: 'outlook!Office.IsAllDayEvent:interface'
 package: outlook!
 fullName: Office.IsAllDayEvent
-summary: |-
-  Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
 remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -24,11 +24,11 @@ methods:
     uid: 'outlook!Office.IsAllDayEvent#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: |-
-      Gets the boolean value indicating whether the event is all day or not.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -61,11 +61,11 @@ methods:
     uid: 'outlook!Office.IsAllDayEvent#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: |-
-      Gets the boolean value indicating whether the event is all day or not.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -110,11 +110,11 @@ methods:
     uid: 'outlook!Office.IsAllDayEvent#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(isAllDayEvent, options, callback)'
-    summary: |-
-      Sets the all-day event status of an appointment.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets the all-day event status of an appointment.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the
       Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.
 
@@ -173,11 +173,11 @@ methods:
     uid: 'outlook!Office.IsAllDayEvent#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(isAllDayEvent, callback)'
-    summary: |-
-      Sets the all-day event status of an appointment.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets the all-day event status of an appointment.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the
       Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.
 

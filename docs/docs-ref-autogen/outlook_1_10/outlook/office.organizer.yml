@@ -6,10 +6,10 @@ fullName: Office.Organizer
 summary: >-
   Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object
   provides a method to get the organizer value of an appointment in an Outlook add-in.
-
-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -30,10 +30,10 @@ methods:
       Gets the organizer value of an appointment as an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
       property.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -93,10 +93,10 @@ methods:
       Gets the organizer value of an appointment as an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
       property.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

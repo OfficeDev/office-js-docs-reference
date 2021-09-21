@@ -3,11 +3,8 @@ name: Office.InfobarDetails
 uid: 'outlook!Office.InfobarDetails:interface'
 package: outlook!
 fullName: Office.InfobarDetails
-summary: |-
-  Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
-
-  \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-remarks: ''
+summary: Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'outlook!Office.InfobarDetails#actionType:member'
     package: outlook!
     fullName: actionType
-    summary: |-
-      The action type. Currently, "Dismiss" is the only supported action.
-
-      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    summary: 'The action type. Currently, "Dismiss" is the only supported action.'
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'outlook!Office.InfobarDetails#infobarType:member'
     package: outlook!
     fullName: infobarType
-    summary: |-
-      The notification type.
-
-      \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    summary: The notification type.
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

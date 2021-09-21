@@ -36,10 +36,10 @@ properties:
 
       Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get
       or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object for more details.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -116,11 +116,11 @@ properties:
     uid: 'outlook!Office.MessageCompose#body:member'
     package: outlook!
     fullName: body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -494,10 +494,10 @@ methods:
       **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -634,10 +634,10 @@ methods:
       **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -705,10 +705,10 @@ methods:
 
       If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
       items other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -818,10 +818,10 @@ methods:
 
       If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to
       items other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -877,10 +877,10 @@ methods:
       To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
       property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
       `body` or `subject`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -953,10 +953,10 @@ methods:
       To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
       property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
       `body` or `subject`<!-- -->.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -1137,10 +1137,10 @@ methods:
       that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1233,10 +1233,10 @@ methods:
       that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1283,10 +1283,10 @@ methods:
       The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
       the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
       or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1376,10 +1376,10 @@ methods:
       The `setSelectedDataAsync` method inserts the specified string at the cursor location in the subject or body of
       the item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body
       or subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`

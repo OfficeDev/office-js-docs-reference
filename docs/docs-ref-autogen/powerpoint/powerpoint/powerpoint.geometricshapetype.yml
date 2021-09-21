@@ -1,0 +1,898 @@
+### YamlMime:TSEnum
+name: PowerPoint.GeometricShapeType
+uid: 'powerpoint!PowerPoint.GeometricShapeType:enum'
+package: powerpoint!
+fullName: PowerPoint.GeometricShapeType
+summary: |-
+  Specifies the shape type for a `GeometricShape` object.
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: accentBorderCallout1
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout1:member'
+    package: powerpoint!
+    summary: 'Callout: Line with Border and Accent Bar'
+    value: '"AccentBorderCallout1"'
+  - name: accentBorderCallout2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout2:member'
+    package: powerpoint!
+    summary: 'Callout: Bent Line with Border and Accent Bar'
+    value: '"AccentBorderCallout2"'
+  - name: accentBorderCallout3
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout3:member'
+    package: powerpoint!
+    summary: 'Callout: Double Bent Line with Border and Accent Bar'
+    value: '"AccentBorderCallout3"'
+  - name: accentCallout1
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentCallout1:member'
+    package: powerpoint!
+    summary: 'Callout: Line with Accent Bar'
+    value: '"AccentCallout1"'
+  - name: accentCallout2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentCallout2:member'
+    package: powerpoint!
+    summary: 'Callout: Bent Line with Accent Bar'
+    value: '"AccentCallout2"'
+  - name: accentCallout3
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.accentCallout3:member'
+    package: powerpoint!
+    summary: 'Callout: Double Bent Line with Accent Bar'
+    value: '"AccentCallout3"'
+  - name: actionButtonBackPrevious
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonBackPrevious:member'
+    package: powerpoint!
+    summary: 'Action Button: Go Back or Previous'
+    value: '"ActionButtonBackPrevious"'
+  - name: actionButtonBeginning
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonBeginning:member'
+    package: powerpoint!
+    summary: 'Action Button: Go to Beginning'
+    value: '"ActionButtonBeginning"'
+  - name: actionButtonBlank
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonBlank:member'
+    package: powerpoint!
+    summary: 'Action Button: Blank'
+    value: '"ActionButtonBlank"'
+  - name: actionButtonDocument
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonDocument:member'
+    package: powerpoint!
+    summary: 'Action Button: Document'
+    value: '"ActionButtonDocument"'
+  - name: actionButtonEnd
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonEnd:member'
+    package: powerpoint!
+    summary: 'Action Button: Go to End'
+    value: '"ActionButtonEnd"'
+  - name: actionButtonForwardNext
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonForwardNext:member'
+    package: powerpoint!
+    summary: 'Action Button: Go Forward or Next'
+    value: '"ActionButtonForwardNext"'
+  - name: actionButtonHelp
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonHelp:member'
+    package: powerpoint!
+    summary: 'Action Button: Help'
+    value: '"ActionButtonHelp"'
+  - name: actionButtonHome
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonHome:member'
+    package: powerpoint!
+    summary: 'Action Button: Go Home'
+    value: '"ActionButtonHome"'
+  - name: actionButtonInformation
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonInformation:member'
+    package: powerpoint!
+    summary: 'Action Button: Get Information'
+    value: '"ActionButtonInformation"'
+  - name: actionButtonMovie
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonMovie:member'
+    package: powerpoint!
+    summary: 'Action Button: Video'
+    value: '"ActionButtonMovie"'
+  - name: actionButtonReturn
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonReturn:member'
+    package: powerpoint!
+    summary: 'Action Button: Return'
+    value: '"ActionButtonReturn"'
+  - name: actionButtonSound
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.actionButtonSound:member'
+    package: powerpoint!
+    summary: 'Action Button: Sound'
+    value: '"ActionButtonSound"'
+  - name: arc
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.arc:member'
+    package: powerpoint!
+    summary: Arc
+    value: '"Arc"'
+  - name: bentArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.bentArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Bent'
+    value: '"BentArrow"'
+  - name: bentUpArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.bentUpArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Bent-Up'
+    value: '"BentUpArrow"'
+  - name: bevel
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.bevel:member'
+    package: powerpoint!
+    summary: 'Rectangle: Beveled'
+    value: '"Bevel"'
+  - name: blockArc
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.blockArc:member'
+    package: powerpoint!
+    summary: Block Arc
+    value: '"BlockArc"'
+  - name: borderCallout1
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.borderCallout1:member'
+    package: powerpoint!
+    summary: 'Callout: Line'
+    value: '"BorderCallout1"'
+  - name: borderCallout2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.borderCallout2:member'
+    package: powerpoint!
+    summary: 'Callout: Bent Line'
+    value: '"BorderCallout2"'
+  - name: borderCallout3
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.borderCallout3:member'
+    package: powerpoint!
+    summary: 'Callout: Double Bent Line'
+    value: '"BorderCallout3"'
+  - name: bracePair
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.bracePair:member'
+    package: powerpoint!
+    summary: Double Brace
+    value: '"BracePair"'
+  - name: bracketPair
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.bracketPair:member'
+    package: powerpoint!
+    summary: Double Bracket
+    value: '"BracketPair"'
+  - name: callout1
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.callout1:member'
+    package: powerpoint!
+    summary: 'Callout: Line with No Border'
+    value: '"Callout1"'
+  - name: callout2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.callout2:member'
+    package: powerpoint!
+    summary: 'Callout: Bent Line with No Border'
+    value: '"Callout2"'
+  - name: callout3
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.callout3:member'
+    package: powerpoint!
+    summary: 'Callout: Double Bent Line with No Border'
+    value: '"Callout3"'
+  - name: can
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.can:member'
+    package: powerpoint!
+    summary: Cylinder
+    value: '"Can"'
+  - name: chartPlus
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.chartPlus:member'
+    package: powerpoint!
+    summary: A Rectangle Divided Vertically and Horizontally into Four Quarters.
+    value: '"ChartPlus"'
+  - name: chartStar
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.chartStar:member'
+    package: powerpoint!
+    summary: A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.
+    value: '"ChartStar"'
+  - name: chartX
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.chartX:member'
+    package: powerpoint!
+    summary: A Rectangle Divided into Four Parts Along Diagonal Lines.
+    value: '"ChartX"'
+  - name: chevron
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.chevron:member'
+    package: powerpoint!
+    summary: 'Arrow: Chevron'
+    value: '"Chevron"'
+  - name: chord
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.chord:member'
+    package: powerpoint!
+    summary: Chord
+    value: '"Chord"'
+  - name: circularArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.circularArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Circular'
+    value: '"CircularArrow"'
+  - name: cloud
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.cloud:member'
+    package: powerpoint!
+    summary: Cloud
+    value: '"Cloud"'
+  - name: cloudCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.cloudCallout:member'
+    package: powerpoint!
+    summary: 'Thought Bubble: Cloud'
+    value: '"CloudCallout"'
+  - name: corner
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.corner:member'
+    package: powerpoint!
+    summary: L-Shape
+    value: '"Corner"'
+  - name: cornerTabs
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.cornerTabs:member'
+    package: powerpoint!
+    summary: Four Right Triangles that Define a Rectangular Shape
+    value: '"CornerTabs"'
+  - name: cube
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.cube:member'
+    package: powerpoint!
+    summary: Cube
+    value: '"Cube"'
+  - name: curvedDownArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.curvedDownArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Curved Down'
+    value: '"CurvedDownArrow"'
+  - name: curvedLeftArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.curvedLeftArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Curved Left'
+    value: '"CurvedLeftArrow"'
+  - name: curvedRightArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.curvedRightArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Curved Right'
+    value: '"CurvedRightArrow"'
+  - name: curvedUpArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.curvedUpArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Curved Up'
+    value: '"CurvedUpArrow"'
+  - name: decagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.decagon:member'
+    package: powerpoint!
+    summary: Decagon
+    value: '"Decagon"'
+  - name: diagonalStripe
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.diagonalStripe:member'
+    package: powerpoint!
+    summary: Diagonal Stripe
+    value: '"DiagonalStripe"'
+  - name: diamond
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.diamond:member'
+    package: powerpoint!
+    summary: Diamond
+    value: '"Diamond"'
+  - name: dodecagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.dodecagon:member'
+    package: powerpoint!
+    summary: Dodecagon
+    value: '"Dodecagon"'
+  - name: donut
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.donut:member'
+    package: powerpoint!
+    summary: 'Circle: Hollow'
+    value: '"Donut"'
+  - name: doubleWave
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.doubleWave:member'
+    package: powerpoint!
+    summary: Double Wave
+    value: '"DoubleWave"'
+  - name: downArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.downArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Down'
+    value: '"DownArrow"'
+  - name: downArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.downArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Down Arrow'
+    value: '"DownArrowCallout"'
+  - name: ellipse
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.ellipse:member'
+    package: powerpoint!
+    summary: Oval
+    value: '"Ellipse"'
+  - name: ellipseRibbon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon:member'
+    package: powerpoint!
+    summary: 'Ribbon: Curved and Tilted Down'
+    value: '"EllipseRibbon"'
+  - name: ellipseRibbon2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon2:member'
+    package: powerpoint!
+    summary: 'Ribbon: Curved and Tilted Up'
+    value: '"EllipseRibbon2"'
+  - name: flowChartAlternateProcess
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartAlternateProcess:member'
+    package: powerpoint!
+    summary: 'Flowchart: Alternate Process'
+    value: '"FlowChartAlternateProcess"'
+  - name: flowChartCollate
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartCollate:member'
+    package: powerpoint!
+    summary: 'Flowchart: Collate'
+    value: '"FlowChartCollate"'
+  - name: flowChartConnector
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartConnector:member'
+    package: powerpoint!
+    summary: 'Flowchart: Connector'
+    value: '"FlowChartConnector"'
+  - name: flowChartDecision
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartDecision:member'
+    package: powerpoint!
+    summary: 'Flowchart: Decision'
+    value: '"FlowChartDecision"'
+  - name: flowChartDelay
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartDelay:member'
+    package: powerpoint!
+    summary: 'Flowchart: Delay'
+    value: '"FlowChartDelay"'
+  - name: flowChartDisplay
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartDisplay:member'
+    package: powerpoint!
+    summary: 'Flowchart: Display'
+    value: '"FlowChartDisplay"'
+  - name: flowChartDocument
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartDocument:member'
+    package: powerpoint!
+    summary: 'Flowchart: Document'
+    value: '"FlowChartDocument"'
+  - name: flowChartExtract
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartExtract:member'
+    package: powerpoint!
+    summary: 'Flowchart: Extract'
+    value: '"FlowChartExtract"'
+  - name: flowChartInputOutput
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartInputOutput:member'
+    package: powerpoint!
+    summary: 'Flowchart: Data'
+    value: '"FlowChartInputOutput"'
+  - name: flowChartInternalStorage
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartInternalStorage:member'
+    package: powerpoint!
+    summary: 'Flowchart: Internal Storage'
+    value: '"FlowChartInternalStorage"'
+  - name: flowChartMagneticDisk
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDisk:member'
+    package: powerpoint!
+    summary: 'Flowchart: Magnetic Disk'
+    value: '"FlowChartMagneticDisk"'
+  - name: flowChartMagneticDrum
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDrum:member'
+    package: powerpoint!
+    summary: 'Flowchart: Direct Access Storage'
+    value: '"FlowChartMagneticDrum"'
+  - name: flowChartMagneticTape
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticTape:member'
+    package: powerpoint!
+    summary: 'Flowchart: Sequential Access Storage'
+    value: '"FlowChartMagneticTape"'
+  - name: flowChartManualInput
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartManualInput:member'
+    package: powerpoint!
+    summary: 'Flowchart: Manual Input'
+    value: '"FlowChartManualInput"'
+  - name: flowChartManualOperation
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartManualOperation:member'
+    package: powerpoint!
+    summary: 'Flowchart: Manual Operation'
+    value: '"FlowChartManualOperation"'
+  - name: flowChartMerge
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartMerge:member'
+    package: powerpoint!
+    summary: 'Flowchart: Merge'
+    value: '"FlowChartMerge"'
+  - name: flowChartMultidocument
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartMultidocument:member'
+    package: powerpoint!
+    summary: 'Flowchart: Multidocument'
+    value: '"FlowChartMultidocument"'
+  - name: flowChartOfflineStorage
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartOfflineStorage:member'
+    package: powerpoint!
+    summary: 'FlowChart: Offline Storage'
+    value: '"FlowChartOfflineStorage"'
+  - name: flowChartOffpageConnector
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartOffpageConnector:member'
+    package: powerpoint!
+    summary: 'Flowchart: Off-page Connector'
+    value: '"FlowChartOffpageConnector"'
+  - name: flowChartOnlineStorage
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartOnlineStorage:member'
+    package: powerpoint!
+    summary: 'Flowchart: Stored Data'
+    value: '"FlowChartOnlineStorage"'
+  - name: flowChartOr
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartOr:member'
+    package: powerpoint!
+    summary: 'Flowchart: Or'
+    value: '"FlowChartOr"'
+  - name: flowChartPredefinedProcess
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartPredefinedProcess:member'
+    package: powerpoint!
+    summary: 'Flowchart: Predefined Process'
+    value: '"FlowChartPredefinedProcess"'
+  - name: flowChartPreparation
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartPreparation:member'
+    package: powerpoint!
+    summary: 'Flowchart: Preparation'
+    value: '"FlowChartPreparation"'
+  - name: flowChartProcess
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartProcess:member'
+    package: powerpoint!
+    summary: 'Flowchart: Process'
+    value: '"FlowChartProcess"'
+  - name: flowChartPunchedCard
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedCard:member'
+    package: powerpoint!
+    summary: 'Flowchart: Card'
+    value: '"FlowChartPunchedCard"'
+  - name: flowChartPunchedTape
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedTape:member'
+    package: powerpoint!
+    summary: 'Flowchart: Punched Tape'
+    value: '"FlowChartPunchedTape"'
+  - name: flowChartSort
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartSort:member'
+    package: powerpoint!
+    summary: 'Flowchart: Sort'
+    value: '"FlowChartSort"'
+  - name: flowChartSummingJunction
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartSummingJunction:member'
+    package: powerpoint!
+    summary: 'Flowchart: Summing Junction'
+    value: '"FlowChartSummingJunction"'
+  - name: flowChartTerminator
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.flowChartTerminator:member'
+    package: powerpoint!
+    summary: 'Flowchart: Terminator'
+    value: '"FlowChartTerminator"'
+  - name: foldedCorner
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.foldedCorner:member'
+    package: powerpoint!
+    summary: 'Rectangle: Folded Corner'
+    value: '"FoldedCorner"'
+  - name: frame
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.frame:member'
+    package: powerpoint!
+    summary: Frame
+    value: '"Frame"'
+  - name: funnel
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.funnel:member'
+    package: powerpoint!
+    summary: Funnel
+    value: '"Funnel"'
+  - name: gear6
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.gear6:member'
+    package: powerpoint!
+    summary: 'Gear: A Gear with Six Teeth'
+    value: '"Gear6"'
+  - name: gear9
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.gear9:member'
+    package: powerpoint!
+    summary: 'Gear: A Gear with Nine Teeth'
+    value: '"Gear9"'
+  - name: halfFrame
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.halfFrame:member'
+    package: powerpoint!
+    summary: Half Frame
+    value: '"HalfFrame"'
+  - name: heart
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.heart:member'
+    package: powerpoint!
+    summary: Heart
+    value: '"Heart"'
+  - name: heptagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.heptagon:member'
+    package: powerpoint!
+    summary: Heptagon
+    value: '"Heptagon"'
+  - name: hexagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.hexagon:member'
+    package: powerpoint!
+    summary: Hexagon
+    value: '"Hexagon"'
+  - name: homePlate
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.homePlate:member'
+    package: powerpoint!
+    summary: 'Arrow: Pentagon'
+    value: '"HomePlate"'
+  - name: horizontalScroll
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.horizontalScroll:member'
+    package: powerpoint!
+    summary: 'Scroll: Horizontal'
+    value: '"HorizontalScroll"'
+  - name: irregularSeal1
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.irregularSeal1:member'
+    package: powerpoint!
+    summary: 'Explosion: 8 Points'
+    value: '"IrregularSeal1"'
+  - name: irregularSeal2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.irregularSeal2:member'
+    package: powerpoint!
+    summary: 'Explosion: 14 Points'
+    value: '"IrregularSeal2"'
+  - name: leftArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Left'
+    value: '"LeftArrow"'
+  - name: leftArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Left Arrow'
+    value: '"LeftArrowCallout"'
+  - name: leftBrace
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftBrace:member'
+    package: powerpoint!
+    summary: Left Brace
+    value: '"LeftBrace"'
+  - name: leftBracket
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftBracket:member'
+    package: powerpoint!
+    summary: Left Bracket
+    value: '"LeftBracket"'
+  - name: leftCircularArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftCircularArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Circular with Opposite Arrow Direction'
+    value: '"LeftCircularArrow"'
+  - name: leftRightArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftRightArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Left-Right'
+    value: '"LeftRightArrow"'
+  - name: leftRightArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftRightArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Left-Right Arrow'
+    value: '"LeftRightArrowCallout"'
+  - name: leftRightCircularArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftRightCircularArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Circular with Two Arrows in Both Directions'
+    value: '"LeftRightCircularArrow"'
+  - name: leftRightRibbon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftRightRibbon:member'
+    package: powerpoint!
+    summary: 'Ribbon: Straight with Both Left and Right Arrows'
+    value: '"LeftRightRibbon"'
+  - name: leftRightUpArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftRightUpArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Left-Right-Up'
+    value: '"LeftRightUpArrow"'
+  - name: leftUpArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.leftUpArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Left-Up'
+    value: '"LeftUpArrow"'
+  - name: lightningBolt
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.lightningBolt:member'
+    package: powerpoint!
+    summary: Lightning Bolt
+    value: '"LightningBolt"'
+  - name: lineInverse
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.lineInverse:member'
+    package: powerpoint!
+    summary: Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape
+    value: '"LineInverse"'
+  - name: mathDivide
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathDivide:member'
+    package: powerpoint!
+    summary: Division Sign
+    value: '"MathDivide"'
+  - name: mathEqual
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathEqual:member'
+    package: powerpoint!
+    summary: Equals
+    value: '"MathEqual"'
+  - name: mathMinus
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathMinus:member'
+    package: powerpoint!
+    summary: Minus Sign
+    value: '"MathMinus"'
+  - name: mathMultiply
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathMultiply:member'
+    package: powerpoint!
+    summary: Multiplication Sign
+    value: '"MathMultiply"'
+  - name: mathNotEqual
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathNotEqual:member'
+    package: powerpoint!
+    summary: Not Equal
+    value: '"MathNotEqual"'
+  - name: mathPlus
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.mathPlus:member'
+    package: powerpoint!
+    summary: Plus Sign
+    value: '"MathPlus"'
+  - name: moon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.moon:member'
+    package: powerpoint!
+    summary: Moon
+    value: '"Moon"'
+  - name: nonIsoscelesTrapezoid
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.nonIsoscelesTrapezoid:member'
+    package: powerpoint!
+    summary: Trapezoid which may have Non-Equal Sides
+    value: '"NonIsoscelesTrapezoid"'
+  - name: noSmoking
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.noSmoking:member'
+    package: powerpoint!
+    summary: '"Not Allowed" Symbol'
+    value: '"NoSmoking"'
+  - name: notchedRightArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.notchedRightArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Notched Right'
+    value: '"NotchedRightArrow"'
+  - name: octagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.octagon:member'
+    package: powerpoint!
+    summary: Octagon
+    value: '"Octagon"'
+  - name: parallelogram
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.parallelogram:member'
+    package: powerpoint!
+    summary: Parallelogram
+    value: '"Parallelogram"'
+  - name: pentagon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.pentagon:member'
+    package: powerpoint!
+    summary: Pentagon
+    value: '"Pentagon"'
+  - name: pie
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.pie:member'
+    package: powerpoint!
+    summary: Partial Circle with Adjustable Spanning Area
+    value: '"Pie"'
+  - name: pieWedge
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.pieWedge:member'
+    package: powerpoint!
+    summary: Partial Circle
+    value: '"PieWedge"'
+  - name: plaque
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.plaque:member'
+    package: powerpoint!
+    summary: Plaque
+    value: '"Plaque"'
+  - name: plaqueTabs
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.plaqueTabs:member'
+    package: powerpoint!
+    summary: Four Quarter Circles that Define a Rectangular Shape.
+    value: '"PlaqueTabs"'
+  - name: plus
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.plus:member'
+    package: powerpoint!
+    summary: Cross
+    value: '"Plus"'
+  - name: quadArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.quadArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Quad'
+    value: '"QuadArrow"'
+  - name: quadArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.quadArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Quad Arrow'
+    value: '"QuadArrowCallout"'
+  - name: rectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rectangle:member'
+    package: powerpoint!
+    summary: Rectangle
+    value: '"Rectangle"'
+  - name: ribbon
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.ribbon:member'
+    package: powerpoint!
+    summary: 'Ribbon: Tilted Down'
+    value: '"Ribbon"'
+  - name: ribbon2
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.ribbon2:member'
+    package: powerpoint!
+    summary: 'Ribbon: Tilted Up'
+    value: '"Ribbon2"'
+  - name: rightArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rightArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Right'
+    value: '"RightArrow"'
+  - name: rightArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rightArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Right Arrow'
+    value: '"RightArrowCallout"'
+  - name: rightBrace
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rightBrace:member'
+    package: powerpoint!
+    summary: Right Brace
+    value: '"RightBrace"'
+  - name: rightBracket
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rightBracket:member'
+    package: powerpoint!
+    summary: Right Bracket
+    value: '"RightBracket"'
+  - name: rightTriangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.rightTriangle:member'
+    package: powerpoint!
+    summary: Right Triangle
+    value: '"RightTriangle"'
+  - name: round1Rectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.round1Rectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Single Corner Rounded'
+    value: '"Round1Rectangle"'
+  - name: round2DiagonalRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.round2DiagonalRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Diagonal Corners Rounded'
+    value: '"Round2DiagonalRectangle"'
+  - name: round2SameRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.round2SameRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Top Corners Rounded'
+    value: '"Round2SameRectangle"'
+  - name: roundRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.roundRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Rounded Corners'
+    value: '"RoundRectangle"'
+  - name: smileyFace
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.smileyFace:member'
+    package: powerpoint!
+    summary: Smiley Face
+    value: '"SmileyFace"'
+  - name: snip1Rectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.snip1Rectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Single Corner Snipped'
+    value: '"Snip1Rectangle"'
+  - name: snip2DiagonalRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.snip2DiagonalRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Diagonal Corners Snipped'
+    value: '"Snip2DiagonalRectangle"'
+  - name: snip2SameRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.snip2SameRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Top Corners Snipped'
+    value: '"Snip2SameRectangle"'
+  - name: snipRoundRectangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.snipRoundRectangle:member'
+    package: powerpoint!
+    summary: 'Rectangle: Top Corners One Rounded and One Snipped'
+    value: '"SnipRoundRectangle"'
+  - name: squareTabs
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.squareTabs:member'
+    package: powerpoint!
+    summary: Four Small Squares that Define a Rectangular Shape.
+    value: '"SquareTabs"'
+  - name: star10
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star10:member'
+    package: powerpoint!
+    summary: 'Star: 10 Points'
+    value: '"Star10"'
+  - name: star12
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star12:member'
+    package: powerpoint!
+    summary: 'Star: 12 Points'
+    value: '"Star12"'
+  - name: star16
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star16:member'
+    package: powerpoint!
+    summary: 'Star: 16 Points'
+    value: '"Star16"'
+  - name: star24
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star24:member'
+    package: powerpoint!
+    summary: 'Star: 24 Points'
+    value: '"Star24"'
+  - name: star32
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star32:member'
+    package: powerpoint!
+    summary: 'Star: 32 Points'
+    value: '"Star32"'
+  - name: star4
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star4:member'
+    package: powerpoint!
+    summary: 'Star: 4 Points'
+    value: '"Star4"'
+  - name: star5
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star5:member'
+    package: powerpoint!
+    summary: 'Star: 5 Points'
+    value: '"Star5"'
+  - name: star6
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star6:member'
+    package: powerpoint!
+    summary: 'Star: 6 Points'
+    value: '"Star6"'
+  - name: star7
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star7:member'
+    package: powerpoint!
+    summary: 'Star: 7 Points'
+    value: '"Star7"'
+  - name: star8
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.star8:member'
+    package: powerpoint!
+    summary: 'Star: 8 Points'
+    value: '"Star8"'
+  - name: stripedRightArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.stripedRightArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Striped Right'
+    value: '"StripedRightArrow"'
+  - name: sun
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.sun:member'
+    package: powerpoint!
+    summary: Sun
+    value: '"Sun"'
+  - name: swooshArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.swooshArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Curved Right Arrow with Varying Width'
+    value: '"SwooshArrow"'
+  - name: teardrop
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.teardrop:member'
+    package: powerpoint!
+    summary: Teardrop
+    value: '"Teardrop"'
+  - name: trapezoid
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.trapezoid:member'
+    package: powerpoint!
+    summary: Trapezoid
+    value: '"Trapezoid"'
+  - name: triangle
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.triangle:member'
+    package: powerpoint!
+    summary: Isosceles Triangle
+    value: '"Triangle"'
+  - name: upArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.upArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Up'
+    value: '"UpArrow"'
+  - name: upArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.upArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Up Arrow'
+    value: '"UpArrowCallout"'
+  - name: upDownArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.upDownArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: Up-Down'
+    value: '"UpDownArrow"'
+  - name: upDownArrowCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.upDownArrowCallout:member'
+    package: powerpoint!
+    summary: 'Callout: Up-Down Arrow'
+    value: '"UpDownArrowCallout"'
+  - name: uturnArrow
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.uturnArrow:member'
+    package: powerpoint!
+    summary: 'Arrow: U-Turn'
+    value: '"UturnArrow"'
+  - name: verticalScroll
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.verticalScroll:member'
+    package: powerpoint!
+    summary: 'Scroll: Vertical'
+    value: '"VerticalScroll"'
+  - name: wave
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.wave:member'
+    package: powerpoint!
+    summary: Wave
+    value: '"Wave"'
+  - name: wedgeEllipseCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.wedgeEllipseCallout:member'
+    package: powerpoint!
+    summary: 'Speech Bubble: Oval'
+    value: '"WedgeEllipseCallout"'
+  - name: wedgeRectCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.wedgeRectCallout:member'
+    package: powerpoint!
+    summary: 'Speech Bubble: Rectangle'
+    value: '"WedgeRectCallout"'
+  - name: wedgeRRectCallout
+    uid: 'powerpoint!PowerPoint.GeometricShapeType.wedgeRRectCallout:member'
+    package: powerpoint!
+    summary: 'Speech Bubble: Rectangle with Corners Rounded'
+    value: '"WedgeRRectCallout"'

@@ -3,11 +3,8 @@ name: Office.RecurrenceChangedEventArgs
 uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
 package: outlook!
 fullName: Office.RecurrenceChangedEventArgs
-summary: |-
-  Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-remarks: ''
+summary: Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
+remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'outlook!Office.RecurrenceChangedEventArgs#recurrence:member'
     package: outlook!
     fullName: recurrence
-    summary: |-
-      Gets the updated recurrence object.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the updated recurrence object.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +28,7 @@ properties:
     summary: >-
       Gets the type of the event. For details, refer to
       [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

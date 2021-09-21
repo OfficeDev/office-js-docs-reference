@@ -201,10 +201,10 @@ methods:
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -302,9 +302,10 @@ methods:
       Converts an item ID formatted for EWS into REST format.
 
       **Note**: This method is not supported in Outlook on iOS or Android.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -679,11 +680,11 @@ methods:
 
       **Important**: For guidance on delegate or shared scenarios, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
+    remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

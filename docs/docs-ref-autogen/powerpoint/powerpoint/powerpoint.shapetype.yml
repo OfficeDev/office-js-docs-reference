@@ -1,0 +1,38 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeType
+uid: 'powerpoint!PowerPoint.ShapeType:enum'
+package: powerpoint!
+fullName: PowerPoint.ShapeType
+summary: |-
+  Specifies the type of a shape.
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: geometricShape
+    uid: 'powerpoint!PowerPoint.ShapeType.geometricShape:member'
+    package: powerpoint!
+    summary: The shape is a geometric shape such as rectangle
+    value: '"GeometricShape"'
+  - name: group
+    uid: 'powerpoint!PowerPoint.ShapeType.group:member'
+    package: powerpoint!
+    summary: The shape is a group shape which contains sub-shapes
+    value: '"Group"'
+  - name: image
+    uid: 'powerpoint!PowerPoint.ShapeType.image:member'
+    package: powerpoint!
+    summary: The shape is an image
+    value: '"Image"'
+  - name: line
+    uid: 'powerpoint!PowerPoint.ShapeType.line:member'
+    package: powerpoint!
+    summary: The shape is a line
+    value: '"Line"'
+  - name: unsupported
+    uid: 'powerpoint!PowerPoint.ShapeType.unsupported:member'
+    package: powerpoint!
+    summary: The given shape's type is unsupported.
+    value: '"Unsupported"'

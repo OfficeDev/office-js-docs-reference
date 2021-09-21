@@ -7,10 +7,10 @@ summary: >-
   The `Recurrence` object provides methods to get and set the recurrence pattern of appointments but only get the
   recurrence pattern of meeting requests. It will have a dictionary with the following keys: `seriesTime`<!-- -->,
   `recurrenceType`<!-- -->, `recurrenceProperties`<!-- -->, and `recurrenceTimeZone` (optional).
-
-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 remarks: >-
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -39,11 +39,11 @@ properties:
     uid: 'outlook!Office.Recurrence#recurrenceProperties:member'
     package: outlook!
     fullName: recurrenceProperties
-    summary: |-
-      Gets or sets the properties of the recurring appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -62,11 +62,11 @@ properties:
     uid: 'outlook!Office.Recurrence#recurrenceTimeZone:member'
     package: outlook!
     fullName: recurrenceTimeZone
-    summary: |-
-      Gets or sets the properties of the recurring appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets or sets the properties of the recurring appointment series.
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -85,11 +85,11 @@ properties:
     uid: 'outlook!Office.Recurrence#recurrenceType:member'
     package: outlook!
     fullName: recurrenceType
-    summary: |-
-      Gets or sets the type of the recurring appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets or sets the type of the recurring appointment series.
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -113,10 +113,10 @@ properties:
       the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
       time.** Instead, it is set in the time zone specified by the `recurrenceTimeZone` value or defaulted to the item's
       time zone.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -140,9 +140,10 @@ methods:
       Returns the current recurrence object of an appointment series.
 
       This method returns the entire `Recurrence` object for the appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -206,9 +207,10 @@ methods:
       Returns the current recurrence object of an appointment series.
 
       This method returns the entire `Recurrence` object for the appointment series.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -241,9 +243,10 @@ methods:
       Sets the recurrence pattern of an appointment series.
 
       **Note**: `setAsync` should only be available for series items and not instance items.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -348,9 +351,10 @@ methods:
       Sets the recurrence pattern of an appointment series.
 
       **Note**: `setAsync` should only be available for series items and not instance items.
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
