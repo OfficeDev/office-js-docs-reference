@@ -8,10 +8,9 @@ export declare namespace Office {
         
         /**
          * Specifies the formatting that applies to an attachment's content.
-         * 
-         * [Api set: Mailbox 1.8]
-         * 
+         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -36,9 +35,8 @@ export declare namespace Office {
         /**
          * Specifies whether an attachment was added to or removed from an item.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -85,9 +83,8 @@ export declare namespace Office {
          * **Note**: The actual color depends on how the Outlook client renders it.
          * In this case, the colors noted on each preset are for the Outlook desktop client.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -201,9 +198,8 @@ export declare namespace Office {
         /**
          * Specifies the day of week or type of day.
          *
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -252,9 +248,8 @@ export declare namespace Office {
         /**
          * This bitmask represents a delegate's permissions on a shared folder.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -326,9 +321,8 @@ export declare namespace Office {
         /**
          * Specifies the notification message type for an appointment or message.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -366,9 +360,8 @@ export declare namespace Office {
         /**
          * Specifies an appointment location's type.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -385,9 +378,8 @@ export declare namespace Office {
         /**
          * Specifies the month.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -462,9 +454,8 @@ export declare namespace Office {
         /**
          * Specifies the type of recipient for an appointment.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -489,9 +480,8 @@ export declare namespace Office {
         /**
          * Specifies the time zone applied to the recurrence.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1044,9 +1034,8 @@ export declare namespace Office {
         /**
          * Specifies the type of recurrence.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1104,9 +1093,8 @@ export declare namespace Office {
         /**
          * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1127,9 +1115,8 @@ export declare namespace Office {
         /**
          * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
          * 
-         * [Api set: Mailbox 1.2]
-         *
          * @remarks
+         * [Api set: Mailbox 1.2]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          */
@@ -1146,9 +1133,8 @@ export declare namespace Office {
         /**
          * Specifies the week of the month.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1216,9 +1202,8 @@ export declare namespace Office {
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1228,9 +1213,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for managing the item's categories.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1259,9 +1243,8 @@ export declare namespace Office {
          * Gets or sets the locations of the appointment. The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation}
          * object that provides methods to get, remove, or add locations on an item.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1294,9 +1277,8 @@ export declare namespace Office {
         /**
          * Gets the notification messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1322,9 +1304,8 @@ export declare namespace Office {
          * 
          * The `organizer` property returns an {@link Office.Organizer | Organizer} object that provides a method to get the organizer value.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1342,9 +1323,8 @@ export declare namespace Office {
          * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
          * appointment and NOT a part of a series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1379,9 +1359,8 @@ export declare namespace Office {
          * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests 
          * and returns `undefined` for any other items that are not meeting requests.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1432,9 +1411,8 @@ export declare namespace Office {
          * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1472,9 +1450,8 @@ export declare namespace Office {
          * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1508,9 +1485,8 @@ export declare namespace Office {
          * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1548,9 +1524,8 @@ export declare namespace Office {
          * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1579,9 +1554,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1602,9 +1576,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1630,9 +1603,8 @@ export declare namespace Office {
          * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1666,9 +1638,8 @@ export declare namespace Office {
          * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -1698,9 +1669,8 @@ export declare namespace Office {
          * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, 
          * discard, or cancel even if no changes have occurred since the item was last saved.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
@@ -1718,9 +1688,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1750,9 +1719,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1774,9 +1742,8 @@ export declare namespace Office {
         /**
          * Gets the item's attachments as an array.
          * 
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1792,9 +1759,8 @@ export declare namespace Office {
         /**
          * Gets the item's attachments as an array.
          * 
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1814,9 +1780,8 @@ export declare namespace Office {
          * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
          * Until the item is synced, the `itemId` is not recognized and using it returns an error.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1841,9 +1806,8 @@ export declare namespace Office {
          * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
          * Until the item is synced, the `itemId` is not recognized and using it returns an error.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1866,12 +1830,11 @@ export declare namespace Office {
          * To access the selected data from the callback method, call `asyncResult.value.data`. 
          * To access the `source` property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @returns
          * The selected data as a string with format determined by `coercionType`.
          *
          * @remarks
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1894,12 +1857,11 @@ export declare namespace Office {
          * To access the selected data from the callback method, call `asyncResult.value.data`. 
          * To access the `source` property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @returns
          * The selected data as a string with format determined by `coercionType`.
          *
          * @remarks
+         * [Api set: Mailbox 1.2]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1919,9 +1881,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1942,9 +1903,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -1989,9 +1949,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2019,9 +1978,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2044,9 +2002,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2065,9 +2022,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2097,9 +2053,8 @@ export declare namespace Office {
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2133,9 +2088,8 @@ export declare namespace Office {
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2156,9 +2110,8 @@ export declare namespace Office {
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
          * After insertion, the cursor is placed at the end of the inserted content.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @remarks
+         * [Api set: Mailbox 1.2]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2190,9 +2143,8 @@ export declare namespace Office {
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
          * After insertion, the cursor is placed at the end of the inserted content.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @remarks
+         * [Api set: Mailbox 1.2]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -2222,9 +2174,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2414,9 +2365,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2426,9 +2376,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for managing the item's categories.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2479,9 +2428,8 @@ export declare namespace Office {
          * The `enhancedLocation` property returns an {@link Office.EnhancedLocation | EnhancedLocation} object that allows you to get the set of locations
          * (each represented by a {@link Office.LocationDetails | LocationDetails} object) associated with the appointment.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2582,9 +2530,8 @@ export declare namespace Office {
         /**
          * Gets the notification messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2631,9 +2578,8 @@ export declare namespace Office {
          * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
          * appointment and NOT a part of a series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2686,9 +2632,8 @@ export declare namespace Office {
          * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests 
          * and returns `undefined` for any other items that are not meeting requests.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2716,9 +2661,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2739,9 +2683,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2812,9 +2755,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -2844,9 +2786,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3019,9 +2960,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @remarks
+         * [Api set: Mailbox 1.6]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3046,14 +2986,13 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
          * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule
          * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
          *
          * @remarks
+         * [Api set: Mailbox 1.6]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3068,9 +3007,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3091,9 +3029,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3133,9 +3070,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3154,9 +3090,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3171,24 +3106,28 @@ export declare namespace Office {
     /**
      * Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged` event. 
      * 
+     * @remarks
      * [Api set: Mailbox 1.7] 
      */ 
     export interface AppointmentTimeChangedEventArgs { 
         /** 
          * Gets the appointment end date and time. 
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         end: Date; 
         /** 
          * Gets the appointment start date and time. 
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         start: Date; 
         /** 
          * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         type: "olkAppointmentTimeChanged"; 
@@ -3196,9 +3135,8 @@ export declare namespace Office {
     /**
      * Represents the content of an attachment on a message or appointment item.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -3231,9 +3169,8 @@ export declare namespace Office {
      *
      * An array of `AttachmentDetailsCompose` objects is returned as the attachments property of an appointment or message item.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
@@ -3273,9 +3210,8 @@ export declare namespace Office {
      *
      * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
      *
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
@@ -3317,6 +3253,7 @@ export declare namespace Office {
     /**
      * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
      * 
+     * @remarks
      * [Api set: Mailbox 1.8]
      */ 
     export interface AttachmentsChangedEventArgs { 
@@ -3324,18 +3261,21 @@ export declare namespace Office {
          * Represents the set of attachments that were added or removed. 
          * For each such attachment, gets `id`, `name`, `size`, and `attachmentType` properties.
          * 
+         * @remarks
          * [Api set: Mailbox 1.8]
          */
         attachmentDetails: object[];
         /**
          * Gets whether the attachments were added or removed. For details, refer to {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.8]
          */ 
         attachmentStatus: MailboxEnums.AttachmentStatus | string;
         /**
          * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.8]
          */
         type: "olkAttachmentsChanged";
@@ -3344,9 +3284,8 @@ export declare namespace Office {
      * The body object provides methods for adding and updating the content of the message or appointment. 
      * It is returned in the body property of the selected item.
      *
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      *
      * **Known issue with HTML table border colors**
      *
@@ -3369,9 +3308,8 @@ export declare namespace Office {
          * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. 
          * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3393,9 +3331,8 @@ export declare namespace Office {
          * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously. 
          * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3409,9 +3346,8 @@ export declare namespace Office {
         /**
          * Gets a value that indicates whether the content is in HTML or text format.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3427,9 +3363,8 @@ export declare namespace Office {
         /**
          * Gets a value that indicates whether the content is in HTML or text format.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3453,9 +3388,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3486,9 +3420,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3513,9 +3446,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP" 
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3545,9 +3477,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP" 
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
@@ -3574,9 +3505,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3606,9 +3536,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3637,9 +3566,8 @@ export declare namespace Office {
      *
      * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -3652,9 +3580,8 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or appointment item in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3677,9 +3604,8 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or appointment item in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3704,14 +3630,13 @@ export declare namespace Office {
          *
          * - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If getting categories fails, the `asyncResult.error` property will contain an error code.
          *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3728,9 +3653,8 @@ export declare namespace Office {
          *
          * - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -3745,9 +3669,8 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3765,9 +3688,8 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -3782,9 +3704,8 @@ export declare namespace Office {
     /**
      * Represents a category's details like name and associated color.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4063,9 +3984,8 @@ export declare namespace Office {
     /**
      * Represents the set of locations on an appointment.
      * 
-     * [Api set: Mailbox 1.8]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4075,9 +3995,8 @@ export declare namespace Office {
         /**
          * Adds to the set of locations associated with the appointment.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4097,9 +4016,8 @@ export declare namespace Office {
         /**
          * Adds to the set of locations associated with the appointment.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4117,9 +4035,8 @@ export declare namespace Office {
         /**
          * Gets the set of locations associated with the appointment.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4134,9 +4051,8 @@ export declare namespace Office {
         /**
          * Gets the set of locations associated with the appointment.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4151,9 +4067,8 @@ export declare namespace Office {
          * 
          * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in `locationIdentifiers`.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4171,9 +4086,8 @@ export declare namespace Office {
          * 
          * If there are multiple locations with the same name, all matching locations will be removed even if only one was specified in `locationIdentifiers`.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4188,18 +4102,21 @@ export declare namespace Office {
     /**
      * Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
      * 
+     * @remarks
      * [Api set: Mailbox 1.8]
      */ 
     export interface EnhancedLocationsChangedEventArgs {
         /**
          * Gets the set of enhanced locations.
          * 
+         * @remarks
          * [Api set: Mailbox 1.8]
          */
         enhancedLocations: LocationDetails[];
         /**
          * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.8]
          */
         type: "olkEnhancedLocationsChanged";
@@ -4266,9 +4183,8 @@ export declare namespace Office {
     /**
      * Provides a method to get the from value of a message in an Outlook add-in.
      * 
-     * [Api set: Mailbox 1.7]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4282,9 +4198,8 @@ export declare namespace Office {
          * 
          * The from value of the item is provided as an {@link Office.EmailAddressDetails | EmailAddressDetails} in the `asyncResult.value` property.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4304,9 +4219,8 @@ export declare namespace Office {
          * 
          * The from value of the item is provided as an {@link Office.EmailAddressDetails | EmailAddressDetails} in the `asyncResult.value` property.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4329,9 +4243,8 @@ export declare namespace Office {
      * **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see
      * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **Recommended practices**
      * 
@@ -4356,9 +4269,8 @@ export declare namespace Office {
          * 
          * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4377,9 +4289,8 @@ export declare namespace Office {
          * 
          * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4395,9 +4306,8 @@ export declare namespace Office {
          * 
          * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4415,9 +4325,8 @@ export declare namespace Office {
          * 
          * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4436,9 +4345,8 @@ export declare namespace Office {
          *
          * **Note**: This method is intended to set the values of your custom headers.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4460,9 +4368,8 @@ export declare namespace Office {
          *
          * **Note**: This method is intended to set the values of your custom headers.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -4576,9 +4483,8 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the location of a meeting in an Outlook add-in.
      *
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4591,9 +4497,8 @@ export declare namespace Office {
          * The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
          * The location of the appointment is provided as a string in the `asyncResult.value` property.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4611,9 +4516,8 @@ export declare namespace Office {
          * The `getAsync` method starts an asynchronous call to the Exchange server to get the location of an appointment.
          * The location of the appointment is provided as a string in the `asyncResult.value` property.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4629,9 +4533,8 @@ export declare namespace Office {
          * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. 
          * Setting the location of an appointment overwrites the current location.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4654,9 +4557,8 @@ export declare namespace Office {
          * The `setAsync` method starts an asynchronous call to the Exchange server to set the location of an appointment. 
          * Setting the location of an appointment overwrites the current location.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4675,9 +4577,8 @@ export declare namespace Office {
     /**
      * Represents a location. Read-only.
      * 
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4700,9 +4601,8 @@ export declare namespace Office {
     /**
      * Represents the ID of a location.
      * 
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -4802,9 +4702,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods to manage the categories master list associated with a mailbox.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -4824,9 +4723,8 @@ export declare namespace Office {
          * (introduced in requirement set 1.8). For more information, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4848,9 +4746,8 @@ export declare namespace Office {
          * For supported events, refer to the Mailbox object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section}.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4870,9 +4767,8 @@ export declare namespace Office {
          * For supported events, refer to the Mailbox object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section}.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -4893,9 +4789,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
@@ -4932,9 +4827,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
@@ -5057,9 +4951,8 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @remarks
+         * [Api set: Mailbox 1.6]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5149,9 +5042,8 @@ export declare namespace Office {
          *
          * **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5196,9 +5088,8 @@ export declare namespace Office {
          * **Important**: For guidance on delegate or shared scenarios, see the
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
-         * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
-         *
          * @remarks
+         * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5305,9 +5196,8 @@ export declare namespace Office {
          * For supported events, refer to the Mailbox object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section}.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5325,9 +5215,8 @@ export declare namespace Office {
          * For supported events, refer to the Mailbox object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox#events | events section}.
          *
-         * [Api set: Mailbox 1.5]
-         *
          * @remarks
+         * [Api set: Mailbox 1.5]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5347,9 +5236,8 @@ export declare namespace Office {
      *
      * **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add or remove categories.
      * 
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
      * 
@@ -5359,9 +5247,8 @@ export declare namespace Office {
         /**
          * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5383,9 +5270,8 @@ export declare namespace Office {
         /**
          * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5405,9 +5291,8 @@ export declare namespace Office {
         /**
          * Gets the master list of categories on a mailbox.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5422,9 +5307,8 @@ export declare namespace Office {
         /**
          * Gets the master list of categories on a mailbox.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5437,9 +5321,8 @@ export declare namespace Office {
         /**
          * Removes categories from the master list on a mailbox.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5459,9 +5342,8 @@ export declare namespace Office {
         /**
          * Removes categories from the master list on a mailbox.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
          * 
@@ -5553,9 +5435,8 @@ export declare namespace Office {
          * Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get or update.
          * See the {@link Office.Recipients | Recipients} object for more details.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5565,9 +5446,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5579,9 +5459,8 @@ export declare namespace Office {
          *
          * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5625,9 +5504,8 @@ export declare namespace Office {
          *
          * The `from` property returns a `From` object that provides a method to get the from value.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5642,9 +5520,8 @@ export declare namespace Office {
          * To learn more, see
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5667,9 +5544,8 @@ export declare namespace Office {
         /**
          * Gets the notification messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5690,9 +5566,8 @@ export declare namespace Office {
          * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
          * and returns `undefined` for any other items that are not meeting requests.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5740,9 +5615,8 @@ export declare namespace Office {
          * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5779,9 +5653,8 @@ export declare namespace Office {
          * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
          * introduced with requirement set 1.8.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5814,9 +5687,8 @@ export declare namespace Office {
          * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5851,9 +5723,8 @@ export declare namespace Office {
          * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
          * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5880,9 +5751,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5903,9 +5773,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -5931,9 +5800,8 @@ export declare namespace Office {
          * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5966,9 +5834,8 @@ export declare namespace Office {
          * If your Office Add-in is running in Outlook on the web, the `addItemAttachmentAsync` method can attach items to items other than the item that 
          * you are editing; however, this is not supported and is not recommended.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -5997,9 +5864,8 @@ export declare namespace Office {
          * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, 
          * discard, or cancel even if no changes have occurred since the item was last saved.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
@@ -6017,9 +5883,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6049,9 +5914,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6073,9 +5937,8 @@ export declare namespace Office {
         /**
          * Gets the item's attachments as an array.
          * 
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6091,9 +5954,8 @@ export declare namespace Office {
         /**
          * Gets the item's attachments as an array.
          * 
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6115,9 +5977,8 @@ export declare namespace Office {
          * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
          * Until the item is synced, the `itemId` is not recognized and using it returns an error.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6142,9 +6003,8 @@ export declare namespace Office {
          * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
          * Until the item is synced, the `itemId` is not recognized and using it returns an error.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6167,12 +6027,11 @@ export declare namespace Office {
          * To access the selected data from the callback method, call `asyncResult.value.data`.
          * To access the source property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @returns
          * The selected data as a string with format determined by `coercionType`.
          *
          * @remarks
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6195,12 +6054,11 @@ export declare namespace Office {
          * To access the selected data from the callback method, call `asyncResult.value.data`.
          * To access the source property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @returns
          * The selected data as a string with format determined by `coercionType`.
          *
          * @remarks
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6220,9 +6078,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
          *
@@ -6253,9 +6110,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
          *
@@ -6310,9 +6166,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6340,9 +6195,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6365,9 +6219,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6386,9 +6239,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6414,9 +6266,8 @@ export declare namespace Office {
          * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the itemId will return an error.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6447,9 +6298,8 @@ export declare namespace Office {
          * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the `itemId` will return an error.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6470,9 +6320,8 @@ export declare namespace Office {
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
          * After insertion, the cursor is placed at the end of the inserted content.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @remarks
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6503,9 +6352,8 @@ export declare namespace Office {
          * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
          * After insertion, the cursor is placed at the end of the inserted content.
          *
-         * [Api set: Mailbox 1.2]
-         *
          * @remarks
+         * [Api set: Mailbox 1.2]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -6554,9 +6402,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6566,9 +6413,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods for managing the item's categories.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6780,9 +6626,8 @@ export declare namespace Office {
         /**
          * Gets the notification messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6802,9 +6647,8 @@ export declare namespace Office {
          * **Note**: If the `recurrence` object is null, this indicates that the object is a single appointment or a meeting request of a single appointment
          * and NOT a part of a series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6825,9 +6669,8 @@ export declare namespace Office {
          * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
          * and returns `undefined` for any other items that are not meeting requests.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6905,9 +6748,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6928,9 +6770,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -6998,9 +6839,8 @@ export declare namespace Office {
          * To learn more, see
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7021,9 +6861,8 @@ export declare namespace Office {
          * To learn more, see
          * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7045,9 +6884,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7077,9 +6915,8 @@ export declare namespace Office {
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
-         * [Api set: Mailbox 1.8]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7253,9 +7090,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @remarks
+         * [Api set: Mailbox 1.6]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7280,14 +7116,13 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
          * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or 
          * the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
          *
          * @remarks
+         * [Api set: Mailbox 1.6]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7302,9 +7137,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7324,9 +7158,8 @@ export declare namespace Office {
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * [Api set: Mailbox 1.8]
-         *
          * @remarks
+         * [Api set: Mailbox 1.8]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7364,9 +7197,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7385,9 +7217,8 @@ export declare namespace Office {
          * For supported events, refer to the Item object model
          * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item#events | events section}.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7403,9 +7234,8 @@ export declare namespace Office {
     /**
      * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
      *
-     * [Api set: Mailbox 1.3]
-     *
      * @remarks
+     * [Api set: Mailbox 1.3]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -7451,9 +7281,8 @@ export declare namespace Office {
     /**
      * The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
      *
-     * [Api set: Mailbox 1.3]
-     *
      * @remarks
+     * [Api set: Mailbox 1.3]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -7465,9 +7294,8 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7488,9 +7316,8 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7507,9 +7334,8 @@ export declare namespace Office {
         /**
          * Returns all keys and messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7524,9 +7350,8 @@ export declare namespace Office {
         /**
          * Returns all keys and messages for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7539,9 +7364,8 @@ export declare namespace Office {
         /**
          * Removes a notification message for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7557,9 +7381,8 @@ export declare namespace Office {
         /**
          * Removes a notification message for an item.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7575,9 +7398,8 @@ export declare namespace Office {
          *
          * If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7597,9 +7419,8 @@ export declare namespace Office {
          *
          * If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
          *
-         * [Api set: Mailbox 1.3]
-         *
          * @remarks
+         * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7617,9 +7438,8 @@ export declare namespace Office {
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. 
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
      * 
-     * [Api set: Mailbox 1.7]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -7630,9 +7450,8 @@ export declare namespace Office {
          * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails | EmailAddressDetails} object
          * in the `asyncResult.value` property.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7649,9 +7468,8 @@ export declare namespace Office {
          * Gets the organizer value of an appointment as an {@link Office.EmailAddressDetails | EmailAddressDetails} object
          * in the `asyncResult.value` property.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7693,9 +7511,8 @@ export declare namespace Office {
     /**
      * Represents recipients of an item. Compose mode only.
      * 
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -7722,9 +7539,8 @@ export declare namespace Office {
          *
          * - Other: No limit
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -7761,9 +7577,8 @@ export declare namespace Office {
          *
          * - Other: No limit
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -7788,9 +7603,8 @@ export declare namespace Office {
          *
          * - Other: No limit
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7811,10 +7625,9 @@ export declare namespace Office {
          * - Windows, Mac, web browser: 500 members
          *
          * - Other: No limit
-         *
-         * [Api set: Mailbox 1.1]
-         *
+         * 
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -7843,9 +7656,8 @@ export declare namespace Office {
          *
          * - Other: No limit
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -7882,9 +7694,8 @@ export declare namespace Office {
          *
          * - Other: No limit
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -7904,18 +7715,21 @@ export declare namespace Office {
     /**
      * Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
      * 
+     * @remarks
      * [Api set: Mailbox 1.7] 
      */ 
     export interface RecipientsChangedEventArgs { 
         /** 
          * Gets an object that indicates change state of recipients fields. 
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         changedRecipientFields: RecipientsChangedFields; 
         /** 
          * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         type: "olkRecipientsChanged"; 
@@ -7923,42 +7737,49 @@ export declare namespace Office {
     /**
      * Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
      *
+     * @remarks
      * [Api set: Mailbox 1.7]
      */
     export interface RecipientsChangedFields {
         /**
          * Gets if recipients in the **bcc** field were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         bcc: boolean
         /**
          * Gets if recipients in the **cc** field were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         cc: boolean;
         /**
          * Gets if optional attendees were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         optionalAttendees: boolean;
         /**
          * Gets if required attendees were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         requiredAttendees: boolean;
         /**
          * Gets if resources were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         resources: boolean;
         /**
          * Gets if recipients in the **to** field were changed.
          *
+         * @remarks
          * [Api set: Mailbox 1.7]
          */
         to: boolean;
@@ -7968,9 +7789,8 @@ export declare namespace Office {
      * meeting requests. 
      * It will have a dictionary with the following keys: `seriesTime`, `recurrenceType`, `recurrenceProperties`, and `recurrenceTimeZone` (optional).
      * 
-     * [Api set: Mailbox 1.7]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8019,10 +7839,9 @@ export declare namespace Office {
     export interface Recurrence {
         /**
          * Gets or sets the properties of the recurring appointment series.
-         * 
-         * [Api set: Mailbox 1.7]
-         * 
+         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8032,9 +7851,8 @@ export declare namespace Office {
         /**
          * Gets or sets the properties of the recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8044,9 +7862,8 @@ export declare namespace Office {
         /**
          * Gets or sets the type of the recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8058,9 +7875,8 @@ export declare namespace Office {
          * the usual start and end times of instances. **This object is not in UTC time.** 
          * Instead, it is set in the time zone specified by the `recurrenceTimeZone` value or defaulted to the item's time zone.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8073,9 +7889,8 @@ export declare namespace Office {
          * 
          * This method returns the entire `Recurrence` object for the appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8092,9 +7907,8 @@ export declare namespace Office {
          * 
          * This method returns the entire `Recurrence` object for the appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8109,9 +7923,8 @@ export declare namespace Office {
          * 
          * **Note**: `setAsync` should only be available for series items and not instance items.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8133,9 +7946,8 @@ export declare namespace Office {
          * 
          * **Note**: `setAsync` should only be available for series items and not instance items.
          * 
-         * [Api set: Mailbox 1.7]
-         * 
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8154,18 +7966,21 @@ export declare namespace Office {
     /**
      * Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event. 
      * 
+     * @remarks
      * [Api set: Mailbox 1.7] 
      */ 
     export interface RecurrenceChangedEventArgs { 
         /** 
          * Gets the updated recurrence object. 
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         recurrence: Recurrence; 
         /** 
          * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
          * 
+         * @remarks
          * [Api set: Mailbox 1.7] 
          */ 
         type: "olkRecurrenceChanged"; 
@@ -8173,9 +7988,8 @@ export declare namespace Office {
     /**
      * Represents the properties of the recurrence.
      * 
-     * [Api set: Mailbox 1.7]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8215,9 +8029,8 @@ export declare namespace Office {
     /**
      * Represents the time zone of the recurrence.
      * 
-     * [Api set: Mailbox 1.7]
-     * 
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8380,9 +8193,8 @@ export declare namespace Office {
      * The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times
      * of meeting requests in a recurring series.
      * 
-     * [Api set: Mailbox 1.7]
-     *
      * @remarks
+     * [Api set: Mailbox 1.7]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8392,9 +8204,8 @@ export declare namespace Office {
         /**
          * Gets the duration in minutes of a usual instance in a recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8405,9 +8216,8 @@ export declare namespace Office {
          * Gets the end date of a recurrence pattern in the following
          * {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8419,9 +8229,8 @@ export declare namespace Office {
          * add-in set the recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: 
          * "THH:mm:ss:mmm".
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8432,9 +8241,8 @@ export declare namespace Office {
          * Gets the start date of a recurrence pattern in the following
          * {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8445,9 +8253,8 @@ export declare namespace Office {
          * Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the
          * recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm".
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8457,9 +8264,8 @@ export declare namespace Office {
         /**
          * Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the recurrence pattern.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8471,9 +8277,8 @@ export declare namespace Office {
         /**
          * Sets the end date of a recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8487,9 +8292,8 @@ export declare namespace Office {
         /**
          * Sets the end date of a recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8502,9 +8306,8 @@ export declare namespace Office {
         /**
          * Sets the start date of a recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8518,9 +8321,8 @@ export declare namespace Office {
         /**
          * Sets the start date of a recurring appointment series.
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8534,9 +8336,8 @@ export declare namespace Office {
          * Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set 
          * (the item's time zone is used by default).
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8550,9 +8351,8 @@ export declare namespace Office {
          * Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence pattern is set 
          * (the item's time zone is used by default).
          * 
-         * [Api set: Mailbox 1.7]
-         *
          * @remarks
+         * [Api set: Mailbox 1.7]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8568,9 +8368,8 @@ export declare namespace Office {
      * For more information on how this object is used, see the
      * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
      *
-     * [Api set: Mailbox 1.8]
-     *
      * @remarks
+     * [Api set: Mailbox 1.8]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8605,9 +8404,8 @@ export declare namespace Office {
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8619,9 +8417,8 @@ export declare namespace Office {
          *
          * The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8638,9 +8435,8 @@ export declare namespace Office {
          * 
          * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8656,9 +8452,8 @@ export declare namespace Office {
          * The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or message.
          * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8681,9 +8476,8 @@ export declare namespace Office {
          * The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or message.
          * Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in place.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8724,9 +8518,8 @@ export declare namespace Office {
     /**
      * The `Time` object is returned as the start or end property of an appointment in compose mode.
      *
-     * [Api set: Mailbox 1.1]
-     *
      * @remarks
+     * [Api set: Mailbox 1.1]
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
@@ -8739,9 +8532,8 @@ export declare namespace Office {
          * The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated Universal Time (UTC).
          * You can convert the UTC time to the local client time by using the `convertToLocalClientTime` method.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8759,9 +8551,8 @@ export declare namespace Office {
          * The date and time is provided as a `Date` object in the `asyncResult.value` property. The value is in Coordinated Universal Time (UTC).
          * You can convert the UTC time to the local client time by using the `convertToLocalClientTime` method.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
@@ -8781,9 +8572,8 @@ export declare namespace Office {
          *
          * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8810,9 +8600,8 @@ export declare namespace Office {
          *
          * **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
          *
-         * [Api set: Mailbox 1.1]
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
@@ -8843,9 +8632,8 @@ export declare namespace Office {
          *
          * **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
          *
-         * [Api set: Mailbox 1.6]
-         *
          * @remarks
+         * [Api set: Mailbox 1.6]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 

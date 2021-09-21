@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeAutoSize
+uid: 'powerpoint!PowerPoint.ShapeAutoSize:enum'
+package: powerpoint!
+fullName: PowerPoint.ShapeAutoSize
+summary: |-
+  Determines the type of automatic sizing allowed.
+
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: autoSizeMixed
+    uid: 'powerpoint!PowerPoint.ShapeAutoSize.autoSizeMixed:member'
+    package: powerpoint!
+    summary: A combination of automatic sizing schemes are used.
+    value: '"AutoSizeMixed"'
+  - name: autoSizeNone
+    uid: 'powerpoint!PowerPoint.ShapeAutoSize.autoSizeNone:member'
+    package: powerpoint!
+    summary: No autosizing.
+    value: '"AutoSizeNone"'
+  - name: autoSizeShapeToFitText
+    uid: 'powerpoint!PowerPoint.ShapeAutoSize.autoSizeShapeToFitText:member'
+    package: powerpoint!
+    summary: The shape is adjusted to fit the text.
+    value: '"AutoSizeShapeToFitText"'
+  - name: autoSizeTextToFitShape
+    uid: 'powerpoint!PowerPoint.ShapeAutoSize.autoSizeTextToFitShape:member'
+    package: powerpoint!
+    summary: The text is adjusted to fit the shape.
+    value: '"AutoSizeTextToFitShape"'

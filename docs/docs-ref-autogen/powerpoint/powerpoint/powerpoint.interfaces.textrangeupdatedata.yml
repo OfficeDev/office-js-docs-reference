@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TextRangeUpdateData
+uid: 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface'
+package: powerpoint!
+fullName: PowerPoint.Interfaces.TextRangeUpdateData
+summary: 'An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: text
+    uid: 'powerpoint!PowerPoint.Interfaces.TextRangeUpdateData#text:member'
+    package: powerpoint!
+    fullName: text
+    summary: |-
+      Represents the plain text content of the text range.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string

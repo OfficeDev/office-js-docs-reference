@@ -26,12 +26,44 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.RequestContext:class" />'
+  - name: fill
+    uid: 'powerpoint!PowerPoint.Shape#fill:member'
+    package: powerpoint!
+    fullName: fill
+    summary: |-
+      Returns the fill formatting of this shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fill: PowerPoint.ShapeFill;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeFill:class" />'
+  - name: height
+    uid: 'powerpoint!PowerPoint.Shape#height:member'
+    package: powerpoint!
+    fullName: height
+    summary: >-
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
   - name: id
     uid: 'powerpoint!PowerPoint.Shape#id:member'
     package: powerpoint!
     fullName: id
     summary: |-
-      Gets the unique ID of the shape. The `id` is unique within the slide.
+      Gets the unique ID of the shape.
 
       \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
@@ -39,6 +71,51 @@ properties:
     isDeprecated: false
     syntax:
       content: 'readonly id: string;'
+      return:
+        type: string
+  - name: left
+    uid: 'powerpoint!PowerPoint.Shape#left:member'
+    package: powerpoint!
+    fullName: left
+    summary: |-
+      The distance, in points, from the left side of the shape to the left side of the slide.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'left: number;'
+      return:
+        type: number
+  - name: lineFormat
+    uid: 'powerpoint!PowerPoint.Shape#lineFormat:member'
+    package: powerpoint!
+    fullName: lineFormat
+    summary: |-
+      Returns the line formatting of this shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly lineFormat: PowerPoint.ShapeLineFormat;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeLineFormat:class" />'
+  - name: name
+    uid: 'powerpoint!PowerPoint.Shape#name:member'
+    package: powerpoint!
+    fullName: name
+    summary: |-
+      Specifies the name of this shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
       return:
         type: string
   - name: tags
@@ -56,6 +133,70 @@ properties:
       content: 'readonly tags: PowerPoint.TagCollection;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.TagCollection:class" />'
+  - name: textFrame
+    uid: 'powerpoint!PowerPoint.Shape#textFrame:member'
+    package: powerpoint!
+    fullName: textFrame
+    summary: |-
+      Returns the text frame object of this shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly textFrame: PowerPoint.TextFrame;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextFrame:class" />'
+  - name: top
+    uid: 'powerpoint!PowerPoint.Shape#top:member'
+    package: powerpoint!
+    fullName: top
+    summary: |-
+      The distance, in points, from the top edge of the shape to the top edge of the slide.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'top: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'powerpoint!PowerPoint.Shape#type:member'
+    package: powerpoint!
+    fullName: type
+    summary: |-
+      Returns the type of this shape. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
+      return:
+        type: >-
+          <xref uid="powerpoint!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
+          "Line"
+  - name: width
+    uid: 'powerpoint!PowerPoint.Shape#width:member'
+    package: powerpoint!
+    fullName: width
+    summary: >-
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
 methods:
   - name: delete()
     uid: 'powerpoint!PowerPoint.Shape#delete:member(1)'

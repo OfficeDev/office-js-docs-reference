@@ -39,6 +39,201 @@ properties:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />[]'
 methods:
+  - name: 'addGeometricShape(geometricShapeType, options)'
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addGeometricShape:member(1)'
+    package: powerpoint!
+    fullName: 'addGeometricShape(geometricShapeType, options)'
+    summary: |-
+      Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addGeometricShape(geometricShapeType: PowerPoint.GeometricShapeType, options?: PowerPoint.ShapeAddOptions):
+        PowerPoint.Shape;
+      parameters:
+        - id: geometricShapeType
+          description: >-
+            Specifies the type of the geometric shape. See
+            [PowerPoint.GeometricShapeType](xref:powerpoint!PowerPoint.GeometricShapeType:enum) for details.
+          type: '<xref uid="powerpoint!PowerPoint.GeometricShapeType:enum" />'
+        - id: options
+          description: An optional parameter to specify the additional options such as the position of the shape.
+          type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: The newly inserted shape.
+  - name: 'addGeometricShape(geometricShapeTypeString, options)'
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addGeometricShape:member(2)'
+    package: powerpoint!
+    fullName: 'addGeometricShape(geometricShapeTypeString, options)'
+    summary: |-
+      Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;
+      parameters:
+        - id: geometricShapeTypeString
+          description: >-
+            Specifies the type of the geometric shape. See
+            [PowerPoint.GeometricShapeType](xref:powerpoint!PowerPoint.GeometricShapeType:enum) for details.
+          type: >-
+            "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" |
+            "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" |
+            "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" |
+            "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" |
+            "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" |
+            "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" |
+            "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" |
+            "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" |
+            "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" |
+            "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" |
+            "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" |
+            "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" |
+            "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+            "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace"
+            | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+            "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+            "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+            "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2"
+            | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" |
+            "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" |
+            "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" |
+            "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" |
+            "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" |
+            "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" |
+            "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" |
+            "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" |
+            "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" |
+            "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" |
+            "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" |
+            "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual"
+            | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"
+        - id: options
+          description: An optional parameter to specify the additional options such as the position of the shape.
+          type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: The newly inserted shape.
+  - name: 'addLine(connectorType, options)'
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(1)'
+    package: powerpoint!
+    fullName: 'addLine(connectorType, options)'
+    summary: |-
+      Adds a line to the slide. Returns a `Shape` object that represents the new line.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addLine(connectorType?: PowerPoint.ConnectorType, options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;'
+      parameters:
+        - id: connectorType
+          description: >-
+            Specifies the connector type of the line. If not provided, `straight` connector type will be used. See
+            [PowerPoint.ConnectorType](xref:powerpoint!PowerPoint.ConnectorType:enum) for details.
+          type: '<xref uid="powerpoint!PowerPoint.ConnectorType:enum" />'
+        - id: options
+          description: >-
+            An optional parameter to specify the additional options such as the position of the shape object that
+            contains the line.
+          type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: The newly inserted shape.
+  - name: 'addLine(connectorTypeString, options)'
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(2)'
+    package: powerpoint!
+    fullName: 'addLine(connectorTypeString, options)'
+    summary: |-
+      Adds a line to the slide. Returns a `Shape` object that represents the new line.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        addLine(connectorTypeString?: "Straight" | "Elbow" | "Curve", options?: PowerPoint.ShapeAddOptions):
+        PowerPoint.Shape;
+      parameters:
+        - id: connectorTypeString
+          description: >-
+            Specifies the connector type of the line. If not provided, `straight` connector type will be used. See
+            [PowerPoint.ConnectorType](xref:powerpoint!PowerPoint.ConnectorType:enum) for details.
+          type: '"Straight" | "Elbow" | "Curve"'
+        - id: options
+          description: >-
+            An optional parameter to specify the additional options such as the position of the shape object that
+            contains the line.
+          type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: The newly inserted shape.
+  - name: 'addTextBox(text, options)'
+    uid: 'powerpoint!PowerPoint.ShapeCollection#addTextBox:member(1)'
+    package: powerpoint!
+    fullName: 'addTextBox(text, options)'
+    summary: >-
+      Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the
+      new text box.
+
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addTextBox(text: string, options?: PowerPoint.ShapeAddOptions): PowerPoint.Shape;'
+      parameters:
+        - id: text
+          description: Specifies the text that will be shown in the created text box.
+          type: string
+        - id: options
+          description: An optional parameter to specify the additional options such as the position of the text box.
+          type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: The newly inserted shape.
   - name: getCount()
     uid: 'powerpoint!PowerPoint.ShapeCollection#getCount:member(1)'
     package: powerpoint!

@@ -3,11 +3,11 @@ name: Office.Sensitivity
 uid: 'outlook!Office.Sensitivity:interface'
 package: outlook!
 fullName: Office.Sensitivity
-summary: |-
-  Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
 remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Minimum permission
   level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -24,11 +24,11 @@ methods:
     uid: 'outlook!Office.Sensitivity#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: |-
-      Gets the value of the appointment sensitivity.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Gets the value of the appointment sensitivity.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -65,6 +65,9 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the value of the appointment sensitivity.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -101,9 +104,6 @@ methods:
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->.
-
-
-            \[Api set: Mailbox preview\]
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
@@ -114,11 +114,11 @@ methods:
     uid: 'outlook!Office.Sensitivity#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(sensitivity, options, callback)'
-    summary: |-
-      Sets the value of the appointment sensitivity.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets the value of the appointment sensitivity.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -176,11 +176,11 @@ methods:
     uid: 'outlook!Office.Sensitivity#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(sensitivity, callback)'
-    summary: |-
-      Sets the value of the appointment sensitivity.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Sets the value of the appointment sensitivity.
     remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`

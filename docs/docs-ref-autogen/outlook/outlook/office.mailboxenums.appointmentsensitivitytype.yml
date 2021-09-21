@@ -3,11 +3,11 @@ name: Office.MailboxEnums.AppointmentSensitivityType
 uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
-summary: |-
-  Specifies the sensitivity type of an appointment.
-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Specifies the sensitivity type of an appointment.
 remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
@@ -17,32 +17,20 @@ fields:
   - name: Confidential
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
     package: outlook!
-    summary: |-
-      Treat the item as confidential.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Treat the item as confidential.
     value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
     package: outlook!
-    summary: |-
-      The item needs no special treatment.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: The item needs no special treatment.
     value: '"normal"'
   - name: Personal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
     package: outlook!
-    summary: |-
-      Treat the item as personal.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Treat the item as personal.
     value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
     package: outlook!
-    summary: |-
-      Treat the item as private.
-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Treat the item as private.
     value: '"private"'

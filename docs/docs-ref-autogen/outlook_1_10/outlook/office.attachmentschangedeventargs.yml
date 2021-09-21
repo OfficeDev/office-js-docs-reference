@@ -3,11 +3,8 @@ name: Office.AttachmentsChangedEventArgs
 uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
 package: outlook!
 fullName: Office.AttachmentsChangedEventArgs
-summary: |-
-  Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +16,7 @@ properties:
     summary: >-
       Represents the set of attachments that were added or removed. For each such attachment, gets `id`<!-- -->,
       `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,10 +30,7 @@ properties:
     summary: >-
       Gets whether the attachments were added or removed. For details, refer to
       [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum)<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,10 +44,7 @@ properties:
     summary: >-
       Gets the type of the event. For details, refer to
       [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,11 @@ name: Office.MailboxEnums.Month
 uid: 'outlook!Office.MailboxEnums.Month:enum'
 package: outlook!
 fullName: Office.MailboxEnums.Month
-summary: |-
-  Specifies the month.
-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+summary: Specifies the month.
 remarks: >-
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read

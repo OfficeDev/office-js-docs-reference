@@ -519,11 +519,11 @@ methods:
 
       **Important**: For guidance on delegate or shared scenarios, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
+    remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`

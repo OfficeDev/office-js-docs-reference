@@ -56,6 +56,21 @@ properties:
       content: 'readonly name: string;'
       return:
         type: string
+  - name: shapes
+    uid: 'powerpoint!PowerPoint.SlideLayout#shapes:member'
+    package: powerpoint!
+    fullName: shapes
+    summary: |-
+      Returns a collection of shapes in the slide layout.
+
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: PowerPoint.ShapeCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeCollection:class" />'
 methods:
   - name: load(options)
     uid: 'powerpoint!PowerPoint.SlideLayout#load:member(1)'
