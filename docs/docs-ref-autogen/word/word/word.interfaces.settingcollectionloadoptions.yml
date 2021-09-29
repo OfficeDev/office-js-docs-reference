@@ -3,11 +3,8 @@ name: Word.Interfaces.SettingCollectionLoadOptions
 uid: 'word!Word.Interfaces.SettingCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.SettingCollectionLoadOptions
-summary: |-
-  Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Contains the collection of  objects.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -30,13 +27,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
     package: word!
     fullName: key
-    summary: >-
-      For EACH ITEM in the collection: Gets the key of the setting. Read only.
-
-
+    summary: 'For EACH ITEM in the collection: Gets the key of the setting. Read only.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,13 +41,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
     package: word!
     fullName: value
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the value of the setting.
-
-
+    summary: 'For EACH ITEM in the collection: Gets or sets the value of the setting.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: Word.CustomXmlPartScopedCollection
 uid: 'word!Word.CustomXmlPartScopedCollection:class'
 package: word!
 fullName: Word.CustomXmlPartScopedCollection
-summary: |-
-  Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a specific namespace.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: 'Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a specific namespace.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -43,13 +40,10 @@ methods:
     uid: 'word!Word.CustomXmlPartScopedCollection#getCount:member(1)'
     package: word!
     fullName: getCount()
-    summary: >-
-      Gets the number of items in the collection.
-
-
+    summary: Gets the number of items in the collection.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,13 +55,10 @@ methods:
     uid: 'word!Word.CustomXmlPartScopedCollection#getItem:member(1)'
     package: word!
     fullName: getItem(id)
-    summary: >-
-      Gets a custom XML part based on its ID. Read only.
-
-
+    summary: Gets a custom XML part based on its ID. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,11 +77,9 @@ methods:
     summary: >-
       Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the
       collection.
-
-
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -106,13 +95,10 @@ methods:
     uid: 'word!Word.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
     package: word!
     fullName: getOnlyItem()
-    summary: >-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
-
-
+    summary: 'If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -124,13 +110,10 @@ methods:
     uid: 'word!Word.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
     package: word!
     fullName: getOnlyItemOrNullObject()
-    summary: >-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.
-
-
+    summary: 'If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

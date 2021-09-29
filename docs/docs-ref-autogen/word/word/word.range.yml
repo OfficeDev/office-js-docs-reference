@@ -3,11 +3,8 @@ name: Word.Range
 uid: 'word!Word.Range:class'
 package: word!
 fullName: Word.Range
-summary: |-
-  Represents a contiguous area in a document.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents a contiguous area in a document.
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'word!Word.Range#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: |-
-      Gets the collection of content control objects in the range. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of content control objects in the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +35,18 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: endnotes
+    uid: 'word!Word.Range#endnotes:member'
+    package: word!
+    fullName: endnotes
+    summary: Gets the collection of endnotes in the Range. Read-only
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly endnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: font
     uid: 'word!Word.Range#font:member'
     package: word!
@@ -48,16 +54,25 @@ properties:
     summary: >-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
       Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly font: Word.Font;'
       return:
         type: '<xref uid="word!Word.Font:class" />'
+  - name: footnotes
+    uid: 'word!Word.Range#footnotes:member'
+    package: word!
+    fullName: footnotes
+    summary: Gets the collection of footnotes in the Range. Read-only
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly footnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: hyperlink
     uid: 'word!Word.Range#hyperlink:member'
     package: word!
@@ -66,10 +81,7 @@ properties:
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
       when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location
       part.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,11 +92,8 @@ properties:
     uid: 'word!Word.Range#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: |-
-      Gets the collection of inline picture objects in the range. Read-only.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of inline picture objects in the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,11 +104,8 @@ properties:
     uid: 'word!Word.Range#isEmpty:member'
     package: word!
     fullName: isEmpty
-    summary: |-
-      Checks whether the range length is zero. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Checks whether the range length is zero. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,11 +116,8 @@ properties:
     uid: 'word!Word.Range#lists:member'
     package: word!
     fullName: lists
-    summary: |-
-      Gets the collection of list objects in the range. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of list objects in the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,11 +128,8 @@ properties:
     uid: 'word!Word.Range#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: |-
-      Gets the collection of paragraph objects in the range. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of paragraph objects in the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,11 +140,8 @@ properties:
     uid: 'word!Word.Range#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: |-
-      Gets the parent body of the range. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent body of the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,10 +155,7 @@ properties:
     summary: >-
       Gets the content control that contains the range. Throws an error if there isn't a parent content control.
       Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,10 +169,7 @@ properties:
     summary: >-
       Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
       Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,11 +180,8 @@ properties:
     uid: 'word!Word.Range#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: |-
-      Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,11 +192,8 @@ properties:
     uid: 'word!Word.Range#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: |-
-      Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,10 +207,7 @@ properties:
     summary: >-
       Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
       Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,11 +218,8 @@ properties:
     uid: 'word!Word.Range#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
-    summary: |-
-      Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,10 +233,7 @@ properties:
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,10 +247,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -348,11 +321,8 @@ properties:
     uid: 'word!Word.Range#tables:member'
     package: word!
     fullName: tables
-    summary: |-
-      Gets the collection of table objects in the range. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of table objects in the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,11 +333,8 @@ properties:
     uid: 'word!Word.Range#text:member'
     package: word!
     fullName: text
-    summary: |-
-      Gets the text of the range. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text of the range. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -379,55 +346,49 @@ methods:
     uid: 'word!Word.Range#clear:member(1)'
     package: word!
     fullName: clear()
-    summary: |-
-      Clears the contents of the range object. The user can perform the undo operation on the cleared content.
-
+    summary: Clears the contents of the range object. The user can perform the undo operation on the cleared content.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to clear the contents of the proxy range object.
+          range.clear();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Cleared the selection (range object)');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to clear the contents of the proxy range object.
-              range.clear();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Cleared the selection (range object)');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: compareLocationWith(range)
     uid: 'word!Word.Range#compareLocationWith:member(1)'
     package: word!
     fullName: compareLocationWith(range)
-    summary: |-
-      Compares this range's location with another range's location.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Compares this range's location with another range's location.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -443,46 +404,43 @@ methods:
     uid: 'word!Word.Range#delete:member(1)'
     package: word!
     fullName: delete()
-    summary: |-
-      Deletes the range and its content from the document.
-
+    summary: Deletes the range and its content from the document.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to delete the range object.
+          range.delete();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Deleted the selection (range object)');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to delete the range object.
-              range.delete();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Deleted the selection (range object)');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: expandTo(range)
     uid: 'word!Word.Range#expandTo:member(1)'
     package: word!
@@ -490,10 +448,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
       changed. Throws an error if the two ranges do not have a union.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -512,10 +467,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
       changed. Returns a null object if the two ranges do not have a union.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -534,11 +486,9 @@ methods:
     summary: >-
       Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the
       underscore character.
-
-
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -557,6 +507,19 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
+  - name: getComments()
+    uid: 'word!Word.Range#getComments:member(1)'
+    package: word!
+    fullName: getComments()
+    summary: Gets comments associated with the range.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
   - name: getHtml()
     uid: 'word!Word.Range#getHtml:member(1)'
     package: word!
@@ -566,54 +529,48 @@ methods:
       be a close, but not exact, match for of the formatting of the document. This method does not return the exact same
       HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to get the HTML of the current selection.
+          var html = range.getHtml();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The HTML read from the document was: ' + html.value);
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to get the HTML of the current selection.
-              var html = range.getHtml();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The HTML read from the document was: ' + html.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getHyperlinkRanges()
     uid: 'word!Word.Range#getHyperlinkRanges:member(1)'
     package: word!
     fullName: getHyperlinkRanges()
-    summary: |-
-      Gets hyperlink child ranges within the range.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets hyperlink child ranges within the range.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -628,10 +585,7 @@ methods:
     summary: >-
       Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range
       is the last one.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -656,10 +610,7 @@ methods:
     summary: >-
       Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text
       range is the last one.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -681,55 +632,49 @@ methods:
     uid: 'word!Word.Range#getOoxml:member(1)'
     package: word!
     fullName: getOoxml()
-    summary: |-
-      Gets the OOXML representation of the range object.
-
+    summary: Gets the OOXML representation of the range object.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to get the OOXML of the current selection.
+          var ooxml = range.getOoxml();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The OOXML read from the document was:  ' + ooxml.value);
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to get the OOXML of the current selection.
-              var ooxml = range.getOoxml();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The OOXML read from the document was:  ' + ooxml.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Range#getRange:member(1)'
     package: word!
     fullName: getRange(rangeLocation)
-    summary: |-
-      Clones the range, or gets the starting or ending point of the range as a new range.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Clones the range, or gets the starting or ending point of the range as a new range.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -745,11 +690,8 @@ methods:
     uid: 'word!Word.Range#getRange:member(2)'
     package: word!
     fullName: getRange(rangeLocationString)
-    summary: |-
-      Clones the range, or gets the starting or ending point of the range as a new range.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Clones the range, or gets the starting or ending point of the range as a new range.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -765,11 +707,46 @@ methods:
     uid: 'word!Word.Range#getTextRanges:member(1)'
     package: word!
     fullName: 'getTextRanges(endingMarks, trimSpacing)'
-    summary: |-
-      Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
-
+    summary: Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
+    remarks: >-
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+      await Word.run(async (context) => {
+        // Gets the complete sentence (as range) associated with the insertion point.
+        let sentences = context.document
+          .getSelection()
+          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        sentences.load("$none");
+        await context.sync();
+
+        // Expands the range to the end of the paragraph to get all the complete sentences.
+        let sentencesToTheEndOfParagraph = sentences.items[0]
+          .getRange()
+          .expandTo(
+            context.document
+              .getSelection()
+              .paragraphs.getFirst()
+              .getRange("End")
+          )
+          .getTextRanges(["."], false /* Don't trim spaces*/);
+        sentencesToTheEndOfParagraph.load("text");
+        await context.sync();
+
+        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+          console.log(sentencesToTheEndOfParagraph.items[i].text);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -786,55 +763,15 @@ methods:
           type: boolean
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
-
-          await Word.run(async (context) => {
-            // Gets the complete sentence (as range) associated with the insertion point.
-            let sentences = context.document
-              .getSelection()
-              .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
-            sentences.load("$none");
-            await context.sync();
-
-            // Expands the range to the end of the paragraph to get all the complete sentences.
-            let sentencesToTheEndOfParagraph = sentences.items[0]
-              .getRange()
-              .expandTo(
-                context.document
-                  .getSelection()
-                  .paragraphs.getFirst()
-                  .getRange("End")
-              )
-              .getTextRanges(["."], false /* Don't trim spaces*/);
-            sentencesToTheEndOfParagraph.load("text");
-            await context.sync();
-
-            for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
-              console.log(sentencesToTheEndOfParagraph.items[i].text);
-            }
-          });
-
-          ```
+        description: ''
   - name: insertBookmark(name)
     uid: 'word!Word.Range#insertBookmark:member(1)'
     package: word!
     fullName: insertBookmark(name)
-    summary: >-
-      Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
-
-
+    summary: 'Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -852,11 +789,8 @@ methods:
     uid: 'word!Word.Range#insertBreak:member(1)'
     package: word!
     fullName: 'insertBreak(breakType, insertLocation)'
-    summary: |-
-      Inserts a break at the specified location in the main document.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a break at the specified location in the main document.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -875,11 +809,36 @@ methods:
     uid: 'word!Word.Range#insertBreak:member(2)'
     package: word!
     fullName: 'insertBreak(breakTypeString, insertLocation)'
-    summary: |-
-      Inserts a break at the specified location in the main document.
-
+    summary: Inserts a break at the specified location in the main document.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert a page break after the selected text.
+          range.insertBreak('page', 'After');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Inserted a page break after the selected text.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -895,91 +854,121 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert a page break after the selected text.
-              range.insertBreak('page', 'After');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Inserted a page break after the selected text.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
+  - name: insertComment(commentText)
+    uid: 'word!Word.Range#insertComment:member(1)'
+    package: word!
+    fullName: insertComment(commentText)
+    summary: Insert a comment on the range.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertComment(commentText: string): Word.Comment;'
+      parameters:
+        - id: commentText
+          description: Required. Comment text.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: comment object
   - name: insertContentControl()
     uid: 'word!Word.Range#insertContentControl:member(1)'
     package: word!
     fullName: insertContentControl()
-    summary: |-
-      Wraps the range object with a rich text content control.
-
+    summary: Wraps the range object with a rich text content control.
+    remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      await Word.run(async (context) => {
+          let results = context.document.body.search("Contractor");
+          results.load("font/bold");
+
+          // Check to make sure these content controls haven't been added yet.
+          let customerContentControls = context.document.contentControls.getByTag("customer");
+          customerContentControls.load("text");
+          await context.sync();
+
+        if (customerContentControls.items.length === 0) {
+          for (var i = 0; i < results.items.length; i++) { 
+              results.items[i].font.bold = true;
+              var cc = results.items[i].insertContentControl();
+              cc.tag = "customer";  // This value is used in the next step of this sample.
+              cc.title = "Customer Name " + i;
+          }
+        }
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
-
-          await Word.run(async (context) => {
-              let results = context.document.body.search("Contractor");
-              results.load("font/bold");
-
-              // Check to make sure these content controls haven't been added yet.
-              let customerContentControls = context.document.contentControls.getByTag("customer");
-              customerContentControls.load("text");
-              await context.sync();
-
-            if (customerContentControls.items.length === 0) {
-              for (var i = 0; i < results.items.length; i++) { 
-                  results.items[i].font.bold = true;
-                  var cc = results.items[i].insertContentControl();
-                  cc.tag = "customer";  // This value is used in the next step of this sample.
-                  cc.title = "Customer Name " + i;
-              }
-            }
-              await context.sync();
-          });
-
-          ```
+        description: ''
+  - name: insertEndnote(insertText)
+    uid: 'word!Word.Range#insertEndnote:member(1)'
+    package: word!
+    fullName: insertEndnote(insertText)
+    summary: Inserts an endnote. The endnote reference is placed after the range.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertEndnote(insertText?: string): Word.NoteItem;'
+      parameters:
+        - id: insertText
+          description: ''
+          type: string
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation)'
     uid: 'word!Word.Range#insertFileFromBase64:member(1)'
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocation)'
-    summary: |-
-      Inserts a document at the specified location.
-
+    summary: Inserts a document at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert base64 encoded .docx at the beginning of the range.
+          // You'll need to implement getBase64() to make this work.
+          range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Added base64 encoded text to the beginning of the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -993,45 +982,13 @@ methods:
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert base64 encoded .docx at the beginning of the range.
-              // You'll need to implement getBase64() to make this work.
-              range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Added base64 encoded text to the beginning of the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertFileFromBase64(base64File, insertLocationString)'
     uid: 'word!Word.Range#insertFileFromBase64:member(2)'
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocationString)'
-    summary: |-
-      Inserts a document at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a document at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1048,15 +1005,57 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: insertFootnote(insertText)
+    uid: 'word!Word.Range#insertFootnote:member(1)'
+    package: word!
+    fullName: insertFootnote(insertText)
+    summary: Inserts a footnote. The footnote reference is placed after the range.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertFootnote(insertText?: string): Word.NoteItem;'
+      parameters:
+        - id: insertText
+          description: ''
+          type: string
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
   - name: 'insertHtml(html, insertLocation)'
     uid: 'word!Word.Range#insertHtml:member(1)'
     package: word!
     fullName: 'insertHtml(html, insertLocation)'
-    summary: |-
-      Inserts HTML at the specified location.
-
+    summary: Inserts HTML at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert HTML in to the beginning of the range.
+          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('HTML added to the beginning of the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1070,44 +1069,13 @@ methods:
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert HTML in to the beginning of the range.
-              range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('HTML added to the beginning of the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertHtml(html, insertLocationString)'
     uid: 'word!Word.Range#insertHtml:member(2)'
     package: word!
     fullName: 'insertHtml(html, insertLocationString)'
-    summary: |-
-      Inserts HTML at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts HTML at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1126,11 +1094,8 @@ methods:
     uid: 'word!Word.Range#insertInlinePictureFromBase64:member(1)'
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
-    summary: |-
-      Inserts a picture at the specified location.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a picture at the specified location.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1151,11 +1116,8 @@ methods:
     uid: 'word!Word.Range#insertInlinePictureFromBase64:member(2)'
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    summary: |-
-      Inserts a picture at the specified location.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a picture at the specified location.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1176,11 +1138,39 @@ methods:
     uid: 'word!Word.Range#insertOoxml:member(1)'
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation)'
-    summary: |-
-      Inserts OOXML at the specified location.
-
+    summary: Inserts OOXML at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert OOXML in to the beginning of the range.
+          range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('OOXML added to the beginning of the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1194,47 +1184,13 @@ methods:
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert OOXML in to the beginning of the range.
-              range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('OOXML added to the beginning of the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-          // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-          ```
+        description: ''
   - name: 'insertOoxml(ooxml, insertLocationString)'
     uid: 'word!Word.Range#insertOoxml:member(2)'
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocationString)'
-    summary: |-
-      Inserts OOXML at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts OOXML at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1253,11 +1209,36 @@ methods:
     uid: 'word!Word.Range#insertParagraph:member(1)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
-    summary: |-
-      Inserts a paragraph at the specified location.
-
+    summary: Inserts a paragraph at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert the paragraph after the range.
+          range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Paragraph added to the end of the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1271,44 +1252,13 @@ methods:
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert the paragraph after the range.
-              range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Paragraph added to the end of the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertParagraph(paragraphText, insertLocationString)'
     uid: 'word!Word.Range#insertParagraph:member(2)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: |-
-      Inserts a paragraph at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a paragraph at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1329,11 +1279,8 @@ methods:
     uid: 'word!Word.Range#insertTable:member(1)'
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
-    summary: |-
-      Inserts a table with the specified number of rows and columns.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a table with the specified number of rows and columns.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1360,11 +1307,8 @@ methods:
     uid: 'word!Word.Range#insertTable:member(2)'
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
-    summary: |-
-      Inserts a table with the specified number of rows and columns.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a table with the specified number of rows and columns.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1391,11 +1335,36 @@ methods:
     uid: 'word!Word.Range#insertText:member(1)'
     package: word!
     fullName: 'insertText(text, insertLocation)'
-    summary: |-
-      Inserts text at the specified location.
-
+    summary: Inserts text at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert the paragraph at the end of the range.
+          range.insertText('New text inserted into the range.', Word.InsertLocation.end);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Text added to the end of the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1409,44 +1378,13 @@ methods:
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert the paragraph at the end of the range.
-              range.insertText('New text inserted into the range.', Word.InsertLocation.end);
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Text added to the end of the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertText(text, insertLocationString)'
     uid: 'word!Word.Range#insertText:member(2)'
     package: word!
     fullName: 'insertText(text, insertLocationString)'
-    summary: |-
-      Inserts text at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts text at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1468,10 +1406,7 @@ methods:
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Throws an
       error if the two ranges are not overlapped or adjacent.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1490,10 +1425,7 @@ methods:
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Returns a
       null object if the two ranges are not overlapped or adjacent.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1579,10 +1511,7 @@ methods:
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
       collection of range objects.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1619,11 +1548,39 @@ methods:
     uid: 'word!Word.Range#select:member(1)'
     package: word!
     fullName: select(selectionMode)
-    summary: |-
-      Selects and navigates the Word UI to the range.
-
+    summary: Selects and navigates the Word UI to the range.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          var range = context.document.getSelection();
+
+          // Queue a command to insert HTML in to the beginning of the range.
+          range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+          // Queue a command to select the HTML that was inserted.
+          range.select();
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('Selected the range.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1634,47 +1591,13 @@ methods:
           type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue a command to get the current selection and then
-              // create a proxy range object with the results.
-              var range = context.document.getSelection();
-
-              // Queue a command to insert HTML in to the beginning of the range.
-              range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
-
-              // Queue a command to select the HTML that was inserted.
-              range.select();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Selected the range.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: select(selectionModeString)
     uid: 'word!Word.Range#select:member(2)'
     package: word!
     fullName: select(selectionModeString)
-    summary: |-
-      Selects and navigates the Word UI to the range.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Selects and navigates the Word UI to the range.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1693,10 +1616,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Word.Range): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1734,11 +1654,8 @@ methods:
     uid: 'word!Word.Range#split:member(1)'
     package: word!
     fullName: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
-    summary: |-
-      Splits the range into child ranges by using delimiters.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Splits the range into child ranges by using delimiters.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

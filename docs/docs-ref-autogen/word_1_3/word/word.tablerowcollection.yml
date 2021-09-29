@@ -3,11 +3,8 @@ name: Word.TableRowCollection
 uid: 'word!Word.TableRowCollection:class'
 package: word!
 fullName: Word.TableRowCollection
-summary: |-
-  Contains the collection of the document's TableRow objects.
-
-  \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Contains the collection of the document's TableRow objects.
+remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'word!Word.TableRowCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: |-
-      Gets the first row in this collection. Throws an error if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the first row in this collection. Throws an error if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +53,8 @@ methods:
     uid: 'word!Word.TableRowCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: |-
-      Gets the first row in this collection. Returns a null object if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the first row in this collection. Returns a null object if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

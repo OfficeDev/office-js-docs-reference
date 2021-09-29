@@ -1,0 +1,315 @@
+### YamlMime:TSType
+name: Word.Comment
+uid: 'word!Word.Comment:class'
+package: word!
+fullName: Word.Comment
+summary: Represents a comment in the document.
+remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: authorEmail
+    uid: 'word!Word.Comment#authorEmail:member'
+    package: word!
+    fullName: authorEmail
+    summary: Gets the email of the comment's author.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly authorEmail: string;'
+      return:
+        type: string
+  - name: authorName
+    uid: 'word!Word.Comment#authorName:member'
+    package: word!
+    fullName: authorName
+    summary: Gets the name of the comment's author.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly authorName: string;'
+      return:
+        type: string
+  - name: content
+    uid: 'word!Word.Comment#content:member'
+    package: word!
+    fullName: content
+    summary: Gtes or sets the comment's content as plain text.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'content: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'word!Word.Comment#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: creationDate
+    uid: 'word!Word.Comment#creationDate:member'
+    package: word!
+    fullName: creationDate
+    summary: Gets the creation date of the comment.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type: Date
+  - name: id
+    uid: 'word!Word.Comment#id:member'
+    package: word!
+    fullName: id
+    summary: ID
+    remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: replies
+    uid: 'word!Word.Comment#replies:member'
+    package: word!
+    fullName: replies
+    summary: Gets the collection of reply objects associated with the comment.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly replies: Word.CommentReplyCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentReplyCollection:class" />'
+  - name: resolved
+    uid: 'word!Word.Comment#resolved:member'
+    package: word!
+    fullName: resolved
+    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resolved: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: delete()
+    uid: 'word!Word.Comment#delete:member(1)'
+    package: word!
+    fullName: delete()
+    summary: Deletes the comment and its replies.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getRange()
+    uid: 'word!Word.Comment#getRange:member(1)'
+    package: word!
+    fullName: getRange()
+    summary: Gets the range in the main document where the comment is on.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Word.Range;'
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.Comment#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.CommentLoadOptions): Word.Comment;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.CommentLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.Comment#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Comment;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.Comment#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Comment;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: reply(replyText)
+    uid: 'word!Word.Comment#reply:member(1)'
+    package: word!
+    fullName: reply(replyText)
+    summary: Adds a new reply to the end of the comment thread.
+    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'reply(replyText: string): Word.CommentReply;'
+      parameters:
+        - id: replyText
+          description: Required. Reply text.
+          type: string
+      return:
+        type: '<xref uid="word!Word.CommentReply:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.Comment#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.CommentUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.Comment#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Comment): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.Comment:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Comment#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Comment object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.CommentData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CommentData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.Comment#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Comment;'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.Comment#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Comment;'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

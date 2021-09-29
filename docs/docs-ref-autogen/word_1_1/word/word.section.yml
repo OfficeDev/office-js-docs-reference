@@ -3,11 +3,8 @@ name: Word.Section
 uid: 'word!Word.Section:class'
 package: word!
 fullName: Word.Section
-summary: |-
-  Represents a section in a Word document.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents a section in a Word document.
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,10 +16,7 @@ properties:
     summary: >-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
       Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,11 +42,27 @@ methods:
     uid: 'word!Word.Section#getFooter:member(1)'
     package: word!
     fullName: getFooter(type)
-    summary: |-
-      Gets one of the section's footers.
-
+    summary: Gets one of the section's footers.
+    remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      await Word.run(async (context) => {
+        context.document.sections.getFirst().getFooter("Primary")
+          .insertParagraph("This is a footer", "End");
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,34 +73,55 @@ methods:
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getFooter("Primary")
-              .insertParagraph("This is a footer", "End");
-
-            await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getFooter(typeString)
     uid: 'word!Word.Section#getFooter:member(2)'
     package: word!
     fullName: getFooter(typeString)
-    summary: |-
-      Gets one of the section's footers.
-
+    summary: Gets one of the section's footers.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy sectionsCollection object.
+          var mySections = context.document.sections;
+          
+          // Queue a command to load the sections.
+          context.load(mySections, 'body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              
+              // Create a proxy object the primary footer of the first section. 
+              // Note that the footer is a body object.
+              var myFooter = mySections.items[0].getFooter("primary");
+              
+              // Queue a command to insert text at the end of the footer.
+              myFooter.insertText("This is a footer.", Word.InsertLocation.end);
+              
+              // Queue a command to wrap the header in a content control.
+              myFooter.insertContentControl();
+                                    
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log("Added a footer to the first section.");
+              });                    
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,58 +132,32 @@ methods:
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
-              
-              // Queue a command to load the sections.
-              context.load(mySections, 'body/style');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary footer of the first section. 
-                  // Note that the footer is a body object.
-                  var myFooter = mySections.items[0].getFooter("primary");
-                  
-                  // Queue a command to insert text at the end of the footer.
-                  myFooter.insertText("This is a footer.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myFooter.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a footer to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getHeader(type)
     uid: 'word!Word.Section#getHeader:member(1)'
     package: word!
     fullName: getHeader(type)
-    summary: |-
-      Gets one of the section's headers.
-
+    summary: Gets one of the section's headers.
+    remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      await Word.run(async (context) => {
+        context.document.sections.getFirst().getHeader("Primary")
+          .insertParagraph("This is a header", "End");
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,34 +168,55 @@ methods:
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getHeader("Primary")
-              .insertParagraph("This is a header", "End");
-
-            await context.sync();
-          });
-
-          ```
+        description: ''
   - name: getHeader(typeString)
     uid: 'word!Word.Section#getHeader:member(2)'
     package: word!
     fullName: getHeader(typeString)
-    summary: |-
-      Gets one of the section's headers.
-
+    summary: Gets one of the section's headers.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy sectionsCollection object.
+          var mySections = context.document.sections;
+          
+          // Queue a command to load the sections.
+          context.load(mySections, 'body/style');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              
+              // Create a proxy object the primary header of the first section. 
+              // Note that the header is a body object.
+              var myHeader = mySections.items[0].getHeader("primary");
+              
+              // Queue a command to insert text at the end of the header.
+              myHeader.insertText("This is a header.", Word.InsertLocation.end);
+              
+              // Queue a command to wrap the header in a content control.
+              myHeader.insertContentControl();
+                                    
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log("Added a header to the first section.");
+              });                    
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -201,49 +227,7 @@ methods:
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
-              
-              // Queue a command to load the sections.
-              context.load(mySections, 'body/style');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary header of the first section. 
-                  // Note that the header is a body object.
-                  var myHeader = mySections.items[0].getHeader("primary");
-                  
-                  // Queue a command to insert text at the end of the header.
-                  myHeader.insertText("This is a header.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myHeader.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a header to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'word!Word.Section#load:member(1)'
     package: word!
@@ -318,10 +302,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Word.Section): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
