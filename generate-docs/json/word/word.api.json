@@ -9186,7 +9186,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "word!Word.ContentControlAppearance:enum",
-              "docComment": "/**\n * ContentControl appearance\n *\n * @remarks\n *\n * [Api set: WordApi] Content control appearance options are bounding box, tags, or hidden.\n */\n",
+              "docComment": "/**\n * ContentControl appearance\n *\n * @remarks\n *\n * [Api set: WordApi]\n *\n * Content control appearance options are bounding box, tags, or hidden.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

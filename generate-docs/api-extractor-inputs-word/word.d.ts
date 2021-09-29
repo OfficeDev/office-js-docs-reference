@@ -7192,6 +7192,7 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * Content control appearance options are bounding box, tags, or hidden.
      */
     enum ContentControlAppearance {
