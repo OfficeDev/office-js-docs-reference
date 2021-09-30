@@ -3,11 +3,8 @@ name: Word.Setting
 uid: 'word!Word.Setting:class'
 package: word!
 fullName: Word.Setting
-summary: |-
-  Represents a setting of the add-in.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents a setting of the add-in.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -30,13 +27,10 @@ properties:
     uid: 'word!Word.Setting#key:member'
     package: word!
     fullName: key
-    summary: >-
-      Gets the key of the setting. Read only.
-
-
+    summary: Gets the key of the setting. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,13 +41,10 @@ properties:
     uid: 'word!Word.Setting#value:member'
     package: word!
     fullName: value
-    summary: >-
-      Gets or sets the value of the setting.
-
-
+    summary: Gets or sets the value of the setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,61 +56,63 @@ methods:
     uid: 'word!Word.Setting#delete:member(1)'
     package: word!
     fullName: delete()
-    summary: >-
-      Deletes the setting.
-
-
+    summary: Deletes the setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Queue commands add a setting.
+          var settings = context.document.settings;
+          var startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
+
+          // Queue a command to get the count of settings.
+          var count = settings.getCount();
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log(count.value);
+
+              // Queue a command to delete the setting.
+              startMonth.delete();
+
+              // Queue a command to get the new count of settings.
+              count = settings.getCount();
+          })
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          .then(context.sync)
+          .then(function () {
+              console.log(count.value);
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              var startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete the setting.
-                  startMonth.delete();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'word!Word.Setting#load:member(1)'
     package: word!
@@ -194,10 +187,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Word.Setting): void`
+    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

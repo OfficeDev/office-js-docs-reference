@@ -3,11 +3,8 @@ name: Word.ParagraphCollection
 uid: 'word!Word.ParagraphCollection:class'
 package: word!
 fullName: Word.ParagraphCollection
-summary: |-
-  Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: 'Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.'
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class

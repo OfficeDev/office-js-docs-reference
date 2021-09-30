@@ -3,16 +3,26 @@ name: Word.BodyType
 uid: 'word!Word.BodyType:enum'
 package: word!
 fullName: Word.BodyType
-summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
+  - name: endnote
+    uid: 'word!Word.BodyType.endnote:member'
+    package: word!
+    summary: ''
+    value: '"Endnote"'
   - name: footer
     uid: 'word!Word.BodyType.footer:member'
     package: word!
     summary: ''
     value: '"Footer"'
+  - name: footnote
+    uid: 'word!Word.BodyType.footnote:member'
+    package: word!
+    summary: ''
+    value: '"Footnote"'
   - name: header
     uid: 'word!Word.BodyType.header:member'
     package: word!
@@ -23,6 +33,11 @@ fields:
     package: word!
     summary: ''
     value: '"MainDoc"'
+  - name: noteItem
+    uid: 'word!Word.BodyType.noteItem:member'
+    package: word!
+    summary: ''
+    value: '"NoteItem"'
   - name: section
     uid: 'word!Word.BodyType.section:member'
     package: word!

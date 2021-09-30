@@ -3,11 +3,8 @@ name: Word.Font
 uid: 'word!Word.Font:class'
 package: word!
 fullName: Word.Font
-summary: |-
-  Represents a font.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents a font.
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,45 +16,41 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
       false.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Bold format text
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to make the current selection bold.
+          selection.font.bold = true;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection is now bold.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'bold: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Bold format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to make the current selection bold.
-              selection.font.bold = true;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection is now bold.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: color
     uid: 'word!Word.Font#color:member'
     package: word!
@@ -65,45 +58,41 @@ properties:
     summary: >-
       Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
       name.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Change the font color
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to change the font color of the current selection.
+          selection.font.color = 'blue';
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font color of the selection has been changed.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'color: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Change the font color
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to change the font color of the current selection.
-              selection.font.color = 'blue';
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font color of the selection has been changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: context
     uid: 'word!Word.Font#context:member'
     package: word!
@@ -125,10 +114,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,45 +132,41 @@ properties:
       available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
       "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
       in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Highlight selected text
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to highlight the current selection.
+          selection.font.highlightColor = '#FFFF00'; // Yellow
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection has been highlighted.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'highlightColor: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Highlight selected text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to highlight the current selection.
-              selection.font.highlightColor = '#FFFF00'; // Yellow
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection has been highlighted.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: italic
     uid: 'word!Word.Font#italic:member'
     package: word!
@@ -192,10 +174,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
       false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,90 +185,82 @@ properties:
     uid: 'word!Word.Font#name:member'
     package: word!
     fullName: name
-    summary: |-
-      Gets or sets a value that represents the name of the font.
-
+    summary: Gets or sets a value that represents the name of the font.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Change the font name
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to change the current selection's font name.
+          selection.font.name = 'Arial';
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font name has changed.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
       return:
         type: string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Change the font name
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to change the current selection's font name.
-              selection.font.name = 'Arial';
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font name has changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: size
     uid: 'word!Word.Font#size:member'
     package: word!
     fullName: size
-    summary: |-
-      Gets or sets a value that represents the font size in points.
-
+    summary: Gets or sets a value that represents the font size in points.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Change the font size
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to change the current selection's font size.
+          selection.font.size = 20;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The font size has changed.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'size: number;'
       return:
         type: number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Change the font size
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to change the current selection's font size.
-              selection.font.size = 20;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The font size has changed.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: strikeThrough
     uid: 'word!Word.Font#strikeThrough:member'
     package: word!
@@ -297,45 +268,41 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Strike format text
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to strikethrough the font of the current selection.
+          selection.font.strikeThrough = true;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection now has a strikethrough.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'strikeThrough: boolean;'
       return:
         type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Strike format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to strikethrough the font of the current selection.
-              selection.font.strikeThrough = true;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection now has a strikethrough.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
   - name: subscript
     uid: 'word!Word.Font#subscript:member'
     package: word!
@@ -343,10 +310,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
       otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -360,10 +324,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
       superscript, otherwise, false.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,11 +335,36 @@ properties:
     uid: 'word!Word.Font#underline:member'
     package: word!
     fullName: underline
-    summary: |-
-      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
-
+    summary: Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Underline format text
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+
+          // Create a range proxy object for the current selection.
+          var selection = context.document.getSelection();
+
+          // Queue a command to underline the current selection.
+          selection.font.underline = Word.UnderlineType.single;
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log('The selection now has an underline style.');
+          });
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,35 +378,6 @@ properties:
           "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" |
           "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" |
           "WaveHeavy" | "WaveDouble"
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Underline format text
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a range proxy object for the current selection.
-              var selection = context.document.getSelection();
-
-              // Queue a command to underline the current selection.
-              selection.font.underline = Word.UnderlineType.single;
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The selection now has an underline style.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
 methods:
   - name: load(options)
     uid: 'word!Word.Font#load:member(1)'
@@ -496,10 +453,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Word.Font): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

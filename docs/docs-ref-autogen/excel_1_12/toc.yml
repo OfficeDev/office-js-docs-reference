@@ -978,6 +978,8 @@ items:
                 uid: 'office!Office.Auth:interface'
               - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
+              - name: BeforeDocumentCloseNotification
+                uid: 'office!Office.BeforeDocumentCloseNotification:interface'
               - name: Binding
                 uid: 'office!Office.Binding:interface'
               - name: BindingDataChangedEventArgs

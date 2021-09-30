@@ -3,11 +3,8 @@ name: Word.InlinePictureCollection
 uid: 'word!Word.InlinePictureCollection:class'
 package: word!
 fullName: Word.InlinePictureCollection
-summary: |-
-  Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: 'Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.'
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,11 +40,8 @@ methods:
     uid: 'word!Word.InlinePictureCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: |-
-      Gets the first inline image in this collection. Throws an error if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the first inline image in this collection. Throws an error if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +53,8 @@ methods:
     uid: 'word!Word.InlinePictureCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: |-
-      Gets the first inline image in this collection. Returns a null object if this collection is empty.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the first inline image in this collection. Returns a null object if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

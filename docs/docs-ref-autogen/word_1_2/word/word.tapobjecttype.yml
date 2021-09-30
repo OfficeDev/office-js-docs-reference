@@ -3,8 +3,8 @@ name: Word.TapObjectType
 uid: 'word!Word.TapObjectType:enum'
 package: word!
 fullName: Word.TapObjectType
-summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

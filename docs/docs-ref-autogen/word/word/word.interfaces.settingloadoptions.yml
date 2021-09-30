@@ -3,11 +3,8 @@ name: Word.Interfaces.SettingLoadOptions
 uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.SettingLoadOptions
-summary: |-
-  Represents a setting of the add-in.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents a setting of the add-in.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -30,13 +27,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingLoadOptions#key:member'
     package: word!
     fullName: key
-    summary: >-
-      Gets the key of the setting. Read only.
-
-
+    summary: Gets the key of the setting. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -47,13 +41,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingLoadOptions#value:member'
     package: word!
     fullName: value
-    summary: >-
-      Gets or sets the value of the setting.
-
-
+    summary: Gets or sets the value of the setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

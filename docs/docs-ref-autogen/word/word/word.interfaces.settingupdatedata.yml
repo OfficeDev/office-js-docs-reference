@@ -13,13 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingUpdateData#value:member'
     package: word!
     fullName: value
-    summary: >-
-      Gets or sets the value of the setting.
-
-
+    summary: Gets or sets the value of the setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

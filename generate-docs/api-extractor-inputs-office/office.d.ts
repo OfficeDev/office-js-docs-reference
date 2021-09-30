@@ -558,6 +558,59 @@ export declare namespace Office {
         onVisibilityModeChanged(
             listener: (message: VisibilityModeChangedMessage) => void,
         ): Promise<() => Promise<void>>;
+
+        /**
+         * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+        */
+        beforeDocumentCloseNotification: BeforeDocumentCloseNotification;
+    }
+    /**
+     * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+     * The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document.
+     * 
+     * @remarks
+     * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+     * @beta
+    */
+    export interface BeforeDocumentCloseNotification {
+        /**
+         * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds.
+         * This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enable(): Promise<void>;
+
+        /**
+         * Prevents the notification dialog from appearing when the user attempts to close a document.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        disable(): Promise<void>;
+
+        /**
+         * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. 
+         * This event handler will be triggered if one of the following conditions is met:
+         * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+         * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         * @param listener - The event handler that is called when the dialog is cancelled.
+         * @returns A promise that resolves when the event handler is added.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+        */
+        onCloseActionCancelled(
+            listener: () => void
+        ): Promise<() => Promise<void>>;     
     }
     /**
      * An interface that contains all the functionality provided to manage the state of the Office ribbon.

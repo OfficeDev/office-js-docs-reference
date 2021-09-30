@@ -3,11 +3,8 @@ name: Word.Interfaces.RangeCollectionLoadOptions
 uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.RangeCollectionLoadOptions
-summary: |-
-  Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: 'Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.'
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,10 +30,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
       color, and other properties.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,10 +44,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't
       a parent content control.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,10 +59,7 @@ properties:
       For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,11 +70,8 @@ properties:
     uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: |-
-      For EACH ITEM in the collection: Gets the text of the range. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the text of the range. Read-only.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
