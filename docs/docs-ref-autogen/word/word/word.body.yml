@@ -988,9 +988,7 @@ methods:
     remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 
-
       #### Examples
-
 
       ```javascript
 
