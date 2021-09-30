@@ -13,13 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingData#key:member'
     package: word!
     fullName: key
-    summary: >-
-      Gets the key of the setting. Read only.
-
-
+    summary: Gets the key of the setting. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -30,13 +27,10 @@ properties:
     uid: 'word!Word.Interfaces.SettingData#value:member'
     package: word!
     fullName: value
-    summary: >-
-      Gets or sets the value of the setting.
-
-
+    summary: Gets or sets the value of the setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

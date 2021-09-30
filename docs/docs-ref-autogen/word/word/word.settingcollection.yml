@@ -3,11 +3,8 @@ name: Word.SettingCollection
 uid: 'word!Word.SettingCollection:class'
 package: word!
 fullName: Word.SettingCollection
-summary: |-
-  Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: 'Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -43,13 +40,10 @@ methods:
     uid: 'word!Word.SettingCollection#add:member(1)'
     package: word!
     fullName: 'add(key, value)'
-    summary: >-
-      Creates a new setting or sets an existing setting.
-
-
+    summary: Creates a new setting or sets an existing setting.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -68,131 +62,168 @@ methods:
     uid: 'word!Word.SettingCollection#deleteAll:member(1)'
     package: word!
     fullName: deleteAll()
-    summary: >-
-      Deletes all settings in this add-in.
-
-
+    summary: Deletes all settings in this add-in.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Queue commands add a setting.
+          var settings = context.document.settings;
+          settings.add('startMonth', { month: 'March', year: 1998 });
+
+          // Queue a command to get the count of settings.
+          var count = settings.getCount();
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log(count.value);
+
+              // Queue a command to delete all settings.
+              settings.deleteAll();
+
+              // Queue a command to get the new count of settings.
+              count = settings.getCount();
+          })
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          .then(context.sync)
+          .then(function () {
+              console.log(count.value);
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'deleteAll(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete all settings.
-                  settings.deleteAll();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getCount()
     uid: 'word!Word.SettingCollection#getCount:member(1)'
     package: word!
     fullName: getCount()
-    summary: >-
-      Gets the count of settings.
-
-
+    summary: Gets the count of settings.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Queue commands add a setting.
+          var settings = context.document.settings;
+          settings.add('startMonth', { month: 'March', year: 1998 });
+
+          // Queue a command to get the count of settings.
+          var count = settings.getCount();
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log(count.value);
+
+              // Queue a command to delete all settings.
+              settings.deleteAll();
+
+              // Queue a command to get the new count of settings.
+              count = settings.getCount();
+          })
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          .then(context.sync)
+          .then(function () {
+              console.log(count.value);
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete all settings.
-                  settings.deleteAll();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItem(key)
     uid: 'word!Word.SettingCollection#getItem:member(1)'
     package: word!
     fullName: getItem(key)
-    summary: >-
-      Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.
-
-
+    summary: 'Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Queue commands add a setting.
+          var settings = context.document.settings;
+          settings.add('startMonth', { month: 'March', year: 1998 });
+
+          // Queue a command to retrieve a setting.
+          var startMonth = settings.getItem('startMonth');
+
+          // Queue a command to load the setting.
+          context.load(startMonth);
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              console.log(JSON.stringify(startMonth.value));
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -203,49 +234,64 @@ methods:
           type: string
       return:
         type: '<xref uid="word!Word.Setting:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to retrieve a setting.
-              var startMonth = settings.getItem('startMonth');
-
-              // Queue a command to load the setting.
-              context.load(startMonth);
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(JSON.stringify(startMonth.value));
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getItemOrNullObject(key)
     uid: 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
     package: word!
     fullName: getItemOrNullObject(key)
-    summary: >-
-      Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
-
-
+    summary: 'Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.'
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Run a batch operation against the Word object model.
+
+      Word.run(function (context) {
+
+          // Queue commands add a setting.
+          var settings = context.document.settings;
+          settings.add('startMonth', { month: 'March', year: 1998 });
+          
+          // Queue commands to retrieve settings.
+          var startMonth = settings.getItemOrNullObject('startMonth');
+          var endMonth = settings.getItemOrNullObject('endMonth');
+
+          // Queue commands to load settings.
+          context.load(startMonth);
+          context.load(endMonth);
+
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+             return context.sync().then(function () {
+                 if (startMonth.isNullObject) {
+                     console.log("No such setting.");
+                 }
+                 else {
+                     console.log(JSON.stringify(startMonth.value));
+                 }
+                  if (endMonth.isNullObject) {
+                     console.log("No such setting.");
+                 }
+                 else {
+                     console.log(JSON.stringify(endMonth.value));
+                 }
+          });
+      })
+
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -256,51 +302,7 @@ methods:
           type: string
       return:
         type: '<xref uid="word!Word.Setting:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-              
-              // Queue commands to retrieve settings.
-              var startMonth = settings.getItemOrNullObject('startMonth');
-              var endMonth = settings.getItemOrNullObject('endMonth');
-
-              // Queue commands to load settings.
-              context.load(startMonth);
-              context.load(endMonth);
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-                 return context.sync().then(function () {
-                     if (startMonth.isNullObject) {
-                         console.log("No such setting.");
-                     }
-                     else {
-                         console.log(JSON.stringify(startMonth.value));
-                     }
-                      if (endMonth.isNullObject) {
-                         console.log("No such setting.");
-                     }
-                     else {
-                         console.log(JSON.stringify(endMonth.value));
-                     }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: load(options)
     uid: 'word!Word.SettingCollection#load:member(1)'
     package: word!

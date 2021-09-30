@@ -7,10 +7,7 @@ summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
   paragraphs of formatted text. Currently, only rich text content controls are supported.
-
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -19,11 +16,8 @@ properties:
     uid: 'word!Word.ContentControl#appearance:member'
     package: word!
     fullName: appearance
-    summary: |-
-      Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets or sets the appearance of the content control. The value can be ''BoundingBox'', ''Tags'', or ''Hidden''.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,10 +31,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,11 +42,8 @@ properties:
     uid: 'word!Word.ContentControl#cannotEdit:member'
     package: word!
     fullName: cannotEdit
-    summary: |-
-      Gets or sets a value that indicates whether the user can edit the contents of the content control.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a value that indicates whether the user can edit the contents of the content control.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,11 +54,8 @@ properties:
     uid: 'word!Word.ContentControl#color:member'
     package: word!
     fullName: color
-    summary: |-
-      Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets or sets the color of the content control. Color is specified in ''\#RRGGBB'' format or by using the color name.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,11 +66,8 @@ properties:
     uid: 'word!Word.ContentControl#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: |-
-      Gets the collection of content control objects in the content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of content control objects in the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,10 +95,7 @@ properties:
     summary: >-
       Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
       Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,11 +106,8 @@ properties:
     uid: 'word!Word.ContentControl#id:member'
     package: word!
     fullName: id
-    summary: |-
-      Gets an integer that represents the content control identifier. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets an integer that represents the content control identifier. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,10 +121,7 @@ properties:
     summary: >-
       Gets the collection of inlinePicture objects in the content control. The collection does not include floating
       images. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,11 +132,8 @@ properties:
     uid: 'word!Word.ContentControl#lists:member'
     package: word!
     fullName: lists
-    summary: |-
-      Gets the collection of list objects in the content control. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of list objects in the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,11 +144,8 @@ properties:
     uid: 'word!Word.ContentControl#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: |-
-      Get the collection of paragraph objects in the content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Get the collection of paragraph objects in the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,11 +156,8 @@ properties:
     uid: 'word!Word.ContentControl#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: |-
-      Gets the parent body of the content control. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent body of the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,10 +171,7 @@ properties:
     summary: >-
       Gets the content control that contains the content control. Throws an error if there isn't a parent content
       control. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,10 +185,7 @@ properties:
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
       control. Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,11 +196,8 @@ properties:
     uid: 'word!Word.ContentControl#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: |-
-      Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,10 +211,7 @@ properties:
     summary: >-
       Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
       Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,10 +225,7 @@ properties:
     summary: >-
       Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
       cell. Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -290,10 +239,7 @@ properties:
     summary: >-
       Gets the table that contains the content control. Returns a null object if it is not contained in a table.
       Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,10 +256,7 @@ properties:
 
 
       **Note**: The set operation for this property is not supported in Word on the web.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,10 +270,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,10 +284,7 @@ properties:
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -361,10 +298,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
       portable between locales. To use custom styles or localized style names, see the "style" property.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -441,10 +375,7 @@ properties:
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -463,11 +394,8 @@ properties:
     uid: 'word!Word.ContentControl#tables:member'
     package: word!
     fullName: tables
-    summary: |-
-      Gets the collection of table objects in the content control. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of table objects in the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -478,61 +406,54 @@ properties:
     uid: 'word!Word.ContentControl#tag:member'
     package: word!
     fullName: tag
-    summary: |-
-      Gets or sets a tag to identify a content control.
-
+    summary: Gets or sets a tag to identify a content control.
+    remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+      // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags.
+
+      await Word.run(async (context) => {
+        let paragraphs = context.document.body.paragraphs;
+        paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
+
+        await context.sync();
+
+        for (let i = 0; i < paragraphs.items.length; i++) {
+          let contentControl = paragraphs.items[i].insertContentControl();
+          // For even, tag "even".
+          if (i % 2 === 0) {
+            contentControl.tag = "even";
+          } else {
+            contentControl.tag = "odd";
+          }
+        }
+        console.log("Content controls inserted: " + paragraphs.items.length);
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'tag: string;'
       return:
         type: string
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-          // Traverses each paragraph of the document and wraps a content control on each with either a even or odd
-          tags.
-
-          await Word.run(async (context) => {
-            let paragraphs = context.document.body.paragraphs;
-            paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
-
-            await context.sync();
-
-            for (let i = 0; i < paragraphs.items.length; i++) {
-              let contentControl = paragraphs.items[i].insertContentControl();
-              // For even, tag "even".
-              if (i % 2 === 0) {
-                contentControl.tag = "even";
-              } else {
-                contentControl.tag = "odd";
-              }
-            }
-            console.log("Content controls inserted: " + paragraphs.items.length);
-
-            await context.sync();
-          });
-
-          ```
   - name: text
     uid: 'word!Word.ContentControl#text:member'
     package: word!
     fullName: text
-    summary: |-
-      Gets the text of the content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text of the content control. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -543,11 +464,8 @@ properties:
     uid: 'word!Word.ContentControl#title:member'
     package: word!
     fullName: title
-    summary: |-
-      Gets or sets the title for a content control.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the title for a content control.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,11 +476,8 @@ properties:
     uid: 'word!Word.ContentControl#type:member'
     package: word!
     fullName: type
-    summary: |-
-      Gets the content control type. Only rich text content controls are supported currently. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -582,67 +497,102 @@ methods:
     uid: 'word!Word.ContentControl#clear:member(1)'
     package: word!
     fullName: clear()
-    summary: |-
-      Clears the contents of the content control. The user can perform the undo operation on the cleared content.
-
+    summary: Clears the contents of the content control. The user can perform the undo operation on the cleared content.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the content controls collection.
+          contentControls.load('text');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              
+              if (contentControls.items.length === 0) {
+                  console.log("There isn't a content control in this document.");
+              } else {
+                  
+                  // Queue a command to clear the contents of the first content control.
+                  contentControls.items[0].clear();
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync().then(function () {
+                      console.log('Content control cleared of contents.');
+                  });      
+              }
+                  
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the content controls collection.
-              contentControls.load('text');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  if (contentControls.items.length === 0) {
-                      console.log("There isn't a content control in this document.");
-                  } else {
-                      
-                      // Queue a command to clear the contents of the first content control.
-                      contentControls.items[0].clear();
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync().then(function () {
-                          console.log('Content control cleared of contents.');
-                      });      
-                  }
-                      
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: delete(keepContent)
     uid: 'word!Word.ContentControl#delete:member(1)'
     package: word!
     fullName: delete(keepContent)
-    summary: |-
-      Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
-
+    summary: 'Deletes the content control and its content. If keepContent is set to true, the content is not deleted.'
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the content controls collection.
+          contentControls.load('text');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              
+              if (contentControls.items.length === 0) {
+                  console.log("There isn't a content control in this document.");
+              } else {
+                  
+                  // Queue a command to delete the first content control. The
+                  // contents will remain in the document.
+                  contentControls.items[0].delete(true);
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync().then(function () {
+                      console.log('Content control cleared of contents.');
+                  });      
+              }
+                  
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -655,48 +605,7 @@ methods:
           type: boolean
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the content controls collection.
-              contentControls.load('text');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  if (contentControls.items.length === 0) {
-                      console.log("There isn't a content control in this document.");
-                  } else {
-                      
-                      // Queue a command to delete the first content control. The
-                      // contents will remain in the document.
-                      contentControls.items[0].delete(true);
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync().then(function () {
-                          console.log('Content control cleared of contents.');
-                      });      
-                  }
-                      
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getHtml()
     uid: 'word!Word.ContentControl#getHtml:member(1)'
     package: word!
@@ -707,122 +616,113 @@ methods:
       return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If
       you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned
       XML to HTML.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection that contains a specific tag.
+          var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+          
+          // Queue a command to load the tag property for all of content controls. 
+          context.load(contentControlsWithTag, 'tag');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControlsWithTag.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to get the HTML contents of the first content control.
+                  var html = contentControlsWithTag.items[0].getHtml();
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Content control HTML: ' + html.value);
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection that contains a specific tag.
-              var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-              
-              // Queue a command to load the tag property for all of content controls. 
-              context.load(contentControlsWithTag, 'tag');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTag.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to get the HTML contents of the first content control.
-                      var html = contentControlsWithTag.items[0].getHtml();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Content control HTML: ' + html.value);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getOoxml()
     uid: 'word!Word.ContentControl#getOoxml:member(1)'
     package: word!
     fullName: getOoxml()
-    summary: |-
-      Gets the Office Open XML (OOXML) representation of the content control object.
-
+    summary: Gets the Office Open XML (OOXML) representation of the content control object.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to get the OOXML contents of the first content control.
+                  var ooxml = contentControls.items[0].getOoxml();
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Content control OOXML: ' + ooxml.value);
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to get the OOXML contents of the first content control.
-                      var ooxml = contentControls.items[0].getOoxml();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Content control OOXML: ' + ooxml.value);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.ContentControl#getRange:member(1)'
     package: word!
     fullName: getRange(rangeLocation)
-    summary: |-
-      Gets the whole content control, or the starting or ending point of the content control, as a range.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the whole content control, or the starting or ending point of the content control, as a range.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -838,11 +738,8 @@ methods:
     uid: 'word!Word.ContentControl#getRange:member(2)'
     package: word!
     fullName: getRange(rangeLocationString)
-    summary: |-
-      Gets the whole content control, or the starting or ending point of the content control, as a range.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the whole content control, or the starting or ending point of the content control, as a range.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -858,11 +755,8 @@ methods:
     uid: 'word!Word.ContentControl#getTextRanges:member(1)'
     package: word!
     fullName: 'getTextRanges(endingMarks, trimSpacing)'
-    summary: |-
-      Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -887,10 +781,7 @@ methods:
     summary: >-
       Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
       'RichTextTableRow' and 'RichTextTableCell' content controls.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -912,10 +803,48 @@ methods:
     summary: >-
       Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
       'RichTextTableRow' and 'RichTextTableCell' content controls.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of content controls. 
+          context.load(contentControls, 'id');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion. We now will have 
+          // access to the content control collection.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to insert a page break after the first content control. 
+                  contentControls.items[0].insertBreak('page', "After");
+                  
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion. 
+                  return context.sync()
+                      .then(function () {
+                          console.log('Inserted a page break after the first content control.');    
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -931,57 +860,13 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of content controls. 
-              context.load(contentControls, 'id');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion. We now will have 
-              // access to the content control collection.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to insert a page break after the first content control. 
-                      contentControls.items[0].insertBreak('page', "After");
-                      
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion. 
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted a page break after the first content control.');    
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation)'
     uid: 'word!Word.ContentControl#insertFileFromBase64:member(1)'
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocation)'
-    summary: |-
-      Inserts a document into the content control at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a document into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1002,11 +887,8 @@ methods:
     uid: 'word!Word.ContentControl#insertFileFromBase64:member(2)'
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocationString)'
-    summary: |-
-      Inserts a document into the content control at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a document into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1029,11 +911,8 @@ methods:
     uid: 'word!Word.ContentControl#insertHtml:member(1)'
     package: word!
     fullName: 'insertHtml(html, insertLocation)'
-    summary: |-
-      Inserts HTML into the content control at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts HTML into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1054,11 +933,50 @@ methods:
     uid: 'word!Word.ContentControl#insertHtml:member(2)'
     package: word!
     fullName: 'insertHtml(html, insertLocationString)'
-    summary: |-
-      Inserts HTML into the content control at the specified location.
-
+    summary: Inserts HTML into the content control at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to put HTML into the contents of the first content control.
+                  contentControls.items[0].insertHtml(
+                      '<strong>HTML content inserted into the content control.</strong>',
+                      'Start');
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Inserted HTML in the first content control.');
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1074,58 +992,13 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to put HTML into the contents of the first content control.
-                      contentControls.items[0].insertHtml(
-                          '<strong>HTML content inserted into the content control.</strong>',
-                          'Start');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted HTML in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(1)'
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
-    summary: |-
-      Inserts an inline picture into the content control at the specified location.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts an inline picture into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1148,11 +1021,8 @@ methods:
     uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    summary: |-
-      Inserts an inline picture into the content control at the specified location.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts an inline picture into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1175,11 +1045,8 @@ methods:
     uid: 'word!Word.ContentControl#insertOoxml:member(1)'
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation)'
-    summary: |-
-      Inserts OOXML into the content control at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts OOXML into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1200,11 +1067,51 @@ methods:
     uid: 'word!Word.ContentControl#insertOoxml:member(2)'
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocationString)'
-    summary: |-
-      Inserts OOXML into the content control at the specified location.
-
+    summary: Inserts OOXML into the content control at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to put OOXML into the contents of the first content control.
+                  contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Inserted OOXML in the first content control.');
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1220,59 +1127,13 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to put OOXML into the contents of the first content control.
-                      contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted OOXML in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-          // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-          ```
+        description: ''
   - name: 'insertParagraph(paragraphText, insertLocation)'
     uid: 'word!Word.ContentControl#insertParagraph:member(1)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
-    summary: |-
-      Inserts a paragraph at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts a paragraph at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1293,11 +1154,48 @@ methods:
     uid: 'word!Word.ContentControl#insertParagraph:member(2)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: |-
-      Inserts a paragraph at the specified location.
-
+    summary: Inserts a paragraph at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to insert a paragraph after the first content control. 
+                  contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Inserted a paragraph after the first content control.');
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1315,56 +1213,13 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to insert a paragraph after the first content control. 
-                      contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted a paragraph after the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     uid: 'word!Word.ContentControl#insertTable:member(1)'
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
-    summary: |-
-      Inserts a table with the specified number of rows and columns into, or next to, a content control.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Inserts a table with the specified number of rows and columns into, or next to, a content control.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1393,11 +1248,8 @@ methods:
     uid: 'word!Word.ContentControl#insertTable:member(2)'
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
-    summary: |-
-      Inserts a table with the specified number of rows and columns into, or next to, a content control.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Inserts a table with the specified number of rows and columns into, or next to, a content control.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1426,11 +1278,8 @@ methods:
     uid: 'word!Word.ContentControl#insertText:member(1)'
     package: word!
     fullName: 'insertText(text, insertLocation)'
-    summary: |-
-      Inserts text into the content control at the specified location.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Inserts text into the content control at the specified location.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1451,11 +1300,51 @@ methods:
     uid: 'word!Word.ContentControl#insertText:member(2)'
     package: word!
     fullName: 'insertText(text, insertLocationString)'
-    summary: |-
-      Inserts text into the content control at the specified location.
-
+    summary: Inserts text into the content control at the specified location.
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to replace text in the first content control. 
+                  contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Replaced text in the first content control.');
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      // The Silly stories add-in sample shows how to use the insertText method.
+      // https://aka.ms/sillystorywordaddin
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1471,50 +1360,7 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to replace text in the first content control. 
-                      contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Replaced text in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Silly stories add-in sample shows how to use the insertText method.
-          // https://aka.ms/sillystorywordaddin
-          ```
+        description: ''
   - name: load(options)
     uid: 'word!Word.ContentControl#load:member(1)'
     package: word!
@@ -1658,10 +1504,47 @@ methods:
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the content control object. The search results
       are a collection of range objects.
-
-
+    remarks: |-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the content controls collection.
+          var contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls. 
+          context.load(contentControls, 'id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to select the first content control.
+                  contentControls.items[0].select();
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  return context.sync()
+                      .then(function () {
+                          console.log('Selected the first content control.');
+                  });
+              }
+          });  
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1693,56 +1576,13 @@ methods:
                     }
       return:
         type: '<xref uid="word!Word.RangeCollection:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to select the first content control.
-                      contentControls.items[0].select();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Selected the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: select(selectionMode)
     uid: 'word!Word.ContentControl#select:member(1)'
     package: word!
     fullName: select(selectionMode)
-    summary: |-
-      Selects the content control. This causes Word to scroll to the selection.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Selects the content control. This causes Word to scroll to the selection.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1758,11 +1598,8 @@ methods:
     uid: 'word!Word.ContentControl#select:member(2)'
     package: word!
     fullName: select(selectionModeString)
-    summary: |-
-      Selects the content control. This causes Word to scroll to the selection.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Selects the content control. This causes Word to scroll to the selection.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1781,56 +1618,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: >-
-      This method has the following additional signature:
-
-
-      `set(properties: Word.ContentControl): void`
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
-
-      // Adds title and colors to odd and even content controls and changes their appearance.
-
-      await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
-        let evenContentControls = context.document.contentControls.getByTag("even");
-        let oddContentControls = context.document.contentControls.getByTag("odd");
-        evenContentControls.load("length");
-        oddContentControls.load("length");
-
-        await context.sync();
-
-        for (let i = 0; i < evenContentControls.items.length; i++) {
-          // Change a few properties and append a paragraph
-          evenContentControls.items[i].set({
-            color: "red",
-            title: "Odd ContentControl #" + (i + 1),
-            appearance: "Tags"
-          });
-          evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
-        }
-
-        for (let j = 0; j < oddContentControls.items.length; j++) {
-          // Change a few properties and append a paragraph
-          oddContentControls.items[j].set({
-            color: "green",
-            title: "Even ContentControl #" + (j + 1),
-            appearance: "Tags"
-          });
-          oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
-        }
-
-        await context.sync();
-      });
-
-      ```
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1846,7 +1634,52 @@ methods:
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
-        description: ''
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+          // Adds title and colors to odd and even content controls and changes their appearance.
+
+          await Word.run(async (context) => {
+            // Gets the complete sentence (as range) associated with the insertion point.
+            let evenContentControls = context.document.contentControls.getByTag("even");
+            let oddContentControls = context.document.contentControls.getByTag("odd");
+            evenContentControls.load("length");
+            oddContentControls.load("length");
+
+            await context.sync();
+
+            for (let i = 0; i < evenContentControls.items.length; i++) {
+              // Change a few properties and append a paragraph
+              evenContentControls.items[i].set({
+                color: "red",
+                title: "Odd ContentControl #" + (i + 1),
+                appearance: "Tags"
+              });
+              evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+            }
+
+            for (let j = 0; j < oddContentControls.items.length; j++) {
+              // Change a few properties and append a paragraph
+              oddContentControls.items[j].set({
+                color: "green",
+                title: "Even ContentControl #" + (j + 1),
+                appearance: "Tags"
+              });
+              oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+            }
+
+            await context.sync();
+          });
+
+          ```
   - name: set(properties)
     uid: 'word!Word.ContentControl#set:member(2)'
     package: word!
@@ -1868,11 +1701,8 @@ methods:
     uid: 'word!Word.ContentControl#split:member(1)'
     package: word!
     fullName: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
-    summary: |-
-      Splits the content control into child ranges by using delimiters.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Splits the content control into child ranges by using delimiters.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
