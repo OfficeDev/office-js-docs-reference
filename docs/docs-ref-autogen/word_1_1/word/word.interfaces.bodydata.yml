@@ -13,11 +13,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyData#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: |-
-      Gets the collection of rich text content control objects in the body. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of rich text content control objects in the body. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyData#font:member'
     package: word!
     fullName: font
-    summary: |-
-      Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,10 +40,7 @@ properties:
     summary: >-
       Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
       Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyData#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: |-
-      Gets the collection of paragraph objects in the body. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of paragraph objects in the body. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,10 +66,7 @@ properties:
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,11 +77,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyData#text:member'
     package: word!
     fullName: text
-    summary: |-
-      Gets the text of the body. Use the insertText method to insert text. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text of the body. Use the insertText method to insert text. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

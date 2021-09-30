@@ -3,11 +3,8 @@ name: Word.Interfaces.BodyLoadOptions
 uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.BodyLoadOptions
-summary: |-
-  Represents the body of a document or a section.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents the body of a document or a section.
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#font:member'
     package: word!
     fullName: font
-    summary: |-
-      Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the text format of the body. Use this to get and set font name, size, color and other properties.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: |-
-      Gets the content control that contains the body. Throws an error if there isn't a parent content control.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,10 +54,7 @@ properties:
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,11 +65,8 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: |-
-      Gets the text of the body. Use the insertText method to insert text. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text of the body. Use the insertText method to insert text. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

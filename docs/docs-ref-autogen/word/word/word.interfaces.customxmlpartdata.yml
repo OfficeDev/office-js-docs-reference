@@ -13,13 +13,10 @@ properties:
     uid: 'word!Word.Interfaces.CustomXmlPartData#id:member'
     package: word!
     fullName: id
-    summary: >-
-      Gets the ID of the custom XML part. Read only.
-
-
+    summary: Gets the ID of the custom XML part. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -30,13 +27,10 @@ properties:
     uid: 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
     package: word!
     fullName: namespaceUri
-    summary: >-
-      Gets the namespace URI of the custom XML part. Read only.
-
-
+    summary: Gets the namespace URI of the custom XML part. Read only.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

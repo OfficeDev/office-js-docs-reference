@@ -3,11 +3,8 @@ name: Word.Interfaces.InlinePictureLoadOptions
 uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.InlinePictureLoadOptions
-summary: |-
-  Represents an inline picture.
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents an inline picture.
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#altTextDescription:member'
     package: word!
     fullName: altTextDescription
-    summary: |-
-      Gets or sets a string that represents the alternative text associated with the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a string that represents the alternative text associated with the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#altTextTitle:member'
     package: word!
     fullName: altTextTitle
-    summary: |-
-      Gets or sets a string that contains the title for the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a string that contains the title for the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#height:member'
     package: word!
     fullName: height
-    summary: |-
-      Gets or sets a number that describes the height of the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a number that describes the height of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#hyperlink:member'
     package: word!
     fullName: hyperlink
-    summary: |-
-      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#lockAspectRatio:member'
     package: word!
     fullName: lockAspectRatio
-    summary: |-
-      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,11 +87,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#paragraph:member'
     package: word!
     fullName: paragraph
-    summary: |-
-      Gets the parent paragraph that contains the inline image.
-
-      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent paragraph that contains the inline image.
+    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,11 +99,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: |-
-      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,11 +111,8 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureLoadOptions#width:member'
     package: word!
     fullName: width
-    summary: |-
-      Gets or sets a number that describes the width of the inline image.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets a number that describes the width of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

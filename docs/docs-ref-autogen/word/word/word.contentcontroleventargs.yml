@@ -3,11 +3,8 @@ name: Word.ContentControlEventArgs
 uid: 'word!Word.ContentControlEventArgs:interface'
 package: word!
 fullName: Word.ContentControlEventArgs
-summary: |-
-  Provides information about the content control that raised an event.
-
-  \[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Provides information about the content control that raised an event.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -16,13 +13,10 @@ properties:
     uid: 'word!Word.ContentControlEventArgs#contentControl:member'
     package: word!
     fullName: contentControl
-    summary: >-
-      The object that raised the event. Load this object to get its properties.
-
-
+    summary: The object that raised the event. Load this object to get its properties.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,13 +27,10 @@ properties:
     uid: 'word!Word.ContentControlEventArgs#eventType:member'
     package: word!
     fullName: eventType
-    summary: >-
-      The event type. See Word.EventType for details.
-
-
+    summary: The event type. See Word.EventType for details.
+    remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
