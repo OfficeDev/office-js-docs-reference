@@ -9142,48 +9142,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "word!Word.ContentControl:interface",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface ContentControl extends "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ContentControlCustom",
-                  "canonicalReference": "word!Word.ContentControlCustom:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": " "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "ContentControl",
-              "members": [],
-              "extendsTokenRanges": [
-                {
-                  "startIndex": 1,
-                  "endIndex": 2
-                },
-                {
-                  "startIndex": 3,
-                  "endIndex": 5
-                }
-              ]
-            },
-            {
               "kind": "Enum",
               "canonicalReference": "word!Word.ContentControlAppearance:enum",
               "docComment": "/**\n * ContentControl appearance\n *\n * @remarks\n *\n * [Api set: WordApi]\n *\n * Content control appearance options are bounding box, tags, or hidden.\n */\n",
@@ -9928,21 +9886,6 @@
                 "startIndex": 1,
                 "endIndex": 3
               },
-              "implementsTokenRanges": []
-            },
-            {
-              "kind": "Class",
-              "canonicalReference": "word!Word.ContentControlCustom:class",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export class ContentControlCustom "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "ContentControlCustom",
-              "members": [],
               "implementsTokenRanges": []
             },
             {
@@ -14450,48 +14393,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "word!Word.Document:interface",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface Document extends "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "DocumentCustom",
-                  "canonicalReference": "word!Word.DocumentCustom:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": " "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "Document",
-              "members": [],
-              "extendsTokenRanges": [
-                {
-                  "startIndex": 1,
-                  "endIndex": 2
-                },
-                {
-                  "startIndex": 3,
-                  "endIndex": 5
-                }
-              ]
-            },
-            {
               "kind": "Class",
               "canonicalReference": "word!Word.DocumentCreated:class",
               "docComment": "/**\n * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.\n *\n * @remarks\n *\n * [Api set: WordApi 1.3]\n */\n",
@@ -15273,21 +15174,6 @@
                 "startIndex": 1,
                 "endIndex": 3
               },
-              "implementsTokenRanges": []
-            },
-            {
-              "kind": "Class",
-              "canonicalReference": "word!Word.DocumentCustom:class",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export class DocumentCustom "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "DocumentCustom",
-              "members": [],
               "implementsTokenRanges": []
             },
             {
@@ -54298,91 +54184,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "word!Word.SearchOptions:interface",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface SearchOptions extends "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "SearchOptionsCustom",
-                  "canonicalReference": "word!Word.SearchOptionsCustom:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": " "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "SearchOptions",
-              "members": [],
-              "extendsTokenRanges": [
-                {
-                  "startIndex": 1,
-                  "endIndex": 2
-                },
-                {
-                  "startIndex": 3,
-                  "endIndex": 5
-                }
-              ]
-            },
-            {
-              "kind": "Class",
-              "canonicalReference": "word!Word.SearchOptionsCustom:class",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export class SearchOptionsCustom "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "SearchOptionsCustom",
-              "members": [
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.SearchOptionsCustom#matchWildCards:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "matchWildCards: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Public",
-                  "name": "matchWildCards",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  },
-                  "isStatic": false
-                }
-              ],
-              "implementsTokenRanges": []
-            },
-            {
               "kind": "Class",
               "canonicalReference": "word!Word.Section:class",
               "docComment": "/**\n * Represents a section in a Word document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
@@ -55994,48 +55795,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "word!Word.Setting:interface",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface Setting extends "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "SettingCustom",
-                  "canonicalReference": "word!Word.SettingCustom:class"
-                },
-                {
-                  "kind": "Content",
-                  "text": " "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "Setting",
-              "members": [],
-              "extendsTokenRanges": [
-                {
-                  "startIndex": 1,
-                  "endIndex": 2
-                },
-                {
-                  "startIndex": 3,
-                  "endIndex": 5
-                }
-              ]
-            },
-            {
               "kind": "Class",
               "canonicalReference": "word!Word.SettingCollection:class",
               "docComment": "/**\n * Contains the collection of {@link Word.Setting} objects.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
@@ -56577,112 +56336,6 @@
                 "startIndex": 1,
                 "endIndex": 3
               },
-              "implementsTokenRanges": []
-            },
-            {
-              "kind": "Class",
-              "canonicalReference": "word!Word.SettingCustom:class",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export class SettingCustom "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "SettingCustom",
-              "members": [
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.SettingCustom.replaceDateWithStringDate:member(1)",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "static replaceDateWithStringDate(value: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "any"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "any"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": true,
-                  "returnTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 4
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [
-                    {
-                      "parameterName": "value",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    }
-                  ],
-                  "name": "replaceDateWithStringDate"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.SettingCustom.replaceStringDateWithDate:member(1)",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "static replaceStringDateWithDate(value: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "any"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "any"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": true,
-                  "returnTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 4
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [
-                    {
-                      "parameterName": "value",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    }
-                  ],
-                  "name": "replaceStringDateWithDate"
-                }
-              ],
               "implementsTokenRanges": []
             },
             {
