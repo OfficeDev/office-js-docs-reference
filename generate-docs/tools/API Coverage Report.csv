@@ -5797,8 +5797,11 @@ Excel.WorksheetVisibilityChangedEventArgs,type,Method,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityAfter,Method,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityBefore,Method,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,worksheetId,Method,Good,false
-Office.Actions,N/A,Class,Fine,false
+Office.Actions,N/A,Class,Poor,false
 Office.Actions,associate,Method,Fine,false
+Office.Actions,areShortcutsInUse(shortcuts),Method,Good,false
+Office.Actions,getShortcuts(),Method,Good,false
+Office.Actions,replaceShortcuts(shortcuts),Method,Good,false
 Office.ActiveView,N/A,Class,Fine,false
 Office.ActiveView,Edit,EnumField,Fine,false
 Office.ActiveView,Read,EnumField,Fine,false
