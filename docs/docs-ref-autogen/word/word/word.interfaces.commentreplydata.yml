@@ -14,7 +14,9 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -26,7 +28,9 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment reply's author.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -38,7 +42,9 @@ properties:
     package: word!
     fullName: content
     summary: Gets or sets the comment reply's content. The string is plain text.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,7 +56,9 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,7 +82,9 @@ properties:
     package: word!
     fullName: parentComment
     summary: Gets the parent comment of this reply.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

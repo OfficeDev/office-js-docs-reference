@@ -612,7 +612,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -668,7 +668,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -696,7 +696,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#getComments:member(1)",
-                  "docComment": "/**\n * Gets comments associated with the body.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets comments associated with the body.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4047,7 +4047,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.Comment:class",
-              "docComment": "/**\n * Represents a comment in the document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents a comment in the document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4069,7 +4069,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#authorEmail:member",
-                  "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4096,7 +4096,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#authorName:member",
-                  "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4123,7 +4123,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#content:member",
-                  "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4178,7 +4178,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#creationDate:member",
-                  "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4206,7 +4206,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Comment#delete:member(1)",
-                  "docComment": "/**\n * Deletes the comment and its replies.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Deletes the comment and its replies.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4235,7 +4235,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Comment#getRange:member(1)",
-                  "docComment": "/**\n * Gets the range in the main document where the comment is on.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @returns \n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the range in the main document where the comment is on.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @returns \n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4431,7 +4431,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#replies:member",
-                  "docComment": "/**\n * Gets the collection of reply objects associated with the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of reply objects associated with the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4459,7 +4459,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Comment#reply:member(1)",
-                  "docComment": "/**\n * Adds a new reply to the end of the comment thread.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @param replyText - Required. Reply text.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Adds a new reply to the end of the comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param replyText - Required. Reply text.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4505,7 +4505,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#resolved:member",
-                  "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4737,7 +4737,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.CommentCollection:class",
-              "docComment": "/**\n * Contains a collection of {@link Word.Comment} object.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Contains a collection of {@link Word.Comment} object.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4787,7 +4787,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first comment in the collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @returns \n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first comment in the collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @returns \n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4817,7 +4817,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentCollection#getFirstOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets the first comment or null object in the collection.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @returns \n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first comment or null object in the collection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @returns \n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4847,7 +4847,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a comment object by its index in the collection.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @param index - A number that identifies the index location of a comments object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets a comment object by its index in the collection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param index - A number that identifies the index location of a comments object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5171,7 +5171,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.CommentReply:class",
-              "docComment": "/**\n * Represents a comment reply in the document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents a comment reply in the document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -5193,7 +5193,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CommentReply#authorEmail:member",
-                  "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5220,7 +5220,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CommentReply#authorName:member",
-                  "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5247,7 +5247,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CommentReply#content:member",
-                  "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5302,7 +5302,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CommentReply#creationDate:member",
-                  "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5330,7 +5330,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentReply#delete:member(1)",
-                  "docComment": "/**\n * Deletes the comment reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Deletes the comment reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5525,7 +5525,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CommentReply#parentComment:member",
-                  "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5758,7 +5758,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.CommentReplyCollection:class",
-              "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -5808,7 +5808,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentReplyCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first comment reply in the collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first comment reply in the collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5838,7 +5838,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentReplyCollection#getFirstOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets the first comment reply or null object in the collection.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @returns \n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first comment reply or null object in the collection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @returns \n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5868,7 +5868,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CommentReplyCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a comment reply object by its index in the collection.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @param index - A number that identifies the index location of a comments object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets a comment reply object by its index in the collection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param index - A number that identifies the index location of a comments object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6457,7 +6457,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6513,7 +6513,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6541,7 +6541,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#getComments:member(1)",
-                  "docComment": "/**\n * Gets comments associated with the body.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets comments associated with the body.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13771,7 +13771,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#getEndnoteBody:member(1)",
-                  "docComment": "/**\n * Gets the body of the document's endnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the body of the document's endnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13801,7 +13801,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#getFootnoteBody:member(1)",
-                  "docComment": "/**\n * Gets the body of the document's footnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the body of the document's footnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14125,7 +14125,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#search:member(1)",
-                  "docComment": "/**\n * Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a collection of range objects.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a collection of range objects.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21125,7 +21125,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Contains a collection of {@link Word.Comment} object.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Contains a collection of {@link Word.Comment} object.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21164,7 +21164,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#authorEmail:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21190,7 +21190,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#authorName:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21216,7 +21216,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#content:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21242,7 +21242,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#creationDate:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21294,7 +21294,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#resolved:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21383,7 +21383,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#authorEmail:member",
-                      "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21409,7 +21409,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#authorName:member",
-                      "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21435,7 +21435,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21461,7 +21461,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#creationDate:member",
-                      "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21514,7 +21514,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#replies:member",
-                      "docComment": "/**\n * Gets the collection of reply objects associated with the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the collection of reply objects associated with the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21545,7 +21545,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#resolved:member",
-                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21574,7 +21574,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CommentLoadOptions:interface",
-                  "docComment": "/**\n * Represents a comment in the document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a comment in the document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21613,7 +21613,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#authorEmail:member",
-                      "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the email of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21639,7 +21639,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#authorName:member",
-                      "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the name of the comment's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21665,7 +21665,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21691,7 +21691,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#creationDate:member",
-                      "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the creation date of the comment.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21743,7 +21743,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#resolved:member",
-                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21819,7 +21819,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21858,7 +21858,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21884,7 +21884,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions#authorName:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21910,7 +21910,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions#content:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21936,7 +21936,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21988,7 +21988,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions#parentComment:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22078,7 +22078,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyData#authorEmail:member",
-                      "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22104,7 +22104,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyData#authorName:member",
-                      "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22130,7 +22130,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyData#content:member",
-                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22156,7 +22156,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyData#creationDate:member",
-                      "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22209,7 +22209,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyData#parentComment:member",
-                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22239,7 +22239,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions:interface",
-                  "docComment": "/**\n * Represents a comment reply in the document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a comment reply in the document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22278,7 +22278,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions#authorEmail:member",
-                      "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the email of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22304,7 +22304,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions#authorName:member",
-                      "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the name of the comment reply's author.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22330,7 +22330,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions#content:member",
-                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22356,7 +22356,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions#creationDate:member",
-                      "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the creation date of the comment reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22408,7 +22408,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member",
-                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22451,7 +22451,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyUpdateData#content:member",
-                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment reply's content. The string is plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22477,7 +22477,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentReplyUpdateData#parentComment:member",
-                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the parent comment of this reply.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22520,7 +22520,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentUpdateData#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22546,7 +22546,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentUpdateData#resolved:member",
-                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30901,7 +30901,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Contains a collection of {@link Word.NoteItem} objects.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Contains a collection of {@link Word.NoteItem} objects.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30940,7 +30940,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions#body:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30967,7 +30967,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30994,7 +30994,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions#type:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31083,7 +31083,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemData#body:member",
-                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31110,7 +31110,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemData#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31137,7 +31137,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemData#type:member",
-                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31171,7 +31171,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions:interface",
-                  "docComment": "/**\n * Represents a footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31210,7 +31210,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions#body:member",
-                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31237,7 +31237,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31264,7 +31264,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions#type:member",
-                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31306,7 +31306,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemUpdateData#body:member",
-                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31333,7 +31333,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemUpdateData#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -44976,7 +44976,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.NoteItem:class",
-              "docComment": "/**\n * Represents a footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents a footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -44998,7 +44998,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.NoteItem#body:member",
-                  "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45054,7 +45054,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.NoteItem#delete:member(1)",
-                  "docComment": "/**\n * Deletes the note item.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Deletes the note item.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45083,7 +45083,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.NoteItem#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next note item of the same type. Throws an error if this note item is the last one.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the next note item of the same type. Throws an error if this note item is the last one.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45113,7 +45113,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.NoteItem#getNextOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets the next note item of the same type. Returns a null object if this note item is the last one.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the next note item of the same type. Returns a null object if this note item is the last one.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45282,7 +45282,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.NoteItem#reference:member",
-                  "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45478,7 +45478,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.NoteItem#type:member",
-                  "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45547,7 +45547,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.NoteItemCollection:class",
-              "docComment": "/**\n * Contains a collection of {@link Word.NoteItem} objects.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Contains a collection of {@link Word.NoteItem} objects.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -45597,7 +45597,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.NoteItemCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first note item in this collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first note item in this collection. Throws an error if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45627,7 +45627,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.NoteItemCollection#getFirstOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets the first note item in this collection. Returns a null object if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the first note item in this collection. Returns a null object if this collection is empty.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46250,7 +46250,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46333,7 +46333,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46361,7 +46361,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getComments:member(1)",
-                  "docComment": "/**\n * Gets comments associated with the paragraph.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets comments associated with the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49776,7 +49776,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49926,7 +49926,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50019,7 +50019,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getComments:member(1)",
-                  "docComment": "/**\n * Gets comments associated with the range.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @returns \n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets comments associated with the range.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @returns \n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50645,7 +50645,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertComment:member(1)",
-                  "docComment": "/**\n * Insert a comment on the range.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @param commentText - Required. Comment text.\n *\n * @returns comment object\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Insert a comment on the range.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param commentText - Required. Comment text.\n *\n * @returns comment object\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50721,7 +50721,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertEndnote:member(1)",
-                  "docComment": "/**\n * Inserts an endnote. The endnote reference is placed after the range.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Inserts an endnote. The endnote reference is placed after the range.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50890,7 +50890,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFootnote:member(1)",
-                  "docComment": "/**\n * Inserts a footnote. The footnote reference is placed after the range.\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Inserts a footnote. The footnote reference is placed after the range.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -60433,7 +60433,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -60489,7 +60489,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -65774,7 +65774,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.TableRow#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -65830,7 +65830,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.TableRow#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordOnline 1.2]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

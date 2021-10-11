@@ -40,7 +40,9 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the table. Read-only
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,7 +66,9 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the table. Read-only
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

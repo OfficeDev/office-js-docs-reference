@@ -4,7 +4,9 @@ uid: 'word!Word.NoteItemCollection:class'
 package: word!
 fullName: Word.NoteItemCollection
 summary: 'Contains a collection of [Word.NoteItem](xref:word!Word.NoteItem:class) objects.'
-remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: class
@@ -41,7 +43,9 @@ methods:
     package: word!
     fullName: getFirst()
     summary: Gets the first note item in this collection. Throws an error if this collection is empty.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,7 +58,9 @@ methods:
     package: word!
     fullName: getFirstOrNullObject()
     summary: Gets the first note item in this collection. Returns a null object if this collection is empty.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

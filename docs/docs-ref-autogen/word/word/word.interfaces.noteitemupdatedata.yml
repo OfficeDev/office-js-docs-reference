@@ -14,7 +14,9 @@ properties:
     package: word!
     fullName: body
     summary: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -26,7 +28,9 @@ properties:
     package: word!
     fullName: reference
     summary: Represents a footnote/endnote reference in the main document.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

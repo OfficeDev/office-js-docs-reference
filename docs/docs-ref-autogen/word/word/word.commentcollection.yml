@@ -4,7 +4,9 @@ uid: 'word!Word.CommentCollection:class'
 package: word!
 fullName: Word.CommentCollection
 summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) object.'
-remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: class
@@ -41,7 +43,9 @@ methods:
     package: word!
     fullName: getFirst()
     summary: Gets the first comment in the collection. Throws an error if this collection is empty.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,7 +58,9 @@ methods:
     package: word!
     fullName: getFirstOrNullObject()
     summary: Gets the first comment or null object in the collection.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -67,7 +73,9 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a comment object by its index in the collection.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

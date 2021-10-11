@@ -4,7 +4,9 @@ uid: 'word!Word.Interfaces.CommentCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CommentCollectionLoadOptions
 summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) object.'
-remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: interface
@@ -28,7 +30,9 @@ properties:
     package: word!
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -40,7 +44,9 @@ properties:
     package: word!
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -52,7 +58,9 @@ properties:
     package: word!
     fullName: content
     summary: 'For EACH ITEM in the collection: Gtes or sets the comment''s content as plain text.'
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,7 +72,9 @@ properties:
     package: word!
     fullName: creationDate
     summary: 'For EACH ITEM in the collection: Gets the creation date of the comment.'
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -90,7 +100,9 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment
       thread is resolved.
-    remarks: '\[ [API set: WordOnline 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
