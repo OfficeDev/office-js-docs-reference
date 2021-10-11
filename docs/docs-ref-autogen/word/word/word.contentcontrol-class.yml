@@ -88,6 +88,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: endnotes
+    uid: 'word!Word.ContentControl#endnotes:member'
+    package: word!
+    fullName: endnotes
+    summary: Gets the collection of endnotes in the contentcontrol. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly endnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: font
     uid: 'word!Word.ContentControl#font:member'
     package: word!
@@ -102,6 +116,20 @@ properties:
       content: 'readonly font: Word.Font;'
       return:
         type: '<xref uid="word!Word.Font:class" />'
+  - name: footnotes
+    uid: 'word!Word.ContentControl#footnotes:member'
+    package: word!
+    fullName: footnotes
+    summary: Gets the collection of footnotes in the contentcontrol. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly footnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: id
     uid: 'word!Word.ContentControl#id:member'
     package: word!
@@ -605,6 +633,21 @@ methods:
           type: boolean
       return:
         type: void
+        description: ''
+  - name: getComments()
+    uid: 'word!Word.ContentControl#getComments:member(1)'
+    package: word!
+    fullName: getComments()
+    summary: Gets comments associated with the body.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
         description: ''
   - name: getHtml()
     uid: 'word!Word.ContentControl#getHtml:member(1)'

@@ -57,6 +57,8 @@ items:
                 uid: 'word!Word.ListNumbering:enum'
               - name: LocationRelation
                 uid: 'word!Word.LocationRelation:enum'
+              - name: NoteItemType
+                uid: 'word!Word.NoteItemType:enum'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
               - name: SelectionMode
@@ -73,10 +75,22 @@ items:
             uid: 'word!Word.Application:class'
           - name: Body
             uid: 'word!Word.Body:class'
-          - name: ContentControl
+          - name: Comment
+            uid: 'word!Word.Comment:class'
+          - name: CommentCollection
+            uid: 'word!Word.CommentCollection:class'
+          - name: CommentReply
+            uid: 'word!Word.CommentReply:class'
+          - name: CommentReplyCollection
+            uid: 'word!Word.CommentReplyCollection:class'
+          - name: ContentControl (Class)
             uid: 'word!Word.ContentControl:class'
+          - name: ContentControl (Interface)
+            uid: 'word!Word.ContentControl:interface'
           - name: ContentControlCollection
             uid: 'word!Word.ContentControlCollection:class'
+          - name: ContentControlCustom
+            uid: 'word!Word.ContentControlCustom:class'
           - name: ContentControlEventArgs
             uid: 'word!Word.ContentControlEventArgs:interface'
           - name: CustomProperty
@@ -89,10 +103,14 @@ items:
             uid: 'word!Word.CustomXmlPartCollection:class'
           - name: CustomXmlPartScopedCollection
             uid: 'word!Word.CustomXmlPartScopedCollection:class'
-          - name: Document
+          - name: Document (Class)
             uid: 'word!Word.Document:class'
+          - name: Document (Interface)
+            uid: 'word!Word.Document:interface'
           - name: DocumentCreated
             uid: 'word!Word.DocumentCreated:class'
+          - name: DocumentCustom
+            uid: 'word!Word.DocumentCustom:class'
           - name: DocumentProperties
             uid: 'word!Word.DocumentProperties:class'
           - name: Font
@@ -107,6 +125,10 @@ items:
             uid: 'word!Word.ListCollection:class'
           - name: ListItem
             uid: 'word!Word.ListItem:class'
+          - name: NoteItem
+            uid: 'word!Word.NoteItem:class'
+          - name: NoteItemCollection
+            uid: 'word!Word.NoteItemCollection:class'
           - name: Paragraph
             uid: 'word!Word.Paragraph:class'
           - name: ParagraphCollection
@@ -117,16 +139,24 @@ items:
             uid: 'word!Word.RangeCollection:class'
           - name: RequestContext
             uid: 'word!Word.RequestContext:class'
-          - name: SearchOptions
+          - name: SearchOptions (Class)
             uid: 'word!Word.SearchOptions:class'
+          - name: SearchOptions (Interface)
+            uid: 'word!Word.SearchOptions:interface'
+          - name: SearchOptionsCustom
+            uid: 'word!Word.SearchOptionsCustom:class'
           - name: Section
             uid: 'word!Word.Section:class'
           - name: SectionCollection
             uid: 'word!Word.SectionCollection:class'
-          - name: Setting
+          - name: Setting (Class)
             uid: 'word!Word.Setting:class'
+          - name: Setting (Interface)
+            uid: 'word!Word.Setting:interface'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
+          - name: SettingCustom
+            uid: 'word!Word.SettingCustom:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder

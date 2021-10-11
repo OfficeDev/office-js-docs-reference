@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.SearchOptionsCustom
+uid: 'word!Word.SearchOptionsCustom:class'
+package: word!
+fullName: Word.SearchOptionsCustom
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: matchWildCards
+    uid: 'word!Word.SearchOptionsCustom#matchWildCards:member'
+    package: word!
+    fullName: matchWildCards
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchWildCards: boolean;'
+      return:
+        type: boolean

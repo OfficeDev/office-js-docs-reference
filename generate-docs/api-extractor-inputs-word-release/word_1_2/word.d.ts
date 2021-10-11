@@ -2606,6 +2606,7 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * Content control appearance options are bounding box, tags, or hidden.
      */
     enum ContentControlAppearance {
@@ -2814,6 +2815,7 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * To be used with an API call, such as `obj.insertSomething(newStuff, location);`
      * If the location is "Before" or "After", the new content will be outside of the modified object.
      * If the location is "Start" or "End", the new content will be included as part of the modified object.

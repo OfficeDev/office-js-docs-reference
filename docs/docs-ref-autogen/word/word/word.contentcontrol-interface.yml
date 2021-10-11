@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Word.ContentControl
+uid: 'word!Word.ContentControl:interface'
+package: word!
+fullName: Word.ContentControl
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

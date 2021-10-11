@@ -47,6 +47,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: endnotes
+    uid: 'word!Word.TableRow#endnotes:member'
+    package: word!
+    fullName: endnotes
+    summary: Gets the collection of endnotes in the table row. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly endnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: font
     uid: 'word!Word.TableRow#font:member'
     package: word!
@@ -59,6 +73,20 @@ properties:
       content: 'readonly font: Word.Font;'
       return:
         type: '<xref uid="word!Word.Font:class" />'
+  - name: footnotes
+    uid: 'word!Word.TableRow#footnotes:member'
+    package: word!
+    fullName: footnotes
+    summary: Gets the collection of footnotes in the table row. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly footnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: horizontalAlignment
     uid: 'word!Word.TableRow#horizontalAlignment:member'
     package: word!

@@ -197,6 +197,36 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: getEndnoteBody()
+    uid: 'word!Word.Document#getEndnoteBody:member(1)'
+    package: word!
+    fullName: getEndnoteBody()
+    summary: Gets the body of the document's endnotes. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getEndnoteBody(): Word.Body;'
+      return:
+        type: '<xref uid="word!Word.Body:class" />'
+        description: ''
+  - name: getFootnoteBody()
+    uid: 'word!Word.Document#getFootnoteBody:member(1)'
+    package: word!
+    fullName: getFootnoteBody()
+    summary: Gets the body of the document's footnotes. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFootnoteBody(): Word.Body;'
+      return:
+        type: '<xref uid="word!Word.Body:class" />'
+        description: ''
   - name: getSelection()
     uid: 'word!Word.Document#getSelection:member(1)'
     package: word!
@@ -396,6 +426,48 @@ methods:
       content: 'save(): void;'
       return:
         type: void
+        description: ''
+  - name: 'search(searchText, searchOptions)'
+    uid: 'word!Word.Document#search:member(1)'
+    package: word!
+    fullName: 'search(searchText, searchOptions)'
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a
+      collection of range objects.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      parameters:
+        - id: searchText
+          description: ''
+          type: string
+        - id: searchOptions
+          description: ''
+          type: |-
+            <xref uid="word!Word.SearchOptions:class" /> | {
+                        ignorePunct?: boolean;
+                        ignoreSpace?: boolean;
+                        matchCase?: boolean;
+                        matchPrefix?: boolean;
+                        matchSuffix?: boolean;
+                        matchWholeWord?: boolean;
+                        matchWildcards?: boolean;
+                    }
+      return:
+        type: '<xref uid="word!Word.RangeCollection:class" />'
         description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Document#set:member(1)'

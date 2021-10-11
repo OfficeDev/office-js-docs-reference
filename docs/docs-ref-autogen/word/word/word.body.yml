@@ -35,6 +35,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: endnotes
+    uid: 'word!Word.Body#endnotes:member'
+    package: word!
+    fullName: endnotes
+    summary: Gets the collection of endnotes in the body. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly endnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: font
     uid: 'word!Word.Body#font:member'
     package: word!
@@ -82,6 +96,20 @@ properties:
       content: 'readonly font: Word.Font;'
       return:
         type: '<xref uid="word!Word.Font:class" />'
+  - name: footnotes
+    uid: 'word!Word.Body#footnotes:member'
+    package: word!
+    fullName: footnotes
+    summary: Gets the collection of footnotes in the body. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly footnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: inlinePictures
     uid: 'word!Word.Body#inlinePictures:member'
     package: word!
@@ -409,9 +437,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";'
+      content: >-
+        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" |
+        "Footnote" | "Endnote" | "NoteItem";
       return:
-        type: '<xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"'
+        type: >-
+          <xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
+          | "Footnote" | "Endnote" | "NoteItem"
 methods:
   - name: clear()
     uid: 'word!Word.Body#clear:member(1)'
@@ -456,6 +488,21 @@ methods:
       content: 'clear(): void;'
       return:
         type: void
+        description: ''
+  - name: getComments()
+    uid: 'word!Word.Body#getComments:member(1)'
+    package: word!
+    fullName: getComments()
+    summary: Gets comments associated with the body.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
         description: ''
   - name: getHtml()
     uid: 'word!Word.Body#getHtml:member(1)'
