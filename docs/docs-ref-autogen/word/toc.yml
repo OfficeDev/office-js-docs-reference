@@ -83,14 +83,10 @@ items:
             uid: 'word!Word.CommentReply:class'
           - name: CommentReplyCollection
             uid: 'word!Word.CommentReplyCollection:class'
-          - name: ContentControl (Class)
+          - name: ContentControl
             uid: 'word!Word.ContentControl:class'
-          - name: ContentControl (Interface)
-            uid: 'word!Word.ContentControl:interface'
           - name: ContentControlCollection
             uid: 'word!Word.ContentControlCollection:class'
-          - name: ContentControlCustom
-            uid: 'word!Word.ContentControlCustom:class'
           - name: ContentControlEventArgs
             uid: 'word!Word.ContentControlEventArgs:interface'
           - name: CustomProperty
@@ -103,14 +99,10 @@ items:
             uid: 'word!Word.CustomXmlPartCollection:class'
           - name: CustomXmlPartScopedCollection
             uid: 'word!Word.CustomXmlPartScopedCollection:class'
-          - name: Document (Class)
+          - name: Document
             uid: 'word!Word.Document:class'
-          - name: Document (Interface)
-            uid: 'word!Word.Document:interface'
           - name: DocumentCreated
             uid: 'word!Word.DocumentCreated:class'
-          - name: DocumentCustom
-            uid: 'word!Word.DocumentCustom:class'
           - name: DocumentProperties
             uid: 'word!Word.DocumentProperties:class'
           - name: Font
@@ -139,24 +131,16 @@ items:
             uid: 'word!Word.RangeCollection:class'
           - name: RequestContext
             uid: 'word!Word.RequestContext:class'
-          - name: SearchOptions (Class)
+          - name: SearchOptions
             uid: 'word!Word.SearchOptions:class'
-          - name: SearchOptions (Interface)
-            uid: 'word!Word.SearchOptions:interface'
-          - name: SearchOptionsCustom
-            uid: 'word!Word.SearchOptionsCustom:class'
           - name: Section
             uid: 'word!Word.Section:class'
           - name: SectionCollection
             uid: 'word!Word.SectionCollection:class'
-          - name: Setting (Class)
+          - name: Setting
             uid: 'word!Word.Setting:class'
-          - name: Setting (Interface)
-            uid: 'word!Word.Setting:interface'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
-          - name: SettingCustom
-            uid: 'word!Word.SettingCustom:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder

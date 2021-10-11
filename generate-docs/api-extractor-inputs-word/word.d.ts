@@ -1422,12 +1422,6 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.ContentControlData;
     }
-    export class ContentControlCustom {
-        private getDocument();
-        private getReferenceId();
-    }
-    export interface ContentControl extends OfficeExtension.ClientObject, ContentControlCustom {
-    }
     /**
      * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
      *
@@ -2350,10 +2344,6 @@ export declare namespace Word {
         * Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.DocumentData;
-    }
-    export class DocumentCustom {
-    }
-    export interface Document extends OfficeExtension.ClientObject, DocumentCustom {
     }
     /**
      * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
@@ -5250,11 +5240,6 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
-    export class SearchOptionsCustom {
-        matchWildCards: boolean;
-    }
-    export interface SearchOptions extends OfficeExtension.ClientObject, SearchOptionsCustom {
-    }
     /**
      * Represents a section in a Word document.
      *
@@ -5497,14 +5482,6 @@ export declare namespace Word {
         * Whereas the original Word.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.SettingData;
-    }
-    export class SettingCustom {
-        private static DateJSONPrefix;
-        private static DateJSONSuffix;
-        static replaceStringDateWithDate(value: any): any;
-        static replaceDateWithStringDate(value: any): any;
-    }
-    export interface Setting extends OfficeExtension.ClientObject, SettingCustom {
     }
     /**
      * Contains the collection of {@link Word.Setting} objects.
