@@ -668,10 +668,8 @@ events:
     package: excel!
     fullName: onMoved
     summary: Occurs when a worksheet is moved by a user within a workbook.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onMoved: OfficeExtension.EventHandlers<Excel.WorksheetMovedEventArgs>;'
@@ -684,10 +682,8 @@ events:
     package: excel!
     fullName: onNameChanged
     summary: Occurs when the worksheet name is changed in the worksheet collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onNameChanged: OfficeExtension.EventHandlers<Excel.WorksheetNameChangedEventArgs>;'
@@ -700,10 +696,8 @@ events:
     package: excel!
     fullName: onProtectionChanged
     summary: Occurs when the worksheet protection state is changed.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
@@ -775,10 +769,8 @@ events:
     package: excel!
     fullName: onVisibilityChanged
     summary: Occurs when the worksheet visibility is changed in the worksheet collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;'

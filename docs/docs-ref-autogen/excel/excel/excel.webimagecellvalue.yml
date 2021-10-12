@@ -3,14 +3,11 @@ name: Excel.WebImageCellValue
 uid: 'excel!Excel.WebImageCellValue:interface'
 package: excel!
 fullName: Excel.WebImageCellValue
-summary: >-
-  Represents the value of a cell containing an image downloaded from the internet.
-
-
+summary: Represents the value of a cell containing an image downloaded from the internet.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -21,12 +18,10 @@ properties:
     summary: >-
       Represents the URL from which the image will be downloaded. This image must be hosted on a server that supports
       HTTPS.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'address: string;'
@@ -36,14 +31,11 @@ properties:
     uid: 'excel!Excel.WebImageCellValue#altText:member'
     package: excel!
     fullName: altText
-    summary: >-
-      Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
-
-
+    summary: Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'altText?: string;'
@@ -53,14 +45,11 @@ properties:
     uid: 'excel!Excel.WebImageCellValue#attribution:member'
     package: excel!
     fullName: attribution
-    summary: >-
-      Represents attribution information to describe the source and license requirements for using this image.
-
-
+    summary: Represents attribution information to describe the source and license requirements for using this image.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'attribution?: CellValueAttributionAttributes[];'
@@ -70,34 +59,28 @@ properties:
     uid: 'excel!Excel.WebImageCellValue#primitive:member'
     package: excel!
     fullName: primitive
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitive: "#VALUE!";'
+      content: 'primitive?: "#VALUE!";'
       return:
         type: '"#VALUE!"'
   - name: primitiveType
     uid: 'excel!Excel.WebImageCellValue#primitiveType:member'
     package: excel!
     fullName: primitiveType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType: RangeValueType.error | "Error";'
+      content: 'primitiveType?: RangeValueType.error | "Error";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: provider
@@ -107,12 +90,10 @@ properties:
     summary: >-
       Represents information that describes the entity or individual who provided the image. This information can be
       used for branding in image cards.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'provider?: CellValueProviderAttributes;'
@@ -122,14 +103,11 @@ properties:
     uid: 'excel!Excel.WebImageCellValue#relatedImagesAddress:member'
     package: excel!
     fullName: relatedImagesAddress
-    summary: >-
-      Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`<!-- -->.
-
-
+    summary: Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'relatedImagesAddress?: string;'
@@ -139,14 +117,11 @@ properties:
     uid: 'excel!Excel.WebImageCellValue#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Represents the type of this cell value.
-
-
+    summary: Represents the type of this cell value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.webImage | "WebImage";'

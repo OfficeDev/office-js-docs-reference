@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: Excel.ShapeTextVerticalOverflow
+uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
+package: excel!
+fullName: Excel.ShapeTextVerticalOverflow
+summary: Specifies the vertical overflow for the text frame in a shape.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: clip
+    uid: 'excel!Excel.ShapeTextVerticalOverflow.clip:member'
+    package: excel!
+    summary: Hide text that does not fit vertically within the text frame.
+    value: '"Clip"'
+  - name: ellipsis
+    uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
+    package: excel!
+    summary: >-
+      Hide text that does not fit vertically within the text frame, and add an ellipsis (...) at the end of the visible
+      text.
+    value: '"Ellipsis"'
+  - name: overflow
+    uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
+    package: excel!
+    summary: >-
+      Allow text to overflow the text frame vertically (can be from the top, bottom, or both depending on the text
+      alignment).
+    value: '"Overflow"'

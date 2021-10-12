@@ -322,6 +322,38 @@ methods:
       return:
         type: void
         description: ''
+  - name: getDataSourceString()
+    uid: 'excel!Excel.PivotTable#getDataSourceString:member(1)'
+    package: excel!
+    fullName: getDataSourceString()
+    summary: >-
+      Returns the string representation of the data source for the PivotTable. This method currently supports string
+      representations for table and range objects. Otherwise, it returns an empty string.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDataSourceString(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getDataSourceType()
+    uid: 'excel!Excel.PivotTable#getDataSourceType:member(1)'
+    package: excel!
+    fullName: getDataSourceType()
+    summary: Gets the type of the data source for the PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDataSourceType(): OfficeExtension.ClientResult<Excel.DataSourceType>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.DataSourceType:enum" />&gt;'
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.PivotTable#load:member(1)'
     package: excel!

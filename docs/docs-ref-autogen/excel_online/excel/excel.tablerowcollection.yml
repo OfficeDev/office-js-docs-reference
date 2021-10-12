@@ -54,10 +54,10 @@ properties:
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />[]'
 methods:
-  - name: 'add(index, values)'
+  - name: 'add(index, values, alwaysInsert)'
     uid: 'excel!Excel.TableRowCollection#add:member(1)'
     package: excel!
-    fullName: 'add(index, values)'
+    fullName: 'add(index, values, alwaysInsert)'
     summary: >-
       Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
@@ -95,8 +95,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number):
-        Excel.TableRow;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?:
+        boolean): Excel.TableRow;
       parameters:
         - id: index
           description: >-
@@ -106,8 +106,56 @@ methods:
         - id: values
           description: Optional. A 2D array of unformatted values of the table row.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
+        - id: alwaysInsert
+          description: ''
+          type: boolean
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'
+        description: ''
+  - name: deleteRows(rows)
+    uid: 'excel!Excel.TableRowCollection#deleteRows:member(1)'
+    package: excel!
+    fullName: deleteRows(rows)
+    summary: >-
+      Delete multiple rows from a table. These rows don't need to be sequential. This method will throw the
+      `InvalidArgument` error if a chosen row has already been deleted or doesn't exist. This method will throw the
+      `InsertDeleteConflict` error if the table on which the method is called has a filter applied.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRows(rows: number[] | TableRow[]): void;'
+      parameters:
+        - id: rows
+          description: An array of row index numbers or row objects to delete from the table.
+          type: 'number[] | <xref uid="excel!Excel.TableRow:class" />[]'
+      return:
+        type: void
+        description: ''
+  - name: 'deleteRowsAt(index, count)'
+    uid: 'excel!Excel.TableRowCollection#deleteRowsAt:member(1)'
+    package: excel!
+    fullName: 'deleteRowsAt(index, count)'
+    summary: >-
+      Delete a specified number of rows from a table, starting at a given index. This method will throw the
+      `InsertDeleteConflict` error if the table on which the method is called has a filter applied.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRowsAt(index: number, count?: number): void;'
+      parameters:
+        - id: index
+          description: >-
+            The index value of the row to be deleted. Note: Row indexes update each time that a preceding row in the
+            table is deleted, after each delete operation. Ensure that the index of the row that you want to delete
+            hasn't changed between the time that you determined the value and the time that you run the operation.
+          type: number
+        - id: count
+          description: 'Number of rows to delete. By default, a single row will be deleted.'
+          type: number
+      return:
+        type: void
         description: ''
   - name: getCount()
     uid: 'excel!Excel.TableRowCollection#getCount:member(1)'

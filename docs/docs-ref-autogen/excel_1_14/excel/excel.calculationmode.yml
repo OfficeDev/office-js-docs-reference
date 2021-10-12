@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: Excel.CalculationMode
+uid: 'excel!Excel.CalculationMode:enum'
+package: excel!
+fullName: Excel.CalculationMode
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'excel!Excel.CalculationMode.automatic:member'
+    package: excel!
+    summary: >-
+      The default recalculation behavior where Excel calculates new formula results every time the relevant data is
+      changed.
+    value: '"Automatic"'
+  - name: automaticExceptTables
+    uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
+    package: excel!
+    summary: 'Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.'
+    value: '"AutomaticExceptTables"'
+  - name: manual
+    uid: 'excel!Excel.CalculationMode.manual:member'
+    package: excel!
+    summary: Calculations only occur when the user or add-in requests them.
+    value: '"Manual"'

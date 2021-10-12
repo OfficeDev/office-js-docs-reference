@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: Excel.InsertShiftDirection
+uid: 'excel!Excel.InsertShiftDirection:enum'
+package: excel!
+fullName: Excel.InsertShiftDirection
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: down
+    uid: 'excel!Excel.InsertShiftDirection.down:member'
+    package: excel!
+    summary: ''
+    value: '"Down"'
+  - name: right
+    uid: 'excel!Excel.InsertShiftDirection.right:member'
+    package: excel!
+    summary: ''
+    value: '"Right"'

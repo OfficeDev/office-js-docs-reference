@@ -193,7 +193,7 @@
 ||[getRange()](/javascript/api/excel/excel.tablerow#getRange__)|Returns the range object associated with the entire row.|
 ||[index](/javascript/api/excel/excel.tablerow#index)|Returns the index number of the row within the rows collection of the table.|
 ||[values](/javascript/api/excel/excel.tablerow#values)|Represents the raw values of the specified range.|
-|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number)](/javascript/api/excel/excel.tablerowcollection#add_index__values_)|Adds one or more rows to the table.|
+|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[add(index?: number, values?: Array<Array<boolean \| string \| number>> \| boolean \| string \| number, alwaysInsert?: boolean)](/javascript/api/excel/excel.tablerowcollection#add_index__values__alwaysInsert_)|Adds one or more rows to the table.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.tablerowcollection#getItemAt_index_)|Gets a row based on its position in the collection.|
 ||[count](/javascript/api/excel/excel.tablerowcollection#count)|Returns the number of rows in the table.|
 ||[items](/javascript/api/excel/excel.tablerowcollection#items)|Gets the loaded child items in this collection.|
