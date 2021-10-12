@@ -3779,7 +3779,7 @@ export declare namespace Word {
     }
     /**
      * Specifies the options to be included in a search operation.
-     * 
+     *
      * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
      *
      * @remarks
@@ -9861,13 +9861,6 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *

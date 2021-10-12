@@ -5758,7 +5758,7 @@
             {
               "kind": "Class",
               "canonicalReference": "word!Word.CommentReplyCollection:class",
-              "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -21705,7 +21705,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26370,32 +26370,6 @@
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Content",
-                          "text": "allowCloseOnUntitled?: "
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "boolean"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "isOptional": true,
-                      "releaseTag": "Public",
-                      "name": "allowCloseOnUntitled",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2

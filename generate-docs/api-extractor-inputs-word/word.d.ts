@@ -785,7 +785,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CommentReplyData;
     }
     /**
-     * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.
+     * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.
      *
      * @remarks
      * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -11606,7 +11606,7 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
-         * Contains a collection of @{link Word.CommentReply} object. Represents all comment replies in one comment thread.
+         * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -12179,14 +12179,6 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *

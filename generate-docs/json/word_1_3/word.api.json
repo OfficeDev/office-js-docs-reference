@@ -19003,32 +19003,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.\n *\n * [Api set: WordApi]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Content",
-                          "text": "allowCloseOnUntitled?: "
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "boolean"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "isOptional": true,
-                      "releaseTag": "Public",
-                      "name": "allowCloseOnUntitled",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#body:member",
                       "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
