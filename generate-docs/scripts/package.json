@@ -9,7 +9,7 @@
     "lint": "tslint --project tsconfig.json"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/fs-extra": "3.0.1",
     "@types/js-yaml": "3.5.29",

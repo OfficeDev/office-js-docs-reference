@@ -510,14 +510,55 @@ export declare namespace Office {
         value: T;
     }
     /**
-     * Used to associate an action name to a function.
+     * Manages actions and keyboard shortcuts.
      */
     export interface Actions {
         /**
-         * Function to associate a name with the action function.
+         * Associates the ID of an action with a function.
+         * 
+         * @param actionId - The ID of an action that is defined in an extended manifest.
+         * @param actionFunction - The function that is run when the action is invoked. 
          */
-        associate: (actionName: string, action: (arg?: any) => void) => void;
-    }
+        associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
+        /**
+         * Replaces existing add-in shortcuts with custom shortcuts for the user.
+         *
+         * @remarks
+         *
+         * **Requirement set**: KeyboardShortcuts 1.1
+         * @beta
+         * 
+         * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
+         * To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
+         * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
+         * Otherwise, the promise will be rejected with error code and error message. An "InvalidOperation" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.
+         */
+        replaceShortcuts(shortcuts: {[actionId:string]:string}): Promise<void>;   
+        /**
+         * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist.
+         * The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see  {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.
+         *
+         * @remarks
+         *
+         * **Requirement set**: KeyboardShortcuts 1.1
+         * @beta
+         * 
+         * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
+         */
+        getShortcuts(): Promise<{[actionId:string]:string|null}>;   
+        /**
+         * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.
+         *
+         * @remarks
+         *
+         * **Requirement set**: KeyboardShortcuts 1.1
+         * @beta
+         * 
+         * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
+         * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
+         */
+        areShortcutsInUse(shortcuts: string[]): Promise<{shortcut:string, inUse:boolean}[]>;
+     }
     /**
      * Message used in the `onVisibilityModeChanged` invocation.
      */
@@ -558,6 +599,59 @@ export declare namespace Office {
         onVisibilityModeChanged(
             listener: (message: VisibilityModeChangedMessage) => void,
         ): Promise<() => Promise<void>>;
+
+        /**
+         * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+        */
+        beforeDocumentCloseNotification: BeforeDocumentCloseNotification;
+    }
+    /**
+     * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+     * The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document.
+     * 
+     * @remarks
+     * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+     * @beta
+    */
+    export interface BeforeDocumentCloseNotification {
+        /**
+         * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds.
+         * This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        enable(): Promise<void>;
+
+        /**
+         * Prevents the notification dialog from appearing when the user attempts to close a document.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        disable(): Promise<void>;
+
+        /**
+         * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. 
+         * This event handler will be triggered if one of the following conditions is met:
+         * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+         * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         * @param listener - The event handler that is called when the dialog is cancelled.
+         * @returns A promise that resolves when the event handler is added.
+         * 
+         * @remarks
+         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
+         * @beta
+        */
+        onCloseActionCancelled(
+            listener: () => void
+        ): Promise<() => Promise<void>>;     
     }
     /**
      * An interface that contains all the functionality provided to manage the state of the Office ribbon.

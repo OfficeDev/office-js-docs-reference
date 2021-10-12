@@ -68,7 +68,7 @@
 ||[getItem(index: number)](/javascript/api/word/word.contentcontrolcollection#getItem_index_)|Gets a content control by its index in the collection.|
 ||[items](/javascript/api/word/word.contentcontrolcollection#items)|Gets the loaded child items in this collection.|
 |[Document](/javascript/api/word/word.document)|[getSelection()](/javascript/api/word/word.document#getSelection__)|Gets the current selection of the document.|
-||[body](/javascript/api/word/word.document#body)|Gets the body object of the document.|
+||[body](/javascript/api/word/word.document#body)|Gets the body object of the main document.|
 ||[contentControls](/javascript/api/word/word.document#contentControls)|Gets the collection of content control objects in the document.|
 ||[saved](/javascript/api/word/word.document#saved)|Indicates whether the changes in the document have been saved.|
 ||[sections](/javascript/api/word/word.document#sections)|Gets the collection of section objects in the document.|
