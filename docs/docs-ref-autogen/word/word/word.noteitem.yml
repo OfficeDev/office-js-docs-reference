@@ -1,0 +1,277 @@
+### YamlMime:TSType
+name: Word.NoteItem
+uid: 'word!Word.NoteItem:class'
+package: word!
+fullName: Word.NoteItem
+summary: Represents a footnote or endnote.
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: body
+    uid: 'word!Word.NoteItem#body:member'
+    package: word!
+    fullName: body
+    summary: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly body: Word.Body;'
+      return:
+        type: '<xref uid="word!Word.Body:class" />'
+  - name: context
+    uid: 'word!Word.NoteItem#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: reference
+    uid: 'word!Word.NoteItem#reference:member'
+    package: word!
+    fullName: reference
+    summary: Represents a footnote/endnote reference in the main document.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly reference: Word.Range;'
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+  - name: type
+    uid: 'word!Word.NoteItem#type:member'
+    package: word!
+    fullName: type
+    summary: 'Represent the note item type: footnote or endnote.'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Word.NoteItemType | "Footnote" | "Endnote";'
+      return:
+        type: '<xref uid="word!Word.NoteItemType:enum" /> | "Footnote" | "Endnote"'
+methods:
+  - name: delete()
+    uid: 'word!Word.NoteItem#delete:member(1)'
+    package: word!
+    fullName: delete()
+    summary: Deletes the note item.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getNext()
+    uid: 'word!Word.NoteItem#getNext:member(1)'
+    package: word!
+    fullName: getNext()
+    summary: Gets the next note item of the same type. Throws an error if this note item is the last one.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getNext(): Word.NoteItem;'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: getNextOrNullObject()
+    uid: 'word!Word.NoteItem#getNextOrNullObject:member(1)'
+    package: word!
+    fullName: getNextOrNullObject()
+    summary: Gets the next note item of the same type. Returns a null object if this note item is the last one.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getNextOrNullObject(): Word.NoteItem;'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.NoteItem#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.NoteItemLoadOptions): Word.NoteItem;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.NoteItemLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.NoteItem#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.NoteItem;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.NoteItem#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.NoteItem;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.NoteItem#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.NoteItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.NoteItemUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.NoteItem#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.NoteItem): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.NoteItem:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.NoteItem#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.NoteItem object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.NoteItemData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.NoteItemData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.NoteItemData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.NoteItem#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.NoteItem;'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.NoteItem#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.NoteItem;'
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

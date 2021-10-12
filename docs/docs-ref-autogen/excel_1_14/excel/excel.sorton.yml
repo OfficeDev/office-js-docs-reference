@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.SortOn
+uid: 'excel!Excel.SortOn:enum'
+package: excel!
+fullName: Excel.SortOn
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cellColor
+    uid: 'excel!Excel.SortOn.cellColor:member'
+    package: excel!
+    summary: ''
+    value: '"CellColor"'
+  - name: fontColor
+    uid: 'excel!Excel.SortOn.fontColor:member'
+    package: excel!
+    summary: ''
+    value: '"FontColor"'
+  - name: icon
+    uid: 'excel!Excel.SortOn.icon:member'
+    package: excel!
+    summary: ''
+    value: '"Icon"'
+  - name: value
+    uid: 'excel!Excel.SortOn.value:member'
+    package: excel!
+    summary: ''
+    value: '"Value"'

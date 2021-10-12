@@ -3,93 +3,50 @@ name: Excel.CellValueType
 uid: 'excel!Excel.CellValueType:enum'
 package: excel!
 fullName: Excel.CellValueType
-summary: >-
-  Represents the types of the `CellValue` object.
-
-
+summary: Represents the types of the `CellValue` object.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 fields:
   - name: boolean
     uid: 'excel!Excel.CellValueType.boolean:member'
     package: excel!
-    summary: >-
-      Represents a `BooleanCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `BooleanCellValue`<!-- -->.
     value: '"Boolean"'
   - name: double
     uid: 'excel!Excel.CellValueType.double:member'
     package: excel!
-    summary: >-
-      Represents a `DoubleCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `DoubleCellValue`<!-- -->.
     value: '"Double"'
   - name: empty
     uid: 'excel!Excel.CellValueType.empty:member'
     package: excel!
-    summary: >-
-      Represents an `EmptyCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents an `EmptyCellValue`<!-- -->.
     value: '"Empty"'
   - name: error
     uid: 'excel!Excel.CellValueType.error:member'
     package: excel!
-    summary: >-
-      Represents an `ErrorCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents an `ErrorCellValue`<!-- -->.
     value: '"Error"'
   - name: formattedNumber
     uid: 'excel!Excel.CellValueType.formattedNumber:member'
     package: excel!
-    summary: >-
-      Represents a `FormattedNumberCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `FormattedNumberCellValue`<!-- -->.
     value: '"FormattedNumber"'
   - name: notAvailable
     uid: 'excel!Excel.CellValueType.notAvailable:member'
     package: excel!
-    summary: >-
-      Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
     value: '"NotAvailable"'
   - name: string
     uid: 'excel!Excel.CellValueType.string:member'
     package: excel!
-    summary: >-
-      Represents a `StringCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `StringCellValue`<!-- -->.
     value: '"String"'
   - name: webImage
     uid: 'excel!Excel.CellValueType.webImage:member'
     package: excel!
-    summary: >-
-      Represents a `WebImageCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `WebImageCellValue`<!-- -->.
     value: '"WebImage"'

@@ -35,6 +35,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: endnotes
+    uid: 'word!Word.Range#endnotes:member'
+    package: word!
+    fullName: endnotes
+    summary: Gets the collection of endnotes in the Range. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly endnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: font
     uid: 'word!Word.Range#font:member'
     package: word!
@@ -49,6 +63,20 @@ properties:
       content: 'readonly font: Word.Font;'
       return:
         type: '<xref uid="word!Word.Font:class" />'
+  - name: footnotes
+    uid: 'word!Word.Range#footnotes:member'
+    package: word!
+    fullName: footnotes
+    summary: Gets the collection of footnotes in the Range. Read-only
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly footnotes: Word.NoteItemCollection;'
+      return:
+        type: '<xref uid="word!Word.NoteItemCollection:class" />'
   - name: hyperlink
     uid: 'word!Word.Range#hyperlink:member'
     package: word!
@@ -483,6 +511,21 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
+  - name: getComments()
+    uid: 'word!Word.Range#getComments:member(1)'
+    package: word!
+    fullName: getComments()
+    summary: Gets comments associated with the range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getComments(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
   - name: getHtml()
     uid: 'word!Word.Range#getHtml:member(1)'
     package: word!
@@ -818,6 +861,25 @@ methods:
       return:
         type: void
         description: ''
+  - name: insertComment(commentText)
+    uid: 'word!Word.Range#insertComment:member(1)'
+    package: word!
+    fullName: insertComment(commentText)
+    summary: Insert a comment on the range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertComment(commentText: string): Word.Comment;'
+      parameters:
+        - id: commentText
+          description: Required. Comment text.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: comment object
   - name: insertContentControl()
     uid: 'word!Word.Range#insertContentControl:member(1)'
     package: word!
@@ -862,6 +924,25 @@ methods:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
+        description: ''
+  - name: insertEndnote(insertText)
+    uid: 'word!Word.Range#insertEndnote:member(1)'
+    package: word!
+    fullName: insertEndnote(insertText)
+    summary: Inserts an endnote. The endnote reference is placed after the range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertEndnote(insertText?: string): Word.NoteItem;'
+      parameters:
+        - id: insertText
+          description: ''
+          type: string
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
         description: ''
   - name: 'insertFileFromBase64(base64File, insertLocation)'
     uid: 'word!Word.Range#insertFileFromBase64:member(1)'
@@ -933,6 +1014,25 @@ methods:
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: insertFootnote(insertText)
+    uid: 'word!Word.Range#insertFootnote:member(1)'
+    package: word!
+    fullName: insertFootnote(insertText)
+    summary: Inserts a footnote. The footnote reference is placed after the range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'insertFootnote(insertText?: string): Word.NoteItem;'
+      parameters:
+        - id: insertText
+          description: ''
+          type: string
+      return:
+        type: '<xref uid="word!Word.NoteItem:class" />'
         description: ''
   - name: 'insertHtml(html, insertLocation)'
     uid: 'word!Word.Range#insertHtml:member(1)'

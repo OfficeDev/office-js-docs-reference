@@ -54,10 +54,10 @@ properties:
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />[]'
 methods:
-  - name: 'add(index, values)'
+  - name: 'add(index, values, alwaysInsert)'
     uid: 'excel!Excel.TableRowCollection#add:member(1)'
     package: excel!
-    fullName: 'add(index, values)'
+    fullName: 'add(index, values, alwaysInsert)'
     summary: >-
       Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
@@ -95,8 +95,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number):
-        Excel.TableRow;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?:
+        boolean): Excel.TableRow;
       parameters:
         - id: index
           description: >-
@@ -106,6 +106,9 @@ methods:
         - id: values
           description: Optional. A 2D array of unformatted values of the table row.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
+        - id: alwaysInsert
+          description: ''
+          type: boolean
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'
         description: ''

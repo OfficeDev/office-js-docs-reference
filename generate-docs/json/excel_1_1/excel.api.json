@@ -20156,6 +20156,66 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.ChartDataTableData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `chartDataTable.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ChartDataTableData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartDataTableData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.ChartDataTableFormatData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `chartDataTableFormat.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ChartDataTableFormatData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartDataTableFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.ChartDataTableFormatUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the `ChartDataTableFormat` object, for use in `chartDataTableFormat.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ChartDataTableFormatUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartDataTableFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.ChartDataTableUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the `ChartDataTable` object, for use in `chartDataTable.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ChartDataTableUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartDataTableUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartErrorBarsData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `chartErrorBars.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -28209,6 +28269,115 @@
                   ],
                   "releaseTag": "Public",
                   "name": "PresetCriteriaConditionalFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.QueryCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `queryCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface QueryCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "QueryCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.QueryCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.QueryData",
+                          "canonicalReference": "excel!Excel.Interfaces.QueryData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.QueryCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface QueryCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "QueryCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.QueryCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.QueryData",
+                          "canonicalReference": "excel!Excel.Interfaces.QueryData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.QueryData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `query.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface QueryData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "QueryData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -44570,6 +44739,14 @@
                     },
                     {
                       "kind": "Content",
+                      "text": ", alwaysInsert?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -44585,8 +44762,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -44603,6 +44780,13 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "alwaysInsert",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
                       }
                     }
                   ],

@@ -25,23 +25,6 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: allowCloseOnUntitled
-    uid: 'word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member'
-    package: word!
-    fullName: allowCloseOnUntitled
-    summary: >-
-      Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
-      document even if this document is untitled. True to close, false otherwise.
-
-
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'allowCloseOnUntitled?: boolean;'
-      return:
-        type: boolean
   - name: body
     uid: 'word!Word.Interfaces.DocumentLoadOptions#body:member'
     package: word!

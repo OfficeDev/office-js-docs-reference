@@ -268,6 +268,13 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
+    
+    
     /**
      * Provides information about the selection that raised the selection changed event.
                 
@@ -358,6 +365,8 @@ export declare namespace Excel {
          */
         settings: Excel.SettingCollection;
     }
+    
+    
     
     
     
@@ -577,6 +586,7 @@ export declare namespace Excel {
         readonly pivotTables: Excel.PivotTableCollection;
         
         
+        
         /**
          * Represents a collection of settings associated with the workbook.
          *
@@ -760,6 +770,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * The visibility of the worksheet.
          *
@@ -913,6 +924,9 @@ export declare namespace Excel {
         
         
         
+        
+        
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1010,6 +1024,10 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
+        
+        
+        
+        
         
         
         
@@ -1531,6 +1549,7 @@ export declare namespace Excel {
          * @param columnOffset - The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
          */
         getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;
+        
         
         
         
@@ -3051,7 +3070,9 @@ export declare namespace Excel {
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
          */
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number): Excel.TableRow;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
+        
+        
         /**
          * Gets the number of rows in the table.
          *
@@ -3891,6 +3912,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
+        
         /**
          * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
                     The aspect ratio is preserved as part of the resizing.
@@ -4994,6 +5017,8 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
     }
+    
+    
     
     
     /**
@@ -6525,6 +6550,7 @@ export declare namespace Excel {
          * @param index - Index of the conditional formats to be retrieved.
          */
         getItemAt(index: number): Excel.ConditionalFormat;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -10107,6 +10133,7 @@ export declare namespace Excel {
          */
         veryHidden = "VeryHidden"
     }
+    
     /**
      * @remarks
      * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
@@ -14146,6 +14173,10 @@ export declare namespace Excel {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`. */
+        export interface QueryCollectionUpdateData {
+            items?: Excel.Interfaces.QueryData[];
+        }
         /** An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`. */
         export interface LinkedWorkbookCollectionUpdateData {
             
@@ -15136,6 +15167,20 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
+        }
+        /** An interface for updating data on the `ChartDataTable` object, for use in `chartDataTable.set({ ... })`. */
+        export interface ChartDataTableUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ChartDataTableFormat` object, for use in `chartDataTableFormat.set({ ... })`. */
+        export interface ChartDataTableFormatUpdateData {
+            
+            
         }
         /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
         export interface ChartErrorBarsUpdateData {
@@ -16341,6 +16386,19 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `query.toJSON()`. */
+        export interface QueryData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `queryCollection.toJSON()`. */
+        export interface QueryCollectionData {
+            items?: Excel.Interfaces.QueryData[];
+        }
         /** An interface describing the data returned by calling `linkedWorkbook.toJSON()`. */
         export interface LinkedWorkbookData {
             
@@ -16519,6 +16577,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             position?: number;
+            
             
             
             
@@ -17788,6 +17847,20 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontData;
+        }
+        /** An interface describing the data returned by calling `chartDataTable.toJSON()`. */
+        export interface ChartDataTableData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `chartDataTableFormat.toJSON()`. */
+        export interface ChartDataTableFormatData {
+            
+            
         }
         /** An interface describing the data returned by calling `chartErrorBars.toJSON()`. */
         export interface ChartErrorBarsData {
@@ -19185,6 +19258,8 @@ export declare namespace Excel {
         }
         
         
+        
+        
         /**
          * Represents the Excel Runtime class.
          *
@@ -19333,6 +19408,7 @@ export declare namespace Excel {
             
             
             
+            
             /**
              * The visibility of the worksheet.
              *
@@ -19397,6 +19473,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             position?: boolean;
+            
             
             
             
@@ -21487,6 +21564,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
+        
+        
         
         
         /**

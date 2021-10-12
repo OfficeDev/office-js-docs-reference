@@ -52,12 +52,28 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
+         * Gets the collection of endnotes in the body. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the body. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
          *
@@ -155,7 +171,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
+        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -171,6 +187,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         clear(): void;
+        /**
+         * Gets comments associated with the body.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getComments(): Word.CommentCollection;
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -446,6 +470,392 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.BodyData;
     }
     /**
+     * Represents a comment in the document.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Comment extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of reply objects associated with the comment.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly replies: Word.CommentReplyCollection;
+        /**
+         * Gets the email of the comment's author.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly authorEmail: string;
+        /**
+         * Gets the name of the comment's author.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly authorName: string;
+        /**
+         * Gtes or sets the comment's content as plain text.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content: string;
+        /**
+         * Gets the creation date of the comment.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly creationDate: Date;
+        /**
+         * ID
+         *
+         * @remarks
+         * [Api set: WordApi]
+         */
+        readonly id: string;
+        /**
+         * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resolved: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Comment): void;
+        /**
+         * Deletes the comment and its replies.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Gets the range in the main document where the comment is on.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getRange(): Word.Range;
+        /**
+         * Adds a new reply to the end of the comment thread.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param replyText - Required. Reply text.
+         */
+        reply(replyText: string): Word.CommentReply;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CommentLoadOptions): Word.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Comment;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.Comment;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Comment;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.CommentData;
+    }
+    /**
+     * Contains a collection of {@link Word.Comment} object.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CommentCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Comment[];
+        /**
+         * Gets the first comment in the collection. Throws an error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getFirst(): Word.Comment;
+        /**
+         * Gets the first comment or null object in the collection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getFirstOrNullObject(): Word.Comment;
+        /**
+         * Gets a comment object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a comments object.
+         */
+        getItem(index: number): Word.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CommentCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CommentCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CommentCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CommentCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CommentCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CommentCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.CommentCollectionData;
+    }
+    /**
+     * Represents a comment reply in the document.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CommentReply extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the parent comment of this reply.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly parentComment: Word.Comment;
+        /**
+         * Gets the email of the comment reply's author.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly authorEmail: string;
+        /**
+         * Gets the name of the comment reply's author.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly authorName: string;
+        /**
+         * Gets or sets the comment reply's content. The string is plain text.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        content: string;
+        /**
+         * Gets the creation date of the comment reply.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly creationDate: Date;
+        /**
+         * ID
+         *
+         * @remarks
+         * [Api set: WordApi]
+         */
+        readonly id: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.CommentReplyUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.CommentReply): void;
+        /**
+         * Deletes the comment reply.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CommentReplyLoadOptions): Word.CommentReply;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CommentReply;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.CommentReply;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CommentReply;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CommentReply;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.CommentReply object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.CommentReplyData;
+    }
+    /**
+     * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CommentReplyCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CommentReply[];
+        /**
+         * Gets the first comment reply in the collection. Throws an error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.CommentReply;
+        /**
+         * Gets the first comment reply or null object in the collection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getFirstOrNullObject(): Word.CommentReply;
+        /**
+         * Gets a comment reply object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a comments object.
+         */
+        getItem(index: number): Word.CommentReply;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.CommentReplyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CommentReplyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CommentReplyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CommentReplyCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CommentReplyCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.CommentReplyCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.CommentReplyCollectionData;
+    }
+    /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
      *
      * @remarks
@@ -462,12 +872,28 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
+         * Gets the collection of endnotes in the contentcontrol. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the contentcontrol. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
          *
@@ -669,6 +1095,14 @@ export declare namespace Word {
          * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
+        /**
+         * Gets comments associated with the body.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getComments(): Word.CommentCollection;
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1821,6 +2255,22 @@ export declare namespace Word {
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
+         * Gets the body of the document's endnotes. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getEndnoteBody(): Word.Body;
+        /**
+         * Gets the body of the document's footnotes. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFootnoteBody(): Word.Body;
+        /**
          * Gets the current selection of the document. Multiple selections are not supported.
          *
          * @remarks
@@ -1834,6 +2284,22 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         save(): void;
+        /**
+         * Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a collection of range objects.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+            ignorePunct?: boolean;
+            ignoreSpace?: boolean;
+            matchCase?: boolean;
+            matchPrefix?: boolean;
+            matchSuffix?: boolean;
+            matchWholeWord?: boolean;
+            matchWildcards?: boolean;
+        }): Word.RangeCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3177,6 +3643,167 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ListItemData;
     }
     /**
+     * Represents a footnote or endnote.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class NoteItem extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly body: Word.Body;
+        /**
+         * Represents a footnote/endnote reference in the main document.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly reference: Word.Range;
+        /**
+         * Represent the note item type: footnote or endnote.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.NoteItemType | "Footnote" | "Endnote";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.NoteItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.NoteItem): void;
+        /**
+         * Deletes the note item.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Gets the next note item of the same type. Throws an error if this note item is the last one.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNext(): Word.NoteItem;
+        /**
+         * Gets the next note item of the same type. Returns a null object if this note item is the last one.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getNextOrNullObject(): Word.NoteItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.NoteItemLoadOptions): Word.NoteItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.NoteItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.NoteItem;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.NoteItem;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.NoteItem;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.NoteItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.NoteItemData;
+    }
+    /**
+     * Contains a collection of {@link Word.NoteItem} objects.
+     *
+     * @remarks
+     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class NoteItemCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.NoteItem[];
+        /**
+         * Gets the first note item in this collection. Throws an error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.NoteItem;
+        /**
+         * Gets the first note item in this collection. Returns a null object if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.NoteItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.NoteItemCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.NoteItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.NoteItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.NoteItemCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.NoteItemCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.NoteItemCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.NoteItemCollectionData;
+    }
+    /**
      * Represents a single paragraph in a selection, range, content control, or document body.
      *
      * @remarks
@@ -3193,12 +3820,28 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
+         * Gets the collection of endnotes in the Paragraph. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the Paragraph. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
          *
@@ -3434,6 +4077,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         detachFromList(): void;
+        /**
+         * Gets comments associated with the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getComments(): Word.CommentCollection;
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -3852,12 +4503,28 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
+         * Gets the collection of endnotes in the Range. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the Range. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets the collection of inline picture objects in the range. Read-only.
          *
@@ -4031,6 +4698,15 @@ export declare namespace Word {
          */
         getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean): OfficeExtension.ClientResult<string[]>;
         /**
+         * Gets comments associated with the range.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         * @returns
+         */
+        getComments(): Word.CommentCollection;
+        /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * @remarks
@@ -4130,12 +4806,31 @@ export declare namespace Word {
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
+         * Insert a comment on the range.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param commentText - Required. Comment text.
+         * @returns comment object
+         */
+        insertComment(commentText: string): Word.Comment;
+        /**
          * Wraps the range object with a rich text content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
+        /**
+         * Inserts an endnote. The endnote reference is placed after the range.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertEndnote(insertText?: string): Word.NoteItem;
         /**
          * Inserts a document at the specified location.
          *
@@ -4156,6 +4851,14 @@ export declare namespace Word {
          * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        /**
+         * Inserts a footnote. The footnote reference is placed after the range.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertFootnote(insertText?: string): Word.NoteItem;
         /**
          * Inserts HTML at the specified location.
          *
@@ -4881,12 +5584,28 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets the collection of endnotes in the table. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the table. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets the parent body of the table. Read-only.
          *
@@ -5514,12 +6233,28 @@ export declare namespace Word {
          */
         readonly cells: Word.TableCellCollection;
         /**
+         * Gets the collection of endnotes in the table row. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly endnotes: Word.NoteItemCollection;
+        /**
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
+        /**
+         * Gets the collection of footnotes in the table row. Read-only
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly footnotes: Word.NoteItemCollection;
         /**
          * Gets parent table. Read-only.
          *
@@ -6240,6 +6975,24 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.TableBorderData;
     }
     /**
+     * Note item type
+     *
+     * @remarks
+     * [Api set: WordApi]
+     */
+    enum NoteItemType {
+        /**
+         * @remarks
+         * [Api set: WordApi]
+         */
+        footnote = "Footnote",
+        /**
+         * @remarks
+         * [Api set: WordApi]
+         */
+        endnote = "Endnote",
+    }
+    /**
      * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
      *
      * @remarks
@@ -6412,10 +7165,11 @@ export declare namespace Word {
         plainText = "PlainText",
     }
     /**
-     * ContentControl appearance.
+     * ContentControl appearance
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * Content control appearance options are bounding box, tags, or hidden.
      */
     enum ContentControlAppearance {
@@ -6620,7 +7374,7 @@ export declare namespace Word {
         line = "Line",
     }
     /**
-     * The insertion location types.
+     * The insertion location types
      *
      * @remarks
      * [Api set: WordApi]
@@ -8231,6 +8985,52 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
+        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        export interface CommentUpdateData {
+            /**
+             * Gtes or sets the comment's content as plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
+        }
+        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        export interface CommentCollectionUpdateData {
+            items?: Word.Interfaces.CommentData[];
+        }
+        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        export interface CommentReplyUpdateData {
+            /**
+            * Gets the parent comment of this reply.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentComment?: Word.Interfaces.CommentUpdateData;
+            /**
+             * Gets or sets the comment reply's content. The string is plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+        }
+        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        export interface CommentReplyCollectionUpdateData {
+            items?: Word.Interfaces.CommentReplyData[];
+        }
         /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
@@ -8582,6 +9382,29 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             level?: number;
+        }
+        /** An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`. */
+        export interface NoteItemUpdateData {
+            /**
+            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyUpdateData;
+            /**
+            * Represents a footnote/endnote reference in the main document.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reference?: Word.Interfaces.RangeUpdateData;
+        }
+        /** An interface for updating data on the NoteItemCollection object, for use in `noteItemCollection.set({ ... })`. */
+        export interface NoteItemCollectionUpdateData {
+            items?: Word.Interfaces.NoteItemData[];
         }
         /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
@@ -9116,7 +9939,123 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
+            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+        }
+        /** An interface describing the data returned by calling `comment.toJSON()`. */
+        export interface CommentData {
+            /**
+            * Gets the collection of reply objects associated with the comment.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            replies?: Word.Interfaces.CommentReplyData[];
+            /**
+             * Gets the email of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: string;
+            /**
+             * Gets the name of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: string;
+            /**
+             * Gtes or sets the comment's content as plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             * Gets the creation date of the comment.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: Date;
+            /**
+             * ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: string;
+            /**
+             * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
+        }
+        /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
+        export interface CommentCollectionData {
+            items?: Word.Interfaces.CommentData[];
+        }
+        /** An interface describing the data returned by calling `commentReply.toJSON()`. */
+        export interface CommentReplyData {
+            /**
+            * Gets the parent comment of this reply.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentComment?: Word.Interfaces.CommentData;
+            /**
+             * Gets the email of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: string;
+            /**
+             * Gets the name of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: string;
+            /**
+             * Gets or sets the comment reply's content. The string is plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: string;
+            /**
+             * Gets the creation date of the comment reply.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: Date;
+            /**
+             * ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: string;
+        }
+        /** An interface describing the data returned by calling `commentReplyCollection.toJSON()`. */
+        export interface CommentReplyCollectionData {
+            items?: Word.Interfaces.CommentReplyData[];
         }
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
@@ -9755,6 +10694,37 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             siblingIndex?: number;
+        }
+        /** An interface describing the data returned by calling `noteItem.toJSON()`. */
+        export interface NoteItemData {
+            /**
+            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyData;
+            /**
+            * Represents a footnote/endnote reference in the main document.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reference?: Word.Interfaces.RangeData;
+            /**
+             * Represent the note item type: footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.NoteItemType | "Footnote" | "Endnote";
+        }
+        /** An interface describing the data returned by calling `noteItemCollection.toJSON()`. */
+        export interface NoteItemCollectionData {
+            items?: Word.Interfaces.NoteItemData[];
         }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
@@ -10456,6 +11426,246 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
+         * Represents a comment in the document.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CommentLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the email of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: boolean;
+            /**
+             * Gets the name of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * Gtes or sets the comment's content as plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * Gets the creation date of the comment.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: boolean;
+            /**
+             * ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: boolean;
+            /**
+             * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Comment} object.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CommentCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the email of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the comment's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gtes or sets the comment's content as plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the creation date of the comment.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: boolean;
+            /**
+             * For EACH ITEM in the collection: ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
+        }
+        /**
+         * Represents a comment reply in the document.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CommentReplyLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Gets the parent comment of this reply.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentComment?: Word.Interfaces.CommentLoadOptions;
+            /**
+             * Gets the email of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: boolean;
+            /**
+             * Gets the name of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * Gets or sets the comment reply's content. The string is plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * Gets the creation date of the comment reply.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: boolean;
+            /**
+             * ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.CommentReply} object. Represents all comment replies in one comment thread.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CommentReplyCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Gets the parent comment of this reply.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            parentComment?: Word.Interfaces.CommentLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the email of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorEmail?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the comment reply's author.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            authorName?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            content?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the creation date of the comment reply.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            creationDate?: boolean;
+            /**
+             * For EACH ITEM in the collection: ID
+             *
+             * @remarks
+             * [Api set: WordApi]
+             */
+            id?: boolean;
+        }
+        /**
          * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
          *
          * @remarks
@@ -10969,14 +12179,6 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
@@ -11559,6 +12761,80 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             siblingIndex?: boolean;
+        }
+        /**
+         * Represents a footnote or endnote.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface NoteItemLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            * Represents a footnote/endnote reference in the main document.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reference?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * Represent the note item type: footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.NoteItem} objects.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface NoteItemCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.
+            *
+            * @remarks
+            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            reference?: Word.Interfaces.RangeLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Represent the note item type: footnote or endnote.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents a single paragraph in a selection, range, content control, or document body.

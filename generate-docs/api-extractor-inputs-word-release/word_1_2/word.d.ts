@@ -2208,7 +2208,7 @@ export declare namespace Word {
     }
     /**
      * Specifies the options to be included in a search operation.
-     * 
+     *
      * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
      *
      * @remarks
@@ -2606,6 +2606,7 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * Content control appearance options are bounding box, tags, or hidden.
      */
     enum ContentControlAppearance {
@@ -2814,6 +2815,7 @@ export declare namespace Word {
      *
      * @remarks
      * [Api set: WordApi]
+     *
      * To be used with an API call, such as `obj.insertSomething(newStuff, location);`
      * If the location is "Before" or "After", the new content will be outside of the modified object.
      * If the location is "Start" or "End", the new content will be included as part of the modified object.
@@ -5913,13 +5915,6 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
             
-            /**
-             *
-             * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-             *
-             * [Api set: WordApi]
-             */
-            allowCloseOnUntitled?: boolean;
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *

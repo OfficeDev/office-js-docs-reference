@@ -195,6 +195,10 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";'
+      content: >-
+        type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" |
+        "Endnote" | "NoteItem";
       return:
-        type: '<xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"'
+        type: >-
+          <xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
+          | "Footnote" | "Endnote" | "NoteItem"
