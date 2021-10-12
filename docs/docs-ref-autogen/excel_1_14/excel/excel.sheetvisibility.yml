@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Excel.SheetVisibility
+uid: 'excel!Excel.SheetVisibility:enum'
+package: excel!
+fullName: Excel.SheetVisibility
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: hidden
+    uid: 'excel!Excel.SheetVisibility.hidden:member'
+    package: excel!
+    summary: ''
+    value: '"Hidden"'
+  - name: veryHidden
+    uid: 'excel!Excel.SheetVisibility.veryHidden:member'
+    package: excel!
+    summary: ''
+    value: '"VeryHidden"'
+  - name: visible
+    uid: 'excel!Excel.SheetVisibility.visible:member'
+    package: excel!
+    summary: ''
+    value: '"Visible"'

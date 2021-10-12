@@ -186,6 +186,8 @@ items:
                 uid: 'excel!Excel.ContentType:enum'
               - name: DataChangeType
                 uid: 'excel!Excel.DataChangeType:enum'
+              - name: DataSourceType
+                uid: 'excel!Excel.DataSourceType:enum'
               - name: DataValidationAlertStyle
                 uid: 'excel!Excel.DataValidationAlertStyle:enum'
               - name: DataValidationOperator

@@ -83,6 +83,7 @@ enums:
   - 'excel!Excel.ConnectorType:enum'
   - 'excel!Excel.ContentType:enum'
   - 'excel!Excel.DataChangeType:enum'
+  - 'excel!Excel.DataSourceType:enum'
   - 'excel!Excel.DataValidationAlertStyle:enum'
   - 'excel!Excel.DataValidationOperator:enum'
   - 'excel!Excel.DataValidationType:enum'

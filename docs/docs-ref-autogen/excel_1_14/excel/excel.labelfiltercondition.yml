@@ -1,0 +1,92 @@
+### YamlMime:TSEnum
+name: Excel.LabelFilterCondition
+uid: 'excel!Excel.LabelFilterCondition:enum'
+package: excel!
+fullName: Excel.LabelFilterCondition
+summary: >-
+  Enum representing all accepted conditions by which a label filter can be applied. Used to configure the type of
+  PivotFilter that is applied to the field. `PivotFilter.criteria.exclusive` can be set to `true` to invert many of
+  these conditions.
+remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: beginsWith
+    uid: 'excel!Excel.LabelFilterCondition.beginsWith:member'
+    package: excel!
+    summary: |-
+      Label begins with substring criterion.
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"BeginsWith"'
+  - name: between
+    uid: 'excel!Excel.LabelFilterCondition.between:member'
+    package: excel!
+    summary: >-
+      Between `lowerBound` and `upperBound` criteria.
+
+
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!--
+      -->}<!-- -->.
+    value: '"Between"'
+  - name: contains
+    uid: 'excel!Excel.LabelFilterCondition.contains:member'
+    package: excel!
+    summary: |-
+      Label contains substring criterion.
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"Contains"'
+  - name: endsWith
+    uid: 'excel!Excel.LabelFilterCondition.endsWith:member'
+    package: excel!
+    summary: |-
+      Label ends with substring criterion.
+
+      Required Criteria: {`substring`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"EndsWith"'
+  - name: equals
+    uid: 'excel!Excel.LabelFilterCondition.equals:member'
+    package: excel!
+    summary: |-
+      Equals comparator criterion.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!-- -->.
+    value: '"Equals"'
+  - name: greaterThan
+    uid: 'excel!Excel.LabelFilterCondition.greaterThan:member'
+    package: excel!
+    summary: |-
+      Greater than comparator criterion.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThan"'
+  - name: greaterThanOrEqualTo
+    uid: 'excel!Excel.LabelFilterCondition.greaterThanOrEqualTo:member'
+    package: excel!
+    summary: |-
+      Greater than or equal to comparator criterion.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"GreaterThanOrEqualTo"'
+  - name: lessThan
+    uid: 'excel!Excel.LabelFilterCondition.lessThan:member'
+    package: excel!
+    summary: |-
+      Less than comparator criterion.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"LessThan"'
+  - name: lessThanOrEqualTo
+    uid: 'excel!Excel.LabelFilterCondition.lessThanOrEqualTo:member'
+    package: excel!
+    summary: |-
+      Less than or equal to comparator criterion.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->.
+    value: '"LessThanOrEqualTo"'
+  - name: unknown
+    uid: 'excel!Excel.LabelFilterCondition.unknown:member'
+    package: excel!
+    summary: '`LabelFilterCondition` is unknown or unsupported.'
+    value: '"Unknown"'
