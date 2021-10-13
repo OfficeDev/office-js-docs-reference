@@ -67,8 +67,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getTypeAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<Office.CoercionType>) => void): void;
+        getTypeAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -106,7 +106,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getTypeAsync(callback?: (asyncResult: Office.AsyncResult<Office.CoercionType>) => void): void;'
+      content: 'getTypeAsync(callback?: (asyncResult: CommonAPI.AsyncResult<CommonAPI.CoercionType>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -177,8 +177,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        prependAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
@@ -241,7 +241,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'prependAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'prependAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
@@ -313,8 +313,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: data
           description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
@@ -377,7 +377,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: data
           description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'

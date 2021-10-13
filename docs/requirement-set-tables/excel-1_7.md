@@ -169,7 +169,6 @@
 ||[wrapText](/javascript/api/excel/excel.style#wrapText)|Specifies if Excel wraps the text in the object.|
 |[StyleCollection](/javascript/api/excel/excel.stylecollection)|[add(name: string)](/javascript/api/excel/excel.stylecollection#add_name_)|Adds a new style to the collection.|
 ||[getItem(name: string)](/javascript/api/excel/excel.stylecollection#getItem_name_)|Gets a `Style` by name.|
-||[getItemOrNullObject(name: string)](/javascript/api/excel/excel.stylecollection#getItemOrNullObject_name_)|Gets a style by name.|
 ||[items](/javascript/api/excel/excel.stylecollection#items)|Gets the loaded child items in this collection.|
 |[Table](/javascript/api/excel/excel.table)|[onChanged](/javascript/api/excel/excel.table#onChanged)|Occurs when data in cells changes on a specific table.|
 ||[onSelectionChanged](/javascript/api/excel/excel.table#onSelectionChanged)|Occurs when the selection changes on a specific table.|
@@ -210,10 +209,8 @@
 ||[type](/javascript/api/excel/excel.worksheetaddedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetaddedeventargs#worksheetId)|Gets the ID of the worksheet that is added to the workbook.|
 |[WorksheetChangedEventArgs](/javascript/api/excel/excel.worksheetchangedeventargs)|[address](/javascript/api/excel/excel.worksheetchangedeventargs#address)|Gets the range address that represents the changed area of a specific worksheet.|
-||[changeDirectionState](/javascript/api/excel/excel.worksheetchangedeventargs#changeDirectionState)|Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or inserted.|
 ||[changeType](/javascript/api/excel/excel.worksheetchangedeventargs#changeType)|Gets the change type that represents how the changed event is triggered.|
 ||[source](/javascript/api/excel/excel.worksheetchangedeventargs#source)|Gets the source of the event.|
-||[triggerSource](/javascript/api/excel/excel.worksheetchangedeventargs#triggerSource)|Represents the trigger source of the event.|
 ||[type](/javascript/api/excel/excel.worksheetchangedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetchangedeventargs#worksheetId)|Gets the ID of the worksheet in which the data changed.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[onActivated](/javascript/api/excel/excel.worksheetcollection#onActivated)|Occurs when any worksheet in the workbook is activated.|

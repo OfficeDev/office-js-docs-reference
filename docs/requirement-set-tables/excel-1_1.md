@@ -11,14 +11,10 @@
 ||[getItem(id: string)](/javascript/api/excel/excel.bindingcollection#getItem_id_)|Gets a binding object by ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.bindingcollection#getItemAt_index_)|Gets a binding object based on its position in the items array.|
 ||[items](/javascript/api/excel/excel.bindingcollection#items)|Gets the loaded child items in this collection.|
-|[ChangeDirectionState](/javascript/api/excel/excel.changedirectionstate)|[deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteShiftDirection)|Represents the direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted.|
-||[insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#insertShiftDirection)|Represents the direction (such as down or to the right) that the existing cells will shift when a new cell or cells are inserted.|
 |[Chart](/javascript/api/excel/excel.chart)|[axes](/javascript/api/excel/excel.chart#axes)|Represents chart axes.|
 ||[dataLabels](/javascript/api/excel/excel.chart#dataLabels)|Represents the data labels on the chart.|
 ||[delete()](/javascript/api/excel/excel.chart#delete__)|Deletes the chart object.|
 ||[format](/javascript/api/excel/excel.chart#format)|Encapsulates the format properties for the chart area.|
-||[getDataTable()](/javascript/api/excel/excel.chart#getDataTable__)|Gets the data table on the chart.|
-||[getDataTableOrNullObject()](/javascript/api/excel/excel.chart#getDataTableOrNullObject__)|Gets the data table on the chart.|
 ||[height](/javascript/api/excel/excel.chart#height)|Specifies the height, in points, of the chart object.|
 ||[left](/javascript/api/excel/excel.chart#left)|The distance, in points, from the left side of the chart to the worksheet origin.|
 ||[legend](/javascript/api/excel/excel.chart#legend)|Represents the legend for the chart.|
@@ -64,15 +60,6 @@
 ||[showPercentage](/javascript/api/excel/excel.chartdatalabels#showPercentage)|Specifies if the data label percentage is visible.|
 ||[showSeriesName](/javascript/api/excel/excel.chartdatalabels#showSeriesName)|Specifies if the data label series name is visible.|
 ||[showValue](/javascript/api/excel/excel.chartdatalabels#showValue)|Specifies if the data label value is visible.|
-|[ChartDataTable](/javascript/api/excel/excel.chartdatatable)|[format](/javascript/api/excel/excel.chartdatatable#format)|Represents the format of a chart data table, which includes fill, font, and border format.|
-||[showHorizontalBorder](/javascript/api/excel/excel.chartdatatable#showHorizontalBorder)|Specifies whether to display the horizontal border of the data table.|
-||[showLegendKey](/javascript/api/excel/excel.chartdatatable#showLegendKey)|Specifies whether to show the legend key of the data table.|
-||[showOutlineBorder](/javascript/api/excel/excel.chartdatatable#showOutlineBorder)|Specifies whether to display the outline border of the data table.|
-||[showVerticalBorder](/javascript/api/excel/excel.chartdatatable#showVerticalBorder)|Specifies whether to display the vertical border of the data table.|
-||[visible](/javascript/api/excel/excel.chartdatatable#visible)|Specifies whether to show the data table of the chart.|
-|[ChartDataTableFormat](/javascript/api/excel/excel.chartdatatableformat)|[border](/javascript/api/excel/excel.chartdatatableformat#border)|Represents the border format of chart data table, which includes color, line style, and weight.|
-||[fill](/javascript/api/excel/excel.chartdatatableformat#fill)|Represents the fill format of an object, which includes background formatting information.|
-||[font](/javascript/api/excel/excel.chartdatatableformat#font)|Represents the font attributes (such as font name, font size, and color) for the current object.|
 |[ChartFill](/javascript/api/excel/excel.chartfill)|[clear()](/javascript/api/excel/excel.chartfill#clear__)|Clears the fill color of a chart element.|
 ||[setSolidColor(color: string)](/javascript/api/excel/excel.chartfill#setSolidColor_color_)|Sets the fill formatting of a chart element to a uniform color.|
 |[ChartFont](/javascript/api/excel/excel.chartfont)|[bold](/javascript/api/excel/excel.chartfont#bold)|Represents the bold status of font.|
@@ -119,15 +106,6 @@
 ||[visible](/javascript/api/excel/excel.nameditem#visible)|Specifies if the object is visible.|
 |[NamedItemCollection](/javascript/api/excel/excel.nameditemcollection)|[getItem(name: string)](/javascript/api/excel/excel.nameditemcollection#getItem_name_)|Gets a `NamedItem` object using its name.|
 ||[items](/javascript/api/excel/excel.nameditemcollection#items)|Gets the loaded child items in this collection.|
-|[Query](/javascript/api/excel/excel.query)|[error](/javascript/api/excel/excel.query#error)|Gets the query error message from when the query was last refreshed.|
-||[loadedTo](/javascript/api/excel/excel.query#loadedTo)|Gets the query loaded to object type.|
-||[loadedToDataModel](/javascript/api/excel/excel.query#loadedToDataModel)|Specifies if the query loaded to the data model.|
-||[name](/javascript/api/excel/excel.query#name)|Gets the name of the query.|
-||[refreshDate](/javascript/api/excel/excel.query#refreshDate)|Gets the date and time when the query was last refreshed.|
-||[rowsLoadedCount](/javascript/api/excel/excel.query#rowsLoadedCount)|Gets the number of rows that were loaded when the query was last refreshed.|
-|[QueryCollection](/javascript/api/excel/excel.querycollection)|[getCount()](/javascript/api/excel/excel.querycollection#getCount__)|Gets the number of queries in the workbook.|
-||[getItem(key: string)](/javascript/api/excel/excel.querycollection#getItem_key_)|Gets a query from the collection based on its name.|
-||[items](/javascript/api/excel/excel.querycollection#items)|Gets the loaded child items in this collection.|
 |[Range](/javascript/api/excel/excel.range)|[address](/javascript/api/excel/excel.range#address)|Specifies the range reference in A1-style.|
 ||[addressLocal](/javascript/api/excel/excel.range#addressLocal)|Represents the range reference for the specified range in the language of the user.|
 ||[cellCount](/javascript/api/excel/excel.range#cellCount)|Specifies the number of cells in the range.|
@@ -148,7 +126,6 @@
 ||[getLastColumn()](/javascript/api/excel/excel.range#getLastColumn__)|Gets the last column within the range.|
 ||[getLastRow()](/javascript/api/excel/excel.range#getLastRow__)|Gets the last row within the range.|
 ||[getOffsetRange(rowOffset: number, columnOffset: number)](/javascript/api/excel/excel.range#getOffsetRange_rowOffset__columnOffset_)|Gets an object which represents a range that's offset from the specified range.|
-||[getPrecedents()](/javascript/api/excel/excel.range#getPrecedents__)|Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the same worksheet or in multiple worksheets.|
 ||[getRow(row: number)](/javascript/api/excel/excel.range#getRow_row_)|Gets a row contained in the range.|
 ||[insert(shift: Excel.InsertShiftDirection)](/javascript/api/excel/excel.range#insert_shift_)|Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space.|
 ||[numberFormat](/javascript/api/excel/excel.range#numberFormat)|Represents Excel's number format code for the given range.|
@@ -224,7 +201,6 @@
 ||[bindings](/javascript/api/excel/excel.workbook#bindings)|Represents a collection of bindings that are part of the workbook.|
 ||[getSelectedRange()](/javascript/api/excel/excel.workbook#getSelectedRange__)|Gets the currently selected single range from the workbook.|
 ||[names](/javascript/api/excel/excel.workbook#names)|Represents a collection of workbook-scoped named items (named ranges and constants).|
-||[queries](/javascript/api/excel/excel.workbook#queries)|Returns a collection of Power Query queries that are part of the workbook.|
 ||[tables](/javascript/api/excel/excel.workbook#tables)|Represents a collection of tables associated with the workbook.|
 ||[worksheets](/javascript/api/excel/excel.workbook#worksheets)|Represents a collection of worksheets associated with the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[activate()](/javascript/api/excel/excel.worksheet#activate__)|Activate the worksheet in the Excel UI.|
@@ -234,17 +210,10 @@
 ||[getRange(address?: string)](/javascript/api/excel/excel.worksheet#getRange_address_)|Gets the `Range` object, representing a single rectangular block of cells, specified by the address or name.|
 ||[id](/javascript/api/excel/excel.worksheet#id)|Returns a value that uniquely identifies the worksheet in a given workbook.|
 ||[name](/javascript/api/excel/excel.worksheet#name)|The display name of the worksheet.|
-||[onProtectionChanged](/javascript/api/excel/excel.worksheet#onProtectionChanged)|Occurs when the worksheet protection state is changed.|
 ||[position](/javascript/api/excel/excel.worksheet#position)|The zero-based position of the worksheet within the workbook.|
-||[tabId](/javascript/api/excel/excel.worksheet#tabId)|Returns a value representing this worksheet that can be read by Open Office XML.|
 ||[tables](/javascript/api/excel/excel.worksheet#tables)|Collection of tables that are part of the worksheet.|
 ||[visibility](/javascript/api/excel/excel.worksheet#visibility)|The visibility of the worksheet.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[add(name?: string)](/javascript/api/excel/excel.worksheetcollection#add_name_)|Adds a new worksheet to the workbook.|
 ||[getActiveWorksheet()](/javascript/api/excel/excel.worksheetcollection#getActiveWorksheet__)|Gets the currently active worksheet in the workbook.|
 ||[getItem(key: string)](/javascript/api/excel/excel.worksheetcollection#getItem_key_)|Gets a worksheet object using its name or ID.|
 ||[items](/javascript/api/excel/excel.worksheetcollection#items)|Gets the loaded child items in this collection.|
-||[onProtectionChanged](/javascript/api/excel/excel.worksheetcollection#onProtectionChanged)|Occurs when the worksheet protection state is changed.|
-|[WorksheetProtectionChangedEventArgs](/javascript/api/excel/excel.worksheetprotectionchangedeventargs)|[isProtected](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#isProtected)|Gets the current protection status of the worksheet.|
-||[source](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#source)|The source of the event.|
-||[type](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#type)|Gets the type of the event.|
-||[worksheetId](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#worksheetId)|Gets the ID of the worksheet in which the protection status is changed.|

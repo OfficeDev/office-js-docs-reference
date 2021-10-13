@@ -64,7 +64,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
         void): void;
       parameters:
         - id: options
@@ -124,7 +124,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -187,8 +187,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(location: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setAsync(location: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: location
           description: The location of the appointment. The string is limited to 255 characters.
@@ -238,7 +238,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(location: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(location: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: location
           description: The location of the appointment. The string is limited to 255 characters.

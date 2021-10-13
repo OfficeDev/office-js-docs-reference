@@ -6,7 +6,7 @@ fullName: PowerPoint.Slide
 summary: |-
   Represents a single slide of a presentation.
 
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -33,7 +33,7 @@ properties:
     summary: |-
       Gets the unique ID of the slide.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ methods:
     summary: |-
       Deletes the slide from the presentation. Does nothing if the slide does not exist.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

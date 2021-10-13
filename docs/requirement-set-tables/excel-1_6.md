@@ -51,7 +51,6 @@
 ||[getCount()](/javascript/api/excel/excel.conditionalformatcollection#getCount__)|Returns the number of conditional formats in the workbook.|
 ||[getItem(id: string)](/javascript/api/excel/excel.conditionalformatcollection#getItem_id_)|Returns a conditional format for the given ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.conditionalformatcollection#getItemAt_index_)|Returns a conditional format at the given index.|
-||[getItemOrNullObject(id: string)](/javascript/api/excel/excel.conditionalformatcollection#getItemOrNullObject_id_)|Returns a conditional format identified by its ID.|
 ||[items](/javascript/api/excel/excel.conditionalformatcollection#items)|Gets the loaded child items in this collection.|
 |[ConditionalFormatRule](/javascript/api/excel/excel.conditionalformatrule)|[formula](/javascript/api/excel/excel.conditionalformatrule#formula)|The formula, if required, on which to evaluate the conditional format rule.|
 ||[formulaLocal](/javascript/api/excel/excel.conditionalformatrule#formulaLocal)|The formula, if required, on which to evaluate the conditional format rule in the user's language.|

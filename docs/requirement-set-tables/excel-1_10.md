@@ -14,7 +14,6 @@
 ||[getItemAt(index: number)](/javascript/api/excel/excel.commentcollection#getItemAt_index_)|Gets a comment from the collection based on its position.|
 ||[getItemByCell(cellAddress: Range \| string)](/javascript/api/excel/excel.commentcollection#getItemByCell_cellAddress_)|Gets the comment from the specified cell.|
 ||[getItemByReplyId(replyId: string)](/javascript/api/excel/excel.commentcollection#getItemByReplyId_replyId_)|Gets the comment to which the given reply is connected.|
-||[getItemOrNullObject(commentId: string)](/javascript/api/excel/excel.commentcollection#getItemOrNullObject_commentId_)|Gets a comment from the collection based on its ID.|
 ||[items](/javascript/api/excel/excel.commentcollection#items)|Gets the loaded child items in this collection.|
 |[CommentReply](/javascript/api/excel/excel.commentreply)|[authorEmail](/javascript/api/excel/excel.commentreply#authorEmail)|Gets the email of the comment reply's author.|
 ||[authorName](/javascript/api/excel/excel.commentreply#authorName)|Gets the name of the comment reply's author.|
@@ -28,7 +27,6 @@
 ||[getCount()](/javascript/api/excel/excel.commentreplycollection#getCount__)|Gets the number of comment replies in the collection.|
 ||[getItem(commentReplyId: string)](/javascript/api/excel/excel.commentreplycollection#getItem_commentReplyId_)|Returns a comment reply identified by its ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.commentreplycollection#getItemAt_index_)|Gets a comment reply based on its position in the collection.|
-||[getItemOrNullObject(commentReplyId: string)](/javascript/api/excel/excel.commentreplycollection#getItemOrNullObject_commentReplyId_)|Returns a comment reply identified by its ID.|
 ||[items](/javascript/api/excel/excel.commentreplycollection#items)|Gets the loaded child items in this collection.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[enableFieldList](/javascript/api/excel/excel.pivotlayout#enableFieldList)|Specifies if the field list can be shown in the UI.|
 |[PivotTableStyle](/javascript/api/excel/excel.pivottablestyle)|[delete()](/javascript/api/excel/excel.pivottablestyle#delete__)|Deletes the PivotTable style.|

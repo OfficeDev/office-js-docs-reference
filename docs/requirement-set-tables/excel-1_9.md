@@ -129,7 +129,6 @@
 |[GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection)|[getCount()](/javascript/api/excel/excel.groupshapecollection#getCount__)|Returns the number of shapes in the shape group.|
 ||[getItem(key: string)](/javascript/api/excel/excel.groupshapecollection#getItem_key_)|Gets a shape using its name or ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.groupshapecollection#getItemAt_index_)|Gets a shape based on its position in the collection.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.groupshapecollection#getItemOrNullObject_key_)|Gets a shape using its name or ID.|
 ||[items](/javascript/api/excel/excel.groupshapecollection#items)|Gets the loaded child items in this collection.|
 |[HeaderFooter](/javascript/api/excel/excel.headerfooter)|[centerFooter](/javascript/api/excel/excel.headerfooter#centerFooter)|The center footer of the worksheet.|
 ||[centerHeader](/javascript/api/excel/excel.headerfooter#centerHeader)|The center header of the worksheet.|
@@ -354,7 +353,6 @@
 ||[getCount()](/javascript/api/excel/excel.shapecollection#getCount__)|Returns the number of shapes in the worksheet.|
 ||[getItem(key: string)](/javascript/api/excel/excel.shapecollection#getItem_key_)|Gets a shape using its name or ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.shapecollection#getItemAt_index_)|Gets a shape using its position in the collection.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.shapecollection#getItemOrNullObject_key_)|Gets a shape using its name or ID.|
 ||[items](/javascript/api/excel/excel.shapecollection#items)|Gets the loaded child items in this collection.|
 |[ShapeDeactivatedEventArgs](/javascript/api/excel/excel.shapedeactivatedeventargs)|[shapeId](/javascript/api/excel/excel.shapedeactivatedeventargs#shapeId)|Gets the ID of the shape deactivated shape.|
 ||[type](/javascript/api/excel/excel.shapedeactivatedeventargs#type)|Gets the type of the event.|
@@ -399,7 +397,6 @@
 |[TableScopedCollection](/javascript/api/excel/excel.tablescopedcollection)|[getCount()](/javascript/api/excel/excel.tablescopedcollection#getCount__)|Gets the number of tables in the collection.|
 ||[getFirst()](/javascript/api/excel/excel.tablescopedcollection#getFirst__)|Gets the first table in the collection.|
 ||[getItem(key: string)](/javascript/api/excel/excel.tablescopedcollection#getItem_key_)|Gets a table by name or ID.|
-||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.tablescopedcollection#getItemOrNullObject_key_)|Gets a table by name or ID.|
 ||[items](/javascript/api/excel/excel.tablescopedcollection#items)|Gets the loaded child items in this collection.|
 |[TextFrame](/javascript/api/excel/excel.textframe)|[autoSizeSetting](/javascript/api/excel/excel.textframe#autoSizeSetting)|The automatic sizing settings for the text frame.|
 ||[bottomMargin](/javascript/api/excel/excel.textframe#bottomMargin)|Represents the bottom margin, in points, of the text frame.|

@@ -105,8 +105,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
-        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: CommonAPI.AsyncContextOptions,
+        callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: The recipients to add to the recipients list.
@@ -181,7 +181,7 @@ methods:
     syntax:
       content: >-
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: The recipients to add to the recipients list.
@@ -229,8 +229,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<EmailAddressDetails[]>) => void): void;
+        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult:
+        CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -390,7 +390,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -447,8 +447,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
-        callback: (asyncResult: Office.AsyncResult<void>) => void): void;
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: CommonAPI.AsyncContextOptions,
+        callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: The recipients to add to the recipients list.
@@ -646,7 +646,7 @@ methods:
     syntax:
       content: >-
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
           description: The recipients to add to the recipients list.

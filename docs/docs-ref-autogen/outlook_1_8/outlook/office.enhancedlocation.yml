@@ -77,8 +77,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], options: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        addAsync(locationIdentifiers: LocationIdentifier[], options: CommonAPI.AsyncContextOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: locationIdentifiers
           description: The locations to be added to the current list of locations.
@@ -124,7 +124,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResult<void>) =>
+        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
         void): void;
       parameters:
         - id: locationIdentifiers
@@ -189,8 +189,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<LocationDetails[]>) => void): void;
+        getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -227,7 +227,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<LocationDetails[]>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -295,8 +295,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], options: Office.AsyncContextOptions, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        removeAsync(locationIdentifiers: LocationIdentifier[], options: CommonAPI.AsyncContextOptions, callback?:
+        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: locationIdentifiers
           description: The locations to be removed from the current list of locations.
@@ -341,7 +341,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResult<void>) =>
+        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
         void): void;
       parameters:
         - id: locationIdentifiers

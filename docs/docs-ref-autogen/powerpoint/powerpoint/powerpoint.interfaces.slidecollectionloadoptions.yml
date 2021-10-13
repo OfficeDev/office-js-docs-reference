@@ -6,7 +6,7 @@ fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions
 summary: |-
   Represents the collection of slides in the presentation.
 
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -33,7 +33,7 @@ properties:
     summary: |-
       For EACH ITEM in the collection: Gets the unique ID of the slide.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -48,7 +48,7 @@ properties:
     summary: |-
       For EACH ITEM in the collection: Gets the layout of the slide.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     summary: |-
       For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
     isPreview: true
     isDeprecated: false

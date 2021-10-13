@@ -47,7 +47,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<Date>) => void):
+        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<Date>) => void):
         void;
       parameters:
         - id: options
@@ -108,7 +108,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<Date>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -224,8 +224,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(dateTime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        setAsync(dateTime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
+        CommonAPI.AsyncResult<void>) => void): void;
       parameters:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).
@@ -282,7 +282,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(dateTime: Date, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(dateTime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
       parameters:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).
