@@ -41,7 +41,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentData#content:member'
     package: word!
     fullName: content
-    summary: Gtes or sets the comment's content as plain text.
+    summary: Gets or sets the comment's content as plain text.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

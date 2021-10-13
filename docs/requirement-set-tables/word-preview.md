@@ -4,7 +4,7 @@
 ||[endnotes](/javascript/api/word/word.body#endnotes)|Gets the collection of endnotes in the body.|
 ||[footnotes](/javascript/api/word/word.body#footnotes)|Gets the collection of footnotes in the body.|
 ||[type](/javascript/api/word/word.body#type)|Gets the type of the body.|
-|[Comment](/javascript/api/word/word.comment)|[content](/javascript/api/word/word.comment#content)|Gtes or sets the comment's content as plain text.|
+|[Comment](/javascript/api/word/word.comment)|[content](/javascript/api/word/word.comment#content)|Gets or sets the comment's content as plain text.|
 ||[delete()](/javascript/api/word/word.comment#delete__)|Deletes the comment and its replies.|
 ||[getRange()](/javascript/api/word/word.comment#getRange__)|Gets the range in the main document where the comment is on.|
 ||[authorEmail](/javascript/api/word/word.comment#authorEmail)|Gets the email of the comment's author.|
