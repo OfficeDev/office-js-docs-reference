@@ -3,21 +3,21 @@
 |[AddSlideOptions](/javascript/api/powerpoint/powerpoint.addslideoptions)|[layoutId](/javascript/api/powerpoint/powerpoint.addslideoptions#layoutId)|Specifies the ID of a Slide Layout to be used for the new slide.|
 ||[slideMasterId](/javascript/api/powerpoint/powerpoint.addslideoptions#slideMasterId)|Specifies the ID of a Slide Master to be used for the new slide.|
 |[BulletFormat](/javascript/api/powerpoint/powerpoint.bulletformat)|[visible](/javascript/api/powerpoint/powerpoint.bulletformat#visible)|Specifies if the bullets in the paragraph are visible.|
-|[ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat)|[horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#horizontalAlignment)|Represents the horizontal alignment of the paragraph.|
-||[bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#bulletFormat)|Represents the bullet format of the paragraph.|
+|[ParagraphFormat](/javascript/api/powerpoint/powerpoint.paragraphformat)|[bulletFormat](/javascript/api/powerpoint/powerpoint.paragraphformat#bulletFormat)|Represents the bullet format of the paragraph.|
+||[horizontalAlignment](/javascript/api/powerpoint/powerpoint.paragraphformat#horizontalAlignment)|Represents the horizontal alignment of the paragraph.|
 |[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[slideMasters](/javascript/api/powerpoint/powerpoint.presentation#slideMasters)|Returns the collection of `SlideMaster` objects that are in the presentation.|
 ||[tags](/javascript/api/powerpoint/powerpoint.presentation#tags)|Returns a collection of tags attached to the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[delete()](/javascript/api/powerpoint/powerpoint.shape#delete__)|Deletes the shape from the shape collection.|
-||[height](/javascript/api/powerpoint/powerpoint.shape#height)|Specifies the height, in points, of the shape.|
-||[left](/javascript/api/powerpoint/powerpoint.shape#left)|The distance, in points, from the left side of the shape to the left side of the slide.|
-||[name](/javascript/api/powerpoint/powerpoint.shape#name)|Specifies the name of this shape.|
 ||[fill](/javascript/api/powerpoint/powerpoint.shape#fill)|Returns the fill formatting of this shape.|
+||[height](/javascript/api/powerpoint/powerpoint.shape#height)|Specifies the height, in points, of the shape.|
 ||[id](/javascript/api/powerpoint/powerpoint.shape#id)|Gets the unique ID of the shape.|
+||[left](/javascript/api/powerpoint/powerpoint.shape#left)|The distance, in points, from the left side of the shape to the left side of the slide.|
 ||[lineFormat](/javascript/api/powerpoint/powerpoint.shape#lineFormat)|Returns the line formatting of this shape.|
+||[name](/javascript/api/powerpoint/powerpoint.shape#name)|Specifies the name of this shape.|
 ||[tags](/javascript/api/powerpoint/powerpoint.shape#tags)|Returns a collection of tags in the shape.|
 ||[textFrame](/javascript/api/powerpoint/powerpoint.shape#textFrame)|Returns the text frame object of this shape.|
-||[type](/javascript/api/powerpoint/powerpoint.shape#type)|Returns the type of this shape.|
 ||[top](/javascript/api/powerpoint/powerpoint.shape#top)|The distance, in points, from the top edge of the shape to the top edge of the slide.|
+||[type](/javascript/api/powerpoint/powerpoint.shape#type)|Returns the type of this shape.|
 ||[width](/javascript/api/powerpoint/powerpoint.shape#width)|Specifies the width, in points, of the shape.|
 |[ShapeAddOptions](/javascript/api/powerpoint/powerpoint.shapeaddoptions)|[height](/javascript/api/powerpoint/powerpoint.shapeaddoptions#height)|Specifies the height, in points, of the shape.|
 ||[left](/javascript/api/powerpoint/powerpoint.shapeaddoptions#left)|Specifies the distance, in points, from the left side of the shape to the left side of the slide.|
@@ -33,9 +33,9 @@
 ||[items](/javascript/api/powerpoint/powerpoint.shapecollection#items)|Gets the loaded child items in this collection.|
 |[ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill)|[clear()](/javascript/api/powerpoint/powerpoint.shapefill#clear__)|Clears the fill formatting of this shape.|
 ||[foregroundColor](/javascript/api/powerpoint/powerpoint.shapefill#foregroundColor)|Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").|
-||[type](/javascript/api/powerpoint/powerpoint.shapefill#type)|Returns the fill type of the shape.|
 ||[setSolidColor(color: string)](/javascript/api/powerpoint/powerpoint.shapefill#setSolidColor_color_)|Sets the fill formatting of the shape to a uniform color.|
 ||[transparency](/javascript/api/powerpoint/powerpoint.shapefill#transparency)|Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear).|
+||[type](/javascript/api/powerpoint/powerpoint.shapefill#type)|Returns the fill type of the shape.|
 |[ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont)|[bold](/javascript/api/powerpoint/powerpoint.shapefont#bold)|Represents the bold status of font.|
 ||[color](/javascript/api/powerpoint/powerpoint.shapefont#color)|HTML color code representation of the text color (e.g., "#FF0000" represents red).|
 ||[italic](/javascript/api/powerpoint/powerpoint.shapefont#italic)|Represents the italic status of font.|
@@ -82,14 +82,14 @@
 |[TextFrame](/javascript/api/powerpoint/powerpoint.textframe)|[autoSizeSetting](/javascript/api/powerpoint/powerpoint.textframe#autoSizeSetting)|The automatic sizing settings for the text frame.|
 ||[bottomMargin](/javascript/api/powerpoint/powerpoint.textframe#bottomMargin)|Represents the bottom margin, in points, of the text frame.|
 ||[deleteText()](/javascript/api/powerpoint/powerpoint.textframe#deleteText__)|Deletes all the text in the text frame.|
-||[leftMargin](/javascript/api/powerpoint/powerpoint.textframe#leftMargin)|Represents the left margin, in points, of the text frame.|
 ||[hasText](/javascript/api/powerpoint/powerpoint.textframe#hasText)|Specifies if the text frame contains text.|
-||[textRange](/javascript/api/powerpoint/powerpoint.textframe#textRange)|Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text.|
+||[leftMargin](/javascript/api/powerpoint/powerpoint.textframe#leftMargin)|Represents the left margin, in points, of the text frame.|
 ||[rightMargin](/javascript/api/powerpoint/powerpoint.textframe#rightMargin)|Represents the right margin, in points, of the text frame.|
+||[textRange](/javascript/api/powerpoint/powerpoint.textframe#textRange)|Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text.|
 ||[topMargin](/javascript/api/powerpoint/powerpoint.textframe#topMargin)|Represents the top margin, in points, of the text frame.|
 ||[verticalAlignment](/javascript/api/powerpoint/powerpoint.textframe#verticalAlignment)|Represents the vertical alignment of the text frame.|
 ||[wordWrap](/javascript/api/powerpoint/powerpoint.textframe#wordWrap)|Determines whether lines break automatically to fit text inside the shape.|
-|[TextRange](/javascript/api/powerpoint/powerpoint.textrange)|[getSubstring(start: number, length?: number)](/javascript/api/powerpoint/powerpoint.textrange#getSubstring_start__length_)|Returns a `TextRange` object for the substring in the given range.|
-||[font](/javascript/api/powerpoint/powerpoint.textrange#font)|Returns a `ShapeFont` object that represents the font attributes for the text range.|
+|[TextRange](/javascript/api/powerpoint/powerpoint.textrange)|[font](/javascript/api/powerpoint/powerpoint.textrange#font)|Returns a `ShapeFont` object that represents the font attributes for the text range.|
+||[getSubstring(start: number, length?: number)](/javascript/api/powerpoint/powerpoint.textrange#getSubstring_start__length_)|Returns a `TextRange` object for the substring in the given range.|
 ||[paragraphFormat](/javascript/api/powerpoint/powerpoint.textrange#paragraphFormat)|Represents the paragraph format of the text range.|
 ||[text](/javascript/api/powerpoint/powerpoint.textrange#text)|Represents the plain text content of the text range.|

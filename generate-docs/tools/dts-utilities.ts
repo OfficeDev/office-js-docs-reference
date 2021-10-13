@@ -53,7 +53,7 @@ class ClassStruct {
             if (a.declarationString === b.declarationString) {
                 return 0;
             } else {
-                return a.declarationString < b.declarationString ? -1 : 1;
+                return a.declarationString.replace("readonly ", "") < b.declarationString.replace("readonly ", "") ? -1 : 1;
             }
         });
     }
