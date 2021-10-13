@@ -3,7 +3,7 @@ name: PowerPoint.Presentation
 uid: 'powerpoint!PowerPoint.Presentation:class'
 package: powerpoint!
 fullName: PowerPoint.Presentation
-summary: '\[ [API set: PowerPointApi 1.0](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+summary: '\[ [API set: PowerPointApi 1.0](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -30,7 +30,7 @@ properties:
     summary: |-
       Returns the collection of `SlideMaster` objects that are in the presentation.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -45,7 +45,7 @@ properties:
     summary: |-
       Returns an ordered collection of slides in the presentation.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,7 +60,7 @@ properties:
     summary: |-
       Returns a collection of tags attached to the presentation.
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -88,7 +88,7 @@ methods:
     summary: |-
       Inserts the specified slides from a presentation into the current presentation.
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

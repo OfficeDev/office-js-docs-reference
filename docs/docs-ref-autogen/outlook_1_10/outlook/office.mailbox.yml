@@ -428,8 +428,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions,
-        callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -478,8 +478,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -883,8 +883,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayAppointmentFormAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        displayAppointmentFormAsync(itemId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange Web Services (EWS) identifier for an existing calendar appointment.
@@ -944,7 +944,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayAppointmentFormAsync(itemId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void):
+        displayAppointmentFormAsync(itemId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void):
         void;
       parameters:
         - id: itemId
@@ -1084,8 +1084,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayMessageFormAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        displayMessageFormAsync(itemId: string, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: itemId
           description: The Exchange Web Services (EWS) identifier for an existing message.
@@ -1145,7 +1145,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'displayMessageFormAsync(itemId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'displayMessageFormAsync(itemId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: itemId
           description: The Exchange Web Services (EWS) identifier for an existing message.
@@ -1319,8 +1319,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayNewAppointmentFormAsync(parameters: AppointmentForm, options: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayNewAppointmentFormAsync(parameters: AppointmentForm, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: parameters
           description: An `AppointmentForm` describing the new appointment. All properties are optional.
@@ -1384,7 +1384,7 @@ methods:
     syntax:
       content: >-
         displayNewAppointmentFormAsync(parameters: AppointmentForm, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: parameters
           description: An `AppointmentForm` describing the new appointment. All properties are optional.
@@ -1571,8 +1571,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayNewMessageFormAsync(parameters: any, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        displayNewMessageFormAsync(parameters: any, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: parameters
           description: >-
@@ -1666,7 +1666,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        displayNewMessageFormAsync(parameters: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void):
+        displayNewMessageFormAsync(parameters: any, callback?: (asyncResult: Office.AsyncResult<void>) => void):
         void;
       parameters:
         - id: parameters
@@ -1857,8 +1857,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getCallbackTokenAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -1959,7 +1959,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
       parameters:
         - id: callback
           description: >-
@@ -2033,7 +2033,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any):
+        getUserIdentityTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any):
         void;
       parameters:
         - id: callback
@@ -2232,7 +2232,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?:
+        makeEwsRequestAsync(data: any, callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?:
         any): void;
       parameters:
         - id: data
@@ -2278,8 +2278,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -2323,8 +2323,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.

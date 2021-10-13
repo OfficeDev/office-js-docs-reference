@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: Excel.DataValidationOperator
+uid: 'excel!Excel.DataValidationOperator:enum'
+package: excel!
+fullName: Excel.DataValidationOperator
+summary: Represents the data validation operator enum.
+remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: between
+    uid: 'excel!Excel.DataValidationOperator.between:member'
+    package: excel!
+    summary: ''
+    value: '"Between"'
+  - name: equalTo
+    uid: 'excel!Excel.DataValidationOperator.equalTo:member'
+    package: excel!
+    summary: ''
+    value: '"EqualTo"'
+  - name: greaterThan
+    uid: 'excel!Excel.DataValidationOperator.greaterThan:member'
+    package: excel!
+    summary: ''
+    value: '"GreaterThan"'
+  - name: greaterThanOrEqualTo
+    uid: 'excel!Excel.DataValidationOperator.greaterThanOrEqualTo:member'
+    package: excel!
+    summary: ''
+    value: '"GreaterThanOrEqualTo"'
+  - name: lessThan
+    uid: 'excel!Excel.DataValidationOperator.lessThan:member'
+    package: excel!
+    summary: ''
+    value: '"LessThan"'
+  - name: lessThanOrEqualTo
+    uid: 'excel!Excel.DataValidationOperator.lessThanOrEqualTo:member'
+    package: excel!
+    summary: ''
+    value: '"LessThanOrEqualTo"'
+  - name: notBetween
+    uid: 'excel!Excel.DataValidationOperator.notBetween:member'
+    package: excel!
+    summary: ''
+    value: '"NotBetween"'
+  - name: notEqualTo
+    uid: 'excel!Excel.DataValidationOperator.notEqualTo:member'
+    package: excel!
+    summary: ''
+    value: '"NotEqualTo"'

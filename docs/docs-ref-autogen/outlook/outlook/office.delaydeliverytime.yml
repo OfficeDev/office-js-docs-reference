@@ -58,7 +58,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void):
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Date>) => void):
         void;
       parameters:
         - id: options
@@ -94,7 +94,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Date>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -125,8 +125,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(datetime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(datetime: Date, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: datetime
           description: The future date and time when the message should be sent.
@@ -165,7 +165,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(datetime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(datetime: Date, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: datetime
           description: The future date and time when the message should be sent.

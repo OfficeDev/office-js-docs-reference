@@ -6,7 +6,7 @@ fullName: PowerPoint.InsertSlideOptions
 summary: |-
   Represents the available options when inserting slides.
 
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,7 +19,7 @@ properties:
     summary: |-
       Specifies which formatting to use during slide insertion. The default option is to use "KeepSourceFormatting".
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -41,7 +41,7 @@ properties:
       inserted when `sourceSlideIds` is not provided (this is the default behavior).
 
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -60,7 +60,7 @@ properties:
       a `SlideNotFound` exception and no slides will be inserted.
 
 
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

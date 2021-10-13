@@ -339,8 +339,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options: CommonAPI.AsyncContextOptions,
-        callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -389,8 +389,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
@@ -1109,8 +1109,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getCallbackTokenAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getCallbackTokenAsync(options: Office.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -1211,7 +1211,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any): void;'
       parameters:
         - id: callback
           description: >-
@@ -1285,7 +1285,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any):
+        getUserIdentityTokenAsync(callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?: any):
         void;
       parameters:
         - id: callback
@@ -1484,7 +1484,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?:
+        makeEwsRequestAsync(data: any, callback: (asyncResult: Office.AsyncResult<string>) => void, userContext?:
         any): void;
       parameters:
         - id: data
@@ -1530,8 +1530,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, options: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
@@ -1575,8 +1575,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: The event that should revoke the handler.

@@ -1,0 +1,185 @@
+### YamlMime:TSEnum
+name: Excel.DynamicFilterCriteria
+uid: 'excel!Excel.DynamicFilterCriteria:enum'
+package: excel!
+fullName: Excel.DynamicFilterCriteria
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: aboveAverage
+    uid: 'excel!Excel.DynamicFilterCriteria.aboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"AboveAverage"'
+  - name: allDatesInPeriodApril
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodApril:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodApril"'
+  - name: allDatesInPeriodAugust
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodAugust:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodAugust"'
+  - name: allDatesInPeriodDecember
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodDecember:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodDecember"'
+  - name: allDatesInPeriodFebruray
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodFebruray:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodFebruray"'
+  - name: allDatesInPeriodJanuary
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJanuary:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodJanuary"'
+  - name: allDatesInPeriodJuly
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJuly:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodJuly"'
+  - name: allDatesInPeriodJune
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJune:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodJune"'
+  - name: allDatesInPeriodMarch
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMarch:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodMarch"'
+  - name: allDatesInPeriodMay
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMay:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodMay"'
+  - name: allDatesInPeriodNovember
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodNovember:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodNovember"'
+  - name: allDatesInPeriodOctober
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodOctober:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodOctober"'
+  - name: allDatesInPeriodQuarter1
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodQuarter1"'
+  - name: allDatesInPeriodQuarter2
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodQuarter2"'
+  - name: allDatesInPeriodQuarter3
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodQuarter3"'
+  - name: allDatesInPeriodQuarter4
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodQuarter4"'
+  - name: allDatesInPeriodSeptember
+    uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodSeptember:member'
+    package: excel!
+    summary: ''
+    value: '"AllDatesInPeriodSeptember"'
+  - name: belowAverage
+    uid: 'excel!Excel.DynamicFilterCriteria.belowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"BelowAverage"'
+  - name: lastMonth
+    uid: 'excel!Excel.DynamicFilterCriteria.lastMonth:member'
+    package: excel!
+    summary: ''
+    value: '"LastMonth"'
+  - name: lastQuarter
+    uid: 'excel!Excel.DynamicFilterCriteria.lastQuarter:member'
+    package: excel!
+    summary: ''
+    value: '"LastQuarter"'
+  - name: lastWeek
+    uid: 'excel!Excel.DynamicFilterCriteria.lastWeek:member'
+    package: excel!
+    summary: ''
+    value: '"LastWeek"'
+  - name: lastYear
+    uid: 'excel!Excel.DynamicFilterCriteria.lastYear:member'
+    package: excel!
+    summary: ''
+    value: '"LastYear"'
+  - name: nextMonth
+    uid: 'excel!Excel.DynamicFilterCriteria.nextMonth:member'
+    package: excel!
+    summary: ''
+    value: '"NextMonth"'
+  - name: nextQuarter
+    uid: 'excel!Excel.DynamicFilterCriteria.nextQuarter:member'
+    package: excel!
+    summary: ''
+    value: '"NextQuarter"'
+  - name: nextWeek
+    uid: 'excel!Excel.DynamicFilterCriteria.nextWeek:member'
+    package: excel!
+    summary: ''
+    value: '"NextWeek"'
+  - name: nextYear
+    uid: 'excel!Excel.DynamicFilterCriteria.nextYear:member'
+    package: excel!
+    summary: ''
+    value: '"NextYear"'
+  - name: thisMonth
+    uid: 'excel!Excel.DynamicFilterCriteria.thisMonth:member'
+    package: excel!
+    summary: ''
+    value: '"ThisMonth"'
+  - name: thisQuarter
+    uid: 'excel!Excel.DynamicFilterCriteria.thisQuarter:member'
+    package: excel!
+    summary: ''
+    value: '"ThisQuarter"'
+  - name: thisWeek
+    uid: 'excel!Excel.DynamicFilterCriteria.thisWeek:member'
+    package: excel!
+    summary: ''
+    value: '"ThisWeek"'
+  - name: thisYear
+    uid: 'excel!Excel.DynamicFilterCriteria.thisYear:member'
+    package: excel!
+    summary: ''
+    value: '"ThisYear"'
+  - name: today
+    uid: 'excel!Excel.DynamicFilterCriteria.today:member'
+    package: excel!
+    summary: ''
+    value: '"Today"'
+  - name: tomorrow
+    uid: 'excel!Excel.DynamicFilterCriteria.tomorrow:member'
+    package: excel!
+    summary: ''
+    value: '"Tomorrow"'
+  - name: unknown
+    uid: 'excel!Excel.DynamicFilterCriteria.unknown:member'
+    package: excel!
+    summary: ''
+    value: '"Unknown"'
+  - name: yearToDate
+    uid: 'excel!Excel.DynamicFilterCriteria.yearToDate:member'
+    package: excel!
+    summary: ''
+    value: '"YearToDate"'
+  - name: yesterday
+    uid: 'excel!Excel.DynamicFilterCriteria.yesterday:member'
+    package: excel!
+    summary: ''
+    value: '"Yesterday"'

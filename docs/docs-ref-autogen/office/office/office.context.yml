@@ -295,7 +295,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'mailbox: Outlook.Mailbox;'
+      content: 'mailbox: Office.Mailbox;'
       return:
         type: '<xref uid="outlook!Office.Mailbox:interface" />'
   - name: officeTheme
@@ -398,7 +398,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'roamingSettings: Outlook.RoamingSettings;'
+      content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
   - name: touchEnabled

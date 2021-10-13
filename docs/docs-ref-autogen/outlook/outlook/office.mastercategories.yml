@@ -88,8 +88,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        addAsync(categories: CategoryDetails[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addAsync(categories: CategoryDetails[], options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
@@ -138,7 +138,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addAsync(categories: CategoryDetails[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'addAsync(categories: CategoryDetails[], callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
@@ -172,8 +172,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult:
-        CommonAPI.AsyncResult<CategoryDetails[]>) => void): void;
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<CategoryDetails[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -236,7 +236,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<CategoryDetails[]>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<CategoryDetails[]>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -297,8 +297,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        removeAsync(categories: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeAsync(categories: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: categories
           description: The categories to be removed from the master list on the mailbox.
@@ -343,7 +343,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(categories: string[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'removeAsync(categories: string[], callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: categories
           description: The categories to be removed from the master list on the mailbox.

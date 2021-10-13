@@ -1,0 +1,47 @@
+### YamlMime:TSEnum
+name: Excel.RangeValueType
+uid: 'excel!Excel.RangeValueType:enum'
+package: excel!
+fullName: Excel.RangeValueType
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
+  RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boolean
+    uid: 'excel!Excel.RangeValueType.boolean:member'
+    package: excel!
+    summary: ''
+    value: '"Boolean"'
+  - name: double
+    uid: 'excel!Excel.RangeValueType.double:member'
+    package: excel!
+    summary: ''
+    value: '"Double"'
+  - name: empty
+    uid: 'excel!Excel.RangeValueType.empty:member'
+    package: excel!
+    summary: ''
+    value: '"Empty"'
+  - name: error
+    uid: 'excel!Excel.RangeValueType.error:member'
+    package: excel!
+    summary: ''
+    value: '"Error"'
+  - name: integer
+    uid: 'excel!Excel.RangeValueType.integer:member'
+    package: excel!
+    summary: ''
+    value: '"Integer"'
+  - name: string
+    uid: 'excel!Excel.RangeValueType.string:member'
+    package: excel!
+    summary: ''
+    value: '"String"'
+  - name: unknown
+    uid: 'excel!Excel.RangeValueType.unknown:member'
+    package: excel!
+    summary: ''
+    value: '"Unknown"'

@@ -1,0 +1,204 @@
+### YamlMime:TSType
+name: Excel.ChartPointsCollection
+uid: 'excel!Excel.ChartPointsCollection:class'
+package: excel!
+fullName: Excel.ChartPointsCollection
+summary: A collection of all the chart points within a series inside a chart.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartPointsCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: count
+    uid: 'excel!Excel.ChartPointsCollection#count:member'
+    package: excel!
+    fullName: count
+    summary: Returns the number of chart points in the series.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type: number
+  - name: items
+    uid: 'excel!Excel.ChartPointsCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.ChartPoint[];'
+      return:
+        type: '<xref uid="excel!Excel.ChartPoint:class" />[]'
+methods:
+  - name: getItemAt(index)
+    uid: 'excel!Excel.ChartPointsCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: Retrieve a point based on its position within the series.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      // Set the border color for the first points in the points collection
+      Excel.run(function (ctx) { 
+          var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
+          return ctx.sync().then(function() {
+              console.log("Point Border Color Changed");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartPoint;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.ChartPoint:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartPointsCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartPointsCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface" /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartPointsCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartPointsCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get the names of points in the points collection
+          Excel.run(function (ctx) { 
+              var pointsCollection = 
+                  ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+              pointsCollection.load('items');
+              return ctx.sync().then(function() {
+                  console.log("Points Collection loaded");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Get the number of points
+          Excel.run(function (ctx) { 
+              var pointsCollection = 
+                  ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+              pointsCollection.load('count');
+              return ctx.sync().then(function() {
+                  console.log("points: Count= " + pointsCollection.count);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartPointsCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartPointsCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartPointsCollectionData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.ChartPointsCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -8,7 +8,7 @@ summary: >-
   [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class)<!-- -->.
 
 
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 remarks: ''
 isPreview: true
 isDeprecated: false

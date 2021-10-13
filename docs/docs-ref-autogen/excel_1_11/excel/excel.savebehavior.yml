@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: Excel.SaveBehavior
+uid: 'excel!Excel.SaveBehavior:enum'
+package: excel!
+fullName: Excel.SaveBehavior
+summary: Specifies the save behavior for `Workbook.save`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: prompt
+    uid: 'excel!Excel.SaveBehavior.prompt:member'
+    package: excel!
+    summary: >-
+      Prompts the "Save As" experience to the user if the workbook has not been saved, Ignored if the workbook was
+      previously saved.
+    value: '"Prompt"'
+  - name: save
+    uid: 'excel!Excel.SaveBehavior.save:member'
+    package: excel!
+    summary: >-
+      Save the workbook without prompting the user. If file is not saved, it will save it with default name in the
+      default location.
+    value: '"Save"'

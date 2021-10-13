@@ -1,0 +1,115 @@
+### YamlMime:TSEnum
+name: Excel.IconSet
+uid: 'excel!Excel.IconSet:enum'
+package: excel!
+fullName: Excel.IconSet
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fiveArrows
+    uid: 'excel!Excel.IconSet.fiveArrows:member'
+    package: excel!
+    summary: ''
+    value: '"FiveArrows"'
+  - name: fiveArrowsGray
+    uid: 'excel!Excel.IconSet.fiveArrowsGray:member'
+    package: excel!
+    summary: ''
+    value: '"FiveArrowsGray"'
+  - name: fiveBoxes
+    uid: 'excel!Excel.IconSet.fiveBoxes:member'
+    package: excel!
+    summary: ''
+    value: '"FiveBoxes"'
+  - name: fiveQuarters
+    uid: 'excel!Excel.IconSet.fiveQuarters:member'
+    package: excel!
+    summary: ''
+    value: '"FiveQuarters"'
+  - name: fiveRating
+    uid: 'excel!Excel.IconSet.fiveRating:member'
+    package: excel!
+    summary: ''
+    value: '"FiveRating"'
+  - name: fourArrows
+    uid: 'excel!Excel.IconSet.fourArrows:member'
+    package: excel!
+    summary: ''
+    value: '"FourArrows"'
+  - name: fourArrowsGray
+    uid: 'excel!Excel.IconSet.fourArrowsGray:member'
+    package: excel!
+    summary: ''
+    value: '"FourArrowsGray"'
+  - name: fourRating
+    uid: 'excel!Excel.IconSet.fourRating:member'
+    package: excel!
+    summary: ''
+    value: '"FourRating"'
+  - name: fourRedToBlack
+    uid: 'excel!Excel.IconSet.fourRedToBlack:member'
+    package: excel!
+    summary: ''
+    value: '"FourRedToBlack"'
+  - name: fourTrafficLights
+    uid: 'excel!Excel.IconSet.fourTrafficLights:member'
+    package: excel!
+    summary: ''
+    value: '"FourTrafficLights"'
+  - name: invalid
+    uid: 'excel!Excel.IconSet.invalid:member'
+    package: excel!
+    summary: ''
+    value: '"Invalid"'
+  - name: threeArrows
+    uid: 'excel!Excel.IconSet.threeArrows:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeArrows"'
+  - name: threeArrowsGray
+    uid: 'excel!Excel.IconSet.threeArrowsGray:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeArrowsGray"'
+  - name: threeFlags
+    uid: 'excel!Excel.IconSet.threeFlags:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeFlags"'
+  - name: threeSigns
+    uid: 'excel!Excel.IconSet.threeSigns:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeSigns"'
+  - name: threeStars
+    uid: 'excel!Excel.IconSet.threeStars:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeStars"'
+  - name: threeSymbols
+    uid: 'excel!Excel.IconSet.threeSymbols:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeSymbols"'
+  - name: threeSymbols2
+    uid: 'excel!Excel.IconSet.threeSymbols2:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeSymbols2"'
+  - name: threeTrafficLights1
+    uid: 'excel!Excel.IconSet.threeTrafficLights1:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeTrafficLights1"'
+  - name: threeTrafficLights2
+    uid: 'excel!Excel.IconSet.threeTrafficLights2:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeTrafficLights2"'
+  - name: threeTriangles
+    uid: 'excel!Excel.IconSet.threeTriangles:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeTriangles"'

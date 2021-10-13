@@ -41,7 +41,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<boolean>) =>
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) =>
         void): void;
       parameters:
         - id: options
@@ -96,7 +96,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<boolean>) => void): void;'
       parameters:
         - id: callback
           description: >-
@@ -150,8 +150,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(isAllDayEvent: boolean, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(isAllDayEvent: boolean, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: isAllDayEvent
           description: boolean value to set the all day event status.
@@ -193,7 +193,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'setAsync(isAllDayEvent: boolean, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(isAllDayEvent: boolean, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: isAllDayEvent
           description: boolean value to set the all day event status.

@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Excel.WorksheetPositionType
+uid: 'excel!Excel.WorksheetPositionType:enum'
+package: excel!
+fullName: Excel.WorksheetPositionType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: after
+    uid: 'excel!Excel.WorksheetPositionType.after:member'
+    package: excel!
+    summary: ''
+    value: '"After"'
+  - name: before
+    uid: 'excel!Excel.WorksheetPositionType.before:member'
+    package: excel!
+    summary: ''
+    value: '"Before"'
+  - name: beginning
+    uid: 'excel!Excel.WorksheetPositionType.beginning:member'
+    package: excel!
+    summary: ''
+    value: '"Beginning"'
+  - name: end
+    uid: 'excel!Excel.WorksheetPositionType.end:member'
+    package: excel!
+    summary: ''
+    value: '"End"'
+  - name: none
+    uid: 'excel!Excel.WorksheetPositionType.none:member'
+    package: excel!
+    summary: ''
+    value: '"None"'
