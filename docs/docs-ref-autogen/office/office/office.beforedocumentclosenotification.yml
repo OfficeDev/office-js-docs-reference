@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: Office.BeforeDocumentCloseNotification
+uid: 'office!Office.BeforeDocumentCloseNotification:interface'
+package: office!
+fullName: Office.BeforeDocumentCloseNotification
+summary: >-
+  Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't
+  close until the user responds. The notification dialog will allow the user to confirm the request to close the
+  document or cancel the request to close the document.
+remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: disable()
+    uid: 'office!Office.BeforeDocumentCloseNotification#disable:member(1)'
+    package: office!
+    fullName: disable()
+    summary: Prevents the notification dialog from appearing when the user attempts to close a document.
+    remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'disable(): Promise<void>;'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: enable()
+    uid: 'office!Office.BeforeDocumentCloseNotification#enable:member(1)'
+    package: office!
+    fullName: enable()
+    summary: >-
+      Enable a modal notification dialog that appears when the user attempts to close a document. The document won't
+      close until the user responds. This notification dialog asks the user to confirm the request to close the
+      document, or allows the user to cancel the request to close the document.
+    remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'enable(): Promise<void>;'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: onCloseActionCancelled(listener)
+    uid: 'office!Office.BeforeDocumentCloseNotification#onCloseActionCancelled:member(1)'
+    package: office!
+    fullName: onCloseActionCancelled(listener)
+    summary: >-
+      Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. This
+      event handler will be triggered if one of the following conditions is met: 1. When the notification dialog is
+      open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right
+      corner of the dialog, or presses the Esc key. 2. When the add-in calls the `enable` method on the
+      `BeforeDocumentCloseNotification` object.
+    remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        onCloseActionCancelled(
+                    listener: () => void
+                ): Promise<() => Promise<void>>;
+      parameters:
+        - id: listener
+          description: The event handler that is called when the dialog is cancelled.
+          type: () =&gt; void
+      return:
+        type: Promise&lt;() =&gt; Promise&lt;void&gt;&gt;
+        description: A promise that resolves when the event handler is added.

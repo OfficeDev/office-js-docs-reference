@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentUpdateData
+uid: 'word!Word.Interfaces.CommentUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.CommentUpdateData
+summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: 'word!Word.Interfaces.CommentUpdateData#content:member'
+    package: word!
+    fullName: content
+    summary: Gtes or sets the comment's content as plain text.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'content?: string;'
+      return:
+        type: string
+  - name: resolved
+    uid: 'word!Word.Interfaces.CommentUpdateData#resolved:member'
+    package: word!
+    fullName: resolved
+    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type: boolean

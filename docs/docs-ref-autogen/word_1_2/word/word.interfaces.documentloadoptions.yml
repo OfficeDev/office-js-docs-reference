@@ -6,10 +6,7 @@ fullName: Word.Interfaces.DocumentLoadOptions
 summary: >-
   The Document object is the top level object. A Document object contains one or more sections, content controls, and
   the body that contains the contents of the document.
-
-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,34 +25,14 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: allowCloseOnUntitled
-    uid: 'word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member'
-    package: word!
-    fullName: allowCloseOnUntitled
-    summary: >-
-      Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
-      document even if this document is untitled. True to close, false otherwise.
-
-
-      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'allowCloseOnUntitled?: boolean;'
-      return:
-        type: boolean
   - name: body
     uid: 'word!Word.Interfaces.DocumentLoadOptions#body:member'
     package: word!
     fullName: body
     summary: >-
-      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc..
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+      Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
+      textboxes, etc..
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,10 +46,7 @@ properties:
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

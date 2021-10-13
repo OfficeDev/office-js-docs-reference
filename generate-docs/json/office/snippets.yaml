@@ -1,0 +1,4092 @@
+'Office.AddinCommands.Event#completed:member(1)':
+  - >-
+    // For the following example, the processItem function is
+
+    // defined in the FunctionFile referenced from the add-in manifest,
+
+    // and maps to the FunctionName of the action in the associated button
+    control.
+
+    function processItem(event) {
+        // Do some processing
+
+        event.completed();
+    }
+  - |-
+    // For the following example, the checkMessage function was
+    // registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent.
+        var outgoingMsg = Office.context.mailbox.item;
+
+        // Check if subject contains "BLOCK".
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in `result.value`.
+            // If search term "BLOCK" is found, don't send message.
+            const notFound = -1;
+            var allowEvent = (result.value.indexOf('BLOCK') === notFound);
+            event.completed({allowEvent: allowEvent});
+        });
+    }
+'Office.AddinCommands.Event#source:member':
+  - >-
+    // In this example, consider a button defined in an add-in manifest as
+    follows:
+
+    //<Control xsi:type="Button" id="eventTestButton">
+
+    //    <Label resid="eventButtonLabel" />
+
+    //    <Tooltip resid="eventButtonTooltip" />
+
+    //    <Supertip>
+
+    //        <Title resid="eventSuperTipTitle" />
+
+    //        <Description resid="eventSuperTipDescription" />
+
+    //    </Supertip>
+
+    //    <Icon>
+
+    //        <bt:Image size="16" resid="blue-icon-16" />
+
+    //        <bt:Image size="32" resid="blue-icon-32" />
+
+    //        <bt:Image size="80" resid="blue-icon-80" />
+
+    //    </Icon>
+
+    //    <Action xsi:type="ExecuteFunction">
+
+    //        <FunctionName>testEventObject</FunctionName>
+
+    //    </Action>
+
+    //</Control>
+
+
+    // The button has an id attribute set to eventTestButton, and will invoke
+
+    // the testEventObject function defined in the add-in.
+
+    // That function looks like this:
+
+    function testEventObject(event) {
+        // The event object implements the Event interface.
+
+        // This value will be "eventTestButton".
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
+  - |-
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked.
+        var buttonId = event.source.id;
+
+        if (buttonId === 'button1') {
+            doButton1Action();
+        } else {
+            doButton2Action();
+        }
+
+        event.completed();
+    }
+'Office.AddinCommands.Source#id:member':
+  - >-
+    // In this example, consider a button defined in an add-in manifest as
+    follows:
+
+    //<Control xsi:type="Button" id="eventTestButton">
+
+    //    <Label resid="eventButtonLabel" />
+
+    //    <Tooltip resid="eventButtonTooltip" />
+
+    //    <Supertip>
+
+    //        <Title resid="eventSuperTipTitle" />
+
+    //        <Description resid="eventSuperTipDescription" />
+
+    //    </Supertip>
+
+    //    <Icon>
+
+    //        <bt:Image size="16" resid="blue-icon-16" />
+
+    //        <bt:Image size="32" resid="blue-icon-32" />
+
+    //        <bt:Image size="80" resid="blue-icon-80" />
+
+    //    </Icon>
+
+    //    <Action xsi:type="ExecuteFunction">
+
+    //        <FunctionName>testEventObject</FunctionName>
+
+    //    </Action>
+
+    //</Control>
+
+
+    // The button has an id attribute set to eventTestButton, and will invoke
+
+    // the testEventObject function defined in the add-in.
+
+    // That function looks like this:
+
+    function testEventObject(event) {
+        // The event object implements the Event interface.
+
+        // This value will be "eventTestButton".
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
+  - |-
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked.
+        var buttonId = event.source.id;
+
+        if (buttonId === 'button1') {
+            doButton1Action();
+        } else {
+            doButton2Action();
+        }
+
+        event.completed();
+    }
+'Office.AsyncResult#asyncContext:member':
+  - |-
+    function getDataWithContext() {
+        var format = "Your data: ";
+        Office.context.document.getSelectedDataAsync(
+            Office.CoercionType.Text, 
+            { asyncContext: format }, 
+            showDataWithContext);
+    }
+
+    function showDataWithContext(asyncResult) {
+        write(asyncResult.asyncContext + asyncResult.value);
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.AsyncResult#error:member':
+  - |-
+    function getData() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+            if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                write(asyncResult.error.message);
+            }
+            else {
+                write(asyncResult.value);
+            }
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.AsyncResult#status:member':
+  - |-
+    function getData() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+            if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                write(asyncResult.error.message);
+            }
+            else {
+                write(asyncResult.value);
+            }
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.AsyncResult#value:member':
+  - |-
+    function getData() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+            if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                write(asyncResult.error.message);
+            }
+            else {
+                write(asyncResult.value);
+            }
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.AsyncResult:interface':
+  - >-
+    // The following is an example applicable to content and task pane add-ins.
+
+    // The example shows a call to the getSelectedDataAsync method of the
+    Document object.
+
+    Office.context.document.getSelectedDataAsync("text", {
+            valueFormat: "unformatted",
+            filterType: "all"
+        },
+        function (result) {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                var dataValue = result.value; // Get selected data.
+                console.log('Selected data is ' + dataValue);
+            } else {
+                var err = result.error;
+                console.log(err.name + ": " + err.message);
+            }
+        });
+    // The anonymous function passed as the callback argument ( function
+    (result){...}) has a single 
+
+    // parameter named result that provides access to an AsyncResult object when
+    the function executes.
+
+    // When the call to the getSelectedDataAsync method completes, the callback
+    function executes, 
+
+    // and the following line of code accesses the value property of the
+    AsyncResult object to 
+
+    // return the data selected in the document:
+
+    var dataValue = result.value;
+
+    // Note that other lines of code in the function use the result parameter of
+    the callback function 
+
+    // to access the status and error properties of the AsyncResult object.
+'Office.Auth#getAccessTokenAsync:member(1)':
+  - |-
+    Office.context.auth.getAccessTokenAsync(function(result) {
+        if (result.status === "succeeded") {
+            var token = result.value;
+            // ...
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
+'Office.Binding#addHandlerAsync:member(2)':
+  - >-
+    // The following code sample calls the select method of the Office object to
+    access the binding
+
+    // with ID "MyBinding", and then calls the addHandlerAsync method to add a
+    handler function 
+
+    // for the bindingDataChanged event of that binding.
+
+    function addEventHandlerToBinding() {
+        Office.select("bindings#MyBinding").addHandlerAsync(
+            Office.EventType.BindingDataChanged, onBindingDataChanged);
+    }
+
+
+    function onBindingDataChanged(eventArgs) {
+        write("Data has changed in binding: " + eventArgs.binding.id);
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - >-
+    // To add an event handler for the BindingSelectionChanged event of a
+    binding, 
+
+    // use the addHandlerAsync method of the Binding object.
+
+    // The event handler receives an argument of type
+    BindingSelectionChangedEventArgs.
+
+    function addEventHandlerToBinding() {
+        Office.select("bindings#MyBinding").addHandlerAsync(
+            Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
+    }
+
+
+    function onBindingSelectionChanged(eventArgs) {
+        write(eventArgs.binding.id + " has been selected.");
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Binding#document:member':
+  - >-
+    Office.context.document.bindings.getByIdAsync("myBinding", function
+    (asyncResult) {
+        write(asyncResult.value.document.url);
+    });
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Binding#getDataAsync:member(2)':
+  - >-
+    function showBindingData() {
+        Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
+            write(asyncResult.value)
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // There is an important difference in behavior between using the "table"
+    and "matrix" coercionType with the
+
+    // Binding.getDataAsync method, with respect to data formatted with header
+    rows, as shown in the following
+
+    // two examples. These code examples show event handler functions for the
+    Binding.SelectionChanged event.
+
+
+    // If you specify the "table" coercionType, the TableData.rows property (
+    result.value.rows in the following
+
+    // code example) returns an array that contains only the body rows of the
+    table. So, its 0th row will be the
+
+    // first non-header row in the table.
+
+    function selectionChanged(evtArgs) { 
+        Office.select("bindings#TableTranslate").getDataAsync(
+            { coercionType: 'table', 
+              startRow: evtArgs.startRow, 
+              startCol: 0, 
+              rowCount: 1, 
+              columnCount: 1 },  
+            function (result) { 
+                if (result.status == 'succeeded') { 
+                    write("Image to find: " + result.value.rows[0][0]); 
+                } 
+                else 
+                    write(result.error.message); 
+        }); 
+    }     
+
+    // Function that writes to a div with id='message' on the page. 
+
+    function write(message){ 
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // However, if you specify the "matrix" coercionType, result.value in the
+    following code example returns an array
+
+    // that contains the table header in the 0th row. If the table header
+    contains multiple rows, then these are all
+
+    // included in the result.value matrix as separate rows before the table
+    body rows are included.
+
+    function selectionChanged(evtArgs) { 
+        Office.select("bindings#TableTranslate").getDataAsync(
+            { coercionType: 'matrix', 
+              startRow: evtArgs.startRow, 
+              startCol: 0, 
+              rowCount: 1, 
+              columnCount: 1 },  
+            function (result) { 
+                if (result.status == 'succeeded') { 
+                    write("Image to find: " + result.value[1][0]); 
+                } 
+                else 
+                    write(result.error.message); 
+        }); 
+    }     
+
+    // Function that writes to a div with id='message' on the page. 
+
+    function write(message){ 
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Binding#id:member':
+  - >-
+    Office.context.document.bindings.getByIdAsync("myBinding", function
+    (asyncResult) {
+        write(asyncResult.value.id);
+    });
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Binding#removeHandlerAsync:member(2)':
+  - |-
+    function removeEventHandlerFromBinding() {
+        Office.select("bindings#MyBinding").removeHandlerAsync(
+            Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
+    }
+'Office.Binding#setDataAsync:member(2)':
+  - >-
+    function setBindingData() {
+        Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
+    }
+
+
+    // Specifying the optional coercionType parameter lets you specify the kind
+    of data you want to write to a binding.
+
+    // For example, in Word if you want to write HTML to a text binding, you can
+    specify the coercionType parameter 
+
+    // as "html" as shown in the following example, which uses HTML <b> tags to
+    make "Hello" bold.
+
+    function writeHtmlData() {
+        Office.select("bindings#myBinding").setDataAsync(
+            "<b>Hello</b> World!", {coercionType: "html"}, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                write('Error: ' + asyncResult.error.message);
+            }
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // In this example, the call to setDataAsync passes the data parameter as an
+    array of arrays
+
+    // (to create a single column of three rows), and specifies the data
+    structure with the 
+
+    // coercionType parameter as a "matrix".
+
+    function writeBoundDataMatrix() {
+        Office.select("bindings#myBinding").setDataAsync(
+            [['Berlin'],['Munich'],['Duisburg']],{ coercionType: "matrix" }, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                write('Error: ' + asyncResult.error.message);
+            } else {
+                write('Bound data: ' + asyncResult.value);
+            }
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // In the writeBoundDataTable function in this example, the call to
+    setDataAsync passes the data parameter 
+
+    // as a TableData object (to write three columns and three rows), and
+    specifies the data structure
+
+    // with the coercionType parameter as a "table".
+
+
+    // In the updateTableData function, the call to setDataAsync again passes
+    the data parameter as a TableData object,
+
+    // but as a single column with a new header and three rows, to update the
+    values in the last column 
+
+    // of the table created with the writeBoundDataTable function. The optional
+    zero-based startColumn parameter 
+
+    // is specified as 2 to replace the values in the third column of the table.
+
+    function writeBoundDataTable() {
+        // Create a TableData object.
+        var myTable = new Office.TableData();
+        myTable.headers = ['First Name', 'Last Name', 'Grade'];
+        myTable.rows = [['Kim', 'Abercrombie', 'A'], ['Junmin','Hao', 'C'],['Toni','Poe','B']];
+
+        // Set myTable in the binding.
+        Office.select("bindings#myBinding").setDataAsync(myTable, { coercionType: "table" }, 
+            function (asyncResult) {
+                if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                    write('Error: '+ asyncResult.error.message);
+            } else {
+                write('Bound data: ' + asyncResult.value);
+            }
+        });
+    }
+
+
+    // Replace last column with different data.
+
+    function updateTableData() {
+        var newTable = new Office.TableData();
+        newTable.headers = ["Gender"];
+        newTable.rows = [["M"],["M"],["F"]];
+        Office.select("bindings#myBinding").setDataAsync(newTable, { coercionType: "table", startColumn:2 }, 
+            function (asyncResult) {
+                if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                    write('Error: '+ asyncResult.error.message);
+            } else {
+                write('Bound data: ' + asyncResult.value);
+            }     
+        });   
+    }
+
+
+    // In this example, the following call passes two formatting groups to
+    cellFormat.
+
+    Office.select("bindings#myBinding").setDataAsync([['Berlin'],['Munich'],['Duisburg']],
+      {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+          {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
+      function (asyncResult){});
+'Office.Binding#type:member':
+  - >-
+    Office.context.document.bindings.getByIdAsync("MyBinding", function
+    (asyncResult) { 
+        write(asyncResult.value.type); 
+    }) 
+
+
+    // Function that writes to a div with id='message' on the page. 
+
+    function write(message){ 
+        document.getElementById('message').innerText += message;  
+    }
+'Office.BindingSelectionChangedEventArgs#columnCount:member':
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event to the binding with an id of myTable.
+
+    // When the user changes the selection, the handler displays the coordinates
+    of the first cell in the selection,
+
+    // and the number of row and columns selected.
+
+    function addSelectionHandler() {
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+        });
+    }
+
+
+    // Display selection start coordinates and row/column count.
+
+    function myHandler(bArgs) {
+        write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+        write("Selection row count: " + bArgs.rowCount);
+        write("Selection col count: " + bArgs.columnCount);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.BindingSelectionChangedEventArgs#rowCount:member':
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event to the binding with an id of myTable.
+
+    // When the user changes the selection, the handler displays the coordinates
+    of the first cell in the selection,
+
+    // and the number of row and columns selected.
+
+    function addSelectionHandler() {
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+        });
+    }
+
+
+    // Display selection start coordinates and row/column count.
+
+    function myHandler(bArgs) {
+        write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+        write("Selection row count: " + bArgs.rowCount);
+        write("Selection col count: " + bArgs.columnCount);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.BindingSelectionChangedEventArgs#startColumn:member':
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event to the binding with an id of myTable.
+
+    // When the user changes the selection, the handler displays the coordinates
+    of the first cell in the selection,
+
+    // and the number of row and columns selected.
+
+    function addSelectionHandler() {
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+        });
+    }
+
+
+    // Display selection start coordinates and row/column count.
+
+    function myHandler(bArgs) {
+        write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+        write("Selection row count: " + bArgs.rowCount);
+        write("Selection col count: " + bArgs.columnCount);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.BindingSelectionChangedEventArgs#startRow:member':
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event to the binding with an id of myTable.
+
+    // When the user changes the selection, the handler displays the coordinates
+    of the first cell in the selection,
+
+    // and the number of row and columns selected.
+
+    function addSelectionHandler() {
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addHandlerAsync("bindingSelectionChanged", myHandler);
+        });
+    }
+
+
+    // Display selection start coordinates and row/column count.
+
+    function myHandler(bArgs) {
+        write("Selection start row/col: " + bArgs.startRow + "," + bArgs.startColumn);
+        write("Selection row count: " + bArgs.rowCount);
+        write("Selection col count: " + bArgs.columnCount);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#addFromNamedItemAsync:member(1)':
+  - >-
+    // The following example adds a binding to the myRange named item in Excel
+    as a "matrix" binding,
+
+    // and assigns the binding's id as myMatrix.
+
+    function bindNamedItem() {
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "myRange", "matrix", {id:'myMatrix'}, function (result) {
+            if (result.status == 'succeeded'){
+                write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
+                }
+            else
+                write('Error: ' + result.error.message);
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // The following example adds a binding to the Table1 named item in Excel as
+    a "table" binding,
+
+    // and assigns the binding's id as myTable.
+
+    function bindNamedItem() {
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "Table1", "table", {id:'myTable'}, function (result) {
+            if (result.status == 'succeeded'){
+                write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
+                }
+            else
+                write('Error: ' + result.error.message);
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // The following example creates a text binding in Word to a rich text
+    content control named "FirstName",
+
+    // assigns the id "firstName", and then displays that information.
+
+    function bindContentControl() {
+        Office.context.document.bindings.addFromNamedItemAsync('FirstName', 
+            Office.BindingType.Text, {id:'firstName'},
+            function (result) {
+                if (result.status === Office.AsyncResultStatus.Succeeded) {
+                    write('Control bound. Binding.id: '
+                        + result.value.id + ' Binding.type: ' + result.value.type);
+                } else {
+                    write('Error:', result.error.message);
+                }
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#addFromPromptAsync:member(1)':
+  - |-
+    function addBindingFromPrompt() {
+        Office.context.document.bindings.addFromPromptAsync(
+            Office.BindingType.Text, 
+            { id: 'MyBinding', promptText: 'Select text to bind to.' },
+            function (asyncResult) {
+                write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#addFromSelectionAsync:member(1)':
+  - |-
+    function addBindingFromSelection() {
+        Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
+            function (asyncResult) {
+            write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+            }
+        );
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#getAllAsync:member(2)':
+  - |-
+    function displayAllBindingNames() {
+        Office.context.document.bindings.getAllAsync(function (asyncResult) {
+            var bindingString = '';
+            for (var i in asyncResult.value) {
+                bindingString += asyncResult.value[i].id + '\n';
+            }
+            write('Existing bindings: ' + bindingString);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#getByIdAsync:member(2)':
+  - |-
+    function displayBindingType() {
+        Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
+            write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Bindings#releaseByIdAsync:member(2)':
+  - >-
+    Office.context.document.bindings.releaseByIdAsync("MyBinding", function
+    (asyncResult) { 
+        write("Released MyBinding!"); 
+    }); 
+
+    // Function that writes to a div with id='message' on the page. 
+
+    function write(message){ 
+        document.getElementById('message').innerText += message;  
+    }
+'Office.Context#contentLanguage:member':
+  - |-
+    function sayHelloWithContentLanguage() {
+        var myContentLanguage = Office.context.contentLanguage;
+        switch (myContentLanguage) {
+            case 'en-US':
+                write('Hello!');
+                break;
+            case 'en-NZ':
+                write('G\'day mate!');
+                break;
+        }
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Context#diagnostics:member':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
+    console.log("Office version: " + contextInfo.version);
+    console.log("Platform: " + contextInfo.platform);
+'Office.Context#displayLanguage:member':
+  - |-
+    function sayHelloWithDisplayLanguage() {
+        var myDisplayLanguage = Office.context.displayLanguage;
+        switch (myDisplayLanguage) {
+            case 'en-US':
+                write('Hello!');
+                break;
+            case 'en-NZ':
+                write('G\'day mate!');
+                break;
+        }
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Context#document:member':
+  - |-
+    // Extension initialization code.
+    var _document;
+
+    // The initialize function is required for all add-ins.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+        // After the DOM is loaded, code specific to the add-in can run.
+        // Initialize instance variables to access API objects.
+        _document = Office.context.document;
+        });
+    }
+'Office.Context#mailbox:member':
+  - >-
+    // The following line of code access the item object of the JavaScript API
+    for Office.
+
+    var item = Office.context.mailbox.item;
+'Office.Context#officeTheme:member':
+  - |-
+    function applyOfficeTheme(){
+        // Get office theme colors.
+        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+        // Apply body background color to a CSS class.
+        $('.body').css('background-color', bodyBackgroundColor);
+    }
+'Office.Context#roamingSettings:member':
+  - |-
+    // Get the current value of the 'myKey' setting.
+    var value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
+'Office.ContextInformation#host:member':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
+'Office.ContextInformation#platform:member':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Platform: " + contextInfo.platform);
+'Office.ContextInformation#version:member':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office version: " + contextInfo.version);
+'Office.CustomXmlNode#baseName:member':
+  - |-
+    function showXmlNodeBaseNames() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    write(node.baseName);
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#getNodeValueAsync:member(2)':
+  - |-
+    function showXmlNodeValues() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    node.getNodeValueAsync(function (asyncResult) {
+                        write(asyncResult.value);
+                    });
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#getNodesAsync:member(2)':
+  - |-
+    function showXmlChildNodes() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    node.getNodesAsync('*', function (nodeResults) {
+                        write(nodeResults.value.length + " childNodes");
+                    });
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#getTextAsync:member(1)':
+  - >-
+    // Get the built-in core properties XML part by using its ID. This results
+    in a call to Word.
+
+    Office.context.document.customXmlParts.getByIdAsync(
+        "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
+        
+        // Access the XML part.
+        var xmlPart = getByIdAsyncResult.value;
+        
+        // Add namespaces to the namespace manager. These two calls result in two calls to Word.
+        xmlPart.namespaceManager.addNamespaceAsync(
+            'cp',
+            'http://schemas.openxmlformats.org/package/2006/metadata/core-properties',
+            function () {
+            xmlPart.namespaceManager.addNamespaceAsync(
+                'dc', 
+                'http://purl.org/dc/elements/1.1/', 
+                function () {
+
+                // Get XML nodes by using an Xpath expression. This results in a call to Word.
+                xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
+                    
+                    // Get the first node returned by using the Xpath expression. 
+                    var node = getNodesAsyncResult.value[0];
+                    
+                    // Get the text value of the node and use the asyncContext. This results in a call to Word. 
+                    // The results are logged to the browser console.
+                    node.getTextAsync({asyncContext: "StateNormal"}, function (getTextAsyncResult) {
+                      console.log("Text of the title element = " + getTextAsyncResult.value;
+                      console.log("The asyncContext value = " + getTextAsyncResult.asyncContext;
+                    });
+                });
+            });
+        });
+    });
+'Office.CustomXmlNode#getXmlAsync:member(2)':
+  - |-
+    function showXmlNodeInnerXml() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    node.getXmlAsync(function (asyncResult) {
+                        write(asyncResult.value);
+                    });
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#namespaceUri:member':
+  - |-
+    function showXmlNamespaceUri() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    write(node.namespaceUri);
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#nodeType:member':
+  - |-
+    function showXmlNodeType() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    write(node.nodeType);
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#setNodeValueAsync:member(2)':
+  - |-
+    function setXmlNodeValue() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    write(node);
+                    node.setNodeValueAsync("item number" + i, function (result) { });
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlNode#setTextAsync:member(1)':
+  - >-
+    // Learn how to set the text value of a node in a custom XML part from the
+    following example.
+
+
+    // Get the built-in core properties XML part by using its ID. This results
+    in a call to Word.
+
+    Office.context.document.customXmlParts.getByIdAsync(
+        "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}",
+        function (getByIdAsyncResult) {
+        
+        // Access the XML part.
+        var xmlPart = getByIdAsyncResult.value;
+        
+        // Add namespaces to the namespace manager. These two calls result in two calls to Word.
+        xmlPart.namespaceManager.addNamespaceAsync(
+            'cp', 
+            'http://schemas.openxmlformats.org/package/2006/metadata/core-properties', 
+            function () {
+            xmlPart.namespaceManager.addNamespaceAsync(
+                'dc', 
+                'http://purl.org/dc/elements/1.1/', 
+                function () {
+
+                // Get XML nodes by using an Xpath expression. This results in a call to the host.
+                xmlPart.getNodesAsync("/cp:coreProperties/dc:subject", function (getNodesAsyncResult) {
+                    
+                    // Get the first node returned by using the Xpath expression.
+                    // This will be the subject element in this example.
+                    var subjectNode = getNodesAsyncResult.value[0];
+                    
+                    // Set the text value of the subject node and use the asyncContext. 
+                    // This results in a call to the host.  The results are logged to the browser console.
+                    subjectNode.setTextAsync(
+                        "newSubject", 
+                        {asyncContext: "StateNormal"}, 
+                        function (setTextAsyncResult) {
+                            console.log("The status of the call: " + setTextAsyncResult.status);
+                            console.log("The asyncContext value = " + setTextAsyncResult.asyncContext);
+                    });
+                });
+            });
+        });
+    });
+'Office.CustomXmlNode#setXmlAsync:member(1)':
+  - |-
+    function setXmlNodeInnerXml() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    node.setXmlAsync("<childNode>" + i + "</childNode>");
+                }
+            });
+        });
+    }
+'Office.CustomXmlPart#addHandlerAsync:member(2)':
+  - >-
+    // To add an event handler for the NodeDeleted event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
+    function addNodeDeletedEvent() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
+                write("A node has been deleted.");
+            });
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+  - >-
+    // To add an event handler for the NodeInserted event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
+    function addNodeInsertedEvent() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
+                write("A node has been inserted.");
+            });
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+  - >-
+    // To add an event handler for the NodeReplaced event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
+    function addNodeReplacedEvent() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
+                write("A node has been replaced.");
+            });
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+'Office.CustomXmlPart#builtIn:member':
+  - |-
+    function showXMLPartBuiltIn() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            write(xmlPart.builtIn);
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlPart#deleteAsync:member(2)':
+  - |-
+    function deleteXMLPart() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.deleteAsync(function (eventArgs) {
+                write("The XML Part has been deleted.");
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlPart#getNodesAsync:member(2)':
+  - |-
+    function showXmlNodeType() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getNodesAsync('*/*', function (nodeResults) {
+                for (i = 0; i < nodeResults.value.length; i++) {
+                    var node = nodeResults.value[i];
+                    write(node.nodeType);
+                }
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlPart#getXmlAsync:member(2)':
+  - |-
+    function showXMLPartInnerXML() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getXmlAsync(function (eventArgs) {
+                write(eventArgs.value);
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlPart#id:member':
+  - |-
+    function showXMLPartBuiltId() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            write(xmlPart.id);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlPart#namespaceManager:member':
+  - |-
+    function setXMLPartNamespaceManagerNamespace() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
+        });
+    }
+'Office.CustomXmlPart#removeHandlerAsync:member(2)':
+  - |-
+    function removeNodeInsertedEventHandler() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
+            function (result) {
+                var xmlPart = result.value;
+                xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
+        });
+    }
+'Office.CustomXmlParts#addAsync:member(2)':
+  - |-
+    function addXMLPart() {
+        Office.context.document.customXmlParts.addAsync(
+            '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
+            function (result) {});
+    }
+
+    function addXMLPartandHandler() {
+        Office.context.document.customXmlParts.addAsync(
+            "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
+            function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
+                function(a) {write(a.type)
+                },
+                    function(s) {write(s.status)
+                    });
+            });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+'Office.CustomXmlParts#getByIdAsync:member(1)':
+  - |-
+    function showXMLPartInnerXML() {
+        Office.context.document.customXmlParts.getByIdAsync(
+            "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.getXmlAsync({}, function (eventArgs) {
+                write(eventArgs.value);
+            });
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.CustomXmlParts#getByNamespaceAsync:member(2)':
+  - |-
+    function showXMLPartsInNamespace() {
+        Office.context.document.customXmlParts.getByNamespaceAsync(
+            "http://tempuri.org", 
+            function (eventArgs) {
+                write("Found " + eventArgs.value.length + " parts with this namespace");
+        }); 
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Document#addHandlerAsync:member(2)':
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event of a document
+
+    function addSelectionChangedEventHandler() {
+        Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+    }
+
+
+    function MyHandler(eventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithDocument(eventArgs.document);
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - >-
+    // The following code example adds a handler for the
+    ResourceSelectionChanged event.
+
+    // When the resource selection changes in the document, it gets the GUID of
+    the selected resource.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page control is defined in the content div in the page body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ResourceSelectionChanged,
+                    getResourceGuid);
+            });
+        };
+
+        // Get the GUID of the selected resource and display it in the add-in.
+        function getResourceGuid() {
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html(result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+
+
+    // For a complete code sample that shows how to use a
+    ResourceSelectionChanged
+
+    // event handler in a Project add-in, see "Create your first task pane
+    add-in
+
+    // for Project 2013 by using a text editor."
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+  - >-
+    // The following code example adds a handler for the TaskSelectionChanged
+    event.
+
+    // When the task selection changes in the document, it gets the GUID of the
+
+    // selected task.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that
+
+    // the following page control is defined in the content div in the page
+    body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.TaskSelectionChanged,
+                    getTaskGuid);
+                getTaskGuid();
+            });
+        };
+
+        // Get the GUID of the selected task and display it in the add-in.
+        function getTaskGuid() {
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html(result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+  - >-
+    // The following code example adds a handler for the ViewSelectionChanged
+
+    // event. When the active view changes, it gets the name and type of the
+    active view.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that
+
+    // the following page control is defined in the content div in the page
+    body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ViewSelectionChanged,
+                    getActiveView);
+                getActiveView();
+            });
+        };
+
+        // Get the name and type of the active view and display it in the add-in.
+        function getActiveView() {
+            Office.context.document.getSelectedViewAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var output = String.format(
+                            'View name: {0}<br/>View type: {1}',
+                            result.value.viewName, result.value.viewType);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+
+
+    // For an example that shows how to use a ViewSelectionChanged event handler
+    in a
+
+    // Project add-in, see "Create your first task pane add-in for Project 2013
+    by
+
+    // using a text editor."
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+  - >-
+    // The following code example uses addHandlerAsync to add an event handler
+    for the ViewSelectionChanged event.
+
+    // When the active view changes, the handler checks the view type. It
+    enables a button if the view is a resource
+
+    // view and disables the button if it isn't a resource view. Choosing the
+    button gets the GUID of the selected
+
+    // resource and displays it in the add-in.
+
+    // The example assumes that your add-in has a reference to the jQuery
+    library and that the following page controls
+
+    // are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" disabled="disabled"
+    /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                // Add a ViewSelectionChanged event handler.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ViewSelectionChanged,
+                    getActiveView);
+                $('#get-info').click(getResourceGuid);
+
+                // This example calls the handler on page load to get the active view
+                // of the default page.
+                getActiveView();
+            });
+        };
+
+        // Activate the button based on the active view type of the document.
+        // This is the ViewSelectionChanged event handler.
+        function getActiveView() {
+            Office.context.document.getSelectedViewAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var viewType = result.value.viewType;
+                        if (viewType == 6 ||   // ResourceForm
+                            viewType == 7 ||   // ResourceSheet
+                            viewType == 8 ||   // ResourceGraph
+                            viewType == 15) {  // ResourceUsage
+                            $('#get-info').removeAttr('disabled');
+                        }
+                        else {
+                            $('#get-info').attr('disabled', 'disabled');
+                        }
+                        var output = String.format(
+                            'View name: {0}<br/>View type: {1}',
+                            result.value.viewName, viewType);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        // Get the GUID of the currently selected resource and display it in the add-in.
+        function getResourceGuid() {
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html('Resource GUID: ' + result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+
+
+    // For a complete code sample that shows how to use a ViewSelectionChanged
+    event handler in a Project add-in,
+
+    // see "Create your first task pane add-in for Project by using a text
+    editor."
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+'Office.Document#bindings:member':
+  - |-
+    function displayAllBindings() {
+        Office.context.document.bindings.getAllAsync(function (asyncResult) {
+            var bindingString = '';
+            for (var i in asyncResult.value) {
+                bindingString += asyncResult.value[i].id + '\n';
+            }
+            write('Existing bindings: ' + bindingString);
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Document#customXmlParts:member':
+  - |-
+    function getCustomXmlParts(){
+        Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+            write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Document#getActiveViewAsync:member(2)':
+  - |-
+    function getFileView() {
+        // Get whether the current view is edit or read.
+        Office.context.document.getActiveViewAsync(function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showMessage("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                showMessage(asyncResult.value);
+            }
+        });
+    }
+'Office.Document#getFileAsync:member(1)':
+  - >-
+    // The following example gets the document in Office Open XML ("compressed")
+    format in 65536 bytes (64 KB) slices.
+
+    // Note: The implementation of app.showNotification in this example is from
+    the Visual Studio template for Office Add-ins.
+
+    function getDocumentAsCompressed() {
+        Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
+            function (result) {
+                if (result.status == "succeeded") {
+                    // If the getFileAsync call succeeded, then
+                    // result.value will return a valid File Object.
+                    var myFile = result.value;
+                    var sliceCount = myFile.sliceCount;
+                    var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+                    // Get the file slices.
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                }
+                else {
+                    app.showNotification("Error:", result.error.message);
+                }
+        });
+    }
+
+
+    function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices,
+    docdataSlices, slicesReceived) {
+        file.getSliceAsync(nextSlice, function (sliceResult) {
+            if (sliceResult.status == "succeeded") {
+                if (!gotAllSlices) { // Failed to get all slices, no need to continue.
+                    return;
+                }
+
+                // Got one slice, store it in a temporary array.
+                // (Or you can do something else, such as
+                // send it to a third-party server.)
+                docdataSlices[sliceResult.value.index] = sliceResult.value.data;
+                if (++slicesReceived == sliceCount) {
+                  // All slices have been received.
+                  file.closeAsync();
+                  onGotAllSlices(docdataSlices);
+                }
+                else {
+                    getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                }
+            }
+                else {
+                    gotAllSlices = false;
+                    file.closeAsync();
+                    app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                }
+        });
+    }
+
+
+    function onGotAllSlices(docdataSlices) {
+        var docdata = [];
+        for (var i = 0; i < docdataSlices.length; i++) {
+            docdata = docdata.concat(docdataSlices[i]);
+        }
+
+        var fileContent = new String();
+        for (var j = 0; j < docdata.length; j++) {
+            fileContent += String.fromCharCode(docdata[j]);
+        }
+
+        // Now all the file content is stored in 'fileContent' variable,
+        // you can do something with it, such as print, fax...
+    }
+
+
+    // The following example gets the document in PDF format.
+
+    Office.context.document.getFileAsync(Office.FileType.Pdf,
+        function(result) {
+            if (result.status == "succeeded") {
+                var myFile = result.value;
+                var sliceCount = myFile.sliceCount;
+                app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                // Now, you can call getSliceAsync to download the files,
+                // as described in the previous code segment (compressed format).
+                
+                myFile.closeAsync();
+            }
+            else {
+                app.showNotification("Error:", result.error.message);
+            }
+    }
+
+    );
+'Office.Document#getFilePropertiesAsync:member(2)':
+  - >-
+    // To read the URL of the current file, you need to write a callback
+    function that returns the URL.
+
+    // The following example shows how to:
+
+    // 1. Pass an anonymous callback function that returns the value of the
+    file's URL
+
+    //    to the callback parameter of the getFilePropertiesAsync method.
+
+    // 2. Display the value on the add-in's page.
+
+    function getFileUrl() {
+        // Get the URL of the current file.
+        Office.context.document.getFilePropertiesAsync(function (asyncResult) {
+            var fileUrl = asyncResult.value.url;
+            if (fileUrl == "") {
+                showMessage("The file hasn't been saved yet. Save the file and try again");
+            }
+            else {
+                showMessage(fileUrl);
+            }
+        });
+    }
+'Office.Document#getMaxResourceIndexAsync:member(2)':
+  - >-
+    // The following code example calls getResourceTaskIndexAsync to get the
+    maximum index of the collection 
+
+    // of resources in the current project. Then it uses the returned value and
+    the getResourceByIndexAsync
+
+    // method to get each resource GUID. The example assumes that your add-in
+    has a reference to the 
+
+    // jQuery library and that the following page controls are defined in the
+    content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+        var resourceGuids = ;
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#get-info').click(getResourceInfo);
+            });
+        };
+
+        // Get the maximum resource index, and then get the resource GUIDs.
+        function getResourceInfo() {
+            getMaxResourceIndex().then(
+                function (data) {
+                    getResourceGuids(data);
+                }
+            );
+        }
+
+        // Get the maximum index of the resources for the current project.
+        function getMaxResourceIndex() {
+            var defer = $.Deferred();
+            Office.context.document.getMaxResourceIndexAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get each resource GUID, and then display the GUIDs in the add-in.
+        // There is no 0 index for resources, so start with index 1.
+        function getResourceGuids(maxResourceIndex) {
+            var defer = $.Deferred();
+            for (var i = 1; i <= maxResourceIndex; i++) {
+                getResourceGuid(i);
+            }
+            return defer.promise();
+            function getResourceGuid(index) {
+                Office.context.document.getResourceByIndexAsync(index,
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            resourceGuids.push(result.value);
+                            if (index == maxResourceIndex) {
+                                defer.resolve();
+                                $('#message').html(resourceGuids.toString());
+                            }
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+        }
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getMaxTaskIndexAsync:member(2)':
+  - >-
+    // The following code example calls getMaxTaskIndexAsync to get the maximum
+    index
+
+    // of the collection of tasks in the current project. Then it uses the
+    returned value
+
+    // with the getTaskByIndexAsync method to get each task GUID.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+        var taskGuids = ;
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#get-info').click(getTaskInfo);
+            });
+        };
+
+        // Get the maximum task index, and then get the task GUIDs.
+        function getTaskInfo() {
+            getMaxTaskIndex().then(
+                function (data) {
+                    getTaskGuids(data);
+                }
+            );
+        }
+
+        // Get the maximum index of the tasks for the current project.
+        function getMaxTaskIndex() {
+            var defer = $.Deferred();
+            Office.context.document.getMaxTaskIndexAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get each task GUID, and then display the GUIDs in the add-in.
+        function getTaskGuids(maxTaskIndex) {
+            var defer = $.Deferred();
+            for (var i = 0; i <= maxTaskIndex; i++) {
+                getTaskGuid(i);
+            }
+            return defer.promise();
+            function getTaskGuid(index) {
+                Office.context.document.getTaskByIndexAsync(index,
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            taskGuids.push(result.value);
+                            if (index == maxTaskIndex) {
+                                defer.resolve();
+                                $('#message').html(taskGuids.toString());
+                            }
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+        }
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getProjectFieldAsync:member(2)':
+  - >-
+    // The following code example gets the values of three specified fields for
+    the active project, 
+
+    // and then displays the values in the add-in.
+
+    // The example calls getProjectFieldAsync recursively, after the previous
+    call returns successfully.
+
+    // It also tracks the calls to determine when all calls are sent.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the 
+
+    // following page control is defined in the content div in the page body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // Get information for the active project.
+                getProjectInformation();
+            });
+        };
+
+        // Get the specified fields for the active project.
+        function getProjectInformation() {
+            var fields =
+                [Office.ProjectProjectFields.Start, 
+                 Office.ProjectProjectFields.Finish, 
+                 Office.ProjectProjectFields.GUID];
+            var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
+            var index = 0; 
+            getField();
+
+            // Get each field, and then display the field values in the add-in.
+            function getField() {
+                if (index == fields.length) {
+                    var output = '';
+                    for (var i = 0; i < fieldValues.length; i++) {
+                        output += fieldValues[i] + '<br />';
+                    }
+                    $('#message').html(output);
+                }
+                else {
+                    Office.context.document.getProjectFieldAsync(
+                        fields[index],
+                        function (result) {
+
+                            // If the call is successful, get the field value and then get the next field.
+                            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                fieldValues[index] += result.value.fieldValue;
+                                getField(index++);
+                            }
+                            else {
+                                onError(result.error);
+                            }
+                        }
+                    );
+                }
+            }
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getResourceByIndexAsync:member(2)':
+  - >-
+    // The following code example calls getMaxResourceIndexAsync to get the
+    maximum index in the project's resource
+
+    // collection, and then calls getResourceByIndexAsync to get the GUID for
+    each resource.
+
+    // The example assumes that your add-in has a reference to the jQuery
+    library and that the following 
+
+    // page controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+        var resourceGuids = ;
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#get-info').click(getResourceInfo);
+            });
+        };
+
+        // Get the maximum resource index, and then get the resource GUIDs.
+        function getResourceInfo() {
+            getMaxResourceIndex().then(
+                function (data) {
+                    getResourceGuids(data);
+                }
+            );
+        }
+
+        // Get the maximum index of the resources for the current project.
+        function getMaxResourceIndex() {
+            var defer = $.Deferred();
+            Office.context.document.getMaxResourceIndexAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get each resource GUID, and then display the GUIDs in the add-in.
+        // There is no 0 index for resources, so start with index 1.
+        function getResourceGuids(maxResourceIndex) {
+            var defer = $.Deferred();
+            for (var i = 1; i <= maxResourceIndex; i++) {
+                getResourceGuid(i);
+            }
+            return defer.promise();
+            function getResourceGuid(index) {
+                Office.context.document.getResourceByIndexAsync(index,
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            resourceGuids.push(result.value);
+                            if (index == maxResourceIndex) {
+                                defer.resolve();
+                                $('#message').html(resourceGuids.toString());
+                            }
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+        }
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getResourceFieldAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedResourceAsync to get the GUID
+    of the resource
+
+    // that's currently selected in a resource view. Then it gets three resource
+    field values by calling 
+
+    // getResourceFieldAsync recursively.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the following 
+
+    // page controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getResourceInfo);
+            });
+        };
+
+        // Get the GUID of the resource and then get the resource fields.
+        function getResourceInfo() {
+            getResourceGuid().then(
+                function (data) {
+                    getResourceFields(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected resource.
+        function getResourceGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get the specified fields for the selected resource.
+        function getResourceFields(resourceGuid) {
+            var targetFields =
+                [Office.ProjectResourceFields.Name,
+                 Office.ProjectResourceFields.Units, 
+                 Office.ProjectResourceFields.BaseCalendar];
+            var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+            var index = 0; 
+            getField();
+
+            // Get each field, and then display the field values in the add-in.
+            function getField() {
+                if (index == targetFields.length) {
+                    var output = '';
+                    for (var i = 0; i < fieldValues.length; i++) {
+                        output += fieldValues[i] + '<br />';
+                    }
+                    $('#message').html(output);
+                }
+
+                // If the call is successful, get the field value and then get the next field.
+                else {
+                    Office.context.document.getResourceFieldAsync(
+                        resourceGuid,
+                        targetFields[index],
+                        function (result) {
+                            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                fieldValues[index] += result.value.fieldValue;
+                                getField(index++);
+                            }
+                            else {
+                                onError(result.error);
+                            }
+                        }
+                    );
+                }
+            }
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getSelectedDataAsync:member(1)':
+  - >-
+    // The following example uses the getSelectedDataAsync method of the
+    Document object to retrieve the
+
+    // user's current selection as text, and then display it in the add-in's
+    page.
+
+
+    // Display the user's current selection.
+
+    function showSelection() {
+        Office.context.document.getSelectedDataAsync(
+            "text",                        // coercionType
+            {valueFormat: "unformatted",   // valueFormat
+            filterType: "all"},            // filterType
+            function (result) {            // callback
+                var dataValue; 
+                dataValue = result.value;
+                write('Selected data is: ' + dataValue);
+            });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - >-
+    // To read the value of the current selection, you need to write a callback
+    function that reads the selection.
+
+    // The following example shows how to:
+
+    // 1. Pass an anonymous callback function that reads the value of the
+    current selection
+
+    //    to the callback parameter of the getSelectedDataAsync method.
+
+    // 2. Read the selection as text, unformatted, and not filtered.
+
+    // 3. Display the value on the add-in's page.
+
+    function getText() {
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
+            { valueFormat: "unformatted", filterType: "all" },
+            function (asyncResult) {
+                var error = asyncResult.error;
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    write(error.name + ": " + error.message);
+                } 
+                else {
+                    // Get selected data.
+                    var dataValue = asyncResult.value; 
+                    write('Selected data is ' + dataValue);
+                }            
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - >-
+    // The following code example gets the values of the selected cells. It uses
+    the optional
+
+    // asyncContext parameter to pass some text to the callback function.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getSelectedText);
+            });
+        };
+
+        // Get the text from the selected cells in the document, and display it in the add-in.
+        function getSelectedText() {
+            Office.context.document.getSelectedDataAsync(
+                Office.CoercionType.Text,
+                {asyncContext: 'Some related info'},
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var output = String.format(
+                            'Selected text: {0}<br/>Passed info: {1}',
+                            result.value, result.asyncContext);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getSelectedResourceAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedResourceAsync to get the GUID
+    of the resource that's 
+
+    // currently selected in a resource view. Then it gets three resource field
+    values by calling 
+
+    // getResourceFieldAsync recursively.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the following page controls are
+
+    // defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getResourceInfo);
+            });
+        };
+
+        // Get the GUID of the resource and then get the resource fields.
+        function getResourceInfo() {
+            getResourceGuid().then(
+                function (data) {
+                    getResourceFields(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected resource.
+        function getResourceGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get the specified fields for the selected resource.
+        function getResourceFields(resourceGuid) {
+            var targetFields =
+                [Office.ProjectResourceFields.Name,
+                 Office.ProjectResourceFields.Units, 
+                 Office.ProjectResourceFields.BaseCalendar];
+            var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+            var index = 0; 
+            getField();
+
+            // Get each field, and then display the field values in the add-in.
+            function getField() {
+                if (index == targetFields.length) {
+                    var output = '';
+                    for (var i = 0; i < fieldValues.length; i++) {
+                        output += fieldValues[i] + '<br />';
+                    }
+                    $('#message').html(output);
+                }
+
+                // If the call is successful, get the field value and then get the next field.
+                else {
+                    Office.context.document.getResourceFieldAsync(
+                        resourceGuid,
+                        targetFields[index],
+                        function (result) {
+                            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                fieldValues[index] += result.value.fieldValue;
+                                getField(index++);
+                            }
+                            else {
+                                onError(result.error);
+                            }
+                        }
+                    );
+                }
+            }
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getSelectedTaskAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedTaskAsync to get the GUID of
+    the task that's currently
+
+    // selected in a task view. Then it gets task properties by calling
+    getTaskAsync.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the following page
+
+    // controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getTaskInfo);
+            });
+        };
+
+        // // Get the GUID of the task, and then get local task properties.
+        function getTaskInfo() {
+            getTaskGuid().then(
+                function (data) {
+                    getTaskProperties(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected task.
+        function getTaskGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get local properties for the selected task, and then display it in the add-in.
+        function getTaskProperties(taskGuid) {
+            Office.context.document.getTaskAsync(
+                taskGuid,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var taskInfo = result.value;
+                        var output = String.format(
+                            'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                            taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getSelectedViewAsync:member(2)':
+  - >-
+    // The following code example calls adds a ViewSelectionChanged event
+    handler that
+
+    // calls getSelectedViewAsync to get the name and type of the active view in
+    the document.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that
+
+    // the following page control is defined in the content div in the page
+    body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ViewSelectionChanged,
+                    getActiveView);
+                getActiveView();
+            });
+        };
+
+        // Get the active view's name and type.
+        function getActiveView() {
+            Office.context.document.getSelectedViewAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var output = String.format(
+                            'View name: {0}<br/>View type: {1}',
+                            result.value.viewName, viewType);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getTaskAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedTaskAsync to get the task
+    GUID of the currently
+
+    // selected task. Then it calls getTaskAsync to get the properties for the
+    task that are
+
+    // available from the JavaScript API for Office.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getTaskInfo);
+            });
+        };
+
+        // Get the GUID of the task, and then get local task properties.
+        function getTaskInfo() {
+            getTaskGuid().then(
+                function (data) {
+                    getTaskProperties(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected task.
+        function getTaskGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get local properties for the selected task, and then display it in the add-in.
+        function getTaskProperties(taskGuid) {
+            Office.context.document.getTaskAsync(
+                taskGuid,
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var taskInfo = result.value;
+                        var output = String.format(
+                            'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                            taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getTaskByIndexAsync:member(2)':
+  - |-
+    // The following code example calls getMaxTaskIndexAsync to get the
+    // maximum index in the project's task collection, and then
+    // calls getTaskByIndexAsync to get the GUID for each task.
+    // The example assumes that your add-in has a reference to the
+    // jQuery library and that the following page controls are defined
+    // in the content div in the page body:
+    // <input id="get-info" type="button" value="Get info" /><br />
+    // <span id="message"></span>
+
+    (function () {
+        "use strict";
+        var taskGuids = ;
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#get-info').click(getTaskInfo);
+            });
+        };
+
+        // Get the maximum task index, and then get the task GUIDs.
+        function getTaskInfo() {
+            getMaxTaskIndex().then(
+                function (data) {
+                    getTaskGuids(data);
+                }
+            );
+        }
+
+        // Get the maximum index of the tasks for the current project.
+        function getMaxTaskIndex() {
+            var defer = $.Deferred();
+            Office.context.document.getMaxTaskIndexAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get each task GUID, and then display the GUIDs in the add-in.
+        function getTaskGuids(maxTaskIndex) {
+            var defer = $.Deferred();
+            for (var i = 0; i <= maxTaskIndex; i++) {
+                getTaskGuid(i);
+            }
+            return defer.promise();
+            function getTaskGuid(index) {
+                Office.context.document.getTaskByIndexAsync(index,
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            taskGuids.push(result.value);
+                            if (index == maxTaskIndex) {
+                                defer.resolve();
+                                $('#message').html(taskGuids.toString());
+                            }
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+        }
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#getTaskFieldAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedTaskAsync to get the GUID of
+    the task that's currently
+
+    // selected in a task view. Then it gets two task field values by calling
+    getTaskFieldAsync recursively.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the following page
+
+    // controls are defined in the content div in the page body:
+
+    // <input id="get-info" type="button" value="Get info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+                
+                // After the DOM is loaded, add-in-specific code can run.
+                $('#get-info').click(getTaskInfo);
+            });
+        };
+
+        // Get the GUID of the task, and then get the task fields.
+        function getTaskInfo() {
+            getTaskGuid().then(
+                function (data) {
+                    getTaskFields(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected task.
+        function getTaskGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Get the specified fields for the selected task.
+        function getTaskFields(taskGuid) {
+            var output = '';
+            var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
+            var fieldValues = ['Priority: ', '% Complete: '];
+            var index = 0;
+            getField();
+
+            // Get each field, and then display the field values in the add-in.
+            function getField() {
+                if (index == targetFields.length) {
+                    for (var i = 0; i < fieldValues.length; i++) {
+                        output += fieldValues[i] + '<br />';
+                    }
+                    $('#message').html(output);
+                }
+
+                // Get the field value. If the call is successful, then get the next field.
+                else {
+                    Office.context.document.getTaskFieldAsync(
+                        taskGuid,
+                        targetFields[index],
+                        function (result) {
+                            if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                fieldValues[index] += result.value.fieldValue;
+                                getField(index++);
+                            }
+                            else {
+                                onError(result.error);
+                            }
+                        }
+                    );
+                }
+            }
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#goToByIdAsync:member(2)':
+  - >-
+    // Go to a binding by id (Word and Excel)
+
+    // The following example shows how to:
+
+    // 1. Create a table binding using the addFromSelectionAsync method as a
+    sample binding to work with.
+
+    // 2. Specify that binding as the binding to go to.
+
+    // 3. Pass an anonymous callback function that returns the status of the
+    operation
+
+    //    to the callback parameter of the goToByIdAsync method.
+
+    // 4. Display the value on the add-in's page.
+
+    function gotoBinding() {
+        // Create a new table binding for the selected table.
+        Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
+        if (asyncResult.status == "failed") {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
+              }
+        });
+
+        // Go to binding by id.
+        Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showMessage("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                showMessage("Navigation successful");
+            }
+        });
+    }
+
+
+    // Go to a table in a spreadsheet (Excel)
+
+    // The following example shows how to:
+
+    // 1. Specify a table by name as the table to go to.
+
+    // 2. Pass an anonymous callback function that returns the status of the
+    operation
+
+    //    to the callback parameter of the goToByIdAsync method.
+
+    // 3. Display the value on the add-in's page.
+
+    function goToTable() {
+        Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showMessage("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                showMessage("Navigation successful");
+            }
+        });
+    }
+
+
+    // Go to the currently selected slide by id (PowerPoint)
+
+    // The following example shows how to:
+
+    // 1. Get the id of the currently selected slides using the
+    getSelectedDataAsync method.
+
+    // 2. Specify the returned id as the slide to go to.
+
+    // 3. Pass an anonymous callback function that returns the status of the
+    operation
+
+    //    to the callback parameter of the goToByIdAsync method.
+
+    // 4. Display the value of the stringified JSON object returned by
+    asyncResult.value,
+
+    //    which contains information about the selected slides, on the add-in's
+    page.
+
+    var firstSlideId = 0;
+
+    function gotoSelectedSlide() {
+        //Get currently selected slide's id
+        Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                app.showNotification("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                firstSlideId = asyncResult.value.slides[0].id;
+                app.showNotification(JSON.stringify(asyncResult.value));
+            }
+        });
+        //Go to slide by id.
+        Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                app.showNotification("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                app.showNotification("Navigation successful");
+            }
+        });
+    }
+
+
+    // Go to slide by index (PowerPoint)
+
+    // The following example shows how to:
+
+    // 1. Specify the index of the first, last, previous, or next slide to go
+    to.
+
+    // 2. Pass an anonymous callback function that returns the status of the
+    operation
+
+    //    to the callback parameter of the goToByIdAsync method.
+
+    // 3. Display the value on the add-in's page.
+
+    function goToSlideByIndex() {
+        var goToFirst = Office.Index.First;
+        var goToLast = Office.Index.Last;
+        var goToPrevious = Office.Index.Previous;
+        var goToNext = Office.Index.Next;
+
+        Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                showMessage("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                showMessage("Navigation successful");
+            }
+        });
+    }
+'Office.Document#mode:member':
+  - |-
+    function displayDocumentMode() {
+        write(Office.context.document.mode);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+  - >-
+    // The following example initializes the add-in and then gets properties of
+    the
+
+    // Document object that are available in the context of a Project document.
+
+    // A Project document is the opened, active project. To access members of
+    the
+
+    // ProjectDocument object, use the Office.context.document object as shown
+    in
+
+    // the code examples for ProjectDocument methods and events.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+
+    // that the following page control is defined in the content div in the page
+    body:
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // Get information about the document.
+                showDocumentProperties();
+            });
+        };
+
+        // Get the document mode and the URL of the active project.
+        function showDocumentProperties() {
+            var output = String.format(
+                'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                Office.context.document.mode,
+                Office.context.document.url);
+            $('#message').html(output);
+        }
+    })();
+'Office.Document#removeHandlerAsync:member(2)':
+  - |-
+    // The following example removes the event handler named 'MyHandler'.
+    function removeSelectionChangedEventHandler() {
+        Office.context.document.removeHandlerAsync(Office.EventType.DocumentSelectionChanged, {handler:MyHandler});
+    }
+
+    function MyHandler(eventArgs) {
+        doSomethingWithDocument(eventArgs.document);
+    }
+  - >-
+    // The following code example uses addHandlerAsync to add an event handler
+    for the
+
+    // ResourceSelectionChanged event and removeHandlerAsync to remove the
+    handler.
+
+    // When a resource is selected in a resource view, the handler displays the
+
+    // resource GUID. When the handler is removed, the GUID is not displayed.
+
+    // The example assumes that your add-in has a reference to the jQuery
+    library and
+
+    // that the following page control is defined in the content div in the page
+    body:
+
+    // <input id="remove-handler" type="button" value="Remove handler" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ResourceSelectionChanged,
+                    getResourceGuid);
+                $('#remove-handler').click(removeEventHandler);
+            });
+        };
+
+        // Remove the event handler.
+        function removeEventHandler() {
+            Office.context.document.removeHandlerAsync(
+                Office.EventType.ResourceSelectionChanged,
+                {handler:getResourceGuid,
+                asyncContext:'The handler is removed.'},
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#remove-handler').attr('disabled', 'disabled');
+                        $('#message').html(result.asyncContext);
+                    }
+                }
+            );
+        }
+
+        // Get the GUID of the currently selected resource and display it in the add-in.
+        function getResourceGuid() {
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html('Resource GUID: ' + result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#setResourceFieldAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedResourceAsync to get the GUID
+    of the resource that's
+
+    // currently selected in a resource view. Then it sets two resource field
+    values by calling
+
+    // setResourceFieldAsync recursively.
+
+    // The getSelectedTaskAsync method used in the example requires that a task
+    view
+
+    // (for example, Task Usage) is the active view and that a task is selected.
+    See the addHandlerAsync
+
+    // method for an example that activates a button based on the active view
+    type.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page controls are defined in the content div in the page body:
+
+    // <input id="set-info" type="button" value="Set info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#set-info').click(setResourceInfo);
+            });
+        };
+
+        // Get the GUID of the resource, and then get the resource fields.
+        function setResourceInfo() {
+            getResourceGuid().then(
+                function (data) {
+                    setResourceFields(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected resource.
+        function getResourceGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Set the specified fields for the selected resource.
+        function setResourceFields(resourceGuid) {
+            var targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
+            var fieldValues = [.28, 'Notes for the resource.'];
+
+            // Set the field value. If the call is successful, set the next field.
+            for (var i = 0; i < targetFields.length; i++) {
+                Office.context.document.setResourceFieldAsync(
+                    resourceGuid,
+                    targetFields[i],
+                    fieldValues[i],
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            i++;
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+            $('#message').html('Field values set');
+        }
+
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#setSelectedDataAsync:member(1)':
+  - >-
+    // The following example sets the selected text or cell to "Hello World!", 
+
+    // and if that fails, displays the value of the error.message property.
+
+    function writeText() {
+        Office.context.document.setSelectedDataAsync("Hello World!",
+            function (asyncResult) {
+                var error = asyncResult.error;
+                if (asyncResult.status === Office.AsyncResultStatus.Failed){
+                    write(error.name + ": " + error.message);
+                }
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // Specifying the optional coercionType parameter lets you specify the kind
+    of data you want to write
+
+    // to a selection. The following example writes data as an array of three
+    rows of two columns, 
+
+    // specifying the coercionType as `Matrix` for that data structure, and if
+    that fails, 
+
+    // displays the value of the error.message property.
+
+    function writeMatrix() {
+        Office.context.document.setSelectedDataAsync(
+            [["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]],
+            {coercionType: Office.CoercionType.Matrix}
+            function (asyncResult) {
+                var error = asyncResult.error;
+                if (asyncResult.status === Office.AsyncResultStatus.Failed){
+                    write(error.name + ": " + error.message);
+                }
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // The following example writes data as a one column table with a header and
+    four rows, 
+
+    // specifying the coercionType as `Table` for that data structure, and if
+    that fails, 
+
+    // displays the value of the error.message property.
+
+    function writeTable() {
+        // Build table.
+        var myTable = new Office.TableData();
+        myTable.headers = [["Cities"]];
+        myTable.rows = [['Berlin'], ['Roma'], ['Tokyo'], ['Seattle']];
+
+        // Write table.
+        Office.context.document.setSelectedDataAsync(myTable, {coercionType: Office.CoercionType.Table},
+            function (result) {
+                var error = result.error
+                if (result.status === Office.AsyncResultStatus.Failed) {
+                    write(error.name + ": " + error.message);
+                }
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // In Word if you want to write HTML to the selection, you can specify the
+    coercionType parameter as `Html`
+
+    // as shown in the following example, which uses HTML <b> tags to make
+    "Hello" bold.
+
+    function writeHtmlData() {
+        Office.context.document.setSelectedDataAsync(
+            "<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    write('Error: ' + asyncResult.error.message);
+                }
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+
+
+    // In Word, PowerPoint, or Excel, if you want to write an image to the
+    selection, you can specify the coercionType
+
+    // parameter as `Image` as shown in the following example. Note that
+    imageLeft and imageTop are ignored by Word.
+
+    function insertPictureAtSelection(base64EncodedImageStr) {
+
+        Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
+            coercionType: Office.CoercionType.Image,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 100,
+            imageHeight: 100
+        },
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+        });
+    }
+
+
+    // In Word, PowerPoint, or Excel, if you want to write an scalable vector
+    graphic (SVG) to the selection, you can specify the 
+
+    // coercionType parameter as `XmlSvg` as shown in the following example.
+    Note that imageLeft and imageTop are ignored by Word.
+
+    function insertSvgAtSelection(base64EncodedImageStr) {
+        Office.context.document.setSelectedDataAsync(getImageAsBase64String(), {
+            coercionType: Office.CoercionType.XmlSvg,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 400
+        },
+            function (asyncResult) {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.log(asyncResult.error.message);
+                }
+            });
+    }
+'Office.Document#setTaskFieldAsync:member(2)':
+  - >-
+    // The following code example calls getSelectedTaskAsync to get the GUID of
+    the task that's
+
+    // currently selected in a task view. Then it sets two task field values by
+    calling
+
+    // setTaskFieldAsync recursively.
+
+    // The getSelectedTaskAsync method used in the example requires that a task
+    view
+
+    // (for example, Task Usage) is the active view and that a task is selected.
+    See the
+
+    // addHandlerAsync method for an example that activates a button based on
+    the active view type.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page controls are defined in the content div in the page body:
+
+    // <input id="set-info" type="button" value="Set info" /><br />
+
+    // <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+                
+                // After the DOM is loaded, add-in-specific code can run.
+                app.initialize();
+                $('#set-info').click(setTaskInfo);
+            });
+        };
+
+        // Get the GUID of the task, and then get the task fields.
+        function setTaskInfo() {
+            getTaskGuid().then(
+                function (data) {
+                    setTaskFields(data);
+                }
+            );
+        }
+
+        // Get the GUID of the selected task.
+        function getTaskGuid() {
+            var defer = $.Deferred();
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        defer.resolve(result.value);
+                    }
+                }
+            );
+            return defer.promise();
+        }
+
+        // Set the specified fields for the selected task.
+        function setTaskFields(taskGuid) {
+            var targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
+            var fieldValues = [true, 'Notes for the task.'];
+
+            // Set the field value. If the call is successful, set the next field.
+            for (var i = 0; i < targetFields.length; i++) {
+                Office.context.document.setTaskFieldAsync(
+                    taskGuid,
+                    targetFields[i],
+                    fieldValues[i],
+                    function (result) {
+                        if (result.status === Office.AsyncResultStatus.Succeeded) {
+                            i++;
+                        }
+                        else {
+                            onError(result.error);
+                        }
+                    }
+                );
+            }
+            $('#message').html('Field values set');
+        }
+
+        function onError(error) {
+            app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+'Office.Document#url:member':
+  - |-
+    function displayDocumentUrl() {
+        write(Office.context.document.url);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Error#code:member':
+  - >-
+    // To cause an error to be thrown, select a table or a matrix, and then call
+    the setText function.
+
+    function setText() {
+        Office.context.document.setSelectedDataAsync("Hello World!",
+            function (asyncResult) {
+                if (asyncResult.status === "failed")
+                    var error = asyncResult.error;
+                write(error.name + ": " + error.code + " - " + error.message);
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Error#message:member':
+  - >-
+    // To cause an error to be thrown, select a table or a matrix, and then call
+    the setText function.
+
+    function setText() {
+        Office.context.document.setSelectedDataAsync("Hello World!",
+            function (asyncResult) {
+                if (asyncResult.status === "failed")
+                    var error = asyncResult.error;
+                write(error.name + ": " + error.message);
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Error#name:member':
+  - >-
+    // To cause an error to be thrown, select a table or a matrix, and then call
+    the setText function.
+
+    function setText() {
+        Office.context.document.setSelectedDataAsync("Hello World!",
+            function (asyncResult) {
+                if (asyncResult.status === "failed")
+                    var error = asyncResult.error;
+                write(error.name + ": " + error.message);
+            });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.File#getSliceAsync:member(1)':
+  - |-
+    // This sample shows how to get all the slices of a file. 
+    // The asynchronous operation returns a Promise so it can be awaited.
+    private getAllSlices(file: any): Promise<any> {
+        var self = this;
+        var isError = false;
+
+        return new Promise(async (resolve, reject) => {
+            var documentFileData = [];
+            for (var sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
+                var sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
+                    file.getSliceAsync(sliceIndex, (asyncResult) => {
+                        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                            documentFileData = documentFileData.concat(asyncResult.value.data);
+                            sliceResolve({
+                                IsSuccess: true,
+                                Data: documentFileData
+                            });
+                        } else {
+                            file.closeAsync();
+                            sliceReject({
+                                IsSuccess: false,
+                                ErrorMessage: `Error in reading the slice: ${sliceIndex} of the document`
+                            });
+                        }
+                    });
+                });
+                await sliceReadPromise.catch((error) => {
+                    isError = true;
+                });
+            }
+
+            if (isError || !documentFileData.length) {
+                reject('Error while reading document. Please try it again.');
+                return;
+            }
+
+            file.closeAsync();
+
+            resolve({
+                IsSuccess: true,
+                Data: documentFileData
+            });
+        });
+    }
+'Office.MatrixBinding#columnCount:member':
+  - |-
+    function showBindingColumnCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Column: " + asyncResult.value.columnCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.MatrixBinding#rowCount:member':
+  - |-
+    function showBindingRowCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Rows: " + asyncResult.value.rowCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.OfficeTheme:interface':
+  - |-
+    function applyOfficeTheme(){
+        // Get office theme colors.
+        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+        // Apply body background color to a CSS class.
+        $('.body').css('background-color', bodyBackgroundColor);
+    }
+'Office.Settings#addHandlerAsync:member(2)':
+  - |-
+    function addSelectionChangedEventHandler() {
+        Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+    }
+
+    function MyHandler(eventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithSettings(eventArgs.settings);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Settings#get:member(1)':
+  - |-
+    function displayMySetting() {
+        write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Settings#refreshAsync:member(1)':
+  - |-
+    function refreshSettings() {
+        Office.context.document.settings.refreshAsync(function (asyncResult) {
+            write('Settings refreshed with status: ' + asyncResult.status);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Settings#remove:member(1)':
+  - |-
+    function removeMySetting() {
+        Office.context.document.settings.remove('mySetting');
+    }
+'Office.Settings#removeHandlerAsync:member(2)':
+  - |-
+    function removeSettingsChangedEventHandler() {
+        Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+    }
+
+    function MyHandler(eventArgs) {
+        write('Event raised: ' + eventArgs.type);
+        doSomethingWithSettings(eventArgs.settings);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Settings#saveAsync:member(2)':
+  - |-
+    function persistSettings() {
+        Office.context.document.settings.saveAsync(function (asyncResult) {
+            write('Settings saved with status: ' + asyncResult.status);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.Settings#set:member(1)':
+  - |-
+    function setMySetting() {
+        Office.context.document.settings.set('mySetting', 'mySetting value');
+    }
+'Office.TableBinding#addColumnsAsync:member(1)':
+  - >-
+    // The following example adds a single column with three rows to a bound
+    table with the id "myTable"
+
+    // by passing a TableData object as the data argument of the addColumnsAsync
+    method. To succeed,
+
+    // the table being updated must have three rows.
+
+
+    // Add a column to a binding of type table by passing a TableData object.
+
+    function addColumns() {
+        var myTable = new Office.TableData();
+        myTable.headers = [["Cities"]];
+        myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addColumnsAsync(myTable);
+        });
+    }
+
+
+    // The following example adds a single column with three rows to a bound
+    table with the id myTable
+
+    // by passing an array of arrays ("matrix") as the data argument of the
+    addColumnsAsync method.
+
+    // To succeed, the table being updated must have three rows.
+
+
+    // Add a column to a binding of type table by passing an array of arrays.
+
+    function addColumns() {
+        var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addColumnsAsync(myTable);
+        });
+    }
+'Office.TableBinding#addRowsAsync:member(1)':
+  - |-
+    function addRowsToTable() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            var binding = asyncResult.value;
+            binding.addRowsAsync([["6", "k"], ["7", "j"]]);
+        });
+    }
+'Office.TableBinding#clearFormatsAsync:member(1)':
+  - >-
+    // The following example shows how to clear the formatting of the bound
+    table with an ID of "myBinding":
+
+    Office.select("bindings#myBinding").clearFormatsAsync();
+'Office.TableBinding#columnCount:member':
+  - |-
+    function showBindingColumnCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Column: " + asyncResult.value.columnCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.TableBinding#deleteAllDataValuesAsync:member(1)':
+  - |-
+    function deleteAllRowsFromTable() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            var binding = asyncResult.value;
+            binding.deleteAllDataValuesAsync();
+        });
+    }
+'Office.TableBinding#hasHeaders:member':
+  - |-
+    function showBindingHasHeaders() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Binding has headers: " + asyncResult.value.hasHeaders);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.TableBinding#rowCount:member':
+  - |-
+    function showBindingRowCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Rows: " + asyncResult.value.rowCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.TableBinding#setFormatsAsync:member(1)':
+  - >-
+    // Specifying a single target
+
+    // The following example shows a cellFormat value that sets the font color
+    of the header row to red.
+
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
+        function (asyncResult){});
+
+    // Specifying multiple targets
+
+    // The setFormatsAsync method can support formatting multiple targets within
+    the bound table in a 
+
+    // single function call. To do that, you pass a list of objects in the
+    cellFormat array 
+
+    // for each target that you want to format.
+
+    // For example, the following line of code will set the font color of the
+    first row yellow, 
+
+    // and the fourth cell in the third row to have a white border and bold
+    text.
+
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+            {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+        function (asyncResult){});
+
+    // Additional remarks for Excel Online
+
+    // The number of formatting groups passed to the cellFormat parameter can't
+    exceed 100. 
+
+    // A single formatting group consists of a set of formatting applied to a
+    specified range of cells. 
+
+    // For example, the following call passes two formatting groups to
+    cellFormat.
+
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+            {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+        function (asyncResult){});
+'Office.TableBinding#setTableOptionsAsync:member(1)':
+  - >-
+    // The following example shows how to:
+
+    // 1. Create an object literal that specifies the table formatting options
+    to update on the bound table.
+
+    // 2. Call setTableOptions on a previously bound table (with an id of
+    myBinding) passing the object
+
+    //    with formatting setting as the tableOptions parameter.
+
+    function updateTableFormatting(){
+        var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
+
+        Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
+    }
+'Office.TableData#headers:member':
+  - >-
+    // The following example creates a single-column table with a header and
+    three rows.
+
+    function createTableData() {
+        var tableData = new Office.TableData();
+        tableData.headers = [['header1']];
+        tableData.rows = [['row1'], ['row2'], ['row3']];
+        return tableData;
+    }
+'Office.TableData#rows:member':
+  - >-
+    // The following example creates a single-column table with a header and
+    three rows.
+
+    function createTableData() {
+        var tableData = new Office.TableData();
+        tableData.headers = [['header1']];
+        tableData.rows = [['row1'], ['row2'], ['row3']];
+        return tableData;
+    }
+'Office.initialize:function(1)':
+  - >-
+    // You can use the value of the InitializationEnumeration to implement
+    different logic for
+
+    // when the add-in is first inserted versus when it is already part of the
+    document.
+
+    // The following example shows some simple logic that uses the value of the
+    reason parameter
+
+    // to display how the task pane or content add-in was initialized.
+
+    Office.initialize = function (reason) {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+        // After the DOM is loaded, code specific to the add-in can run.
+        // Display initialization reason.
+        if (reason == "inserted")
+        write("The add-in was just inserted.");
+
+        if (reason == "documentOpened")
+        write("The add-in is already part of the document.");
+        });
+    }
+
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'Office.select:function(1)':
+  - >-
+    // The following code example uses the select method to retrieve a binding
+    with the id "cities" from
+
+    // the Bindings collection, and then calls the addHandlerAsync method to add
+    an event handler for the
+
+    // dataChanged event of the binding.
+
+    function addBindingDataChangedEventHandler() {
+        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+        function (eventArgs) {
+            doSomethingWithBinding(eventArgs.binding);
+        });
+    }
+'Office.useShortNamespace:function(1)':
+  - |-
+    function startUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(true);
+        }
+        else {
+            Office.useShortNamespace(true);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    function stopUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(false);
+        }
+        else {
+            Office.useShortNamespace(false);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+'OfficeExtension.Error#traceMessages:member':
+  - >-
+    // The following example shows how you can instrument a batch of commands
+
+    // to determine where an error occurred. The first batch successfully
+
+    // inserts the first two paragraphs into the document and cause no errors.
+
+    // The second batch successfully inserts the third and fourth paragraphs
+
+    // but fails in the call to insert the fifth paragraph. All other commands
+
+    // after the failed command in the batch are not executed, including the
+
+    // command that adds the fifth trace message. In this case, the error
+
+    // occurred after the fourth paragraph was inserted, and before adding the
+
+    // fifth trace message.
+
+
+    // Run a batch operation against the Word object model.
+
+    Word.run(function (context) {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert the paragraph at the end of the document body.
+        // Start a batch of commands.
+        body.insertParagraph('1st paragraph', Word.InsertLocation.end);
+        // Queue a command for instrumenting this part of the batch.
+        context.trace('1st paragraph successful');
+
+        body.insertParagraph('2nd paragraph', Word.InsertLocation.end);
+        context.trace('2nd paragraph successful');
+
+        // Synchronize the document state by executing the queued-up commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Queue a command to insert the paragraph at the end of the document body.
+            // Start a new batch of commands.
+            body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
+            context.trace('3rd paragraph successful');
+
+            body.insertParagraph('4th paragraph', Word.InsertLocation.end);
+            context.trace('4th paragraph successful');
+
+            // This command will cause an error. The trace messages in the queue up to
+            // this point will be available via Error.traceMessages.
+            body.insertParagraph(0, '5th paragraph', Word.InsertLocation.end);
+            // Queue a command for instrumenting this part of the batch.
+            // This trace message will not be set on Error.traceMessages.
+            context.trace('5th paragraph successful');
+        }).then(context.sync);
+    })
+
+    .catch(function (error) {
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Trace messages: ' + error.traceMessages);
+        }
+    });
+
+
+    // Output: "Trace messages: 3rd paragraph successful,4th paragraph
+    successful"
+'OfficeExtension.Error:class':
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert text in to the beginning of the body.
+        // This will cause an OfficeExtension.Error.
+        body.insertText(0);
+
+        // Synchronize the document state by executing the queued-up commands,
+        // and return a promise to indicate task completion.
+        return context.sync();
+    })
+    .catch(function (error) {
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Error code and message: ' + error.toString());
+        }
+    });
+'OfficeExtension.LoadOption#top:member':
+  - >-
+    // This OneNote example shows how to get the page title and indentation
+    level
+
+    // of the top five pages in the current section.
+
+    OneNote.run(function (context) {
+        // Get the pages in the current section.
+        var pages = context.application.getActiveSection().pages;
+
+        // Queue a command to load the pages.           
+        pages.load({ "select":"title,pageLevel", "top":5, "skip":0 });
+        return context.sync()
+            .then(function() {
+                // Iterate through the collection of pages.    
+                $.each(pages.items, function(index, page) {
+                    // Show some properties.
+                    console.log("Page title: " + page.title);
+                    console.log("Indentation level: " + page.pageLevel);
+                });
+            }).catch(function(error) {
+                console.log("Error: " + error);
+                if (error instanceof OfficeExtension.Error) {
+                    console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                }
+            })
+        });
+'OfficeExtension.LoadOption:interface':
+  - |-
+    // This example shows how to get the paragraphs in the Word document
+    // along with their text and font size properties.
+
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a commmand to load the text and font properties.
+        // It is best practice to always specify the property set.
+        // Otherwise, all properties are returned on the object.
+        context.load(paragraphs, 'text, font/size');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Insert code that works with the paragraphs loaded by context.load().
+        })
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });

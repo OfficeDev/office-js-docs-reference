@@ -3,11 +3,8 @@ name: Word.ContentControlType
 uid: 'word!Word.ContentControlType:enum'
 package: word!
 fullName: Word.ContentControlType
-summary: |-
-  Specifies supported content control types and subtypes.
-
-  \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Specifies supported content control types and subtypes.
+remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

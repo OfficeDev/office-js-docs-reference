@@ -3,11 +3,8 @@ name: Word.Interfaces.ListItemLoadOptions
 uid: 'word!Word.Interfaces.ListItemLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.ListItemLoadOptions
-summary: |-
-  Represents the paragraph list item format.
-
-  \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-remarks: ''
+summary: Represents the paragraph list item format.
+remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'word!Word.Interfaces.ListItemLoadOptions#level:member'
     package: word!
     fullName: level
-    summary: |-
-      Gets or sets the level of the item in the list.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the level of the item in the list.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'word!Word.Interfaces.ListItemLoadOptions#listString:member'
     package: word!
     fullName: listString
-    summary: |-
-      Gets the list item bullet, number, or picture as a string. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the list item bullet, number, or picture as a string. Read-only.'
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'word!Word.Interfaces.ListItemLoadOptions#siblingIndex:member'
     package: word!
     fullName: siblingIndex
-    summary: |-
-      Gets the list item order number in relation to its siblings. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the list item order number in relation to its siblings. Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

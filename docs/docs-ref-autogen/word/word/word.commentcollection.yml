@@ -1,0 +1,206 @@
+### YamlMime:TSType
+name: Word.CommentCollection
+uid: 'word!Word.CommentCollection:class'
+package: word!
+fullName: Word.CommentCollection
+summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) object.'
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.CommentCollection#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.CommentCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Comment[];'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />[]'
+methods:
+  - name: getFirst()
+    uid: 'word!Word.CommentCollection#getFirst:member(1)'
+    package: word!
+    fullName: getFirst()
+    summary: Gets the first comment in the collection. Throws an error if this collection is empty.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirst(): Word.Comment;'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: getFirstOrNullObject()
+    uid: 'word!Word.CommentCollection#getFirstOrNullObject:member(1)'
+    package: word!
+    fullName: getFirstOrNullObject()
+    summary: Gets the first comment or null object in the collection.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Word.Comment;'
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: getItem(index)
+    uid: 'word!Word.CommentCollection#getItem:member(1)'
+    package: word!
+    fullName: getItem(index)
+    summary: Gets a comment object by its index in the collection.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: number): Word.Comment;'
+      parameters:
+        - id: index
+          description: A number that identifies the index location of a comments object.
+          type: number
+      return:
+        type: '<xref uid="word!Word.Comment:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.CommentCollection#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.CommentCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.CommentCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.CommentCollectionLoadOptions:interface" /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.CommentCollection#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.CommentCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.CommentCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CommentCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.CommentCollection#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.CommentCollectionData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentCollectionData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.CommentCollection#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.CommentCollection#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.CommentCollection;'
+      return:
+        type: '<xref uid="word!Word.CommentCollection:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
