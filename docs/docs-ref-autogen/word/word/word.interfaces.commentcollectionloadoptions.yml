@@ -57,7 +57,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentCollectionLoadOptions#content:member'
     package: word!
     fullName: content
-    summary: 'For EACH ITEM in the collection: Gtes or sets the comment''s content as plain text.'
+    summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content as plain text.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

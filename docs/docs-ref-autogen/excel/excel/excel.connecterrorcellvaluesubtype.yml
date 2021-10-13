@@ -3,65 +3,37 @@ name: Excel.ConnectErrorCellValueSubType
 uid: 'excel!Excel.ConnectErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.ConnectErrorCellValueSubType
-summary: >-
-  Represents types of \#CONNECT! errors.
-
-
+summary: 'Represents types of \#CONNECT! errors.'
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 fields:
   - name: dataTypeNoConnection
     uid: 'excel!Excel.ConnectErrorCellValueSubType.dataTypeNoConnection:member'
     package: excel!
-    summary: >-
-      An error caused by no service connection for linked data types. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by no service connection for linked data types. Displays as error type \#CONNECT! in Excel.'
     value: '"DataTypeNoConnection"'
   - name: dataTypeServiceError
     uid: 'excel!Excel.ConnectErrorCellValueSubType.dataTypeServiceError:member'
     package: excel!
-    summary: >-
-      An error caused by an issue in the service for linked data types. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by an issue in the service for linked data types. Displays as error type \#CONNECT! in Excel.'
     value: '"DataTypeServiceError"'
   - name: externalLinks
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinks:member'
     package: excel!
-    summary: >-
-      An error caused by an issue with the external links. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by an issue with the external links. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinks"'
   - name: externalLinksAccessFailed
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksAccessFailed:member'
     package: excel!
-    summary: >-
-      An error caused by a failure to access external links. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by a failure to access external links. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksAccessFailed"'
   - name: externalLinksFailedToRefresh
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksFailedToRefresh:member'
     package: excel!
-    summary: >-
-      An error caused by external linkes failing to refresh. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by external linkes failing to refresh. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksFailedToRefresh"'
   - name: externalLinksFileTooLarge
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksFileTooLarge:member'
@@ -69,10 +41,6 @@ fields:
     summary: >-
       An error caused by an external link to a file which exceeds file size capacity. Displays as error type \#CONNECT!
       in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     value: '"ExternalLinksFileTooLarge"'
   - name: externalLinksInvalidRequest
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksInvalidRequest:member'
@@ -80,10 +48,6 @@ fields:
     summary: >-
       An error caused by an invalid request while resolving an external link. Displays as error type \#CONNECT! in
       Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     value: '"ExternalLinksInvalidRequest"'
   - name: externalLinksNonCloudLocation
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksNonCloudLocation:member'
@@ -91,98 +55,49 @@ fields:
     summary: >-
       An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a
       local computer instead of to a cloud location. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     value: '"ExternalLinksNonCloudLocation"'
   - name: externalLinksServerError
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksServerError:member'
     package: excel!
-    summary: >-
-      An error caused by a server error while resolving an external link. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by a server error while resolving an external link. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksServerError"'
   - name: externalLinksThrottledByHost
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksThrottledByHost:member'
     package: excel!
-    summary: >-
-      An error caused by throttling from an external link host. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by throttling from an external link host. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksThrottledByHost"'
   - name: externalLinksUnAuthenticated
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksUnAuthenticated:member'
     package: excel!
-    summary: >-
-      An error caused by a lack of authentication for external links. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by a lack of authentication for external links. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksUnAuthenticated"'
   - name: genericServerError
     uid: 'excel!Excel.ConnectErrorCellValueSubType.genericServerError:member'
     package: excel!
-    summary: >-
-      An error caused by an error returned from the server. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by an error returned from the server. Displays as error type \#CONNECT! in Excel.'
     value: '"GenericServerError"'
   - name: missingContent
     uid: 'excel!Excel.ConnectErrorCellValueSubType.missingContent:member'
     package: excel!
-    summary: >-
-      An error caused by missing content. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by missing content. Displays as error type \#CONNECT! in Excel.'
     value: '"MissingContent"'
-  - name: outdatedLinkedDataType
-    uid: 'excel!Excel.ConnectErrorCellValueSubType.outdatedLinkedDataType:member'
+  - name: outdatedLinkedEntity
+    uid: 'excel!Excel.ConnectErrorCellValueSubType.outdatedLinkedEntity:member'
     package: excel!
-    summary: >-
-      An error caused by an outdated linked data type. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    value: '"OutdatedLinkedDataType"'
+    summary: 'An error caused by an outdated linked entity. Displays as error type \#CONNECT! in Excel.'
+    value: '"OutdatedLinkedEntity"'
   - name: requestThrottle
     uid: 'excel!Excel.ConnectErrorCellValueSubType.requestThrottle:member'
     package: excel!
-    summary: >-
-      An error caused by request throttling. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by request throttling. Displays as error type \#CONNECT! in Excel.'
     value: '"RequestThrottle"'
   - name: serviceError
     uid: 'excel!Excel.ConnectErrorCellValueSubType.serviceError:member'
     package: excel!
-    summary: >-
-      An error caused by a problem with the service. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by a problem with the service. Displays as error type \#CONNECT! in Excel.'
     value: '"ServiceError"'
   - name: unknown
     uid: 'excel!Excel.ConnectErrorCellValueSubType.unknown:member'
     package: excel!
-    summary: >-
-      An unknown type of error. Displays as error type \#CONNECT! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An unknown type of error. Displays as error type \#CONNECT! in Excel.'
     value: '"Unknown"'

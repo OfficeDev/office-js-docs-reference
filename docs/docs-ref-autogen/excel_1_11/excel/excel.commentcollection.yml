@@ -212,6 +212,28 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Comment:class" />'
         description: ''
+  - name: getItemOrNullObject(commentId)
+    uid: 'excel!Excel.CommentCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(commentId)
+    summary: >-
+      Gets a comment from the collection based on its ID. If the comment object does not exist, then this function will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(commentId: string): Excel.Comment;'
+      parameters:
+        - id: commentId
+          description: The identifier for the comment.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Comment:class" />'
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.CommentCollection#load:member(1)'
     package: excel!

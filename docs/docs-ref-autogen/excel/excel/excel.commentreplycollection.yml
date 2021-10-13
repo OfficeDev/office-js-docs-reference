@@ -163,16 +163,14 @@ methods:
       [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(commentReplyId: string): Excel.CommentReply;'
       parameters:
         - id: commentReplyId
-          description: The identifier for the comment reply
+          description: The identifier for the comment reply.
           type: string
       return:
         type: '<xref uid="excel!Excel.CommentReply:class" />'

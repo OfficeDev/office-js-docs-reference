@@ -21,6 +21,22 @@ properties:
       content: 'address: string;'
       return:
         type: string
+  - name: changeDirectionState
+    uid: 'excel!Excel.WorksheetChangedEventArgs#changeDirectionState:member'
+    package: excel!
+    fullName: changeDirectionState
+    summary: >-
+      Represents a change to the direction that the cells in a worksheet will shift when a cell or cells are deleted or
+      inserted. This includes the following two scenarios. 1. The direction (such as down or to the right) that existing
+      cells will shift when a new cell or cells are inserted into a worksheet. 2. The direction (such as up or to the
+      left) that the remaining cells will shift when a cell or cells are deleted from a worksheet.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changeDirectionState: Excel.ChangeDirectionState;'
+      return:
+        type: '<xref uid="excel!Excel.ChangeDirectionState:interface" />'
   - name: changeType
     uid: 'excel!Excel.WorksheetChangedEventArgs#changeType:member'
     package: excel!
@@ -49,6 +65,18 @@ properties:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type: '<xref uid="excel!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: triggerSource
+    uid: 'excel!Excel.WorksheetChangedEventArgs#triggerSource:member'
+    package: excel!
+    fullName: triggerSource
+    summary: 'Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.'
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'triggerSource: Excel.EventTriggerSource | "Unknown" | "ThisLocalAddin";'
+      return:
+        type: '<xref uid="excel!Excel.EventTriggerSource:enum" /> | "Unknown" | "ThisLocalAddin"'
   - name: type
     uid: 'excel!Excel.WorksheetChangedEventArgs#type:member'
     package: excel!

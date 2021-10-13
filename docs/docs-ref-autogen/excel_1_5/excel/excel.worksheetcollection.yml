@@ -374,4 +374,19 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface" />'
         description: ''
+events:
+  - name: onProtectionChanged
+    uid: 'excel!Excel.WorksheetCollection#onProtectionChanged:member'
+    package: excel!
+    fullName: onProtectionChanged
+    summary: Occurs when the worksheet protection state is changed.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

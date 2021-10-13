@@ -9,763 +9,1011 @@ export declare namespace Excel {
     /**
     * Represents types of #BLOCKED! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum BlockedErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a service not supporting a linked data type. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTypeRestrictedDomain = "DataTypeRestrictedDomain",
         /**
         * An error caused by privacy settings. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTypePrivacySetting = "DataTypePrivacySetting",
         /**
         * An error caused by an unsupported data type. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTypeUnsupportedApp = "DataTypeUnsupportedApp",
         /**
         * An error caused by external links. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksGeneric = "ExternalLinksGeneric",
         /**
         * An error caused by disabled rich data links. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         richDataLinkDisabled = "RichDataLinkDisabled",
         /**
         * An error caused by sign in failure. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         signInError = "SignInError",
         /**
         * An error caused by a license verification failure. Displays as error type #BLOCKED! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         noLicense = "NoLicense"
     }
     /**
     * Represents the value of a cell containing a #BLOCKED! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface BlockedErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#BLOCKED!";
+        primitive?: "#BLOCKED!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.blocked | "Blocked";
         /**
         * Represents the type of `BlockedErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
     }
     /**
     * Represents the value of a cell containing a boolean.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface BooleanCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.boolean | "Boolean";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitive: boolean;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.boolean | "Boolean";
+        primitiveType?: RangeValueType.boolean | "Boolean";
     }
     /**
     * Represents types of #BUSY! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum BusyErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #BUSY! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by external links. Displays as error type #BUSY! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksGeneric = "ExternalLinksGeneric",
         /**
         * An error that displays while an image is loading. Displays as error type #BUSY! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         loadingImage = "LoadingImage"
     }
     /**
     * Represents the value of a cell containing a #BUSY! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface BusyErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#BUSY!";
+        primitive?: "#BUSY!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.busy | "Busy";
         /**
         * Represents the type of `BusyErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage";
     }
     /**
     * Represents types of #CALC! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum CalcErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by including an array in an array. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         arrayOfArrays = "ArrayOfArrays",
         /**
         * An error caused by including a range in an array. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         arrayOfRanges = "ArrayOfRanges",
         /**
         * An error caused by an empty array. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         emptyArray = "EmptyArray",
         /**
         * An error caused by attempting to lift an unsupported formula (such as a Dynamic UDF) over an array. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unsupportedLifting = "UnsupportedLifting",
         /**
         * An error caused by a data table referencing a pending formula. The pending formula is likely asynchronous. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTableReferencedPendingFormula = "DataTableReferencedPendingFormula",
         /**
         * An error caused by a function referencing too many cells. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         tooManyCells = "TooManyCells",
         /**
         * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         lambdaInCell = "LambdaInCell"
     }
     /**
     * Represents the value of a cell containing a #CALC! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface CalcErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#CALC!";
+        primitive?: "#CALC!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.calc | "Calc";
         /**
         * Represents the type of `CalcErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell";
     }
     /**
     * Represents the types of the `CellValue` object.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum CellValueType {
         /**
         * Represents a `BooleanCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         boolean = "Boolean",
         /**
         * Represents a `DoubleCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         double = "Double",
         /**
         * Represents an `EmptyCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         empty = "Empty",
         /**
         * Represents an `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         error = "Error",
         /**
         * Represents a `FormattedNumberCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         formattedNumber = "FormattedNumber",
         /**
         * Represents a `StringCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         string = "String",
         /**
         * Represents a `ValueTypeNotAvailableCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         notAvailable = "NotAvailable",
         /**
         * Represents a `WebImageCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         webImage = "WebImage"
     }
     /**
     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface CellValueAttributionAttributes {
         /**
         * Represents a URL to the source of the `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         sourceAddress?: string;
         /**
         * Represents a name for the source of the `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         sourceText?: string;
         /**
         * Represents a URL to a license or source that describes how this property can be used.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         licenseAddress?: string;
         /**
         * Represents a name for the license that governs this property.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         licenseText?: string;
     }
     /**
     * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface CellValueProviderAttributes {
         /**
         * Represents the provider description property that is used in card view if no logo is specified.
         * If a logo is specified, this will be used as tooltip text.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         description?: string;
         /**
         * Represents a URL used to download an image that will be used as a logo in card view.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         logoSourceAddress?: string;
         /**
         * Represents a URL that is the navigation target if the user clicks on the logo element in card view.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         logoTargetAddress?: string;
     }
     /**
     * Represents types of #CONNECT! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum ConnectErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a problem with the service. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         serviceError = "ServiceError",
         /**
         * An error caused by an issue with the external links. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinks = "ExternalLinks",
         /**
         * An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a local computer instead of to a cloud location. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksNonCloudLocation = "ExternalLinksNonCloudLocation",
         /**
         * An error caused by no service connection for linked data types. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTypeNoConnection = "DataTypeNoConnection",
         /**
         * An error caused by an issue in the service for linked data types. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataTypeServiceError = "DataTypeServiceError",
         /**
         * An error caused by missing content. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         missingContent = "MissingContent",
         /**
         * An error caused by request throttling. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         requestThrottle = "RequestThrottle",
         /**
         * An error caused by external linkes failing to refresh. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksFailedToRefresh = "ExternalLinksFailedToRefresh",
         /**
         * An error caused by a failure to access external links. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksAccessFailed = "ExternalLinksAccessFailed",
         /**
         * An error caused by a server error while resolving an external link. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksServerError = "ExternalLinksServerError",
         /**
         * An error caused by an invalid request while resolving an external link. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksInvalidRequest = "ExternalLinksInvalidRequest",
         /**
         * An error caused by a lack of authentication for external links. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksUnAuthenticated = "ExternalLinksUnAuthenticated",
         /**
         * An error caused by throttling from an external link host. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksThrottledByHost = "ExternalLinksThrottledByHost",
         /**
         * An error caused by an external link to a file which exceeds file size capacity. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksFileTooLarge = "ExternalLinksFileTooLarge",
         /**
-        * An error caused by an outdated linked data type. Displays as error type #CONNECT! in Excel.
+        * An error caused by an outdated linked entity. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        outdatedLinkedDataType = "OutdatedLinkedDataType",
+        outdatedLinkedEntity = "OutdatedLinkedEntity",
         /**
         * An error caused by an error returned from the server. Displays as error type #CONNECT! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         genericServerError = "GenericServerError"
     }
     /**
     * Represents the value of a cell containing a #CONNECT! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface ConnectErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#CONNECT!";
+        primitive?: "#CONNECT!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.connect | "Connect";
         /**
         * Represents the type of `ConnectErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedDataType" | "GenericServerError";
+        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
     }
     /**
     * Represents the value of a cell containing a #DIV/0! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface Div0ErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#DIV/0!";
+        primitive?: "#DIV/0!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.div0 | "Div0";
     }
     /**
     * Represents the value of a cell containing a double.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface DoubleCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.double | "Double";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitive: number;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.double | "Double";
+        primitiveType?: RangeValueType.double | "Double";
     }
     /**
     * Represents the value of a cell that's empty and has no formulas or data.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface EmptyCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.empty | "Empty";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "";
+        primitive?: "";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.empty | "Empty";
+        primitiveType?: RangeValueType.empty | "Empty";
     }
     /**
     * Represents the types of the `ErrorCellValue` object.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum ErrorCellValueType {
         /**
         * Represents a `BlockedErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         blocked = "Blocked",
         /**
         * Represents a `BusyErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         busy = "Busy",
         /**
         * Represents a `CalcErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         calc = "Calc",
         /**
         * Represents a `ConnectErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         connect = "Connect",
         /**
         * Represents a `Div0ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         div0 = "Div0",
         /**
         * Represents a `FieldErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         field = "Field",
         /**
         * Represents a `GettingDataErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         gettingData = "GettingData",
         /**
         * Represents a `NaErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         na = "Na",
         /**
         * Represents a `NameErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         name = "Name",
         /**
         * Represents a `NullErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         null = "Null",
         /**
         * Represents a `NumErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         num = "Num",
         /**
         * Represents a `RefErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         ref = "Ref",
         /**
         * Represents a `SpillErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         spill = "Spill",
         /**
         * Represents a `ValueErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         value = "Value"
     }
     /**
     * Represents types of #FIELD! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum FieldErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #FIELD! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         webImageMissingFilePart = "WebImageMissingFilePart",
         /**
         * An error caused by an error from a data provider. Displays as error type #FIELD! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         dataProviderError = "DataProviderError"
     }
     /**
     * Represents the value of a cell containing a #FIELD! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface FieldErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#FIELD!";
+        primitive?: "#FIELD!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.field | "Field";
         /**
         * Represents the type of `FieldErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
     }
@@ -773,566 +1021,766 @@ export declare namespace Excel {
     * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
     * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface FormattedNumberCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.formattedNumber | "FormattedNumber";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitive: number;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.double | "Double";
+        primitiveType?: RangeValueType.double | "Double";
         /**
         * Returns the number format string that is used to display this value.
         * Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         numberFormat: string;
     }
     /**
     * Represents the value of a cell containing a #GETTING_DATA error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface GettingDataErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#GETTING_DATA";
+        primitive?: "#GETTING_DATA";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.gettingData | "GettingData";
     }
     /**
     * Represents the value of a cell containing a #N/A! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface NaErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#N/A!";
+        primitive?: "#N/A!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.na | "Na";
     }
     /**
     * Represents the value of a cell containing a #NAME? error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface NameErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#NAME?";
+        primitive?: "#NAME?";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.name | "Name";
     }
     /**
     * Represents the value of a cell containing a #NULL! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface NullErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#NULL!";
+        primitive?: "#NULL!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.null | "Null";
     }
     /**
     * Represents the value of a cell containing a #NUM! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface NumErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#NUM!";
+        primitive?: "#NUM!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.num | "Num";
     }
     /**
     * Represents types of #REF! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum RefErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a column_index_num parameter of VLOOKUP that's greater than the number of columns in the table_array parameter. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         vlookupColIndexGreaterThanNumCols = "VlookupColIndexGreaterThanNumCols",
         /**
         * An error caused by a row_index_num parameter of HLOOKUP that's greater than the number of rows in the table_array parameter. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         hlookupRowIndexGreaterThanNumRows = "HlookupRowIndexGreaterThanNumRows",
         /**
         * An error caused by the reference or name not existing in the linked workbook. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksRefNotExist = "ExternalLinksRefNotExist",
         /**
         * An error caused by a start_row parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayStartRowOutofBounds = "SubArrayStartRowOutofBounds",
         /**
         * An error caused by a start_col parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayStartColOutofBounds = "SubArrayStartColOutofBounds",
         /**
         * An error caused by an end_row parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayEndRowOutofBounds = "SubArrayEndRowOutofBounds",
         /**
         * An error caused by an end_col parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayEndColOutofBounds = "SubArrayEndColOutofBounds",
         /**
         * An error caused by an end_row parameter of SUBARRAY preceding the start_row parameter. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayEndRowPrecedesStartRow = "SubArrayEndRowPrecedesStartRow",
         /**
         * An error caseud by an end_col parameter of SUBARRAY preceding the start_col parameter. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayEndColPrecedesStartCol = "SubArrayEndColPrecedesStartCol"
     }
     /**
     * Represents the value of a cell containing a #REF! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface RefErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#REF!";
+        primitive?: "#REF!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.ref | "Ref";
         /**
         * Represents the type of `RefErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColIndexGreaterThanNumCols" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutofBounds" | "SubArrayStartColOutofBounds" | "SubArrayEndRowOutofBounds" | "SubArrayEndColOutofBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColPrecedesStartCol";
     }
     /**
     * Represents types of #SPILL! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum SpillErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a dynamic array attempting to spill data into a cell that isn't empty. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         collision = "Collision",
         /**
         * An error caused by a dynamic array formula that can't be evaluated in a single calculation. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         indeterminateSize = "IndeterminateSize",
         /**
         * An error caused by a dynamic array attempting to spill over the edge of the worksheet. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         worksheetEdge = "WorksheetEdge",
         /**
         * An error caused by insufficient memory when attempting to calculate a dynamic array formula. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         outOfMemoryWhileCalc = "OutOfMemoryWhileCalc",
         /**
         * An error caused by entering a dynamic array formula in a table. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         table = "Table",
         /**
         * An error caused by a merged cell blocking a dynamic array. Displays as error type #SPILL! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         mergedCell = "MergedCell"
     }
     /**
     * Represents the value of a cell containing a #SPILL! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface SpillErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#SPILL!";
+        primitive?: "#SPILL!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.spill | "Spill";
         /**
         * Represents the type of `SpillErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: SpillErrorCellValueSubType | "Unknown" | "Collision" | "IndeterminateSize" | "WorksheetEdge" | "OutOfMemoryWhileCalc" | "Table" | "MergedCell";
+        /**
+        * Represents the number of rows that would spill if there were no #SPILL! error.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        spilledRows?: number;
+        /**
+        * Represents the number of columns that would spill if there were no #SPILL! error.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        spilledColumns?: number;
     }
     /**
     * Represents the value of a cell containing a string.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface StringCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.string | "String";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitive: string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.string | "String";
+        primitiveType?: RangeValueType.string | "String";
     }
     /**
     * Represents types of #VALUE! errors.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     enum ValueErrorCellValueSubType {
         /**
         * An unknown type of error. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         unknown = "Unknown",
         /**
         * An error caused by a col_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         vlookupColIndexLessThanOne = "VlookupColIndexLessThanOne",
         /**
         * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         vlookupResultNotFound = "VlookupResultNotFound",
         /**
         * An error caused by a row_index_num parameter of HLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         hlookupRowIndexLessThanOne = "HlookupRowIndexLessThanOne",
         /**
         * An error caused by HLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         hlookupResultNotFound = "HlookupResultNotFound",
         /**
         * An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         coerceStringToNumberInvalid = "CoerceStringToNumberInvalid",
         /**
         * An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         coerceStringToBoolInvalid = "CoerceStringToBoolInvalid",
         /**
         * An error caused by coersion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         coerceStringToInvalidType = "CoerceStringToInvalidType",
         /**
         * An error caused by SUBARRAY missing a start row. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayStartRowMissingEndRowNot = "SubArrayStartRowMissingEndRowNot",
         /**
         * An error caused by SUBARRAY missing a start column. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         subArrayStartColMissingEndColNot = "SubArrayStartColMissingEndColNot",
         /**
         * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         invalidImageUrl = "InvalidImageUrl",
         /**
         * An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryNonTradingDays = "StockHistoryNonTradingDays",
         /**
         * An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryNotAStock = "StockHistoryNotAStock",
         /**
         * An error caused by passing an invalid date to STOCKHISTORY. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryInvalidDate = "StockHistoryInvalidDate",
         /**
         * An error caused by passing an end_date parameter that precedes the start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryEndBeforeStart = "StockHistoryEndBeforeStart",
         /**
         * An error caused by passing a future start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryStartInFuture = "StockHistoryStartInFuture",
         /**
         * An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryInvalidEnum = "StockHistoryInvalidEnum",
         /**
         * An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryOnlyDateRequested = "StockHistoryOnlyDateRequested",
         /**
         * An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         stockHistoryNotFound = "StockHistoryNotFound",
         /**
         * An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type #VALUE! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         lambdaWrongParamCount = "LambdaWrongParamCount"
     }
     /**
     * Represents the value of a cell containing a #VALUE! error.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface ValueErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#VALUE!";
+        primitive?: "#VALUE!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorType?: ErrorCellValueType.value | "Value";
         /**
         * Represents the type of `ValueErrorCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColMissingEndColNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
     }
@@ -1340,82 +1788,108 @@ export declare namespace Excel {
     * Represents the value of a cell containing a type of value which cannot be serialized.
     * For example, an #UNKNOWN! error which represents a type of rich value not known to this version of Excel.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface ValueTypeNotAvailableCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.notAvailable | "NotAvailable";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitive: boolean | number | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         primitiveType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
     }
     /**
     * Represents the value of a cell containing an image downloaded from the internet.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface WebImageCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.webImage | "WebImage";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitive: "#VALUE!";
+        primitive?: "#VALUE!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
-        primitiveType: RangeValueType.error | "Error";
+        primitiveType?: RangeValueType.error | "Error";
         /**
         * Represents the URL from which the image will be downloaded.
         * This image must be hosted on a server that supports HTTPS.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         address: string;
         /**
         * Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         altText?: string;
         /**
         * Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         relatedImagesAddress?: string;
         /**
         * Represents attribution information to describe the source and license requirements for using this image.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         attribution?: CellValueAttributionAttributes[];
         /**
         * Represents information that describes the entity or individual who provided the image.
         * This information can be used for branding in image cards.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         provider?: CellValueProviderAttributes;
     }
@@ -2393,48 +2867,42 @@ export declare namespace Excel {
                 as a result of that primary move.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export interface WorksheetMovedEventArgs {
         /**
          * Gets the new position of the worksheet, after the move.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         positionAfter: number;
         /**
          * Gets the previous position of the worksheet, prior to the move.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         positionBefore: number;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         type: string;
         /**
          * Gets the ID of the worksheet that was moved.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         worksheetId: string;
     }
@@ -2442,48 +2910,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose name has changed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export interface WorksheetNameChangedEventArgs {
         /**
          * Gets the new name of the worksheet, after the name change.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         nameAfter: string;
         /**
          * Gets the previous name of the worksheet, before the name changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         nameBefore: string;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         type: string;
         /**
          * Gets the ID of the worksheet with the new name.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         worksheetId: string;
     }
@@ -2491,48 +2953,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose visibility has changed.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export interface WorksheetVisibilityChangedEventArgs {
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         type: string;
         /**
          * Gets the new visibility setting of the worksheet, after the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         visibilityAfter: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the previous visibility setting of the worksheet, before the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         visibilityBefore: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the ID of the worksheet whose visibility has changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         worksheetId: string;
     }
@@ -2540,45 +2996,39 @@ export declare namespace Excel {
      * An enum that specifies the query load to destination.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     enum LoadToType {
         /**
          * Load to connection only.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         connectionOnly = "ConnectionOnly",
         /**
          * Load to a table.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         table = "Table",
         /**
          * Load to PivotTable.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         pivotTable = "PivotTable",
         /**
          * Load to PivotChart.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         pivotChart = "PivotChart"
     }
     /**
-     * Represents a PowerQuery query.
+     * Represents a Power Query query.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export class Query extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2587,24 +3037,21 @@ export declare namespace Excel {
          * Gets the query error message from when the query was last refreshed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly error: Excel.QueryError | "Unknown" | "None" | "FailedLoadToWorksheet" | "FailedLoadToDataModel" | "FailedDownload" | "FailedToCompleteDownload";
         /**
          * Gets the query loaded to object type.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly loadedTo: Excel.LoadToType | "ConnectionOnly" | "Table" | "PivotTable" | "PivotChart";
         /**
          * Specifies if the query loaded to the data model.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly loadedToDataModel: boolean;
         /**
@@ -2612,16 +3059,14 @@ export declare namespace Excel {
                     Query names cannot contain periods or quotation marks.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly name: string;
         /**
          * Gets the date and time when the query was last refreshed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly refreshDate: Date;
         /**
@@ -2629,8 +3074,7 @@ export declare namespace Excel {
                     If last refresh has errors the value will be -1.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly rowsLoadedCount: number;
         /**
@@ -2664,8 +3108,7 @@ export declare namespace Excel {
      * Represents the collection of queries in the workbook.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export class QueryCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2676,16 +3119,14 @@ export declare namespace Excel {
          * Gets the number of queries in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a query from the collection based on its name.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
          * @param key - The name of the query case-insensitive.
          * @returns The query with the given name. If there is no query by that name, then an error is thrown.
@@ -2719,50 +3160,43 @@ export declare namespace Excel {
      * An enum that specifies the query load error message.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     enum QueryError {
         /**
          * Unknown error.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         unknown = "Unknown",
         /**
          * No error.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         none = "None",
         /**
          * Load to the worksheet failed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         failedLoadToWorksheet = "FailedLoadToWorksheet",
         /**
          * Load to the data model failed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         failedLoadToDataModel = "FailedLoadToDataModel",
         /**
          * Download failed.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         failedDownload = "FailedDownload",
         /**
          * Download did not complete.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         failedToCompleteDownload = "FailedToCompleteDownload"
     }
@@ -3640,6 +4074,43 @@ export declare namespace Excel {
         * Whereas the original `Excel.DocumentTaskCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Excel.Interfaces.DocumentTaskCollectionData;
+    }
+    /**
+     * Represents a command type of `DataConnection`.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum DataSourceType {
+        /**
+         * The data source type is unknown or unsupported.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unknown = "Unknown",
+        /**
+         * Contains a cube name for an OLAP data source.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cube = "Cube",
+        /**
+         * The data source type is a range in the current workbook.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        localRange = "LocalRange",
+        /**
+         * The data source type is a table in the current workbook.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        localTable = "LocalTable"
     }
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
@@ -5668,8 +6139,7 @@ export declare namespace Excel {
      * Represents the direction that existing or remaining cells in a worksheet will shift when cells are inserted into or deleted from a worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export interface ChangeDirectionState {
         /**
@@ -5677,8 +6147,7 @@ export declare namespace Excel {
                     Note：`insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can't have a value at the same time. If one has a value, then the other will return `undefined`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         deleteShiftDirection: Excel.DeleteShiftDirection | "Up" | "Left";
         /**
@@ -5686,8 +6155,7 @@ export declare namespace Excel {
                     Note：`insertShiftDirection` and `deleteShiftDirection` are exclusive and both enums can't have a value at the same time. If one has a value, then the other will return `undefined`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         insertShiftDirection: Excel.InsertShiftDirection | "Down" | "Right";
     }
@@ -5782,16 +6250,14 @@ export declare namespace Excel {
                     2. The direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted from a worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         changeDirectionState: Excel.ChangeDirectionState;
         /**
          * Represents the trigger source of the event. For example, identifies whether this local add-in triggers the event.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         triggerSource: Excel.EventTriggerSource | "Unknown" | "ThisLocalAddin";
         /**
@@ -6035,8 +6501,7 @@ export declare namespace Excel {
      * Provides information about the worksheet that raised the protection status changed event, which fires when the protection status is updated in a worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export interface WorksheetProtectionChangedEventArgs {
         /**
@@ -6051,8 +6516,7 @@ export declare namespace Excel {
          * Gets the current protection status of the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         isProtected: boolean;
         /**
@@ -6075,24 +6539,21 @@ export declare namespace Excel {
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event. See `Excel.EventType` for details.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         type: "WorksheetProtectionChanged";
         /**
          * Gets the ID of the worksheet in which the protection status is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         worksheetId: string;
     }
@@ -7236,8 +7697,7 @@ export declare namespace Excel {
          * Returns a collection of Power Query queries that are part of the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly queries: Excel.QueryCollection;
         /**
@@ -7831,11 +8291,10 @@ export declare namespace Excel {
          */
         tabColor: string;
         /**
-         * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+         * Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns a value such as "Sheet1").
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly tabId: number;
         /**
@@ -8141,20 +8600,18 @@ export declare namespace Excel {
          * Occurs when the worksheet name is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @eventproperty
-         * @beta
          */
         readonly onNameChanged: OfficeExtension.EventHandlers<Excel.WorksheetNameChangedEventArgs>;
         /**
          * Occurs when the worksheet protection state is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.14]
          *
          * @eventproperty
-         * @beta
          */
         readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;
         /**
@@ -8201,10 +8658,9 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @eventproperty
-         * @beta
          */
         readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;
         /**
@@ -8431,30 +8887,27 @@ export declare namespace Excel {
          * Occurs when a worksheet is moved by a user within a workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @eventproperty
-         * @beta
          */
         readonly onMoved: OfficeExtension.EventHandlers<Excel.WorksheetMovedEventArgs>;
         /**
          * Occurs when the worksheet name is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @eventproperty
-         * @beta
          */
         readonly onNameChanged: OfficeExtension.EventHandlers<Excel.WorksheetNameChangedEventArgs>;
         /**
          * Occurs when the worksheet protection state is changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.14]
          *
          * @eventproperty
-         * @beta
          */
         readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;
         /**
@@ -8499,10 +8952,9 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @eventproperty
-         * @beta
          */
         readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;
         /**
@@ -9504,8 +9956,7 @@ export declare namespace Excel {
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the same worksheet or in multiple worksheets.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         getPrecedents(): Excel.WorkbookRangeAreas;
         /**
@@ -11876,8 +12327,7 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
          * @param key - Name or ID of the table to be retrieved.
          */
@@ -12424,15 +12874,14 @@ export declare namespace Excel {
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
          */
-        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number): Excel.TableRow;
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         /**
          * Delete multiple rows from a table.
                     These rows don't need to be sequential. This method will throw the `InvalidArgument` error if a chosen row has already been deleted or doesn't exist.
                     This method will throw the `InsertDeleteConflict` error if the table on which the method is called has a filter applied.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param rows - An array of row index numbers or row objects to delete from the table.
          */
@@ -12442,8 +12891,7 @@ export declare namespace Excel {
                     This method will throw the `InsertDeleteConflict` error if the table on which the method is called has a filter applied.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param index - The index value of the row to be deleted. Note: Row indexes update each time that a preceding row in the table is deleted, after each delete operation. Ensure that the index of the row that you want to delete hasn't changed between the time that you determined the value and the time that you run the operation.
          * @param count - Number of rows to delete. By default, a single row will be deleted.
@@ -13916,8 +14364,7 @@ export declare namespace Excel {
          * Gets the data table on the chart. If the chart doesn't allow a data table, it will throw an exception.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         getDataTable(): Excel.ChartDataTable;
         /**
@@ -13925,8 +14372,7 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         getDataTableOrNullObject(): Excel.ChartDataTable;
         /**
@@ -15994,8 +16440,7 @@ export declare namespace Excel {
      * Represents the data table object of a chart.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export class ChartDataTable extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -16004,48 +16449,42 @@ export declare namespace Excel {
          * Represents the format of a chart data table, which includes fill, font, and border format.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly format: Excel.ChartDataTableFormat;
         /**
          * Specifies whether to display the horizontal border of the data table.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         showHorizontalBorder: boolean;
         /**
          * Specifies whether to show the legend key of the data table.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         showLegendKey: boolean;
         /**
          * Specifies whether to display the outline border of the data table.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         showOutlineBorder: boolean;
         /**
          * Specifies whether to display the vertical border of the data table.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         showVerticalBorder: boolean;
         /**
          * Specifies whether to show the data table of the chart.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         visible: boolean;
         /**
@@ -16087,8 +16526,7 @@ export declare namespace Excel {
      * Represents the format of a chart data table.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     export class ChartDataTableFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -16097,24 +16535,21 @@ export declare namespace Excel {
          * Represents the border format of chart data table, which includes color, line style, and weight.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly border: Excel.ChartBorder;
         /**
          * Represents the fill format of an object, which includes background formatting information.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly fill: Excel.ChartFill;
         /**
          * Represents the font attributes (such as font name, font size, and color) for the current object.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         readonly font: Excel.ChartFont;
         /**
@@ -19433,6 +19868,22 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
+         * Returns the string representation of the data source for the PivotTable. This method currently supports string representations for table and range objects. Otherwise, it returns an empty string.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getDataSourceString(): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the type of the data source for the PivotTable.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getDataSourceType(): OfficeExtension.ClientResult<Excel.DataSourceType>;
+        /**
          * Refreshes the PivotTable.
          *
          * @remarks
@@ -21562,10 +22013,9 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
-         * @param id - The ID of the conditional format
+         * @param id - The ID of the conditional format.
          */
         getItemOrNullObject(id: string): Excel.ConditionalFormat;
         /**
@@ -23387,8 +23837,7 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
          * @param name - Name of the style to be retrieved.
          */
@@ -24994,8 +25443,7 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
          * @param commentId - The identifier for the comment.
          */
@@ -25277,10 +25725,9 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
-         * @param commentReplyId - The identifier for the comment reply
+         * @param commentReplyId - The identifier for the comment reply.
          */
         getItemOrNullObject(commentReplyId: string): Excel.CommentReply;
         /**
@@ -25594,10 +26041,9 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
-         * @param key - Name or ID of the shape to retrieved.
+         * @param key - The name or ID of the shape to be retrieved.
          */
         getItemOrNullObject(key: string): Excel.Shape;
         /**
@@ -26214,10 +26660,9 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          *
-         * @param key - The Name or ID of the shape to be retrieved.
+         * @param key - The name or ID of the shape to be retrieved.
          */
         getItemOrNullObject(key: string): Excel.Shape;
         /**
@@ -31293,22 +31738,19 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.14]
      */
     enum EventTriggerSource {
         /**
          * The event trigger source is unknown or currently unsupported.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         unknown = "Unknown",
         /**
          * The event is triggered by the Office JS API of the current add-in.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         thisLocalAddin = "ThisLocalAddin"
     }
@@ -40856,67 +41298,59 @@ export declare namespace Excel {
             * Represents the format of a chart data table, which includes fill, font, and border format.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             format?: Excel.Interfaces.ChartDataTableFormatUpdateData;
             /**
              * Specifies whether to display the horizontal border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showHorizontalBorder?: boolean;
             /**
              * Specifies whether to show the legend key of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showLegendKey?: boolean;
             /**
              * Specifies whether to display the outline border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showOutlineBorder?: boolean;
             /**
              * Specifies whether to display the vertical border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showVerticalBorder?: boolean;
             /**
              * Specifies whether to show the data table of the chart.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartDataTableFormat object, for use in `chartDataTableFormat.set({ ... })`. */
+        /** An interface for updating data on the `ChartDataTableFormat` object, for use in `chartDataTableFormat.set({ ... })`. */
         export interface ChartDataTableFormatUpdateData {
             /**
             * Represents the border format of chart data table, which includes color, line style, and weight.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             border?: Excel.Interfaces.ChartBorderUpdateData;
             /**
             * Represents the font attributes (such as font name, font size, and color) for the current object.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
@@ -43683,24 +44117,21 @@ export declare namespace Excel {
              * Gets the query error message from when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             error?: Excel.QueryError | "Unknown" | "None" | "FailedLoadToWorksheet" | "FailedLoadToDataModel" | "FailedDownload" | "FailedToCompleteDownload";
             /**
              * Gets the query loaded to object type.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedTo?: Excel.LoadToType | "ConnectionOnly" | "Table" | "PivotTable" | "PivotChart";
             /**
              * Specifies if the query loaded to the data model.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedToDataModel?: boolean;
             /**
@@ -43708,16 +44139,14 @@ export declare namespace Excel {
                         Query names cannot contain periods or quotation marks.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             name?: string;
             /**
              * Gets the date and time when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             refreshDate?: Date;
             /**
@@ -43725,8 +44154,7 @@ export declare namespace Excel {
                         If last refresh has errors the value will be -1.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             rowsLoadedCount?: number;
         }
@@ -44425,11 +44853,10 @@ export declare namespace Excel {
              */
             tabColor?: string;
             /**
-             * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             * Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns a value such as "Sheet1").
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             tabId?: number;
             /**
@@ -46912,48 +47339,42 @@ export declare namespace Excel {
             * Represents the format of a chart data table, which includes fill, font, and border format.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             format?: Excel.Interfaces.ChartDataTableFormatData;
             /**
              * Specifies whether to display the horizontal border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showHorizontalBorder?: boolean;
             /**
              * Specifies whether to show the legend key of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showLegendKey?: boolean;
             /**
              * Specifies whether to display the outline border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showOutlineBorder?: boolean;
             /**
              * Specifies whether to display the vertical border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showVerticalBorder?: boolean;
             /**
              * Specifies whether to show the data table of the chart.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             visible?: boolean;
         }
@@ -46963,16 +47384,14 @@ export declare namespace Excel {
             * Represents the border format of chart data table, which includes color, line style, and weight.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             * Represents the font attributes (such as font name, font size, and color) for the current object.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             font?: Excel.Interfaces.ChartFontData;
         }
@@ -50588,11 +51007,10 @@ export declare namespace Excel {
             title?: boolean;
         }
         /**
-         * Represents a PowerQuery query.
+         * Represents a Power Query query.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         export interface QueryLoadOptions {
             /**
@@ -50603,24 +51021,21 @@ export declare namespace Excel {
              * Gets the query error message from when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             error?: boolean;
             /**
              * Gets the query loaded to object type.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedTo?: boolean;
             /**
              * Specifies if the query loaded to the data model.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedToDataModel?: boolean;
             /**
@@ -50628,16 +51043,14 @@ export declare namespace Excel {
                         Query names cannot contain periods or quotation marks.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             name?: boolean;
             /**
              * Gets the date and time when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             refreshDate?: boolean;
             /**
@@ -50645,8 +51058,7 @@ export declare namespace Excel {
                         If last refresh has errors the value will be -1.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             rowsLoadedCount?: boolean;
         }
@@ -50654,8 +51066,7 @@ export declare namespace Excel {
          * Represents the collection of queries in the workbook.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         export interface QueryCollectionLoadOptions {
             /**
@@ -50666,24 +51077,21 @@ export declare namespace Excel {
              * For EACH ITEM in the collection: Gets the query error message from when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             error?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the query loaded to object type.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedTo?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the query loaded to the data model.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             loadedToDataModel?: boolean;
             /**
@@ -50691,16 +51099,14 @@ export declare namespace Excel {
                         Query names cannot contain periods or quotation marks.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             name?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the date and time when the query was last refreshed.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             refreshDate?: boolean;
             /**
@@ -50708,8 +51114,7 @@ export declare namespace Excel {
                         If last refresh has errors the value will be -1.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             rowsLoadedCount?: boolean;
         }
@@ -51626,11 +52031,10 @@ export declare namespace Excel {
              */
             tabColor?: boolean;
             /**
-             * Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             * Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns a value such as "Sheet1").
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             tabId?: boolean;
             /**
@@ -51755,11 +52159,10 @@ export declare namespace Excel {
              */
             tabColor?: boolean;
             /**
-             * For EACH ITEM in the collection: Returns a value representing this worksheet that can be read by Open Office XML. This is integer value, which is different from `worksheet.id` (GUID), `worksheet.name` (eg: "Sheet1").
+             * For EACH ITEM in the collection: Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns a value such as "Sheet1").
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             tabId?: boolean;
             /**
@@ -55689,8 +56092,7 @@ export declare namespace Excel {
          * Represents the data table object of a chart.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         export interface ChartDataTableLoadOptions {
             /**
@@ -55701,48 +56103,42 @@ export declare namespace Excel {
             * Represents the format of a chart data table, which includes fill, font, and border format.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             format?: Excel.Interfaces.ChartDataTableFormatLoadOptions;
             /**
              * Specifies whether to display the horizontal border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showHorizontalBorder?: boolean;
             /**
              * Specifies whether to show the legend key of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showLegendKey?: boolean;
             /**
              * Specifies whether to display the outline border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showOutlineBorder?: boolean;
             /**
              * Specifies whether to display the vertical border of the data table.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             showVerticalBorder?: boolean;
             /**
              * Specifies whether to show the data table of the chart.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.14]
              */
             visible?: boolean;
         }
@@ -55750,8 +56146,7 @@ export declare namespace Excel {
          * Represents the format of a chart data table.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.14]
          */
         export interface ChartDataTableFormatLoadOptions {
             /**
@@ -55762,16 +56157,14 @@ export declare namespace Excel {
             * Represents the border format of chart data table, which includes color, line style, and weight.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             border?: Excel.Interfaces.ChartBorderLoadOptions;
             /**
             * Represents the font attributes (such as font name, font size, and color) for the current object.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.14]
             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }

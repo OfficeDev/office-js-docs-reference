@@ -39,6 +39,8 @@ items:
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
               - name: ErrorCodes
                 uid: 'excel!Excel.ErrorCodes:enum'
+              - name: EventTriggerSource
+                uid: 'excel!Excel.EventTriggerSource:enum'
               - name: FilterDatetimeSpecificity
                 uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
               - name: FilterOn
@@ -53,8 +55,12 @@ items:
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: LoadToType
+                uid: 'excel!Excel.LoadToType:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
+              - name: QueryError
+                uid: 'excel!Excel.QueryError:enum'
               - name: RangeUnderlineStyle
                 uid: 'excel!Excel.RangeUnderlineStyle:enum'
               - name: RangeValueType
@@ -126,6 +132,8 @@ items:
             uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
           - name: BindingSelectionChangedEventArgs
             uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
+          - name: ChangeDirectionState
+            uid: 'excel!Excel.ChangeDirectionState:interface'
           - name: Chart
             uid: 'excel!Excel.Chart:class'
           - name: ChartAreaFormat
@@ -146,6 +154,10 @@ items:
             uid: 'excel!Excel.ChartDataLabelFormat:class'
           - name: ChartDataLabels
             uid: 'excel!Excel.ChartDataLabels:class'
+          - name: ChartDataTable
+            uid: 'excel!Excel.ChartDataTable:class'
+          - name: ChartDataTableFormat
+            uid: 'excel!Excel.ChartDataTableFormat:class'
           - name: ChartFill
             uid: 'excel!Excel.ChartFill:class'
           - name: ChartFont
@@ -198,6 +210,10 @@ items:
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:class'
+          - name: Query
+            uid: 'excel!Excel.Query:class'
+          - name: QueryCollection
+            uid: 'excel!Excel.QueryCollection:class'
           - name: Range
             uid: 'excel!Excel.Range:class'
           - name: RangeBorder
@@ -250,6 +266,8 @@ items:
             uid: 'excel!Excel.WorksheetCollection:class'
           - name: WorksheetProtection
             uid: 'excel!Excel.WorksheetProtection:class'
+          - name: WorksheetProtectionChangedEventArgs
+            uid: 'excel!Excel.WorksheetProtectionChangedEventArgs:interface'
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
       - name: OneNote

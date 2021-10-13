@@ -504,7 +504,7 @@ export declare namespace Word {
          */
         readonly authorName: string;
         /**
-         * Gtes or sets the comment's content as plain text.
+         * Gets or sets the comment's content as plain text.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -8988,7 +8988,7 @@ export declare namespace Word {
         /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
             /**
-             * Gtes or sets the comment's content as plain text.
+             * Gets or sets the comment's content as plain text.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -9968,7 +9968,7 @@ export declare namespace Word {
              */
             authorName?: string;
             /**
-             * Gtes or sets the comment's content as plain text.
+             * Gets or sets the comment's content as plain text.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -11454,7 +11454,7 @@ export declare namespace Word {
              */
             authorName?: boolean;
             /**
-             * Gtes or sets the comment's content as plain text.
+             * Gets or sets the comment's content as plain text.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -11514,7 +11514,7 @@ export declare namespace Word {
              */
             authorName?: boolean;
             /**
-             * For EACH ITEM in the collection: Gtes or sets the comment's content as plain text.
+             * For EACH ITEM in the collection: Gets or sets the comment's content as plain text.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]

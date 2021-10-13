@@ -182,6 +182,8 @@ items:
                 uid: 'excel!Excel.ErrorCodes:enum'
               - name: EventSource
                 uid: 'excel!Excel.EventSource:enum'
+              - name: EventTriggerSource
+                uid: 'excel!Excel.EventTriggerSource:enum'
               - name: EventType
                 uid: 'excel!Excel.EventType:enum'
               - name: FillPattern
@@ -206,6 +208,8 @@ items:
                 uid: 'excel!Excel.InsertShiftDirection:enum'
               - name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
+              - name: LoadToType
+                uid: 'excel!Excel.LoadToType:enum'
               - name: NamedItemScope
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
@@ -234,6 +238,8 @@ items:
                 uid: 'excel!Excel.PrintOrder:enum'
               - name: ProtectionSelectionMode
                 uid: 'excel!Excel.ProtectionSelectionMode:enum'
+              - name: QueryError
+                uid: 'excel!Excel.QueryError:enum'
               - name: RangeCopyType
                 uid: 'excel!Excel.RangeCopyType:enum'
               - name: RangeUnderlineStyle
@@ -389,6 +395,8 @@ items:
             uid: 'excel!Excel.CellValueConditionalFormat:class'
           - name: ChangedEventDetail
             uid: 'excel!Excel.ChangedEventDetail:interface'
+          - name: ChangeDirectionState
+            uid: 'excel!Excel.ChangeDirectionState:interface'
           - name: Chart
             uid: 'excel!Excel.Chart:class'
           - name: ChartActivatedEventArgs
@@ -421,6 +429,10 @@ items:
             uid: 'excel!Excel.ChartDataLabelFormat:class'
           - name: ChartDataLabels
             uid: 'excel!Excel.ChartDataLabels:class'
+          - name: ChartDataTable
+            uid: 'excel!Excel.ChartDataTable:class'
+          - name: ChartDataTableFormat
+            uid: 'excel!Excel.ChartDataTableFormat:class'
           - name: ChartDeactivatedEventArgs
             uid: 'excel!Excel.ChartDeactivatedEventArgs:interface'
           - name: ChartDeletedEventArgs
@@ -631,6 +643,10 @@ items:
             uid: 'excel!Excel.PivotTableCollection:class'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
+          - name: Query
+            uid: 'excel!Excel.Query:class'
+          - name: QueryCollection
+            uid: 'excel!Excel.QueryCollection:class'
           - name: Range
             uid: 'excel!Excel.Range:class'
           - name: RangeAreas
@@ -781,6 +797,8 @@ items:
             uid: 'excel!Excel.WorksheetFreezePanes:class'
           - name: WorksheetProtection
             uid: 'excel!Excel.WorksheetProtection:class'
+          - name: WorksheetProtectionChangedEventArgs
+            uid: 'excel!Excel.WorksheetProtectionChangedEventArgs:interface'
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
           - name: WorksheetSearchCriteria

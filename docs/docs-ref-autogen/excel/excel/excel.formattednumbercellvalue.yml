@@ -9,12 +9,10 @@ summary: >-
   format](https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
   -->. In this scenario, the format is applied to the value and not to the cell, so the value retains its format string
   throughout calculation.
-
-
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -27,12 +25,10 @@ properties:
       guidelines. To learn more, see [Review guidelines for customizing a number
       format](https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
       -->.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'numberFormat: string;'
@@ -42,14 +38,11 @@ properties:
     uid: 'excel!Excel.FormattedNumberCellValue#primitive:member'
     package: excel!
     fullName: primitive
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'primitive: number;'
@@ -59,31 +52,25 @@ properties:
     uid: 'excel!Excel.FormattedNumberCellValue#primitiveType:member'
     package: excel!
     fullName: primitiveType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType: RangeValueType.double | "Double";'
+      content: 'primitiveType?: RangeValueType.double | "Double";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.double:member" /> | "Double"'
   - name: type
     uid: 'excel!Excel.FormattedNumberCellValue#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Represents the type of this cell value.
-
-
+    summary: Represents the type of this cell value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.formattedNumber | "FormattedNumber";'

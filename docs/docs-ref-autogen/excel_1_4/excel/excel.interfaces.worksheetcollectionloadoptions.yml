@@ -85,6 +85,21 @@ properties:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface" />'
+  - name: tabId
+    uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tabId:member'
+    package: excel!
+    fullName: tabId
+    summary: >-
+      For EACH ITEM in the collection: Returns a value representing this worksheet that can be read by Open Office XML.
+      This is an integer value, which is different from `worksheet.id` (which returns a globally unique identifier) and
+      `worksheet.name` (which returns a value such as "Sheet1").
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabId?: boolean;'
+      return:
+        type: boolean
   - name: tables
     uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
     package: excel!

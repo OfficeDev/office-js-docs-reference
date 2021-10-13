@@ -92,16 +92,14 @@ methods:
       with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(key: string): Excel.Shape;'
       parameters:
         - id: key
-          description: The Name or ID of the shape to be retrieved.
+          description: The name or ID of the shape to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'

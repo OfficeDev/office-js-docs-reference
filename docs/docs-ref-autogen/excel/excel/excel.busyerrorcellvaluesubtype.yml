@@ -3,43 +3,25 @@ name: Excel.BusyErrorCellValueSubType
 uid: 'excel!Excel.BusyErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.BusyErrorCellValueSubType
-summary: >-
-  Represents types of \#BUSY! errors.
-
-
+summary: 'Represents types of \#BUSY! errors.'
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 fields:
   - name: externalLinksGeneric
     uid: 'excel!Excel.BusyErrorCellValueSubType.externalLinksGeneric:member'
     package: excel!
-    summary: >-
-      An error caused by external links. Displays as error type \#BUSY! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by external links. Displays as error type \#BUSY! in Excel.'
     value: '"ExternalLinksGeneric"'
   - name: loadingImage
     uid: 'excel!Excel.BusyErrorCellValueSubType.loadingImage:member'
     package: excel!
-    summary: >-
-      An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.'
     value: '"LoadingImage"'
   - name: unknown
     uid: 'excel!Excel.BusyErrorCellValueSubType.unknown:member'
     package: excel!
-    summary: >-
-      An unknown type of error. Displays as error type \#BUSY! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An unknown type of error. Displays as error type \#BUSY! in Excel.'
     value: '"Unknown"'

@@ -563,6 +563,48 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormulaChangedEventArgs:interface" />&gt;
+  - name: onMoved
+    uid: 'excel!Excel.WorksheetCollection#onMoved:member'
+    package: excel!
+    fullName: onMoved
+    summary: Occurs when a worksheet is moved by a user within a workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onMoved: OfficeExtension.EventHandlers<Excel.WorksheetMovedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetMovedEventArgs:interface" />&gt;
+  - name: onNameChanged
+    uid: 'excel!Excel.WorksheetCollection#onNameChanged:member'
+    package: excel!
+    fullName: onNameChanged
+    summary: Occurs when the worksheet name is changed in the worksheet collection.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onNameChanged: OfficeExtension.EventHandlers<Excel.WorksheetNameChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetNameChangedEventArgs:interface" />&gt;
+  - name: onProtectionChanged
+    uid: 'excel!Excel.WorksheetCollection#onProtectionChanged:member'
+    package: excel!
+    fullName: onProtectionChanged
+    summary: Occurs when the worksheet protection state is changed.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.WorksheetCollection#onRowHiddenChanged:member'
     package: excel!
@@ -622,4 +664,18 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
+  - name: onVisibilityChanged
+    uid: 'excel!Excel.WorksheetCollection#onVisibilityChanged:member'
+    package: excel!
+    fullName: onVisibilityChanged
+    summary: Occurs when the worksheet visibility is changed in the worksheet collection.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onVisibilityChanged: OfficeExtension.EventHandlers<Excel.WorksheetVisibilityChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetVisibilityChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

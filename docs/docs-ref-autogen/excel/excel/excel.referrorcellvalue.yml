@@ -3,14 +3,11 @@ name: Excel.RefErrorCellValue
 uid: 'excel!Excel.RefErrorCellValue:interface'
 package: excel!
 fullName: Excel.RefErrorCellValue
-summary: >-
-  Represents the value of a cell containing a \#REF! error.
-
-
+summary: 'Represents the value of a cell containing a \#REF! error.'
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -18,14 +15,11 @@ properties:
     uid: 'excel!Excel.RefErrorCellValue#errorSubType:member'
     package: excel!
     fullName: errorSubType
-    summary: >-
-      Represents the type of `RefErrorCellValue`<!-- -->.
-
-
+    summary: Represents the type of `RefErrorCellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -43,14 +37,11 @@ properties:
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!
     fullName: errorType
-    summary: >-
-      Represents the type of `ErrorCellValue`<!-- -->.
-
-
+    summary: Represents the type of `ErrorCellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'errorType?: ErrorCellValueType.ref | "Ref";'
@@ -60,48 +51,39 @@ properties:
     uid: 'excel!Excel.RefErrorCellValue#primitive:member'
     package: excel!
     fullName: primitive
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitive: "#REF!";'
+      content: 'primitive?: "#REF!";'
       return:
         type: '"#REF!"'
   - name: primitiveType
     uid: 'excel!Excel.RefErrorCellValue#primitiveType:member'
     package: excel!
     fullName: primitiveType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType: RangeValueType.error | "Error";'
+      content: 'primitiveType?: RangeValueType.error | "Error";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.RefErrorCellValue#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Represents the type of this cell value.
-
-
+    summary: Represents the type of this cell value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.error | "Error";'

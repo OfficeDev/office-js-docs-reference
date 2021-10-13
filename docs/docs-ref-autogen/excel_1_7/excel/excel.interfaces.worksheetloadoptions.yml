@@ -131,6 +131,21 @@ properties:
       content: 'tabColor?: boolean;'
       return:
         type: boolean
+  - name: tabId
+    uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tabId:member'
+    package: excel!
+    fullName: tabId
+    summary: >-
+      Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which
+      is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns
+      a value such as "Sheet1").
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabId?: boolean;'
+      return:
+        type: boolean
   - name: tables
     uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
     package: excel!

@@ -272,6 +272,18 @@ properties:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
         type: '<xref uid="excel!Excel.WorkbookProtection:class" />'
+  - name: queries
+    uid: 'excel!Excel.Workbook#queries:member'
+    package: excel!
+    fullName: queries
+    summary: Returns a collection of Power Query queries that are part of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly queries: Excel.QueryCollection;'
+      return:
+        type: '<xref uid="excel!Excel.QueryCollection:class" />'
   - name: readOnly
     uid: 'excel!Excel.Workbook#readOnly:member'
     package: excel!

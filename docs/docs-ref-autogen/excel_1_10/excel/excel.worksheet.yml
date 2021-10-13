@@ -437,6 +437,21 @@ properties:
       content: 'tabColor: string;'
       return:
         type: string
+  - name: tabId
+    uid: 'excel!Excel.Worksheet#tabId:member'
+    package: excel!
+    fullName: tabId
+    summary: >-
+      Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which
+      is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns
+      a value such as "Sheet1").
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly tabId: number;'
+      return:
+        type: number
   - name: tables
     uid: 'excel!Excel.Worksheet#tables:member'
     package: excel!
@@ -1514,6 +1529,20 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
+  - name: onProtectionChanged
+    uid: 'excel!Excel.Worksheet#onProtectionChanged:member'
+    package: excel!
+    fullName: onProtectionChanged
+    summary: Occurs when the worksheet protection state is changed.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
   - name: onRowSorted
     uid: 'excel!Excel.Worksheet#onRowSorted:member'
     package: excel!

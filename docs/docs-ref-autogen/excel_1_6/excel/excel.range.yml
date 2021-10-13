@@ -993,6 +993,21 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Range:class" />'
         description: ''
+  - name: getPrecedents()
+    uid: 'excel!Excel.Range#getPrecedents:member(1)'
+    package: excel!
+    fullName: getPrecedents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the
+      same worksheet or in multiple worksheets.
+    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPrecedents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: excel!Excel.WorkbookRangeAreas
+        description: ''
   - name: 'getResizedRange(deltaRows, deltaColumns)'
     uid: 'excel!Excel.Range#getResizedRange:member(1)'
     package: excel!
