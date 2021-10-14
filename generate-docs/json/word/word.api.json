@@ -4123,7 +4123,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Comment#content:member",
-                  "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21102,7 +21102,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentCollectionLoadOptions#content:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21321,7 +21321,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentData#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21551,7 +21551,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentLoadOptions#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22406,7 +22406,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentUpdateData#content:member",
-                      "docComment": "/**\n * Gtes or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets the comment's content as plain text.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
