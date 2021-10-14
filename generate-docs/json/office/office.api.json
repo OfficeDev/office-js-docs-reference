@@ -219,7 +219,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "<{shortcut:string, inUse:boolean}[]>"
+                      "text": "<{shortcut: string, inUse: boolean}[]>"
                     },
                     {
                       "kind": "Content",
@@ -286,7 +286,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "<{[actionId:string]:string|null}>"
+                      "text": "<{[actionId: string]: string|null}>"
                     },
                     {
                       "kind": "Content",
@@ -314,7 +314,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{[actionId:string]:string}"
+                      "text": "{[actionId: string]: string}"
                     },
                     {
                       "kind": "Content",
