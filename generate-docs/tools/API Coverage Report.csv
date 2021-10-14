@@ -8528,11 +8528,11 @@ PowerPoint.ShapeAutoSize,autoSizeTextToFitShape,EnumField,Fine,false
 PowerPoint.ShapeCollection,N/A,Class,Fine,false
 PowerPoint.ShapeCollection,context,Method,Good,false
 PowerPoint.ShapeCollection,items,Method,Fine,false
-PowerPoint.ShapeCollection,addGeometricShape(geometricShapeType,Method,Good,false
+PowerPoint.ShapeCollection,addGeometricShape(geometricShapeType,Method,Good,true
 PowerPoint.ShapeCollection,addGeometricShape(geometricShapeTypeString,Method,Good,false
-PowerPoint.ShapeCollection,addLine(connectorType,Method,Good,false
+PowerPoint.ShapeCollection,addLine(connectorType,Method,Good,true
 PowerPoint.ShapeCollection,addLine(connectorTypeString,Method,Good,false
-PowerPoint.ShapeCollection,addTextBox(text,Method,Good,false
+PowerPoint.ShapeCollection,addTextBox(text,Method,Good,true
 PowerPoint.ShapeCollection,getCount(),Method,Fine,false
 PowerPoint.ShapeCollection,getItem(key),Method,Good,false
 PowerPoint.ShapeCollection,getItemAt(index),Method,Good,true
