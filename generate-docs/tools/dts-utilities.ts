@@ -183,8 +183,11 @@ export class APISet {
                         newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
                         newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
                         if (field.type === FieldType.Property) {
-                            newItemText = newItemText.replace("?", "");
-                        }
+                            newItemText = newItemText.replace(/\?/g, "");
+                        } 
+                        
+                        newItemText = newItemText.replace(/\<any\>/g, "");
+                        
 
                         let tableLine = "[" + newItemText + "]("
                             + buildFieldLink(relativePath, className, field) + ")|";
