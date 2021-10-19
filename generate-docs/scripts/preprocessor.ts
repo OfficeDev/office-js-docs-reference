@@ -164,7 +164,7 @@ tryCatch(async () => {
     definitionsForCfs = applyRegularExpressions(definitionsForCfs);
 
     console.log("create file: custom-functions-runtime.d.ts");
-    makeDtsAndClearJsonIfNew('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs, "custom");
+    makeDtsAndClearJsonIfNew('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs, "excel");
 
     // ----
     // Process Office Runtime d.ts
@@ -180,7 +180,7 @@ tryCatch(async () => {
     definitionsForORun = applyRegularExpressions(definitionsForORun);
 
     console.log("create file: office-runtime.d.ts");
-    makeDtsAndClearJsonIfNew('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun, "runtime");
+    makeDtsAndClearJsonIfNew('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun, "office");
 
     console.log("\nPreprocessor script complete!");
 
