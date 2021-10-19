@@ -4241,7 +4241,7 @@ Excel.Range,getLastRow(),Method,Good,true
 Excel.Range,getMergedAreasOrNullObject(),Method,Good,true
 Excel.Range,getOffsetRange(rowOffset,Method,Good,true
 Excel.Range,getPivotTables(fullyContained),Method,Good,true
-Excel.Range,getPrecedents(),Method,Good,false
+Excel.Range,getPrecedents(),Method,Good,true
 Excel.Range,getRangeEdge(direction,Method,Good,true
 Excel.Range,getRangeEdge(directionString,Method,Good,false
 Excel.Range,getResizedRange(deltaRows,Method,Good,false
