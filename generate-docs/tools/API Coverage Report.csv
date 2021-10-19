@@ -4241,7 +4241,7 @@ Excel.Range,getLastRow(),Method,Good,true
 Excel.Range,getMergedAreasOrNullObject(),Method,Good,true
 Excel.Range,getOffsetRange(rowOffset,Method,Good,true
 Excel.Range,getPivotTables(fullyContained),Method,Good,true
-Excel.Range,getPrecedents(),Method,Good,false
+Excel.Range,getPrecedents(),Method,Good,true
 Excel.Range,getRangeEdge(direction,Method,Good,true
 Excel.Range,getRangeEdge(directionString,Method,Good,false
 Excel.Range,getResizedRange(deltaRows,Method,Good,false
@@ -6848,7 +6848,7 @@ OfficeExtension.UpdateOptions,N/A,Class,Fine,false
 OfficeExtension.UpdateOptions,throwOnReadOnly,Method,Fine,false
 OfficeRuntime.ApiInformation,N/A,Class,Fine,false
 OfficeRuntime.ApiInformation,isSetSupported(name,Method,Fine,false
-OfficeRuntime.Auth,N/A,Class,Fine,false
+OfficeRuntime.Auth,N/A,Class,Good,false
 OfficeRuntime.Auth,getAccessToken(options),Method,Good,false
 OfficeRuntime.AuthOptions,N/A,Class,Good,false
 OfficeRuntime.AuthOptions,allowConsentPrompt,Method,Good,false
