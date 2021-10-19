@@ -1396,10 +1396,11 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/direct-precedents.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
 
       await Excel.run(async (context) => {
         // Precedents are cells referenced by the formula in a cell.
+        // A "direct precedent" is a cell directly referenced by the selected formula.
         let range = context.workbook.getActiveCell();
         let directPrecedents = range.getDirectPrecedents();
         range.load("address");
@@ -1408,7 +1409,7 @@ methods:
 
         console.log(`Direct precedent cells of ${range.address}:`);
 
-        // Use the direct precedents API to loop through precedents of the active cell. 
+        // Use the direct precedents API to loop through precedents of the active cell.
         for (var i = 0; i < directPrecedents.areas.items.length; i++) {
           // Highlight and console the address of each precedent cell.
           directPrecedents.areas.items[i].format.fill.color = "Yellow";
