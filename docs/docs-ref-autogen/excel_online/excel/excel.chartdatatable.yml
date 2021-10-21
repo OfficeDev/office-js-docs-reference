@@ -28,7 +28,43 @@ properties:
     package: excel!
     fullName: format
     summary: 'Represents the format of a chart data table, which includes fill, font, and border format.'
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adjusts the display and format of a chart data table that already exists on the worksheet.
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the chart data table object and load its properties.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load();
+
+        // Set the display properties of the chart data table.
+        chartDataTable.showLegendKey = true;
+        chartDataTable.showHorizontalBorder = false;
+        chartDataTable.showVerticalBorder = true;
+        chartDataTable.showOutlineBorder = true;
+
+        // Retrieve the chart data table format object and set font and border properties. 
+        const chartDataTableFormat = chartDataTable.format;
+        chartDataTableFormat.font.color = "#B76E79";
+        chartDataTableFormat.font.name = "Comic Sans";
+        chartDataTableFormat.border.color = "blue";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +76,43 @@ properties:
     package: excel!
     fullName: showHorizontalBorder
     summary: Specifies whether to display the horizontal border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adjusts the display and format of a chart data table that already exists on the worksheet.
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the chart data table object and load its properties.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load();
+
+        // Set the display properties of the chart data table.
+        chartDataTable.showLegendKey = true;
+        chartDataTable.showHorizontalBorder = false;
+        chartDataTable.showVerticalBorder = true;
+        chartDataTable.showOutlineBorder = true;
+
+        // Retrieve the chart data table format object and set font and border properties. 
+        const chartDataTableFormat = chartDataTable.format;
+        chartDataTableFormat.font.color = "#B76E79";
+        chartDataTableFormat.font.name = "Comic Sans";
+        chartDataTableFormat.border.color = "blue";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +124,43 @@ properties:
     package: excel!
     fullName: showLegendKey
     summary: Specifies whether to show the legend key of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adjusts the display and format of a chart data table that already exists on the worksheet.
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the chart data table object and load its properties.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load();
+
+        // Set the display properties of the chart data table.
+        chartDataTable.showLegendKey = true;
+        chartDataTable.showHorizontalBorder = false;
+        chartDataTable.showVerticalBorder = true;
+        chartDataTable.showOutlineBorder = true;
+
+        // Retrieve the chart data table format object and set font and border properties. 
+        const chartDataTableFormat = chartDataTable.format;
+        chartDataTableFormat.font.color = "#B76E79";
+        chartDataTableFormat.font.name = "Comic Sans";
+        chartDataTableFormat.border.color = "blue";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +172,43 @@ properties:
     package: excel!
     fullName: showOutlineBorder
     summary: Specifies whether to display the outline border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adjusts the display and format of a chart data table that already exists on the worksheet.
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the chart data table object and load its properties.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load();
+
+        // Set the display properties of the chart data table.
+        chartDataTable.showLegendKey = true;
+        chartDataTable.showHorizontalBorder = false;
+        chartDataTable.showVerticalBorder = true;
+        chartDataTable.showOutlineBorder = true;
+
+        // Retrieve the chart data table format object and set font and border properties. 
+        const chartDataTableFormat = chartDataTable.format;
+        chartDataTableFormat.font.color = "#B76E79";
+        chartDataTableFormat.font.name = "Comic Sans";
+        chartDataTableFormat.border.color = "blue";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +220,43 @@ properties:
     package: excel!
     fullName: showVerticalBorder
     summary: Specifies whether to display the vertical border of the data table.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adjusts the display and format of a chart data table that already exists on the worksheet.
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the chart data table object and load its properties.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load();
+
+        // Set the display properties of the chart data table.
+        chartDataTable.showLegendKey = true;
+        chartDataTable.showHorizontalBorder = false;
+        chartDataTable.showVerticalBorder = true;
+        chartDataTable.showOutlineBorder = true;
+
+        // Retrieve the chart data table format object and set font and border properties. 
+        const chartDataTableFormat = chartDataTable.format;
+        chartDataTableFormat.font.color = "#B76E79";
+        chartDataTableFormat.font.name = "Comic Sans";
+        chartDataTableFormat.border.color = "blue";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +268,32 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies whether to show the data table of the chart.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+      await Excel.run(async (context) => {
+        // This method adds a data table to a chart that already exists on the worksheet. 
+
+        // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+        const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+        // Get the data table object for the chart and set it to visible.
+        const chartDataTable = chart.getDataTableOrNullObject();
+        chartDataTable.load("visible");
+        chartDataTable.visible = true;
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

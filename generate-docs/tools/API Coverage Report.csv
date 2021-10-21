@@ -6848,7 +6848,7 @@ OfficeExtension.UpdateOptions,N/A,Class,Fine,false
 OfficeExtension.UpdateOptions,throwOnReadOnly,Method,Fine,false
 OfficeRuntime.ApiInformation,N/A,Class,Fine,false
 OfficeRuntime.ApiInformation,isSetSupported(name,Method,Fine,false
-OfficeRuntime.Auth,N/A,Class,Fine,false
+OfficeRuntime.Auth,N/A,Class,Good,false
 OfficeRuntime.Auth,getAccessToken(options),Method,Good,false
 OfficeRuntime.AuthOptions,N/A,Class,Good,false
 OfficeRuntime.AuthOptions,allowConsentPrompt,Method,Good,false
