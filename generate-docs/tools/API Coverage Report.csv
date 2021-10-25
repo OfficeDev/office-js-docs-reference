@@ -2650,7 +2650,7 @@ Excel.FilterDatetimeSpecificity,minute,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,month,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,second,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,year,EnumField,Missing,false
-Excel.FilterOn,N/A,Class,Fine,false
+Excel.FilterOn,N/A,Class,Fine,true
 Excel.FilterOn,bottomItems,EnumField,Missing,false
 Excel.FilterOn,bottomPercent,EnumField,Missing,false
 Excel.FilterOn,cellColor,EnumField,Missing,false
