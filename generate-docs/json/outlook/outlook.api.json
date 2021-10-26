@@ -8613,20 +8613,20 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.DelayDeliveryTime:interface",
-              "docComment": "/**\n * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+              "docComment": "/**\n * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface DelayDeliveryTime "
                 }
               ],
-              "releaseTag": "Public",
+              "releaseTag": "Beta",
               "name": "DelayDeliveryTime",
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties: `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties: `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8681,7 +8681,7 @@
                     "startIndex": 9,
                     "endIndex": 10
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -8704,7 +8704,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8750,7 +8750,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -8766,7 +8766,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8821,7 +8821,7 @@
                     "startIndex": 9,
                     "endIndex": 10
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -8851,7 +8851,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(2)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8897,7 +8897,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -20957,7 +20957,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#delayDeliveryTime:member",
-                  "docComment": "/**\n * Gets or sets the delayed delivery date and time of a message.\n *\n * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets or sets the delayed delivery date and time of a message.\n *\n * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20974,7 +20974,7 @@
                     }
                   ],
                   "isOptional": false,
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "delayDeliveryTime",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -26483,7 +26483,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member",
-                  "docComment": "/**\n * Gets the updated Office theme.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n */\n",
+                  "docComment": "/**\n * Gets the updated Office theme.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26510,7 +26510,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.OfficeThemeChangedEventArgs#type:member",
-                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n */\n",
+                  "docComment": "/**\n * Gets the type of the event. For details, refer to {@link https://docs.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

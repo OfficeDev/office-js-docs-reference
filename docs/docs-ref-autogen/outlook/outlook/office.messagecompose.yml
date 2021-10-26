@@ -440,7 +440,7 @@ properties:
               console.log(callback);
           });
       ```
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'delayDeliveryTime: DelayDeliveryTime;'

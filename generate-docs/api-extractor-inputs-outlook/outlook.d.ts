@@ -4485,6 +4485,8 @@ export declare namespace Office {
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * @beta
      */
     export interface DelayDeliveryTime {
         /**
@@ -4501,6 +4503,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @beta
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
         /**
@@ -4515,6 +4519,8 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *
+         * @beta
          */
         getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Date>) => void): void;
         /**
@@ -4532,6 +4538,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
          */
         setAsync(datetime: Date, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -4547,6 +4555,8 @@ export declare namespace Office {
          * @param datetime - The future date and time when the message should be sent.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
          */
         setAsync(datetime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -6503,6 +6513,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * @beta
          */
         delayDeliveryTime: DelayDeliveryTime;
         /**
@@ -8624,6 +8636,7 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
+         *
          * @beta
          */
         getAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;
@@ -8954,6 +8967,8 @@ export declare namespace Office {
          *
          * @remarks
          * [Api set: Mailbox preview]
+         *
+         * @beta
          */
         officeTheme: CommonAPI.OfficeTheme;
         /**
@@ -8961,6 +8976,8 @@ export declare namespace Office {
          *
          * @remarks
          * [Api set: Mailbox preview]
+         *
+         * @beta
          */
         type: "officeThemeChanged";
     }

@@ -1667,7 +1667,52 @@ events:
     package: excel!
     fullName: onProtectionChanged
     summary: Occurs when the worksheet protection state is changed.
-    remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
+      await Excel.run(async (context) => {
+          // This method registers an event handler for the onProtectionChanged event of a worksheet.
+
+          // Set "Sample" as the active worksheet.
+          context.workbook.worksheets.getItemOrNullObject("Sample").delete();
+          const sheet = context.workbook.worksheets.add("Sample");
+          sheet.activate();
+
+          // Register the onProtectionChanged event handler.
+          sheet.onProtectionChanged.add(checkProtection);
+          await context.sync();
+          console.log("Added a worksheet protection change event handler.");
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
+      async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          await Excel.run(async (context) => {
+              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
+              const protectionStatus = event.isProtected;
+              const worksheetId = event.worksheetId;
+              const source = event.source;
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("    ID of changed worksheet: " + worksheetId + ".");
+              console.log("    Source of change event: " + source + ".");
+          });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
