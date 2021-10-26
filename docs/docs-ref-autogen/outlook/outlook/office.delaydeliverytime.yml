@@ -33,7 +33,7 @@ remarks: >-
           console.log(callback);
       });
   ```
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 methods:
@@ -54,7 +54,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -91,7 +91,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Date>) => void): void;'
@@ -121,7 +121,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
@@ -162,7 +162,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'setAsync(datetime: Date, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
