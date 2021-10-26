@@ -47,6 +47,8 @@ call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_3\excel.
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts "ExcelApi 1.2" ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts "ExcelApi 1.1" .\tool-inputs\excel-base.d.ts
 
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_11\outlook.d.ts "Mailbox 1.11" ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts
+call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts Outlook 1.10
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts "Mailbox 1.10" ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts
 call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts Outlook 1.9
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts "Mailbox 1.9" ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts
@@ -94,7 +96,8 @@ call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_3\excel.
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts ..\..\docs\requirement-set-tables\excel-1_2
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts .\tool-inputs\excel-base.d.ts ..\..\docs\requirement-set-tables\excel-1_1
 
-call node whats-new outlook ..\api-extractor-inputs-outlook\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-preview
+call node whats-new outlook ..\api-extractor-inputs-outlook\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_11\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-preview
+call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_11\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_11
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_10\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_10
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_9\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_9
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_8\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts ..\..\docs\requirement-set-tables\outlook-1_8
@@ -213,6 +216,11 @@ if NOT EXIST "json/onenote" (
 if NOT EXIST "json/outlook" (
     pushd api-extractor-inputs-outlook
     call ..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/outlook_1_11" (
+    pushd api-extractor-inputs-outlook-release\outlook_1_11
+    call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_10" (
@@ -356,6 +364,7 @@ if NOT EXIST "yaml/outlook_1_7" ( call .\node_modules\.bin\api-documenter yaml -
 if NOT EXIST "yaml/outlook_1_8" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_8 --output-folder .\yaml\outlook_1_8 --office 2> nul )
 if NOT EXIST "yaml/outlook_1_9" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_9 --output-folder .\yaml\outlook_1_9 --office 2> nul )
 if NOT EXIST "yaml/outlook_1_10" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_10 --output-folder .\yaml\outlook_1_10 --office 2> nul )
+if NOT EXIST "yaml/outlook_1_11" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_11 --output-folder .\yaml\outlook_1_11 --office 2> nul )
 if NOT EXIST "yaml/powerpoint" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint --output-folder .\yaml\powerpoint --office )
 if NOT EXIST "yaml/powerpoint_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul )
 if NOT EXIST "yaml/powerpoint_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul )

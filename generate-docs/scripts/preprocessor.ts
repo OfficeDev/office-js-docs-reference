@@ -29,8 +29,8 @@ tryCatch(async () => {
 
     switch (sourceChoice) {
         case "DT":
-            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/084fb4a9a9ef5d46a2c7aca4d6b33c17ab966633/types/office-js/index.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/084fb4a9a9ef5d46a2c7aca4d6b33c17ab966633/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
@@ -110,7 +110,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
         "outlook"
     );

@@ -90,11 +90,64 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
     await Excel.run(async (context) => {
+        // This method adds a percentage AutoFilter to the active worksheet 
+        // and applies the filter to a column of the used range.
+
+        // Retrieve the active worksheet and the used range on that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
 
-        // This filter will only show the rows with the top 25% of values in column 3.
-        sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+        // Add a filter that will only show the rows with the top 50% of values in column 3.
+        sheet.autoFilter.apply(farmData, 3, {
+            criterion1: "50",
+            filterOn: Excel.FilterOn.topPercent
+        });
+
+        await context.sync();
+    });
+'Excel.AutoFilter#clearColumnCriteria:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+    await Excel.run(async (context) => {
+        // This method clears the AutoFilter setting from one column.
+
+        // Retrieve the active worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Clear the filter from only column 3.
+        sheet.autoFilter.clearColumnCriteria(3);
+        await context.sync();
+    });
+'Excel.AutoFilter#reapply:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+    await Excel.run(async (context) => {
+        // This method refreshes the AutoFilter to ensure that changes are captured.
+
+        // Retrieve the active worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Reapply the filter to capture changes.
+        sheet.autoFilter.reapply();
+        await context.sync();
+    });
+'Excel.AutoFilter#remove:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+    await Excel.run(async (context) => {
+        // This method removes all AutoFilters from the active worksheet.
+
+        // Retrieve the active worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Remove all filters.
+        sheet.autoFilter.remove();
         await context.sync();
     });
 'Excel.Binding#getRange:member(1)':
@@ -3169,6 +3222,27 @@
       customDocProperties.items.forEach((property) => {
         console.log(`${property.key}:${property.value}`);
       });
+    });
+'Excel.FilterCriteria#filterOn:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+    await Excel.run(async (context) => {
+        // This method adds a percentage AutoFilter to the active worksheet 
+        // and applies the filter to a column of the used range.
+
+        // Retrieve the active worksheet and the used range on that worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const farmData = sheet.getUsedRange();
+
+        // Add a filter that will only show the rows with the top 50% of values in column 3.
+        sheet.autoFilter.apply(farmData, 3, {
+            criterion1: "50",
+            filterOn: Excel.FilterOn.topPercent
+        });
+
+        await context.sync();
     });
 'Excel.FilterOn:enum':
   - |-
@@ -7139,11 +7213,19 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
     await Excel.run(async (context) => {
+        // This method adds a percentage AutoFilter to the active worksheet 
+        // and applies the filter to a column of the used range.
+
+        // Retrieve the active worksheet and the used range on that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
 
-        // This filter will only show the rows with the top 25% of values in column 3.
-        sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+        // Add a filter that will only show the rows with the top 50% of values in column 3.
+        sheet.autoFilter.apply(farmData, 3, {
+            criterion1: "50",
+            filterOn: Excel.FilterOn.topPercent
+        });
+
         await context.sync();
     });
 'Excel.Worksheet#copy:member(1)':
@@ -9208,7 +9290,7 @@
 'Office.AppointmentCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -15927,7 +16009,7 @@
 'Office.MessageCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -17810,7 +17892,7 @@
 'Office.SessionData#clearAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.clearAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -17822,7 +17904,7 @@
 'Office.SessionData#getAllAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -17834,7 +17916,7 @@
 'Office.SessionData#getAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAsync(
       "Date",
@@ -17848,7 +17930,7 @@
 'Office.SessionData#removeAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.removeAsync(
       "Date",
@@ -17863,7 +17945,7 @@
 'Office.SessionData#setAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.setAsync(
       "Date",

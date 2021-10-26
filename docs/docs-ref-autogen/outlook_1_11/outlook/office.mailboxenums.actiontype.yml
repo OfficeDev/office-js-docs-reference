@@ -1,0 +1,15 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ActionType
+uid: 'outlook!Office.MailboxEnums.ActionType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ActionType
+summary: Specifies the type of custom action in a notification message.
+remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ShowTaskPane
+    uid: 'outlook!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+    package: outlook!
+    summary: The `showTaskPane` action.
+    value: '"showTaskPane"'

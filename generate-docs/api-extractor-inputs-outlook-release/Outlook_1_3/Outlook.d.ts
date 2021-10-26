@@ -370,6 +370,7 @@ export declare namespace Office {
          */
         requiredAttendees: Recipients;
         
+        
         /**
          * Gets or sets the date and time that the appointment is to begin.
          *
@@ -2889,6 +2890,7 @@ export declare namespace Office {
          */
         notificationMessages: NotificationMessages;
         
+        
         /**
          * Gets or sets the description that appears in the subject field of an item.
          *
@@ -4494,6 +4496,7 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
     
     
     /**
