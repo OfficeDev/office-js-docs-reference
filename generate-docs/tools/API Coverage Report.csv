@@ -115,15 +115,15 @@ Excel.AutoFilter,criteria,Method,Good,false
 Excel.AutoFilter,enabled,Method,Good,false
 Excel.AutoFilter,isDataFiltered,Method,Good,false
 Excel.AutoFilter,apply(range,Method,Good,true
-Excel.AutoFilter,clearColumnCriteria(columnIndex),Method,Good,false
+Excel.AutoFilter,clearColumnCriteria(columnIndex),Method,Good,true
 Excel.AutoFilter,clearCriteria(),Method,Good,false
 Excel.AutoFilter,getRange(),Method,Good,false
 Excel.AutoFilter,getRangeOrNullObject(),Method,Good,false
 Excel.AutoFilter,load(options),Method,Good,false
 Excel.AutoFilter,load(propertyNames),Method,Good,false
 Excel.AutoFilter,load(propertyNamesAndPaths),Method,Good,false
-Excel.AutoFilter,reapply(),Method,Good,false
-Excel.AutoFilter,remove(),Method,Good,false
+Excel.AutoFilter,reapply(),Method,Good,true
+Excel.AutoFilter,remove(),Method,Good,true
 Excel.AutoFilter,toJSON(),Method,Good,false
 Excel.BasicDataValidation,N/A,Class,Good,false
 Excel.BasicDataValidation,formula1,Method,Good,false
@@ -2650,7 +2650,7 @@ Excel.FilterDatetimeSpecificity,minute,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,month,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,second,EnumField,Missing,false
 Excel.FilterDatetimeSpecificity,year,EnumField,Missing,false
-Excel.FilterOn,N/A,Class,Fine,false
+Excel.FilterOn,N/A,Class,Fine,true
 Excel.FilterOn,bottomItems,EnumField,Missing,false
 Excel.FilterOn,bottomPercent,EnumField,Missing,false
 Excel.FilterOn,cellColor,EnumField,Missing,false

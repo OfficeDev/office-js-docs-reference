@@ -40,6 +40,9 @@ export declare namespace Word {
         /**
          * Gets the collection of paragraph objects in the body. Read-only.
          *
+         * **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2.
+         * From requirement set 1.3, paragraphs in tables are also returned.
+         *
          * @remarks
          * [Api set: WordApi 1.1]
          */
