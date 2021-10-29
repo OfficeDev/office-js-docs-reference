@@ -45,16 +45,16 @@ fields:
     package: excel!
     summary: Represents a `GettingDataErrorCellValue`<!-- -->.
     value: '"GettingData"'
-  - name: na
-    uid: 'excel!Excel.ErrorCellValueType.na:member'
-    package: excel!
-    summary: Represents a `NaErrorCellValue`<!-- -->.
-    value: '"Na"'
   - name: name
     uid: 'excel!Excel.ErrorCellValueType.name:member'
     package: excel!
     summary: Represents a `NameErrorCellValue`<!-- -->.
     value: '"Name"'
+  - name: notAvailable
+    uid: 'excel!Excel.ErrorCellValueType.notAvailable:member'
+    package: excel!
+    summary: Represents a `NotAvailableErrorCellValue`<!-- -->.
+    value: '"NotAvailable"'
   - name: 'null'
     uid: 'excel!Excel.ErrorCellValueType.null:member'
     package: excel!

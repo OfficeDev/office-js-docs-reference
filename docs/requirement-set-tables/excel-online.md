@@ -1,6 +1,5 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[AutoFilter](/javascript/api/excel/excel.autofilter)|[clearColumnCriteria(columnIndex: number)](/javascript/api/excel/excel.autofilter#clearColumnCriteria_columnIndex_)|Clears the column filter criteria of the AutoFilter.|
 |[LinkedWorkbook](/javascript/api/excel/excel.linkedworkbook)|[breakLinks()](/javascript/api/excel/excel.linkedworkbook#breakLinks__)|Makes a request to break the links pointing to the linked workbook.|
 ||[id](/javascript/api/excel/excel.linkedworkbook#id)|The original URL pointing to the linked workbook.|
 ||[refresh()](/javascript/api/excel/excel.linkedworkbook#refresh__)|Makes a request to refresh the data retrieved from the linked workbook.|

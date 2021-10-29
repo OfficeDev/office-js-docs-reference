@@ -109,11 +109,11 @@ fields:
       An error caused by passing a future start\_date parameter to STOCKHISTORY. Displays as error type \#VALUE! in
       Excel.
     value: '"StockHistoryStartInFuture"'
-  - name: subArrayStartColMissingEndColNot
-    uid: 'excel!Excel.ValueErrorCellValueSubType.subArrayStartColMissingEndColNot:member'
+  - name: subArrayStartColumnMissingEndColumnNot
+    uid: 'excel!Excel.ValueErrorCellValueSubType.subArrayStartColumnMissingEndColumnNot:member'
     package: excel!
     summary: 'An error caused by SUBARRAY missing a start column. Displays as error type \#VALUE! in Excel.'
-    value: '"SubArrayStartColMissingEndColNot"'
+    value: '"SubArrayStartColumnMissingEndColumnNot"'
   - name: subArrayStartRowMissingEndRowNot
     uid: 'excel!Excel.ValueErrorCellValueSubType.subArrayStartRowMissingEndRowNot:member'
     package: excel!
@@ -124,13 +124,13 @@ fields:
     package: excel!
     summary: 'An unknown type of error. Displays as error type \#VALUE! in Excel.'
     value: '"Unknown"'
-  - name: vlookupColIndexLessThanOne
-    uid: 'excel!Excel.ValueErrorCellValueSubType.vlookupColIndexLessThanOne:member'
+  - name: vlookupColumnIndexLessThanOne
+    uid: 'excel!Excel.ValueErrorCellValueSubType.vlookupColumnIndexLessThanOne:member'
     package: excel!
     summary: >-
-      An error caused by a col\_index\_num parameter of VLOOKUP of less than 1. Displays as error type \#VALUE! in
+      An error caused by a column\_index\_num parameter of VLOOKUP of less than 1. Displays as error type \#VALUE! in
       Excel.
-    value: '"VlookupColIndexLessThanOne"'
+    value: '"VlookupColumnIndexLessThanOne"'
   - name: vlookupResultNotFound
     uid: 'excel!Excel.ValueErrorCellValueSubType.vlookupResultNotFound:member'
     package: excel!

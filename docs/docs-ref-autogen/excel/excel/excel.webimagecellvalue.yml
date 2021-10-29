@@ -55,24 +55,10 @@ properties:
       content: 'attribution?: CellValueAttributionAttributes[];'
       return:
         type: '<xref uid="excel!Excel.CellValueAttributionAttributes:interface" />[]'
-  - name: primitive
-    uid: 'excel!Excel.WebImageCellValue#primitive:member'
+  - name: basicType
+    uid: 'excel!Excel.WebImageCellValue#basicType:member'
     package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#VALUE!";'
-      return:
-        type: '"#VALUE!"'
-  - name: primitiveType
-    uid: 'excel!Excel.WebImageCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
+    fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -80,9 +66,23 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
+      content: 'basicType?: RangeValueType.error | "Error";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.WebImageCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#VALUE!";'
+      return:
+        type: '"#VALUE!"'
   - name: provider
     uid: 'excel!Excel.WebImageCellValue#provider:member'
     package: excel!

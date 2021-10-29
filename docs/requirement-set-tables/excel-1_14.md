@@ -1,5 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[AutoFilter](/javascript/api/excel/excel.autofilter)|[clearColumnCriteria(columnIndex: number)](/javascript/api/excel/excel.autofilter#clearColumnCriteria_columnIndex_)|Clears the column filter criteria of the AutoFilter.|
 |[ChangeDirectionState](/javascript/api/excel/excel.changedirectionstate)|[deleteShiftDirection](/javascript/api/excel/excel.changedirectionstate#deleteShiftDirection)|Represents the direction (such as up or to the left) that the remaining cells will shift when a cell or cells are deleted.|
 ||[insertShiftDirection](/javascript/api/excel/excel.changedirectionstate#insertShiftDirection)|Represents the direction (such as down or to the right) that the existing cells will shift when a new cell or cells are inserted.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataTable()](/javascript/api/excel/excel.chart#getDataTable__)|Gets the data table on the chart.|
