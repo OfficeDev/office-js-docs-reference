@@ -11,24 +11,10 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: primitive
-    uid: 'excel!Excel.StringCellValue#primitive:member'
+  - name: basicType
+    uid: 'excel!Excel.StringCellValue#basicType:member'
     package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive: string;'
-      return:
-        type: string
-  - name: primitiveType
-    uid: 'excel!Excel.StringCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
+    fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -36,9 +22,23 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType?: RangeValueType.string | "String";'
+      content: 'basicType?: RangeValueType.string | "String";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.string:member" /> | "String"'
+  - name: basicValue
+    uid: 'excel!Excel.StringCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue: string;'
+      return:
+        type: string
   - name: type
     uid: 'excel!Excel.StringCellValue#type:member'
     package: excel!

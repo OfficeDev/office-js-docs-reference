@@ -114,6 +114,49 @@ methods:
       return:
         type: void
         description: ''
+  - name: clearColumnCriteria(columnIndex)
+    uid: 'excel!Excel.AutoFilter#clearColumnCriteria:member(1)'
+    package: excel!
+    fullName: clearColumnCriteria(columnIndex)
+    summary: Clears the column filter criteria of the AutoFilter.
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          // This method clears the AutoFilter setting from one column.
+
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Clear the filter from only column 3.
+          sheet.autoFilter.clearColumnCriteria(3);
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearColumnCriteria(columnIndex: number): void;'
+      parameters:
+        - id: columnIndex
+          description: >-
+            The zero-based column index, which represents which column filter needs to be cleared. If the index value is
+            not supported(for example, if the value is a negative number, or if the value is greater than the number of
+            available columns in the range), then an `InvalidArgument` exception will be thrown.
+          type: number
+      return:
+        type: void
+        description: ''
   - name: clearCriteria()
     uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     package: excel!

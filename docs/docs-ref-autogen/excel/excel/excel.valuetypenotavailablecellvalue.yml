@@ -13,24 +13,10 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: primitive
-    uid: 'excel!Excel.ValueTypeNotAvailableCellValue#primitive:member'
+  - name: basicType
+    uid: 'excel!Excel.ValueTypeNotAvailableCellValue#basicType:member'
     package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive: boolean | number | string;'
-      return:
-        type: boolean | number | string
-  - name: primitiveType
-    uid: 'excel!Excel.ValueTypeNotAvailableCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
+    fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -38,9 +24,23 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";'
+      content: 'basicType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType:enum" /> | "Boolean" | "Double" | "Error" | "Empty" | "String"'
+  - name: basicValue
+    uid: 'excel!Excel.ValueTypeNotAvailableCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue: boolean | number | string;'
+      return:
+        type: boolean | number | string
   - name: type
     uid: 'excel!Excel.ValueTypeNotAvailableCellValue#type:member'
     package: excel!

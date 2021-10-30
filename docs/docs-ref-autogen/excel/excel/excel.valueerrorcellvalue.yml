@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.ValueErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.ValueErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#VALUE!";'
+      return:
+        type: '"#VALUE!"'
   - name: errorSubType
     uid: 'excel!Excel.ValueErrorCellValue#errorSubType:member'
     package: excel!
@@ -23,18 +51,19 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColIndexLessThanOne" | "VlookupResultNotFound" |
-        "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" |
-        "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" |
-        "SubArrayStartColMissingEndColNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock"
-        | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" |
-        "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" |
+        "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid"
+        | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" |
+        "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" |
+        "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture"
+        | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" |
+        "LambdaWrongParamCount";
       return:
         type: >-
-          <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColIndexLessThanOne" |
+          <xref uid="excel!Excel.ValueErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColumnIndexLessThanOne" |
           "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" |
           "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" |
-          "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColMissingEndColNot" | "InvalidImageUrl" |
+          "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" |
           "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" |
           "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" |
           "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount"
@@ -52,34 +81,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.value | "Value";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.value:member" /> | "Value"'
-  - name: primitive
-    uid: 'excel!Excel.ValueErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#VALUE!";'
-      return:
-        type: '"#VALUE!"'
-  - name: primitiveType
-    uid: 'excel!Excel.ValueErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.ValueErrorCellValue#type:member'
     package: excel!

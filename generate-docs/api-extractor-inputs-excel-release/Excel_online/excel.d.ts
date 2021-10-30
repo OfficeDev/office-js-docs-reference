@@ -14710,7 +14710,7 @@ export declare namespace Excel {
          * Clears the column filter criteria of the AutoFilter.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.14]
          *
          * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
                      If the index value is not supported(for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),

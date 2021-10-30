@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.RefErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.RefErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#REF!";'
+      return:
+        type: '"#REF!"'
   - name: errorSubType
     uid: 'excel!Excel.RefErrorCellValue#errorSubType:member'
     package: excel!
@@ -23,16 +51,16 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColIndexGreaterThanNumCols" |
-        "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutofBounds" |
-        "SubArrayStartColOutofBounds" | "SubArrayEndRowOutofBounds" | "SubArrayEndColOutofBounds" |
-        "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColPrecedesStartCol";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" |
+        "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" |
+        "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" |
+        "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn";
       return:
         type: >-
-          <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" | "VlookupColIndexGreaterThanNumCols" |
-          "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutofBounds" |
-          "SubArrayStartColOutofBounds" | "SubArrayEndRowOutofBounds" | "SubArrayEndColOutofBounds" |
-          "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColPrecedesStartCol"
+          <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" |
+          "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" |
+          "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" |
+          "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn"
   - name: errorType
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!
@@ -47,34 +75,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.ref | "Ref";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.ref:member" /> | "Ref"'
-  - name: primitive
-    uid: 'excel!Excel.RefErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#REF!";'
-      return:
-        type: '"#REF!"'
-  - name: primitiveType
-    uid: 'excel!Excel.RefErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.RefErrorCellValue#type:member'
     package: excel!

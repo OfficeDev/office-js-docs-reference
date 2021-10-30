@@ -16,6 +16,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.FormattedNumberCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.double | "Double";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.double:member" /> | "Double"'
+  - name: basicValue
+    uid: 'excel!Excel.FormattedNumberCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue: number;'
+      return:
+        type: number
   - name: numberFormat
     uid: 'excel!Excel.FormattedNumberCellValue#numberFormat:member'
     package: excel!
@@ -34,34 +62,6 @@ properties:
       content: 'numberFormat: string;'
       return:
         type: string
-  - name: primitive
-    uid: 'excel!Excel.FormattedNumberCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive: number;'
-      return:
-        type: number
-  - name: primitiveType
-    uid: 'excel!Excel.FormattedNumberCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.double | "Double";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.double:member" /> | "Double"'
   - name: type
     uid: 'excel!Excel.FormattedNumberCellValue#type:member'
     package: excel!

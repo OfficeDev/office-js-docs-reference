@@ -120,7 +120,7 @@ methods:
     fullName: clearColumnCriteria(columnIndex)
     summary: Clears the column filter criteria of the AutoFilter.
     remarks: >-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 
 
       #### Examples
