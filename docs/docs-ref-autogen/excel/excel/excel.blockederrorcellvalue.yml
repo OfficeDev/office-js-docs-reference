@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.BlockedErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.BlockedErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#BLOCKED!";'
+      return:
+        type: '"#BLOCKED!"'
   - name: errorSubType
     uid: 'excel!Excel.BlockedErrorCellValue#errorSubType:member'
     package: excel!
@@ -44,34 +72,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.blocked | "Blocked";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.blocked:member" /> | "Blocked"'
-  - name: primitive
-    uid: 'excel!Excel.BlockedErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#BLOCKED!";'
-      return:
-        type: '"#BLOCKED!"'
-  - name: primitiveType
-    uid: 'excel!Excel.BlockedErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.BlockedErrorCellValue#type:member'
     package: excel!

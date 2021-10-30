@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.GettingDataErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.GettingDataErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#GETTING_DATA";'
+      return:
+        type: '"#GETTING_DATA"'
   - name: errorType
     uid: 'excel!Excel.GettingDataErrorCellValue#errorType:member'
     package: excel!
@@ -25,34 +53,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.gettingData | "GettingData";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.gettingData:member" /> | "GettingData"'
-  - name: primitive
-    uid: 'excel!Excel.GettingDataErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#GETTING_DATA";'
-      return:
-        type: '"#GETTING_DATA"'
-  - name: primitiveType
-    uid: 'excel!Excel.GettingDataErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.GettingDataErrorCellValue#type:member'
     package: excel!

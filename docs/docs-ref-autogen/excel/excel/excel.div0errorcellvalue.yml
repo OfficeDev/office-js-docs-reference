@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.Div0ErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.Div0ErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#DIV/0!";'
+      return:
+        type: '"#DIV/0!"'
   - name: errorType
     uid: 'excel!Excel.Div0ErrorCellValue#errorType:member'
     package: excel!
@@ -25,34 +53,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.div0 | "Div0";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.div0:member" /> | "Div0"'
-  - name: primitive
-    uid: 'excel!Excel.Div0ErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#DIV/0!";'
-      return:
-        type: '"#DIV/0!"'
-  - name: primitiveType
-    uid: 'excel!Excel.Div0ErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.Div0ErrorCellValue#type:member'
     package: excel!

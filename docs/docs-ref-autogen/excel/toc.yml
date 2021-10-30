@@ -423,6 +423,8 @@ items:
             uid: 'excel!Excel.AllowEditRangeOptions:interface'
           - name: Application
             uid: 'excel!Excel.Application:class'
+          - name: ArrayCellValue
+            uid: 'excel!Excel.ArrayCellValue:interface'
           - name: AutoFilter
             uid: 'excel!Excel.AutoFilter:class'
           - name: BasicDataValidation
@@ -471,6 +473,10 @@ items:
             uid: 'excel!Excel.CellValueAttributionAttributes:interface'
           - name: CellValueConditionalFormat
             uid: 'excel!Excel.CellValueConditionalFormat:class'
+          - name: CellValuePropertyMetadata
+            uid: 'excel!Excel.CellValuePropertyMetadata:interface'
+          - name: CellValuePropertyMetadataExclusions
+            uid: 'excel!Excel.CellValuePropertyMetadataExclusions:interface'
           - name: CellValueProviderAttributes
             uid: 'excel!Excel.CellValueProviderAttributes:interface'
           - name: ChangedEventDetail
@@ -693,6 +699,8 @@ items:
             uid: 'excel!Excel.DoubleCellValue:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
+          - name: EntityCellValue
+            uid: 'excel!Excel.EntityCellValue:interface'
           - name: FieldErrorCellValue
             uid: 'excel!Excel.FieldErrorCellValue:interface'
           - name: Filter
@@ -755,8 +763,6 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
-          - name: NaErrorCellValue
-            uid: 'excel!Excel.NaErrorCellValue:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -769,6 +775,8 @@ items:
             uid: 'excel!Excel.NamedSheetViewCollection:class'
           - name: NameErrorCellValue
             uid: 'excel!Excel.NameErrorCellValue:interface'
+          - name: NotAvailableErrorCellValue
+            uid: 'excel!Excel.NotAvailableErrorCellValue:interface'
           - name: NullErrorCellValue
             uid: 'excel!Excel.NullErrorCellValue:interface'
           - name: NumberFormatInfo

@@ -14346,7 +14346,17 @@ export declare namespace Excel {
          * @param criteria - The filter criteria.
          */
         apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;
-        
+        /**
+         * Clears the column filter criteria of the AutoFilter.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.14]
+         *
+         * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
+                     If the index value is not supported(for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
+                     then an `InvalidArgument` exception will be thrown.
+         */
+        clearColumnCriteria(columnIndex: number): void;
         /**
          * Clears the filter criteria and sort state of the AutoFilter.
          *

@@ -7,6 +7,47 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 
 export declare namespace Excel {
     /**
+    * Represents a 2D array of cell values.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface ArrayCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: CellValueType.array | "Array";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: "#VALUE!";
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the elements of the array. May not directly contain an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        elements: CellValue[][];
+    }
+    /**
     * Represents types of #BLOCKED! errors.
     *
     * @remarks
@@ -102,7 +143,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#BLOCKED!";
+        basicValue?: "#BLOCKED!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -110,7 +151,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -151,7 +192,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive: boolean;
+        basicValue: boolean;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -159,7 +200,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.boolean | "Boolean";
+        basicType?: RangeValueType.boolean | "Boolean";
     }
     /**
     * Represents types of #BUSY! errors.
@@ -217,7 +258,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#BUSY!";
+        basicValue?: "#BUSY!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -225,7 +266,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -339,7 +380,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#CALC!";
+        basicValue?: "#CALC!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -347,7 +388,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -374,6 +415,14 @@ export declare namespace Excel {
     */
     enum CellValueType {
         /**
+        * Represents an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        array = "Array",
+        /**
         * Represents a `BooleanCellValue`.
         *
         * @remarks
@@ -389,6 +438,14 @@ export declare namespace Excel {
         * @beta
         */
         double = "Double",
+        /**
+        * Represents an `EntityCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        entity = "Entity",
         /**
         * Represents an `EmptyCellValue`.
         *
@@ -438,6 +495,34 @@ export declare namespace Excel {
         */
         webImage = "WebImage"
     }
+    /**
+    * Represents the value in a cell.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
+        /**
+        * Represents whether this `CellValue` will be used to overwrite a cell.
+        * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+        * The default value is true.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        writable?: boolean;
+        /**
+        * Represents an explanation about why `CellValue.writable` is specified as false.
+        * Note: This string is only available if `writable` is specified as false.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        writableNote?: string;
+    };
     /**
     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
     *
@@ -512,6 +597,80 @@ export declare namespace Excel {
         * @beta
         */
         logoTargetAddress?: string;
+    }
+    /**
+    * Metadata about a property in `EntityCellValue.properties`.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CellValuePropertyMetadata {
+        /**
+        * Represents which features this property is excluded from.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        excludeFrom?: CellValuePropertyMetadataExclusions;
+        /**
+        * Represents the sublabel for this property shown in card view.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        sublabel?: string;
+        /**
+        * Represents attribution information to describe the source and license requirements for using this property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        attribution?: CellValueAttributionAttributes[];
+    }
+    /**
+    * Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CellValuePropertyMetadataExclusions {
+        /**
+        * True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cardView?: boolean;
+        /**
+        * True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        autoComplete?: boolean;
+        /**
+        * True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        calcCompare?: boolean;
+        /**
+        * True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        dotNotation?: boolean;
     }
     /**
     * Represents types of #CONNECT! errors.
@@ -681,7 +840,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#CONNECT!";
+        basicValue?: "#CONNECT!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -689,7 +848,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -730,7 +889,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#DIV/0!";
+        basicValue?: "#DIV/0!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -738,7 +897,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -771,7 +930,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive: number;
+        basicValue: number;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -779,7 +938,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.double | "Double";
+        basicType?: RangeValueType.double | "Double";
     }
     /**
     * Represents the value of a cell that's empty and has no formulas or data.
@@ -804,7 +963,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "";
+        basicValue?: "";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -812,7 +971,60 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.empty | "Empty";
+        basicType?: RangeValueType.empty | "Empty";
+    }
+    /**
+    * Represents an schemaless set of properties.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: CellValueType.entity | "Entity";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: "#VALUE!";
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the text shown when a cell with this value is rendered.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        text?: string;
+        /**
+        * Represents the properties of this entity and their metadata.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        properties?: {
+            [key: string]: CellValue & {
+                propertyMetadata?: CellValuePropertyMetadata;
+            };
+        };
     }
     /**
     * Represents the types of the `ErrorCellValue` object.
@@ -879,13 +1091,13 @@ export declare namespace Excel {
         */
         gettingData = "GettingData",
         /**
-        * Represents a `NaErrorCellValue`.
+        * Represents a `NotAvailableErrorCellValue`.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        na = "Na",
+        notAvailable = "NotAvailable",
         /**
         * Represents a `NameErrorCellValue`.
         *
@@ -935,6 +1147,14 @@ export declare namespace Excel {
         */
         value = "Value"
     }
+    /**
+    * Represents a cell value which contains an error.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
     /**
     * Represents types of #FIELD! errors.
     *
@@ -991,7 +1211,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#FIELD!";
+        basicValue?: "#FIELD!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -999,7 +1219,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1041,7 +1261,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive: number;
+        basicValue: number;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1049,7 +1269,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.double | "Double";
+        basicType?: RangeValueType.double | "Double";
         /**
         * Returns the number format string that is used to display this value.
         * Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
@@ -1083,7 +1303,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#GETTING_DATA";
+        basicValue?: "#GETTING_DATA";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1091,7 +1311,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1108,7 +1328,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface NaErrorCellValue {
+    export interface NotAvailableErrorCellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1124,7 +1344,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#N/A!";
+        basicValue?: "#N/A!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1132,7 +1352,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1140,7 +1360,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorType?: ErrorCellValueType.na | "Na";
+        errorType?: ErrorCellValueType.notAvailable | "NotAvailable";
     }
     /**
     * Represents the value of a cell containing a #NAME? error.
@@ -1165,7 +1385,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#NAME?";
+        basicValue?: "#NAME?";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1173,7 +1393,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1206,7 +1426,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#NULL!";
+        basicValue?: "#NULL!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1214,7 +1434,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1247,7 +1467,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#NUM!";
+        basicValue?: "#NUM!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1255,7 +1475,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1288,7 +1508,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        vlookupColIndexGreaterThanNumCols = "VlookupColIndexGreaterThanNumCols",
+        vlookupColumnIndexGreaterThanNumColumns = "VlookupColumnIndexGreaterThanNumColumns",
         /**
         * An error caused by a row_index_num parameter of HLOOKUP that's greater than the number of rows in the table_array parameter. Displays as error type #REF! in Excel.
         *
@@ -1312,15 +1532,15 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayStartRowOutofBounds = "SubArrayStartRowOutofBounds",
+        subArrayStartRowOutOfBounds = "SubArrayStartRowOutOfBounds",
         /**
-        * An error caused by a start_col parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
+        * An error caused by a start_column parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayStartColOutofBounds = "SubArrayStartColOutofBounds",
+        subArrayStartColumnOutOfBounds = "SubArrayStartColumnOutOfBounds",
         /**
         * An error caused by an end_row parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
@@ -1328,15 +1548,15 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayEndRowOutofBounds = "SubArrayEndRowOutofBounds",
+        subArrayEndRowOutOfBounds = "SubArrayEndRowOutOfBounds",
         /**
-        * An error caused by an end_col parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
+        * An error caused by an end_column parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayEndColOutofBounds = "SubArrayEndColOutofBounds",
+        subArrayEndColumnOutOfBounds = "SubArrayEndColumnOutOfBounds",
         /**
         * An error caused by an end_row parameter of SUBARRAY preceding the start_row parameter. Displays as error type #REF! in Excel.
         *
@@ -1346,13 +1566,13 @@ export declare namespace Excel {
         */
         subArrayEndRowPrecedesStartRow = "SubArrayEndRowPrecedesStartRow",
         /**
-        * An error caseud by an end_col parameter of SUBARRAY preceding the start_col parameter. Displays as error type #REF! in Excel.
+        * An error caused by an end_column parameter of SUBARRAY preceding the start_column parameter. Displays as error type #REF! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayEndColPrecedesStartCol = "SubArrayEndColPrecedesStartCol"
+        subArrayEndColumnPrecedesStartColumn = "SubArrayEndColumnPrecedesStartColumn"
     }
     /**
     * Represents the value of a cell containing a #REF! error.
@@ -1377,7 +1597,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#REF!";
+        basicValue?: "#REF!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1385,7 +1605,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1401,7 +1621,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColIndexGreaterThanNumCols" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutofBounds" | "SubArrayStartColOutofBounds" | "SubArrayEndRowOutofBounds" | "SubArrayEndColOutofBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColPrecedesStartCol";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn";
     }
     /**
     * Represents types of #SPILL! errors.
@@ -1491,7 +1711,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#SPILL!";
+        basicValue?: "#SPILL!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1499,7 +1719,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1556,7 +1776,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive: string;
+        basicValue: string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1564,7 +1784,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.string | "String";
+        basicType?: RangeValueType.string | "String";
     }
     /**
     * Represents types of #VALUE! errors.
@@ -1583,13 +1803,13 @@ export declare namespace Excel {
         */
         unknown = "Unknown",
         /**
-        * An error caused by a col_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
+        * An error caused by a column_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        vlookupColIndexLessThanOne = "VlookupColIndexLessThanOne",
+        vlookupColumnIndexLessThanOne = "VlookupColumnIndexLessThanOne",
         /**
         * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
         *
@@ -1653,7 +1873,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayStartColMissingEndColNot = "SubArrayStartColMissingEndColNot",
+        subArrayStartColumnMissingEndColumnNot = "SubArrayStartColumnMissingEndColumnNot",
         /**
         * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
         *
@@ -1758,7 +1978,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#VALUE!";
+        basicValue?: "#VALUE!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1766,7 +1986,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the type of `ErrorCellValue`.
         *
@@ -1782,7 +2002,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColMissingEndColNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
     }
     /**
     * Represents the value of a cell containing a type of value which cannot be serialized.
@@ -1808,7 +2028,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive: boolean | number | string;
+        basicValue: boolean | number | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1816,7 +2036,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+        basicType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
     }
     /**
     * Represents the value of a cell containing an image downloaded from the internet.
@@ -1841,7 +2061,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitive?: "#VALUE!";
+        basicValue?: "#VALUE!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1849,7 +2069,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        primitiveType?: RangeValueType.error | "Error";
+        basicType?: RangeValueType.error | "Error";
         /**
         * Represents the URL from which the image will be downloaded.
         * This image must be hosted on a server that supports HTTPS.
@@ -19040,7 +19260,7 @@ export declare namespace Excel {
          * Clears the column filter criteria of the AutoFilter.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.14]
          *
          * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
                      If the index value is not supported(for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
@@ -39006,7 +39226,9 @@ export declare namespace Excel {
         accessDenied = "AccessDenied",
         apiNotFound = "ApiNotFound",
         conflict = "Conflict",
+        emptyChartSeries = "EmptyChartSeries",
         filteredRangeConflict = "FilteredRangeConflict",
+        formulaLengthExceedsLimit = "FormulaLengthExceedsLimit",
         generalException = "GeneralException",
         inactiveWorkbook = "InactiveWorkbook",
         insertDeleteConflict = "InsertDeleteConflict",

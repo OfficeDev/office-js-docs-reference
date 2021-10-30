@@ -11,24 +11,10 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: primitive
-    uid: 'excel!Excel.DoubleCellValue#primitive:member'
+  - name: basicType
+    uid: 'excel!Excel.DoubleCellValue#basicType:member'
     package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive: number;'
-      return:
-        type: number
-  - name: primitiveType
-    uid: 'excel!Excel.DoubleCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
+    fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -36,9 +22,23 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType?: RangeValueType.double | "Double";'
+      content: 'basicType?: RangeValueType.double | "Double";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.double:member" /> | "Double"'
+  - name: basicValue
+    uid: 'excel!Excel.DoubleCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue: number;'
+      return:
+        type: number
   - name: type
     uid: 'excel!Excel.DoubleCellValue#type:member'
     package: excel!

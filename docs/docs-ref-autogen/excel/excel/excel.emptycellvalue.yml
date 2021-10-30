@@ -11,24 +11,10 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: primitive
-    uid: 'excel!Excel.EmptyCellValue#primitive:member'
+  - name: basicType
+    uid: 'excel!Excel.EmptyCellValue#basicType:member'
     package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "";'
-      return:
-        type: '""'
-  - name: primitiveType
-    uid: 'excel!Excel.EmptyCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
+    fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -36,9 +22,23 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'primitiveType?: RangeValueType.empty | "Empty";'
+      content: 'basicType?: RangeValueType.empty | "Empty";'
       return:
         type: '<xref uid="excel!Excel.RangeValueType.empty:member" /> | "Empty"'
+  - name: basicValue
+    uid: 'excel!Excel.EmptyCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "";'
+      return:
+        type: '""'
   - name: type
     uid: 'excel!Excel.EmptyCellValue#type:member'
     package: excel!

@@ -24,23 +24,25 @@ fields:
       An error caused by a row\_index\_num parameter of HLOOKUP that's greater than the number of rows in the
       table\_array parameter. Displays as error type \#REF! in Excel.
     value: '"HlookupRowIndexGreaterThanNumRows"'
-  - name: subArrayEndColOutofBounds
-    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColOutofBounds:member'
-    package: excel!
-    summary: 'An error caused by an end\_col parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
-    value: '"SubArrayEndColOutofBounds"'
-  - name: subArrayEndColPrecedesStartCol
-    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColPrecedesStartCol:member'
+  - name: subArrayEndColumnOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColumnOutOfBounds:member'
     package: excel!
     summary: >-
-      An error caseud by an end\_col parameter of SUBARRAY preceding the start\_col parameter. Displays as error type
-      \#REF! in Excel.
-    value: '"SubArrayEndColPrecedesStartCol"'
-  - name: subArrayEndRowOutofBounds
-    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowOutofBounds:member'
+      An error caused by an end\_column parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in
+      Excel.
+    value: '"SubArrayEndColumnOutOfBounds"'
+  - name: subArrayEndColumnPrecedesStartColumn
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColumnPrecedesStartColumn:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_column parameter of SUBARRAY preceding the start\_column parameter. Displays as error
+      type \#REF! in Excel.
+    value: '"SubArrayEndColumnPrecedesStartColumn"'
+  - name: subArrayEndRowOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowOutOfBounds:member'
     package: excel!
     summary: 'An error caused by an end\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
-    value: '"SubArrayEndRowOutofBounds"'
+    value: '"SubArrayEndRowOutOfBounds"'
   - name: subArrayEndRowPrecedesStartRow
     uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowPrecedesStartRow:member'
     package: excel!
@@ -48,25 +50,27 @@ fields:
       An error caused by an end\_row parameter of SUBARRAY preceding the start\_row parameter. Displays as error type
       \#REF! in Excel.
     value: '"SubArrayEndRowPrecedesStartRow"'
-  - name: subArrayStartColOutofBounds
-    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartColOutofBounds:member'
+  - name: subArrayStartColumnOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartColumnOutOfBounds:member'
     package: excel!
-    summary: 'An error caused by a start\_col parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
-    value: '"SubArrayStartColOutofBounds"'
-  - name: subArrayStartRowOutofBounds
-    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartRowOutofBounds:member'
+    summary: >-
+      An error caused by a start\_column parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in
+      Excel.
+    value: '"SubArrayStartColumnOutOfBounds"'
+  - name: subArrayStartRowOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartRowOutOfBounds:member'
     package: excel!
     summary: 'An error caused by a start\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
-    value: '"SubArrayStartRowOutofBounds"'
+    value: '"SubArrayStartRowOutOfBounds"'
   - name: unknown
     uid: 'excel!Excel.RefErrorCellValueSubType.unknown:member'
     package: excel!
     summary: 'An unknown type of error. Displays as error type \#REF! in Excel.'
     value: '"Unknown"'
-  - name: vlookupColIndexGreaterThanNumCols
-    uid: 'excel!Excel.RefErrorCellValueSubType.vlookupColIndexGreaterThanNumCols:member'
+  - name: vlookupColumnIndexGreaterThanNumColumns
+    uid: 'excel!Excel.RefErrorCellValueSubType.vlookupColumnIndexGreaterThanNumColumns:member'
     package: excel!
     summary: >-
       An error caused by a column\_index\_num parameter of VLOOKUP that's greater than the number of columns in the
       table\_array parameter. Displays as error type \#REF! in Excel.
-    value: '"VlookupColIndexGreaterThanNumCols"'
+    value: '"VlookupColumnIndexGreaterThanNumColumns"'

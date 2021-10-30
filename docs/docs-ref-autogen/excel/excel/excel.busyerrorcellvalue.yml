@@ -11,6 +11,34 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
+  - name: basicType
+    uid: 'excel!Excel.BusyErrorCellValue#basicType:member'
+    package: excel!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'excel!Excel.BusyErrorCellValue#basicValue:member'
+    package: excel!
+    fullName: basicValue
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#BUSY!";'
+      return:
+        type: '"#BUSY!"'
   - name: errorSubType
     uid: 'excel!Excel.BusyErrorCellValue#errorSubType:member'
     package: excel!
@@ -41,34 +69,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.busy | "Busy";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.busy:member" /> | "Busy"'
-  - name: primitive
-    uid: 'excel!Excel.BusyErrorCellValue#primitive:member'
-    package: excel!
-    fullName: primitive
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitive?: "#BUSY!";'
-      return:
-        type: '"#BUSY!"'
-  - name: primitiveType
-    uid: 'excel!Excel.BusyErrorCellValue#primitiveType:member'
-    package: excel!
-    fullName: primitiveType
-    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'primitiveType?: RangeValueType.error | "Error";'
-      return:
-        type: '<xref uid="excel!Excel.RangeValueType.error:member" /> | "Error"'
   - name: type
     uid: 'excel!Excel.BusyErrorCellValue#type:member'
     package: excel!
