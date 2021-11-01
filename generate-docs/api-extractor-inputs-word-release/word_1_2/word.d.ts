@@ -359,7 +359,10 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Get the collection of paragraph objects in the content control. Read-only.
+         * Gets the collection of paragraph objects in the content control. Read-only.
+         *
+         * **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned.
+         * From requirement set 1.3, paragraphs in such tables are also returned. 
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1860,6 +1863,9 @@ export declare namespace Word {
         
         /**
          * Gets the collection of paragraph objects in the range. Read-only.
+         *
+         * **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned.
+         * From requirement set 1.3, paragraphs in such tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -6645,14 +6651,6 @@ export declare namespace Word {
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
-     *
-     * @remarks
-     *
-     * In addition to this signature, the method also has the following signatures, which allow you to resume using the request context of previously created objects:
-     *
-     * run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
-     *
-     * run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }

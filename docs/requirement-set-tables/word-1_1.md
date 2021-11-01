@@ -51,7 +51,7 @@
 ||[matchSuffix](/javascript/api/word/word.contentcontrol#matchSuffix)||
 ||[matchWholeWord](/javascript/api/word/word.contentcontrol#matchWholeWord)||
 ||[matchWildcards](/javascript/api/word/word.contentcontrol#matchWildcards)||
-||[paragraphs](/javascript/api/word/word.contentcontrol#paragraphs)|Get the collection of paragraph objects in the content control.|
+||[paragraphs](/javascript/api/word/word.contentcontrol#paragraphs)|Gets the collection of paragraph objects in the content control.|
 ||[parentContentControl](/javascript/api/word/word.contentcontrol#parentContentControl)|Gets the content control that contains the content control.|
 ||[placeholderText](/javascript/api/word/word.contentcontrol#placeholderText)|Gets or sets the placeholder text of the content control.|
 ||[removeWhenEdited](/javascript/api/word/word.contentcontrol#removeWhenEdited)|Gets or sets a value that indicates whether the content control is removed after it is edited.|

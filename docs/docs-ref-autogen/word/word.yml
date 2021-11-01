@@ -257,17 +257,7 @@ functions:
     summary: >-
       Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    remarks: >-
-      In addition to this signature, the method also has the following signatures, which allow you to resume using the
-      request context of previously created objects:
-
-
-      run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =<!-- -->&gt; Promise<T>):
-      Promise<T>;
-
-
-      run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Word.RequestContext) =<!-- -->&gt; Promise<T>):
-      Promise<T>;
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
