@@ -1,0 +1,66 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.Days
+uid: 'outlook!Office.MailboxEnums.Days:enum'
+package: outlook!
+fullName: Office.MailboxEnums.Days
+summary: Specifies the day of week or type of day.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Day
+    uid: 'outlook!Office.MailboxEnums.Days.Day:member'
+    package: outlook!
+    summary: Day of week.
+    value: '"day"'
+  - name: Fri
+    uid: 'outlook!Office.MailboxEnums.Days.Fri:member'
+    package: outlook!
+    summary: Friday
+    value: '"fri"'
+  - name: Mon
+    uid: 'outlook!Office.MailboxEnums.Days.Mon:member'
+    package: outlook!
+    summary: Monday
+    value: '"mon"'
+  - name: Sat
+    uid: 'outlook!Office.MailboxEnums.Days.Sat:member'
+    package: outlook!
+    summary: Saturday
+    value: '"sat"'
+  - name: Sun
+    uid: 'outlook!Office.MailboxEnums.Days.Sun:member'
+    package: outlook!
+    summary: Sunday
+    value: '"sun"'
+  - name: Thu
+    uid: 'outlook!Office.MailboxEnums.Days.Thu:member'
+    package: outlook!
+    summary: Thursday
+    value: '"thu"'
+  - name: Tue
+    uid: 'outlook!Office.MailboxEnums.Days.Tue:member'
+    package: outlook!
+    summary: Tuesday
+    value: '"tue"'
+  - name: Wed
+    uid: 'outlook!Office.MailboxEnums.Days.Wed:member'
+    package: outlook!
+    summary: Wednesday
+    value: '"wed"'
+  - name: Weekday
+    uid: 'outlook!Office.MailboxEnums.Days.Weekday:member'
+    package: outlook!
+    summary: 'Week day (excludes weekend days): ''Mon'', ''Tue'', ''Wed'', ''Thu'', and ''Fri''.'
+    value: '"weekday"'
+  - name: WeekendDay
+    uid: 'outlook!Office.MailboxEnums.Days.WeekendDay:member'
+    package: outlook!
+    summary: 'Weekend day: ''Sat'' and ''Sun''.'
+    value: '"weekendDay"'

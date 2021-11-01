@@ -1,0 +1,124 @@
+### YamlMime:TSType
+name: Office.MeetingSuggestion
+uid: 'outlook!Office.MeetingSuggestion:interface'
+package: outlook!
+fullName: Office.MeetingSuggestion
+summary: >-
+  Represents a suggested meeting found in an item. Read mode only.
+
+
+  The list of meetings suggested in an email message is returned in the `meetingSuggestions` property of the `Entities`
+  object that is returned when the `getEntities` or `getEntitiesByType` method is called on the active item.
+
+
+  The start and end values are string representations of a `Date` object that contains the date and time at which the
+  suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  var item = Office.context.mailbox.item;
+
+  // Get an array of strings that represent meeting suggestions in the current item's body.
+
+  var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+
+  console.log("There are " + meetingSuggestions.length + " meeting suggestions.")
+
+  meetingSuggestions.forEach(function (meetingSuggestion) {
+      console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
+      console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
+      console.log("Location: " + JSON.stringify(meetingSuggestion.location));
+      console.log("Start: " + JSON.stringify(meetingSuggestion.start));
+      console.log("End: " + JSON.stringify(meetingSuggestion.end));
+      console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attendees
+    uid: 'outlook!Office.MeetingSuggestion#attendees:member'
+    package: outlook!
+    fullName: attendees
+    summary: Gets the attendees for a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attendees: EmailUser[];'
+      return:
+        type: '<xref uid="outlook!Office.EmailUser:interface" />[]'
+  - name: end
+    uid: 'outlook!Office.MeetingSuggestion#end:member'
+    package: outlook!
+    fullName: end
+    summary: Gets the date and time that a suggested meeting is to end.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'end: string;'
+      return:
+        type: string
+  - name: location
+    uid: 'outlook!Office.MeetingSuggestion#location:member'
+    package: outlook!
+    fullName: location
+    summary: Gets the location of a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'location: string;'
+      return:
+        type: string
+  - name: meetingString
+    uid: 'outlook!Office.MeetingSuggestion#meetingString:member'
+    package: outlook!
+    fullName: meetingString
+    summary: Gets a string that was identified as a meeting suggestion.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'meetingString: string;'
+      return:
+        type: string
+  - name: start
+    uid: 'outlook!Office.MeetingSuggestion#start:member'
+    package: outlook!
+    fullName: start
+    summary: Gets the date and time that a suggested meeting is to begin.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'start: string;'
+      return:
+        type: string
+  - name: subject
+    uid: 'outlook!Office.MeetingSuggestion#subject:member'
+    package: outlook!
+    fullName: subject
+    summary: Gets the subject of a suggested meeting.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject: string;'
+      return:
+        type: string

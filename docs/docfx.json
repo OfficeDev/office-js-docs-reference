@@ -37,6 +37,7 @@
           "outlook_1_8/**",
           "outlook_1_9/**",
           "outlook_1_10/**",
+          "outlook_1_11/**",
           "powerpoint/**",
           "powerpoint_1_1/**",
           "powerpoint_1_2/**",
@@ -134,6 +135,8 @@
           "outlook_1_9.yml",
           "outlook_1_10/**",
           "outlook_1_10.yml",
+          "outlook_1_11/**",
+          "outlook_1_11.yml",
           "overview/overview.md",
           "powerpoint/**",
           "powerpoint.yml",  
@@ -387,6 +390,23 @@
           "outlook_1_10.yml"
         ],
         "group": "outlook-js-1.10",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },  
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.11",
+        "src": "docs-ref-autogen/outlook_1_11",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "outlook_1_11.yml"
+        ],
+        "group": "outlook-js-1.11",
         "src": "docs-ref-autogen",
         "dest": "api"
       },  
@@ -880,6 +900,10 @@
         "dest": "outlook-js-1.10",
         "moniker_range": "outlook-js-1.10"
       },
+      "outlook-js-1.11": {
+        "dest": "outlook-js-1.11",
+        "moniker_range": "outlook-js-1.11"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
@@ -1208,6 +1232,12 @@
         "docs-ref-autogen/outlook_1_10/outlook/**": [
           "outlook 1.10"
         ],
+        "docs-ref-autogen/outlook_1_11/**": [
+          "outlook 1.11"
+        ],
+        "docs-ref-autogen/outlook_1_11/outlook/**": [
+          "outlook 1.11"
+        ],
         "docs-ref-autogen/overview/**": [
           "common"
         ],
@@ -1311,6 +1341,7 @@
         "docs-ref-autogen/outlook_1_8/**": "outlook",
         "docs-ref-autogen/outlook_1_9/**": "outlook",
         "docs-ref-autogen/outlook_1_10/**": "outlook",
+        "docs-ref-autogen/outlook_1_11/**": "outlook",
         "docs-ref-autogen/outlook/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_1/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_2/outlook/**": "outlook",
@@ -1322,6 +1353,7 @@
         "docs-ref-autogen/outlook_1_8/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_9/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_10/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_11/outlook/**": "outlook",
         "docs-ref-autogen/overview/**": "non-product-specific",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint/powerpoint/**": "powerpoint",

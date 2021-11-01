@@ -1,0 +1,676 @@
+### YamlMime:TSType
+name: Office.Recipients
+uid: 'outlook!Office.Recipients:interface'
+package: outlook!
+fullName: Office.Recipients
+summary: Represents recipients of an item. Compose mode only.
+remarks: >-
+  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'addAsync(recipients, options, callback)'
+    uid: 'outlook!Office.Recipients#addAsync:member(1)'
+    package: outlook!
+    fullName: 'addAsync(recipients, options, callback)'
+    summary: >-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+
+      The recipients parameter can be an array of one of the following:
+
+
+      - Strings containing SMTP email addresses
+
+
+      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
+
+      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+
+      Maximum number that can be added:
+
+
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Mac, web browser: 100 recipients
+
+
+      - Other: No limit
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example creates an array of EmailUser objects
+
+      // and adds them to the To recipients of the message.
+
+      var newRecipients = [
+          {
+              "displayName": "Allie Bellew",
+              "emailAddress": "allieb@contoso.com"
+          },
+          {
+              "displayName": "Alex Darrow",
+              "emailAddress": "alexd@contoso.com"
+          }
+      ];
+
+
+      Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
+          if (result.error) {
+              console.log(result.error);
+          } else {
+              console.log("Recipients added");
+          }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type: >-
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addAsync(recipients, callback)'
+    uid: 'outlook!Office.Recipients#addAsync:member(2)'
+    package: outlook!
+    fullName: 'addAsync(recipients, callback)'
+    summary: >-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+
+      The recipients parameter can be an array of one of the following:
+
+
+      - Strings containing SMTP email addresses
+
+
+      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
+
+      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+
+      Maximum number that can be added:
+
+
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Mac, web browser: 100 recipients
+
+
+      - Other: No limit
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type: >-
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
+            property will contain an error code.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.Recipients#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
+    summary: >-
+      Gets a recipient list for an appointment or message.
+
+
+      When the call completes, the `asyncResult.value` property will contain an array of
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
+
+
+      - Windows, Mac, web browser: 500 members
+
+
+      - Other: No limit
+
+
+      **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link
+      from their contact or profile card, your add-in's `getAsync` call currently won't return a value in the
+      `displayName` property of the associated `EmailAddressDetails` object. For more details, refer to the [related
+      GitHub issue](https://github.com/OfficeDev/office-js-docs-pr/issues/2962)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails[]>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `EmailAddressDetails` objects.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.Recipients#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: >-
+      Gets a recipient list for an appointment or message.
+
+
+      When the call completes, the `asyncResult.value` property will contain an array of
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
+
+
+      - Windows, Mac, web browser: 500 members
+
+
+      - Other: No limit
+
+
+      **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link
+      from their contact or profile card, your add-in's `getAsync` call currently won't return a value in the
+      `displayName` property of the associated `EmailAddressDetails` object. For more details, refer to the [related
+      GitHub issue](https://github.com/OfficeDev/office-js-docs-pr/issues/2962)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
+      Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgBcc = asyncResult.value;
+          console.log("Message being blind-copied to:");
+          for (var i = 0; i < msgBcc.length; i++) {
+            console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
+      Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgCc = asyncResult.value;
+          console.log("Message being copied to:");
+          for (var i = 0; i < msgCc.length; i++) {
+            console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
+      Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptOptionalAttendees = asyncResult.value;
+          for (var i = 0; i < apptOptionalAttendees.length; i++) {
+            console.log(
+              "Optional attendees: " +
+                apptOptionalAttendees[i].displayName +
+                " (" +
+                apptOptionalAttendees[i].emailAddress +
+                ") - response: " +
+                apptOptionalAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
+      Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptRequiredAttendees = asyncResult.value;
+          for (var i = 0; i < apptRequiredAttendees.length; i++) {
+            console.log(
+              "Required attendees: " +
+                apptRequiredAttendees[i].displayName +
+                " (" +
+                apptRequiredAttendees[i].emailAddress +
+                ") - response: " +
+                apptRequiredAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
+      Office.context.mailbox.item.to.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgTo = asyncResult.value;
+          console.log("Message being sent to:");
+          for (var i = 0; i < msgTo.length; i++) {
+            console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `EmailAddressDetails` objects.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(recipients, options, callback)'
+    uid: 'outlook!Office.Recipients#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(recipients, options, callback)'
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The `setAsync` method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
+      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+      Maximum number that can be set:
+
+      - Windows, Mac, web browser: 100 recipients
+
+      - Other: No limit
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type: >-
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
+            contain a code that indicates any error that occurred while adding the data.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(recipients, callback)'
+    uid: 'outlook!Office.Recipients#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(recipients, callback)'
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The `setAsync` method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
+      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
+
+      Maximum number that can be set:
+
+      - Windows, Mac, web browser: 100 recipients
+
+      - Other: No limit
+    remarks: >-
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Errors**:
+
+
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example creates an array of EmailUser objects and
+
+      // replaces the CC recipients of the message with the array.
+
+      var newRecipients = [
+          {
+              "displayName": "Allie Bellew",
+              "emailAddress": "allieb@contoso.com"
+          },
+          {
+              "displayName": "Alex Darrow",
+              "emailAddress": "alexd@contoso.com"
+          }
+      ];
+
+
+      Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
+          if (result.error) {
+              console.log(result.error);
+          } else {
+              console.log("Recipients overwritten");
+          }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
+      var email = $("#emailBcc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Bcc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
+      var email = $("#emailCc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Cc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
+      var email = $("#emailOptional")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting optional attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
+      var email = $("#emailRequired")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting required attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
+      var email = $("#emailTo")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting To field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list.
+          type: >-
+            (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
+            uid="outlook!Office.EmailAddressDetails:interface" />)[]
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
+            contain a code that indicates any error that occurred while adding the data.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
