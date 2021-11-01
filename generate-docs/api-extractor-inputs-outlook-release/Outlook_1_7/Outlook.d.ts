@@ -1116,6 +1116,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         /**
          * Gets the id of the series that an instance belongs to.
          * 
@@ -4194,6 +4195,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         notificationMessages: NotificationMessages;
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          * 
@@ -6605,6 +6607,7 @@ export declare namespace Office {
          */
         setStartTime(time: string): void;
     }
+    
     
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

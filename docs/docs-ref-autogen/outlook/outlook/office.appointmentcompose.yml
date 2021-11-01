@@ -1150,7 +1150,7 @@ properties:
     fullName: sessionData
     summary: 'Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.'
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1169,7 +1169,7 @@ properties:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/session-data-apis.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
 
       Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1180,7 +1180,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionData: SessionData;'
