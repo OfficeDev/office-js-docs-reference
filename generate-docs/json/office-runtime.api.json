@@ -889,7 +889,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface",
-              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @remarks\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -902,7 +902,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItem:member(1)",
-                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
+                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -951,7 +951,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItems:member(1)",
-                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1000,7 +1000,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getKeys:member(1)",
-                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n */\n",
+                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1033,7 +1033,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItem:member(1)",
-                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
+                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1082,7 +1082,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItems:member(1)",
-                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1131,7 +1131,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItem:member(1)",
-                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
+                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1195,7 +1195,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItems:member(1)",
-                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
+                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

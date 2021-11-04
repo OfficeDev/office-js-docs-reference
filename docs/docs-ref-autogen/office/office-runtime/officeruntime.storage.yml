@@ -3,11 +3,11 @@ name: OfficeRuntime.Storage
 uid: 'office-runtime!OfficeRuntime.Storage:interface'
 package: office-runtime!
 fullName: OfficeRuntime.Storage
-summary: |-
-  Asynchronous, global, and persistent key-value storage.
-
+summary: 'Asynchronous, global, and persistent key-value storage.'
+remarks: |-
   \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
+
+  Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,10 +19,7 @@ methods:
     summary: >-
       Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve,
       returns null.
-
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,10 +38,7 @@ methods:
     summary: >-
       Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not
       resolve, returns null.
-
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +54,8 @@ methods:
     uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
     package: office-runtime!
     fullName: getKeys()
-    summary: |-
-      Retrieves an array of all keys from storage. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    summary: Retrieves an array of all keys from storage. Returns a Promise.
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,11 +67,8 @@ methods:
     uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
     package: office-runtime!
     fullName: removeItem(key)
-    summary: |-
-      Removes an item from storage based on its key. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    summary: Removes an item from storage based on its key. Returns a Promise.
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,11 +84,8 @@ methods:
     uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
     package: office-runtime!
     fullName: removeItems(keys)
-    summary: |-
-      Removes multiple items from storage. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    summary: Removes multiple items from storage. Returns a Promise.
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,11 +101,8 @@ methods:
     uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
     package: office-runtime!
     fullName: 'setItem(key, value)'
-    summary: |-
-      Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,11 +121,8 @@ methods:
     uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
     package: office-runtime!
     fullName: setItems(keyValues)
-    summary: |-
-      Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
-
-      \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    remarks: ''
+    summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
+    remarks: '\[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
     isPreview: false
     isDeprecated: false
     syntax:
