@@ -6891,7 +6891,7 @@ OfficeRuntime.DisplayWebDialogOptions,onClose,Method,Fine,false
 OfficeRuntime.DisplayWebDialogOptions,onMessage,Method,Fine,false
 OfficeRuntime.DisplayWebDialogOptions,onRuntimeError,Method,Fine,false
 OfficeRuntime.DisplayWebDialogOptions,width,Method,Good,false
-OfficeRuntime.Storage,N/A,Class,Fine,false
+OfficeRuntime.Storage,N/A,Class,Good,false
 OfficeRuntime.Storage,getItem(key),Method,Good,false
 OfficeRuntime.Storage,getItems(keys),Method,Good,false
 OfficeRuntime.Storage,getKeys(),Method,Good,false
