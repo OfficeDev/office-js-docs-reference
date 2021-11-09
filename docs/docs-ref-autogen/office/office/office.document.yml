@@ -673,7 +673,7 @@ methods:
       `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
       `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
       `Compressed`<!-- -->, `Pdf` </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->, `Pdf`<!--
-      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed` </td><td>
+      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
       `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> </table>
 
 
@@ -839,7 +839,7 @@ methods:
       `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> <tr><td><strong> PowerPoint </strong></td><td>
       `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
       `Compressed`<!-- -->, `Pdf` </td></tr> <tr><td><strong> Word </strong></td><td> `Compressed`<!-- -->, `Pdf`<!--
-      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed` </td><td>
+      -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td><td> `Compressed`<!-- -->, `Pdf` </td><td>
       `Compressed`<!-- -->, `Pdf`<!-- -->, `Text` </td></tr> </table>
     isPreview: false
     isDeprecated: false
