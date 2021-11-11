@@ -71,7 +71,7 @@ Excel.Application,decimalSeparator,Method,Good,false
 Excel.Application,iterativeCalculation,Method,Good,false
 Excel.Application,thousandsSeparator,Method,Good,false
 Excel.Application,useSystemSeparators,Method,Good,false
-Excel.Application,calculate(calculationType),Method,Good,false
+Excel.Application,calculate(calculationType),Method,Good,true
 Excel.Application,calculate(calculationTypeString),Method,Good,true
 Excel.Application,load(options),Method,Good,false
 Excel.Application,load(propertyNames),Method,Good,true
