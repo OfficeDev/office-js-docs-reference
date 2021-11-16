@@ -139,6 +139,9 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
@@ -220,6 +223,9 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
@@ -271,6 +277,9 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
       (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
@@ -352,6 +361,9 @@ methods:
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
       (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
