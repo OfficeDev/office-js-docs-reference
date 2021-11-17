@@ -1992,6 +1992,11 @@ methods:
       invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
 
 
+      When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
+      This means that subsequent calls to methods like `Body.getAsync`<!-- -->, `Body.setAsync`<!-- -->, and even
+      `saveAsync` may not result in the same content.
+
+
       **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS
       or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
       synced to the server. Until the item is synced, using the item ID will return an error.
@@ -2076,6 +2081,11 @@ methods:
       Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will
       be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
       invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
+
+
+      When working with HTML-formatted content, it's important to note that the Outlook client may modify the content.
+      This means that subsequent calls to methods like `Body.getAsync`<!-- -->, `Body.setAsync`<!-- -->, and even
+      `saveAsync` may not result in the same content.
 
 
       **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS

@@ -1569,6 +1569,9 @@ export declare namespace Office {
          * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
          * Saving an existing appointment will send an update to added or removed attendees.
          *
+         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
          * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
          * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
          * Until the item is synced, using the item ID will return an error.
@@ -1603,6 +1606,9 @@ export declare namespace Office {
          * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal 
          * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
          * Saving an existing appointment will send an update to added or removed attendees.
+         *
+         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
          * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that 
          * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
@@ -2691,6 +2697,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
@@ -2723,6 +2731,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
@@ -2749,13 +2759,17 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP" 
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
+         *
          * @remarks
          * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
          * **Errors**:
          * 
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -2780,13 +2794,17 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP" 
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
+         * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
+         *
          * @remarks
          * [Api set: Mailbox 1.3]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
          * **Errors**:
          * 
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
@@ -2807,6 +2825,8 @@ export declare namespace Office {
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -2838,6 +2858,8 @@ export declare namespace Office {
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -4643,6 +4665,9 @@ export declare namespace Office {
          * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
          * Saving an existing appointment will send an update to added or removed attendees.
          *
+         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
+         *
          * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
          * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.
          * Until the item is synced, using the itemId will return an error.
@@ -4674,6 +4699,9 @@ export declare namespace Office {
          * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal
          * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent.
          * Saving an existing appointment will send an update to added or removed attendees.
+         *
+         * When working with HTML-formatted content, it's important to note that the Outlook client may modify the content. This means that
+         * subsequent calls to methods like `Body.getAsync`, `Body.setAsync`, and even `saveAsync` may not result in the same content.
          *
          * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware
          * that when Outlook is in cached mode, it may take some time before the item is actually synced to the server.

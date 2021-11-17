@@ -15089,6 +15089,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.emptyChartSeries:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "emptyChartSeries = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"EmptyChartSeries\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "emptyChartSeries",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.filteredRangeConflict:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -15103,6 +15124,27 @@
                   ],
                   "releaseTag": "Public",
                   "name": "filteredRangeConflict",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.formulaLengthExceedsLimit:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "formulaLengthExceedsLimit = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"FormulaLengthExceedsLimit\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "formulaLengthExceedsLimit",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2

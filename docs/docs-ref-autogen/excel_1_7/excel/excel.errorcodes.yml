@@ -23,11 +23,21 @@ fields:
     package: excel!
     summary: ''
     value: '"Conflict"'
+  - name: emptyChartSeries
+    uid: 'excel!Excel.ErrorCodes.emptyChartSeries:member'
+    package: excel!
+    summary: ''
+    value: '"EmptyChartSeries"'
   - name: filteredRangeConflict
     uid: 'excel!Excel.ErrorCodes.filteredRangeConflict:member'
     package: excel!
     summary: ''
     value: '"FilteredRangeConflict"'
+  - name: formulaLengthExceedsLimit
+    uid: 'excel!Excel.ErrorCodes.formulaLengthExceedsLimit:member'
+    package: excel!
+    summary: ''
+    value: '"FormulaLengthExceedsLimit"'
   - name: generalException
     uid: 'excel!Excel.ErrorCodes.generalException:member'
     package: excel!
