@@ -3,7 +3,10 @@ name: Office.SessionData
 uid: 'outlook!Office.SessionData:interface'
 package: outlook!
 fullName: Office.SessionData
-summary: Provides methods to manage an item's session data.
+summary: |-
+  Provides methods to manage an item's session data.
+
+  **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
 remarks: >-
   \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
@@ -308,7 +311,10 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(name, value, options, callback)'
-    summary: Sets a session data key-value pair.
+    summary: |-
+      Sets a session data key-value pair.
+
+      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
@@ -373,7 +379,10 @@ methods:
     uid: 'outlook!Office.SessionData#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(name, value, callback)'
-    summary: Sets a session data key-value pair.
+    summary: |-
+      Sets a session data key-value pair.
+
+      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
