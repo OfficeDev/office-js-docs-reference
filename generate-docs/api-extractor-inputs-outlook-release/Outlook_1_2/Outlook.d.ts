@@ -1473,6 +1473,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
@@ -1505,6 +1507,8 @@ export declare namespace Office {
          * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
@@ -1532,6 +1536,8 @@ export declare namespace Office {
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -1563,6 +1569,8 @@ export declare namespace Office {
          *
          * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
