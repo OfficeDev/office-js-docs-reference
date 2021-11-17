@@ -1523,6 +1523,8 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
+         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+         *
          * @remarks
          * [Api set: Mailbox 1.11]
          *
@@ -6621,6 +6623,8 @@ export declare namespace Office {
         /**
          * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.
          *
+         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+         *
          * @remarks
          * [Api set: Mailbox 1.11]
          *
@@ -10036,7 +10040,9 @@ export declare namespace Office {
         setStartTime(time: string): void;
     }
     /**
-     * Provides methods to  manage an item's session data.
+     * Provides methods to manage an item's session data.
+     *
+     * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
      *
      * @remarks
      * [Api set: Mailbox 1.11]
@@ -10140,6 +10146,8 @@ export declare namespace Office {
         /**
          * Sets a session data key-value pair.
          *
+         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
+         *
          * @remarks
          * [Api set: Mailbox 1.11]
          *
@@ -10157,6 +10165,8 @@ export declare namespace Office {
         setAsync(name: string, value: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Sets a session data key-value pair.
+         *
+         * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
          *
          * @remarks
          * [Api set: Mailbox 1.11]

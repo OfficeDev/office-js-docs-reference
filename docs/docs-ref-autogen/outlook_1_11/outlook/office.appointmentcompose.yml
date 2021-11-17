@@ -1031,7 +1031,10 @@ properties:
     uid: 'outlook!Office.AppointmentCompose#sessionData:member'
     package: outlook!
     fullName: sessionData
-    summary: 'Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.'
+    summary: |-
+      Manages the [SessionData](xref:outlook!Office.SessionData:interface) of an item in Compose mode.
+
+      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
 
