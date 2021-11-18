@@ -2837,7 +2837,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#sessionData:member",
-                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n */\n",
+                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21658,7 +21658,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#sessionData:member",
-                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Manages the {@link Office.SessionData | SessionData} of an item in Compose mode.\n *\n * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -27965,7 +27965,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SessionData:interface",
-              "docComment": "/**\n * Provides methods to manage an item's session data.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+              "docComment": "/**\n * Provides methods to manage an item's session data.\n *\n * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -28373,7 +28373,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#setAsync:member(1)",
-                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28472,7 +28472,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SessionData#setAsync:member(2)",
-                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Sets a session data key-value pair.\n *\n * **Important**: The entire SessionData object is limited to 50,000 characters per add-in.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.11]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param name - The session data key.\n *\n * @param value - The session data value as a string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
