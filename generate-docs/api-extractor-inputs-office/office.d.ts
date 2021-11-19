@@ -1063,10 +1063,24 @@ export declare namespace Office {
          *
          * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
-         * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
+         * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
-        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, options: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        /**
+          * Adds an event handler to the object using the specified event type.
+          *
+          * @remarks
+          *
+          * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
+          *
+          * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
+          *
+          * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
+          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
+          * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
+          */
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, callback?: (result: AsyncResult<void>) => void): void;
         /**
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
         *
