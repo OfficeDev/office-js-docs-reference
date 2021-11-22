@@ -33,7 +33,7 @@ methods:
     syntax:
       content: >-
         addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void,
-        options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
+        options: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
       parameters:
         - id: eventType
           description: Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`<!-- -->.
@@ -45,8 +45,44 @@ methods:
             -->.
           type: '(result: <xref uid="office!Office.DialogParentMessageReceivedEventArgs:interface" />) =&gt; void'
         - id: options
-          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. A function that is invoked when the handler registration returns, whose only parameter is of type
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
+          type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'addHandlerAsync(eventType, handler, callback)'
+    uid: 'office!Office.UI#addHandlerAsync:member(2)'
+    package: office!
+    fullName: 'addHandlerAsync(eventType, handler, callback)'
+    summary: Adds an event handler to the object using the specified event type.
+    remarks: >-
+      **Requirement set**: [DialogAPI
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+
+
+      You can add multiple event handlers for the specified event type as long as the name of each event handler
+      function is unique.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void,
+        callback?: (result: AsyncResult<void>) => void): void;
+      parameters:
+        - id: eventType
+          description: Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`<!-- -->.
+          type: '<xref uid="office!Office.EventType:enum" />'
+        - id: handler
+          description: >-
+            The event handler function to add, whose only parameter is of type
+            [Office.DialogParentMessageReceivedEventArgs](xref:office!Office.DialogParentMessageReceivedEventArgs:interface)<!--
+            -->.
+          type: '(result: <xref uid="office!Office.DialogParentMessageReceivedEventArgs:interface" />) =&gt; void'
         - id: callback
           description: >-
             Optional. A function that is invoked when the handler registration returns, whose only parameter is of type
