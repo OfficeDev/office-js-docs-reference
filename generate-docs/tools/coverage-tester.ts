@@ -152,7 +152,6 @@ function readAndEvaluateYml(docsSource: string) {
     fsx.readdirSync(docsSource).filter(
         (filename) => {return filename.indexOf(".interfaces.") < 0}).forEach( // Filter out the `interfaces`, since they aren't in the TOC.
             filename => {
-                console.log(`Checking ${filename}.`);
                 let ymlFile = jsyaml.load(fsx.readFileSync(docsSource + '/' + filename).toString()) as ApiYaml;
                 let rating = rateClass(ymlFile);
                 ratingMap.set(ymlFile.name, rating);
