@@ -53,3 +53,4 @@ properties:
       content: 'type: CellValueType.boolean | "Boolean";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.boolean:member" /> | "Boolean"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

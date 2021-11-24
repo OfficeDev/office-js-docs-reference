@@ -304,8 +304,8 @@
 ||[style](/javascript/api/excel/excel.settablecellproperties#style)|Represents the `style` property.|
 |[SettableColumnProperties](/javascript/api/excel/excel.settablecolumnproperties)|[columnHidden](/javascript/api/excel/excel.settablecolumnproperties#columnHidden)|Represents the `columnHidden` property.|
 ||[columnWidth](/javascript/api/excel/excel.settablecolumnproperties#columnWidth)||
-||[format: Excel.CellPropertiesFormat & {            columnWidth](/javascript/api/excel/excel.settablecolumnproperties#format)|Represents the `format` property.|
-|[SettableRowProperties](/javascript/api/excel/excel.settablerowproperties)|[format: Excel.CellPropertiesFormat & {            rowHeight](/javascript/api/excel/excel.settablerowproperties#format)|Represents the `format` property.|
+||[format: Excel.CellPropertiesFormat & {            columnWidth](/javascript/api/excel/excel.settablecolumnproperties#format)|Represents the `format` property.|
+|[SettableRowProperties](/javascript/api/excel/excel.settablerowproperties)|[format: Excel.CellPropertiesFormat & {            rowHeight](/javascript/api/excel/excel.settablerowproperties#format)|Represents the `format` property.|
 ||[rowHeight](/javascript/api/excel/excel.settablerowproperties#rowHeight)||
 ||[rowHidden](/javascript/api/excel/excel.settablerowproperties#rowHidden)|Represents the `rowHidden` property.|
 |[Shape](/javascript/api/excel/excel.shape)|[altTextDescription](/javascript/api/excel/excel.shape#altTextDescription)|Specifies the alternative description text for a `Shape` object.|

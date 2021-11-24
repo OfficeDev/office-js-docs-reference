@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.14.0",
+    "toolVersion": "7.18.19",
     "schemaVersion": 1004,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -328,15 +328,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Application#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -362,7 +362,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -1011,15 +1011,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Comment#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -1045,7 +1045,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -1847,15 +1847,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Document#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -1881,7 +1881,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -2734,15 +2734,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.DocumentView#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -2768,7 +2768,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -3358,15 +3358,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Hyperlink#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -3392,7 +3392,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -8871,15 +8871,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Page#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -8905,7 +8905,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -9997,15 +9997,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.PageView#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -10031,7 +10031,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -10894,15 +10894,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Selection#load:member(2)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -10928,7 +10928,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -11342,15 +11342,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Shape#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -11376,7 +11376,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -12270,15 +12270,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.ShapeDataItem#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -12304,7 +12304,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -13288,15 +13288,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.ShapeView#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -13322,7 +13322,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2

@@ -53,3 +53,4 @@ properties:
       content: 'type: CellValueType.string | "String";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.string:member" /> | "String"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

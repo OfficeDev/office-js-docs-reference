@@ -53,3 +53,4 @@ properties:
       content: 'type: CellValueType.double | "Double";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.double:member" /> | "Double"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

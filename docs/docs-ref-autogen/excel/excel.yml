@@ -386,6 +386,7 @@ interfaces:
   - 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
   - 'excel!Excel.CellPropertiesLoadOptions:interface'
   - 'excel!Excel.CellPropertiesProtection:interface'
+  - 'excel!Excel.CellValue:interface'
   - 'excel!Excel.CellValueAttributionAttributes:interface'
   - 'excel!Excel.CellValuePropertyMetadata:interface'
   - 'excel!Excel.CellValuePropertyMetadataExclusions:interface'

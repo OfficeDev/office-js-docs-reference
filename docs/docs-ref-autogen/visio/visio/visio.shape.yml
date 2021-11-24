@@ -271,24 +271,28 @@ methods:
               }
           });
           ```
-  - name: load(propertyNamesAndPaths)
+  - name: load(option)
     uid: 'visio!Visio.Shape#load:member(3)'
     package: visio!
-    fullName: load(propertyNamesAndPaths)
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
+    fullName: load(option)
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;'
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Shape;
       parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type: '{ select?: string; expand?: string; }'
+        - id: option
+          description: ''
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
         type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''

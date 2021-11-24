@@ -55,3 +55,4 @@ properties:
       content: 'type: CellValueType.notAvailable | "NotAvailable";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.notAvailable:member" /> | "NotAvailable"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

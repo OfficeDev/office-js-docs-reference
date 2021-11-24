@@ -469,6 +469,8 @@ items:
             uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
           - name: CellPropertiesProtection
             uid: 'excel!Excel.CellPropertiesProtection:interface'
+          - name: CellValue
+            uid: 'excel!Excel.CellValue:interface'
           - name: CellValueAttributionAttributes
             uid: 'excel!Excel.CellValueAttributionAttributes:interface'
           - name: CellValueConditionalFormat

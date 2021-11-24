@@ -113,3 +113,4 @@ properties:
       content: 'type: CellValueType.error | "Error";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.error:member" /> | "Error"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

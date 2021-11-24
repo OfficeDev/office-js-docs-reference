@@ -59,7 +59,7 @@ properties:
       return:
         type: |-
           {
-                      [key: string]: <xref uid="excel!Excel.CellValue:type" /> & {
+                      [key: string]: <xref uid="excel!Excel.CellValue:interface" /> & {
                           propertyMetadata?: <xref uid="excel!Excel.CellValuePropertyMetadata:interface" />;
                       };
                   }
@@ -91,3 +91,4 @@ properties:
       content: 'type: CellValueType.entity | "Entity";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.entity:member" /> | "Entity"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

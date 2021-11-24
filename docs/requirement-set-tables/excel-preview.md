@@ -36,6 +36,8 @@
 ||[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#errorSubType)|Represents the type of `CalcErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.calcerrorcellvalue#errorType)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.calcerrorcellvalue#type)|Represents the type of this cell value.|
+|[CellValue](/javascript/api/excel/excel.cellvalue)|[writable](/javascript/api/excel/excel.cellvalue#writable)|Represents whether this `CellValue` will be used to overwrite a cell.|
+||[writableNote](/javascript/api/excel/excel.cellvalue#writableNote)|Represents an explanation about why `CellValue.writable` is specified as false.|
 |[CellValueAttributionAttributes](/javascript/api/excel/excel.cellvalueattributionattributes)|[licenseAddress](/javascript/api/excel/excel.cellvalueattributionattributes#licenseAddress)|Represents a URL to a license or source that describes how this property can be used.|
 ||[licenseText](/javascript/api/excel/excel.cellvalueattributionattributes#licenseText)|Represents a name for the license that governs this property.|
 ||[sourceAddress](/javascript/api/excel/excel.cellvalueattributionattributes#sourceAddress)|Represents a URL to the source of the `CellValue`.|
@@ -108,7 +110,7 @@
 ||[type](/javascript/api/excel/excel.emptycellvalue#type)|Represents the type of this cell value.|
 |[EntityCellValue](/javascript/api/excel/excel.entitycellvalue)|[basicType](/javascript/api/excel/excel.entitycellvalue#basicType)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.entitycellvalue#basicValue)|Represents the value that would be returned by `Range.values` for a cell with this value.|
-||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.entitycellvalue#properties)|Represents the properties of this entity and their metadata.|
+||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.entitycellvalue#properties)|Represents the properties of this entity and their metadata.|
 ||[propertyMetadata](/javascript/api/excel/excel.entitycellvalue#propertyMetadata)||
 ||[text](/javascript/api/excel/excel.entitycellvalue#text)|Represents the text shown when a cell with this value is rendered.|
 ||[type](/javascript/api/excel/excel.entitycellvalue#type)|Represents the type of this cell value.|

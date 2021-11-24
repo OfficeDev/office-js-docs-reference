@@ -52,7 +52,7 @@ properties:
     syntax:
       content: 'elements: CellValue[][];'
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        type: '<xref uid="excel!Excel.CellValue:interface" />[][]'
   - name: type
     uid: 'excel!Excel.ArrayCellValue#type:member'
     package: excel!
@@ -67,3 +67,4 @@ properties:
       content: 'type: CellValueType.array | "Array";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.array:member" /> | "Array"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

@@ -76,3 +76,4 @@ properties:
       content: 'type: CellValueType.formattedNumber | "FormattedNumber";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.formattedNumber:member" /> | "FormattedNumber"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

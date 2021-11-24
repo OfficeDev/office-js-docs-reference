@@ -13,7 +13,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface ArrayCellValue {
+    export interface ArrayCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -127,7 +127,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface BlockedErrorCellValue {
+    export interface BlockedErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -176,7 +176,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface BooleanCellValue {
+    export interface BooleanCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -242,7 +242,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface BusyErrorCellValue {
+    export interface BusyErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -364,7 +364,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface CalcErrorCellValue {
+    export interface CalcErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -502,7 +502,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
+    export interface CellValue {
         /**
         * Represents whether this `CellValue` will be used to overwrite a cell.
         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -824,7 +824,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface ConnectErrorCellValue {
+    export interface ConnectErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -873,7 +873,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface Div0ErrorCellValue {
+    export interface Div0ErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -914,7 +914,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface DoubleCellValue {
+    export interface DoubleCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -947,7 +947,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface EmptyCellValue {
+    export interface EmptyCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -980,7 +980,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface EntityCellValue {
+    export interface EntityCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1195,7 +1195,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface FieldErrorCellValue {
+    export interface FieldErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1245,7 +1245,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface FormattedNumberCellValue {
+    export interface FormattedNumberCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1287,7 +1287,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface GettingDataErrorCellValue {
+    export interface GettingDataErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1328,7 +1328,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface NotAvailableErrorCellValue {
+    export interface NotAvailableErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1369,7 +1369,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface NameErrorCellValue {
+    export interface NameErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1410,7 +1410,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface NullErrorCellValue {
+    export interface NullErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1451,7 +1451,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface NumErrorCellValue {
+    export interface NumErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1581,7 +1581,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface RefErrorCellValue {
+    export interface RefErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1695,7 +1695,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface SpillErrorCellValue {
+    export interface SpillErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1760,7 +1760,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface StringCellValue {
+    export interface StringCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -1962,7 +1962,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface ValueErrorCellValue {
+    export interface ValueErrorCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -2012,7 +2012,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface ValueTypeNotAvailableCellValue {
+    export interface ValueTypeNotAvailableCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *
@@ -2045,7 +2045,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export interface WebImageCellValue {
+    export interface WebImageCellValue extends CellValue {
         /**
         * Represents the type of this cell value.
         *

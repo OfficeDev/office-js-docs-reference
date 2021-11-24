@@ -127,3 +127,4 @@ properties:
       content: 'type: CellValueType.webImage | "WebImage";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.webImage:member" /> | "WebImage"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'

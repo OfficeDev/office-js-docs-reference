@@ -53,3 +53,4 @@ properties:
       content: 'type: CellValueType.empty | "Empty";'
       return:
         type: '<xref uid="excel!Excel.CellValueType.empty:member" /> | "Empty"'
+extends: '<xref uid="excel!Excel.CellValue:interface" />'
