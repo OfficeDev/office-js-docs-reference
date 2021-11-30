@@ -641,7 +641,7 @@ Excel.Chart,worksheet,Method,Good,false
 Excel.Chart,activate(),Method,Good,false
 Excel.Chart,delete(),Method,Good,true
 Excel.Chart,getDataTable(),Method,Good,false
-Excel.Chart,getDataTableOrNullObject(),Method,Good,false
+Excel.Chart,getDataTableOrNullObject(),Method,Good,true
 Excel.Chart,getImage(width,Method,Good,false
 Excel.Chart,load(options),Method,Good,false
 Excel.Chart,load(propertyNames),Method,Good,true
