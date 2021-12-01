@@ -603,6 +603,23 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Excel.Chart#getDataTableOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
+
+    await Excel.run(async (context) => {
+      // This method adds a data table to a chart that already exists on the worksheet. 
+
+      // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
+      const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
+
+      // Get the data table object for the chart and set it to visible.
+      const chartDataTable = chart.getDataTableOrNullObject();
+      chartDataTable.load("visible");
+      chartDataTable.visible = true;
+      await context.sync();
+    });
 'Excel.Chart#getImage:member(1)':
   - |-
     Excel.run(function (ctx) { 
@@ -1056,23 +1073,6 @@
       chartDataTableFormat.font.color = "#B76E79";
       chartDataTableFormat.font.name = "Comic Sans";
       chartDataTableFormat.border.color = "blue";
-      await context.sync();
-    });
-'Excel.ChartDataTable#getDataTableOrNullObject:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
-
-    await Excel.run(async (context) => {
-      // This method adds a data table to a chart that already exists on the worksheet. 
-
-      // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
-      const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
-
-      // Get the data table object for the chart and set it to visible.
-      const chartDataTable = chart.getDataTableOrNullObject();
-      chartDataTable.load("visible");
-      chartDataTable.visible = true;
       await context.sync();
     });
 'Excel.ChartDataTable#showHorizontalBorder:member':
