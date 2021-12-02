@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Office.DialogMessageOptions
+uid: 'office!Office.DialogMessageOptions:interface'
+package: office!
+fullName: Office.DialogMessageOptions
+summary: 'Provides options for how to send messages, in either direction, between a dialog and its parent.'
+remarks: >-
+  **Requirement set**: [DialogOrigin
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets)
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: targetOrigin
+    uid: 'office!Office.DialogMessageOptions#targetOrigin:member'
+    package: office!
+    fullName: targetOrigin
+    summary: >-
+      Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent.
+      For example, `https://resources.contoso.com`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targetOrigin: string;'
+      return:
+        type: string

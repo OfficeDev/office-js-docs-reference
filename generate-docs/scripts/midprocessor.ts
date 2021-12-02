@@ -16,14 +16,16 @@ tryCatch(async () => {
     // ----
     console.log("\nCleaning up Office json cross-referencing...");
 
-    const officeJsonPath = path.resolve("../json/office");
+    const officeJsonPaths: string[] = [path.resolve("../json/office"), path.resolve("../json/office_release")];
     const officeFilename = "office.api.json";
-    fsx.writeFileSync(
-        officeJsonPath + '/' + officeFilename,
-        fsx.readFileSync(officeJsonPath + '/' + officeFilename)
-            .toString()
-            .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
-            .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
+    officeJsonPaths.forEach((officeJsonPath) =>{
+        fsx.writeFileSync(
+            officeJsonPath + '/' + officeFilename,
+            fsx.readFileSync(officeJsonPath + '/' + officeFilename)
+                .toString()
+                .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
+                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
+    });
 
     console.log("\nCompleted Office json cross-referencing cleanup");
 
@@ -167,6 +169,7 @@ tryCatch(async () => {
     }
 
     writeSnippetFileAndClearYamlIfNew("../json/office/snippets.yaml", yaml.safeDump(commonSnippets), "office");
+    writeSnippetFileAndClearYamlIfNew("../json/office_release/snippets.yaml", yaml.safeDump(commonSnippets), "office");
 
     writeSnippetFileAndClearYamlIfNew("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets), "onenote");
 
@@ -198,6 +201,7 @@ tryCatch(async () => {
 
     console.log("Moving Office Runtime APIs to Common API");
     fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
+    fsx.copySync(officeRuntimeJson, `../json/office_release/office-runtime.api.json`);
 
     console.log("Cleaning up What's New markdown files.");
     let filePath = `../../docs/requirement-set-tables/outlook-preview.md`;

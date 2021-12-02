@@ -80,7 +80,8 @@ tryCatch(async () => {
 
     // fix all the individual TOC files
     globalToc.items[0].items[0].href = "../overview/overview.md"; // Stay within a moniker
-    const tocWithCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
+    const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
+    const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
     const hostVersionMap = [{host: "excel", versions: 15}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 12},
@@ -89,15 +90,19 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        let tocToUse = category.host === "visio" ? globalToc : tocWithCommon; // Visio doesn't have access to Common APIs.
-        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), tocToUse, category.host, category.versions);
-        for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), tocToUse, category.host, i);
+        if (category.versions > 1) {
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithPreviewCommon, category.host, category.versions);
+            for (let i = 1; i < category.versions; i++) {
+                scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, i);
+            }
+        } else {
+            // This assumes the single version of the application's docs is not a preview version.
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, category.versions);
         }
     });
 
     // Special case for ExcelApi Online
-    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithCommon, "excel", 99);
+    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithReleaseCommon, "excel", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);
@@ -112,11 +117,14 @@ tryCatch(async () => {
                 });
         });
     console.log(`Namespace pass on Office docs`);
-    const officeFolder = docsDestination + "/office/office";
-    fsx.readdirSync(officeFolder)
-        .forEach(filename => {
-            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
-        });
+    const officeFolders: string[] = [docsDestination + "/office/office", docsDestination + "/office_release/office"];
+    officeFolders.forEach((officeFolder) => {
+    console.log(officeFolder);
+        fsx.readdirSync(officeFolder)
+            .forEach(filename => {
+                fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+            });
+    });
 
     console.log(`Custom Functions API requirement set link pass`);
     fsx.readdirSync(docsDestination)
@@ -171,6 +179,7 @@ tryCatch(async () => {
     // remove to prevent build errors
     fsx.removeSync(docsDestination + "/office/overview.md");
     fsx.removeSync(docsDestination + "/office/toc.yml");
+    fsx.removeSync(docsDestination + "/office_release/toc.yml");
 
     console.log("\nPostprocessor script complete!\n");
 
@@ -261,9 +270,11 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                             let iconSetList = membersToMove.items.filter(item => {
                                 return excelIconSetFilter.indexOf(item.name) >= 0;
                             });
-        
-                            let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                            primaryList.unshift(excelIconSetRoot);
+                            
+                            if (iconSetList.length > 0) {
+                                let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                                primaryList.unshift(excelIconSetRoot);
+                            }
                             primaryList.unshift(enumRoot);            
                             if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
                                 primaryList.unshift(customFunctionsRoot);
