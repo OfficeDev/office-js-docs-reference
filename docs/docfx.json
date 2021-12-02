@@ -120,24 +120,6 @@
         ]
       },
       {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
-        "src": "docs-ref-autogen/common",
-        "dest": "api"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "office",
-        "src": "docs-ref-autogen/office",
-        "dest": "api"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-release",
-        "src": "docs-ref-autogen/office_release",
-        "dest": "api"
-      },
-      {
         "files": ["overview.md"],
         "group": "all",
         "src": "docs-ref-autogen/overview",
@@ -148,6 +130,24 @@
         "group": "all",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "office",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/common",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-release",
+        "src": "docs-ref-autogen/common_release",
+        "dest": "api"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -586,7 +586,6 @@
           "custom functions"
         ],
         "docs-ref-autogen/excel/excel/**": ["excel preview"],
-        "docs-ref-autogen/excel/office-runtime/**": ["common"],
         "docs-ref-autogen/excel_1_1/**": ["excel 1.1"],
         "docs-ref-autogen/excel_1_1/excel/**": ["excel 1.1"],
         "docs-ref-autogen/excel_1_2/**": ["excel 1.2"],
