@@ -218,6 +218,22 @@ Office.Auth#getAccessTokenAsync:member(1):
             console.log("Error obtaining token", result.error);
         }
     });
+Office.BeforeDocumentCloseNotification:interface:
+  - |-
+    // Enable the before close modal notification dialog. 
+    async function enableNotification() {
+        await Office.addin.beforeDocumentCloseNotification.enable(); 
+    }
+
+    // Add an event handler to detect when the document close operation is cancelled.
+    Office.addin.beforeDocumentCloseNotification.onCloseActionCancelled(async function () {
+        // When the document close attempt is cancelled, write a message to the active range in the worksheet.
+        await Excel.run(async (context) => {
+            const range = context.workbook.getSelectedRange();
+            range.values = [["Detected onCloseActionCancelled event."]];
+            await context.sync();
+        });
+    });    
 Office.Binding#addHandlerAsync:member(2):
   - |-
     // The following code sample calls the select method of the Office object to access the binding
