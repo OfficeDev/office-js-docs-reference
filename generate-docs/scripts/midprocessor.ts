@@ -167,6 +167,7 @@ tryCatch(async () => {
     }
 
     writeSnippetFileAndClearYamlIfNew("../json/office/snippets.yaml", yaml.safeDump(commonSnippets), "office");
+    writeSnippetFileAndClearYamlIfNew("../json/office_release/snippets.yaml", yaml.safeDump(commonSnippets), "office");
 
     writeSnippetFileAndClearYamlIfNew("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets), "onenote");
 
@@ -198,6 +199,7 @@ tryCatch(async () => {
 
     console.log("Moving Office Runtime APIs to Common API");
     fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
+    fsx.copySync(officeRuntimeJson, `../json/office_release/office-runtime.api.json`);
 
     console.log("Cleaning up What's New markdown files.");
     let filePath = `../../docs/requirement-set-tables/outlook-preview.md`;

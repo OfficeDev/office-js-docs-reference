@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: Office.FileType
+uid: 'office!Office.FileType:enum'
+package: office!
+fullName: Office.FileType
+summary: Specifies the format in which to return the document.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Compressed
+    uid: 'office!Office.FileType.Compressed:member'
+    package: office!
+    summary: 'Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.'
+  - name: Pdf
+    uid: 'office!Office.FileType.Pdf:member'
+    package: office!
+    summary: Returns the entire document in PDF format as a byte array.
+  - name: Text
+    uid: 'office!Office.FileType.Text:member'
+    package: office!
+    summary: Returns only the text of the document as a string.

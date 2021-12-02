@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: Office.Addin
+uid: 'office!Office.Addin:interface'
+package: office!
+fullName: Office.Addin
+summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: getStartupBehavior()
+    uid: 'office!Office.Addin#getStartupBehavior:member(1)'
+    package: office!
+    fullName: getStartupBehavior()
+    summary: Gets the current startup behavior for the add-in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStartupBehavior(): Promise<Office.StartupBehavior>;'
+      return:
+        type: 'Promise&lt;<xref uid="office!Office.StartupBehavior:enum" />&gt;'
+        description: ''
+  - name: hide()
+    uid: 'office!Office.Addin#hide:member(1)'
+    package: office!
+    fullName: hide()
+    summary: Hides the task pane.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hide(): Promise<void>;'
+      return:
+        type: Promise&lt;void&gt;
+        description: A promise that is resolved when the UI is hidden.
+  - name: onVisibilityModeChanged(listener)
+    uid: 'office!Office.Addin#onVisibilityModeChanged:member(1)'
+    package: office!
+    fullName: onVisibilityModeChanged(listener)
+    summary: Adds a listener for the `onVisibilityModeChanged` event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        onVisibilityModeChanged(
+                    listener: (message: VisibilityModeChangedMessage) => void,
+                ): Promise<() => Promise<void>>;
+      parameters:
+        - id: listener
+          description: >-
+            The listener function that is called when the event is emitted. This function takes in a message for the
+            receiving component.
+          type: '(message: <xref uid="office!Office.VisibilityModeChangedMessage:interface" />) =&gt; void'
+      return:
+        type: Promise&lt;() =&gt; Promise&lt;void&gt;&gt;
+        description: A promise that resolves to a function when the listener is added. Calling it removes the listener.
+  - name: setStartupBehavior(behavior)
+    uid: 'office!Office.Addin#setStartupBehavior:member(1)'
+    package: office!
+    fullName: setStartupBehavior(behavior)
+    summary: Sets the startup behavior for the add-in for when the document is opened next time.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;'
+      parameters:
+        - id: behavior
+          description: Specifies startup behavior of the add-in.
+          type: '<xref uid="office!Office.StartupBehavior:enum" />'
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: showAsTaskpane()
+    uid: 'office!Office.Addin#showAsTaskpane:member(1)'
+    package: office!
+    fullName: showAsTaskpane()
+    summary: Shows the task pane associated with the add-in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAsTaskpane(): Promise<void>;'
+      return:
+        type: Promise&lt;void&gt;
+        description: A promise that is resolved when the UI is shown.

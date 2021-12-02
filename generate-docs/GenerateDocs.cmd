@@ -125,6 +125,11 @@ if NOT EXIST "json/office" (
     call ..\node_modules\.bin\api-extractor run
     popd
 )
+if NOT EXIST "json/office-release" (
+    pushd api-extractor-inputs-office-release
+    call ..\node_modules\.bin\api-extractor run
+    popd
+)
 
 if NOT EXIST "json/excel" (
     pushd api-extractor-inputs-excel
@@ -335,6 +340,7 @@ popd
 
 
 if NOT EXIST "yaml/office" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office )
+if NOT EXIST "yaml/office_release" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office_release --output-folder .\yaml\office_release --office 2> nul )
 
 if NOT EXIST "yaml/excel" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office )
 if NOT EXIST "yaml/excel_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_1 --output-folder .\yaml\excel_1_1 --office 2> nul )
