@@ -141,13 +141,13 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
+        "group": "common-js-preview",
         "src": "docs-ref-autogen/common",
         "dest": "api"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-release",
+        "group": "common-js",
         "src": "docs-ref-autogen/common_release",
         "dest": "api"
       },
