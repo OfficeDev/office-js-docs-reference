@@ -79,7 +79,6 @@
         "exclude": [
           "common/**",
           "excel/**",
-          "excel.yml",
           "excel_1_1/**",
           "excel_1_2/**",
           "excel_1_3/**",
@@ -96,12 +95,9 @@
           "excel_1_14/**",
           "excel_online/**",
           "office/**",
-          "office.yml",
           "office_release/**",
           "onenote/**",
-          "onenote.yml",
           "outlook/**",
-          "outlook.yml",
           "outlook_1_1/**",
           "outlook_1_2/**",
           "outlook_1_3/**",
@@ -115,13 +111,10 @@
           "outlook_1_11/**",
           "overview/overview.md",
           "powerpoint/**",
-          "powerpoint.yml",  
           "powerpoint_1_1/**",
           "powerpoint_1_2/**",
           "visio/**",
-          "visio.yml",  
           "word/**",
-          "word.yml",
           "word_1_1/**",
           "word_1_2/**",
           "word_1_3/**",
@@ -155,22 +148,13 @@
       },
       {
         "files": [
-          "office.yml"
-        ],
-        "group": "office",
-        "src": "docs-ref-autogen",
-        "dest": "api"
-      },
-      {
-        "files": [
           "**/*.md",
           "**/*.yml"
         ],
         "group": "common-js-release",
         "src": "docs-ref-autogen/office_release",
         "dest": "api"
-      },
-      
+      },      
       {
         "files": [
           "overview.md"
@@ -195,15 +179,7 @@
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api"
-      },
-      {
-        "files": [
-          "outlook.yml"
-        ],
-        "group": "outlook-js-preview",
-        "src": "docs-ref-autogen",
-        "dest": "api"
-      },    
+      }, 
       {
         "files": [
           "**/*.md",
@@ -310,14 +286,6 @@
         ],
         "group": "excel-js-preview",
         "src": "docs-ref-autogen/excel",
-        "dest": "api"
-      },
-      {
-        "files": [
-          "excel.yml"
-        ],
-        "group": "excel-js-preview",
-        "src": "docs-ref-autogen",
         "dest": "api"
       },
       {
@@ -466,27 +434,11 @@
     },
     {
       "files": [
-        "onenote.yml"
-      ],
-      "group": "onenote-js-1.1",
-      "src": "docs-ref-autogen",
-      "dest": "api"
-    },
-    {
-      "files": [
         "**/*.md",
         "**/*.yml"
       ],
       "group": "powerpoint-js-preview",
       "src": "docs-ref-autogen/powerpoint",
-      "dest": "api"
-    },
-    {
-      "files": [
-        "powerpoint.yml"
-      ],
-      "group": "powerpoint-js-preview",
-      "src": "docs-ref-autogen",
       "dest": "api"
     },
     {
@@ -515,15 +467,7 @@
       "group": "visio-js-1.1",
       "src": "docs-ref-autogen/visio",
       "dest": "api"
-    },
-    {
-      "files": [
-        "visio.yml"
-      ],
-      "group": "visio-js-1.1",
-      "src": "docs-ref-autogen",
-      "dest": "api"
-    },    
+    }, 
     {
       "files": [
         "**/*.md",
@@ -531,14 +475,6 @@
       ],
       "group": "word-js-preview",
       "src": "docs-ref-autogen/word",
-      "dest": "api"
-    },
-    {
-      "files": [
-        "word.yml"
-      ],
-      "group": "word-js-preview",
-      "src": "docs-ref-autogen",
       "dest": "api"
     },
     {
