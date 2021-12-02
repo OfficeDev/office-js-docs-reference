@@ -90,9 +90,14 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithPreviewCommon, category.host, category.versions);
-        for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, i);
+        if (category.versions > 1) {
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithPreviewCommon, category.host, category.versions);
+            for (let i = 1; i < category.versions; i++) {
+                scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, i);
+            }
+        } else {
+            // This assumes the single version of the application's docs is not a preview version.
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, category.versions);
         }
     });
 
