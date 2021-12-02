@@ -25,6 +25,7 @@
           "excel_1_14/**",
           "excel_online/**",
           "office/**",
+          "office_release/**",
           "onenote/**",
           "outlook/**",
           "outlook_1_1/**",
@@ -111,6 +112,8 @@
           "excel_online.yml",
           "office/**",
           "office.yml",
+          "office_release/**",
+          "office_release.yml",
           "onenote/**",
           "onenote.yml",
           "outlook/**",
@@ -185,6 +188,23 @@
       {
         "files": [
           "office.yml"
+        ],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "office-release",
+        "src": "docs-ref-autogen/office_release",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "office_release.yml"
         ],
         "group": "common-js",
         "src": "docs-ref-autogen",
@@ -852,6 +872,10 @@
       }
     ],
     "groups": {
+      "common-js-release": {
+        "dest": "common-js-preview",
+        "moniker_range": "common-js-preview"
+      },
       "common-js": {
         "dest": "common-js",
         "moniker_range": "common-js"
@@ -1006,11 +1030,11 @@
       },
       "office": {
         "dest": "office",
-        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || >=word-js-1.1"
+        "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || >=word-js-1.1"
       },
       "all": {
         "dest": "all",
-        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
+        "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
       }
     },
     "overwrite": [],
@@ -1155,9 +1179,15 @@
           "excel online"
         ],
         "docs-ref-autogen/office/**": [
-          "common"
+          "common preview"
         ],
         "docs-ref-autogen/office/office/**": [
+          "common preview"
+        ],
+        "docs-ref-autogen/office-release/**": [
+          "common"
+        ],
+        "docs-ref-autogen/office-release/office/**": [
           "common"
         ],
         "docs-ref-autogen/onenote/**": [
@@ -1328,6 +1358,8 @@
         "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",
+        "docs-ref-autogen/office_release/**": "non-product-specific",
+        "docs-ref-autogen/office_release/office/**": "non-product-specific",
         "docs-ref-autogen/onenote/**": "onenote",
         "docs-ref-autogen/onenote/onenote/**": "onenote",
         "docs-ref-autogen/outlook/**": "outlook",
