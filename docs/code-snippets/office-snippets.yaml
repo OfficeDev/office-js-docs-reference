@@ -220,7 +220,7 @@ Office.Auth#getAccessTokenAsync:member(1):
     });
 Office.BeforeDocumentCloseNotification:interface:
   - |-
-    // Enable the before close modal notification dialog. 
+    // Enable the before document close modal notification dialog. 
     async function enableNotification() {
         await Office.addin.beforeDocumentCloseNotification.enable(); 
     }
