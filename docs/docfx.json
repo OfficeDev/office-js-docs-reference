@@ -5,7 +5,6 @@
         "files": ["**/toc.md", "**/toc.yml"],
         "exclude": [
           "common/**",
-          "common-preview/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
@@ -70,7 +69,6 @@
         "dest": "api",
         "exclude": [
           "common/**",
-          "common-preview/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
@@ -141,14 +139,8 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-preview",
-        "src": "docs-ref-autogen/common",
-        "dest": "api"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
         "group": "common-js",
-        "src": "docs-ref-autogen/common_release",
+        "src": "docs-ref-autogen/common",
         "dest": "api"
       },
       {
@@ -384,10 +376,6 @@
     ],
     "groups": {
       "common-js": {
-        "dest": "common-js-preview",
-        "moniker_range": "common-js-preview"
-      },
-      "common-js-release": {
         "dest": "common-js",
         "moniker_range": "common-js"
       },
