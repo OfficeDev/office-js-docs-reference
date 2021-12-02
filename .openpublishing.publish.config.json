@@ -7,7 +7,6 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "common-js-preview",
         "common-js",
         "excel-js-preview",
         "excel-js-1.1",
@@ -97,10 +96,6 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/common/toc.yml",
-      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
-    },
-    {
-      "ReferenceTOC": "docs/docs-ref-autogen/common-preview/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
