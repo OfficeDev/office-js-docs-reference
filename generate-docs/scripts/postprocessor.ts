@@ -114,10 +114,11 @@ tryCatch(async () => {
     console.log(`Namespace pass on Office docs`);
     const officeFolders: string[] = [docsDestination + "/office/office", docsDestination + "/office_release/office"];
     officeFolders.forEach((officeFolder) => {
-    fsx.readdirSync(officeFolder)
-        .forEach(filename => {
-            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
-        });
+    console.log(officeFolder);
+        fsx.readdirSync(officeFolder)
+            .forEach(filename => {
+                fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+            });
     });
 
     console.log(`Custom Functions API requirement set link pass`);

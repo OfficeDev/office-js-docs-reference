@@ -285,7 +285,7 @@ properties:
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: '<xref uid="office!Office.Mailbox:interface" />'
+        type: '<xref uid="outlook!Office.Mailbox:interface" />'
   - name: officeTheme
     uid: 'office!Office.Context#officeTheme:member'
     package: office!
@@ -388,7 +388,7 @@ properties:
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: '<xref uid="office!Office.RoamingSettings:interface" />'
+        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!

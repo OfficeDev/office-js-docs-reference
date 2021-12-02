@@ -16,14 +16,16 @@ tryCatch(async () => {
     // ----
     console.log("\nCleaning up Office json cross-referencing...");
 
-    const officeJsonPath = path.resolve("../json/office");
+    const officeJsonPaths: string[] = [path.resolve("../json/office"), path.resolve("../json/office_release")];
     const officeFilename = "office.api.json";
-    fsx.writeFileSync(
-        officeJsonPath + '/' + officeFilename,
-        fsx.readFileSync(officeJsonPath + '/' + officeFilename)
-            .toString()
-            .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
-            .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
+    officeJsonPaths.forEach((officeJsonPath) =>{
+        fsx.writeFileSync(
+            officeJsonPath + '/' + officeFilename,
+            fsx.readFileSync(officeJsonPath + '/' + officeFilename)
+                .toString()
+                .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
+                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
+    });
 
     console.log("\nCompleted Office json cross-referencing cleanup");
 
