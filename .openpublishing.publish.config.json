@@ -100,7 +100,7 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
-      "ReferenceTOC": "docs/docs-ref-autogen/office_release/toc.yml",
+      "ReferenceTOC": "docs/docs-ref-autogen/common-preview/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
