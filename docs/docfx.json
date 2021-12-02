@@ -5,6 +5,7 @@
         "files": ["**/toc.md", "**/toc.yml"],
         "exclude": [
           "common/**",
+          "common-preview/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
@@ -69,6 +70,7 @@
         "dest": "api",
         "exclude": [
           "common/**",
+          "common-preview/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
