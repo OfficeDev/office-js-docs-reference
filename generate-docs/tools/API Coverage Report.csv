@@ -5887,7 +5887,7 @@ Office.AuthOptions,authChallenge,Method,Good,false
 Office.AuthOptions,forceAddAccount,Method,Good,false
 Office.AuthOptions,forceConsent,Method,Good,false
 Office.AuthOptions,forMSGraphAccess,Method,Good,false
-Office.BeforeDocumentCloseNotification,N/A,Class,Good,false
+Office.BeforeDocumentCloseNotification,N/A,Class,Good,true
 Office.BeforeDocumentCloseNotification,disable(),Method,Good,false
 Office.BeforeDocumentCloseNotification,enable(),Method,Good,false
 Office.BeforeDocumentCloseNotification,onCloseActionCancelled(listener),Method,Good,false
