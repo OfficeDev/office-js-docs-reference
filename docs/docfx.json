@@ -179,7 +179,7 @@
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen/outlook",
         "dest": "api"
-      }, 
+      },
       {
         "files": [
           "**/*.md",
