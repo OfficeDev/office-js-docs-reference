@@ -269,9 +269,11 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                             let iconSetList = membersToMove.items.filter(item => {
                                 return excelIconSetFilter.indexOf(item.name) >= 0;
                             });
-        
-                            let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                            primaryList.unshift(excelIconSetRoot);
+                            
+                            if (iconSetList.length > 0) {
+                                let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                                primaryList.unshift(excelIconSetRoot);
+                            }
                             primaryList.unshift(enumRoot);            
                             if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
                                 primaryList.unshift(customFunctionsRoot);

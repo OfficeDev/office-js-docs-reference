@@ -123,11 +123,8 @@
           "word/**",
           "word.yml",
           "word_1_1/**",
-          "word_1_1.yml",
           "word_1_2/**",
-          "word_1_2.yml",
           "word_1_3/**",
-          "word_1_3.yml",
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
@@ -169,7 +166,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "office-release",
+        "group": "common-js-release",
         "src": "docs-ref-autogen/office_release",
         "dest": "api"
       },
@@ -588,11 +585,11 @@
       }
     ],
     "groups": {
-      "common-js-release": {
+      "common-js": {
         "dest": "common-js-preview",
         "moniker_range": "common-js-preview"
       },
-      "common-js": {
+      "common-js-release": {
         "dest": "common-js",
         "moniker_range": "common-js"
       },
