@@ -189,7 +189,7 @@
         "files": [
           "office.yml"
         ],
-        "group": "common-js-preview",
+        "group": "office",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
@@ -206,10 +206,11 @@
         "files": [
           "office_release.yml"
         ],
-        "group": "common-js",
+        "group": "office-release",
         "src": "docs-ref-autogen",
         "dest": "api"
       },
+      
       {
         "files": [
           "overview.md"
