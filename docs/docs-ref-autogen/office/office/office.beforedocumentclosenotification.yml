@@ -61,10 +61,10 @@ methods:
       return:
         type: Promise&lt;void&gt;
         description: ''
-  - name: onCloseActionCancelled(listener)
+  - name: onCloseActionCancelled(handler)
     uid: 'office!Office.BeforeDocumentCloseNotification#onCloseActionCancelled:member(1)'
     package: office!
-    fullName: onCloseActionCancelled(listener)
+    fullName: onCloseActionCancelled(handler)
     summary: >-
       Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. This
       event handler will be triggered if one of the following conditions is met: 1. When the notification dialog is
@@ -77,10 +77,10 @@ methods:
     syntax:
       content: |-
         onCloseActionCancelled(
-                    listener: () => void
+                    handler: () => void
                 ): Promise<() => Promise<void>>;
       parameters:
-        - id: listener
+        - id: handler
           description: The event handler that is called when the dialog is cancelled.
           type: () =&gt; void
       return:
