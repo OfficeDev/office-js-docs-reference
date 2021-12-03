@@ -51,9 +51,6 @@ items:
                 uid: 'excel!Excel.SheetVisibility:enum'
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
-          - name: Icon Sets
-            uid: ''
-            items: []
           - name: Application
             uid: 'excel!Excel.Application:class'
           - name: Binding
@@ -239,8 +236,6 @@ items:
                 uid: 'office!Office.Auth:interface'
               - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
-              - name: BeforeDocumentCloseNotification
-                uid: 'office!Office.BeforeDocumentCloseNotification:interface'
               - name: Binding
                 uid: 'office!Office.Binding:interface'
               - name: BindingDataChangedEventArgs

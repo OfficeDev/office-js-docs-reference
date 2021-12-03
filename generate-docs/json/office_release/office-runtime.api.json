@@ -1,0 +1,1274 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.18.19",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "office-runtime!",
+  "docComment": "",
+  "name": "office-runtime",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "office-runtime!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Namespace",
+          "canonicalReference": "office-runtime!OfficeRuntime:namespace",
+          "docComment": "/**\n * Office runtime namespace.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare namespace OfficeRuntime "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OfficeRuntime",
+          "members": [
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.ApiInformation:interface",
+              "docComment": "/**\n * Interface that contains functions for checking API requirement-set support.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface ApiInformation "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ApiInformation",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.ApiInformation#isSetSupported:member(1)",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "isSetSupported(name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", minVersion?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "name",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "minVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "isSetSupported"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office-runtime!OfficeRuntime.apiInformation:var",
+              "docComment": "/**\n * Provides information about what Requirement Sets are supported in current environment.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "apiInformation: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ApiInformation",
+                  "canonicalReference": "office-runtime!OfficeRuntime.ApiInformation:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "apiInformation",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.Auth:interface",
+              "docComment": "/**\n * Interface that contains authorization related APIs.\n *\n * @remarks\n *\n * The methods in this interface are equivalent to those in the `Office.auth` interface. If new authentication types are added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples throughout the documentation use `Office.auth`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Auth "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Auth",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Auth#getAccessToken:member(1)",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook, PowerPoint, Word\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAccessToken(options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AuthOptions",
+                      "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getAccessToken"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office-runtime!OfficeRuntime.auth:var",
+              "docComment": "/**\n * Contains authorization related APIs.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "auth: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Auth",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Auth:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "auth",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions:interface",
+              "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.\n *\n * @remarks\n *\n * The methods in this interface are equivalent to those in the `Office.AuthOptions` interface. If new authentication types are added in the future, they will only be added to the `Office.AuthOptions` interface. For simplicity, the code examples throughout the documentation use `Office.AuthOptions`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface AuthOptions "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "AuthOptions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#allowConsentPrompt:member",
+                  "docComment": "/**\n * Allows Office to get an access token silently or through interactive consent, if one is required. Default value is `false`. If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error. If set to `true`, Office will show an interactive consent UI after it fails to silently get an access token. The prompt will only allow consent to the AAD profile scope, not to any Microsoft Graph scopes.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "allowConsentPrompt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "allowConsentPrompt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#allowSignInPrompt:member",
+                  "docComment": "/**\n * Allows Office to get an access token silently provided consent is present or show interactive UI to sign in the user. Default value is `false`. If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error. If set to `true`, Office will show an interactive sign-in UI after it fails to silently get an access token.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "allowSignInPrompt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "allowSignInPrompt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#asyncContext:member",
+                  "docComment": "/**\n * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "asyncContext?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "asyncContext",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#authChallenge:member",
+                  "docComment": "/**\n * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a \"second try\" call of `getAccessToken` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used with the `authChallenge` option.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "authChallenge?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "authChallenge",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#forceAddAccount:member",
+                  "docComment": "/**\n * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowSignInPrompt` instead.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "forceAddAccount?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "forceAddAccount",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#forceConsent:member",
+                  "docComment": "/**\n * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has been revoked. Default value is `false`.\n *\n * @deprecated\n *\n * Use `allowConsentPrompt` instead.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "forceConsent?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "forceConsent",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#forMSGraphAccess:member",
+                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "forMSGraphAccess?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "forMSGraphAccess",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface",
+              "docComment": "/**\n * Object representing the dialog box.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Dialog "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Dialog",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Dialog#close:member(1)",
+                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "close(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "close"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "office-runtime!OfficeRuntime.displayWebDialog:function(1)",
+              "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * [Api set: SharedRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function displayWebDialog(url: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DisplayWebDialogOptions",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dialog",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "displayWebDialog"
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface",
+              "docComment": "/**\n * Provides display options and actions a dialog box may take.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface DisplayWebDialogOptions "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DisplayWebDialogOptions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member",
+                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "displayInIFrame?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "displayInIFrame",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member",
+                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "height?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "height",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "onClose?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "() => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "onClose",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "onMessage?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(message: string, dialog?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog",
+                      "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "onMessage",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "onRuntimeError?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(error: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error",
+                      "canonicalReference": "!Error:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", dialog?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog",
+                      "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "onRuntimeError",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member",
+                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "width?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "width",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Storage "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Storage",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItem:member(1)",
+                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string | null>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItems:member(1)",
+                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getItems(keys: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{ [key: string]: string | null }>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getItems"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getKeys:member(1)",
+                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getKeys(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string[]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getKeys"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItem:member(1)",
+                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "removeItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItems:member(1)",
+                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "removeItems(keys: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "removeItems"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItem:member(1)",
+                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setItem(key: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", value: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 7
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "value",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "setItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItems:member(1)",
+                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setItems(keyValues: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{ [key: string]: string }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "keyValues",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "setItems"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office-runtime!OfficeRuntime.storage:var",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "storage: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Storage",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "storage",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
