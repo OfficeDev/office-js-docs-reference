@@ -592,12 +592,12 @@ export declare namespace Office {
          */
         hide(): Promise<void>;
         /**
-         * Adds a listener for the `onVisibilityModeChanged` event.
-         * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
-         * @returns A promise that resolves to a function when the listener is added. Calling it removes the listener.
+         * Adds a handler for the `onVisibilityModeChanged` event.
+         * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.
+         * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.
          */
         onVisibilityModeChanged(
-            listener: (message: VisibilityModeChangedMessage) => void,
+            handler: (message: VisibilityModeChangedMessage) => void,
         ): Promise<() => Promise<void>>;
 
         /**
@@ -642,7 +642,7 @@ export declare namespace Office {
          * This event handler will be triggered if one of the following conditions is met:
          * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
          * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
-         * @param listener - The event handler that is called when the dialog is cancelled.
+         * @param handler - The event handler that is called when the dialog is cancelled.
          * @returns A promise that resolves when the event handler is added.
          * 
          * @remarks
@@ -650,7 +650,7 @@ export declare namespace Office {
          * @beta
         */
         onCloseActionCancelled(
-            listener: () => void
+            handler: () => void
         ): Promise<() => Promise<void>>;     
     }
     /**

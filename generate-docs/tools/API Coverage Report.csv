@@ -5854,7 +5854,7 @@ Office.Addin,N/A,Class,Fine,false
 Office.Addin,beforeDocumentCloseNotification,Method,Good,false
 Office.Addin,getStartupBehavior(),Method,Fine,false
 Office.Addin,hide(),Method,Poor,false
-Office.Addin,onVisibilityModeChanged(listener),Method,Fine,false
+Office.Addin,onVisibilityModeChanged(handler),Method,Fine,false
 Office.Addin,setStartupBehavior(behavior),Method,Fine,false
 Office.Addin,showAsTaskpane(),Method,Fine,false
 Office.AddinCommands.Event,N/A,Class,Good,false
@@ -5890,7 +5890,7 @@ Office.AuthOptions,forMSGraphAccess,Method,Good,false
 Office.BeforeDocumentCloseNotification,N/A,Class,Good,true
 Office.BeforeDocumentCloseNotification,disable(),Method,Good,false
 Office.BeforeDocumentCloseNotification,enable(),Method,Good,false
-Office.BeforeDocumentCloseNotification,onCloseActionCancelled(listener),Method,Good,false
+Office.BeforeDocumentCloseNotification,onCloseActionCancelled(handler),Method,Good,false
 Office.Binding,N/A,Class,Good,false
 Office.Binding,document,Method,Fine,true
 Office.Binding,id,Method,Fine,true
