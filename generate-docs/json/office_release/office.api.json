@@ -611,11 +611,11 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#onVisibilityModeChanged:member(1)",
-                  "docComment": "/**\n * Adds a listener for the `onVisibilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the listener is added. Calling it removes the listener.\n */\n",
+                  "docComment": "/**\n * Adds a handler for the `onVisibilityModeChanged` event.\n *\n * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "onVisibilityModeChanged(\n            listener: "
+                      "text": "onVisibilityModeChanged(\n            handler: "
                     },
                     {
                       "kind": "Content",
@@ -666,7 +666,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "listener",
+                      "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
