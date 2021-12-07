@@ -110,9 +110,8 @@ methods:
       return:
         type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: >-
-          The task with the given ID. If there is no task with the given ID, then this function will return an object
-          with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods
-          and
+          The task with the given ID. If there is no task with the given ID, then this method returns an object with its
+          `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
           properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
           -->.
   - name: load(options)

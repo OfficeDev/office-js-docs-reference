@@ -417,6 +417,22 @@ properties:
       content: 'values?: boolean;'
       return:
         type: boolean
+  - name: valuesAsJson
+    uid: 'excel!Excel.Interfaces.RangeLoadOptions#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in the cells in this range. Unlike `Range.values`<!-- -->,
+      `Range.valuesAsJson` supports all data types which can be in a cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJson?: boolean;'
+      return:
+        type: boolean
   - name: valueTypes
     uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
     package: excel!
