@@ -154,6 +154,22 @@ properties:
       content: 'values?: boolean;'
       return:
         type: boolean
+  - name: valuesAsJson
+    uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      For EACH ITEM in the collection: A JSON representation of the values in the cells in this range. Unlike
+      `RangeView.values`<!-- -->, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJson?: boolean;'
+      return:
+        type: boolean
   - name: valueTypes
     uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#valueTypes:member'
     package: excel!

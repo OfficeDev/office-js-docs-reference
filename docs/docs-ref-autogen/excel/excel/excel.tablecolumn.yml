@@ -88,6 +88,22 @@ properties:
       content: 'values: any[][];'
       return:
         type: 'any[][]'
+  - name: valuesAsJson
+    uid: 'excel!Excel.TableColumn#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in the cells in this table column. Unlike `TableColumn.values`<!-- -->,
+      `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJson: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
 methods:
   - name: delete()
     uid: 'excel!Excel.TableColumn#delete:member(1)'

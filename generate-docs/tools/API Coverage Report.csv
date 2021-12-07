@@ -468,6 +468,22 @@ Excel.CalculationType,N/A,Class,Fine,false
 Excel.CalculationType,full,EnumField,Fine,false
 Excel.CalculationType,fullRebuild,EnumField,Fine,false
 Excel.CalculationType,recalculate,EnumField,Fine,false
+Excel.CardLayoutListSection,N/A,Class,Good,false
+Excel.CardLayoutListSection,layout,Method,Good,false
+Excel.CardLayoutPropertyReference,N/A,Class,Good,false
+Excel.CardLayoutPropertyReference,property,Method,Good,false
+Excel.CardLayoutSectionStandardProperties,N/A,Class,Good,false
+Excel.CardLayoutSectionStandardProperties,collapsed,Method,Good,false
+Excel.CardLayoutSectionStandardProperties,collapsible,Method,Good,false
+Excel.CardLayoutSectionStandardProperties,properties,Method,Good,false
+Excel.CardLayoutSectionStandardProperties,title,Method,Good,false
+Excel.CardLayoutStandardProperties,N/A,Class,Good,false
+Excel.CardLayoutStandardProperties,mainImage,Method,Good,false
+Excel.CardLayoutStandardProperties,sections,Method,Good,false
+Excel.CardLayoutStandardProperties,subTitle,Method,Good,false
+Excel.CardLayoutStandardProperties,title,Method,Good,false
+Excel.CardLayoutTableSection,N/A,Class,Good,false
+Excel.CardLayoutTableSection,layout,Method,Good,false
 Excel.CellBorder,N/A,Class,Good,false
 Excel.CellBorder,color,Method,Good,false
 Excel.CellBorder,style,Method,Good,false
@@ -2500,9 +2516,12 @@ Excel.EmptyCellValue,N/A,Class,Good,false
 Excel.EmptyCellValue,basicType,Method,Good,false
 Excel.EmptyCellValue,basicValue,Method,Good,false
 Excel.EmptyCellValue,type,Method,Good,false
+Excel.EntityCardLayout,N/A,Class,Good,false
+Excel.EntityCardLayout,layout,Method,Good,false
 Excel.EntityCellValue,N/A,Class,Good,false
 Excel.EntityCellValue,basicType,Method,Good,false
 Excel.EntityCellValue,basicValue,Method,Good,false
+Excel.EntityCellValue,cardLayout,Method,Good,false
 Excel.EntityCellValue,properties,Method,Good,false
 Excel.EntityCellValue,text,Method,Good,false
 Excel.EntityCellValue,type,Method,Good,false
@@ -2543,6 +2562,7 @@ Excel.ErrorCodes,mergedRangeConflict,EnumField,Missing,false
 Excel.ErrorCodes,nonBlankCellOffSheet,EnumField,Missing,false
 Excel.ErrorCodes,notImplemented,EnumField,Missing,false
 Excel.ErrorCodes,openWorkbookLinksBlocked,EnumField,Missing,false
+Excel.ErrorCodes,operationCellsExceedLimit,EnumField,Missing,false
 Excel.ErrorCodes,pivotTableRangeConflict,EnumField,Missing,false
 Excel.ErrorCodes,rangeExceedsLimit,EnumField,Missing,false
 Excel.ErrorCodes,refreshWorkbookLinksBlocked,EnumField,Missing,false
@@ -3651,6 +3671,7 @@ Excel.NamedItem,name,Method,Good,false
 Excel.NamedItem,scope,Method,Good,false
 Excel.NamedItem,type,Method,Good,false
 Excel.NamedItem,value,Method,Good,false
+Excel.NamedItem,valueAsJson,Method,Good,false
 Excel.NamedItem,visible,Method,Good,false
 Excel.NamedItem,worksheet,Method,Good,false
 Excel.NamedItem,worksheetOrNullObject,Method,Good,false
@@ -3667,6 +3688,7 @@ Excel.NamedItemArrayValues,N/A,Class,Good,false
 Excel.NamedItemArrayValues,context,Method,Good,false
 Excel.NamedItemArrayValues,types,Method,Fine,false
 Excel.NamedItemArrayValues,values,Method,Good,false
+Excel.NamedItemArrayValues,valuesAsJson,Method,Good,false
 Excel.NamedItemArrayValues,load(options),Method,Good,false
 Excel.NamedItemArrayValues,load(propertyNames),Method,Good,false
 Excel.NamedItemArrayValues,load(propertyNamesAndPaths),Method,Good,false
@@ -4226,6 +4248,7 @@ Excel.Range,style,Method,Good,false
 Excel.Range,text,Method,Good,false
 Excel.Range,top,Method,Good,false
 Excel.Range,values,Method,Good,false
+Excel.Range,valuesAsJson,Method,Good,false
 Excel.Range,valueTypes,Method,Good,false
 Excel.Range,width,Method,Good,false
 Excel.Range,worksheet,Method,Good,false
@@ -4502,6 +4525,7 @@ Excel.RangeView,rowCount,Method,Good,false
 Excel.RangeView,rows,Method,Good,false
 Excel.RangeView,text,Method,Good,false
 Excel.RangeView,values,Method,Good,false
+Excel.RangeView,valuesAsJson,Method,Good,false
 Excel.RangeView,valueTypes,Method,Good,false
 Excel.RangeView,getRange(),Method,Good,false
 Excel.RangeView,load(options),Method,Good,false
@@ -5212,6 +5236,7 @@ Excel.TableColumn,id,Method,Good,false
 Excel.TableColumn,index,Method,Good,false
 Excel.TableColumn,name,Method,Good,false
 Excel.TableColumn,values,Method,Good,false
+Excel.TableColumn,valuesAsJson,Method,Good,false
 Excel.TableColumn,delete(),Method,Good,true
 Excel.TableColumn,getDataBodyRange(),Method,Good,true
 Excel.TableColumn,getHeaderRowRange(),Method,Good,true
@@ -5250,6 +5275,7 @@ Excel.TableRow,N/A,Class,Good,false
 Excel.TableRow,context,Method,Good,false
 Excel.TableRow,index,Method,Good,false
 Excel.TableRow,values,Method,Good,false
+Excel.TableRow,valuesAsJson,Method,Good,false
 Excel.TableRow,delete(),Method,Good,true
 Excel.TableRow,getRange(),Method,Good,true
 Excel.TableRow,load(options),Method,Good,false
@@ -5854,7 +5880,7 @@ Office.Addin,N/A,Class,Fine,false
 Office.Addin,beforeDocumentCloseNotification,Method,Good,false
 Office.Addin,getStartupBehavior(),Method,Fine,false
 Office.Addin,hide(),Method,Poor,false
-Office.Addin,onVisibilityModeChanged(listener),Method,Fine,false
+Office.Addin,onVisibilityModeChanged(handler),Method,Fine,false
 Office.Addin,setStartupBehavior(behavior),Method,Fine,false
 Office.Addin,showAsTaskpane(),Method,Fine,false
 Office.AddinCommands.Event,N/A,Class,Good,false
@@ -5890,7 +5916,7 @@ Office.AuthOptions,forMSGraphAccess,Method,Good,false
 Office.BeforeDocumentCloseNotification,N/A,Class,Good,true
 Office.BeforeDocumentCloseNotification,disable(),Method,Good,false
 Office.BeforeDocumentCloseNotification,enable(),Method,Good,false
-Office.BeforeDocumentCloseNotification,onCloseActionCancelled(listener),Method,Good,false
+Office.BeforeDocumentCloseNotification,onCloseActionCancelled(handler),Method,Good,false
 Office.Binding,N/A,Class,Good,false
 Office.Binding,document,Method,Fine,true
 Office.Binding,id,Method,Fine,true

@@ -544,12 +544,12 @@ export declare namespace Office {
          */
         hide(): Promise<void>;
         /**
-         * Adds a listener for the `onVisibilityModeChanged` event.
-         * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
-         * @returns A promise that resolves to a function when the listener is added. Calling it removes the listener.
+         * Adds a handler for the `onVisibilityModeChanged` event.
+         * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.
+         * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.
          */
          onVisibilityModeChanged(
-            listener: (message: VisibilityModeChangedMessage) => void,
+            handler: (message: VisibilityModeChangedMessage) => void,
         ): Promise<() => Promise<void>>;
     }
     /**

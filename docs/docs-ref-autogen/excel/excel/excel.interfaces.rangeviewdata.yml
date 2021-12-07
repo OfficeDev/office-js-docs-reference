@@ -148,6 +148,22 @@ properties:
       content: 'values?: any[][];'
       return:
         type: 'any[][]'
+  - name: valuesAsJson
+    uid: 'excel!Excel.Interfaces.RangeViewData#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in the cells in this range. Unlike `RangeView.values`<!-- -->,
+      `RangeView.valuesAsJson` supports all data types which can be in a cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJson?: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
   - name: valueTypes
     uid: 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
     package: excel!

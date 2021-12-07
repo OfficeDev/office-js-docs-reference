@@ -407,6 +407,157 @@ export declare namespace Excel {
         errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell";
     }
     /**
+    * Represents a reference to a property used by the card layout.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CardLayoutPropertyReference {
+        /**
+        * The name of the property referenced by the card layout.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        property: string;
+    }
+    /**
+    * Properties of a card layout relevant to most card layouts.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CardLayoutSectionStandardProperties {
+        /**
+        * Represents the title of this section of the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        title?: string;
+        /**
+        * Represents whether this section of the card is collapsible.
+        * If the card section has a title, the default value is `true`.
+        * If the card section doesn't have a title, the default value is `false`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        collapsible?: boolean;
+        /**
+        * Represents whether this section of the card is initially collapsed.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        collapsed?: boolean;
+        /**
+        * Represents the names of the properties in this section.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        properties: string[];
+    }
+    /**
+    * Represents a section of a card that is arranged as a list in card view.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CardLayoutListSection extends CardLayoutSectionStandardProperties {
+        /**
+        * Represents the type of layout for this section.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        layout: "List";
+    }
+    /**
+    * Represents a section of a card that is arranged as a table in card view.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CardLayoutTableSection extends CardLayoutSectionStandardProperties {
+        /**
+        * Represents the type of layout for this section.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        layout: "Table";
+    }
+    /**
+    * Represents the layout of a section of a card in card view.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;
+    /**
+    * Properties of a card layout relevant to most card layouts.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CardLayoutStandardProperties {
+        /**
+        * Specifies a property which will be used as the main image of the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mainImage?: CardLayoutPropertyReference;
+        /**
+        * Represents the title of the card or the specification of which property contains the title of the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        title?: string | CardLayoutPropertyReference;
+        /**
+        * Represents a specification of which property contains the subtitle of the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        subTitle?: CardLayoutPropertyReference;
+        /**
+        * Represents the sections of the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        sections?: CardLayoutSection[];
+    }
+    /**
+    * Represents the layout of a card in card view.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type CardLayout = EntityCardLayout;
+    /**
     * Represents the types of the `CellValue` object.
     *
     * @remarks
@@ -502,7 +653,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
+    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
         /**
         * Represents whether this `CellValue` will be used to overwrite a cell.
         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -522,6 +673,23 @@ export declare namespace Excel {
         * @beta
         */
         writableNote?: string;
+    };
+    /**
+    * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type CellValueAndPropertyMetadata = CellValue & {
+        /**
+        * Represents metadata about the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        propertyMetadata?: CellValuePropertyMetadata;
     };
     /**
     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
@@ -974,6 +1142,14 @@ export declare namespace Excel {
         basicType?: RangeValueType.empty | "Empty";
     }
     /**
+    * Represents the value of a property.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;
+    /**
     * Represents an schemaless set of properties.
     *
     * @remarks
@@ -1021,10 +1197,34 @@ export declare namespace Excel {
         * @beta
         */
         properties?: {
-            [key: string]: CellValue & {
-                propertyMetadata?: CellValuePropertyMetadata;
-            };
+            [key: string]: EntityPropertyType;
         };
+        /**
+        * Represents the layout of this entity in card view.
+        * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cardLayout?: CardLayout;
+    }
+    /**
+    * Represents a card layout best used for an entity.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityCardLayout extends CardLayoutStandardProperties {
+        /**
+        * Represent the type of this layout.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        layout?: "Entity";
     }
     /**
     * Represents the types of the `ErrorCellValue` object.
@@ -3019,7 +3219,7 @@ export declare namespace Excel {
          * @beta
          *
          * @param key - The title of the `AllowEditRange`.
-         * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this function will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.AllowEditRange;
         /**
@@ -3517,7 +3717,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.LinkedWorkbook;
         /**
-         * Gets information about a linked workbook by its URL. If the workbook does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets information about a linked workbook by its URL. If the workbook does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -4267,7 +4467,7 @@ export declare namespace Excel {
          * @beta
          *
          * @param key - The ID of the task.
-         * @returns The task with the given ID. If there is no task with the given ID, then this function will return an object with its `isNullObject` property set to `true`.
+         * @returns The task with the given ID. If there is no task with the given ID, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.DocumentTask;
@@ -8100,7 +8300,7 @@ export declare namespace Excel {
          */
         getActiveChart(): Excel.Chart;
         /**
-         * Gets the currently active chart in the workbook. If there is no active chart, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -8115,7 +8315,7 @@ export declare namespace Excel {
          */
         getActiveSlicer(): Excel.Slicer;
         /**
-         * Gets the currently active slicer in the workbook. If there is no active slicer, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -8596,7 +8796,7 @@ export declare namespace Excel {
          *
          * @param text - The string to find.
          * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case-sensitive.
-         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this function will return an object with its `isNullObject` property set to `true`.
+         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -8620,7 +8820,7 @@ export declare namespace Excel {
          */
         getNext(visibleOnly?: boolean): Excel.Worksheet;
         /**
-         * Gets the worksheet that follows this one. If there are no worksheets following this one, then this method will return an object with its `isNullObject` property set to `true`.
+         * Gets the worksheet that follows this one. If there are no worksheets following this one, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -8639,7 +8839,7 @@ export declare namespace Excel {
          */
         getPrevious(visibleOnly?: boolean): Excel.Worksheet;
         /**
-         * Gets the worksheet that precedes this one. If there are no previous worksheets, then this method will return an object with its `isNullObject` property set to `true`.
+         * Gets the worksheet that precedes this one. If there are no previous worksheets, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -8688,7 +8888,7 @@ export declare namespace Excel {
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
-         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this function will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.4]
@@ -8976,7 +9176,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Worksheet;
         /**
-         * Gets a worksheet object using its name or ID. If the worksheet does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -9495,7 +9695,7 @@ export declare namespace Excel {
         /**
          * Gets a range that describes the frozen cells in the active worksheet view.
                     The frozen range corresponds to cells that are frozen in the top- and left-most pane.
-                    If there is no frozen pane, then this function will return an object with its `isNullObject` property set to `true`.
+                    If there is no frozen pane, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -9804,6 +10004,15 @@ export declare namespace Excel {
          */
         values: any[][];
         /**
+         * A JSON representation of the values in the cells in this range.
+                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJson: CellValue[][];
+        /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
          * @remarks
@@ -9947,7 +10156,7 @@ export declare namespace Excel {
         /**
          * Finds the given string based on the criteria specified.
                     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
-                    If there are no matches, then this function will return an object with its `isNullObject` property set to `true`.
+                    If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10115,7 +10324,7 @@ export declare namespace Excel {
          */
         getIntersection(anotherRange: Range | string): Excel.Range;
         /**
-         * Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10270,7 +10479,7 @@ export declare namespace Excel {
         getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
-                    If no special cells are found, then this function will return an object with its `isNullObject` property set to `true`.
+                    If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10282,7 +10491,7 @@ export declare namespace Excel {
         getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
-                    If no special cells are found, then this function will return an object with its `isNullObject` property set to `true`.
+                    If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10301,7 +10510,7 @@ export declare namespace Excel {
         getSpillParent(): Excel.Range;
         /**
          * Gets the range object containing the anchor cell for the cell getting spilled into.
-                    If it's not a spilled cell, or more than one cell is given, then this function will return an object with its `isNullObject` property set to `true`.
+                    If it's not a spilled cell, or more than one cell is given, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10317,7 +10526,7 @@ export declare namespace Excel {
         getSpillingToRange(): Excel.Range;
         /**
          * Gets the range object containing the spill range when called on an anchor cell.
-                    If the range isn't an anchor cell or the spill range can't be found, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the range isn't an anchor cell or the spill range can't be found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10350,7 +10559,7 @@ export declare namespace Excel {
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
-         * Returns the used range of the given range object. If there are no used cells within the range, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the used range of the given range object. If there are no used cells within the range, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10841,7 +11050,7 @@ export declare namespace Excel {
          */
         getIntersection(anotherRange: Range | RangeAreas | string): Excel.RangeAreas;
         /**
-         * Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`. If no intersection is found, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`. If no intersection is found, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10881,7 +11090,7 @@ export declare namespace Excel {
          */
         getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
-         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10892,7 +11101,7 @@ export declare namespace Excel {
          */
         getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
         /**
-         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special cells are found that match the criteria, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -10923,7 +11132,7 @@ export declare namespace Excel {
         getUsedRangeAreas(valuesOnly?: boolean): Excel.RangeAreas;
         /**
          * Returns the used `RangeAreas` that comprises all the used areas of individual rectangular ranges in the `RangeAreas` object.
-                    If there are no used cells within the `RangeAreas`, then this function will return an object with its `isNullObject` property set to `true`.
+                    If there are no used cells within the `RangeAreas`, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -11014,7 +11223,7 @@ export declare namespace Excel {
          */
         getRangeAreasBySheet(key: string): Excel.RangeAreas;
         /**
-         * Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -11631,6 +11840,15 @@ export declare namespace Excel {
          */
         values: any[][];
         /**
+         * A JSON representation of the values in the cells in this range.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJson: CellValue[][];
+        /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
          * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
@@ -11761,7 +11979,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Setting;
         /**
-         * Gets a setting entry via the key. If the setting does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -11920,7 +12138,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.NamedItem;
         /**
-         * Gets a `NamedItem` object using its name. If the object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -11977,7 +12195,7 @@ export declare namespace Excel {
          */
         readonly worksheet: Excel.Worksheet;
         /**
-         * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12027,6 +12245,15 @@ export declare namespace Excel {
          */
         readonly value: any;
         /**
+         * A JSON representation of the values in this named item.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly valueAsJson: CellValue;
+        /**
          * Specifies if the object is visible.
          *
          * @remarks
@@ -12056,7 +12283,7 @@ export declare namespace Excel {
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range object that is associated with the name. If the named item's type is not a range, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the range object that is associated with the name. If the named item's type is not a range, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12113,6 +12340,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly values: any[][];
+        /**
+         * A JSON representation of the values in the cells in this range.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly valuesAsJson: CellValue[][];
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -12350,7 +12586,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Binding;
         /**
-         * Gets a binding object by ID. If the binding object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a binding object by ID. If the binding object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12437,7 +12673,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Table;
         /**
-         * Gets a table by name or ID. If the table doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12543,7 +12779,7 @@ export declare namespace Excel {
         getItem(key: string): Excel.Table;
         /**
          * Gets a table by name or ID.
-                    If the table object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the table object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12909,7 +13145,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.TableColumn;
         /**
-         * Gets a column object by name or ID. If the column doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a column object by name or ID. If the column doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -12987,6 +13223,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        /**
+         * A JSON representation of the values in the cells in this table column.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJson: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -13191,6 +13436,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        /**
+         * A JSON representation of the values in the cells in this table row.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJson: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -14309,7 +14563,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Chart;
         /**
-         * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If the chart doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If the chart doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -14588,7 +14842,7 @@ export declare namespace Excel {
          */
         getDataTable(): Excel.ChartDataTable;
         /**
-         * Gets the data table on the chart. If the chart doesn't allow a data table, then this function returns an object with its `isNullObject` property set to `true`.
+         * Gets the data table on the chart. If the chart doesn't allow a data table, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19562,7 +19816,7 @@ export declare namespace Excel {
         getItem(id: string): Excel.CustomXmlPart;
         /**
          * Gets a custom XML part based on its ID.
-                    If the `CustomXmlPart` does not exist, then this function returns an object with its `isNullObject` property set to `true`.
+                    If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19658,7 +19912,7 @@ export declare namespace Excel {
         getItem(id: string): Excel.CustomXmlPart;
         /**
          * Gets a custom XML part based on its ID.
-                    If the `CustomXmlPart` does not exist, then this function returns an object with its `isNullObject` property set to `true`.
+                    If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19791,7 +20045,7 @@ export declare namespace Excel {
         getFirst(): Excel.PivotTable;
         /**
          * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and left-to-right, such that the top-left table is the first PivotTable in the collection.
-                    If the collection is empty, then this function returns an object with its `isNullObject` property set to `true`.
+                    If the collection is empty, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19809,7 +20063,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.PivotTable;
         /**
-         * Gets a PivotTable by name. If the PivotTable does not exist, then this function returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -19882,7 +20136,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotTable;
         /**
-         * Gets a PivotTable by name. If the PivotTable does not exist, then this function returns an object with its `isNullObject` property set to `true`.
+         * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -20441,7 +20695,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotHierarchy;
         /**
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -20575,7 +20829,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.RowColumnPivotHierarchy;
         /**
-         * Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -20730,7 +20984,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.FilterPivotHierarchy;
         /**
-         * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -20891,7 +21145,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.DataPivotHierarchy;
         /**
-         * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21086,7 +21340,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotField;
         /**
-         * Gets a PivotField by name. If the PivotField does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a PivotField by name. If the PivotField does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21328,7 +21582,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotItem;
         /**
-         * Gets a PivotItem by name. If the PivotItem does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a PivotItem by name. If the PivotItem does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21854,7 +22108,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.WorksheetCustomProperty;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -21897,7 +22151,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of custom properties of the workbook. Read only.
+         * Gets the collection of custom properties of the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -21932,7 +22186,7 @@ export declare namespace Excel {
          */
         company: string;
         /**
-         * Gets the creation date of the workbook. Read only.
+         * Gets the creation date of the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -21946,7 +22200,7 @@ export declare namespace Excel {
          */
         keywords: string;
         /**
-         * Gets the last author of the workbook. Read only.
+         * Gets the last author of the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -21960,7 +22214,7 @@ export declare namespace Excel {
          */
         manager: string;
         /**
-         * Gets the revision number of the workbook. Read only.
+         * Gets the revision number of the workbook.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -22132,7 +22386,7 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.CustomProperty;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a custom property object by its key, which is case-insensitive. If the custom property doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -22229,7 +22483,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.ConditionalFormat;
         /**
          * Returns a conditional format identified by its ID.
-                    If the conditional format object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the conditional format object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -22444,7 +22698,7 @@ export declare namespace Excel {
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple ranges, then this function will return an object with its `isNullObject` property set to `true`.
+         * Returns the range to which the conditonal format is applied. If the conditional format is applied to multiple ranges, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24053,7 +24307,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Style;
         /**
          * Gets a style by name.
-                    If the style object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the style object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24134,7 +24388,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.TableStyle;
         /**
-         * Gets a `TableStyle` by name. If the table style does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a `TableStyle` by name. If the table style does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24298,7 +24552,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.PivotTableStyle;
         /**
-         * Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a `PivotTableStyle` by name. If the `PivotTableStyle` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24462,7 +24716,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.SlicerStyle;
         /**
-         * Gets a `SlicerStyle` by name. If the slicer style doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a `SlicerStyle` by name. If the slicer style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24626,7 +24880,7 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.TimelineStyle;
         /**
-         * Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a `TimelineStyle` by name. If the timeline style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24908,7 +25162,7 @@ export declare namespace Excel {
          */
         getPrintArea(): Excel.RangeAreas;
         /**
-         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24923,7 +25177,7 @@ export declare namespace Excel {
          */
         getPrintTitleColumns(): Excel.Range;
         /**
-         * Gets the range object representing the title columns. If not set, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the range object representing the title columns. If not set, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -24938,7 +25192,7 @@ export declare namespace Excel {
          */
         getPrintTitleRows(): Excel.Range;
         /**
-         * Gets the range object representing the title rows. If not set, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the range object representing the title rows. If not set, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -25659,7 +25913,7 @@ export declare namespace Excel {
         getItemByReplyId(replyId: string): Excel.Comment;
         /**
          * Gets a comment from the collection based on its ID.
-                    If the comment object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the comment object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -25839,7 +26093,7 @@ export declare namespace Excel {
          */
         getTask(): Excel.DocumentTask;
         /**
-         * Gets the task associated with this comment. If there is no task for the comment thread, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the task associated with this comment. If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -25941,7 +26195,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.CommentReply;
         /**
          * Returns a comment reply identified by its ID.
-                    If the comment reply object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the comment reply object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -26094,7 +26348,7 @@ export declare namespace Excel {
          */
         getTask(): Excel.DocumentTask;
         /**
-         * Gets the task associated with this comment reply's thread. If there is no task for the comment thread, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets the task associated with this comment reply's thread. If there is no task for the comment thread, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -26257,7 +26511,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Shape;
         /**
          * Gets a shape using its name or ID.
-                    If the shape object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the shape object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -26350,7 +26604,7 @@ export declare namespace Excel {
          */
         readonly parentGroup: Excel.Shape;
         /**
-         * Returns the text frame object of this shape. Read only.
+         * Returns the text frame object of this shape.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -26876,7 +27130,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Shape;
         /**
          * Gets a shape using its name or ID.
-                    If the shape object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the shape object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27793,7 +28047,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Slicer;
         /**
-         * Gets a slicer using its name or ID. If the slicer doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a slicer using its name or ID. If the slicer doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -27937,7 +28191,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.SlicerItem;
         /**
-         * Gets a slicer item using its key or name. If the slicer item doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a slicer item using its key or name. If the slicer item doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -28139,7 +28393,7 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.LinkedDataType;
         /**
-         * Gets a linked data type by ID. If the linked data type doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+         * Gets a linked data type by ID. If the linked data type doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -35383,7 +35637,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.NamedSheetView;
         /**
          * Gets a sheet view using its name.
-                    If the sheet view object does not exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    If the sheet view object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
          *
          * @remarks
@@ -39243,6 +39497,7 @@ export declare namespace Excel {
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         openWorkbookLinksBlocked = "OpenWorkbookLinksBlocked",
+        operationCellsExceedLimit = "OperationCellsExceedLimit",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
@@ -39755,6 +40010,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -39819,6 +40083,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -39975,6 +40248,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -39990,6 +40272,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -42725,7 +43016,7 @@ export declare namespace Excel {
              */
             manager?: string;
             /**
-             * Gets the revision number of the workbook. Read only.
+             * Gets the revision number of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -45378,6 +45669,15 @@ export declare namespace Excel {
              */
             values?: any[][];
             /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
+            /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
              * @remarks
@@ -45577,6 +45877,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -45659,6 +45968,15 @@ export declare namespace Excel {
              */
             value?: any;
             /**
+             * A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJson?: CellValue;
+            /**
              * Specifies if the object is visible.
              *
              * @remarks
@@ -45682,6 +46000,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -45872,6 +46199,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -45894,6 +46230,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
@@ -49067,7 +49412,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
             /**
-            * Gets the collection of custom properties of the workbook. Read only.
+            * Gets the collection of custom properties of the workbook.
             *
             * @remarks
             * [Api set: ExcelApi 1.7]
@@ -49102,7 +49447,7 @@ export declare namespace Excel {
              */
             company?: string;
             /**
-             * Gets the creation date of the workbook. Read only.
+             * Gets the creation date of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -49116,7 +49461,7 @@ export declare namespace Excel {
              */
             keywords?: string;
             /**
-             * Gets the last author of the workbook. Read only.
+             * Gets the last author of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -49130,7 +49475,7 @@ export declare namespace Excel {
              */
             manager?: string;
             /**
-             * Gets the revision number of the workbook. Read only.
+             * Gets the revision number of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -52691,6 +53036,15 @@ export declare namespace Excel {
              */
             values?: boolean;
             /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
+            /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
              * @remarks
@@ -52890,6 +53244,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents a collection of `RangeView` objects.
@@ -52979,6 +53342,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
@@ -53058,7 +53430,7 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this function will return an object with its `isNullObject` property set to `true`.
+            * For EACH ITEM in the collection: Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
             For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
@@ -53108,6 +53480,15 @@ export declare namespace Excel {
              */
             value?: boolean;
             /**
+             * For EACH ITEM in the collection: A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJson?: boolean;
+            /**
              * For EACH ITEM in the collection: Specifies if the object is visible.
              *
              * @remarks
@@ -53141,7 +53522,7 @@ export declare namespace Excel {
             */
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
-            * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this function will return an object with its `isNullObject` property set to `true`.
+            * Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this method returns an object with its `isNullObject` property set to `true`.
             For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
@@ -53191,6 +53572,15 @@ export declare namespace Excel {
              */
             value?: boolean;
             /**
+             * A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJson?: boolean;
+            /**
              * Specifies if the object is visible.
              *
              * @remarks
@@ -53223,6 +53613,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents an Office.js binding that is defined in the workbook.
@@ -53726,6 +54125,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents a column in a table.
@@ -53774,6 +54182,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents a collection of all the rows that are part of the table.
@@ -53806,6 +54223,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents a row in a table.
@@ -53838,6 +54264,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
         }
         /**
          * Represents the data validation applied to the current range.
@@ -58712,7 +59147,7 @@ export declare namespace Excel {
              */
             company?: boolean;
             /**
-             * Gets the creation date of the workbook. Read only.
+             * Gets the creation date of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -58726,7 +59161,7 @@ export declare namespace Excel {
              */
             keywords?: boolean;
             /**
-             * Gets the last author of the workbook. Read only.
+             * Gets the last author of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -58740,7 +59175,7 @@ export declare namespace Excel {
              */
             manager?: boolean;
             /**
-             * Gets the revision number of the workbook. Read only.
+             * Gets the revision number of the workbook.
              *
              * @remarks
              * [Api set: ExcelApi 1.7]
@@ -60812,6 +61247,15 @@ export declare namespace Excel {
              */
             values?: boolean;
             /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJson?: boolean;
+            /**
              * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
              * @remarks
@@ -61264,7 +61708,7 @@ export declare namespace Excel {
             */
             parentGroup?: Excel.Interfaces.ShapeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
+            * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -61466,7 +61910,7 @@ export declare namespace Excel {
             */
             parentGroup?: Excel.Interfaces.ShapeLoadOptions;
             /**
-            * Returns the text frame object of this shape. Read only.
+            * Returns the text frame object of this shape.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -61752,7 +62196,7 @@ export declare namespace Excel {
             */
             parentGroup?: Excel.Interfaces.ShapeLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
+            * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]

@@ -140,8 +140,8 @@ methods:
       return:
         type: '<xref uid="excel!Excel.AllowEditRange:class" />'
         description: >-
-          The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this function
-          will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+          The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method
+          returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
           [\*OrNullObject methods and
           properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
           -->.
