@@ -289,7 +289,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeCollectionLoadOptions#textFrame:member'
     package: excel!
     fullName: textFrame
-    summary: 'For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.'
+    summary: 'For EACH ITEM in the collection: Returns the text frame object of this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

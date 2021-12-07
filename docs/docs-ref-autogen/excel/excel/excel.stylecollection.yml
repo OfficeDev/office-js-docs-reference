@@ -171,7 +171,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(name)
     summary: >-
-      Gets a style by name. If the style object does not exist, then this function will return an object with its
+      Gets a style by name. If the style object does not exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

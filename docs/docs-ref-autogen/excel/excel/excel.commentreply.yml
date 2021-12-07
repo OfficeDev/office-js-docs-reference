@@ -262,8 +262,8 @@ methods:
     fullName: getTaskOrNullObject()
     summary: >-
       Gets the task associated with this comment reply's thread. If there is no task for the comment thread, then this
-      function will return an object with its `isNullObject` property set to `true`<!-- -->. For further information,
-      see [*OrNullObject methods and
+      method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

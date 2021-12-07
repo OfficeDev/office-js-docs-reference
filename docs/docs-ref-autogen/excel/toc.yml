@@ -445,6 +445,16 @@ items:
             uid: 'excel!Excel.BusyErrorCellValue:interface'
           - name: CalcErrorCellValue
             uid: 'excel!Excel.CalcErrorCellValue:interface'
+          - name: CardLayoutListSection
+            uid: 'excel!Excel.CardLayoutListSection:interface'
+          - name: CardLayoutPropertyReference
+            uid: 'excel!Excel.CardLayoutPropertyReference:interface'
+          - name: CardLayoutSectionStandardProperties
+            uid: 'excel!Excel.CardLayoutSectionStandardProperties:interface'
+          - name: CardLayoutStandardProperties
+            uid: 'excel!Excel.CardLayoutStandardProperties:interface'
+          - name: CardLayoutTableSection
+            uid: 'excel!Excel.CardLayoutTableSection:interface'
           - name: CellBorder
             uid: 'excel!Excel.CellBorder:interface'
           - name: CellBorderCollection
@@ -699,6 +709,8 @@ items:
             uid: 'excel!Excel.DoubleCellValue:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
+          - name: EntityCardLayout
+            uid: 'excel!Excel.EntityCardLayout:interface'
           - name: EntityCellValue
             uid: 'excel!Excel.EntityCellValue:interface'
           - name: FieldErrorCellValue

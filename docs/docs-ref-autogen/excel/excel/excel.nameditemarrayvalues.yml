@@ -47,6 +47,22 @@ properties:
       content: 'readonly values: any[][];'
       return:
         type: 'any[][]'
+  - name: valuesAsJson
+    uid: 'excel!Excel.NamedItemArrayValues#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in the cells in this range. Unlike `NamedItemArrayValues.values`<!-- -->,
+      `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly valuesAsJson: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
 methods:
   - name: load(options)
     uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
