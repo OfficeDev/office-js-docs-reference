@@ -22,7 +22,7 @@
 ||[matchWildcards](/javascript/api/word/word.body#matchWildcards)||
 ||[paragraphs](/javascript/api/word/word.body#paragraphs)|Gets the collection of paragraph objects in the body.|
 ||[parentContentControl](/javascript/api/word/word.body#parentContentControl)|Gets the content control that contains the body.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.body#search_searchText__searchOptions__ignorePunct__ignoreSpace__matchCase__matchPrefix__matchSuffix__matchWholeWord__matchWildcards_)|Performs a search with the specified SearchOptions on the scope of the body object.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.body#search_searchText__searchOptions_)|Performs a search with the specified SearchOptions on the scope of the body object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.body#select_selectionMode_)|Selects the body and navigates the Word UI to it.|
 ||[style](/javascript/api/word/word.body#style)|Gets or sets the style name for the body.|
 ||[text](/javascript/api/word/word.body#text)|Gets the text of the body.|
@@ -55,7 +55,7 @@
 ||[parentContentControl](/javascript/api/word/word.contentcontrol#parentContentControl)|Gets the content control that contains the content control.|
 ||[placeholderText](/javascript/api/word/word.contentcontrol#placeholderText)|Gets or sets the placeholder text of the content control.|
 ||[removeWhenEdited](/javascript/api/word/word.contentcontrol#removeWhenEdited)|Gets or sets a value that indicates whether the content control is removed after it is edited.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.contentcontrol#search_searchText__searchOptions__ignorePunct__ignoreSpace__matchCase__matchPrefix__matchSuffix__matchWholeWord__matchWildcards_)|Performs a search with the specified SearchOptions on the scope of the content control object.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.contentcontrol#search_searchText__searchOptions_)|Performs a search with the specified SearchOptions on the scope of the content control object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.contentcontrol#select_selectionMode_)|Selects the content control.|
 ||[style](/javascript/api/word/word.contentcontrol#style)|Gets or sets the style name for the content control.|
 ||[tag](/javascript/api/word/word.contentcontrol#tag)|Gets or sets a tag to identify a content control.|
@@ -125,7 +125,7 @@
 ||[outlineLevel](/javascript/api/word/word.paragraph#outlineLevel)|Gets or sets the outline level for the paragraph.|
 ||[parentContentControl](/javascript/api/word/word.paragraph#parentContentControl)|Gets the content control that contains the paragraph.|
 ||[rightIndent](/javascript/api/word/word.paragraph#rightIndent)|Gets or sets the right indent value, in points, for the paragraph.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.paragraph#search_searchText__searchOptions__ignorePunct__ignoreSpace__matchCase__matchPrefix__matchSuffix__matchWholeWord__matchWildcards_)|Performs a search with the specified SearchOptions on the scope of the paragraph object.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.paragraph#search_searchText__searchOptions_)|Performs a search with the specified SearchOptions on the scope of the paragraph object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.paragraph#select_selectionMode_)|Selects and navigates the Word UI to the paragraph.|
 ||[spaceAfter](/javascript/api/word/word.paragraph#spaceAfter)|Gets or sets the spacing, in points, after the paragraph.|
 ||[spaceBefore](/javascript/api/word/word.paragraph#spaceBefore)|Gets or sets the spacing, in points, before the paragraph.|
@@ -154,7 +154,7 @@
 ||[matchWildcards](/javascript/api/word/word.range#matchWildcards)||
 ||[paragraphs](/javascript/api/word/word.range#paragraphs)|Gets the collection of paragraph objects in the range.|
 ||[parentContentControl](/javascript/api/word/word.range#parentContentControl)|Gets the content control that contains the range.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.range#search_searchText__searchOptions__ignorePunct__ignoreSpace__matchCase__matchPrefix__matchSuffix__matchWholeWord__matchWildcards_)|Performs a search with the specified SearchOptions on the scope of the range object.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.range#search_searchText__searchOptions_)|Performs a search with the specified SearchOptions on the scope of the range object.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.range#select_selectionMode_)|Selects and navigates the Word UI to the range.|
 ||[style](/javascript/api/word/word.range#style)|Gets or sets the style name for the range.|
 ||[text](/javascript/api/word/word.range#text)|Gets the text of the range.|
