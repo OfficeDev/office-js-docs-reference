@@ -3,11 +3,8 @@ name: OneNote.Interfaces.FloatingInkLoadOptions
 uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.FloatingInkLoadOptions
-summary: |-
-  Represents a group of ink strokes.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents a group of ink strokes.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member'
     package: onenote!
     fullName: inkStrokes
-    summary: |-
-      Gets the strokes of the FloatingInk object.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the strokes of the FloatingInk object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +51,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member'
     package: onenote!
     fullName: pageContent
-    summary: |-
-      Gets the PageContent parent of the FloatingInk object.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the PageContent parent of the FloatingInk object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

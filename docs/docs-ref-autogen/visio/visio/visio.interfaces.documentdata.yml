@@ -3,7 +3,7 @@ name: Visio.Interfaces.DocumentData
 uid: 'visio!Visio.Interfaces.DocumentData:interface'
 package: visio!
 fullName: Visio.Interfaces.DocumentData
-summary: An interface describing the data returned by calling "document.toJSON()".
+summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -24,6 +24,81 @@ properties:
       content: 'application?: Visio.Interfaces.ApplicationData;'
       return:
         type: '<xref uid="visio!Visio.Interfaces.ApplicationData:interface" />'
+  - name: description
+    uid: 'visio!Visio.Interfaces.DocumentData#description:member'
+    package: visio!
+    fullName: description
+    summary: |-
+      Gets or sets the description of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: string;'
+      return:
+        type: string
+  - name: fullName
+    uid: 'visio!Visio.Interfaces.DocumentData#fullName:member'
+    package: visio!
+    fullName: fullName
+    summary: |-
+      Returns the name of the document, including the drive and path. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fullName?: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'visio!Visio.Interfaces.DocumentData#id:member'
+    package: visio!
+    fullName: id
+    summary: |-
+      Returns the ID of the document. Read-only
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: index
+    uid: 'visio!Visio.Interfaces.DocumentData#index:member'
+    package: visio!
+    fullName: index
+    summary: |-
+      Returns the ordinal position of a Document object in the Documents Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: number;'
+      return:
+        type: number
+  - name: name
+    uid: 'visio!Visio.Interfaces.DocumentData#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Returns the name of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
   - name: pages
     uid: 'visio!Visio.Interfaces.DocumentData#pages:member'
     package: visio!
@@ -39,18 +114,3 @@ properties:
       content: 'pages?: Visio.Interfaces.PageData[];'
       return:
         type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />[]'
-  - name: view
-    uid: 'visio!Visio.Interfaces.DocumentData#view:member'
-    package: visio!
-    fullName: view
-    summary: |-
-      Returns the DocumentView object. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'view?: Visio.Interfaces.DocumentViewData;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentViewData:interface" />'

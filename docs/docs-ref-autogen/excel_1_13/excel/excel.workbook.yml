@@ -950,7 +950,7 @@ events:
     uid: 'excel!Excel.Workbook#onActivated:member'
     package: excel!
     fullName: onActivated
-    summary: 'Occurs when the the workbook is activated. Note: This event will not fire when the workbook is opened.'
+    summary: 'Occurs when the workbook is activated. Note: This event will not fire when the workbook is opened.'
     remarks: >-
       \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 

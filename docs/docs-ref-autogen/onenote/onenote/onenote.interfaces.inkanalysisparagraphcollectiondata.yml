@@ -3,7 +3,7 @@ name: OneNote.Interfaces.InkAnalysisParagraphCollectionData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionData
-summary: An interface describing the data returned by calling "inkAnalysisParagraphCollection.toJSON()".
+summary: An interface describing the data returned by calling `inkAnalysisParagraphCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

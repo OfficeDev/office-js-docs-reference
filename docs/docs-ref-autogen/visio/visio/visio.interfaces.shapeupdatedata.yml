@@ -3,39 +3,39 @@ name: Visio.Interfaces.ShapeUpdateData
 uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
 package: visio!
 fullName: Visio.Interfaces.ShapeUpdateData
-summary: 'An interface for updating data on the Shape object, for use in "shape.set(<!-- -->{ ... }<!-- -->)".'
+summary: 'An interface for updating data on the Shape object, for use in `shape.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: select
-    uid: 'visio!Visio.Interfaces.ShapeUpdateData#select:member'
+  - name: application
+    uid: 'visio!Visio.Interfaces.ShapeUpdateData#application:member'
     package: visio!
-    fullName: select
+    fullName: application
     summary: |-
-      Returns true, if shape is selected. User can set true to select the shape explicitly.
+      Returns the instance of Microsoft Visio that is associated with an object.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select?: boolean;'
+      content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
       return:
-        type: boolean
-  - name: view
-    uid: 'visio!Visio.Interfaces.ShapeUpdateData#view:member'
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface" />'
+  - name: document
+    uid: 'visio!Visio.Interfaces.ShapeUpdateData#document:member'
     package: visio!
-    fullName: view
+    fullName: document
     summary: |-
-      Returns the view of the shape.
+      Gets the document object that is assocaited with the shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'view?: Visio.Interfaces.ShapeViewUpdateData;'
+      content: 'document?: Visio.Interfaces.DocumentUpdateData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.ShapeViewUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentUpdateData:interface" />'

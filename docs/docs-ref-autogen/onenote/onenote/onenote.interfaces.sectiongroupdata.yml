@@ -3,7 +3,7 @@ name: OneNote.Interfaces.SectionGroupData
 uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.SectionGroupData
-summary: An interface describing the data returned by calling "sectionGroup.toJSON()".
+summary: An interface describing the data returned by calling `sectionGroup.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#clientUrl:member'
     package: onenote!
     fullName: clientUrl
-    summary: |-
-      The client url of the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: The client url of the section group. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the section group. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the section group. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#name:member'
     package: onenote!
     fullName: name
-    summary: |-
-      Gets the name of the section group. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the name of the section group. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +49,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#sectionGroups:member'
     package: onenote!
     fullName: sectionGroups
-    summary: |-
-      The collection of section groups in the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: The collection of section groups in the section group. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +61,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.SectionGroupData#sections:member'
     package: onenote!
     fullName: sections
-    summary: |-
-      The collection of sections in the section group. Read only
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: The collection of sections in the section group. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

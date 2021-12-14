@@ -3,10 +3,7 @@ name: Visio.Document
 uid: 'visio!Visio.Document:class'
 package: visio!
 fullName: Visio.Document
-summary: |-
-  Represents the Document class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -41,6 +38,81 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
+  - name: description
+    uid: 'visio!Visio.Document#description:member'
+    package: visio!
+    fullName: description
+    summary: |-
+      Gets or sets the description of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description: string;'
+      return:
+        type: string
+  - name: fullName
+    uid: 'visio!Visio.Document#fullName:member'
+    package: visio!
+    fullName: fullName
+    summary: |-
+      Returns the name of the document, including the drive and path. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fullName: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'visio!Visio.Document#id:member'
+    package: visio!
+    fullName: id
+    summary: |-
+      Returns the ID of the document. Read-only
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: index
+    uid: 'visio!Visio.Document#index:member'
+    package: visio!
+    fullName: index
+    summary: |-
+      Returns the ordinal position of a Document object in the Documents Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type: number
+  - name: name
+    uid: 'visio!Visio.Document#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Returns the name of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
   - name: pages
     uid: 'visio!Visio.Document#pages:member'
     package: visio!
@@ -75,28 +147,29 @@ properties:
               }
           });
           ```
-  - name: view
-    uid: 'visio!Visio.Document#view:member'
+methods:
+  - name: close()
+    uid: 'visio!Visio.Document#close:member(1)'
     package: visio!
-    fullName: view
+    fullName: close()
     summary: |-
-      Returns the DocumentView object. Read-only.
+      Closes a document.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly view: Visio.DocumentView;'
+      content: 'close(): void;'
       return:
-        type: '<xref uid="visio!Visio.DocumentView:class" />'
-methods:
+        type: void
+        description: ''
   - name: getActivePage()
     uid: 'visio!Visio.Document#getActivePage:member(1)'
     package: visio!
     fullName: getActivePage()
     summary: |-
-      Returns the Active Page of the document.
+      Returns the active page of the document.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -126,38 +199,21 @@ methods:
               }
           });
           ```
-  - name: load(option)
+  - name: load(options)
     uid: 'visio!Visio.Document#load:member(1)'
     package: visio!
-    fullName: load(option)
+    fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;'
+      content: 'load(options?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;'
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type: '<xref uid="visio!Visio.Interfaces.DocumentLoadOptions:interface" />'
       return:
         type: '<xref uid="visio!Visio.Document:class" />'
@@ -192,13 +248,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Document;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Document;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type: '{ select?: string; expand?: string; }'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
         type: '<xref uid="visio!Visio.Document:class" />'
         description: ''
@@ -209,10 +273,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Document): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,7 +312,7 @@ methods:
     package: visio!
     fullName: setActivePage(PageName)
     summary: |-
-      Set the Active Page of the document.
+      Set the active page of the document.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -283,38 +344,68 @@ methods:
               }
           });
           ```
-  - name: startDataRefresh()
-    uid: 'visio!Visio.Document#startDataRefresh:member(1)'
+  - name: 'showTaskPane(taskPaneType, initialProps, show)'
+    uid: 'visio!Visio.Document#showTaskPane:member(1)'
     package: visio!
-    fullName: startDataRefresh()
-    summary: |-
-      Triggers the refresh of the data in the Diagram, for all pages.
+    fullName: 'showTaskPane(taskPaneType, initialProps, show)'
+    summary: >-
+      Show or hide a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio
+      drawing to show/hide the task pane.
+
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'startDataRefresh(): void;'
+      content: 'showTaskPane(taskPaneType: Visio.TaskPaneType, initialProps?: any, show?: boolean): void;'
+      parameters:
+        - id: taskPaneType
+          description: Type of the 1st Party TaskPane. It can take values from enum TaskPaneType.
+          type: '<xref uid="visio!Visio.TaskPaneType:enum" />'
+        - id: initialProps
+          description: >-
+            Optional Parameter. This is a generic data structure which would be filled with initial data required to
+            initialize the content of the Taskpane.
+          type: any
+        - id: show
+          description: 'Optional Parameter. If it is set to false, it will hide the specified taskpane.'
+          type: boolean
       return:
         type: void
-        description: |-
+        description: ''
+  - name: 'showTaskPane(taskPaneTypeString, initialProps, show)'
+    uid: 'visio!Visio.Document#showTaskPane:member(2)'
+    package: visio!
+    fullName: 'showTaskPane(taskPaneTypeString, initialProps, show)'
+    summary: >-
+      Show or hide a TaskPane. This will be consumed by the DV Excel Add-In/Other third-party apps who embed the visio
+      drawing to show/hide the task pane.
 
 
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              document.startDataRefresh();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        showTaskPane(taskPaneTypeString: "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings",
+        initialProps?: any, show?: boolean): void;
+      parameters:
+        - id: taskPaneTypeString
+          description: Type of the 1st Party TaskPane. It can take values from enum TaskPaneType.
+          type: '"None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings"'
+        - id: initialProps
+          description: >-
+            Optional Parameter. This is a generic data structure which would be filled with initial data required to
+            initialize the content of the Taskpane.
+          type: any
+        - id: show
+          description: 'Optional Parameter. If it is set to false, it will hide the specified taskpane.'
+          type: boolean
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: 'visio!Visio.Document#toJSON:member(1)'
     package: visio!
@@ -334,57 +425,6 @@ methods:
         type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
         description: ''
 events:
-  - name: onDataRefreshComplete
-    uid: 'visio!Visio.Document#onDataRefreshComplete:member'
-    package: visio!
-    fullName: onDataRefreshComplete
-    summary: |-
-      Occurs when the data is refreshed in the diagram.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.DataRefreshCompleteEventArgs:interface" />&gt;
-  - name: onDocumentLoadComplete
-    uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
-    package: visio!
-    fullName: onDocumentLoadComplete
-    summary: |-
-      Occurs when the Document is loaded, refreshed, or changed.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.DocumentLoadCompleteEventArgs:interface" />&gt;
-  - name: onPageLoadComplete
-    uid: 'visio!Visio.Document#onPageLoadComplete:member'
-    package: visio!
-    fullName: onPageLoadComplete
-    summary: |-
-      Occurs when the page is finished loading.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.PageLoadCompleteEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'visio!Visio.Document#onSelectionChanged:member'
     package: visio!
@@ -402,38 +442,21 @@ events:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.SelectionChangedEventArgs:interface" />&gt;
-  - name: onShapeMouseEnter
-    uid: 'visio!Visio.Document#onShapeMouseEnter:member'
+  - name: onShapeAdded
+    uid: 'visio!Visio.Document#onShapeAdded:member'
     package: visio!
-    fullName: onShapeMouseEnter
+    fullName: onShapeAdded
     summary: |-
-      Occurs when the user moves the mouse pointer into the bounding box of a shape.
+      Occurs when the shape is added.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
+      content: 'readonly onShapeAdded: OfficeExtension.EventHandlers<Visio.ShapeAddedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.ShapeMouseEnterEventArgs:interface" />&gt;
-  - name: onShapeMouseLeave
-    uid: 'visio!Visio.Document#onShapeMouseLeave:member'
-    package: visio!
-    fullName: onShapeMouseLeave
-    summary: |-
-      Occurs when the user moves the mouse out of the bounding box of a shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
-      return:
-        type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="visio!Visio.ShapeMouseLeaveEventArgs:interface" />&gt;
+          uid="visio!Visio.ShapeAddedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

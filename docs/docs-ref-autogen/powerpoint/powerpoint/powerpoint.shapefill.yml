@@ -3,11 +3,8 @@ name: PowerPoint.ShapeFill
 uid: 'powerpoint!PowerPoint.ShapeFill:class'
 package: powerpoint!
 fullName: PowerPoint.ShapeFill
-summary: |-
-  Represents the fill formatting of a shape object.
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Represents the fill formatting of a shape object.
+remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -33,10 +30,7 @@ properties:
     summary: >-
       Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
       named HTML color (e.g., "orange").
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -51,10 +45,7 @@ properties:
       Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
       if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
       gradient fill type.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -68,10 +59,7 @@ properties:
     summary: >-
       Returns the fill type of the shape. See [PowerPoint.ShapeFillType](xref:powerpoint!PowerPoint.ShapeFillType:enum)
       for details.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -87,11 +75,8 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeFill#clear:member(1)'
     package: powerpoint!
     fullName: clear()
-    summary: |-
-      Clears the fill formatting of this shape.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears the fill formatting of this shape.
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -170,11 +155,8 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeFill#setSolidColor:member(1)'
     package: powerpoint!
     fullName: setSolidColor(color)
-    summary: |-
-      Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`<!-- -->.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`<!-- -->.
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: PowerPoint.ShapeType
 uid: 'powerpoint!PowerPoint.ShapeType:enum'
 package: powerpoint!
 fullName: PowerPoint.ShapeType
-summary: |-
-  Specifies the type of a shape.
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the type of a shape.
+remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 fields:

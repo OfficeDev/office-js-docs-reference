@@ -3,15 +3,42 @@ name: Visio.Application
 uid: 'visio!Visio.Application:class'
 package: visio!
 fullName: Visio.Application
-summary: |-
-  Represents the Application.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: activeDocument
+    uid: 'visio!Visio.Application#activeDocument:member'
+    package: visio!
+    fullName: activeDocument
+    summary: |-
+      Returns the active document. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly activeDocument: Visio.Document;'
+      return:
+        type: '<xref uid="visio!Visio.Document:class" />'
+  - name: activePage
+    uid: 'visio!Visio.Application#activePage:member'
+    package: visio!
+    fullName: activePage
+    summary: |-
+      Returns the active page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly activePage: Visio.Page;'
+      return:
+        type: '<xref uid="visio!Visio.Page:class" />'
   - name: context
     uid: 'visio!Visio.Application#context:member'
     package: visio!
@@ -26,87 +53,111 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: showBorders
-    uid: 'visio!Visio.Application#showBorders:member'
+  - name: documents
+    uid: 'visio!Visio.Application#documents:member'
     package: visio!
-    fullName: showBorders
+    fullName: documents
     summary: |-
-      Show or hide the iFrame application borders.
+      Returns the documents collection for a Microsoft Visio instance. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showBorders: boolean;'
+      content: 'readonly documents: Visio.DocumentCollection;'
       return:
-        type: boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var application = ctx.document.application;
-              application.showToolbars = false;
-              application.showBorders = false;
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - name: showToolbars
-    uid: 'visio!Visio.Application#showToolbars:member'
+        type: '<xref uid="visio!Visio.DocumentCollection:class" />'
+  - name: isVisible
+    uid: 'visio!Visio.Application#isVisible:member'
     package: visio!
-    fullName: showToolbars
+    fullName: isVisible
     summary: |-
-      Show or hide the standard toolbars.
+      Gets or sets if the application is visible.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showToolbars: boolean;'
+      content: 'isVisible: boolean;'
       return:
         type: boolean
+  - name: name
+    uid: 'visio!Visio.Application#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Specifies the name of the application. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: userName
+    uid: 'visio!Visio.Application#userName:member'
+    package: visio!
+    fullName: userName
+    summary: |-
+      Gets or sets the user name of the application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userName: string;'
+      return:
+        type: string
 methods:
-  - name: load(option)
+  - name: 'getStencilInfo(stencilName, includeHiddenMasters)'
+    uid: 'visio!Visio.Application#getStencilInfo:member(1)'
+    package: visio!
+    fullName: 'getStencilInfo(stencilName, includeHiddenMasters)'
+    summary: |-
+      Get the stencil information.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getStencilInfo(stencilName: string, includeHiddenMasters?: boolean):
+        OfficeExtension.ClientResult<Visio.StencilInfo>;
+      parameters:
+        - id: stencilName
+          description: StencilName represents file name of a stencil.
+          type: string
+        - id: includeHiddenMasters
+          description: >-
+            Specifies whether to Include Masters which are Hidden from Visio's UI(like Shapes Panel).The default value
+            is false.
+          type: boolean
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.StencilInfo:interface"
+          />&gt;
+        description: ''
+  - name: load(options)
     uid: 'visio!Visio.Application#load:member(1)'
     package: visio!
-    fullName: load(option)
+    fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
+      content: 'load(options?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
       return:
         type: '<xref uid="visio!Visio.Application:class" />'
@@ -141,13 +192,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Application;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Application;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type: '{ select?: string; expand?: string; }'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
         type: '<xref uid="visio!Visio.Application:class" />'
         description: ''
@@ -158,10 +217,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Application): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,52 +248,6 @@ methods:
         - id: properties
           description: ''
           type: '<xref uid="visio!Visio.Application:class" />'
-      return:
-        type: void
-        description: ''
-  - name: 'showToolbar(id, show)'
-    uid: 'visio!Visio.Application#showToolbar:member(1)'
-    package: visio!
-    fullName: 'showToolbar(id, show)'
-    summary: |-
-      Sets the visibility of a specific toolbar in the application.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showToolbar(id: Visio.ToolBarType, show: boolean): void;'
-      parameters:
-        - id: id
-          description: The type of the Toolbar
-          type: '<xref uid="visio!Visio.ToolBarType:enum" />'
-        - id: show
-          description: Whether the toolbar is visibile or not.
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: 'showToolbar(idString, show)'
-    uid: 'visio!Visio.Application#showToolbar:member(2)'
-    package: visio!
-    fullName: 'showToolbar(idString, show)'
-    summary: |-
-      Sets the visibility of a specific toolbar in the application.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;'
-      parameters:
-        - id: idString
-          description: The type of the Toolbar
-          type: '"CommandBar" | "PageNavigationBar" | "StatusBar"'
-        - id: show
-          description: Whether the toolbar is visibile or not.
-          type: boolean
       return:
         type: void
         description: ''

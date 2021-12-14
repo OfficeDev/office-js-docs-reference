@@ -185,7 +185,7 @@
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Application:class",
-              "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -525,7 +525,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface",
-                  "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -588,6 +588,115 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shape.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -698,13 +807,355 @@
                   "name": "SlideData",
                   "members": [],
                   "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayoutCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayout.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMasterCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMaster.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tagCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.TagData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.TagData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tag.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Tag object, for use in `tag.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
                 }
               ]
             },
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Presentation:class",
-              "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

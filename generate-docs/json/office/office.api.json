@@ -13194,7 +13194,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.GetFileOptions#sliceSize:member",
-                  "docComment": "/**\n * The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).\n */\n",
+                  "docComment": "/**\n * The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
