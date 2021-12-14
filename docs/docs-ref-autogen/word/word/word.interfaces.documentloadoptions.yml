@@ -31,7 +31,7 @@ properties:
     fullName: body
     summary: >-
       Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
-      textboxes, etc..
+      textboxes, etc.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,6 +39,20 @@ properties:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: changeTrackingMode
+    uid: 'word!Word.Interfaces.DocumentLoadOptions#changeTrackingMode:member'
+    package: word!
+    fullName: changeTrackingMode
+    summary: Gets or sets the ChangeTracking mode.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeTrackingMode?: boolean;'
+      return:
+        type: boolean
   - name: properties
     uid: 'word!Word.Interfaces.DocumentLoadOptions#properties:member'
     package: word!

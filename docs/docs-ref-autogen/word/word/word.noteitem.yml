@@ -43,7 +43,7 @@ properties:
     uid: 'word!Word.NoteItem#reference:member'
     package: word!
     fullName: reference
-    summary: Represents a footnote/endnote reference in the main document.
+    summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -57,7 +57,7 @@ properties:
     uid: 'word!Word.NoteItem#type:member'
     package: word!
     fullName: type
-    summary: 'Represent the note item type: footnote or endnote.'
+    summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

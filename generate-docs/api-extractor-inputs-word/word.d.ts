@@ -52,7 +52,7 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Gets the collection of endnotes in the body. Read-only
+         * Gets the collection of endnotes in the body. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -67,7 +67,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the body. Read-only
+         * Gets the collection of footnotes in the body. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -230,6 +230,26 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersion - Optional. The changeTrackingVersion can be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersionString - Optional. The changeTrackingVersion can be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -875,7 +895,7 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Gets the collection of endnotes in the contentcontrol. Read-only
+         * Gets the collection of endnotes in the contentcontrol. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -890,7 +910,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the contentcontrol. Read-only
+         * Gets the collection of footnotes in the contentcontrol. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -1141,6 +1161,26 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
          *
@@ -2172,14 +2212,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2215,6 +2255,14 @@ export declare namespace Word {
          * @beta
          */
         readonly settings: Word.SettingCollection;
+        /**
+         * Gets or sets the ChangeTracking mode.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         /**
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
          *
@@ -2261,7 +2309,8 @@ export declare namespace Word {
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
-         * Gets the body of the document's endnotes. Read-only
+         * Gets the document's endnotes in a single body. Read-only.
+                    Not implemented in Word on the web.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -2269,7 +2318,8 @@ export declare namespace Word {
          */
         getEndnoteBody(): Word.Body;
         /**
-         * Gets the body of the document's footnotes. Read-only
+         * Gets the document's footnotes in a single body. Read-only.
+                    Not implemented in Word on the web.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -2291,7 +2341,7 @@ export declare namespace Word {
          */
         save(): void;
         /**
-         * Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a collection of range objects.
+         * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -3667,7 +3717,7 @@ export declare namespace Word {
          */
         readonly body: Word.Body;
         /**
-         * Represents a footnote/endnote reference in the main document.
+         * Represents a footnote or endnote reference in the main document.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -3675,7 +3725,7 @@ export declare namespace Word {
          */
         readonly reference: Word.Range;
         /**
-         * Represent the note item type: footnote or endnote.
+         * Represents the note item type: footnote or endnote.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -3826,7 +3876,7 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Gets the collection of endnotes in the Paragraph. Read-only
+         * Gets the collection of endnotes in the paragraph. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -3841,7 +3891,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the Paragraph. Read-only
+         * Gets the collection of footnotes in the paragraph. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -4151,6 +4201,26 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
          *
@@ -4509,7 +4579,7 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Gets the collection of endnotes in the Range. Read-only
+         * Gets the collection of endnotes in the range. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -4524,7 +4594,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the Range. Read-only
+         * Gets the collection of footnotes in the range. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -4774,6 +4844,26 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets reviewed text based on ChangeTrackingVersion selection.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.
+         */
+        getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;
         /**
          * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
          *
@@ -5593,7 +5683,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of endnotes in the table. Read-only
+         * Gets the collection of endnotes in the table. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -5608,7 +5698,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the table. Read-only
+         * Gets the collection of footnotes in the table. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -6242,7 +6332,7 @@ export declare namespace Word {
          */
         readonly cells: Word.TableCellCollection;
         /**
-         * Gets the collection of endnotes in the table row. Read-only
+         * Gets the collection of endnotes in the table row. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -6257,7 +6347,7 @@ export declare namespace Word {
          */
         readonly font: Word.Font;
         /**
-         * Gets the collection of footnotes in the table row. Read-only
+         * Gets the collection of footnotes in the table row. Read-only.
          *
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -6982,6 +7072,50 @@ export declare namespace Word {
         * Whereas the original Word.TableBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableBorderData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.TableBorderData;
+    }
+    /**
+     * ChangeTracking mode.
+     *
+     * @remarks
+     * [Api set: WordApi]
+     */
+    enum ChangeTrackingMode {
+        /**
+         * ChangeTracking is turned off.
+         * @remarks
+         * [Api set: WordApi]
+         */
+        off = "Off",
+        /**
+         * ChangeTracking is turned on for everyone.
+         * @remarks
+         * [Api set: WordApi]
+         */
+        trackAll = "TrackAll",
+        /**
+         * Tracking is turned on for my changes only.
+         * @remarks
+         * [Api set: WordApi]
+         */
+        trackMineOnly = "TrackMineOnly",
+    }
+    /**
+     * Specify the current version or the original version of the document.
+     *
+     * @remarks
+     * [Api set: WordApi]
+     */
+    enum ChangeTrackingVersion {
+        /**
+         * @remarks
+         * [Api set: WordApi]
+         */
+        original = "Original",
+        /**
+         * @remarks
+         * [Api set: WordApi]
+         */
+        current = "Current",
     }
     /**
      * Note item type
@@ -9151,7 +9285,7 @@ export declare namespace Word {
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -9164,6 +9298,14 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
+            /**
+             * Gets or sets the ChangeTracking mode.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         }
         /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
@@ -9403,7 +9545,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
-            * Represents a footnote/endnote reference in the main document.
+            * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -10273,14 +10415,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -10316,6 +10458,14 @@ export declare namespace Word {
             * @beta
             */
             settings?: Word.Interfaces.SettingData[];
+            /**
+             * Gets or sets the ChangeTracking mode.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
@@ -10715,7 +10865,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Represents a footnote/endnote reference in the main document.
+            * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -10723,7 +10873,7 @@ export declare namespace Word {
             */
             reference?: Word.Interfaces.RangeData;
             /**
-             * Represent the note item type: footnote or endnote.
+             * Represents the note item type: footnote or endnote.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -12175,7 +12325,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -12188,6 +12338,14 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+             * Gets or sets the ChangeTracking mode.
+             *
+             * @remarks
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            changeTrackingMode?: boolean;
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
@@ -12792,7 +12950,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Represents a footnote/endnote reference in the main document.
+            * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -12800,7 +12958,7 @@ export declare namespace Word {
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
-             * Represent the note item type: footnote or endnote.
+             * Represents the note item type: footnote or endnote.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -12829,7 +12987,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.
+            * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.
             *
             * @remarks
             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -12837,7 +12995,7 @@ export declare namespace Word {
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Represent the note item type: footnote or endnote.
+             * For EACH ITEM in the collection: Represents the note item type: footnote or endnote.
              *
              * @remarks
              * [Api set: WordApiOnline BETA (PREVIEW ONLY)]

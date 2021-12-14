@@ -17,7 +17,7 @@ properties:
     fullName: body
     summary: >-
       Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
-      textboxes, etc.. Read-only.
+      textboxes, etc. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,13 +25,27 @@ properties:
       content: 'readonly body: Word.Body;'
       return:
         type: '<xref uid="word!Word.Body:class" />'
+  - name: changeTrackingMode
+    uid: 'word!Word.Document#changeTrackingMode:member'
+    package: word!
+    fullName: changeTrackingMode
+    summary: Gets or sets the ChangeTracking mode.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      return:
+        type: '<xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
   - name: contentControls
     uid: 'word!Word.Document#contentControls:member'
     package: word!
     fullName: contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
+      document, headers, footers, textboxes, etc. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -201,7 +215,7 @@ methods:
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the body of the document's endnotes. Read-only
+    summary: Gets the document's endnotes in a single body. Read-only. Not implemented in Word on the web.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -216,7 +230,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the body of the document's footnotes. Read-only
+    summary: Gets the document's footnotes in a single body. Read-only. Not implemented in Word on the web.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -432,7 +446,7 @@ methods:
     package: word!
     fullName: 'search(searchText, searchOptions)'
     summary: >-
-      Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a
+      Performs a search with the specified search options on the scope of the whole document. The search results are a
       collection of range objects.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW

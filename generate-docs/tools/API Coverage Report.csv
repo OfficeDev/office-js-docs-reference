@@ -9115,6 +9115,8 @@ Word.Body,getHtml(),Method,Good,true
 Word.Body,getOoxml(),Method,Good,true
 Word.Body,getRange(rangeLocation),Method,Good,false
 Word.Body,getRange(rangeLocationString),Method,Good,false
+Word.Body,getReviewedText(changeTrackingVersion),Method,Good,false
+Word.Body,getReviewedText(changeTrackingVersionString),Method,Good,false
 Word.Body,insertBreak(breakType,Method,Good,true
 Word.Body,insertBreak(breakTypeString,Method,Good,false
 Word.Body,insertContentControl(),Method,Good,true
@@ -9194,6 +9196,13 @@ Word.CellPaddingLocation,bottom,EnumField,Missing,false
 Word.CellPaddingLocation,left,EnumField,Missing,false
 Word.CellPaddingLocation,right,EnumField,Missing,false
 Word.CellPaddingLocation,top,EnumField,Missing,false
+Word.ChangeTrackingMode,N/A,Class,Good,false
+Word.ChangeTrackingMode,off,EnumField,Poor,false
+Word.ChangeTrackingMode,trackAll,EnumField,Fine,false
+Word.ChangeTrackingMode,trackMineOnly,EnumField,Fine,false
+Word.ChangeTrackingVersion,N/A,Class,Good,false
+Word.ChangeTrackingVersion,current,EnumField,Missing,false
+Word.ChangeTrackingVersion,original,EnumField,Missing,false
 Word.Comment,N/A,Class,Good,false
 Word.Comment,authorEmail,Method,Good,false
 Word.Comment,authorName,Method,Good,false
@@ -9293,6 +9302,8 @@ Word.ContentControl,getHtml(),Method,Good,true
 Word.ContentControl,getOoxml(),Method,Good,true
 Word.ContentControl,getRange(rangeLocation),Method,Good,false
 Word.ContentControl,getRange(rangeLocationString),Method,Good,false
+Word.ContentControl,getReviewedText(changeTrackingVersion),Method,Good,false
+Word.ContentControl,getReviewedText(changeTrackingVersionString),Method,Good,false
 Word.ContentControl,getTextRanges(endingMarks,Method,Good,false
 Word.ContentControl,insertBreak(breakType,Method,Good,false
 Word.ContentControl,insertBreak(breakTypeString,Method,Good,true
@@ -9435,6 +9446,7 @@ Word.CustomXmlPartScopedCollection,track(),Method,Good,false
 Word.CustomXmlPartScopedCollection,untrack(),Method,Good,false
 Word.Document,N/A,Class,Good,false
 Word.Document,body,Method,Good,false
+Word.Document,changeTrackingMode,Method,Good,false
 Word.Document,contentControls,Method,Good,false
 Word.Document,context,Method,Good,false
 Word.Document,customXmlParts,Method,Good,false
@@ -9796,6 +9808,8 @@ Word.Paragraph,getPrevious(),Method,Good,false
 Word.Paragraph,getPreviousOrNullObject(),Method,Good,true
 Word.Paragraph,getRange(rangeLocation),Method,Good,false
 Word.Paragraph,getRange(rangeLocationString),Method,Good,false
+Word.Paragraph,getReviewedText(changeTrackingVersion),Method,Good,false
+Word.Paragraph,getReviewedText(changeTrackingVersionString),Method,Good,false
 Word.Paragraph,getTextRanges(endingMarks,Method,Good,false
 Word.Paragraph,insertBreak(breakType,Method,Good,true
 Word.Paragraph,insertBreak(breakTypeString,Method,Good,true
@@ -9869,6 +9883,8 @@ Word.Range,getNextTextRangeOrNullObject(endingMarks,Method,Good,false
 Word.Range,getOoxml(),Method,Good,true
 Word.Range,getRange(rangeLocation),Method,Good,false
 Word.Range,getRange(rangeLocationString),Method,Good,false
+Word.Range,getReviewedText(changeTrackingVersion),Method,Good,false
+Word.Range,getReviewedText(changeTrackingVersionString),Method,Good,false
 Word.Range,getTextRanges(endingMarks,Method,Good,true
 Word.Range,insertBookmark(name),Method,Good,false
 Word.Range,insertBreak(breakType,Method,Good,false
