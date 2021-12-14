@@ -1266,11 +1266,11 @@ functions:
         type: Promise&lt;T&gt;
         description: ''
 typeAliases:
-  - name: CellValue
+  - name: 'CellValue'
     uid: 'excel!Excel.CellValue:type'
     package: excel!
     fullName: CellValue
-    summary: Represents the value in a cell.
+    summary: 'Represents the value in a cell.'
     remarks: '[Api set: ExcelApi BETA (PREVIEW ONLY)]'
     isPreview: true
     isDeprecated: false
