@@ -3,11 +3,8 @@ name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
-summary: |-
-  Represents a collection of InkAnalysisLine objects.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of InkAnalysisLine objects.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine object. Read-only.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: |-
-      For EACH ITEM in the collection: Reference to the parent InkAnalysisParagraph.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Reference to the parent InkAnalysisParagraph.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +51,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions#words:member'
     package: onenote!
     fullName: words
-    summary: |-
-      For EACH ITEM in the collection: Gets the ink analysis words in this ink analysis line.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the ink analysis words in this ink analysis line.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

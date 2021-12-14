@@ -3,11 +3,8 @@ name: PowerPoint.ConnectorType
 uid: 'powerpoint!PowerPoint.ConnectorType:enum'
 package: powerpoint!
 fullName: PowerPoint.ConnectorType
-summary: |-
-  Specifies the connector type for line shapes.
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the connector type for line shapes.
+remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 fields:

@@ -16,10 +16,7 @@ properties:
     summary: >-
       Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments
       with different bullet visibility values.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

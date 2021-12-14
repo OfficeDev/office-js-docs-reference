@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Visio.MessageType
+uid: 'visio!Visio.MessageType:enum'
+package: visio!
+fullName: Visio.MessageType
+summary: |-
+  MessageType represents the type of message when event is fired from Host.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dataVisualizerDiagramOperationCompletedEvent
+    uid: 'visio!Visio.MessageType.dataVisualizerDiagramOperationCompletedEvent:member'
+    package: visio!
+    summary: DataVisualizer diagram operation complete Event Message.
+    value: '3'
+  - name: none
+    uid: 'visio!Visio.MessageType.none:member'
+    package: visio!
+    summary: None type.
+    value: '0'
+  - name: selectionChangedEvent
+    uid: 'visio!Visio.MessageType.selectionChangedEvent:member'
+    package: visio!
+    summary: Selection Changed Event Message.
+    value: '2'
+  - name: shapeAddedEvent
+    uid: 'visio!Visio.MessageType.shapeAddedEvent:member'
+    package: visio!
+    summary: Shape Added Event Message.
+    value: '1'

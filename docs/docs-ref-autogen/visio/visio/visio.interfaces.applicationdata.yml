@@ -3,39 +3,99 @@ name: Visio.Interfaces.ApplicationData
 uid: 'visio!Visio.Interfaces.ApplicationData:interface'
 package: visio!
 fullName: Visio.Interfaces.ApplicationData
-summary: An interface describing the data returned by calling "application.toJSON()".
+summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: showBorders
-    uid: 'visio!Visio.Interfaces.ApplicationData#showBorders:member'
+  - name: activeDocument
+    uid: 'visio!Visio.Interfaces.ApplicationData#activeDocument:member'
     package: visio!
-    fullName: showBorders
+    fullName: activeDocument
     summary: |-
-      Show or hide the iFrame application borders.
+      Returns the Active Document. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showBorders?: boolean;'
+      content: 'activeDocument?: Visio.Interfaces.DocumentData;'
       return:
-        type: boolean
-  - name: showToolbars
-    uid: 'visio!Visio.Interfaces.ApplicationData#showToolbars:member'
+        type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
+  - name: activePage
+    uid: 'visio!Visio.Interfaces.ApplicationData#activePage:member'
     package: visio!
-    fullName: showToolbars
+    fullName: activePage
     summary: |-
-      Show or hide the standard toolbars.
+      Returns the Active Page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'showToolbars?: boolean;'
+      content: 'activePage?: Visio.Interfaces.PageData;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />'
+  - name: documents
+    uid: 'visio!Visio.Interfaces.ApplicationData#documents:member'
+    package: visio!
+    fullName: documents
+    summary: |-
+      Returns the Documents collection for a Microsoft Visio instance. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'documents?: Visio.Interfaces.DocumentData[];'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />[]'
+  - name: isVisible
+    uid: 'visio!Visio.Interfaces.ApplicationData#isVisible:member'
+    package: visio!
+    fullName: isVisible
+    summary: |-
+      Gets or sets if the application is visible.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVisible?: boolean;'
       return:
         type: boolean
+  - name: name
+    uid: 'visio!Visio.Interfaces.ApplicationData#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Specifies the name of the application. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: userName
+    uid: 'visio!Visio.Interfaces.ApplicationData#userName:member'
+    package: visio!
+    fullName: userName
+    summary: |-
+      Gets or sets the user name of the application.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userName?: string;'
+      return:
+        type: string

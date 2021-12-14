@@ -3,8 +3,8 @@ name: OneNote.NoteTagStatus
 uid: 'onenote!OneNote.NoteTagStatus:enum'
 package: onenote!
 fullName: OneNote.NoteTagStatus
-summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

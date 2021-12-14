@@ -40,6 +40,7 @@
           "powerpoint/**",
           "powerpoint_1_1/**",
           "powerpoint_1_2/**",
+          "powerpoint_1_3/**",
           "visio/**",
           "word/**",
           "word_1_1/**",
@@ -106,6 +107,7 @@
           "powerpoint/**",
           "powerpoint_1_1/**",
           "powerpoint_1_2/**",
+          "powerpoint_1_3/**",
           "visio/**",
           "word/**",
           "word_1_1/**",
@@ -345,6 +347,12 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.3",
+        "src": "docs-ref-autogen/powerpoint_1_3",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
         "group": "visio-js-1.1",
         "src": "docs-ref-autogen/visio",
         "dest": "api"
@@ -519,6 +527,10 @@
         "dest": "powerpoint-js-1.2",
         "moniker_range": "powerpoint-js-1.2"
       },
+      "powerpoint-js-1.3": {
+        "dest": "powerpoint-js-1.3",
+        "moniker_range": "powerpoint-js-1.3"
+      },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
         "moniker_range": "visio-js-1.1"
@@ -656,6 +668,8 @@
         "docs-ref-autogen/powerpoint_1_1/powerpoint/**": ["powerpoint 1.1"],
         "docs-ref-autogen/powerpoint_1_2/**": ["powerpoint 1.2"],
         "docs-ref-autogen/powerpoint_1_2/powerpoint/**": ["powerpoint 1.2"],
+        "docs-ref-autogen/powerpoint_1_3/**": ["powerpoint 1.3"],
+        "docs-ref-autogen/powerpoint_1_3/powerpoint/**": ["powerpoint 1.3"],
         "docs-ref-autogen/visio/**": ["visio"],
         "docs-ref-autogen/visio/visio/**": ["visio"],
         "docs-ref-autogen/word/**": ["word preview"],
@@ -741,6 +755,8 @@
         "docs-ref-autogen/powerpoint_1_1/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_2/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_2/powerpoint/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_3/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_3/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/visio/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",

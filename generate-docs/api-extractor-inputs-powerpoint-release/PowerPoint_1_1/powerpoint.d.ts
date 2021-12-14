@@ -6,6 +6,7 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Application extends OfficeExtension.ClientObject {
@@ -24,11 +25,14 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         
         readonly title: string;
         
@@ -63,6 +67,15 @@ export declare namespace PowerPoint {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     enum ErrorCodes {
         generalException = "GeneralException",
     }
@@ -80,13 +93,64 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
+        export interface TagUpdateData {
+            
+        }
+        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
+        export interface TagCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
+        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
+        export interface ShapeCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
+        export interface SlideLayoutCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
+        /** An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`. */
+        export interface SlideMasterCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideMasterData[];
+        }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
+        }
+        /** An interface describing the data returned by calling `tag.toJSON()`. */
+        export interface TagData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
+        export interface TagCollectionData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            
+        }
+        /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
+        export interface ShapeCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
+        export interface SlideLayoutData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
+        export interface SlideLayoutCollectionData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
+        export interface SlideMasterData {
+            
+            
         }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
@@ -96,7 +160,12 @@ export declare namespace PowerPoint {
         export interface SlideCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
+        /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
+        export interface SlideMasterCollectionData {
+            items?: PowerPoint.Interfaces.SlideMasterData[];
+        }
         /**
+         * @remarks
          * [Api set: PowerPointApi 1.0]
          */
         export interface PresentationLoadOptions {
@@ -106,6 +175,14 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     }

@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: Visio.StencilInfo
+uid: 'visio!Visio.StencilInfo:interface'
+package: visio!
+fullName: Visio.StencilInfo
+summary: |-
+  Stencil Information.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: mastersInfo
+    uid: 'visio!Visio.StencilInfo#mastersInfo:member'
+    package: visio!
+    fullName: mastersInfo
+    summary: |-
+      List of MasterInfo.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mastersInfo: Visio.MasterInfo[];'
+      return:
+        type: '<xref uid="visio!Visio.MasterInfo:interface" />[]'
+  - name: name
+    uid: 'visio!Visio.StencilInfo#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Name represents file name of a stencil.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: title
+    uid: 'visio!Visio.StencilInfo#title:member'
+    package: visio!
+    fullName: title
+    summary: |-
+      Title represents Display Name of the Stencil.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

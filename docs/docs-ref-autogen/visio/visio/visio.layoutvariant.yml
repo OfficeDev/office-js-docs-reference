@@ -1,0 +1,180 @@
+### YamlMime:TSEnum
+name: Visio.LayoutVariant
+uid: 'visio!Visio.LayoutVariant:enum'
+package: visio!
+fullName: Visio.LayoutVariant
+summary: >-
+  Represents the type of layout. Make sure that this enum is same as DVSupportedLayouts
+  visio/Engine/inc/databindingtypes.h
+
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: circular
+    uid: 'visio!Visio.LayoutVariant.circular:member'
+    package: visio!
+    summary: Use Circular layout.
+    value: '"Circular"'
+  - name: flowchart_BottomToTop
+    uid: 'visio!Visio.LayoutVariant.flowchart_BottomToTop:member'
+    package: visio!
+    summary: Use Flowchart with BottomToTop orientation.
+    value: '"Flowchart_BottomToTop"'
+  - name: flowchart_LeftToRight
+    uid: 'visio!Visio.LayoutVariant.flowchart_LeftToRight:member'
+    package: visio!
+    summary: Use Flowchart with LeftToRight orientation.
+    value: '"Flowchart_LeftToRight"'
+  - name: flowchart_RightToLeft
+    uid: 'visio!Visio.LayoutVariant.flowchart_RightToLeft:member'
+    package: visio!
+    summary: Use Flowchart with RightToLeft orientation.
+    value: '"Flowchart_RightToLeft"'
+  - name: flowchart_TopToBottom
+    uid: 'visio!Visio.LayoutVariant.flowchart_TopToBottom:member'
+    package: visio!
+    summary: Use Flowchart with TopToBottom orientation.
+    value: '"Flowchart_TopToBottom"'
+  - name: hierarchy_BottomToTopCenter
+    uid: 'visio!Visio.LayoutVariant.hierarchy_BottomToTopCenter:member'
+    package: visio!
+    summary: Use Hierarchy BottomToTopCenter orientation.
+    value: '"Hierarchy_BottomToTopCenter"'
+  - name: hierarchy_BottomToTopLeft
+    uid: 'visio!Visio.LayoutVariant.hierarchy_BottomToTopLeft:member'
+    package: visio!
+    summary: Use Hierarchy BottomToTopLeft orientation.
+    value: '"Hierarchy_BottomToTopLeft"'
+  - name: hierarchy_BottomToTopRight
+    uid: 'visio!Visio.LayoutVariant.hierarchy_BottomToTopRight:member'
+    package: visio!
+    summary: Use Hierarchy BottomToTopRight orientation.
+    value: '"Hierarchy_BottomToTopRight"'
+  - name: hierarchy_LeftToRightBottom
+    uid: 'visio!Visio.LayoutVariant.hierarchy_LeftToRightBottom:member'
+    package: visio!
+    summary: Use Hierarchy LeftToRightBottom orientation.
+    value: '"Hierarchy_LeftToRightBottom"'
+  - name: hierarchy_LeftToRightMiddle
+    uid: 'visio!Visio.LayoutVariant.hierarchy_LeftToRightMiddle:member'
+    package: visio!
+    summary: Use Hierarchy LeftToRightMiddle orientation.
+    value: '"Hierarchy_LeftToRightMiddle"'
+  - name: hierarchy_LeftToRightTop
+    uid: 'visio!Visio.LayoutVariant.hierarchy_LeftToRightTop:member'
+    package: visio!
+    summary: Use Hierarchy LeftToRightTop orientation.
+    value: '"Hierarchy_LeftToRightTop"'
+  - name: hierarchy_RightToLeftBottom
+    uid: 'visio!Visio.LayoutVariant.hierarchy_RightToLeftBottom:member'
+    package: visio!
+    summary: Use Hierarchy RightToLeftBottom orientation.
+    value: '"Hierarchy_RightToLeftBottom"'
+  - name: hierarchy_RightToLeftMiddle
+    uid: 'visio!Visio.LayoutVariant.hierarchy_RightToLeftMiddle:member'
+    package: visio!
+    summary: Use Hierarchy RightToLeftMiddle orientation.
+    value: '"Hierarchy_RightToLeftMiddle"'
+  - name: hierarchy_RightToLeftTop
+    uid: 'visio!Visio.LayoutVariant.hierarchy_RightToLeftTop:member'
+    package: visio!
+    summary: Use Hierarchy RightToLeftTop orientation.
+    value: '"Hierarchy_RightToLeftTop"'
+  - name: hierarchy_TopToBottomCenter
+    uid: 'visio!Visio.LayoutVariant.hierarchy_TopToBottomCenter:member'
+    package: visio!
+    summary: Use Hierarchy TopToBottomCenter orientation.
+    value: '"Hierarchy_TopToBottomCenter"'
+  - name: hierarchy_TopToBottomLeft
+    uid: 'visio!Visio.LayoutVariant.hierarchy_TopToBottomLeft:member'
+    package: visio!
+    summary: Use Hierarchy TopToBottomLeft orientation.
+    value: '"Hierarchy_TopToBottomLeft"'
+  - name: hierarchy_TopToBottomRight
+    uid: 'visio!Visio.LayoutVariant.hierarchy_TopToBottomRight:member'
+    package: visio!
+    summary: Use Hierarchy TopToBottomRight orientation.
+    value: '"Hierarchy_TopToBottomRight"'
+  - name: orgChart_HorizontalCenter
+    uid: 'visio!Visio.LayoutVariant.orgChart_HorizontalCenter:member'
+    package: visio!
+    summary: Use OrgChart with HorizontalCenter orientation.
+    value: '"OrgChart_HorizontalCenter"'
+  - name: orgChart_HorizontalCenter_LeftToRight
+    uid: 'visio!Visio.LayoutVariant.orgChart_HorizontalCenter_LeftToRight:member'
+    package: visio!
+    summary: Use OrgChart with HorizontalCenter LeftToRight orientation.
+    value: '"OrgChart_HorizontalCenter_LeftToRight"'
+  - name: orgChart_Hybrid_HorizontalCenter_VerticalRight
+    uid: 'visio!Visio.LayoutVariant.orgChart_Hybrid_HorizontalCenter_VerticalRight:member'
+    package: visio!
+    summary: Use OrgChart with Hybrid HorizontalCenter and VerticalRight orientation.
+    value: '"OrgChart_Hybrid_HorizontalCenter_VerticalRight"'
+  - name: orgChart_SideBySide
+    uid: 'visio!Visio.LayoutVariant.orgChart_SideBySide:member'
+    package: visio!
+    summary: Use OrgChart with SideBySide orientation.
+    value: '"OrgChart_SideBySide"'
+  - name: pageDefault
+    uid: 'visio!Visio.LayoutVariant.pageDefault:member'
+    package: visio!
+    summary: Use the Page default layout.
+    value: '"PageDefault"'
+  - name: parentDefault
+    uid: 'visio!Visio.LayoutVariant.parentDefault:member'
+    package: visio!
+    summary: Use ParentDefault layout.
+    value: '"ParentDefault"'
+  - name: radial
+    uid: 'visio!Visio.LayoutVariant.radial:member'
+    package: visio!
+    summary: Use Radial Layout.
+    value: '"Radial"'
+  - name: unknown
+    uid: 'visio!Visio.LayoutVariant.unknown:member'
+    package: visio!
+    summary: Invalid layout.
+    value: '"Unknown"'
+  - name: wideTree_DownThenLeft
+    uid: 'visio!Visio.LayoutVariant.wideTree_DownThenLeft:member'
+    package: visio!
+    summary: Use WideTree with DownThenLeft orientation.
+    value: '"WideTree_DownThenLeft"'
+  - name: wideTree_DownThenRight
+    uid: 'visio!Visio.LayoutVariant.wideTree_DownThenRight:member'
+    package: visio!
+    summary: Use WideTree with DownThenRight orientation.
+    value: '"WideTree_DownThenRight"'
+  - name: wideTree_LeftThenDown
+    uid: 'visio!Visio.LayoutVariant.wideTree_LeftThenDown:member'
+    package: visio!
+    summary: Use WideTree with LeftThenDown orientation.
+    value: '"WideTree_LeftThenDown"'
+  - name: wideTree_LeftThenUp
+    uid: 'visio!Visio.LayoutVariant.wideTree_LeftThenUp:member'
+    package: visio!
+    summary: Use WideTree with LeftThenUp orientation.
+    value: '"WideTree_LeftThenUp"'
+  - name: wideTree_RightThenDown
+    uid: 'visio!Visio.LayoutVariant.wideTree_RightThenDown:member'
+    package: visio!
+    summary: Use WideTree with RightThenDown orientation.
+    value: '"WideTree_RightThenDown"'
+  - name: wideTree_RightThenUp
+    uid: 'visio!Visio.LayoutVariant.wideTree_RightThenUp:member'
+    package: visio!
+    summary: Use WideTree with RightThenUp orientation.
+    value: '"WideTree_RightThenUp"'
+  - name: wideTree_UpThenLeft
+    uid: 'visio!Visio.LayoutVariant.wideTree_UpThenLeft:member'
+    package: visio!
+    summary: Use WideTree with UpThenLeft orientation.
+    value: '"WideTree_UpThenLeft"'
+  - name: wideTree_UpThenRight
+    uid: 'visio!Visio.LayoutVariant.wideTree_UpThenRight:member'
+    package: visio!
+    summary: Use WideTree with UpThenRight orientation.
+    value: '"WideTree_UpThenRight"'

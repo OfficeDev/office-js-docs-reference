@@ -6,6 +6,7 @@ import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Application extends OfficeExtension.ClientObject {
@@ -24,38 +25,38 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Returns the collection of `SlideMaster` objects that are in the presentation.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly slideMasters: PowerPoint.SlideMasterCollection;
         /**
-         *
          * Returns an ordered collection of slides in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         readonly slides: PowerPoint.SlideCollection;
         /**
-         *
          * Returns a collection of tags attached to the presentation.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
         readonly title: string;
         /**
          * Inserts the specified slides from a presentation into the current presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param base64File - The base64-encoded string representing the source presentation file.
@@ -90,39 +91,36 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
     /**
-     *
      * Represents the available options when adding a new slide.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export interface AddSlideOptions {
         /**
-         *
          * Specifies the ID of a Slide Layout to be used for the new slide.
                     If no `layoutId` is provided, but a `slideMasterId` is provided, then the ID of the first layout from the specified Slide Master will be used.
                     If no `slideMasterId` is provided, but a `layoutId` is provided, then the specified layout needs to be available for the default Slide Master (as specified
                     in the `slideMasterId` description). Otherwise, an error will be thrown.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         layoutId?: string;
         /**
-         *
          * Specifies the ID of a Slide Master to be used for the new slide.
                     If no `slideMasterId` is provided, then the previous slide's Slide Master will be used.
                     If there is no previous slide, then the presentation's first Slide Master will be used.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         slideMasterId?: string;
     }
     /**
-     *
      * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -130,9 +128,9 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -165,1024 +163,1400 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.BulletFormatData;
     }
     /**
-     *
      * Specifies the connector type for line shapes.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ConnectorType {
         /**
          * Straight connector type
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         straight = "Straight",
         /**
          * Elbow connector type
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         elbow = "Elbow",
         /**
          * Curve connector type
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         curve = "Curve",
     }
     /**
-     *
      * Specifies the shape type for a `GeometricShape` object.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum GeometricShapeType {
         /**
          * Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lineInverse = "LineInverse",
         /**
          * Isosceles Triangle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         triangle = "Triangle",
         /**
          * Right Triangle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rightTriangle = "RightTriangle",
         /**
          * Rectangle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rectangle = "Rectangle",
         /**
          * Diamond
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         diamond = "Diamond",
         /**
          * Parallelogram
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         parallelogram = "Parallelogram",
         /**
          * Trapezoid
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         trapezoid = "Trapezoid",
         /**
          * Trapezoid which may have Non-Equal Sides
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         nonIsoscelesTrapezoid = "NonIsoscelesTrapezoid",
         /**
          * Pentagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         pentagon = "Pentagon",
         /**
          * Hexagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         hexagon = "Hexagon",
         /**
          * Heptagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         heptagon = "Heptagon",
         /**
          * Octagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         octagon = "Octagon",
         /**
          * Decagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         decagon = "Decagon",
         /**
          * Dodecagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dodecagon = "Dodecagon",
         /**
          * Star: 4 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star4 = "Star4",
         /**
          * Star: 5 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star5 = "Star5",
         /**
          * Star: 6 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star6 = "Star6",
         /**
          * Star: 7 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star7 = "Star7",
         /**
          * Star: 8 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star8 = "Star8",
         /**
          * Star: 10 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star10 = "Star10",
         /**
          * Star: 12 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star12 = "Star12",
         /**
          * Star: 16 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star16 = "Star16",
         /**
          * Star: 24 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star24 = "Star24",
         /**
          * Star: 32 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         star32 = "Star32",
         /**
          * Rectangle: Rounded Corners
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         roundRectangle = "RoundRectangle",
         /**
          * Rectangle: Single Corner Rounded
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         round1Rectangle = "Round1Rectangle",
         /**
          * Rectangle: Top Corners Rounded
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         round2SameRectangle = "Round2SameRectangle",
         /**
          * Rectangle: Diagonal Corners Rounded
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         round2DiagonalRectangle = "Round2DiagonalRectangle",
         /**
          * Rectangle: Top Corners One Rounded and One Snipped
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         snipRoundRectangle = "SnipRoundRectangle",
         /**
          * Rectangle: Single Corner Snipped
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         snip1Rectangle = "Snip1Rectangle",
         /**
          * Rectangle: Top Corners Snipped
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         snip2SameRectangle = "Snip2SameRectangle",
         /**
          * Rectangle: Diagonal Corners Snipped
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         snip2DiagonalRectangle = "Snip2DiagonalRectangle",
         /**
          * Plaque
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         plaque = "Plaque",
         /**
          * Oval
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ellipse = "Ellipse",
         /**
          * Teardrop
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         teardrop = "Teardrop",
         /**
          * Arrow: Pentagon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         homePlate = "HomePlate",
         /**
          * Arrow: Chevron
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chevron = "Chevron",
         /**
          * Partial Circle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         pieWedge = "PieWedge",
         /**
          * Partial Circle with Adjustable Spanning Area
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         pie = "Pie",
         /**
          * Block Arc
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         blockArc = "BlockArc",
         /**
          * Circle: Hollow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         donut = "Donut",
         /**
          * "Not Allowed" Symbol
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         noSmoking = "NoSmoking",
         /**
          * Arrow: Right
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rightArrow = "RightArrow",
         /**
          * Arrow: Left
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftArrow = "LeftArrow",
         /**
          * Arrow: Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         upArrow = "UpArrow",
         /**
          * Arrow: Down
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         downArrow = "DownArrow",
         /**
          * Arrow: Striped Right
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         stripedRightArrow = "StripedRightArrow",
         /**
          * Arrow: Notched Right
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         notchedRightArrow = "NotchedRightArrow",
         /**
          * Arrow: Bent-Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bentUpArrow = "BentUpArrow",
         /**
          * Arrow: Left-Right
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftRightArrow = "LeftRightArrow",
         /**
          * Arrow: Up-Down
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         upDownArrow = "UpDownArrow",
         /**
          * Arrow: Left-Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftUpArrow = "LeftUpArrow",
         /**
          * Arrow: Left-Right-Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftRightUpArrow = "LeftRightUpArrow",
         /**
          * Arrow: Quad
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         quadArrow = "QuadArrow",
         /**
          * Callout: Left Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftArrowCallout = "LeftArrowCallout",
         /**
          * Callout: Right Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rightArrowCallout = "RightArrowCallout",
         /**
          * Callout: Up Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         upArrowCallout = "UpArrowCallout",
         /**
          * Callout: Down Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         downArrowCallout = "DownArrowCallout",
         /**
          * Callout: Left-Right Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftRightArrowCallout = "LeftRightArrowCallout",
         /**
          * Callout: Up-Down Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         upDownArrowCallout = "UpDownArrowCallout",
         /**
          * Callout: Quad Arrow
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         quadArrowCallout = "QuadArrowCallout",
         /**
          * Arrow: Bent
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bentArrow = "BentArrow",
         /**
          * Arrow: U-Turn
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         uturnArrow = "UturnArrow",
         /**
          * Arrow: Circular
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         circularArrow = "CircularArrow",
         /**
          * Arrow: Circular with Opposite Arrow Direction
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftCircularArrow = "LeftCircularArrow",
         /**
          * Arrow: Circular with Two Arrows in Both Directions
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftRightCircularArrow = "LeftRightCircularArrow",
         /**
          * Arrow: Curved Right
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         curvedRightArrow = "CurvedRightArrow",
         /**
          * Arrow: Curved Left
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         curvedLeftArrow = "CurvedLeftArrow",
         /**
          * Arrow: Curved Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         curvedUpArrow = "CurvedUpArrow",
         /**
          * Arrow: Curved Down
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         curvedDownArrow = "CurvedDownArrow",
         /**
          * Arrow: Curved Right Arrow with Varying Width
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         swooshArrow = "SwooshArrow",
         /**
          * Cube
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         cube = "Cube",
         /**
          * Cylinder
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         can = "Can",
         /**
          * Lightning Bolt
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         lightningBolt = "LightningBolt",
         /**
          * Heart
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         heart = "Heart",
         /**
          * Sun
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         sun = "Sun",
         /**
          * Moon
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         moon = "Moon",
         /**
          * Smiley Face
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         smileyFace = "SmileyFace",
         /**
          * Explosion: 8 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         irregularSeal1 = "IrregularSeal1",
         /**
          * Explosion: 14 Points
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         irregularSeal2 = "IrregularSeal2",
         /**
          * Rectangle: Folded Corner
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         foldedCorner = "FoldedCorner",
         /**
          * Rectangle: Beveled
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bevel = "Bevel",
         /**
          * Frame
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         frame = "Frame",
         /**
          * Half Frame
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         halfFrame = "HalfFrame",
         /**
          * L-Shape
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         corner = "Corner",
         /**
          * Diagonal Stripe
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         diagonalStripe = "DiagonalStripe",
         /**
          * Chord
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chord = "Chord",
         /**
          * Arc
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         arc = "Arc",
         /**
          * Left Bracket
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftBracket = "LeftBracket",
         /**
          * Right Bracket
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rightBracket = "RightBracket",
         /**
          * Left Brace
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftBrace = "LeftBrace",
         /**
          * Right Brace
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         rightBrace = "RightBrace",
         /**
          * Double Bracket
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bracketPair = "BracketPair",
         /**
          * Double Brace
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bracePair = "BracePair",
         /**
          * Callout: Line with No Border
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         callout1 = "Callout1",
         /**
          * Callout: Bent Line with No Border
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         callout2 = "Callout2",
         /**
          * Callout: Double Bent Line with No Border
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         callout3 = "Callout3",
         /**
          * Callout: Line with Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentCallout1 = "AccentCallout1",
         /**
          * Callout: Bent Line with Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentCallout2 = "AccentCallout2",
         /**
          * Callout: Double Bent Line with Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentCallout3 = "AccentCallout3",
         /**
          * Callout: Line
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         borderCallout1 = "BorderCallout1",
         /**
          * Callout: Bent Line
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         borderCallout2 = "BorderCallout2",
         /**
          * Callout: Double Bent Line
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         borderCallout3 = "BorderCallout3",
         /**
          * Callout: Line with Border and Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentBorderCallout1 = "AccentBorderCallout1",
         /**
          * Callout: Bent Line with Border and Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentBorderCallout2 = "AccentBorderCallout2",
         /**
          * Callout: Double Bent Line with Border and Accent Bar
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         accentBorderCallout3 = "AccentBorderCallout3",
         /**
          * Speech Bubble: Rectangle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wedgeRectCallout = "WedgeRectCallout",
         /**
          * Speech Bubble: Rectangle with Corners Rounded
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wedgeRRectCallout = "WedgeRRectCallout",
         /**
          * Speech Bubble: Oval
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wedgeEllipseCallout = "WedgeEllipseCallout",
         /**
          * Thought Bubble: Cloud
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         cloudCallout = "CloudCallout",
         /**
          * Cloud
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         cloud = "Cloud",
         /**
          * Ribbon: Tilted Down
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ribbon = "Ribbon",
         /**
          * Ribbon: Tilted Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ribbon2 = "Ribbon2",
         /**
          * Ribbon: Curved and Tilted Down
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ellipseRibbon = "EllipseRibbon",
         /**
          * Ribbon: Curved and Tilted Up
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         ellipseRibbon2 = "EllipseRibbon2",
         /**
          * Ribbon: Straight with Both Left and Right Arrows
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         leftRightRibbon = "LeftRightRibbon",
         /**
          * Scroll: Vertical
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         verticalScroll = "VerticalScroll",
         /**
          * Scroll: Horizontal
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         horizontalScroll = "HorizontalScroll",
         /**
          * Wave
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wave = "Wave",
         /**
          * Double Wave
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         doubleWave = "DoubleWave",
         /**
          * Cross
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         plus = "Plus",
         /**
          * Flowchart: Process
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartProcess = "FlowChartProcess",
         /**
          * Flowchart: Decision
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartDecision = "FlowChartDecision",
         /**
          * Flowchart: Data
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartInputOutput = "FlowChartInputOutput",
         /**
          * Flowchart: Predefined Process
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartPredefinedProcess = "FlowChartPredefinedProcess",
         /**
          * Flowchart: Internal Storage
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartInternalStorage = "FlowChartInternalStorage",
         /**
          * Flowchart: Document
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartDocument = "FlowChartDocument",
         /**
          * Flowchart: Multidocument
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartMultidocument = "FlowChartMultidocument",
         /**
          * Flowchart: Terminator
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartTerminator = "FlowChartTerminator",
         /**
          * Flowchart: Preparation
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartPreparation = "FlowChartPreparation",
         /**
          * Flowchart: Manual Input
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartManualInput = "FlowChartManualInput",
         /**
          * Flowchart: Manual Operation
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartManualOperation = "FlowChartManualOperation",
         /**
          * Flowchart: Connector
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartConnector = "FlowChartConnector",
         /**
          * Flowchart: Card
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartPunchedCard = "FlowChartPunchedCard",
         /**
          * Flowchart: Punched Tape
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartPunchedTape = "FlowChartPunchedTape",
         /**
          * Flowchart: Summing Junction
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartSummingJunction = "FlowChartSummingJunction",
         /**
          * Flowchart: Or
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartOr = "FlowChartOr",
         /**
          * Flowchart: Collate
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartCollate = "FlowChartCollate",
         /**
          * Flowchart: Sort
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartSort = "FlowChartSort",
         /**
          * Flowchart: Extract
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartExtract = "FlowChartExtract",
         /**
          * Flowchart: Merge
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartMerge = "FlowChartMerge",
         /**
          * FlowChart: Offline Storage
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartOfflineStorage = "FlowChartOfflineStorage",
         /**
          * Flowchart: Stored Data
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartOnlineStorage = "FlowChartOnlineStorage",
         /**
          * Flowchart: Sequential Access Storage
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartMagneticTape = "FlowChartMagneticTape",
         /**
          * Flowchart: Magnetic Disk
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartMagneticDisk = "FlowChartMagneticDisk",
         /**
          * Flowchart: Direct Access Storage
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartMagneticDrum = "FlowChartMagneticDrum",
         /**
          * Flowchart: Display
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartDisplay = "FlowChartDisplay",
         /**
          * Flowchart: Delay
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartDelay = "FlowChartDelay",
         /**
          * Flowchart: Alternate Process
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartAlternateProcess = "FlowChartAlternateProcess",
         /**
          * Flowchart: Off-page Connector
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         flowChartOffpageConnector = "FlowChartOffpageConnector",
         /**
          * Action Button: Blank
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonBlank = "ActionButtonBlank",
         /**
          * Action Button: Go Home
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonHome = "ActionButtonHome",
         /**
          * Action Button: Help
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonHelp = "ActionButtonHelp",
         /**
          * Action Button: Get Information
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonInformation = "ActionButtonInformation",
         /**
          * Action Button: Go Forward or Next
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonForwardNext = "ActionButtonForwardNext",
         /**
          * Action Button: Go Back or Previous
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonBackPrevious = "ActionButtonBackPrevious",
         /**
          * Action Button: Go to End
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonEnd = "ActionButtonEnd",
         /**
          * Action Button: Go to Beginning
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonBeginning = "ActionButtonBeginning",
         /**
          * Action Button: Return
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonReturn = "ActionButtonReturn",
         /**
          * Action Button: Document
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonDocument = "ActionButtonDocument",
         /**
          * Action Button: Sound
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonSound = "ActionButtonSound",
         /**
          * Action Button: Video
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         actionButtonMovie = "ActionButtonMovie",
         /**
          * Gear: A Gear with Six Teeth
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         gear6 = "Gear6",
         /**
          * Gear: A Gear with Nine Teeth
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         gear9 = "Gear9",
         /**
          * Funnel
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         funnel = "Funnel",
         /**
          * Plus Sign
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathPlus = "MathPlus",
         /**
          * Minus Sign
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathMinus = "MathMinus",
         /**
          * Multiplication Sign
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathMultiply = "MathMultiply",
         /**
          * Division Sign
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathDivide = "MathDivide",
         /**
          * Equals
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathEqual = "MathEqual",
         /**
          * Not Equal
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         mathNotEqual = "MathNotEqual",
         /**
          * Four Right Triangles that Define a Rectangular Shape
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         cornerTabs = "CornerTabs",
         /**
          * Four Small Squares that Define a Rectangular Shape.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         squareTabs = "SquareTabs",
         /**
          * Four Quarter Circles that Define a Rectangular Shape.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         plaqueTabs = "PlaqueTabs",
         /**
          * A Rectangle Divided into Four Parts Along Diagonal Lines.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chartX = "ChartX",
         /**
          * A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chartStar = "ChartStar",
         /**
          * A Rectangle Divided Vertically and Horizontally into Four Quarters.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         chartPlus = "ChartPlus",
     }
     /**
-     *
      * Specifies the formatting options for when slides are inserted.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     enum InsertSlideFormatting {
         /**
          * Copy the source theme into the target presentation and use that theme.
-         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
          */
         keepSourceFormatting = "KeepSourceFormatting",
         /**
          * Use the existing theme in the target presentation.
-         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
          */
         useDestinationTheme = "UseDestinationTheme",
     }
     /**
-     *
      * Represents the available options when inserting slides.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export interface InsertSlideOptions {
         /**
-         *
          * Specifies which formatting to use during slide insertion.
                     The default option is to use "KeepSourceFormatting".
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
         /**
-         *
          * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
                     The order of these slides is preserved during the insertion.
                     If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
                     All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         sourceSlideIds?: string[];
         /**
-         *
          * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
                     If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
                     If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         targetSlideId?: string;
     }
     /**
-     *
      * Represents the horizontal alignment of the {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ParagraphHorizontalAlignment {
         /**
          * Align text to the left margin.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         left = "Left",
         /**
          * Align text in the center.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         center = "Center",
         /**
          * Align text to the right margin.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         right = "Right",
         /**
          * Align text so that it is justified across the whole line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         justify = "Justify",
         /**
          * Specifies the alignment or adjustment of kashida length in Arabic text.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         justifyLow = "JustifyLow",
         /**
          * Distributes the text words across an entire text line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         distributed = "Distributed",
         /**
          * Distributes Thai text specially, because each character is treated as a word.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         thaiDistributed = "ThaiDistributed",
     }
     /**
-     *
      * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -1190,17 +1564,17 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly bulletFormat: PowerPoint.BulletFormat;
         /**
-         *
          * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -1233,48 +1607,60 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ParagraphFormatData;
     }
     /**
-     *
      * Specifies a shape's fill type.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeFillType {
         /**
          * Specifies that the shape should have no fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         noFill = "NoFill",
         /**
          * Specifies that the shape should have regular solid fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         solid = "Solid",
         /**
          * Specifies that the shape should have gradient fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         gradient = "Gradient",
         /**
          * Specifies that the shape should have pattern fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         pattern = "Pattern",
         /**
          * Specifies that the shape should have picture or texture fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         pictureAndTexture = "PictureAndTexture",
         /**
          * Specifies that the shape should have slide background fill.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         slideBackground = "SlideBackground",
     }
     /**
-     *
      * Represents the fill formatting of a shape object.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -1282,25 +1668,25 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         foregroundColor: string;
         /**
-         *
          * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         transparency: number;
         /**
-         *
          * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -1308,6 +1694,7 @@ export declare namespace PowerPoint {
         /**
          * Clears the fill formatting of this shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -1315,6 +1702,7 @@ export declare namespace PowerPoint {
         /**
          * Sets the fill formatting of the shape to a uniform color. This changes the fill type to `Solid`.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -1349,112 +1737,146 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeFillData;
     }
     /**
-     *
      * Specifies the style for a line.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeLineStyle {
         /**
          * Single line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         single = "Single",
         /**
          * Thick line with a thin line on each side.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         thickBetweenThin = "ThickBetweenThin",
         /**
          * Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         thickThin = "ThickThin",
         /**
          * Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         thinThick = "ThinThick",
         /**
          * Two thin lines.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         thinThin = "ThinThin",
     }
     /**
-     *
      * Specifies the dash style for a line.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeLineDashStyle {
         /**
          * The dash line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dash = "Dash",
         /**
          * The dash-dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashDot = "DashDot",
         /**
          * The dash-dot-dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashDotDot = "DashDotDot",
         /**
          * The long dash line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         longDash = "LongDash",
         /**
          * The long dash-dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         longDashDot = "LongDashDot",
         /**
          * The round dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         roundDot = "RoundDot",
         /**
          * The solid line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         solid = "Solid",
         /**
          * The square dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         squareDot = "SquareDot",
         /**
          * The long dash-dot-dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         longDashDotDot = "LongDashDotDot",
         /**
          * The system dash line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         systemDash = "SystemDash",
         /**
          * The system dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         systemDot = "SystemDot",
         /**
          * The system dash-dot line pattern
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         systemDashDot = "SystemDashDot",
     }
     /**
-     *
      * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -1462,49 +1884,49 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Represents the line color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         color: string;
         /**
-         *
          * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         dashStyle: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
         /**
-         *
          * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         style: PowerPoint.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
         /**
-         *
          * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         transparency: number;
         /**
-         *
          * Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         visible: boolean;
         /**
-         *
          * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -1537,63 +1959,70 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeLineFormatData;
     }
     /**
-     *
      * Specifies the type of a shape.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeType {
         /**
          * The given shape's type is unsupported.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         unsupported = "Unsupported",
         /**
          * The shape is an image
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         image = "Image",
         /**
          * The shape is a geometric shape such as rectangle
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         geometricShape = "GeometricShape",
         /**
          * The shape is a group shape which contains sub-shapes
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         group = "Group",
         /**
          * The shape is a line
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         line = "Line",
     }
     /**
-     *
      * Represents a single tag in the slide.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class Tag extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly key: string;
         /**
-         *
          * Gets the value of the tag.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         value: string;
         /**
@@ -1624,11 +2053,10 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.TagData;
     }
     /**
-     *
      * Represents the collection of tags.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class TagCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -1638,8 +2066,8 @@ export declare namespace PowerPoint {
         /**
          * Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the existing tag will be replaced with the given `value`.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
          * @param value - The value of the tag.
@@ -1648,8 +2076,8 @@ export declare namespace PowerPoint {
         /**
          * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The unique ID of a tag, which is unique within this `TagCollection`. `key` parameter is case-insensitive.
          */
@@ -1657,16 +2085,16 @@ export declare namespace PowerPoint {
         /**
          * Gets the number of tags in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          * @returns The number of tags in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a tag using its unique ID. An error is thrown if the tag does not exist.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the tag.
          * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
@@ -1675,8 +2103,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a tag using its zero-based index in the collection. An error is thrown if the index is out of range.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param index - The index of the tag in the collection.
          * @returns The tag at the given index. An error is thrown if index is out of range.
@@ -1685,8 +2113,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the tag.
          * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
@@ -1717,173 +2145,227 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.TagCollectionData;
     }
     /**
-     *
      * Determines the type of automatic sizing allowed.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeAutoSize {
         /**
          * No autosizing.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         autoSizeNone = "AutoSizeNone",
         /**
          * The text is adjusted to fit the shape.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         autoSizeTextToFitShape = "AutoSizeTextToFitShape",
         /**
          * The shape is adjusted to fit the text.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         autoSizeShapeToFitText = "AutoSizeShapeToFitText",
         /**
          * A combination of automatic sizing schemes are used.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         autoSizeMixed = "AutoSizeMixed",
     }
     /**
-     *
      * Represents the vertical alignment of a {@link PowerPoint.TextFrame} in a {@link PowerPoint.Shape}.
                 If one the centered options are selected, the contents of the `TextFrame` will be centered horizontally within the `Shape` as a group.
                 To change the horizontal alignment of a text, see {@link PowerPoint.ParagraphFormat} and {@link PowerPoint.ParagraphHorizontalAlignment }.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum TextVerticalAlignment {
         /**
          * Specifies that the `TextFrame` should be top aligned to the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         top = "Top",
         /**
          * Specifies that the `TextFrame` should be center aligned to the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         middle = "Middle",
         /**
          * Specifies that the `TextFrame` should be bottom aligned to the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bottom = "Bottom",
         /**
          * Specifies that the `TextFrame` should be top aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         topCentered = "TopCentered",
         /**
          * Specifies that the `TextFrame` should be center aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         middleCentered = "MiddleCentered",
         /**
          * Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         bottomCentered = "BottomCentered",
     }
     /**
-     *
      * The type of underline applied to a font.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum ShapeFontUnderlineStyle {
         /**
          * No underlining.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         none = "None",
         /**
          * Regular single line underlining.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         single = "Single",
         /**
          * Underlining of text with double lines.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         double = "Double",
         /**
          * Underlining of text with a thick line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         heavy = "Heavy",
         /**
          * Underlining of text with a dotted line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dotted = "Dotted",
         /**
          * Underlining of text with a thick, dotted line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dottedHeavy = "DottedHeavy",
         /**
          * Underlining of text with a line containing dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dash = "Dash",
         /**
          * Underlining of text with a thick line containing dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashHeavy = "DashHeavy",
         /**
          * Underlining of text with a line containing long dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashLong = "DashLong",
         /**
          * Underlining of text with a thick line containing long dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dashLongHeavy = "DashLongHeavy",
         /**
          * Underlining of text with a line containing dots and dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dotDash = "DotDash",
         /**
          * Underlining of text with a thick line containing dots and dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dotDashHeavy = "DotDashHeavy",
         /**
          * Underlining of text with a line containing double dots and dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dotDotDash = "DotDotDash",
         /**
          * Underlining of text with a thick line containing double dots and dashes.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         dotDotDashHeavy = "DotDotDashHeavy",
         /**
          * Underlining of text with a wavy line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wavy = "Wavy",
         /**
          * Underlining of text with a thick, wavy line.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wavyHeavy = "WavyHeavy",
         /**
          * Underlining of text with double wavy lines.
-         *
+         * @remarks
+         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
+         * @beta
          */
         wavyDouble = "WavyDouble",
     }
     /**
-     *
      * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -1891,49 +2373,49 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         bold: boolean;
         /**
-         *
          * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         color: string;
         /**
-         *
          * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         italic: boolean;
         /**
-         *
          * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         name: string;
         /**
-         *
          * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         size: number;
         /**
-         *
          * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -1966,9 +2448,9 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeFontData;
     }
     /**
-     *
      * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -1976,25 +2458,25 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Returns a `ShapeFont` object that represents the font attributes for the text range.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly font: PowerPoint.ShapeFont;
         /**
-         *
          * Represents the paragraph format of the text range. See {@link PowerPoint.ParagraphFormat} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly paragraphFormat: PowerPoint.ParagraphFormat;
         /**
-         *
          * Represents the plain text content of the text range.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -2002,6 +2484,7 @@ export declare namespace PowerPoint {
         /**
          * Returns a `TextRange` object for the substring in the given range.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2037,9 +2520,9 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.TextRangeData;
     }
     /**
-     *
      * Represents the text frame of a shape object.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
@@ -2047,73 +2530,73 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See {@link PowerPoint.TextRange} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly textRange: PowerPoint.TextRange;
         /**
-         *
          * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         autoSizeSetting: PowerPoint.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
         /**
-         *
          * Represents the bottom margin, in points, of the text frame.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         bottomMargin: number;
         /**
-         *
          * Specifies if the text frame contains text.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly hasText: boolean;
         /**
-         *
          * Represents the left margin, in points, of the text frame.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         leftMargin: number;
         /**
-         *
          * Represents the right margin, in points, of the text frame.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         rightMargin: number;
         /**
-         *
          * Represents the top margin, in points, of the text frame.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         topMargin: number;
         /**
-         *
          * Represents the vertical alignment of the text frame. See {@link PowerPoint.TextVerticalAlignment} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         verticalAlignment: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
         /**
-         *
          * Determines whether lines break automatically to fit text inside the shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -2121,6 +2604,7 @@ export declare namespace PowerPoint {
         /**
          * Deletes all the text in the text frame.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -2153,99 +2637,96 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.TextFrameData;
     }
     /**
-     *
      * Represents a single shape in the slide.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class Shape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Returns the fill formatting of this shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly fill: PowerPoint.ShapeFill;
         /**
-         *
          * Returns the line formatting of this shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly lineFormat: PowerPoint.ShapeLineFormat;
         /**
-         *
          * Returns a collection of tags in the shape.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
         /**
-         *
          * Returns the text frame object of this shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly textFrame: PowerPoint.TextFrame;
         /**
-         *
          * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         height: number;
         /**
-         *
          * Gets the unique ID of the shape.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly id: string;
         /**
-         *
          * The distance, in points, from the left side of the shape to the left side of the slide.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         left: number;
         /**
-         *
          * Specifies the name of this shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         name: string;
         /**
-         *
          * The distance, in points, from the top edge of the shape to the top edge of the slide.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         top: number;
         /**
-         *
          * Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
         /**
-         *
          * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -2253,8 +2734,8 @@ export declare namespace PowerPoint {
         /**
          * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
         /**
@@ -2285,58 +2766,57 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
     /**
-     *
      * Represents the available options when adding shapes.
      *
+     * @remarks
      * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export interface ShapeAddOptions {
         /**
-         *
          * Specifies the height, in points, of the shape.
                     When not provided, a default value will be used.
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         height?: number;
         /**
-         *
          * Specifies the distance, in points, from the left side of the shape to the left side of the slide.
                     When not provided, a default value will be used.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         left?: number;
         /**
-         *
          * Specifies the distance, in points, from the top edge of the shape to the top edge of the slide.
                     When not provided, a default value will be used.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         top?: number;
         /**
-         *
          * Specifies the width, in points, of the shape.
                     When not provided, a default value will be used.
                     Throws an `InvalidArgument` exception when set with a negative value.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
         width?: number;
     }
     /**
-     *
      * Represents the collection of shapes.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class ShapeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2346,6 +2826,7 @@ export declare namespace PowerPoint {
         /**
          * Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2357,6 +2838,7 @@ export declare namespace PowerPoint {
         /**
          * Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2368,6 +2850,7 @@ export declare namespace PowerPoint {
         /**
          * Adds a line to the slide. Returns a `Shape` object that represents the new line.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2379,6 +2862,7 @@ export declare namespace PowerPoint {
         /**
          * Adds a line to the slide. Returns a `Shape` object that represents the new line.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2390,6 +2874,7 @@ export declare namespace PowerPoint {
         /**
          * Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the new text box.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          *
@@ -2401,16 +2886,16 @@ export declare namespace PowerPoint {
         /**
          * Gets the number of shapes in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          * @returns The number of shapes in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the shape.
          * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
@@ -2419,8 +2904,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param index - The index of the shape in the collection.
          * @returns The shape at the given index. An error is thrown if index is out of range.
@@ -2429,8 +2914,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param id - The ID of the shape.
          * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
@@ -2461,37 +2946,33 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.ShapeCollectionData;
     }
     /**
-     *
      * Represents the layout of a slide.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class SlideLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Returns a collection of shapes in the slide layout.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly shapes: PowerPoint.ShapeCollection;
         /**
-         *
          * Gets the unique ID of the slide layout.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly id: string;
         /**
-         *
          * Gets the name of the slide layout.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
         /**
@@ -2522,11 +3003,10 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideLayoutData;
     }
     /**
-     *
      * Represents the collection of layouts provided by the Slide Master for slides.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class SlideLayoutCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2536,16 +3016,16 @@ export declare namespace PowerPoint {
         /**
          * Gets the number of layouts in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          * @returns The number of layouts in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a layout using its unique ID.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the layout.
          * @returns The layout with the unique ID. If such a layout does not exist, an error is thrown.
@@ -2554,8 +3034,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a layout using its zero-based index in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param index - The index of the layout in the collection.
          * @returns The layout at the given index. An error is thrown if index is out of range.
@@ -2565,8 +3045,8 @@ export declare namespace PowerPoint {
          * Gets a layout using its unique ID.  If such a layout does not exist, an object with an `isNullObject` property set to true is returned. For further information,
                     see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param id - The ID of the layout.
          * @returns The layout with the unique ID.
@@ -2597,45 +3077,40 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideLayoutCollectionData;
     }
     /**
-     *
      * Represents the Slide Master of a slide.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class SlideMaster extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Gets the collection of layouts provided by the Slide Master for slides.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly layouts: PowerPoint.SlideLayoutCollection;
         /**
-         *
          * Returns a collection of shapes in the Slide Master.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly shapes: PowerPoint.ShapeCollection;
         /**
-         *
          * Gets the unique ID of the Slide Master.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly id: string;
         /**
-         *
          * Gets the unique name of the Slide Master.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly name: string;
         /**
@@ -2666,56 +3141,53 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideMasterData;
     }
     /**
-     *
      * Represents a single slide of a presentation.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         *
          * Gets the layout of the slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly layout: PowerPoint.SlideLayout;
         /**
-         *
          * Returns a collection of shapes in the slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly shapes: PowerPoint.ShapeCollection;
         /**
-         *
          * Gets the `SlideMaster` object that represents the slide's default content.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly slideMaster: PowerPoint.SlideMaster;
         /**
-         *
          * Returns a collection of tags in the slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
         /**
-         *
          * Gets the unique ID of the slide.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         readonly id: string;
         /**
          * Deletes the slide from the presentation. Does nothing if the slide does not exist.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
@@ -2747,9 +3219,9 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
     /**
-     *
      * Represents the collection of slides in the presentation.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export class SlideCollection extends OfficeExtension.ClientObject {
@@ -2760,8 +3232,8 @@ export declare namespace PowerPoint {
         /**
          * Adds a new slide at the end of the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param options - The options that define the theme of the new slide.
          */
@@ -2769,6 +3241,7 @@ export declare namespace PowerPoint {
         /**
          * Gets the number of slides in the collection.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          * @returns The number of slides in the collection.
          */
@@ -2776,6 +3249,7 @@ export declare namespace PowerPoint {
         /**
          * Gets a slide using its unique ID.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param key - The ID of the slide.
@@ -2786,6 +3260,7 @@ export declare namespace PowerPoint {
          * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they
                     are shown in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param index - The index of the slide in the collection.
@@ -2797,6 +3272,7 @@ export declare namespace PowerPoint {
                     see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
                     and properties}.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param id - The ID of the slide.
@@ -2828,11 +3304,10 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideCollectionData;
     }
     /**
-     *
      * Represents the collection of Slide Masters in the presentation.
      *
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
      */
     export class SlideMasterCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2842,16 +3317,16 @@ export declare namespace PowerPoint {
         /**
          * Gets the number of Slide Masters in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          * @returns The number of Slide Masters in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a Slide Master using its unique ID.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param key - The ID of the Slide Master.
          * @returns The Slide Master with the unique ID. If such a Slide Master does not exist, an error is thrown.
@@ -2860,8 +3335,8 @@ export declare namespace PowerPoint {
         /**
          * Gets a Slide Master using its zero-based index in the collection.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param index - The index of the Slide Master in the collection.
          * @returns The Slide Master at the given index. An error is thrown if index is out of range.
@@ -2871,8 +3346,8 @@ export declare namespace PowerPoint {
          * Gets a Slide Master using its unique ID. If such a Slide Master does not exist, an object with an `isNullObject` property set to true is returned.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}."
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          *
          * @param id - The ID of the Slide Master.
          * @returns The Slide Master with the unique ID.
@@ -2922,9 +3397,9 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
         export interface BulletFormatUpdateData {
             /**
-             *
              * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -2933,9 +3408,9 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
             /**
-             *
              * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -2944,17 +3419,17 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
         export interface ShapeFillUpdateData {
             /**
-             *
              * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             foregroundColor?: string;
             /**
-             *
              * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -2963,49 +3438,49 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             /**
-             *
              * Represents the line color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: string;
             /**
-             *
              * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
             /**
-             *
              * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             style?: PowerPoint.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
             /**
-             *
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             transparency?: number;
             /**
-             *
              * Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             visible?: boolean;
             /**
-             *
              * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3014,11 +3489,10 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
         export interface TagUpdateData {
             /**
-             *
              * Gets the value of the tag.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             value?: string;
         }
@@ -3029,49 +3503,49 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             /**
-             *
              * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bold?: boolean;
             /**
-             *
              * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: string;
             /**
-             *
              * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             italic?: boolean;
             /**
-             *
              * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: string;
             /**
-             *
              * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             size?: number;
             /**
-             *
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3080,9 +3554,9 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             /**
-             *
              * Represents the plain text content of the text range.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3091,57 +3565,57 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
             /**
-             *
              * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             autoSizeSetting?: PowerPoint.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
             /**
-             *
              * Represents the bottom margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bottomMargin?: number;
             /**
-             *
              * Represents the left margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             leftMargin?: number;
             /**
-             *
              * Represents the right margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             rightMargin?: number;
             /**
-             *
              * Represents the top margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             topMargin?: number;
             /**
-             *
              * Represents the vertical alignment of the text frame. See {@link PowerPoint.TextVerticalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
             /**
-             *
              * Determines whether lines break automatically to fit text inside the shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3150,41 +3624,41 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             /**
-             *
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             height?: number;
             /**
-             *
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             left?: number;
             /**
-             *
              * Specifies the name of this shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: string;
             /**
-             *
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             top?: number;
             /**
-             *
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3213,9 +3687,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
         export interface BulletFormatData {
             /**
-             *
              * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3224,9 +3698,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
         export interface ParagraphFormatData {
             /**
-             *
              * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3235,25 +3709,25 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
         export interface ShapeFillData {
             /**
-             *
              * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             foregroundColor?: string;
             /**
-             *
              * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             transparency?: number;
             /**
-             *
              * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3262,49 +3736,49 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
             /**
-             *
              * Represents the line color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: string;
             /**
-             *
              * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             dashStyle?: PowerPoint.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
             /**
-             *
              * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             style?: PowerPoint.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";
             /**
-             *
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             transparency?: number;
             /**
-             *
              * Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             visible?: boolean;
             /**
-             *
              * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3313,19 +3787,17 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `tag.toJSON()`. */
         export interface TagData {
             /**
-             *
              * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             key?: string;
             /**
-             *
              * Gets the value of the tag.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             value?: string;
         }
@@ -3336,49 +3808,49 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             /**
-             *
              * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bold?: boolean;
             /**
-             *
              * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: string;
             /**
-             *
              * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             italic?: boolean;
             /**
-             *
              * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: string;
             /**
-             *
              * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             size?: number;
             /**
-             *
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3387,9 +3859,9 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
             /**
-             *
              * Represents the plain text content of the text range.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3398,65 +3870,65 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
             /**
-             *
              * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             autoSizeSetting?: PowerPoint.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed";
             /**
-             *
              * Represents the bottom margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bottomMargin?: number;
             /**
-             *
              * Specifies if the text frame contains text.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             hasText?: boolean;
             /**
-             *
              * Represents the left margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             leftMargin?: number;
             /**
-             *
              * Represents the right margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             rightMargin?: number;
             /**
-             *
              * Represents the top margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             topMargin?: number;
             /**
-             *
              * Represents the vertical alignment of the text frame. See {@link PowerPoint.TextVerticalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             verticalAlignment?: PowerPoint.TextVerticalAlignment | "Top" | "Middle" | "Bottom" | "TopCentered" | "MiddleCentered" | "BottomCentered";
             /**
-             *
              * Determines whether lines break automatically to fit text inside the shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3465,57 +3937,56 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             /**
-             *
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             height?: number;
             /**
-             *
              * Gets the unique ID of the shape.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: string;
             /**
-             *
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             left?: number;
             /**
-             *
              * Specifies the name of this shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: string;
             /**
-             *
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             top?: number;
             /**
-             *
              * Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             type?: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
             /**
-             *
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
@@ -3528,19 +3999,17 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
             /**
-             *
              * Gets the unique ID of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: string;
             /**
-             *
              * Gets the name of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: string;
         }
@@ -3551,28 +4020,26 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
         export interface SlideMasterData {
             /**
-             *
              * Gets the unique ID of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: string;
             /**
-             *
              * Gets the unique name of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: string;
         }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             /**
-             *
              * Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
@@ -3586,6 +4053,7 @@ export declare namespace PowerPoint {
             items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
+         * @remarks
          * [Api set: PowerPointApi 1.0]
          */
         export interface PresentationLoadOptions {
@@ -3596,9 +4064,9 @@ export declare namespace PowerPoint {
             title?: boolean;
         }
         /**
-         *
          * Represents the bullet formatting properties of a text that is attached to the {@link PowerPoint.ParagraphFormat}.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3608,18 +4076,18 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments with different bullet visibility values.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             visible?: boolean;
         }
         /**
-         *
          * Represents the paragraph formatting properties of a text that is attached to the {@link PowerPoint.TextRange}.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3629,26 +4097,26 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * Represents the bullet format of the paragraph. See {@link PowerPoint.BulletFormat} for details.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             bulletFormat?: PowerPoint.Interfaces.BulletFormatLoadOptions;
             /**
-             *
              * Represents the horizontal alignment of the paragraph. Returns 'null' if the 'TextRange' includes text fragments with different horizontal alignment values. See {@link PowerPoint.ParagraphHorizontalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             horizontalAlignment?: boolean;
         }
         /**
-         *
          * Represents the fill formatting of a shape object.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3658,34 +4126,34 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Represents the shape fill foreground color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             foregroundColor?: boolean;
             /**
-             *
              * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             transparency?: boolean;
             /**
-             *
              * Returns the fill type of the shape. See {@link PowerPoint.ShapeFillType} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             type?: boolean;
         }
         /**
-         *
          * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3695,60 +4163,59 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Represents the line color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: boolean;
             /**
-             *
              * Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash styles. See PowerPoint.ShapeLineDashStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             dashStyle?: boolean;
             /**
-             *
              * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See PowerPoint.ShapeLineStyle for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             style?: boolean;
             /**
-             *
              * Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             transparency?: boolean;
             /**
-             *
              * Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             visible?: boolean;
             /**
-             *
              * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             weight?: boolean;
         }
         /**
-         *
          * Represents a single tag in the slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface TagLoadOptions {
             /**
@@ -3756,28 +4223,25 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             key?: boolean;
             /**
-             *
              * Gets the value of the tag.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             value?: boolean;
         }
         /**
-         *
          * Represents the collection of tags.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface TagCollectionLoadOptions {
             /**
@@ -3785,26 +4249,24 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             key?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the value of the tag.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             value?: boolean;
         }
         /**
-         *
          * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3814,58 +4276,58 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bold?: boolean;
             /**
-             *
              * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns `null` if the `TextRange` includes text fragments with different colors.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             color?: boolean;
             /**
-             *
              * Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text fragments.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             italic?: boolean;
             /**
-             *
              * Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: boolean;
             /**
-             *
              * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             size?: boolean;
             /**
-             *
              * Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different underline styles. See {@link PowerPoint.ShapeFontUnderlineStyle} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             underline?: boolean;
         }
         /**
-         *
          * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3875,34 +4337,34 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * Returns a `ShapeFont` object that represents the font attributes for the text range.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             font?: PowerPoint.Interfaces.ShapeFontLoadOptions;
             /**
-            *
             * Represents the paragraph format of the text range. See {@link PowerPoint.ParagraphFormat} for details.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             paragraphFormat?: PowerPoint.Interfaces.ParagraphFormatLoadOptions;
             /**
-             *
              * Represents the plain text content of the text range.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             text?: boolean;
         }
         /**
-         *
          * Represents the text frame of a shape object.
          *
+         * @remarks
          * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
          * @beta
          */
@@ -3912,84 +4374,83 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See {@link PowerPoint.TextRange} for details.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             textRange?: PowerPoint.Interfaces.TextRangeLoadOptions;
             /**
-             *
              * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             autoSizeSetting?: boolean;
             /**
-             *
              * Represents the bottom margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             bottomMargin?: boolean;
             /**
-             *
              * Specifies if the text frame contains text.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             hasText?: boolean;
             /**
-             *
              * Represents the left margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             leftMargin?: boolean;
             /**
-             *
              * Represents the right margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             rightMargin?: boolean;
             /**
-             *
              * Represents the top margin, in points, of the text frame.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             topMargin?: boolean;
             /**
-             *
              * Represents the vertical alignment of the text frame. See {@link PowerPoint.TextVerticalAlignment} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             verticalAlignment?: boolean;
             /**
-             *
              * Determines whether lines break automatically to fit text inside the shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             wordWrap?: boolean;
         }
         /**
-         *
          * Represents a single shape in the slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface ShapeLoadOptions {
             /**
@@ -3997,92 +4458,90 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * Returns the fill formatting of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            *
             * Returns the line formatting of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            *
             * Returns the text frame object of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
-             *
              * Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             height?: boolean;
             /**
-             *
              * Gets the unique ID of the shape.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * The distance, in points, from the left side of the shape to the left side of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             left?: boolean;
             /**
-             *
              * Specifies the name of this shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: boolean;
             /**
-             *
              * The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             top?: boolean;
             /**
-             *
              * Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             type?: boolean;
             /**
-             *
              * Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             width?: boolean;
         }
         /**
-         *
          * Represents the collection of shapes.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface ShapeCollectionLoadOptions {
             /**
@@ -4090,92 +4549,90 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * For EACH ITEM in the collection: Returns the fill formatting of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;
             /**
-            *
             * For EACH ITEM in the collection: Returns the line formatting of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;
             /**
-            *
             * For EACH ITEM in the collection: Returns the text frame object of this shape.
             *
+            * @remarks
             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
             * @beta
             */
             textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;
             /**
-             *
              * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             height?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the shape.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             left?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Specifies the name of this shape.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             name?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             top?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             type?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.
              *
+             * @remarks
              * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
              * @beta
              */
             width?: boolean;
         }
         /**
-         *
          * Represents the layout of a slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface SlideLayoutLoadOptions {
             /**
@@ -4183,28 +4640,25 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Gets the unique ID of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * Gets the name of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
         }
         /**
-         *
          * Represents the collection of layouts provided by the Slide Master for slides.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface SlideLayoutCollectionLoadOptions {
             /**
@@ -4212,28 +4666,25 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the name of the slide layout.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
         }
         /**
-         *
          * Represents the Slide Master of a slide.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface SlideMasterLoadOptions {
             /**
@@ -4241,26 +4692,24 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * Gets the unique ID of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * Gets the unique name of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
         }
         /**
-         *
          * Represents a single slide of a presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         export interface SlideLoadOptions {
@@ -4269,33 +4718,31 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * Gets the layout of the slide.
             *
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            *
             * Gets the `SlideMaster` object that represents the slide's default content.
             *
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
-             *
              * Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
         }
         /**
-         *
          * Represents the collection of slides in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         export interface SlideCollectionLoadOptions {
@@ -4304,35 +4751,32 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-            *
             * For EACH ITEM in the collection: Gets the layout of the slide.
             *
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
             */
             layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
             /**
-            *
             * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
             *
-            * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-            * @beta
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
             */
             slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
         }
         /**
-         *
          * Represents the collection of Slide Masters in the presentation.
          *
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
          */
         export interface SlideMasterCollectionLoadOptions {
             /**
@@ -4340,19 +4784,17 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique name of the Slide Master.
              *
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             name?: boolean;
         }
