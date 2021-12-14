@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member'
     package: onenote!
     fullName: inkAnalysisOrNull
-    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

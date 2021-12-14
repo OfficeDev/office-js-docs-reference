@@ -11180,7 +11180,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#baseUrl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: The url of the site that this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: The url of the site where this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11258,7 +11258,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#isVirtual:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11337,7 +11337,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#sections:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: The the sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: The sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11427,7 +11427,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookData#baseUrl:member",
-                      "docComment": "/**\n * The url of the site that this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * The url of the site where this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11505,7 +11505,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookData#isVirtual:member",
-                      "docComment": "/**\n * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
+                      "docComment": "/**\n * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11588,7 +11588,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookData#sections:member",
-                      "docComment": "/**\n * The the sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * The sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11661,7 +11661,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookLoadOptions#baseUrl:member",
-                      "docComment": "/**\n * The url of the site that this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * The url of the site where this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11739,7 +11739,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookLoadOptions#isVirtual:member",
-                      "docComment": "/**\n * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
+                      "docComment": "/**\n * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11818,7 +11818,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.NotebookLoadOptions#sections:member",
-                      "docComment": "/**\n * The the sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * The sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12458,7 +12458,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.PageCollectionLoadOptions#inkAnalysisOrNull:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13665,7 +13665,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member",
-                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13917,7 +13917,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member",
-                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14065,7 +14065,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "onenote!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member",
-                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                      "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19487,7 +19487,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "onenote!OneNote.Notebook#baseUrl:member",
-                  "docComment": "/**\n * The url of the site that this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n * The url of the site where this notebook is located. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19630,7 +19630,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "onenote!OneNote.Notebook#isVirtual:member",
-                  "docComment": "/**\n * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
+                  "docComment": "/**\n * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19851,7 +19851,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "onenote!OneNote.Notebook#sections:member",
-                  "docComment": "/**\n * The the sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n * The sections of the notebook. Read only\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23714,7 +23714,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "onenote!OneNote.Page#inkAnalysisOrNull:member",
-                  "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.\n *\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

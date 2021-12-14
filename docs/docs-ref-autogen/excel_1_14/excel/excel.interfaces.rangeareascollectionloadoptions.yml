@@ -92,8 +92,8 @@ properties:
     package: excel!
     fullName: format
     summary: >-
-      For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the the font, fill, borders,
-      alignment, and other properties for all ranges in the `RangeAreas` object.
+      For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment,
+      and other properties for all ranges in the `RangeAreas` object.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

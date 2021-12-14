@@ -27,7 +27,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: 'For EACH ITEM in the collection: The url of the site that this notebook is located. Read only'
+    summary: 'For EACH ITEM in the collection: The url of the site where this notebook is located. Read only'
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
     package: onenote!
     fullName: isVirtual
     summary: >-
-      For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read
-      only
+      For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections').
+      Read only
     remarks: '\[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions#sections:member'
     package: onenote!
     fullName: sections
-    summary: 'For EACH ITEM in the collection: The the sections of the notebook. Read only'
+    summary: 'For EACH ITEM in the collection: The sections of the notebook. Read only'
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

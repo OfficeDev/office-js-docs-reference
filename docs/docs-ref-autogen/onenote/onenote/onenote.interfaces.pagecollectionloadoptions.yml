@@ -77,7 +77,7 @@ properties:
     fullName: inkAnalysisOrNull
     summary: >-
       For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink
-      analysis information. Read only.
+      analysis information.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

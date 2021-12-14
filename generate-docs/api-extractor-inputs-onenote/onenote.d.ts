@@ -1127,14 +1127,14 @@ export declare namespace OneNote {
          */
         readonly sectionGroups: OneNote.SectionGroupCollection;
         /**
-         * The the sections of the notebook. Read only
+         * The sections of the notebook. Read only
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
          */
         readonly sections: OneNote.SectionCollection;
         /**
-         * The url of the site that this notebook is located. Read only
+         * The url of the site where this notebook is located. Read only
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -1155,7 +1155,7 @@ export declare namespace OneNote {
          */
         readonly id: string;
         /**
-         * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+         * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
          *
          * @remarks
          * [Api set: OneNoteApi 1.2]
@@ -1769,7 +1769,7 @@ export declare namespace OneNote {
          */
         readonly contents: OneNote.PageContentCollection;
         /**
-         * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+         * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
          *
          * @remarks
          * [Api set: OneNoteApi 1.1]
@@ -4271,7 +4271,7 @@ export declare namespace OneNote {
         /** An interface for updating data on the Page object, for use in `page.set({ ... })`. */
         export interface PageUpdateData {
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -4621,14 +4621,14 @@ export declare namespace OneNote {
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupData[];
             /**
-            * The the sections of the notebook. Read only
+            * The sections of the notebook. Read only
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionData[];
             /**
-             * The url of the site that this notebook is located. Read only
+             * The url of the site where this notebook is located. Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -4649,7 +4649,7 @@ export declare namespace OneNote {
              */
             id?: string;
             /**
-             * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -4775,7 +4775,7 @@ export declare namespace OneNote {
             */
             contents?: OneNote.Interfaces.PageContentData[];
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -5675,14 +5675,14 @@ export declare namespace OneNote {
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * The the sections of the notebook. Read only
+            * The sections of the notebook. Read only
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
-             * The url of the site that this notebook is located. Read only
+             * The url of the site where this notebook is located. Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5703,7 +5703,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             * True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -5736,14 +5736,14 @@ export declare namespace OneNote {
             */
             sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: The the sections of the notebook. Read only
+            * For EACH ITEM in the collection: The sections of the notebook. Read only
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
             */
             sections?: OneNote.Interfaces.SectionCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: The url of the site that this notebook is located. Read only
+             * For EACH ITEM in the collection: The url of the site where this notebook is located. Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.1]
@@ -5764,7 +5764,7 @@ export declare namespace OneNote {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+             * For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
              *
              * @remarks
              * [Api set: OneNoteApi 1.2]
@@ -6097,7 +6097,7 @@ export declare namespace OneNote {
             */
             contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;
             /**
-            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+            * Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]
@@ -6172,7 +6172,7 @@ export declare namespace OneNote {
             */
             contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;
             /**
-            * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+            * For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
             *
             * @remarks
             * [Api set: OneNoteApi 1.1]

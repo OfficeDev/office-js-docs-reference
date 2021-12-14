@@ -13,7 +13,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#baseUrl:member'
     package: onenote!
     fullName: baseUrl
-    summary: The url of the site that this notebook is located. Read only
+    summary: The url of the site where this notebook is located. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#isVirtual:member'
     package: onenote!
     fullName: isVirtual
-    summary: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
+    summary: 'True if the notebook is not created by the user (i.e., ''Misplaced Sections''). Read only'
     remarks: '\[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -99,7 +99,7 @@ properties:
     uid: 'onenote!OneNote.Notebook#sections:member'
     package: onenote!
     fullName: sections
-    summary: The the sections of the notebook. Read only
+    summary: The sections of the notebook. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
