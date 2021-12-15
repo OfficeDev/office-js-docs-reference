@@ -260,7 +260,7 @@ function cleanUpDts(localDtsPath: string): string {
             * @beta
             */
             writableNote?: string;
-        };"`));
+        }`));
 }
 
 

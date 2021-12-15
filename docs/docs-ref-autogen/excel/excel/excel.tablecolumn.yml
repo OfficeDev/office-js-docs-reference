@@ -9,16 +9,6 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
-  - name: '"[][];"'
-    uid: 'excel!Excel.TableColumn#"[][];":member'
-    package: excel!
-    fullName: '"[][];"'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: '"[][];'
   - name: context
     uid: 'excel!Excel.TableColumn#context:member'
     package: excel!
@@ -117,7 +107,7 @@ properties:
         | string | number | boolean & {
                     writable?: boolean;
                     writableNote?: string;
-                };
+                }[][];
       return:
         type: >-
           <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
@@ -128,7 +118,7 @@ properties:
           uid="excel!Excel.WebImageCellValue:interface" /> | string | number | boolean & {
                       writable?: boolean;
                       writableNote?: string;
-                  }
+                  }[][]
 methods:
   - name: delete()
     uid: 'excel!Excel.TableColumn#delete:member(1)'

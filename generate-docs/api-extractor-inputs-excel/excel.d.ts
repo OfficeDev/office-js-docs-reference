@@ -10031,7 +10031,7 @@ export declare namespace Excel {
             * @beta
             */
             writableNote?: string;
-        };"[][];
+        }[][];
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -11887,7 +11887,7 @@ export declare namespace Excel {
             * @beta
             */
             writableNote?: string;
-        };"[][];
+        }[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12408,7 +12408,7 @@ export declare namespace Excel {
             * @beta
             */
             writableNote?: string;
-        };"[][];
+        }[][];
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -13311,7 +13311,7 @@ export declare namespace Excel {
             * @beta
             */
             writableNote?: string;
-        };"[][];
+        }[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -13544,7 +13544,7 @@ export declare namespace Excel {
             * @beta
             */
             writableNote?: string;
-        };"[][];
+        }[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.

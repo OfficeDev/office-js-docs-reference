@@ -12,16 +12,6 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
-  - name: '"[][];"'
-    uid: 'excel!Excel.Range#"[][];":member'
-    package: excel!
-    fullName: '"[][];"'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: '"[][];'
   - name: address
     uid: 'excel!Excel.Range#address:member'
     package: excel!
@@ -595,7 +585,7 @@ properties:
         | string | number | boolean & {
                     writable?: boolean;
                     writableNote?: string;
-                };
+                }[][];
       return:
         type: >-
           <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
@@ -606,7 +596,7 @@ properties:
           uid="excel!Excel.WebImageCellValue:interface" /> | string | number | boolean & {
                       writable?: boolean;
                       writableNote?: string;
-                  }
+                  }[][]
   - name: valueTypes
     uid: 'excel!Excel.Range#valueTypes:member'
     package: excel!
