@@ -185,7 +185,7 @@
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Application:class",
-              "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -402,7 +402,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting:enum",
-              "docComment": "/**\n * Specifies the formatting options for when slides are inserted.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+              "docComment": "/**\n * Specifies the formatting options for when slides are inserted.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -415,7 +415,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member",
-                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n */\n",
+                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -436,7 +436,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member",
-                  "docComment": "/**\n * Use the existing theme in the target presentation.\n */\n",
+                  "docComment": "/**\n * Use the existing theme in the target presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -459,7 +459,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions:interface",
-              "docComment": "/**\n * Represents the available options when inserting slides.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+              "docComment": "/**\n * Represents the available options when inserting slides.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -472,7 +472,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#formatting:member",
-                  "docComment": "/**\n * Specifies which formatting to use during slide insertion. The default option is to use \"KeepSourceFormatting\".\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Specifies which formatting to use during slide insertion. The default option is to use \"KeepSourceFormatting\".\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -503,7 +503,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#sourceSlideIds:member",
-                  "docComment": "/**\n * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is preserved during the insertion. If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object. The order of these slides is preserved during the insertion. If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted. All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -529,7 +529,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideOptions#targetSlideId:member",
-                  "docComment": "/**\n * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID. If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation. If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID. If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation. If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -681,7 +681,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.PresentationLoadOptions:interface",
-                  "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -748,6 +748,115 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shape.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `slideCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -796,7 +905,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface",
-                  "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -835,7 +944,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -924,7 +1033,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData#id:member",
-                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -952,8 +1061,117 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayoutCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideLayout.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideLayoutData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideLayoutData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface",
-                  "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -992,7 +1210,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member",
-                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                      "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -1017,13 +1235,246 @@
                     }
                   ],
                   "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMasterCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideMaster.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideMasterData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideMasterData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tagCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.TagData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.TagData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tag.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TagUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Tag object, for use in `tag.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TagUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TagUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
                 }
               ]
             },
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Presentation:class",
-              "docComment": "/**\n * [Api set: PowerPointApi 1.0]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: PowerPointApi 1.0]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1073,7 +1524,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.Presentation#insertSlidesFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts the specified slides from a presentation into the current presentation.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param base64File - The base64-encoded string representing the source presentation file.\n *\n * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.\n */\n",
+                  "docComment": "/**\n * Inserts the specified slides from a presentation into the current presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param base64File - The base64-encoded string representing the source presentation file.\n *\n * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1273,7 +1724,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.Presentation#slides:member",
-                  "docComment": "/**\n * Returns an ordered collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Returns an ordered collection of slides in the presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1753,7 +2204,7 @@
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.Slide:class",
-              "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+              "docComment": "/**\n * Represents a single slide of a presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1803,7 +2254,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.Slide#delete:member(1)",
-                  "docComment": "/**\n * Deletes the slide from the presentation. Does nothing if the slide does not exist.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Deletes the slide from the presentation. Does nothing if the slide does not exist.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1832,7 +2283,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "powerpoint!PowerPoint.Slide#id:member",
-                  "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Gets the unique ID of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2035,7 +2486,7 @@
             {
               "kind": "Class",
               "canonicalReference": "powerpoint!PowerPoint.SlideCollection:class",
-              "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+              "docComment": "/**\n * Represents the collection of slides in the presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2085,7 +2536,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getCount:member(1)",
-                  "docComment": "/**\n * Gets the number of slides in the collection.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @returns The number of slides in the collection.\n */\n",
+                  "docComment": "/**\n * Gets the number of slides in the collection.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @returns The number of slides in the collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2119,7 +2570,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a slide using its unique ID.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param key - The ID of the slide.\n *\n * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.\n */\n",
+                  "docComment": "/**\n * Gets a slide using its unique ID.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param key - The ID of the slide.\n *\n * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2165,7 +2616,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItemAt:member(1)",
-                  "docComment": "/**\n * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown in the presentation.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param index - The index of the slide in the collection.\n *\n * @returns The slide at the given index. An error is thrown if index is out of range.\n */\n",
+                  "docComment": "/**\n * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown in the presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param index - The index of the slide in the collection.\n *\n * @returns The slide at the given index. An error is thrown if index is out of range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2211,7 +2662,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods\n *                     and properties}.\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param id - The ID of the slide.\n *\n * @returns The slide with the unique ID.\n */\n",
+                  "docComment": "/**\n * Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to true is returned. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods\n *                     and properties}.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n *\n * @param id - The ID of the slide.\n *\n * @returns The slide with the unique ID.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

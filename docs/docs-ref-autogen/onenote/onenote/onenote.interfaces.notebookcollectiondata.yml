@@ -3,7 +3,7 @@ name: OneNote.Interfaces.NotebookCollectionData
 uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.NotebookCollectionData
-summary: An interface describing the data returned by calling "notebookCollection.toJSON()".
+summary: An interface describing the data returned by calling `notebookCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

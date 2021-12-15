@@ -39,6 +39,26 @@ properties:
       return:
         type: '<xref uid="visio!Visio.Shape:class" />[]'
 methods:
+  - name: add(FileName)
+    uid: 'visio!Visio.ShapeCollection#add:member(1)'
+    package: visio!
+    fullName: add(FileName)
+    summary: |-
+      Adds a new shape to a collection.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'add(FileName: string): Visio.Shape;'
+      parameters:
+        - id: FileName
+          description: '*'
+          type: string
+      return:
+        type: '<xref uid="visio!Visio.Shape:class" />'
+        description: ''
   - name: getCount()
     uid: 'visio!Visio.ShapeCollection#getCount:member(1)'
     package: visio!
@@ -77,10 +97,7 @@ methods:
     uid: 'visio!Visio.ShapeCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: |-
-      Gets a Shape using its key (name or Index).
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,45 +105,48 @@ methods:
       content: 'getItem(key: number | string): Visio.Shape;'
       parameters:
         - id: key
-          description: Key is the Name or Index of the shape to be retrieved.
+          description: ''
           type: number | string
       return:
         type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
-  - name: load(option)
+  - name: getItemOrNullObject(index)
+    uid: 'visio!Visio.ShapeCollection#getItemOrNullObject:member(1)'
+    package: visio!
+    fullName: getItemOrNullObject(index)
+    summary: |-
+      Returns an item from a collection.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(index: number): Visio.Shape;'
+      parameters:
+        - id: index
+          description: '*'
+          type: number
+      return:
+        type: '<xref uid="visio!Visio.Shape:class" />'
+        description: ''
+  - name: load(options)
     uid: 'visio!Visio.ShapeCollection#load:member(1)'
     package: visio!
-    fullName: load(option)
+    fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array
-      of strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        load(options?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
         Visio.ShapeCollection;
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type: >-
             <xref uid="visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface" /> & <xref
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
@@ -152,19 +172,23 @@ methods:
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
-  - name: load(option)
+  - name: load(propertyNamesAndPaths)
     uid: 'visio!Visio.ShapeCollection#load:member(3)'
     package: visio!
-    fullName: load(option)
-    summary: ''
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;'
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Visio.ShapeCollection;'
       parameters:
-        - id: option
-          description: ''
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'

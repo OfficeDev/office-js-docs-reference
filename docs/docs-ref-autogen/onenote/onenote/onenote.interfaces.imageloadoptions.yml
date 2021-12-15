@@ -3,11 +3,8 @@ name: OneNote.Interfaces.ImageLoadOptions
 uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.ImageLoadOptions
-summary: |-
-  Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#description:member'
     package: onenote!
     fullName: description
-    summary: |-
-      Gets or sets the description of the Image.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the description of the Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#height:member'
     package: onenote!
     fullName: height
-    summary: |-
-      Gets or sets the height of the Image layout.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the height of the Image layout.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +51,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#hyperlink:member'
     package: onenote!
     fullName: hyperlink
-    summary: |-
-      Gets or sets the hyperlink of the Image.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the hyperlink of the Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,11 +63,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the Image object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the Image object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,11 +75,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#ocrData:member'
     package: onenote!
     fullName: ocrData
-    summary: |-
-      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,10 +90,7 @@ properties:
     summary: >-
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
       This object defines the position of the Image on the page.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,11 +101,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: |-
-      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,11 +113,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#width:member'
     package: onenote!
     fullName: width
-    summary: |-
-      Gets or sets the width of the Image layout.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets or sets the width of the Image layout.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

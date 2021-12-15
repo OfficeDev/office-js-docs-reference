@@ -3,11 +3,8 @@ name: PowerPoint.Interfaces.SlideCollectionLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideCollectionLoadOptions
-summary: |-
-  Represents the collection of slides in the presentation.
-
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Represents the collection of slides in the presentation.
+remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideCollectionLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: |-
-      For EACH ITEM in the collection: Gets the unique ID of the slide.
-
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the unique ID of the slide.'
+    remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,7 +3,7 @@ name: OneNote.Interfaces.ParagraphCollectionData
 uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.ParagraphCollectionData
-summary: An interface describing the data returned by calling "paragraphCollection.toJSON()".
+summary: An interface describing the data returned by calling `paragraphCollection.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

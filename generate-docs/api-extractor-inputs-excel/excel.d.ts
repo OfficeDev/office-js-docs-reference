@@ -8397,7 +8397,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Workbook;
         /**
-         * Occurs when the the workbook is activated. Note: This event will not fire when the workbook is opened.
+         * Occurs when the workbook is activated. Note: This event will not fire when the workbook is opened.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -10886,7 +10886,7 @@ export declare namespace Excel {
          */
         readonly dataValidation: Excel.DataValidation;
         /**
-         * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+         * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -23431,7 +23431,7 @@ export declare namespace Excel {
         type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent";
     }
     /**
-     * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+     * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
      *
      * @remarks
      * [Api set: ExcelApi 1.6]
@@ -40030,7 +40030,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationUpdateData;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -45709,7 +45709,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationData;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -53072,7 +53072,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -59883,7 +59883,7 @@ export declare namespace Excel {
             rule?: boolean;
         }
         /**
-         * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+         * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -61282,7 +61282,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]

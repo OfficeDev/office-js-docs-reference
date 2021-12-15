@@ -13,6 +13,8 @@ items:
             items:
               - name: ErrorCodes
                 uid: 'onenote!OneNote.ErrorCodes:enum'
+              - name: EventType
+                uid: 'onenote!OneNote.EventType:enum'
               - name: InsertLocation
                 uid: 'onenote!OneNote.InsertLocation:enum'
               - name: ListType
@@ -25,6 +27,8 @@ items:
                 uid: 'onenote!OneNote.NumberType:enum'
               - name: PageContentType
                 uid: 'onenote!OneNote.PageContentType:enum'
+              - name: ParagraphStyle
+                uid: 'onenote!OneNote.ParagraphStyle:enum'
               - name: ParagraphType
                 uid: 'onenote!OneNote.ParagraphType:enum'
           - name: Application
@@ -81,6 +85,10 @@ items:
             uid: 'onenote!OneNote.ParagraphCollection:class'
           - name: ParagraphInfo
             uid: 'onenote!OneNote.ParagraphInfo:interface'
+          - name: Point
+            uid: 'onenote!OneNote.Point:class'
+          - name: PointCollection
+            uid: 'onenote!OneNote.PointCollection:class'
           - name: RequestContext
             uid: 'onenote!OneNote.RequestContext:class'
           - name: RichText

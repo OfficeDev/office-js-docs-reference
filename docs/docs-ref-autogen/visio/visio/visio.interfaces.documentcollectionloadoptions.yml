@@ -1,0 +1,117 @@
+### YamlMime:TSType
+name: Visio.Interfaces.DocumentCollectionLoadOptions
+uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions:interface'
+package: visio!
+fullName: Visio.Interfaces.DocumentCollectionLoadOptions
+summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#$all:member'
+    package: visio!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: application
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#application:member'
+    package: visio!
+    fullName: application
+    summary: |-
+      For EACH ITEM in the collection: Represents a Visio application instance that contains this document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
+  - name: description
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#description:member'
+    package: visio!
+    fullName: description
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the description of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description?: boolean;'
+      return:
+        type: boolean
+  - name: fullName
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#fullName:member'
+    package: visio!
+    fullName: fullName
+    summary: |-
+      For EACH ITEM in the collection: Returns the name of the document, including the drive and path. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fullName?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#id:member'
+    package: visio!
+    fullName: id
+    summary: |-
+      For EACH ITEM in the collection: Returns the ID of the document. Read-only
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#index:member'
+    package: visio!
+    fullName: index
+    summary: >-
+      For EACH ITEM in the collection: Returns the ordinal position of a Document object in the Documents Collection.
+      Read-only.
+
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'visio!Visio.Interfaces.DocumentCollectionLoadOptions#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      For EACH ITEM in the collection: Returns the name of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean

@@ -9,10 +9,7 @@ summary: >-
   contents of the `TextFrame` will be centered horizontally within the `Shape` as a group. To change the horizontal
   alignment of a text, see [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class) and
   [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum)<!-- -->.
-
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 fields:

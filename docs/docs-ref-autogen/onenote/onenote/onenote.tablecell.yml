@@ -3,11 +3,8 @@ name: OneNote.TableCell
 uid: 'onenote!OneNote.TableCell:class'
 package: onenote!
 fullName: OneNote.TableCell
-summary: |-
-  Represents a cell in a OneNote table.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents a cell in a OneNote table.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#cellIndex:member'
     package: onenote!
     fullName: cellIndex
-    summary: |-
-      Gets the index of the cell in its row. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the index of the cell in its row. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the cell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the cell. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,11 +51,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: |-
-      Gets the collection of Paragraph objects in the TableCell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of Paragraph objects in the TableCell. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,11 +63,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#parentRow:member'
     package: onenote!
     fullName: parentRow
-    summary: |-
-      Gets the parent row of the cell. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent row of the cell. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,11 +75,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#rowIndex:member'
     package: onenote!
     fullName: rowIndex
-    summary: |-
-      Gets the index of the cell's row in the table. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the index of the cell's row in the table. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,11 +87,8 @@ properties:
     uid: 'onenote!OneNote.TableCell#shadingColor:member'
     package: onenote!
     fullName: shadingColor
-    summary: |-
-      Gets and sets the shading color of the cell
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets and sets the shading color of the cell
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,11 +100,43 @@ methods:
     uid: 'onenote!OneNote.TableCell#appendHtml:member(1)'
     package: onenote!
     fullName: appendHtml(html)
-    summary: |-
-      Adds the specified HTML to the bottom of the TableCell.
-
+    summary: Adds the specified HTML to the bottom of the TableCell.
+    remarks: |-
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two and add "Hello".
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      cell.appendHtml("<p>Hello</p>");
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,51 +150,13 @@ methods:
           type: string
       return:
         type: void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
-              
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, get a table cell at row one and column two and add "Hello".
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                          cell.appendHtml("<p>Hello</p>");
-                      }
-                  }
-                  return ctx.sync();
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'appendImage(base64EncodedImage, width, height)'
     uid: 'onenote!OneNote.TableCell#appendImage:member(1)'
     package: onenote!
     fullName: 'appendImage(base64EncodedImage, width, height)'
-    summary: |-
-      Adds the specified image to table cell.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds the specified image to table cell.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,11 +178,44 @@ methods:
     uid: 'onenote!OneNote.TableCell#appendRichText:member(1)'
     package: onenote!
     fullName: appendRichText(paragraphText)
-    summary: |-
-      Adds the specified text to table cell.
-
+    summary: Adds the specified text to table cell.
+    remarks: |-
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          var appendedRichText = null;
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two and add "Hello".
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      appendedRichText = cell.appendRichText("Hello");
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,52 +226,13 @@ methods:
           type: string
       return:
         type: '<xref uid="onenote!OneNote.RichText:class" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
-              var appendedRichText = null;
-              
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, get a table cell at row one and column two and add "Hello".
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                          appendedRichText = cell.appendRichText("Hello");
-                      }
-                  }
-                  return ctx.sync();
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
   - name: 'appendTable(rowCount, columnCount, values)'
     uid: 'onenote!OneNote.TableCell#appendTable:member(1)'
     package: onenote!
     fullName: 'appendTable(rowCount, columnCount, values)'
-    summary: |-
-      Adds a table with the specified number of rows and columns to table cell.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a table with the specified number of rows and columns to table cell.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,11 +254,8 @@ methods:
     uid: 'onenote!OneNote.TableCell#clear:member(1)'
     package: onenote!
     fullName: clear()
-    summary: |-
-      Clears the contents of the cell.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Clears the contents of the cell.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,38 +263,21 @@ methods:
       return:
         type: void
         description: ''
-  - name: load(option)
+  - name: load(options)
     uid: 'onenote!OneNote.TableCell#load:member(1)'
     package: onenote!
-    fullName: load(option)
+    fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): OneNote.TableCell` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;'
+      content: 'load(options?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;'
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type: '<xref uid="onenote!OneNote.Interfaces.TableCellLoadOptions:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.TableCell:class" />'
@@ -451,13 +398,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableCell;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.TableCell;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type: '{ select?: string; expand?: string; }'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
         type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
@@ -468,10 +423,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: OneNote.TableCell): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -529,10 +481,10 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -547,9 +499,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

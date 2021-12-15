@@ -6,6 +6,7 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace PowerPoint {
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Application extends OfficeExtension.ClientObject {
@@ -24,22 +25,26 @@ export declare namespace PowerPoint {
         };
     }
     /**
+     * @remarks
      * [Api set: PowerPointApi 1.0]
      */
     export class Presentation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
-         *
          * Returns an ordered collection of slides in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         readonly slides: PowerPoint.SlideCollection;
+        
         readonly title: string;
         /**
          * Inserts the specified slides from a presentation into the current presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param base64File - The base64-encoded string representing the source presentation file.
@@ -73,78 +78,93 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
+    
     /**
-     *
      * Specifies the formatting options for when slides are inserted.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     enum InsertSlideFormatting {
         /**
          * Copy the source theme into the target presentation and use that theme.
-         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
          */
         keepSourceFormatting = "KeepSourceFormatting",
         /**
          * Use the existing theme in the target presentation.
-         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
          */
         useDestinationTheme = "UseDestinationTheme",
     }
     /**
-     *
      * Represents the available options when inserting slides.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export interface InsertSlideOptions {
         /**
-         *
          * Specifies which formatting to use during slide insertion.
                     The default option is to use "KeepSourceFormatting".
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         formatting?: PowerPoint.InsertSlideFormatting | "KeepSourceFormatting" | "UseDestinationTheme";
         /**
-         *
          * Specifies the slides from the source presentation that will be inserted into the current presentation. These slides are represented by their IDs which can be retrieved from a `Slide` object.
                     The order of these slides is preserved during the insertion.
                     If any of the source slides are not found, or if the IDs are invalid, the operation throws a `SlideNotFound` exception and no slides will be inserted.
                     All of the source slides will be inserted when `sourceSlideIds` is not provided (this is the default behavior).
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         sourceSlideIds?: string[];
         /**
-         *
          * Specifies where in the presentation the new slides will be inserted. The new slides will be inserted after the slide with the given slide ID.
                     If `targetSlideId` is not provided, the slides will be inserted at the beginning of the presentation.
                     If `targetSlideId` is invalid or if it is pointing to a non-existing slide, the operation throws a `SlideNotFound` exception and no slides will be inserted.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         targetSlideId?: string;
     }
+    
+    
+    
+    
+    
+    
+    
     /**
-     *
      * Represents a single slide of a presentation.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export class Slide extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
         /**
-         *
          * Gets the unique ID of the slide.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         readonly id: string;
         /**
          * Deletes the slide from the presentation. Does nothing if the slide does not exist.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
@@ -176,9 +196,9 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
     /**
-     *
      * Represents the collection of slides in the presentation.
      *
+     * @remarks
      * [Api set: PowerPointApi 1.2]
      */
     export class SlideCollection extends OfficeExtension.ClientObject {
@@ -186,9 +206,11 @@ export declare namespace PowerPoint {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Slide[];
+        
         /**
          * Gets the number of slides in the collection.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          * @returns The number of slides in the collection.
          */
@@ -196,6 +218,7 @@ export declare namespace PowerPoint {
         /**
          * Gets a slide using its unique ID.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param key - The ID of the slide.
@@ -206,6 +229,7 @@ export declare namespace PowerPoint {
          * Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they
                     are shown in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param index - The index of the slide in the collection.
@@ -217,6 +241,7 @@ export declare namespace PowerPoint {
                     see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods
                     and properties}.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          *
          * @param id - The ID of the slide.
@@ -247,6 +272,7 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.SlideCollectionData;
     }
+    
     enum ErrorCodes {
         generalException = "GeneralException",
     }
@@ -264,20 +290,71 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
+        export interface TagUpdateData {
+            
+        }
+        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
+        export interface TagCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
+        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
+        export interface ShapeCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
+        export interface SlideLayoutCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`. */
+        export interface SlideMasterCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
         }
+        /** An interface describing the data returned by calling `tag.toJSON()`. */
+        export interface TagData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
+        export interface TagCollectionData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            
+        }
+        /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
+        export interface ShapeCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
+        export interface SlideLayoutData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
+        export interface SlideLayoutCollectionData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
+        export interface SlideMasterData {
+            
+            
+        }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             /**
-             *
              * Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
@@ -286,7 +363,12 @@ export declare namespace PowerPoint {
         export interface SlideCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
+        /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
+        export interface SlideMasterCollectionData {
+            items?: PowerPoint.Interfaces.SlideMasterData[];
+        }
         /**
+         * @remarks
          * [Api set: PowerPointApi 1.0]
          */
         export interface PresentationLoadOptions {
@@ -296,10 +378,17 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
         /**
-         *
          * Represents a single slide of a presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         export interface SlideLoadOptions {
@@ -307,18 +396,20 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
             /**
-             *
              * Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
         }
         /**
-         *
          * Represents the collection of slides in the presentation.
          *
+         * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         export interface SlideCollectionLoadOptions {
@@ -326,14 +417,17 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
             /**
-             *
              * For EACH ITEM in the collection: Gets the unique ID of the slide.
              *
+             * @remarks
              * [Api set: PowerPointApi 1.2]
              */
             id?: boolean;
         }
+        
     }
 }
 export declare namespace PowerPoint {

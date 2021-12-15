@@ -16,7 +16,9 @@ properties:
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
     package: visio!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -24,12 +26,42 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: application
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#application:member'
+    package: visio!
+    fullName: application
+    summary: |-
+      Returns the instance of Microsoft Visio that is associated with an object.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
+  - name: document
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#document:member'
+    package: visio!
+    fullName: document
+    summary: |-
+      Gets the document object that is assocaited with the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'document?: Visio.Interfaces.DocumentLoadOptions;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.DocumentLoadOptions:interface" />'
   - name: id
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
     package: visio!
     fullName: id
     summary: |-
-      Shape's identifier. Read-only.
+      Shape's Identifier.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -39,12 +71,72 @@ properties:
       content: 'id?: boolean;'
       return:
         type: boolean
+  - name: isBoundToData
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#isBoundToData:member'
+    package: visio!
+    fullName: isBoundToData
+    summary: |-
+      Returns true if the shape is bound to data and is part of Data Visualizer diagram. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBoundToData?: boolean;'
+      return:
+        type: boolean
+  - name: isCallout
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#isCallout:member'
+    package: visio!
+    fullName: isCallout
+    summary: |-
+      Indicates whether the shape is a callout shape. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isCallout?: boolean;'
+      return:
+        type: boolean
+  - name: isDataGraphicCallout
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#isDataGraphicCallout:member'
+    package: visio!
+    fullName: isDataGraphicCallout
+    summary: |-
+      Specifes whether a shape is a data graphic callout. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataGraphicCallout?: boolean;'
+      return:
+        type: boolean
+  - name: isOpenForTextEdit
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#isOpenForTextEdit:member'
+    package: visio!
+    fullName: isOpenForTextEdit
+    summary: |-
+      Indicates whether a shape is currently open for interactive text editing. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isOpenForTextEdit?: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
     package: visio!
     fullName: name
     summary: |-
-      Shape's name. Read-only.
+      Shape's name.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -54,19 +146,19 @@ properties:
       content: 'name?: boolean;'
       return:
         type: boolean
-  - name: select
-    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
+  - name: objType
+    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#objType:member'
     package: visio!
-    fullName: select
+    fullName: objType
     summary: |-
-      Returns true, if shape is selected. User can set true to select the shape explicitly.
+      Returns the type of the object. Read-only.(Shape\_Type will give OACR Warning :61721)
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select?: boolean;'
+      content: 'objType?: boolean;'
       return:
         type: boolean
   - name: text
@@ -74,7 +166,7 @@ properties:
     package: visio!
     fullName: text
     summary: |-
-      Shape's text. Read-only.
+      Shape's Text.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -84,18 +176,3 @@ properties:
       content: 'text?: boolean;'
       return:
         type: boolean
-  - name: view
-    uid: 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
-    package: visio!
-    fullName: view
-    summary: |-
-      Returns the view of the shape.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'view?: Visio.Interfaces.ShapeViewLoadOptions;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.ShapeViewLoadOptions:interface" />'

@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Visio.MasterInfo
+uid: 'visio!Visio.MasterInfo:interface'
+package: visio!
+fullName: Visio.MasterInfo
+summary: |-
+  Master ionformation.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: 'visio!Visio.MasterInfo#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Localised Display Name of the Master.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: nameU
+    uid: 'visio!Visio.MasterInfo#nameU:member'
+    package: visio!
+    fullName: nameU
+    summary: |-
+      Master Name.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameU: string;'
+      return:
+        type: string

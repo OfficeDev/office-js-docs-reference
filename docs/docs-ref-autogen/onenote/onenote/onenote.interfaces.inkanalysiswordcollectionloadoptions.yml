@@ -3,11 +3,8 @@ name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-summary: |-
-  Represents a collection of InkAnalysisWord objects.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents a collection of InkAnalysisWord objects.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: |-
-      For EACH ITEM in the collection: The id of the recognized language in this inkAnalysisWord. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: The id of the recognized language in this inkAnalysisWord. Read-only.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,11 +51,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member'
     package: onenote!
     fullName: line
-    summary: |-
-      For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: 'For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,10 +66,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Weak references to the ink strokes that were recognized as part of this ink
       analysis word. Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,10 +80,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
       Read-only.
-
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -3,11 +3,8 @@ name: OneNote.ParagraphInfo
 uid: 'onenote!OneNote.ParagraphInfo:interface'
 package: onenote!
 fullName: OneNote.ParagraphInfo
-summary: |-
-  List information for paragraph.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: List information for paragraph.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,26 +13,32 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#bulletType:member'
     package: onenote!
     fullName: bulletType
-    summary: |-
-      // Bullet list type of paragraph
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: // Bullet list type of paragraph
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'bulletType: string;'
       return:
         type: string
+  - name: indentationLevel
+    uid: 'onenote!OneNote.ParagraphInfo#indentationLevel:member'
+    package: onenote!
+    fullName: indentationLevel
+    summary: // Level of indentation of the paragraph
+    remarks: '\[ [API set: OneNoteApi 1.8](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'indentationLevel: number;'
+      return:
+        type: number
   - name: index
     uid: 'onenote!OneNote.ParagraphInfo#index:member'
     package: onenote!
     fullName: index
-    summary: |-
-      // Index of paragraph in list
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: // Index of paragraph in a list
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,11 +49,8 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#listType:member'
     package: onenote!
     fullName: listType
-    summary: |-
-      // Type of list in paragraph
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: // Type of list in paragraph
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,11 +61,8 @@ properties:
     uid: 'onenote!OneNote.ParagraphInfo#numberType:member'
     package: onenote!
     fullName: numberType
-    summary: |-
-      // number list type of paragraph
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: // Numbered list type of paragraph
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: Visio.ShapeAddedEventArgs
+uid: 'visio!Visio.ShapeAddedEventArgs:interface'
+package: visio!
+fullName: Visio.ShapeAddedEventArgs
+summary: |-
+  Provides information about the document that raised the ShapeAdded event.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: pageId
+    uid: 'visio!Visio.ShapeAddedEventArgs#pageId:member'
+    package: visio!
+    fullName: pageId
+    summary: |-
+      ID of the page the shape belongs to.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageId: string;'
+      return:
+        type: string
+  - name: shapeId
+    uid: 'visio!Visio.ShapeAddedEventArgs#shapeId:member'
+    package: visio!
+    fullName: shapeId
+    summary: |-
+      ID of the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shapeId: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'visio!Visio.ShapeAddedEventArgs#type:member'
+    package: visio!
+    fullName: type
+    summary: |-
+      Gets the type of the event. See Visio.EventType for details.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "ShapeAdded";'
+      return:
+        type: '"ShapeAdded"'

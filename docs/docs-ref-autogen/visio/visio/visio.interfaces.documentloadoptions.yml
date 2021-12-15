@@ -3,10 +3,7 @@ name: Visio.Interfaces.DocumentLoadOptions
 uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.DocumentLoadOptions
-summary: |-
-  Represents the Document class.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -16,7 +13,9 @@ properties:
     uid: 'visio!Visio.Interfaces.DocumentLoadOptions#$all:member'
     package: visio!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -39,18 +38,78 @@ properties:
       content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
       return:
         type: '<xref uid="visio!Visio.Interfaces.ApplicationLoadOptions:interface" />'
-  - name: view
-    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#view:member'
+  - name: description
+    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#description:member'
     package: visio!
-    fullName: view
+    fullName: description
     summary: |-
-      Returns the DocumentView object.
+      Gets or sets the description of the document.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
+      content: 'description?: boolean;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentViewLoadOptions:interface" />'
+        type: boolean
+  - name: fullName
+    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#fullName:member'
+    package: visio!
+    fullName: fullName
+    summary: |-
+      Returns the name of the document, including the drive and path. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fullName?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#id:member'
+    package: visio!
+    fullName: id
+    summary: |-
+      Returns the ID of the document. Read-only
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#index:member'
+    package: visio!
+    fullName: index
+    summary: |-
+      Returns the ordinal position of a Document object in the Documents Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'visio!Visio.Interfaces.DocumentLoadOptions#name:member'
+    package: visio!
+    fullName: name
+    summary: |-
+      Returns the name of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean

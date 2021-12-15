@@ -3,7 +3,7 @@ name: OneNote.Interfaces.OutlineData
 uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.OutlineData
-summary: An interface describing the data returned by calling "outline.toJSON()".
+summary: An interface describing the data returned by calling `outline.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.OutlineData#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the Outline object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the Outline object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.OutlineData#paragraphs:member'
     package: onenote!
     fullName: paragraphs
-    summary: |-
-      Gets the collection of Paragraph objects in the Outline. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the collection of Paragraph objects in the Outline. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

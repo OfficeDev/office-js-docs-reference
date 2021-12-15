@@ -3,11 +3,8 @@ name: OneNote.Interfaces.InkAnalysisLoadOptions
 uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisLoadOptions
-summary: |-
-  Represents ink analysis data for a given set of ink strokes.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents ink analysis data for a given set of ink strokes.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the InkAnalysis object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the InkAnalysis object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
     package: onenote!
     fullName: page
-    summary: |-
-      Gets the parent page object.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the parent page object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

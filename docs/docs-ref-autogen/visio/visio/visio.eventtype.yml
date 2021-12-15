@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: Visio.EventType
+uid: 'visio!Visio.EventType:enum'
+package: visio!
+fullName: Visio.EventType
+summary: |-
+  EventType represents the type of the events Host supports.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dataVisualizerDiagramOperationCompleted
+    uid: 'visio!Visio.EventType.dataVisualizerDiagramOperationCompleted:member'
+    package: visio!
+    summary: DataVisualizer diagram operation complete Event.
+    value: '"DataVisualizerDiagramOperationCompleted"'
+  - name: selectionChanged
+    uid: 'visio!Visio.EventType.selectionChanged:member'
+    package: visio!
+    summary: Selection Changed Event.
+    value: '"SelectionChanged"'
+  - name: shapeAdded
+    uid: 'visio!Visio.EventType.shapeAdded:member'
+    package: visio!
+    summary: Shape Added Event.
+    value: '"ShapeAdded"'

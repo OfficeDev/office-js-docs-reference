@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 10/25/2021
+ms.date: 12/14/2021
 ---
 
 # Office Add-ins JavaScript API reference
@@ -105,6 +105,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <h3>PowerPoint APIs</h3>
             <ul>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
+                <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.3">PowerPointApi 1.3</a></li>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
                 <li><a href="/javascript/api/office?view=powerpoint-js-preview">Common APIs</a></li>

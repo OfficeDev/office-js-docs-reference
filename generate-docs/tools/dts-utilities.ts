@@ -236,15 +236,17 @@ function extractFirstSentenceFromComment(commentText) {
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
     let fieldLink: string;
     if (field.type === FieldType.Method) {
+        // Remove anonymous types before proceeding.
+        let fieldString = field.declarationString.replace(/{[\s\S]*}/gm, "");
         let parameterLink: string = "";
-        let paramIndex = field.declarationString.indexOf(":");
-        while (paramIndex < field.declarationString.indexOf(")")) {
+        let paramIndex = fieldString.indexOf(":");
+        while (paramIndex < fieldString.indexOf(")")) {
             const wordStartIndex = Math.max(
-                field.declarationString.lastIndexOf("(", paramIndex),
-                field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
+                fieldString.lastIndexOf("(", paramIndex),
+                fieldString.lastIndexOf(" ", paramIndex)) + 1;
             // Remove the variable modifiers for the link.
-            parameterLink += "_" + field.declarationString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\.\.\./gm, "") + "_";
-            paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
+            parameterLink += "_" + fieldString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\.\.\./gm, "") + "_";
+            paramIndex = fieldString.indexOf(":", paramIndex + 1);
         }
 
         if (parameterLink === "") {

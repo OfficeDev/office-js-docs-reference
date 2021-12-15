@@ -3,11 +3,8 @@ name: PowerPoint.InsertSlideFormatting
 uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
 package: powerpoint!
 fullName: PowerPoint.InsertSlideFormatting
-summary: |-
-  Specifies the formatting options for when slides are inserted.
-
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Specifies the formatting options for when slides are inserted.
+remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

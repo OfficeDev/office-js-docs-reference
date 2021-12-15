@@ -9570,7 +9570,7 @@ export declare namespace Excel {
         type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent";
     }
     /**
-     * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+     * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
      *
      * @remarks
      * [Api set: ExcelApi 1.6]
@@ -29097,7 +29097,7 @@ export declare namespace Excel {
             rule?: boolean;
         }
         /**
-         * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+         * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]

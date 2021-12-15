@@ -3,11 +3,8 @@ name: OneNote.Interfaces.RichTextLoadOptions
 uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
 package: onenote!
 fullName: OneNote.Interfaces.RichTextLoadOptions
-summary: |-
-  Represents a RichText object in a Paragraph.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Represents a RichText object in a Paragraph.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +13,9 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
     package: onenote!
     fullName: $all
-    summary: ''
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -28,11 +27,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the RichText object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +39,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
     package: onenote!
     fullName: languageId
-    summary: |-
-      The language id of the text. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: The language id of the text. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -58,26 +51,32 @@ properties:
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
     package: onenote!
     fullName: paragraph
-    summary: |-
-      Gets the Paragraph object that contains the RichText object.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the Paragraph object that contains the RichText object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type: '<xref uid="onenote!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
+  - name: style
+    uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#style:member'
+    package: onenote!
+    fullName: style
+    summary: Gets the text style of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.8](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
   - name: text
     uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
     package: onenote!
     fullName: text
-    summary: |-
-      Gets the text content of the RichText object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the text content of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
