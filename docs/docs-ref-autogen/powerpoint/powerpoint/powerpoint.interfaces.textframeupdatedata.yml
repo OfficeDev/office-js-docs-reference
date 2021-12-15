@@ -16,10 +16,7 @@ properties:
     summary: >-
       The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
       text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,11 +31,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#bottomMargin:member'
     package: powerpoint!
     fullName: bottomMargin
-    summary: |-
-      Represents the bottom margin, in points, of the text frame.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the bottom margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -49,11 +43,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#leftMargin:member'
     package: powerpoint!
     fullName: leftMargin
-    summary: |-
-      Represents the left margin, in points, of the text frame.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the left margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,11 +55,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#rightMargin:member'
     package: powerpoint!
     fullName: rightMargin
-    summary: |-
-      Represents the right margin, in points, of the text frame.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the right margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,11 +67,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#topMargin:member'
     package: powerpoint!
     fullName: topMargin
-    summary: |-
-      Represents the top margin, in points, of the text frame.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: 'Represents the top margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -97,10 +82,7 @@ properties:
     summary: >-
       Represents the vertical alignment of the text frame. See
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum) for details.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -115,13 +97,10 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.TextFrameUpdateData#wordWrap:member'
     package: powerpoint!
     fullName: wordWrap
-    summary: >-
-      Determines whether lines break automatically to fit text inside the shape.
-
-
+    summary: Determines whether lines break automatically to fit text inside the shape.
+    remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:

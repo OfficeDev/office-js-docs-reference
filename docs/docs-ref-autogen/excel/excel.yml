@@ -1265,34 +1265,3 @@ functions:
       return:
         type: Promise&lt;T&gt;
         description: ''
-typeAliases:
-  - name: CellValue
-    uid: 'excel!Excel.CellValue:type'
-    package: excel!
-    fullName: Excel.CellValue
-    summary: 'Represents the value in a cell.'
-    remarks: '[Api set: ExcelApi BETA (PREVIEW ONLY)]'
-    isPreview: true
-    isDeprecated: false
-    syntax: >-
-      export declare type CellValue =  ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
-          /**
-          * Represents whether this `CellValue` will be used to overwrite a cell.
-          * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-          * The default value is true.
-          *
-          * @remarks
-          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-          * @beta
-          */
-          writable?: boolean;
-          /**
-          * Represents an explanation about why `CellValue.writable` is specified as false.
-          * Note: This string is only available if `writable` is specified as false.
-          *
-          * @remarks
-          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-          * @beta
-          */
-          writableNote?: string;
-      };

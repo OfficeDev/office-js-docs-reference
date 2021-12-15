@@ -3,11 +3,8 @@ name: PowerPoint.SlideCollection
 uid: 'powerpoint!PowerPoint.SlideCollection:class'
 package: powerpoint!
 fullName: PowerPoint.SlideCollection
-summary: |-
-  Represents the collection of slides in the presentation.
-
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Represents the collection of slides in the presentation.
+remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -39,15 +36,54 @@ properties:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />[]'
 methods:
+  - name: add(options)
+    uid: 'powerpoint!PowerPoint.SlideCollection#add:member(1)'
+    package: powerpoint!
+    fullName: add(options)
+    summary: Adds a new slide at the end of the collection.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-slides.yaml
+
+      const chosenMaster = $("#master-id").val() as string;
+
+      const chosenLayout = $("#layout-id").val() as string;
+
+
+      await PowerPoint.run(async function(context) {
+        context.presentation.slides.add({
+          slideMasterId: chosenMaster,
+          layoutId: chosenLayout
+        });
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'add(options?: PowerPoint.AddSlideOptions): void;'
+      parameters:
+        - id: options
+          description: The options that define the theme of the new slide.
+          type: '<xref uid="powerpoint!PowerPoint.AddSlideOptions:interface" />'
+      return:
+        type: void
+        description: ''
   - name: getCount()
     uid: 'powerpoint!PowerPoint.SlideCollection#getCount:member(1)'
     package: powerpoint!
     fullName: getCount()
-    summary: |-
-      Gets the number of slides in the collection.
-
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the number of slides in the collection.
+    remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,11 +95,8 @@ methods:
     uid: 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
     package: powerpoint!
     fullName: getItem(key)
-    summary: |-
-      Gets a slide using its unique ID.
-
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets a slide using its unique ID.
+    remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,10 +115,38 @@ methods:
     summary: >-
       Gets a slide using its zero-based index in the collection. Slides are stored in the same order as they are shown
       in the presentation.
-
-
+    remarks: >-
       \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+
+      await PowerPoint.run(async function(context) {
+        let selectedSlideIndex = await getSelectedSlideIndex();
+
+        // Decrement because the getSelectedSlideByIndex method is 1-based,
+        // but the getItemAt method is 0-based.
+        selectedSlideIndex = selectedSlideIndex - 1;
+        const slide = context.presentation.slides.getItemAt(selectedSlideIndex);
+        slide.tags.add("CUSTOMER_TYPE", "Premium");
+
+        await context.sync();
+
+        const audienceTag = slide.tags.getItem("CUSTOMER_TYPE");
+        audienceTag.load("key, value");
+
+        await context.sync();
+
+        console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,38 +157,7 @@ methods:
           type: number
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
-        description: >-
-          The slide at the given index. An error is thrown if index is out of range.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
-
-          await PowerPoint.run(async function(context) {
-            let selectedSlideIndex = await getSelectedSlideIndex();
-
-            // Decrement because the getSelectedSlideByIndex method is 1-based,
-            // but the getItemAt method is 0-based.
-            selectedSlideIndex = selectedSlideIndex - 1;
-            const slide = context.presentation.slides.getItemAt(selectedSlideIndex);
-            slide.tags.add("CUSTOMER_TYPE", "Premium");
-
-            await context.sync();
-
-            const audienceTag = slide.tags.getItem("CUSTOMER_TYPE");
-            audienceTag.load("key, value");
-
-            await context.sync();
-
-            console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
-          });
-
-          ```
+        description: The slide at the given index. An error is thrown if index is out of range.
   - name: getItemOrNullObject(id)
     uid: 'powerpoint!PowerPoint.SlideCollection#getItemOrNullObject:member(1)'
     package: powerpoint!
@@ -137,10 +167,7 @@ methods:
       true is returned. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-
-
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

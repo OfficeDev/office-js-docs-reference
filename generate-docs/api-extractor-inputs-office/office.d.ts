@@ -1752,7 +1752,7 @@ export declare namespace Office {
      */
     export interface GetFileOptions {
         /**
-         * The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
+         * The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
          */
         sliceSize?: number
         /**

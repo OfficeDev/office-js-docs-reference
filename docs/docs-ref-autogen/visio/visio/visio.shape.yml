@@ -12,21 +12,21 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
-  - name: comments
-    uid: 'visio!Visio.Shape#comments:member'
+  - name: application
+    uid: 'visio!Visio.Shape#application:member'
     package: visio!
-    fullName: comments
+    fullName: application
     summary: |-
-      Returns the Comments Collection. Read-only.
+      Returns the instance of Microsoft Visio that is associated with an object. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly comments: Visio.CommentCollection;'
+      content: 'readonly application: Visio.Application;'
       return:
-        type: '<xref uid="visio!Visio.CommentCollection:class" />'
+        type: '<xref uid="visio!Visio.Application:class" />'
   - name: context
     uid: 'visio!Visio.Shape#context:member'
     package: visio!
@@ -41,27 +41,27 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: hyperlinks
-    uid: 'visio!Visio.Shape#hyperlinks:member'
+  - name: document
+    uid: 'visio!Visio.Shape#document:member'
     package: visio!
-    fullName: hyperlinks
+    fullName: document
     summary: |-
-      Returns the Hyperlinks collection for a Shape object. Read-only.
+      Gets the document object that is assocaited with the shape. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly hyperlinks: Visio.HyperlinkCollection;'
+      content: 'readonly document: Visio.Document;'
       return:
-        type: '<xref uid="visio!Visio.HyperlinkCollection:class" />'
+        type: '<xref uid="visio!Visio.Document:class" />'
   - name: id
     uid: 'visio!Visio.Shape#id:member'
     package: visio!
     fullName: id
     summary: |-
-      Shape's identifier. Read-only.
+      Shape's Identifier.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -71,12 +71,57 @@ properties:
       content: 'readonly id: number;'
       return:
         type: number
+  - name: isCallout
+    uid: 'visio!Visio.Shape#isCallout:member'
+    package: visio!
+    fullName: isCallout
+    summary: |-
+      Indicates whether the shape is a callout shape. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isCallout: boolean;'
+      return:
+        type: boolean
+  - name: isDataGraphicCallout
+    uid: 'visio!Visio.Shape#isDataGraphicCallout:member'
+    package: visio!
+    fullName: isDataGraphicCallout
+    summary: |-
+      Specifes whether a shape is a data graphic callout. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isDataGraphicCallout: boolean;'
+      return:
+        type: boolean
+  - name: isOpenForTextEdit
+    uid: 'visio!Visio.Shape#isOpenForTextEdit:member'
+    package: visio!
+    fullName: isOpenForTextEdit
+    summary: |-
+      Indicates whether a shape is currently open for interactive text editing. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isOpenForTextEdit: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'visio!Visio.Shape#name:member'
     package: visio!
     fullName: name
     summary: |-
-      Shape's name. Read-only.
+      Shape's name.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -86,57 +131,27 @@ properties:
       content: 'readonly name: string;'
       return:
         type: string
-  - name: select
-    uid: 'visio!Visio.Shape#select:member'
+  - name: objType
+    uid: 'visio!Visio.Shape#objType:member'
     package: visio!
-    fullName: select
+    fullName: objType
     summary: |-
-      Returns true, if shape is selected. User can set true to select the shape explicitly.
+      Returns the type of the object. Read-only.(Shape\_Type will give OACR Warning :61721)
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'select: boolean;'
+      content: 'readonly objType: number;'
       return:
-        type: boolean
-  - name: shapeDataItems
-    uid: 'visio!Visio.Shape#shapeDataItems:member'
-    package: visio!
-    fullName: shapeDataItems
-    summary: |-
-      Returns the Shape's Data Section. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly shapeDataItems: Visio.ShapeDataItemCollection;'
-      return:
-        type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
-  - name: subShapes
-    uid: 'visio!Visio.Shape#subShapes:member'
-    package: visio!
-    fullName: subShapes
-    summary: |-
-      Gets SubShape Collection. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly subShapes: Visio.ShapeCollection;'
-      return:
-        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
+        type: number
   - name: text
     uid: 'visio!Visio.Shape#text:member'
     package: visio!
     fullName: text
     summary: |-
-      Shape's text. Read-only.
+      Shape's Text.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -146,72 +161,54 @@ properties:
       content: 'readonly text: string;'
       return:
         type: string
-  - name: view
-    uid: 'visio!Visio.Shape#view:member'
-    package: visio!
-    fullName: view
-    summary: |-
-      Returns the view of the shape. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly view: Visio.ShapeView;'
-      return:
-        type: '<xref uid="visio!Visio.ShapeView:class" />'
 methods:
-  - name: getBounds()
-    uid: 'visio!Visio.Shape#getBounds:member(1)'
+  - name: 'boundingBox(Flags, left, bottom, right, top)'
+    uid: 'visio!Visio.Shape#boundingBox:member(1)'
     package: visio!
-    fullName: getBounds()
+    fullName: 'boundingBox(Flags, left, bottom, right, top)'
     summary: |-
-      Returns the BoundingBox object that specifies bounding box of the shape.
+      Returns a rectangle that tightly encloses a shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getBounds(): OfficeExtension.ClientResult<Visio.BoundingBox>;'
+      content: 'boundingBox(Flags: number, left: number, bottom: number, right: number, top: number): void;'
+      parameters:
+        - id: Flags
+          description: '*'
+          type: number
+        - id: left
+          description: '*'
+          type: number
+        - id: bottom
+          description: '*'
+          type: number
+        - id: right
+          description: '*'
+          type: number
+        - id: top
+          description: ''
+          type: number
       return:
-        type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.BoundingBox:interface"
-          />&gt;
+        type: void
         description: ''
-  - name: load(option)
+  - name: load(options)
     uid: 'visio!Visio.Shape#load:member(1)'
     package: visio!
-    fullName: load(option)
+    fullName: load(options)
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings
-      that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
+      content: 'load(options?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type: '<xref uid="visio!Visio.Interfaces.ShapeLoadOptions:interface" />'
       return:
         type: '<xref uid="visio!Visio.Shape:class" />'
@@ -282,13 +279,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Shape;
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-          type: '{ select?: string; expand?: string; }'
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
       return:
         type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
@@ -299,10 +304,7 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
-
-      `set(properties: Visio.Shape): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

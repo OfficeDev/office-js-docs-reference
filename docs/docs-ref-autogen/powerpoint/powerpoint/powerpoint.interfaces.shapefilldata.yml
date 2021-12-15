@@ -16,10 +16,7 @@ properties:
     summary: >-
       Represents the shape fill foreground color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a
       named HTML color (e.g., "orange").
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,10 +31,7 @@ properties:
       Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns `null`
       if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
       gradient fill type.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -51,10 +45,7 @@ properties:
     summary: >-
       Returns the fill type of the shape. See [PowerPoint.ShapeFillType](xref:powerpoint!PowerPoint.ShapeFillType:enum)
       for details.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

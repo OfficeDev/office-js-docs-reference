@@ -3,8 +3,8 @@ name: OneNote.PageContentType
 uid: 'onenote!OneNote.PageContentType:enum'
 package: onenote!
 fullName: OneNote.PageContentType
-summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-remarks: ''
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

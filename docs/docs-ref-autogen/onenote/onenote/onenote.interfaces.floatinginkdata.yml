@@ -3,7 +3,7 @@ name: OneNote.Interfaces.FloatingInkData
 uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.FloatingInkData
-summary: An interface describing the data returned by calling "floatingInk.toJSON()".
+summary: An interface describing the data returned by calling `floatingInk.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkData#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.FloatingInkData#inkStrokes:member'
     package: onenote!
     fullName: inkStrokes
-    summary: |-
-      Gets the strokes of the FloatingInk object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the strokes of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

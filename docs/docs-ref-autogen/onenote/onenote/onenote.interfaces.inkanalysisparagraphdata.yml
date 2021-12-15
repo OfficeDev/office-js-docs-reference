@@ -3,7 +3,7 @@ name: OneNote.Interfaces.InkAnalysisParagraphData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisParagraphData
-summary: An interface describing the data returned by calling "inkAnalysisParagraph.toJSON()".
+summary: An interface describing the data returned by calling `inkAnalysisParagraph.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#id:member'
     package: onenote!
     fullName: id
-    summary: |-
-      Gets the ID of the InkAnalysisParagraph object. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ID of the InkAnalysisParagraph object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,11 +25,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#inkAnalysis:member'
     package: onenote!
     fullName: inkAnalysis
-    summary: |-
-      Reference to the parent InkAnalysisPage. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Reference to the parent InkAnalysisPage. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,11 +37,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member'
     package: onenote!
     fullName: lines
-    summary: |-
-      Gets the ink analysis lines in this ink analysis paragraph. Read-only.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -19,7 +19,7 @@
 ||[getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range \| string)](/javascript/api/excel/excel.range#getRangeEdge_direction__activeCell_)|Returns a range object that is the edge cell of the data region that corresponds to the provided direction.|
 |[Table](/javascript/api/excel/excel.table)|[resize(newRange: Range \| string)](/javascript/api/excel/excel.table#resize_newRange_)|Resize the table to the new range.|
 |[Workbook](/javascript/api/excel/excel.workbook)|[insertWorksheetsFromBase64(base64File: string, options?: Excel.InsertWorksheetOptions)](/javascript/api/excel/excel.workbook#insertWorksheetsFromBase64_base64File__options_)|Inserts the specified worksheets from a source workbook into the current workbook.|
-||[onActivated](/javascript/api/excel/excel.workbook#onActivated)|Occurs when the the workbook is activated.|
+||[onActivated](/javascript/api/excel/excel.workbook#onActivated)|Occurs when the workbook is activated.|
 |[WorkbookActivatedEventArgs](/javascript/api/excel/excel.workbookactivatedeventargs)|[type](/javascript/api/excel/excel.workbookactivatedeventargs#type)|Gets the type of the event.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[onFormulaChanged](/javascript/api/excel/excel.worksheet#onFormulaChanged)|Occurs when one or more formulas are changed in this worksheet.|
 |[WorksheetCollection](/javascript/api/excel/excel.worksheetcollection)|[onFormulaChanged](/javascript/api/excel/excel.worksheetcollection#onFormulaChanged)|Occurs when one or more formulas are changed in any worksheet of this collection.|

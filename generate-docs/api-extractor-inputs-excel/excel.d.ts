@@ -8397,7 +8397,7 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Workbook;
         /**
-         * Occurs when the the workbook is activated. Note: This event will not fire when the workbook is opened.
+         * Occurs when the workbook is activated. Note: This event will not fire when the workbook is opened.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -10011,7 +10011,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: CellValue[][];
+        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };"[][];
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -10886,7 +10906,7 @@ export declare namespace Excel {
          */
         readonly dataValidation: Excel.DataValidation;
         /**
-         * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+         * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -11847,7 +11867,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: CellValue[][];
+        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };"[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12348,7 +12388,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valuesAsJson: CellValue[][];
+        readonly valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };"[][];
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -13231,7 +13291,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: CellValue[][];
+        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };"[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -13444,7 +13524,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: CellValue[][];
+        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };"[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -23431,7 +23531,7 @@ export declare namespace Excel {
         type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent";
     }
     /**
-     * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+     * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
      *
      * @remarks
      * [Api set: ExcelApi 1.6]
@@ -40030,7 +40130,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationUpdateData;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -45709,7 +45809,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationData;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -53072,7 +53172,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
             /**
-            * Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]
@@ -59883,7 +59983,7 @@ export declare namespace Excel {
             rule?: boolean;
         }
         /**
-         * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
+         * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -61282,7 +61382,7 @@ export declare namespace Excel {
             */
             dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
             /**
-            * For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
+            * For EACH ITEM in the collection: Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
             *
             * @remarks
             * [Api set: ExcelApi 1.9]

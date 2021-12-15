@@ -3,11 +3,8 @@ name: PowerPoint.Interfaces.SlideLoadOptions
 uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions:interface'
 package: powerpoint!
 fullName: PowerPoint.Interfaces.SlideLoadOptions
-summary: |-
-  Represents a single slide of a presentation.
-
-  \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Represents a single slide of a presentation.
+remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,11 +27,8 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#id:member'
     package: powerpoint!
     fullName: id
-    summary: |-
-      Gets the unique ID of the slide.
-
-      \[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Gets the unique ID of the slide.
+    remarks: '\[ [API set: PowerPointApi 1.2](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,12 +39,9 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#layout:member'
     package: powerpoint!
     fullName: layout
-    summary: |-
-      Gets the layout of the slide.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+    summary: Gets the layout of the slide.
+    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;'
@@ -60,12 +51,9 @@ properties:
     uid: 'powerpoint!PowerPoint.Interfaces.SlideLoadOptions#slideMaster:member'
     package: powerpoint!
     fullName: slideMaster
-    summary: |-
-      Gets the `SlideMaster` object that represents the slide's default content.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+    summary: Gets the `SlideMaster` object that represents the slide's default content.
+    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;'

@@ -9,6 +9,16 @@ isPreview: false
 isDeprecated: false
 type: class
 properties:
+  - name: '"[][];"'
+    uid: 'excel!Excel.NamedItemArrayValues#"[][];":member'
+    package: excel!
+    fullName: '"[][];"'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '"[][];'
   - name: context
     uid: 'excel!Excel.NamedItemArrayValues#context:member'
     package: excel!
@@ -60,9 +70,24 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly valuesAsJson: CellValue[][];'
+      content: >-
+        readonly valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
+        ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue
+        | string | number | boolean & {
+                    writable?: boolean;
+                    writableNote?: string;
+                };
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        type: >-
+          <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
+          <xref uid="excel!Excel.DoubleCellValue:interface" /> | <xref uid="excel!Excel.EntityCellValue:interface" /> |
+          <xref uid="excel!Excel.EmptyCellValue:interface" /> | <xref uid="excel!Excel.ErrorCellValue:type" /> | <xref
+          uid="excel!Excel.FormattedNumberCellValue:interface" /> | <xref uid="excel!Excel.StringCellValue:interface" />
+          | <xref uid="excel!Excel.ValueTypeNotAvailableCellValue:interface" /> | <xref
+          uid="excel!Excel.WebImageCellValue:interface" /> | string | number | boolean & {
+                      writable?: boolean;
+                      writableNote?: string;
+                  }
 methods:
   - name: load(options)
     uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'

@@ -3,11 +3,8 @@ name: PowerPoint.ShapeAutoSize
 uid: 'powerpoint!PowerPoint.ShapeAutoSize:enum'
 package: powerpoint!
 fullName: PowerPoint.ShapeAutoSize
-summary: |-
-  Determines the type of automatic sizing allowed.
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
+summary: Determines the type of automatic sizing allowed.
+remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 fields:

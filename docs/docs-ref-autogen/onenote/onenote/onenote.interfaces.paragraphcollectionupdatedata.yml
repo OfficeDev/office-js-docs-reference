@@ -4,8 +4,8 @@ uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.ParagraphCollectionUpdateData
 summary: >-
-  An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{ ...
-  }<!-- -->)".
+  An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false

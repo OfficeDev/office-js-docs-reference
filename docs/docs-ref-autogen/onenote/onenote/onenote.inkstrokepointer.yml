@@ -3,11 +3,8 @@ name: OneNote.InkStrokePointer
 uid: 'onenote!OneNote.InkStrokePointer:interface'
 package: onenote!
 fullName: OneNote.InkStrokePointer
-summary: |-
-  Weak reference to an ink stroke object and its content parent.
-
-  \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-remarks: ''
+summary: Weak reference to an ink stroke object and its content parent.
+remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.InkStrokePointer#contentId:member'
     package: onenote!
     fullName: contentId
-    summary: |-
-      Represents the id of the page content object corresponding to this stroke
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the id of the page content object corresponding to this stroke
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,11 +25,8 @@ properties:
     uid: 'onenote!OneNote.InkStrokePointer#inkStrokeId:member'
     package: onenote!
     fullName: inkStrokeId
-    summary: |-
-      Represents the id of the ink stroke
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Represents the id of the ink stroke
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

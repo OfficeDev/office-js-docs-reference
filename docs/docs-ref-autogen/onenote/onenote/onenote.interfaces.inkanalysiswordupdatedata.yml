@@ -3,9 +3,7 @@ name: OneNote.Interfaces.InkAnalysisWordUpdateData
 uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
 package: onenote!
 fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
-summary: >-
-  An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set(<!-- -->{ ... }<!--
-  -->)".
+summary: 'An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,11 +13,8 @@ properties:
     uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData#line:member'
     package: onenote!
     fullName: line
-    summary: |-
-      Reference to the parent InkAnalysisLine.
-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    remarks: ''
+    summary: Reference to the parent InkAnalysisLine.
+    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

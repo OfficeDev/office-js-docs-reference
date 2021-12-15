@@ -3,12 +3,9 @@ name: PowerPoint.ShapeCollection
 uid: 'powerpoint!PowerPoint.ShapeCollection:class'
 package: powerpoint!
 fullName: PowerPoint.ShapeCollection
-summary: |-
-  Represents the collection of shapes.
-
-  \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-remarks: ''
-isPreview: true
+summary: Represents the collection of shapes.
+remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -20,7 +17,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -32,7 +29,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: PowerPoint.Shape[];'
@@ -43,11 +40,34 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeCollection#addGeometricShape:member(1)'
     package: powerpoint!
     fullName: 'addGeometricShape(geometricShapeType, options)'
-    summary: |-
-      Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
-
+    summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
+    remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+
+      await PowerPoint.run(async (context) => {
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
+        var hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
+            {
+              left: 100,
+              top: 100,
+              height: 150,
+              width: 150
+            });
+        hexagon.name = "Hexagon";
+
+        await context.sync();
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,42 +85,13 @@ methods:
           type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
-        description: >-
-          The newly inserted shape.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
-
-          await PowerPoint.run(async (context) => {
-            var shapes = context.presentation.slides.getItemAt(0).shapes;
-            var hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
-                {
-                  left: 100,
-                  top: 100,
-                  height: 150,
-                  width: 150
-                });
-            hexagon.name = "Hexagon";
-
-            await context.sync();
-          });
-
-          ```
+        description: The newly inserted shape.
   - name: 'addGeometricShape(geometricShapeTypeString, options)'
     uid: 'powerpoint!PowerPoint.ShapeCollection#addGeometricShape:member(2)'
     package: powerpoint!
     fullName: 'addGeometricShape(geometricShapeTypeString, options)'
-    summary: |-
-      Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -183,11 +174,37 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(1)'
     package: powerpoint!
     fullName: 'addLine(connectorType, options)'
-    summary: |-
-      Adds a line to the slide. Returns a `Shape` object that represents the new line.
-
+    summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
+    remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+
+      await PowerPoint.run(async (context) => {
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
+
+        // For a line, left and top are the coordinates of the start point,
+        // while height and width are the coordinates of the end point.
+        var line = shapes.addLine(PowerPoint.ConnectorType.straight, 
+            { 
+              left: 400, 
+              top: 200, 
+              height: 20, 
+              width: 150 
+            });
+        line.name = "StraightLine";
+
+        await context.sync();
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -205,45 +222,13 @@ methods:
           type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
-        description: >-
-          The newly inserted shape.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
-
-          await PowerPoint.run(async (context) => {
-            var shapes = context.presentation.slides.getItemAt(0).shapes;
-
-            // For a line, left and top are the coordinates of the start point,
-            // while height and width are the coordinates of the end point.
-            var line = shapes.addLine(PowerPoint.ConnectorType.straight, 
-                { 
-                  left: 400, 
-                  top: 200, 
-                  height: 20, 
-                  width: 150 
-                });
-            line.name = "StraightLine";
-
-            await context.sync();
-          });
-
-          ```
+        description: The newly inserted shape.
   - name: 'addLine(connectorTypeString, options)'
     uid: 'powerpoint!PowerPoint.ShapeCollection#addLine:member(2)'
     package: powerpoint!
     fullName: 'addLine(connectorTypeString, options)'
-    summary: |-
-      Adds a line to the slide. Returns a `Shape` object that represents the new line.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+    summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
+    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -271,10 +256,33 @@ methods:
     summary: >-
       Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the
       new text box.
-
-
+    remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+
+      await PowerPoint.run(async (context) => {
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
+        var textbox = shapes.addTextBox("Hello!", 
+            { 
+              left: 100, 
+              top: 300, 
+              height: 300, 
+              width: 450 
+            });
+        textbox.name = "Textbox";
+
+        return context.sync();
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -288,43 +296,14 @@ methods:
           type: '<xref uid="powerpoint!PowerPoint.ShapeAddOptions:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
-        description: >-
-          The newly inserted shape.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
-
-          await PowerPoint.run(async (context) => {
-            var shapes = context.presentation.slides.getItemAt(0).shapes;
-            var textbox = shapes.addTextBox("Hello!", 
-                { 
-                  left: 100, 
-                  top: 300, 
-                  height: 300, 
-                  width: 450 
-                });
-            textbox.name = "Textbox";
-
-            return context.sync();
-          });
-
-          ```
+        description: The newly inserted shape.
   - name: getCount()
     uid: 'powerpoint!PowerPoint.ShapeCollection#getCount:member(1)'
     package: powerpoint!
     fullName: getCount()
-    summary: |-
-      Gets the number of shapes in the collection.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+    summary: Gets the number of shapes in the collection.
+    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
@@ -335,12 +314,9 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeCollection#getItem:member(1)'
     package: powerpoint!
     fullName: getItem(key)
-    summary: |-
-      Gets a shape using its unique ID. An error is thrown if the shape does not exist.
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+    summary: Gets a shape using its unique ID. An error is thrown if the shape does not exist.
+    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItem(key: string): PowerPoint.Shape;'
@@ -355,12 +331,36 @@ methods:
     uid: 'powerpoint!PowerPoint.ShapeCollection#getItemAt:member(1)'
     package: powerpoint!
     fullName: getItemAt(index)
-    summary: |-
-      Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
+    summary: Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+
+      await PowerPoint.run(async function(context) {
+        const slide = context.presentation.slides.getItemAt(0);
+        const shape = slide.shapes.getItemAt(0);
+        shape.tags.add("MOUNTAIN", "Denali");
+
+        await context.sync();
+
+        const myShapeTag = shape.tags.getItem("MOUNTAIN");
+        myShapeTag.load("key, value");
+
+        await context.sync();
+
+        console.log("Added key " + JSON.stringify(myShapeTag.key) + " with value " + JSON.stringify(myShapeTag.value));
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemAt(index: number): PowerPoint.Shape;'
@@ -370,34 +370,7 @@ methods:
           type: number
       return:
         type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
-        description: >-
-          The shape at the given index. An error is thrown if index is out of range.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
-
-          await PowerPoint.run(async function(context) {
-            const slide = context.presentation.slides.getItemAt(0);
-            const shape = slide.shapes.getItemAt(0);
-            shape.tags.add("MOUNTAIN", "Denali");
-
-            await context.sync();
-
-            const myShapeTag = shape.tags.getItem("MOUNTAIN");
-            myShapeTag.load("key, value");
-
-            await context.sync();
-
-            console.log("Added key " + JSON.stringify(myShapeTag.key) + " with value " + JSON.stringify(myShapeTag.value));
-          });
-
-          ```
+        description: The shape at the given index. An error is thrown if index is out of range.
   - name: getItemOrNullObject(id)
     uid: 'powerpoint!PowerPoint.ShapeCollection#getItemOrNullObject:member(1)'
     package: powerpoint!
@@ -405,11 +378,8 @@ methods:
     summary: >-
       Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to
       true is returned.
-
-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
-    remarks: ''
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(id: string): PowerPoint.Shape;'
@@ -430,7 +400,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -453,7 +423,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.ShapeCollection;'
@@ -472,7 +442,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.ShapeCollection;'
@@ -496,7 +466,7 @@ methods:
       returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.ShapeCollectionData;'
