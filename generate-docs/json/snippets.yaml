@@ -21667,18 +21667,6 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-'Visio.DocumentView#disableHyperlinks:member':
-  - |-
-    Visio.run(session, function (ctx) {
-        var documentView = ctx.document.view;
-        documentView.disableHyperlinks();
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 'Visio.PageCollection#getItem:member(1)':
   - |-
     Visio.run(session, function (ctx) {
