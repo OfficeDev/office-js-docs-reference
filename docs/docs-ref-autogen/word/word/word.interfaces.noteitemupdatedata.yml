@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.NoteItemUpdateData#reference:member'
     package: word!
     fullName: reference
-    summary: Represents a footnote/endnote reference in the main document.
+    summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

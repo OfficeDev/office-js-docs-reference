@@ -31,6 +31,10 @@ items:
                 uid: 'word!Word.BreakType:enum'
               - name: CellPaddingLocation
                 uid: 'word!Word.CellPaddingLocation:enum'
+              - name: ChangeTrackingMode
+                uid: 'word!Word.ChangeTrackingMode:enum'
+              - name: ChangeTrackingVersion
+                uid: 'word!Word.ChangeTrackingVersion:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
