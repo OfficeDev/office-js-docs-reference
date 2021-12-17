@@ -3,6 +3,7 @@
 |[Body](/javascript/api/word/word.body)|[endnotes](/javascript/api/word/word.body#endnotes)|Gets the collection of endnotes in the body.|
 ||[footnotes](/javascript/api/word/word.body#footnotes)|Gets the collection of footnotes in the body.|
 ||[getComments()](/javascript/api/word/word.body#getComments__)|Gets comments associated with the body.|
+||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.body#getReviewedText_changeTrackingVersion_)|Gets reviewed text based on ChangeTrackingVersion selection.|
 ||[type](/javascript/api/word/word.body#type)|Gets the type of the body.|
 |[Comment](/javascript/api/word/word.comment)|[authorEmail](/javascript/api/word/word.comment#authorEmail)|Gets the email of the comment's author.|
 ||[authorName](/javascript/api/word/word.comment#authorName)|Gets the name of the comment's author.|
@@ -32,6 +33,7 @@
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[endnotes](/javascript/api/word/word.contentcontrol#endnotes)|Gets the collection of endnotes in the contentcontrol.|
 ||[footnotes](/javascript/api/word/word.contentcontrol#footnotes)|Gets the collection of footnotes in the contentcontrol.|
 ||[getComments()](/javascript/api/word/word.contentcontrol#getComments__)|Gets comments associated with the body.|
+||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.contentcontrol#getReviewedText_changeTrackingVersion_)|Gets reviewed text based on ChangeTrackingVersion selection.|
 ||[onDataChanged](/javascript/api/word/word.contentcontrol#onDataChanged)|Occurs when data within the content control are changed.|
 ||[onDeleted](/javascript/api/word/word.contentcontrol#onDeleted)|Occurs when the content control is deleted.|
 ||[onSelectionChanged](/javascript/api/word/word.contentcontrol#onSelectionChanged)|Occurs when selection within the content control is changed.|
@@ -61,12 +63,13 @@
 ||[getOnlyItem()](/javascript/api/word/word.customxmlpartscopedcollection#getOnlyItem__)|If the collection contains exactly one item, this method returns it.|
 ||[getOnlyItemOrNullObject()](/javascript/api/word/word.customxmlpartscopedcollection#getOnlyItemOrNullObject__)|If the collection contains exactly one item, this method returns it.|
 ||[items](/javascript/api/word/word.customxmlpartscopedcollection#items)|Gets the loaded child items in this collection.|
-|[Document](/javascript/api/word/word.document)|[customXmlParts](/javascript/api/word/word.document#customXmlParts)|Gets the custom XML parts in the document.|
+|[Document](/javascript/api/word/word.document)|[changeTrackingMode](/javascript/api/word/word.document#changeTrackingMode)|Gets or sets the ChangeTracking mode.|
+||[customXmlParts](/javascript/api/word/word.document#customXmlParts)|Gets the custom XML parts in the document.|
 ||[deleteBookmark(name: string)](/javascript/api/word/word.document#deleteBookmark_name_)|Deletes a bookmark, if it exists, from the document.|
 ||[getBookmarkRange(name: string)](/javascript/api/word/word.document#getBookmarkRange_name_)|Gets a bookmark's range.|
 ||[getBookmarkRangeOrNullObject(name: string)](/javascript/api/word/word.document#getBookmarkRangeOrNullObject_name_)|Gets a bookmark's range.|
-||[getEndnoteBody()](/javascript/api/word/word.document#getEndnoteBody__)|Gets the body of the document's endnotes.|
-||[getFootnoteBody()](/javascript/api/word/word.document#getFootnoteBody__)|Gets the body of the document's footnotes.|
+||[getEndnoteBody()](/javascript/api/word/word.document#getEndnoteBody__)|Gets the document's endnotes in a single body.|
+||[getFootnoteBody()](/javascript/api/word/word.document#getFootnoteBody__)|Gets the document's footnotes in a single body.|
 ||[ignorePunct](/javascript/api/word/word.document#ignorePunct)||
 ||[ignoreSpace](/javascript/api/word/word.document#ignoreSpace)||
 ||[matchCase](/javascript/api/word/word.document#matchCase)||
@@ -75,7 +78,7 @@
 ||[matchWholeWord](/javascript/api/word/word.document#matchWholeWord)||
 ||[matchWildcards](/javascript/api/word/word.document#matchWildcards)||
 ||[onContentControlAdded](/javascript/api/word/word.document#onContentControlAdded)|Occurs when a content control is added.|
-||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.document#search_searchText__searchOptions_)|Performs a search with the specified SearchOptions on the scope of the whole document.|
+||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.document#search_searchText__searchOptions_)|Performs a search with the specified search options on the scope of the whole document.|
 ||[settings](/javascript/api/word/word.document#settings)|Gets the add-in's settings in the document.|
 |[DocumentCreated](/javascript/api/word/word.documentcreated)|[customXmlParts](/javascript/api/word/word.documentcreated#customXmlParts)|Gets the custom XML parts in the document.|
 ||[deleteBookmark(name: string)](/javascript/api/word/word.documentcreated#deleteBookmark_name_)|Deletes a bookmark, if it exists, from the document.|
@@ -91,18 +94,20 @@
 ||[delete()](/javascript/api/word/word.noteitem#delete__)|Deletes the note item.|
 ||[getNext()](/javascript/api/word/word.noteitem#getNext__)|Gets the next note item of the same type.|
 ||[getNextOrNullObject()](/javascript/api/word/word.noteitem#getNextOrNullObject__)|Gets the next note item of the same type.|
-||[reference](/javascript/api/word/word.noteitem#reference)|Represents a footnote/endnote reference in the main document.|
-||[type](/javascript/api/word/word.noteitem#type)|Represent the note item type: footnote or endnote.|
+||[reference](/javascript/api/word/word.noteitem#reference)|Represents a footnote or endnote reference in the main document.|
+||[type](/javascript/api/word/word.noteitem#type)|Represents the note item type: footnote or endnote.|
 |[NoteItemCollection](/javascript/api/word/word.noteitemcollection)|[getFirst()](/javascript/api/word/word.noteitemcollection#getFirst__)|Gets the first note item in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.noteitemcollection#getFirstOrNullObject__)|Gets the first note item in this collection.|
 ||[items](/javascript/api/word/word.noteitemcollection#items)|Gets the loaded child items in this collection.|
-|[Paragraph](/javascript/api/word/word.paragraph)|[endnotes](/javascript/api/word/word.paragraph#endnotes)|Gets the collection of endnotes in the Paragraph.|
-||[footnotes](/javascript/api/word/word.paragraph#footnotes)|Gets the collection of footnotes in the Paragraph.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[endnotes](/javascript/api/word/word.paragraph#endnotes)|Gets the collection of endnotes in the paragraph.|
+||[footnotes](/javascript/api/word/word.paragraph#footnotes)|Gets the collection of footnotes in the paragraph.|
 ||[getComments()](/javascript/api/word/word.paragraph#getComments__)|Gets comments associated with the paragraph.|
-|[Range](/javascript/api/word/word.range)|[endnotes](/javascript/api/word/word.range#endnotes)|Gets the collection of endnotes in the Range.|
-||[footnotes](/javascript/api/word/word.range#footnotes)|Gets the collection of footnotes in the Range.|
+||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.paragraph#getReviewedText_changeTrackingVersion_)|Gets reviewed text based on ChangeTrackingVersion selection.|
+|[Range](/javascript/api/word/word.range)|[endnotes](/javascript/api/word/word.range#endnotes)|Gets the collection of endnotes in the range.|
+||[footnotes](/javascript/api/word/word.range#footnotes)|Gets the collection of footnotes in the range.|
 ||[getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean)](/javascript/api/word/word.range#getBookmarks_includeHidden__includeAdjacent_)|Gets the names all bookmarks in or overlapping the range.|
 ||[getComments()](/javascript/api/word/word.range#getComments__)|Gets comments associated with the range.|
+||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.range#getReviewedText_changeTrackingVersion_)|Gets reviewed text based on ChangeTrackingVersion selection.|
 ||[insertBookmark(name: string)](/javascript/api/word/word.range#insertBookmark_name_)|Inserts a bookmark on the range.|
 ||[insertComment(commentText: string)](/javascript/api/word/word.range#insertComment_commentText_)|Insert a comment on the range.|
 ||[insertEndnote(insertText?: string)](/javascript/api/word/word.range#insertEndnote_insertText_)|Inserts an endnote.|

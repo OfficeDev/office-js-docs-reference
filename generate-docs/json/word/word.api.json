@@ -612,7 +612,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the body. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -668,7 +668,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the body. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the body. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -883,6 +883,107 @@
                     }
                   ],
                   "name": "getRange"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Body#getReviewedText:member(1)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersion - Optional. The changeTrackingVersion can be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersion?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ChangeTrackingVersion",
+                      "canonicalReference": "word!Word.ChangeTrackingVersion:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Body#getReviewedText:member(2)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersionString - Optional. The changeTrackingVersion can be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersionString?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Original\" | \"Current\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersionString",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
                 },
                 {
                   "kind": "Property",
@@ -4045,6 +4146,141 @@
               ]
             },
             {
+              "kind": "Enum",
+              "canonicalReference": "word!Word.ChangeTrackingMode:enum",
+              "docComment": "/**\n * ChangeTracking mode.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enum ChangeTrackingMode "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ChangeTrackingMode",
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ChangeTrackingMode.off:member",
+                  "docComment": "/**\n * ChangeTracking is turned off.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "off = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Off\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "off",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ChangeTrackingMode.trackAll:member",
+                  "docComment": "/**\n * ChangeTracking is turned on for everyone.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "trackAll = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TrackAll\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "trackAll",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ChangeTrackingMode.trackMineOnly:member",
+                  "docComment": "/**\n * Tracking is turned on for my changes only.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "trackMineOnly = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"TrackMineOnly\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "trackMineOnly",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Enum",
+              "canonicalReference": "word!Word.ChangeTrackingVersion:enum",
+              "docComment": "/**\n * Specify the current version or the original version of the document.\n *\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enum ChangeTrackingVersion "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ChangeTrackingVersion",
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ChangeTrackingVersion.current:member",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "current = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Current\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "current",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ChangeTrackingVersion.original:member",
+                  "docComment": "/**\n * @remarks\n *\n * [Api set: WordApi]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "original = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Original\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "original",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
               "kind": "Class",
               "canonicalReference": "word!Word.Comment:class",
               "docComment": "/**\n * Represents a comment in the document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
@@ -6457,7 +6693,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the contentcontrol. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6513,7 +6749,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the contentcontrol. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the contentcontrol. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6728,6 +6964,107 @@
                     }
                   ],
                   "name": "getRange"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.ContentControl#getReviewedText:member(1)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersion?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ChangeTrackingVersion",
+                      "canonicalReference": "word!Word.ChangeTrackingVersion:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.ContentControl#getReviewedText:member(2)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersionString?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Original\" | \"Current\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersionString",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
                 },
                 {
                   "kind": "Method",
@@ -13465,7 +13802,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Document#body:member",
-                  "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13492,8 +13829,40 @@
                 },
                 {
                   "kind": "Property",
+                  "canonicalReference": "word!Word.Document#changeTrackingMode:member",
+                  "docComment": "/**\n * Gets or sets the ChangeTracking mode.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "changeTrackingMode: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ChangeTrackingMode",
+                      "canonicalReference": "word!Word.ChangeTrackingMode:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Off\" | \"TrackAll\" | \"TrackMineOnly\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "changeTrackingMode",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "word!Word.Document#contentControls:member",
-                  "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13714,7 +14083,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#getEndnoteBody:member(1)",
-                  "docComment": "/**\n * Gets the body of the document's endnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the document's endnotes in a single body. Read-only. Not implemented in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13744,7 +14113,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#getFootnoteBody:member(1)",
-                  "docComment": "/**\n * Gets the body of the document's footnotes. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the document's footnotes in a single body. Read-only. Not implemented in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14068,7 +14437,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#search:member(1)",
-                  "docComment": "/**\n * Performs a search with the specified SearchOptions on the scope of the whole document. The search results are a collection of range objects.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26132,7 +26501,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentData#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26158,8 +26527,39 @@
                     },
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.DocumentData#changeTrackingMode:member",
+                      "docComment": "/**\n * Gets or sets the ChangeTracking mode.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "changeTrackingMode?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.ChangeTrackingMode",
+                          "canonicalReference": "word!Word.ChangeTrackingMode:enum"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": " | \"Off\" | \"TrackAll\" | \"TrackMineOnly\""
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "changeTrackingMode",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentData#contentControls:member",
-                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26378,7 +26778,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -26397,6 +26797,32 @@
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "body",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#changeTrackingMode:member",
+                      "docComment": "/**\n * Gets or sets the ChangeTracking mode.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "changeTrackingMode?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "changeTrackingMode",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -27700,7 +28126,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentUpdateData#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27722,6 +28148,37 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member",
+                      "docComment": "/**\n * Gets or sets the ChangeTracking mode.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "changeTrackingMode?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.ChangeTrackingMode",
+                          "canonicalReference": "word!Word.ChangeTrackingMode:enum"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": " | \"Off\" | \"TrackAll\" | \"TrackMineOnly\""
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "changeTrackingMode",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
                       }
                     },
                     {
@@ -30827,7 +31284,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30854,7 +31311,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemCollectionLoadOptions#type:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30970,7 +31427,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemData#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote or endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30997,7 +31454,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemData#type:member",
-                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31097,7 +31554,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote or endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31124,7 +31581,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemLoadOptions#type:member",
-                      "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31193,7 +31650,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.NoteItemUpdateData#reference:member",
-                      "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Represents a footnote or endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -45142,7 +45599,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.NoteItem#reference:member",
-                  "docComment": "/**\n * Represents a footnote/endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a footnote or endnote reference in the main document.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -45338,7 +45795,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.NoteItem#type:member",
-                  "docComment": "/**\n * Represent the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents the note item type: footnote or endnote.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46110,7 +46567,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the paragraph. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46193,7 +46650,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the Paragraph. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the paragraph. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -46528,6 +46985,107 @@
                     }
                   ],
                   "name": "getRange"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Paragraph#getReviewedText:member(1)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersion?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ChangeTrackingVersion",
+                      "canonicalReference": "word!Word.ChangeTrackingVersion:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Paragraph#getReviewedText:member(2)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersionString?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Original\" | \"Current\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersionString",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
                 },
                 {
                   "kind": "Method",
@@ -49636,7 +50194,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the range. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -49786,7 +50344,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the Range. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the range. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50218,6 +50776,107 @@
                     }
                   ],
                   "name": "getRange"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Range#getReviewedText:member(1)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersion - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersion?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ChangeTrackingVersion",
+                      "canonicalReference": "word!Word.ChangeTrackingVersion:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
+                },
+                {
+                  "kind": "Method",
+                  "canonicalReference": "word!Word.Range#getReviewedText:member(2)",
+                  "docComment": "/**\n * Gets reviewed text based on ChangeTrackingVersion selection.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @param changeTrackingVersionString - Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getReviewedText(changeTrackingVersionString?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Original\" | \"Current\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.ClientResult",
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "changeTrackingVersionString",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "getReviewedText"
                 },
                 {
                   "kind": "Method",
@@ -60060,7 +60719,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the table. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -60116,7 +60775,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the table. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the table. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -65401,7 +66060,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.TableRow#endnotes:member",
-                  "docComment": "/**\n * Gets the collection of endnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of endnotes in the table row. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -65457,7 +66116,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.TableRow#footnotes:member",
-                  "docComment": "/**\n * Gets the collection of footnotes in the table row. Read-only\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the collection of footnotes in the table row. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

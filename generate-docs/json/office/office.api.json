@@ -1587,6 +1587,28 @@
               "extendsTokenRanges": []
             },
             {
+              "kind": "Variable",
+              "canonicalReference": "office!Office.auth:var",
+              "docComment": "/**\n * Represents the Auth interface.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "auth: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Auth",
+                  "canonicalReference": "office!Office.Auth:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "auth",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
               "kind": "Interface",
               "canonicalReference": "office!Office.AuthOptions:interface",
               "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.\n */\n",

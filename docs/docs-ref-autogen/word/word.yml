@@ -10,6 +10,8 @@ enums:
   - 'word!Word.BorderType:enum'
   - 'word!Word.BreakType:enum'
   - 'word!Word.CellPaddingLocation:enum'
+  - 'word!Word.ChangeTrackingMode:enum'
+  - 'word!Word.ChangeTrackingVersion:enum'
   - 'word!Word.ContentControlAppearance:enum'
   - 'word!Word.ContentControlType:enum'
   - 'word!Word.DocumentPropertyType:enum'

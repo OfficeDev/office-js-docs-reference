@@ -45,7 +45,7 @@ properties:
     uid: 'word!Word.Interfaces.NoteItemCollectionLoadOptions#reference:member'
     package: word!
     fullName: reference
-    summary: 'For EACH ITEM in the collection: Represents a footnote/endnote reference in the main document.'
+    summary: 'For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -59,7 +59,7 @@ properties:
     uid: 'word!Word.Interfaces.NoteItemCollectionLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: 'For EACH ITEM in the collection: Represent the note item type: footnote or endnote.'
+    summary: 'For EACH ITEM in the collection: Represents the note item type: footnote or endnote.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
