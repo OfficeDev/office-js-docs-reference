@@ -195,6 +195,25 @@ functions:
       return:
         type: void
         description: ''
+  - name: 'Office.isSetSupported(name, minVersion)'
+    uid: 'office!Office.isSetSupported:function(1)'
+    package: office!
+    summary: Checks if the specified requirement set is supported by the host Office application.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function isSetSupported(name: string, minVersion?: string): boolean;'
+      parameters:
+        - id: name
+          description: 'Set name; e.g., "MatrixBindings".'
+          type: string
+        - id: minVersion
+          description: 'The minimum required version; e.g., "1.4".'
+          type: string
+      return:
+        type: boolean
+        description: ''
   - name: Office.onReady(callback)
     uid: 'office!Office.onReady:function(1)'
     package: office!
