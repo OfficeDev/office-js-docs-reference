@@ -71,6 +71,25 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.getSelection().footnotes;
+        footnotes.load("length");
+        await context.sync();
+
+        console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -524,6 +543,28 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let comments = context.document.getSelection().getComments();
+
+        // Load objects for display in Script Lab console.
+        context.load(comments);
+        await context.sync();
+
+        console.log("Comments:");
+        console.log(comments);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -912,6 +953,31 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let text = $("#comment-text")
+          .val()
+          .toString();
+        let comment = context.document.getSelection().insertComment(text);
+
+        // Load object for display in Script Lab console.
+        context.load(comment);
+        await context.sync();
+
+        console.log("Comment inserted:");
+        console.log(comment);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1066,6 +1132,27 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const text = $("#input-footnote")
+          .val()
+          .toString();
+        const footnote = context.document.getSelection().insertFootnote(text);
+        await context.sync();
+
+        console.log("Inserted footnote.");
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

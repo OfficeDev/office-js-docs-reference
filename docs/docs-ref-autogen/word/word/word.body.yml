@@ -104,6 +104,25 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("length");
+        await context.sync();
+
+        console.log("Number of footnotes in the document body: " + footnotes.items.length);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -502,6 +521,28 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let comments = context.document.body.getComments();
+
+        // Load objects for display in Script Lab console.
+        context.load(comments);
+        await context.sync();
+
+        console.log("All comments:");
+        console.log(comments);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
