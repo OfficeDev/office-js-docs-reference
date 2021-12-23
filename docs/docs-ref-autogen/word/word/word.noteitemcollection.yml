@@ -46,6 +46,23 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        let reference = context.document.body.footnotes.getFirst().reference;
+        reference.select();
+        console.log("The first footnote is selected.");
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
