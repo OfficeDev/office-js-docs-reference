@@ -820,14 +820,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4501,7 +4501,7 @@ export declare namespace Word {
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -5100,14 +5100,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -5917,7 +5917,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]

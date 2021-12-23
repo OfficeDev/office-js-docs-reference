@@ -60,6 +60,33 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Body#footnotes:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("length");
+      await context.sync();
+
+      console.log("Number of footnotes in the document body: " + footnotes.items.length);
+    });
+'Word.Body#getComments:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comments = context.document.body.getComments();
+
+      // Load objects for display in Script Lab console.
+      context.load(comments);
+      await context.sync();
+
+      console.log("All comments:");
+      console.log(comments);
+    });
 'Word.Body#getHtml:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -491,6 +518,139 @@
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+'Word.Comment#content:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#edit-comment-text")
+        .val()
+        .toString();
+      let comment = context.document
+        .getSelection()
+        .getComments()
+        .getFirst();
+      comment.content = text;
+
+      // Load object for display in Script Lab console.
+      context.load(comment);
+      await context.sync();
+
+      console.log("Comment content changed:");
+      console.log(comment);
+    });
+'Word.Comment#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .delete();
+      await context.sync();
+
+      console.log("Comment deleted");
+    });
+'Word.Comment#getRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let range = context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .getRange();
+      range.load("text");
+      await context.sync();
+
+      console.log(`Comment location: ${range.text}`);
+    });
+'Word.Comment#reply:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#reply-text")
+        .val()
+        .toString();
+      let comments = context.document.getSelection().getComments();
+      comments.load("items");
+      await context.sync();
+      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      if (firstActiveComment) {
+        let reply = firstActiveComment.reply(text);
+        console.log("Reply added");
+      } else {
+        console.log("No active comment was found in the selection so couldn't reply.");
+      }
+    });
+'Word.Comment#resolved:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comment = context.document
+        .getSelection()
+        .getComments()
+        .getFirst();
+      comment.load("resolved");
+      await context.sync();
+
+      // Toggle resolved status.
+      // If the comment is active, set as resolved.
+      // If it's resolved, set resolved to false.
+      let toggleResolved: boolean = comment.resolved;
+      comment.resolved = !toggleResolved;
+      context.load(comment);
+      await context.sync();
+
+      console.log(`Comment Resolved status: ${comment.resolved}`);
+      console.log(comment);
+    });
+'Word.CommentCollection#getFirst:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let range = context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .getRange();
+      range.load("text");
+      await context.sync();
+
+      console.log(`Comment location: ${range.text}`);
+    });
+'Word.CommentCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#reply-text")
+        .val()
+        .toString();
+      let comments = context.document.getSelection().getComments();
+      comments.load("items");
+      await context.sync();
+      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      if (firstActiveComment) {
+        let reply = firstActiveComment.reply(text);
+        console.log("Reply added");
+      } else {
+        console.log("No active comment was found in the selection so couldn't reply.");
+      }
     });
 'Word.ContentControl#clear:member(1)':
   - |-
@@ -1591,6 +1751,101 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.NoteItem#body:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/body");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      let footnoteBody = footnotes.items[mark].body.getRange();
+      footnoteBody.load("text");
+      await context.sync();
+
+      console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+    });
+'Word.NoteItem#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      footnotes.items[mark].delete();
+      await context.sync();
+
+      console.log("Footnote deleted.");
+    });
+'Word.NoteItem#getNext:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/reference");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const reference = footnotes.items[mark].getNext().reference;
+      reference.select();
+      console.log("Selected is the next footnote: " + (mark + 2));
+    });
+'Word.NoteItem#reference:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/reference");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const item = footnotes.items[mark];
+      let reference = item.reference;
+      reference.select();
+      await context.sync();
+
+      console.log(`Reference ${referenceNumber} is selected.`);
+    });
+'Word.NoteItem#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/type");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const itemType = footnotes.items[mark].type;
+      console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
+    });
+'Word.NoteItemCollection#getFirst:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      let reference = context.document.body.footnotes.getFirst().reference;
+      reference.select();
+      console.log("The first footnote is selected.");
+    });
 'Word.Paragraph#alignment:member':
   - >-
     // Link to full sample:
@@ -2175,6 +2430,33 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Range#footnotes:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.getSelection().footnotes;
+      footnotes.load("length");
+      await context.sync();
+
+      console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+    });
+'Word.Range#getComments:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comments = context.document.getSelection().getComments();
+
+      // Load objects for display in Script Lab console.
+      context.load(comments);
+      await context.sync();
+
+      console.log("Comments:");
+      console.log(comments);
+    });
 'Word.Range#getHtml:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -2277,6 +2559,24 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Range#insertComment:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#comment-text")
+        .val()
+        .toString();
+      let comment = context.document.getSelection().insertComment(text);
+
+      // Load object for display in Script Lab console.
+      context.load(comment);
+      await context.sync();
+
+      console.log("Comment inserted:");
+      console.log(comment);
+    });
 'Word.Range#insertContentControl:member(1)':
   - >-
     // Link to full sample:
@@ -2325,6 +2625,20 @@
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
+    });
+'Word.Range#insertFootnote:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const text = $("#input-footnote")
+        .val()
+        .toString();
+      const footnote = context.document.getSelection().insertFootnote(text);
+      await context.sync();
+
+      console.log("Inserted footnote.");
     });
 'Word.Range#insertHtml:member(1)':
   - |-

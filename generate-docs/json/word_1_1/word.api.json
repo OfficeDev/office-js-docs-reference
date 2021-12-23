@@ -5948,7 +5948,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Document#body:member",
-                  "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5976,7 +5976,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Document#contentControls:member",
-                  "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11671,7 +11671,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentData#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11698,7 +11698,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentData#contentControls:member",
-                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11828,7 +11828,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11927,7 +11927,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentUpdateData#body:member",
-                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

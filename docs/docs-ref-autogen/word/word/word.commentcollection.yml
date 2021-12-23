@@ -37,6 +37,34 @@ properties:
       content: 'readonly items: Word.Comment[];'
       return:
         type: '<xref uid="word!Word.Comment:class" />[]'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+          await Word.run(async (context) => {
+            let text = $("#reply-text")
+              .val()
+              .toString();
+            let comments = context.document.getSelection().getComments();
+            comments.load("items");
+            await context.sync();
+            let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+            if (firstActiveComment) {
+              let reply = firstActiveComment.reply(text);
+              console.log("Reply added");
+            } else {
+              console.log("No active comment was found in the selection so couldn't reply.");
+            }
+          });
+
+          ```
 methods:
   - name: getFirst()
     uid: 'word!Word.CommentCollection#getFirst:member(1)'
@@ -46,6 +74,29 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let range = context.document
+          .getSelection()
+          .getComments()
+          .getFirst()
+          .getRange();
+        range.load("text");
+        await context.sync();
+
+        console.log(`Comment location: ${range.text}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
