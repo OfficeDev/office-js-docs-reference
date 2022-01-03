@@ -910,8 +910,8 @@ methods:
     summary: >-
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
-      there are no matches, then this function will return an object with its `isNullObject` property set to `true`<!--
-      -->. For further information, see [*OrNullObject methods and
+      there are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->.
+      For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1379,8 +1379,8 @@ methods:
     fullName: getIntersectionOrNullObject(anotherRange)
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
-      found, then this function will return an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [*OrNullObject methods and
+      found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1825,7 +1825,7 @@ methods:
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
-      specified type and value. If no special cells are found, then this function will return an object with its
+      specified type and value. If no special cells are found, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -1855,7 +1855,7 @@ methods:
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
-      specified type and value. If no special cells are found, then this function will return an object with its
+      specified type and value. If no special cells are found, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -2012,8 +2012,8 @@ methods:
     package: excel!
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: >-
-      Returns the used range of the given range object. If there are no used cells within the range, then this function
-      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      Returns the used range of the given range object. If there are no used cells within the range, then this method
+      returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

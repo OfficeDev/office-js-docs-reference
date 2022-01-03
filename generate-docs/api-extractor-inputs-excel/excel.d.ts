@@ -622,6 +622,12 @@ export declare namespace Excel {
         */
         formattedNumber = "FormattedNumber",
         /**
+        * Represents a `LinkedEntityCellValue`.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        linkedEntity = "LinkedEntity",
+        /**
         * Represents a `StringCellValue`.
         *
         * @remarks
@@ -653,7 +659,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
         /**
         * Represents whether this `CellValue` will be used to overwrite a cell.
         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -913,7 +919,7 @@ export declare namespace Excel {
         */
         requestThrottle = "RequestThrottle",
         /**
-        * An error caused by external linkes failing to refresh. Displays as error type #CONNECT! in Excel.
+        * An error caused by external links failing to refresh. Displays as error type #CONNECT! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -1522,6 +1528,91 @@ export declare namespace Excel {
         errorType?: ErrorCellValueType.gettingData | "GettingData";
     }
     /**
+    * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+     export interface LinkedEntityId {
+        /**
+        * Represents which service was used to create the `CellValue`.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        serviceId: number;
+        /**
+        * Represents a domain specific to a service used to create the `CellValue`.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        domainId?: string;
+        /**
+        * Represents an identifier specific to a service used to create the `CellValue`.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        entityId: string;
+        /**
+        * Represents which language culture was used to create this `CellValue`.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        culture: string;
+    }
+    /**
+    * Represents a value whose properties derive from a service.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+    export interface LinkedEntityCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        type: CellValueType.linkedEntity | "LinkedEntity";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        basicValue?: "#VALUE!";
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the service source that provided the information in this value.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        id: LinkedEntityId;
+        /**
+        * Represents the text shown when a cell with this value is rendered.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        text?: string;
+        /**
+        * Represents the properties of this entity and their metadata.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        properties?: {
+            [key: string]: CellValue & {
+                propertyMetadata?: CellValuePropertyMetadata;
+            };
+        };
+        /**
+        * Represents information that describes the service which provided the image.
+        * This information can be used for branding in entity cards.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        provider?: CellValueProviderAttributes;
+    }
+    /**
     * Represents the value of a cell containing a #N/A! error.
     *
     * @remarks
@@ -1772,7 +1863,19 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        subArrayEndColumnPrecedesStartColumn = "SubArrayEndColumnPrecedesStartColumn"
+        subArrayEndColumnPrecedesStartColumn = "SubArrayEndColumnPrecedesStartColumn",
+        /**
+        * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        externalLinksStructuredRef = "ExternalLinksStructuredRef",
+        /**
+        * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
+        *
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        */
+        externalLinksArrayRef = "ExternalLinksArrayRef"
     }
     /**
     * Represents the value of a cell containing a #REF! error.
@@ -1821,7 +1924,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" | "ExternalLinksStructuredRef" | "ExternalLinksArrayRef";
     }
     /**
     * Represents types of #SPILL! errors.
@@ -2051,7 +2154,7 @@ export declare namespace Excel {
         */
         coerceStringToBoolInvalid = "CoerceStringToBoolInvalid",
         /**
-        * An error caused by coersion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
+        * An error caused by conversion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -8330,6 +8433,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Returns a `LinkedEntityCellValue` based on the provided `LinkedEntityId`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param linkedEntityCellValueId - An identifier that specifies an individual `LinkedEntityCellValue`.
+         */
+         getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId): OfficeExtension.ClientResult<LinkedEntityCellValue>;
         /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *

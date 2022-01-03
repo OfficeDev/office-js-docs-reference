@@ -939,8 +939,8 @@ methods:
     fullName: getIntersectionOrNullObject(anotherRange)
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
-      found, then this function will return an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [*OrNullObject methods and
+      found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1378,8 +1378,8 @@ methods:
     package: excel!
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: >-
-      Returns the used range of the given range object. If there are no used cells within the range, then this function
-      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      Returns the used range of the given range object. If there are no used cells within the range, then this method
+      returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
       [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

@@ -21,8 +21,8 @@ fields:
     uid: 'excel!Excel.ValueErrorCellValueSubType.coerceStringToInvalidType:member'
     package: excel!
     summary: >-
-      An error caused by coersion of a string to a type other than a boolean or number. Displays as error type \#VALUE!
-      in Excel.
+      An error caused by conversion of a string to a type other than a boolean or number. Displays as error type
+      \#VALUE! in Excel.
     value: '"CoerceStringToInvalidType"'
   - name: coerceStringToNumberInvalid
     uid: 'excel!Excel.ValueErrorCellValueSubType.coerceStringToNumberInvalid:member'

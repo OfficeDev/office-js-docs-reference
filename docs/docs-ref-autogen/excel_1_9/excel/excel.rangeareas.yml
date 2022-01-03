@@ -409,8 +409,8 @@ methods:
     fullName: getIntersectionOrNullObject(anotherRange)
     summary: >-
       Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`<!-- -->. If
-      no intersection is found, then this function will return an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      no intersection is found, then this method returns an object with its `isNullObject` property set to `true`<!--
+      -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
@@ -517,8 +517,8 @@ methods:
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     summary: >-
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
-      cells are found that match the criteria, then this function will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      cells are found that match the criteria, then this method returns an object with its `isNullObject` property set
+      to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
@@ -547,8 +547,8 @@ methods:
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     summary: >-
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. If no special
-      cells are found that match the criteria, then this function will return an object with its `isNullObject` property
-      set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      cells are found that match the criteria, then this method returns an object with its `isNullObject` property set
+      to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
@@ -624,7 +624,7 @@ methods:
     fullName: getUsedRangeAreasOrNullObject(valuesOnly)
     summary: >-
       Returns the used `RangeAreas` that comprises all the used areas of individual rectangular ranges in the
-      `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, then this function will return an
+      `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, then this method returns an
       object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
       and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--

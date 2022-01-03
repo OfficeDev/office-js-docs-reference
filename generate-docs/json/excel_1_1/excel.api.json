@@ -15467,6 +15467,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.operationCellsExceedLimit:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "operationCellsExceedLimit = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"OperationCellsExceedLimit\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "operationCellsExceedLimit",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.pivotTableRangeConflict:member",
                   "docComment": "",
                   "excerptTokens": [
