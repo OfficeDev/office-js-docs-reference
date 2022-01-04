@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.TableRow#endnotes:member'
     package: word!
     fullName: endnotes
-    summary: Gets the collection of endnotes in the table row. Read-only
+    summary: Gets the collection of endnotes in the table row. Read-only.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.TableRow#footnotes:member'
     package: word!
     fullName: footnotes
-    summary: Gets the collection of footnotes in the table row. Read-only
+    summary: Gets the collection of footnotes in the table row. Read-only.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

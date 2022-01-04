@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Word.ChangeTrackingMode
+uid: 'word!Word.ChangeTrackingMode:enum'
+package: word!
+fullName: Word.ChangeTrackingMode
+summary: ChangeTracking mode.
+remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: 'off'
+    uid: 'word!Word.ChangeTrackingMode.off:member'
+    package: word!
+    summary: ChangeTracking is turned off.
+    value: '"Off"'
+  - name: trackAll
+    uid: 'word!Word.ChangeTrackingMode.trackAll:member'
+    package: word!
+    summary: ChangeTracking is turned on for everyone.
+    value: '"TrackAll"'
+  - name: trackMineOnly
+    uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
+    package: word!
+    summary: Tracking is turned on for my changes only.
+    value: '"TrackMineOnly"'

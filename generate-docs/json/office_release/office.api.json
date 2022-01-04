@@ -1407,6 +1407,28 @@
               "extendsTokenRanges": []
             },
             {
+              "kind": "Variable",
+              "canonicalReference": "office!Office.auth:var",
+              "docComment": "/**\n * Represents the Auth interface.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "auth: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Auth",
+                  "canonicalReference": "office!Office.Auth:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "auth",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
               "kind": "Interface",
               "canonicalReference": "office!Office.AuthOptions:interface",
               "docComment": "/**\n * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.\n */\n",
@@ -17025,6 +17047,64 @@
                 }
               ],
               "extendsTokenRanges": []
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "office!Office.isSetSupported:function(1)",
+              "docComment": "/**\n * Checks if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\".\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function isSetSupported(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", minVersion?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "minVersion",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "isSetSupported"
             },
             {
               "kind": "Interface",

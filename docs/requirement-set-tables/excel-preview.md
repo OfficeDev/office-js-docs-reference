@@ -167,6 +167,18 @@
 ||[getItemOrNullObject(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#getItemOrNullObject_key_)|Gets a linked data type by ID.|
 ||[items](/javascript/api/excel/excel.linkeddatatypecollection#items)|Gets the loaded child items in this collection.|
 ||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#requestRefreshAll__)|Makes a request to refresh all the linked data types in the collection.|
+|[LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue)|[basicType](/javascript/api/excel/excel.linkedentitycellvalue#basicType)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.linkedentitycellvalue#basicValue)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[id](/javascript/api/excel/excel.linkedentitycellvalue#id)|Represents the service source that provided the information in this value.|
+||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#properties)|Represents the properties of this entity and their metadata.|
+||[propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#propertyMetadata)||
+||[provider](/javascript/api/excel/excel.linkedentitycellvalue#provider)|Represents information that describes the service which provided the image.|
+||[text](/javascript/api/excel/excel.linkedentitycellvalue#text)|Represents the text shown when a cell with this value is rendered.|
+||[type](/javascript/api/excel/excel.linkedentitycellvalue#type)|Represents the type of this cell value.|
+|[LinkedEntityId](/javascript/api/excel/excel.linkedentityid)|[culture](/javascript/api/excel/excel.linkedentityid#culture)|Represents which language culture was used to create this `CellValue`.|
+||[domainId](/javascript/api/excel/excel.linkedentityid#domainId)|Represents a domain specific to a service used to create the `CellValue`.|
+||[entityId](/javascript/api/excel/excel.linkedentityid#entityId)|Represents an identifier specific to a service used to create the `CellValue`.|
+||[serviceId](/javascript/api/excel/excel.linkedentityid#serviceId)|Represents which service was used to create the `CellValue`.|
 |[NameErrorCellValue](/javascript/api/excel/excel.nameerrorcellvalue)|[basicType](/javascript/api/excel/excel.nameerrorcellvalue#basicType)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.nameerrorcellvalue#basicValue)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorType](/javascript/api/excel/excel.nameerrorcellvalue#errorType)|Represents the type of `ErrorCellValue`.|
@@ -260,7 +272,8 @@
 ||[provider](/javascript/api/excel/excel.webimagecellvalue#provider)|Represents information that describes the entity or individual who provided the image.|
 ||[relatedImagesAddress](/javascript/api/excel/excel.webimagecellvalue#relatedImagesAddress)|Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.|
 ||[type](/javascript/api/excel/excel.webimagecellvalue#type)|Represents the type of this cell value.|
-|[Workbook](/javascript/api/excel/excel.workbook)|[linkedDataTypes](/javascript/api/excel/excel.workbook#linkedDataTypes)|Returns a collection of linked data types that are part of the workbook.|
+|[Workbook](/javascript/api/excel/excel.workbook)|[getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId)](/javascript/api/excel/excel.workbook#getLinkedEntityCellValue_linkedEntityCellValueId_)|Returns a `LinkedEntityCellValue` based on the provided `LinkedEntityId`.|
+||[linkedDataTypes](/javascript/api/excel/excel.workbook#linkedDataTypes)|Returns a collection of linked data types that are part of the workbook.|
 ||[showPivotFieldList](/javascript/api/excel/excel.workbook#showPivotFieldList)|Specifies whether the PivotTable's field list pane is shown at the workbook level.|
 ||[tasks](/javascript/api/excel/excel.workbook#tasks)|Returns a collection of tasks that are present in the workbook.|
 ||[use1904DateSystem](/javascript/api/excel/excel.workbook#use1904DateSystem)|True if the workbook uses the 1904 date system.|

@@ -85,7 +85,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData#revisionNumber:member'
     package: excel!
     fullName: revisionNumber
-    summary: Gets the revision number of the workbook. Read only.
+    summary: Gets the revision number of the workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

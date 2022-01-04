@@ -19,8 +19,6 @@ items:
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
               - name: InsertSlideFormatting
                 uid: 'powerpoint!PowerPoint.InsertSlideFormatting:enum'
-          - name: AddSlideOptions
-            uid: 'powerpoint!PowerPoint.AddSlideOptions:interface'
           - name: Application
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: InsertSlideOptions
@@ -29,26 +27,10 @@ items:
             uid: 'powerpoint!PowerPoint.Presentation:class'
           - name: RequestContext
             uid: 'powerpoint!PowerPoint.RequestContext:class'
-          - name: Shape
-            uid: 'powerpoint!PowerPoint.Shape:class'
-          - name: ShapeCollection
-            uid: 'powerpoint!PowerPoint.ShapeCollection:class'
           - name: Slide
             uid: 'powerpoint!PowerPoint.Slide:class'
           - name: SlideCollection
             uid: 'powerpoint!PowerPoint.SlideCollection:class'
-          - name: SlideLayout
-            uid: 'powerpoint!PowerPoint.SlideLayout:class'
-          - name: SlideLayoutCollection
-            uid: 'powerpoint!PowerPoint.SlideLayoutCollection:class'
-          - name: SlideMaster
-            uid: 'powerpoint!PowerPoint.SlideMaster:class'
-          - name: SlideMasterCollection
-            uid: 'powerpoint!PowerPoint.SlideMasterCollection:class'
-          - name: Tag
-            uid: 'powerpoint!PowerPoint.Tag:class'
-          - name: TagCollection
-            uid: 'powerpoint!PowerPoint.TagCollection:class'
       - name: Visio
         href: /javascript/api/visio
       - name: Word

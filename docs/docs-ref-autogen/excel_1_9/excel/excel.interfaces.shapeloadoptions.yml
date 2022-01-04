@@ -257,7 +257,7 @@ properties:
     uid: 'excel!Excel.Interfaces.ShapeLoadOptions#textFrame:member'
     package: excel!
     fullName: textFrame
-    summary: Returns the text frame object of this shape. Read only.
+    summary: Returns the text frame object of this shape.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

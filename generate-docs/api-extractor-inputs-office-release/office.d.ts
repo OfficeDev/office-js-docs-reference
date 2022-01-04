@@ -319,9 +319,19 @@ export declare namespace Office {
      */
     const addin: Addin;
     /**
+     * Represents the Auth interface.
+     */
+    const auth: Auth;
+    /**
      * Represents the ribbon associated with the Office application.
      */
      const ribbon: Ribbon;
+    /**
+     * Checks if the specified requirement set is supported by the host Office application.
+     * @param name - Set name; e.g., "MatrixBindings".
+     * @param minVersion - The minimum required version; e.g., "1.4".
+     */
+    export function isSetSupported(name: string, minVersion?: string): boolean;
     // Enumerations
     /**
      * Provides options to determine the startup behavior of the add-in upon next start-up.

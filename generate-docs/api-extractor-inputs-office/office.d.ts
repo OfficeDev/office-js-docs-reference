@@ -323,6 +323,10 @@ export declare namespace Office {
      */
     const addin: Addin;
     /**
+     * Represents the Auth interface.
+     */
+    const auth: Auth;
+    /**
      * Represents the ribbon associated with the Office application.
      */
     const ribbon: Ribbon;

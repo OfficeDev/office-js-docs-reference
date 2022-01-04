@@ -19,6 +19,31 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/body");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        let mark = (referenceNumber as number) - 1;
+        let footnoteBody = footnotes.items[mark].body.getRange();
+        footnoteBody.load("text");
+        await context.sync();
+
+        console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -43,10 +68,36 @@ properties:
     uid: 'word!Word.NoteItem#reference:member'
     package: word!
     fullName: reference
-    summary: Represents a footnote/endnote reference in the main document.
+    summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/reference");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        let mark = (referenceNumber as number) - 1;
+        const item = footnotes.items[mark];
+        let reference = item.reference;
+        reference.select();
+        await context.sync();
+
+        console.log(`Reference ${referenceNumber} is selected.`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,10 +108,32 @@ properties:
     uid: 'word!Word.NoteItem#type:member'
     package: word!
     fullName: type
-    summary: 'Represent the note item type: footnote or endnote.'
+    summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/type");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        let mark = (referenceNumber as number) - 1;
+        const itemType = footnotes.items[mark].type;
+        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -76,6 +149,30 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        let mark = (referenceNumber as number) - 1;
+        footnotes.items[mark].delete();
+        await context.sync();
+
+        console.log("Footnote deleted.");
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -91,6 +188,29 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/reference");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        let mark = (referenceNumber as number) - 1;
+        const reference = footnotes.items[mark].getNext().reference;
+        reference.select();
+        console.log("Selected is the next footnote: " + (mark + 2));
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

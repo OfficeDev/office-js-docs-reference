@@ -700,6 +700,29 @@ methods:
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
+  - name: getLinkedEntityCellValue(linkedEntityCellValueId)
+    uid: 'excel!Excel.Workbook#getLinkedEntityCellValue:member(1)'
+    package: excel!
+    fullName: getLinkedEntityCellValue(linkedEntityCellValueId)
+    summary: Returns a `LinkedEntityCellValue` based on the provided `LinkedEntityId`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId):
+        OfficeExtension.ClientResult<LinkedEntityCellValue>;
+      parameters:
+        - id: linkedEntityCellValueId
+          description: An identifier that specifies an individual `LinkedEntityCellValue`<!-- -->.
+          type: '<xref uid="excel!Excel.LinkedEntityId:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          uid="excel!Excel.LinkedEntityCellValue:interface" />&gt;
+        description: ''
   - name: getSelectedRange()
     uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     package: excel!

@@ -39,7 +39,7 @@ properties:
     uid: 'word!Word.Range#endnotes:member'
     package: word!
     fullName: endnotes
-    summary: Gets the collection of endnotes in the Range. Read-only
+    summary: Gets the collection of endnotes in the range. Read-only.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -67,10 +67,29 @@ properties:
     uid: 'word!Word.Range#footnotes:member'
     package: word!
     fullName: footnotes
-    summary: Gets the collection of footnotes in the Range. Read-only
+    summary: Gets the collection of footnotes in the range. Read-only.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.getSelection().footnotes;
+        footnotes.load("length");
+        await context.sync();
+
+        console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -524,6 +543,28 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let comments = context.document.getSelection().getComments();
+
+        // Load objects for display in Script Lab console.
+        context.load(comments);
+        await context.sync();
+
+        console.log("Comments:");
+        console.log(comments);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -714,6 +755,44 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: getReviewedText(changeTrackingVersion)
+    uid: 'word!Word.Range#getReviewedText:member(1)'
+    package: word!
+    fullName: getReviewedText(changeTrackingVersion)
+    summary: Gets reviewed text based on ChangeTrackingVersion selection.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;'
+      parameters:
+        - id: changeTrackingVersion
+          description: 'Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.'
+          type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getReviewedText(changeTrackingVersionString)
+    uid: 'word!Word.Range#getReviewedText:member(2)'
+    package: word!
+    fullName: getReviewedText(changeTrackingVersionString)
+    summary: Gets reviewed text based on ChangeTrackingVersion selection.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;'
+      parameters:
+        - id: changeTrackingVersionString
+          description: 'Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.'
+          type: '"Original" | "Current"'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.Range#getTextRanges:member(1)'
     package: word!
@@ -874,6 +953,31 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+
+      await Word.run(async (context) => {
+        let text = $("#comment-text")
+          .val()
+          .toString();
+        let comment = context.document.getSelection().insertComment(text);
+
+        // Load object for display in Script Lab console.
+        context.load(comment);
+        await context.sync();
+
+        console.log("Comment inserted:");
+        console.log(comment);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1028,6 +1132,27 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+
+      await Word.run(async (context) => {
+        const text = $("#input-footnote")
+          .val()
+          .toString();
+        const footnote = context.document.getSelection().insertFootnote(text);
+        await context.sync();
+
+        console.log("Inserted footnote.");
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

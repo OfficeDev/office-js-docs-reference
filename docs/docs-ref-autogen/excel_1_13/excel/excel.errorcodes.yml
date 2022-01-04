@@ -113,6 +113,11 @@ fields:
     package: excel!
     summary: ''
     value: '"OpenWorkbookLinksBlocked"'
+  - name: operationCellsExceedLimit
+    uid: 'excel!Excel.ErrorCodes.operationCellsExceedLimit:member'
+    package: excel!
+    summary: ''
+    value: '"OperationCellsExceedLimit"'
   - name: pivotTableRangeConflict
     uid: 'excel!Excel.ErrorCodes.pivotTableRangeConflict:member'
     package: excel!

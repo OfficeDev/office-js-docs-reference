@@ -11211,6 +11211,7 @@ export declare namespace Excel {
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         openWorkbookLinksBlocked = "OpenWorkbookLinksBlocked",
+        operationCellsExceedLimit = "OperationCellsExceedLimit",
         pivotTableRangeConflict = "PivotTableRangeConflict",
         rangeExceedsLimit = "RangeExceedsLimit",
         refreshWorkbookLinksBlocked = "RefreshWorkbookLinksBlocked",
