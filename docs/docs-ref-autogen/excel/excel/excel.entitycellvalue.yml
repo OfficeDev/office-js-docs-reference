@@ -52,9 +52,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'cardLayout?: CardLayout;'
+      content: 'cardLayout?: EntityCardLayout;'
       return:
-        type: '<xref uid="excel!Excel.CardLayout:type" />'
+        type: '<xref uid="excel!Excel.EntityCardLayout:interface" />'
   - name: properties
     uid: 'excel!Excel.EntityCellValue#properties:member'
     package: excel!
@@ -68,12 +68,12 @@ properties:
     syntax:
       content: |-
         properties?: {
-                    [key: string]: EntityPropertyType;
+                    [key: string]: CellValueAndPropertyMetadata | CellValue;
                 };
       return:
         type: |-
           {
-                      [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
+                      [key: string]: <xref uid="excel!Excel.CellValueAndPropertyMetadata:type" /> | <xref uid="excel!Excel.CellValue:type" />;
                   }
   - name: text
     uid: 'excel!Excel.EntityCellValue#text:member'

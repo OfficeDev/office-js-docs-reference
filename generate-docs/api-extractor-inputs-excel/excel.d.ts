@@ -567,7 +567,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        sections?: CardLayoutSection[];
+        sections?: CardLayoutListSection | CardLayoutTableSection[];
     }
     /**
     * Represents the layout of a card in card view.
@@ -1223,7 +1223,7 @@ export declare namespace Excel {
         * @beta
         */
         properties?: {
-            [key: string]: EntityPropertyType;
+            [key: string]: CellValueAndPropertyMetadata | CellValue;
         };
         /**
         * Represents the layout of this entity in card view.
@@ -1233,7 +1233,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        cardLayout?: CardLayout;
+        cardLayout?: EntityCardLayout;
     }
     /**
     * Represents a card layout best used for an entity.

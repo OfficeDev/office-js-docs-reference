@@ -261,7 +261,10 @@ function cleanUpDts(localDtsPath: string): string {
             */
             writableNote?: string;
         }$1`)        
-        .replace(/: ErrorCellValue([^A-Z])/g, `BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue$1`)
+        .replace(/: ErrorCellValue([^A-Z])/g, `: BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue$1`)
+        .replace(/: EntityPropertyType([^A-Z])/g, `: CellValueAndPropertyMetadata | CellValue$1`)
+        .replace(/: CardLayoutSection([^A-Z])/g, `: CardLayoutListSection | CardLayoutTableSection$1`)
+        .replace(/: CardLayout([^A-Z])/g, `: EntityCardLayout$1`)
         );
 }
 
