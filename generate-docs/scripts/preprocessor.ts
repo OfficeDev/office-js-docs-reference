@@ -240,7 +240,7 @@ function cleanUpDts(localDtsPath: string): string {
         .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
         /* The regexes below will not be needed once type support is added to API Documenter and the OPS YAML schema. */
         .replace(/OfficeExtension\.IPromise\<T\>/g, `Promise<T>`) 
-        .replace(/valuesAsJson: CellValue/g, `valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        .replace(/: CellValue([^A-Z])/g, `: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this \`CellValue\` will be used to overwrite a cell.
             * When false, APIs which would use this \`CellValue\` to overwrite a cell will instead ignore this value without throwing an error.
@@ -260,7 +260,7 @@ function cleanUpDts(localDtsPath: string): string {
             * @beta
             */
             writableNote?: string;
-        }`));
+        }$1`));
 }
 
 

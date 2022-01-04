@@ -46,6 +46,21 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'valuesAsJson?: CellValue[][];'
+      content: >-
+        valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
+        ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue
+        | string | number | boolean & {
+                    writable?: boolean;
+                    writableNote?: string;
+                }[][];
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        type: >-
+          <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
+          <xref uid="excel!Excel.DoubleCellValue:interface" /> | <xref uid="excel!Excel.EntityCellValue:interface" /> |
+          <xref uid="excel!Excel.EmptyCellValue:interface" /> | <xref uid="excel!Excel.ErrorCellValue:type" /> | <xref
+          uid="excel!Excel.FormattedNumberCellValue:interface" /> | <xref uid="excel!Excel.StringCellValue:interface" />
+          | <xref uid="excel!Excel.ValueTypeNotAvailableCellValue:interface" /> | <xref
+          uid="excel!Excel.WebImageCellValue:interface" /> | string | number | boolean & {
+                      writable?: boolean;
+                      writableNote?: string;
+                  }[][]

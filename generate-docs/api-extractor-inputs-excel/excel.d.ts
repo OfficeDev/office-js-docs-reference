@@ -45,7 +45,27 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        elements: CellValue[][];
+        elements: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
     }
     /**
     * Represents types of #BLOCKED! errors.
@@ -1600,7 +1620,27 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         */
         properties?: {
-            [key: string]: CellValue & {
+            [key: string]: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        } & {
                 propertyMetadata?: CellValuePropertyMetadata;
             };
         };
@@ -12405,7 +12445,27 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valueAsJson: CellValue;
+        readonly valueAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };
         /**
          * Specifies if the object is visible.
          *
@@ -40231,7 +40291,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -40304,7 +40384,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -40469,7 +40569,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -40493,7 +40613,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -45889,7 +46029,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -46098,7 +46258,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -46188,7 +46368,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valueAsJson?: CellValue;
+            valueAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        };
             /**
              * Specifies if the object is visible.
              *
@@ -46221,7 +46421,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -46420,7 +46640,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -46451,7 +46691,27 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: CellValue[][];
+            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            /**
+            * Represents whether this `CellValue` will be used to overwrite a cell.
+            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+            * The default value is true.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writable?: boolean;
+            /**
+            * Represents an explanation about why `CellValue.writable` is specified as false.
+            * Note: This string is only available if `writable` is specified as false.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            writableNote?: string;
+        }[][];
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
