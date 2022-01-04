@@ -428,7 +428,7 @@ methods:
     fullName: getUsedRangeOrNullObject(valuesOnly)
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, then this function will return an object with its `isNullObject` property set to
+      If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to
       `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

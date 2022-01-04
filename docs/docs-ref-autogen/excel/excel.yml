@@ -974,6 +974,8 @@ interfaces:
   - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
   - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
   - 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
+  - 'excel!Excel.LinkedEntityCellValue:interface'
+  - 'excel!Excel.LinkedEntityId:interface'
   - 'excel!Excel.ListDataValidation:interface'
   - 'excel!Excel.NameErrorCellValue:interface'
   - 'excel!Excel.NotAvailableErrorCellValue:interface'

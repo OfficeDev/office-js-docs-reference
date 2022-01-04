@@ -617,6 +617,7 @@ Excel.CellValueType,empty,EnumField,Poor,false
 Excel.CellValueType,entity,EnumField,Poor,false
 Excel.CellValueType,error,EnumField,Poor,false
 Excel.CellValueType,formattedNumber,EnumField,Poor,false
+Excel.CellValueType,linkedEntity,EnumField,Fine,false
 Excel.CellValueType,notAvailable,EnumField,Poor,false
 Excel.CellValueType,string,EnumField,Poor,false
 Excel.CellValueType,webImage,EnumField,Poor,false
@@ -3633,6 +3634,19 @@ Excel.LinkedDataTypeState,disambiguationNeeded,EnumField,Missing,false
 Excel.LinkedDataTypeState,fetchingData,EnumField,Missing,false
 Excel.LinkedDataTypeState,none,EnumField,Missing,false
 Excel.LinkedDataTypeState,validLinkedData,EnumField,Missing,false
+Excel.LinkedEntityCellValue,N/A,Class,Fine,false
+Excel.LinkedEntityCellValue,basicType,Method,Fine,false
+Excel.LinkedEntityCellValue,basicValue,Method,Fine,false
+Excel.LinkedEntityCellValue,id,Method,Fine,false
+Excel.LinkedEntityCellValue,properties,Method,Fine,false
+Excel.LinkedEntityCellValue,provider,Method,Good,false
+Excel.LinkedEntityCellValue,text,Method,Fine,false
+Excel.LinkedEntityCellValue,type,Method,Fine,false
+Excel.LinkedEntityId,N/A,Class,Fine,false
+Excel.LinkedEntityId,culture,Method,Fine,false
+Excel.LinkedEntityId,domainId,Method,Fine,false
+Excel.LinkedEntityId,entityId,Method,Fine,false
+Excel.LinkedEntityId,serviceId,Method,Fine,false
 Excel.LinkedWorkbook,N/A,Class,Good,false
 Excel.LinkedWorkbook,context,Method,Good,false
 Excel.LinkedWorkbook,id,Method,Good,false
@@ -4554,7 +4568,9 @@ Excel.RefErrorCellValue,errorSubType,Method,Good,false
 Excel.RefErrorCellValue,errorType,Method,Good,false
 Excel.RefErrorCellValue,type,Method,Good,false
 Excel.RefErrorCellValueSubType,N/A,Class,Good,false
+Excel.RefErrorCellValueSubType,externalLinksArrayRef,EnumField,Good,false
 Excel.RefErrorCellValueSubType,externalLinksRefNotExist,EnumField,Good,false
+Excel.RefErrorCellValueSubType,externalLinksStructuredRef,EnumField,Good,false
 Excel.RefErrorCellValueSubType,hlookupRowIndexGreaterThanNumRows,EnumField,Good,false
 Excel.RefErrorCellValueSubType,subArrayEndColumnOutOfBounds,EnumField,Good,false
 Excel.RefErrorCellValueSubType,subArrayEndColumnPrecedesStartColumn,EnumField,Good,false
@@ -5572,6 +5588,7 @@ Excel.Workbook,getActiveChartOrNullObject(),Method,Good,false
 Excel.Workbook,getActiveSlicer(),Method,Good,false
 Excel.Workbook,getActiveSlicerOrNullObject(),Method,Good,false
 Excel.Workbook,getIsActiveCollabSession(),Method,Good,false
+Excel.Workbook,getLinkedEntityCellValue(linkedEntityCellValueId),Method,Good,false
 Excel.Workbook,getSelectedRange(),Method,Good,true
 Excel.Workbook,getSelectedRanges(),Method,Good,true
 Excel.Workbook,insertWorksheetsFromBase64(base64File,Method,Good,true

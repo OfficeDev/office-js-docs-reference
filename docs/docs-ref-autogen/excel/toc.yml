@@ -769,6 +769,10 @@ items:
             uid: 'excel!Excel.LinkedDataTypeAddedEventArgs:interface'
           - name: LinkedDataTypeCollection
             uid: 'excel!Excel.LinkedDataTypeCollection:class'
+          - name: LinkedEntityCellValue
+            uid: 'excel!Excel.LinkedEntityCellValue:interface'
+          - name: LinkedEntityId
+            uid: 'excel!Excel.LinkedEntityId:interface'
           - name: LinkedWorkbook
             uid: 'excel!Excel.LinkedWorkbook:class'
           - name: LinkedWorkbookCollection

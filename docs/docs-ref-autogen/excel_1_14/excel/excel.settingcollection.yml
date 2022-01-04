@@ -113,7 +113,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: >-
-      Gets a setting entry via the key. If the setting does not exist, then this function will return an object with its
+      Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its
       `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

@@ -161,9 +161,8 @@ methods:
     fullName: getLocationOrNullObject()
     summary: >-
       Gets a range that describes the frozen cells in the active worksheet view. The frozen range corresponds to cells
-      that are frozen in the top- and left-most pane. If there is no frozen pane, then this function will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      that are frozen in the top- and left-most pane. If there is no frozen pane, then this method returns an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

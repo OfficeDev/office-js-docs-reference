@@ -33,7 +33,7 @@ fields:
   - name: externalLinksFailedToRefresh
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksFailedToRefresh:member'
     package: excel!
-    summary: 'An error caused by external linkes failing to refresh. Displays as error type \#CONNECT! in Excel.'
+    summary: 'An error caused by external links failing to refresh. Displays as error type \#CONNECT! in Excel.'
     value: '"ExternalLinksFailedToRefresh"'
   - name: externalLinksFileTooLarge
     uid: 'excel!Excel.ConnectErrorCellValueSubType.externalLinksFileTooLarge:member'
