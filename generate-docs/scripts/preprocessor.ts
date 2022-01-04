@@ -260,7 +260,9 @@ function cleanUpDts(localDtsPath: string): string {
             * @beta
             */
             writableNote?: string;
-        }$1`));
+        }$1`)        
+        .replace(/: ErrorCellValue([^A-Z])/g, `BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue$1`)
+        );
 }
 
 
