@@ -45,7 +45,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        elements: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        elements: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -1620,7 +1620,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         */
         properties?: {
-            [key: string]: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            [key: string]: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -10164,7 +10164,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        valuesAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -12020,7 +12020,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        valuesAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -12445,7 +12445,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valueAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        readonly valueAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -12561,7 +12561,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        readonly valuesAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -13464,7 +13464,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        valuesAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -13697,7 +13697,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        valuesAsJson: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -40291,7 +40291,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -40384,7 +40384,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -40569,7 +40569,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -40613,7 +40613,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46029,7 +46029,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46258,7 +46258,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46368,7 +46368,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valueAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valueAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46421,7 +46421,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46640,7 +46640,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -46691,7 +46691,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+            valuesAsJson?: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
             /**
             * Represents whether this `CellValue` will be used to overwrite a cell.
             * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
