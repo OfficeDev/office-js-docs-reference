@@ -9,42 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: application
-    uid: 'visio!Visio.Interfaces.ShapeData#application:member'
+  - name: comments
+    uid: 'visio!Visio.Interfaces.ShapeData#comments:member'
     package: visio!
-    fullName: application
+    fullName: comments
     summary: |-
-      Returns the instance of Microsoft Visio that is associated with an object. Read-only.
+      Returns the Comments Collection. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'application?: Visio.Interfaces.ApplicationData;'
+      content: 'comments?: Visio.Interfaces.CommentData[];'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.ApplicationData:interface" />'
-  - name: document
-    uid: 'visio!Visio.Interfaces.ShapeData#document:member'
+        type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />[]'
+  - name: hyperlinks
+    uid: 'visio!Visio.Interfaces.ShapeData#hyperlinks:member'
     package: visio!
-    fullName: document
+    fullName: hyperlinks
     summary: |-
-      Gets the document object that is assocaited with the shape. Read-only.
+      Returns the Hyperlinks collection for a Shape object. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'document?: Visio.Interfaces.DocumentData;'
+      content: 'hyperlinks?: Visio.Interfaces.HyperlinkData[];'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.HyperlinkData:interface" />[]'
   - name: id
     uid: 'visio!Visio.Interfaces.ShapeData#id:member'
     package: visio!
     fullName: id
     summary: |-
-      Shape's Identifier.
+      Shape's identifier. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -54,57 +54,12 @@ properties:
       content: 'id?: number;'
       return:
         type: number
-  - name: isCallout
-    uid: 'visio!Visio.Interfaces.ShapeData#isCallout:member'
-    package: visio!
-    fullName: isCallout
-    summary: |-
-      Indicates whether the shape is a callout shape. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isCallout?: boolean;'
-      return:
-        type: boolean
-  - name: isDataGraphicCallout
-    uid: 'visio!Visio.Interfaces.ShapeData#isDataGraphicCallout:member'
-    package: visio!
-    fullName: isDataGraphicCallout
-    summary: |-
-      Specifes whether a shape is a data graphic callout. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isDataGraphicCallout?: boolean;'
-      return:
-        type: boolean
-  - name: isOpenForTextEdit
-    uid: 'visio!Visio.Interfaces.ShapeData#isOpenForTextEdit:member'
-    package: visio!
-    fullName: isOpenForTextEdit
-    summary: |-
-      Indicates whether a shape is currently open for interactive text editing. Read-only.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isOpenForTextEdit?: boolean;'
-      return:
-        type: boolean
   - name: name
     uid: 'visio!Visio.Interfaces.ShapeData#name:member'
     package: visio!
     fullName: name
     summary: |-
-      Shape's name.
+      Shape's name. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -114,27 +69,57 @@ properties:
       content: 'name?: string;'
       return:
         type: string
-  - name: objType
-    uid: 'visio!Visio.Interfaces.ShapeData#objType:member'
+  - name: select
+    uid: 'visio!Visio.Interfaces.ShapeData#select:member'
     package: visio!
-    fullName: objType
+    fullName: select
     summary: |-
-      Returns the type of the object. Read-only.(Shape\_Type will give OACR Warning :61721)
+      Returns true, if shape is selected. User can set true to select the shape explicitly.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'objType?: number;'
+      content: 'select?: boolean;'
       return:
-        type: number
+        type: boolean
+  - name: shapeDataItems
+    uid: 'visio!Visio.Interfaces.ShapeData#shapeDataItems:member'
+    package: visio!
+    fullName: shapeDataItems
+    summary: |-
+      Returns the Shape's Data Section. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.ShapeDataItemData:interface" />[]'
+  - name: subShapes
+    uid: 'visio!Visio.Interfaces.ShapeData#subShapes:member'
+    package: visio!
+    fullName: subShapes
+    summary: |-
+      Gets SubShape Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subShapes?: Visio.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />[]'
   - name: text
     uid: 'visio!Visio.Interfaces.ShapeData#text:member'
     package: visio!
     fullName: text
     summary: |-
-      Shape's Text.
+      Shape's text. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -144,3 +129,18 @@ properties:
       content: 'text?: string;'
       return:
         type: string
+  - name: view
+    uid: 'visio!Visio.Interfaces.ShapeData#view:member'
+    package: visio!
+    fullName: view
+    summary: |-
+      Returns the view of the shape. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'view?: Visio.Interfaces.ShapeViewData;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />'
