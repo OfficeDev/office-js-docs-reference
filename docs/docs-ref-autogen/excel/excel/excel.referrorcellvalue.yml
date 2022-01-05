@@ -54,13 +54,15 @@ properties:
         errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" |
         "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" |
         "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" |
-        "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn";
+        "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" | "ExternalLinksStructuredRef" |
+        "ExternalLinksArrayRef";
       return:
         type: >-
           <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" |
           "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" |
           "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" |
-          "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn"
+          "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" |
+          "ExternalLinksStructuredRef" | "ExternalLinksArrayRef"
   - name: errorType
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!

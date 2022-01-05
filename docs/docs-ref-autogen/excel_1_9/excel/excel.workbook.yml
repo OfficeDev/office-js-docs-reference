@@ -436,9 +436,8 @@ methods:
     package: excel!
     fullName: getActiveChartOrNullObject()
     summary: >-
-      Gets the currently active chart in the workbook. If there is no active chart, then this function will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'

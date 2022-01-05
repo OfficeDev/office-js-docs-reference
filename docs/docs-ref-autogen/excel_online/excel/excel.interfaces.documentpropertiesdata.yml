@@ -61,7 +61,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
     package: excel!
     fullName: creationDate
-    summary: Gets the creation date of the workbook. Read only.
+    summary: Gets the creation date of the workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
     package: excel!
     fullName: custom
-    summary: Gets the collection of custom properties of the workbook. Read only.
+    summary: Gets the collection of custom properties of the workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -97,7 +97,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
     package: excel!
     fullName: lastAuthor
-    summary: Gets the last author of the workbook. Read only.
+    summary: Gets the last author of the workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -121,7 +121,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
     package: excel!
     fullName: revisionNumber
-    summary: Gets the revision number of the workbook. Read only.
+    summary: Gets the revision number of the workbook.
     remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
