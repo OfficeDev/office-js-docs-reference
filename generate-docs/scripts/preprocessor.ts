@@ -241,6 +241,16 @@ function cleanUpDts(localDtsPath: string): string {
         /* The regexes below will not be needed once type support is added to API Documenter and the OPS YAML schema. */
         .replace(/OfficeExtension\.IPromise\<T\>/g, `Promise<T>`)
         .replace(/([\W]) EntityPropertyType([^A-Z])/g, `$1 CellValueAndPropertyMetadata | CellValue$2`) 
+        .replace(/([\W]) CellValueAndPropertyMetadata([^A-Z])/g, `$1 CellValue & {
+            /**
+            * Represents metadata about the property.
+            *
+            * @remarks
+            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            propertyMetadata?: CellValuePropertyMetadata;
+        }$2`) 
         .replace(/([\W]) CellValue([^A-Z])/g, `$1 ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
             /**
             * Represents whether this \`CellValue\` will be used to overwrite a cell.

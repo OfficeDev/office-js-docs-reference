@@ -52,8 +52,8 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        valuesAsJson?:ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue
-        |BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
+        valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
+        BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
         FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue |
         NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue |
         FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
@@ -65,7 +65,7 @@ properties:
         type: >-
           <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
           <xref uid="excel!Excel.DoubleCellValue:interface" /> | <xref uid="excel!Excel.EntityCellValue:interface" /> |
-          <xref uid="excel!Excel.EmptyCellValue:interface" /> |<xref uid="excel!Excel.BlockedErrorCellValue:interface"
+          <xref uid="excel!Excel.EmptyCellValue:interface" /> | <xref uid="excel!Excel.BlockedErrorCellValue:interface"
           /> | <xref uid="excel!Excel.BusyErrorCellValue:interface" /> | <xref
           uid="excel!Excel.CalcErrorCellValue:interface" /> | <xref uid="excel!Excel.ConnectErrorCellValue:interface" />
           | <xref uid="excel!Excel.Div0ErrorCellValue:interface" /> | <xref
