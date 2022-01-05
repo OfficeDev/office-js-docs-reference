@@ -36,7 +36,7 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'sections?: CardLayoutListSection | CardLayoutTableSection[];'
+      content: 'sections?:CardLayoutListSection | CardLayoutTableSection[];'
       return:
         type: >-
           <xref uid="excel!Excel.CardLayoutListSection:interface" /> | <xref

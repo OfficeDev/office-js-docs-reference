@@ -1,16 +1,19 @@
 ### YamlMime:TSType
-name: Visio.DocumentCollection
-uid: 'visio!Visio.DocumentCollection:class'
+name: Visio.CommentCollection
+uid: 'visio!Visio.CommentCollection:class'
 package: visio!
-fullName: Visio.DocumentCollection
-summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+fullName: Visio.CommentCollection
+summary: |-
+  Represents the CommentCollection for a given Shape.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: class
 properties:
   - name: context
-    uid: 'visio!Visio.DocumentCollection#context:member'
+    uid: 'visio!Visio.CommentCollection#context:member'
     package: visio!
     fullName: context
     summary: >-
@@ -24,7 +27,7 @@ properties:
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
   - name: items
-    uid: 'visio!Visio.DocumentCollection#items:member'
+    uid: 'visio!Visio.CommentCollection#items:member'
     package: visio!
     fullName: items
     summary: Gets the loaded child items in this collection.
@@ -32,36 +35,16 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly items: Visio.Document[];'
+      content: 'readonly items: Visio.Comment[];'
       return:
-        type: '<xref uid="visio!Visio.Document:class" />[]'
+        type: '<xref uid="visio!Visio.Comment:class" />[]'
 methods:
-  - name: add(FileName)
-    uid: 'visio!Visio.DocumentCollection#add:member(1)'
-    package: visio!
-    fullName: add(FileName)
-    summary: |-
-      Adds a new Document object to the Documents collection.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'add(FileName: string): Visio.Document;'
-      parameters:
-        - id: FileName
-          description: '*'
-          type: string
-      return:
-        type: '<xref uid="visio!Visio.Document:class" />'
-        description: ''
   - name: getCount()
-    uid: 'visio!Visio.DocumentCollection#getCount:member(1)'
+    uid: 'visio!Visio.CommentCollection#getCount:member(1)'
     package: visio!
     fullName: getCount()
     summary: |-
-      Returns the number of Documents in Document Collection.
+      Gets the number of Comments.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -73,44 +56,27 @@ methods:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
-    uid: 'visio!Visio.DocumentCollection#getItem:member(1)'
+    uid: 'visio!Visio.CommentCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItem(key: number | string): Visio.Document;'
-      parameters:
-        - id: key
-          description: ''
-          type: number | string
-      return:
-        type: '<xref uid="visio!Visio.Document:class" />'
-        description: ''
-  - name: getItemOrNullObject(index)
-    uid: 'visio!Visio.DocumentCollection#getItemOrNullObject:member(1)'
-    package: visio!
-    fullName: getItemOrNullObject(index)
     summary: |-
-      Returns an item from a collection.
+      Gets the Comment using its name.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getItemOrNullObject(index: number): Visio.Document;'
+      content: 'getItem(key: string): Visio.Comment;'
       parameters:
-        - id: index
-          description: '*'
-          type: number
+        - id: key
+          description: Key is the name of the Comment to be retrieved.
+          type: string
       return:
-        type: '<xref uid="visio!Visio.Document:class" />'
+        type: '<xref uid="visio!Visio.Comment:class" />'
         description: ''
   - name: load(options)
-    uid: 'visio!Visio.DocumentCollection#load:member(1)'
+    uid: 'visio!Visio.CommentCollection#load:member(1)'
     package: visio!
     fullName: load(options)
     summary: >-
@@ -121,19 +87,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        load(options?: Visio.Interfaces.DocumentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
-        Visio.DocumentCollection;
+        load(options?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
       parameters:
         - id: options
           description: Provides options for which properties of the object to load.
           type: >-
-            <xref uid="visio!Visio.Interfaces.DocumentCollectionLoadOptions:interface" /> & <xref
+            <xref uid="visio!Visio.Interfaces.CommentCollectionLoadOptions:interface" /> & <xref
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
-        type: '<xref uid="visio!Visio.DocumentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
         description: ''
   - name: load(propertyNames)
-    uid: 'visio!Visio.DocumentCollection#load:member(2)'
+    uid: 'visio!Visio.CommentCollection#load:member(2)'
     package: visio!
     fullName: load(propertyNames)
     summary: >-
@@ -143,16 +109,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNames?: string | string[]): Visio.DocumentCollection;'
+      content: 'load(propertyNames?: string | string[]): Visio.CommentCollection;'
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type: 'string | string[]'
       return:
-        type: '<xref uid="visio!Visio.DocumentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
         description: ''
   - name: load(propertyNamesAndPaths)
-    uid: 'visio!Visio.DocumentCollection#load:member(3)'
+    uid: 'visio!Visio.CommentCollection#load:member(3)'
     package: visio!
     fullName: load(propertyNamesAndPaths)
     summary: >-
@@ -162,7 +128,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Visio.DocumentCollection;'
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Visio.CommentCollection;'
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -170,24 +136,41 @@ methods:
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
-        type: '<xref uid="visio!Visio.DocumentCollection:class" />'
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
+        description: ''
+  - name: setMockData(data)
+    uid: 'visio!Visio.CommentCollection#setMockData:member(1)'
+    package: visio!
+    fullName: setMockData(data)
+    summary: Set mock data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMockData(data: Visio.Interfaces.CommentCollectionData): void;'
+      parameters:
+        - id: data
+          description: ''
+          type: '<xref uid="visio!Visio.Interfaces.CommentCollectionData:interface" />'
+      return:
+        type: void
         description: ''
   - name: toJSON()
-    uid: 'visio!Visio.DocumentCollection#toJSON:member(1)'
+    uid: 'visio!Visio.CommentCollection#toJSON:member(1)'
     package: visio!
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original `Visio.DocumentCollection` object is an API object, the `toJSON` method
-      returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentCollectionData`<!-- -->) that contains an
-      "items" array with shallow copies of any loaded properties from the collection's items.
+      passed to it.) Whereas the original `Visio.CommentCollection` object is an API object, the `toJSON` method returns
+      a plain JavaScript object (typed as `Visio.Interfaces.CommentCollectionData`<!-- -->) that contains an "items"
+      array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'toJSON(): Visio.Interfaces.DocumentCollectionData;'
+      content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentCollectionData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.CommentCollectionData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

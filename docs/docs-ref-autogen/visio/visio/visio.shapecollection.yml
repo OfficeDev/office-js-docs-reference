@@ -39,26 +39,6 @@ properties:
       return:
         type: '<xref uid="visio!Visio.Shape:class" />[]'
 methods:
-  - name: add(FileName)
-    uid: 'visio!Visio.ShapeCollection#add:member(1)'
-    package: visio!
-    fullName: add(FileName)
-    summary: |-
-      Adds a new shape to a collection.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'add(FileName: string): Visio.Shape;'
-      parameters:
-        - id: FileName
-          description: '*'
-          type: string
-      return:
-        type: '<xref uid="visio!Visio.Shape:class" />'
-        description: ''
   - name: getCount()
     uid: 'visio!Visio.ShapeCollection#getCount:member(1)'
     package: visio!
@@ -97,7 +77,10 @@ methods:
     uid: 'visio!Visio.ShapeCollection#getItem:member(1)'
     package: visio!
     fullName: getItem(key)
-    summary: ''
+    summary: |-
+      Gets a Shape using its key (name or Index).
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -105,28 +88,8 @@ methods:
       content: 'getItem(key: number | string): Visio.Shape;'
       parameters:
         - id: key
-          description: ''
+          description: Key is the Name or Index of the shape to be retrieved.
           type: number | string
-      return:
-        type: '<xref uid="visio!Visio.Shape:class" />'
-        description: ''
-  - name: getItemOrNullObject(index)
-    uid: 'visio!Visio.ShapeCollection#getItemOrNullObject:member(1)'
-    package: visio!
-    fullName: getItemOrNullObject(index)
-    summary: |-
-      Returns an item from a collection.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItemOrNullObject(index: number): Visio.Shape;'
-      parameters:
-        - id: index
-          description: '*'
-          type: number
       return:
         type: '<xref uid="visio!Visio.Shape:class" />'
         description: ''
@@ -192,6 +155,23 @@ methods:
           type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'
+        description: ''
+  - name: setMockData(data)
+    uid: 'visio!Visio.ShapeCollection#setMockData:member(1)'
+    package: visio!
+    fullName: setMockData(data)
+    summary: Set mock data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMockData(data: Visio.Interfaces.ShapeCollectionData): void;'
+      parameters:
+        - id: data
+          description: ''
+          type: '<xref uid="visio!Visio.Interfaces.ShapeCollectionData:interface" />'
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: 'visio!Visio.ShapeCollection#toJSON:member(1)'

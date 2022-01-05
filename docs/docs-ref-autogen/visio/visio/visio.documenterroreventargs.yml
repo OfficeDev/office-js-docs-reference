@@ -1,10 +1,10 @@
 ### YamlMime:TSType
-name: Visio.ShapeAddedEventArgs
-uid: 'visio!Visio.ShapeAddedEventArgs:interface'
+name: Visio.DocumentErrorEventArgs
+uid: 'visio!Visio.DocumentErrorEventArgs:interface'
 package: visio!
-fullName: Visio.ShapeAddedEventArgs
+fullName: Visio.DocumentErrorEventArgs
 summary: |-
-  Provides information about the document that raised the ShapeAdded event.
+  Provides information about DocumentError event
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
@@ -12,48 +12,48 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: pageId
-    uid: 'visio!Visio.ShapeAddedEventArgs#pageId:member'
+  - name: errorCode
+    uid: 'visio!Visio.DocumentErrorEventArgs#errorCode:member'
     package: visio!
-    fullName: pageId
+    fullName: errorCode
     summary: |-
-      ID of the page the shape belongs to.
+      Visio Error code
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'pageId: string;'
+      content: 'errorCode: number;'
+      return:
+        type: number
+  - name: errorMessage
+    uid: 'visio!Visio.DocumentErrorEventArgs#errorMessage:member'
+    package: visio!
+    fullName: errorMessage
+    summary: |-
+      Message about error that occured
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorMessage: string;'
       return:
         type: string
-  - name: shapeId
-    uid: 'visio!Visio.ShapeAddedEventArgs#shapeId:member'
+  - name: isCritical
+    uid: 'visio!Visio.DocumentErrorEventArgs#isCritical:member'
     package: visio!
-    fullName: shapeId
+    fullName: isCritical
     summary: |-
-      ID of the shape.
+      Tells if the error is critical or not. If critical the session cannot continue.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'shapeId: string;'
+      content: 'isCritical: boolean;'
       return:
-        type: string
-  - name: type
-    uid: 'visio!Visio.ShapeAddedEventArgs#type:member'
-    package: visio!
-    fullName: type
-    summary: |-
-      Gets the type of the event. See Visio.EventType for details.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'type: "ShapeAdded";'
-      return:
-        type: '"ShapeAdded"'
+        type: boolean

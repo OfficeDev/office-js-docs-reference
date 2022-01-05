@@ -239,8 +239,9 @@ function cleanUpDts(localDtsPath: string): string {
                  "$1/**\n$1 * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n$1 * @param collectionLoadOptions - Where collectionLoadOptions.select is a comma-delimited string that specifies the properties to load, and collectionLoadOptions.expand is a comma-delimited string that specifies the navigation properties to load. collectionLoadOptions.top specifies the maximum number of collection items that can be included in the result. collectionLoadOptions.skip specifies the number of items that are to be skipped and not included in the result. If collectionLoadOptions.top is specified, the result set will start after skipping the specified number of items.\n$1 */\n$1load(collectionLoadOptions?: $2.Interfaces.$3CollectionLoadOptions & $2.Interfaces.CollectionLoadOptions): $2.$3Collection;")
         .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
         /* The regexes below will not be needed once type support is added to API Documenter and the OPS YAML schema. */
-        .replace(/OfficeExtension\.IPromise\<T\>/g, `Promise<T>`) 
-        .replace(/: CellValue([^A-Z])/g, `: ArrayCellValue | BlockedErrorCellValue | BooleanCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | FieldErrorCellValue | FormattedNumberCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | StringCellValue | ValueErrorCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue | string | number | boolean & {
+        .replace(/OfficeExtension\.IPromise\<T\>/g, `Promise<T>`)
+        .replace(/([\W]) EntityPropertyType([^A-Z])/g, `$1 CellValueAndPropertyMetadata | CellValue$2`) 
+        .replace(/([\W]) CellValue([^A-Z])/g, `$1 ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
             /**
             * Represents whether this \`CellValue\` will be used to overwrite a cell.
             * When false, APIs which would use this \`CellValue\` to overwrite a cell will instead ignore this value without throwing an error.
@@ -260,11 +261,10 @@ function cleanUpDts(localDtsPath: string): string {
             * @beta
             */
             writableNote?: string;
-        }$1`)        
-        .replace(/: ErrorCellValue([^A-Z])/g, `: BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue$1`)
-        .replace(/: EntityPropertyType([^A-Z])/g, `: CellValueAndPropertyMetadata | CellValue$1`)
-        .replace(/: CardLayoutSection([^A-Z])/g, `: CardLayoutListSection | CardLayoutTableSection$1`)
-        .replace(/: CardLayout([^A-Z])/g, `: EntityCardLayout$1`)
+        }$2`)        
+        .replace(/([\W]) ErrorCellValue([^A-Z])/g, `$1 BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue$2`)
+        .replace(/([\W]) CardLayoutSection([^A-Z])/g, `$1 CardLayoutListSection | CardLayoutTableSection$2`)
+        .replace(/([\W]) CardLayout([^A-Z])/g, `$1 EntityCardLayout$2`)
         );
 }
 

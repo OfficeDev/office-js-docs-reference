@@ -1,59 +1,56 @@
 ### YamlMime:TSType
-name: Visio.StencilInfo
-uid: 'visio!Visio.StencilInfo:interface'
+name: Visio.Interfaces.CommentData
+uid: 'visio!Visio.Interfaces.CommentData:interface'
 package: visio!
-fullName: Visio.StencilInfo
-summary: |-
-  Stencil Information.
-
-  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+fullName: Visio.Interfaces.CommentData
+summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: mastersInfo
-    uid: 'visio!Visio.StencilInfo#mastersInfo:member'
+  - name: author
+    uid: 'visio!Visio.Interfaces.CommentData#author:member'
     package: visio!
-    fullName: mastersInfo
+    fullName: author
     summary: |-
-      List of MasterInfo.
+      A string that specifies the name of the author of the comment.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'mastersInfo: Visio.MasterInfo[];'
-      return:
-        type: '<xref uid="visio!Visio.MasterInfo:interface" />[]'
-  - name: name
-    uid: 'visio!Visio.StencilInfo#name:member'
-    package: visio!
-    fullName: name
-    summary: |-
-      Name represents file name of a stencil.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'name: string;'
+      content: 'author?: string;'
       return:
         type: string
-  - name: title
-    uid: 'visio!Visio.StencilInfo#title:member'
+  - name: date
+    uid: 'visio!Visio.Interfaces.CommentData#date:member'
     package: visio!
-    fullName: title
+    fullName: date
     summary: |-
-      Title represents Display Name of the Stencil.
+      A string that specifies the date when the comment was created.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'title: string;'
+      content: 'date?: string;'
+      return:
+        type: string
+  - name: text
+    uid: 'visio!Visio.Interfaces.CommentData#text:member'
+    package: visio!
+    fullName: text
+    summary: |-
+      A string that contains the comment text.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
       return:
         type: string

@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: Visio.DataRefreshCompleteEventArgs
+uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
+package: visio!
+fullName: Visio.DataRefreshCompleteEventArgs
+summary: |-
+  Provides information about the document that raised the DataRefreshComplete event.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: document
+    uid: 'visio!Visio.DataRefreshCompleteEventArgs#document:member'
+    package: visio!
+    fullName: document
+    summary: |-
+      Gets the document object that raised the DataRefreshComplete event.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'document: Visio.Document;'
+      return:
+        type: '<xref uid="visio!Visio.Document:class" />'
+  - name: success
+    uid: 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
+    package: visio!
+    fullName: success
+    summary: |-
+      Gets the success or failure of the DataRefreshComplete event.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'success: boolean;'
+      return:
+        type: boolean

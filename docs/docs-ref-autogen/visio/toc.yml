@@ -39,36 +39,78 @@ items:
                 uid: 'visio!Visio.EventType:enum'
               - name: LayoutVariant
                 uid: 'visio!Visio.LayoutVariant:enum'
-              - name: MessageCategory
-                uid: 'visio!Visio.MessageCategory:enum'
-              - name: MessageType
-                uid: 'visio!Visio.MessageType:enum'
+              - name: OverlayHorizontalAlignment
+                uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+              - name: OverlayType
+                uid: 'visio!Visio.OverlayType:enum'
+              - name: OverlayVerticalAlignment
+                uid: 'visio!Visio.OverlayVerticalAlignment:enum'
               - name: TaskPaneType
                 uid: 'visio!Visio.TaskPaneType:enum'
+              - name: ToolBarType
+                uid: 'visio!Visio.ToolBarType:enum'
           - name: Application
             uid: 'visio!Visio.Application:class'
+          - name: BoundingBox
+            uid: 'visio!Visio.BoundingBox:interface'
+          - name: Comment
+            uid: 'visio!Visio.Comment:class'
+          - name: CommentCollection
+            uid: 'visio!Visio.CommentCollection:class'
+          - name: ConnectorBinding
+            uid: 'visio!Visio.ConnectorBinding:interface'
+          - name: DataRefreshCompleteEventArgs
+            uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
           - name: Document
             uid: 'visio!Visio.Document:class'
-          - name: DocumentCollection
-            uid: 'visio!Visio.DocumentCollection:class'
-          - name: MasterInfo
-            uid: 'visio!Visio.MasterInfo:interface'
+          - name: DocumentErrorEventArgs
+            uid: 'visio!Visio.DocumentErrorEventArgs:interface'
+          - name: DocumentLoadCompleteEventArgs
+            uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
+          - name: DocumentView
+            uid: 'visio!Visio.DocumentView:class'
+          - name: Highlight
+            uid: 'visio!Visio.Highlight:interface'
+          - name: Hyperlink
+            uid: 'visio!Visio.Hyperlink:class'
+          - name: HyperlinkCollection
+            uid: 'visio!Visio.HyperlinkCollection:class'
           - name: Page
             uid: 'visio!Visio.Page:class'
           - name: PageCollection
             uid: 'visio!Visio.PageCollection:class'
+          - name: PageLoadCompleteEventArgs
+            uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
+          - name: PageRenderCompleteEventArgs
+            uid: 'visio!Visio.PageRenderCompleteEventArgs:interface'
+          - name: PageView
+            uid: 'visio!Visio.PageView:class'
+          - name: Position
+            uid: 'visio!Visio.Position:interface'
           - name: RequestContext
             uid: 'visio!Visio.RequestContext:class'
+          - name: Selection
+            uid: 'visio!Visio.Selection:class'
           - name: SelectionChangedEventArgs
             uid: 'visio!Visio.SelectionChangedEventArgs:interface'
           - name: Shape
             uid: 'visio!Visio.Shape:class'
-          - name: ShapeAddedEventArgs
-            uid: 'visio!Visio.ShapeAddedEventArgs:interface'
+          - name: ShapeBinding
+            uid: 'visio!Visio.ShapeBinding:interface'
           - name: ShapeCollection
             uid: 'visio!Visio.ShapeCollection:class'
-          - name: StencilInfo
-            uid: 'visio!Visio.StencilInfo:interface'
+          - name: ShapeDataItem
+            uid: 'visio!Visio.ShapeDataItem:class'
+          - name: ShapeDataItemCollection
+            uid: 'visio!Visio.ShapeDataItemCollection:class'
+          - name: ShapeMouseEnterEventArgs
+            uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
+          - name: ShapeMouseLeaveEventArgs
+            uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
+          - name: ShapeView
+            uid: 'visio!Visio.ShapeView:class'
+          - name: TaskPaneStateChangedEventArgs
+            uid: 'visio!Visio.TaskPaneStateChangedEventArgs:interface'
       - name: Word
         href: /javascript/api/word
       - name: Common APIs
