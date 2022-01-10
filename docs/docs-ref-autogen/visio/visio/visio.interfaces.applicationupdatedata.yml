@@ -9,63 +9,33 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: activeDocument
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#activeDocument:member'
+  - name: showBorders
+    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showBorders:member'
     package: visio!
-    fullName: activeDocument
+    fullName: showBorders
     summary: |-
-      Returns the Active Document.
+      Show or hide the iFrame application borders.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'activeDocument?: Visio.Interfaces.DocumentUpdateData;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentUpdateData:interface" />'
-  - name: activePage
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#activePage:member'
-    package: visio!
-    fullName: activePage
-    summary: |-
-      Returns the Active Page.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'activePage?: Visio.Interfaces.PageUpdateData;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.PageUpdateData:interface" />'
-  - name: isVisible
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#isVisible:member'
-    package: visio!
-    fullName: isVisible
-    summary: |-
-      Gets or sets if the application is visible.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isVisible?: boolean;'
+      content: 'showBorders?: boolean;'
       return:
         type: boolean
-  - name: userName
-    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#userName:member'
+  - name: showToolbars
+    uid: 'visio!Visio.Interfaces.ApplicationUpdateData#showToolbars:member'
     package: visio!
-    fullName: userName
+    fullName: showToolbars
     summary: |-
-      Gets or sets the user name of the application.
+      Show or hide the standard toolbars.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'userName?: string;'
+      content: 'showToolbars?: boolean;'
       return:
-        type: string
+        type: boolean

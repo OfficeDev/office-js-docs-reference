@@ -3,27 +3,45 @@ name: Visio.Page
 uid: 'visio!Visio.Page:class'
 package: visio!
 fullName: Visio.Page
-summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+summary: |-
+  Represents the Page class.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: class
 properties:
-  - name: application
-    uid: 'visio!Visio.Page#application:member'
+  - name: allShapes
+    uid: 'visio!Visio.Page#allShapes:member'
     package: visio!
-    fullName: application
+    fullName: allShapes
     summary: |-
-      Returns the instance of Microsoft Visio that is associated with an object. Read-only.
+      All shapes in the Page, including subshapes. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly application: Visio.Application;'
+      content: 'readonly allShapes: Visio.ShapeCollection;'
       return:
-        type: '<xref uid="visio!Visio.Application:class" />'
+        type: '<xref uid="visio!Visio.ShapeCollection:class" />'
+  - name: comments
+    uid: 'visio!Visio.Page#comments:member'
+    package: visio!
+    fullName: comments
+    summary: |-
+      Returns the Comments Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly comments: Visio.CommentCollection;'
+      return:
+        type: '<xref uid="visio!Visio.CommentCollection:class" />'
   - name: context
     uid: 'visio!Visio.Page#context:member'
     package: visio!
@@ -38,34 +56,19 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="visio!Visio.RequestContext:class" />'
-  - name: document
-    uid: 'visio!Visio.Page#document:member'
+  - name: height
+    uid: 'visio!Visio.Page#height:member'
     package: visio!
-    fullName: document
+    fullName: height
     summary: |-
-      Gets the document object that is assocaited with the page. Read-only.
+      Returns the height of the page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly document: Visio.Document;'
-      return:
-        type: '<xref uid="visio!Visio.Document:class" />'
-  - name: id
-    uid: 'visio!Visio.Page#id:member'
-    package: visio!
-    fullName: id
-    summary: |-
-      Returns the ID of the page. Read-only
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly id: number;'
+      content: 'readonly height: number;'
       return:
         type: number
   - name: index
@@ -73,7 +76,7 @@ properties:
     package: visio!
     fullName: index
     summary: |-
-      Index of the Page.
+      Index of the Page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -83,6 +86,21 @@ properties:
       content: 'readonly index: number;'
       return:
         type: number
+  - name: isBackground
+    uid: 'visio!Visio.Page#isBackground:member'
+    package: visio!
+    fullName: isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isBackground: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'visio!Visio.Page#name:member'
     package: visio!
@@ -103,7 +121,7 @@ properties:
     package: visio!
     fullName: shapes
     summary: |-
-      Shapes at root level, in the page. Read-only.
+      All top-level shapes in the Page.Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -113,36 +131,50 @@ properties:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'
-methods:
-  - name: 'boundingBox(Flags, lpr8Left, lpr8Bottom, lpr8Right, lpr8Top)'
-    uid: 'visio!Visio.Page#boundingBox:member(1)'
+  - name: view
+    uid: 'visio!Visio.Page#view:member'
     package: visio!
-    fullName: 'boundingBox(Flags, lpr8Left, lpr8Bottom, lpr8Right, lpr8Top)'
+    fullName: view
     summary: |-
-      Returns a rectangle that tightly encloses the shapes of a page.
+      Returns the view of the page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'boundingBox(Flags: number, lpr8Left: number, lpr8Bottom: number, lpr8Right: number, lpr8Top: number): void;'
-      parameters:
-        - id: Flags
-          description: '*'
-          type: number
-        - id: lpr8Left
-          description: '*'
-          type: number
-        - id: lpr8Bottom
-          description: '*'
-          type: number
-        - id: lpr8Right
-          description: '*'
-          type: number
-        - id: lpr8Top
-          description: ''
-          type: number
+      content: 'readonly view: Visio.PageView;'
+      return:
+        type: '<xref uid="visio!Visio.PageView:class" />'
+  - name: width
+    uid: 'visio!Visio.Page#width:member'
+    package: visio!
+    fullName: width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type: number
+methods:
+  - name: activate()
+    uid: 'visio!Visio.Page#activate:member(1)'
+    package: visio!
+    fullName: activate()
+    summary: |-
+      Set the page as Active Page of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
       return:
         type: void
         description: ''
@@ -220,7 +252,10 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: ''
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Page): void`
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,6 +286,23 @@ methods:
         - id: properties
           description: ''
           type: '<xref uid="visio!Visio.Page:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setMockData(data)
+    uid: 'visio!Visio.Page#setMockData:member(1)'
+    package: visio!
+    fullName: setMockData(data)
+    summary: Set mock data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMockData(data: Visio.Interfaces.PageData): void;'
+      parameters:
+        - id: data
+          description: ''
+          type: '<xref uid="visio!Visio.Interfaces.PageData:interface" />'
       return:
         type: void
         description: ''
