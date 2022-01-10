@@ -41,6 +41,23 @@ properties:
       content: 'disableHyperlinks: boolean;'
       return:
         type: boolean
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var documentView = ctx.document.view;
+              documentView.disableHyperlinks();
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: disablePan
     uid: 'visio!Visio.DocumentView#disablePan:member'
     package: visio!

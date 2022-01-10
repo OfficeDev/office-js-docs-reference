@@ -97,7 +97,30 @@ methods:
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="visio!Visio.ShapeDataItemCollection:class" />'
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              var shapeDataItems = shape.shapeDataItems;
+              shapeDataItems.load(["label", "value"]);
+              return ctx.sync().then(function() {
+                  for (var i = 0; i < shapeDataItems.items.length; i++) {
+                      console.log(shapeDataItems.items[i].label);
+                      console.log(shapeDataItems.items[i].value);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: load(propertyNames)
     uid: 'visio!Visio.ShapeDataItemCollection#load:member(2)'
     package: visio!

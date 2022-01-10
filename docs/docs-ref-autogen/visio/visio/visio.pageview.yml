@@ -41,6 +41,23 @@ properties:
       content: 'zoom: number;'
       return:
         type: number
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              activePage.view.zoom = 300;
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
 methods:
   - name: centerViewportOnShape(ShapeId)
     uid: 'visio!Visio.PageView#centerViewportOnShape:member(1)'
@@ -61,7 +78,24 @@ methods:
           type: number
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              activePage.view.centerViewportOnShape(shape.Id);
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: fitToWindow()
     uid: 'visio!Visio.PageView#fitToWindow:member(1)'
     package: visio!

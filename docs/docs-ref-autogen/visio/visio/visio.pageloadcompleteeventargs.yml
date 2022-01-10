@@ -7,7 +7,29 @@ summary: |-
   Provides information about the page that raised the PageLoadComplete event.
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```javascript
+  Visio.run(session, function (ctx) {
+      var document1= ctx.document;
+      eventResult1 = document1.onPageLoadComplete.add(
+          function (args){
+              console.log("Page name: "+args.pageName);
+          });
+
+      return ctx.sync().then(function () {
+          console.log("Success");
+      });
+  }).catch(function(error) {
+      console.log("Error: " + error);
+      if (error instanceof OfficeExtension.Error) {
+          console.log("Debug info: " + JSON.stringify(error.debugInfo));
+      }
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: interface

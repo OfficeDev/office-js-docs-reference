@@ -90,7 +90,34 @@ methods:
           type: '<xref uid="visio!Visio.Interfaces.CommentLoadOptions:interface" />'
       return:
         type: '<xref uid="visio!Visio.Comment:class" />'
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shapeName = "Position Belt.41";
+              var shape = activePage.shapes.getItem(shapeName);
+              var shapeComments= shape.comments;
+              shapeComments.load(["author", "text"]);
+              return ctx.sync().then(function () {
+                  for(var i = 0; i < shapeComments.items.length; i++)
+                  {
+                      var comment = shapeComments.items[i];
+                      console.log("comment Author: " + comment.author);
+                      console.log("Comment Text: " + comment.text);
+                      console.log("Date " + comment.date);
+                  }
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: load(propertyNames)
     uid: 'visio!Visio.Comment#load:member(2)'
     package: visio!

@@ -41,6 +41,24 @@ properties:
       content: 'showBorders: boolean;'
       return:
         type: boolean
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var application = ctx.document.application;
+              application.showToolbars = false;
+              application.showBorders = false;
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: showToolbars
     uid: 'visio!Visio.Application#showToolbars:member'
     package: visio!

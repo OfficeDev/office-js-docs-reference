@@ -97,7 +97,33 @@ methods:
             uid="visio!Visio.Interfaces.CollectionLoadOptions:interface" />
       return:
         type: '<xref uid="visio!Visio.HyperlinkCollection:class" />'
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shapeName = "Manager Belt";
+              var shape = activePage.shapes.getItem(shapeName);
+              var hyperlinks = shape.hyperlinks;
+              shapeHyperlinks.load(["description", "address", "subAddress"]);
+                  ctx.sync().then(function () {
+                      for (var i = 0; i < shapeHyperlinks.items.length; i++) {
+                          var hyperlink = shapeHyperlinks.items[i];
+                          console.log(
+                              "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
+                              hyperlink.subAddress);
+                      }
+                  });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: load(propertyNames)
     uid: 'visio!Visio.HyperlinkCollection#load:member(2)'
     package: visio!

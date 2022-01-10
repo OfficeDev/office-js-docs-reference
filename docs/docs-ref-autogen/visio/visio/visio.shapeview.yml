@@ -41,6 +41,24 @@ properties:
       content: 'highlight: Visio.Highlight;'
       return:
         type: '<xref uid="visio!Visio.Highlight:interface" />'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              shape.view.highlight = { color: "#E7E7E7", width: 100 };
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
 methods:
   - name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     uid: 'visio!Visio.ShapeView#addOverlay:member(1)'
@@ -79,7 +97,24 @@ methods:
           type: number
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              var overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: 'addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     uid: 'visio!Visio.ShapeView#addOverlay:member(2)'
     package: visio!
@@ -204,7 +239,24 @@ methods:
           type: number
       return:
         type: void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Visio.run(session, function (ctx) {
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              shape.view.removeOverlay(1);
+              return ctx.sync();
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - name: 'set(properties, options)'
     uid: 'visio!Visio.ShapeView#set:member(1)'
     package: visio!
