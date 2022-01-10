@@ -3,7 +3,10 @@ name: Visio.Interfaces.ApplicationLoadOptions
 uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
 package: visio!
 fullName: Visio.Interfaces.ApplicationLoadOptions
-summary: '\[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
+summary: |-
+  Represents the Application.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,78 +26,33 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
-  - name: activeDocument
-    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#activeDocument:member'
+  - name: showBorders
+    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#showBorders:member'
     package: visio!
-    fullName: activeDocument
+    fullName: showBorders
     summary: |-
-      Returns the Active Document.
+      Show or hide the iFrame application borders.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'activeDocument?: Visio.Interfaces.DocumentLoadOptions;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentLoadOptions:interface" />'
-  - name: activePage
-    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#activePage:member'
-    package: visio!
-    fullName: activePage
-    summary: |-
-      Returns the Active Page.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'activePage?: Visio.Interfaces.PageLoadOptions;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.PageLoadOptions:interface" />'
-  - name: isVisible
-    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#isVisible:member'
-    package: visio!
-    fullName: isVisible
-    summary: |-
-      Gets or sets if the application is visible.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'isVisible?: boolean;'
+      content: 'showBorders?: boolean;'
       return:
         type: boolean
-  - name: name
-    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#name:member'
+  - name: showToolbars
+    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#showToolbars:member'
     package: visio!
-    fullName: name
+    fullName: showToolbars
     summary: |-
-      Specifies the name of the application. Read-only.
+      Show or hide the standard toolbars.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'name?: boolean;'
-      return:
-        type: boolean
-  - name: userName
-    uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#userName:member'
-    package: visio!
-    fullName: userName
-    summary: |-
-      Gets or sets the user name of the application.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'userName?: boolean;'
+      content: 'showToolbars?: boolean;'
       return:
         type: boolean

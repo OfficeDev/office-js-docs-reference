@@ -5,7 +5,7 @@ package: visio!
 fullName: Visio.TaskPaneType
 summary: >-
   TaskPaneType represents the types of the First Party TaskPanes that are supported by Host through APIs. Used in case
-  of Show TaskPane API/ TaskPane State Changed Event etc.
+  of Show TaskPane API/ TaskPane State Changed Event etc
 
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
@@ -21,10 +21,10 @@ fields:
   - name: dataVisualizerProcessMappings
     uid: 'visio!Visio.TaskPaneType.dataVisualizerProcessMappings:member'
     package: visio!
-    summary: Data Visualizer Process Mapping Pane.
+    summary: Data Visualizer Process Mapping Pane
     value: '"DataVisualizerProcessMappings"'
   - name: none
     uid: 'visio!Visio.TaskPaneType.none:member'
     package: visio!
-    summary: None type.
+    summary: None Type
     value: '"None"'

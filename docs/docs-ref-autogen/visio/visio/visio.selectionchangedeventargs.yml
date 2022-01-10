@@ -61,33 +61,33 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: pageID
-    uid: 'visio!Visio.SelectionChangedEventArgs#pageID:member'
+  - name: pageName
+    uid: 'visio!Visio.SelectionChangedEventArgs#pageName:member'
     package: visio!
-    fullName: pageID
+    fullName: pageName
     summary: |-
-      Gets the page ID that raised the SelectionChanged event.
+      Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'pageID: number;'
+      content: 'pageName: string;'
       return:
-        type: number
-  - name: shapeIDs
-    uid: 'visio!Visio.SelectionChangedEventArgs#shapeIDs:member'
+        type: string
+  - name: shapeNames
+    uid: 'visio!Visio.SelectionChangedEventArgs#shapeNames:member'
     package: visio!
-    fullName: shapeIDs
+    fullName: shapeNames
     summary: |-
-      Gets the array of shape IDs that raised the SelectionChanged event.
+      Gets the array of shape names that raised the SelectionChanged event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'shapeIDs: number[];'
+      content: 'shapeNames: string[];'
       return:
-        type: 'number[]'
+        type: 'string[]'

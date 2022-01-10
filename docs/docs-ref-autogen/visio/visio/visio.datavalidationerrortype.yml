@@ -24,17 +24,17 @@ fields:
   - name: connectorColumnError
     uid: 'visio!Visio.DataValidationErrorType.connectorColumnError:member'
     package: visio!
-    summary: Connector column has error.
+    summary: Connector column has error
     value: '"ConnectorColumnError"'
   - name: connectorColumnMappedElsewhere
     uid: 'visio!Visio.DataValidationErrorType.connectorColumnMappedElsewhere:member'
     package: visio!
-    summary: Connector column is already mapped to another setting.
+    summary: Connector column is already mapped to another setting
     value: '"ConnectorColumnMappedElsewhere"'
   - name: connectorLabelColumnMappedElsewhere
     uid: 'visio!Visio.DataValidationErrorType.connectorLabelColumnMappedElsewhere:member'
     package: visio!
-    summary: Connector label column already mapped to other setting.
+    summary: Connector label column already mapped to other setting
     value: '"ConnectorLabelColumnMappedElsewhere"'
   - name: delimiterError
     uid: 'visio!Visio.DataValidationErrorType.delimiterError:member'
@@ -44,7 +44,7 @@ fields:
   - name: none
     uid: 'visio!Visio.DataValidationErrorType.none:member'
     package: visio!
-    summary: No error.
+    summary: No error
     value: '"None"'
   - name: swimlaneColumnError
     uid: 'visio!Visio.DataValidationErrorType.swimlaneColumnError:member'

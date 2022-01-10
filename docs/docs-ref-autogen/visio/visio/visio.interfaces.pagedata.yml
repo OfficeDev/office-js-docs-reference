@@ -9,49 +9,49 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: application
-    uid: 'visio!Visio.Interfaces.PageData#application:member'
+  - name: allShapes
+    uid: 'visio!Visio.Interfaces.PageData#allShapes:member'
     package: visio!
-    fullName: application
+    fullName: allShapes
     summary: |-
-      Returns the instance of Microsoft Visio that is associated with an object. Read-only.
+      All shapes in the Page, including subshapes. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'application?: Visio.Interfaces.ApplicationData;'
+      content: 'allShapes?: Visio.Interfaces.ShapeData[];'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.ApplicationData:interface" />'
-  - name: document
-    uid: 'visio!Visio.Interfaces.PageData#document:member'
+        type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />[]'
+  - name: comments
+    uid: 'visio!Visio.Interfaces.PageData#comments:member'
     package: visio!
-    fullName: document
+    fullName: comments
     summary: |-
-      Gets the document object that is assocaited with the page. Read-only.
+      Returns the Comments Collection. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'document?: Visio.Interfaces.DocumentData;'
+      content: 'comments?: Visio.Interfaces.CommentData[];'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentData:interface" />'
-  - name: id
-    uid: 'visio!Visio.Interfaces.PageData#id:member'
+        type: '<xref uid="visio!Visio.Interfaces.CommentData:interface" />[]'
+  - name: height
+    uid: 'visio!Visio.Interfaces.PageData#height:member'
     package: visio!
-    fullName: id
+    fullName: height
     summary: |-
-      Returns the ID of the page. Read-only
+      Returns the height of the page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'id?: number;'
+      content: 'height?: number;'
       return:
         type: number
   - name: index
@@ -59,7 +59,7 @@ properties:
     package: visio!
     fullName: index
     summary: |-
-      Index of the Page.
+      Index of the Page. Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -69,6 +69,21 @@ properties:
       content: 'index?: number;'
       return:
         type: number
+  - name: isBackground
+    uid: 'visio!Visio.Interfaces.PageData#isBackground:member'
+    package: visio!
+    fullName: isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBackground?: boolean;'
+      return:
+        type: boolean
   - name: name
     uid: 'visio!Visio.Interfaces.PageData#name:member'
     package: visio!
@@ -89,7 +104,7 @@ properties:
     package: visio!
     fullName: shapes
     summary: |-
-      Shapes at root level, in the page. Read-only.
+      All top-level shapes in the Page.Read-only.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
@@ -99,3 +114,33 @@ properties:
       content: 'shapes?: Visio.Interfaces.ShapeData[];'
       return:
         type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />[]'
+  - name: view
+    uid: 'visio!Visio.Interfaces.PageData#view:member'
+    package: visio!
+    fullName: view
+    summary: |-
+      Returns the view of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'view?: Visio.Interfaces.PageViewData;'
+      return:
+        type: '<xref uid="visio!Visio.Interfaces.PageViewData:interface" />'
+  - name: width
+    uid: 'visio!Visio.Interfaces.PageData#width:member'
+    package: visio!
+    fullName: width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

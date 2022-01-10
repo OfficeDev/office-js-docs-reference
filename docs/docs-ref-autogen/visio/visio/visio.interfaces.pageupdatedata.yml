@@ -9,33 +9,18 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: application
-    uid: 'visio!Visio.Interfaces.PageUpdateData#application:member'
+  - name: view
+    uid: 'visio!Visio.Interfaces.PageUpdateData#view:member'
     package: visio!
-    fullName: application
+    fullName: view
     summary: |-
-      Returns the instance of Microsoft Visio that is associated with an object.
+      Returns the view of the page.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
+      content: 'view?: Visio.Interfaces.PageViewUpdateData;'
       return:
-        type: '<xref uid="visio!Visio.Interfaces.ApplicationUpdateData:interface" />'
-  - name: document
-    uid: 'visio!Visio.Interfaces.PageUpdateData#document:member'
-    package: visio!
-    fullName: document
-    summary: |-
-      Gets the document object that is assocaited with the page.
-
-      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'document?: Visio.Interfaces.DocumentUpdateData;'
-      return:
-        type: '<xref uid="visio!Visio.Interfaces.DocumentUpdateData:interface" />'
+        type: '<xref uid="visio!Visio.Interfaces.PageViewUpdateData:interface" />'
