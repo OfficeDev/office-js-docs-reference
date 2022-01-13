@@ -7,6 +7,7 @@ summary: >-
   Provides an option for suppressing an error when the object that is used to set multiple properties tries to set
   read-only properties.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     fullName: throwOnReadOnly
     summary: Throw an error if the passed-in property list includes read-only properties (default = true).
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

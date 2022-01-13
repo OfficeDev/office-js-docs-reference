@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.ListData
 summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

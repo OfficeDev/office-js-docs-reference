@@ -8,6 +8,7 @@ summary: >-
   obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the
   signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,6 +34,7 @@ methods:
 
       **Requirement set**:
       [IdentityAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,6 +90,7 @@ methods:
       });
 
       ```
+    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `Office.auth.getAccessToken` instead.
@@ -133,6 +136,7 @@ methods:
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
       sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
+    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `Office.auth.getAccessToken` instead.

@@ -11,6 +11,7 @@ summary: >-
   [Office.Binding](xref:office!Office.Binding:interface) object. It does not implement any additional properties or
   methods of its own.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

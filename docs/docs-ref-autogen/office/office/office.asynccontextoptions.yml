@@ -5,6 +5,7 @@ package: office!
 fullName: Office.AsyncContextOptions
 summary: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult`
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

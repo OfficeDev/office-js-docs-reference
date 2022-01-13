@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.ApplicationData
 summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one
       notebook at a time is open in the application instance. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

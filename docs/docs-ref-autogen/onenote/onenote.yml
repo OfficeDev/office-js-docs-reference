@@ -162,6 +162,7 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using a new request context. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,6 +185,7 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using the request context of a
       previously-created API object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,6 +214,7 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using the request context of
       previously-created API objects.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

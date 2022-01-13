@@ -5,6 +5,7 @@ package: office!
 fullName: Office.SetBindingDataOptions
 summary: Provides options for how to set the data in a binding.
 remarks: 'If the rows option is used, the value must be "thisRow".'
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +38,7 @@ properties:
       Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
       {borderColor: "white", fontStyle: "bold"}}]`
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,6 +51,7 @@ properties:
     fullName: coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,6 +70,7 @@ properties:
       alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
       business solutions for web and mobile devices.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,6 +90,7 @@ properties:
       alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
       business solutions for web and mobile devices.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +105,7 @@ properties:
       Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted,
       data is set starting in the first column.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,6 +120,7 @@ properties:
       Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings.
       If omitted, data is set starting in the first row.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,6 +135,7 @@ properties:
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
       row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

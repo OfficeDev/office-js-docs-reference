@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
 remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ properties:
     fullName: contentControls
     summary: Gets the collection of content control objects in the range. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,6 +46,7 @@ properties:
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
       Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,6 +59,7 @@ properties:
     fullName: inlinePictures
     summary: Gets the collection of inline picture objects in the range. Read-only.
     remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,6 +77,7 @@ properties:
       **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not
       returned. From requirement set 1.3, paragraphs in such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,6 +92,7 @@ properties:
       Gets the content control that contains the range. Throws an error if there isn't a parent content control.
       Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,6 +107,7 @@ properties:
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,6 +120,7 @@ properties:
     fullName: text
     summary: Gets the text of the range. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,6 +162,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,6 +204,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,6 +250,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,6 +292,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -293,6 +306,7 @@ methods:
     fullName: 'insertBreak(breakType, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,6 +355,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -395,6 +410,7 @@ methods:
       });
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -437,6 +453,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -457,6 +474,7 @@ methods:
     fullName: 'insertFileFromBase64(base64File, insertLocationString)'
     summary: Inserts a document at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -507,6 +525,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -527,6 +546,7 @@ methods:
     fullName: 'insertHtml(html, insertLocationString)'
     summary: Inserts HTML at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -547,6 +567,7 @@ methods:
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     summary: Inserts a picture at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -569,6 +590,7 @@ methods:
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     summary: Inserts a picture at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -622,6 +644,7 @@ methods:
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
       // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -642,6 +665,7 @@ methods:
     fullName: 'insertOoxml(ooxml, insertLocationString)'
     summary: Inserts OOXML at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -690,6 +714,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -710,6 +735,7 @@ methods:
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -760,6 +786,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -780,6 +807,7 @@ methods:
     fullName: 'insertText(text, insertLocationString)'
     summary: Inserts text at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -802,6 +830,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -821,6 +850,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -840,6 +870,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -869,6 +900,7 @@ methods:
       Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
       collection of range objects.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -938,6 +970,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -955,6 +988,7 @@ methods:
     fullName: select(selectionModeString)
     summary: Selects and navigates the Word UI to the range.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -974,6 +1008,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -996,6 +1031,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1018,6 +1054,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1036,6 +1073,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1053,6 +1091,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

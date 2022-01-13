@@ -16,6 +16,7 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,6 +34,7 @@ properties:
       **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,
       web browser).
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,6 +47,7 @@ properties:
     fullName: key
     summary: The identifier for the notification message.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,6 +62,7 @@ properties:
       The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer
       string, an `ArgumentOutOfRange` exception is thrown.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,6 +79,7 @@ properties:
       user navigates to a different item. For error notifications, the message persists until the user sees it once.
       Specifying this parameter for an unsupported type throws an exception.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,6 +102,7 @@ properties:
       If type is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the
       action is complete.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

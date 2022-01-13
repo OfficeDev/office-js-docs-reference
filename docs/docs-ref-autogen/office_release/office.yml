@@ -107,6 +107,8 @@ classes:
   - 'office!OfficeExtension.EventHandlerResult:class'
   - 'office!OfficeExtension.EventHandlers:class'
   - 'office!OfficeExtension.TrackedObjects:class'
+typeAliases:
+  - 'office!OfficeExtension.IPromise:type'
 functions:
   - name: Office.initialize(reason)
     uid: 'office!Office.initialize:function(1)'
@@ -184,6 +186,7 @@ functions:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,6 +203,7 @@ functions:
     package: office!
     summary: Checks if the specified requirement set is supported by the host Office application.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,6 +228,7 @@ functions:
       Office.js determines that it is running outside of an Office host application, it will call the callback and
       resolve the promise with "null" for both the host and platform.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -283,6 +288,7 @@ functions:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -360,6 +366,7 @@ functions:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:

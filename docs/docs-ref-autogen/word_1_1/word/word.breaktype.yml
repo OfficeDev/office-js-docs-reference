@@ -5,6 +5,7 @@ package: word!
 fullName: Word.BreakType
 summary: Specifies the form of a break.
 remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 fields:

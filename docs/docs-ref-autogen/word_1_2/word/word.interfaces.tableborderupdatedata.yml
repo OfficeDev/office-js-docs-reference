@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.TableBorderUpdateData
 summary: 'An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`<!-- -->.'
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -7,6 +7,7 @@ summary: >-
   An interface for updating data on the InkAnalysisParagraph object, for use in `inkAnalysisParagraph.set({ ... })`<!--
   -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     fullName: inkAnalysis
     summary: Reference to the parent InkAnalysisPage.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

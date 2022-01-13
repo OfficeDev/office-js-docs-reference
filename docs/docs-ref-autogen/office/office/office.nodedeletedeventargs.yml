@@ -5,6 +5,7 @@ package: office!
 fullName: Office.NodeDeletedEventArgs
 summary: Provides information about the deleted node that raised the nodeDeleted event.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the node was deleted as part of an Undo/Redo action by the user.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
       Gets the former next sibling of the node that was just deleted from the
       [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,6 +51,7 @@ properties:
       "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
       to exist alone.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

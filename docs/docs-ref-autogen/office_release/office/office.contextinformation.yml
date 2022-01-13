@@ -5,6 +5,7 @@ package: office!
 fullName: Office.ContextInformation
 summary: Provides information about the environment in which the add-in is running.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: host
     summary: Gets the Office application host in which the add-in is running.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +38,7 @@ properties:
     fullName: platform
     summary: Gets the platform on which the add-in is running.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,6 +60,7 @@ properties:
     fullName: version
     summary: Gets the version of Office on which the add-in is running.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

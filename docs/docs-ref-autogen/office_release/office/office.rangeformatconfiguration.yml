@@ -5,6 +5,7 @@ package: office!
 fullName: Office.RangeFormatConfiguration
 summary: Specifies a range and its formatting.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates:
       `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
     fullName: format
     summary: 'Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

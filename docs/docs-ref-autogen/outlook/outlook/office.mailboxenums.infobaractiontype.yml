@@ -7,6 +7,7 @@ summary: >-
   Action types supported by
   [Office.EventType.InfobarClicked](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
 remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 fields:

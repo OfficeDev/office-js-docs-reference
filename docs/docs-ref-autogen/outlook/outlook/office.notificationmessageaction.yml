@@ -64,6 +64,7 @@ remarks: >-
   });
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -74,6 +75,7 @@ properties:
     fullName: actionText
     summary: The text of the action link.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,6 +88,7 @@ properties:
     fullName: actionType
     summary: The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,6 +101,7 @@ properties:
     fullName: commandId
     summary: The button defined in the manifest based on the item type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,6 +119,7 @@ properties:
 
       **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
     remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
+    
     isPreview: true
     isDeprecated: false
     syntax:

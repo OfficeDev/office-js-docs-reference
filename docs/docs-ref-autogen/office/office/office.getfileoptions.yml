@@ -5,6 +5,7 @@ package: office!
 fullName: Office.GetFileOptions
 summary: Provides options for setting the size of slices that the document will be divided into.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
     fullName: sliceSize
     summary: The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

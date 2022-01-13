@@ -7,6 +7,7 @@ summary: >-
   Contains the result for methods that return primitive types. The object's value property is retrieved from the
   document after `context.sync()` is invoked.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,6 +18,7 @@ properties:
     fullName: value
     summary: The value of the result that is retrieved from the document after `context.sync()` is invoked.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,6 +8,7 @@ summary: |-
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,6 +21,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,6 +37,7 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

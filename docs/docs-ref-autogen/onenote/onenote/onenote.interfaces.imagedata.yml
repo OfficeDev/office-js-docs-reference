@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.ImageData
 summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: description
     summary: Gets or sets the description of the Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: height
     summary: Gets or sets the height of the Image layout.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,6 +42,7 @@ properties:
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,6 +55,7 @@ properties:
     fullName: id
     summary: Gets the ID of the Image object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,6 +68,7 @@ properties:
     fullName: ocrData
     summary: 'Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.'
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,6 +81,7 @@ properties:
     fullName: width
     summary: Gets or sets the width of the Image layout.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

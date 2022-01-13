@@ -10,6 +10,7 @@ remarks: >-
   The methods in this interface are equivalent to those in the `Office.AuthOptions` interface. If new authentication
   types are added in the future, they will only be added to the `Office.AuthOptions` interface. For simplicity, the code
   examples throughout the documentation use `Office.AuthOptions`<!-- -->.
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,6 +26,7 @@ properties:
       it fails to silently get an access token. The prompt will only allow consent to the AAD profile scope, not to any
       Microsoft Graph scopes.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +43,7 @@ properties:
       token. If it fails to do so, Office will return a descriptive error. If set to `true`<!-- -->, Office will show an
       interactive sign-in UI after it fails to silently get an access token.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,6 +58,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult`
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,6 +77,7 @@ properties:
       Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used
       with the `authChallenge` option.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,6 +92,7 @@ properties:
       Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is
       `false`<!-- -->.
     remarks: ''
+    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `allowSignInPrompt` instead.
@@ -102,6 +108,7 @@ properties:
       Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or
       if the user's consent has been revoked. Default value is `false`<!-- -->.
     remarks: ''
+    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `allowConsentPrompt` instead.
@@ -120,6 +127,7 @@ properties:
       development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a
       descriptive error) if Graph access will fail.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

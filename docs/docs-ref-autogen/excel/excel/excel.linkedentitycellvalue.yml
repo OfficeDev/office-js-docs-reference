@@ -3,14 +3,11 @@ name: Excel.LinkedEntityCellValue
 uid: 'excel!Excel.LinkedEntityCellValue:interface'
 package: excel!
 fullName: Excel.LinkedEntityCellValue
-summary: >-
-  Represents a value whose properties derive from a service.
-
-
+summary: Represents a value whose properties derive from a service.
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -18,14 +15,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#basicType:member'
     package: excel!
     fullName: basicType
-    summary: >-
-      Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'basicType?: RangeValueType.error | "Error";'
@@ -35,14 +29,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: >-
-      Represents the value that would be returned by `Range.values` for a cell with this value.
-
-
+    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'basicValue?: "#VALUE!";'
@@ -52,14 +43,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#id:member'
     package: excel!
     fullName: id
-    summary: >-
-      Represents the service source that provided the information in this value.
-
-
+    summary: Represents the service source that provided the information in this value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'id: LinkedEntityId;'
@@ -69,14 +57,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#properties:member'
     package: excel!
     fullName: properties
-    summary: >-
-      Represents the properties of this entity and their metadata.
-
-
+    summary: Represents the properties of this entity and their metadata.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: |-
@@ -99,12 +84,10 @@ properties:
     summary: >-
       Represents information that describes the service which provided the image. This information can be used for
       branding in entity cards.
-
-
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'provider?: CellValueProviderAttributes;'
@@ -114,14 +97,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#text:member'
     package: excel!
     fullName: text
-    summary: >-
-      Represents the text shown when a cell with this value is rendered.
-
-
+    summary: Represents the text shown when a cell with this value is rendered.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'text?: string;'
@@ -131,14 +111,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#type:member'
     package: excel!
     fullName: type
-    summary: >-
-      Represents the type of this cell value.
-
-
+    summary: Represents the type of this cell value.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.linkedEntity | "LinkedEntity";'

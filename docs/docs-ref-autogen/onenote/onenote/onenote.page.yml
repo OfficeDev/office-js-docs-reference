@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Page
 summary: Represents a OneNote page.
 remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ properties:
     fullName: classNotebookPageSource
     summary: Gets the ClassNotebookPageSource to the page.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: clientUrl
     summary: The client url of the page. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,6 +42,7 @@ properties:
     fullName: contents
     summary: The collection of PageContent objects on the page. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,6 +57,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,6 +70,7 @@ properties:
     fullName: id
     summary: Gets the ID of the page. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,6 +83,7 @@ properties:
     fullName: inkAnalysisOrNull
     summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,6 +96,7 @@ properties:
     fullName: pageLevel
     summary: Gets or sets the indentation level of the page.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,6 +109,7 @@ properties:
     fullName: parentSection
     summary: Gets the section that contains the page. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,6 +122,7 @@ properties:
     fullName: title
     summary: Gets or sets the title of the page.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,6 +135,7 @@ properties:
     fullName: webUrl
     summary: The web url of the page. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,6 +188,7 @@ methods:
               });
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,6 +215,7 @@ methods:
     fullName: analyzePage()
     summary: Return a json string with node id and content in html format.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,6 +229,7 @@ methods:
     fullName: applyTranslation(translatedContent)
     summary: Inserts a new page with translated content.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,6 +287,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -290,6 +305,7 @@ methods:
     fullName: copyToSectionAndSetClassNotebookPageSource(destinationSection)
     summary: Copies this page to specified section and sets ClassNotebookPageSource.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,6 +344,7 @@ methods:
               });
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,6 +358,7 @@ methods:
     fullName: hasTitleContent()
     summary: Does the page has content title.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -354,6 +372,7 @@ methods:
     fullName: 'insertPageAsSibling(location, title)'
     summary: Inserts a new page before or after the current page.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -403,6 +422,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -425,6 +445,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,6 +465,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -554,6 +576,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -583,6 +606,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -605,6 +629,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -627,6 +652,7 @@ methods:
       JavaScript object (typed as `OneNote.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -645,6 +671,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -662,6 +689,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

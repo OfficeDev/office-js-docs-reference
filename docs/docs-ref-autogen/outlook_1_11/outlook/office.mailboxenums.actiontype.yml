@@ -5,6 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.ActionType
 summary: Specifies the type of custom action in a notification message.
 remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 fields:

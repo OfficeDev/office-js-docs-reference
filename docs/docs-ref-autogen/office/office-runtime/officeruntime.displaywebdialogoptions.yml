@@ -5,6 +5,7 @@ package: office-runtime!
 fullName: OfficeRuntime.DisplayWebDialogOptions
 summary: Provides display options and actions a dialog box may take.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,6 +21,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,6 +39,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,6 +55,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,6 +71,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,6 +87,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +105,7 @@ properties:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

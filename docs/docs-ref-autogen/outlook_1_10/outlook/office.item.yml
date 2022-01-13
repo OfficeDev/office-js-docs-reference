@@ -35,6 +35,7 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Appointment Organizer, Appointment Attendee, Message Compose, Message Read
+
 isPreview: false
 isDeprecated: false
 type: interface

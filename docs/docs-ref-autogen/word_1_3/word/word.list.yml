@@ -5,6 +5,7 @@ package: word!
 fullName: Word.List
 summary: 'Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.'
 remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -17,6 +18,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
     fullName: id
     summary: Gets the list's id.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,6 +46,7 @@ properties:
       Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
       is at least one list item at that level. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,6 +59,7 @@ properties:
     fullName: levelTypes
     summary: 'Gets all 9 level types in the list. Each type can be ''Bullet'', ''Number'', or ''Picture''. Read-only.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,6 +72,7 @@ properties:
     fullName: paragraphs
     summary: Gets paragraphs in the list. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,6 +86,7 @@ methods:
     fullName: getLevelParagraphs(level)
     summary: Gets the paragraphs that occur at the specified level in the list.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,6 +104,7 @@ methods:
     fullName: getLevelString(level)
     summary: 'Gets the bullet, number, or picture at the specified level as a string.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,6 +122,7 @@ methods:
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,6 +143,7 @@ methods:
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,6 +168,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,6 +188,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,6 +208,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,6 +236,7 @@ methods:
     fullName: 'setLevelAlignment(level, alignment)'
     summary: 'Sets the alignment of the bullet, number, or picture at the specified level in the list.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,6 +257,7 @@ methods:
     fullName: 'setLevelAlignment(level, alignmentString)'
     summary: 'Sets the alignment of the bullet, number, or picture at the specified level in the list.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -265,6 +280,7 @@ methods:
     fullName: 'setLevelBullet(level, listBullet, charCode, fontName)'
     summary: 'Sets the bullet format at the specified level in the list. If the bullet is ''Custom'', the charCode is required.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -291,6 +307,7 @@ methods:
     fullName: 'setLevelBullet(level, listBulletString, charCode, fontName)'
     summary: 'Sets the bullet format at the specified level in the list. If the bullet is ''Custom'', the charCode is required.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -319,6 +336,7 @@ methods:
     fullName: 'setLevelIndents(level, textIndent, bulletNumberPictureIndent)'
     summary: Sets the two indents of the specified level in the list.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -344,6 +362,7 @@ methods:
     fullName: 'setLevelNumbering(level, listNumbering, formatString)'
     summary: Sets the numbering format at the specified level in the list.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,6 +392,7 @@ methods:
     fullName: 'setLevelNumbering(level, listNumberingString, formatString)'
     summary: Sets the numbering format at the specified level in the list.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -402,6 +422,7 @@ methods:
     fullName: 'setLevelStartingNumber(level, startingNumber)'
     summary: Sets the starting number at the specified level in the list. Default value is 1.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -427,6 +448,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.ListData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -445,6 +467,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -462,6 +485,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

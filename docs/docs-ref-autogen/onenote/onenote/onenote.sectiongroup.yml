@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.SectionGroup
 summary: Represents a OneNote section group. Section groups can contain sections and other section groups.
 remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ properties:
     fullName: clientUrl
     summary: The client url of the section group. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +44,7 @@ properties:
     fullName: id
     summary: Gets the ID of the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,6 +57,7 @@ properties:
     fullName: name
     summary: Gets the name of the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,6 +70,7 @@ properties:
     fullName: notebook
     summary: Gets the notebook that contains the section group. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,6 +85,7 @@ properties:
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
       of the notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,6 +100,7 @@ properties:
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
       notebook. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,6 +113,7 @@ properties:
     fullName: sectionGroups
     summary: The collection of section groups in the section group. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,6 +126,7 @@ properties:
     fullName: sections
     summary: The collection of sections in the section group. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,6 +174,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,6 +233,7 @@ methods:
           }
       }); 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,6 +251,7 @@ methods:
     fullName: getRestApiId()
     summary: Gets the REST API ID.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,6 +267,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,6 +287,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,6 +425,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -442,6 +458,7 @@ methods:
       plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -460,6 +477,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -477,6 +495,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

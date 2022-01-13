@@ -5,6 +5,7 @@ package: office!
 fullName: Office.RibbonUpdaterData
 summary: 'Specifies changes to the ribbon, such as the enabled or disabled status of a button.'
 remarks: '**Requirement set**: Ribbon 1.1'
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: tabs
     summary: Collection of tabs whose state is set with the call of `requestUpdate`<!-- -->.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

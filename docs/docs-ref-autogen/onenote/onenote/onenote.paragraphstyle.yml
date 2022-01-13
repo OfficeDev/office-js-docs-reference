@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.ParagraphStyle
 summary: ''
 remarks: '\[ [API set: OneNoteApi 1.8](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 fields:

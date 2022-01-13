@@ -5,6 +5,7 @@ package: office!
 fullName: OfficeExtension.EventHandlerResult
 summary: ''
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ constructors:
     fullName: '(constructor)(context, handlers, handler)'
     summary: Constructs a new instance of the `EventHandlerResult` class
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +38,7 @@ properties:
     fullName: context
     summary: The request context associated with the object
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,6 +52,7 @@ methods:
     fullName: remove()
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

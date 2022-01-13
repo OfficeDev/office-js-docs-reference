@@ -5,6 +5,7 @@ package: office!
 fullName: Office.CustomXMLNodeType
 summary: Specifies the type of the XML node.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 fields:

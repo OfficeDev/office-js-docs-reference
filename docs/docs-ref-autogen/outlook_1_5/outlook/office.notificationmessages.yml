@@ -16,6 +16,7 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -114,6 +115,7 @@ methods:
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,6 +168,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -238,6 +241,7 @@ methods:
       Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,6 +282,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,6 +331,7 @@ methods:
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,6 +372,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -437,6 +444,7 @@ methods:
         },
         handleResult);
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -485,6 +493,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+    
     isPreview: false
     isDeprecated: false
     syntax:

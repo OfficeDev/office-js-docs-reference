@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.SectionData
 summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: clientUrl
     summary: The client url of the section. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: id
     summary: Gets the ID of the section. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,6 +42,7 @@ properties:
     fullName: isEncrypted
     summary: True if this section is encrypted with a password. Read only
     remarks: '\[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,6 +55,7 @@ properties:
     fullName: isLocked
     summary: True if this section is locked. Read only
     remarks: '\[ [API set: OneNoteApi 1.2](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,6 +68,7 @@ properties:
     fullName: name
     summary: Gets the name of the section. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,6 +81,7 @@ properties:
     fullName: pages
     summary: The collection of pages in the section. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,6 +94,7 @@ properties:
     fullName: webUrl
     summary: The web url of the page. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

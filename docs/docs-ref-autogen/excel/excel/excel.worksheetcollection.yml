@@ -666,7 +666,10 @@ events:
     uid: 'excel!Excel.WorksheetCollection#onMoved:member'
     package: excel!
     fullName: onMoved
-    summary: Occurs when a worksheet is moved by a user within a workbook.
+    summary: >-
+      Occurs when a worksheet is moved within a workbook. This event only triggers when a worksheet is directly moved
+      within a workbook. This event doesn't trigger when the position of a worksheet is indirectly changed, such as when
+      a new worksheet is inserted and causes existing worksheets to change positions.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

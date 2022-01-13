@@ -13,6 +13,7 @@ remarks: >-
 
 
   Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,6 +31,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,6 +56,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,6 +79,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,6 +98,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,6 +121,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,6 +144,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,6 +170,7 @@ methods:
 
       **Important**: In Outlook, support is only available with [event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+    
     isPreview: false
     isDeprecated: false
     syntax:

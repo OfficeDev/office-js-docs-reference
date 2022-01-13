@@ -25,6 +25,7 @@ summary: >-
   the web, and more than one user is editing the spreadsheet (coauthoring). Therefore, effectively the settingsChanged
   event is supported only in Excel on the web in coauthoring scenarios.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -37,6 +38,7 @@ properties:
       Gets an [Office.Settings](xref:office!Office.Settings:interface) object that represents the settings that raised
       the settingsChanged event.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,6 +53,7 @@ properties:
       Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
       that was raised.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

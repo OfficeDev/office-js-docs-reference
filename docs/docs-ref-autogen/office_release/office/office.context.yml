@@ -7,6 +7,7 @@ summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
   exists as a property of Office. It is accessed using `Office.context`<!-- -->.
 remarks: '**Hosts**: Excel, Outlook, PowerPoint, Project, Word'
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,6 +28,7 @@ properties:
       Office Add-ins running in Office on the Windows desktop or in the browser do allow such links. If you want the UI
       of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
       commerceAllowed property to control when that link is displayed.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,6 +89,7 @@ properties:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +102,7 @@ properties:
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,6 +180,7 @@ properties:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,6 +193,7 @@ properties:
     fullName: document
     summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,6 +230,7 @@ properties:
       **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets,
       you can use the `Office.context.diagnostics` property to get the host.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,6 +243,7 @@ properties:
     fullName: license
     summary: Gets the license information for the user's Office installation.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,6 +288,7 @@ properties:
       var item = Office.context.mailbox.item;
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,6 +301,7 @@ properties:
     fullName: officeTheme
     summary: Provides access to the properties for Office theme colors.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,6 +336,7 @@ properties:
       **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets,
       you can use the `Office.context.diagnostics` property to get the platform.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -338,6 +349,7 @@ properties:
     fullName: requirements
     summary: Provides a method for determining what requirement sets are supported on the current host and platform.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -383,6 +395,7 @@ properties:
       Office.context.roamingSettings.saveAsync();
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -405,6 +418,7 @@ properties:
 
       Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
       the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -417,6 +431,7 @@ properties:
     fullName: ui
     summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

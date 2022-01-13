@@ -5,6 +5,7 @@ package: office!
 fullName: OfficeExtension.ErrorCodes
 summary: ''
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ properties:
     fullName: accessDenied
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: activityLimitReached
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,6 +42,7 @@ properties:
     fullName: apiNotFound
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,6 +55,7 @@ properties:
     fullName: cannotRegisterEvent
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,6 +68,7 @@ properties:
     fullName: connectionFailure
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,6 +81,7 @@ properties:
     fullName: generalException
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,6 +94,7 @@ properties:
     fullName: invalidArgument
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +107,7 @@ properties:
     fullName: invalidObjectPath
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,6 +120,7 @@ properties:
     fullName: invalidRequestContext
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,6 +133,7 @@ properties:
     fullName: propertyNotLoaded
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,6 +146,7 @@ properties:
     fullName: runMustReturnPromise
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,6 +159,7 @@ properties:
     fullName: valueNotLoaded
     summary: ''
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

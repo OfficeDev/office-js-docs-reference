@@ -7,6 +7,7 @@ summary: 'Provides options for how to send messages, in either direction, betwee
 remarks: >-
   **Requirement set**: [DialogOrigin
   1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets)
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,6 +20,7 @@ properties:
       Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent.
       For example, `https://resources.contoso.com`<!-- -->.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Table
 summary: Represents a table in a OneNote page.
 remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,6 +16,7 @@ properties:
     fullName: borderVisible
     summary: 'Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.'
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: columnCount
     summary: Gets the number of columns in the table.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,6 +44,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,6 +57,7 @@ properties:
     fullName: id
     summary: Gets the ID of the table. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,6 +70,7 @@ properties:
     fullName: paragraph
     summary: Gets the Paragraph object that contains the Table object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,6 +83,7 @@ properties:
     fullName: rowCount
     summary: Gets the number of rows in the table.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,6 +96,7 @@ properties:
     fullName: rows
     summary: Gets all of the table rows. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,6 +146,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,6 +200,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,6 +220,7 @@ methods:
     fullName: clear()
     summary: Clears the contents of the table.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,6 +268,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,6 +325,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -371,6 +384,7 @@ methods:
           }
       });
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -395,6 +409,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -414,6 +429,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -511,6 +527,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -540,6 +557,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -562,6 +580,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -579,6 +598,7 @@ methods:
     fullName: setShadingColor(colorCode)
     summary: Sets the shading color of all cells in the table. The color code to set the cells to.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -601,6 +621,7 @@ methods:
       JavaScript object (typed as `OneNote.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -619,6 +640,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -636,6 +658,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -65,6 +65,11 @@ fields:
     package: excel!
     summary: Represents a `NumErrorCellValue`<!-- -->.
     value: '"Num"'
+  - name: placeholder
+    uid: 'excel!Excel.ErrorCellValueType.placeholder:member'
+    package: excel!
+    summary: Represents a `PlaceholderErrorCellValue`<!-- -->.
+    value: '"Placeholder"'
   - name: ref
     uid: 'excel!Excel.ErrorCellValueType.ref:member'
     package: excel!

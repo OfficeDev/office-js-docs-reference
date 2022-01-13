@@ -5,6 +5,7 @@ package: office!
 fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: associate
     summary: Associates the ID of an action with a function.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

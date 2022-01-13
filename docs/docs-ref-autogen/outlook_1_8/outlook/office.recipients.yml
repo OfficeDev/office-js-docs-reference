@@ -16,6 +16,7 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -101,6 +102,7 @@ methods:
       });
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,6 +178,7 @@ methods:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,6 +234,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,6 +403,7 @@ methods:
       });
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -455,6 +460,7 @@ methods:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -653,6 +659,7 @@ methods:
       });
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:

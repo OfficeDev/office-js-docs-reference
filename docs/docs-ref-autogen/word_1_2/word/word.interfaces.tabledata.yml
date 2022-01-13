@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.TableData
 summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,6 +5,7 @@ package: office!
 fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: associate
     summary: Associates the ID of an action with a function.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,6 +32,7 @@ methods:
       Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the
       host Office application.
     remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -58,6 +61,7 @@ methods:
       add-ins](https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins)<!--
       -->.
     remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,6 +78,7 @@ methods:
     fullName: replaceShortcuts(shortcuts)
     summary: Replaces existing add-in shortcuts with custom shortcuts for the user.
     remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    
     isPreview: true
     isDeprecated: false
     syntax:

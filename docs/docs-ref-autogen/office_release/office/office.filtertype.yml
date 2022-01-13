@@ -5,6 +5,7 @@ package: office!
 fullName: Office.FilterType
 summary: Specifies whether filtering from the host application is applied when the data is retrieved.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 fields:

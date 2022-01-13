@@ -988,6 +988,7 @@ interfaces:
   - 'excel!Excel.PivotLabelFilter:interface'
   - 'excel!Excel.PivotManualFilter:interface'
   - 'excel!Excel.PivotValueFilter:interface'
+  - 'excel!Excel.PlaceholderErrorCellValue:interface'
   - 'excel!Excel.RangeHyperlink:interface'
   - 'excel!Excel.RangeReference:interface'
   - 'excel!Excel.RefErrorCellValue:interface'

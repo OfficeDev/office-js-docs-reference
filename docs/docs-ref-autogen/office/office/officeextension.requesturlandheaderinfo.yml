@@ -5,6 +5,7 @@ package: office!
 fullName: OfficeExtension.RequestUrlAndHeaderInfo
 summary: Request URL and headers
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: headers
     summary: Request headers
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,6 +35,7 @@ properties:
     fullName: url
     summary: Request URL
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

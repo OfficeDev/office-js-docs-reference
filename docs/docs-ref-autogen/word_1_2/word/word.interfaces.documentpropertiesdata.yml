@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.DocumentPropertiesData
 summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,6 +5,7 @@ package: office-runtime!
 fullName: OfficeRuntime.Dialog
 summary: Object representing the dialog box.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,6 +19,7 @@ methods:
 
       \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

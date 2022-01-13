@@ -10,6 +10,7 @@ summary: >-
   To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the
   [Office.UI](xref:office!Office.UI:interface) object.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,6 +21,7 @@ properties:
     fullName: message
     summary: 'Gets the content of the message sent from the parent page, which can be any string or stringified data.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,6 +37,7 @@ properties:
       **Requirement set**: [DialogOrigin
       1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets)<!--
       -->. The property is `undefined` on clients that do not support this requirement set.
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -49,6 +52,7 @@ properties:
       Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
       that was raised.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -39,6 +39,7 @@ remarks: >-
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -49,6 +50,7 @@ properties:
     fullName: addresses
     summary: Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,6 +72,7 @@ properties:
     fullName: contacts
     summary: Gets the contacts found in an email address or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,6 +94,7 @@ properties:
     fullName: emailAddresses
     summary: Gets the email addresses found in an email message or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,6 +116,7 @@ properties:
     fullName: meetingSuggestions
     summary: Gets the meeting suggestions found in an email message.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,6 +138,7 @@ properties:
     fullName: phoneNumbers
     summary: Gets the phone numbers found in an email message or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,6 +160,7 @@ properties:
     fullName: taskSuggestions
     summary: Gets the task suggestions found in an email message or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -175,6 +182,7 @@ properties:
     fullName: urls
     summary: Gets the Internet URLs present in an email message or appointment.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

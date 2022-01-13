@@ -5,6 +5,7 @@ package: office!
 fullName: Office.NodeInsertedEventArgs
 summary: Provides information about the inserted node that raised the nodeInserted event.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,6 +32,7 @@ properties:
 
       Note that this node may have children, if a subtree was just added to the document.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

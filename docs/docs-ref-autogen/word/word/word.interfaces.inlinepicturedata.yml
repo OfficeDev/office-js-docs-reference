@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.InlinePictureData
 summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: altTextDescription
     summary: Gets or sets a string that represents the alternative text associated with the inline image.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,6 +29,7 @@ properties:
     fullName: altTextTitle
     summary: Gets or sets a string that contains the title for the inline image.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -39,6 +42,7 @@ properties:
     fullName: height
     summary: Gets or sets a number that describes the height of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,6 +55,7 @@ properties:
     fullName: hyperlink
     summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,6 +70,7 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -81,6 +87,7 @@ properties:
     fullName: lockAspectRatio
     summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,6 +100,7 @@ properties:
     fullName: width
     summary: Gets or sets a number that describes the width of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

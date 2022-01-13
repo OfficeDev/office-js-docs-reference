@@ -70,6 +70,7 @@ remarks: >-
   */
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -80,6 +81,7 @@ properties:
     fullName: addresses
     summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,6 +94,7 @@ properties:
     fullName: businessName
     summary: A string containing the name of the business associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,6 +107,7 @@ properties:
     fullName: emailAddresses
     summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,6 +120,7 @@ properties:
     fullName: personName
     summary: A string containing the name of the person associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,6 +133,7 @@ properties:
     fullName: phoneNumbers
     summary: An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -140,6 +146,7 @@ properties:
     fullName: urls
     summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

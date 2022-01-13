@@ -8,6 +8,7 @@ summary: |-
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,6 +21,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,6 +34,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,6 +51,7 @@ methods:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,6 +86,7 @@ methods:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,6 +106,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,6 +130,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,6 +150,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,6 +170,7 @@ methods:
     fullName: setMockData(data)
     summary: Set mock data
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,6 +193,7 @@ methods:
       plain JavaScript object (typed as `Visio.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

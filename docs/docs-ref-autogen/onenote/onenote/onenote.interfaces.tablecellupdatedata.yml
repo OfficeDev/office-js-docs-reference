@@ -5,6 +5,7 @@ package: onenote!
 fullName: OneNote.Interfaces.TableCellUpdateData
 summary: 'An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`<!-- -->.'
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: shadingColor
     summary: Gets and sets the shading color of the cell
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:

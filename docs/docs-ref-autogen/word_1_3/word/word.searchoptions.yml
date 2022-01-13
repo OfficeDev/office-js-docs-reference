@@ -10,6 +10,7 @@ summary: >-
   To learn more about how to use search options in the Word JavaScript APIs, read [Use search options to find text in
   your Word add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
 remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,6 +23,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +38,7 @@ properties:
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
       Ignore punctuation check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,6 +53,7 @@ properties:
       Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
       whitespace characters check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,6 +68,7 @@ properties:
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
       check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,6 +83,7 @@ properties:
       Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
       Match prefix check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,6 +98,7 @@ properties:
       Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
       Match suffix check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,6 +113,7 @@ properties:
       Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,6 +128,7 @@ properties:
       Gets or sets a value that indicates whether the search will be performed using special search operators.
       Corresponds to the Use wildcards check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,6 +144,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -299,6 +309,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,6 +329,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,6 +357,7 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of Word.SearchOptions object
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -364,6 +377,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,6 +400,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -408,6 +423,7 @@ methods:
       plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.SettingUpdateData
 summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    
     isPreview: true
     isDeprecated: false
     syntax:

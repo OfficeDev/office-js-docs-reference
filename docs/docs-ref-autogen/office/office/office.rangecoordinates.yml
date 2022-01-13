@@ -7,6 +7,7 @@ summary: >-
   Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}`
   specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     fullName: column
     summary: 'The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,6 +31,7 @@ properties:
     fullName: row
     summary: 'The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.'
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

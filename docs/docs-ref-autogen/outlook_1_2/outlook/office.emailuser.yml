@@ -77,6 +77,7 @@ remarks: >-
   }
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -87,6 +88,7 @@ properties:
     fullName: displayName
     summary: Gets the display name associated with an email address.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,6 +101,7 @@ properties:
     fullName: emailAddress
     summary: Gets the SMTP email address.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

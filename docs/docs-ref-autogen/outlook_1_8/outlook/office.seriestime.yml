@@ -18,6 +18,7 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -58,6 +59,7 @@ methods:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,6 +105,7 @@ methods:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,6 +152,7 @@ methods:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,6 +198,7 @@ methods:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,6 +242,7 @@ methods:
       seriesTimeObject.setDuration(120);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,6 +290,7 @@ methods:
       }
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -328,6 +335,7 @@ methods:
       seriesTimeObject.setEndDate(2017, 10, 2);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -382,6 +390,7 @@ methods:
       seriesTimeObject.setEndDate("2017-11-02");
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,6 +437,7 @@ methods:
       seriesTimeObject.setStartDate(2017, 10, 2);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -482,6 +492,7 @@ methods:
       seriesTimeObject.setStartDate("2017-11-02");
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -537,6 +548,7 @@ methods:
       seriesTimeObject.setStartTime(11, 30);
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -586,6 +598,7 @@ methods:
       seriesTimeObject.setStartTime("T23:30:00");
 
       ```
+    
     isPreview: false
     isDeprecated: false
     syntax:

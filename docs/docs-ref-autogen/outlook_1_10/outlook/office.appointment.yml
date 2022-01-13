@@ -21,6 +21,7 @@ summary: >-
 
   - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

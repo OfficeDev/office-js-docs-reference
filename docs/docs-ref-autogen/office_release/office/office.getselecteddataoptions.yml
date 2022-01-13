@@ -5,6 +5,7 @@ package: office!
 fullName: Office.GetSelectedDataOptions
 summary: Provides options for customizing what data is returned and how it is formatted.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,6 +34,7 @@ properties:
       Use [Office.FilterType](xref:office!Office.FilterType:enum) or string equivalent. This parameter is ignored in
       Word documents.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,6 +47,7 @@ properties:
     fullName: valueFormat
     summary: Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

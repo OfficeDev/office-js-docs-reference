@@ -5,6 +5,7 @@ package: office!
 fullName: Office.SetSelectedDataOptions
 summary: Provides options for how to insert data to the selection.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +38,7 @@ properties:
       Example: `[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4}, format:
       {borderColor: "white", fontStyle: "bold"}}]`
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,6 +51,7 @@ properties:
     fullName: coercionType
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,6 +68,7 @@ properties:
       provided, the image will be resized accordingly. If neither the image height or width is provided, the default
       image size and aspect ratio will be used. This value is in points.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,6 +84,7 @@ properties:
       slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word.
       This value is in points.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,6 +100,7 @@ properties:
       for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This
       value is in points.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,6 +117,7 @@ properties:
       provided, the image will be resized accordingly. If neither the image height or width is provided, the default
       image size and aspect ratio will be used. This value is in points.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,6 +132,7 @@ properties:
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
       row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:

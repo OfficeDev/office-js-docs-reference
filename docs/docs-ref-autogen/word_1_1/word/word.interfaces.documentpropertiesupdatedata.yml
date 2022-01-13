@@ -5,6 +5,7 @@ package: word!
 fullName: Word.Interfaces.DocumentPropertiesUpdateData
 summary: 'An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!-- -->.'
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,6 +5,7 @@ package: office!
 fullName: Office.InitializationReason
 summary: Specifies whether the add-in was just inserted or was already contained in the document.
 remarks: ''
+
 isPreview: false
 isDeprecated: false
 fields:

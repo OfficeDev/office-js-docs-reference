@@ -37,6 +37,7 @@ remarks: >-
   }
 
   ```
+
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,6 +48,7 @@ properties:
     fullName: displayName
     summary: The location's display name.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,6 +61,7 @@ properties:
     fullName: emailAddress
     summary: The email address associated with the location.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -71,6 +74,7 @@ properties:
     fullName: locationIdentifier
     summary: The `LocationIdentifier` of the location.
     remarks: ''
+    
     isPreview: false
     isDeprecated: false
     syntax:
