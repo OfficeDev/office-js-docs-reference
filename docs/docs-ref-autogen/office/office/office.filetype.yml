@@ -5,7 +5,6 @@ package: office!
 fullName: Office.FileType
 summary: Specifies the format in which to return the document.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

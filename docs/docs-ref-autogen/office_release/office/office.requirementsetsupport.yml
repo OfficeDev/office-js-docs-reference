@@ -5,7 +5,6 @@ package: office!
 fullName: Office.RequirementSetSupport
 summary: Provides information about which Requirement Sets are supported in the current environment.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ methods:
     fullName: 'isSetSupported(name, minVersion)'
     summary: Check if the specified requirement set is supported by the host Office application.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +40,6 @@ methods:
       **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the
       string overload of `isSetSupported` instead.
     remarks: ''
-    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use the string overload of `isSetSupported` instead.

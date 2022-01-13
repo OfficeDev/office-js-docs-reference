@@ -21,7 +21,6 @@ summary: >-
 
   - [MessageCompose](xref:outlook!Office.MessageCompose:interface)
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface

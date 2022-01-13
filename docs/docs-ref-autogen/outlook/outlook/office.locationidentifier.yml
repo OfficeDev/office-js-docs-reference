@@ -31,7 +31,6 @@ remarks: >-
   ];
 
   ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,7 +46,6 @@ properties:
 
       For `Custom` type, it's the `displayName`<!-- -->.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +58,6 @@ properties:
     fullName: type
     summary: The location's type.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

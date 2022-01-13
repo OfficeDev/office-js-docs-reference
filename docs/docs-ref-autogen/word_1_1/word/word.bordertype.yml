@@ -5,7 +5,6 @@ package: word!
 fullName: Word.BorderType
 summary: ''
 remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 fields:

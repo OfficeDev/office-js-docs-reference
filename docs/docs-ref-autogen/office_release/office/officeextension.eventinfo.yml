@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.EventInfo
 summary: ''
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: eventArgsTransformFunc
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: registerFunc
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: unregisterFunc
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -56,7 +56,6 @@ remarks: >-
   }
 
   ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -67,7 +66,6 @@ properties:
     fullName: name
     summary: Represents the name of the recurrence time zone.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,7 +80,6 @@ properties:
       Integer value representing the difference in minutes between the local time zone and UTC at the date that the
       meeting series began.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

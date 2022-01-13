@@ -21,7 +21,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -32,7 +31,6 @@ properties:
     fullName: delegatePermissions
     summary: 'The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +43,6 @@ properties:
     fullName: owner
     summary: The email address of the owner of a shared item.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +63,6 @@ properties:
 
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +80,6 @@ properties:
 
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

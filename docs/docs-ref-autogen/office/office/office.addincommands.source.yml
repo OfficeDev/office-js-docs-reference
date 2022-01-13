@@ -5,7 +5,6 @@ package: office!
 fullName: Office.AddinCommands.Source
 summary: Encapsulates source data for add-in events.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: id
     summary: The ID of the control that triggered calling this function. The ID comes from the manifest.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

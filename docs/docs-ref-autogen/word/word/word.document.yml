@@ -7,7 +7,6 @@ summary: >-
   The Document object is the top level object. A Document object contains one or more sections, content controls, and
   the body that contains the contents of the document.
 remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
       textboxes, etc. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,7 +47,6 @@ properties:
       Gets the collection of content control objects in the document. This includes content controls in the body of the
       document, headers, footers, textboxes, etc. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +61,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +75,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -113,7 +107,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +121,6 @@ properties:
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +133,6 @@ properties:
     fullName: sections
     summary: Gets the collection of section objects in the document. Read-only.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +147,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -172,7 +162,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -192,7 +181,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -212,7 +200,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -232,7 +219,6 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -248,7 +234,6 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -295,7 +280,6 @@ methods:
           }
       });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -311,7 +295,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,7 +349,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -386,7 +368,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -453,7 +434,6 @@ methods:
           }
       });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -471,7 +451,6 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -512,7 +491,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -535,7 +513,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,7 +535,6 @@ methods:
       JavaScript object (typed as `Word.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -577,7 +553,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -595,7 +570,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -614,7 +588,6 @@ events:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: outlook!
 fullName: Office.MailboxEnums.OWAView
 summary: Represents the current view of Outlook on the web.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

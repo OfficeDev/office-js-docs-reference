@@ -40,7 +40,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -78,7 +77,6 @@ methods:
       console.log(`The value of setting "${settingName}" is "${settingValue}".`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +102,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +155,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -218,7 +214,6 @@ methods:
       console.log(`Setting "${settingName}" set to value "${settingValue}".`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

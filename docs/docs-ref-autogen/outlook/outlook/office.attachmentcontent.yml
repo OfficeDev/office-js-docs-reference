@@ -16,7 +16,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,7 +26,6 @@ properties:
     fullName: content
     summary: The content of an attachment as a string.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +55,6 @@ properties:
 
       For cloud attachments, the formatting is a URL string.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

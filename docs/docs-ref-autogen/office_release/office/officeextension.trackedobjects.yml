@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.TrackedObjects
 summary: 'Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -26,7 +25,6 @@ methods:
 
       `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +46,6 @@ methods:
       ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you
       needed to have added the object to the tracked object collection when the object was first created.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +72,6 @@ methods:
 
       `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +92,6 @@ methods:
       objects slows down the host application, so please remember to free any objects you add, once you're done using
       them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -7,7 +7,6 @@ summary: >-
   An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run` and
   `Word.run` methods provide a request context.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `ClientRequestContext` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ properties:
     fullName: debugInfo
     summary: Debug information
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +44,6 @@ properties:
     fullName: requestHeaders
     summary: Request headers
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +56,6 @@ properties:
     fullName: trackedObjects
     summary: Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +71,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +96,6 @@ methods:
 
       You must call `context.sync()` before reading the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +126,6 @@ methods:
       on the request context and retrieving properties of loaded Office objects for use in your code. This method
       returns a promise, which is resolved when the synchronization is complete.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,7 +146,6 @@ methods:
       adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were
       executed. These messages can help you monitor the program execution sequence and detect the cause of the error.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

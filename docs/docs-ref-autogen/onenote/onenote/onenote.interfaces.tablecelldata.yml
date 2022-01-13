@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.Interfaces.TableCellData
 summary: An interface describing the data returned by calling `tableCell.toJSON()`<!-- -->.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: cellIndex
     summary: Gets the index of the cell in its row. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: id
     summary: Gets the ID of the cell. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the TableCell. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: rowIndex
     summary: Gets the index of the cell's row in the table. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +63,6 @@ properties:
     fullName: shadingColor
     summary: Gets and sets the shading color of the cell
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

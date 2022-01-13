@@ -7,7 +7,6 @@ summary: >-
   Specifies whether to select (highlight) the location to navigate to (when using the
   [Document](xref:office!Office.Document:interface)<!-- -->.goToByIdAsync method).
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

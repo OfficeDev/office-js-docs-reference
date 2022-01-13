@@ -9,7 +9,6 @@ summary: >-
 remarks: >-
   The [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync method returns the ProjectViewTypes
   constant value and name that corresponds to the active view.
-
 isPreview: false
 isDeprecated: false
 fields:

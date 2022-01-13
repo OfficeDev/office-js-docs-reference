@@ -5,7 +5,6 @@ package: office!
 fullName: Office.SaveSettingsOptions
 summary: Provides options for saving settings.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       **Warning**: This setting has been deprecated and should not be used. It has no effect on most platforms and will
       cause errors if set to `false` in Excel on the web.
     remarks: ''
-    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: '`overwriteIfStale` is no longer supported.'

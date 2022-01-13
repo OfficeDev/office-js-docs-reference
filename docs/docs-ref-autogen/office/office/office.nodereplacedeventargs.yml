@@ -5,7 +5,6 @@ package: office!
 fullName: Office.NodeReplacedEventArgs
 summary: Provides information about the replaced node that raised the nodeReplaced event.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: isUndoRedo
     summary: Gets whether the replaced node was inserted as part of an undo or redo operation by the user.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +30,6 @@ properties:
 
       Note that this node may have children, if a subtree was just added to the document.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,7 +48,6 @@ properties:
       "disconnected" node in that you can query down from the node, but you cannot query up the tree - the node appears
       to exist alone.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

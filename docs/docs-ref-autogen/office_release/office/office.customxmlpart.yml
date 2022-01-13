@@ -7,7 +7,6 @@ summary: >-
   Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
   collection.
 remarks: '**Hosts**: Word'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     fullName: builtIn
     summary: 'True, if the custom XML part is built in; otherwise false.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +48,6 @@ properties:
     fullName: id
     summary: Gets the GUID of the CustomXMLPart.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +81,6 @@ properties:
       ([Office.CustomXmlPrefixMappings](xref:office!Office.CustomXmlPrefixMappings:interface)<!-- -->) used against the
       current CustomXmlPart.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +114,6 @@ methods:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -232,7 +227,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,7 +263,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,7 +311,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,7 +332,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -401,7 +392,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -430,7 +420,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -480,7 +469,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -503,7 +491,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -556,7 +543,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Office.BindingType
 summary: Specifies the type of the binding object that should be returned.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

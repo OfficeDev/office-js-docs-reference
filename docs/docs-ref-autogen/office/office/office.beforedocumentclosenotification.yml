@@ -28,7 +28,6 @@ remarks: |-
       });
   });    
   ```
-
 isPreview: true
 isDeprecated: false
 type: interface
@@ -39,7 +38,6 @@ methods:
     fullName: disable()
     summary: Prevents the notification dialog from appearing when the user attempts to close a document.
     remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -56,7 +54,6 @@ methods:
       close until the user responds. This notification dialog asks the user to confirm the request to close the
       document, or allows the user to cancel the request to close the document.
     remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -75,7 +72,6 @@ methods:
       corner of the dialog, or presses the Esc key. 2. When the add-in calls the `enable` method on the
       `BeforeDocumentCloseNotification` object.
     remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
-    
     isPreview: true
     isDeprecated: false
     syntax:

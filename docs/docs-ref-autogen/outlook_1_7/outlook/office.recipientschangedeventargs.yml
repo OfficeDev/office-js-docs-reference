@@ -5,7 +5,6 @@ package: outlook!
 fullName: Office.RecipientsChangedEventArgs
 summary: Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
 remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: changedRecipientFields
     summary: Gets an object that indicates change state of recipients fields.
     remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
       Gets the type of the event. For details, refer to
       [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,7 +8,6 @@ summary: |-
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +21,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +50,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +65,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +80,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +95,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +110,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +125,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +140,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +155,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,7 +171,6 @@ methods:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +188,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +207,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -276,7 +262,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,7 +294,6 @@ methods:
       This method has the following additional signature:
 
       `set(properties: Visio.Shape): void`
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -332,7 +316,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,7 +333,6 @@ methods:
     fullName: setMockData(data)
     summary: Set mock data
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,7 +355,6 @@ methods:
       JavaScript object (typed as `Visio.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: outlook!
 fullName: Office.ReplyFormAttachment
 summary: A file or item attachment. Used when displaying a reply form.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
       and should not be displayed in the attachment list.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: itemId
     summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: name
     summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: type
     summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
     fullName: url
     summary: Only used if type is set to file. The URI of the location for the file.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

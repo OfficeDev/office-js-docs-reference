@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.TableUpdateData
 summary: 'An interface for updating data on the Table object, for use in `table.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface

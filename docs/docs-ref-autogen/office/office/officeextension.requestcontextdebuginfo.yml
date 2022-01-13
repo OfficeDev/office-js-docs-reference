@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.RequestContextDebugInfo
 summary: Contains debug information about the request context.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +18,6 @@ properties:
 
       These statements may not match the code exactly as written, but will be a close approximation.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

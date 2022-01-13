@@ -22,7 +22,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -66,7 +65,6 @@ properties:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +130,6 @@ properties:
       console.log("EWS ID (from REST ID): " + ewsId2);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +156,6 @@ properties:
       Outlook](https://docs.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +180,6 @@ properties:
 
       More information is under [Office.UserProfile](xref:outlook!Office.UserProfile:interface)
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,7 +214,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -281,7 +275,6 @@ methods:
       console.log(result.toISOString());
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,7 +336,6 @@ methods:
       Office.context.mailbox.displayAppointmentForm(itemId);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -405,7 +397,6 @@ methods:
       Office.context.mailbox.displayMessageForm(itemId);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -484,7 +475,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -583,7 +573,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -657,7 +646,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -857,7 +845,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

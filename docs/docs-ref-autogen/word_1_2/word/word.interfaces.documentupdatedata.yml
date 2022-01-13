@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.DocumentUpdateData
 summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
       textboxes, etc.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

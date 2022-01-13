@@ -67,7 +67,6 @@ remarks: >-
   });
 
   ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -78,7 +77,6 @@ properties:
     fullName: expand
     summary: 'A comma-delimited string, or array of strings, that specifies the navigation properties to load.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +89,6 @@ properties:
     fullName: select
     summary: 'A comma-delimited string, or array of strings, that specifies the properties to load.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +104,6 @@ properties:
       included in the result. If top is specified, the result set will start after skipping the specified number of
       items.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +118,6 @@ properties:
       Only usable on collection types. Specifies the maximum number of collection items that can be included in the
       result.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

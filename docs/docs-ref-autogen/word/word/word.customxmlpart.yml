@@ -5,7 +5,6 @@ package: word!
 fullName: Word.CustomXmlPart
 summary: Represents a custom XML part.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,7 +60,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -95,12 +90,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -145,12 +140,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -177,7 +172,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -208,12 +202,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -261,12 +255,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -301,7 +295,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -321,7 +314,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -341,7 +333,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -386,12 +377,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -418,7 +409,6 @@ methods:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -441,7 +431,6 @@ methods:
       plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -460,7 +449,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -478,7 +466,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -509,12 +496,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -562,12 +549,12 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
       that is mapped to "http:<!-- -->/<!-- -->/<!-- -->calendartypes.org<!-- -->/<!-- -->xsds<!-- -->/<!--
       -->GregorianCalendar" in the namespaceMappings parameter.
-    
     isPreview: true
     isDeprecated: false
     syntax:

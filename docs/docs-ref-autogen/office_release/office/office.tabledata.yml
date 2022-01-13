@@ -5,7 +5,6 @@ package: office!
 fullName: Office.TableData
 summary: 'Represents the data in a table or an [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ constructors:
     fullName: '(constructor)(rows, headers)'
     summary: Constructs a new instance of the `TableData` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ constructors:
     fullName: (constructor)()
     summary: Constructs a new instance of the `TableData` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +73,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,7 +117,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

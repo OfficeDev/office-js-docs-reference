@@ -5,7 +5,6 @@ package: office!
 fullName: Office.BindingDataChangedEventArgs
 summary: Provides information about the binding that raised the DataChanged event.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
       DataChanged event.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
       that was raised.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

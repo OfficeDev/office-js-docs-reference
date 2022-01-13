@@ -5,7 +5,6 @@ package: office!
 fullName: Office.GoToType
 summary: Specifies the type of place or object to navigate to.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

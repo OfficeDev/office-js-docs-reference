@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,7 +106,6 @@ methods:
       });
 
       ```
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -126,7 +121,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -146,7 +140,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -166,7 +159,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -196,7 +188,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -219,7 +210,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -242,7 +232,6 @@ methods:
       JavaScript object (typed as `Word.Interfaces.SettingData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -261,7 +250,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -279,7 +267,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:

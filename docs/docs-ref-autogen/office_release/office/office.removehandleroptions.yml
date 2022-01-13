@@ -5,7 +5,6 @@ package: office!
 fullName: Office.RemoveHandlerOptions
 summary: Provides options to determine which event handler or handlers are removed.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       The handler to be removed. If a particular handler is not specified, then all handlers for the specified event
       type are removed.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

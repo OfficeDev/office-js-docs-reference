@@ -9,7 +9,6 @@ summary: >-
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
   only rich text content controls are supported.
 remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +21,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +75,6 @@ methods:
           }
       });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,7 +125,6 @@ methods:
           }
       });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +167,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,7 +222,6 @@ methods:
       // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +239,6 @@ methods:
     fullName: getByTypes(types)
     summary: Gets the content controls that have the specified types and/or subtypes.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +287,6 @@ methods:
           }
       });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,7 +300,6 @@ methods:
     fullName: getFirstOrNullObject()
     summary: Gets the first content control in this collection. Returns a null object if this collection is empty.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +313,6 @@ methods:
     fullName: getItem(index)
     summary: Gets a content control by its index in the collection.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,7 +332,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -440,7 +428,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -460,7 +447,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -485,7 +471,6 @@ methods:
       returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -504,7 +489,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -522,7 +506,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

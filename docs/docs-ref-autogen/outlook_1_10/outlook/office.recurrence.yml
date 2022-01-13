@@ -31,7 +31,6 @@ remarks: >-
   Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Meeting Request
   - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Meeting Request
   - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> </table>
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -53,7 +52,6 @@ properties:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +75,6 @@ properties:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +98,6 @@ properties:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,7 +125,6 @@ properties:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +176,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,7 +219,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,7 +320,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -377,7 +369,6 @@ methods:
 
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before its start time.
-    
     isPreview: false
     isDeprecated: false
     syntax:

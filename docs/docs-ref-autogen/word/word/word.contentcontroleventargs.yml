@@ -5,7 +5,6 @@ package: word!
 fullName: Word.ContentControlEventArgs
 summary: Provides information about the content control that raised an event.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:

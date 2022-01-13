@@ -5,7 +5,6 @@ package: word!
 fullName: Word.DocumentProperties
 summary: Represents document properties.
 remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ properties:
     fullName: applicationName
     summary: Gets the application name of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: author
     summary: Gets or sets the author of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: category
     summary: Gets or sets the category of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: comments
     summary: Gets or sets the comments of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +63,6 @@ properties:
     fullName: company
     summary: Gets or sets the company of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +77,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +89,6 @@ properties:
     fullName: creationDate
     summary: Gets the creation date of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +101,6 @@ properties:
     fullName: customProperties
     summary: Gets the collection of custom properties of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +113,6 @@ properties:
     fullName: format
     summary: Gets or sets the format of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -135,7 +125,6 @@ properties:
     fullName: keywords
     summary: Gets or sets the keywords of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +137,6 @@ properties:
     fullName: lastAuthor
     summary: Gets the last author of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,7 +149,6 @@ properties:
     fullName: lastPrintDate
     summary: Gets the last print date of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,7 +161,6 @@ properties:
     fullName: lastSaveTime
     summary: Gets the last save time of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -187,7 +173,6 @@ properties:
     fullName: manager
     summary: Gets or sets the manager of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +185,6 @@ properties:
     fullName: revisionNumber
     summary: Gets the revision number of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +204,6 @@ properties:
       11 = All of \#1, \#2, and \#8; 12 = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4, and
       \#8; 15 = All of \#1, \#2, \#4, and \#8.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,7 +216,6 @@ properties:
     fullName: subject
     summary: Gets or sets the subject of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +228,6 @@ properties:
     fullName: template
     summary: Gets the template of the document. Read only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,7 +240,6 @@ properties:
     fullName: title
     summary: Gets or sets the title of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -275,7 +255,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,7 +274,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -315,7 +293,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -345,7 +322,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -368,7 +344,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -391,7 +366,6 @@ methods:
       plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`<!-- -->) that contains shallow copies
       of any loaded child properties from the original object.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +384,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,7 +401,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

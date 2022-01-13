@@ -8,7 +8,6 @@ remarks: >-
   The methods in this interface are equivalent to those in the `Office.auth` interface. If new authentication types are
   added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples
   throughout the documentation use `Office.auth`<!-- -->.
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,7 +28,6 @@ methods:
 
       **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: '**Hosts**: Excel, Outlook, PowerPoint, Word'
-    
     isPreview: false
     isDeprecated: false
     syntax:

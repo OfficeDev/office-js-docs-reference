@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.RequestContext
 summary: ''
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ constructors:
     fullName: (constructor)(url)
     summary: Constructs a new instance of the `RequestContext` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +30,6 @@ properties:
     fullName: application
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

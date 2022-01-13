@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.RangeCollectionLoadOptions
 summary: 'Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.'
 remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
       color, and other properties.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't
       a parent content control.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +60,6 @@ properties:
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +72,6 @@ properties:
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the range. Read-only.'
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

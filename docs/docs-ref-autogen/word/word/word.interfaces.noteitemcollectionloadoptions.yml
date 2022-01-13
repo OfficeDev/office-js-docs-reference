@@ -7,7 +7,6 @@ summary: 'Contains a collection of [Word.NoteItem](xref:word!Word.NoteItem:class
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
 isPreview: true
 isDeprecated: false
 type: interface
@@ -20,7 +19,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -52,7 +49,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -67,7 +63,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    
     isPreview: true
     isDeprecated: false
     syntax:

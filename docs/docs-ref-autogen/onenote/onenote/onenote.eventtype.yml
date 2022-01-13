@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.EventType
 summary: ''
 remarks: '\[ [API set: OneNoteApi 1.9](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 fields:

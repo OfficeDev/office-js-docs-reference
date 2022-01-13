@@ -45,7 +45,6 @@ remarks: >-
   - [ImageCoercion
   1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12)
   (when using `Office.CoercionType.XmlSvg`<!-- -->)
-
 isPreview: false
 isDeprecated: false
 fields:

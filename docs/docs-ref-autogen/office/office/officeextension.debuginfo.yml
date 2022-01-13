@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.DebugInfo
 summary: Provides information about an error.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: code
     summary: 'Error code string, such as "InvalidArgument".'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: errorLocation
     summary: 'The object type and property or method name (or similar information), if available.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +44,6 @@ properties:
 
       These statements may not match the code exactly as written, but will be a close approximation.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +56,6 @@ properties:
     fullName: innerError
     summary: 'Inner error, if applicable.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +68,6 @@ properties:
     fullName: message
     summary: The error message passed through from the host Office application.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +85,6 @@ properties:
       This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +102,6 @@ properties:
       These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

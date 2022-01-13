@@ -5,7 +5,6 @@ package: office!
 fullName: Office.VisibilityMode
 summary: Visibility mode of the add-in.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

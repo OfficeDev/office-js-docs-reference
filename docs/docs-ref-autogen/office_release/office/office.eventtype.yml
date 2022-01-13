@@ -13,7 +13,6 @@ summary: >-
 
   Only task pane add-ins for Outlook support Mailbox API set event types.
 remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.'
-
 isPreview: false
 isDeprecated: false
 fields:

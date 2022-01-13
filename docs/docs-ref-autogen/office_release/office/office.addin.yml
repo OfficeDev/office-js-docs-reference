@@ -5,7 +5,6 @@ package: office!
 fullName: Office.Addin
 summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ methods:
     fullName: getStartupBehavior()
     summary: Gets the current startup behavior for the add-in.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,7 +28,6 @@ methods:
     fullName: hide()
     summary: Hides the task pane.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ methods:
     fullName: onVisibilityModeChanged(handler)
     summary: Adds a handler for the `onVisibilityModeChanged` event.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +63,6 @@ methods:
     fullName: setStartupBehavior(behavior)
     summary: Sets the startup behavior for the add-in for when the document is opened next time.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +80,6 @@ methods:
     fullName: showAsTaskpane()
     summary: Shows the task pane associated with the add-in.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

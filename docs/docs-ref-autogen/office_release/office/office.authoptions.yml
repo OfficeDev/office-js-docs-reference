@@ -7,7 +7,6 @@ summary: >-
   Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the
   `getAccessToken` method.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +22,6 @@ properties:
       it fails to silently get an access token. The prompt will only allow consent to the AAD profile scope, not to any
       Microsoft Graph scopes.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +38,6 @@ properties:
       token. If it fails to do so, Office will return a descriptive error. If set to `true`<!-- -->, Office will show an
       interactive sign-in UI after it fails to silently get an access token.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +52,6 @@ properties:
       A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult`
       object that is passed to a callback.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +70,6 @@ properties:
       Microsoft Graph has sent an error requesting the additional factor and containing the string that should be used
       with the `authChallenge` option.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +87,6 @@ properties:
 
       **Warning**: `forceAddAccount` has been deprecated. Use `allowSignInPrompt` instead.
     remarks: ''
-    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `allowSignInPrompt` instead.
@@ -111,7 +105,6 @@ properties:
 
       **Warning**: `forceConsent` has been deprecated. Use `allowConsentPrompt` instead.
     remarks: ''
-    
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: Use `allowConsentPrompt` instead.
@@ -130,7 +123,6 @@ properties:
       development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a
       descriptive error) if Graph access will fail.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

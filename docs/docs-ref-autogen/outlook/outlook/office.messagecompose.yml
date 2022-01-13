@@ -21,7 +21,6 @@ summary: >-
 
   - [Message](xref:outlook!Office.Message:interface)
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -107,7 +106,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +154,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,7 +266,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -356,7 +352,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -400,7 +395,6 @@ properties:
       console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -446,7 +440,6 @@ properties:
               console.log(callback);
           });
       ```
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -493,7 +486,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -548,7 +540,6 @@ properties:
       );
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -587,7 +578,6 @@ properties:
       console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -705,7 +695,6 @@ properties:
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -768,7 +757,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -814,7 +802,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -876,7 +863,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -963,7 +949,6 @@ properties:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1077,7 +1062,6 @@ methods:
           { "asyncContext" : { var1: 1, var2: true } },
           function(result) { console.log(result); });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1155,7 +1139,6 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1278,7 +1261,6 @@ methods:
       );
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1355,7 +1337,6 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1423,7 +1404,6 @@ methods:
       Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1476,7 +1456,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1584,7 +1563,6 @@ methods:
           { "asyncContext" : { var3: 3, var4: false } },
           function(result) { console.log(result); });
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1653,7 +1631,6 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1722,7 +1699,6 @@ methods:
       Office.context.mailbox.item.close();
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1775,7 +1751,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1820,7 +1795,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1921,7 +1895,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1984,7 +1957,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2050,7 +2022,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2091,7 +2062,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2127,7 +2097,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2194,7 +2163,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2266,7 +2234,6 @@ methods:
       );
 
       ```
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -2316,7 +2283,6 @@ methods:
 
       More information on [actionable
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
-    
     isPreview: true
     isDeprecated: false
     syntax:
@@ -2365,7 +2331,6 @@ methods:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2437,7 +2402,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2501,7 +2465,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2577,7 +2540,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2708,7 +2670,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2810,7 +2771,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2873,7 +2833,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2919,7 +2878,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3028,7 +2986,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3121,7 +3078,6 @@ methods:
       );
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3179,7 +3135,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3225,7 +3180,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3273,7 +3227,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3336,7 +3289,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3429,7 +3381,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3503,7 +3454,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3566,7 +3516,6 @@ methods:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:

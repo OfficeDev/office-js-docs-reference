@@ -36,7 +36,6 @@ remarks: >-
 
   -
   [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,7 +46,6 @@ properties:
     fullName: document
     summary: Get the Document object associated with the binding.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +75,6 @@ properties:
       A string that uniquely identifies this binding among the bindings in the same
       [Office.Document](xref:office!Office.Document:interface) object.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +102,6 @@ properties:
     fullName: type
     summary: Gets the type of the binding.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,7 +139,6 @@ methods:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +241,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +317,6 @@ methods:
       When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
       if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a
       contiguous and valid range).
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -477,7 +470,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -501,7 +493,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -546,7 +537,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -685,7 +675,6 @@ methods:
       Error object that provides error information if the operation failed.</td> </tr> <tr>
       <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
       without being altered.</td> </tr> </table>
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -956,7 +945,6 @@ methods:
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
         function (asyncResult){});
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

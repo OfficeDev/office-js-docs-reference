@@ -5,7 +5,6 @@ package: outlook!
 fullName: Office.InfobarDetails
 summary: Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
 remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: actionType
     summary: 'The action type. Currently, "Dismiss" is the only supported action.'
     remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: infobarType
     summary: The notification type.
     remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

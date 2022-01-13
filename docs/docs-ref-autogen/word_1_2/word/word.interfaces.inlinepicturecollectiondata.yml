@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.InlinePictureCollectionData
 summary: An interface describing the data returned by calling `inlinePictureCollection.toJSON()`<!-- -->.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

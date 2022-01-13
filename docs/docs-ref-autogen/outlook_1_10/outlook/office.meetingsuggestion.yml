@@ -46,7 +46,6 @@ remarks: >-
   });
 
   ```
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -57,7 +56,6 @@ properties:
     fullName: attendees
     summary: Gets the attendees for a suggested meeting.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +68,6 @@ properties:
     fullName: end
     summary: Gets the date and time that a suggested meeting is to end.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +80,6 @@ properties:
     fullName: location
     summary: Gets the location of a suggested meeting.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +92,6 @@ properties:
     fullName: meetingString
     summary: Gets a string that was identified as a meeting suggestion.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +104,6 @@ properties:
     fullName: start
     summary: Gets the date and time that a suggested meeting is to begin.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +116,6 @@ properties:
     fullName: subject
     summary: Gets the subject of a suggested meeting.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

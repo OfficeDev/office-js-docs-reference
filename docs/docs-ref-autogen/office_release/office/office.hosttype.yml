@@ -5,7 +5,6 @@ package: office!
 fullName: Office.HostType
 summary: Specifies the host Office application in which the add-in is running.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 fields:

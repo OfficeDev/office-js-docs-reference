@@ -8,7 +8,6 @@ summary: |-
 
   **Requirement set**: Ribbon 1.1
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -24,7 +23,6 @@ properties:
       `controls` properties of the various [Office.Group](xref:office!Office.Group:interface) objects specify which
       controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is
       ignored.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
     fullName: id
     summary: Identifier of the group as specified in the manifest.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Office.Slice
 summary: Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,7 +19,6 @@ properties:
     remarks: >-
       Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if
       required.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     fullName: index
     summary: Gets the zero-based index of the file slice.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: size
     summary: Gets the size of the slice in bytes.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

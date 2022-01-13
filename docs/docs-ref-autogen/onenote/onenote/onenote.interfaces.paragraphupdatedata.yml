@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.Interfaces.ParagraphUpdateData
 summary: 'An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: image
     summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: table
     summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
     remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

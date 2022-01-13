@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.EmbeddedSession
 summary: ''
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ constructors:
     fullName: '(constructor)(url, options)'
     summary: Constructs a new instance of the `EmbeddedSession` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ methods:
     fullName: init()
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

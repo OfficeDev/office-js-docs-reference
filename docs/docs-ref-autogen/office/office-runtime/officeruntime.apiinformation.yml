@@ -5,7 +5,6 @@ package: office-runtime!
 fullName: OfficeRuntime.ApiInformation
 summary: Interface that contains functions for checking API requirement-set support.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ methods:
     fullName: 'isSetSupported(name, minVersion)'
     summary: Check if the specified requirement set is supported by the host Office application.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

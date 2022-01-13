@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.CustomPropertyData
 summary: An interface describing the data returned by calling `customProperty.toJSON()`<!-- -->.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface

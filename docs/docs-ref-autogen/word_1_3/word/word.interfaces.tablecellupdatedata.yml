@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.TableCellUpdateData
 summary: 'An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: body
     summary: Gets the body object of the cell.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: columnWidth
     summary: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: horizontalAlignment
     summary: 'Gets and sets the horizontal alignment of the cell. The value can be ''Left'', ''Centered'', ''Right'', or ''Justified''.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: shadingColor
     summary: 'Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +63,6 @@ properties:
     fullName: value
     summary: Gets and sets the text of the cell.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +75,6 @@ properties:
     fullName: verticalAlignment
     summary: 'Gets and sets the vertical alignment of the cell. The value can be ''Top'', ''Center'', or ''Bottom''.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

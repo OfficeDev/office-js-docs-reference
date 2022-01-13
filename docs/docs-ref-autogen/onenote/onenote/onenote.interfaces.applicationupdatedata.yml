@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.Interfaces.ApplicationUpdateData
 summary: 'An interface for updating data on the Application object, for use in `application.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface

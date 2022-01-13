@@ -5,7 +5,6 @@ package: office!
 fullName: Office.Bindings
 summary: Represents the bindings the add-in has within the document.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Gets an [Office.Document](xref:office!Office.Document:interface) object that represents the document associated
       with this set of bindings.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,7 +147,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +214,6 @@ methods:
       **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
       you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
       the operation will fail.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -279,7 +275,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,7 +313,6 @@ methods:
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,7 +386,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -449,7 +442,6 @@ methods:
       bindingType parameter. If you need to use an existing id and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -490,7 +482,6 @@ methods:
 
       -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -553,7 +544,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -592,7 +582,6 @@ methods:
 
 
       Fails if the specified id does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -659,7 +648,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -701,7 +689,6 @@ methods:
 
 
       Fails if the specified id does not exist.
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -763,7 +750,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

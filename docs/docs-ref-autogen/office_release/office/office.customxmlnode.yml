@@ -5,7 +5,6 @@ package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
 remarks: '**Hosts**: Word'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +50,6 @@ properties:
     fullName: namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +85,6 @@ properties:
     fullName: nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +123,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -190,7 +185,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,7 +213,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,7 +267,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,7 +332,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,7 +357,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,7 +379,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,7 +433,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -467,7 +455,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -525,7 +512,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -601,7 +587,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -631,7 +616,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -677,7 +661,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -707,7 +690,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-    
     isPreview: false
     isDeprecated: false
     syntax:

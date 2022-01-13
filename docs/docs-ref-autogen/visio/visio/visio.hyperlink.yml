@@ -8,7 +8,6 @@ summary: |-
 
   \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +21,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +50,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +65,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +80,6 @@ properties:
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +95,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +137,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +156,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,7 +183,6 @@ methods:
     fullName: setMockData(data)
     summary: Set mock data
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,7 +205,6 @@ methods:
       JavaScript object (typed as `Visio.Interfaces.HyperlinkData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

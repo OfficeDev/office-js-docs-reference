@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.Interfaces.PointCollectionUpdateData
 summary: 'An interface for updating data on the PointCollection object, for use in `pointCollection.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

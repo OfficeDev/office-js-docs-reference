@@ -5,7 +5,6 @@ package: office!
 fullName: Office.VisibilityModeChangedMessage
 summary: Message used in the `onVisibilityModeChanged` invocation.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: visibilityMode
     summary: Visibility changed state.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

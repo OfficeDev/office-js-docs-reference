@@ -7,7 +7,6 @@ summary: >-
   An interface for updating data on the InkAnalysisLineCollection object, for use in `inkAnalysisLineCollection.set({
   ... })`<!-- -->.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: onenote!
 fullName: OneNote.Interfaces.InkWordCollectionUpdateData
 summary: 'An interface for updating data on the InkWordCollection object, for use in `inkWordCollection.set({ ... })`<!-- -->.'
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

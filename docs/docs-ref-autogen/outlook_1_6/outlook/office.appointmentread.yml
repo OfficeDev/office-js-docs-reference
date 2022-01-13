@@ -21,7 +21,6 @@ summary: >-
 
   - [Appointment](xref:outlook!Office.Appointment:interface)
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -87,7 +86,6 @@ properties:
       console.log(attachments);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +134,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -170,7 +167,6 @@ properties:
       console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +203,6 @@ properties:
       console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,7 +245,6 @@ properties:
       console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +296,6 @@ properties:
       console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +360,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -406,7 +398,6 @@ properties:
       console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -451,7 +442,6 @@ properties:
       console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -491,7 +481,6 @@ properties:
       console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -609,7 +598,6 @@ properties:
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -671,7 +659,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -707,7 +694,6 @@ properties:
       console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -769,7 +755,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -808,7 +793,6 @@ properties:
       console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -850,7 +834,6 @@ properties:
       console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -988,7 +971,6 @@ methods:
       Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1152,7 +1134,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1247,7 +1228,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1285,7 +1265,6 @@ methods:
       console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1356,7 +1335,6 @@ methods:
       console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1468,7 +1446,6 @@ methods:
       console.log(Office.context.mailbox.item.getRegExMatches());
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1561,7 +1538,6 @@ methods:
       console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1658,7 +1634,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1767,7 +1742,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1873,7 +1847,6 @@ methods:
       });
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

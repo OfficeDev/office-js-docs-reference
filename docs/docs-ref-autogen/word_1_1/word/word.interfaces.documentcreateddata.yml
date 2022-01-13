@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.DocumentCreatedData
 summary: An interface describing the data returned by calling `documentCreated.toJSON()`<!-- -->.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,7 +19,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +49,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +65,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +79,6 @@ properties:
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
-    
     isPreview: false
     isDeprecated: false
     syntax:

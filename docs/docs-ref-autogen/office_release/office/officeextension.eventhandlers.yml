@@ -5,7 +5,6 @@ package: office!
 fullName: OfficeExtension.EventHandlers
 summary: ''
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ constructors:
     fullName: '(constructor)(context, parentObject, name, eventInfo)'
     summary: Constructs a new instance of the `EventHandlers` class
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,7 +39,6 @@ methods:
     fullName: add(handler)
     summary: Adds a function to be called when the event is triggered.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +63,6 @@ methods:
       handler](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
       -->.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

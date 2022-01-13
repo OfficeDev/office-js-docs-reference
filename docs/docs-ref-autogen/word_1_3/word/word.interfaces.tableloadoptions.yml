@@ -5,7 +5,6 @@ package: word!
 fullName: Word.Interfaces.TableLoadOptions
 summary: Represents a table in a Word document.
 remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: alignment
     summary: 'Gets or sets the alignment of the table against the page column. The value can be ''Left'', ''Centered'', or ''Right''.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: font
     summary: 'Gets the font. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: headerRowCount
     summary: Gets and sets the number of header rows.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +67,6 @@ properties:
       Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
       or 'Justified'.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +79,6 @@ properties:
     fullName: isUniform
     summary: Indicates whether all of the table rows are uniform. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,7 +91,6 @@ properties:
     fullName: nestingLevel
     summary: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,7 +103,6 @@ properties:
     fullName: parentBody
     summary: Gets the parent body of the table.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +115,6 @@ properties:
     fullName: parentContentControl
     summary: Gets the content control that contains the table. Throws an error if there isn't a parent content control.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +127,6 @@ properties:
     fullName: parentContentControlOrNullObject
     summary: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +139,6 @@ properties:
     fullName: parentTable
     summary: Gets the table that contains this table. Throws an error if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +151,6 @@ properties:
     fullName: parentTableCell
     summary: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +163,6 @@ properties:
     fullName: parentTableCellOrNullObject
     summary: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +175,6 @@ properties:
     fullName: parentTableOrNullObject
     summary: Gets the table that contains this table. Returns a null object if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -202,7 +187,6 @@ properties:
     fullName: rowCount
     summary: Gets the number of rows in the table. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,7 +199,6 @@ properties:
     fullName: shadingColor
     summary: 'Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,7 +213,6 @@ properties:
       Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -243,7 +225,6 @@ properties:
     fullName: styleBandedColumns
     summary: Gets and sets whether the table has banded columns.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,7 +237,6 @@ properties:
     fullName: styleBandedRows
     summary: Gets and sets whether the table has banded rows.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +251,6 @@ properties:
       Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -284,7 +263,6 @@ properties:
     fullName: styleFirstColumn
     summary: Gets and sets whether the table has a first column with a special style.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +275,6 @@ properties:
     fullName: styleLastColumn
     summary: Gets and sets whether the table has a last column with a special style.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -310,7 +287,6 @@ properties:
     fullName: styleTotalRow
     summary: Gets and sets whether the table has a total (last) row with a special style.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -323,7 +299,6 @@ properties:
     fullName: values
     summary: 'Gets and sets the text values in the table, as a 2D Javascript array.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +311,6 @@ properties:
     fullName: verticalAlignment
     summary: 'Gets and sets the vertical alignment of every cell in the table. The value can be ''Top'', ''Center'', or ''Bottom''.'
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -349,7 +323,6 @@ properties:
     fullName: width
     summary: Gets and sets the width of the table in points.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -7,7 +7,6 @@ summary: Represents a binding in two dimensions of rows and columns.
 remarks: >-
   The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
   the Binding object.
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     fullName: columnCount
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +45,6 @@ properties:
     fullName: rowCount
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

@@ -20,7 +20,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -114,7 +113,6 @@ properties:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +195,6 @@ methods:
       }
 
       ```
-    
     isPreview: false
     isDeprecated: false
     syntax:

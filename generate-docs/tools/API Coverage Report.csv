@@ -6900,7 +6900,6 @@ OfficeExtension.EventInfo,N/A,Class,Missing,false
 OfficeExtension.EventInfo,eventArgsTransformFunc,Method,Missing,false
 OfficeExtension.EventInfo,registerFunc,Method,Missing,false
 OfficeExtension.EventInfo,unregisterFunc,Method,Missing,false
-OfficeExtension.IPromise,N/A,Class,Missing,false
 OfficeExtension.LoadOption,N/A,Class,Good,true
 OfficeExtension.LoadOption,expand,Method,Fine,false
 OfficeExtension.LoadOption,select,Method,Fine,false

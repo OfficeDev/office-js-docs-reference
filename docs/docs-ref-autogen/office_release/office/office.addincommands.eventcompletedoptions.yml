@@ -5,7 +5,6 @@ package: office!
 fullName: Office.AddinCommands.EventCompletedOptions
 summary: Specifies the behavior for when the event is completed.
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +18,6 @@ properties:
       if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend`
       event can set `allowEvent` to `false` to cancel sending of the message.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:

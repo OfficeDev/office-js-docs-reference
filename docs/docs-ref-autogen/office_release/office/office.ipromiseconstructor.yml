@@ -5,7 +5,6 @@ package: office!
 fullName: Office.IPromiseConstructor
 summary: ''
 remarks: ''
-
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: prototype
     summary: A reference to the prototype.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +30,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -59,7 +56,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,7 +75,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +100,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +125,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +149,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +172,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,7 +195,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,7 +218,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -250,7 +239,6 @@ methods:
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,7 +256,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -293,7 +280,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -311,7 +297,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -335,7 +320,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -359,7 +343,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -382,7 +365,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,7 +386,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -426,7 +407,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -448,7 +428,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -468,7 +447,6 @@ methods:
     fullName: race(values)
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -486,7 +464,6 @@ methods:
     fullName: reject(reason)
     summary: Creates a new rejected promise for the provided reason.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -504,7 +481,6 @@ methods:
     fullName: reject(reason)
     summary: Creates a new rejected promise for the provided reason.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -522,7 +498,6 @@ methods:
     fullName: resolve(value)
     summary: Creates a new resolved promise for the provided value.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
@@ -540,7 +515,6 @@ methods:
     fullName: resolve()
     summary: Creates a new resolved promise.
     remarks: ''
-    
     isPreview: false
     isDeprecated: false
     syntax:
