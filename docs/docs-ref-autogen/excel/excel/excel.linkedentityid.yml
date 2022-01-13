@@ -6,12 +6,10 @@ fullName: Excel.LinkedEntityId
 summary: >-
   The linked entity ID object represents a set of properties that describes a service and culture for locating this
   service defined value.
-
-
+remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
-remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -19,14 +17,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityId#culture:member'
     package: excel!
     fullName: culture
-    summary: >-
-      Represents which language culture was used to create this `CellValue`<!-- -->.
-
-
+    summary: Represents which language culture was used to create this `CellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'culture: string;'
@@ -36,14 +31,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityId#domainId:member'
     package: excel!
     fullName: domainId
-    summary: >-
-      Represents a domain specific to a service used to create the `CellValue`<!-- -->.
-
-
+    summary: Represents a domain specific to a service used to create the `CellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'domainId?: string;'
@@ -53,14 +45,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityId#entityId:member'
     package: excel!
     fullName: entityId
-    summary: >-
-      Represents an identifier specific to a service used to create the `CellValue`<!-- -->.
-
-
+    summary: Represents an identifier specific to a service used to create the `CellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'entityId: string;'
@@ -70,14 +59,11 @@ properties:
     uid: 'excel!Excel.LinkedEntityId#serviceId:member'
     package: excel!
     fullName: serviceId
-    summary: >-
-      Represents which service was used to create the `CellValue`<!-- -->.
-
-
+    summary: Represents which service was used to create the `CellValue`<!-- -->.
+    remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'serviceId: number;'

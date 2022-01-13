@@ -3,7 +3,10 @@ name: Excel.AllowEditRange
 uid: 'excel!Excel.AllowEditRange:class'
 package: excel!
 fullName: Excel.AllowEditRange
-summary: Represents an `AllowEditRange` object found in a worksheet.
+summary: >-
+  Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+  When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range,
+  while maintaining protection on the rest of the worksheet.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]

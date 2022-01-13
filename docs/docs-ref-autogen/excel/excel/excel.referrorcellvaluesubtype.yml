@@ -13,12 +13,7 @@ fields:
   - name: externalLinksArrayRef
     uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksArrayRef:member'
     package: excel!
-    summary: >-
-      An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.'
     value: '"ExternalLinksArrayRef"'
   - name: externalLinksRefNotExist
     uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksRefNotExist:member'
@@ -30,12 +25,7 @@ fields:
   - name: externalLinksStructuredRef
     uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member'
     package: excel!
-    summary: >-
-      An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: 'An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.'
     value: '"ExternalLinksStructuredRef"'
   - name: hlookupRowIndexGreaterThanNumRows
     uid: 'excel!Excel.RefErrorCellValueSubType.hlookupRowIndexGreaterThanNumRows:member'

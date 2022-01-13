@@ -2568,7 +2568,7 @@ export declare namespace Excel {
          *
          * @param text - The string to find.
          * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case-sensitive.
-         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this function will return an object with its `isNullObject` property set to `true`.
+         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;

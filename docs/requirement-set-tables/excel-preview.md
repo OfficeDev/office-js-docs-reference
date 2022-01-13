@@ -204,6 +204,11 @@
 |[PivotTable](/javascript/api/excel/excel.pivottable)|[getDataSourceString()](/javascript/api/excel/excel.pivottable#getDataSourceString__)|Returns the string representation of the data source for the PivotTable.|
 ||[getDataSourceType()](/javascript/api/excel/excel.pivottable#getDataSourceType__)|Gets the type of the data source for the PivotTable.|
 |[PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection)|[getFirstOrNullObject()](/javascript/api/excel/excel.pivottablescopedcollection#getFirstOrNullObject__)|Gets the first PivotTable in the collection.|
+|[PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue)|[basicType](/javascript/api/excel/excel.placeholdererrorcellvalue#basicType)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.placeholdererrorcellvalue#basicValue)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[errorType](/javascript/api/excel/excel.placeholdererrorcellvalue#errorType)|Represents the type of `ErrorCellValue`.|
+||[target](/javascript/api/excel/excel.placeholdererrorcellvalue#target)|`PlaceholderErrorCellValue` is used during processing, while data is downloaded.|
+||[type](/javascript/api/excel/excel.placeholdererrorcellvalue#type)|Represents the type of this cell value.|
 |[Range](/javascript/api/excel/excel.range)|[getDependents()](/javascript/api/excel/excel.range#getDependents__)|Returns a `WorkbookRangeAreas` object that represents the range containing all the dependents of a cell in the same worksheet or in multiple worksheets.|
 ||[valuesAsJson](/javascript/api/excel/excel.range#valuesAsJson)|A JSON representation of the values in the cells in this range.|
 |[RangeView](/javascript/api/excel/excel.rangeview)|[valuesAsJson](/javascript/api/excel/excel.rangeview#valuesAsJson)|A JSON representation of the values in the cells in this range.|
@@ -273,7 +278,7 @@
 ||[onFiltered](/javascript/api/excel/excel.worksheetcollection#onFiltered)|Occurs when any worksheet's filter is applied in the workbook.|
 |[WorksheetFilteredEventArgs](/javascript/api/excel/excel.worksheetfilteredeventargs)|[type](/javascript/api/excel/excel.worksheetfilteredeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetfilteredeventargs#worksheetId)|Gets the ID of the worksheet in which the filter is applied.|
-|[WorksheetProtection](/javascript/api/excel/excel.worksheetprotection)|[allowEditRanges](/javascript/api/excel/excel.worksheetprotection#allowEditRanges)|Specifies the `AllowEditRangeCollection` found in this worksheet.|
+|[WorksheetProtection](/javascript/api/excel/excel.worksheetprotection)|[allowEditRanges](/javascript/api/excel/excel.worksheetprotection#allowEditRanges)|Specifies the `AllowEditRangeCollection` object found in this worksheet.|
 ||[canPauseProtection](/javascript/api/excel/excel.worksheetprotection#canPauseProtection)|Specifies if protection can be paused for this worksheet.|
 ||[checkPassword(password?: string)](/javascript/api/excel/excel.worksheetprotection#checkPassword_password_)|Specifies if the password can be used to unlock worksheet protection.|
 ||[isPasswordProtected](/javascript/api/excel/excel.worksheetprotection#isPasswordProtected)|Specifies if the sheet is password protected.|

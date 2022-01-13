@@ -624,7 +624,9 @@ export declare namespace Excel {
         /**
         * Represents a `LinkedEntityCellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         linkedEntity = "LinkedEntity",
         /**
@@ -737,6 +739,56 @@ export declare namespace Excel {
         * @beta
         */
         licenseText?: string;
+    }
+    /**
+    * Represents the value of a cell containing a #BUSY! error.
+    * This type of error is used as a placeholder while the value of a cell is downloaded.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface PlaceholderErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: "#BUSY!";
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorType?: ErrorCellValueType.placeholder | "Placeholder";
+        /**
+        * `PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        target: LinkedEntityCellValue | WebImageCellValue;
     }
     /**
     * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
@@ -1329,6 +1381,14 @@ export declare namespace Excel {
         */
         num = "Num",
         /**
+        * Represents a `PlaceholderErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        placeholder = "Placeholder",
+        /**
         * Represents a `RefErrorCellValue`.
         *
         * @remarks
@@ -1360,7 +1420,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
     /**
     * Represents types of #FIELD! errors.
     *
@@ -1530,74 +1590,98 @@ export declare namespace Excel {
     /**
     * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
-     export interface LinkedEntityId {
+    export interface LinkedEntityId {
         /**
         * Represents which service was used to create the `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         serviceId: number;
         /**
         * Represents a domain specific to a service used to create the `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         domainId?: string;
         /**
         * Represents an identifier specific to a service used to create the `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         entityId: string;
         /**
         * Represents which language culture was used to create this `CellValue`.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         culture: string;
     }
     /**
     * Represents a value whose properties derive from a service.
     *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
     export interface LinkedEntityCellValue {
         /**
         * Represents the type of this cell value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         type: CellValueType.linkedEntity | "LinkedEntity";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         basicValue?: "#VALUE!";
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         basicType?: RangeValueType.error | "Error";
         /**
         * Represents the service source that provided the information in this value.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         id: LinkedEntityId;
         /**
         * Represents the text shown when a cell with this value is rendered.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         text?: string;
         /**
         * Represents the properties of this entity and their metadata.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         properties?: {
             [key: string]: CellValue & {
@@ -1608,7 +1692,9 @@ export declare namespace Excel {
         * Represents information that describes the service which provided the image.
         * This information can be used for branding in entity cards.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         provider?: CellValueProviderAttributes;
     }
@@ -1867,13 +1953,17 @@ export declare namespace Excel {
         /**
         * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksStructuredRef = "ExternalLinksStructuredRef",
         /**
         * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
         *
+        * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
         */
         externalLinksArrayRef = "ExternalLinksArrayRef"
     }
@@ -3149,7 +3239,8 @@ export declare namespace Excel {
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
-     * Represents an `AllowEditRange` object found in a worksheet.
+     * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+                When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -3259,7 +3350,8 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.AllowEditRangeData;
     }
     /**
-     * Represents the set of `AllowEditRange` objects found in a worksheet.
+     * Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet protection properties.
+                When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
      *
      * @remarks
      * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -8442,7 +8534,7 @@ export declare namespace Excel {
          *
          * @param linkedEntityCellValueId - An identifier that specifies an individual `LinkedEntityCellValue`.
          */
-         getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId): OfficeExtension.ClientResult<LinkedEntityCellValue>;
+        getLinkedEntityCellValue(linkedEntityCellValueId: LinkedEntityId): OfficeExtension.ClientResult<LinkedEntityCellValue>;
         /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
@@ -8988,7 +9080,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param address - Optional. A string containing the comma-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
+         * @param address - Optional. A string containing the comma-separated or semicolon-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5" or "A1:B2; A5:B5". If not specified, a `RangeAreas` object for the entire worksheet is returned.
          */
         getRanges(address?: string): Excel.RangeAreas;
         /**
@@ -9417,7 +9509,7 @@ export declare namespace Excel {
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         /**
-         * Occurs when a worksheet is moved by a user within a workbook.
+         * Occurs when a worksheet is moved within a workbook. This event only triggers when a worksheet is directly moved within a workbook. This event doesn't trigger when the position of a worksheet is indirectly changed, such as when a new worksheet is inserted and causes existing worksheets to change positions.
          *
          * @remarks
          * [Api set: ExcelApiOnline 1.1]
@@ -9497,7 +9589,7 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
     }
     /**
-     * Represents the protection of a sheet object.
+     * Represents the protection of a worksheet object.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -9506,7 +9598,8 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the `AllowEditRangeCollection` found in this worksheet.
+         * Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange` objects, which work with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -10141,11 +10234,11 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Range): void;
         /**
-         * Fills range from the current range to the destination range using the specified AutoFill logic.
-                     The destination range can be `null`, or can extend the source either horizontally or vertically.
-                     Discontiguous ranges are not supported.
+         * Fills a range from the current range to the destination range using the specified AutoFill logic.
+                    The destination range can be `null` or can extend the source range either horizontally or vertically.
+                    Discontiguous ranges are not supported.
                     
-                     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -10155,11 +10248,11 @@ export declare namespace Excel {
          */
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
-         * Fills range from the current range to the destination range using the specified AutoFill logic.
-                     The destination range can be `null`, or can extend the source either horizontally or vertically.
-                     Discontiguous ranges are not supported.
+         * Fills a range from the current range to the destination range using the specified AutoFill logic.
+                    The destination range can be `null` or can extend the source range either horizontally or vertically.
+                    Discontiguous ranges are not supported.
                     
-                     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -10468,7 +10561,8 @@ export declare namespace Excel {
          */
         getLastRow(): Excel.Range;
         /**
-         * Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, the API will fail to return the result. If the RangeAreas does not exist, will return a null object.
+         * Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, then this method will fail to return the result. If the `RangeAreas` object doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -13009,7 +13103,7 @@ export declare namespace Excel {
         /**
          * Name of the table.
                     
-                     The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                     The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -19658,7 +19752,7 @@ export declare namespace Excel {
          */
         getRangeOrNullObject(): Excel.Range;
         /**
-         * Applies the specified Autofilter object currently on the range.
+         * Applies the specified AutoFilter object currently on the range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -20455,7 +20549,8 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Returns the string representation of the data source for the PivotTable. This method currently supports string representations for table and range objects. Otherwise, it returns an empty string.
+         * Returns the string representation of the data source for the PivotTable. This method currently supports string representations for table and range objects.
+                    Otherwise, it returns an empty string.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -26610,7 +26705,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param key - Name or ID of the shape to be retrieved.
+         * @param key - The name or ID of the shape to be retrieved.
          */
         getItem(key: string): Excel.Shape;
         /**
@@ -40291,7 +40386,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -45500,7 +45595,8 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
             /**
-            * Specifies the `AllowEditRangeCollection` found in this worksheet.
+            * Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange` objects, which work with worksheet protection properties.
+            When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
             *
             * @remarks
             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -46221,7 +46317,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -51603,7 +51699,8 @@ export declare namespace Excel {
             value?: T;
         }
         /**
-         * Represents an `AllowEditRange` object found in a worksheet.
+         * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -51645,7 +51742,8 @@ export declare namespace Excel {
             title?: boolean;
         }
         /**
-         * Represents the set of `AllowEditRange` objects found in a worksheet.
+         * Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52854,7 +52952,7 @@ export declare namespace Excel {
             visibility?: boolean;
         }
         /**
-         * Represents the protection of a sheet object.
+         * Represents the protection of a worksheet object.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -53873,7 +53971,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -54007,7 +54105,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -54142,7 +54240,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

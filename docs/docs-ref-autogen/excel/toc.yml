@@ -843,6 +843,8 @@ items:
             uid: 'excel!Excel.PivotTableStyleCollection:class'
           - name: PivotValueFilter
             uid: 'excel!Excel.PivotValueFilter:interface'
+          - name: PlaceholderErrorCellValue
+            uid: 'excel!Excel.PlaceholderErrorCellValue:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
           - name: Query
