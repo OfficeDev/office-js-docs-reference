@@ -13,7 +13,11 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetProtectionData#allowEditRanges:member'
     package: excel!
     fullName: allowEditRanges
-    summary: Specifies the `AllowEditRangeCollection` found in this worksheet.
+    summary: >-
+      Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange`
+      objects, which work with worksheet protection properties. When worksheet protection is enabled, an
+      `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest
+      of the worksheet.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

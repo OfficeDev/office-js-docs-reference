@@ -315,6 +315,10 @@ export declare namespace Office {
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
     /**
+     * Provides a method for associating action names with functions that carry out an action.
+     */
+    const actions: Actions;
+    /**
      * Represents the add-in.
      */
     const addin: Addin;
