@@ -419,7 +419,7 @@ methods:
       content: 'getItem(key: string): Excel.Shape;'
       parameters:
         - id: key
-          description: Name or ID of the shape to be retrieved.
+          description: The name or ID of the shape to be retrieved.
           type: string
       return:
         type: '<xref uid="excel!Excel.Shape:class" />'

@@ -579,9 +579,38 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'valuesAsJson: CellValue[][];'
+      content: >-
+        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
+        BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
+        FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue |
+        NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue |
+        FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
+        WebImageCellValue & {
+                    writable?: boolean;
+                    writableNote?: string;
+                }[][];
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        type: >-
+          <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
+          <xref uid="excel!Excel.DoubleCellValue:interface" /> | <xref uid="excel!Excel.EntityCellValue:interface" /> |
+          <xref uid="excel!Excel.EmptyCellValue:interface" /> | <xref uid="excel!Excel.BlockedErrorCellValue:interface"
+          /> | <xref uid="excel!Excel.BusyErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.CalcErrorCellValue:interface" /> | <xref uid="excel!Excel.ConnectErrorCellValue:interface" />
+          | <xref uid="excel!Excel.Div0ErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.FieldErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.GettingDataErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.NotAvailableErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.NameErrorCellValue:interface" /> | <xref uid="excel!Excel.NullErrorCellValue:interface" /> |
+          <xref uid="excel!Excel.NumErrorCellValue:interface" /> | <xref uid="excel!Excel.RefErrorCellValue:interface"
+          /> | <xref uid="excel!Excel.SpillErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.ValueErrorCellValue:interface" /> | <xref
+          uid="excel!Excel.FormattedNumberCellValue:interface" /> | <xref
+          uid="excel!Excel.LinkedEntityCellValue:interface" /> | <xref uid="excel!Excel.StringCellValue:interface" /> |
+          <xref uid="excel!Excel.ValueTypeNotAvailableCellValue:interface" /> | <xref
+          uid="excel!Excel.WebImageCellValue:interface" /> & {
+                      writable?: boolean;
+                      writableNote?: string;
+                  }[][]
   - name: valueTypes
     uid: 'excel!Excel.Range#valueTypes:member'
     package: excel!
@@ -624,14 +653,13 @@ methods:
     package: excel!
     fullName: 'autoFill(destinationRange, autoFillType)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
-      not supported.
+      Fills a range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null` or can extend the source range either horizontally or vertically. Discontiguous ranges are not
+      supported.
 
 
-      For more information, read [Use AutoFill and Flash
-      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
-      -->.
+      For more information, see [Use AutoFill and Flash
+      Fill](https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -679,14 +707,13 @@ methods:
     package: excel!
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
-      not supported.
+      Fills a range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null` or can extend the source range either horizontally or vertically. Discontiguous ranges are not
+      supported.
 
 
-      For more information, read [Use AutoFill and Flash
-      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
-      -->.
+      For more information, see [Use AutoFill and Flash
+      Fill](https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1863,9 +1890,12 @@ methods:
     package: excel!
     fullName: getMergedAreasOrNullObject()
     summary: >-
-      Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in
-      this range is more than 512, the API will fail to return the result. If the RangeAreas does not exist, will return
-      a null object.
+      Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count
+      in this range is more than 512, then this method will fail to return the result. If the `RangeAreas` object
+      doesn't exist, then this function will return an object with its `isNullObject` property set to `true`<!-- -->.
+      For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 

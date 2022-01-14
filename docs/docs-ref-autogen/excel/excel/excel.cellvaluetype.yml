@@ -48,12 +48,7 @@ fields:
   - name: linkedEntity
     uid: 'excel!Excel.CellValueType.linkedEntity:member'
     package: excel!
-    summary: >-
-      Represents a `LinkedEntityCellValue`<!-- -->.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    summary: Represents a `LinkedEntityCellValue`<!-- -->.
     value: '"LinkedEntity"'
   - name: notAvailable
     uid: 'excel!Excel.CellValueType.notAvailable:member'

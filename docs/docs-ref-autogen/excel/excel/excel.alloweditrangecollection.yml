@@ -3,7 +3,10 @@ name: Excel.AllowEditRangeCollection
 uid: 'excel!Excel.AllowEditRangeCollection:class'
 package: excel!
 fullName: Excel.AllowEditRangeCollection
-summary: Represents the set of `AllowEditRange` objects found in a worksheet.
+summary: >-
+  Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet
+  protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing
+  of a specific range, while maintaining protection on the rest of the worksheet.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
