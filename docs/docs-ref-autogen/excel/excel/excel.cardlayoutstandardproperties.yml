@@ -36,11 +36,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'sections?: CardLayoutListSection | CardLayoutTableSection[];'
+      content: 'sections?: CardLayoutSection[];'
       return:
-        type: >-
-          <xref uid="excel!Excel.CardLayoutListSection:interface" /> | <xref
-          uid="excel!Excel.CardLayoutTableSection:interface" />[]
+        type: '<xref uid="excel!Excel.CardLayoutSection:type" />[]'
   - name: subTitle
     uid: 'excel!Excel.CardLayoutStandardProperties#subTitle:member'
     package: excel!

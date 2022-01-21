@@ -46,35 +46,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: >-
-        valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
-        BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue |
-        FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue |
-        NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue |
-        FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
-        WebImageCellValue & {
-                    writable?: boolean;
-                    writableNote?: string;
-                }[][];
+      content: 'valuesAsJson?: CellValue[][];'
       return:
-        type: >-
-          <xref uid="excel!Excel.ArrayCellValue:interface" /> | <xref uid="excel!Excel.BooleanCellValue:interface" /> |
-          <xref uid="excel!Excel.DoubleCellValue:interface" /> | <xref uid="excel!Excel.EntityCellValue:interface" /> |
-          <xref uid="excel!Excel.EmptyCellValue:interface" /> | <xref uid="excel!Excel.BlockedErrorCellValue:interface"
-          /> | <xref uid="excel!Excel.BusyErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.CalcErrorCellValue:interface" /> | <xref uid="excel!Excel.ConnectErrorCellValue:interface" />
-          | <xref uid="excel!Excel.Div0ErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.FieldErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.GettingDataErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.NotAvailableErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.NameErrorCellValue:interface" /> | <xref uid="excel!Excel.NullErrorCellValue:interface" /> |
-          <xref uid="excel!Excel.NumErrorCellValue:interface" /> | <xref uid="excel!Excel.RefErrorCellValue:interface"
-          /> | <xref uid="excel!Excel.SpillErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.ValueErrorCellValue:interface" /> | <xref
-          uid="excel!Excel.FormattedNumberCellValue:interface" /> | <xref
-          uid="excel!Excel.LinkedEntityCellValue:interface" /> | <xref uid="excel!Excel.StringCellValue:interface" /> |
-          <xref uid="excel!Excel.ValueTypeNotAvailableCellValue:interface" /> | <xref
-          uid="excel!Excel.WebImageCellValue:interface" /> & {
-                      writable?: boolean;
-                      writableNote?: string;
-                  }[][]
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'

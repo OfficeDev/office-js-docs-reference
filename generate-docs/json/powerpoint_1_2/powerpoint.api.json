@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.19",
+    "toolVersion": "7.19.4",
     "schemaVersion": 1004,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -1952,8 +1952,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1965,8 +1965,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -2040,8 +2040,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -2053,8 +2053,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -2139,8 +2139,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -2152,8 +2152,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise",
-                  "canonicalReference": "!Promise:interface"
+                  "text": "OfficeExtension.IPromise",
+                  "canonicalReference": "office!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",

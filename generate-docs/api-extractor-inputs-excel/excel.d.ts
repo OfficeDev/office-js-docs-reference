@@ -45,27 +45,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        elements: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        elements: CellValue[][];
     }
     /**
     * Represents types of #BLOCKED! errors.
@@ -567,7 +547,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        sections?: CardLayoutListSection | CardLayoutTableSection[];
+        sections?: CardLayoutSection[];
     }
     /**
     * Represents the layout of a card in card view.
@@ -681,7 +661,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
+    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
         /**
         * Represents whether this `CellValue` will be used to overwrite a cell.
         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -709,27 +689,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValueAndPropertyMetadata = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        } & {
+    export type CellValueAndPropertyMetadata = CellValue & {
         /**
         * Represents metadata about the property.
         *
@@ -1246,56 +1206,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type EntityPropertyType = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        } & {
-            /**
-            * Represents metadata about the property.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            propertyMetadata?: CellValuePropertyMetadata;
-        } | ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        };
+    export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;
     /**
     * Represents an schemaless set of properties.
     *
@@ -1344,56 +1255,7 @@ export declare namespace Excel {
         * @beta
         */
         properties?: {
-            [key: string]: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        } & {
-            /**
-            * Represents metadata about the property.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            propertyMetadata?: CellValuePropertyMetadata;
-        } | ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        };
+            [key: string]: EntityPropertyType;
         };
         /**
         * Represents the layout of this entity in card view.
@@ -1403,7 +1265,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        cardLayout?: EntityCardLayout;
+        cardLayout?: CardLayout;
     }
     /**
     * Represents a card layout best used for an entity.
@@ -1822,27 +1684,7 @@ export declare namespace Excel {
         * @beta
         */
         properties?: {
-            [key: string]: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        } & {
+            [key: string]: CellValue & {
                 propertyMetadata?: CellValuePropertyMetadata;
             };
         };
@@ -10375,27 +10217,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        valuesAsJson: CellValue[][];
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -12232,27 +12054,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        valuesAsJson: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12657,27 +12459,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valueAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        };
+        readonly valueAsJson: CellValue;
         /**
          * Specifies if the object is visible.
          *
@@ -12773,27 +12555,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        readonly valuesAsJson: CellValue[][];
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -13676,27 +13438,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        valuesAsJson: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -13909,27 +13651,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        valuesAsJson: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+        valuesAsJson: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -40504,27 +40226,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -40597,27 +40299,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -40782,27 +40464,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -40826,27 +40488,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -46243,27 +45885,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -46472,27 +46094,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -46582,27 +46184,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valueAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        };
+            valueAsJson?: CellValue;
             /**
              * Specifies if the object is visible.
              *
@@ -46635,27 +46217,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -46854,27 +46416,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -46905,27 +46447,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valuesAsJson?: ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
-            /**
-            * Represents whether this `CellValue` will be used to overwrite a cell.
-            * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
-            * The default value is true.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writable?: boolean;
-            /**
-            * Represents an explanation about why `CellValue.writable` is specified as false.
-            * Note: This string is only available if `writable` is specified as false.
-            *
-            * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
-            */
-            writableNote?: string;
-        }[][];
+            valuesAsJson?: CellValue[][];
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {

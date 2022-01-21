@@ -165,10 +165,20 @@ tryCatch(async () => {
         .filter(filename => filename.indexOf(".yml") < 0)
         .forEach(filename => {
             let subfolder = docsDestination + '/' + filename;
-            fsx.readdirSync(subfolder)
-                .filter(subfilename => subfilename.indexOf("toc") >= 0)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+            fsx.readdirSync(subfolder).forEach(subfilename => {
+                    if (subfilename.indexOf("toc") >= 0) {
+                        // Update overview HREF.
+                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                    } else if (subfilename.indexOf(".") < 0) {
+                        let packageFolder = subfolder + '/' + subfilename;
+                        fsx.readdirSync(packageFolder).forEach(packageFileName => {
+                            // Remove example field from yml as the OPS schema does not support it.
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                        });
+                    } else if (subfilename.indexOf(".yml") > 0) {
+                        // Remove example field from yml as the OPS schema does not support it.
+                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                    }
                 });
         });
 
