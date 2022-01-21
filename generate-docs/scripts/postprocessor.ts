@@ -171,7 +171,7 @@ tryCatch(async () => {
                         fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
-                        fsx.readdirSync(packageFolder).forEach(packageFileName => {
+                        fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
                             // Remove example field from yml as the OPS schema does not support it.
                             fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
                         });
