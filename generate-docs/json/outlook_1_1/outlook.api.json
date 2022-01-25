@@ -2305,7 +2305,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#contentType:member",
-                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * **Important**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained. If you require specific types, grab the attachment's extension and process accordingly.\n */\n",
+                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly.\n *\n * @deprecated\n *\n * If you require specific content types, grab the attachment's extension and process accordingly.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
