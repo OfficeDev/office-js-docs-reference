@@ -3232,8 +3232,10 @@ export declare namespace Office {
         /**
          * Gets the MIME content type of the attachment.
          *
-         * **Important**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained.
-         * If you require specific types, grab the attachment's extension and process accordingly.
+         * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained
+         * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly.
+         *
+         * @deprecated If you require specific content types, grab the attachment's extension and process accordingly.
          */
         contentType: string;
         /**
