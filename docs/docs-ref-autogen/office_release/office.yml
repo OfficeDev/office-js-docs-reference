@@ -107,8 +107,6 @@ classes:
   - 'office!OfficeExtension.EventHandlerResult:class'
   - 'office!OfficeExtension.EventHandlers:class'
   - 'office!OfficeExtension.TrackedObjects:class'
-typeAliases:
-  - 'office!OfficeExtension.IPromise:type'
 functions:
   - name: Office.initialize(reason)
     uid: 'office!Office.initialize:function(1)'

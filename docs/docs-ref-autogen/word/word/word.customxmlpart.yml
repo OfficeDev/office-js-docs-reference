@@ -90,6 +90,7 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
@@ -138,6 +139,7 @@ methods:
           <Week>something</Week>
         </Month>
       </Day>
+
 
       ```
 
@@ -200,6 +202,7 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
@@ -251,6 +254,7 @@ methods:
           <Week>something</Week>
         </Month>
       </Day>
+
 
       ```
 
@@ -373,6 +377,7 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
@@ -491,6 +496,7 @@ methods:
         </Month>
       </Day>
 
+
       ```
 
       The xpath to `<Week>` must be /<!-- -->Day<!-- -->/<!-- -->greg:Month<!-- -->/<!-- -->Week, where greg is an alias
@@ -542,6 +548,7 @@ methods:
           <Week>something</Week>
         </Month>
       </Day>
+
 
       ```
 
