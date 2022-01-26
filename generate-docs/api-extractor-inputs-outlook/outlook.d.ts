@@ -3698,7 +3698,8 @@ export declare namespace Office {
          * Gets the MIME content type of the attachment.
          *
          * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained
-         * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly.
+         * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly. For details,
+         * refer to the {@link https://devblogs.microsoft.com/microsoft365dev/outlook-javascript-api-deprecation-for-attachmentdetails-contenttype-property/ | related blog post }.
          *
          * @deprecated If you require specific content types, grab the attachment's extension and process accordingly.
          */
