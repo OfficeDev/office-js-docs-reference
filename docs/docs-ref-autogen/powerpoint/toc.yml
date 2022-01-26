@@ -292,6 +292,8 @@ items:
                 uid: 'office!OfficeExtension.EventHandlers:class'
               - name: EventInfo
                 uid: 'office!OfficeExtension.EventInfo:interface'
+              - name: IPromise
+                uid: 'office!OfficeExtension.IPromise:type'
               - name: LoadOption
                 uid: 'office!OfficeExtension.LoadOption:interface'
               - name: RequestContextDebugInfo
