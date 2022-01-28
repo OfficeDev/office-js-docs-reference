@@ -5005,7 +5005,9 @@ export declare namespace Office {
          * 
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          * 
-         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
+         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file. **Important**: This link must be
+         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
+         *        be accessible on a private network as long as it doesn't need further authentication.
          * 
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the 
          *        message body, and should not be displayed in the attachment list.
@@ -8104,6 +8106,9 @@ export declare namespace Office {
         name: string;
         /**
          * Only used if type is set to file. The URI of the location for the file.
+         *
+         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
