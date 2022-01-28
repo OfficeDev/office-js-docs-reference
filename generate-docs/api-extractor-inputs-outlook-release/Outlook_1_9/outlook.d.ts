@@ -3335,7 +3335,8 @@ export declare namespace Office {
          * Gets the MIME content type of the attachment.
          *
          * **Warning**: While the `contentType` value is a direct lookup of the attachment's extension, the internal mapping isn't actively maintained
-         * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly.
+         * so this property has been deprecated. If you require specific types, grab the attachment's extension and process accordingly. For details,
+         * refer to the {@link https://devblogs.microsoft.com/microsoft365dev/outlook-javascript-api-deprecation-for-attachmentdetails-contenttype-property/ | related blog post }.
          *
          * @deprecated If you require specific content types, grab the attachment's extension and process accordingly.
          */
@@ -5367,7 +5368,9 @@ export declare namespace Office {
          * 
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          * 
-         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
+         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file. **Important**: This link must be
+         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
+         *        be accessible on a private network as long as it doesn't need further authentication.
          * 
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the 
          *        message body, and should not be displayed in the attachment list.
@@ -5412,7 +5415,9 @@ export declare namespace Office {
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
-         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
+         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file. **Important**: This link must be
+         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
+         *        be accessible on a private network as long as it doesn't need further authentication.
          *
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
          *        message body, and should not be displayed in the attachment list.
@@ -5461,7 +5466,9 @@ export declare namespace Office {
          *
          *        `attachments.name`: A string that contains the name of the attachment, up to 255 characters in length.
          *
-         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file.
+         *        `attachments.url`: Only used if type is set to file. The URI of the location for the file. **Important**: This link must be
+         *        publicly accessible, without need for authentication by Exchange Online servers. However, with on-premises Exchange, the link can
+         *        be accessible on a private network as long as it doesn't need further authentication.
          *
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
          *        message body, and should not be displayed in the attachment list.
@@ -8662,6 +8669,9 @@ export declare namespace Office {
         name: string;
         /**
          * Only used if type is set to file. The URI of the location for the file.
+         *
+         * **Important**: This link must be publicly accessible, without need for authentication by Exchange Online servers. However, with
+         * on-premises Exchange, the link can be accessible on a private network as long as it doesn't need further authentication.
          */
         url?: string;
         /**
