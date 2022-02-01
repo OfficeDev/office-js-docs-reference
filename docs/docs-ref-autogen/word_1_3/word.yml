@@ -15,9 +15,7 @@ enums:
   - 'word!Word.DocumentPropertyType:enum'
   - 'word!Word.ErrorCodes:enum'
   - 'word!Word.EventType:enum'
-  - 'word!Word.FileContentFormat:enum'
   - 'word!Word.HeaderFooterType:enum'
-  - 'word!Word.ImageFormat:enum'
   - 'word!Word.InsertLocation:enum'
   - 'word!Word.ListBullet:enum'
   - 'word!Word.ListLevelType:enum'
@@ -26,7 +24,6 @@ enums:
   - 'word!Word.RangeLocation:enum'
   - 'word!Word.SelectionMode:enum'
   - 'word!Word.Style:enum'
-  - 'word!Word.TapObjectType:enum'
   - 'word!Word.UnderlineType:enum'
   - 'word!Word.VerticalAlignment:enum'
 classes:

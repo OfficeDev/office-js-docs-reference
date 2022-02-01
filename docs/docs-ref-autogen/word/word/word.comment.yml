@@ -82,6 +82,20 @@ properties:
       content: 'content: string;'
       return:
         type: string
+  - name: contentRange
+    uid: 'word!Word.Comment#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange: Word.CommentContentRange;'
+      return:
+        type: '<xref uid="word!Word.CommentContentRange:class" />'
   - name: context
     uid: 'word!Word.Comment#context:member'
     package: word!
@@ -115,7 +129,9 @@ properties:
     package: word!
     fullName: id
     summary: ID
-    remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -140,7 +156,9 @@ properties:
     uid: 'word!Word.Comment#resolved:member'
     package: word!
     fullName: resolved
-    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    summary: >-
+      Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
+      means that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

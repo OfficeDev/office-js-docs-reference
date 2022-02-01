@@ -51,6 +51,20 @@ properties:
       content: 'content?: string;'
       return:
         type: string
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyData#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Gets or sets the commentReply's content range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeData:interface" />'
   - name: creationDate
     uid: 'word!Word.Interfaces.CommentReplyData#creationDate:member'
     package: word!
@@ -70,8 +84,10 @@ properties:
     package: word!
     fullName: id
     summary: ID
-    remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    isPreview: false
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'id?: string;'

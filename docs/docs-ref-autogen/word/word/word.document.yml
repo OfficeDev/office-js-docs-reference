@@ -449,7 +449,7 @@ methods:
       Performs a search with the specified search options on the scope of the whole document. The search results are a
       collection of range objects.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
+      \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false

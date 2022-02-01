@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CommentReplyCollectionLoadOptions
 summary: >-
-  Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) object. Represents all comment replies
-  in one comment thread.
+  Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment
+  replies in one comment thread.
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -69,6 +69,20 @@ properties:
       content: 'content?: boolean;'
       return:
         type: boolean
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: 'For EACH ITEM in the collection: Gets or sets the commentReply''s content range.'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />'
   - name: creationDate
     uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
     package: word!
@@ -88,7 +102,9 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: ID'
-    remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

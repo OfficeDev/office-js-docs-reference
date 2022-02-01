@@ -45,8 +45,6 @@ items:
                 uid: 'word!Word.ErrorCodes:enum'
               - name: EventType
                 uid: 'word!Word.EventType:enum'
-              - name: FileContentFormat
-                uid: 'word!Word.FileContentFormat:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
@@ -69,8 +67,6 @@ items:
                 uid: 'word!Word.SelectionMode:enum'
               - name: Style
                 uid: 'word!Word.Style:enum'
-              - name: TapObjectType
-                uid: 'word!Word.TapObjectType:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
@@ -83,6 +79,8 @@ items:
             uid: 'word!Word.Comment:class'
           - name: CommentCollection
             uid: 'word!Word.CommentCollection:class'
+          - name: CommentContentRange
+            uid: 'word!Word.CommentContentRange:class'
           - name: CommentReply
             uid: 'word!Word.CommentReply:class'
           - name: CommentReplyCollection

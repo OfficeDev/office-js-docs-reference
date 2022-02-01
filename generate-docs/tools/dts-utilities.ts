@@ -234,31 +234,10 @@ function extractFirstSentenceFromComment(commentText) {
 }
 
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
-    let fieldLink: string;
-    if (field.type === FieldType.Method) {
-        // Remove anonymous types before proceeding.
-        let fieldString = field.declarationString.replace(/{[\s\S]*}/gm, "");
-        let parameterLink: string = "";
-        let paramIndex = fieldString.indexOf(":");
-        while (paramIndex < fieldString.indexOf(")")) {
-            const wordStartIndex = Math.max(
-                fieldString.lastIndexOf("(", paramIndex),
-                fieldString.lastIndexOf(" ", paramIndex)) + 1;
-            // Remove the variable modifiers for the link.
-            parameterLink += "_" + fieldString.substring(wordStartIndex, paramIndex).replace(/\?/gm, "").replace(/\.\.\./gm, "") + "_";
-            paramIndex = fieldString.indexOf(":", paramIndex + 1);
-        }
-
-        if (parameterLink === "") {
-            parameterLink = "__";
-        }
-
-
-        fieldLink = "/" + relativePath + className.toLowerCase() + "#" + field.name + parameterLink;
-    } else {
-        fieldLink = "/" + relativePath + className.toLowerCase() + "#" + field.name;
-    }
-
+    // Build the standard link anchor format based on host.
+    let anchorPrefix = relativePath.substring(relativePath.lastIndexOf("/") + 1, relativePath.lastIndexOf("."));
+    anchorPrefix = anchorPrefix + "-" + (anchorPrefix === "outlook" ? "office" : anchorPrefix) + "-";
+    let fieldLink = "/" + relativePath + className.toLowerCase() + "#" + anchorPrefix + className.toLowerCase() + "-" + field.name.toLowerCase() + (field.type === FieldType.Method ? "-member(1)" : "-member");
     return fieldLink;
 }
 

@@ -1348,36 +1348,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
-
-      await Word.run(async (context) => {
-        // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        let secondSentence = context.document.body.insertParagraph(
-          "This is the first text with a custom style.",
-          "End"
-        );
-        secondSentence.font.set({
-          bold: false,
-          italic: true,
-          name: "Berlin Sans FB",
-          color: "blue",
-          size: 30
-        });
-
-        await context.sync();
-      });
-
-      ```
+    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

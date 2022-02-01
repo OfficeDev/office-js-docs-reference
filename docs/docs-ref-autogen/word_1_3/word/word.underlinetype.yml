@@ -4,7 +4,7 @@ uid: 'word!Word.UnderlineType:enum'
 package: word!
 fullName: Word.UnderlineType
 summary: The supported styles for underline format.
-remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

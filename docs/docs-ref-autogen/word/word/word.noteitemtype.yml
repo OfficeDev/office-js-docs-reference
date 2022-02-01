@@ -4,8 +4,10 @@ uid: 'word!Word.NoteItemType:enum'
 package: word!
 fullName: Word.NoteItemType
 summary: Note item type
-remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-isPreview: false
+remarks: >-
+  \[ [API set: WordApiOnline BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+isPreview: true
 isDeprecated: false
 fields:
   - name: endnote
