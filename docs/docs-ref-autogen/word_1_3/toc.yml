@@ -41,12 +41,8 @@ items:
                 uid: 'word!Word.ErrorCodes:enum'
               - name: EventType
                 uid: 'word!Word.EventType:enum'
-              - name: FileContentFormat
-                uid: 'word!Word.FileContentFormat:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
-              - name: ImageFormat
-                uid: 'word!Word.ImageFormat:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
               - name: ListBullet
@@ -63,8 +59,6 @@ items:
                 uid: 'word!Word.SelectionMode:enum'
               - name: Style
                 uid: 'word!Word.Style:enum'
-              - name: TapObjectType
-                uid: 'word!Word.TapObjectType:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment

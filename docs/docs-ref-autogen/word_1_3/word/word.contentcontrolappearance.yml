@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ContentControlAppearance
 summary: ContentControl appearance
 remarks: |-
-  \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
 
   Content control appearance options are bounding box, tags, or hidden.
 isPreview: false

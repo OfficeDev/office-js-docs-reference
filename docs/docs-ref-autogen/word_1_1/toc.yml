@@ -21,54 +21,22 @@ items:
             items:
               - name: Alignment
                 uid: 'word!Word.Alignment:enum'
-              - name: BodyType
-                uid: 'word!Word.BodyType:enum'
-              - name: BorderLocation
-                uid: 'word!Word.BorderLocation:enum'
-              - name: BorderType
-                uid: 'word!Word.BorderType:enum'
               - name: BreakType
                 uid: 'word!Word.BreakType:enum'
-              - name: CellPaddingLocation
-                uid: 'word!Word.CellPaddingLocation:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
                 uid: 'word!Word.ContentControlType:enum'
-              - name: DocumentPropertyType
-                uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'word!Word.ErrorCodes:enum'
-              - name: EventType
-                uid: 'word!Word.EventType:enum'
-              - name: FileContentFormat
-                uid: 'word!Word.FileContentFormat:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
-              - name: ImageFormat
-                uid: 'word!Word.ImageFormat:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
-              - name: ListBullet
-                uid: 'word!Word.ListBullet:enum'
-              - name: ListLevelType
-                uid: 'word!Word.ListLevelType:enum'
-              - name: ListNumbering
-                uid: 'word!Word.ListNumbering:enum'
-              - name: LocationRelation
-                uid: 'word!Word.LocationRelation:enum'
-              - name: RangeLocation
-                uid: 'word!Word.RangeLocation:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
-              - name: Style
-                uid: 'word!Word.Style:enum'
-              - name: TapObjectType
-                uid: 'word!Word.TapObjectType:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
-              - name: VerticalAlignment
-                uid: 'word!Word.VerticalAlignment:enum'
           - name: Body
             uid: 'word!Word.Body:class'
           - name: ContentControl

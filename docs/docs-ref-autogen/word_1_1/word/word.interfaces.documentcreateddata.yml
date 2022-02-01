@@ -15,7 +15,7 @@ properties:
     fullName: body
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
-      etc.. Read-only.
+      etc. Read-only.
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
@@ -31,7 +31,7 @@ properties:
     fullName: contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc.. Read-only.
+      document, headers, footers, textboxes, etc. Read-only.
     remarks: >-
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]

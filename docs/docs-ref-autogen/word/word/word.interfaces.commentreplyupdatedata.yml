@@ -23,6 +23,20 @@ properties:
       content: 'content?: string;'
       return:
         type: string
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyUpdateData#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Gets or sets the commentReply's content range.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
   - name: parentComment
     uid: 'word!Word.Interfaces.CommentReplyUpdateData#parentComment:member'
     package: word!
