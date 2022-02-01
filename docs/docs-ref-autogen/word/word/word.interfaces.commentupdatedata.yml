@@ -23,11 +23,27 @@ properties:
       content: 'content?: string;'
       return:
         type: string
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentUpdateData#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
   - name: resolved
     uid: 'word!Word.Interfaces.CommentUpdateData#resolved:member'
     package: word!
     fullName: resolved
-    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+    summary: >-
+      Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
+      means that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

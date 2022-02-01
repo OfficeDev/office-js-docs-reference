@@ -4,8 +4,8 @@ uid: 'word!Word.CommentReplyCollection:class'
 package: word!
 fullName: Word.CommentReplyCollection
 summary: >-
-  Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) object. Represents all comment replies
-  in one comment thread.
+  Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment
+  replies in one comment thread.
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -59,7 +59,7 @@ methods:
     uid: 'word!Word.CommentReplyCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first comment reply or null object in the collection.
+    summary: 'Gets the first comment reply in the collection. If the collection is empty, returns a null object.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -84,7 +84,7 @@ methods:
       content: 'getItem(index: number): Word.CommentReply;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a comments object.
+          description: A number that identifies the index location of a comment reply object.
           type: number
       return:
         type: '<xref uid="word!Word.CommentReply:class" />'
