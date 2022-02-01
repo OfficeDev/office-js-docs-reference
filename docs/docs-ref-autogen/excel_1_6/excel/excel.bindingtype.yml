@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Excel.BindingType
+uid: 'excel!Excel.BindingType:enum'
+package: excel!
+fullName: Excel.BindingType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: range
+    uid: 'excel!Excel.BindingType.range:member'
+    package: excel!
+    summary: ''
+    value: '"Range"'
+  - name: table
+    uid: 'excel!Excel.BindingType.table:member'
+    package: excel!
+    summary: ''
+    value: '"Table"'
+  - name: text
+    uid: 'excel!Excel.BindingType.text:member'
+    package: excel!
+    summary: ''
+    value: '"Text"'

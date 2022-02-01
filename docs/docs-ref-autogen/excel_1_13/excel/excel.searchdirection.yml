@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: Excel.SearchDirection
+uid: 'excel!Excel.SearchDirection:enum'
+package: excel!
+fullName: Excel.SearchDirection
+summary: Specifies the search direction.
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: backwards
+    uid: 'excel!Excel.SearchDirection.backwards:member'
+    package: excel!
+    summary: Search in reverse order.
+    value: '"Backwards"'
+  - name: forward
+    uid: 'excel!Excel.SearchDirection.forward:member'
+    package: excel!
+    summary: Search in forward order.
+    value: '"Forward"'

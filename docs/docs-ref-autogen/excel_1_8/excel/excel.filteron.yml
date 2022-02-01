@@ -1,0 +1,82 @@
+### YamlMime:TSEnum
+name: Excel.FilterOn
+uid: 'excel!Excel.FilterOn:enum'
+package: excel!
+fullName: Excel.FilterOn
+summary: ''
+remarks: |-
+  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+  #### Examples
+
+  ```typescript
+  await Excel.run(async (context) => {
+      // This method adds a custom AutoFilter to the active worksheet 
+      // and applies the filter to a column of the used range.
+
+      // Retrieve the active worksheet and the used range on that worksheet.
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+      const farmData = sheet.getUsedRange();
+
+      // Add a filter that will only show the rows with values that end with the letter "e" in column 1.
+      sheet.autoFilter.apply(farmData, 1, {
+          criterion1: "=*e",
+          filterOn: Excel.FilterOn.custom
+      });
+
+      await context.sync();
+  });
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottomItems
+    uid: 'excel!Excel.FilterOn.bottomItems:member'
+    package: excel!
+    summary: ''
+    value: '"BottomItems"'
+  - name: bottomPercent
+    uid: 'excel!Excel.FilterOn.bottomPercent:member'
+    package: excel!
+    summary: ''
+    value: '"BottomPercent"'
+  - name: cellColor
+    uid: 'excel!Excel.FilterOn.cellColor:member'
+    package: excel!
+    summary: ''
+    value: '"CellColor"'
+  - name: custom
+    uid: 'excel!Excel.FilterOn.custom:member'
+    package: excel!
+    summary: ''
+    value: '"Custom"'
+  - name: dynamic
+    uid: 'excel!Excel.FilterOn.dynamic:member'
+    package: excel!
+    summary: ''
+    value: '"Dynamic"'
+  - name: fontColor
+    uid: 'excel!Excel.FilterOn.fontColor:member'
+    package: excel!
+    summary: ''
+    value: '"FontColor"'
+  - name: icon
+    uid: 'excel!Excel.FilterOn.icon:member'
+    package: excel!
+    summary: ''
+    value: '"Icon"'
+  - name: topItems
+    uid: 'excel!Excel.FilterOn.topItems:member'
+    package: excel!
+    summary: ''
+    value: '"TopItems"'
+  - name: topPercent
+    uid: 'excel!Excel.FilterOn.topPercent:member'
+    package: excel!
+    summary: ''
+    value: '"TopPercent"'
+  - name: values
+    uid: 'excel!Excel.FilterOn.values:member'
+    package: excel!
+    summary: ''
+    value: '"Values"'

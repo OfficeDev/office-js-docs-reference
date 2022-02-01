@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: Excel.HorizontalAlignment
+uid: 'excel!Excel.HorizontalAlignment:enum'
+package: excel!
+fullName: Excel.HorizontalAlignment
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'excel!Excel.HorizontalAlignment.center:member'
+    package: excel!
+    summary: ''
+    value: '"Center"'
+  - name: centerAcrossSelection
+    uid: 'excel!Excel.HorizontalAlignment.centerAcrossSelection:member'
+    package: excel!
+    summary: ''
+    value: '"CenterAcrossSelection"'
+  - name: distributed
+    uid: 'excel!Excel.HorizontalAlignment.distributed:member'
+    package: excel!
+    summary: ''
+    value: '"Distributed"'
+  - name: fill
+    uid: 'excel!Excel.HorizontalAlignment.fill:member'
+    package: excel!
+    summary: ''
+    value: '"Fill"'
+  - name: general
+    uid: 'excel!Excel.HorizontalAlignment.general:member'
+    package: excel!
+    summary: ''
+    value: '"General"'
+  - name: justify
+    uid: 'excel!Excel.HorizontalAlignment.justify:member'
+    package: excel!
+    summary: ''
+    value: '"Justify"'
+  - name: left
+    uid: 'excel!Excel.HorizontalAlignment.left:member'
+    package: excel!
+    summary: ''
+    value: '"Left"'
+  - name: right
+    uid: 'excel!Excel.HorizontalAlignment.right:member'
+    package: excel!
+    summary: ''
+    value: '"Right"'

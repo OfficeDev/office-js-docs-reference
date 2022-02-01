@@ -1,0 +1,86 @@
+### YamlMime:TSEnum
+name: Excel.RefErrorCellValueSubType
+uid: 'excel!Excel.RefErrorCellValueSubType:enum'
+package: excel!
+fullName: Excel.RefErrorCellValueSubType
+summary: 'Represents types of \#REF! errors.'
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+fields:
+  - name: externalLinksArrayRef
+    uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksArrayRef:member'
+    package: excel!
+    summary: 'An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.'
+    value: '"ExternalLinksArrayRef"'
+  - name: externalLinksRefNotExist
+    uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksRefNotExist:member'
+    package: excel!
+    summary: >-
+      An error caused by the reference or name not existing in the linked workbook. Displays as error type \#REF! in
+      Excel.
+    value: '"ExternalLinksRefNotExist"'
+  - name: externalLinksStructuredRef
+    uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member'
+    package: excel!
+    summary: 'An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.'
+    value: '"ExternalLinksStructuredRef"'
+  - name: hlookupRowIndexGreaterThanNumRows
+    uid: 'excel!Excel.RefErrorCellValueSubType.hlookupRowIndexGreaterThanNumRows:member'
+    package: excel!
+    summary: >-
+      An error caused by a row\_index\_num parameter of HLOOKUP that's greater than the number of rows in the
+      table\_array parameter. Displays as error type \#REF! in Excel.
+    value: '"HlookupRowIndexGreaterThanNumRows"'
+  - name: subArrayEndColumnOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColumnOutOfBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_column parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in
+      Excel.
+    value: '"SubArrayEndColumnOutOfBounds"'
+  - name: subArrayEndColumnPrecedesStartColumn
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndColumnPrecedesStartColumn:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_column parameter of SUBARRAY preceding the start\_column parameter. Displays as error
+      type \#REF! in Excel.
+    value: '"SubArrayEndColumnPrecedesStartColumn"'
+  - name: subArrayEndRowOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowOutOfBounds:member'
+    package: excel!
+    summary: 'An error caused by an end\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
+    value: '"SubArrayEndRowOutOfBounds"'
+  - name: subArrayEndRowPrecedesStartRow
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayEndRowPrecedesStartRow:member'
+    package: excel!
+    summary: >-
+      An error caused by an end\_row parameter of SUBARRAY preceding the start\_row parameter. Displays as error type
+      \#REF! in Excel.
+    value: '"SubArrayEndRowPrecedesStartRow"'
+  - name: subArrayStartColumnOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartColumnOutOfBounds:member'
+    package: excel!
+    summary: >-
+      An error caused by a start\_column parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in
+      Excel.
+    value: '"SubArrayStartColumnOutOfBounds"'
+  - name: subArrayStartRowOutOfBounds
+    uid: 'excel!Excel.RefErrorCellValueSubType.subArrayStartRowOutOfBounds:member'
+    package: excel!
+    summary: 'An error caused by a start\_row parameter of SUBARRAY being out of bounds. Displays as error type \#REF! in Excel.'
+    value: '"SubArrayStartRowOutOfBounds"'
+  - name: unknown
+    uid: 'excel!Excel.RefErrorCellValueSubType.unknown:member'
+    package: excel!
+    summary: 'An unknown type of error. Displays as error type \#REF! in Excel.'
+    value: '"Unknown"'
+  - name: vlookupColumnIndexGreaterThanNumColumns
+    uid: 'excel!Excel.RefErrorCellValueSubType.vlookupColumnIndexGreaterThanNumColumns:member'
+    package: excel!
+    summary: >-
+      An error caused by a column\_index\_num parameter of VLOOKUP that's greater than the number of columns in the
+      table\_array parameter. Displays as error type \#REF! in Excel.
+    value: '"VlookupColumnIndexGreaterThanNumColumns"'

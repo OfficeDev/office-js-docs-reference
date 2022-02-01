@@ -1,0 +1,145 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatPresetCriterion
+uid: 'excel!Excel.ConditionalFormatPresetCriterion:enum'
+package: excel!
+fullName: Excel.ConditionalFormatPresetCriterion
+summary: Represents the criteria of the preset criteria conditional format type.
+remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: aboveAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.aboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"AboveAverage"'
+  - name: belowAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.belowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"BelowAverage"'
+  - name: blanks
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.blanks:member'
+    package: excel!
+    summary: ''
+    value: '"Blanks"'
+  - name: duplicateValues
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.duplicateValues:member'
+    package: excel!
+    summary: ''
+    value: '"DuplicateValues"'
+  - name: equalOrAboveAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"EqualOrAboveAverage"'
+  - name: equalOrBelowAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"EqualOrBelowAverage"'
+  - name: errors
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.errors:member'
+    package: excel!
+    summary: ''
+    value: '"Errors"'
+  - name: invalid
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.invalid:member'
+    package: excel!
+    summary: ''
+    value: '"Invalid"'
+  - name: lastMonth
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.lastMonth:member'
+    package: excel!
+    summary: ''
+    value: '"LastMonth"'
+  - name: lastSevenDays
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.lastSevenDays:member'
+    package: excel!
+    summary: ''
+    value: '"LastSevenDays"'
+  - name: lastWeek
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.lastWeek:member'
+    package: excel!
+    summary: ''
+    value: '"LastWeek"'
+  - name: nextMonth
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.nextMonth:member'
+    package: excel!
+    summary: ''
+    value: '"NextMonth"'
+  - name: nextWeek
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.nextWeek:member'
+    package: excel!
+    summary: ''
+    value: '"NextWeek"'
+  - name: nonBlanks
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.nonBlanks:member'
+    package: excel!
+    summary: ''
+    value: '"NonBlanks"'
+  - name: nonErrors
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.nonErrors:member'
+    package: excel!
+    summary: ''
+    value: '"NonErrors"'
+  - name: oneStdDevAboveAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"OneStdDevAboveAverage"'
+  - name: oneStdDevBelowAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"OneStdDevBelowAverage"'
+  - name: thisMonth
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.thisMonth:member'
+    package: excel!
+    summary: ''
+    value: '"ThisMonth"'
+  - name: thisWeek
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.thisWeek:member'
+    package: excel!
+    summary: ''
+    value: '"ThisWeek"'
+  - name: threeStdDevAboveAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeStdDevAboveAverage"'
+  - name: threeStdDevBelowAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"ThreeStdDevBelowAverage"'
+  - name: today
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.today:member'
+    package: excel!
+    summary: ''
+    value: '"Today"'
+  - name: tomorrow
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.tomorrow:member'
+    package: excel!
+    summary: ''
+    value: '"Tomorrow"'
+  - name: twoStdDevAboveAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage:member'
+    package: excel!
+    summary: ''
+    value: '"TwoStdDevAboveAverage"'
+  - name: twoStdDevBelowAverage
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage:member'
+    package: excel!
+    summary: ''
+    value: '"TwoStdDevBelowAverage"'
+  - name: uniqueValues
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.uniqueValues:member'
+    package: excel!
+    summary: ''
+    value: '"UniqueValues"'
+  - name: yesterday
+    uid: 'excel!Excel.ConditionalFormatPresetCriterion.yesterday:member'
+    package: excel!
+    summary: ''
+    value: '"Yesterday"'

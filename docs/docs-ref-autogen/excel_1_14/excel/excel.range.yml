@@ -1,0 +1,3593 @@
+### YamlMime:TSType
+name: Excel.Range
+uid: 'excel!Excel.Range:class'
+package: excel!
+fullName: Excel.Range
+summary: >-
+  Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
+  more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: address
+    uid: 'excel!Excel.Range#address:member'
+    package: excel!
+    fullName: address
+    summary: 'Specifies the range reference in A1-style. Address value contains the sheet reference (e.g., "Sheet1!A1:B4").'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type: string
+  - name: addressLocal
+    uid: 'excel!Excel.Range#addressLocal:member'
+    package: excel!
+    fullName: addressLocal
+    summary: Represents the range reference for the specified range in the language of the user.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly addressLocal: string;'
+      return:
+        type: string
+  - name: cellCount
+    uid: 'excel!Excel.Range#cellCount:member'
+    package: excel!
+    fullName: cellCount
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly cellCount: number;'
+      return:
+        type: number
+  - name: columnCount
+    uid: 'excel!Excel.Range#columnCount:member'
+    package: excel!
+    fullName: columnCount
+    summary: Specifies the total number of columns in the range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly columnCount: number;'
+      return:
+        type: number
+  - name: columnHidden
+    uid: 'excel!Excel.Range#columnHidden:member'
+    package: excel!
+    fullName: columnHidden
+    summary: >-
+      Represents if all columns in the current range are hidden. Value is `true` when all columns in a range are hidden.
+      Value is `false` when no columns in the range are hidden. Value is `null` when some columns in a range are hidden
+      and other columns in the same range are not hidden.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnHidden: boolean;'
+      return:
+        type: boolean
+  - name: columnIndex
+    uid: 'excel!Excel.Range#columnIndex:member'
+    package: excel!
+    fullName: columnIndex
+    summary: Specifies the column number of the first cell in the range. Zero-indexed.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly columnIndex: number;'
+      return:
+        type: number
+  - name: conditionalFormats
+    uid: 'excel!Excel.Range#conditionalFormats:member'
+    package: excel!
+    fullName: conditionalFormats
+    summary: The collection of `ConditionalFormats` that intersect the range.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
+      return:
+        type: '<xref uid="excel!Excel.ConditionalFormatCollection:class" />'
+  - name: context
+    uid: 'excel!Excel.Range#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: dataValidation
+    uid: 'excel!Excel.Range#dataValidation:member'
+    package: excel!
+    fullName: dataValidation
+    summary: Returns a data validation object.
+    remarks: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly dataValidation: Excel.DataValidation;'
+      return:
+        type: '<xref uid="excel!Excel.DataValidation:class" />'
+  - name: format
+    uid: 'excel!Excel.Range#format:member'
+    package: excel!
+    fullName: format
+    summary: 'Returns a format object, encapsulating the range''s font, fill, borders, alignment, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly format: Excel.RangeFormat;'
+      return:
+        type: '<xref uid="excel!Excel.RangeFormat:class" />'
+  - name: formulas
+    uid: 'excel!Excel.Range#formulas:member'
+    package: excel!
+    fullName: formulas
+    summary: 'Represents the formula in A1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulas: any[][];'
+      return:
+        type: 'any[][]'
+  - name: formulasLocal
+    uid: 'excel!Excel.Range#formulasLocal:member'
+    package: excel!
+    fullName: formulasLocal
+    summary: >-
+      Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. If a cell has no formula, its value is
+      returned instead.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulasLocal: any[][];'
+      return:
+        type: 'any[][]'
+  - name: formulasR1C1
+    uid: 'excel!Excel.Range#formulasR1C1:member'
+    package: excel!
+    fullName: formulasR1C1
+    summary: 'Represents the formula in R1C1-style notation. If a cell has no formula, its value is returned instead.'
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulasR1C1: any[][];'
+      return:
+        type: 'any[][]'
+  - name: hasSpill
+    uid: 'excel!Excel.Range#hasSpill:member'
+    package: excel!
+    fullName: hasSpill
+    summary: >-
+      Represents if all cells have a spill border. Returns `true` if all cells have a spill border, or `false` if all
+      cells do not have a spill border. Returns `null` if there are cells both with and without spill borders within the
+      range.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly hasSpill: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'excel!Excel.Range#height:member'
+    package: excel!
+    fullName: height
+    summary: 'Returns the distance in points, for 100% zoom, from the top edge of the range to the bottom edge of the range.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type: number
+  - name: hidden
+    uid: 'excel!Excel.Range#hidden:member'
+    package: excel!
+    fullName: hidden
+    summary: >-
+      Represents if all cells in the current range are hidden. Value is `true` when all cells in a range are hidden.
+      Value is `false` when no cells in the range are hidden. Value is `null` when some cells in a range are hidden and
+      other cells in the same range are not hidden.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly hidden: boolean;'
+      return:
+        type: boolean
+  - name: hyperlink
+    uid: 'excel!Excel.Range#hyperlink:member'
+    package: excel!
+    fullName: hyperlink
+    summary: Represents the hyperlink for the current range.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Orders");
+
+          let productsRange = sheet.getRange("A3:A5");
+          productsRange.load("values");
+
+          await context.sync();
+
+          // Create a hyperlink to a URL 
+          // for each product name in the first table.
+          for (let i = 0; i < productsRange.values.length; i++) {
+              let cellRange = productsRange.getCell(i, 0);
+              let cellText = productsRange.values[i][0];
+
+              let hyperlink = {
+                  textToDisplay: cellText,
+                  screenTip: "Search Bing for '" + cellText + "'",
+                  address: "https://www.bing.com?q=" + cellText
+              }
+              cellRange.hyperlink = hyperlink;
+          }
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink: Excel.RangeHyperlink;'
+      return:
+        type: '<xref uid="excel!Excel.RangeHyperlink:interface" />'
+  - name: isEntireColumn
+    uid: 'excel!Excel.Range#isEntireColumn:member'
+    package: excel!
+    fullName: isEntireColumn
+    summary: Represents if the current range is an entire column.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEntireColumn: boolean;'
+      return:
+        type: boolean
+  - name: isEntireRow
+    uid: 'excel!Excel.Range#isEntireRow:member'
+    package: excel!
+    fullName: isEntireRow
+    summary: Represents if the current range is an entire row.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isEntireRow: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'excel!Excel.Range#left:member'
+    package: excel!
+    fullName: left
+    summary: 'Returns the distance in points, for 100% zoom, from the left edge of the worksheet to the left edge of the range.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type: number
+  - name: linkedDataTypeState
+    uid: 'excel!Excel.Range#linkedDataTypeState:member'
+    package: excel!
+    fullName: linkedDataTypeState
+    summary: Represents the data type state of each cell.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];'
+      return:
+        type: '<xref uid="excel!Excel.LinkedDataTypeState:enum" />[][]'
+  - name: numberFormat
+    uid: 'excel!Excel.Range#numberFormat:member'
+    package: excel!
+    fullName: numberFormat
+    summary: Represents Excel's number format code for the given range.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F5:G7";
+          var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+          var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+          var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.numberFormat = numberFormat;
+          range.values = values;
+          range.formulas= formulas;
+          range.load('text');
+          return ctx.sync().then(function() {
+              console.log(range.text);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat: any[][];'
+      return:
+        type: 'any[][]'
+  - name: numberFormatCategories
+    uid: 'excel!Excel.Range#numberFormatCategories:member'
+    package: excel!
+    fullName: numberFormatCategories
+    summary: Represents the category of number format of each cell.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly numberFormatCategories: Excel.NumberFormatCategory[][];'
+      return:
+        type: '<xref uid="excel!Excel.NumberFormatCategory:enum" />[][]'
+  - name: numberFormatLocal
+    uid: 'excel!Excel.Range#numberFormatLocal:member'
+    package: excel!
+    fullName: numberFormatLocal
+    summary: >-
+      Represents Excel's number format code for the given range, based on the language settings of the user. Excel does
+      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
+      text uses the locally-formatted strings based on the language specified in the system settings.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormatLocal: any[][];'
+      return:
+        type: 'any[][]'
+  - name: rowCount
+    uid: 'excel!Excel.Range#rowCount:member'
+    package: excel!
+    fullName: rowCount
+    summary: Returns the total number of rows in the range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowCount: number;'
+      return:
+        type: number
+  - name: rowHidden
+    uid: 'excel!Excel.Range#rowHidden:member'
+    package: excel!
+    fullName: rowHidden
+    summary: >-
+      Represents if all rows in the current range are hidden. Value is `true` when all rows in a range are hidden. Value
+      is `false` when no rows in the range are hidden. Value is `null` when some rows in a range are hidden and other
+      rows in the same range are not hidden.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowHidden: boolean;'
+      return:
+        type: boolean
+  - name: rowIndex
+    uid: 'excel!Excel.Range#rowIndex:member'
+    package: excel!
+    fullName: rowIndex
+    summary: Returns the row number of the first cell in the range. Zero-indexed.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly rowIndex: number;'
+      return:
+        type: number
+  - name: savedAsArray
+    uid: 'excel!Excel.Range#savedAsArray:member'
+    package: excel!
+    fullName: savedAsArray
+    summary: >-
+      Represents if all the cells would be saved as an array formula. Returns `true` if all cells would be saved as an
+      array formula, or `false` if all cells would not be saved as an array formula. Returns `null` if some cells would
+      be saved as an array formula and some would not be.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly savedAsArray: boolean;'
+      return:
+        type: boolean
+  - name: sort
+    uid: 'excel!Excel.Range#sort:member'
+    package: excel!
+    fullName: sort
+    summary: Represents the range sort of the current range.
+    remarks: >-
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
+      async function sortTopToBottom(criteria: string) {
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const range = sheet.getRange("A1:E5");
+
+              // Find the column header that provides the sort criteria.
+              const header = range.find(criteria, {});
+              header.load("columnIndex");
+              await context.sync();
+
+              range.sort.apply(
+                  [
+                      {
+                          key: header.columnIndex,
+                          sortOn: Excel.SortOn.value
+                      }
+                  ],
+                  false /*matchCase*/,
+                  true /*hasHeaders*/,
+                  Excel.SortOrientation.rows
+              );
+              await context.sync();
+          });
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly sort: Excel.RangeSort;'
+      return:
+        type: '<xref uid="excel!Excel.RangeSort:class" />'
+  - name: style
+    uid: 'excel!Excel.Range#style:member'
+    package: excel!
+    fullName: style
+    summary: >-
+      Represents the style of the current range. If the styles of the cells are inconsistent, `null` will be returned.
+      For custom styles, the style name will be returned. For built-in styles, a string representing a value in the
+      `BuiltInStyle` enum will be returned.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+      await Excel.run(async (context) => {
+          let worksheet = context.workbook.worksheets.getItem("Sample");
+          let range = worksheet.getRange("A1:E1");
+
+          // Apply built-in style. 
+          // Styles are in the Home tab ribbon.
+          range.style = Excel.BuiltInStyle.neutral;
+          range.format.horizontalAlignment = "Right";
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style: string;'
+      return:
+        type: string
+  - name: text
+    uid: 'excel!Excel.Range#text:member'
+    package: excel!
+    fullName: text
+    summary: >-
+      Text values of the specified range. The text value will not depend on the cell width. The number sign (\#)
+      substitution that happens in the Excel UI will not affect the text value returned by the API.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly text: string[][];'
+      return:
+        type: 'string[][]'
+  - name: top
+    uid: 'excel!Excel.Range#top:member'
+    package: excel!
+    fullName: top
+    summary: 'Returns the distance in points, for 100% zoom, from the top edge of the worksheet to the top edge of the range.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type: number
+  - name: values
+    uid: 'excel!Excel.Range#values:member'
+    package: excel!
+    fullName: values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
+      that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
+      or equal sign ("="), Excel interprets this value as a formula.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type: 'any[][]'
+  - name: valueTypes
+    uid: 'excel!Excel.Range#valueTypes:member'
+    package: excel!
+    fullName: valueTypes
+    summary: Specifies the type of data in each cell.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly valueTypes: Excel.RangeValueType[][];'
+      return:
+        type: '<xref uid="excel!Excel.RangeValueType:enum" />[][]'
+  - name: width
+    uid: 'excel!Excel.Range#width:member'
+    package: excel!
+    fullName: width
+    summary: 'Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.'
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type: number
+  - name: worksheet
+    uid: 'excel!Excel.Range#worksheet:member'
+    package: excel!
+    fullName: worksheet
+    summary: The worksheet containing the current range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+methods:
+  - name: 'autoFill(destinationRange, autoFillType)'
+    uid: 'excel!Excel.Range#autoFill:member(1)'
+    package: excel!
+    fullName: 'autoFill(destinationRange, autoFillType)'
+    summary: >-
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
+      not supported.
+
+
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const sumCell = sheet.getRange("P4");
+        
+        // Copy everything. The formulas will be contextually updated based on their new locations.
+        sumCell.autoFill("P4:P7", Excel.AutoFillType.fillCopy);
+        sumCell.format.autofitColumns();
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;'
+      parameters:
+        - id: destinationRange
+          description: >-
+            The destination range to AutoFill. If the destination range is `null`<!-- -->, data is filled out based on
+            the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+        - id: autoFillType
+          description: >-
+            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
+            current range. Default is "FillDefault".
+          type: '<xref uid="excel!Excel.AutoFillType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: 'autoFill(destinationRange, autoFillTypeString)'
+    uid: 'excel!Excel.Range#autoFill:member(2)'
+    package: excel!
+    fullName: 'autoFill(destinationRange, autoFillTypeString)'
+    summary: >-
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
+      not supported.
+
+
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        autoFill(destinationRange?: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" |
+        "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" |
+        "GrowthTrend" | "FlashFill"): void;
+      parameters:
+        - id: destinationRange
+          description: >-
+            The destination range to AutoFill. If the destination range is `null`<!-- -->, data is filled out based on
+            the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+        - id: autoFillTypeString
+          description: >-
+            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
+            current range. Default is "FillDefault".
+          type: >-
+            "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" |
+            "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"
+      return:
+        type: void
+        description: ''
+  - name: calculate()
+    uid: 'excel!Excel.Range#calculate:member(1)'
+    package: excel!
+    fullName: calculate()
+    summary: Calculates a range of cells on a worksheet.
+    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: clear(applyTo)
+    uid: 'excel!Excel.Range#clear:member(1)'
+    package: excel!
+    fullName: clear(applyTo)
+    summary: 'Clear range values, format, fill, border, etc.'
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      // Below example clears format and contents of the range. 
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "D:F";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.clear();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(applyTo?: Excel.ClearApplyTo): void;'
+      parameters:
+        - id: applyTo
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+          type: '<xref uid="excel!Excel.ClearApplyTo:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: clear(applyToString)
+    uid: 'excel!Excel.Range#clear:member(2)'
+    package: excel!
+    fullName: clear(applyToString)
+    summary: 'Clear range values, format, fill, border, etc.'
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      parameters:
+        - id: applyToString
+          description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
+      return:
+        type: void
+        description: ''
+  - name: convertDataTypeToText()
+    uid: 'excel!Excel.Range#convertDataTypeToText:member(1)'
+    package: excel!
+    fullName: convertDataTypeToText()
+    summary: Converts the range cells with data types into text.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'convertToLinkedDataType(serviceID, languageCulture)'
+    uid: 'excel!Excel.Range#convertToLinkedDataType:member(1)'
+    package: excel!
+    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
+    summary: Converts the range cells into linked data types in the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertToLinkedDataType(serviceID: number, languageCulture: string): void;'
+      parameters:
+        - id: serviceID
+          description: The service ID which will be used to query the data.
+          type: number
+        - id: languageCulture
+          description: Language culture to query the service for.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    uid: 'excel!Excel.Range#copyFrom:member(1)'
+    package: excel!
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    summary: >-
+      Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range
+      can be a different size than the source range or `RangeAreas`<!-- -->. The destination will be expanded
+      automatically if it is smaller than the source.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          // Place a label in front of the copied data.
+          sheet.getRange("F2").values = [["Copied Formula"]];
+
+          // Copy a range preserving the formulas.
+          // Note: non-formula values are copied over as is.
+          sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean,
+        transpose?: boolean): void;
+      parameters:
+        - id: sourceRange
+          description: >-
+            The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form
+            must be able to be created by removing full rows or columns from a rectangular range.
+          type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
+        - id: copyType
+          description: The type of cell data or formatting to copy over. Default is "All".
+          type: '<xref uid="excel!Excel.RangeCopyType:enum" />'
+        - id: skipBlanks
+          description: True if to skip blank cells in the source range. Default is false.
+          type: boolean
+        - id: transpose
+          description: True if to transpose the cells in the destination range. Default is false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    uid: 'excel!Excel.Range#copyFrom:member(2)'
+    package: excel!
+    fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    summary: >-
+      Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range
+      can be a different size than the source range or `RangeAreas`<!-- -->. The destination will be expanded
+      automatically if it is smaller than the source.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
+        skipBlanks?: boolean, transpose?: boolean): void;
+      parameters:
+        - id: sourceRange
+          description: >-
+            The source range or `RangeAreas` to copy from. When the source `RangeAreas` has multiple ranges, their form
+            must be able to be created by removing full rows or columns from a rectangular range.
+          type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
+        - id: copyTypeString
+          description: The type of cell data or formatting to copy over. Default is "All".
+          type: '"All" | "Formulas" | "Values" | "Formats"'
+        - id: skipBlanks
+          description: True if to skip blank cells in the source range. Default is false.
+          type: boolean
+        - id: transpose
+          description: True if to transpose the cells in the destination range. Default is false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: delete(shift)
+    uid: 'excel!Excel.Range#delete:member(1)'
+    package: excel!
+    fullName: delete(shift)
+    summary: Deletes the cells associated with the range.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "D:F";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.delete("Left");
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(shift: Excel.DeleteShiftDirection): void;'
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
+          type: '<xref uid="excel!Excel.DeleteShiftDirection:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: delete(shiftString)
+    uid: 'excel!Excel.Range#delete:member(2)'
+    package: excel!
+    fullName: delete(shiftString)
+    summary: Deletes the cells associated with the range.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(shiftString: "Up" | "Left"): void;'
+      parameters:
+        - id: shiftString
+          description: Specifies which way to shift the cells. See `Excel.DeleteShiftDirection` for details.
+          type: '"Up" | "Left"'
+      return:
+        type: void
+        description: ''
+  - name: 'find(text, criteria)'
+    uid: 'excel!Excel.Range#find:member(1)'
+    package: excel!
+    fullName: 'find(text, criteria)'
+    summary: >-
+      Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
+      the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const table = sheet.tables.getItem("ExpensesTable");
+          const searchRange = table.getRange();
+
+          // NOTE: If no match is found, an ItemNotFound error
+          // is thrown when Range.find is evaluated.
+          const foundRange = searchRange.find($("#searchText").text(), {
+              completeMatch: isCompleteMatchToggle,
+              matchCase: isMatchCaseToggle,
+              searchDirection: searchDirectionToggle
+          });
+          
+          foundRange.load("address");
+          await context.sync();
+
+
+          console.log(foundRange.address);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'find(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
+      parameters:
+        - id: text
+          description: The string to find.
+          type: string
+        - id: criteria
+          description: >-
+            Additional search criteria, including the search direction and whether the search needs to match the entire
+            cell or be case-sensitive.
+          type: '<xref uid="excel!Excel.SearchCriteria:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: The `Range` object representing the first cell that contains a value matching the search text and criteria.
+  - name: 'findOrNullObject(text, criteria)'
+    uid: 'excel!Excel.Range#findOrNullObject:member(1)'
+    package: excel!
+    fullName: 'findOrNullObject(text, criteria)'
+    summary: >-
+      Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
+      the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
+      there are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->.
+      For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const table = sheet.tables.getItem("ExpensesTable");
+          const searchRange = table.getRange();
+          const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
+              completeMatch: isCompleteMatchToggle,
+              matchCase: isMatchCaseToggle,
+              searchDirection: searchDirectionToggle
+          });
+          
+          foundRange.load("address");
+          await context.sync();
+
+          if (foundRange.isNullObject) {
+              console.log("Text not found");
+          } else {
+              console.log(foundRange.address);
+          }
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'findOrNullObject(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
+      parameters:
+        - id: text
+          description: The string to find.
+          type: string
+        - id: criteria
+          description: >-
+            Additional search criteria, including the search direction and whether the search needs to match the entire
+            cell or be case-sensitive.
+          type: '<xref uid="excel!Excel.SearchCriteria:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: The `Range` which matched the search criteria.
+  - name: flashFill()
+    uid: 'excel!Excel.Range#flashFill:member(1)'
+    package: excel!
+    fullName: flashFill()
+    summary: >-
+      Does a Flash Fill to the current range. Flash Fill automatically fills data when it senses a pattern, so the range
+      must be a single column range and have data around it in order to find a pattern.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'flashFill(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'getAbsoluteResizedRange(numRows, numColumns)'
+    uid: 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
+    package: excel!
+    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
+    summary: >-
+      Gets a `Range` object with the same top-left cell as the current `Range` object, but with the specified numbers of
+      rows and columns.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Excel.Range;'
+      parameters:
+        - id: numRows
+          description: The number of rows of the new range size.
+          type: number
+        - id: numColumns
+          description: The number of columns of the new range size.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getBoundingRect(anotherRange)
+    uid: 'excel!Excel.Range#getBoundingRect:member(1)'
+    package: excel!
+    fullName: getBoundingRect(anotherRange)
+    summary: >-
+      Gets the smallest range object that encompasses the given ranges. For example, the `GetBoundingRect` of "B2:C5"
+      and "D10:E15" is "B2:E15".
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "D4:G6";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = range.getBoundingRect("G4:H8");
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // Prints Sheet1!D4:H8
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
+      parameters:
+        - id: anotherRange
+          description: 'The range object, address, or range name.'
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getCell(row, column)'
+    uid: 'excel!Excel.Range#getCell:member(1)'
+    package: excel!
+    fullName: 'getCell(row, column)'
+    summary: >-
+      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
+      to the top left cell of the range.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var cell = range.getCell(0,0);
+          cell.load('address');
+          return ctx.sync().then(function() {
+              console.log(cell.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCell(row: number, column: number): Excel.Range;'
+      parameters:
+        - id: row
+          description: Row number of the cell to be retrieved. Zero-indexed.
+          type: number
+        - id: column
+          description: Column number of the cell to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getCellProperties(cellPropertiesLoadOptions)
+    uid: 'excel!Excel.Range#getCellProperties:member(1)'
+    package: excel!
+    fullName: getCellProperties(cellPropertiesLoadOptions)
+    summary: 'Returns a 2D array, encapsulating the data for each cell''s font, fill, borders, alignment, and other properties.'
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+      await Excel.run(async (context) => {
+          const cell = context.workbook.getActiveCell();
+
+          // Define the cell properties to get by setting the matching LoadOptions to true.
+          const propertiesToGet = cell.getCellProperties({
+              address: true,
+              format: {
+                  fill: {
+                      color: true
+                  },
+                  font: {
+                      color: true
+                  }
+              },
+              style: true
+          });
+
+          // Sync to get the data from the workbook.
+          await context.sync();
+          const cellProperties = propertiesToGet.value[0][0];
+          console.log(
+              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions):
+        OfficeExtension.ClientResult<CellProperties[][]>;
+      parameters:
+        - id: cellPropertiesLoadOptions
+          description: An object that represents which cell properties to load.
+          type: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
+          />[][]&gt;
+        description: A 2D array where each item represents the requested properties of the corresponding cell.
+  - name: getColumn(column)
+    uid: 'excel!Excel.Range#getColumn:member(1)'
+    package: excel!
+    fullName: getColumn(column)
+    summary: Gets a column contained in the range.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet19";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!B1:B8
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumn(column: number): Excel.Range;'
+      parameters:
+        - id: column
+          description: Column number of the range to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getColumnProperties(columnPropertiesLoadOptions)
+    uid: 'excel!Excel.Range#getColumnProperties:member(1)'
+    package: excel!
+    fullName: getColumnProperties(columnPropertiesLoadOptions)
+    summary: >-
+      Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and
+      other properties. For properties that are not consistent across each cell within a given column, null will be
+      returned.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions):
+        OfficeExtension.ClientResult<ColumnProperties[]>;
+      parameters:
+        - id: columnPropertiesLoadOptions
+          description: An object that represents which column properties to load.
+          type: '<xref uid="excel!Excel.ColumnPropertiesLoadOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ColumnProperties:interface"
+          />[]&gt;
+        description: An array where each item represents the requested properties of the corresponding column.
+  - name: getColumnsAfter(count)
+    uid: 'excel!Excel.Range#getColumnsAfter:member(1)'
+    package: excel!
+    fullName: getColumnsAfter(count)
+    summary: Gets a certain number of columns to the right of the current `Range` object.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnsAfter(count?: number): Excel.Range;'
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getColumnsBefore(count)
+    uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
+    package: excel!
+    fullName: getColumnsBefore(count)
+    summary: Gets a certain number of columns to the left of the current `Range` object.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnsBefore(count?: number): Excel.Range;'
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getDirectDependents()
+    uid: 'excel!Excel.Range#getDirectDependents:member(1)'
+    package: excel!
+    fullName: getDirectDependents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in
+      the same worksheet or in multiple worksheets.
+    remarks: >-
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-direct-dependents.yaml
+
+      await Excel.run(async (context) => {
+        // Direct dependents are cells that contain formulas that refer to other cells.
+        let range = context.workbook.getActiveCell();
+        let directDependents = range.getDirectDependents();
+        range.load("address");
+        directDependents.areas.load("address");
+        await context.sync();
+        
+        console.log(`Direct dependent cells of ${range.address}:`);
+        
+        // Use the direct dependents API to loop through direct dependents of the active cell.
+        for (let i = 0; i < directDependents.areas.items.length; i++) {
+          // Highlight and print the address of each dependent cell.
+          directDependents.areas.items[i].format.fill.color = "Yellow";
+          console.log(`  ${directDependents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDirectDependents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: getDirectPrecedents()
+    uid: 'excel!Excel.Range#getDirectPrecedents:member(1)'
+    package: excel!
+    fullName: getDirectPrecedents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in
+      the same worksheet or in multiple worksheets.
+    remarks: >-
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+
+      await Excel.run(async (context) => {
+        // Precedents are cells referenced by the formula in a cell.
+        // A "direct precedent" is a cell directly referenced by the selected formula.
+        let range = context.workbook.getActiveCell();
+        let directPrecedents = range.getDirectPrecedents();
+        range.load("address");
+        directPrecedents.areas.load("address");
+        await context.sync();
+
+        console.log(`Direct precedent cells of ${range.address}:`);
+
+        // Use the direct precedents API to loop through precedents of the active cell.
+        for (var i = 0; i < directPrecedents.areas.items.length; i++) {
+          // Highlight and console the address of each precedent cell.
+          directPrecedents.areas.items[i].format.fill.color = "Yellow";
+          console.log(`  ${directPrecedents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDirectPrecedents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: getEntireColumn()
+    uid: 'excel!Excel.Range#getEntireColumn:member(1)'
+    package: excel!
+    fullName: getEntireColumn()
+    summary: >-
+      Gets an object that represents the entire column of the range (for example, if the current range represents cells
+      "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      // Note: the grid properties of the Range (values, numberFormat, formulas) 
+      // contains null since the Range in question is unbounded.
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "D:F";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var rangeEC = range.getEntireColumn();
+          rangeEC.load('address');
+          return ctx.sync().then(function() {
+              console.log(rangeEC.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireColumn(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getEntireRow()
+    uid: 'excel!Excel.Range#getEntireRow:member(1)'
+    package: excel!
+    fullName: getEntireRow()
+    summary: >-
+      Gets an object that represents the entire row of the range (for example, if the current range represents cells
+      "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      // Gets an object that represents the entire row of the range 
+      // (for example, if the current range represents cells "B4:E11", 
+      // its GetEntireRow is a range that represents rows "4:11").
+      Excel.run(function (ctx) {
+          var sheetName = "Sheet1";
+          var rangeAddress = "D:F"; 
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var rangeER = range.getEntireRow();
+          rangeER.load('address');
+          return ctx.sync().then(function() {
+              console.log(rangeER.address);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireRow(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getExtendedRange(direction, activeCell)'
+    uid: 'excel!Excel.Range#getExtendedRange:member(1)'
+    package: excel!
+    fullName: 'getExtendedRange(direction, activeCell)'
+    summary: >-
+      Returns a range object that includes the current range and up to the edge of the range, based on the provided
+      direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+    remarks: >-
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
+
+      await Excel.run(async (context) => {
+        // Get the selected range.
+        const range = context.workbook.getSelectedRange();
+
+        // Specify the direction with the `KeyboardDirection` enum.
+        const direction = Excel.KeyboardDirection.down;
+
+        // Get the active cell in the workbook.
+        const activeCell = context.workbook.getActiveCell();
+
+        // Get all the cells from the currently selected range to the bottom-most edge of the used range.
+        // This method acts like the Ctrl+Shift+Arrow key keyboard shortcut while a range is selected.
+        const extendedRange = range.getExtendedRange(
+          direction,
+          activeCell // If the selected range contains more than one cell, the active cell must be defined.
+        );
+        extendedRange.select();
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getExtendedRange(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;'
+      parameters:
+        - id: direction
+          description: The direction from the active cell.
+          type: '<xref uid="excel!Excel.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the top-left cell of the range. An error is
+            thrown if the active cell is not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getExtendedRange(directionString, activeCell)'
+    uid: 'excel!Excel.Range#getExtendedRange:member(2)'
+    package: excel!
+    fullName: 'getExtendedRange(directionString, activeCell)'
+    summary: >-
+      Returns a range object that includes the current range and up to the edge of the range, based on the provided
+      direction. This matches the Ctrl+Shift+Arrow key behavior in the Excel on Windows UI.
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getExtendedRange(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;'
+      parameters:
+        - id: directionString
+          description: The direction from the active cell.
+          type: '"Left" | "Right" | "Up" | "Down"'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the top-left cell of the range. An error is
+            thrown if the active cell is not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getImage()
+    uid: 'excel!Excel.Range#getImage:member(1)'
+    package: excel!
+    fullName: getImage()
+    summary: >-
+      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for Mac.
+      Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getImage(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getIntersection(anotherRange)
+    uid: 'excel!Excel.Range#getIntersection:member(1)'
+    package: excel!
+    fullName: getIntersection(anotherRange)
+    summary: Gets the range object that represents the rectangular intersection of the given ranges.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = 
+              ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!D4:F6
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
+      parameters:
+        - id: anotherRange
+          description: The range object or range address that will be used to determine the intersection of ranges.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getIntersectionOrNullObject(anotherRange)
+    uid: 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
+    package: excel!
+    fullName: getIntersectionOrNullObject(anotherRange)
+    summary: >-
+      Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
+      found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const dataRange = salesTable.getDataBodyRange();
+
+          // We want the most recent quarter that has data, so
+          // exclude quarters without data and get the last of
+          // the remaining columns.
+          const usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);
+          const currentQuarterRange = usedDataRange.getLastColumn();
+
+          // Asian and European teams have separate contests.
+          const asianSalesRange = sheet.getRange("A2:E4");
+          const europeanSalesRange = sheet.getRange("A5:E7");
+
+          // The data for each chart is the intersection of the
+          // current quarter column and the rows for the continent.
+          const asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);
+          const europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);
+
+          // Must sync before you can test the output of *OrNullObject
+          // method/property.
+          await context.sync();
+
+          if (asianContestRange.isNullObject) {
+              // See the declaration of this method for how to
+              // test this code path.
+              reportMissingData("Asian");
+          } else {
+              createContinentChart(
+                  sheet,
+                  "Asian",
+                  asianContestRange,
+                  "A9",
+                  "F24"
+              );
+          }
+
+          if (europeanContestRange.isNullObject) {
+              // See the declaration of this method for how to
+              // test this code path.
+              reportMissingData("European");
+          } else {
+              createContinentChart(
+                  sheet,
+                  "European",
+                  europeanContestRange,
+                  "A25",
+                  "F40"
+              );
+          }
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
+      parameters:
+        - id: anotherRange
+          description: The range object or range address that will be used to determine the intersection of ranges.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getLastCell()
+    uid: 'excel!Excel.Range#getLastCell:member(1)'
+    package: excel!
+    fullName: getLastCell()
+    summary: 'Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".'
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!F8
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastCell(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getLastColumn()
+    uid: 'excel!Excel.Range#getLastColumn:member(1)'
+    package: excel!
+    fullName: getLastColumn()
+    summary: 'Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".'
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!F1:F8
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastColumn(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getLastRow()
+    uid: 'excel!Excel.Range#getLastRow:member(1)'
+    package: excel!
+    fullName: getLastRow()
+    summary: 'Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".'
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!A8:F8
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastRow(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getMergedAreasOrNullObject()
+    uid: 'excel!Excel.Range#getMergedAreasOrNullObject:member(1)'
+    package: excel!
+    fullName: getMergedAreasOrNullObject()
+    summary: >-
+      Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in
+      this range is more than 512, the API will fail to return the result. If the RangeAreas does not exist, will return
+      a null object.
+    remarks: >-
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
+
+      await Excel.run(async (context) => {
+        // Retrieve the worksheet and the table in that worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const tableRange = sheet.getRange("B2:E6");
+
+        // Retrieve the merged range within the table and load its details.
+        const mergedAreas = tableRange.getMergedAreasOrNullObject();
+        mergedAreas.load("address");
+        mergedAreas.load("cellCount");
+
+        // Select the merged range.
+        const range = mergedAreas.areas.getItemAt(0);
+        range.select();
+        await context.sync();
+
+        // Print out the details of the `mergedAreas` range object.
+        console.log(`Address of the merged range: ${mergedAreas.address}`);
+        console.log(`Number of cells in the merged range: ${mergedAreas.cellCount}`);
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMergedAreasOrNullObject(): Excel.RangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: 'getOffsetRange(rowOffset, columnOffset)'
+    uid: 'excel!Excel.Range#getOffsetRange:member(1)'
+    package: excel!
+    fullName: 'getOffsetRange(rowOffset, columnOffset)'
+    summary: >-
+      Gets an object which represents a range that's offset from the specified range. The dimension of the returned
+      range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
+      will be thrown.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "D4:F6";
+          var range = 
+              ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!H3:J5
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
+      parameters:
+        - id: rowOffset
+          description: >-
+            The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset
+            downward, and negative values are offset upward.
+          type: number
+        - id: columnOffset
+          description: >-
+            The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are
+            offset to the right, and negative values are offset to the left.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getPivotTables(fullyContained)
+    uid: 'excel!Excel.Range#getPivotTables:member(1)'
+    package: excel!
+    fullName: getPivotTables(fullyContained)
+    summary: Gets a scoped collection of PivotTables that overlap with the range.
+    remarks: >-
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
+
+      await Excel.run(async (context) => {
+        const activeRange = context.workbook.getSelectedRange();
+
+        // Get all the PivotTables that intersect with this range.
+        const partiallyContainedPivotTables = activeRange.getPivotTables();
+        // Get all the PivotTables that are completely contained within this range.
+        const fullyContainedPivotTables = activeRange.getPivotTables(true);
+
+        partiallyContainedPivotTables.load("name");
+        fullyContainedPivotTables.load("name");
+        await context.sync();
+
+        // Display the names in the console.
+        console.log("PivotTables in the current range:")
+        partiallyContainedPivotTables.items.forEach((pivotTable) => {
+          console.log(`\t${pivotTable.name}`);
+        });
+        console.log("PivotTables completely contained in the current range:")
+        fullyContainedPivotTables.items.forEach((pivotTable) => {
+          console.log(`\t${pivotTable.name}`);
+        });
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;'
+      parameters:
+        - id: fullyContained
+          description: >-
+            If `true`<!-- -->, returns only PivotTables that are fully contained within the range bounds. The default
+            value is `false`<!-- -->.
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.PivotTableScopedCollection:class" />'
+        description: ''
+  - name: getPrecedents()
+    uid: 'excel!Excel.Range#getPrecedents:member(1)'
+    package: excel!
+    fullName: getPrecedents()
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the
+      same worksheet or in multiple worksheets.
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/precedents.yaml
+
+      await Excel.run(async (context) => {
+        // Precedents are cells referenced by the formula in a cell.
+        let range = context.workbook.getActiveCell();
+        let precedents = range.getPrecedents();
+        range.load("address");
+        precedents.areas.load("address");
+        await context.sync();
+
+        console.log(`All precedent cells of ${range.address}:`);
+
+        // Use the precedents API to loop through precedents of the active cell.
+        for (var i = 0; i < precedents.areas.items.length; i++) {
+          // Highlight and console the address of each precedent cell.
+          precedents.areas.items[i].format.fill.color = "Orange";
+          console.log(`  ${precedents.areas.items[i].address}`);
+        }
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPrecedents(): Excel.WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
+        description: ''
+  - name: 'getRangeEdge(direction, activeCell)'
+    uid: 'excel!Excel.Range#getRangeEdge:member(1)'
+    package: excel!
+    fullName: 'getRangeEdge(direction, activeCell)'
+    summary: >-
+      Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This
+      matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+    remarks: >-
+      \[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
+
+      await Excel.run(async (context) => {
+        // Get the selected range.
+        const range = context.workbook.getSelectedRange();
+
+        // Specify the direction with the `KeyboardDirection` enum.
+        const direction = Excel.KeyboardDirection.up;
+
+        // Get the active cell in the workbook.
+        const activeCell = context.workbook.getActiveCell();
+
+        // Get the top-most cell of the current used range.
+        // This method acts like the Ctrl+Arrow key keyboard shortcut while a range is selected.
+        const rangeEdge = range.getRangeEdge(
+          direction,
+          activeCell // If the selected range contains more than one cell, the active cell must be defined.
+        );
+        rangeEdge.select();
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;'
+      parameters:
+        - id: direction
+          description: The direction from the active cell.
+          type: '<xref uid="excel!Excel.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the top-left cell of the range. An error is
+            thrown if the active cell is not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getRangeEdge(directionString, activeCell)'
+    uid: 'excel!Excel.Range#getRangeEdge:member(2)'
+    package: excel!
+    fullName: 'getRangeEdge(directionString, activeCell)'
+    summary: >-
+      Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This
+      matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+    remarks: '\[ [API set: ExcelApi 1.13](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeEdge(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;'
+      parameters:
+        - id: directionString
+          description: The direction from the active cell.
+          type: '"Left" | "Right" | "Up" | "Down"'
+        - id: activeCell
+          description: >-
+            The active cell in this range. By default, the active cell is the top-left cell of the range. An error is
+            thrown if the active cell is not in this range.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getResizedRange(deltaRows, deltaColumns)'
+    uid: 'excel!Excel.Range#getResizedRange:member(1)'
+    package: excel!
+    fullName: 'getResizedRange(deltaRows, deltaColumns)'
+    summary: >-
+      Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or
+      contracted) by some number of rows and columns.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;'
+      parameters:
+        - id: deltaRows
+          description: >-
+            The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive
+            number to expand the range, or a negative number to decrease it.
+          type: number
+        - id: deltaColumns
+          description: >-
+            The number of columns by which to expand the bottom-right corner, relative to the current range. Use a
+            positive number to expand the range, or a negative number to decrease it.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getRow(row)
+    uid: 'excel!Excel.Range#getRow:member(1)'
+    package: excel!
+    fullName: getRow(row)
+    summary: Gets a row contained in the range.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+          range.load('address');
+          return ctx.sync().then(function() {
+              console.log(range.address); // prints Sheet1!A2:F2
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRow(row: number): Excel.Range;'
+      parameters:
+        - id: row
+          description: Row number of the range to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getRowProperties(rowPropertiesLoadOptions)
+    uid: 'excel!Excel.Range#getRowProperties:member(1)'
+    package: excel!
+    fullName: getRowProperties(rowPropertiesLoadOptions)
+    summary: >-
+      Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and
+      other properties. For properties that are not consistent across each cell within a given row, `null` will be
+      returned.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions):
+        OfficeExtension.ClientResult<RowProperties[]>;
+      parameters:
+        - id: rowPropertiesLoadOptions
+          description: An object that represents which row properties to load.
+          type: '<xref uid="excel!Excel.RowPropertiesLoadOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.RowProperties:interface"
+          />[]&gt;
+        description: An array where each item represents the requested properties of the corresponding row.
+  - name: getRowsAbove(count)
+    uid: 'excel!Excel.Range#getRowsAbove:member(1)'
+    package: excel!
+    fullName: getRowsAbove(count)
+    summary: Gets a certain number of rows above the current `Range` object.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowsAbove(count?: number): Excel.Range;'
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getRowsBelow(count)
+    uid: 'excel!Excel.Range#getRowsBelow:member(1)'
+    package: excel!
+    fullName: getRowsBelow(count)
+    summary: Gets a certain number of rows below the current `Range` object.
+    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowsBelow(count?: number): Excel.Range;'
+      parameters:
+        - id: count
+          description: >-
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: 'getSpecialCells(cellType, cellValueType)'
+    uid: 'excel!Excel.Range#getSpecialCells:member(1)'
+    package: excel!
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    summary: >-
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents all the cells that match
+      the specified type and value. If no special cells are found, an `ItemNotFound` error will be thrown.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
+
+      await Excel.run(async (context) => {
+
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          const usedRange = sheet.getUsedRange();
+
+          // Find the ranges with either text or logical (boolean) values.
+          const formulaRanges = usedRange.getSpecialCells("Constants", "LogicalText");
+          formulaRanges.format.fill.color = "orange";
+
+          return context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;'
+      parameters:
+        - id: cellType
+          description: The type of cells to include.
+          type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
+        - id: cellValueType
+          description: >-
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
+          type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCells(cellTypeString, cellValueType)'
+    uid: 'excel!Excel.Range#getSpecialCells:member(2)'
+    package: excel!
+    fullName: 'getSpecialCells(cellTypeString, cellValueType)'
+    summary: >-
+      Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents all the cells that match
+      the specified type and value. If no special cells are found, an `ItemNotFound` error will be thrown.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
+        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
+        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+      parameters:
+        - id: cellTypeString
+          description: The type of cells to include.
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+            "SameDataValidation" | "Visible"
+        - id: cellValueType
+          description: >-
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
+            "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
+            "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    uid: 'excel!Excel.Range#getSpecialCellsOrNullObject:member(1)'
+    package: excel!
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    summary: >-
+      Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
+      specified type and value. If no special cells are found, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType):
+        Excel.RangeAreas;
+      parameters:
+        - id: cellType
+          description: The type of cells to include.
+          type: '<xref uid="excel!Excel.SpecialCellType:enum" />'
+        - id: cellValueType
+          description: >-
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
+          type: '<xref uid="excel!Excel.SpecialCellValueType:enum" />'
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    uid: 'excel!Excel.Range#getSpecialCellsOrNullObject:member(2)'
+    package: excel!
+    fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    summary: >-
+      Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
+      specified type and value. If no special cells are found, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
+        "NumbersText" | "Text"): Excel.RangeAreas;
+      parameters:
+        - id: cellTypeString
+          description: The type of cells to include.
+          type: >-
+            "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+            "SameDataValidation" | "Visible"
+        - id: cellValueType
+          description: >-
+            If `cellType` is either `constants` or `formulas`<!-- -->, this argument is used to determine which types of
+            cells to include in the result. These values can be combined together to return more than one type. The
+            default is to select all constants or formulas, no matter what the type.
+          type: >-
+            "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
+            "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
+            "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
+      return:
+        type: '<xref uid="excel!Excel.RangeAreas:class" />'
+        description: ''
+  - name: getSpillingToRange()
+    uid: 'excel!Excel.Range#getSpillingToRange:member(1)'
+    package: excel!
+    fullName: getSpillingToRange()
+    summary: >-
+      Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with
+      more than one cell.
+    remarks: >-
+      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/dynamic-arrays.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        // Set G4 to a formula that returns a dynamic array.
+        const targetCell = sheet.getRange("G4");
+        targetCell.formulas = [["=A4:D4"]];
+
+        // Get the address of the cells that the dynamic array spilled into.
+        const spillRange = targetCell.getSpillingToRange();
+        spillRange.load("address");
+
+        // Fit the columns for readability.
+        sheet.getUsedRange().format.autofitColumns();
+        await context.sync();
+
+        console.log(`Copying the table headers spilled into ${spillRange.address}.`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillingToRange(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getSpillingToRangeOrNullObject()
+    uid: 'excel!Excel.Range#getSpillingToRangeOrNullObject:member(1)'
+    package: excel!
+    fullName: getSpillingToRangeOrNullObject()
+    summary: >-
+      Gets the range object containing the spill range when called on an anchor cell. If the range isn't an anchor cell
+      or the spill range can't be found, then this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillingToRangeOrNullObject(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getSpillParent()
+    uid: 'excel!Excel.Range#getSpillParent:member(1)'
+    package: excel!
+    fullName: getSpillParent()
+    summary: >-
+      Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with
+      more than one cell.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillParent(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getSpillParentOrNullObject()
+    uid: 'excel!Excel.Range#getSpillParentOrNullObject:member(1)'
+    package: excel!
+    fullName: getSpillParentOrNullObject()
+    summary: >-
+      Gets the range object containing the anchor cell for the cell getting spilled into. If it's not a spilled cell, or
+      more than one cell is given, then this method returns an object with its `isNullObject` property set to `true`<!--
+      -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillParentOrNullObject(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getSurroundingRegion()
+    uid: 'excel!Excel.Range#getSurroundingRegion:member(1)'
+    package: excel!
+    fullName: getSurroundingRegion()
+    summary: >-
+      Returns a `Range` object that represents the surrounding region for the top-left cell in this range. A surrounding
+      region is a range bounded by any combination of blank rows and blank columns relative to this range.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSurroundingRegion(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getTables(fullyContained)
+    uid: 'excel!Excel.Range#getTables:member(1)'
+    package: excel!
+    fullName: getTables(fullyContained)
+    summary: Gets a scoped collection of tables that overlap with the range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
+      parameters:
+        - id: fullyContained
+          description: >-
+            If `true`<!-- -->, returns only tables that are fully contained within the range bounds. The default value
+            is `false`<!-- -->.
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.TableScopedCollection:class" />'
+        description: ''
+  - name: getUsedRange(valuesOnly)
+    uid: 'excel!Excel.Range#getUsedRange:member(1)'
+    package: excel!
+    fullName: getUsedRange(valuesOnly)
+    summary: >-
+      Returns the used range of the given range object. If there are no used cells within the range, this function will
+      throw an `ItemNotFound` error.
+    remarks: >-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const dataRange = salesTable.getDataBodyRange();
+
+          // We want the most recent quarter that has data, so
+          // exclude quarters without data and get the last of
+          // the remaining columns.
+          const usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);
+          const currentQuarterRange = usedDataRange.getLastColumn();
+
+          // Asian and European teams have separate contests.
+          const asianSalesRange = sheet.getRange("A2:E4");
+          const europeanSalesRange = sheet.getRange("A5:E7");
+
+          // The data for each chart is the intersection of the
+          // current quarter column and the rows for the continent.
+          const asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);
+          const europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);
+
+          // Must sync before you can test the output of *OrNullObject
+          // method/property.
+          await context.sync();
+
+          if (asianContestRange.isNullObject) {
+              // See the declaration of this method for how to
+              // test this code path.
+              reportMissingData("Asian");
+          } else {
+              createContinentChart(
+                  sheet,
+                  "Asian",
+                  asianContestRange,
+                  "A9",
+                  "F24"
+              );
+          }
+
+          if (europeanContestRange.isNullObject) {
+              // See the declaration of this method for how to
+              // test this code path.
+              reportMissingData("European");
+          } else {
+              createContinentChart(
+                  sheet,
+                  "European",
+                  europeanContestRange,
+                  "A25",
+                  "F40"
+              );
+          }
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
+      parameters:
+        - id: valuesOnly
+          description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getUsedRangeOrNullObject(valuesOnly)
+    uid: 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
+    package: excel!
+    fullName: getUsedRangeOrNullObject(valuesOnly)
+    summary: >-
+      Returns the used range of the given range object. If there are no used cells within the range, then this method
+      returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/used-range.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const dataRange = salesTable.getDataBodyRange();
+
+          // Pass true so only cells with values count as used
+          const usedDataRange = dataRange.getUsedRangeOrNullObject(
+              true /* valuesOnly */
+          );
+
+          //Must sync before reading value returned from *OrNullObject method/property.
+          await context.sync();
+
+          if (usedDataRange.isNullObject) {
+              console.log("Need Data to Make Chart");
+              console.log("To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again.");
+          } else {
+              const chart = sheet.charts.add(
+                  Excel.ChartType.columnClustered,
+                  dataRange,
+                  "Columns"
+              );
+              chart.setPosition("A15", "F30");
+              chart.title.text = "Quarterly sales chart";
+              chart.legend.position = "Right";
+              chart.legend.format.fill.setSolidColor("white");
+              chart.dataLabels.format.font.size = 15;
+              chart.dataLabels.format.font.color = "black";
+          }
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
+      parameters:
+        - id: valuesOnly
+          description: Considers only cells with values as used cells.
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getVisibleView()
+    uid: 'excel!Excel.Range#getVisibleView:member(1)'
+    package: excel!
+    fullName: getVisibleView()
+    summary: Represents the visible rows of the current range.
+    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisibleView(): Excel.RangeView;'
+      return:
+        type: '<xref uid="excel!Excel.RangeView:class" />'
+        description: ''
+  - name: group(groupOption)
+    uid: 'excel!Excel.Range#group:member(1)'
+    package: excel!
+    fullName: group(groupOption)
+    summary: Groups columns and rows for an outline.
+    remarks: >-
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
+      Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          
+          // Group the larger, main level. Note that the outline controls
+          // will be on row 10, meaning 4-9 will collapse and expand.
+          sheet.getRange("4:9").group(Excel.GroupOption.byRows);
+
+          // Group the smaller, sublevels. Note that the outline controls
+          // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
+          sheet.getRange("4:5").group(Excel.GroupOption.byRows);
+          sheet.getRange("7:8").group(Excel.GroupOption.byRows);
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'group(groupOption: Excel.GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: >-
+            Specifies how the range can be grouped by rows or columns. An `InvalidArgument` error is thrown when the
+            group option differs from the range's `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow`
+            is true and `groupOption` is "ByColumns" or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+          type: '<xref uid="excel!Excel.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: group(groupOptionString)
+    uid: 'excel!Excel.Range#group:member(2)'
+    package: excel!
+    fullName: group(groupOptionString)
+    summary: Groups columns and rows for an outline.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'group(groupOptionString: "ByRows" | "ByColumns"): void;'
+      parameters:
+        - id: groupOptionString
+          description: >-
+            Specifies how the range can be grouped by rows or columns. An `InvalidArgument` error is thrown when the
+            group option differs from the range's `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow`
+            is true and `groupOption` is "ByColumns" or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+          type: '"ByRows" | "ByColumns"'
+      return:
+        type: void
+        description: ''
+  - name: hideGroupDetails(groupOption)
+    uid: 'excel!Excel.Range#hideGroupDetails:member(1)'
+    package: excel!
+    fullName: hideGroupDetails(groupOption)
+    summary: Hides the details of the row or column group.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hideGroupDetails(groupOption: Excel.GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Specifies whether to hide the details of grouped rows or grouped columns.
+          type: '<xref uid="excel!Excel.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: hideGroupDetails(groupOptionString)
+    uid: 'excel!Excel.Range#hideGroupDetails:member(2)'
+    package: excel!
+    fullName: hideGroupDetails(groupOptionString)
+    summary: Hides the details of the row or column group.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hideGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;'
+      parameters:
+        - id: groupOptionString
+          description: Specifies whether to hide the details of grouped rows or grouped columns.
+          type: '"ByRows" | "ByColumns"'
+      return:
+        type: void
+        description: ''
+  - name: insert(shift)
+    uid: 'excel!Excel.Range#insert:member(1)'
+    package: excel!
+    fullName: insert(shift)
+    summary: >-
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new `Range` object at the now blank space.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F5:F10";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.insert();
+          return ctx.sync(); 
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
+      parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
+          type: '<xref uid="excel!Excel.InsertShiftDirection:enum" />'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: insert(shiftString)
+    uid: 'excel!Excel.Range#insert:member(2)'
+    package: excel!
+    fullName: insert(shiftString)
+    summary: >-
+      Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
+      space. Returns a new `Range` object at the now blank space.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
+      parameters:
+        - id: shiftString
+          description: Specifies which way to shift the cells. See `Excel.InsertShiftDirection` for details.
+          type: '"Down" | "Right"'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.Range#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.RangeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Range#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Range;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Below example uses range address to get the range object.
+          Excel.run(function (ctx) {
+              var sheetName = "Sheet1";
+              var rangeAddress = "A1:F8"; 
+              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+              var range = worksheet.getRange(rangeAddress);
+              range.load('cellCount');
+              return ctx.sync().then(function() {
+                  console.log(range.cellCount);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Range#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Range;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: merge(across)
+    uid: 'excel!Excel.Range#merge:member(1)'
+    package: excel!
+    fullName: merge(across)
+    summary: Merge the range cells into one region in the worksheet.
+    remarks: >-
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:C3";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.merge(true);
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
+
+      await Excel.run(async (context) => {
+        // Retrieve the worksheet and the table in that worksheet.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const tableRange = sheet.getRange("B2:E6");
+
+        // Create a merged range in the first row of the table.
+        const chartTitle = tableRange.getRow(0);
+        chartTitle.merge(true);
+
+        // Format the merged range.
+        chartTitle.format.horizontalAlignment = "Center";
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'merge(across?: boolean): void;'
+      parameters:
+        - id: across
+          description: >-
+            Optional. Set `true` to merge cells in each row of the specified range as separate merged cells. The default
+            value is `false`<!-- -->.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: moveTo(destinationRange)
+    uid: 'excel!Excel.Range#moveTo:member(1)'
+    package: excel!
+    fullName: moveTo(destinationRange)
+    summary: >-
+      Moves cell values, formatting, and formulas from current range to the destination range, replacing the old
+      information in those cells. The destination range will be expanded automatically if it is smaller than the current
+      range. Any cells in the destination range that are outside of the original range's area are not changed.
+    remarks: >-
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          // Place a label in front of the moved data.
+          sheet.getRange("F12").values = [["Moved Range:"]];
+
+          // Move the range from A1:E1 to G12:K12.
+          sheet.getRange("A1:E1").moveTo("G12");
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'moveTo(destinationRange: Range | string): void;'
+      parameters:
+        - id: destinationRange
+          description: destinationRange Specifies the range to where the information in this range will be moved.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+      return:
+        type: void
+        description: ''
+  - name: 'removeDuplicates(columns, includesHeader)'
+    uid: 'excel!Excel.Range#removeDuplicates:member(1)'
+    package: excel!
+    fullName: 'removeDuplicates(columns, includesHeader)'
+    summary: Removes duplicate values from the range specified by the columns.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:D11");
+
+          const deleteResult = range.removeDuplicates([0],true);    
+          deleteResult.load();    
+          await context.sync();
+
+          console.log(deleteResult.removed + " entries with duplicate names removed.");
+          console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeDuplicates(columns: number[], includesHeader: boolean): Excel.RemoveDuplicatesResult;'
+      parameters:
+        - id: columns
+          description: >-
+            The columns inside the range that may contain duplicates. At least one column needs to be specified.
+            Zero-indexed.
+          type: 'number[]'
+        - id: includesHeader
+          description: True if the input data contains header. Default is false.
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.RemoveDuplicatesResult:class" />'
+        description: The resulting object that contains the number of rows removed and the number of remaining unique rows.
+  - name: 'replaceAll(text, replacement, criteria)'
+    uid: 'excel!Excel.Range#replaceAll:member(1)'
+    package: excel!
+    fullName: 'replaceAll(text, replacement, criteria)'
+    summary: Finds and replaces the given string based on the criteria specified within the current range.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria):
+        OfficeExtension.ClientResult<number>;
+      parameters:
+        - id: text
+          description: String to find.
+          type: string
+        - id: replacement
+          description: The string that replaces the original string.
+          type: string
+        - id: criteria
+          description: Additional replacement criteria.
+          type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: The number of replacements performed.
+  - name: select()
+    uid: 'excel!Excel.Range#select:member(1)'
+    package: excel!
+    fullName: select()
+    summary: Selects the specified range in the Excel UI.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {
+          var sheetName = "Sheet1";
+          var rangeAddress = "F5:F10"; 
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.select();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.Range#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              const range = sheet.getRange("B2:E2");
+              range.set({
+                  format: {
+                      fill: {
+                          color: "#4472C4"
+                      },
+                      font: {
+                          name: "Verdana",
+                          color: "white"
+                      }
+                  }
+              })
+              range.format.autofitColumns();
+              await context.sync();
+          });
+
+          ```
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              const sourceRange = sheet.getRange("B2:E2");
+              sourceRange.load("format/fill/color, format/font/name, format/font/color");
+              await context.sync();
+
+              // Set properties based on the loaded and synced 
+              // source range.
+              const targetRange = sheet.getRange("B7:E7");
+              targetRange.set(sourceRange); 
+              targetRange.format.autofitColumns();
+              await context.sync();
+          });
+
+          ```
+  - name: set(properties)
+    uid: 'excel!Excel.Range#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Range): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.Range:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setCellProperties(cellPropertiesData)
+    uid: 'excel!Excel.Range#setCellProperties:member(1)'
+    package: excel!
+    fullName: setCellProperties(cellPropertiesData)
+    summary: >-
+      Updates the range based on a 2D array of cell properties, encapsulating things like font, fill, borders, and
+      alignment.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Creating the SettableCellProperties objects to use for the range.
+          // In your add-in, these should be created once, outside the function.
+          const topHeaderProps: Excel.SettableCellProperties = {
+              // The style property takes a string matching the name of an Excel style.
+              // Built-in style names are listed in the `BuiltInStyle` enum.
+              // Note that a style will overwrite any formatting,
+              // so do not use the format property with the style property.
+              style: "Heading1"
+          };
+
+          const headerProps: Excel.SettableCellProperties = {
+              // Any subproperties of format that are not set will not be changed when these cell properties are set.
+              format: {
+                  fill: {
+                      color: "Blue"
+                  },
+                  font: {
+                      color: "White",
+                      bold: true
+                  }
+              }
+          };
+
+          const nonApplicableProps: Excel.SettableCellProperties = {
+              format: {
+                  fill: {
+                      pattern: Excel.FillPattern.gray25
+                  },
+                  font: {
+                      color: "Gray",
+                      italic: true
+                  }
+              }
+          };
+
+          const matchupScoreProps: Excel.SettableCellProperties = {
+              format: {
+                  borders: {
+                      bottom: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      left: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      right: {
+                          style: Excel.BorderLineStyle.continuous
+                      },
+                      top: {
+                          style: Excel.BorderLineStyle.continuous
+                      }
+                  }
+              }
+          };
+
+          const range = sheet.getRange("A1:E5");
+
+          // You can use empty JSON objects to avoid changing a cell's properties.
+          range.setCellProperties([
+              [topHeaderProps, {}, {}, {}, {}],
+              [{}, {}, headerProps, headerProps, headerProps],
+              [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+              [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+              [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+          ]);
+
+          sheet.getUsedRange().format.autofitColumns();
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;'
+      parameters:
+        - id: cellPropertiesData
+          description: A 2D array that represents which properties to set in each cell.
+          type: '<xref uid="excel!Excel.SettableCellProperties:interface" />[][]'
+      return:
+        type: void
+        description: ''
+  - name: setColumnProperties(columnPropertiesData)
+    uid: 'excel!Excel.Range#setColumnProperties:member(1)'
+    package: excel!
+    fullName: setColumnProperties(columnPropertiesData)
+    summary: >-
+      Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
+      borders, and alignment.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;'
+      parameters:
+        - id: columnPropertiesData
+          description: An array that represents which properties to set in each column.
+          type: '<xref uid="excel!Excel.SettableColumnProperties:interface" />[]'
+      return:
+        type: void
+        description: ''
+  - name: setDirty()
+    uid: 'excel!Excel.Range#setDirty:member(1)'
+    package: excel!
+    fullName: setDirty()
+    summary: Set a range to be recalculated when the next recalculation occurs.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setDirty(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setRowProperties(rowPropertiesData)
+    uid: 'excel!Excel.Range#setRowProperties:member(1)'
+    package: excel!
+    fullName: setRowProperties(rowPropertiesData)
+    summary: >-
+      Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill,
+      borders, and alignment.
+    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRowProperties(rowPropertiesData: SettableRowProperties[]): void;'
+      parameters:
+        - id: rowPropertiesData
+          description: An array that represents which properties to set in each row.
+          type: '<xref uid="excel!Excel.SettableRowProperties:interface" />[]'
+      return:
+        type: void
+        description: ''
+  - name: showCard()
+    uid: 'excel!Excel.Range#showCard:member(1)'
+    package: excel!
+    fullName: showCard()
+    summary: Displays the card for an active cell if it has rich value content.
+    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCard(): void;'
+      return:
+        type: void
+        description: ''
+  - name: showGroupDetails(groupOption)
+    uid: 'excel!Excel.Range#showGroupDetails:member(1)'
+    package: excel!
+    fullName: showGroupDetails(groupOption)
+    summary: Shows the details of the row or column group.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showGroupDetails(groupOption: Excel.GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Specifies whether to show the details of grouped rows or grouped columns.
+          type: '<xref uid="excel!Excel.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: showGroupDetails(groupOptionString)
+    uid: 'excel!Excel.Range#showGroupDetails:member(2)'
+    package: excel!
+    fullName: showGroupDetails(groupOptionString)
+    summary: Shows the details of the row or column group.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;'
+      parameters:
+        - id: groupOptionString
+          description: Specifies whether to show the details of grouped rows or grouped columns.
+          type: '"ByRows" | "ByColumns"'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Range#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.RangeData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.RangeData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'excel!Excel.Range#track:member(1)'
+    package: excel!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: ungroup(groupOption)
+    uid: 'excel!Excel.Range#ungroup:member(1)'
+    package: excel!
+    fullName: ungroup(groupOption)
+    summary: Ungroups columns and rows for an outline.
+    remarks: >-
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
+      Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          
+          // This removes two levels of groups from the "A1-R10" range.
+          // Any groups at the same level on the same dimension will be removed by a single call.
+          sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+          sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+          sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+          sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(groupOption: Excel.GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Specifies how the range can be ungrouped by rows or columns.
+          type: '<xref uid="excel!Excel.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: ungroup(groupOptionString)
+    uid: 'excel!Excel.Range#ungroup:member(2)'
+    package: excel!
+    fullName: ungroup(groupOptionString)
+    summary: Ungroups columns and rows for an outline.
+    remarks: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(groupOptionString: "ByRows" | "ByColumns"): void;'
+      parameters:
+        - id: groupOptionString
+          description: Specifies how the range can be ungrouped by rows or columns.
+          type: '"ByRows" | "ByColumns"'
+      return:
+        type: void
+        description: ''
+  - name: unmerge()
+    uid: 'excel!Excel.Range#unmerge:member(1)'
+    package: excel!
+    fullName: unmerge()
+    summary: Unmerge the range cells into separate cells.
+    remarks: |-
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:C3";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.unmerge();
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unmerge(): void;'
+      return:
+        type: void
+        description: ''
+  - name: untrack()
+    uid: 'excel!Excel.Range#untrack:member(1)'
+    package: excel!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const largeRange = context.workbook.getSelectedRange();
+              largeRange.load(["rowCount", "columnCount"]);
+              await context.sync();
+
+              for (let i = 0; i < largeRange.rowCount; i++) {
+                  for (let j = 0; j < largeRange.columnCount; j++) {
+                      let cell = largeRange.getCell(i, j);
+                      cell.values = [[i *j]];
+
+                      // call untrack() to release the range from memory
+                      cell.untrack();
+                  }
+              }
+
+              await context.sync();
+          });
+          ```
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

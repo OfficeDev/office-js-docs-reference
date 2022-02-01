@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: Excel.PrintMarginUnit
+uid: 'excel!Excel.PrintMarginUnit:enum'
+package: excel!
+fullName: Excel.PrintMarginUnit
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: centimeters
+    uid: 'excel!Excel.PrintMarginUnit.centimeters:member'
+    package: excel!
+    summary: Assign the page margins in centimeters.
+    value: '"Centimeters"'
+  - name: inches
+    uid: 'excel!Excel.PrintMarginUnit.inches:member'
+    package: excel!
+    summary: Assign the page margins in inches.
+    value: '"Inches"'
+  - name: points
+    uid: 'excel!Excel.PrintMarginUnit.points:member'
+    package: excel!
+    summary: Assign the page margins in points. A point is 1/72 of an inch.
+    value: '"Points"'

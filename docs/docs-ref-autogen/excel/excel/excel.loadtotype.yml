@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.LoadToType
+uid: 'excel!Excel.LoadToType:enum'
+package: excel!
+fullName: Excel.LoadToType
+summary: An enum that specifies the query load to destination.
+remarks: '\[ [API set: ExcelApi 1.14](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: connectionOnly
+    uid: 'excel!Excel.LoadToType.connectionOnly:member'
+    package: excel!
+    summary: Load to connection only.
+    value: '"ConnectionOnly"'
+  - name: pivotChart
+    uid: 'excel!Excel.LoadToType.pivotChart:member'
+    package: excel!
+    summary: Load to PivotChart.
+    value: '"PivotChart"'
+  - name: pivotTable
+    uid: 'excel!Excel.LoadToType.pivotTable:member'
+    package: excel!
+    summary: Load to PivotTable.
+    value: '"PivotTable"'
+  - name: table
+    uid: 'excel!Excel.LoadToType.table:member'
+    package: excel!
+    summary: Load to a table.
+    value: '"Table"'

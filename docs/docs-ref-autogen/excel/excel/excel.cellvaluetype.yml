@@ -1,0 +1,67 @@
+### YamlMime:TSEnum
+name: Excel.CellValueType
+uid: 'excel!Excel.CellValueType:enum'
+package: excel!
+fullName: Excel.CellValueType
+summary: Represents the types of the `CellValue` object.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+fields:
+  - name: array
+    uid: 'excel!Excel.CellValueType.array:member'
+    package: excel!
+    summary: Represents an `ArrayCellValue`<!-- -->.
+    value: '"Array"'
+  - name: boolean
+    uid: 'excel!Excel.CellValueType.boolean:member'
+    package: excel!
+    summary: Represents a `BooleanCellValue`<!-- -->.
+    value: '"Boolean"'
+  - name: double
+    uid: 'excel!Excel.CellValueType.double:member'
+    package: excel!
+    summary: Represents a `DoubleCellValue`<!-- -->.
+    value: '"Double"'
+  - name: empty
+    uid: 'excel!Excel.CellValueType.empty:member'
+    package: excel!
+    summary: Represents an `EmptyCellValue`<!-- -->.
+    value: '"Empty"'
+  - name: entity
+    uid: 'excel!Excel.CellValueType.entity:member'
+    package: excel!
+    summary: Represents an `EntityCellValue`<!-- -->.
+    value: '"Entity"'
+  - name: error
+    uid: 'excel!Excel.CellValueType.error:member'
+    package: excel!
+    summary: Represents an `ErrorCellValue`<!-- -->.
+    value: '"Error"'
+  - name: formattedNumber
+    uid: 'excel!Excel.CellValueType.formattedNumber:member'
+    package: excel!
+    summary: Represents a `FormattedNumberCellValue`<!-- -->.
+    value: '"FormattedNumber"'
+  - name: linkedEntity
+    uid: 'excel!Excel.CellValueType.linkedEntity:member'
+    package: excel!
+    summary: Represents a `LinkedEntityCellValue`<!-- -->.
+    value: '"LinkedEntity"'
+  - name: notAvailable
+    uid: 'excel!Excel.CellValueType.notAvailable:member'
+    package: excel!
+    summary: Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
+    value: '"NotAvailable"'
+  - name: string
+    uid: 'excel!Excel.CellValueType.string:member'
+    package: excel!
+    summary: Represents a `StringCellValue`<!-- -->.
+    value: '"String"'
+  - name: webImage
+    uid: 'excel!Excel.CellValueType.webImage:member'
+    package: excel!
+    summary: Represents a `WebImageCellValue`<!-- -->.
+    value: '"WebImage"'
