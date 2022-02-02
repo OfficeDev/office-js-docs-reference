@@ -3,7 +3,7 @@ name: Word.CommentCollection
 uid: 'word!Word.CommentCollection:class'
 package: word!
 fullName: Word.CommentCollection
-summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) object.'
+summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.'
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -108,7 +108,7 @@ methods:
     uid: 'word!Word.CommentCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first comment or null object in the collection.
+    summary: 'Gets the first comment in the collection. If the collection is empty, returns a null object.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -133,7 +133,7 @@ methods:
       content: 'getItem(index: number): Word.Comment;'
       parameters:
         - id: index
-          description: A number that identifies the index location of a comments object.
+          description: A number that identifies the index location of a comment object.
           type: number
       return:
         type: '<xref uid="word!Word.Comment:class" />'

@@ -127,7 +127,10 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlData#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: Get the collection of paragraph objects in the content control. Read-only.
+    summary: >-
+      Get the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1
+      and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set
+      1.3, paragraphs in such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

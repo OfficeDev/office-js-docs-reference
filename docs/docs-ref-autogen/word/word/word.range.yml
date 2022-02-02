@@ -151,7 +151,10 @@ properties:
     uid: 'word!Word.Range#paragraphs:member'
     package: word!
     fullName: paragraphs
-    summary: Gets the collection of paragraph objects in the range. Read-only.
+    summary: >-
+      Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2,
+      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
+      such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -163,12 +166,7 @@ properties:
     uid: 'word!Word.Range#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: >-
-      Gets the parent body of the range. Read-only.
-
-
-      **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not
-      returned. From requirement set 1.3, paragraphs in such tables are also returned.
+    summary: Gets the parent body of the range. Read-only.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -984,7 +982,7 @@ methods:
       content: 'insertComment(commentText: string): Word.Comment;'
       parameters:
         - id: commentText
-          description: Required. Comment text.
+          description: Required. The comment text to be inserted.
           type: string
       return:
         type: '<xref uid="word!Word.Comment:class" />'

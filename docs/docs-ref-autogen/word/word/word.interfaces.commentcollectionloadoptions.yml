@@ -3,7 +3,7 @@ name: Word.Interfaces.CommentCollectionLoadOptions
 uid: 'word!Word.Interfaces.CommentCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CommentCollectionLoadOptions
-summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) object.'
+summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.'
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW
   ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -67,6 +67,22 @@ properties:
       content: 'content?: boolean;'
       return:
         type: boolean
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment
+      thread is resolved.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />'
   - name: creationDate
     uid: 'word!Word.Interfaces.CommentCollectionLoadOptions#creationDate:member'
     package: word!
@@ -86,7 +102,9 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: ID'
-    remarks: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -98,8 +116,8 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment
-      thread is resolved.
+      For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment
+      thread. Getting a value of true means that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
