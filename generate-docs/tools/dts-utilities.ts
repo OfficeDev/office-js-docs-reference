@@ -235,8 +235,8 @@ function extractFirstSentenceFromComment(commentText) {
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
     // Build the standard link anchor format based on host.
     let anchorPrefix = relativePath.substring(relativePath.lastIndexOf("/") + 1, relativePath.lastIndexOf("."));
-    anchorPrefix = anchorPrefix.replace("api/outlook/outlook", "api/outlook/office") + "-" + (anchorPrefix === "outlook" ? "office" : anchorPrefix) + "-";
-    let fieldLink = "/" + relativePath + className.toLowerCase() + "#" + anchorPrefix + className.toLowerCase() + "-" + field.name.toLowerCase() + (field.type === FieldType.Method ? "-member(1)" : "-member");
+    anchorPrefix = (relativePath.indexOf("outlook") > 0 ? "outlook" : anchorPrefix) + "-" + anchorPrefix + "-";
+    let fieldLink = "/" + relativePath.replace("api/outlook/outlook", "api/outlook/office") + className.toLowerCase() + "#" + anchorPrefix + className.toLowerCase() + "-" + field.name.toLowerCase() + (field.type === FieldType.Method ? "-member(1)" : "-member");
     return fieldLink;
 }
 
