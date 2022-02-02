@@ -23,7 +23,7 @@ tryCatch(async () => {
     const previewAPI: APISet = parseDTS("preview", wholePreview);
     const diffAPI: APISet = previewAPI.diff(releaseAPI);
 
-    const relativePath: string = "javascript/api/" + hostName.toLowerCase() + "/" + hostName.toLowerCase() + ".";
+    const relativePath: string = `javascript/api/${hostName.toLowerCase()}/${hostName.toLowerCase() === "outlook" ? "office" : hostName.toLowerCase()}.`;
     if (!fsx.existsSync(outputPath + ".md")) {
         fsx.createFileSync(outputPath + ".md");
     }

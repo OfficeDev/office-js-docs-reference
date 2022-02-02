@@ -188,7 +188,6 @@ export class APISet {
                         
                         newItemText = newItemText.replace(/\<any\>/g, "");
                         
-
                         let tableLine = "[" + newItemText + "]("
                             + buildFieldLink(relativePath, className, field) + ")|";
                         tableLine += extractFirstSentenceFromComment(field.comment);
