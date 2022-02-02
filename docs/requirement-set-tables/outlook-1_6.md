@@ -1,8 +1,8 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[AppointmentRead](/javascript/api/outlook/outlook.appointmentread)|[getSelectedEntities()](/javascript/api/outlook/outlook.appointmentread#getSelectedEntities__)|Gets the entities found in a highlighted match a user has selected.|
-||[getSelectedRegExMatches()](/javascript/api/outlook/outlook.appointmentread#getSelectedRegExMatches__)|Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.|
-|[Mailbox](/javascript/api/outlook/outlook.mailbox)|[displayNewMessageForm(parameters: any)](/javascript/api/outlook/outlook.mailbox#displayNewMessageForm_parameters_)|Displays a form for creating a new message.|
-|[MessageRead](/javascript/api/outlook/outlook.messageread)|[getSelectedEntities()](/javascript/api/outlook/outlook.messageread#getSelectedEntities__)|Gets the entities found in a highlighted match a user has selected.|
-||[getSelectedRegExMatches()](/javascript/api/outlook/outlook.messageread#getSelectedRegExMatches__)|Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.|
-|[UserProfile](/javascript/api/outlook/outlook.userprofile)|[accountType](/javascript/api/outlook/outlook.userprofile#accountType)|Gets the account type of the user associated with the mailbox.|
+|[AppointmentRead](/javascript/api/outlook/office.appointmentread)|[getSelectedEntities()](/javascript/api/outlook/office.appointmentread#office-office-appointmentread-getselectedentities-member(1))|Gets the entities found in a highlighted match a user has selected.|
+||[getSelectedRegExMatches()](/javascript/api/outlook/office.appointmentread#office-office-appointmentread-getselectedregexmatches-member(1))|Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.|
+|[Mailbox](/javascript/api/outlook/office.mailbox)|[displayNewMessageForm(parameters: any)](/javascript/api/outlook/office.mailbox#office-office-mailbox-displaynewmessageform-member(1))|Displays a form for creating a new message.|
+|[MessageRead](/javascript/api/outlook/office.messageread)|[getSelectedEntities()](/javascript/api/outlook/office.messageread#office-office-messageread-getselectedentities-member(1))|Gets the entities found in a highlighted match a user has selected.|
+||[getSelectedRegExMatches()](/javascript/api/outlook/office.messageread#office-office-messageread-getselectedregexmatches-member(1))|Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.|
+|[UserProfile](/javascript/api/outlook/office.userprofile)|[accountType](/javascript/api/outlook/office.userprofile#office-office-userprofile-accounttype-member)|Gets the account type of the user associated with the mailbox.|
