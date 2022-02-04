@@ -22,7 +22,7 @@ Contributions to the Script Lab sample repo are covered in [that repo's readme](
 
 ### How to add or edit sample code
 
-The [**/docs/code-snippets/\*-snippets.yaml**](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/code-snippets) files in this repo contain samples for each application and the Common APIs. Each YAML key in one of those YAML files is the UID of a field in the documentation. The keys follow the format `<Application>.<ClassName>#<fieldName>:member<overloadNumber(methods only)>`. Add your sample code snippet as the value under the key of the field you're using in a sample. Use the following Git mechanisms to submit changes and pull requests to the repo.
+The [**/docs/code-snippets/\*-snippets.yaml**](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/code-snippets) files in this repo contain samples for each application and the Common APIs. Each YAML key in one of those YAML files is the UID of a field in the documentation. The keys follow the format `<Application>.<ClassName>#<fieldName>:member<overloadNumber(methods only)>`. Add your sample code snippet as the value under the key of the field you're using in a sample. Use the following Git mechanisms to submit changes to the repo.
 
 * To make small changes to a sample, [Contribute using GitHub](#contribute-using-github).
 * To make large changes, [Contribute using Git](#contribute-using-git).
