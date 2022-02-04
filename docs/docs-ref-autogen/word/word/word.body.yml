@@ -532,7 +532,7 @@ methods:
         let comments = context.document.body.getComments();
 
         // Load objects for display in Script Lab console.
-        context.load(comments);
+        comments.load();
         await context.sync();
 
         console.log("All comments:");
