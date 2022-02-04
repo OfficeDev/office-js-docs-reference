@@ -68,7 +68,7 @@ properties:
         comment.content = text;
 
         // Load object for display in Script Lab console.
-        context.load(comment);
+        comment.load();
         await context.sync();
 
         console.log("Comment content changed:");
@@ -185,7 +185,7 @@ properties:
         // If it's resolved, set resolved to false.
         let toggleResolved: boolean = comment.resolved;
         comment.resolved = !toggleResolved;
-        context.load(comment);
+        comment.load();
         await context.sync();
 
         console.log(`Comment Resolved status: ${comment.resolved}`);
