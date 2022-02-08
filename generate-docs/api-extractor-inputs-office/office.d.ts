@@ -515,6 +515,9 @@ export declare namespace Office {
     }
     /**
      * Manages actions and keyboard shortcuts.
+     * 
+     * @remarks
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
     export interface Actions {
         /**
@@ -522,6 +525,9 @@ export declare namespace Office {
          * 
          * @param actionId - The ID of an action that is defined in an extended manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
         /**
@@ -529,7 +535,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: KeyboardShortcuts 1.1
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
          * @beta
          * 
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
@@ -544,7 +550,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: KeyboardShortcuts 1.1
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
          * @beta
          * 
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
@@ -555,7 +561,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: KeyboardShortcuts 1.1
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
          * @beta
          * 
          * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
@@ -574,31 +580,50 @@ export declare namespace Office {
     }
     /**
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
+     * 
+     * @remarks
+     *
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
     export interface Addin {
         /**
          * Sets the startup behavior for the add-in for when the document is opened next time.
          * @param behavior - Specifies startup behavior of the add-in.
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
         /**
          * Gets the current startup behavior for the add-in.
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         getStartupBehavior(): Promise<Office.StartupBehavior>;
         /**
          * Shows the task pane associated with the add-in.
          * @returns A promise that is resolved when the UI is shown.
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         showAsTaskpane(): Promise<void>;
         /**
          * Hides the task pane.
          * @returns A promise that is resolved when the UI is hidden.
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         hide(): Promise<void>;
         /**
          * Adds a handler for the `onVisibilityModeChanged` event.
          * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.
          * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.
+         * 
+         * @remarks
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         onVisibilityModeChanged(
             handler: (message: VisibilityModeChangedMessage) => void,
@@ -662,7 +687,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Requirement set**: Ribbon 1.1
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Ribbon {
         /**
@@ -670,7 +695,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: Ribbon 1.2
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}
          * 
          * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved.
          * For more information and code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
@@ -683,7 +708,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: Ribbon 1.1
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
          *
          * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
          * 
@@ -698,7 +723,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Requirement set**: Ribbon 1.1
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface RibbonUpdaterData {
         /**
@@ -711,7 +736,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Requirement set**: Ribbon 1.1
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Tab {
         /**
@@ -731,7 +756,7 @@ export declare namespace Office {
          * 
          * @remarks
          *
-         * **Requirement set**: Ribbon 1.2
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}
          */
         visible?: boolean;
         /**
@@ -741,14 +766,14 @@ export declare namespace Office {
          * 
          * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored. 
          *
-         * **Requirement set**: Ribbon 1.1
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
          */
         groups?: Group[];
     }
     /**
      * Represents a group of controls on a ribbon tab.
      *
-     * **Requirement set**: Ribbon 1.1
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Group {
         /**
@@ -772,7 +797,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Requirement set**: Ribbon 1.1
+     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Control {
         /**
@@ -1411,7 +1436,7 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1436,7 +1461,7 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1458,7 +1483,7 @@ export declare namespace Office {
          * 
          * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox. 
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
          * @returns Promise to the access token.

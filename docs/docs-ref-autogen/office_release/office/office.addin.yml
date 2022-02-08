@@ -4,7 +4,9 @@ uid: 'office!Office.Addin:interface'
 package: office!
 fullName: Office.Addin
 summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
-remarks: ''
+remarks: >-
+  **Requirement set**: [SharedRuntime
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,7 +16,9 @@ methods:
     package: office!
     fullName: getStartupBehavior()
     summary: Gets the current startup behavior for the add-in.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -27,7 +31,9 @@ methods:
     package: office!
     fullName: hide()
     summary: Hides the task pane.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +46,9 @@ methods:
     package: office!
     fullName: onVisibilityModeChanged(handler)
     summary: Adds a handler for the `onVisibilityModeChanged` event.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -62,7 +70,9 @@ methods:
     package: office!
     fullName: setStartupBehavior(behavior)
     summary: Sets the startup behavior for the add-in for when the document is opened next time.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,7 +89,9 @@ methods:
     package: office!
     fullName: showAsTaskpane()
     summary: Shows the task pane associated with the add-in.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:

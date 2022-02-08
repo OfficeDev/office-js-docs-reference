@@ -4,7 +4,9 @@ uid: 'office!Office.Actions:interface'
 package: office!
 fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
-remarks: ''
+remarks: >-
+  **Requirement set**: [SharedRuntime
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,7 +16,9 @@ properties:
     package: office!
     fullName: associate
     summary: Associates the ID of an action with a function.
-    remarks: ''
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +33,9 @@ methods:
     summary: >-
       Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the
       host Office application.
-    remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    remarks: >-
+      **Requirement set**: [KeyboardShortcuts
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,7 +63,9 @@ methods:
       current add-in. For more information about conflicts with shortcuts, see [Avoid key combinations in use by other
       add-ins](https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins)<!--
       -->.
-    remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    remarks: >-
+      **Requirement set**: [KeyboardShortcuts
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -73,7 +81,9 @@ methods:
     package: office!
     fullName: replaceShortcuts(shortcuts)
     summary: Replaces existing add-in shortcuts with custom shortcuts for the user.
-    remarks: '**Requirement set**: KeyboardShortcuts 1.1'
+    remarks: >-
+      **Requirement set**: [KeyboardShortcuts
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
