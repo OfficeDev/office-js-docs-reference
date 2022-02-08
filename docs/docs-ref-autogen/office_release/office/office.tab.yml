@@ -7,7 +7,9 @@ summary: >-
   Represents an individual tab and the state it should have. For code examples, see [Enable and Disable Add-in
   Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
   tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
-remarks: '**Requirement set**: Ribbon 1.1'
+remarks: >-
+  **Requirement set**: [RibbonAPI
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -41,7 +43,8 @@ properties:
       controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.
 
 
-      **Requirement set**: Ribbon 1.1
+      **Requirement set**: [RibbonAPI
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +68,9 @@ properties:
     package: office!
     fullName: visible
     summary: Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
-    remarks: '**Requirement set**: Ribbon 1.2'
+    remarks: >-
+      **Requirement set**: [RibbonAPI
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:

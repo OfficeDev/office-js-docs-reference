@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Actions:interface",
-              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n */\n",
+              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -198,7 +198,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Actions#areShortcutsInUse:member(1)",
-                  "docComment": "/**\n * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.\n *\n * @remarks\n *\n * **Requirement set**: KeyboardShortcuts 1.1\n *\n * @param shortcuts - An array of shortcut combinations. For example, `[\"Ctrl+1\", \"Ctrl+2\"]`.\n *\n * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:\"Ctrl+1\", inUse:true},{shortcut:\"Ctrl+2\", inUse:false}]`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * @param shortcuts - An array of shortcut combinations. For example, `[\"Ctrl+1\", \"Ctrl+2\"]`.\n *\n * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:\"Ctrl+1\", inUse:true},{shortcut:\"Ctrl+2\", inUse:false}]`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -247,7 +247,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Actions#associate:member",
-                  "docComment": "/**\n * Associates the ID of an action with a function.\n *\n * @param actionId - The ID of an action that is defined in an extended manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
+                  "docComment": "/**\n * Associates the ID of an action with a function.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param actionId - The ID of an action that is defined in an extended manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -273,7 +273,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Actions#getShortcuts:member(1)",
-                  "docComment": "/**\n * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.\n *\n * @remarks\n *\n * **Requirement set**: KeyboardShortcuts 1.1\n *\n * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\", \"SetUnderline\": null}`.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\", \"SetUnderline\": null}`.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -306,7 +306,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Actions#replaceShortcuts:member(1)",
-                  "docComment": "/**\n * Replaces existing add-in shortcuts with custom shortcuts for the user.\n *\n * @remarks\n *\n * **Requirement set**: KeyboardShortcuts 1.1\n *\n * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\"}`. To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)\n *\n * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered. Otherwise, the promise will be rejected with error code and error message. An \"InvalidOperation\" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Replaces existing add-in shortcuts with custom shortcuts for the user.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\"}`. To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)\n *\n * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered. Otherwise, the promise will be rejected with error code and error message. An \"InvalidOperation\" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -676,7 +676,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Addin:interface",
-              "docComment": "/**\n * Represents add-in level functionality for operating or configuring various aspects of the add-in.\n */\n",
+              "docComment": "/**\n * Represents add-in level functionality for operating or configuring various aspects of the add-in.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -716,7 +716,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#getStartupBehavior:member(1)",
-                  "docComment": "/**\n * Gets the current startup behavior for the add-in.\n */\n",
+                  "docComment": "/**\n * Gets the current startup behavior for the add-in.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -758,7 +758,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#hide:member(1)",
-                  "docComment": "/**\n * Hides the task pane.\n *\n * @returns A promise that is resolved when the UI is hidden.\n */\n",
+                  "docComment": "/**\n * Hides the task pane.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @returns A promise that is resolved when the UI is hidden.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -791,7 +791,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#onVisibilityModeChanged:member(1)",
-                  "docComment": "/**\n * Adds a handler for the `onVisibilityModeChanged` event.\n *\n * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.\n */\n",
+                  "docComment": "/**\n * Adds a handler for the `onVisibilityModeChanged` event.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param handler - The handler function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -858,7 +858,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#setStartupBehavior:member(1)",
-                  "docComment": "/**\n * Sets the startup behavior for the add-in for when the document is opened next time.\n *\n * @param behavior - Specifies startup behavior of the add-in.\n */\n",
+                  "docComment": "/**\n * Sets the startup behavior for the add-in for when the document is opened next time.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param behavior - Specifies startup behavior of the add-in.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -908,7 +908,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#showAsTaskpane:member(1)",
-                  "docComment": "/**\n * Shows the task pane associated with the add-in.\n *\n * @returns A promise that is resolved when the UI is shown.\n */\n",
+                  "docComment": "/**\n * Shows the task pane associated with the add-in.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @returns A promise that is resolved when the UI is shown.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1414,7 +1414,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessToken:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1464,7 +1464,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1533,7 +1533,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessTokenAsync:member(2)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}.\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}\n *\n * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @deprecated\n *\n * Use `Office.auth.getAccessToken` instead.\n *\n * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the \"on behalf of\" flow to get access to Microsoft Graph. If `AsyncResult.status` is \"succeeded\", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4739,7 +4739,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Control:interface",
-              "docComment": "/**\n * Represents an individual control or command and the state it should have.\n *\n * For code samples showing how to use a `Control` object and its properties, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * Represents an individual control or command and the state it should have.\n *\n * For code samples showing how to use a `Control` object and its properties, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -13481,7 +13481,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Group:interface",
-              "docComment": "/**\n * Represents a group of controls on a ribbon tab.\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * Represents a group of controls on a ribbon tab.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -27269,7 +27269,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Ribbon:interface",
-              "docComment": "/**\n * An interface that contains all the functionality provided to manage the state of the Office ribbon.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * An interface that contains all the functionality provided to manage the state of the Office ribbon.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -27282,7 +27282,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Ribbon#requestCreateControls:member(1)",
-                  "docComment": "/**\n * Registers a custom contextual tab with Office and defines the tab's controls.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.2\n *\n * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved. For more information and code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param tabDefinition - Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to the Office dynamic-ribbon JSON schema to `JSON.parse`, and then pass the returned object to this method.\n */\n",
+                  "docComment": "/**\n * Registers a custom contextual tab with Office and defines the tab's controls.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}\n *\n * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved. For more information and code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param tabDefinition - Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to the Office dynamic-ribbon JSON schema to `JSON.parse`, and then pass the returned object to this method.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -27332,7 +27332,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Ribbon#requestUpdate:member(1)",
-                  "docComment": "/**\n * Sends a request to Office to update the ribbon.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n *\n * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.\n *\n * For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.\n */\n",
+                  "docComment": "/**\n * Sends a request to Office to update the ribbon.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n *\n * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.\n *\n * For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -27407,7 +27407,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.RibbonUpdaterData:interface",
-              "docComment": "/**\n * Specifies changes to the ribbon, such as the enabled or disabled status of a button.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * Specifies changes to the ribbon, such as the enabled or disabled status of a button.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -28958,7 +28958,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Tab:interface",
-              "docComment": "/**\n * Represents an individual tab and the state it should have. For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+              "docComment": "/**\n * Represents an individual tab and the state it should have. For code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -29002,7 +29002,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Tab#groups:member",
-                  "docComment": "/**\n * Specifies one or more of the control groups on the tab.\n *\n * @remarks\n *\n * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.\n *\n * **Requirement set**: Ribbon 1.1\n */\n",
+                  "docComment": "/**\n * Specifies one or more of the control groups on the tab.\n *\n * @remarks\n *\n * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29059,7 +29059,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Tab#visible:member",
-                  "docComment": "/**\n * Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.\n *\n * @remarks\n *\n * **Requirement set**: Ribbon 1.2\n */\n",
+                  "docComment": "/**\n * Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
