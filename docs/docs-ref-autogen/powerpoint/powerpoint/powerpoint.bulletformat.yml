@@ -6,7 +6,9 @@ fullName: PowerPoint.BulletFormat
 summary: >-
   Represents the bullet formatting properties of a text that is attached to the
   [PowerPoint.ParagraphFormat](xref:powerpoint!PowerPoint.ParagraphFormat:class)<!-- -->.
-remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: class
@@ -32,7 +34,9 @@ properties:
     summary: >-
       Specifies if the bullets in the paragraph are visible. Returns 'null' if the 'TextRange' includes text fragments
       with different bullet visibility values.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

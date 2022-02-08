@@ -468,12 +468,10 @@ Excel.CalculationType,N/A,Class,Fine,false
 Excel.CalculationType,full,EnumField,Fine,false
 Excel.CalculationType,fullRebuild,EnumField,Fine,false
 Excel.CalculationType,recalculate,EnumField,Fine,false
-Excel.CardLayout,N/A,Class,Good,false
 Excel.CardLayoutListSection,N/A,Class,Good,false
 Excel.CardLayoutListSection,layout,Method,Good,false
 Excel.CardLayoutPropertyReference,N/A,Class,Good,false
 Excel.CardLayoutPropertyReference,property,Method,Good,false
-Excel.CardLayoutSection,N/A,Class,Good,false
 Excel.CardLayoutSectionStandardProperties,N/A,Class,Good,false
 Excel.CardLayoutSectionStandardProperties,collapsed,Method,Good,false
 Excel.CardLayoutSectionStandardProperties,collapsible,Method,Good,false
@@ -583,8 +581,6 @@ Excel.CellPropertiesLoadOptions,style,Method,Fine,false
 Excel.CellPropertiesProtection,N/A,Class,Good,false
 Excel.CellPropertiesProtection,formulaHidden,Method,Good,false
 Excel.CellPropertiesProtection,locked,Method,Good,false
-Excel.CellValue,N/A,Class,Good,false
-Excel.CellValueAndPropertyMetadata,N/A,Class,Good,false
 Excel.CellValueAttributionAttributes,N/A,Class,Good,false
 Excel.CellValueAttributionAttributes,licenseAddress,Method,Good,false
 Excel.CellValueAttributionAttributes,licenseText,Method,Good,false
@@ -2530,8 +2526,6 @@ Excel.EntityCellValue,cardLayout,Method,Good,false
 Excel.EntityCellValue,properties,Method,Good,false
 Excel.EntityCellValue,text,Method,Good,false
 Excel.EntityCellValue,type,Method,Good,false
-Excel.EntityPropertyType,N/A,Class,Good,false
-Excel.ErrorCellValue,N/A,Class,Good,false
 Excel.ErrorCellValueType,N/A,Class,Good,false
 Excel.ErrorCellValueType,blocked,EnumField,Poor,false
 Excel.ErrorCellValueType,busy,EnumField,Poor,false
@@ -6906,7 +6900,6 @@ OfficeExtension.EventInfo,N/A,Class,Missing,false
 OfficeExtension.EventInfo,eventArgsTransformFunc,Method,Missing,false
 OfficeExtension.EventInfo,registerFunc,Method,Missing,false
 OfficeExtension.EventInfo,unregisterFunc,Method,Missing,false
-OfficeExtension.IPromise,N/A,Class,Missing,false
 OfficeExtension.LoadOption,N/A,Class,Good,true
 OfficeExtension.LoadOption,expand,Method,Fine,false
 OfficeExtension.LoadOption,select,Method,Fine,false

@@ -445,14 +445,10 @@ items:
             uid: 'excel!Excel.BusyErrorCellValue:interface'
           - name: CalcErrorCellValue
             uid: 'excel!Excel.CalcErrorCellValue:interface'
-          - name: CardLayout
-            uid: 'excel!Excel.CardLayout:type'
           - name: CardLayoutListSection
             uid: 'excel!Excel.CardLayoutListSection:interface'
           - name: CardLayoutPropertyReference
             uid: 'excel!Excel.CardLayoutPropertyReference:interface'
-          - name: CardLayoutSection
-            uid: 'excel!Excel.CardLayoutSection:type'
           - name: CardLayoutSectionStandardProperties
             uid: 'excel!Excel.CardLayoutSectionStandardProperties:interface'
           - name: CardLayoutStandardProperties
@@ -483,10 +479,6 @@ items:
             uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
           - name: CellPropertiesProtection
             uid: 'excel!Excel.CellPropertiesProtection:interface'
-          - name: CellValue
-            uid: 'excel!Excel.CellValue:type'
-          - name: CellValueAndPropertyMetadata
-            uid: 'excel!Excel.CellValueAndPropertyMetadata:type'
           - name: CellValueAttributionAttributes
             uid: 'excel!Excel.CellValueAttributionAttributes:interface'
           - name: CellValueConditionalFormat
@@ -721,10 +713,6 @@ items:
             uid: 'excel!Excel.EntityCardLayout:interface'
           - name: EntityCellValue
             uid: 'excel!Excel.EntityCellValue:interface'
-          - name: EntityPropertyType
-            uid: 'excel!Excel.EntityPropertyType:type'
-          - name: ErrorCellValue
-            uid: 'excel!Excel.ErrorCellValue:type'
           - name: FieldErrorCellValue
             uid: 'excel!Excel.FieldErrorCellValue:interface'
           - name: Filter
@@ -1300,8 +1288,6 @@ items:
                 uid: 'office!OfficeExtension.EventHandlers:class'
               - name: EventInfo
                 uid: 'office!OfficeExtension.EventInfo:interface'
-              - name: IPromise
-                uid: 'office!OfficeExtension.IPromise:type'
               - name: LoadOption
                 uid: 'office!OfficeExtension.LoadOption:interface'
               - name: RequestContextDebugInfo
