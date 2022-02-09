@@ -1006,7 +1006,7 @@ Word.Paragraph#getHtml:member(1):
         // and return a promise to indicate task completion.
         await context.sync();
     
-        // Queue a a set of commands to get the HTML of the first paragraph.
+        // Queue a set of commands to get the HTML of the first paragraph.
         var html = paragraphs.items[0].getHtml();
 
         // Synchronize the document state by executing the queued commands,
@@ -1029,7 +1029,7 @@ Word.Paragraph#getOoxml:member(1):
         // and return a promise to indicate task completion.
         await context.sync();
     
-        // Queue a a set of commands to get the OOXML of the first paragraph.
+        // Queue a set of commands to get the OOXML of the first paragraph.
         var ooxml = paragraphs.items[0].getOoxml();
 
         // Synchronize the document state by executing the queued commands,
