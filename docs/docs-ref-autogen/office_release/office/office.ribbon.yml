@@ -4,7 +4,9 @@ uid: 'office!Office.Ribbon:interface'
 package: office!
 fullName: Office.Ribbon
 summary: An interface that contains all the functionality provided to manage the state of the Office ribbon.
-remarks: '**Requirement set**: Ribbon 1.1'
+remarks: >-
+  **Requirement set**: [RibbonAPI
+  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,7 +17,8 @@ methods:
     fullName: requestCreateControls(tabDefinition)
     summary: Registers a custom contextual tab with Office and defines the tab's controls.
     remarks: >-
-      **Requirement set**: Ribbon 1.2
+      **Requirement set**: [RibbonAPI
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
 
 
       This method only requests that the tab be registered. The actual registration is controlled by the Office
@@ -42,7 +45,8 @@ methods:
     fullName: requestUpdate(input)
     summary: Sends a request to Office to update the ribbon.
     remarks: >-
-      **Requirement set**: Ribbon 1.1
+      **Requirement set**: [RibbonAPI
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
 
 
       Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office
