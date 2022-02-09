@@ -1052,6 +1052,13 @@ interfaces:
   - 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
   - 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
   - 'excel!Excel.WorksheetVisibilityChangedEventArgs:interface'
+typeAliases:
+  - 'excel!Excel.CardLayout:type'
+  - 'excel!Excel.CardLayoutSection:type'
+  - 'excel!Excel.CellValue:type'
+  - 'excel!Excel.CellValueAndPropertyMetadata:type'
+  - 'excel!Excel.EntityPropertyType:type'
+  - 'excel!Excel.ErrorCellValue:type'
 functions:
   - name: Excel.createWorkbook(base64)
     uid: 'excel!Excel.createWorkbook:function(1)'
