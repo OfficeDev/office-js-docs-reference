@@ -5,8 +5,8 @@ OneNote.Application#getActiveNotebook:member(1):
         // Get the active notebook.
         var notebook = context.application.getActiveNotebook();
                 
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -24,8 +24,8 @@ OneNote.Application#getActiveNotebookOrNull:member(1):
         // Get the active notebook.
         var notebook = context.application.getActiveNotebookOrNull();
     
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('id,name');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -44,7 +44,7 @@ OneNote.Application#getActiveOutline:member(1):
         // get active outline.
         var outline = context.application.getActiveOutline();
     
-        // Queue a command to load the id of the outline.         
+        // Queue a command to load the id of the outline.
         outline.load('id');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -60,7 +60,7 @@ OneNote.Application#getActiveOutlineOrNull:member(1):
         // get active outline.
         var outline = context.application.getActiveOutlineOrNull();
     
-        // Queue a command to load the id of the outline.         
+        // Queue a command to load the id of the outline.
         outline.load('id');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -76,8 +76,8 @@ OneNote.Application#getActivePage:member(1):
         // Get the active page.
         var page = context.application.getActivePage();
                 
-        // Queue a command to load the page. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the page.
+        // For best performance, request specific properties.
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -94,8 +94,8 @@ OneNote.Application#getActivePageOrNull:member(1):
         // Get the active page.
         var page = context.application.getActivePageOrNull();
     
-        // Queue a command to load the page. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the page.
+        // For best performance, request specific properties.
         page.load('id,title');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -114,8 +114,8 @@ OneNote.Application#getActiveSection:member(1):
         // Get the active section.
         var section = context.application.getActiveSection();
                 
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -132,8 +132,8 @@ OneNote.Application#getActiveSectionOrNull:member(1):
         // Get the active section.
         var section = context.application.getActiveSectionOrNull();
     
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load('id,name');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -151,8 +151,8 @@ OneNote.Application#navigateToPage:member(1):
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
                 
-        // Queue a command to load the pages. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the pages.
+        // For best performance, request specific properties.
         pages.load('id');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -161,7 +161,7 @@ OneNote.Application#navigateToPage:member(1):
         // This example loads the first page in the section.
         var page = pages.items[0];
                     
-        // Open the page in the application.                    
+        // Open the page in the application.
         context.application.navigateToPage(page);
                 
         // Run the queued command.
@@ -174,8 +174,8 @@ OneNote.Application#navigateToPageWithClientUrl:member(1):
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
     
-        // Queue a command to load the pages. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the pages.
+        // For best performance, request specific properties.
         pages.load('clientUrl');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -184,7 +184,7 @@ OneNote.Application#navigateToPageWithClientUrl:member(1):
         // This example loads the first page in the section.
         var page = pages.items[0];
 
-        // Open the page in the application.                    
+        // Open the page in the application.
         context.application.navigateToPageWithClientUrl(page.clientUrl);
 
         // Run the queued command.
@@ -225,10 +225,10 @@ OneNote.Image#getBase64Image:member(1):
     var imageString;
     
     await OneNote.run(async (context) => {
-        // Get the current outline.         
+        // Get the current outline.
         var outline = context.application.getActiveOutline();
         
-        // Queue a command to load paragraphs and their types. 
+        // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
         for (var i=0; i < outline.paragraphs.items.length; i++) {
@@ -249,11 +249,11 @@ OneNote.Image#getBase64Image:member(1):
 OneNote.Image#load:member(2):
   - |-
     await OneNote.run(async (context) => {
-        // Get the current outline.         
+        // Get the current outline.
         var outline = context.application.getActiveOutline();
         var image = null;
         
-        // Queue a command to load paragraphs and their types. 
+        // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
 
@@ -313,10 +313,10 @@ OneNote.Notebook#addSection:member(1):
         // Gets the active notebook.
         var notebook = context.application.getActiveNotebook();
     
-        // Queue a command to add a new section. 
+        // Queue a command to add a new section.
         var section = notebook.addSection("Sample section");
         
-        // Queue a command to load the new section. This example reads the name property later.
+        // Queue a command to load the new section.This example reads the name property later.
         section.load("name");
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -343,13 +343,13 @@ OneNote.Notebook#addSectionGroup:member(1):
 OneNote.Notebook#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
-        // Get the current notebook.         
+        // Get the current notebook.
         var notebook = context.application.getActiveNotebook();
         var restApiId = notebook.getRestApiId();
     
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
-        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
@@ -362,8 +362,8 @@ OneNote.Notebook#load:member(2):
         // Get the current notebook.
         var notebook = context.application.getActiveNotebook();
                 
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('baseUrl');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -380,8 +380,8 @@ OneNote.NotebookCollection#getByName:member(1):
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
     
-        // Queue a command to load the notebooks. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebooks.
+        // For best performance, request specific properties.
         notebooks.load("id,name");
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -401,8 +401,8 @@ OneNote.NotebookCollection#load:member(2):
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
     
-        // Queue a command to load the notebooks. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebooks.
+        // For best performance, request specific properties.
         notebooks.load("id");
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -425,7 +425,7 @@ OneNote.Outline#appendHtml:member(1):
         // Gets the active page.
         var activePage = context.application.getActivePage();
     
-        // Get pageContents of the activePage. 
+        // Get pageContents of the activePage.
         var pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
@@ -452,7 +452,7 @@ OneNote.Outline#appendTable:member(1):
         // Gets the active page.
         var activePage = context.application.getActivePage();
     
-        // Get pageContents of the activePage. 
+        // Get pageContents of the activePage.
         var pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
@@ -478,7 +478,7 @@ OneNote.Page#addOutline:member(1):
         // Gets the active page.
         var page = context.application.getActivePage();
     
-        // Queue a command to add an outline with given html. 
+        // Queue a command to add an outline with given html.
         var outline = page.addOutline(200, 200,
     "<p>Images and a table below:</p> \
      <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
@@ -531,7 +531,7 @@ OneNote.Page#copyToSection:member(1):
 OneNote.Page#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
-        // Get the current page.         
+        // Get the current page.
         var page = context.application.getActivePage();
         var restApiId = page.getRestApiId();
     
@@ -550,7 +550,7 @@ OneNote.Page#insertPageAsSibling:member(2):
         // Gets the active page.
         var activePage = context.application.getActivePage();
     
-        // Queue a command to add a new page after the active page. 
+        // Queue a command to add a new page after the active page.
         var newPage = activePage.insertPageAsSibling("After", "Next Page");
     
         // Queue a command to load the newPage to access its data.
@@ -567,7 +567,7 @@ OneNote.Page#load:member(2):
         // Gets the active page.
         var activePage = context.application.getActivePage();
     
-        // Queue a command to add a new page after the active page. 
+        // Queue a command to add a new page after the active page.
         var pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
@@ -593,7 +593,7 @@ OneNote.PageCollection#getByTitle:member(1):
         // Get all the pages in the current section.
         var allPages = context.application.getActiveSection().pages;
     
-        // Queue a command to load the pages. 
+        // Queue a command to load the pages.
         // For best performance, request specific properties.
         allPages.load("id"); 
     
@@ -603,7 +603,7 @@ OneNote.PageCollection#getByTitle:member(1):
         // Get the sections with the specified name.
         var todoPages = allPages.getByTitle("Todo list");
 
-        // Queue a command to load the section. 
+        // Queue a command to load the section.
         // For best performance, request specific properties.
         todoPages.load("id,title"); 
 
@@ -622,7 +622,7 @@ OneNote.PageCollection#load:member(2):
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
         
-        // Queue a command to load the id and title for each page.            
+        // Queue a command to load the id and title for each page.
         pages.load('id,title');
         
         // Run the queued commands, and return a promise to indicate task completion.
@@ -690,24 +690,23 @@ OneNote.Paragraph#delete:member(1):
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
     
-        // Get the first PageContent on the page
-        // Assuming its an outline, get the outline's paragraphs.
+        // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         
         var paragraphs = pageContent.outline.paragraphs;
         
         var firstParagraph = paragraphs.getItemAt(0);
         
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
     
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                 
-        // Queue a command to delete the first paragraph                 
+        // Queue a command to delete the first paragraph.
         firstParagraph.delete();
         
-        // Run the command to delete it
+        // Run the command to delete it.
         await context.sync();
     });
 OneNote.Paragraph#insertHtmlAsSibling:member(1):
@@ -717,19 +716,19 @@ OneNote.Paragraph#insertHtmlAsSibling:member(1):
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
     
-        // Get the first PageContent on the page
+        // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
         var firstParagraph = paragraphs.getItemAt(0);
     
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
     
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
     
-        // Queue commands to insert before and after the first paragraph
+        // Queue commands to insert before and after the first paragraph.
         firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
         firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
         
@@ -743,7 +742,7 @@ OneNote.Paragraph#insertImageAsSibling:member(1):
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
     
-        // Get the first PageContent on the page
+        // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
@@ -769,13 +768,12 @@ OneNote.Paragraph#insertRichTextAsSibling:member(1):
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
     
-        // Get the first PageContent on the page
-        // Assuming its an outline, get the outline's paragraphs.
+        // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
         var firstParagraph = paragraphs.getItemAt(0);
     
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -807,7 +805,7 @@ OneNote.Paragraph#load:member(2):
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        // Write the text.                  
+        // Write the text.
         $.each(paragraphs.items, function(index, paragraph) {
             console.log("Paragraph type: " + paragraph.type);
             console.log("Paragraph ID: " + paragraph.id);
@@ -916,14 +914,14 @@ OneNote.Section#addPage:member(1):
         // Queue a command to add a page to the current section.
         var page = context.application.getActiveSection().addPage("Wish list");
                 
-        // Queue a command to load the id and title of the new page. 
-        // This example loads the new page so it can read its properties later.           
+        // Queue a command to load the id and title of the new page.
+        // This example loads the new page so it can read its properties later.
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                  
-        // Display the properties.       
+        // Display the properties.
         console.log("Page name: " + page.title);
         console.log("Page ID: " + page.id);
     });
@@ -977,27 +975,27 @@ OneNote.Section#insertSectionAsSibling:member(2):
         // Queue a command to insert a section after the current section.
         var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
                 
-        // Queue a command to load the id and name of the new section. 
-        // This example loads the new section so it can read its properties later.           
+        // Queue a command to load the id and name of the new section.
+        // This example loads the new section so it can read its properties later.
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                  
-        // Display the properties.       
+        // Display the properties.
         console.log("Section name: " + section.name);
         console.log("Section ID: " + section.id);
     });
 OneNote.Section#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
-        // Get the current section.         
+        // Get the current section.
         var section = context.application.getActiveSection();
         var restApiId = section.getRestApiId();
     
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
-        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
         // OneNote REST API according to the OneNote Development Blog.
@@ -1010,8 +1008,8 @@ OneNote.Section#load:member(2):
         // Get the current section.
         var section = context.application.getActiveSection();
                 
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load("id");
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -1025,7 +1023,7 @@ OneNote.SectionCollection#getByName:member(1):
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
     
-        // Queue a command to load the sections. 
+        // Queue a command to load the sections.
         // For best performance, request specific properties.
         sections.load("id"); 
         
@@ -1051,7 +1049,7 @@ OneNote.SectionCollection#load:member(2):
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
     
-        // Queue a command to load the sections. 
+        // Queue a command to load the sections.
         // For best performance, request specific properties.
         sections.load("name"); 
     
@@ -1125,8 +1123,8 @@ OneNote.SectionGroup#load:member(2):
         // Get the parent section group that contains the current section.
         var sectionGroup = context.application.getActiveSection().parentSectionGroup;
                 
-        // Queue a command to load the section group. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section group.
+        // For best performance, request specific properties.
         sectionGroup.load("id,name");
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -1143,7 +1141,7 @@ OneNote.SectionGroupCollection#getByName:member(1):
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
     
-        // Queue a command to load the section groups. 
+        // Queue a command to load the section groups.
         // For best performance, request specific properties.
         sectionGroups.load("id"); 
     
@@ -1169,7 +1167,7 @@ OneNote.SectionGroupCollection#load:member(2):
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
     
-        // Queue a command to load the section groups. 
+        // Queue a command to load the section groups.
         // For best performance, request specific properties.
         sectionGroups.load("name"); 
     
@@ -1436,7 +1434,7 @@ OneNote.TableRow#insertRowAsSibling:member(1):
                 // Queue a command to load table.rows.
                 context.load(table, "rows");
                 
-                // Run the queued commands
+                // Run the queued commands.
                 await context.sync();
 
                 var rows = table.rows;
