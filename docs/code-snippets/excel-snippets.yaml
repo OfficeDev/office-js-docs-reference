@@ -1,344 +1,212 @@
 Excel.createWorkbook:function(1):
   - |-
-    var myFile = document.getElementById("file");
-    var reader = new FileReader();
+    const myFile = <HTMLInputElement>document.getElementById("file");
+    const reader = new FileReader();
 
-    reader.onload = function (event) {
+    reader.onload = (event) => {
+        Excel.run((context) => {
         // strip off the metadata before the base64-encoded string
-        var startIndex = event.target.result.indexOf("base64,");
-        var copyBase64 = event.target.result.substr(startIndex + 7);
+        const startIndex = reader.result.toString().indexOf("base64,");
+        const mybase64 = reader.result.toString().substr(startIndex + 7);
 
-        Excel.createWorkbook(copyBase64);        
+        Excel.createWorkbook(mybase64);
+        return context.sync();
+        });
     };
 
     // read in the file as a data URL so we can parse the base64-encoded string
     reader.readAsDataURL(myFile.files[0]);
 Excel.Application#calculate:member(2):
   - |-
-    Excel.run(function (ctx) {
-        ctx.workbook.application.calculate('Full');
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+    await Excel.run(async (context) => {
+        context.workbook.application.calculate('Full');
+        await context.sync();
     });
 Excel.Application#load:member(2):
   - |-
-    Excel.run(function (ctx) {
-        var application = ctx.workbook.application;
+    await Excel.run(async (context) => {
+        var application = context.workbook.application;
         application.load('calculationMode');
-        return ctx.sync().then(function() {
-            console.log(application.calculationMode);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(application.calculationMode);
     });
 Excel.Binding#getRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var binding = ctx.workbook.bindings.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var binding = context.workbook.bindings.getItemAt(0);
         var range = binding.getRange();
         range.load('cellCount');
-        return ctx.sync().then(function() {
-            console.log(range.cellCount);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(range.cellCount);
     });
 Excel.Binding#getTable:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var binding = ctx.workbook.bindings.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var binding = context.workbook.bindings.getItemAt(0);
         var table = binding.getTable();
         table.load('name');
-        return ctx.sync().then(function() {
-                console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(table.name);
     });
 Excel.Binding#getText:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var binding = ctx.workbook.bindings.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var binding = context.workbook.bindings.getItemAt(0);
         var text = binding.getText();
         binding.load('text');
-        return ctx.sync().then(function() {
-            console.log(text);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(text);
     });
 Excel.Binding#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var binding = ctx.workbook.bindings.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var binding = context.workbook.bindings.getItemAt(0);
         binding.load('type');
-        return ctx.sync().then(function() {
-            console.log(binding.type);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(binding.type);
     });
 Excel.BindingCollection#getItem:member(1):
-  - |-
-    // Create a table binding to monitor data changes in the table. 
-    // When data is changed, the background color of the table will be changed to orange.
-    function addEventHandler() {
-        // Create Table1
-        Excel.run(function (ctx) { 
-            ctx.workbook.tables.add("Sheet1!A1:C4", true);
-            return ctx.sync().then(function() {
-                    console.log("My Diet Data Inserted!");
-            })
-            .catch(function (error) {
-                    console.log(JSON.stringify(error));
-            });
-        });
-        //Create a new table binding for Table1
-        Office.context.document.bindings.addFromNamedItemAsync(
-            "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
-            if (asyncResult.status == "failed") {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-            else {
-                // If succeeded, then add event handler to the table binding.
-                Office.select("bindings#myBinding").addHandlerAsync(
-                    Office.EventType.BindingDataChanged, onBindingDataChanged);
-            }
-        });
-    }
-        
-    // when data in the table is changed, this event will be triggered.
-    function onBindingDataChanged(eventArgs) {
-        Excel.run(function (ctx) { 
-            // highlight the table in orange to indicate data has been changed.
-            ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-            return ctx.sync().then(function() {
-                    console.log("The value in this table got changed!");
-            })
-            .catch(function (error) {
-                    console.log(JSON.stringify(error));
-            });
+  - |-        
+    async function onBindingDataChanged(eventArgs) {
+        await Excel.run(async (context) => { 
+            // Highlight the table related to the binding in orange to indicate data has been changed.
+            context.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+            await context.sync();
+            
+            console.log("The value in this table got changed!");
         });
     }
 Excel.BindingCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.bindings.count - 1;
-        var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+    await Excel.run(async (context) => { 
+        var lastPosition = context.workbook.bindings.count - 1;
+        var binding = context.workbook.bindings.getItemAt(lastPosition);
         binding.load('type')
-        return ctx.sync().then(function() {
-                console.log(binding.type); 
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(binding.type);
     });
 Excel.BindingCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var bindings = ctx.workbook.bindings;
+    await Excel.run(async (context) => { 
+        var bindings = context.workbook.bindings;
         bindings.load('items');
-        return ctx.sync().then(function() {
-            for (var i = 0; i < bindings.items.length; i++)
-            {
-                console.log(bindings.items[i].id);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get the number of bindings
-    Excel.run(function (ctx) { 
-        var bindings = ctx.workbook.bindings;
-        bindings.load('count');
-        return ctx.sync().then(function() {
-            console.log("Bindings: Count= " + bindings.count);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+
+        for (var i = 0; i < bindings.items.length; i++) {
+            console.log(bindings.items[i].id);
         }
     });
 Excel.Chart#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.delete();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Chart#getImage:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var image = chart.getImage();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Chart#legend:member:
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.legend.visible = true;
-        chart.legend.position = "top"; 
+        chart.legend.position = "Top"; 
         chart.legend.overlay = false; 
-        return ctx.sync().then(function() {
-                console.log("Legend Shown ");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync()
+        
+        console.log("Legend Shown ");
     });
 Excel.Chart#name:member:
   - |-
     // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
     // Move Chart1 to 100 points to the top and left. 
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.name = "New Name";
         chart.top = 100;
         chart.left = 100;
         chart.height = 200;
         chart.width = 200;
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Chart#setData:member(1):
   - |-
-    // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var sourceData = "A1:B4";
+    // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns"
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sheet1");
+        const chart = sheet.charts.getItem("Chart1");
+        const sourceData = sheet.getRange("A1:B4");
         chart.setData(sourceData, "Columns");
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
     });
 Excel.Chart#setPosition:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Charts";
         var rangeSelection = "A1:B4";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
         var sourceData = sheetName + "!" + "A1:B4";
-        var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+        var chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
         chart.width = 500;
         chart.height = 300;
         chart.setPosition("C2", null);
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Chart#load:member(2):
   - |-
     // Get a chart named "Chart1"
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.load('name');
-        return ctx.sync().then(function() {
-                console.log(chart.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(chart.name);
     });
 Excel.ChartAxes#valueAxis:member:
   - |-
     // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.maximum = 5;
         chart.axes.valueAxis.minimum = 0;
         chart.axes.valueAxis.majorUnit = 1;
         chart.axes.valueAxis.minorUnit = 0.2;
-        return ctx.sync().then(function() {
-                console.log("Axis Settings Changed");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log("Axis Settings Changed");
     });
 Excel.ChartAxis#load:member(2):
   - |-
     // Get the maximum of Chart Axis from Chart1
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var axis = chart.axes.valueAxis;
         axis.load('maximum');
-        return ctx.sync().then(function() {
-                console.log(axis.maximum);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(axis.maximum);
     });
 Excel.ChartAxisTitle#load:member(2):
   - |-
     // Add "Values" as the title for the value Axis 
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
         chart.axes.valueAxis.title.text = "Values";
-        return ctx.sync().then(function() {
-                console.log("Axis Title Added ");
-        });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        await context.sync();
+        
+        console.log("Axis Title Added ");
     });
 Excel.ChartAxisTitle#textOrientation:member:
   - >-
@@ -361,397 +229,249 @@ Excel.ChartCollection#add:member(1):
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
     // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sheet1");
         var rangeSelection = "A1:B4";
-        var range = ctx.workbook.worksheets.getItem(sheetName)
-            .getRange(rangeSelection);
-        var chart = ctx.workbook.worksheets.getItem(sheetName)
-            .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
-                console.log("New Chart Added");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        var range = sheet.getRange(rangeSelection);
+        var chart = sheet.charts.add(
+        Excel.ChartType.columnClustered, 
+        range, 
+        Excel.ChartSeriesBy.auto);
+        await context.sync();
+
+        console.log("New Chart Added");
     });
 Excel.ChartCollection#getItem:member(1):
   - |-
     // Get the number of charts
-    Excel.run(function (ctx) { 
-        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+    await Excel.run(async (context) => { 
+        var charts = context.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('count');
-        return ctx.sync().then(function() {
-            console.log("charts: Count= " + charts.count);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log("charts: Count= " + charts.count);
     });
 Excel.ChartCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-        return ctx.sync().then(function() {
-                console.log(chart.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+    await Excel.run(async (context) => { 
+        var lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+        await context.sync();
+
+        console.log(chart.name);
     });
 Excel.ChartCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+    await Excel.run(async (context) => { 
+        var charts = context.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('items');
-        return ctx.sync().then(function() {
-            for (var i = 0; i < charts.items.length; i++) {
-                console.log(charts.items[i].name);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        
+        for (var i = 0; i < charts.items.length; i++) {
+            console.log(charts.items[i].name);
         }
     });
 Excel.ChartCollection#onAdded:member:
   - |-
-    Excel.run(function (context){
+    await Excel.run(async (context) => {
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onAdded.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("A chart has been added with ID: " + event.chartId);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.ChartCollection#onDeleted:member:
   - |-
-    Excel.run(function (context){
+    await Excel.run(async (context) => {
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onDeleted.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("The chart with this ID was deleted: " + event.chartId);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.ChartDataLabels#load:member(2):
   - |-
-    // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.datalabels.showValue = true;
-        chart.datalabels.position = "top";
-        chart.datalabels.showSeriesName = true;
-        return ctx.sync().then(function() {
-                console.log("Datalabels Shown");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+    // Make Series Name shown in data labels and set the position of data labels to be "top".
+    await Excel.run(async (context) => {
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+        chart.dataLabels.showValue = true;
+        chart.dataLabels.position = Excel.ChartDataLabelPosition.top;
+        chart.dataLabels.showSeriesName = true;
+        await context.sync();
+
+        console.log("Data labels shown");
     });
 Excel.ChartFill#clear:member(1):
   - |-
     // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
-    Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+    await Excel.run(async (context) => { 
+        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
-        return ctx.sync().then(function() {
-                console.log("Chart Major Gridlines Format Cleared");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log("Chart Major Gridlines Format Cleared");
     });
 Excel.ChartFont:class:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
-    Excel.run(function (ctx) { 
-        var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+    await Excel.run(async (context) => { 
+        var title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
         title.format.font.name = "Calibri";
         title.format.font.size = 12;
         title.format.font.color = "#FF0000";
         title.format.font.italic =  false;
         title.format.font.bold = true;
         title.format.font.underline = "None";
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
     });
 Excel.ChartGridlines#load:member(2):
   - |-
     // Set to show major gridlines on valueAxis of Chart1
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.majorGridlines.visible = true;
-        return ctx.sync().then(function() {
-                console.log("Axis Gridlines Added ");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log("Axis Gridlines Added ");
     });
 Excel.ChartLegend#load:member(2):
   - |-
     // Get the position of Chart Legend from Chart1
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var legend = chart.legend;
         legend.load('position');
-        return ctx.sync().then(function() {
-                console.log(legend.position);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(legend.position);
     });
 Excel.ChartLineFormat#clear:member(1):
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
-    Excel.run(function (ctx) { 
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+    await Excel.run(async (context) => { 
+        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
-        return ctx.sync().then(function() {
-                console.log("Chart Major Gridlines Format Cleared");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log("Chart Major Gridlines Format Cleared");
     });
 Excel.ChartLineFormat#load:member(2):
   - |-
     // Set chart major gridlines on value axis to be red.
-    Excel.run(function (ctx) {
-        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+    await Excel.run(async (context) => {
+        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.color = "#FF0000";
-        return ctx.sync().then(function () {
-            console.log("Chart Gridlines Color Updated");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync()
+        
+        console.log("Chart Gridlines Color Updated");
     });
 Excel.ChartPointsCollection#getItemAt:member(1):
   - |-
     // Set the border color for the first points in the points collection
-    Excel.run(function (ctx) { 
-        var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+    await Excel.run(async (context) => { 
+        var points = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
-        return ctx.sync().then(function() {
-            console.log("Point Border Color Changed");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log("Point Border Color Changed");
     });
 Excel.ChartPointsCollection#load:member(2):
   - |-
-    // Get the names of points in the points collection
-    Excel.run(function (ctx) { 
-        var pointsCollection = 
-            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
-        pointsCollection.load('items');
-        return ctx.sync().then(function() {
-            console.log("Points Collection loaded");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
     // Get the number of points
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var pointsCollection = 
-            ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+            context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('count');
-        return ctx.sync().then(function() {
-            console.log("points: Count= " + pointsCollection.count);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log("points: Count= " + pointsCollection.count);
     });
 Excel.ChartSeries#load:member(2):
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.series.getItemAt(0).name = "New Series Name";
-        return ctx.sync().then(function() {
-                console.log("Series1 Renamed");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log("Series1 Renamed");
     });
 Excel.ChartSeriesCollection#getItemAt:member(1):
   - |-
     // Get the name of the first series in the series collection.
-    Excel.run(function (ctx) { 
-        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+    await Excel.run(async (context) => { 
+        var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('items');
-        return ctx.sync().then(function() {
-            console.log(seriesCollection.items[0].name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(seriesCollection.items[0].name);
     });
 Excel.ChartSeriesCollection#load:member(2):
   - |-
-    // Getting the names of series in the series collection.
-    Excel.run(function (ctx) { 
-        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-        seriesCollection.load('items');
-        return ctx.sync().then(function() {
-            for (var i = 0; i < seriesCollection.items.length; i++)
-            {
-                console.log(seriesCollection.items[i].name);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
     // Get the number of chart series in collection.
-    Excel.run(function (ctx) { 
-        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+    await Excel.run(async (context) => { 
+        var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('count');
-        return ctx.sync().then(function() {
-            console.log("series: Count= " + seriesCollection.count);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log("series: Count= " + seriesCollection.count);
     });
 Excel.ChartTitle#load:member(2):
   - |-
-    // Get the text of Chart Title from Chart1.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        
-        var title = chart.title;
-        title.load('text');
-        return ctx.sync().then(function() {
-                console.log(title.text);
-        }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-        });
-    });
-  - |-
     // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    await Excel.run(async (context) => { 
+        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         
         chart.title.text= "My Chart"; 
         chart.title.visible=true;
         chart.title.overlay=true;
         
-        return ctx.sync().then(function() {
-            console.log("Char Title Changed");
-        }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-        });
+        await context.sync();
+        console.log("Char Title Changed");
     });
 Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
-    Excel.run(function (ctx) {
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
-        conditionalFormat.iconOrNull.style = Excel.IconSet.fourTrafficLights;
+        conditionalFormat.iconSetOrNullObject.style = Excel.IconSet.fourTrafficLights;
         var cfCount = range.conditionalFormats.getCount(); 
-    
-        return ctx.sync().then(function () {
-            console.log("Count: " + cfCount.value);
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+
+        await context.sync()
+        console.log("Count: " + cfCount.value);
     });
 Excel.ConditionalFormatCollection#getItem:member(1):
   - |-
-    Excel.run(function (ctx) {
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         var conditionalFormats = range.conditionalFormats;
         var conditionalFormat = conditionalFormats.getItemAt(3);
-        return ctx.sync().then(function () {
-            console.log("Conditional Format at Item 3 Loaded");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync()
+
+        console.log("Conditional Format at Item 3 Loaded");
     });
 Excel.CustomConditionalFormat#rule:member:
   - |-
-    Excel.run(function (ctx) {
-        var sheet = ctx.workbook.worksheets.getActiveWorksheet();
+    await Excel.run(async (context) => {
+        var sheet = context.workbook.worksheets.getActiveWorksheet();
         var range = sheet.getRange("A1:A5");
         range.values = [[1], [20], [""], [5], ["test"]];
         var cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
         var cfCustom = cf.customOrNullObject;
         cfCustom.rule.formula = "=ISBLANK(A1)";
         cfCustom.format.fill.color = "#00FF00";
-        return ctx.sync().then(function () {
-            console.log("Added new custom conditional format highlighting all blank cells.");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync()
+
+        console.log("Added new custom conditional format highlighting all blank cells.");
     });
 Excel.FilterOn:enum:
   - |-
@@ -776,367 +496,254 @@ Excel.NamedItem#getRange:member(1):
     // Returns the Range object that is associated with the name. 
     // null if the name is not of the type Range.
     // Note: This API currently supports only the Workbook scoped items.
-    Excel.run(function (ctx) { 
-        var names = ctx.workbook.names;
+    await Excel.run(async (context) => { 
+        var names = context.workbook.names;
         var range = names.getItem('MyRange').getRange();
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(range.address);
     });
 Excel.NamedItem#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var names = ctx.workbook.names;
+    await Excel.run(async (context) => { 
+        var names = context.workbook.names;
         var namedItem = names.getItem('MyRange');
         namedItem.load('type');
-        return ctx.sync().then(function() {
-                console.log(namedItem.type);
-        });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        await context.sync();
+        
+        console.log(namedItem.type);
     });
 Excel.NamedItemCollection#getItem:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = 'Sheet1';
-        var nameditem = ctx.workbook.names.getItem(sheetName);
+        var nameditem = context.workbook.names.getItem(sheetName);
         nameditem.load('type');
-        return ctx.sync().then(function() {
-                console.log(nameditem.type);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(nameditem.type);
     });
 Excel.NamedItemCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var nameditems = ctx.workbook.names;
+    await Excel.run(async (context) => { 
+        var nameditems = context.workbook.names;
         nameditems.load('items');
-        return ctx.sync().then(function() {
-            for (var i = 0; i < nameditems.items.length; i++)
-            {
-                console.log(nameditems.items[i].name);
-                console.log(nameditems.items[i].index);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+
+        for (var i = 0; i < nameditems.items.length; i++) {
+            console.log(nameditems.items[i].name);
         }
     });
 Excel.Range#clear:member(1):
   - |-
     // Below example clears format and contents of the range. 
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.clear();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Range#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.delete("Left");
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Range#getBoundingRect:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D4:G6";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         var range = range.getBoundingRect("G4:H8");
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // Prints Sheet1!D4:H8
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // Prints Sheet1!D4:H8
     });
 Excel.Range#getCell:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var cell = range.getCell(0,0);
         cell.load('address');
-        return ctx.sync().then(function() {
-            console.log(cell.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(cell.address);
     });
 Excel.Range#getColumn:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet19";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!B1:B8
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(range.address); // prints Sheet1!B1:B8
     });
 Excel.Range#getEntireColumn:member(1):
   - |-
     // Note: the grid properties of the Range (values, numberFormat, formulas) 
     // contains null since the Range in question is unbounded.
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         var rangeEC = range.getEntireColumn();
         rangeEC.load('address');
-        return ctx.sync().then(function() {
-            console.log(rangeEC.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(rangeEC.address);
     });
 Excel.Range#getEntireRow:member(1):
   - |-
     // Gets an object that represents the entire row of the range 
     // (for example, if the current range represents cells "B4:E11", 
     // its GetEntireRow is a range that represents rows "4:11").
-    Excel.run(function (ctx) {
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "D:F"; 
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         var rangeER = range.getEntireRow();
         rangeER.load('address');
-        return ctx.sync().then(function() {
-            console.log(rangeER.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(rangeER.address);
     });
 Excel.Range#getIntersection:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
         var range = 
-            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+            context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!D4:F6
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!D4:F6
     });
 Excel.Range#getLastCell:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!F8
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!F8
     });
 Excel.Range#getLastColumn:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!F1:F8
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!F1:F8
     });
 Excel.Range#getLastRow:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!A8:F8
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!A8:F8
     });
 Excel.Range#getOffsetRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D4:F6";
         var range = 
-            ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+            context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!H3:J5
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!H3:J5
     });
 Excel.Range#getRow:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
         range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address); // prints Sheet1!A2:F2
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.address); // prints Sheet1!A2:F2
     });
 Excel.Range#numberFormat:member:
   - |-
     // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F5:G7";
         var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
         var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
         var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.numberFormat = numberFormat;
         range.values = values;
         range.formulas= formulas;
         range.load('text');
-        return ctx.sync().then(function() {
-            console.log(range.text);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.text);
     });
 Excel.Range#insert:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "F5:F10";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.insert();
-        return ctx.sync(); 
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.insert(Excel.InsertShiftDirection.down);
+        await context.sync();
     });
 Excel.Range#merge:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.merge(true);
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Range#select:member(1):
   - |-
-    Excel.run(function (ctx) {
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "F5:F10"; 
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.select();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Range#unmerge:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.unmerge();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Range#untrack:member(1):
   - |-
-    Excel.run(async (context) => {
+    await Excel.run(async (context) => {
         const largeRange = context.workbook.getSelectedRange();
         largeRange.load(["rowCount", "columnCount"]);
         await context.sync();
@@ -1156,1010 +763,611 @@ Excel.Range#untrack:member(1):
 Excel.Range#load:member(2):
   - |-
     // Below example uses range address to get the range object.
-    Excel.run(function (ctx) {
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8"; 
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         range.load('cellCount');
-        return ctx.sync().then(function() {
-            console.log(range.cellCount);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.cellCount);
     });
 Excel.RangeBorder#style:member:
   - |-
     // The example below adds grid border around the range.
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
         range.format.borders.getItem('InsideVertical').style = 'Continuous';
         range.format.borders.getItem('EdgeBottom').style = 'Continuous';
         range.format.borders.getItem('EdgeLeft').style = 'Continuous';
         range.format.borders.getItem('EdgeRight').style = 'Continuous';
         range.format.borders.getItem('EdgeTop').style = 'Continuous';
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.RangeBorderCollection#getItem:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
-        var borderName = 'EdgeTop';
-        var border = range.format.borders.getItem(borderName);
+        var border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
         border.load('style');
-        return ctx.sync().then(function() {
-                console.log(border.style);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(border.style);
     });
 Excel.RangeBorderCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var border = range.format.borders.getItemAt(0);
         border.load('sideIndex');
-        return ctx.sync().then(function() {
-            console.log(border.sideIndex);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(border.sideIndex);
     });
 Excel.RangeBorderCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var borders = range.format.borders;
-        border.load('items');
-        return ctx.sync().then(function() {
-            console.log(borders.count);
-            for (var i = 0; i < borders.items.length; i++) {
-                console.log(borders.items[i].sideIndex);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        borders.load('items');
+        await context.sync();
+        
+        console.log(borders.count);
+        for (var i = 0; i < borders.items.length; i++) {
+            console.log(borders.items[i].sideIndex);
         }
     });
 Excel.RangeFill#clear:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var rangeFill = range.format.fill;
         rangeFill.clear();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.RangeFill#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var rangeFill = range.format.fill;
         rangeFill.load('color');
-        return ctx.sync().then(function() {
-            console.log(rangeFill.color);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below sets fill color. 
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.format.fill.color = '0000FF';
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(rangeFill.color);
     });
 Excel.RangeFont#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         var rangeFont = range.format.font;
         rangeFont.load('name');
-        return ctx.sync().then(function() {
-            console.log(rangeFont.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below sets font name. 
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.format.font.name = 'Times New Roman';
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(rangeFont.name);
     });
 Excel.RangeFormat#load:member(2):
   - |-
     // Below example selects all of the Range's format properties. 
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         range.load(["format/*", "format/fill", "format/borders", "format/font"]);
-        return ctx.sync().then(function() {
-            console.log(range.format.wrapText);
-            console.log(range.format.fill.color);
-            console.log(range.format.font.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below sets font name, fill color and wraps text. 
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.format.wrapText = true;
-        range.format.font.name = 'Times New Roman';
-        range.format.fill.color = '0000FF';
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below adds grid border around the range.
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
-        range.format.borders.getItem('InsideVertical').style = 'Continuous';
-        range.format.borders.getItem('EdgeBottom').style = 'Continuous';
-        range.format.borders.getItem('EdgeLeft').style = 'Continuous';
-        range.format.borders.getItem('EdgeRight').style = 'Continuous';
-        range.format.borders.getItem('EdgeTop').style = 'Continuous';
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.format.wrapText);
+        console.log(range.format.fill.color);
+        console.log(range.format.font.name);
     });
 Excel.Table#convertToRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         table.convertToRange();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Table#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         table.delete();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Table#getDataBodyRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         var tableDataRange = table.getDataBodyRange();
         tableDataRange.load('address')
-        return ctx.sync().then(function() {
-                console.log(tableDataRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(tableDataRange.address);
     });
 Excel.Table#getHeaderRowRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         var tableHeaderRange = table.getHeaderRowRange();
         tableHeaderRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(tableHeaderRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(tableHeaderRange.address);
     });
 Excel.Table#getRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         var tableRange = table.getRange();
         tableRange.load('address');    
-        return ctx.sync().then(function() {
-                console.log(tableRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(tableRange.address);
     });
 Excel.Table#getTotalRowRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         var tableTotalsRange = table.getTotalRowRange();
         tableTotalsRange.load('address');    
-        return ctx.sync().then(function() {
-                console.log(tableTotalsRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(tableTotalsRange.address);
     });
 Excel.Table#load:member(2):
   - |-
     // Get a table by name. 
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
-        table.load('index')
-        return ctx.sync().then(function() {
-                console.log(table.index);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get a table by index.
-    Excel.run(function (ctx) { 
-        var index = 0;
-        var table = ctx.workbook.tables.getItemAt(0);
+        var table = context.workbook.tables.getItem(tableName);
         table.load('id')
-        return ctx.sync().then(function() {
-                console.log(table.id);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(table.id);
     });
 Excel.Table#style:member:
   - |-
     // Set table style. 
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         table.name = 'Table1-Renamed';
         table.showTotals = false;
         table.style = 'TableStyleMedium2';
         table.load('tableStyle');
-        return ctx.sync().then(function() {
-                console.log(table.style);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(table.style);
     });
 Excel.TableCollection#add:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
+    await Excel.run(async (context) => { 
+        var table = context.workbook.tables.add('Sheet1!A1:E7', true);
         table.load('name');
-        return ctx.sync().then(function() {
-            console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(table.name);
     });
 Excel.TableCollection#getItem:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         table.load('name');
-        return ctx.sync().then(function() {
-                console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(table.name);
     });
 Excel.TableCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var table = ctx.workbook.tables.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var table = context.workbook.tables.getItemAt(0);
         table.load('name');
-        return ctx.sync().then(function() {
-                console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(table.name);
     });
 Excel.TableCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var tables = ctx.workbook.tables;
-        tables.load();
-        return ctx.sync().then(function() {
-            console.log("tables Count: " + tables.count);
-            for (var i = 0; i < tables.items.length; i++)
-            {
-                console.log(tables.items[i].name);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
     // Get the number of tables
-    Excel.run(function (ctx) { 
-        var tables = ctx.workbook.tables;
+    await Excel.run(async (context) => { 
+        var tables = context.workbook.tables;
         tables.load('count');
-        return ctx.sync().then(function() {
-            console.log(tables.count);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(tables.count);
     });
 Excel.TableColumn#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+        var column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
         column.delete();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.TableColumn#getDataBodyRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
         var dataBodyRange = column.getDataBodyRange();
         dataBodyRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(dataBodyRange.address);
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(dataBodyRange.address);
     });
 Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
         var headerRowRange = columns.getHeaderRowRange();
         headerRowRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(headerRowRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(headerRowRange.address);
     });
 Excel.TableColumn#getRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
         var columnRange = columns.getRange();
         columnRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(columnRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(columnRange.address);
     });
 Excel.TableColumn#getTotalRowRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
         var totalRowRange = columns.getTotalRowRange();
         totalRowRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(totalRowRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(totalRowRange.address);
     });
 Excel.TableColumn#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var column = ctx.workbook.tables.getItem(tableName).columns.getItem(0);
+        var column = context.workbook.tables.getItem(tableName).columns.getItem(0);
         column.load('index');
-        return ctx.sync().then(function() {
-            console.log(column.index);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(column.index);
     });
 Excel.TableColumnCollection#add:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var tables = ctx.workbook.tables;
+    await Excel.run(async (context) => { 
+        var tables = context.workbook.tables;
         var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
         var column = tables.getItem("Table1").columns.add(null, values);
         column.load('name');
-        return ctx.sync().then(function() {
-            console.log(column.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(column.name);
     });
 Excel.TableColumnCollection#getItem:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var tableColumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
+    await Excel.run(async (context) => { 
+        var tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
         tableColumn.load('name');
-        return ctx.sync().then(function() {
-                console.log(tableColumn.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(tableColumn.name);
     });
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var tableColumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+    await Excel.run(async (context) => { 
+        var tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
         tableColumn.load('name');
-        return ctx.sync().then(function() {
-                console.log(tableColumn.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(tableColumn.name);
     });
 Excel.TableColumnCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var tableColumns = ctx.workbook.tables.getItem('Table1').columns;
+    await Excel.run(async (context) => { 
+        var tableColumns = context.workbook.tables.getItem('Table1').columns;
         tableColumns.load('items');
-        return ctx.sync().then(function() {
-            console.log("tableColumns Count: " + tableColumns.count);
-            for (var i = 0; i < tableColumns.items.length; i++) {
-                console.log(tableColumns.items[i].name);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        
+        console.log("tableColumns Count: " + tableColumns.count);
+        for (var i = 0; i < tableColumns.items.length; i++) {
+            console.log(tableColumns.items[i].name);
         }
     });
 Excel.TableRow#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
         row.delete();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.TableRow#getRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(0);
+        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
         var rowRange = row.getRange();
         rowRange.load('address');
-        return ctx.sync().then(function() {
-            console.log(rowRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(rowRange.address);
     });
 Excel.TableRow#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var row = ctx.workbook.tables.getItem(tableName).rows.getItem(0);
+        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
         row.load('index');
-        return ctx.sync().then(function() {
-            console.log(row.index);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(row.index);
     });
 Excel.TableRowCollection#add:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var tables = ctx.workbook.tables;
+    await Excel.run(async (context) => { 
+        var tables = context.workbook.tables;
         var values = [["Sample", "Values", "For", "New", "Row"]];
         var row = tables.getItem("Table1").rows.add(null, values);
         row.load('index');
-        return ctx.sync().then(function() {
-            console.log(row.index);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(row.index);
     });
 Excel.TableRowCollection#getItemAt:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-        tablerow.load('name');
-        return ctx.sync().then(function() {
-                console.log(tablerow.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+    await Excel.run(async (context) => {
+        var tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
+        tablerow.load('values');
+        await context.sync();
+        console.log(tablerow.values);
     });
 Excel.TableRowCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var tablerows = ctx.workbook.tables.getItem('Table1').rows;
+    await Excel.run(async (context) => { 
+        var tablerows = context.workbook.tables.getItem('Table1').rows;
         tablerows.load('items');
-        return ctx.sync().then(function() {
-            console.log("tablerows Count: " + tablerows.count);
-            for (var i = 0; i < tablerows.items.length; i++) {
-                console.log(tablerows.items[i].index);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        
+        console.log("tablerows Count: " + tablerows.count);
+        for (var i = 0; i < tablerows.items.length; i++) {
+            console.log(tablerows.items[i].index);
         }
-    });
-  - |-
-    // In the example, we'll select the top 100 rows of the table.
-    Excel.run(function (ctx) { 
-        var table = ctx.workbook.tables.getItem("Table1");
-        var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
-        return ctx.sync().then(function() {
-            for (var i = 0; i < tableRows.items.length; i++) {
-                console.log(tableRows.items[i].index);
-                console.log(tableRows.items[i].values);
-            }
-        });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
     });
 Excel.TableSort#apply:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var tableName = 'Table1';
-        var table = ctx.workbook.tables.getItem(tableName);
+        var table = context.workbook.tables.getItem(tableName);
         table.sort.apply([ 
                 {
                     key: 2,
                     ascending: true
                 },
             ], true);
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Workbook#getSelectedRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
-        var selectedRange = ctx.workbook.getSelectedRange();
+    await Excel.run(async (context) => { 
+        var selectedRange = context.workbook.getSelectedRange();
         selectedRange.load('address');
-        return ctx.sync().then(function() {
-                console.log(selectedRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(selectedRange.address);
     });
 Excel.Worksheet#activate:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.activate();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Worksheet#delete:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.delete();
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.Worksheet#getCell:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var cell = worksheet.getCell(0,0);
         cell.load('address');
-        return ctx.sync().then(function() {
-            console.log(cell.address);
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log(cell.address);
     });
 Excel.Worksheet#getRange:member(1):
   - |-
     // Below example uses range address to get the range object.
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var worksheet = context.workbook.worksheets.getItem(sheetName);
         var range = worksheet.getRange(rangeAddress);
         range.load('cellCount');
-        return ctx.sync().then(function() {
-            console.log(range.cellCount);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Below example uses a named-range to get the range object.
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeName = 'MyRange';
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
-        range.load('address');
-        return ctx.sync().then(function() {
-            console.log(range.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(range.cellCount);
     });
 Excel.Worksheet#getUsedRange:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var worksheet = context.workbook.worksheets.getItem(wSheetName);
         var usedRange = worksheet.getUsedRange();
         usedRange.load('address');
-        return ctx.sync().then(function() {
-                console.log(usedRange.address);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(usedRange.address);
     });
 Excel.Worksheet#load:member(2):
   - |-
     // Get worksheet properties based on sheet name.
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.load('position')
-        return ctx.sync().then(function() {
-                console.log(worksheet.position);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(worksheet.position);
     });
 Excel.Worksheet#onActivated:member:
   - |-
-    Excel.run(function (context) {
+    await Excel.run(async (context) => {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onActivated.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("The activated worksheet ID is: " + event.worksheetId);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.Worksheet#onCalculated:member:
   - |-
-    Excel.run(function (context) {
+    await Excel.run(async (context) => {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onCalculated.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("The worksheet has recalculated.");
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.Worksheet#onDeactivated:member:
   - |-
-    Excel.run(function (context) {
+    await Excel.run(async (context) => {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onDeactivated.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("The deactivated worksheet is: " + event.worksheetId);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.Worksheet#onRowHiddenChanged:member:
   - |-
-    Excel.run(function (context) {
+    await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.onRowHiddenChanged.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log(`Row ${event.address} is now ${event.changeType}`);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.Worksheet#onSelectionChanged:member:
   - |-
-    Excel.run(function (context) {
+    await Excel.run(async (context) => {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onSelectionChanged.add(function (event) {
-            return Excel.run(function (context) {
+            return Excel.run(async (context) => {
                 console.log("The selected range has changed to: " + event.address);
-                return context.sync();
+                await context.sync();
             });
         });
-        return context.sync();
+        await context.sync();
     });
 Excel.Worksheet#position:member:
   - |-
     // Set worksheet position. 
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.position = 2;
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync(); 
     });
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
-    function onWorksheetChanged(eventArgs) {
-        Excel.run(function (context) {
+    async function onWorksheetChanged(eventArgs) {
+        await Excel.run(async (context) => {
             var details = eventArgs.details;
             var address = eventArgs.address;
 
             // Print the before and after types and values to the console.
             console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
                 + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
-            return context.sync();
+            await context.sync();
         });
     }
 Excel.WorksheetCollection#add:member(1):
   - |-
-    Excel.run(function (ctx) { 
+    await Excel.run(async (context) => { 
         var wSheetName = 'Sample Name';
-        var worksheet = ctx.workbook.worksheets.add(wSheetName);
+        var worksheet = context.workbook.worksheets.add(wSheetName);
         worksheet.load('name');
-        return ctx.sync().then(function() {
-            console.log(worksheet.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        
+        console.log(worksheet.name);
     });
 Excel.WorksheetCollection#getActiveWorksheet:member(1):
   - |-
-    Excel.run(function (ctx) {  
-        var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+    await Excel.run(async (context) => {  
+        var activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
         activeWorksheet.load('name');
-        return ctx.sync().then(function() {
-                console.log(activeWorksheet.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log(activeWorksheet.name);
     });
 Excel.WorksheetCollection#load:member(2):
   - |-
-    Excel.run(function (ctx) { 
-        var worksheets = ctx.workbook.worksheets;
+    await Excel.run(async (context) => { 
+        var worksheets = context.workbook.worksheets;
         worksheets.load('items');
-        return ctx.sync().then(function() {
-            for (var i = 0; i < worksheets.items.length; i++)
-            {
-                console.log(worksheets.items[i].name);
-                console.log(worksheets.items[i].index);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        
+        for (var i = 0; i < worksheets.items.length; i++) {
+            console.log(worksheets.items[i].name);
         }
     });
 Excel.Worksheet#protection:member:
-  - |-
-    Excel.run(function(ctx) {
-      // get a reference to Sheet1
-      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-    
-      // Protect inserting or deleting rows in Sheet1
-      sheet.protection.protect({
-        allowInsertRows: false,
-        allowDeleteRows: false
-      });
-    
-      return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
   - |-
     // Unprotecting a worksheet with unprotect() will remove all 
     // WorksheetProtectionOptions options applied to a worksheet.
     // To remove only a subset of WorksheetProtectionOptions use the 
     // protect() method and set the options you wish to remove to true.
-    Excel.run(function(ctx) {
-      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+    await Excel.run(async (context) => {
+      var sheet = context.workbook.worksheets.getItem("Sheet1");
       sheet.protection.protect({
         allowInsertRows: false, // Protect row insertion
         allowDeleteRows: true // Unprotect row deletion
