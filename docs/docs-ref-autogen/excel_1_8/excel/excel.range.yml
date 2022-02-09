@@ -276,27 +276,22 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
-      Excel.run(function (ctx) { 
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:G7";
           var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
           var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
           var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.numberFormat = numberFormat;
           range.values = values;
           range.formulas= formulas;
           range.load('text');
-          return ctx.sync().then(function() {
-              console.log(range.text);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.text);
       });
       ```
     isPreview: false
@@ -524,19 +519,14 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Below example clears format and contents of the range. 
-      Excel.run(function (ctx) { 
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.clear();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -577,18 +567,13 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.delete("Left");
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -653,21 +638,16 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D4:G6";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           var range = range.getBoundingRect("G4:H8");
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // Prints Sheet1!D4:H8
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // Prints Sheet1!D4:H8
       });
       ```
     isPreview: false
@@ -694,22 +674,17 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
           var range = worksheet.getRange(rangeAddress);
           var cell = range.getCell(0,0);
           cell.load('address');
-          return ctx.sync().then(function() {
-              console.log(cell.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(cell.address);
       });
       ```
     isPreview: false
@@ -736,20 +711,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet19";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!B1:B8
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          console.log(range.address); // prints Sheet1!B1:B8
       });
       ```
     isPreview: false
@@ -815,23 +785,18 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Note: the grid properties of the Range (values, numberFormat, formulas) 
       // contains null since the Range in question is unbounded.
-      Excel.run(function (ctx) { 
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           var rangeEC = range.getEntireColumn();
           rangeEC.load('address');
-          return ctx.sync().then(function() {
-              console.log(rangeEC.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(rangeEC.address);
       });
       ```
     isPreview: false
@@ -853,24 +818,19 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Gets an object that represents the entire row of the range 
       // (for example, if the current range represents cells "B4:E11", 
       // its GetEntireRow is a range that represents rows "4:11").
-      Excel.run(function (ctx) {
+      await Excel.run(async (context) => {
           var sheetName = "Sheet1";
           var rangeAddress = "D:F"; 
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           var rangeER = range.getEntireRow();
           rangeER.load('address');
-          return ctx.sync().then(function() {
-              console.log(rangeER.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(rangeER.address);
       });
       ```
     isPreview: false
@@ -905,21 +865,16 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
           var range = 
-              ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+              context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!D4:F6
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!D4:F6
       });
       ```
     isPreview: false
@@ -1032,20 +987,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!F8
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!F8
       });
       ```
     isPreview: false
@@ -1065,20 +1015,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!F1:F8
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!F1:F8
       });
       ```
     isPreview: false
@@ -1098,20 +1043,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!A8:F8
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!A8:F8
       });
       ```
     isPreview: false
@@ -1134,21 +1074,16 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D4:F6";
           var range = 
-              ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+              context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!H3:J5
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!H3:J5
       });
       ```
     isPreview: false
@@ -1205,20 +1140,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address); // prints Sheet1!A2:F2
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.address); // prints Sheet1!A2:F2
       });
       ```
     isPreview: false
@@ -1465,19 +1395,13 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => {
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          range.insert();
-          return ctx.sync(); 
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.insert(Excel.InsertShiftDirection.down);
+          await context.sync();
       });
       ```
     isPreview: false
@@ -1552,22 +1476,17 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // Below example uses range address to get the range object.
-          Excel.run(function (ctx) {
+          await Excel.run(async (context) => {
               var sheetName = "Sheet1";
               var rangeAddress = "A1:F8"; 
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+              var worksheet = context.workbook.worksheets.getItem(sheetName);
               var range = worksheet.getRange(rangeAddress);
               range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              
+              console.log(range.cellCount);
           });
           ```
   - name: load(propertyNamesAndPaths)
@@ -1611,19 +1530,14 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
-      Excel.run(function (ctx) { 
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:C3";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.merge(true);
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
 
       ```
@@ -1672,18 +1586,13 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) {
+      ```typescript
+      await Excel.run(async (context) => {
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10"; 
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.select();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -1845,18 +1754,13 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:C3";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.unmerge();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -1888,7 +1792,7 @@ methods:
           #### Examples
 
           ```typescript
-          Excel.run(async (context) => {
+          await Excel.run(async (context) => {
               const largeRange = context.workbook.getSelectedRange();
               largeRange.load(["rowCount", "columnCount"]);
               await context.sync();

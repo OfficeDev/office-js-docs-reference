@@ -58,8 +58,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
 
           // Get the sections in the current notebook.
           var sections = context.application.getActiveNotebook().sections;
@@ -75,20 +75,12 @@ methods:
           groceriesSections.load("id,name");
 
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
+          await context.sync();
 
-                  // Iterate through the collection or access items individually by index.
-                  if (groceriesSections.items.length > 0) {
-                      console.log("Section name: " + groceriesSections.items[0].name);
-                      console.log("Section ID: " + groceriesSections.items[0].id);
-                  }
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          // Iterate through the collection or access items individually by index.
+          if (groceriesSections.items.length > 0) {
+              console.log("Section name: " + groceriesSections.items[0].name);
+              console.log("Section ID: " + groceriesSections.items[0].id);
           }
       });
       ```
@@ -183,8 +175,8 @@ methods:
 
           #### Examples
 
-          ```javascript
-          OneNote.run(function (context) {
+          ```typescript
+          await OneNote.run(async (context) => {
 
               // Get the sections in the current notebook.
               var sections = context.application.getActiveNotebook().sections;
@@ -194,25 +186,17 @@ methods:
               sections.load("name"); 
 
               // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
+              await context.sync();
                       
-                      // Iterate through the collection or access items individually by index, for example: sections.items[0]
-                      $.each(sections.items, function(index, section) {
-                          if (section.name === "Homework") {
-                              section.addPage("Biology");
-                              section.addPage("Spanish");
-                              section.addPage("Computer Science");
-                          }
-                      });
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              // Iterate through the collection or access items individually by index, for example: sections.items[0]
+              $.each(sections.items, function(index, section) {
+                  if (section.name === "Homework") {
+                      section.addPage("Biology");
+                      section.addPage("Spanish");
+                      section.addPage("Computer Science");
+                  }
+              });
+              await context.sync();
           });
           ```
   - name: load(propertyNamesAndPaths)

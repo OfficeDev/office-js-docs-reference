@@ -246,22 +246,17 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Returns the Range object that is associated with the name. 
       // null if the name is not of the type Range.
       // Note: This API currently supports only the Workbook scoped items.
-      Excel.run(function (ctx) { 
-          var names = ctx.workbook.names;
+      await Excel.run(async (context) => { 
+          var names = context.workbook.names;
           var range = names.getItem('MyRange').getRange();
           range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          console.log(range.address);
       });
       ```
     isPreview: false
@@ -331,19 +326,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var names = ctx.workbook.names;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var names = context.workbook.names;
               var namedItem = names.getItem('MyRange');
               namedItem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(namedItem.type);
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
+              await context.sync();
+              
+              console.log(namedItem.type);
           });
           ```
   - name: load(propertyNamesAndPaths)

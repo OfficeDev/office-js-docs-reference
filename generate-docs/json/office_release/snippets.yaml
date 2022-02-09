@@ -3992,7 +3992,7 @@
 
     // Run a batch operation against the Word object model.
 
-    Word.run(function (context) {
+    await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
         var body = context.document.body;
@@ -4008,25 +4008,24 @@
 
         // Synchronize the document state by executing the queued-up commands,
         // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            // Queue a command to insert the paragraph at the end of the document body.
-            // Start a new batch of commands.
-            body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
-            context.trace('3rd paragraph successful');
+        await context.sync();
 
-            body.insertParagraph('4th paragraph', Word.InsertLocation.end);
-            context.trace('4th paragraph successful');
+        // Queue a command to insert the paragraph at the end of the document body.
+        // Start a new batch of commands.
+        body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
+        context.trace('3rd paragraph successful');
 
-            // This command will cause an error. The trace messages in the queue up to
-            // this point will be available via Error.traceMessages.
-            body.insertParagraph(0, '5th paragraph', Word.InsertLocation.end);
-            // Queue a command for instrumenting this part of the batch.
-            // This trace message will not be set on Error.traceMessages.
-            context.trace('5th paragraph successful');
-        }).then(context.sync);
-    })
+        body.insertParagraph('4th paragraph', Word.InsertLocation.end);
+        context.trace('4th paragraph successful');
 
-    .catch(function (error) {
+        // This command will cause an error. The trace messages in the queue up to
+        // this point will be available via Error.traceMessages.
+        body.insertParagraph(0, '5th paragraph', Word.InsertLocation.end);
+        // Queue a command for instrumenting this part of the batch.
+        // This trace message will not be set on Error.traceMessages.
+        context.trace('5th paragraph successful');
+        await context.sync();
+    }).catch(function (error) {
         if (error instanceof OfficeExtension.Error) {
             console.log('Trace messages: ' + error.traceMessages);
         }
@@ -4035,27 +4034,6 @@
 
     // Output: "Trace messages: 3rd paragraph successful,4th paragraph
     successful"
-'OfficeExtension.Error:class':
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-
-        // Queue a command to insert text in to the beginning of the body.
-        // This will cause an OfficeExtension.Error.
-        body.insertText(0);
-
-        // Synchronize the document state by executing the queued-up commands,
-        // and return a promise to indicate task completion.
-        return context.sync();
-    })
-    .catch(function (error) {
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Error code and message: ' + error.toString());
-        }
-    });
 'OfficeExtension.LoadOption#top:member':
   - >-
     // This OneNote example shows how to get the page title and indentation

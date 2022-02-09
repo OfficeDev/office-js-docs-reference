@@ -58,22 +58,20 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
       // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
-      Excel.run(function (ctx) { 
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sheet1");
           var rangeSelection = "A1:B4";
-          var range = ctx.workbook.worksheets.getItem(sheetName)
-              .getRange(rangeSelection);
-          var chart = ctx.workbook.worksheets.getItem(sheetName)
-              .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
-                  console.log("New Chart Added");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          var range = sheet.getRange(rangeSelection);
+          var chart = sheet.charts.add(
+          Excel.ChartType.columnClustered, 
+          range, 
+          Excel.ChartSeriesBy.auto);
+          await context.sync();
+
+          console.log("New Chart Added");
       });
       ```
     isPreview: false
@@ -160,19 +158,14 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Get the number of charts
-      Excel.run(function (ctx) { 
-          var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+      await Excel.run(async (context) => { 
+          var charts = context.workbook.worksheets.getItem("Sheet1").charts;
           charts.load('count');
-          return ctx.sync().then(function() {
-              console.log("charts: Count= " + charts.count);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log("charts: Count= " + charts.count);
       });
       ```
     isPreview: false
@@ -196,18 +189,13 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-          return ctx.sync().then(function() {
-                  console.log(chart.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+      ```typescript
+      await Excel.run(async (context) => { 
+          var lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+          await context.sync();
+
+          console.log(chart.name);
       });
       ```
     isPreview: false
@@ -267,19 +255,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var charts = context.workbook.worksheets.getItem("Sheet1").charts;
               charts.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < charts.items.length; i++) {
-                      console.log(charts.items[i].name);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              await context.sync();
+              
+              for (var i = 0; i < charts.items.length; i++) {
+                  console.log(charts.items[i].name);
               }
           });
           ```

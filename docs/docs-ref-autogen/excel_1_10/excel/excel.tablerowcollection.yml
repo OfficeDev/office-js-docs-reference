@@ -73,21 +73,16 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
-      Excel.run(function (ctx) { 
-          var tables = ctx.workbook.tables;
+      await Excel.run(async (context) => { 
+          var tables = context.workbook.tables;
           var values = [["Sample", "Values", "For", "New", "Row"]];
           var row = tables.getItem("Table1").rows.add(null, values);
           row.load('index');
-          return ctx.sync().then(function() {
-              console.log(row.index);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(row.index);
       });
 
       ```
@@ -141,18 +136,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-          tablerow.load('name');
-          return ctx.sync().then(function() {
-                  console.log(tablerow.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+      ```typescript
+      await Excel.run(async (context) => {
+          var tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
+          tablerow.load('values');
+          await context.sync();
+          console.log(tablerow.values);
       });
       ```
     isPreview: false
@@ -212,39 +201,16 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablerows = ctx.workbook.tables.getItem('Table1').rows;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var tablerows = context.workbook.tables.getItem('Table1').rows;
               tablerows.load('items');
-              return ctx.sync().then(function() {
-                  console.log("tablerows Count: " + tablerows.count);
-                  for (var i = 0; i < tablerows.items.length; i++) {
-                      console.log(tablerows.items[i].index);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              await context.sync();
+              
+              console.log("tablerows Count: " + tablerows.count);
+              for (var i = 0; i < tablerows.items.length; i++) {
+                  console.log(tablerows.items[i].index);
               }
-          });
-          ```
-          ```javascript
-          // In the example, we'll select the top 100 rows of the table.
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.getItem("Table1");
-              var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < tableRows.items.length; i++) {
-                      console.log(tableRows.items[i].index);
-                      console.log(tableRows.items[i].values);
-                  }
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
           });
           ```
   - name: load(propertyNamesAndPaths)

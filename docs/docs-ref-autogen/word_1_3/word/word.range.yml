@@ -331,9 +331,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -344,15 +344,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Cleared the selection (range object)');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Cleared the selection (range object)');
       });
       ```
     isPreview: false
@@ -389,9 +382,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -402,15 +395,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Deleted the selection (range object)');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Deleted the selection (range object)');
       });
       ```
     isPreview: false
@@ -472,9 +458,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -485,15 +471,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The HTML read from the document was: ' + html.value);
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The HTML read from the document was: ' + html.value);
       });
       ```
     isPreview: false
@@ -576,9 +555,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -589,15 +568,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The OOXML read from the document was:  ' + ooxml.value);
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The OOXML read from the document was:  ' + ooxml.value);
       });
       ```
     isPreview: false
@@ -732,28 +704,21 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
           var range = context.document.getSelection();
 
           // Queue a command to insert a page break after the selected text.
-          range.insertBreak('page', 'After');
+          range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Inserted a page break after the selected text.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Inserted a page break after the selected text.');
       });
       ```
     isPreview: false
@@ -827,9 +792,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -841,15 +806,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Added base64 encoded text to the beginning of the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Added base64 encoded text to the beginning of the range.');
       });
       ```
     isPreview: false
@@ -898,9 +856,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -911,15 +869,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('HTML added to the beginning of the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('HTML added to the beginning of the range.');
       });
       ```
     isPreview: false
@@ -1010,9 +961,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -1023,15 +974,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('OOXML added to the beginning of the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('OOXML added to the beginning of the range.');
       });
 
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
@@ -1081,9 +1025,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -1094,15 +1038,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Paragraph added to the end of the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Paragraph added to the end of the range.');
       });
       ```
     isPreview: false
@@ -1207,9 +1144,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -1220,15 +1157,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Text added to the end of the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Text added to the end of the range.');
       });
       ```
     isPreview: false
@@ -1420,9 +1350,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
@@ -1436,15 +1366,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Selected the range.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('Selected the range.');
       });
       ```
     isPreview: false

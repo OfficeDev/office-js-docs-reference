@@ -1,6 +1,6 @@
 'OneNote.Application#getActiveNotebook:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the active notebook.
         var notebook = context.application.getActiveNotebook();
@@ -10,24 +10,16 @@
         notebook.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                         
-                // Show some properties.
-                console.log("Notebook name: " + notebook.name);
-                console.log("Notebook ID: " + notebook.id);
+        // Show some properties.
+        console.log("Notebook name: " + notebook.name);
+        console.log("Notebook ID: " + notebook.id);
                 
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
     });
 'OneNote.Application#getActiveNotebookOrNull:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the active notebook.
         var notebook = context.application.getActiveNotebookOrNull();
@@ -37,25 +29,17 @@
         notebook.load('id,name');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // check if active notebook is set.
-                if (!notebook.isNull) {
-                    console.log("Notebook name: " + notebook.name);
-                    console.log("Notebook ID: " + notebook.id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        // check if active notebook is set.
+        if (!notebook.isNullObject) {
+            console.log("Notebook name: " + notebook.name);
+            console.log("Notebook ID: " + notebook.id);
         }
     });
 'OneNote.Application#getActiveOutline:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // get active outline.
         var outline = context.application.getActiveOutline();
@@ -64,22 +48,14 @@
         outline.load('id');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Show some properties.
-                console.log("outline id: " + outline.id);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Show some properties.
+        console.log("outline id: " + outline.id);
     });
 'OneNote.Application#getActiveOutlineOrNull:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // get active outline.
         var outline = context.application.getActiveOutlineOrNull();
@@ -88,23 +64,14 @@
         outline.load('id');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-
-                if (!outline.isNull) {
-                    console.log("outline id: " + outline.id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        if (!outline.isNullObject) {
+            console.log("outline id: " + outline.id);
         }
     });
 'OneNote.Application#getActivePage:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the active page.
         var page = context.application.getActivePage();
@@ -114,24 +81,15 @@
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                         
-                // Show some properties.
-                console.log("Page title: " + page.title);
-                console.log("Page ID: " + page.id);
-                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Show some properties.
+        console.log("Page title: " + page.title);
+        console.log("Page ID: " + page.id);
     });
 'OneNote.Application#getActivePageOrNull:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the active page.
         var page = context.application.getActivePageOrNull();
@@ -141,25 +99,17 @@
         page.load('id,title');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                if (!page.isNull) {
-                    // Show some properties.
-                    console.log("Page title: " + page.title);
-                    console.log("Page ID: " + page.id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        if (!page.isNullObject) {
+            // Show some properties.
+            console.log("Page title: " + page.title);
+            console.log("Page ID: " + page.id);
         }
     });
 'OneNote.Application#getActiveSection:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the active section.
         var section = context.application.getActiveSection();
@@ -169,24 +119,15 @@
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                         
-                // Show some properties.
-                console.log("Section name: " + section.name);
-                console.log("Section ID: " + section.id);
-                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Show some properties.
+        console.log("Section name: " + section.name);
+        console.log("Section ID: " + section.id);
     });
 'OneNote.Application#getActiveSectionOrNull:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the active section.
         var section = context.application.getActiveSectionOrNull();
@@ -196,24 +137,16 @@
         section.load('id,name');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                if (!section.isNull) {
-                    // Show some properties.
-                    console.log("Section name: " + section.name);
-                    console.log("Section ID: " + section.id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        if (!section.isNullObject) {
+            // Show some properties.
+            console.log("Section name: " + section.name);
+            console.log("Section ID: " + section.id);
         }
     });
 'OneNote.Application#navigateToPage:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
@@ -223,28 +156,20 @@
         pages.load('id');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync()
                         
-                // This example loads the first page in the section.
-                var page = pages.items[0];
-                            
-                // Open the page in the application.                    
-                context.application.navigateToPage(page);
-                        
-                // Run the queued command.
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // This example loads the first page in the section.
+        var page = pages.items[0];
+                    
+        // Open the page in the application.                    
+        context.application.navigateToPage(page);
+                
+        // Run the queued command.
+        await context.sync();
     });
 'OneNote.Application#navigateToPageWithClientUrl:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
@@ -254,28 +179,20 @@
         pages.load('clientUrl');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync()
 
-                // This example loads the first page in the section.
-                var page = pages.items[0];
+        // This example loads the first page in the section.
+        var page = pages.items[0];
 
-                // Open the page in the application.                    
-                context.application.navigateToPageWithClientUrl(page.clientUrl);
+        // Open the page in the application.                    
+        context.application.navigateToPageWithClientUrl(page.clientUrl);
 
-                // Run the queued command.
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Run the queued command.
+        await context.sync();
     });
 'OneNote.FloatingInk#load:member(2)':
   - |-
-    OneNote.run(function(context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var page = context.application.getActivePage();
@@ -283,340 +200,115 @@
         
         // Load page contents and their types.
         page.load('contents/type');
-        return context.sync()
-            .then(function(){
+        await context.sync();
             
-                // Load every ink content.
-                $.each(contents.items, function(i, content) {
-                    if (content.type == "Ink")
-                    {
-                        content.load('ink/id');
-                    }                            
-                })
-                return context.sync();
-            })
-            .then(function(){
+        // Load every ink content.
+        $.each(contents.items, function(i, content) {
+            if (content.type == "Ink")
+            {
+                content.load('ink/id');
+            }                            
+        });
+        await context.sync();
             
-                // Log ID of every ink content.
-                $.each(contents.items, function(i, content) {
-                    if (content.type == "Ink")
-                    {
-                        console.log(content.ink.id);
-                    }                            
-                })                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        // Log ID of every ink content.
+        $.each(contents.items, function(i, content) {
+            if (content.type == "Ink")
+            {
+                console.log(content.ink.id);
+            }                            
+        });           
+    });
 'OneNote.Image#getBase64Image:member(1)':
   - |-
-
     var image = null;
     var imageString;
 
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current outline.         
-        var outline = ctx.application.getActiveOutline();
+        var outline = context.application.getActiveOutline();
         
         // Queue a command to load paragraphs and their types. 
         outline.load("paragraphs/type")
-        return ctx.sync().
-            then(function(){
-                for (var i=0; i < outline.paragraphs.items.length; i++)
-                {
-                    var paragraph = outline.paragraphs.items[i];
-                    if (paragraph.type == "Image")
-                    {
-                        image = paragraph.image;
-                    }
-                }
-            })
-            .then(function(){
-                if (image != null)
-                {
-                    imageString = image.getBase64Image();
-                    return ctx.sync();
-                }
-            })
-            .then(function(){
-                console.log(imageString);
-            });
+        await context.sync();
+        for (var i=0; i < outline.paragraphs.items.length; i++) {
+            var paragraph = outline.paragraphs.items[i];
+            if (paragraph.type == "Image")
+            {
+                image = paragraph.image;
+            }
+        }
+
+        if (image != null) {
+            imageString = image.getBase64Image();
+            await context.sync();
+        }
+
+        console.log(imageString);
     });
 'OneNote.Image#load:member(2)':
   - |-
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current outline.         
-        var outline = ctx.application.getActiveOutline();
+        var outline = context.application.getActiveOutline();
         var image = null;
         
         // Queue a command to load paragraphs and their types. 
         outline.load("paragraphs/type")
-        return ctx.sync().
-            then(function(){
-                for (var i=0; i < outline.paragraphs.items.length; i++)
-                {
-                    var paragraph = outline.paragraphs.items[i];
-                    if (paragraph.type == "Image")
-                    {
-                        image = paragraph.image;
-                    }
-                }
-            })
-            .then(function(){
-                if (image != null)
-                {
-                    // load every properties and relationships
-                    ctx.load(image);
-                    return ctx.sync();
-                }
-            })
-            .then(function(){
-                if (image != null)
-                {                   
-                    console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
-                    console.log("description: " + image.description);                   
-                    console.log("hyperlink: " + image.hyperlink);
-                }
-            });
-    });
-  - |-
-    var image = null;
+        await context.sync();
 
-    OneNote.run(function(ctx){
-        // Get the current outline.
-        var outline = ctx.application.getActiveOutline();
+        for (var i=0; i < outline.paragraphs.items.length; i++) {
+            var paragraph = outline.paragraphs.items[i];
+            if (paragraph.type == "Image")
+            {
+                image = paragraph.image;
+            }
+        }
 
-        // Queue a command to load paragraphs and their types.
-        outline.load("paragraphs")
-        return ctx.sync().
-            then(function(){
-                for (var i=0; i < outline.paragraphs.items.length; i++)
-                {
-                    var paragraph = outline.paragraphs.items[i];
-                    if (paragraph.type == "Image")
-                    {
-                        image = paragraph.image;
-                    }
-                }
-                if (image != null)
-                {
-                   image.load("ocrData");
-                }
-                return ctx.sync();
-            })
-            .then(function(){
-                console.log(image.ocrData);
-            });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        if (image != null) {
+            // load every properties and relationships
+            image.load(["id", "width", "height", "description", "hyperlink"]);
+            await context.sync();
+        }
+
+        if (image != null) {                   
+            console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
+            console.log("description: " + image.description);                   
+            console.log("hyperlink: " + image.hyperlink);
         }
     });
-  - |-
-    OneNote.run(function(ctx){
-        // Get the current outline.         
-        var outline = ctx.application.getActiveOutline();
-        var searchedParagraph = null;
-        
-        // Queue a command to load paragraphs and their types. 
-        outline.load("paragraphs/type")
-        return ctx.sync().
-            then(function() {
-                for (var i=0; i < outline.paragraphs.items.length; i++)
-                {
-                    var paragraph = outline.paragraphs.items[i];
-                    if (paragraph.type == "Image")
-                    {
-                        searchedParagraph = paragraph;
-                        break;
-                    }
-                }
-            })
-            .then(function() {
-                if (searchedParagraph != null)
-                {
-                    // load every properties and relationships
-                    searchedParagraph.image.load('paragraph');
-                    return ctx.sync();
-                }
-            })
-            .then(function() {
-                if (searchedParagraph != null)
-                {                   
-                    if (searchedParagraph.id != searchedParagraph.image.paragraph.id)
-                    {
-                        console.log("id must match");
-                    }
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
 'OneNote.Image#ocrData:member':
   - |-
     var image = null;
 
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current outline.
-        var outline = ctx.application.getActiveOutline();
+        var outline = context.application.getActiveOutline();
 
         // Queue a command to load paragraphs and their types.
         outline.load("paragraphs")
-        return ctx.sync().
-            then(function(){
-                for (var i=0; i < outline.paragraphs.items.length; i++)
-                {
-                    var paragraph = outline.paragraphs.items[i];
-                    if (paragraph.type == "Image")
-                    {
-                        image = paragraph.image;
-                    }
-                }
-                if (image != null)
-                {
-                   image.load("ocrData");
-                }
-                return ctx.sync();
-            })
-            .then(function(){
-                
-                // Log ocrText and ocrLanguageId
-                console.log(image.ocrData.ocrText);
-                console.log(image.ocrData.ocrLanguageId);
-            });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+
+        for (var i=0; i < outline.paragraphs.items.length; i++) {
+            var paragraph = outline.paragraphs.items[i];
+            if (paragraph.type == "Image")
+            {
+                image = paragraph.image;
+            }
         }
+        if (image != null) {
+            image.load("ocrData");
+        }
+
+        await context.sync();
+                
+        // Log ocrText and ocrLanguageId
+        console.log(image.ocrData.ocrText);
+        console.log(image.ocrData.ocrLanguageId);
     });
-'OneNote.InkAnalysis#load:member(2)':
-  - |-
-    OneNote.run(function (ctx) {        
-        var app = ctx.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        
-        // Load ink paragraphs.
-        page.load('inkAnalysisOrNull/paragraphs');
-        
-        return ctx.sync()
-            .then(function() {
-                console.log(page.inkAnalysisOrNull.paragraphs.items.length);
-            })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
-'OneNote.InkAnalysisLine#load:member(2)':
-  - |-
-    OneNote.run(function (ctx) {        
-        var app = ctx.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        page.load('inkAnalysisOrNull/paragraphs/lines/words');
-        
-        return ctx.sync()
-            .then(function() {
-                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
-                $.each(inkParagraphs.items, function(i, inkParagraph) {
-                    var inkLines = inkParagraph.lines;
-                    $.each(inkLines.items, function(j, inkLine) {
-                        // Word counts in a line.
-                        console.log(inkLine.words.items.length);
-                    })
-                })
-            })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
-'OneNote.InkAnalysisParagraph#load:member(2)':
-  - |-
-    OneNote.run(function (ctx) {        
-        var app = ctx.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        
-        // Load a line of ink words.
-        page.load('inkAnalysisOrNull/paragraphs/lines');
-        
-        return ctx.sync()
-            .then(function() {
-                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
-                
-                // Log id of each line in ink paragraphs.
-                $.each(inkParagraphs.items, function(i, inkParagraph){
-                    var inkLines = inkParagraph.lines;
-                    $.each(inkLines.items, function (j, inkLine) {
-                        console.log(inkLine.id);
-                    })
-                })
-            })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
-'OneNote.InkAnalysisWord#load:member(2)':
-  - |-
-    OneNote.run(function (ctx) {        
-        var app = ctx.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        
-        page.load('inkAnalysisOrNull/paragraphs/lines/words');
-        return ctx.sync()
-            .then(function() {
-                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
-                $.each(inkParagraphs.items, function(i, inkParagraph) {
-                    var inkLines = inkParagraph.lines;
-                    $.each(inkLines.items, function(j, inkLine) {
-                        var inkWords = inkLine.words;
-                        $.each(inkWords.items, function(k, inkWord) {
-                        
-                            // Log language Id of the word
-                            console.log(inkWord.languageId);
-                            
-                            // Log every ink analyzed words.
-                            $.each(inkWord.wordAlternates, function(l, word) {
-                                console.log(word);                                    
-                            })
-                        })
-                    })
-                })
-            })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
 'OneNote.Notebook#addSection:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active notebook.
         var notebook = context.application.getActiveNotebook();
@@ -628,20 +320,12 @@
         section.load("name");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                console.log("New section name is " + section.name);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        await context.sync();
+        console.log("New section name is " + section.name);
+    });
 'OneNote.Notebook#addSectionGroup:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active notebook.
         var notebook = context.application.getActiveNotebook();
@@ -653,37 +337,27 @@
         sectionGroup.load();
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                console.log("New section group name is " + sectionGroup.name);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        await context.sync();
+        console.log("New section group name is " + sectionGroup.name);
+    });
 'OneNote.Notebook#getRestApiId:member(1)':
   - |-
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current notebook.         
-        var notebook = ctx.application.getActiveNotebook();
+        var notebook = context.application.getActiveNotebook();
         var restApiId = notebook.getRestApiId();
 
-        return ctx.sync().
-            then(function(){
-                console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                // according to the OneNote Development Blog.
-                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-            });
+        await context.sync();
+        console.log("The REST API ID is " + restApiId.value);
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+        // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+        // according to the OneNote Development Blog.
+        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
     });
 'OneNote.Notebook#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the current notebook.
         var notebook = context.application.getActiveNotebook();
@@ -693,118 +367,15 @@
         notebook.load('baseUrl');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("Base url: " + notebook.baseUrl);
-                // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
-                // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log("Base url: " + notebook.baseUrl);
+        // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
+        // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
+        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
     });
-  - |-
-    OneNote.run(function (context) {
-            
-        // Get the current notebook.
-        var notebook = context.application.getActiveNotebook();
-                
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
-        notebook.load('id');
-                
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("Notebook ID: " + notebook.id);
-                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-            
-        // Get the current notebook.
-        var notebook = context.application.getActiveNotebook();
-                
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
-        notebook.load('name');
-                
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("Notebook name: " + notebook.name);
-                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        // Get the section groups in the notebook. 
-        var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-        // Queue a command to load the sectionGroups. 
-        sectionGroups.load("name");
-
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                $.each(sectionGroups.items, function(index, sectionGroup) {
-                    console.log("Section group name: " + sectionGroup.name);
-                });
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        // Gets the active notebook.
-        var notebook = context.application.getActiveNotebook();
-        
-        // Queue a command to get immediate child sections of the notebook. 
-        var childSections = notebook.sections;
-
-        // Queue a command to load the childSections. 
-        context.load(childSections);
-
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                $.each(childSections.items, function(index, childSection) {
-                    console.log("Immediate child section name: " + childSection.name);
-                });            
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });   
 'OneNote.NotebookCollection#getByName:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
@@ -814,27 +385,18 @@
         notebooks.load("id,name");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Iterate through the collection or access items individually by index,
-                // for example: notebooks.items[0]
-                if (notebooks.items.length > 0) {
-                    console.log("Notebook name: " + notebooks.items[0].name);
-                    console.log("Notebook ID: " + notebooks.items[0].id);
-                }
-                    
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        // Iterate through the collection or access items individually by index,
+        // for example: notebooks.items[0]
+        if (notebooks.items.length > 0) {
+            console.log("Notebook name: " + notebooks.items[0].name);
+            console.log("Notebook ID: " + notebooks.items[0].id);
         }
     });
 'OneNote.NotebookCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
@@ -844,29 +406,21 @@
         notebooks.load("id");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Iterate through the collection or access items individually by index, 
-                // for example: notebooks.items[0]
-                $.each(notebooks.items, function(index, notebook) {
-                    notebook.addSection("Biology");
-                    notebook.addSection("Spanish");
-                    notebook.addSection("Computer Science");
-                });
-                
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Iterate through the collection or access items individually by index, 
+        // for example: notebooks.items[0]
+        $.each(notebooks.items, function(index, notebook) {
+            notebook.addSection("Biology");
+            notebook.addSection("Spanish");
+            notebook.addSection("Computer Science");
+        });
+        
+        await context.sync();
     });
 'OneNote.Outline#appendHtml:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var activePage = context.application.getActivePage();
@@ -878,30 +432,22 @@
         context.load(pageContents);
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
-                {
-                    // First item is an outline.
-                    outline = pageContents.items[0].outline;
+        await context.sync();
+        if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
+        {
+            // First item is an outline.
+            let outline = pageContents.items[0].outline;
 
-                    // Queue a command to append a paragraph to the outline.
-                    outline.appendHtml("<p>new paragraph</p>");
+            // Queue a command to append a paragraph to the outline.
+            outline.appendHtml("<p>new paragraph</p>");
 
-                    // Run the queued commands.
-                    return context.sync();
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            // Run the queued commands.
+            await context.sync();
         }
     });
 'OneNote.Outline#appendTable:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var activePage = context.application.getActivePage();
@@ -913,29 +459,21 @@
         context.load(pageContents);
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
-                    // First item is an outline.
-                    var outline = pageContents.items[0].outline;
+        await context.sync();
+        if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
+            // First item is an outline.
+            var outline = pageContents.items[0].outline;
 
-                    // Queue a command to append a paragraph to the outline.
-                    outline.appendTable(2, 2, [[1, 2],[3, 4]]);
+            // Queue a command to append a paragraph to the outline.
+            outline.appendTable(2, 2, [["1", "2"],["3", "4"]]);
 
-                    // Run the queued commands.
-                    return context.sync();
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            // Run the queued commands.
+            await context.sync();
         }
     });
 'OneNote.Page#addOutline:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var page = context.application.getActivePage();
@@ -960,18 +498,12 @@
             );
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .catch(function(error) {
-                console.log("Error: " + error);
-                if (error instanceof OfficeExtension.Error) {
-                    console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                }
-            });
+        await context.sync();
     });
 'OneNote.Page#copyToSection:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         
         // Gets the active notebook.
         var notebook = app.getActiveNotebook();
@@ -985,45 +517,35 @@
         var newPage;
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync()
-            .then(function() {
-                var section = notebook.sections.items[0];
-                
-                // copy page to the section.
-                newPage = page.copyToSection(section);
-                newPage.load('id');
-                return ctx.sync();
-            })
-            .then(function() {
-                console.log(newPage.id);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        var section = notebook.sections.items[0];
+        
+        // copy page to the section.
+        newPage = page.copyToSection(section);
+        newPage.load('id');
+        await context.sync();
+        
+        console.log(newPage.id);
     });
 'OneNote.Page#getRestApiId:member(1)':
   - |-
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current page.         
-        var page = ctx.application.getActivePage();
+        var page = context.application.getActivePage();
         var restApiId = page.getRestApiId();
 
-        return ctx.sync().
-            then(function(){
-                console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                // according to the OneNote Development Blog.
-                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-            });
+        await context.sync();
+        console.log("The REST API ID is " + restApiId.value);
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
+        // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+        // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+        // according to the OneNote Development Blog.
+        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
     });
 'OneNote.Page#insertPageAsSibling:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var activePage = context.application.getActivePage();
@@ -1035,20 +557,12 @@
         context.load(newPage);
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                console.log("page is created with title: " + newPage.title);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log("page is created with title: " + newPage.title);
     });
 'OneNote.Page#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Gets the active page.
         var activePage = context.application.getActivePage();
@@ -1060,80 +574,21 @@
         context.load(pageContents);
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                for(var i=0; i < pageContents.items.length; i++)
-                {
-                    var pageContent = pageContents.items[i];
-                    if (pageContent.type == "Outline")
-                    {
-                        console.log("Found an outline");
-                    }
-                    else if (pageContent.type == "Image")
-                    {
-                        console.log("Found an image");
-                    }
-                    else if (pageContent.type == "Other")
-                    {
-                        console.log("Found a type not supported yet.");
-                    }
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        var app = context.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        
-        // Queue a command to load the webUrl of the page.
-        page.load("webUrl");
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                console.log(page.webUrl);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (ctx) {        
-        var app = ctx.application;
-        
-        // Gets the active page.
-        var page = app.getActivePage();
-        
-        // Load ink words
-        page.load('inkAnalysisOrNull/paragraphs/lines/words');
-        
-        return ctx.sync()
-            .then(function() {
-                if (!page.inkAnalysisOrNull.isNull)
-                    console.log(page.inkAnalysisOrNull.paragraphs.length);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync()
+        for(var i=0; i < pageContents.items.length; i++) {
+            var pageContent = pageContents.items[i];
+            if (pageContent.type == "Outline") {
+                console.log("Found an outline");
+            } else if (pageContent.type == "Image") {
+                console.log("Found an image");
+            } else if (pageContent.type == "Other") {
+                console.log("Found a type not supported yet.");
+            }
         }
     });
 'OneNote.PageCollection#getByTitle:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get all the pages in the current section.
         var allPages = context.application.getActiveSection().pages;
@@ -1143,36 +598,26 @@
         allPages.load("id"); 
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Get the sections with the specified name.
-                var todoPages = allPages.getByTitle("Todo list");
+        // Get the sections with the specified name.
+        var todoPages = allPages.getByTitle("Todo list");
 
-                // Queue a command to load the section. 
-                // For best performance, request specific properties.
-                todoPages.load("id,title"); 
+        // Queue a command to load the section. 
+        // For best performance, request specific properties.
+        todoPages.load("id,title"); 
 
-                return context.sync()
-                    .then(function () {
+        await context.sync()
 
-                        // Iterate through the collection or access items individually by index.
-                        if (todoPages.items.length > 0) {
-                            console.log("Page title: " + todoPages.items[0].title);
-                            console.log("Page ID: " + todoPages.items[0].id);
-                        }
-                    });
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        // Iterate through the collection or access items individually by index.
+        if (todoPages.items.length > 0) {
+            console.log("Page title: " + todoPages.items[0].title);
+            console.log("Page ID: " + todoPages.items[0].id);
         }
     });
 'OneNote.PageCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
         
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
@@ -1181,25 +626,17 @@
         pages.load('id,title');
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                // Display the properties.
-                $.each(pages.items, function(index, page) {
-                    console.log(page.title);
-                    console.log(page.id);
-                });
-            }); 
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Display the properties.
+        $.each(pages.items, function(index, page) {
+            console.log(page.title);
+            console.log(page.id);
+        });
     });
 'OneNote.PageContent#delete:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         var page = context.application.getActivePage();
         var pageContents = page.contents;
@@ -1208,23 +645,15 @@
         firstPageContent.load('type');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                if(firstPageContent.isNull === false) {
-                    firstPageContent.delete();
-                    return context.sync();
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        await context.sync();
+        if (firstPageContent.isNullObject === false) {
+            firstPageContent.delete();
+            await context.sync();
         }
     });
 'OneNote.PageContentCollection#getItemAt:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         var page = context.application.getActivePage();
         var pageContents = page.contents;
@@ -1232,21 +661,14 @@
         firstPageContent.load('type');
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("The first page content item is of type: " + firstPageContent.type);
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        console.log("The first page content item is of type: " + firstPageContent.type);
+        await context.sync();
     });
 'OneNote.PageContentCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1255,49 +677,15 @@
         pageContents.load("type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                $.each(pageContents.items, function(index, pageContent) {
-                    console.log("PageContent type: " + pageContent.type);
-                });
-            });
-    })                
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-       var page = context.application.getActivePage();
-       var pageContents = page.contents;
-       pageContents.load('type');
-       var outlines = ;
-       return context.sync()
-           .then(function () {      
-                  $.each(pageContents.items, function (index, pageContent) {
-                         console.log(pageContent.type);
-                         if (pageContent.type === 'Outline') {
-                               outlines.push(pageContent);
-                         }
-                  });
-                  $.each(outlines, function (index, outline) {
-                         outline.load("id,paragraphs,paragraphs/type");
-                  });
-                  return context.sync();
-           })
-           .then(function () {
-                  $.each(outlines, function (index, outline) {
-                         console.log("An outline was found with id : " + outline.id);
-                  });
-                  return Promise.resolve(outlines);
-           });
+        $.each(pageContents.items, function(index, pageContent) {
+            console.log("PageContent type: " + pageContent.type);
+        });
     });
 'OneNote.Paragraph#delete:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1314,25 +702,17 @@
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                // Queue a command to delete the first paragraph                 
-                firstParagraph.delete();
-                
-                // Run the command to delete it
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Queue a command to delete the first paragraph                 
+        firstParagraph.delete();
+        
+        // Run the command to delete it
+        await context.sync();
     });
 'OneNote.Paragraph#insertHtmlAsSibling:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1347,26 +727,18 @@
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Queue commands to insert before and after the first paragraph
-                firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
-                firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
-                
-                // Run the command to run inserts
-                return context.sync();
-            });
-    ))
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Queue commands to insert before and after the first paragraph
+        firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
+        firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
+        
+        // Run the command to run inserts
+        await context.sync();
     });
 'OneNote.Paragraph#insertImageAsSibling:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1381,26 +753,18 @@
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Queue commands to insert before and after the first paragraph
-                firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                
-                // Run the command to insert images
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Queue commands to insert before and after the first paragraph
+        firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+        firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
+        
+        // Run the command to insert images
+        await context.sync();
     });
 'OneNote.Paragraph#insertRichTextAsSibling:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1415,26 +779,18 @@
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Queue commands to insert before and after the first paragraph
-                firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
-                firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
-                
-                // Run the command to insert text contents
-                return context.sync();
-            });
-    })    
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        // Queue commands to insert before and after the first paragraph
+        firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
+        firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
+        
+        // Run the command to insert text contents
+        await context.sync();
+    });
 'OneNote.Paragraph#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1450,58 +806,16 @@
         paragraphs.load("id,type");
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                
-                // Write the text.                  
-                $.each(paragraphs.items, function(index, paragraph) {
-                    console.log("Paragraph type: " + paragraph.type);
-                    console.log("Paragraph ID: " + paragraph.id);
-                });
-            });
-    })        
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
-  - |-
-    OneNote.run(function(context) {
-        var app = context.application;
-        
-        // Gets the active outline
-        var outline = app.getActiveOutline();
-        
-        // load nested paragraphs and their types.
-        outline.load("paragraphs/type");
-        
-        return context.sync().then(function () {
-            var paragraphs = outline.paragraphs.items;
-            
-            var promise;
-            // for each nested paragraphs, load tables only
-            for (var i = 0; i < paragraphs.length; i++) {
-                var paragraph = paragraphs[i];
-                if (paragraph.type == "Table") {
-                    paragraph.load("table/id");
-                    promise =  context.sync().then(function() {
-                        console.log(paragraph.table.id);
-                    });
-                }
-            }
-            return promise;
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        // Write the text.                  
+        $.each(paragraphs.items, function(index, paragraph) {
+            console.log("Paragraph type: " + paragraph.type);
+            console.log("Paragraph ID: " + paragraph.id);
+        });
     });
 'OneNote.ParagraphCollection#getItemAt:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1517,23 +831,15 @@
 
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                // Write text from paragraph to console
-                console.log(
-                    "First Paragraph found with id : " + 
-                    firstParagraph.id + " and type " + firstParagraph.type);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        await context.sync();
+        // Write text from paragraph to console
+        console.log(
+            "First Paragraph found with id : " + 
+            firstParagraph.id + " and type " + firstParagraph.type);
+    });
 'OneNote.ParagraphCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1546,82 +852,16 @@
         paragraphs.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                var firstParagraph = paragraphs.items[0];
-                // Write text from first paragraph to console
-                console.log(
-                    "First Paragraph found with id : " + 
-                    firstParagraph.id + " and type " + firstParagraph.type);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
-
-        // Get the first PageContent on the page, and then get its outline's paragraphs.
-        var outlinePageContents = ;
-        var paragraphs = ;
-        var richTextParagraphs = ;
-        // Queue a command to load the id and type of each page content in the outline.
-        pageContents.load("id,type");
-
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                // Load all page contents of type Outline
-                $.each(pageContents.items, function(index, pageContent) {
-                    if(pageContent.type == 'Outline')
-                    {
-                        pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
-                        outlinePageContents.push(pageContent);
-                    }
-                });
-                return context.sync();
-            })
-            .then(function () {
-                // Load all rich text paragraphs across outlines
-                $.each(outlinePageContents, function(index, outlinePageContent) {
-                    var outline = outlinePageContent.outline;
-                    paragraphs = paragraphs.concat(outline.paragraphs.items);
-                });
-                $.each(paragraphs, function(index, paragraph) {
-                    if(paragraph.type == 'RichText')
-                    {
-                        richTextParagraphs.push(paragraph);
-                        paragraph.load("id,richText/text");
-                    }
-                });
-                return context.sync();
-            })
-            .then(function () {
-                // Display all rich text paragraphs to the console
-                $.each(richTextParagraphs, function(index, richTextParagraph) {
-                    var richText = richTextParagraph.richText;
-                    console.log(
-                        "Paragraph found with richtext content : " + 
-                        richText.text + " and richtext id : " + richText.id);
-                });
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        var firstParagraph = paragraphs.items[0];
+        // Write text from first paragraph to console
+        console.log(
+            "First Paragraph found with id : " + 
+            firstParagraph.id + " and type " + firstParagraph.type);
     });
 'OneNote.RichText#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
@@ -1634,53 +874,44 @@
         pageContents.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                // Load all page contents of type Outline
-                $.each(pageContents.items, function(index, pageContent) {
-                    if(pageContent.type == 'Outline')
-                    {
-                        pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
-                        outlinePageContents.push(pageContent);
-                    }
-                });
-                return context.sync();
-            })
-            .then(function () {
-                // Load all rich text paragraphs across outlines
-                $.each(outlinePageContents, function(index, outlinePageContent) {
-                    var outline = outlinePageContent.outline;
-                    paragraphs = paragraphs.concat(outline.paragraphs.items);
-                });
-                $.each(paragraphs, function(index, paragraph) {
-                    if(paragraph.type == 'RichText')
-                    {
-                        richTextParagraphs.push(paragraph);
-                        paragraph.load("id,richText/text");
-                    }
-                });
-                return context.sync();
-            })
-            .then(function () {
-                // Display all rich text paragraphs to the console
-                $.each(richTextParagraphs, function(index, richTextParagraph) {
-                    var richText = richTextParagraph.richText;
-                    console.log(
-                        "Paragraph found with richtext content : " + 
-                        richText.text + " and richtext id : " + richText.id);
-                });
-                return context.sync();
-            });
+        await context.sync();
+
+        // Load all page contents of type Outline
+        $.each(pageContents.items, function(index, pageContent) {
+            if(pageContent.type == 'Outline')
+            {
+                pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                outlinePageContents.push(pageContent);
+            }
+        });
+        await context.sync();
+
+        // Load all rich text paragraphs across outlines
+        $.each(outlinePageContents, function(index, outlinePageContent) {
+            var outline = outlinePageContent.outline;
+            paragraphs = paragraphs.concat(outline.paragraphs.items);
+        });
+        $.each(paragraphs, function(index, paragraph) {
+            if(paragraph.type == 'RichText')
+            {
+                richTextParagraphs.push(paragraph);
+                paragraph.load("id,richText/text");
+            }
+        });
+        await context.sync();
+
+        // Display all rich text paragraphs to the console
+        $.each(richTextParagraphs, function(index, richTextParagraph) {
+            var richText = richTextParagraph.richText;
+            console.log(
+                "Paragraph found with richtext content : " + 
+                richText.text + " and richtext id : " + richText.id);
+        });
+        await context.sync();
     });
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
 'OneNote.Section#addPage:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
                 
         // Queue a command to add a page to the current section.
         var page = context.application.getActiveSection().addPage("Wish list");
@@ -1690,24 +921,15 @@
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                  
-                // Display the properties.       
-                console.log("Page name: " + page.title);
-                console.log("Page ID: " + page.id);
-
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Display the properties.       
+        console.log("Page name: " + page.title);
+        console.log("Page ID: " + page.id);
     });
 'OneNote.Section#copyToNotebook:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
         var app = context.application;
         
         // Gets the active Notebook.
@@ -1718,26 +940,18 @@
         
         var newSection;
         
-        return context.sync()
-            .then(function() {
-                newSection = section.copyToNotebook(notebook);
-                newSection.load('id');
-                return context.sync();
-            })
-            .then(function() {
-                console.log(newSection.id);
-            });
-    })
-    .catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        newSection = section.copyToNotebook(notebook);
+        newSection.load('id');
+        await context.sync();
+        
+        console.log(newSection.id);
     });
 'OneNote.Section#copyToSectionGroup:member(1)':
   - |-
-    OneNote.run(function (ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         
         // Gets the active Notebook.
         var notebook = app.getActiveNotebook();
@@ -1747,43 +961,33 @@
         
         var newSection;
         
-        return ctx.sync()
-            .then(function() {
-                var firstSectionGroup = notebook.sectionGroups.items[0];
-                newSection = section.copyToSectionGroup(firstSectionGroup);
-                newSection.load('id');
-                return ctx.sync();
-            })
-            .then(function() {
-                console.log(newSection.id);
-            });
-    })
-    .catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+
+        var firstSectionGroup = notebook.sectionGroups.items[0];
+        newSection = section.copyToSectionGroup(firstSectionGroup);
+        newSection.load('id');
+        await context.sync();
+        
+        console.log(newSection.id);
     });
 'OneNote.Section#getRestApiId:member(1)':
   - |-
-    OneNote.run(function(ctx){
+    await OneNote.run(async (context) => {
         // Get the current section.         
-        var section = ctx.application.getActiveSection();
+        var section = context.application.getActiveSection();
         var restApiId = section.getRestApiId();
 
-        return ctx.sync().
-            then(function(){
-                console.log("The REST API ID is " + restApiId.value);
-                // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
-                // OneNote REST API according to the OneNote Development Blog.
-                // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-            });
+        await context.sync();
+        console.log("The REST API ID is " + restApiId.value);
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+        // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
+        // OneNote REST API according to the OneNote Development Blog.
+        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
     });
 'OneNote.Section#insertSectionAsSibling:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
                 
         // Queue a command to insert a section after the current section.
         var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
@@ -1793,23 +997,15 @@
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                  
-                // Display the properties.       
-                console.log("Section name: " + section.name);
-                console.log("Section ID: " + section.id);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Display the properties.       
+        console.log("Section name: " + section.name);
+        console.log("Section ID: " + section.id);
     });
 'OneNote.Section#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the current section.
         var section = context.application.getActiveSection();
@@ -1819,66 +1015,12 @@
         section.load("id");
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("Section ID: " + section.id);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-            
-        // Get the current section.
-        var section = context.application.getActiveSection();
-                
-        // Queue a command to load the section with the specified properties. 
-        section.load("name,notebook/name");
-                
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                console.log("Section name: " + section.name);
-                console.log("Parent notebook name: " + section.notebook.name);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-        // Queue a command to add a page to the current section.
-        var section = context.application.getActiveSection();
-        section.load('clientUrl,notebook');
-        var sectionGroup = section.parentSectionGroupOrNull;
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-                if(sectionGroup.isNull === false)
-                {
-                    // If a parent section group exists, queue a command to add a section in it!
-                    sectionGroup.addSection("NewSectionInSectionGroup");
-                }
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        await context.sync();
+        console.log("Section ID: " + section.id);
     });
 'OneNote.SectionCollection#getByName:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
@@ -1894,25 +1036,17 @@
         groceriesSections.load("id,name");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Iterate through the collection or access items individually by index.
-                if (groceriesSections.items.length > 0) {
-                    console.log("Section name: " + groceriesSections.items[0].name);
-                    console.log("Section ID: " + groceriesSections.items[0].id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        // Iterate through the collection or access items individually by index.
+        if (groceriesSections.items.length > 0) {
+            console.log("Section name: " + groceriesSections.items[0].name);
+            console.log("Section ID: " + groceriesSections.items[0].id);
         }
     });
 'OneNote.SectionCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
@@ -1922,29 +1056,21 @@
         sections.load("name"); 
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                // Iterate through the collection or access items individually by index, for example: sections.items[0]
-                $.each(sections.items, function(index, section) {
-                    if (section.name === "Homework") {
-                        section.addPage("Biology");
-                        section.addPage("Spanish");
-                        section.addPage("Computer Science");
-                    }
-                });
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Iterate through the collection or access items individually by index, for example: sections.items[0]
+        $.each(sections.items, function(index, section) {
+            if (section.name === "Homework") {
+                section.addPage("Biology");
+                section.addPage("Spanish");
+                section.addPage("Computer Science");
+            }
+        });
+        await context.sync();
     });
 'OneNote.SectionGroup#addSection:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
@@ -1954,27 +1080,19 @@
         sectionGroups.load("id");
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
+        await context.sync();
                 
-                // Add a section to each section group.
-                $.each(sectionGroups.items, function(index, sectionGroup) {
-                    sectionGroup.addSection("Agenda");
-                });
-                
-                // Run the queued commands.
-                return context.sync();
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Add a section to each section group.
+        $.each(sectionGroups.items, function(index, sectionGroup) {
+            sectionGroup.addSection("Agenda");
+        });
+        
+        // Run the queued commands.
+        await context.sync();
     });
 'OneNote.SectionGroup#addSectionGroup:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
         var sectionGroup;
         var nestedSectionGroup;
 
@@ -1988,30 +1106,21 @@
         sectionGroups.load();
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function(){
-                sectionGroup = sectionGroups.items[0];
-                sectionGroup.load();
-                return context.sync();
-            })
-            .then(function(){
-                nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
-                nestedSectionGroup.load();
-                return context.sync();
-            })
-            .then(function() {
-                console.log("New nested section group name is " + nestedSectionGroup.name);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    }); 
+        await context.sync();
+
+        sectionGroup = sectionGroups.items[0];
+        sectionGroup.load();
+        await context.sync();
+
+        nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
+        nestedSectionGroup.load();
+        await context.sync();
+        
+        console.log("New nested section group name is " + nestedSectionGroup.name);
+    });
 'OneNote.SectionGroup#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
             
         // Get the parent section group that contains the current section.
         var sectionGroup = context.application.getActiveSection().parentSectionGroup;
@@ -2021,108 +1130,15 @@
         sectionGroup.load("id,name");
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                // Write the properties.
-                console.log("Section group name: " + sectionGroup.name);
-                console.log("Section group ID: " + sectionGroup.id);
-                
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-            
-        // Get the parent section group that contains the current section.
-        var sectionGroup = context.application.getActiveSection().parentSectionGroup;
-                
-        // Queue a command to load the section group with the specified properties.           
-        sectionGroup.load("name,notebook/name"); 
-                
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
-
-                // Write the properties.
-                console.log("Section group name: " + sectionGroup.name);
-                console.log("Parent notebook name: " + sectionGroup.notebook.name);
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        // Get the section groups that are direct children of the current notebook.
-        var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-        // Queue a command to load the section groups.
-        // For best performance, request specific properties.
-        sectionGroups.load("name");
-        
-        // Get the child section groups of the first section group in the notebook.
-        var nestedSectionGroups = sectionGroups._GetItem(0).sectionGroups;
-        
-        // Queue a command to load the ID and name properties of the child section groups.
-        nestedSectionGroups.load("id,name");
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                
-                // Write the properties for each child section group.
-                $.each(nestedSectionGroups.items, function(index, sectionGroup) {
-                    console.log("Section group name: " + sectionGroup.name);  
-                    console.log("Section group ID: " + sectionGroup.id);  
-                });
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function (context) {
-
-        // Get the sections that are siblings of the current section.
-        var sections = context.application.getActiveSection().parentSectionGroup.sections;
-
-        // Queue a command to load the section groups.
-        // For best performance, request specific properties.
-        sections.load("id,name");
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function() {
-                
-                // Write the properties for each section.
-                $.each(sections.items, function(index, section) {
-                    console.log("Section name: " + section.name);  
-                    console.log("Section ID: " + section.id);  
-                });
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Write the properties.
+        console.log("Section group name: " + sectionGroup.name);
+        console.log("Section group ID: " + sectionGroup.id);
     });
 'OneNote.SectionGroupCollection#getByName:member(1)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
@@ -2138,25 +1154,17 @@
         labsSectionGroups.load("id,name"); 
                 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
 
-                // Iterate through the collection or access items individually by index.
-                if (labsSectionGroups.items.length > 0) {
-                    console.log("Section group name: " + labsSectionGroups.items[0].name);
-                    console.log("Section group ID: " + labsSectionGroups.items[0].id);
-                }
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        // Iterate through the collection or access items individually by index.
+        if (labsSectionGroups.items.length > 0) {
+            console.log("Section group name: " + labsSectionGroups.items[0].name);
+            console.log("Section group ID: " + labsSectionGroups.items[0].id);
         }
     });
 'OneNote.SectionGroupCollection#load:member(2)':
   - |-
-    OneNote.run(function (context) {
+    await OneNote.run(async (context) => {
 
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
@@ -2166,510 +1174,310 @@
         sectionGroups.load("name"); 
 
         // Run the queued commands, and return a promise to indicate task completion.
-        return context.sync()
-            .then(function () {
+        await context.sync();
                 
-                // Iterate through the collection or access items individually by index, 
-                // for example: sectionGroups.items[0]
-                $.each(sectionGroups.items, function(index, sectionGroup) {
-                    console.log("Section group name: " + sectionGroup.name);  
-                    console.log("Section group ID: " + sectionGroup.id);  
-                });
-            });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+        // Iterate through the collection or access items individually by index, 
+        // for example: sectionGroups.items[0]
+        $.each(sectionGroups.items, function(index, sectionGroup) {
+            console.log("Section group name: " + sectionGroup.name);  
+            console.log("Section group ID: " + sectionGroup.id);  
+        });
     });
 'OneNote.Table#appendColumn:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, append a column.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    table.appendColumn(["cell0", "cell1"]);
-                }
+        await context.sync();
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, append a column.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                table.appendColumn(["cell0", "cell1"]);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.Table#appendRow:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, append a column.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var row = table.appendRow(["cell0", "cell1"]);
-                }
+        await context.sync();
+
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, append a column.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var row = table.appendRow(["cell0", "cell1"]);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.Table#getCell:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get a cell in the second row and third column.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
-                }
+        await context.sync();
+
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, get a cell in the second row and third column.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.Table#insertColumn:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, insert a column at index two.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    table.insertColumn(2, ["cell0", "cell1"]);
-                }
+        await context.sync();
+
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, insert a column at index two.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                table.insertColumn(2, ["cell0", "cell1"]);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.Table#insertRow:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, insert a row at index two.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var row = table.insertRow(2, ["cell0", "cell1"]);
-                }
+        await context.sync()
+
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, insert a row at index two.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var row = table.insertRow(2, ["cell0", "cell1"]);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.Table#load:member(2)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs/type");
+        context.load(outline, "paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // For each table, log properties.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    ctx.load(table);
-                    return ctx.sync().then(function() {
-                        console.log("Table Id: " + table.id);
-                        console.log("Row Count: " + table.rowCount);
-                        console.log("Column Count: " + table.columnCount);
-                        return ctx.sync();
-                    });
-                }
-            }
-        });
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
-        var outline = app.getActiveOutline();
+        await context.sync();
+
+        var paragraphs = outline.paragraphs;
         
-        // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, log its paragraph id.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    ctx.load(table, "paragraph/id, rows/id");
-                    return ctx.sync().then(function() {
-                        console.log("Paragraph Id: " + table.paragraph.id);
-                        var rows = table.rows;
-                        
-                        // for each rows in the table, log row index and id.
-                        for (var i = 0; i < rows.items.length; i++) {
-                            console.log("Row " + i + " Id: " + rows.items[i].id);
-                        }
-                        return ctx.sync();
-                    });
-                }
+        // For each table, log properties.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                context.load(table);
+                await context.sync();
+
+                console.log("Table Id: " + table.id);
+                console.log("Row Count: " + table.rowCount);
+                console.log("Column Count: " + table.columnCount);
+                await context.sync();
             }
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
 'OneNote.TableCell#appendHtml:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get a table cell at row one and column two and add "Hello".
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                    cell.appendHtml("<p>Hello</p>");
-                }
+        await context.sync();
+        
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, get a table cell at row one and column two and add "Hello".
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                cell.appendHtml("<p>Hello</p>");
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.TableCell#appendRichText:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         var appendedRichText = null;
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get a table cell at row one and column two and add "Hello".
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                    appendedRichText = cell.appendRichText("Hello");
-                }
+        await context.sync();
+
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, get a table cell at row one and column two and add "Hello".
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                appendedRichText = cell.appendRichText("Hello");
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.TableCell#load:member(2)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get a table cell at row one and column two.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                    
-                    // Queue a command to load the table cell.
-                    ctx.load(cell);
-                    ctx.sync().then(function() {
-                        console.log("Cell Id: " + cell.id);
-                        console.log("Cell Index: " + cell.cellIndex);
-                        console.log("Cell's Row Index: " + cell.rowIndex);
-                    });
-                }
-            }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    ParentTable, ParentRow, Paragraphs
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
-        var outline = app.getActiveOutline();
+        await context.sync();
+        var paragraphs = outline.paragraphs;
         
-        // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
-        
-        // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get a table cell at row one and column two.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
-                    
-                    // Queue a command to load parentTable, parentRow and paragraphs of the table cell.
-                    ctx.load(cell, "parentTable, parentRow, paragraphs");
-                    
-                    ctx.sync().then(function() {
-                        console.log("Parent Table Id: " + cell.parentTable.id);
-                        console.log("Parent Row Id: " + cell.parentRow.id);
-                        var paragraphs = cell.paragraphs;
-                        
-                        for (var i = 0; i < paragraphs.items.length; i++) {
-                            console.log("Paragraph Id: " + paragraphs.items[i].id);
-                        }
-                    });
-                }
+        // for each table, get a table cell at row one and column two.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                
+                // Queue a command to load the table cell.
+                context.load(cell);
+                await context.sync();
+
+                console.log("Cell Id: " + cell.id);
+                console.log("Cell Index: " + cell.cellIndex);
+                console.log("Cell's Row Index: " + cell.rowIndex);
             }
-            return ctx.sync();
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+        await context.sync();
     });
 'OneNote.TableRow#insertRowAsSibling:member(1)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get table rows.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    
-                    // Queue a command to load table.rows.
-                    ctx.load(table, "rows");
-                    
-                    // Run the queued commands
-                    return ctx.sync().then(function() {
-                        var rows = table.rows;
-                        rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
-                        return ctx.sync();
-                    });
-                }
+        await context.sync();
+        
+        var paragraphs = outline.paragraphs;
+        
+        // for each table, get table rows.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                
+                // Queue a command to load table.rows.
+                context.load(table, "rows");
+                
+                // Run the queued commands
+                await context.sync();
+
+                var rows = table.rows;
+                rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
+                await context.sync();
             }
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
 'OneNote.TableRow#load:member(2)':
   - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
+    await OneNote.run(async (context) => {
+        var app = context.application;
         var outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get table rows.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    
-                    // Queue a command to load table.rows.
-                    ctx.load(table, "rows");
-                    return ctx.sync().then(function() {
-                        var rows = table.rows;
-                        
-                        // for each table row, log cell count and row index.
-                        for (var i = 0; i < rows.items.length; i++) {
-                            console.log("Row " + i + " Id: " + rows.items[i].id);
-                            console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
-                            console.log("Row " + i + " Row Index: " + rows.items[i].rowIndex);
-                        }
-                        return ctx.sync();
-                    });
-                }
-            }
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    OneNote.run(function(ctx) {
-        var app = ctx.application;
-        var outline = app.getActiveOutline();
+        await context.sync();
         
-        // Queue a command to load outline.paragraphs and their types.
-        ctx.load(outline, "paragraphs, paragraphs/type");
+        var paragraphs = outline.paragraphs;
         
-        // Run the queued commands, and return a promise to indicate task completion.
-        return ctx.sync().then(function () {
-            var paragraphs = outline.paragraphs;
-            
-            // for each table, get table rows.
-            for (var i = 0; i < paragraphs.items.length; i++) {
-                var paragraph = paragraphs.items[i];
-                if (paragraph.type == "Table") {
-                    var table = paragraph.table;
-                    
-                    // Queue a command to load parentTable and cells of each row in the table.
-                    ctx.load(table, "rows/parentTable, rows/cells");
-                    return ctx.sync().then(function() {
-                        var rows = table.rows;
-                        
-                        // for each row, log parentTable and cells
-                        for (var i = 0; i < rows.items.length; i++) {
-                            console.log("Row " + i + " Parent Table Id: " + rows.items[i].parentTable.id);
-                            var cells = rows.items[i].cells;
-                            for (var j = 0 ; j < cells.items.length; j++) {
-                                console.log("Row " + i + " Cell " + j + " Id: " + cells.items[j].id);
-                            }
-                        }
-                        return ctx.sync();
-                    });
+        // for each table, get table rows.
+        for (var i = 0; i < paragraphs.items.length; i++) {
+            var paragraph = paragraphs.items[i];
+            if (paragraph.type == "Table") {
+                var table = paragraph.table;
+                
+                // Queue a command to load table.rows.
+                context.load(table, "rows");
+                await context.sync();
+
+                var rows = table.rows;
+                
+                // for each table row, log cell count and row index.
+                for (var i = 0; i < rows.items.length; i++) {
+                    console.log("Row " + i + " Id: " + rows.items[i].id);
+                    console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
+                    console.log("Row " + i + " Row Index: " + rows.items[i].rowIndex);
                 }
+                await context.sync();
             }
-        })
-    })
-    .catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });

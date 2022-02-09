@@ -158,8 +158,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
                   
           // Queue a command to add a page to the current section.
           var page = context.application.getActiveSection().addPage("Wish list");
@@ -169,20 +169,11 @@ methods:
           page.load('id,title');
                   
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
+          await context.sync();
                    
-                  // Display the properties.       
-                  console.log("Page name: " + page.title);
-                  console.log("Page ID: " + page.id);
-
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          // Display the properties.       
+          console.log("Page name: " + page.title);
+          console.log("Page ID: " + page.id);
       });
       ```
     isPreview: false
@@ -206,8 +197,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
           var app = context.application;
           
           // Gets the active Notebook.
@@ -218,21 +209,13 @@ methods:
           
           var newSection;
           
-          return context.sync()
-              .then(function() {
-                  newSection = section.copyToNotebook(notebook);
-                  newSection.load('id');
-                  return context.sync();
-              })
-              .then(function() {
-                  console.log(newSection.id);
-              });
-      })
-      .catch(function (error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          newSection = section.copyToNotebook(notebook);
+          newSection.load('id');
+          await context.sync();
+          
+          console.log(newSection.id);
       });
       ```
     isPreview: false
@@ -256,9 +239,9 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           
           // Gets the active Notebook.
           var notebook = app.getActiveNotebook();
@@ -268,22 +251,14 @@ methods:
           
           var newSection;
           
-          return ctx.sync()
-              .then(function() {
-                  var firstSectionGroup = notebook.sectionGroups.items[0];
-                  newSection = section.copyToSectionGroup(firstSectionGroup);
-                  newSection.load('id');
-                  return ctx.sync();
-              })
-              .then(function() {
-                  console.log(newSection.id);
-              });
-      })
-      .catch(function (error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          var firstSectionGroup = notebook.sectionGroups.items[0];
+          newSection = section.copyToSectionGroup(firstSectionGroup);
+          newSection.load('id');
+          await context.sync();
+          
+          console.log(newSection.id);
       });
       ```
     isPreview: false
@@ -307,21 +282,19 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx){
+      ```typescript
+      await OneNote.run(async (context) => {
           // Get the current section.         
-          var section = ctx.application.getActiveSection();
+          var section = context.application.getActiveSection();
           var restApiId = section.getRestApiId();
 
-          return ctx.sync().
-              then(function(){
-                  console.log("The REST API ID is " + restApiId.value);
-                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                  // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                  // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
-                  // OneNote REST API according to the OneNote Development Blog.
-                  // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-              });
+          await context.sync();
+          console.log("The REST API ID is " + restApiId.value);
+          // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+          // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+          // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
+          // OneNote REST API according to the OneNote Development Blog.
+          // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
       });
       ```
     isPreview: false
@@ -361,8 +334,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
                   
           // Queue a command to insert a section after the current section.
           var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
@@ -372,19 +345,11 @@ methods:
           section.load('id,name');
                   
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
+          await context.sync();
                    
-                  // Display the properties.       
-                  console.log("Section name: " + section.name);
-                  console.log("Section ID: " + section.id);
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          // Display the properties.       
+          console.log("Section name: " + section.name);
+          console.log("Section ID: " + section.id);
       });
       ```
     isPreview: false
@@ -443,8 +408,8 @@ methods:
 
           #### Examples
 
-          ```javascript
-          OneNote.run(function (context) {
+          ```typescript
+          await OneNote.run(async (context) => {
                   
               // Get the current section.
               var section = context.application.getActiveSection();
@@ -454,64 +419,8 @@ methods:
               section.load("id");
                       
               // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      console.log("Section ID: " + section.id);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-                  
-              // Get the current section.
-              var section = context.application.getActiveSection();
-                      
-              // Queue a command to load the section with the specified properties. 
-              section.load("name,notebook/name");
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      console.log("Section name: " + section.name);
-                      console.log("Parent notebook name: " + section.notebook.name);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-              // Queue a command to add a page to the current section.
-              var section = context.application.getActiveSection();
-              section.load('clientUrl,notebook');
-              var sectionGroup = section.parentSectionGroupOrNull;
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      if(sectionGroup.isNull === false)
-                      {
-                          // If a parent section group exists, queue a command to add a section in it!
-                          sectionGroup.addSection("NewSectionInSectionGroup");
-                      }
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              console.log("Section ID: " + section.id);
           });
           ```
   - name: load(propertyNamesAndPaths)

@@ -132,8 +132,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
 
           var page = context.application.getActivePage();
           var pageContents = page.contents;
@@ -142,18 +142,10 @@ methods:
           firstPageContent.load('type');
 
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-                  if(firstPageContent.isNull === false) {
-                      firstPageContent.delete();
-                      return context.sync();
-                  }
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (firstPageContent.isNullObject === false) {
+              firstPageContent.delete();
+              await context.sync();
           }
       });
       ```

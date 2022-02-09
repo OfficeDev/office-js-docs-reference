@@ -118,8 +118,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
 
           // Gets the active notebook.
           var notebook = context.application.getActiveNotebook();
@@ -131,17 +131,9 @@ methods:
           section.load("name");
 
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  console.log("New section name is " + section.name);
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
+          await context.sync();
+          console.log("New section name is " + section.name);
+      });
       ```
     isPreview: false
     isDeprecated: false
@@ -164,8 +156,8 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function (context) {
+      ```typescript
+      await OneNote.run(async (context) => {
 
           // Gets the active notebook.
           var notebook = context.application.getActiveNotebook();
@@ -177,17 +169,9 @@ methods:
           sectionGroup.load();
 
           // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function() {
-                  console.log("New section group name is " + sectionGroup.name);
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      }); 
+          await context.sync();
+          console.log("New section group name is " + sectionGroup.name);
+      });
       ```
     isPreview: false
     isDeprecated: false
@@ -210,21 +194,19 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx){
+      ```typescript
+      await OneNote.run(async (context) => {
           // Get the current notebook.         
-          var notebook = ctx.application.getActiveNotebook();
+          var notebook = context.application.getActiveNotebook();
           var restApiId = notebook.getRestApiId();
 
-          return ctx.sync().
-              then(function(){
-                  console.log("The REST API ID is " + restApiId.value);
-                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
-                  // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                  // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                  // according to the OneNote Development Blog.
-                  // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-              });
+          await context.sync();
+          console.log("The REST API ID is " + restApiId.value);
+          // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+          // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
+          // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
+          // according to the OneNote Development Blog.
+          // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
       });
       ```
     isPreview: false
@@ -276,8 +258,8 @@ methods:
 
           #### Examples
 
-          ```javascript
-          OneNote.run(function (context) {
+          ```typescript
+          await OneNote.run(async (context) => {
                   
               // Get the current notebook.
               var notebook = context.application.getActiveNotebook();
@@ -287,119 +269,12 @@ methods:
               notebook.load('baseUrl');
                       
               // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      console.log("Base url: " + notebook.baseUrl);
-                      // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
-                      // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-                      // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              console.log("Base url: " + notebook.baseUrl);
+              // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
+              // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
+              // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
           });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-                  
-              // Get the current notebook.
-              var notebook = context.application.getActiveNotebook();
-                      
-              // Queue a command to load the notebook. 
-              // For best performance, request specific properties.           
-              notebook.load('id');
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      console.log("Notebook ID: " + notebook.id);
-                      
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-                  
-              // Get the current notebook.
-              var notebook = context.application.getActiveNotebook();
-                      
-              // Queue a command to load the notebook. 
-              // For best performance, request specific properties.           
-              notebook.load('name');
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      console.log("Notebook name: " + notebook.name);
-                      
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the section groups in the notebook. 
-              var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-              // Queue a command to load the sectionGroups. 
-              sectionGroups.load("name");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      $.each(sectionGroups.items, function(index, sectionGroup) {
-                          console.log("Section group name: " + sectionGroup.name);
-                      });
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active notebook.
-              var notebook = context.application.getActiveNotebook();
-              
-              // Queue a command to get immediate child sections of the notebook. 
-              var childSections = notebook.sections;
-
-              // Queue a command to load the childSections. 
-              context.load(childSections);
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      $.each(childSections.items, function(index, childSection) {
-                          console.log("Immediate child section name: " + childSection.name);
-                      });            
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });   
           ```
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.Notebook#load:member(3)'

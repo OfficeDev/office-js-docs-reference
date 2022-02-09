@@ -114,40 +114,17 @@ methods:
 
           #### Examples
 
-          ```javascript
-          // Get the text of Chart Title from Chart1.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              
-              var title = chart.title;
-              title.load('text');
-              return ctx.sync().then(function() {
-                      console.log(title.text);
-              }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-              });
-          });
-          ```
-          ```javascript
+          ```typescript
           // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          await Excel.run(async (context) => { 
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               
               chart.title.text= "My Chart"; 
               chart.title.visible=true;
               chart.title.overlay=true;
               
-              return ctx.sync().then(function() {
-                  console.log("Char Title Changed");
-              }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-              });
+              await context.sync();
+              console.log("Char Title Changed");
           });
           ```
   - name: load(propertyNamesAndPaths)

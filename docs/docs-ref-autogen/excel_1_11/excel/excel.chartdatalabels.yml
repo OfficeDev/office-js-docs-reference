@@ -264,21 +264,16 @@ methods:
 
           #### Examples
 
-          ```javascript
-          // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.datalabels.showValue = true;
-              chart.datalabels.position = "top";
-              chart.datalabels.showSeriesName = true;
-              return ctx.sync().then(function() {
-                      console.log("Datalabels Shown");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          ```typescript
+          // Make Series Name shown in data labels and set the position of data labels to be "top".
+          await Excel.run(async (context) => {
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+              chart.dataLabels.showValue = true;
+              chart.dataLabels.position = Excel.ChartDataLabelPosition.top;
+              chart.dataLabels.showSeriesName = true;
+              await context.sync();
+
+              console.log("Data labels shown");
           });
           ```
   - name: load(propertyNamesAndPaths)

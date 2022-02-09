@@ -58,23 +58,17 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => {
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
           var range = worksheet.getRange(rangeAddress);
-          var borderName = 'EdgeTop';
-          var border = range.format.borders.getItem(borderName);
+          var border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
           border.load('style');
-          return ctx.sync().then(function() {
-                  console.log(border.style);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          console.log(border.style);
       });
       ```
     isPreview: false
@@ -119,22 +113,17 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
           var range = worksheet.getRange(rangeAddress);
           var border = range.format.borders.getItemAt(0);
           border.load('sideIndex');
-          return ctx.sync().then(function() {
-              console.log(border.sideIndex);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(border.sideIndex);
       });
       ```
     isPreview: false
@@ -194,24 +183,19 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
+          ```typescript
+          await Excel.run(async (context) => { 
               var sheetName = "Sheet1";
               var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+              var worksheet = context.workbook.worksheets.getItem(sheetName);
               var range = worksheet.getRange(rangeAddress);
               var borders = range.format.borders;
-              border.load('items');
-              return ctx.sync().then(function() {
-                  console.log(borders.count);
-                  for (var i = 0; i < borders.items.length; i++) {
-                      console.log(borders.items[i].sideIndex);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              borders.load('items');
+              await context.sync();
+              
+              console.log(borders.count);
+              for (var i = 0; i < borders.items.length; i++) {
+                  console.log(borders.items[i].sideIndex);
               }
           });
           ```

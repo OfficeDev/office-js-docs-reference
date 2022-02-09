@@ -95,21 +95,16 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Set to show legend of Chart1 and make it on top of the chart.
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+      await Excel.run(async (context) => { 
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.legend.visible = true;
-          chart.legend.position = "top"; 
+          chart.legend.position = "Top"; 
           chart.legend.overlay = false; 
-          return ctx.sync().then(function() {
-                  console.log("Legend Shown ");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync()
+          
+          console.log("Legend Shown ");
       });
       ```
     isPreview: false
@@ -128,22 +123,17 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
       // Move Chart1 to 100 points to the top and left. 
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+      await Excel.run(async (context) => { 
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.name = "New Name";
           chart.top = 100;
           chart.left = 100;
           chart.height = 200;
           chart.width = 200;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -215,16 +205,11 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+      ```typescript
+      await Excel.run(async (context) => { 
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -276,19 +261,14 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // Get a chart named "Chart1"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          await Excel.run(async (context) => { 
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.load('name');
-              return ctx.sync().then(function() {
-                      console.log(chart.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+
+              console.log(chart.name);
           });
           ```
   - name: load(propertyNamesAndPaths)
@@ -371,18 +351,14 @@ methods:
 
       #### Examples
 
-      ```javascript
-      // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
-      Excel.run(function (ctx) { 
-          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          var sourceData = "A1:B4";
+      ```typescript
+      // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns"
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sheet1");
+          const chart = sheet.charts.getItem("Chart1");
+          const sourceData = sheet.getRange("A1:B4");
           chart.setData(sourceData, "Columns");
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -433,22 +409,17 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Charts";
           var rangeSelection = "A1:B4";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
           var sourceData = sheetName + "!" + "A1:B4";
-          var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+          var chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
           chart.width = 500;
           chart.height = 300;
           chart.setPosition("C2", null);
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
