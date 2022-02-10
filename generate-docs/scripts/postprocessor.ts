@@ -142,24 +142,6 @@ tryCatch(async () => {
             }
         });
 
-    console.log(`PowerPoint API requirement set link pass`);
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename.indexOf("powerpoint") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsDestination + '/' + filename + "/powerpoint";
-            if (fsx.existsSync(subfolder)) {
-                fsx.readdirSync(subfolder)
-                    .forEach(subfilename => {
-                        fsx.writeFileSync(subfolder + '/' + subfilename,
-                            fsx.readFileSync(subfolder + '/' + subfilename).toString()
-                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets"));
-                    });
-            }
-            let baseYml = docsDestination + '/powerpoint/powerpoint.yml';
-            fsx.writeFileSync(baseYml, fsx.readFileSync(baseYml).toString()
-                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets"));
-        });
-
     console.log(`Fixing top href`);
     fsx.readdirSync(docsDestination)
         .filter(filename => filename.indexOf(".yml") < 0)

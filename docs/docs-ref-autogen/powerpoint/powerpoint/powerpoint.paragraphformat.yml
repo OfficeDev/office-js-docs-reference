@@ -6,7 +6,9 @@ fullName: PowerPoint.ParagraphFormat
 summary: >-
   Represents the paragraph formatting properties of a text that is attached to the
   [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->.
-remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
+  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +20,9 @@ properties:
     summary: >-
       Represents the bullet format of the paragraph. See
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class) for details.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -48,7 +52,9 @@ properties:
       with different horizontal alignment values. See
       [PowerPoint.ParagraphHorizontalAlignment](xref:powerpoint!PowerPoint.ParagraphHorizontalAlignment:enum) for
       details.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
