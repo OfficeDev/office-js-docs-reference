@@ -316,7 +316,7 @@ OneNote.Notebook#addSection:member(1):
         // Queue a command to add a new section.
         var section = notebook.addSection("Sample section");
         
-        // Queue a command to load the new section.This example reads the name property later.
+        // Queue a command to load the new section. This example reads the name property later.
         section.load("name");
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -824,7 +824,7 @@ OneNote.ParagraphCollection#getItemAt:member(1):
     
         var firstParagraph = paragraphs.getItemAt(0);
     
-        // Queue a command to load the type and richText.text property of this paragraph.
+        // Queue a command to load the id and type properties of this paragraph.
         firstParagraph.load("id,type");
     
     

@@ -196,7 +196,7 @@ properties:
       #### Examples
 
       ```typescript
-      // Set table style. 
+      // Set table style.
       await Excel.run(async (context) => { 
           var tableName = 'Table1';
           var table = context.workbook.tables.getItem(tableName);
@@ -446,7 +446,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Get a table by name. 
+          // Get a table by name.
           await Excel.run(async (context) => { 
               var tableName = 'Table1';
               var table = context.workbook.tables.getItem(tableName);

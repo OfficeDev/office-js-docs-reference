@@ -64,15 +64,15 @@ methods:
           // Get the notebooks that are open in the application instance and have the specified name.
           var notebooks = context.application.notebooks.getByName("Homework");
 
-          // Queue a command to load the notebooks. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the notebooks.
+          // For best performance, request specific properties.
           notebooks.load("id,name");
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          // Iterate through the collection or access items individually by index,
-          // for example: notebooks.items[0]
+          // Iterate through the collection or access items individually by index.
+          // For example: notebooks.items[0]
           if (notebooks.items.length > 0) {
               console.log("Notebook name: " + notebooks.items[0].name);
               console.log("Notebook ID: " + notebooks.items[0].id);
@@ -176,15 +176,15 @@ methods:
               // Get the notebooks that are open in the application instance and have the specified name.
               var notebooks = context.application.notebooks.getByName("Homework");
 
-              // Queue a command to load the notebooks. 
-              // For best performance, request specific properties.           
+              // Queue a command to load the notebooks.
+              // For best performance, request specific properties.
               notebooks.load("id");
 
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
 
-              // Iterate through the collection or access items individually by index, 
-              // for example: notebooks.items[0]
+              // Iterate through the collection or access items individually by index.
+              // For example: notebooks.items[0]
               $.each(notebooks.items, function(index, notebook) {
                   notebook.addSection("Biology");
                   notebook.addSection("Spanish");

@@ -56,8 +56,8 @@ methods:
           // Get the active notebook.
           var notebook = context.application.getActiveNotebook();
                   
-          // Queue a command to load the notebook. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the notebook.
+          // For best performance, request specific properties.
           notebook.load('id,name');
                   
           // Run the queued commands, and return a promise to indicate task completion.
@@ -92,14 +92,14 @@ methods:
           // Get the active notebook.
           var notebook = context.application.getActiveNotebookOrNull();
 
-          // Queue a command to load the notebook. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the notebook.
+          // For best performance, request specific properties.
           notebook.load('id,name');
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          // check if active notebook is set.
+          // Check if active notebook is set.
           if (!notebook.isNullObject) {
               console.log("Notebook name: " + notebook.name);
               console.log("Notebook ID: " + notebook.id);
@@ -129,7 +129,7 @@ methods:
           // get active outline.
           var outline = context.application.getActiveOutline();
 
-          // Queue a command to load the id of the outline.         
+          // Queue a command to load the id of the outline.
           outline.load('id');
 
           // Run the queued commands, and return a promise to indicate task completion.
@@ -162,7 +162,7 @@ methods:
           // get active outline.
           var outline = context.application.getActiveOutlineOrNull();
 
-          // Queue a command to load the id of the outline.         
+          // Queue a command to load the id of the outline.
           outline.load('id');
 
           // Run the queued commands, and return a promise to indicate task completion.
@@ -195,8 +195,8 @@ methods:
           // Get the active page.
           var page = context.application.getActivePage();
                   
-          // Queue a command to load the page. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the page.
+          // For best performance, request specific properties.
           page.load('id,title');
                   
           // Run the queued commands, and return a promise to indicate task completion.
@@ -230,8 +230,8 @@ methods:
           // Get the active page.
           var page = context.application.getActivePageOrNull();
 
-          // Queue a command to load the page. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the page.
+          // For best performance, request specific properties.
           page.load('id,title');
 
           // Run the queued commands, and return a promise to indicate task completion.
@@ -293,8 +293,8 @@ methods:
           // Get the active section.
           var section = context.application.getActiveSection();
                   
-          // Queue a command to load the section. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the section.
+          // For best performance, request specific properties.
           section.load('id,name');
                   
           // Run the queued commands, and return a promise to indicate task completion.
@@ -328,8 +328,8 @@ methods:
           // Get the active section.
           var section = context.application.getActiveSectionOrNull();
 
-          // Queue a command to load the section. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the section.
+          // For best performance, request specific properties.
           section.load('id,name');
 
           // Run the queued commands, and return a promise to indicate task completion.
@@ -487,8 +487,8 @@ methods:
           // Get the pages in the current section.
           var pages = context.application.getActiveSection().pages;
                   
-          // Queue a command to load the pages. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the pages.
+          // For best performance, request specific properties.
           pages.load('id');
                   
           // Run the queued commands, and return a promise to indicate task completion.
@@ -497,7 +497,7 @@ methods:
           // This example loads the first page in the section.
           var page = pages.items[0];
                       
-          // Open the page in the application.                    
+          // Open the page in the application.
           context.application.navigateToPage(page);
                   
           // Run the queued command.
@@ -533,8 +533,8 @@ methods:
           // Get the pages in the current section.
           var pages = context.application.getActiveSection().pages;
 
-          // Queue a command to load the pages. 
-          // For best performance, request specific properties.           
+          // Queue a command to load the pages.
+          // For best performance, request specific properties.
           pages.load('clientUrl');
 
           // Run the queued commands, and return a promise to indicate task completion.
@@ -543,7 +543,7 @@ methods:
           // This example loads the first page in the section.
           var page = pages.items[0];
 
-          // Open the page in the application.                    
+          // Open the page in the application.
           context.application.navigateToPageWithClientUrl(page.clientUrl);
 
           // Run the queued command.

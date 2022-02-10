@@ -38,8 +38,8 @@
         // and return a promise to indicate task completion.
         await context.sync();
         
-        // Show the results of the load method. Here we show the
-        // property values on the body object.
+        // Show the results of the load method.
+        // Here we show the property values on the body object.
         var results = 'Font size: ' + body.font.size +
                         '; Font name: ' + body.font.name +
                         '; Font color: ' + body.font.color +
@@ -422,8 +422,8 @@
         // Create a proxy object for the document body.
         var body = context.document.body;
 
-        // Queue a command to select the document body. The Word UI will
-        // move to the selected document body.
+        // Queue a command to select the document body.
+        // The Word UI will move to the selected document body.
         body.select();
 
         // Synchronize the document state by executing the queued commands,
@@ -626,8 +626,8 @@
         if (contentControls.items.length === 0) {
             console.log("There isn't a content control in this document.");
         } else {            
-            // Queue a command to delete the first content control. The
-            // contents will remain in the document.
+            // Queue a command to delete the first content control. 
+            // The contents will remain in the document.
             contentControls.items[0].delete(true);
 
             // Synchronize the document state by executing the queued commands, 
@@ -644,7 +644,7 @@
         // Create a proxy object for the content controls collection that contains a specific tag.
         var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
         
-        // Queue a command to load the tag property for all of content controls. 
+        // Queue a command to load the tag property for all of content controls.
         context.load(contentControlsWithTag, 'tag');
          
         // Synchronize the document state by executing the queued commands, 
@@ -671,7 +671,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -698,22 +698,22 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of content controls. 
+        // Queue a command to load the id property for all of content controls.
         context.load(contentControls, 'id');
         
         // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion. We now will have 
-        // access to the content control collection.
+        // and return a promise to indicate task completion.
+        // We now will have access to the content control collection.
         await context.sync();
         if (contentControls.items.length === 0) {
             console.log('No content control found.');
         }
         else {
-            // Queue a command to insert a page break after the first content control. 
+            // Queue a command to insert a page break after the first content control.
             contentControls.items[0].insertBreak(Word.BreakType.page, Word.InsertLocation.after);
             
             // Synchronize the document state by executing the queued commands, 
-            // and return a promise to indicate task completion. 
+            // and return a promise to indicate task completion.
             await context.sync();
             console.log('Inserted a page break after the first content control.');    
         }
@@ -726,7 +726,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -756,7 +756,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -790,7 +790,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -800,7 +800,7 @@
             console.log('No content control found.');
         }
         else {
-            // Queue a command to insert a paragraph after the first content control. 
+            // Queue a command to insert a paragraph after the first content control.
             contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
         
             // Synchronize the document state by executing the queued commands, 
@@ -817,7 +817,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -827,7 +827,7 @@
             console.log('No content control found.');
         }
         else {
-            // Queue a command to replace text in the first content control. 
+            // Queue a command to replace text in the first content control.
             contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
         
             // Synchronize the document state by executing the queued commands, 
@@ -848,7 +848,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -857,7 +857,7 @@
         if (contentControls.items.length === 0) {
             console.log('No content control found.');
         } else {
-            // Queue a command to load the properties on the first content control. 
+            // Queue a command to load the properties on the first content control.
             contentControls.items[0].load(  'appearance,' +
                                             'cannotDelete,' +
                                             'cannotEdit,' +
@@ -902,7 +902,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -1620,7 +1620,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue a a set of commands to get the HTML of the first paragraph.
+        // Queue a set of commands to get the HTML of the first paragraph.
         var html = paragraphs.items[0].getHtml();
 
         // Synchronize the document state by executing the queued commands,
@@ -1643,7 +1643,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue a a set of commands to get the OOXML of the first paragraph.
+        // Queue a set of commands to get the OOXML of the first paragraph.
         var ooxml = paragraphs.items[0].getOoxml();
 
         // Synchronize the document state by executing the queued commands,
@@ -2432,7 +2432,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
             
-        // Create a proxy object the primary footer of the first section. 
+        // Create a proxy object the primary footer of the first section.
         // Note that the footer is a body object.
             var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
         
@@ -2473,7 +2473,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
         
-        // Create a proxy object the primary header of the first section. 
+        // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
         var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
         

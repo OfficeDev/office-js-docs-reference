@@ -98,7 +98,7 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
               
-          // Create a proxy object the primary footer of the first section. 
+          // Create a proxy object the primary footer of the first section.
           // Note that the footer is a body object.
               var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
           
@@ -185,7 +185,7 @@ methods:
           // and return a promise to indicate task completion.
           await context.sync();
           
-          // Create a proxy object the primary header of the first section. 
+          // Create a proxy object the primary header of the first section.
           // Note that the header is a body object.
           var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
           

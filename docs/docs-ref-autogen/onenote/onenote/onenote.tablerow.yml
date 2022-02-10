@@ -120,7 +120,7 @@ methods:
           
           var paragraphs = outline.paragraphs;
           
-          // for each table, get table rows.
+          // For each table, get table rows.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -129,7 +129,7 @@ methods:
                   // Queue a command to load table.rows.
                   context.load(table, "rows");
                   
-                  // Run the queued commands
+                  // Run the queued commands.
                   await context.sync();
 
                   var rows = table.rows;
@@ -232,7 +232,7 @@ methods:
               
               var paragraphs = outline.paragraphs;
               
-              // for each table, get table rows.
+              // For each table, get table rows.
               for (var i = 0; i < paragraphs.items.length; i++) {
                   var paragraph = paragraphs.items[i];
                   if (paragraph.type == "Table") {
@@ -244,7 +244,7 @@ methods:
 
                       var rows = table.rows;
                       
-                      // for each table row, log cell count and row index.
+                      // For each table row, log cell count and row index.
                       for (var i = 0; i < rows.items.length; i++) {
                           console.log("Row " + i + " Id: " + rows.items[i].id);
                           console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);

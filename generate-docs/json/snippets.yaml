@@ -546,7 +546,7 @@
     });
 'Excel.Chart#load:member(2)':
   - |-
-    // Get a chart named "Chart1"
+    // Get a chart named "Chart1".
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.load('name');
@@ -557,9 +557,9 @@
 'Excel.Chart#name:member':
   - >-
     // Rename the chart to new name, resize the chart to 200 points in both
-    height and weight. 
+    height and weight.
 
-    // Move Chart1 to 100 points to the top and left. 
+    // Move Chart1 to 100 points to the top and left.
 
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -635,7 +635,7 @@
 'Excel.Chart#setData:member(1)':
   - >-
     // Set the sourceData to be the range at "A1:B4" and seriesBy to be
-    "Columns"
+    "Columns".
 
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sheet1");
@@ -659,7 +659,7 @@
     });
 'Excel.ChartAxes#valueAxis:member':
   - |-
-    // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
+    // Set the maximum, minimum, majorUnit, minorUnit of valueAxis.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.maximum = 5;
@@ -691,7 +691,7 @@
     });
 'Excel.ChartAxis#load:member(2)':
   - |-
-    // Get the maximum of Chart Axis from Chart1
+    // Get the maximum of Chart Axis from Chart1.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var axis = chart.axes.valueAxis;
@@ -717,7 +717,7 @@
     });
 'Excel.ChartAxisTitle#load:member(2)':
   - |-
-    // Add "Values" as the title for the value Axis 
+    // Add "Values" as the title for the value Axis.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
         chart.axes.valueAxis.title.text = "Values";
@@ -760,7 +760,7 @@
     });
 'Excel.ChartCollection#getItem:member(1)':
   - |-
-    // Get the number of charts
+    // Get the number of charts.
     await Excel.run(async (context) => { 
         var charts = context.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('count');
@@ -1104,7 +1104,7 @@
 'Excel.ChartFill#clear:member(1)':
   - >-
     // Clear the line format of the major Gridlines on value axis of the Chart
-    named "Chart1"
+    named "Chart1".
 
     await Excel.run(async (context) => { 
         var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
@@ -1131,7 +1131,7 @@
     });
 'Excel.ChartFont:class':
   - |-
-    // Set chart title to be Calbri, size 10, bold and in red. 
+    // Set chart title to be Calbri, size 10, bold and in red.
     await Excel.run(async (context) => { 
         var title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
         title.format.font.name = "Calibri";
@@ -1144,7 +1144,7 @@
     });
 'Excel.ChartGridlines#load:member(2)':
   - |-
-    // Set to show major gridlines on valueAxis of Chart1
+    // Set to show major gridlines on valueAxis of Chart1.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.majorGridlines.visible = true;
@@ -1154,7 +1154,7 @@
     });
 'Excel.ChartLegend#load:member(2)':
   - |-
-    // Get the position of Chart Legend from Chart1
+    // Get the position of Chart Legend from Chart1.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var legend = chart.legend;
@@ -1207,7 +1207,7 @@
     });
 'Excel.ChartPointsCollection#getItemAt:member(1)':
   - |-
-    // Set the border color for the first points in the points collection
+    // Set the border color for the first points in the points collection.
     await Excel.run(async (context) => { 
         var points = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
@@ -1217,7 +1217,7 @@
     });
 'Excel.ChartPointsCollection#load:member(2)':
   - |-
-    // Get the number of points
+    // Get the number of points.
     await Excel.run(async (context) => { 
         var pointsCollection = 
             context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
@@ -1272,7 +1272,7 @@
     });
 'Excel.ChartSeries#load:member(2)':
   - |-
-    // Rename the 1st series of Chart1 to "New Series Name"
+    // Rename the 1st series of Chart1 to "New Series Name".
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.series.getItemAt(0).name = "New Series Name";
@@ -3233,7 +3233,7 @@
     });
 'Excel.NamedItem#getRange:member(1)':
   - |-
-    // Returns the Range object that is associated with the name. 
+    // Returns the Range object that is associated with the name.
     // null if the name is not of the type Range.
     // Note: This API currently supports only the Workbook scoped items.
     await Excel.run(async (context) => { 
@@ -3950,7 +3950,7 @@
     });
 'Excel.Range#clear:member(1)':
   - |-
-    // Below example clears format and contents of the range. 
+    // Below example clears format and contents of the range.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -4911,7 +4911,7 @@
                 let cell = largeRange.getCell(i, j);
                 cell.values = [[i *j]];
 
-                // call untrack() to release the range from memory
+                // Call untrack() to release the range from memory.
                 cell.untrack();
             }
         }
@@ -5053,7 +5053,7 @@
     });
 'Excel.RangeFormat#load:member(2)':
   - |-
-    // Below example selects all of the Range's format properties. 
+    // Below example selects all of the Range's format properties.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -5915,7 +5915,7 @@
     });
 'Excel.Table#load:member(2)':
   - |-
-    // Get a table by name. 
+    // Get a table by name.
     await Excel.run(async (context) => { 
         var tableName = 'Table1';
         var table = context.workbook.tables.getItem(tableName);
@@ -5965,7 +5965,7 @@
     });
 'Excel.Table#style:member':
   - |-
-    // Set table style. 
+    // Set table style.
     await Excel.run(async (context) => { 
         var tableName = 'Table1';
         var table = context.workbook.tables.getItem(tableName);
@@ -6057,7 +6057,7 @@
     });
 'Excel.TableCollection#load:member(2)':
   - |-
-    // Get the number of tables
+    // Get the number of tables.
     await Excel.run(async (context) => { 
         var tables = context.workbook.tables;
         tables.load('count');
@@ -7002,7 +7002,7 @@
     });
 'Excel.Worksheet#position:member':
   - |-
-    // Set worksheet position. 
+    // Set worksheet position.
     await Excel.run(async (context) => { 
         var wSheetName = 'Sheet1';
         var worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -17991,8 +17991,8 @@
         // Get the active notebook.
         var notebook = context.application.getActiveNotebook();
                 
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18010,14 +18010,14 @@
         // Get the active notebook.
         var notebook = context.application.getActiveNotebookOrNull();
 
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('id,name');
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // check if active notebook is set.
+        // Check if active notebook is set.
         if (!notebook.isNullObject) {
             console.log("Notebook name: " + notebook.name);
             console.log("Notebook ID: " + notebook.id);
@@ -18030,7 +18030,7 @@
         // get active outline.
         var outline = context.application.getActiveOutline();
 
-        // Queue a command to load the id of the outline.         
+        // Queue a command to load the id of the outline.
         outline.load('id');
 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18046,7 +18046,7 @@
         // get active outline.
         var outline = context.application.getActiveOutlineOrNull();
 
-        // Queue a command to load the id of the outline.         
+        // Queue a command to load the id of the outline.
         outline.load('id');
 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18062,8 +18062,8 @@
         // Get the active page.
         var page = context.application.getActivePage();
                 
-        // Queue a command to load the page. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the page.
+        // For best performance, request specific properties.
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18080,8 +18080,8 @@
         // Get the active page.
         var page = context.application.getActivePageOrNull();
 
-        // Queue a command to load the page. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the page.
+        // For best performance, request specific properties.
         page.load('id,title');
 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18100,8 +18100,8 @@
         // Get the active section.
         var section = context.application.getActiveSection();
                 
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18118,8 +18118,8 @@
         // Get the active section.
         var section = context.application.getActiveSectionOrNull();
 
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load('id,name');
 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18137,8 +18137,8 @@
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
                 
-        // Queue a command to load the pages. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the pages.
+        // For best performance, request specific properties.
         pages.load('id');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18147,7 +18147,7 @@
         // This example loads the first page in the section.
         var page = pages.items[0];
                     
-        // Open the page in the application.                    
+        // Open the page in the application.
         context.application.navigateToPage(page);
                 
         // Run the queued command.
@@ -18160,8 +18160,8 @@
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
 
-        // Queue a command to load the pages. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the pages.
+        // For best performance, request specific properties.
         pages.load('clientUrl');
 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18170,7 +18170,7 @@
         // This example loads the first page in the section.
         var page = pages.items[0];
 
-        // Open the page in the application.                    
+        // Open the page in the application.
         context.application.navigateToPageWithClientUrl(page.clientUrl);
 
         // Run the queued command.
@@ -18211,10 +18211,10 @@
     var imageString;
 
     await OneNote.run(async (context) => {
-        // Get the current outline.         
+        // Get the current outline.
         var outline = context.application.getActiveOutline();
         
-        // Queue a command to load paragraphs and their types. 
+        // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
         for (var i=0; i < outline.paragraphs.items.length; i++) {
@@ -18235,11 +18235,11 @@
 'OneNote.Image#load:member(2)':
   - |-
     await OneNote.run(async (context) => {
-        // Get the current outline.         
+        // Get the current outline.
         var outline = context.application.getActiveOutline();
         var image = null;
         
-        // Queue a command to load paragraphs and their types. 
+        // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
 
@@ -18252,7 +18252,7 @@
         }
 
         if (image != null) {
-            // load every properties and relationships
+            // Load all properties and relationships.
             image.load(["id", "width", "height", "description", "hyperlink"]);
             await context.sync();
         }
@@ -18288,7 +18288,7 @@
 
         await context.sync();
                 
-        // Log ocrText and ocrLanguageId
+        // Log ocrText and ocrLanguageId.
         console.log(image.ocrData.ocrText);
         console.log(image.ocrData.ocrLanguageId);
     });
@@ -18299,7 +18299,7 @@
         // Gets the active notebook.
         var notebook = context.application.getActiveNotebook();
 
-        // Queue a command to add a new section. 
+        // Queue a command to add a new section.
         var section = notebook.addSection("Sample section");
         
         // Queue a command to load the new section. This example reads the name property later.
@@ -18329,17 +18329,17 @@
 'OneNote.Notebook#getRestApiId:member(1)':
   - |-
     await OneNote.run(async (context) => {
-        // Get the current notebook.         
+        // Get the current notebook.
         var notebook = context.application.getActiveNotebook();
         var restApiId = notebook.getRestApiId();
 
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
-        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
+        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Notebook#load:member(2)':
   - |-
@@ -18348,8 +18348,8 @@
         // Get the current notebook.
         var notebook = context.application.getActiveNotebook();
                 
-        // Queue a command to load the notebook. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebook.
+        // For best performance, request specific properties.
         notebook.load('baseUrl');
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18357,7 +18357,7 @@
         console.log("Base url: " + notebook.baseUrl);
         // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
         // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
+        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.NotebookCollection#getByName:member(1)':
   - |-
@@ -18366,15 +18366,15 @@
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
 
-        // Queue a command to load the notebooks. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebooks.
+        // For best performance, request specific properties.
         notebooks.load("id,name");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Iterate through the collection or access items individually by index,
-        // for example: notebooks.items[0]
+        // Iterate through the collection or access items individually by index.
+        // For example: notebooks.items[0]
         if (notebooks.items.length > 0) {
             console.log("Notebook name: " + notebooks.items[0].name);
             console.log("Notebook ID: " + notebooks.items[0].id);
@@ -18387,15 +18387,15 @@
         // Get the notebooks that are open in the application instance and have the specified name.
         var notebooks = context.application.notebooks.getByName("Homework");
 
-        // Queue a command to load the notebooks. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the notebooks.
+        // For best performance, request specific properties.
         notebooks.load("id");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Iterate through the collection or access items individually by index, 
-        // for example: notebooks.items[0]
+        // Iterate through the collection or access items individually by index.
+        // For example: notebooks.items[0]
         $.each(notebooks.items, function(index, notebook) {
             notebook.addSection("Biology");
             notebook.addSection("Spanish");
@@ -18411,7 +18411,7 @@
         // Gets the active page.
         var activePage = context.application.getActivePage();
 
-        // Get pageContents of the activePage. 
+        // Get pageContents of the activePage.
         var pageContents = activePage.contents;
 
         // Queue a command to load the pageContents to access its data.
@@ -18438,7 +18438,7 @@
         // Gets the active page.
         var activePage = context.application.getActivePage();
 
-        // Get pageContents of the activePage. 
+        // Get pageContents of the activePage.
         var pageContents = activePage.contents;
 
         // Queue a command to load the pageContents to access its data.
@@ -18464,7 +18464,7 @@
         // Gets the active page.
         var page = context.application.getActivePage();
 
-        // Queue a command to add an outline with given html. 
+        // Queue a command to add an outline with given html.
         var outline = page.addOutline(200, 200,
     "<p>Images and a table below:</p> \
      <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
@@ -18507,7 +18507,7 @@
 
         var section = notebook.sections.items[0];
         
-        // copy page to the section.
+        // Copy page to the section.
         newPage = page.copyToSection(section);
         newPage.load('id');
         await context.sync();
@@ -18517,7 +18517,7 @@
 'OneNote.Page#getRestApiId:member(1)':
   - |-
     await OneNote.run(async (context) => {
-        // Get the current page.         
+        // Get the current page.
         var page = context.application.getActivePage();
         var restApiId = page.getRestApiId();
 
@@ -18527,7 +18527,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
+        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Page#insertPageAsSibling:member(2)':
   - |-
@@ -18536,7 +18536,7 @@
         // Gets the active page.
         var activePage = context.application.getActivePage();
 
-        // Queue a command to add a new page after the active page. 
+        // Queue a command to add a new page after the active page.
         var newPage = activePage.insertPageAsSibling("After", "Next Page");
 
         // Queue a command to load the newPage to access its data.
@@ -18553,7 +18553,7 @@
         // Gets the active page.
         var activePage = context.application.getActivePage();
 
-        // Queue a command to add a new page after the active page. 
+        // Queue a command to add a new page after the active page.
         var pageContents = activePage.contents;
 
         // Queue a command to load the pageContents to access its data.
@@ -18579,7 +18579,7 @@
         // Get all the pages in the current section.
         var allPages = context.application.getActiveSection().pages;
 
-        // Queue a command to load the pages. 
+        // Queue a command to load the pages.
         // For best performance, request specific properties.
         allPages.load("id"); 
 
@@ -18589,7 +18589,7 @@
         // Get the sections with the specified name.
         var todoPages = allPages.getByTitle("Todo list");
 
-        // Queue a command to load the section. 
+        // Queue a command to load the section.
         // For best performance, request specific properties.
         todoPages.load("id,title"); 
 
@@ -18608,7 +18608,7 @@
         // Get the pages in the current section.
         var pages = context.application.getActiveSection().pages;
         
-        // Queue a command to load the id and title for each page.            
+        // Queue a command to load the id and title for each page.
         pages.load('id,title');
         
         // Run the queued commands, and return a promise to indicate task completion.
@@ -18676,24 +18676,23 @@
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
 
-        // Get the first PageContent on the page
-        // Assuming its an outline, get the outline's paragraphs.
+        // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         
         var paragraphs = pageContent.outline.paragraphs;
         
         var firstParagraph = paragraphs.getItemAt(0);
         
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                 
-        // Queue a command to delete the first paragraph                 
+        // Queue a command to delete the first paragraph.
         firstParagraph.delete();
         
-        // Run the command to delete it
+        // Run the command to delete it.
         await context.sync();
     });
 'OneNote.Paragraph#insertHtmlAsSibling:member(1)':
@@ -18703,23 +18702,23 @@
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
 
-        // Get the first PageContent on the page
+        // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
         var firstParagraph = paragraphs.getItemAt(0);
 
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue commands to insert before and after the first paragraph
+        // Queue commands to insert before and after the first paragraph.
         firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
         firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
         
-        // Run the command to run inserts
+        // Run the command to run inserts.
         await context.sync();
     });
 'OneNote.Paragraph#insertImageAsSibling:member(1)':
@@ -18729,23 +18728,23 @@
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
 
-        // Get the first PageContent on the page
+        // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
         var firstParagraph = paragraphs.getItemAt(0);
 
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue commands to insert before and after the first paragraph
+        // Queue commands to insert before and after the first paragraph.
         firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
         firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
         
-        // Run the command to insert images
+        // Run the command to insert images.
         await context.sync();
     });
 'OneNote.Paragraph#insertRichTextAsSibling:member(1)':
@@ -18755,23 +18754,22 @@
         // Get the collection of pageContent items from the page.
         var pageContents = context.application.getActivePage().contents;
 
-        // Get the first PageContent on the page
-        // Assuming its an outline, get the outline's paragraphs.
+        // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
         var pageContent = pageContents.getItemAt(0);
         var paragraphs = pageContent.outline.paragraphs;
         var firstParagraph = paragraphs.getItemAt(0);
 
-        // Queue a command to load the id and type of the first paragraph
+        // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue commands to insert before and after the first paragraph
+        // Queue commands to insert before and after the first paragraph.
         firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
         firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
         
-        // Run the command to insert text contents
+        // Run the command to insert text contents.
         await context.sync();
     });
 'OneNote.Paragraph#load:member(2)':
@@ -18793,7 +18791,7 @@
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        // Write the text.                  
+        // Write the text.
         $.each(paragraphs.items, function(index, paragraph) {
             console.log("Paragraph type: " + paragraph.type);
             console.log("Paragraph ID: " + paragraph.id);
@@ -18812,13 +18810,13 @@
 
         var firstParagraph = paragraphs.getItemAt(0);
 
-        // Queue a command to load the type and richText.text property of this paragraph.
+        // Queue a command to load the id and type properties of this paragraph.
         firstParagraph.load("id,type");
 
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        // Write text from paragraph to console
+        // Write text from paragraph to console.
         console.log(
             "First Paragraph found with id : " + 
             firstParagraph.id + " and type " + firstParagraph.type);
@@ -18840,7 +18838,7 @@
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
         var firstParagraph = paragraphs.items[0];
-        // Write text from first paragraph to console
+        // Write text from first paragraph to console.
         console.log(
             "First Paragraph found with id : " + 
             firstParagraph.id + " and type " + firstParagraph.type);
@@ -18862,7 +18860,7 @@
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        // Load all page contents of type Outline
+        // Load all page contents of type Outline.
         $.each(pageContents.items, function(index, pageContent) {
             if(pageContent.type == 'Outline')
             {
@@ -18872,7 +18870,7 @@
         });
         await context.sync();
 
-        // Load all rich text paragraphs across outlines
+        // Load all rich text paragraphs across outlines.
         $.each(outlinePageContents, function(index, outlinePageContent) {
             var outline = outlinePageContent.outline;
             paragraphs = paragraphs.concat(outline.paragraphs.items);
@@ -18886,7 +18884,7 @@
         });
         await context.sync();
 
-        // Display all rich text paragraphs to the console
+        // Display all rich text paragraphs to the console.
         $.each(richTextParagraphs, function(index, richTextParagraph) {
             var richText = richTextParagraph.richText;
             console.log(
@@ -18902,14 +18900,14 @@
         // Queue a command to add a page to the current section.
         var page = context.application.getActiveSection().addPage("Wish list");
                 
-        // Queue a command to load the id and title of the new page. 
-        // This example loads the new page so it can read its properties later.           
+        // Queue a command to load the id and title of the new page.
+        // This example loads the new page so it can read its properties later.
         page.load('id,title');
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                  
-        // Display the properties.       
+        // Display the properties.
         console.log("Page name: " + page.title);
         console.log("Page ID: " + page.id);
     });
@@ -18959,17 +18957,17 @@
 'OneNote.Section#getRestApiId:member(1)':
   - |-
     await OneNote.run(async (context) => {
-        // Get the current section.         
+        // Get the current section.
         var section = context.application.getActiveSection();
         var restApiId = section.getRestApiId();
 
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
-        // Note that the REST API ID isn't all you need to interact with the OneNote REST API. 
+        // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
         // OneNote REST API according to the OneNote Development Blog.
-        // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
+        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Section#insertSectionAsSibling:member(2)':
   - |-
@@ -18978,14 +18976,14 @@
         // Queue a command to insert a section after the current section.
         var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
                 
-        // Queue a command to load the id and name of the new section. 
-        // This example loads the new section so it can read its properties later.           
+        // Queue a command to load the id and name of the new section.
+        // This example loads the new section so it can read its properties later.
         section.load('id,name');
                 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                  
-        // Display the properties.       
+        // Display the properties.
         console.log("Section name: " + section.name);
         console.log("Section ID: " + section.id);
     });
@@ -18996,8 +18994,8 @@
         // Get the current section.
         var section = context.application.getActiveSection();
                 
-        // Queue a command to load the section. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section.
+        // For best performance, request specific properties.
         section.load("id");
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -19011,7 +19009,7 @@
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
 
-        // Queue a command to load the sections. 
+        // Queue a command to load the sections.
         // For best performance, request specific properties.
         sections.load("id"); 
         
@@ -19037,7 +19035,7 @@
         // Get the sections in the current notebook.
         var sections = context.application.getActiveNotebook().sections;
 
-        // Queue a command to load the sections. 
+        // Queue a command to load the sections.
         // For best performance, request specific properties.
         sections.load("name"); 
 
@@ -19111,8 +19109,8 @@
         // Get the parent section group that contains the current section.
         var sectionGroup = context.application.getActiveSection().parentSectionGroup;
                 
-        // Queue a command to load the section group. 
-        // For best performance, request specific properties.           
+        // Queue a command to load the section group.
+        // For best performance, request specific properties.
         sectionGroup.load("id,name");
                 
         // Run the queued commands, and return a promise to indicate task completion.
@@ -19129,7 +19127,7 @@
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
 
-        // Queue a command to load the section groups. 
+        // Queue a command to load the section groups.
         // For best performance, request specific properties.
         sectionGroups.load("id"); 
 
@@ -19155,15 +19153,15 @@
         // Get the section groups that are direct children of the current notebook.
         var sectionGroups = context.application.getActiveNotebook().sectionGroups;
 
-        // Queue a command to load the section groups. 
+        // Queue a command to load the section groups.
         // For best performance, request specific properties.
         sectionGroups.load("name"); 
 
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
                 
-        // Iterate through the collection or access items individually by index, 
-        // for example: sectionGroups.items[0]
+        // Iterate through the collection or access items individually by index.
+        // For example: sectionGroups.items[0]
         $.each(sectionGroups.items, function(index, sectionGroup) {
             console.log("Section group name: " + sectionGroup.name);  
             console.log("Section group ID: " + sectionGroup.id);  
@@ -19182,7 +19180,7 @@
         await context.sync();
         var paragraphs = outline.paragraphs;
         
-        // for each table, append a column.
+        // For each table, append a column.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19206,7 +19204,7 @@
 
         var paragraphs = outline.paragraphs;
         
-        // for each table, append a column.
+        // For each table, append a column.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19230,7 +19228,7 @@
 
         var paragraphs = outline.paragraphs;
         
-        // for each table, get a cell in the second row and third column.
+        // For each table, get a cell in the second row and third column.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19254,7 +19252,7 @@
 
         var paragraphs = outline.paragraphs;
         
-        // for each table, insert a column at index two.
+        // For each table, insert a column at index two.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19278,7 +19276,7 @@
 
         var paragraphs = outline.paragraphs;
         
-        // for each table, insert a row at index two.
+        // For each table, insert a row at index two.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19331,7 +19329,7 @@
         
         var paragraphs = outline.paragraphs;
         
-        // for each table, get a table cell at row one and column two and add "Hello".
+        // For each table, get a table cell at row one and column two and add "Hello".
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19357,7 +19355,7 @@
 
         var paragraphs = outline.paragraphs;
         
-        // for each table, get a table cell at row one and column two and add "Hello".
+        // For each table, get a table cell at row one and column two and add "Hello".
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19381,7 +19379,7 @@
         await context.sync();
         var paragraphs = outline.paragraphs;
         
-        // for each table, get a table cell at row one and column two.
+        // For each table, get a table cell at row one and column two.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19413,7 +19411,7 @@
         
         var paragraphs = outline.paragraphs;
         
-        // for each table, get table rows.
+        // For each table, get table rows.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19422,7 +19420,7 @@
                 // Queue a command to load table.rows.
                 context.load(table, "rows");
                 
-                // Run the queued commands
+                // Run the queued commands.
                 await context.sync();
 
                 var rows = table.rows;
@@ -19445,7 +19443,7 @@
         
         var paragraphs = outline.paragraphs;
         
-        // for each table, get table rows.
+        // For each table, get table rows.
         for (var i = 0; i < paragraphs.items.length; i++) {
             var paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
@@ -19457,7 +19455,7 @@
 
                 var rows = table.rows;
                 
-                // for each table row, log cell count and row index.
+                // For each table row, log cell count and row index.
                 for (var i = 0; i < rows.items.length; i++) {
                     console.log("Row " + i + " Id: " + rows.items[i].id);
                     console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
@@ -20207,8 +20205,8 @@
         // and return a promise to indicate task completion.
         await context.sync();
         
-        // Show the results of the load method. Here we show the
-        // property values on the body object.
+        // Show the results of the load method.
+        // Here we show the property values on the body object.
         var results = 'Font size: ' + body.font.size +
                         '; Font name: ' + body.font.name +
                         '; Font color: ' + body.font.color +
@@ -20591,8 +20589,8 @@
         // Create a proxy object for the document body.
         var body = context.document.body;
 
-        // Queue a command to select the document body. The Word UI will
-        // move to the selected document body.
+        // Queue a command to select the document body.
+        // The Word UI will move to the selected document body.
         body.select();
 
         // Synchronize the document state by executing the queued commands,
@@ -20795,8 +20793,8 @@
         if (contentControls.items.length === 0) {
             console.log("There isn't a content control in this document.");
         } else {            
-            // Queue a command to delete the first content control. The
-            // contents will remain in the document.
+            // Queue a command to delete the first content control. 
+            // The contents will remain in the document.
             contentControls.items[0].delete(true);
 
             // Synchronize the document state by executing the queued commands, 
@@ -20813,7 +20811,7 @@
         // Create a proxy object for the content controls collection that contains a specific tag.
         var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
         
-        // Queue a command to load the tag property for all of content controls. 
+        // Queue a command to load the tag property for all of content controls.
         context.load(contentControlsWithTag, 'tag');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20840,7 +20838,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20867,22 +20865,22 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of content controls. 
+        // Queue a command to load the id property for all of content controls.
         context.load(contentControls, 'id');
         
         // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion. We now will have 
-        // access to the content control collection.
+        // and return a promise to indicate task completion.
+        // We now will have access to the content control collection.
         await context.sync();
         if (contentControls.items.length === 0) {
             console.log('No content control found.');
         }
         else {
-            // Queue a command to insert a page break after the first content control. 
+            // Queue a command to insert a page break after the first content control.
             contentControls.items[0].insertBreak(Word.BreakType.page, Word.InsertLocation.after);
             
             // Synchronize the document state by executing the queued commands, 
-            // and return a promise to indicate task completion. 
+            // and return a promise to indicate task completion.
             await context.sync();
             console.log('Inserted a page break after the first content control.');    
         }
@@ -20895,7 +20893,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20925,7 +20923,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20959,7 +20957,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20969,7 +20967,7 @@
             console.log('No content control found.');
         }
         else {
-            // Queue a command to insert a paragraph after the first content control. 
+            // Queue a command to insert a paragraph after the first content control.
             contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
         
             // Synchronize the document state by executing the queued commands, 
@@ -20986,7 +20984,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -20996,7 +20994,7 @@
             console.log('No content control found.');
         }
         else {
-            // Queue a command to replace text in the first content control. 
+            // Queue a command to replace text in the first content control.
             contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
         
             // Synchronize the document state by executing the queued commands, 
@@ -21017,7 +21015,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -21026,7 +21024,7 @@
         if (contentControls.items.length === 0) {
             console.log('No content control found.');
         } else {
-            // Queue a command to load the properties on the first content control. 
+            // Queue a command to load the properties on the first content control.
             contentControls.items[0].load(  'appearance,' +
                                             'cannotDelete,' +
                                             'cannotEdit,' +
@@ -21071,7 +21069,7 @@
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a command to load the id property for all of the content controls. 
+        // Queue a command to load the id property for all of the content controls.
         context.load(contentControls, 'id');
          
         // Synchronize the document state by executing the queued commands, 
@@ -21789,7 +21787,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue a a set of commands to get the HTML of the first paragraph.
+        // Queue a set of commands to get the HTML of the first paragraph.
         var html = paragraphs.items[0].getHtml();
 
         // Synchronize the document state by executing the queued commands,
@@ -21812,7 +21810,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Queue a a set of commands to get the OOXML of the first paragraph.
+        // Queue a set of commands to get the OOXML of the first paragraph.
         var ooxml = paragraphs.items[0].getOoxml();
 
         // Synchronize the document state by executing the queued commands,
@@ -22601,7 +22599,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
             
-        // Create a proxy object the primary footer of the first section. 
+        // Create a proxy object the primary footer of the first section.
         // Note that the footer is a body object.
             var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
         
@@ -22642,7 +22640,7 @@
         // and return a promise to indicate task completion.
         await context.sync();
         
-        // Create a proxy object the primary header of the first section. 
+        // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
         var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
         

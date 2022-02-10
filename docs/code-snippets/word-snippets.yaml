@@ -279,8 +279,8 @@ Word.ContentControl#delete:member(1):
         if (contentControls.items.length === 0) {
             console.log("There isn't a content control in this document.");
         } else {            
-            // Queue a command to delete the first content control.The
-            // contents will remain in the document.
+            // Queue a command to delete the first content control. 
+            // The contents will remain in the document.
             contentControls.items[0].delete(true);
 
             // Synchronize the document state by executing the queued commands, 

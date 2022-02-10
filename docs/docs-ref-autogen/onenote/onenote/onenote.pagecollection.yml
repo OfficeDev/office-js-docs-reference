@@ -64,7 +64,7 @@ methods:
           // Get all the pages in the current section.
           var allPages = context.application.getActiveSection().pages;
 
-          // Queue a command to load the pages. 
+          // Queue a command to load the pages.
           // For best performance, request specific properties.
           allPages.load("id"); 
 
@@ -74,7 +74,7 @@ methods:
           // Get the sections with the specified name.
           var todoPages = allPages.getByTitle("Todo list");
 
-          // Queue a command to load the section. 
+          // Queue a command to load the section.
           // For best performance, request specific properties.
           todoPages.load("id,title"); 
 
@@ -184,7 +184,7 @@ methods:
               // Get the pages in the current section.
               var pages = context.application.getActiveSection().pages;
               
-              // Queue a command to load the id and title for each page.            
+              // Queue a command to load the id and title for each page.
               pages.load('id,title');
               
               // Run the queued commands, and return a promise to indicate task completion.

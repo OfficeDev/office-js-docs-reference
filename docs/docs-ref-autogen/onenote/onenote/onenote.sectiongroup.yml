@@ -277,8 +277,8 @@ methods:
               // Get the parent section group that contains the current section.
               var sectionGroup = context.application.getActiveSection().parentSectionGroup;
                       
-              // Queue a command to load the section group. 
-              // For best performance, request specific properties.           
+              // Queue a command to load the section group.
+              // For best performance, request specific properties.
               sectionGroup.load("id,name");
                       
               // Run the queued commands, and return a promise to indicate task completion.

@@ -124,7 +124,7 @@ properties:
       #### Examples
 
       ```typescript
-      // Set worksheet position. 
+      // Set worksheet position.
       await Excel.run(async (context) => { 
           var wSheetName = 'Sheet1';
           var worksheet = context.workbook.worksheets.getItem(wSheetName);

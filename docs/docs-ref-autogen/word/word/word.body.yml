@@ -74,8 +74,8 @@ properties:
           // and return a promise to indicate task completion.
           await context.sync();
           
-          // Show the results of the load method. Here we show the
-          // property values on the body object.
+          // Show the results of the load method.
+          // Here we show the property values on the body object.
           var results = 'Font size: ' + body.font.size +
                           '; Font name: ' + body.font.name +
                           '; Font color: ' + body.font.color +
@@ -1468,8 +1468,8 @@ methods:
           // Create a proxy object for the document body.
           var body = context.document.body;
 
-          // Queue a command to select the document body. The Word UI will
-          // move to the selected document body.
+          // Queue a command to select the document body.
+          // The Word UI will move to the selected document body.
           body.select();
 
           // Synchronize the document state by executing the queued commands,

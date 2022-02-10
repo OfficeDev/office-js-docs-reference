@@ -119,7 +119,7 @@ methods:
           
           var paragraphs = outline.paragraphs;
           
-          // for each table, get a table cell at row one and column two and add "Hello".
+          // For each table, get a table cell at row one and column two and add "Hello".
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -192,7 +192,7 @@ methods:
 
           var paragraphs = outline.paragraphs;
           
-          // for each table, get a table cell at row one and column two and add "Hello".
+          // For each table, get a table cell at row one and column two and add "Hello".
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -305,7 +305,7 @@ methods:
               await context.sync();
               var paragraphs = outline.paragraphs;
               
-              // for each table, get a table cell at row one and column two.
+              // For each table, get a table cell at row one and column two.
               for (var i = 0; i < paragraphs.items.length; i++) {
                   var paragraph = paragraphs.items[i];
                   if (paragraph.type == "Table") {

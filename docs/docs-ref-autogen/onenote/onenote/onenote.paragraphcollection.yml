@@ -87,13 +87,13 @@ methods:
 
           var firstParagraph = paragraphs.getItemAt(0);
 
-          // Queue a command to load the type and richText.text property of this paragraph.
+          // Queue a command to load the id and type properties of this paragraph.
           firstParagraph.load("id,type");
 
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
-          // Write text from paragraph to console
+          // Write text from paragraph to console.
           console.log(
               "First Paragraph found with id : " + 
               firstParagraph.id + " and type " + firstParagraph.type);
@@ -172,7 +172,7 @@ methods:
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
               var firstParagraph = paragraphs.items[0];
-              // Write text from first paragraph to console
+              // Write text from first paragraph to console.
               console.log(
                   "First Paragraph found with id : " + 
                   firstParagraph.id + " and type " + firstParagraph.type);

@@ -64,7 +64,7 @@ methods:
           // Get the section groups that are direct children of the current notebook.
           var sectionGroups = context.application.getActiveNotebook().sectionGroups;
 
-          // Queue a command to load the section groups. 
+          // Queue a command to load the section groups.
           // For best performance, request specific properties.
           sectionGroups.load("id"); 
 
@@ -181,15 +181,15 @@ methods:
               // Get the section groups that are direct children of the current notebook.
               var sectionGroups = context.application.getActiveNotebook().sectionGroups;
 
-              // Queue a command to load the section groups. 
+              // Queue a command to load the section groups.
               // For best performance, request specific properties.
               sectionGroups.load("name"); 
 
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
                       
-              // Iterate through the collection or access items individually by index, 
-              // for example: sectionGroups.items[0]
+              // Iterate through the collection or access items individually by index.
+              // For example: sectionGroups.items[0]
               $.each(sectionGroups.items, function(index, sectionGroup) {
                   console.log("Section group name: " + sectionGroup.name);  
                   console.log("Section group ID: " + sectionGroup.id);  

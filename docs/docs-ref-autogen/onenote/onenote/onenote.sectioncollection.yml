@@ -64,7 +64,7 @@ methods:
           // Get the sections in the current notebook.
           var sections = context.application.getActiveNotebook().sections;
 
-          // Queue a command to load the sections. 
+          // Queue a command to load the sections.
           // For best performance, request specific properties.
           sections.load("id"); 
           
@@ -181,7 +181,7 @@ methods:
               // Get the sections in the current notebook.
               var sections = context.application.getActiveNotebook().sections;
 
-              // Queue a command to load the sections. 
+              // Queue a command to load the sections.
               // For best performance, request specific properties.
               sections.load("name"); 
 

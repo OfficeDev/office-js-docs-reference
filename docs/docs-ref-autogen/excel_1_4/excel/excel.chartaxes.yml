@@ -58,7 +58,7 @@ properties:
       #### Examples
 
       ```typescript
-      // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
+      // Set the maximum, minimum, majorUnit, minorUnit of valueAxis.
       await Excel.run(async (context) => { 
           var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.axes.valueAxis.maximum = 5;

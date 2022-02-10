@@ -716,7 +716,7 @@ methods:
       #### Examples
 
       ```typescript
-      // Below example clears format and contents of the range. 
+      // Below example clears format and contents of the range.
       await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -3182,7 +3182,7 @@ methods:
                       let cell = largeRange.getCell(i, j);
                       cell.values = [[i *j]];
 
-                      // call untrack() to release the range from memory
+                      // Call untrack() to release the range from memory.
                       cell.untrack();
                   }
               }

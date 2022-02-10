@@ -233,24 +233,23 @@ methods:
           // Get the collection of pageContent items from the page.
           var pageContents = context.application.getActivePage().contents;
 
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
+          // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
           var pageContent = pageContents.getItemAt(0);
           
           var paragraphs = pageContent.outline.paragraphs;
           
           var firstParagraph = paragraphs.getItemAt(0);
           
-          // Queue a command to load the id and type of the first paragraph
+          // Queue a command to load the id and type of the first paragraph.
           firstParagraph.load("id,type");
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
                   
-          // Queue a command to delete the first paragraph                 
+          // Queue a command to delete the first paragraph.
           firstParagraph.delete();
           
-          // Run the command to delete it
+          // Run the command to delete it.
           await context.sync();
       });
       ```
@@ -292,23 +291,23 @@ methods:
           // Get the collection of pageContent items from the page.
           var pageContents = context.application.getActivePage().contents;
 
-          // Get the first PageContent on the page
+          // Get the first PageContent on the page.
           // Assuming its an outline, get the outline's paragraphs.
           var pageContent = pageContents.getItemAt(0);
           var paragraphs = pageContent.outline.paragraphs;
           var firstParagraph = paragraphs.getItemAt(0);
 
-          // Queue a command to load the id and type of the first paragraph
+          // Queue a command to load the id and type of the first paragraph.
           firstParagraph.load("id,type");
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          // Queue commands to insert before and after the first paragraph
+          // Queue commands to insert before and after the first paragraph.
           firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
           firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
           
-          // Run the command to run inserts
+          // Run the command to run inserts.
           await context.sync();
       });
       ```
@@ -368,23 +367,23 @@ methods:
           // Get the collection of pageContent items from the page.
           var pageContents = context.application.getActivePage().contents;
 
-          // Get the first PageContent on the page
+          // Get the first PageContent on the page.
           // Assuming its an outline, get the outline's paragraphs.
           var pageContent = pageContents.getItemAt(0);
           var paragraphs = pageContent.outline.paragraphs;
           var firstParagraph = paragraphs.getItemAt(0);
 
-          // Queue a command to load the id and type of the first paragraph
+          // Queue a command to load the id and type of the first paragraph.
           firstParagraph.load("id,type");
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          // Queue commands to insert before and after the first paragraph
+          // Queue commands to insert before and after the first paragraph.
           firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
           firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
           
-          // Run the command to insert images
+          // Run the command to insert images.
           await context.sync();
       });
       ```
@@ -454,23 +453,22 @@ methods:
           // Get the collection of pageContent items from the page.
           var pageContents = context.application.getActivePage().contents;
 
-          // Get the first PageContent on the page
-          // Assuming its an outline, get the outline's paragraphs.
+          // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
           var pageContent = pageContents.getItemAt(0);
           var paragraphs = pageContent.outline.paragraphs;
           var firstParagraph = paragraphs.getItemAt(0);
 
-          // Queue a command to load the id and type of the first paragraph
+          // Queue a command to load the id and type of the first paragraph.
           firstParagraph.load("id,type");
 
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          // Queue commands to insert before and after the first paragraph
+          // Queue commands to insert before and after the first paragraph.
           firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
           firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
           
-          // Run the command to insert text contents
+          // Run the command to insert text contents.
           await context.sync();
       });
       ```
@@ -624,7 +622,7 @@ methods:
                       
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
-              // Write the text.                  
+              // Write the text.
               $.each(paragraphs.items, function(index, paragraph) {
                   console.log("Paragraph type: " + paragraph.type);
                   console.log("Paragraph ID: " + paragraph.id);

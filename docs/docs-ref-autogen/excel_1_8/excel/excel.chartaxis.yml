@@ -605,7 +605,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Get the maximum of Chart Axis from Chart1
+          // Get the maximum of Chart Axis from Chart1.
           await Excel.run(async (context) => { 
               var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               var axis = chart.axes.valueAxis;

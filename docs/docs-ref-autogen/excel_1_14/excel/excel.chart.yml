@@ -201,8 +201,8 @@ properties:
       #### Examples
 
       ```typescript
-      // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
-      // Move Chart1 to 100 points to the top and left. 
+      // Rename the chart to new name, resize the chart to 200 points in both height and weight.
+      // Move Chart1 to 100 points to the top and left.
       await Excel.run(async (context) => { 
           var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.name = "New Name";
@@ -583,7 +583,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Get a chart named "Chart1"
+          // Get a chart named "Chart1".
           await Excel.run(async (context) => { 
               var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.load('name');
@@ -673,7 +673,7 @@ methods:
       #### Examples
 
       ```typescript
-      // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns"
+      // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns".
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sheet1");
           const chart = sheet.charts.getItem("Chart1");

@@ -120,7 +120,7 @@ methods:
           await context.sync();
           var paragraphs = outline.paragraphs;
           
-          // for each table, append a column.
+          // For each table, append a column.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -167,7 +167,7 @@ methods:
 
           var paragraphs = outline.paragraphs;
           
-          // for each table, append a column.
+          // For each table, append a column.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -227,7 +227,7 @@ methods:
 
           var paragraphs = outline.paragraphs;
           
-          // for each table, get a cell in the second row and third column.
+          // For each table, get a cell in the second row and third column.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -277,7 +277,7 @@ methods:
 
           var paragraphs = outline.paragraphs;
           
-          // for each table, insert a column at index two.
+          // For each table, insert a column at index two.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
@@ -329,7 +329,7 @@ methods:
 
           var paragraphs = outline.paragraphs;
           
-          // for each table, insert a row at index two.
+          // For each table, insert a row at index two.
           for (var i = 0; i < paragraphs.items.length; i++) {
               var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {

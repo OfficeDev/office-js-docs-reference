@@ -199,7 +199,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Get the number of tables
+          // Get the number of tables.
           await Excel.run(async (context) => { 
               var tables = context.workbook.tables;
               tables.load('count');

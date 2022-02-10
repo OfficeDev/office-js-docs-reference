@@ -155,7 +155,7 @@ methods:
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
 
-              // Load all page contents of type Outline
+              // Load all page contents of type Outline.
               $.each(pageContents.items, function(index, pageContent) {
                   if(pageContent.type == 'Outline')
                   {
@@ -165,7 +165,7 @@ methods:
               });
               await context.sync();
 
-              // Load all rich text paragraphs across outlines
+              // Load all rich text paragraphs across outlines.
               $.each(outlinePageContents, function(index, outlinePageContent) {
                   var outline = outlinePageContent.outline;
                   paragraphs = paragraphs.concat(outline.paragraphs.items);
@@ -179,7 +179,7 @@ methods:
               });
               await context.sync();
 
-              // Display all rich text paragraphs to the console
+              // Display all rich text paragraphs to the console.
               $.each(richTextParagraphs, function(index, richTextParagraph) {
                   var richText = richTextParagraph.richText;
                   console.log(

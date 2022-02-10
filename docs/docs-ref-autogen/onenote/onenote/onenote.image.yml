@@ -105,7 +105,7 @@ properties:
 
           await context.sync();
                   
-          // Log ocrText and ocrLanguageId
+          // Log ocrText and ocrLanguageId.
           console.log(image.ocrData.ocrText);
           console.log(image.ocrData.ocrLanguageId);
       });
@@ -174,10 +174,10 @@ methods:
       var imageString;
 
       await OneNote.run(async (context) => {
-          // Get the current outline.         
+          // Get the current outline.
           var outline = context.application.getActiveOutline();
           
-          // Queue a command to load paragraphs and their types. 
+          // Queue a command to load paragraphs and their types.
           outline.load("paragraphs/type")
           await context.sync();
           for (var i=0; i < outline.paragraphs.items.length; i++) {
@@ -247,11 +247,11 @@ methods:
 
           ```typescript
           await OneNote.run(async (context) => {
-              // Get the current outline.         
+              // Get the current outline.
               var outline = context.application.getActiveOutline();
               var image = null;
               
-              // Queue a command to load paragraphs and their types. 
+              // Queue a command to load paragraphs and their types.
               outline.load("paragraphs/type")
               await context.sync();
 
@@ -264,7 +264,7 @@ methods:
               }
 
               if (image != null) {
-                  // load every properties and relationships
+                  // Load all properties and relationships.
                   image.load(["id", "width", "height", "description", "hyperlink"]);
                   await context.sync();
               }

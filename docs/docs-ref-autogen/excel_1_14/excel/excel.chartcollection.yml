@@ -172,7 +172,7 @@ methods:
       #### Examples
 
       ```typescript
-      // Get the number of charts
+      // Get the number of charts.
       await Excel.run(async (context) => { 
           var charts = context.workbook.worksheets.getItem("Sheet1").charts;
           charts.load('count');

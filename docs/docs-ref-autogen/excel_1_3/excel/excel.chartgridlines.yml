@@ -91,7 +91,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Set to show major gridlines on valueAxis of Chart1
+          // Set to show major gridlines on valueAxis of Chart1.
           await Excel.run(async (context) => { 
               var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.axes.valueAxis.majorGridlines.visible = true;

@@ -78,7 +78,7 @@ methods:
           // Gets the active page.
           var activePage = context.application.getActivePage();
 
-          // Get pageContents of the activePage. 
+          // Get pageContents of the activePage.
           var pageContents = activePage.contents;
 
           // Queue a command to load the pageContents to access its data.
@@ -169,7 +169,7 @@ methods:
           // Gets the active page.
           var activePage = context.application.getActivePage();
 
-          // Get pageContents of the activePage. 
+          // Get pageContents of the activePage.
           var pageContents = activePage.contents;
 
           // Queue a command to load the pageContents to access its data.
