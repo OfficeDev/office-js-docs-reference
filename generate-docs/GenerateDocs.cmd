@@ -122,219 +122,261 @@ call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 popd
 
 if NOT EXIST "json/office" (
+    echo Running API Extractor for Office preview.
     pushd api-extractor-inputs-office
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/office-release" (
+    echo Running API Extractor for Office release.
     pushd api-extractor-inputs-office-release
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/excel" (
+    echo Running API Extractor for Excel preview.
     pushd api-extractor-inputs-excel
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_online" (
+    echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release\excel_online
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_14" (
+    echo Running API Extractor for Excel 1.14.
     pushd api-extractor-inputs-excel-release\excel_1_14
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_13" (
+    echo Running API Extractor for Excel 1.13.
     pushd api-extractor-inputs-excel-release\excel_1_13
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_12" (
+    echo Running API Extractor for Excel 1.12.
     pushd api-extractor-inputs-excel-release\excel_1_12
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_11" (
+    echo Running API Extractor for Excel 1.11.
     pushd api-extractor-inputs-excel-release\excel_1_11
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_10" (
+    echo Running API Extractor for Excel 1.10.
     pushd api-extractor-inputs-excel-release\excel_1_10
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_9" (
+    echo Running API Extractor for Excel 1.9.
     pushd api-extractor-inputs-excel-release\excel_1_9
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_8" (
+    echo Running API Extractor for Excel 1.8.
     pushd api-extractor-inputs-excel-release\excel_1_8
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_7" (
+    echo Running API Extractor for Excel 1.7.
     pushd api-extractor-inputs-excel-release\excel_1_7
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_6" (
+    echo Running API Extractor for Excel 1.6.
     pushd api-extractor-inputs-excel-release\excel_1_6
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_5" (
+    echo Running API Extractor for Excel 1.5.
     pushd api-extractor-inputs-excel-release\excel_1_5
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_4" (
+    echo Running API Extractor for Excel 1.4.
     pushd api-extractor-inputs-excel-release\excel_1_4
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_3" (
+    echo Running API Extractor for Excel 1.3.
     pushd api-extractor-inputs-excel-release\excel_1_3
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_2" (
+    echo Running API Extractor for Excel 1.2.
     pushd api-extractor-inputs-excel-release\excel_1_2
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/excel_1_1" (
+    echo Running API Extractor for Excel 1.1.
     pushd api-extractor-inputs-excel-release\excel_1_1
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/onenote" (
+    echo Running API Extractor for OneNote.
     pushd api-extractor-inputs-onenote
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/outlook" (
+    echo Running API Extractor for Outlook preview.
     pushd api-extractor-inputs-outlook
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_11" (
+    echo Running API Extractor for Outlook 1.11.
     pushd api-extractor-inputs-outlook-release\outlook_1_11
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_10" (
+    echo Running API Extractor for Outlook 1.10.
     pushd api-extractor-inputs-outlook-release\outlook_1_10
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_9" (
+    echo Running API Extractor for Outlook 1.9.
     pushd api-extractor-inputs-outlook-release\outlook_1_9
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_8" (
+    echo Running API Extractor for Outlook 1.8.
     pushd api-extractor-inputs-outlook-release\outlook_1_8
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_7" (
+    echo Running API Extractor for Outlook 1.7.
     pushd api-extractor-inputs-outlook-release\outlook_1_7
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_6" (
+    echo Running API Extractor for Outlook 1.6.
     pushd api-extractor-inputs-outlook-release\outlook_1_6
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_5" (
+    echo Running API Extractor for Outlook 1.5.
     pushd api-extractor-inputs-outlook-release\outlook_1_5
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_4" (
+    echo Running API Extractor for Outlook 1.4.
     pushd api-extractor-inputs-outlook-release\outlook_1_4
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_3" (
+    echo Running API Extractor for Outlook 1.3.
     pushd api-extractor-inputs-outlook-release\outlook_1_3
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_2" (
+    echo Running API Extractor for Outlook 1.2.
     pushd api-extractor-inputs-outlook-release\outlook_1_2
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/outlook_1_1" (
+    echo Running API Extractor for Outlook 1.1.
     pushd api-extractor-inputs-outlook-release\outlook_1_1
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/powerpoint" (
+    echo Running API Extractor for PowerPoint preview.
     pushd api-extractor-inputs-powerpoint
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/powerpoint_1_3" (
+    echo Running API Extractor for PowerPoint 1.3.
     pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_3
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/powerpoint_1_2" (
+    echo Running API Extractor for PowerPoint 1.2.
     pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_2
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/powerpoint_1_1" (
+    echo Running API Extractor for PowerPoint 1.1.
     pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_1
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/visio" (
+    echo Running API Extractor for Visio.
     pushd api-extractor-inputs-visio
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/word" (
+    echo Running API Extractor for Word preview.
     pushd api-extractor-inputs-word
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/word_1_3" (
+    echo Running API Extractor for Word 1.3.
     pushd api-extractor-inputs-word-release\word_1_3
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/word_1_2" (
+    echo Running API Extractor for Word 1.2.
     pushd api-extractor-inputs-word-release\word_1_2
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 if NOT EXIST "json/word_1_1" (
+    echo Running API Extractor for Word 1.1.
     pushd api-extractor-inputs-word-release\word_1_1
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/custom-functions-runtime.api.json" (
+    echo Running API Extractor for Custom Functions.
     pushd api-extractor-inputs-custom-functions-runtime
     call ..\node_modules\.bin\api-extractor run
     popd
 )
 
 if NOT EXIST "json/office-runtime.api.json" (
+    echo Running API Extractor for Office Runtime.
     pushd api-extractor-inputs-office-runtime
     call ..\node_modules\.bin\api-extractor run
     popd

@@ -42,7 +42,8 @@ methods:
     fullName: 'addGeometricShape(geometricShapeType, options)'
     summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -91,7 +92,9 @@ methods:
     package: powerpoint!
     fullName: 'addGeometricShape(geometricShapeTypeString, options)'
     summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -176,7 +179,8 @@ methods:
     fullName: 'addLine(connectorType, options)'
     summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -228,7 +232,9 @@ methods:
     package: powerpoint!
     fullName: 'addLine(connectorTypeString, options)'
     summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
-    remarks: '\[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -257,7 +263,8 @@ methods:
       Adds a text box to the slide with the provided text as the content. Returns a `Shape` object that represents the
       new text box.
     remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
