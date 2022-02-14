@@ -19,7 +19,9 @@ fields:
   - name: ActiveViewChanged
     uid: 'office!Office.EventType.ActiveViewChanged:member'
     package: office!
-    summary: A Document.ActiveViewChanged event was raised.
+    summary: >-
+      Occurs when PowerPoint presentation view is changed. Use the `activeView` to determine actual view type.
+      For Normal, Outline View and Slide Sorter view, the `activeView` value is `edit`. Slide Show and Reading View will report the value `read`.
   - name: AppointmentTimeChanged
     uid: 'office!Office.EventType.AppointmentTimeChanged:member'
     package: office!
