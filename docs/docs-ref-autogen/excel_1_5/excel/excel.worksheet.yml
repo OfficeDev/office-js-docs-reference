@@ -445,7 +445,7 @@ methods:
       #### Examples
 
       ```typescript
-      // Below example uses range address to get the range object.
+      // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";

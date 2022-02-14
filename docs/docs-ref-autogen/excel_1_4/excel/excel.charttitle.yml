@@ -115,7 +115,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
+          // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
           await Excel.run(async (context) => { 
               var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               

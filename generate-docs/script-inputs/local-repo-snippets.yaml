@@ -228,7 +228,7 @@ Excel.ChartAxisTitle#textOrientation:member:
 Excel.ChartCollection#add:member(1):
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-    // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+    // with sourceData from range "A1:B4" and seriresBy set to "auto".
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sheet1");
         var rangeSelection = "A1:B4";
@@ -297,7 +297,7 @@ Excel.ChartCollection#onDeleted:member:
     });
 Excel.ChartDataLabels#load:member(2):
   - |-
-    // Make Series Name shown in data labels and set the position of data labels to be "top".
+    // Show the series name in data labels and set the position of the data labels to "top".
     await Excel.run(async (context) => {
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
         chart.dataLabels.showValue = true;
@@ -309,7 +309,7 @@ Excel.ChartDataLabels#load:member(2):
     });
 Excel.ChartFill#clear:member(1):
   - |-
-    // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1".
+    // Clear the line format of the major gridlines on the value axis of the chart named "Chart1".
     await Excel.run(async (context) => { 
         var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
@@ -319,7 +319,7 @@ Excel.ChartFill#clear:member(1):
     });
 Excel.ChartFont:class:
   - |-
-    // Set chart title to be Calbri, size 10, bold and in red.
+    // Set the chart title font to Calibri, size 10, bold, and the color red.
     await Excel.run(async (context) => { 
         var title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
         title.format.font.name = "Calibri";
@@ -332,7 +332,7 @@ Excel.ChartFont:class:
     });
 Excel.ChartGridlines#load:member(2):
   - |-
-    // Set to show major gridlines on valueAxis of Chart1.
+    // Set the value axis of Chart1 to show the major gridlines.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.majorGridlines.visible = true;
@@ -353,7 +353,7 @@ Excel.ChartLegend#load:member(2):
     });
 Excel.ChartLineFormat#clear:member(1):
   - |-
-    // Set to show legend of Chart1 and make it on top of the chart.
+    // Clear the format of the major gridlines on Chart1. 
     await Excel.run(async (context) => { 
         var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
@@ -413,7 +413,7 @@ Excel.ChartSeriesCollection#getItemAt:member(1):
     });
 Excel.ChartSeriesCollection#load:member(2):
   - |-
-    // Get the number of chart series in collection.
+    // Get the number of chart series in the collection.
     await Excel.run(async (context) => { 
         var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('count');
@@ -423,7 +423,7 @@ Excel.ChartSeriesCollection#load:member(2):
     });
 Excel.ChartTitle#load:member(2):
   - |-
-    // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
+    // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
     await Excel.run(async (context) => { 
         var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         
@@ -494,7 +494,7 @@ Excel.FilterOn:enum:
 Excel.NamedItem#getRange:member(1):
   - |-
     // Returns the Range object that is associated with the name.
-    // null if the name is not of the type Range.
+    // Returns `null` if the name is not of type Range.
     // Note: This API currently supports only the Workbook scoped items.
     await Excel.run(async (context) => { 
         var names = context.workbook.names;
@@ -537,7 +537,7 @@ Excel.NamedItemCollection#load:member(2):
     });
 Excel.Range#clear:member(1):
   - |-
-    // Below example clears format and contents of the range.
+    // Clear the format and contents of the range.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -689,7 +689,7 @@ Excel.Range#getRow:member(1):
     });
 Excel.Range#numberFormat:member:
   - |-
-    // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
+    // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F5:G7";
@@ -762,7 +762,7 @@ Excel.Range#untrack:member(1):
     });
 Excel.Range#load:member(2):
   - |-
-    // Below example uses range address to get the range object.
+    // Use the range address to get the range object.
     await Excel.run(async (context) => {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8"; 
@@ -775,7 +775,7 @@ Excel.Range#load:member(2):
     });
 Excel.RangeBorder#style:member:
   - |-
-    // The example below adds grid border around the range.
+    // Add grid borders around the range.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -867,7 +867,7 @@ Excel.RangeFont#load:member(2):
     });
 Excel.RangeFormat#load:member(2):
   - |-
-    // Below example selects all of the Range's format properties.
+    // Select all of the range's format properties.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1215,7 +1215,7 @@ Excel.Worksheet#getCell:member(1):
     });
 Excel.Worksheet#getRange:member(1):
   - |-
-    // Below example uses range address to get the range object.
+    // Use the range address to get the range object.
     await Excel.run(async (context) => { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";

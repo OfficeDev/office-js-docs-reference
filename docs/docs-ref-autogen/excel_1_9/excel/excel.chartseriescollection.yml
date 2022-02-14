@@ -161,7 +161,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Get the number of chart series in collection.
+          // Get the number of chart series in the collection.
           await Excel.run(async (context) => { 
               var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
               seriesCollection.load('count');

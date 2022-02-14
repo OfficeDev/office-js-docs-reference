@@ -60,7 +60,7 @@ methods:
 
       ```typescript
       // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-      // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+      // with sourceData from range "A1:B4" and seriresBy set to "auto".
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sheet1");
           var rangeSelection = "A1:B4";

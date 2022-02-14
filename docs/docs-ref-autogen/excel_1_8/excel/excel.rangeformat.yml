@@ -281,7 +281,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Below example selects all of the Range's format properties.
+          // Select all of the range's format properties.
           await Excel.run(async (context) => { 
               var sheetName = "Sheet1";
               var rangeAddress = "F:G";

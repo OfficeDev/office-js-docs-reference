@@ -265,7 +265,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Make Series Name shown in data labels and set the position of data labels to be "top".
+          // Show the series name in data labels and set the position of the data labels to "top".
           await Excel.run(async (context) => {
               var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
               chart.dataLabels.showValue = true;

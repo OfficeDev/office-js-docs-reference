@@ -265,7 +265,7 @@ properties:
       #### Examples
 
       ```typescript
-      // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
+      // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
       await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:G7";
@@ -508,7 +508,7 @@ methods:
       #### Examples
 
       ```typescript
-      // Below example clears format and contents of the range.
+      // Clear the format and contents of the range.
       await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -1465,7 +1465,7 @@ methods:
           #### Examples
 
           ```typescript
-          // Below example uses range address to get the range object.
+          // Use the range address to get the range object.
           await Excel.run(async (context) => {
               var sheetName = "Sheet1";
               var rangeAddress = "A1:F8"; 
