@@ -965,18 +965,21 @@ functions:
           #### Examples
 
           ```javascript
-          var myFile = document.getElementById("file");
-          var reader = new FileReader();
+          const myFile = <HTMLInputElement>document.getElementById("file");
+          const reader = new FileReader();
 
-          reader.onload = function (event) {
-              // strip off the metadata before the base64-encoded string
-              var startIndex = event.target.result.indexOf("base64,");
-              var copyBase64 = event.target.result.substr(startIndex + 7);
+          reader.onload = (event) => {
+              Excel.run((context) => {
+              // Remove the metadata before the base64-encoded string.
+              const startIndex = reader.result.toString().indexOf("base64,");
+              const mybase64 = reader.result.toString().substr(startIndex + 7);
 
-              Excel.createWorkbook(copyBase64);        
+              Excel.createWorkbook(mybase64);
+              return context.sync();
+              });
           };
 
-          // read in the file as a data URL so we can parse the base64-encoded string
+          // Read in the file as a data URL so we can parse the base64-encoded string.
           reader.readAsDataURL(myFile.files[0]);
           ```
   - name: 'Excel.getDataCommonPostprocess(response, callArgs)'

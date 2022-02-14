@@ -6875,7 +6875,7 @@ OfficeExtension.EmbeddedOptions,timeoutInMilliseconds,Method,Missing,false
 OfficeExtension.EmbeddedOptions,width,Method,Missing,false
 OfficeExtension.EmbeddedSession,N/A,Class,Missing,false
 OfficeExtension.EmbeddedSession,init(),Method,Missing,false
-OfficeExtension.Error,N/A,Class,Fine,true
+OfficeExtension.Error,N/A,Class,Fine,false
 OfficeExtension.Error,code,Method,Fine,false
 OfficeExtension.Error,debugInfo,Method,Fine,false
 OfficeExtension.Error,innerError,Method,Poor,false
@@ -7034,7 +7034,7 @@ OneNote.InkAnalysis,context,Method,Good,false
 OneNote.InkAnalysis,id,Method,Good,false
 OneNote.InkAnalysis,page,Method,Good,false
 OneNote.InkAnalysis,load(options),Method,Good,false
-OneNote.InkAnalysis,load(propertyNames),Method,Good,true
+OneNote.InkAnalysis,load(propertyNames),Method,Good,false
 OneNote.InkAnalysis,load(propertyNamesAndPaths),Method,Good,false
 OneNote.InkAnalysis,set(properties,Method,Good,false
 OneNote.InkAnalysis,set(properties),Method,Fine,false
@@ -7047,7 +7047,7 @@ OneNote.InkAnalysisLine,id,Method,Good,false
 OneNote.InkAnalysisLine,paragraph,Method,Good,false
 OneNote.InkAnalysisLine,words,Method,Good,false
 OneNote.InkAnalysisLine,load(options),Method,Good,false
-OneNote.InkAnalysisLine,load(propertyNames),Method,Good,true
+OneNote.InkAnalysisLine,load(propertyNames),Method,Good,false
 OneNote.InkAnalysisLine,load(propertyNamesAndPaths),Method,Good,false
 OneNote.InkAnalysisLine,set(properties,Method,Good,false
 OneNote.InkAnalysisLine,set(properties),Method,Fine,false
@@ -7072,7 +7072,7 @@ OneNote.InkAnalysisParagraph,id,Method,Good,false
 OneNote.InkAnalysisParagraph,inkAnalysis,Method,Good,false
 OneNote.InkAnalysisParagraph,lines,Method,Good,false
 OneNote.InkAnalysisParagraph,load(options),Method,Good,false
-OneNote.InkAnalysisParagraph,load(propertyNames),Method,Good,true
+OneNote.InkAnalysisParagraph,load(propertyNames),Method,Good,false
 OneNote.InkAnalysisParagraph,load(propertyNamesAndPaths),Method,Good,false
 OneNote.InkAnalysisParagraph,set(properties,Method,Good,false
 OneNote.InkAnalysisParagraph,set(properties),Method,Fine,false
@@ -7099,7 +7099,7 @@ OneNote.InkAnalysisWord,line,Method,Good,false
 OneNote.InkAnalysisWord,strokePointers,Method,Good,false
 OneNote.InkAnalysisWord,wordAlternates,Method,Good,false
 OneNote.InkAnalysisWord,load(options),Method,Good,false
-OneNote.InkAnalysisWord,load(propertyNames),Method,Good,true
+OneNote.InkAnalysisWord,load(propertyNames),Method,Good,false
 OneNote.InkAnalysisWord,load(propertyNamesAndPaths),Method,Good,false
 OneNote.InkAnalysisWord,set(properties,Method,Good,false
 OneNote.InkAnalysisWord,set(properties),Method,Fine,false

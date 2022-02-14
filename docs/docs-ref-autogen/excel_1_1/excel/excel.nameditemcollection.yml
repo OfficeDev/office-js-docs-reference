@@ -48,19 +48,14 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = 'Sheet1';
-          var nameditem = ctx.workbook.names.getItem(sheetName);
+          var nameditem = context.workbook.names.getItem(sheetName);
           nameditem.load('type');
-          return ctx.sync().then(function() {
-                  console.log(nameditem.type);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(nameditem.type);
       });
       ```
     isPreview: false
@@ -120,21 +115,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var nameditems = ctx.workbook.names;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var nameditems = context.workbook.names;
               nameditems.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < nameditems.items.length; i++)
-                  {
-                      console.log(nameditems.items[i].name);
-                      console.log(nameditems.items[i].index);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              await context.sync();
+
+              for (var i = 0; i < nameditems.items.length; i++) {
+                  console.log(nameditems.items[i].name);
               }
           });
           ```

@@ -65,24 +65,19 @@ properties:
 
       #### Examples
 
-      ```javascript
-      // The example below adds grid border around the range.
-      Excel.run(function (ctx) { 
+      ```typescript
+      // Add grid borders around the range.
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
           range.format.borders.getItem('InsideVertical').style = 'Continuous';
           range.format.borders.getItem('EdgeBottom').style = 'Continuous';
           range.format.borders.getItem('EdgeLeft').style = 'Continuous';
           range.format.borders.getItem('EdgeRight').style = 'Continuous';
           range.format.borders.getItem('EdgeTop').style = 'Continuous';
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false

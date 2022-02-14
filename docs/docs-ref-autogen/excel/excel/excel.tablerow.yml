@@ -83,17 +83,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+          var row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
           row.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -113,20 +108,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(0);
+          var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
           var rowRange = row.getRange();
           rowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(rowRange.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(rowRange.address);
       });
       ```
     isPreview: false
@@ -178,19 +168,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
+          ```typescript
+          await Excel.run(async (context) => { 
               var tableName = 'Table1';
-              var row = ctx.workbook.tables.getItem(tableName).rows.getItem(0);
+              var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
               row.load('index');
-              return ctx.sync().then(function() {
-                  console.log(row.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              
+              console.log(row.index);
           });
           ```
   - name: load(propertyNamesAndPaths)

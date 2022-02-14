@@ -52,9 +52,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
           var contentControl = context.document.contentControls.getById(30086310);
@@ -64,15 +64,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The content control with that Id has been found in this document.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The content control with that Id has been found in this document.');
       });
       ```
     isPreview: false
@@ -98,9 +91,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
           var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
@@ -110,18 +103,11 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControl.isNullObject) {
-                  console.log('There is no content control with that ID.')
-              } else {
-                  console.log('The content control with that ID has been found in this document.');
-              }
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControl.isNullObject) {
+              console.log('There is no content control with that ID.')
+          } else {
+              console.log('The content control with that ID has been found in this document.');
           }
       });
       ```
@@ -188,9 +174,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a proxy object for the content controls collection that contains a specific title.
           var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
@@ -200,22 +186,14 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControlsWithTitle.items.length === 0) {
-                  console.log(
-                      "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
-              } else {
-                  console.log(
-                      "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
-                      contentControlsWithTitle.items[0].text);
-              }
-
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControlsWithTitle.items.length === 0) {
+              console.log(
+                  "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+          } else {
+              console.log(
+                  "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
+                  contentControlsWithTitle.items[0].text);
           }
       });
 
@@ -260,9 +238,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a proxy object for the first content control in the document.
           var contentControl = context.document.contentControls.getFirstOrNullObject();
@@ -272,18 +250,11 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControl.isNullObject) {
-                  console.log('There are no content controls in this document.')
-              } else {
-                  console.log('The first content control has been found in this document.');
-              }
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControl.isNullObject) {
+              console.log('There are no content controls in this document.')
+          } else {
+              console.log('The first content control has been found in this document.');
           }
       });
       ```
@@ -351,9 +322,9 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+          await Word.run(async (context) => {
 
               // Create a proxy object for the content controls collection.
               var contentControls = context.document.contentControls;
@@ -363,56 +334,47 @@ methods:
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to load the properties on the first content control.
-                      contentControls.items[0].load(  'appearance,' +
-                                                      'cannotDelete,' +
-                                                      'cannotEdit,' +
-                                                      'color,' +
-                                                      'id,' +
-                                                      'placeHolderText,' +
-                                                      'removeWhenEdited,' +
-                                                      'title,' +
-                                                      'text,' +
-                                                      'type,' +
-                                                      'style,' +
-                                                      'tag,' +
-                                                      'font/size,' +
-                                                      'font/name,' +
-                                                      'font/color');
+              await context.sync();
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              }
+              else {
+                  // Queue a command to load the properties on the first content control.
+                  contentControls.items[0].load(  'appearance,' +
+                                                  'cannotDelete,' +
+                                                  'cannotEdit,' +
+                                                  'color,' +
+                                                  'id,' +
+                                                  'placeHolderText,' +
+                                                  'removeWhenEdited,' +
+                                                  'title,' +
+                                                  'text,' +
+                                                  'type,' +
+                                                  'style,' +
+                                                  'tag,' +
+                                                  'font/size,' +
+                                                  'font/name,' +
+                                                  'font/color');
 
-                      // Synchronize the document state by executing the queued commands,
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Property values of the first content control:' +
-                                  '   ----- appearance: ' + contentControls.items[0].appearance +
-                                  '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                                  '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                                  '   ----- color: ' + contentControls.items[0].color +
-                                  '   ----- id: ' + contentControls.items[0].id +
-                                  '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                                  '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                                  '   ----- title: ' + contentControls.items[0].title +
-                                  '   ----- text: ' + contentControls.items[0].text +
-                                  '   ----- type: ' + contentControls.items[0].type +
-                                  '   ----- style: ' + contentControls.items[0].style +
-                                  '   ----- tag: ' + contentControls.items[0].tag +
-                                  '   ----- font size: ' + contentControls.items[0].font.size +
-                                  '   ----- font name: ' + contentControls.items[0].font.name +
-                                  '   ----- font color: ' + contentControls.items[0].font.color);
-                      });
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+                  // Synchronize the document state by executing the queued commands,
+                  // and return a promise to indicate task completion.
+                  await context.sync();
+                  console.log('Property values of the first content control:' +
+                      '   ----- appearance: ' + contentControls.items[0].appearance +
+                      '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                      '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                      '   ----- color: ' + contentControls.items[0].color +
+                      '   ----- id: ' + contentControls.items[0].id +
+                      '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                      '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                      '   ----- title: ' + contentControls.items[0].title +
+                      '   ----- text: ' + contentControls.items[0].text +
+                      '   ----- type: ' + contentControls.items[0].type +
+                      '   ----- style: ' + contentControls.items[0].style +
+                      '   ----- tag: ' + contentControls.items[0].tag +
+                      '   ----- font size: ' + contentControls.items[0].font.size +
+                      '   ----- font name: ' + contentControls.items[0].font.name +
+                      '   ----- font color: ' + contentControls.items[0].font.color);
               }
           });
 

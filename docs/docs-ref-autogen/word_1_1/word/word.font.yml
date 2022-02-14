@@ -21,10 +21,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Bold format text
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -34,15 +34,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection is now bold.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The selection is now bold.');
       });
       ```
     isPreview: false
@@ -63,10 +56,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Change the font color
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -76,15 +69,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font color of the selection has been changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The font color of the selection has been changed.');
       });
       ```
     isPreview: false
@@ -137,10 +123,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Highlight selected text
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -150,15 +136,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection has been highlighted.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The selection has been highlighted.');
       });
       ```
     isPreview: false
@@ -191,10 +170,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Change the font name
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -204,15 +183,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font name has changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The font name has changed.');
       });
       ```
     isPreview: false
@@ -231,10 +203,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Change the font size
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -244,15 +216,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The font size has changed.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The font size has changed.');
       });
       ```
     isPreview: false
@@ -273,10 +238,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Strike format text
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -286,15 +251,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection now has a strikethrough.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The selection now has a strikethrough.');
       });
       ```
     isPreview: false
@@ -341,10 +299,10 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Underline format text
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
@@ -354,15 +312,8 @@ properties:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('The selection now has an underline style.');
-          });
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log('The selection now has an underline style.');
       });
       ```
     isPreview: false

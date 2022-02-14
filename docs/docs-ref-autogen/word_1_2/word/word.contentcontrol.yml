@@ -303,9 +303,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
@@ -315,27 +315,18 @@ methods:
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
+          await context.sync();
               
-              if (contentControls.items.length === 0) {
-                  console.log("There isn't a content control in this document.");
-              } else {
-                  
-                  // Queue a command to clear the contents of the first content control.
-                  contentControls.items[0].clear();
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log('Content control cleared of contents.');
-                  });      
-              }
-                  
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          if (contentControls.items.length === 0) {
+              console.log("There isn't a content control in this document.");
+          } else {
+              // Queue a command to clear the contents of the first content control.
+              contentControls.items[0].clear();
+
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Content control cleared of contents.');
           }
       });
       ```
@@ -356,9 +347,9 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
@@ -368,28 +359,19 @@ methods:
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
+          await context.sync();
               
-              if (contentControls.items.length === 0) {
-                  console.log("There isn't a content control in this document.");
-              } else {
-                  
-                  // Queue a command to delete the first content control. The
-                  // contents will remain in the document.
-                  contentControls.items[0].delete(true);
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log('Content control cleared of contents.');
-                  });      
-              }
-                  
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          if (contentControls.items.length === 0) {
+              console.log("There isn't a content control in this document.");
+          } else {            
+              // Queue a command to delete the first content control. 
+              // The contents will remain in the document.
+              contentControls.items[0].delete(true);
+
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Content control cleared of contents.'); 
           }
       });
       ```
@@ -421,39 +403,30 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection that contains a specific tag.
           var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
           
-          // Queue a command to load the tag property for all of content controls. 
+          // Queue a command to load the tag property for all of content controls.
           context.load(contentControlsWithTag, 'tag');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControlsWithTag.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to get the HTML contents of the first content control.
-                  var html = contentControlsWithTag.items[0].getHtml();
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Content control HTML: ' + html.value);
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControlsWithTag.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to get the HTML contents of the first content control.
+              var html = contentControlsWithTag.items[0].getHtml();
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Content control HTML: ' + html.value);
           }
       });
       ```
@@ -474,39 +447,30 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to get the OOXML contents of the first content control.
-                  var ooxml = contentControls.items[0].getOoxml();
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Content control OOXML: ' + ooxml.value);
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to get the OOXML contents of the first content control.
+              var ooxml = contentControls.items[0].getOoxml();
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Content control OOXML: ' + ooxml.value);
           }
       });
       ```
@@ -551,40 +515,31 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of content controls. 
+          // Queue a command to load the id property for all of content controls.
           context.load(contentControls, 'id');
           
           // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion. We now will have 
-          // access to the content control collection.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to insert a page break after the first content control. 
-                  contentControls.items[0].insertBreak('page', "After");
-                  
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion. 
-                  return context.sync()
-                      .then(function () {
-                          console.log('Inserted a page break after the first content control.');    
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          // and return a promise to indicate task completion.
+          // We now will have access to the content control collection.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to insert a page break after the first content control.
+              contentControls.items[0].insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted a page break after the first content control.');    
           }
       });
       ```
@@ -682,41 +637,32 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to put HTML into the contents of the first content control.
-                  contentControls.items[0].insertHtml(
-                      '<strong>HTML content inserted into the content control.</strong>',
-                      'Start');
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Inserted HTML in the first content control.');
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to put HTML into the contents of the first content control.
+              contentControls.items[0].insertHtml(
+                  '<strong>HTML content inserted into the content control.</strong>',
+                  'Start');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted HTML in the first content control.');
           }
       });
       ```
@@ -816,41 +762,32 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to put OOXML into the contents of the first content control.
-                  contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Inserted OOXML in the first content control.');
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
           }
-      });
+          else {
+              // Queue a command to put OOXML into the contents of the first content control.
+              contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted OOXML in the first content control.');
+          }
+      });  
 
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
       // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
@@ -903,41 +840,32 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to insert a paragraph after the first content control. 
-                  contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Inserted a paragraph after the first content control.');
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
           }
-      });
+          else {
+              // Queue a command to insert a paragraph after the first content control.
+              contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted a paragraph after the first content control.');
+          }
+      });  
       ```
     isPreview: false
     isDeprecated: false
@@ -989,41 +917,32 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to replace text in the first content control. 
-                  contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Replaced text in the first content control.');
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
           }
-      });
+          else {
+              // Queue a command to replace text in the first content control.
+              contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Replaced text in the first content control.');
+          }
+      });  
 
       // The Silly stories add-in sample shows how to use the insertText method.
       // https://aka.ms/sillystorywordaddin
@@ -1067,70 +986,60 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // Load all of the content control properties
           // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+          await Word.run(async (context) => {
               
               // Create a proxy object for the content controls collection.
               var contentControls = context.document.contentControls;
               
-              // Queue a command to load the id property for all of the content controls. 
+              // Queue a command to load the id property for all of the content controls.
               context.load(contentControls, 'id');
                
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to load the properties on the first content control. 
-                      contentControls.items[0].load(  'appearance,' +
-                                                      'cannotDelete,' +
-                                                      'cannotEdit,' +
-                                                      'id,' +
-                                                      'placeHolderText,' +
-                                                      'removeWhenEdited,' +
-                                                      'title,' +
-                                                      'text,' +
-                                                      'type,' +
-                                                      'style,' +
-                                                      'tag,' +
-                                                      'font/size,' +
-                                                      'font/name,' +
-                                                      'font/color');             
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Property values of the first content control:' + 
-                                  '   ----- appearance: ' + contentControls.items[0].appearance + 
-                                  '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                                  '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                                  '   ----- color: ' + contentControls.items[0].color +
-                                  '   ----- id: ' + contentControls.items[0].id +
-                                  '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                                  '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                                  '   ----- title: ' + contentControls.items[0].title +
-                                  '   ----- text: ' + contentControls.items[0].text +
-                                  '   ----- type: ' + contentControls.items[0].type +
-                                  '   ----- style: ' + contentControls.items[0].style +
-                                  '   ----- tag: ' + contentControls.items[0].tag +
-                                  '   ----- font size: ' + contentControls.items[0].font.size +
-                                  '   ----- font name: ' + contentControls.items[0].font.name +
-                                  '   ----- font color: ' + contentControls.items[0].font.color);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              await context.sync();
+              if (contentControls.items.length === 0) {
+                  console.log('No content control found.');
+              } else {
+                  // Queue a command to load the properties on the first content control.
+                  contentControls.items[0].load(  'appearance,' +
+                                                  'cannotDelete,' +
+                                                  'cannotEdit,' +
+                                                  'id,' +
+                                                  'placeHolderText,' +
+                                                  'removeWhenEdited,' +
+                                                  'title,' +
+                                                  'text,' +
+                                                  'type,' +
+                                                  'style,' +
+                                                  'tag,' +
+                                                  'font/size,' +
+                                                  'font/name,' +
+                                                  'font/color');             
+              
+                  // Synchronize the document state by executing the queued commands, 
+                  // and return a promise to indicate task completion.
+                  await context.sync();
+                  console.log('Property values of the first content control:' + 
+                      '   ----- appearance: ' + contentControls.items[0].appearance + 
+                      '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                      '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                      '   ----- color: ' + contentControls.items[0].color +
+                      '   ----- id: ' + contentControls.items[0].id +
+                      '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                      '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                      '   ----- title: ' + contentControls.items[0].title +
+                      '   ----- text: ' + contentControls.items[0].text +
+                      '   ----- type: ' + contentControls.items[0].type +
+                      '   ----- style: ' + contentControls.items[0].style +
+                      '   ----- tag: ' + contentControls.items[0].tag +
+                      '   ----- font size: ' + contentControls.items[0].font.size +
+                      '   ----- font name: ' + contentControls.items[0].font.name +
+                      '   ----- font color: ' + contentControls.items[0].font.color);
               }
-          });
+          });  
           ```
   - name: load(propertyNames)
     uid: 'word!Word.ContentControl#load:member(2)'
@@ -1192,41 +1101,32 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
           var contentControls = context.document.contentControls;
           
-          // Queue a command to load the id property for all of the content controls. 
+          // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to select the first content control.
-                  contentControls.items[0].select();
-              
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Selected the first content control.');
-                  });
-              }
-          });  
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
           }
-      });
+          else {
+              // Queue a command to select the first content control.
+              contentControls.items[0].select();
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Selected the first content control.');
+          }
+      });  
       ```
     isPreview: false
     isDeprecated: false
