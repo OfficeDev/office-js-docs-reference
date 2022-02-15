@@ -6116,7 +6116,7 @@ Office.Error,code,Method,Good,true
 Office.Error,message,Method,Fine,true
 Office.Error,name,Method,Fine,true
 Office.EventType,N/A,Class,Good,false
-Office.EventType,ActiveViewChanged,EnumField,Poor,false
+Office.EventType,ActiveViewChanged,EnumField,Fine,false
 Office.EventType,AppointmentTimeChanged,EnumField,Good,false
 Office.EventType,AttachmentsChanged,EnumField,Good,false
 Office.EventType,BindingDataChanged,EnumField,Good,false

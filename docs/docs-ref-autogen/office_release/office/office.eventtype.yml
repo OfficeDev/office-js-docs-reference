@@ -19,7 +19,7 @@ fields:
   - name: ActiveViewChanged
     uid: 'office!Office.EventType.ActiveViewChanged:member'
     package: office!
-    summary: A Document.ActiveViewChanged event was raised.
+    summary: A Document.ActiveViewChanged event was raised in PowerPoint.
   - name: AppointmentTimeChanged
     uid: 'office!Office.EventType.AppointmentTimeChanged:member'
     package: office!

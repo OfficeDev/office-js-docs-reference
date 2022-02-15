@@ -2074,7 +2074,7 @@ export declare namespace Office {
      */
     enum EventType {
         /**
-         * A Document.ActiveViewChanged event was raised.
+         * A Document.ActiveViewChanged event was raised in PowerPoint.
          * 
          * @remarks 
          * 
@@ -3799,8 +3799,8 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the state of the presentation's current view. 
-         *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides, 
-         *                  such as Normal or Outline View. "read" corresponds to either Slide Show or Reading View.
+         *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides:
+         *                  Normal, Slide Sorter, or Outline View. "read" corresponds to either Slide Show or Reading View.
          */
         getActiveViewAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<"edit" | "read">) => void): void;
         /**
@@ -3814,8 +3814,8 @@ export declare namespace Office {
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the state of the presentation's current view. 
-         *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides, 
-         *                  such as Normal or Outline View. "read" corresponds to either Slide Show or Reading View.
+         *                  The value returned can be either "edit" or "read". "edit" corresponds to any of the views in which you can edit slides: 
+         *                  Normal, Slide Sorter, or Outline View. "read" corresponds to either Slide Show or Reading View.
          */
         getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) => void): void;
         /**
