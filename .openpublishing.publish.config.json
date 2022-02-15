@@ -81,7 +81,7 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -211,7 +211,7 @@
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_1_14/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
-    },    
+    },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_online/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
