@@ -2,8 +2,8 @@
 
 Thank you for your interest in our documentation! The best ways to help make this documentation better for everyone are to:
 
-* [Report issues or request additional samples](#report-issues).
-* [Add or edit new samples](#add-or-edit-samples).
+* [Report issues or request additional samples.](#report-issues)
+* [Add or edit new samples.](#add-or-edit-samples)
 
 ## Report issues
 
