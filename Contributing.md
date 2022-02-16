@@ -47,7 +47,7 @@ Using this method allows you to contribute to one article at a time.
 2. Once you are on the article in GitHub, sign in to GitHub (get a free account [Join GitHub](https://github.com/join)).
 3. Choose the **pencil icon** (edit the file in your fork of this project) and make your changes in the **<>Edit file** window.
 4. Scroll to the bottom and enter a description.
-5. Choose **Propose file change**>**Create pull request**.
+5. Choose **Propose file change** > **Create pull request**.
 
 You now have successfully submitted a pull request. Pull requests are typically reviewed within 10 business days.
 
@@ -106,7 +106,7 @@ To make the contribution process as seamless as possible, follow these steps.
 3. Submit a pull request to the main repository.
 4. Delete the branch.
 
-**Important** Limit each branch to a single concept/article to streamline the work flow and reduce the chance of merge conflicts. Content appropriate for a new branch includes:
+**Important**: Limit each branch to a single concept/article to streamline the work flow and reduce the chance of merge conflicts. Content appropriate for a new branch includes:
 
 * A new article.
 * Spelling and grammar edits.
@@ -206,7 +206,6 @@ Pull requests are typically reviewed within 10 business days.
 
 ## More resources
 
-* To learn more about Markdown, go to the Markdown creator's site [Daring Fireball].
 * To learn more about using Git and GitHub, first check out the [GitHub Help].
 
 [GitHub Home]: http://github.com
