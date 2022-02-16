@@ -81,42 +81,33 @@ properties:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       var image = null;
 
-      OneNote.run(function(ctx){
+      await OneNote.run(async (context) => {
           // Get the current outline.
-          var outline = ctx.application.getActiveOutline();
+          var outline = context.application.getActiveOutline();
 
           // Queue a command to load paragraphs and their types.
           outline.load("paragraphs")
-          return ctx.sync().
-              then(function(){
-                  for (var i=0; i < outline.paragraphs.items.length; i++)
-                  {
-                      var paragraph = outline.paragraphs.items[i];
-                      if (paragraph.type == "Image")
-                      {
-                          image = paragraph.image;
-                      }
-                  }
-                  if (image != null)
-                  {
-                     image.load("ocrData");
-                  }
-                  return ctx.sync();
-              })
-              .then(function(){
-                  
-                  // Log ocrText and ocrLanguageId
-                  console.log(image.ocrData.ocrText);
-                  console.log(image.ocrData.ocrLanguageId);
-              });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          await context.sync();
+
+          for (var i=0; i < outline.paragraphs.items.length; i++) {
+              var paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
           }
+          if (image != null) {
+              image.load("ocrData");
+          }
+
+          await context.sync();
+                  
+          // Log ocrText and ocrLanguageId.
+          console.log(image.ocrData.ocrText);
+          console.log(image.ocrData.ocrLanguageId);
       });
       ```
     isPreview: false
@@ -178,38 +169,31 @@ methods:
 
       #### Examples
 
-      ```javascript
-
+      ```typescript
       var image = null;
       var imageString;
 
-      OneNote.run(function(ctx){
-          // Get the current outline.         
-          var outline = ctx.application.getActiveOutline();
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          var outline = context.application.getActiveOutline();
           
-          // Queue a command to load paragraphs and their types. 
+          // Queue a command to load paragraphs and their types.
           outline.load("paragraphs/type")
-          return ctx.sync().
-              then(function(){
-                  for (var i=0; i < outline.paragraphs.items.length; i++)
-                  {
-                      var paragraph = outline.paragraphs.items[i];
-                      if (paragraph.type == "Image")
-                      {
-                          image = paragraph.image;
-                      }
-                  }
-              })
-              .then(function(){
-                  if (image != null)
-                  {
-                      imageString = image.getBase64Image();
-                      return ctx.sync();
-                  }
-              })
-              .then(function(){
-                  console.log(imageString);
-              });
+          await context.sync();
+          for (var i=0; i < outline.paragraphs.items.length; i++) {
+              var paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+
+          if (image != null) {
+              imageString = image.getBase64Image();
+              await context.sync();
+          }
+
+          console.log(imageString);
       });
       ```
     isPreview: false
@@ -261,122 +245,36 @@ methods:
 
           #### Examples
 
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current outline.         
-              var outline = ctx.application.getActiveOutline();
+          ```typescript
+          await OneNote.run(async (context) => {
+              // Get the current outline.
+              var outline = context.application.getActiveOutline();
               var image = null;
               
-              // Queue a command to load paragraphs and their types. 
-              outline.load("paragraphs/type")
-              return ctx.sync().
-                  then(function(){
-                      for (var i=0; i < outline.paragraphs.items.length; i++)
-                      {
-                          var paragraph = outline.paragraphs.items[i];
-                          if (paragraph.type == "Image")
-                          {
-                              image = paragraph.image;
-                          }
-                      }
-                  })
-                  .then(function(){
-                      if (image != null)
-                      {
-                          // load every properties and relationships
-                          ctx.load(image);
-                          return ctx.sync();
-                      }
-                  })
-                  .then(function(){
-                      if (image != null)
-                      {                   
-                          console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
-                          console.log("description: " + image.description);                   
-                          console.log("hyperlink: " + image.hyperlink);
-                      }
-                  });
-          });
-          ```
-          ```javascript
-          var image = null;
-
-          OneNote.run(function(ctx){
-              // Get the current outline.
-              var outline = ctx.application.getActiveOutline();
-
               // Queue a command to load paragraphs and their types.
-              outline.load("paragraphs")
-              return ctx.sync().
-                  then(function(){
-                      for (var i=0; i < outline.paragraphs.items.length; i++)
-                      {
-                          var paragraph = outline.paragraphs.items[i];
-                          if (paragraph.type == "Image")
-                          {
-                              image = paragraph.image;
-                          }
-                      }
-                      if (image != null)
-                      {
-                         image.load("ocrData");
-                      }
-                      return ctx.sync();
-                  })
-                  .then(function(){
-                      console.log(image.ocrData);
-                  });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              outline.load("paragraphs/type")
+              await context.sync();
+
+              for (var i=0; i < outline.paragraphs.items.length; i++) {
+                  var paragraph = outline.paragraphs.items[i];
+                  if (paragraph.type == "Image")
+                  {
+                      image = paragraph.image;
+                  }
+              }
+
+              if (image != null) {
+                  // Load all properties and relationships.
+                  image.load(["id", "width", "height", "description", "hyperlink"]);
+                  await context.sync();
+              }
+
+              if (image != null) {                   
+                  console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
+                  console.log("description: " + image.description);                   
+                  console.log("hyperlink: " + image.hyperlink);
               }
           });
-          ```
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current outline.         
-              var outline = ctx.application.getActiveOutline();
-              var searchedParagraph = null;
-              
-              // Queue a command to load paragraphs and their types. 
-              outline.load("paragraphs/type")
-              return ctx.sync().
-                  then(function() {
-                      for (var i=0; i < outline.paragraphs.items.length; i++)
-                      {
-                          var paragraph = outline.paragraphs.items[i];
-                          if (paragraph.type == "Image")
-                          {
-                              searchedParagraph = paragraph;
-                              break;
-                          }
-                      }
-                  })
-                  .then(function() {
-                      if (searchedParagraph != null)
-                      {
-                          // load every properties and relationships
-                          searchedParagraph.image.load('paragraph');
-                          return ctx.sync();
-                      }
-                  })
-                  .then(function() {
-                      if (searchedParagraph != null)
-                      {                   
-                          if (searchedParagraph.id != searchedParagraph.image.paragraph.id)
-                          {
-                              console.log("id must match");
-                          }
-                      }
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
           ```
   - name: load(propertyNamesAndPaths)
     uid: 'onenote!OneNote.Image#load:member(3)'

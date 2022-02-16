@@ -249,10 +249,10 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the first inline picture.
           var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
@@ -262,20 +262,13 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (firstPicture.isNullObject) {
-                  console.log('There are no inline pictures in this document.')
-              } else {
-                  console.log(firstPicture.altTextTitle);
-              }
-          });   
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (firstPicture.isNullObject) {
+              console.log('There are no inline pictures in this document.')
+          } else {
+              console.log(firstPicture.altTextTitle);
           }
-      });
+      }); 
       ```
     isPreview: false
     isDeprecated: false
@@ -294,10 +287,10 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```typescript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
-      Word.run(function (context) {
+      await Word.run(async (context) => {
           
           // Create a proxy object for the first inline picture.
           var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
@@ -307,20 +300,13 @@ methods:
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (firstPicture.isNullObject) {
-                  console.log('There are no inline pictures in this document.')
-              } else {
-                  console.log(firstPicture.altTextTitle);
-              }
-          });   
-      })
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          await context.sync();
+          if (firstPicture.isNullObject) {
+              console.log('There are no inline pictures in this document.')
+          } else {
+              console.log(firstPicture.altTextTitle);
           }
-      });
+      }); 
       ```
     isPreview: false
     isDeprecated: false

@@ -87,17 +87,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+          var column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
           column.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -117,19 +112,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
           var dataBodyRange = column.getDataBodyRange();
           dataBodyRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(dataBodyRange.address);
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(dataBodyRange.address);
       });
       ```
     isPreview: false
@@ -149,20 +140,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
           var headerRowRange = columns.getHeaderRowRange();
           headerRowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(headerRowRange.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(headerRowRange.address);
       });
       ```
     isPreview: false
@@ -182,20 +168,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
           var columnRange = columns.getRange();
           columnRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(columnRange.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(columnRange.address);
       });
       ```
     isPreview: false
@@ -215,20 +196,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var tableName = 'Table1';
-          var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
           var totalRowRange = columns.getTotalRowRange();
           totalRowRange.load('address');
-          return ctx.sync().then(function() {
-              console.log(totalRowRange.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(totalRowRange.address);
       });
       ```
     isPreview: false
@@ -280,19 +256,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
+          ```typescript
+          await Excel.run(async (context) => { 
               var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItem(0);
+              var column = context.workbook.tables.getItem(tableName).columns.getItem(0);
               column.load('index');
-              return ctx.sync().then(function() {
-                  console.log(column.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              
+              console.log(column.index);
           });
           ```
   - name: load(propertyNamesAndPaths)

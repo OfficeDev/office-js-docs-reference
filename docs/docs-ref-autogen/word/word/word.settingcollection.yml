@@ -71,11 +71,11 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Run a batch operation against the Word object model.
 
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue commands add a setting.
           var settings = context.document.settings;
@@ -86,29 +86,19 @@ methods:
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log(count.value);
+          await context.sync();
+          console.log(count.value);
 
-              // Queue a command to delete all settings.
-              settings.deleteAll();
+          // Queue a command to delete all settings.
+          settings.deleteAll();
 
-              // Queue a command to get the new count of settings.
-              count = settings.getCount();
-          })
+          // Queue a command to get the new count of settings.
+          count = settings.getCount();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          .then(context.sync)
-          .then(function () {
-              console.log(count.value);
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log(count.value);
       });
 
       ```
@@ -132,11 +122,11 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Run a batch operation against the Word object model.
 
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue commands add a setting.
           var settings = context.document.settings;
@@ -147,29 +137,19 @@ methods:
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log(count.value);
+          await context.sync();
+          console.log(count.value);
 
-              // Queue a command to delete all settings.
-              settings.deleteAll();
+          // Queue a command to delete all settings.
+          settings.deleteAll();
 
-              // Queue a command to get the new count of settings.
-              count = settings.getCount();
-          })
+          // Queue a command to get the new count of settings.
+          count = settings.getCount();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          .then(context.sync)
-          .then(function () {
-              console.log(count.value);
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log(count.value);
       });
 
       ```
@@ -193,11 +173,11 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Run a batch operation against the Word object model.
 
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue commands add a setting.
           var settings = context.document.settings;
@@ -211,16 +191,8 @@ methods:
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log(JSON.stringify(startMonth.value));
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log(JSON.stringify(startMonth.value));
       });
 
       ```
@@ -248,11 +220,11 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Run a batch operation against the Word object model.
 
-      Word.run(function (context) {
+      await Word.run(async (context) => {
 
           // Queue commands add a setting.
           var settings = context.document.settings;
@@ -268,27 +240,19 @@ methods:
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
-             return context.sync().then(function () {
-                 if (startMonth.isNullObject) {
-                     console.log("No such setting.");
-                 }
-                 else {
-                     console.log(JSON.stringify(startMonth.value));
-                 }
-                  if (endMonth.isNullObject) {
-                     console.log("No such setting.");
-                 }
-                 else {
-                     console.log(JSON.stringify(endMonth.value));
-                 }
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+              if (startMonth.isNullObject) {
+                  console.log("No such setting.");
+              }
+              else {
+                  console.log(JSON.stringify(startMonth.value));
+              }
+              if (endMonth.isNullObject) {
+                  console.log("No such setting.");
+              }
+              else {
+                  console.log(JSON.stringify(endMonth.value));
+              }
       });
 
       ```

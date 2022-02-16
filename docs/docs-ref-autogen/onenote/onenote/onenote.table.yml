@@ -108,34 +108,27 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
+          context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, append a column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      table.appendColumn(["cell0", "cell1"]);
-                  }
+          await context.sync();
+          var paragraphs = outline.paragraphs;
+          
+          // For each table, append a column.
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
+              if (paragraph.type == "Table") {
+                  var table = paragraph.table;
+                  table.appendColumn(["cell0", "cell1"]);
               }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -161,34 +154,28 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
+          context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, append a column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var row = table.appendRow(["cell0", "cell1"]);
-                  }
+          await context.sync();
+
+          var paragraphs = outline.paragraphs;
+          
+          // For each table, append a column.
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
+              if (paragraph.type == "Table") {
+                  var table = paragraph.table;
+                  var row = table.appendRow(["cell0", "cell1"]);
               }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -227,34 +214,28 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
+          context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, get a cell in the second row and third column.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
-                  }
+          await context.sync();
+
+          var paragraphs = outline.paragraphs;
+          
+          // For each table, get a cell in the second row and third column.
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
+              if (paragraph.type == "Table") {
+                  var table = paragraph.table;
+                  var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
               }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -283,34 +264,28 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
+          context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, insert a column at index two.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      table.insertColumn(2, ["cell0", "cell1"]);
-                  }
+          await context.sync();
+
+          var paragraphs = outline.paragraphs;
+          
+          // For each table, insert a column at index two.
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
+              if (paragraph.type == "Table") {
+                  var table = paragraph.table;
+                  table.insertColumn(2, ["cell0", "cell1"]);
               }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -341,34 +316,28 @@ methods:
 
       #### Examples
 
-      ```javascript
-      OneNote.run(function(ctx) {
-          var app = ctx.application;
+      ```typescript
+      await OneNote.run(async (context) => {
+          var app = context.application;
           var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
-          ctx.load(outline, "paragraphs, paragraphs/type");
+          context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
-          return ctx.sync().then(function () {
-              var paragraphs = outline.paragraphs;
-              
-              // for each table, insert a row at index two.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
-                  if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var row = table.insertRow(2, ["cell0", "cell1"]);
-                  }
+          await context.sync()
+
+          var paragraphs = outline.paragraphs;
+          
+          // For each table, insert a row at index two.
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
+              if (paragraph.type == "Table") {
+                  var table = paragraph.table;
+                  var row = table.insertRow(2, ["cell0", "cell1"]);
               }
-              return ctx.sync();
-          })
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
+          await context.sync();
       });
       ```
     isPreview: false
@@ -429,77 +398,32 @@ methods:
 
           #### Examples
 
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
+          ```typescript
+          await OneNote.run(async (context) => {
+              var app = context.application;
               var outline = app.getActiveOutline();
               
               // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs/type");
+              context.load(outline, "paragraphs/type");
               
               // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // For each table, log properties.
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          ctx.load(table);
-                          return ctx.sync().then(function() {
-                              console.log("Table Id: " + table.id);
-                              console.log("Row Count: " + table.rowCount);
-                              console.log("Column Count: " + table.columnCount);
-                              return ctx.sync();
-                          });
-                      }
-                  }
-              });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              var outline = app.getActiveOutline();
+              await context.sync();
+
+              var paragraphs = outline.paragraphs;
               
-              // Queue a command to load outline.paragraphs and their types.
-              ctx.load(outline, "paragraphs, paragraphs/type");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync().then(function () {
-                  var paragraphs = outline.paragraphs;
-                  
-                  // for each table, log its paragraph id.
-                  for (var i = 0; i < paragraphs.items.length; i++) {
-                      var paragraph = paragraphs.items[i];
-                      if (paragraph.type == "Table") {
-                          var table = paragraph.table;
-                          ctx.load(table, "paragraph/id, rows/id");
-                          return ctx.sync().then(function() {
-                              console.log("Paragraph Id: " + table.paragraph.id);
-                              var rows = table.rows;
-                              
-                              // for each rows in the table, log row index and id.
-                              for (var i = 0; i < rows.items.length; i++) {
-                                  console.log("Row " + i + " Id: " + rows.items[i].id);
-                              }
-                              return ctx.sync();
-                          });
-                      }
+              // For each table, log properties.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      context.load(table);
+                      await context.sync();
+
+                      console.log("Table Id: " + table.id);
+                      console.log("Row Count: " + table.rowCount);
+                      console.log("Column Count: " + table.columnCount);
+                      await context.sync();
                   }
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
           });
           ```

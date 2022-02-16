@@ -123,15 +123,10 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) {
-          ctx.workbook.application.calculate('Full');
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+      ```typescript
+      await Excel.run(async (context) => {
+          context.workbook.application.calculate('Full');
+          await context.sync();
       });
       ```
     isPreview: false
@@ -187,18 +182,13 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) {
-              var application = ctx.workbook.application;
+          ```typescript
+          await Excel.run(async (context) => {
+              var application = context.workbook.application;
               application.load('calculationMode');
-              return ctx.sync().then(function() {
-                  console.log(application.calculationMode);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+
+              console.log(application.calculationMode);
           });
           ```
   - name: load(propertyNamesAndPaths)

@@ -58,45 +58,14 @@ methods:
 
       #### Examples
 
-      ```javascript
-      // Create a table binding to monitor data changes in the table. 
-      // When data is changed, the background color of the table will be changed to orange.
-      function addEventHandler() {
-          // Create Table1
-          Excel.run(function (ctx) { 
-              ctx.workbook.tables.add("Sheet1!A1:C4", true);
-              return ctx.sync().then(function() {
-                      console.log("My Diet Data Inserted!");
-              })
-              .catch(function (error) {
-                      console.log(JSON.stringify(error));
-              });
-          });
-          //Create a new table binding for Table1
-          Office.context.document.bindings.addFromNamedItemAsync(
-              "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
-              if (asyncResult.status == "failed") {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-              }
-              else {
-                  // If succeeded, then add event handler to the table binding.
-                  Office.select("bindings#myBinding").addHandlerAsync(
-                      Office.EventType.BindingDataChanged, onBindingDataChanged);
-              }
-          });
-      }
-          
-      // when data in the table is changed, this event will be triggered.
-      function onBindingDataChanged(eventArgs) {
-          Excel.run(function (ctx) { 
-              // highlight the table in orange to indicate data has been changed.
-              ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-              return ctx.sync().then(function() {
-                      console.log("The value in this table got changed!");
-              })
-              .catch(function (error) {
-                      console.log(JSON.stringify(error));
-              });
+      ```typescript
+      async function onBindingDataChanged(eventArgs) {
+          await Excel.run(async (context) => { 
+              // Highlight the table related to the binding in orange to indicate data has been changed.
+              context.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+              await context.sync();
+              
+              console.log("The value in this table got changed!");
           });
       }
       ```
@@ -121,19 +90,14 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
-          var lastPosition = ctx.workbook.bindings.count - 1;
-          var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+      ```typescript
+      await Excel.run(async (context) => { 
+          var lastPosition = context.workbook.bindings.count - 1;
+          var binding = context.workbook.bindings.getItemAt(lastPosition);
           binding.load('type')
-          return ctx.sync().then(function() {
-                  console.log(binding.type); 
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          console.log(binding.type);
       });
       ```
     isPreview: false
@@ -193,35 +157,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var bindings = ctx.workbook.bindings;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var bindings = context.workbook.bindings;
               bindings.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < bindings.items.length; i++)
-                  {
-                      console.log(bindings.items[i].id);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Get the number of bindings
-          Excel.run(function (ctx) { 
-              var bindings = ctx.workbook.bindings;
-              bindings.load('count');
-              return ctx.sync().then(function() {
-                  console.log("Bindings: Count= " + bindings.count);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              await context.sync();
+
+              for (var i = 0; i < bindings.items.length; i++) {
+                  console.log(bindings.items[i].id);
               }
           });
           ```

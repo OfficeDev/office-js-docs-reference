@@ -74,18 +74,13 @@ properties:
 
       #### Examples
 
-      ```javascript
-      // Set worksheet position. 
-      Excel.run(function (ctx) { 
+      ```typescript
+      // Set worksheet position.
+      await Excel.run(async (context) => { 
           var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.position = 2;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -104,32 +99,13 @@ properties:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function(ctx) {
-        // get a reference to Sheet1
-        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-
-        // Protect inserting or deleting rows in Sheet1
-        sheet.protection.protect({
-          allowInsertRows: false,
-          allowDeleteRows: false
-        });
-
-        return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-      ```javascript
+      ```typescript
       // Unprotecting a worksheet with unprotect() will remove all 
       // WorksheetProtectionOptions options applied to a worksheet.
       // To remove only a subset of WorksheetProtectionOptions use the 
       // protect() method and set the options you wish to remove to true.
-      Excel.run(function(ctx) {
-        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+      await Excel.run(async (context) => {
+        var sheet = context.workbook.worksheets.getItem("Sheet1");
         sheet.protection.protect({
           allowInsertRows: false, // Protect row insertion
           allowDeleteRows: true // Unprotect row deletion
@@ -179,17 +155,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.activate();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -212,17 +183,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.delete();
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync(); 
       });
       ```
     isPreview: false
@@ -244,20 +210,16 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
           var cell = worksheet.getCell(0,0);
           cell.load('address');
-          return ctx.sync().then(function() {
-              console.log(cell.address);
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+
+          console.log(cell.address);
       });
       ```
     isPreview: false
@@ -284,39 +246,17 @@ methods:
 
       #### Examples
 
-      ```javascript
-      // Below example uses range address to get the range object.
-      Excel.run(function (ctx) { 
+      ```typescript
+      // Use the range address to get the range object.
+      await Excel.run(async (context) => { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
-          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
           var range = worksheet.getRange(rangeAddress);
           range.load('cellCount');
-          return ctx.sync().then(function() {
-              console.log(range.cellCount);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-      ```javascript
-      // Below example uses a named-range to get the range object.
-      Excel.run(function (ctx) { 
-          var sheetName = "Sheet1";
-          var rangeName = 'MyRange';
-          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
-          range.load('address');
-          return ctx.sync().then(function() {
-              console.log(range.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(range.cellCount);
       });
       ```
     isPreview: false
@@ -344,20 +284,15 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           var usedRange = worksheet.getUsedRange();
           usedRange.load('address');
-          return ctx.sync().then(function() {
-                  console.log(usedRange.address);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(usedRange.address);
       });
       ```
     isPreview: false
@@ -415,20 +350,15 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // Get worksheet properties based on sheet name.
-          Excel.run(function (ctx) { 
+          await Excel.run(async (context) => { 
               var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+              var worksheet = context.workbook.worksheets.getItem(wSheetName);
               worksheet.load('position')
-              return ctx.sync().then(function() {
-                      console.log(worksheet.position);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+              await context.sync();
+              
+              console.log(worksheet.position);
           });
           ```
   - name: load(propertyNamesAndPaths)

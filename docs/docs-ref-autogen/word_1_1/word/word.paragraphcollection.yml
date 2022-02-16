@@ -63,12 +63,12 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```typescript
           // This example shows how to get the paragraphs in the Word document
           // along with their text and font size properties.
           // 
           // Run a batch operation against the Word object model.
-          Word.run(function (context) {
+          await Word.run(async (context) => {
 
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
@@ -80,16 +80,9 @@ methods:
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.
-              return context.sync().then(function () {
+              await context.sync();
 
               // Insert code that works with the paragraphs loaded by context.load().
-              })
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
           });
           ```
   - name: load(propertyNames)

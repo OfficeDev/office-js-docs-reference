@@ -48,19 +48,14 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) { 
+      ```typescript
+      await Excel.run(async (context) => { 
           var wSheetName = 'Sample Name';
-          var worksheet = ctx.workbook.worksheets.add(wSheetName);
+          var worksheet = context.workbook.worksheets.add(wSheetName);
           worksheet.load('name');
-          return ctx.sync().then(function() {
-              console.log(worksheet.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          
+          console.log(worksheet.name);
       });
       ```
     isPreview: false
@@ -86,18 +81,12 @@ methods:
 
       #### Examples
 
-      ```javascript
-      Excel.run(function (ctx) {  
-          var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+      ```typescript
+      await Excel.run(async (context) => {  
+          var activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
           activeWorksheet.load('name');
-          return ctx.sync().then(function() {
-                  console.log(activeWorksheet.name);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+          await context.sync();
+          console.log(activeWorksheet.name);
       });
       ```
     isPreview: false
@@ -316,21 +305,14 @@ methods:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var worksheets = ctx.workbook.worksheets;
+          ```typescript
+          await Excel.run(async (context) => { 
+              var worksheets = context.workbook.worksheets;
               worksheets.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < worksheets.items.length; i++)
-                  {
-                      console.log(worksheets.items[i].name);
-                      console.log(worksheets.items[i].index);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              await context.sync();
+              
+              for (var i = 0; i < worksheets.items.length; i++) {
+                  console.log(worksheets.items[i].name);
               }
           });
           ```
