@@ -17,6 +17,24 @@ properties:
     remarks: >-
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

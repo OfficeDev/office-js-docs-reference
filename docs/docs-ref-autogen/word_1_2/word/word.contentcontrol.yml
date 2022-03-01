@@ -342,13 +342,17 @@ methods:
     package: word!
     fullName: delete(keepContent)
     summary: 'Deletes the content control and its content. If keepContent is set to true, the content is not deleted.'
-    remarks: |-
+    remarks: >-
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
 
       #### Examples
 
+
       ```typescript
+
       // Run a batch operation against the Word object model.
+
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
@@ -374,6 +378,29 @@ methods:
               console.log('Content control cleared of contents.'); 
           }
       });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      await Word.run(async (context) => {
+        let contentControls = context.document.contentControls.getByTag("forTesting");
+        contentControls.load("items");
+        await context.sync();
+
+        if (contentControls.items.length === 0) {
+          console.log("There are no content controls in this document.");
+        } else {
+          console.log("Control to be deleted:");
+          console.log(contentControls.items[0]);
+          contentControls.items[0].delete(false);
+          await context.sync();
+        }
+      });
+
       ```
     isPreview: false
     isDeprecated: false
