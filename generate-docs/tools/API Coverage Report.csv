@@ -6146,7 +6146,7 @@ Office.File,getSliceAsync(sliceIndex,Method,Good,true
 Office.FileProperties,N/A,Class,Missing,false
 Office.FileProperties,url,Method,Poor,false
 Office.FileType,N/A,Class,Fine,false
-Office.FileType,Compressed,EnumField,Fine,false
+Office.FileType,Compressed,EnumField,Good,false
 Office.FileType,Pdf,EnumField,Fine,false
 Office.FileType,Text,EnumField,Fine,false
 Office.FilterType,N/A,Class,Fine,false

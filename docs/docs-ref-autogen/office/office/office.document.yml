@@ -1694,7 +1694,8 @@ methods:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+      <tr> <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
+      <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       #### Examples
@@ -1903,7 +1904,8 @@ methods:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+      <tr> <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
+      <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3394,7 +3396,8 @@ methods:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+      <tr> <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
+      <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
       #### Examples
@@ -3716,7 +3719,8 @@ methods:
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
-      <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+      <tr> <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
+      <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
