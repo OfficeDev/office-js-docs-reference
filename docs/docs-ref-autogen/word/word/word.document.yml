@@ -33,6 +33,31 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+      await Word.run(async (context) => {
+        const document = context.document;
+        document.load("changeTrackingMode");
+        await context.sync();
+
+        if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+          console.log("Only my changes are being tracked.");
+        } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+          console.log("Everyone's changes are being tracked.");
+        } else {
+          console.log("No changes are being tracked.");
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

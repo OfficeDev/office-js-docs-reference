@@ -11951,7 +11951,7 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text is bold.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
              * @beta
              */
             bold?: boolean;
@@ -11959,7 +11959,7 @@ export declare namespace Word {
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
              * @beta
              */
             hyperlink?: boolean;
@@ -11967,7 +11967,7 @@ export declare namespace Word {
              * Checks whether the range length is zero. Read-only.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
              * @beta
              */
             isEmpty?: boolean;
@@ -11975,7 +11975,7 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text is italicized.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
              * @beta
              */
             italic?: boolean;
@@ -11983,7 +11983,7 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text has a strikethrough.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
              * @beta
              */
             strikeThrough?: boolean;

@@ -1563,7 +1563,7 @@ Excel.ChartTrendlineType,logarithmic,EnumField,Missing,false
 Excel.ChartTrendlineType,movingAverage,EnumField,Missing,false
 Excel.ChartTrendlineType,polynomial,EnumField,Missing,false
 Excel.ChartTrendlineType,power,EnumField,Missing,false
-Excel.ChartType,N/A,Class,Fine,false
+Excel.ChartType,N/A,Class,Fine,true
 Excel.ChartType,_3DArea,EnumField,Missing,false
 Excel.ChartType,_3DAreaStacked,EnumField,Missing,false
 Excel.ChartType,_3DAreaStacked100,EnumField,Missing,false
@@ -5918,6 +5918,7 @@ Office.AddinCommands.Event,source,Method,Good,false
 Office.AddinCommands.Event,completed(options),Method,Fine,true
 Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
 Office.AddinCommands.EventCompletedOptions,allowEvent,Method,Good,false
+Office.AddinCommands.EventCompletedOptions,errorMessage,Method,Good,false
 Office.AddinCommands.Source,N/A,Class,Fine,false
 Office.AddinCommands.Source,id,Method,Good,true
 Office.AsyncContextOptions,N/A,Class,Fine,false
@@ -9350,11 +9351,11 @@ Word.CellPaddingLocation,bottom,EnumField,Missing,false
 Word.CellPaddingLocation,left,EnumField,Missing,false
 Word.CellPaddingLocation,right,EnumField,Missing,false
 Word.CellPaddingLocation,top,EnumField,Missing,false
-Word.ChangeTrackingMode,N/A,Class,Good,false
+Word.ChangeTrackingMode,N/A,Class,Good,true
 Word.ChangeTrackingMode,off,EnumField,Poor,false
 Word.ChangeTrackingMode,trackAll,EnumField,Fine,false
 Word.ChangeTrackingMode,trackMineOnly,EnumField,Fine,false
-Word.ChangeTrackingVersion,N/A,Class,Good,false
+Word.ChangeTrackingVersion,N/A,Class,Good,true
 Word.ChangeTrackingVersion,current,EnumField,Missing,false
 Word.ChangeTrackingVersion,original,EnumField,Missing,false
 Word.Comment,N/A,Class,Good,false
@@ -10053,7 +10054,7 @@ Word.Range,getNextTextRangeOrNullObject(endingMarks,Method,Good,false
 Word.Range,getOoxml(),Method,Good,true
 Word.Range,getRange(rangeLocation),Method,Good,false
 Word.Range,getRange(rangeLocationString),Method,Good,false
-Word.Range,getReviewedText(changeTrackingVersion),Method,Good,false
+Word.Range,getReviewedText(changeTrackingVersion),Method,Good,true
 Word.Range,getReviewedText(changeTrackingVersionString),Method,Good,false
 Word.Range,getTextRanges(endingMarks,Method,Good,true
 Word.Range,insertBookmark(name),Method,Good,false
