@@ -1061,6 +1061,17 @@ export declare namespace Office {
              * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
              */
             allowEvent: boolean;
+
+            /**
+             * A string value. When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
+             * this value sets the error message that will be displayed to the user. For an example, refer to
+             * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+             * 
+             * [Api set: Mailbox preview]
+             *
+             * @beta
+             */
+            errorMessage?: string;
         }
 
         /**

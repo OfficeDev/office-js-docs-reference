@@ -1102,6 +1102,32 @@
                         "startIndex": 1,
                         "endIndex": 2
                       }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "office!Office.AddinCommands.EventCompletedOptions#errorMessage:member",
+                      "docComment": "/**\n * A string value. When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`, this value sets the error message that will be displayed to the user. For an example, refer to {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "errorMessage?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Beta",
+                      "name": "errorMessage",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
                     }
                   ],
                   "extendsTokenRanges": []

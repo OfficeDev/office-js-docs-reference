@@ -733,6 +733,28 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+      await Word.run(async (context) => {
+        const range = context.document.getSelection();
+        let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+        let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+        await context.sync();
+
+        console.log(`Reviewed text (before):\n${before.value}`);
+        console.log(`Reviewed text (after):\n${after.value}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
