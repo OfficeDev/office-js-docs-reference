@@ -22583,7 +22583,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentContentRangeLoadOptions#bold:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text is bold.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text is bold.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22609,7 +22609,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentContentRangeLoadOptions#hyperlink:member",
-                      "docComment": "/**\n * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22635,7 +22635,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentContentRangeLoadOptions#isEmpty:member",
-                      "docComment": "/**\n * Checks whether the range length is zero. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Checks whether the range length is zero. Read-only.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22661,7 +22661,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentContentRangeLoadOptions#italic:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text is italicized.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text is italicized.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22687,7 +22687,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CommentContentRangeLoadOptions#strikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text has a strikethrough.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                      "docComment": "/**\n * Gets or sets a value that indicates whether the comment text has a strikethrough.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

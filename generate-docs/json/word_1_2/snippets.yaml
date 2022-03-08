@@ -448,6 +448,39 @@
         await context.sync();
         console.log("Body contents: " + body.text);
     });
+'Word.ChangeTrackingMode:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const document = context.document;
+      document.load("changeTrackingMode");
+      await context.sync();
+
+      if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+        console.log("Only my changes are being tracked.");
+      } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+        console.log("Everyone's changes are being tracked.");
+      } else {
+        console.log("No changes are being tracked.");
+      }
+    });
+'Word.ChangeTrackingVersion:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const range = context.document.getSelection();
+      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+      await context.sync();
+
+      console.log(`Reviewed text (before):\n${before.value}`);
+      console.log(`Reviewed text (after):\n${after.value}`);
+    });
 'Word.Comment#content:member':
   - >-
     // Link to full sample:
@@ -1246,6 +1279,24 @@
         await context.sync();
         for (var i = 0; i < properties.items.length; i++)
             console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+    });
+'Word.Document#changeTrackingMode:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const document = context.document;
+      document.load("changeTrackingMode");
+      await context.sync();
+
+      if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+        console.log("Only my changes are being tracked.");
+      } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+        console.log("Everyone's changes are being tracked.");
+      } else {
+        console.log("No changes are being tracked.");
+      }
     });
 'Word.Document#getSelection:member(1)':
   - |-
@@ -2142,6 +2193,21 @@
         // and return a promise to indicate task completion.
         await context.sync();
         console.log('The OOXML read from the document was:  ' + ooxml.value);
+    });
+'Word.Range#getReviewedText:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const range = context.document.getSelection();
+      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+      await context.sync();
+
+      console.log(`Reviewed text (before):\n${before.value}`);
+      console.log(`Reviewed text (after):\n${after.value}`);
     });
 'Word.Range#getTextRanges:member(1)':
   - >-
