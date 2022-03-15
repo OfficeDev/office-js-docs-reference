@@ -10181,7 +10181,7 @@ Word.SettingCollection,load(propertyNamesAndPaths),Method,Good,false
 Word.SettingCollection,toJSON(),Method,Good,false
 Word.SettingCollection,track(),Method,Good,false
 Word.SettingCollection,untrack(),Method,Good,false
-Word.Style,N/A,Class,Fine,false
+Word.Style,N/A,Class,Fine,true
 Word.Style,bibliography,EnumField,Missing,false
 Word.Style,bookTitle,EnumField,Missing,false
 Word.Style,caption,EnumField,Missing,false

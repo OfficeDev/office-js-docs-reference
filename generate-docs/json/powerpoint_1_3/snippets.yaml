@@ -72,7 +72,7 @@
 'PowerPoint.ShapeCollection#getItemAt:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       const slide = context.presentation.slides.getItemAt(0);
@@ -91,7 +91,7 @@
 'PowerPoint.Slide#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       const slides = context.presentation.slides;
@@ -114,7 +114,7 @@
 'PowerPoint.SlideCollection#add:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/add-slides.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/add-slides.yaml
 
     const chosenMaster = $("#master-id").val() as string;
 
@@ -131,7 +131,7 @@
 'PowerPoint.SlideCollection#getItemAt:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       let selectedSlideIndex = await getSelectedSlideIndex();
@@ -154,7 +154,7 @@
 'PowerPoint.TagCollection#add:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       const slide = context.presentation.slides.getItemAt(0);
@@ -175,7 +175,7 @@
 'PowerPoint.TagCollection#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function (context) {
       let presentationTags = context.presentation.tags;
@@ -189,7 +189,7 @@
 'PowerPoint.TagCollection#getItem:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       let selectedSlideIndex = await getSelectedSlideIndex();

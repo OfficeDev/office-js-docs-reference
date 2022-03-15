@@ -976,7 +976,7 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected: ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.ContentControl#search:member(1)':
@@ -1243,7 +1243,7 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected: ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.CustomPropertyCollection#add:member(1)':
@@ -2753,6 +2753,22 @@
             else {
                 console.log(JSON.stringify(endMonth.value));
             }
+    });
+'Word.Style:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+    await Word.run(async (context) => {
+      let sentence = context.document.body.insertParagraph(
+        "To be or not to be",
+        "End"
+      );
+
+      // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use: range.style = "name of your style";
+      sentence.styleBuiltIn = Word.Style.intenseReference;
+
+      await context.sync();
     });
 'Word.Table#getCell:member(1)':
   - >-
