@@ -50,7 +50,7 @@ properties:
     uid: 'office!Office.Error#message:member'
     package: office!
     fullName: message
-    summary: Gets the name of the error.
+    summary: Gets a detailed description of the error.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -83,7 +83,7 @@ properties:
     uid: 'office!Office.Error#name:member'
     package: office!
     fullName: name
-    summary: Gets a detailed description of the error.
+    summary: Gets the name of the error.
     remarks: ''
     isPreview: false
     isDeprecated: false
