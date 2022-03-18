@@ -896,11 +896,11 @@ export declare namespace Office {
          */
         code: number;
         /**
-         * Gets the name of the error.
+         * Gets a detailed description of the error.
          */
         message: string;
         /**
-         * Gets a detailed description of the error.
+         * Gets the name of the error.
          */
         name: string;
     }

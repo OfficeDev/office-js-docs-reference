@@ -4299,7 +4299,7 @@ Excel.Range,getColumn(column),Method,Good,true
 Excel.Range,getColumnProperties(columnPropertiesLoadOptions),Method,Good,false
 Excel.Range,getColumnsAfter(count),Method,Good,false
 Excel.Range,getColumnsBefore(count),Method,Good,false
-Excel.Range,getDependents(),Method,Good,false
+Excel.Range,getDependents(),Method,Good,true
 Excel.Range,getDirectDependents(),Method,Good,true
 Excel.Range,getDirectPrecedents(),Method,Good,true
 Excel.Range,getEntireColumn(),Method,Good,true
