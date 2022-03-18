@@ -12183,7 +12183,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Error#message:member",
-                  "docComment": "/**\n * Gets the name of the error.\n */\n",
+                  "docComment": "/**\n * Gets a detailed description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12209,7 +12209,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Error#name:member",
-                  "docComment": "/**\n * Gets a detailed description of the error.\n */\n",
+                  "docComment": "/**\n * Gets the name of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
