@@ -321,7 +321,7 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-      - - name: Office Add-in manifest reference
+      - name: Office Add-in manifest reference
           items:
             - name: AllowSnapshot
               href: manifest/allowsnapshot.md
