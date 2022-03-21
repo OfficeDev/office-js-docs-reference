@@ -1,4 +1,5 @@
 - name: Manifest
+  href: ../../manifest/manifest.md
   items:
   - name: AllowSnapshot
     href: ../../manifest/allowsnapshot.md

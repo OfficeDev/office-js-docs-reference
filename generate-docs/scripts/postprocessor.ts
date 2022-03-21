@@ -11,6 +11,7 @@ class Toc {
     
     items: [{
         name: string,
+        href?: string
         items: (ApplicationTocNode | ManifestItem)[]
     }]
 }
@@ -403,7 +404,6 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     
     // Add manifest TOC
     let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
-    console.log(manifestYml[0]);
     newToc.items.push(manifestYml[0]);
     
     return newToc;
