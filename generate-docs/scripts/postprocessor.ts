@@ -36,7 +36,6 @@ interface ApplicationTocNode {
 
 interface ManifestTocNode {
     name: string,
-    href: string,
     items: [
         {
             name: string,
@@ -97,7 +96,7 @@ tryCatch(async () => {
     });
 
     // fix all the individual TOC files
-    globalToc.items[0].items[0].href = "../overview/overview.md"; // Stay within a moniker
+    (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
     const hostVersionMap = [{host: "excel", versions: 15}, /*not including online*/

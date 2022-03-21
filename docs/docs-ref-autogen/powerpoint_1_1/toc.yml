@@ -257,8 +257,7 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-      - name: Office Add-in manifest reference
-        href: /javascript/api/manifest/manifest-overview.md
+      - name: Manifest
         items:
           - name: AllowSnapshot
             href: /javascript/api/manifest/allowsnapshot.md
