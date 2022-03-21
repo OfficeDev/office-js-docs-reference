@@ -11,7 +11,7 @@ class Toc {
     
     items: [{
         name: string,
-        items: ApplicationTocNode[]
+        items: (ApplicationTocNode | ManifestTocNode)[]
     }]
 }
 
@@ -28,6 +28,23 @@ interface ApplicationTocNode {
                     name: string,
                     uid?: string,
                     items: IMembers
+                }
+            ]
+        }
+    ]
+}
+
+interface ManifestTocNode {
+    name: string,
+    href: string,
+    items: [
+        {
+            name: string,
+            href?: string,
+            items?: [
+                {
+                    name: string,
+                    href: string
                 }
             ]
         }
@@ -225,7 +242,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     }
 
     origToc.items.forEach((rootItem, rootIndex) => {
-        rootItem.items.forEach((packageItem, packageIndex) => {
+        rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
             // fix host capitalization
             let packageName;
             if (packageItem.name === 'onenote') {
@@ -333,7 +350,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
-        rootItem.items.forEach((packageItem, packageIndex) => {
+        rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
             membersToMove.items = packageItem.items;
             if (packageItem.name.toLocaleLowerCase() === 'office') {
                 membersToMove.items.forEach((namespaceItem, namespaceIndex) => {                    
@@ -391,8 +408,9 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
     
     // Add manifest TOC
-    let manifestNode = (jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString()) as ApplicationTocNode);
+    let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
+    let manifestNode = manifestYml[0] as ManifestTocNode;
     newToc.items[0].items.push(manifestNode);
-
+    
     return newToc;
 }

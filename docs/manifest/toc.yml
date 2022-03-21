@@ -1,4 +1,5 @@
 - name: Office Add-in manifest reference
+  href: manifest/overview.md
   items:
   - name: AllowSnapshot
     href: manifest/allowsnapshot.md
