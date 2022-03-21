@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Tokens element
 
-Defines tokens that could be used in template URLs. For more information about the use of this element, see [Work with extended overrides of the manifest](../../develop/extended-overrides.md).
+Defines tokens that could be used in template URLs. For more information about the use of this element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
 
 **Add-in type:** Task pane
 

@@ -15,11 +15,11 @@ Defines a collection of controls to be added to the Office context menu. Applies
 
 - Taskpane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
 
 ## Attributes
 

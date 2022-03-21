@@ -20,14 +20,14 @@ Specifies the source code file for operations that an add-in exposes in one of t
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 The `FunctionFile` element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the `FunctionFile` element can be no more than 32 characters and is set to the value of the `id` attribute of a `Url` element in the `Resources` element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
 
 > [!NOTE]
-> When the add-in is configured to use a [shared runtime](../../develop/configure-your-add-in-to-use-a-shared-runtime.md), the functions in the code file run in the same JavaScript runtime (and share a common global namespace) as the JavaScript in the add-in's task pane (if any).
+> When the add-in is configured to use a [shared runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime), the functions in the code file run in the same JavaScript runtime (and share a common global namespace) as the JavaScript in the add-in's task pane (if any).
 >
-> The `FunctionFile` element and the associated code file also have a special role to play with [custom keyboard shortcuts](../../design/keyboard-shortcuts.md), which require a shared runtime.
+> The `FunctionFile` element and the associated code file also have a special role to play with [custom keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts), which require a shared runtime.
 
 The following is an example of the `FunctionFile` element.
 

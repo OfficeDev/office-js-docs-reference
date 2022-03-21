@@ -19,7 +19,7 @@ The **MobileFormFactor** element is defined in VersionOverrides schema 1.1. The 
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 ## Child elements
 

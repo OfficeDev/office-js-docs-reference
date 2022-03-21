@@ -17,11 +17,11 @@ Defines a control that executes an action or launches a task pane. A **Control**
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests.#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md) (For a task pane add-in.)
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) (For a task pane add-in.)
 - Some child elements may be associated with additional requirement sets.
 
 ## Attributes

@@ -15,11 +15,11 @@ Defines HTML page settings used by a custom function in Excel.
 
 - Taskpane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [CustomFunctionsRuntime 1.1](../requirement-sets/custom-functions-requirement-sets.md) 
+- [CustomFunctionsRuntime 1.1](/office/dev/add-ins/requirement-sets/custom-functions-requirement-sets) 
 
 ## Attributes
 

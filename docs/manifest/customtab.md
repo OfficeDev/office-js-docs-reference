@@ -20,15 +20,15 @@ Defines a custom tab for the Office ribbon. Add ribbon controls and groups for t
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 > [!NOTE]
 > Some child elements are not valid in the Mail schemas. See [Child elements](#child-elements).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md)
-- [AddinCommands 1.3](../requirement-sets/add-in-commands-requirement-sets.md). Required by some child elements. See [Child elements](#child-elements).
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets). Required by some child elements. See [Child elements](#child-elements).
 
 ## Attributes
 
@@ -56,7 +56,7 @@ Optional, but if not present there must be at least one **OfficeGroup** element.
 
 ### OfficeGroup
 
-Optional, but if not present there must be at least one **Group** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](../../design/built-in-button-integration.md#find-the-ids-of-controls-and-control-groups). The order of **Group** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
+Optional, but if not present there must be at least one **Group** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](/office/dev/add-ins/design/built-in-button-integration#find-the-ids-of-controls-and-control-groups). The order of **Group** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
 
 > [!IMPORTANT]
 > The **OfficeGroup** element is not available in Outlook. In PowerPoint, it is in preview for Mac and Windows; but is available for production add-ins in PowerPoint on the web.
@@ -67,11 +67,11 @@ Optional, but if not present there must be at least one **Group** element. Repre
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](../requirement-sets/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
 
 ### Label (Tab)
 
@@ -85,11 +85,11 @@ Required. The label of the custom tab. The **resid** attribute can be no more th
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
 
 ### InsertAfter
 
@@ -104,11 +104,11 @@ Optional. Specifies that the custom tab should be immediately after a specified 
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](../requirement-sets/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
 
 ### InsertBefore
 
@@ -123,11 +123,11 @@ Optional. Specifies that the custom tab should be immediately before a specified
 
 - Task pane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](../requirement-sets/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
 
 
 ## Examples

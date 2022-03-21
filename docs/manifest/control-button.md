@@ -41,17 +41,17 @@ Specifies the text for the button by means of its only attribute, **resid**, whi
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md) when the parent **VersionOverrides** is type Taskpane 1.0.
-- [Mailbox 1.3](../../reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **VersionOverrides** is type Mail 1.0.
-- [Mailbox 1.5](../../reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **VersionOverrides** is type Mail 1.1.
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) when the parent **VersionOverrides** is type Taskpane 1.0.
+- [Mailbox 1.3](/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3) when the parent **VersionOverrides** is type Mail 1.0.
+- [Mailbox 1.5](/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5) when the parent **VersionOverrides** is type Mail 1.1.
 
 ## Examples
 
-In the following example, the button executes a function. It's also configured to be disabled when the add-in launches. It can be programmatically enabled. For more information, see [Enable and Disable Add-in Commands](../../design/disable-add-in-commands.md).
+In the following example, the button executes a function. It's also configured to be disabled when the add-in launches. It can be programmatically enabled. For more information, see [Enable and Disable Add-in Commands](/office/dev/add-ins/design/disable-add-in-commands).
 
 ```xml
 <Control xsi:type="Button" id="Contoso.msgReadFunctionButton">

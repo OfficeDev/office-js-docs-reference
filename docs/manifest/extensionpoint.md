@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 ## Attributes
 
@@ -271,7 +271,7 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 This extension point puts buttons on the ribbon for the module extension.
 
 > [!IMPORTANT]
-> Registering [Mailbox](../objectmodel/preview-requirement-set/office.context.mailbox.md#events) and [Item](../objectmodel/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -309,12 +309,12 @@ This extension point puts buttons in the command surface for the mail read view 
 
 ### MobileOnlineMeetingCommandSurface
 
-This extension point puts a mode-appropriate toggle in the command surface for an appointment in the mobile form factor. A meeting organizer can create an online meeting. An attendee can subsequently join the online meeting. To learn more about this scenario, see the [Create an Outlook mobile add-in for an online-meeting provider](../../outlook/online-meeting.md) article.
+This extension point puts a mode-appropriate toggle in the command surface for an appointment in the mobile form factor. A meeting organizer can create an online meeting. An attendee can subsequently join the online meeting. To learn more about this scenario, see the [Create an Outlook mobile add-in for an online-meeting provider](/office/dev/add-ins/outlook/online-meeting) article.
 
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
 >
-> Registering [Mailbox](../objectmodel/preview-requirement-set/office.context.mailbox.md#events) and [Item](../objectmodel/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -354,10 +354,10 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 
 ### LaunchEvent
 
-This extension point enables an add-in to activate based on supported events in the desktop form factor. To learn more about this scenario and for the full list of supported events, see the [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md) article.
+This extension point enables an add-in to activate based on supported events in the desktop form factor. To learn more about this scenario and for the full list of supported events, see the [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch) article.
 
 > [!IMPORTANT]
-> Registering [Mailbox](../objectmodel/preview-requirement-set/office.context.mailbox.md#events) and [Item](../objectmodel/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -381,10 +381,10 @@ This extension point enables an add-in to activate based on supported events in 
 
 ### Events
 
-This extension point adds an event handler for a specified event. For more information about using this extension point, see [On-send feature for Outlook add-ins](../../outlook/outlook-on-send-addins.md).
+This extension point adds an event handler for a specified event. For more information about using this extension point, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
 
 > [!IMPORTANT]
-> Registering [Mailbox](../objectmodel/preview-requirement-set/office.context.mailbox.md#events) and [Item](../objectmodel/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
 
 | Element | Description  |
 |:-----|:-----|
@@ -403,12 +403,12 @@ This extension point adds an event handler for a specified event. For more infor
 This extension point adds a contextual add-in activation on a specified entity type.
 
 > [!IMPORTANT]
-> Registering [Mailbox](../objectmodel/preview-requirement-set/office.context.mailbox.md#events) and [Item](../objectmodel/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
 
 The containing [VersionOverrides](versionoverrides.md) element must have an `xsi:type` attribute value of `VersionOverridesV1_1`.
 
 > [!NOTE]
-> This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
+> This element type is available to [Outlook clients that support requirement sets 1.6 and later](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
 
 |  Element |  Description  |
 |:-----|:-----|

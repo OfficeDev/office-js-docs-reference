@@ -47,4 +47,4 @@ Specifies the minimum set of Office JavaScript API methods that must be supporte
 
 ## Remarks
 
-The **Methods** and **Method** elements aren't supported in mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md).
+The **Methods** and **Method** elements aren't supported in mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).

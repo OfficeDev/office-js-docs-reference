@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies source location and control settings that apply when your mail add-in is used on a phone.
 
 > [!IMPORTANT]
-> The `PhoneSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server) and Outlook 2013 on Windows. To support Outlook on Android and iOS, see [Add-ins for Outlook Mobile](../../outlook/outlook-mobile-addins.md).
+> The `PhoneSettings` element is available only in classic Outlook on the web (usually connected to older versions of on-premises Exchange server) and Outlook 2013 on Windows. To support Outlook on Android and iOS, see [Add-ins for Outlook Mobile](/office/dev/add-ins/outlook/outlook-mobile-addins).
 
 **Add-in type:** Mail
 

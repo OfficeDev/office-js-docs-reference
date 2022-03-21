@@ -15,7 +15,7 @@ Provides a way to override the value of a manifest setting depending on a specif
 
 An **Override** element that is inside of a **Runtime** element must be of type **RuntimeOverride**.
 
-There is no `overrideType` attribute for the **Override** element. The difference is determined by the parent element and the parent element's type. An **Override** element that is inside of a **Token** element whose `xsi:type` is `RequirementToken`, must be of type **RequirementTokenOverride**. An **Override** element inside any other parent element, or inside an **Override** element of type `LocaleToken`, must be of type **LocaleTokenOverride**. For more information about the use of this element when it's a child of a **Token** element, see [Work with extended overrides of the manifest](../../develop/extended-overrides.md).
+There is no `overrideType` attribute for the **Override** element. The difference is determined by the parent element and the parent element's type. An **Override** element that is inside of a **Token** element whose `xsi:type` is `RequirementToken`, must be of type **RequirementTokenOverride**. An **Override** element inside any other parent element, or inside an **Override** element of type `LocaleToken`, must be of type **LocaleTokenOverride**. For more information about the use of this element when it's a child of a **Token** element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
 
 Each type is described in separate sections later in this article.
 
@@ -89,8 +89,8 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ### See also
 
-- [Localization for Office Add-ins](../../develop/localization.md)
-- [Keyboard shortcuts](../../design/keyboard-shortcuts.md)
+- [Localization for Office Add-ins](/office/dev/add-ins/develop/localization)
+- [Keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts)
 
 ## Override element for `RequirementToken`
 
@@ -186,16 +186,16 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ### See also
 
-- [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md)
-- [Specify which Office versions and platforms can host your add-in](../../develop/specify-office-hosts-and-api-requirements.md#specify-which-office-versions-and-platforms-can-host-your-add-in)
-- [Keyboard shortcuts](../../design/keyboard-shortcuts.md)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
+- [Specify which Office versions and platforms can host your add-in](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements#specify-which-office-versions-and-platforms-can-host-your-add-in)
+- [Keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts)
 
 ## Override element for `Runtime`
 
 > [!IMPORTANT]
-> Support for this element was introduced in [Mailbox requirement set 1.10](../../reference/objectmodel/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](../../outlook/autolaunch.md). See [clients and platforms](../../reference/requirement-sets/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
+> Support for this element was introduced in [Mailbox requirement set 1.10](../../reference/objectmodel/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
 
-An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](../../reference/manifest/extensionpoint.md#launchevent) handlers.
+An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
 
 ```xml
 <Runtime resid="WebViewRuntime.Url">
@@ -239,4 +239,4 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ### See also
 
 - [Runtime](runtime.md)
-- [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md)
+- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)

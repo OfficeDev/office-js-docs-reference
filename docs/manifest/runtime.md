@@ -16,13 +16,13 @@ Configures your add-in to use a shared JavaScript runtime so that various compon
  - Task pane 1.0
  - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [SharedRuntime 1.1](../requirement-sets/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
+- [SharedRuntime 1.1](/office/dev/add-ins/requirement-sets/shared-runtime-requirement-sets) (Only when used in a task pane add-in.)
 
-[!include[Runtimes support](../includes/runtimes-note.md)]
+[!include[Runtimes support](/office/dev/add-ins/includes/runtimes-note)]
 
 ## Syntax
 
@@ -40,7 +40,7 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
-| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](../../reference/manifest/extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one `<Override>` element and it must be of type `javascript`.|
+| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers. **Important**: At present, you can only define one `<Override>` element and it must be of type `javascript`.|
 
 ## Attributes
 
@@ -52,5 +52,5 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 ## See also
 
 - [Runtimes](runtimes.md)
-- [Configure your Office Add-in to use a shared JavaScript runtime](../../develop/configure-your-add-in-to-use-a-shared-runtime.md)
-- [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md)
+- [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
+- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)

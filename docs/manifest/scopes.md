@@ -18,11 +18,11 @@ Contains permissions that the add-in needs to an external resource, such as Micr
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [IdentityAPI 1.3](../requirement-sets/identity-api-requirement-sets.md)
+- [IdentityAPI 1.3](/office/dev/add-ins/requirement-sets/identity-api-requirement-sets)
 
 **Scopes** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
 

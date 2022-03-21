@@ -15,16 +15,16 @@ Specifies whether a [Group](group.md), [Button control](control-button.md), [Men
 
 - Taskpane 1.0
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [Ribbon 1.2](../requirement-sets/add-in-commands-requirement-sets.md) (Required for Excel, PowerPoint, and Word.)
+- [Ribbon 1.2](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) (Required for Excel, PowerPoint, and Word.)
 
 If this element is omitted, the default is `false`. If it's used, it must be the *first* child element of its parent element.
 
 > [!NOTE]
-> For a full understanding of this element, please read [Implement an alternate UI experience when custom contextual tabs are not supported](../../design/contextual-tabs.md#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
+> For a full understanding of this element, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
 The purpose of this element is to create a fallback experience in an add-in that implements custom contextual tabs when the add-in is running on an application or platform that doesn't support custom contextual tabs. The essential strategy is that you duplicate some or all of the groups and controls from your custom contextual tab onto one or more custom core tabs (that is, *noncontextual* custom tabs). Then, to ensure that these groups and controls appear when custom contextual tabs are *not* supported, but do not appear when custom contextual tabs *are* supported, you add `<OverriddenByRibbonApi>true</OverriddenByRibbonApi>` as the first child element of the **Group**, **Control**, or menu **Item** elements. The effect of doing so is the following:
 

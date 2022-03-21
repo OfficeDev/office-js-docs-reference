@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 Specifies the runtime of your add-in. Child of the [`<Host>`](host.md) element.
 
 > [!NOTE]
-> When running in Office on Windows, an add-in that has a `<Runtimes>` element in its manifest does not necessarily run in the same webview control as it otherwise would. For more information about how the versions of Windows and Office determine what webview control is normally used, see [Browsers used by Office Add-ins](../../concepts/browsers-used-by-office-web-add-ins.md). If the conditions described there for using Microsoft Edge with WebView2 (Chromium-based) are met, then the add-in uses that browser whether or not it has a `<Runtimes>` element. However, when those conditions are not met, an add-in with a `<Runtimes>` element always uses Internet Explorer 11 regardless of the Windows or Microsoft 365 version.
+> When running in Office on Windows, an add-in that has a `<Runtimes>` element in its manifest does not necessarily run in the same webview control as it otherwise would. For more information about how the versions of Windows and Office determine what webview control is normally used, see [Browsers used by Office Add-ins](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins). If the conditions described there for using Microsoft Edge with WebView2 (Chromium-based) are met, then the add-in uses that browser whether or not it has a `<Runtimes>` element. However, when those conditions are not met, an add-in with a `<Runtimes>` element always uses Internet Explorer 11 regardless of the Windows or Microsoft 365 version.
 
 **Add-in type:** Task pane, Mail
 
@@ -20,13 +20,13 @@ Specifies the runtime of your add-in. Child of the [`<Host>`](host.md) element.
  - Task pane 1.0
  - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [SharedRuntime 1.1](../requirement-sets/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
+- [SharedRuntime 1.1](/office/dev/add-ins/requirement-sets/shared-runtime-requirement-sets) (Only when used in a task pane add-in.)
 
-[!include[Runtimes support](../includes/runtimes-note.md)]
+[!include[Runtimes support](/office/dev/add-ins/includes/runtimes-note)]
 
 ## Syntax
 
@@ -49,5 +49,5 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 ## See also
 
 - [Runtime](runtime.md)
-- [Configure your Office Add-in to use a shared JavaScript runtime](../../develop/configure-your-add-in-to-use-a-shared-runtime.md)
-- [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md)
+- [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
+- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)

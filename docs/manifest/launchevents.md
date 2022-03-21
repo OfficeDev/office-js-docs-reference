@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # LaunchEvents element
 
-Configures your add-in to activate based on supported events. Child of the [`<ExtensionPoint>`](extensionpoint.md) element. For more information, see [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md).
+Configures your add-in to activate based on supported events. Child of the [`<ExtensionPoint>`](extensionpoint.md) element. For more information, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
 
 **Add-in type:** Mail
 
@@ -15,7 +15,7 @@ Configures your add-in to activate based on supported events. Child of the [`<Ex
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 ## Syntax
 

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # LaunchEvent element
 
-Configures your add-in to activate based on supported events. Child of the [`<LaunchEvents>`](launchevents.md) element. For more information, see [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md).
+Configures your add-in to activate based on supported events. Child of the [`<LaunchEvents>`](launchevents.md) element. For more information, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
 
 **Add-in type:** Mail
 
@@ -15,7 +15,7 @@ Configures your add-in to activate based on supported events. Child of the [`<La
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 ## Syntax
 
@@ -38,7 +38,7 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
-|  **Type**  |  Yes  | Specifies a supported event type. For the set of supported types, see [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md#supported-events). |
+|  **Type**  |  Yes  | Specifies a supported event type. For the set of supported types, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events). |
 |  **FunctionName**  |  Yes  | Specifies the name of the JavaScript function to handle the event specified in the `Type` attribute. |
 |  **SendMode** (preview) |  No  | Used by `OnMessageSend` and `OnAppointmentSend` events. Specifies the options available to the user if your add-in stops an item from being sent or if the add-in is unavailable. If the **SendMode** property isn't included, the `SoftBlock` option is set by default. For available options, refer to [Available SendMode options](#available-sendmode-options-preview). |
 
@@ -55,5 +55,5 @@ When you include the `OnMessageSend` or `OnAppointmentSend` event in the manifes
 ## See also
 
 - [LaunchEvents](launchevents.md)
-- [Configure your Outlook add-in for event-based activation](../../outlook/autolaunch.md#supported-events)
-- [Use Smart Alerts and the OnMessageSend event in your Outlook add-in](../../outlook/smart-alerts-onmessagesend-walkthrough.md)
+- [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events)
+- [Use Smart Alerts and the OnMessageSend event in your Outlook add-in](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)

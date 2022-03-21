@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Specifies backwards compatibility with an equivalent COM add-in, XLL, or both.
 
-[!INCLUDE [Support note for equivalent add-ins feature](../includes/equivalent-add-in-support-note.md)]
+[!INCLUDE [Support note for equivalent add-ins feature](/office/dev/add-ins/includes/equivalent-add-in-support-note)]
 
 **Add-in type:** Task pane, Mail, Custom function
 
@@ -18,7 +18,7 @@ Specifies backwards compatibility with an equivalent COM add-in, XLL, or both.
 - Task pane 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 ## Syntax
 
@@ -38,5 +38,5 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 
 ## See also
 
-- [Make your custom functions compatible with XLL user-defined functions](../../excel/make-custom-functions-compatible-with-xll-udf.md)
-- [Make your Office Add-in compatible with an existing COM add-in](../../develop/make-office-add-in-compatible-with-existing-com-add-in.md)
+- [Make your custom functions compatible with XLL user-defined functions](/office/dev/add-ins/excel/make-custom-functions-compatible-with-xll-udf)
+- [Make your Office Add-in compatible with an existing COM add-in](/office/dev/add-ins/develop/make-office-add-in-compatible-with-existing-com-add-in)

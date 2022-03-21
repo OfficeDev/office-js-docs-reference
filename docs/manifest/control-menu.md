@@ -45,17 +45,17 @@ Specifies the text for the menu name by means of its only attribute, **resid**, 
 - Mail 1.0
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](../../develop/add-in-manifests.md#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/add-in-commands-requirement-sets.md) when the parent **VersionOverrides** is type Taskpane 1.0.
-- [Mailbox 1.3](../../reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **VersionOverrides** is type Mail 1.0.
-- [Mailbox 1.5](../../reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **VersionOverrides** is type Mail 1.1.
+- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) when the parent **VersionOverrides** is type Taskpane 1.0.
+- [Mailbox 1.3](/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3) when the parent **VersionOverrides** is type Mail 1.0.
+- [Mailbox 1.5](/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5) when the parent **VersionOverrides** is type Mail 1.1.
 
 ## Examples
 
-In the following example, the menu has two items. The first displays a task pane. The second executes a function. The menu has been configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](../../design/contextual-tabs.md#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
+In the following example, the menu has two items. The first displays a task pane. The second executes a function. The menu has been configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
 ```xml
 <Control xsi:type="Menu" id="Contoso.TestMenu2">
@@ -108,7 +108,7 @@ In the following example, the menu has two items. The first displays a task pane
 
 ```
 
-In the following example, the menu's second item is configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](../../design/contextual-tabs.md#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
+In the following example, the menu's second item is configured to *not* be visible when the add-in is running on a platform that supports contextual tabs. For more information, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
 ```xml
 <Control xsi:type="Menu" id="Contoso.msgReadMenuButton">
