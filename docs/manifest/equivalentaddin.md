@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 Specifies backwards compatibility for an equivalent COM add-in or XLL.
 
-[!INCLUDE [Support note for equivalent add-ins feature](/office/dev/add-ins/includes/equivalent-add-in-support-note)]
+[!INCLUDE [Support note for equivalent add-ins feature](../includes/equivalent-add-in-support-note.md)]
 
 **Add-in type:** Task pane, Mail, Custom function
 

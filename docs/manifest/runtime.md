@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 - [SharedRuntime 1.1](/office/dev/add-ins/requirement-sets/shared-runtime-requirement-sets) (Only when used in a task pane add-in.)
 
-[!include[Runtimes support](/office/dev/add-ins/includes/runtimes-note)]
+[!include[Runtimes support](../includes/runtimes-note.md)]
 
 ## Syntax
 
