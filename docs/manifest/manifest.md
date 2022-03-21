@@ -13,93 +13,94 @@ ms.date: 03/21/2022
 ## Attributes
 
 | Name | Category |
-|[Action](manifest/action.md)| VersionOverrides |
-|[AllFormFactors](manifest/allformfactors.md)| VersionOverrides |
-|[AllowSnapshot](manifest/allowsnapshot.md)||
-|[AlternateId](manifest/alternateid.md)||
-|[AppDomain](manifest/appdomain.md)||
-|[AppDomains](manifest/appdomains.md)||
-|[CitationText](manifest/citationtext.md)||
-|[Control](manifest/control.md)| VersionOverrides |
-|[Control (Button)|](manifest/control-button.md)| VersionOverrides |
-|[Control (Menu)|](manifest/control-menu.md)| VersionOverrides |
-|[Control (MobileButton)|](manifest/control-mobilebutton.md)| VersionOverrides |
-|[CustomTab](manifest/customtab.md)| VersionOverrides |
-|[DefaultLocale](manifest/defaultlocale.md)||
-|[DefaultSettings](manifest/defaultsettings.md)||
-|[Description](manifest/description.md)||
-|[DesktopFormFactor](manifest/desktopformfactor.md)| VersionOverrides |
-|[DesktopSettings](manifest/desktopsettings.md)||
-|[Dictionary](manifest/dictionary.md)||
-|[DictionaryHomePage](manifest/dictionaryhomepage.md)||
-|[DisableEntityHighlighting](manifest/disableentityhighlighting.md)||
-|[DisplayName](manifest/displayname.md)||
-|[Enabled](manifest/enabled.md)| VersionOverrides |
-|[EquivalentAddin](manifest/equivalentaddin.md)||
-|[EquivalentAddins](manifest/equivalentaddins.md)||
-|[Event](manifest/event.md)| VersionOverrides |
-|[ExtendedPermission](manifest/extendedpermission.md)| VersionOverrides |
-|[ExtendedPermissions](manifest/extendedpermissions.md)| VersionOverrides |
-|[ExtensionPoint](manifest/extensionpoint.md)| VersionOverrides |
-|[ExtendedOverrides](manifest/extendedoverrides.md)||
-|[FileName](manifest/ilename.md)||
-|[Form](manifest/form.md)||
-|[FormSettings](manifest/formsettings.md)||
-|[FunctionFile](manifest/functionfile.md)| VersionOverrides |
-|[GetStarted](manifest/getstarted.md)| VersionOverrides |
-|[Group](manifest/group.md)| VersionOverrides |
-|[HighResolutionIconUrl](manifest/highresolutioniconurl.md)||
-|[Host](manifest/host.md)||
-|[Hosts](manifest/hosts.md)||
-|[Icon](manifest/icon.md)| VersionOverrides |
-|[IconUrl](manifest/iconurl.md)||
-|[Id](manifest/id.md)||
-|[Item](manifest/item.md)| VersionOverrides |
-|[Items](manifest/items.md)| VersionOverrides |
-|[LaunchEvent](manifest/launchevent.md)| VersionOverrides |
-|[LaunchEvents](manifest/launchevents.md)| VersionOverrides |
-|[Metadata](manifest/metadata.md)||
-|[Method](manifest/method.md)||
-|[Methods](manifest/methods.md)||
-|[MobileFormFactor](manifest/mobileformfactor.md)| VersionOverrides |
-|[Namespace](manifest/namespace.md)||
-|[OfficeApp](manifest/officeapp.md)||
-|[OfficeMenu](manifest/officemenu.md)| VersionOverrides |
-|[OfficeTab](manifest/officetab.md)| VersionOverrides |
-|[OverriddenByRibbonApi](manifest/overriddenbyribbonapi.md)| VersionOverrides |
-|[Override](manifest/override.md)||
-|[Page](manifest/page.md)| VersionOverrides |
-|[Permissions](manifest/permissions.md)||
-|[PhoneSettings](manifest/phonesettings.md)||
-|[ProgId](manifest/progid.md)||
-|[ProviderName](manifest/providername.md)||
-|[QueryUri](manifest/queryuri.md)||
-|[RequestedHeight](manifest/requestedheight.md)||
-|[RequestedWidth](manifest/requestedwidth.md)||
-|[Requirements](manifest/requirements.md)||
-|[Resources](manifest/resources.md)| VersionOverrides |
-|[Rule](manifest/rule.md)||
-|[Runtime](manifest/runtime.md)| VersionOverrides |
-|[Runtimes](manifest/runtimes.md)| VersionOverrides |
-|[Scopes](manifest/scopes.md)| VersionOverrides |
-|[Script](manifest/script.md)| VersionOverrides |
-|[Set](manifest/set.md)||
-|[Sets](manifest/sets.md)||
-|[SourceLocation](manifest/sourcelocation.md)||
-|[SourceLocation (custom functions)|](manifest/customfunctionssourcelocation.md)| VersionOverrides |
-|[Supertip](manifest/supertip.md)| VersionOverrides |
-|[SupportsSharedFolders](manifest/supportssharedfolders.md)| VersionOverrides |
-|[SupportUrl](manifest/supporturl.md)||
-|[TabletSettings](manifest/tabletsettings.md)||
-|[TargetDialect](manifest/targetdialect.md)||
-|[TargetDialects](manifest/targetdialects.md)||
-|[Tokens](manifest/tokens.md)||
-|[Token](manifest/token.md)||
-|[Type](manifest/type.md)||
-|[Version](manifest/version.md)||
-|[VersionOverrides](manifest/versionoverrides.md)||
-|[VersionOverrides 1.0 Content](manifest/versionoverrides-1-0-content.md)| VersionOverrides |
-|[VersionOverrides 1.0 Mail](manifest/versionoverrides-1-0-mail.md)| VersionOverrides |
-|[VersionOverrides 1.1 Mail](manifest/versionoverrides-1-1-mail.md)| VersionOverrides |
-|[VersionOverrides 1.0 TaskPane](manifest/versionoverrides-1-0-taskpane.md)| VersionOverrides |
-|[WebApplicationInfo](manifest/webapplicationinfo.md)| VersionOverrides |
+|-|-|
+|[Action](action.md)| VersionOverrides |
+|[AllFormFactors](allformfactors.md)| VersionOverrides |
+|[AllowSnapshot](allowsnapshot.md)||
+|[AlternateId](alternateid.md)||
+|[AppDomain](appdomain.md)||
+|[AppDomains](appdomains.md)||
+|[CitationText](citationtext.md)||
+|[Control](control.md)| VersionOverrides |
+|[Control (Button)|](control-button.md)| VersionOverrides |
+|[Control (Menu)|](control-menu.md)| VersionOverrides |
+|[Control (MobileButton)|](control-mobilebutton.md)| VersionOverrides |
+|[CustomTab](customtab.md)| VersionOverrides |
+|[DefaultLocale](defaultlocale.md)||
+|[DefaultSettings](defaultsettings.md)||
+|[Description](description.md)||
+|[DesktopFormFactor](desktopformfactor.md)| VersionOverrides |
+|[DesktopSettings](desktopsettings.md)||
+|[Dictionary](dictionary.md)||
+|[DictionaryHomePage](dictionaryhomepage.md)||
+|[DisableEntityHighlighting](disableentityhighlighting.md)||
+|[DisplayName](displayname.md)||
+|[Enabled](enabled.md)| VersionOverrides |
+|[EquivalentAddin](equivalentaddin.md)||
+|[EquivalentAddins](equivalentaddins.md)||
+|[Event](event.md)| VersionOverrides |
+|[ExtendedPermission](extendedpermission.md)| VersionOverrides |
+|[ExtendedPermissions](extendedpermissions.md)| VersionOverrides |
+|[ExtensionPoint](extensionpoint.md)| VersionOverrides |
+|[ExtendedOverrides](extendedoverrides.md)||
+|[FileName](ilename.md)||
+|[Form](form.md)||
+|[FormSettings](formsettings.md)||
+|[FunctionFile](functionfile.md)| VersionOverrides |
+|[GetStarted](getstarted.md)| VersionOverrides |
+|[Group](group.md)| VersionOverrides |
+|[HighResolutionIconUrl](highresolutioniconurl.md)||
+|[Host](host.md)||
+|[Hosts](hosts.md)||
+|[Icon](icon.md)| VersionOverrides |
+|[IconUrl](iconurl.md)||
+|[Id](id.md)||
+|[Item](item.md)| VersionOverrides |
+|[Items](items.md)| VersionOverrides |
+|[LaunchEvent](launchevent.md)| VersionOverrides |
+|[LaunchEvents](launchevents.md)| VersionOverrides |
+|[Metadata](metadata.md)||
+|[Method](method.md)||
+|[Methods](methods.md)||
+|[MobileFormFactor](mobileformfactor.md)| VersionOverrides |
+|[Namespace](namespace.md)||
+|[OfficeApp](officeapp.md)||
+|[OfficeMenu](officemenu.md)| VersionOverrides |
+|[OfficeTab](officetab.md)| VersionOverrides |
+|[OverriddenByRibbonApi](overriddenbyribbonapi.md)| VersionOverrides |
+|[Override](override.md)||
+|[Page](page.md)| VersionOverrides |
+|[Permissions](permissions.md)||
+|[PhoneSettings](phonesettings.md)||
+|[ProgId](progid.md)||
+|[ProviderName](providername.md)||
+|[QueryUri](queryuri.md)||
+|[RequestedHeight](requestedheight.md)||
+|[RequestedWidth](requestedwidth.md)||
+|[Requirements](requirements.md)||
+|[Resources](resources.md)| VersionOverrides |
+|[Rule](rule.md)||
+|[Runtime](runtime.md)| VersionOverrides |
+|[Runtimes](runtimes.md)| VersionOverrides |
+|[Scopes](scopes.md)| VersionOverrides |
+|[Script](script.md)| VersionOverrides |
+|[Set](set.md)||
+|[Sets](sets.md)||
+|[SourceLocation](sourcelocation.md)||
+|[SourceLocation (custom functions)|](customfunctionssourcelocation.md)| VersionOverrides |
+|[Supertip](supertip.md)| VersionOverrides |
+|[SupportsSharedFolders](supportssharedfolders.md)| VersionOverrides |
+|[SupportUrl](supporturl.md)||
+|[TabletSettings](tabletsettings.md)||
+|[TargetDialect](targetdialect.md)||
+|[TargetDialects](targetdialects.md)||
+|[Tokens](tokens.md)||
+|[Token](token.md)||
+|[Type](type.md)||
+|[Version](version.md)||
+|[VersionOverrides](versionoverrides.md)||
+|[VersionOverrides 1.0 Content](versionoverrides-1-0-content.md)| VersionOverrides |
+|[VersionOverrides 1.0 Mail](versionoverrides-1-0-mail.md)| VersionOverrides |
+|[VersionOverrides 1.1 Mail](versionoverrides-1-1-mail.md)| VersionOverrides |
+|[VersionOverrides 1.0 TaskPane](versionoverrides-1-0-taskpane.md)| VersionOverrides |
+|[WebApplicationInfo](webapplicationinfo.md)| VersionOverrides |
