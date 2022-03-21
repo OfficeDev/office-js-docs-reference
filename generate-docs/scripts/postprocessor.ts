@@ -43,11 +43,12 @@ interface IMembers {
     ]
 }
 
+const docsSource = path.resolve("../yaml");
+const docsDestination = path.resolve("../../docs/docs-ref-autogen");
+const manifestRefPath = path.resolve("../../docs/manifest");
+
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
-
-    const docsSource = path.resolve("../yaml");
-    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 
     console.log(`Deleting old docs at: ${docsDestination}`);
     // delete everything except the 'overview' folder from the /docs folder
@@ -378,9 +379,9 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
-        topLevel.items.forEach((applicationNode) =>{
+        topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
                 newToc.items[topLevelIndex].items.push(newTocNode);
             } else {
@@ -388,6 +389,10 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
             }
         });
     });
+    
+    // Add manifest TOC
+    let manifestNode = (jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString()) as ApplicationTocNode);
+    newToc.items[0].items.push(manifestNode);
 
     return newToc;
 }

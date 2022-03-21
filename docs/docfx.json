@@ -124,6 +124,12 @@
         ]
       },
       {
+        "files": ["**/*.md"],
+        "group": "manifest",
+        "src": "manifest",
+        "dest": "api"
+      },
+      {
         "files": ["overview.md"],
         "group": "all",
         "src": "docs-ref-autogen/overview",
