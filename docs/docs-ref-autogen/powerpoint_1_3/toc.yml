@@ -285,6 +285,8 @@ items:
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
   - name: Manifest
     items:
+      - name: Manifest overview
+        href: ../../manifest/manifest.md
       - name: AllowSnapshot
         href: ../../manifest/allowsnapshot.md
       - name: AlternateId

@@ -11,7 +11,6 @@ class Toc {
     
     items: [{
         name: string,
-        href?: string
         items: (ApplicationTocNode | ManifestItem)[]
     }]
 }
