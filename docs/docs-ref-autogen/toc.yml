@@ -18,4 +18,4 @@ items:
       - name: Common APIs
         href: /javascript/api/office
   - name: Manifest reference
-    href: /javascript/api/manifest
+    href: /javascript/api/manifest/

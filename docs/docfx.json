@@ -125,9 +125,16 @@
       },
       {
         "files": ["**/*.md"],
+        "exclude": ["**/manifest.md"],
         "group": "all",
         "src": "manifest",
         "dest": "api/manifest"
+      },
+      {
+        "files": ["**/manifest.md"],
+        "group": "all",
+        "src": "manifest",
+        "dest": "api"
       },
       {
         "files": ["overview.md"],
