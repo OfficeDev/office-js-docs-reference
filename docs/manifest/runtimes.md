@@ -26,7 +26,7 @@ For more information, see [Version overrides in the manifest](../../develop/add-
 
 - [SharedRuntime 1.1](../requirement-sets/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
 
-[!include[Runtimes support](../../includes/runtimes-note.md)]
+[!include[Runtimes support](../includes/runtimes-note.md)]
 
 ## Syntax
 
