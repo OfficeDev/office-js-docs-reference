@@ -57,6 +57,7 @@ interface IMembers {
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const manifestRefPath = path.resolve("../../docs/manifest");
+const requirementSetRefPath = path.resolve("../../docs/requirement-sets");
 
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
@@ -402,6 +403,10 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     // Add manifest TOC
     let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
     newToc.items.push(manifestYml[0]);
+
+    // Add requirement sets TOC
+    let requirementSetYml = jsyaml.safeLoad(fsx.readFileSync(`${requirementSetRefPath}/toc.yml`).toString());
+    newToc.items.push(requirementSetYml[0]);
 
     return newToc;
 }
