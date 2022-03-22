@@ -127,7 +127,7 @@
         "files": ["**/*.md"],
         "group": "all",
         "src": "manifest",
-        "dest": "api/manifest"
+        "dest": "api"
       },
       {
         "files": ["overview.md"],
