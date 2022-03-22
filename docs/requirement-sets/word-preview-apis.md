@@ -10,7 +10,14 @@ ms.localizationpriority: medium
 
 New Word JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired.
 
-[!INCLUDE [Information about using Word preview APIs](../../includes/word-preview-apis-note.md)]
+> [!IMPORTANT]
+> Note that the following Word preview APIs may be available on the following platforms.
+>
+> - Word on Windows
+> - Word on Mac
+>
+> Word preview APIs are currently not supported on iPad. However, bookmark feature APIs are also available in Word on the web. For APIs available only in Word on the web, see the [Web-only API list](#web-only-api-list).
+
 [!INCLUDE [Information about using preview APIs](../../includes/using-preview-apis-host.md)]
 
 ## API list
