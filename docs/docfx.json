@@ -127,7 +127,13 @@
         "files": ["**/*.md"],
         "group": "all",
         "src": "manifest",
-        "dest": "api"
+        "dest": "api/manifest"
+      },
+      {
+        "files": ["**/*.md"],
+        "group": "all",
+        "src": "requirement-sets",
+        "dest": "api/requirement-sets"
       },
       {
         "files": ["overview.md"],
