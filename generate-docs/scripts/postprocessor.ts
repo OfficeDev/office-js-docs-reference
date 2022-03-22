@@ -69,7 +69,7 @@ tryCatch(async () => {
 
     console.log(`Creating global TOC`);
     let globalToc = <Toc>{items: [{name: "API reference"}]};
-    globalToc.items.push({name: "Manifest reference", href: "/javascript/api/manifest/manifest"});
+    globalToc.items.push({name: "Manifest reference", href: "/javascript/api/manifest"});
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote"},
