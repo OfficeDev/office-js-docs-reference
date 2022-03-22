@@ -57,7 +57,6 @@ interface IMembers {
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const manifestRefPath = path.resolve("../../docs/manifest");
-const baseTocPath = path.resolve("../../docs/toc.yml");
 
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
@@ -69,8 +68,7 @@ tryCatch(async () => {
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Creating global TOC`);
-    let globalToc = jsyaml.safeLoad(fsx.readFileSync(baseTocPath).toString());
-    globalToc.items.push({name: "Manifest reference", href: "/javascript/api/manifest"});
+    let globalToc = <Toc>{items: [{name: "API reference"}]};
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote"},
@@ -79,11 +77,6 @@ tryCatch(async () => {
                                 {"name": "Visio", "href": "/javascript/api/visio"},
                                 {"name": "Word", "href": "/javascript/api/word"},
                                 {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
-    fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
-    fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
-
-    // Remove the manifest placeholder link before filling out individual sections.
-    globalToc.items.pop();
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
@@ -317,9 +310,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.filter((topLevel) => {
-        return topLevel.name === "API reference";
-        }).forEach((topLevel, topLevelIndex) => {
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
         topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
@@ -397,9 +388,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.filter((topLevel) => {
-        return topLevel.name === "API reference";
-        }).forEach((topLevel, topLevelIndex) => {
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
         topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
