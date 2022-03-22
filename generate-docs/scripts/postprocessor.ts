@@ -57,6 +57,7 @@ interface IMembers {
 const docsSource = path.resolve("../yaml");
 const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 const manifestRefPath = path.resolve("../../docs/manifest");
+const baseTocPath = path.resolve("../../docs/toc.yml");
 
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
@@ -68,7 +69,7 @@ tryCatch(async () => {
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{name: "API reference"}]};
+    let globalToc = jsyaml.safeLoad(fsx.readFileSync(baseTocPath).toString());
     globalToc.items.push({name: "Manifest reference", href: "/javascript/api/manifest"});
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel"},
@@ -316,7 +317,9 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) => {
+    globalToc.items.filter((topLevel) => {
+        return topLevel.name === "API reference";
+        }).forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
         topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
@@ -394,7 +397,9 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) => {
+    globalToc.items.filter((topLevel) => {
+        return topLevel.name === "API reference";
+        }).forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
         topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
