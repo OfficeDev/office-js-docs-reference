@@ -7,11 +7,11 @@ import * as path from "path";
 
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
-class Toc {
-    
+interface Toc {
     items: [{
         name: string,
-        items: (ApplicationTocNode | ManifestItem)[]
+        href?: string,
+        items?: (ApplicationTocNode | ManifestItem)[]
     }]
 }
 
@@ -68,7 +68,8 @@ tryCatch(async () => {
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{"name": "API reference"}]};
+    let globalToc = <Toc>{items: [{name: "API reference"}]};
+    globalToc.items.push({name: "Manifest reference", href: "/javascript/api/manifest/manifest"});
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote"},
@@ -79,6 +80,9 @@ tryCatch(async () => {
                                 {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
     fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
+
+    // Remove the manifest placeholder link before filling out individual sections.
+    globalToc.items.pop();
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
@@ -275,25 +279,25 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                             let iconSetList = membersToMove.items.filter(item => {
                                 return excelIconSetFilter.indexOf(item.name) >= 0;
                             });
-                            
+
                             if (iconSetList.length > 0) {
                                 let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
                                 primaryList.unshift(excelIconSetRoot);
                             }
-                            primaryList.unshift(enumRoot);            
+                            primaryList.unshift(enumRoot);
                             if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
                                 primaryList.unshift(customFunctionsRoot);
                             }
                         } else {
                             primaryList.unshift(enumRoot);
                         }
-                    }                    
+                    }
 
                     // Address any nested namespaces
                     primaryList.forEach((namespaceItem, namespaceIndex) => {
                         // Scan UID for namespace to add to name.
                         if (namespaceItem.uid) {
-                            let regex = /\w+\.(\w+\.\w+)/g
+                            let regex = /\w+\.(\w+\.\w+)/g;
                             let matchResults = regex.exec(namespaceItem.uid);
                             if (matchResults) {
                                 namespaceItem.name = matchResults[1];
@@ -302,7 +306,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                     });
                 }
 
-                newTocNode= {
+                newTocNode = {
                     name: packageName,
                     uid: packageItem.uid,
                     items: primaryList
@@ -312,9 +316,9 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
-        topLevel.items.forEach((applicationNode) =>{
+        topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
                 newToc.items[topLevelIndex].items.push(newTocNode);
             } else {
@@ -337,7 +341,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         name: 'Common APIs',
         uid: "office!",
         items: [] as any
-    }
+    };
 
     // create folders for common (shared) API subcategories
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
@@ -347,10 +351,10 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
             membersToMove.items = packageItem.items;
             if (packageItem.name.toLocaleLowerCase() === 'office') {
-                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {                    
+                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {
                     // Scan UID for namespace to add to name.
                      if (namespaceItem.uid) {
-                        let regex = /\w+\.(\w+\.\w+)/g
+                        let regex = /\w+\.(\w+\.\w+)/g;
                         let matchResults = regex.exec(namespaceItem.uid);
                         if (matchResults) {
                             namespaceItem.name = matchResults[1];
@@ -369,7 +373,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
                 });
 
                 let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                primaryList.unshift(sharedEnumRoot);            
+                primaryList.unshift(sharedEnumRoot);
                 newTocNode.items.push({
                     "name": 'Office',
                     "uid": packageItem.uid,
@@ -400,10 +404,10 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
             }
         });
     });
-    
+
     // Add manifest TOC
     let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
     newToc.items.push(manifestYml[0]);
-    
+
     return newToc;
 }

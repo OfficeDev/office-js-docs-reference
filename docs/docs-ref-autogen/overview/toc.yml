@@ -17,3 +17,5 @@ items:
         href: /javascript/api/word
       - name: Common APIs
         href: /javascript/api/office
+  - name: Manifest reference
+    href: /javascript/api/manifest/manifest
