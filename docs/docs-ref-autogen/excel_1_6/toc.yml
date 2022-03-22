@@ -3,8 +3,7 @@ items:
     items:
       - name: API reference overview
         href: ../overview/overview.md
-      - &ref_0
-        name: Excel
+      - name: Excel
         uid: excel!
         items:
           - name: Enums
@@ -787,13 +786,67 @@ items:
     items:
       - name: Requirement sets overview
         href: ../../requirement-sets/requirement-sets.md
-      - *ref_0
-      - name: OneNote
+      - name: Excel requirement sets
+        items:
+          - name: Overview
+            href: ../../requirement-sets/excel-api-requirement-sets.md
+            displayName: Excel
+          - name: CustomFunctionsRuntime API requirement sets
+            href: ../../requirement-sets/custom-functions-requirement-sets.md
+            displayName: 'Excel, Custom Functions'
+          - name: Excel preview APIs
+            href: ../../requirement-sets/excel-preview-apis.md
+            displayName: Excel
+          - name: ExcelApi online-only requirement set
+            href: ../../requirement-sets/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.14 requirement set
+            href: ../../requirement-sets/excel-api-1-14-requirement-set.md
+          - name: ExcelApi 1.13 requirement set
+            href: ../../requirement-sets/excel-api-1-13-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.12 requirement set
+            href: ../../requirement-sets/excel-api-1-12-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.11 requirement set
+            href: ../../requirement-sets/excel-api-1-11-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.10 requirement set
+            href: ../../requirement-sets/excel-api-1-10-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.9 requirement set
+            href: ../../requirement-sets/excel-api-1-9-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.8 requirement set
+            href: ../../requirement-sets/excel-api-1-8-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.7 requirement set
+            href: ../../requirement-sets/excel-api-1-7-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.6 requirement set
+            href: ../../requirement-sets/excel-api-1-6-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.5 requirement set
+            href: ../../requirement-sets/excel-api-1-5-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.4 requirement set
+            href: ../../requirement-sets/excel-api-1-4-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.3 requirement set
+            href: ../../requirement-sets/excel-api-1-3-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.2 requirement set
+            href: ../../requirement-sets/excel-api-1-2-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.1 requirement set
+            href: ../../requirement-sets/excel-api-1-1-requirement-set.md
+            displayName: Excel
+      - name: OneNote requirement sets
       - items:
           - name: API requirement sets
             href: ../../requirement-sets/onenote-api-requirement-sets.md
             displayName: OneNote
-      - name: Outlook
+      - name: Outlook requirement sets
         items:
           - name: Overview
             href: >-
@@ -1027,7 +1080,7 @@ items:
                   ../../requirement-sets/objectmodel/requirement-set-1.1/Office.context.mailbox.item.md
               - name: Outlook 1.1 API Reference
                 href: ../../requirement-sets/outlook-api-reference-1-1.md
-      - name: PowerPoint
+      - name: PowerPoint requirement sets
         items:
           - name: Overview
             href: ../../requirement-sets/powerpoint-api-requirement-sets.md
@@ -1044,7 +1097,7 @@ items:
           - name: PowerPointApi 1.1 requirement set
             href: ../../requirement-sets/powerpoint-api-1-1-requirement-set.md
             displayName: PowerPoint
-      - name: Word
+      - name: Word requirement sets
         items:
           - name: Overview
             href: ../../requirement-sets/word-api-requirement-sets.md

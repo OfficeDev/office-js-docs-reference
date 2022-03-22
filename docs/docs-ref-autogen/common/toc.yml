@@ -441,7 +441,7 @@ items:
     items:
       - name: Requirement sets overview
         href: ../../requirement-sets/requirement-sets.md
-      - name: Excel
+      - name: Excel requirement sets
         items:
           - name: Overview
             href: ../../requirement-sets/excel-api-requirement-sets.md
@@ -496,12 +496,12 @@ items:
           - name: ExcelApi 1.1 requirement set
             href: ../../requirement-sets/excel-api-1-1-requirement-set.md
             displayName: Excel
-      - name: OneNote
+      - name: OneNote requirement sets
       - items:
           - name: API requirement sets
             href: ../../requirement-sets/onenote-api-requirement-sets.md
             displayName: OneNote
-      - name: Outlook
+      - name: Outlook requirement sets
         items:
           - name: Overview
             href: >-
@@ -735,7 +735,7 @@ items:
                   ../../requirement-sets/objectmodel/requirement-set-1.1/Office.context.mailbox.item.md
               - name: Outlook 1.1 API Reference
                 href: ../../requirement-sets/outlook-api-reference-1-1.md
-      - name: PowerPoint
+      - name: PowerPoint requirement sets
         items:
           - name: Overview
             href: ../../requirement-sets/powerpoint-api-requirement-sets.md
@@ -752,7 +752,7 @@ items:
           - name: PowerPointApi 1.1 requirement set
             href: ../../requirement-sets/powerpoint-api-1-1-requirement-set.md
             displayName: PowerPoint
-      - name: Word
+      - name: Word requirement sets
         items:
           - name: Overview
             href: ../../requirement-sets/word-api-requirement-sets.md
