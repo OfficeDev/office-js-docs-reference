@@ -13,11 +13,11 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 > [!TIP]
 > Looking for the *application-specific* API requirement sets? See the following API requirement sets.
 >
-> - [Excel JavaScript API requirement sets](excel-api-requirement-sets.md) (ExcelApi)
-> - [Word JavaScript API requirement sets](word-api-requirement-sets.md) (WordApi)
+> - [Excel JavaScript API requirement sets](excel/excel-api-requirement-sets.md) (ExcelApi)
+> - [Word JavaScript API requirement sets](word/word-api-requirement-sets.md) (WordApi)
 > - [OneNote JavaScript API requirement sets](onenote-api-requirement-sets.md) (OneNoteApi)
-> - [PowerPoint JavaScript API requirement sets](powerpoint-api-requirement-sets.md) (PowerPointApi)
-> - [Understanding Outlook API requirement sets](outlook-api-requirement-sets.md) (Mailbox)
+> - [PowerPoint JavaScript API requirement sets](powerpoint/powerpoint-api-requirement-sets.md) (PowerPointApi)
+> - [Understanding Outlook API requirement sets](outlook/outlook-api-requirement-sets.md) (Mailbox)
 
 > [!IMPORTANT]
 > We no longer recommend that you create and use Access web apps and databases in SharePoint. As an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code business solutions for web and mobile devices.
