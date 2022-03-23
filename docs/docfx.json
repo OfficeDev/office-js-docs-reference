@@ -135,10 +135,22 @@
         "dest": "api/manifest"
       },
       {
+        "files": ["manifest.md"],
+        "group": "all",
+        "src": "manifest",
+        "dest": "api"
+      },
+      {
         "files": ["**/*.md"],
         "group": "all",
         "src": "requirement-sets",
         "dest": "api/requirement-sets"
+      },
+      {
+        "files": ["requirement-sets.md"],
+        "group": "all",
+        "src": "requirement-sets",
+        "dest": "api"
       },
       {
         "files": ["overview.md"],
