@@ -743,7 +743,7 @@ items:
       - name: Outlook requirement sets
         items:
           - name: Overview
-            href: ../../requirement-sets/outlook-api-requirement-sets.md
+            href: ../../requirement-sets/outlook/outlook-api-requirement-sets.md
             displayName: Outlook
           - name: Mailbox preview requirement set
             items:

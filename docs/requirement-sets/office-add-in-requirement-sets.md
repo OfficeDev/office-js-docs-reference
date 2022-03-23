@@ -135,7 +135,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-|Outlook on Windows<br>Outlook on the web<br>Outlook on Android<br>Outlook on Mac<br>Outlook on iOS|See [Understanding Outlook API requirement sets](outlook-api-requirement-sets.md).|
+|Outlook on Windows<br>Outlook on the web<br>Outlook on Android<br>Outlook on Mac<br>Outlook on iOS|See [Understanding Outlook API requirement sets](outlook/outlook-api-requirement-sets.md).|
 
 ---
 
