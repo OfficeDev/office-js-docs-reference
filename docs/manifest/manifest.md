@@ -1,6 +1,6 @@
 ---
 title: Office Add-ins manifest reference
-description: The attributes of an Office Add-ins XML manifest.
+description: The elements of an Office Add-ins XML manifest.
 author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
@@ -10,7 +10,7 @@ ms.date: 03/21/2022
 
 # Office Add-ins manifest reference
 
-## Attributes
+## Elements
 
 | Name | Category |
 |-|-|
