@@ -81,8 +81,6 @@
         href: ../../requirement-sets/objectmodel/preview-requirement-set/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/preview-requirement-set/Office.context.mailbox.item.md
-      - name: Outlook Preview API Reference
-        href: ../../requirement-sets/outlook-api-reference-preview.md
     - name: Mailbox requirement set 1.11
       items:
       - name: Overview
@@ -95,8 +93,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.11/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.11/Office.context.mailbox.item.md
-      - name: Outlook 1.11 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-11.md
     - name: Mailbox requirement set 1.10
       items:
       - name: Overview
@@ -109,8 +105,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.10/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.10/Office.context.mailbox.item.md
-      - name: Outlook 1.10 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-10.md
     - name: Mailbox requirement set 1.9
       items:
       - name: Overview
@@ -123,8 +117,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.9/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.9/Office.context.mailbox.item.md
-      - name: Outlook 1.9 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-9.md
     - name: Mailbox requirement set 1.8
       items:
       - name: Overview
@@ -137,8 +129,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.8/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.8/Office.context.mailbox.item.md
-      - name: Outlook 1.8 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-8.md
     - name: Mailbox requirement set 1.7
       items:
       - name: Overview
@@ -151,8 +141,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.7/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.7/Office.context.mailbox.item.md
-      - name: Outlook 1.7 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-7.md
     - name: Mailbox requirement set 1.6
       items:
       - name: Overview
@@ -165,8 +153,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.6/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.6/Office.context.mailbox.item.md
-      - name: Outlook 1.6 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-6.md
     - name: Mailbox requirement set 1.5
       items:
       - name: Overview
@@ -179,8 +165,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.5/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.5/Office.context.mailbox.item.md
-      - name: Outlook 1.5 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-5.md
     - name: Mailbox requirement set 1.4
       items:
       - name: Overview
@@ -193,8 +177,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.4/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.4/Office.context.mailbox.item.md
-      - name: Outlook 1.4 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-4.md
     - name: Mailbox requirement set 1.3
       items:
       - name: Overview
@@ -207,8 +189,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.3/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.3/Office.context.mailbox.item.md
-      - name: Outlook 1.3 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-3.md
     - name: Mailbox requirement set 1.2
       items:
       - name: Overview
@@ -221,8 +201,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.2/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.2/Office.context.mailbox.item.md
-      - name: Outlook 1.2 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-2.md
     - name: Mailbox requirement set 1.1
       items:
       - name: Overview
@@ -235,8 +213,6 @@
         href: ../../requirement-sets/objectmodel/requirement-set-1.1/Office.context.mailbox.md
       - name: Office.context.mailbox.item
         href: ../../requirement-sets/objectmodel/requirement-set-1.1/Office.context.mailbox.item.md
-      - name: Outlook 1.1 API Reference
-        href: ../../requirement-sets/outlook-api-reference-1-1.md
 
   - name: PowerPoint requirement sets
     items:
