@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Word JavaScript API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md).
 
 ## Requirement set availability
 
@@ -36,11 +36,11 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 
 For more information about Office versions and build numbers, see:
 
-[!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
+[!INCLUDE [Links to get Office versions and how to find Office client version](../includes/links-get-office-versions-builds.md)]
 
 ## See also
 
 - [Word JavaScript API Reference Documentation](/javascript/api/word)
-- [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md)
-- [Specify Office applications and API requirements](../../develop/specify-office-hosts-and-api-requirements.md)
-- [Office Add-ins XML manifest](../../develop/add-in-manifests.md)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md)
+- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md)
+- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests.md)

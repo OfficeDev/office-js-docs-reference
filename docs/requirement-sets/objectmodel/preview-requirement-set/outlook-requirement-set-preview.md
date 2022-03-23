@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
 > [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](../../requirement-sets/outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
+> This documentation is for a **preview** [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
 
-[!INCLUDE [Information about using preview APIs](../../../includes/using-preview-apis-host.md)]
+[!INCLUDE [Information about using preview APIs](/office/dev/add-ins/includes/using-preview-apis-host.md)]
 
 > [!TIP]
 > You may be able to preview features in Outlook on the web by [configuring targeted release on your Microsoft 365 tenant](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true#set-up-the-release-option-in-the-admin-center). "Configure preview access" is noted on this page for applicable features.
@@ -97,13 +97,13 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 ### Event-based activation
 
-This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). However, additional events are now available in preview. To learn more, refer to [Supported events](../../../outlook/autolaunch.md#supported-events).
+This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). However, additional events are now available in preview. To learn more, refer to [Supported events](/office/dev/add-ins/outlook/autolaunch.md#supported-events).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
 
 #### [Office.AddinCommands.EventCompletedOptions.errorMessage](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-errormessage-member)
 
-Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](../../../outlook/smart-alerts-onmessagesend-walkthrough.md).
+Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough.md).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
 
@@ -149,13 +149,13 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ### Shared mailboxes
 
-Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](../../../outlook/delegate-access.md).
+Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access.md).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription), Outlook on the web (modern), Outlook on Mac
 
 ## See also
 
-- [Outlook add-ins](../../../outlook/outlook-add-ins-overview.md)
+- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
-- [Get started](../../../quickstarts/outlook-quickstart.md)
-- [Requirement sets and supported clients](../../requirement-sets/outlook-api-requirement-sets.md)
+- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart.md)
+- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md)

@@ -35,7 +35,7 @@ APIs include `getItem()` to get setting entry via the key and `add()` to add the
 * Add a table column to the end of the table.
 * Add multiple rows to a table at a time.
 * `range.getColumnsAfter(count: number)` and `range.getColumnsBefore(count: number)` to get a certain number of columns to the right/left of the current Range object.
-* The [\*OrNullObject methods and properties](../../develop/application-specific-api-model.md#ornullobject-methods-and-properties): This functionality allows getting an object using a key. If the object does not exist, the returned object's `isNullObject` property will be true. This allows developers to check if an object exists without having to handle it through exception handling. An `*OrNullObject` method is available on most collection objects.
+* The [\*OrNullObject methods and properties](/office/dev/add-ins/develop/application-specific-api-model.md#ornullobject-methods-and-properties): This functionality allows getting an object using a key. If the object does not exist, the returned object's `isNullObject` property will be true. This allows developers to check if an object exists without having to handle it through exception handling. An `*OrNullObject` method is available on most collection objects.
 
 ```js
 worksheet.getItemOrNullObject("itemName")
@@ -45,7 +45,7 @@ worksheet.getItemOrNullObject("itemName")
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.4. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.4 or earlier, see [Excel APIs in requirement set 1.4 or earlier](/javascript/api/excel?view=excel-js-1.4&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-1-4.md)]
+[!INCLUDE[API table](../includes/excel-1_4.md)]
 
 ## See also
 

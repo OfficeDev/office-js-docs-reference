@@ -24,7 +24,7 @@ With the new chart APIs, you can create additional chart types, add a data serie
 
 ## Events
 
-Excel events APIs provide a variety of event handlers that allow your add-in to automatically run a designated function when a specific event occurs. You can design that function to perform whatever actions your scenario requires. For a list of events that are currently available, see [Work with Events using the Excel JavaScript API](../../excel/excel-add-ins-events.md).
+Excel events APIs provide a variety of event handlers that allow your add-in to automatically run a designated function when a specific event occurs. You can design that function to perform whatever actions your scenario requires. For a list of events that are currently available, see [Work with Events using the Excel JavaScript API](/office/dev/add-ins/excel/excel-add-ins-events.md).
 
 ## Customize the appearance of worksheets and ranges
 
@@ -62,7 +62,7 @@ In addition:
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.7. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.7 or earlier, see [Excel APIs in requirement set 1.7 or earlier](/javascript/api/excel?view=excel-js-1.7&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-1-7.md)]
+[!INCLUDE[API table](../includes/excel-1_7.md)]
 
 ## See also
 

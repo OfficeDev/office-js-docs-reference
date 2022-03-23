@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # PowerPoint JavaScript API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md).
 
 The following table lists the PowerPoint requirement sets, the Office client applications that support those requirement sets, and the build versions or availability date.
 
@@ -22,24 +22,24 @@ The following table lists the PowerPoint requirement sets, the Office client app
 
 For more information about Office versions and build numbers, see:
 
-[!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
+[!INCLUDE [Links to get Office versions and how to find Office client version](../includes/links-get-office-versions-builds.md)]
 
 ## PowerPoint JavaScript API 1.1
 
-PowerPoint JavaScript API 1.1 contains a [single API to create a new presentation](/javascript/api/powerpoint#PowerPoint_createPresentation_base64File_). For details about the API, see [Create a presentation](../../powerpoint/powerpoint-add-ins.md#create-a-presentation).
+PowerPoint JavaScript API 1.1 contains a [single API to create a new presentation](/javascript/api/powerpoint#PowerPoint_createPresentation_base64File_). For details about the API, see [Create a presentation](/office/dev/add-ins/powerpoint/powerpoint-add-ins.md#create-a-presentation).
 
 ## PowerPoint JavaScript API 1.2
 
-PowerPoint JavaScript API 1.2 adds support for inserting slides from another PowerPoint presentation into the current presentation and for deleting slides. For details about the APIs, see [Insert and delete slides in a PowerPoint presentation](../../powerpoint/insert-slides-into-presentation.md).
+PowerPoint JavaScript API 1.2 adds support for inserting slides from another PowerPoint presentation into the current presentation and for deleting slides. For details about the APIs, see [Insert and delete slides in a PowerPoint presentation](/office/dev/add-ins/powerpoint/insert-slides-into-presentation.md).
 
 ## PowerPoint JavaScript API 1.3
 
-PowerPoint JavaScript API 1.3 adds additional support for adding and deleting slides. It also lets add-ins apply custom metadata tags. For details about the APIs, see [Add and delete slides in PowerPoint](../../powerpoint/add-slides.md) and [Use custom tags for presentations, slides, and shapes in PowerPoint](../../powerpoint/tagging-presentations-slides-shapes.md).
+PowerPoint JavaScript API 1.3 adds additional support for adding and deleting slides. It also lets add-ins apply custom metadata tags. For details about the APIs, see [Add and delete slides in PowerPoint](/office/dev/add-ins/powerpoint/add-slides.md) and [Use custom tags for presentations, slides, and shapes in PowerPoint](/office/dev/add-ins/powerpoint/tagging-presentations-slides-shapes.md).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 
 > [!NOTE]
-> This section assumes you're familiar with the overview of requirement sets at [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md) and [Specify Office applications and API requirements](../../develop/specify-office-hosts-and-api-requirements.md).
+> This section assumes you're familiar with the overview of requirement sets at [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md) and [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md).
 
 Requirement sets are named groups of API members. An Office Add-in can perform a runtime check or use requirement sets specified in the manifest to determine whether an Office application supports the APIs that the add-in needs.
 
@@ -76,6 +76,6 @@ Most of the PowerPoint Add-in functionality comes from the Common API set. For i
 ## See also
 
 - [PowerPoint JavaScript API reference documentation](/javascript/api/powerpoint)
-- [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md)
-- [Specify Office applications and API requirements](../../develop/specify-office-hosts-and-api-requirements.md)
-- [Office Add-ins XML manifest](../../develop/add-in-manifests.md)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md)
+- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md)
+- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests.md)

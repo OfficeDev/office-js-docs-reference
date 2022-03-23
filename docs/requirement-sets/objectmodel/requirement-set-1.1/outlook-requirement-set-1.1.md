@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in. Outlook JavaScript API 1.1 (Mailbox 1.1) is the first version of the API.
 
 > [!NOTE]
-> This documentation is for a [requirement set](../../requirement-sets/outlook-api-requirement-sets.md) other than the latest requirement set.
+> This documentation is for a [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md) other than the latest requirement set.
 
 ## What's new in 1.1?
 
-Requirement set 1.1 includes all of the [Common API requirement sets](../../requirement-sets/office-add-in-requirement-sets.md) supported in Outlook. It added the ability for add-ins to access the body of messages and appointments and the ability to modify the current item.
+Requirement set 1.1 includes all of the [Common API requirement sets](/office/dev/add-ins/requirement-sets/office-add-in-requirement-sets.md) supported in Outlook. It added the ability for add-ins to access the body of messages and appointments and the ability to modify the current item.
 
 ### Change log
 
@@ -32,7 +32,7 @@ Requirement set 1.1 includes all of the [Common API requirement sets](../../requ
 
 ## See also
 
-- [Outlook add-ins](../../../outlook/outlook-add-ins-overview.md)
+- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview.md)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
-- [Get started](../../../quickstarts/outlook-quickstart.md)
-- [Requirement sets and supported clients](../../requirement-sets/outlook-api-requirement-sets.md)
+- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart.md)
+- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md)

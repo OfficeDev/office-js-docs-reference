@@ -12,7 +12,7 @@ New PowerPoint JavaScript APIs are first introduced in "preview" and later becom
 
 The first table provides a concise summary of the APIs, while the subsequent table gives a detailed list.
 
-[!INCLUDE [Information about using preview APIs](../../includes/using-preview-apis-host.md)]
+[!INCLUDE [Information about using preview APIs](../includes/using-preview-apis-host.md)]
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |

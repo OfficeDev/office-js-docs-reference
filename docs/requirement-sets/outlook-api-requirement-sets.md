@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require by using the [Requirements](/javascript/api/requirements) element in their [manifest](../../develop/add-in-manifests.md). Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
+Outlook add-ins declare what API versions they require by using the [Requirements](/javascript/api/requirements) element in their [manifest](/office/dev/add-ins/develop/add-in-manifests.md). Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
 
 For example, the following manifest snippet indicates a minimum requirement set of 1.1.
 
@@ -20,7 +20,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 </Requirements>
 ```
 
-All Outlook APIs belong to the `Mailbox` [requirement set](../../develop/specify-office-hosts-and-api-requirements.md). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
+All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
 Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client does not support the minimum requirement set, it does not load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
 
@@ -64,7 +64,7 @@ Developers should use the earliest requirement set that contains the critical se
 
 ## Requirement sets supported by Exchange servers and Outlook clients
 
-In this section, we note the range of requirement sets supported by Exchange server and Outlook clients. For details about server and client requirements for running Outlook add-ins, see [Outlook add-ins requirements](../../outlook/add-in-requirements.md).
+In this section, we note the range of requirement sets supported by Exchange server and Outlook clients. For details about server and client requirements for running Outlook add-ins, see [Outlook add-ins requirements](/office/dev/add-ins/outlook/add-in-requirements.md).
 
 > [!IMPORTANT]
 > If your target Exchange server and Outlook client support different requirement sets, then you may be restricted to the lower requirement set range. For example, if an add-in is running in Outlook 2016 on Mac (highest requirement set: 1.6) against Exchange 2013 (highest requirement set: 1.1), your add-in may be limited to requirement set 1.1.
@@ -81,7 +81,7 @@ The following servers support Outlook add-ins.
 || 2013 | [1.1](../objectmodel/requirement-set-1.1/outlook-requirement-set-1.1.md) |
 
 > [!NOTE]
-> \* [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
+> \* [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../includes/outlook-identity-13-note.md)]
 
 ### Outlook client support
 
@@ -108,17 +108,17 @@ Add-ins are supported in Outlook on the following platforms.
 > [!NOTE]
 > <sup>1</sup> Support for **1.8** in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase is available from version 1910 (build 12130.20272). Support for **1.9** in Outlook on Windows with a Microsoft 365 subscription is available from version 2008 (build 13127.20296). Support for **1.10** in Outlook on Windows with a Microsoft 365 subscription is available from version 2104 (build 13929.20296). Support for **1.11** in Outlook on Windows with a Microsoft 365 subscription is available from version 2110 (build 14527.20226). For more details according to your version, see the update history page for [Office 2019](/officeupdates/update-history-office-2019) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 >
-> <sup>2</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
+> <sup>2</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../includes/outlook-identity-13-note.md)]
 >
 > <sup>3</sup> Support for 1.3 in Outlook 2013 was added as part of the [December 8, 2015, update for Outlook 2013 (KB3114349)](https://support.microsoft.com/kb/3114349). Support for 1.4 in Outlook 2013 was added as part of the [September 13, 2016, update for Outlook 2013 (KB3118280)](https://support.microsoft.com/help/3118280). Support for 1.4 in Outlook 2016 (one-time purchase) was added as part of the [July 3, 2018, update for Office 2016 (KB4022223)](https://support.microsoft.com/help/4022223).
 >
-> <sup>4</sup> Support for the new Mac UI (preview) is available from Outlook version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](../../outlook/compare-outlook-add-in-support-in-outlook-for-mac.md#add-in-support-in-outlook-on-new-mac-ui-preview) section.
+> <sup>4</sup> Support for the new Mac UI (preview) is available from Outlook version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac.md#add-in-support-in-outlook-on-new-mac-ui-preview) section.
 >
-> <sup>5</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands for Outlook Mobile](../../outlook/add-mobile-support.md#code-considerations).
+> <sup>5</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands for Outlook Mobile](/office/dev/add-ins/outlook/add-mobile-support.md#code-considerations).
 >
-> <sup>6</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](../../concepts/requirements-for-running-office-add-ins.md#client-requirements-non-windows-smartphone-and-tablet).
+> <sup>6</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins.md#client-requirements-non-windows-smartphone-and-tablet).
 
-[!INCLUDE [How to distinguish between classic and modern Outlook on the web](../../includes/classic-versus-modern-Outlook-on-the-web.md)]
+[!INCLUDE [How to distinguish between classic and modern Outlook on the web](../includes/classic-versus-modern-Outlook-on-the-web.md)]
 
 ## Using preview APIs
 

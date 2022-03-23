@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 
 # Add-in commands requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md).
 
-Add-in commands are UI elements that extend the Office UI and start actions in your add-in. You can use add-in commands to add a button on the ribbon or an item to a context menu. For more information, see [Add-in commands for Excel, Word, and PowerPoint](../../design/add-in-commands.md) and [Add-in commands for Outlook](../../outlook/add-in-commands-for-outlook.md).
+Add-in commands are UI elements that extend the Office UI and start actions in your add-in. You can use add-in commands to add a button on the ribbon or an item to a context menu. For more information, see [Add-in commands for Excel, Word, and PowerPoint](/office/dev/add-ins/design/add-in-commands.md) and [Add-in commands for Outlook](/office/dev/add-ins/outlook/add-in-commands-for-outlook.md).
 
 > [!NOTE]
 > Outlook add-ins support add-in commands, but the APIs and manifest elements that enable add-in commands in Outlook are in the [Mailbox 1.3](../objectmodel/requirement-set-1.3/outlook-requirement-set-1.3.md) requirement set. The AddinCommands requirement sets are not applicable to Outlook.
@@ -21,7 +21,7 @@ The initial release of add-in commands doesn't have a corresponding requirement 
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | Add-in commands (initial release, no requirement set) | N/A | N/A | Version 1809 (Build 10827.20150) or later| 16.0.14326.20454 or later |Version 1603 (Build 6769.0000) or later | N/A | 15.33 or later| January 2016 |
 
-The add-in commands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](../../develop/automatically-open-a-task-pane-with-a-document.md).
+The add-in commands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](/office/dev/add-ins/develop/automatically-open-a-task-pane-with-a-document.md).
 
 The add-in commands **1.3** requirement set introduces manifest markup that enables an add-in to customize the placement of a custom tab on the Office ribbon and to insert built-in Office ribbon controls into custom control groups.
 
@@ -40,7 +40,7 @@ The following table lists the add-in commands requirement sets, the Office clien
 
 To find out more about versions, build numbers, and Office Online Server, see:
 
-[!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
+[!INCLUDE [Links to get Office versions and how to find Office client version](../includes/links-get-office-versions-builds.md)]
 - [Office Online Server overview](/officeonlineserver/office-online-server-overview)
 
 ## Office Common API requirement sets
@@ -49,6 +49,6 @@ For information about Common API requirement sets, see [Office Common API requir
 
 ## See also
 
-- [Office versions and requirement sets](../../develop/office-versions-and-requirement-sets.md)
-- [Specify Office applications and API requirements](../../develop/specify-office-hosts-and-api-requirements.md)
-- [Office Add-ins XML manifest](../../develop/add-in-manifests.md)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md)
+- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md)
+- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests.md)
