@@ -12,7 +12,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 > [!IMPORTANT]
 > This documentation is for a **preview** [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
 
-[!INCLUDE [Information about using preview APIs](/office/dev/add-ins/includes/using-preview-apis-host.md)]
+[!INCLUDE [Information about using preview APIs](../../includes/using-preview-apis-host.md)]
 
 > [!TIP]
 > You may be able to preview features in Outlook on the web by [configuring targeted release on your Microsoft 365 tenant](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true#set-up-the-release-option-in-the-admin-center). "Configure preview access" is noted on this page for applicable features.

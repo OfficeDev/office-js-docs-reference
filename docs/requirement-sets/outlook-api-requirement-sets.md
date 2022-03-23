@@ -118,7 +118,16 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>6</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins.md#client-requirements-non-windows-smartphone-and-tablet).
 
-[!INCLUDE [How to distinguish between classic and modern Outlook on the web](../includes/classic-versus-modern-Outlook-on-the-web.md)]
+> [!TIP]
+> You can distinguish between classic and modern Outlook in a web browser by checking your mailbox toolbar.
+>
+> **modern**
+>
+> ![Partial screenshot of the modern Outlook toolbar.](../images/outlook-on-the-web-new-toolbar.png)
+>
+> **classic**
+>
+> ![Partial screenshot of the classic Outlook toolbar.](../images/outlook-on-the-web-classic-toolbar.png)
 
 ## Using preview APIs
 

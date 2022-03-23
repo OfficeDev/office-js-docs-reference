@@ -22,7 +22,7 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 The following table lists the PowerPoint JavaScript API requirement set 1.3. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
-[!INCLUDE[API table](../includes/powerpoint-1-3.md)]
+[!INCLUDE[API table](../includes/powerpoint-1_3.md)]
 
 ## See also
 
