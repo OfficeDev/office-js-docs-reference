@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 New Excel JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired.
 
-[!INCLUDE [Information about using preview APIs](../includes/using-preview-apis-host.md)]
+[!INCLUDE [Information about using preview APIs](../../includes/using-preview-apis-host.md)]
 
 The following table provides a concise summary of the APIs, while the subsequent [API list](#api-list) table gives a detailed list.
 
@@ -28,7 +28,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 
 The following table lists the Excel JavaScript APIs currently in preview. For a complete list of all Excel JavaScript APIs (including preview APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/excel?view=excel-js-preview&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-preview.md)]
+[!INCLUDE[API table](../../includes/excel-preview.md)]
 
 ## See also
 

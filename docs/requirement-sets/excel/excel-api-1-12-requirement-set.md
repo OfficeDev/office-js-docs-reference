@@ -23,7 +23,7 @@ The ExcelApi 1.12 increased support for formulas in ranges by adding APIs for tr
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.12. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.12 or earlier, see [Excel APIs in requirement set 1.12 or earlier](/javascript/api/excel?view=excel-js-1.12&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-1_12.md)]
+[!INCLUDE[API table](../../includes/excel-1_12.md)]
 
 ## See also
 

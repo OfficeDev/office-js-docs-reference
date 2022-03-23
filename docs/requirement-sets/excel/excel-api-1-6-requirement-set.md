@@ -29,7 +29,7 @@ In addition:
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.6. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.6 or earlier, see [Excel APIs in requirement set 1.6 or earlier](/javascript/api/excel?view=excel-js-1.6&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-1_6.md)]
+[!INCLUDE[API table](../../includes/excel-1_6.md)]
 
 ## See also
 

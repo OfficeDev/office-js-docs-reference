@@ -27,7 +27,7 @@ ExcelApi 1.5 adds Custom XML parts. These are accessible through the [custom XML
 
 The following table lists the APIs in Excel JavaScript API requirement set 1.5. To view API reference documentation for all APIs supported by Excel JavaScript API requirement set 1.5 or earlier, see [Excel APIs in requirement set 1.5 or earlier](/javascript/api/excel?view=excel-js-1.5&preserve-view=true).
 
-[!INCLUDE[API table](../includes/excel-1_5.md)]
+[!INCLUDE[API table](../../includes/excel-1_5.md)]
 
 ## See also
 

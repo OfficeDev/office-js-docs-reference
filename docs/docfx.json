@@ -779,7 +779,12 @@
         "docs-ref-autogen/word_1_2/word/**": "word",
         "docs-ref-autogen/word_1_3/**": "word",
         "docs-ref-autogen/word_1_3/word/**": "word",
-        "manifest/**": "non-product-specific"
+        "manifest/**": "non-product-specific",
+        "requirement-sets/**": "non-product-specific",
+        "requirement-sets/excel/**": "excel",
+        "requirement-sets/outlook/**": "outlook",
+        "requirement-sets/powerpoint/**": "powerpoint",
+        "requirement-sets/word/**": "word"
       },
       "products": {
         "docs-ref-autogen/outlook*/**": [
