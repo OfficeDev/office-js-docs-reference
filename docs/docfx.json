@@ -130,6 +130,7 @@
       },
       {
         "files": ["**/*.md"],
+        "exclude": ["manifest.md"],
         "group": "all",
         "src": "manifest",
         "dest": "api/manifest"
@@ -142,6 +143,7 @@
       },
       {
         "files": ["**/*.md"],
+        "exclude": ["requirement-sets.md"],
         "group": "all",
         "src": "requirement-sets",
         "dest": "api/requirement-sets"
