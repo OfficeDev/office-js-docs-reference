@@ -129,18 +129,6 @@
         ]
       },
       {
-        "files": ["toc.yml"],
-        "group": "all",
-        "src": "manifest",
-        "dest": "api/manifest"
-      },
-      {
-        "files": ["toc.yml"],
-        "group": "all",
-        "src": "requirement-sets",
-        "dest": "api/requirement-sets"
-      },
-      {
         "files": ["**/*.md"],
         "group": "all",
         "src": "manifest",
