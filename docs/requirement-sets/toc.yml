@@ -59,7 +59,7 @@
       displayName: Excel
 
   - name: OneNote requirement sets
-  - items:
+    items:
     - name: API requirement sets
       href: ../../requirement-sets/onenote-api-requirement-sets.md
       displayName: OneNote
