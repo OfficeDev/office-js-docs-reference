@@ -51,6 +51,11 @@
         "dest": "api/office_ref_toc"
       },
       {
+        "files": ["toc.yml"],
+        "src": "",
+        "dest": "api/office_ref_toc"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "src": "docs-ref-conceptual",
         "dest": "office",
@@ -122,6 +127,18 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": ["toc.yml"],
+        "group": "all",
+        "src": "manifest",
+        "dest": "api/manifest"
+      },
+      {
+        "files": ["toc.yml"],
+        "group": "all",
+        "src": "requirement-sets",
+        "dest": "api/requirement-sets"
       },
       {
         "files": ["**/*.md"],
