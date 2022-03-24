@@ -491,7 +491,7 @@ items:
             href: ../../manifest/webapplicationinfo.md
   - name: Requirement sets
     items:
-      - name: Requirement sets overview
+      - name: Application and platform availability
         href: ../../requirement-sets/requirement-sets.md
       - name: Excel requirement sets
         items:
