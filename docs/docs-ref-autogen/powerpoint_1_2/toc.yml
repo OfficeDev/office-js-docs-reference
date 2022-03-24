@@ -519,7 +519,7 @@ items:
       - name: OneNote requirement sets
         items:
           - name: API requirement sets
-            href: ../../requirement-sets/onenote-api-requirement-sets.md
+            href: ../../requirement-sets/onenote/onenote-api-requirement-sets.md
             displayName: OneNote
       - name: Outlook requirement sets
         items:
@@ -759,23 +759,25 @@ items:
             displayName: Word
       - name: Common API requirement sets
         items:
+          - name: Overview
+            href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
-            href: ../../requirement-sets/add-in-commands-requirement-sets.md
+            href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
           - name: Dialog API requirement sets
-            href: ../../requirement-sets/dialog-api-requirement-sets.md
+            href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets
-            href: ../../requirement-sets/dialog-origin-requirement-sets.md
+            href: ../../requirement-sets/common/dialog-origin-requirement-sets.md
           - name: Identity API requirement sets
-            href: ../../requirement-sets/identity-api-requirement-sets.md
+            href: ../../requirement-sets/common/identity-api-requirement-sets.md
           - name: Image Coercion requirement sets
-            href: ../../requirement-sets/image-coercion-requirement-sets.md
+            href: ../../requirement-sets/common/image-coercion-requirement-sets.md
           - name: Keyboard Shortcuts requirement sets
-            href: ../../requirement-sets/keyboard-shortcuts-requirement-sets.md
-          - name: Office Common API requirement sets
-            href: ../../requirement-sets/office-add-in-requirement-sets.md
+            href: >-
+              ../../requirement-sets/common/keyboard-shortcuts-requirement-sets.md
           - name: Open Browser Window requirement sets
-            href: ../../requirement-sets/open-browser-window-api-requirement-sets.md
+            href: >-
+              ../../requirement-sets/common/open-browser-window-api-requirement-sets.md
           - name: Ribbon API requirement sets
-            href: ../../requirement-sets/ribbon-api-requirement-sets.md
+            href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
           - name: Shared Runtime requirement sets
-            href: ../../requirement-sets/shared-runtime-requirement-sets.md
+            href: ../../requirement-sets/common/shared-runtime-requirement-sets.md
