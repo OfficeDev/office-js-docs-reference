@@ -800,7 +800,9 @@
         "docs-ref-autogen/word_1_3/word/**": "word",
         "manifest/**": "non-product-specific",
         "requirement-sets/**": "non-product-specific",
+        "requirement-sets/common/**": "non-product-specific",
         "requirement-sets/excel/**": "excel",
+        "requirement-sets/onenote/**": "onenote",
         "requirement-sets/outlook/**": "outlook",
         "requirement-sets/powerpoint/**": "powerpoint",
         "requirement-sets/word/**": "word"
