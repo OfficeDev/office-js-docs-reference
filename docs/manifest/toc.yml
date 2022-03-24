@@ -1,4 +1,4 @@
-- name: Manifest
+- name: Manifest reference
   items:
   - name: Manifest overview
     href: ../../manifest/manifest.md

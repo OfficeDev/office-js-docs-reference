@@ -1083,7 +1083,7 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-  - name: Manifest
+  - name: Manifest reference
     items:
       - name: Manifest overview
         href: ../../manifest/manifest.md
