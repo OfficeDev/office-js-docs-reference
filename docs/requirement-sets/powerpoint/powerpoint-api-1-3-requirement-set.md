@@ -14,8 +14,8 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| [Slide management](/office/dev/add-ins/powerpoint/add-slides.md) | Adds support for adding slides as well as managing slide layouts and slide masters. | [Slide](/javascript/api/powerpoint/powerpoint.slide)<br>[SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout)<br>[SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster)|
-| [Tags](/office/dev/add-ins/powerpoint/tagging-presentations-slides-shapes.md) | Allows add-ins to attach custom metadata, in the form of key-value pairs. | [Tag](/javascript/api/powerpoint/powerpoint.tag) |
+| [Slide management](/office/dev/add-ins/powerpoint/add-slides) | Adds support for adding slides as well as managing slide layouts and slide masters. | [Slide](/javascript/api/powerpoint/powerpoint.slide)<br>[SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout)<br>[SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster)|
+| [Tags](/office/dev/add-ins/powerpoint/tagging-presentations-slides-shapes) | Allows add-ins to attach custom metadata, in the form of key-value pairs. | [Tag](/javascript/api/powerpoint/powerpoint.tag) |
 
 ## API list
 

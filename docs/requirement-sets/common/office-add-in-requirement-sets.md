@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Office Common API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 > [!TIP]
 > Looking for the *application-specific* API requirement sets? See the following API requirement sets.
@@ -27,7 +27,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 The following sections list the Common API requirement sets, the methods in each set, and the Office client applications that support that requirement set. All of these API requirement sets are version 1.1, unless otherwise specified.
 
 > [!TIP]
-> Need information about where add-ins and requirement sets are supported by Office application and version? See [Office client application and platform availability for Office Add-ins](/office/dev/add-ins/overview/office-add-in-availability.md).
+> Need information about where add-ins and requirement sets are supported by Office application and version? See [Office client application and platform availability for Office Add-ins](/office/dev/add-ins/overview/office-add-in-availability).
 
 ### ActiveView
 
@@ -261,7 +261,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ## Methods that aren't part of a requirement set
 
-The following methods in the Office JavaScript API aren't part of a requirement set. If your add-in requires any of these methods, use the **Methods** and **Method** elements in the add-in's manifest to declare that they are required, or perform the runtime check using an `if` statement. For more information, see [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md).
+The following methods in the Office JavaScript API aren't part of a requirement set. If your add-in requires any of these methods, use the **Methods** and **Method** elements in the add-in's manifest to declare that they are required, or perform the runtime check using an `if` statement. For more information, see [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements).
 
 |**Method name**|**Office application support**|
 |:-----|:-----|
@@ -284,6 +284,6 @@ The following methods in the Office JavaScript API aren't part of a requirement 
 
 ## See also
 
-- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md)
-- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests.md)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
+- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
+- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)

@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Excel JavaScript API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 ## Requirement set availability
 
@@ -54,7 +54,7 @@ For more information about Office versions and build numbers, see:
 ## How to use Excel requirement sets at runtime and in the manifest
 
 > [!NOTE]
-> This section assumes you're familiar with the overview of requirement sets at [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md) and [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements.md).
+> This section assumes you're familiar with the overview of requirement sets at [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets) and [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements).
 
 Requirement sets are named groups of API members. An Office Add-in can perform a runtime check or use requirement sets specified in the manifest to determine whether an Office application supports the APIs that the add-in needs.
 
@@ -88,4 +88,4 @@ The following code sample shows the `Requirements` element in an add-in manifest
 ## See also
 
 - [Excel JavaScript API Reference Documentation](/javascript/api/excel)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests.md)
+- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)

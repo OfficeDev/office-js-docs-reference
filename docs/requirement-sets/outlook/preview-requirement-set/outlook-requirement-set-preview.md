@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
 > [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
+> This documentation is for a **preview** [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
 
 [!INCLUDE [Information about using preview APIs](../../../includes/using-preview-apis-host.md)]
 
@@ -103,7 +103,7 @@ This feature was released in [requirement set 1.10](../requirement-set-1.10/outl
 
 #### [Office.AddinCommands.EventCompletedOptions.errorMessage](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-errormessage-member)
 
-Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough.md).
+Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
 
@@ -149,13 +149,13 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ### Shared mailboxes
 
-Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access.md).
+Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription), Outlook on the web (modern), Outlook on Mac
 
 ## See also
 
-- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview.md)
+- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
-- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart.md)
-- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md)
+- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart)
+- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets)

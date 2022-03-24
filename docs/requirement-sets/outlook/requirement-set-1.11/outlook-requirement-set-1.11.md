@@ -38,7 +38,7 @@ Requirement set 1.11 includes all of the features of [requirement set 1.10](../r
 
 ## See also
 
-- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview.md)
+- [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
-- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart.md)
-- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets.md)
+- [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart)
+- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets)

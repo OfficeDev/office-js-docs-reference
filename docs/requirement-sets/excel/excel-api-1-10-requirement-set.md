@@ -12,10 +12,10 @@ The ExcelApi 1.10 introduced key features, such as commenting, outlines, and sli
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| [Comments](/office/dev/add-ins/excel/excel-add-ins-comments.md) | Add, edit, and delete comments. | [Comment](/javascript/api/excel/excel.comment), [CommentCollection](/javascript/api/excel/excel.commentcollection) |
-| [Outlines](/office/dev/add-ins/excel/excel-add-ins-ranges-group.md) | Group rows and columns to form collapsible outlines. | [Range](/javascript/api/excel/excel.range), [Worksheet](/javascript/api/excel/excel.worksheet) |
+| [Comments](/office/dev/add-ins/excel/excel-add-ins-comments) | Add, edit, and delete comments. | [Comment](/javascript/api/excel/excel.comment), [CommentCollection](/javascript/api/excel/excel.commentcollection) |
+| [Outlines](/office/dev/add-ins/excel/excel-add-ins-ranges-group) | Group rows and columns to form collapsible outlines. | [Range](/javascript/api/excel/excel.range), [Worksheet](/javascript/api/excel/excel.worksheet) |
 | [Slicers](/office/dev/add-ins/excel/excel-add-ins-pivottables.md#filter-with-slicers) | Insert and configure slicers to tables and PivotTables. | [Slicer](/javascript/api/excel/excel.slicer) |
-| [More Worksheet Events](/office/dev/add-ins/excel/excel-add-ins-events.md) | Listen for click and sort events in the worksheet. | [Worksheet (Events)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-events-member) |
+| [More Worksheet Events](/office/dev/add-ins/excel/excel-add-ins-events) | Listen for click and sort events in the worksheet. | [Worksheet (Events)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-events-member) |
 
 ## API list
 
