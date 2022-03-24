@@ -49,7 +49,7 @@ The following code example shows an add-in that loads in all Office client appli
 
 ## Office Common API requirement sets
 
-For information about Common API requirement sets, see [Office Common API requirement sets](office-add-in-requirement-sets.md).
+For information about Common API requirement sets, see [Office Common API requirement sets](../common/office-add-in-requirement-sets.md).
 
 ## See also
 
