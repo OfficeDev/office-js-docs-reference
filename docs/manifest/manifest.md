@@ -5,10 +5,12 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: medium
-ms.date: 03/21/2022
+ms.date: 03/24/2022
 ---
 
 # Office Add-ins manifest reference
+
+This section contains information about every element used by an Office Add-in's XML manifest. To learn more about how the manifest describes your add-in to an Office application, visit [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests).
 
 ## Elements
 
