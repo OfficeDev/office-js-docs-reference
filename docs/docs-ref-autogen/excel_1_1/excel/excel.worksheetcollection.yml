@@ -1,0 +1,212 @@
+### YamlMime:TSType
+name: Excel.WorksheetCollection
+uid: 'excel!Excel.WorksheetCollection:class'
+package: excel!
+fullName: Excel.WorksheetCollection
+summary: Represents a collection of worksheet objects that are part of the workbook.
+remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.WorksheetCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.WorksheetCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.Worksheet[];'
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />[]'
+methods:
+  - name: add(name)
+    uid: 'excel!Excel.WorksheetCollection#add:member(1)'
+    package: excel!
+    fullName: add(name)
+    summary: >-
+      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
+      to activate the newly added worksheet, call `.activate()` on it.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+          var wSheetName = 'Sample Name';
+          var worksheet = context.workbook.worksheets.add(wSheetName);
+          worksheet.load('name');
+          await context.sync();
+          
+          console.log(worksheet.name);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'add(name?: string): Excel.Worksheet;'
+      parameters:
+        - id: name
+          description: >-
+            Optional. The name of the worksheet to be added. If specified, the name should be unique. If not specified,
+            Excel determines the name of the new worksheet.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        description: ''
+  - name: getActiveWorksheet()
+    uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+    package: excel!
+    fullName: getActiveWorksheet()
+    summary: Gets the currently active worksheet in the workbook.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {  
+          var activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
+          activeWorksheet.load('name');
+          await context.sync();
+          console.log(activeWorksheet.name);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getActiveWorksheet(): Excel.Worksheet;'
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        description: ''
+  - name: getItem(key)
+    uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(key)
+    summary: Gets a worksheet object using its name or ID.
+    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(key: string): Excel.Worksheet;'
+      parameters:
+        - id: key
+          description: The name or ID of the worksheet.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.Worksheet:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.WorksheetCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface" /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.WorksheetCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => { 
+              var worksheets = context.workbook.worksheets;
+              worksheets.load('items');
+              await context.sync();
+              
+              for (var i = 0; i < worksheets.items.length; i++) {
+                  console.log(worksheets.items[i].name);
+              }
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.WorksheetCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

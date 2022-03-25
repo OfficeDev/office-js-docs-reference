@@ -173,13 +173,13 @@
         "dest": "api"
       },
       {
-        "files": ["**/*.yml"],
+        "files": ["**/*.md", "**/*.yml"],
         "group": "common-js",
         "src": "docs-ref-autogen/common",
         "dest": "api"
       },
       {
-        "files": ["**/*.yml"],
+        "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-preview",
         "src": "docs-ref-autogen/common_preview",
         "dest": "api"

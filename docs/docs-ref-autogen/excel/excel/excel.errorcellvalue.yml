@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: Excel.ErrorCellValue
+uid: 'excel!Excel.ErrorCellValue:type'
+package: excel!
+fullName: Excel.ErrorCellValue
+summary: Represents a cell value which contains an error.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+syntax: >-
+  export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue |
+  Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue
+  | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue |
+  ValueErrorCellValue;

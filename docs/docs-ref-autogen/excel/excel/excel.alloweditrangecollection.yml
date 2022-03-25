@@ -1,0 +1,257 @@
+### YamlMime:TSType
+name: Excel.AllowEditRangeCollection
+uid: 'excel!Excel.AllowEditRangeCollection:class'
+package: excel!
+fullName: Excel.AllowEditRangeCollection
+summary: >-
+  Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet
+  protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing
+  of a specific range, while maintaining protection on the rest of the worksheet.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.AllowEditRangeCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: items
+    uid: 'excel!Excel.AllowEditRangeCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.AllowEditRange[];'
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRange:class" />[]'
+methods:
+  - name: 'add(title, rangeAddress, options)'
+    uid: 'excel!Excel.AllowEditRangeCollection#add:member(1)'
+    package: excel!
+    fullName: 'add(title, rangeAddress, options)'
+    summary: >-
+      Adds an `AllowEditRange` object to the collection. Worksheet protection must be disabled or paused for this method
+      to work properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied`
+      error and the add operation fails.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'add(title: string, rangeAddress: string, options?: Excel.AllowEditRangeOptions): void;'
+      parameters:
+        - id: title
+          description: The title string of the `AllowEditRange` object to be added.
+          type: string
+        - id: rangeAddress
+          description: The range address of the `AllowEditRange` object to be added.
+          type: string
+        - id: options
+          description: 'Additional options to be added to the `AllowEditRange` object, such as the password.'
+          type: '<xref uid="excel!Excel.AllowEditRangeOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: getCount()
+    uid: 'excel!Excel.AllowEditRangeCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
+    summary: Returns the number of `AllowEditRange` objects in the collection.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getItem(key)
+    uid: 'excel!Excel.AllowEditRangeCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(key)
+    summary: Gets the `AllowEditRange` object by its title.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItem(key: string): Excel.AllowEditRange;'
+      parameters:
+        - id: key
+          description: The title of the `AllowEditRange`<!-- -->.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRange:class" />'
+        description: >-
+          The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then an
+          `ItemNotFound` error is thrown.
+  - name: getItemAt(index)
+    uid: 'excel!Excel.AllowEditRangeCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: Returns an `AllowEditRange` object by its index in the collection.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.AllowEditRange;'
+      parameters:
+        - id: index
+          description: The index of the `AllowEditRange` object in the collection.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRange:class" />'
+        description: The `AllowEditRange` at the given index.
+  - name: getItemOrNullObject(key)
+    uid: 'excel!Excel.AllowEditRangeCollection#getItemOrNullObject:member(1)'
+    package: excel!
+    fullName: getItemOrNullObject(key)
+    summary: Gets the `AllowEditRange` object by its title.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.AllowEditRange;'
+      parameters:
+        - id: key
+          description: The title of the `AllowEditRange`<!-- -->.
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRange:class" />'
+        description: >-
+          The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method
+          returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+          [\*OrNullObject methods and
+          properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+          -->.
+  - name: load(options)
+    uid: 'excel!Excel.AllowEditRangeCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.AllowEditRangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.AllowEditRangeCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.AllowEditRangeCollectionLoadOptions:interface" /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRangeCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.AllowEditRangeCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.AllowEditRangeCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRangeCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.AllowEditRangeCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.AllowEditRangeCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.AllowEditRangeCollection:class" />'
+        description: ''
+  - name: pauseProtection(password)
+    uid: 'excel!Excel.AllowEditRangeCollection#pauseProtection:member(1)'
+    package: excel!
+    fullName: pauseProtection(password)
+    summary: >-
+      Pauses worksheet protection for all `AllowEditRange` objects in the collection that have the given password for
+      the user in a given session. This method only pauses protection for the `AllowEditRange` objects if worksheet
+      protection is enabled and not paused. If worksheet protection cannot be paused, this method throws an
+      `UnsupportedOperation` error and fails to pause protection for the range. If the password does not match any
+      `AllowEditRange` objects in the collection, then this method throws a `BadPassword` error and fails to pause
+      protection for any range in the collection.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'pauseProtection(password: string): void;'
+      parameters:
+        - id: password
+          description: The password to pause protection on the `AllowEditRange` objects.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.AllowEditRangeCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.AllowEditRangeCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.AllowEditRangeCollectionData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.AllowEditRangeCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
