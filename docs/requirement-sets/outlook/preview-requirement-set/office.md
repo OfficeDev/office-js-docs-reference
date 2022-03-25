@@ -13,7 +13,7 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
 
 ## Properties
@@ -56,7 +56,7 @@ Specifies the result of an asynchronous call.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
 
 <br>
@@ -83,7 +83,7 @@ Specifies how to coerce data returned or set by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
 
 <br>
@@ -115,7 +115,7 @@ Specifies the event associated with an event handler.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.5 |
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
 
 <br>
@@ -142,5 +142,5 @@ Specifies the source of the data returned by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
