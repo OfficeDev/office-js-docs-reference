@@ -517,7 +517,7 @@ export declare namespace Office {
      * Manages actions and keyboard shortcuts.
      * 
      * @remarks
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
      export interface Actions {
         /**
@@ -527,7 +527,7 @@ export declare namespace Office {
          * @param actionFunction - The function that is run when the action is invoked. 
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
     }   
@@ -544,7 +544,7 @@ export declare namespace Office {
      * Represents add-in level functionality for operating or configuring various aspects of the add-in.
      * 
      * @remarks
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
     export interface Addin {
         /**
@@ -552,14 +552,14 @@ export declare namespace Office {
          * @param behavior - Specifies startup behavior of the add-in.
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
         /**
          * Gets the current startup behavior for the add-in.
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         getStartupBehavior(): Promise<Office.StartupBehavior>;
         /**
@@ -567,7 +567,7 @@ export declare namespace Office {
          * @returns A promise that is resolved when the UI is shown.
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         showAsTaskpane(): Promise<void>;
         /**
@@ -575,7 +575,7 @@ export declare namespace Office {
          * @returns A promise that is resolved when the UI is hidden.
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         hide(): Promise<void>;
         /**
@@ -584,7 +584,7 @@ export declare namespace Office {
          * @returns A promise that resolves to a function when the handler is added. Calling it removes the handler.
          * 
          * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
          onVisibilityModeChanged(
             handler: (message: VisibilityModeChangedMessage) => void,
@@ -595,7 +595,7 @@ export declare namespace Office {
 	 *
 	 * @remarks
      *
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Ribbon {
         /**
@@ -603,7 +603,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.2}
          * 
          * This method only requests that the tab be registered. The actual registration is controlled by the Office application and may not be complete when the returned `Promise` object is resolved.
          * For more information and code examples, see {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
@@ -616,7 +616,7 @@ export declare namespace Office {
 		 *
 		 * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
 		 *
          * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
          * 
@@ -631,7 +631,7 @@ export declare namespace Office {
 	 *
 	 * @remarks
      *
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface RibbonUpdaterData {
         /**
@@ -644,7 +644,7 @@ export declare namespace Office {
 	 *
 	 * @remarks
      *
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Tab {
         /**
@@ -664,7 +664,7 @@ export declare namespace Office {
          * 
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.2}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.2}
          */
         visible?: boolean;
         /**
@@ -674,14 +674,14 @@ export declare namespace Office {
          * 
          * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, the `controls` properties of the various {@link Office.Group} objects specify which controls have their enabled status changed; the `controls` property of the `Tab` object is ignored. 
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
          */
         groups?: Group[];
     }
     /**
      * Represents a group of controls on a ribbon tab.
      *
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Group {
         /**
@@ -705,7 +705,7 @@ export declare namespace Office {
      * 
      * For code samples showing how to use a `Control` object and its properties, see {@link https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets | RibbonApi 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
     export interface Control {
         /**
@@ -911,7 +911,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * See {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
+         * See {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: Restricted
          * 
@@ -923,7 +923,7 @@ export declare namespace Office {
              * 
              * @remarks
              * 
-             * This property is supported in Outlook only in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
+             * This property is supported in Outlook only in {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
              */
             source:Source;
 
@@ -934,8 +934,8 @@ export declare namespace Office {
              * 
              * - A UI-less button (i.e., an add-in command defined with an `Action` element where the `xsi:type` attribute is set to `ExecuteFunction`)
              * 
-             * - An {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event | event} defined in the
-             * {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events | Events extension point},
+             * - An {@link https://docs.microsoft.com/javascript/api/manifest/event | event} defined in the
+             * {@link https://docs.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point},
              * e.g., an `ItemSend` event
              * 
              * [Api set: Mailbox 1.3]
@@ -988,7 +988,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
          *
          * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
          *
@@ -1003,7 +1003,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
          *
          * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
          *
@@ -1021,9 +1021,9 @@ export declare namespace Office {
         *
         * **Requirement sets**: 
         *
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+        * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
         *
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
+        * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
         *
         * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
@@ -1122,9 +1122,9 @@ export declare namespace Office {
         * 
         * **Requirement sets**: 
         * 
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+        * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
         * 
-        * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.4}
+        * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
         * 
         * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
         * for Outlook. For more on how to specify a requirement set in your manifest, see 
@@ -1220,9 +1220,9 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
          * 
-         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
          * 
          * @param message - Accepts a message from the dialog to deliver to the add-in. Anything that can serialized to a string including JSON and XML can be sent. 
          * @param messageOptions - Optional. Provides options for how to send the message. 
@@ -1237,9 +1237,9 @@ export declare namespace Office {
          * 
          * **Requirement sets**:
          *
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
          *
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.5}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.5}
          * 
          * The behavior of this method is specified by the following:
          *
@@ -1256,7 +1256,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets | OpenBrowserWindowApi 1.1}
          *  
          * @param url - The full URL to be opened including protocol (e.g., https), and port number, if any.
          */
@@ -1337,7 +1337,7 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1362,7 +1362,7 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1384,7 +1384,7 @@ export declare namespace Office {
          * 
          * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox. 
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI 1.3}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          *
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
          * @returns Promise to the access token.
@@ -1833,7 +1833,7 @@ export declare namespace Office {
      * 
      * @remarks
      * 
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
      */
     export interface Dialog {
         /**
@@ -1850,7 +1850,7 @@ export declare namespace Office {
          * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
          * 
          * @param eventType - Must be either DialogMessageReceived or DialogEventReceived.
-         * @param handler - A function which accepts either an object with a `message` and `origin` property, if `eventType` is `DialogMessageReceived`, or an object with an `error` property, if `eventType` is `DialogEventReceived`. Note that the `origin` property is `undefined` on clients that don’t support {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}. 
+         * @param handler - A function which accepts either an object with a `message` and `origin` property, if `eventType` is `DialogMessageReceived`, or an object with an `error` property, if `eventType` is `DialogEventReceived`. Note that the `origin` property is `undefined` on clients that don’t support {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}. 
          */
         addEventHandler(eventType: Office.EventType, handler: (args: {message: string, origin: string | undefined} | {error: number}) => void): void;
         /**
@@ -1862,11 +1862,11 @@ export declare namespace Office {
          *
          * **Requirement sets**:
          *
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets | DialogApi 1.2}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
          *
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | Mailbox 1.9}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.9}
          *
-         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
+         * - If the `messageOptions` parameter is used, {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1} is also required.
          *
          * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.
          * @param messageOptions - Optional. Provides options for how to send the message. 
@@ -1943,21 +1943,21 @@ export declare namespace Office {
      * 
      * Application and platform support for each `CoercionType` is specified in the following requirement set descriptions.
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
      * 
-     * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+     * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
      * 
      */
     enum CoercionType {
@@ -2366,11 +2366,11 @@ export declare namespace Office {
     * 
     * **Requirement sets**: 
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+    * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+    * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
     * 
-    * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+    * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
     */
     export interface Binding {
         /**
@@ -2391,7 +2391,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents | BindingEvents}
          *  
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -2407,7 +2407,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents | BindingEvents}
          * 
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -2423,21 +2423,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          *
          * When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, 
          * startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
@@ -2455,21 +2455,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
          * When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, 
          * startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range).
@@ -2484,7 +2484,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents | BindingEvents}
          * 
          * @param eventType - The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`.
          * @param options - Provides options to determine which event handler or handlers are removed.
@@ -2496,7 +2496,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents | BindingEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents | BindingEvents}
          * 
          * @param eventType - The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -2509,21 +2509,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          *
          * The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as 
          * described in the following table.
@@ -2656,21 +2656,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
          * The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as 
          * described in the following table.
@@ -2880,11 +2880,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * For Excel, the itemName parameter can refer to a named range or a table.
          *
@@ -2916,9 +2916,9 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
-         * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}, 
-         * {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}, 
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}, 
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * For Excel, the itemName parameter can refer to a named range or a table.
          *
@@ -2949,7 +2949,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. 
          * The method fails if the specified selection cannot be bound.
@@ -2966,7 +2966,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. 
          * The method fails if the specified selection cannot be bound.
@@ -2984,11 +2984,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied id.
          *
@@ -3011,11 +3011,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied id.
          *
@@ -3037,11 +3037,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3055,11 +3055,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * @param callback - A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is an array that contains each binding created for the referenced Bindings object.
@@ -3072,11 +3072,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Fails if the specified id does not exist.
          *
@@ -3093,11 +3093,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Fails if the specified id does not exist.
          *
@@ -3113,11 +3113,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Fails if the specified id does not exist.
          *
@@ -3133,11 +3133,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**:
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings | MatrixBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings | TableBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings | TableBindings}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings | TextBindings}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
          * Fails if the specified id does not exist.
          *
@@ -3171,7 +3171,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xPath - The XPath expression that specifies the nodes to get. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3184,7 +3184,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xPath - The XPath expression that specifies the nodes to get. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3196,7 +3196,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3208,7 +3208,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the value of the referenced node.
@@ -3219,7 +3219,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3231,7 +3231,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the inner text of the referenced nodes.
@@ -3242,7 +3242,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3254,7 +3254,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the XML of the referenced node.
@@ -3265,7 +3265,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param value - The value to be set on the node
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3277,7 +3277,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param value - The value to be set on the node
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3288,7 +3288,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param text - Required. The text value of the XML node.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3300,7 +3300,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param text - Required. The text value of the XML node.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3311,7 +3311,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xml - The XML to be set on the node
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3323,7 +3323,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xml - The XML to be set on the node
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3355,7 +3355,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -3372,7 +3372,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -3388,7 +3388,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3399,7 +3399,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          */
@@ -3409,7 +3409,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xPath - An XPath expression that specifies the nodes you want returned. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3422,7 +3422,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xPath - An XPath expression that specifies the nodes you want returned. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3434,7 +3434,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3446,7 +3446,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a string that contains the XML of the referenced CustomXmlPart object.
@@ -3457,7 +3457,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param eventType - Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
          *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
@@ -3471,7 +3471,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param eventType - Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
          *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
@@ -3554,7 +3554,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xml - The XML to add to the newly created custom XML part.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3567,7 +3567,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param xml - The XML to add to the newly created custom XML part.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3579,7 +3579,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param id - The GUID of the custom XML part, including opening and closing braces.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3593,7 +3593,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param id - The GUID of the custom XML part, including opening and closing braces.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3606,7 +3606,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param ns - The namespace URI.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3619,7 +3619,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          *
          * @param ns - The namespace URI.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3640,7 +3640,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If no namespace is assigned to the requested prefix, the method returns an empty string ("").
          *
@@ -3655,7 +3655,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If no namespace is assigned to the requested prefix, the method returns an empty string ("").
          *
@@ -3669,7 +3669,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one 
          * added or used by the data store internally, in which case it will return an error.
@@ -3685,7 +3685,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one 
          * added or used by the data store internally, in which case it will return an error.
@@ -3700,7 +3700,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in 
          * the namespace manager, the method returns the first prefix that matches the supplied namespace.
@@ -3716,7 +3716,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
          * 
          * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in 
          * the namespace manager, the method returns the first prefix that matches the supplied namespace.
@@ -3765,7 +3765,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
          *
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -3781,7 +3781,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
          *
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -3796,7 +3796,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview | ActiveView}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview | ActiveView}
          *
          * Can trigger an event when the view changes.
          *
@@ -3812,7 +3812,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview | ActiveView}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview | ActiveView}
          *
          * Can trigger an event when the view changes.
          *
@@ -3830,11 +3830,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          *
          * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up 
          * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to 
@@ -3865,11 +3865,11 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile | CompressedFile} (when using `Office.FileType.Compressed`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          * 
          * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up 
          * to 4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the `getFileAsync` method supports getting files in slices of up to 
@@ -3896,7 +3896,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement sets**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement sets**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * You get the file's URL with the url property `asyncResult.value.url`.
          *
@@ -3910,7 +3910,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement sets**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement sets**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * You get the file's URL with the url property `asyncResult.value.url`.
          *
@@ -3925,17 +3925,17 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
          * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return 
          * the following information.
@@ -4017,17 +4017,17 @@ export declare namespace Office {
          * 
          * **Requirement sets**:
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion} (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
          * In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return 
          * the following information.
@@ -4104,7 +4104,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * PowerPoint doesn't support the goToByIdAsync method in Master Views.
          *
@@ -4131,7 +4131,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
          * PowerPoint doesn't support the goToByIdAsync method in Master Views.
          *
@@ -4157,7 +4157,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
          *
          * @param eventType - The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
          * @param options - Provides options to determine which event handler or handlers are removed.
@@ -4169,7 +4169,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents | DocumentEvents}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents | DocumentEvents}
          *
          * @param eventType - The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -4182,21 +4182,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion 1.1} (when using `Office.CoercionType.Image`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
          * 
          * **Application-specific behaviors**
          * 
@@ -4372,21 +4372,21 @@ export declare namespace Office {
          * 
          * **Requirement sets**: 
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion} (when using `Office.CoercionType.Image`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets | ImageCoercion} (when using `Office.CoercionType.Image`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion | OoxmlCoercion} (when using `Office.CoercionType.Ooxml`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection | Selection}
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection | Selection}
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
          * 
          * **Application-specific behaviors**
          * 
@@ -4872,7 +4872,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
          * 
          * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync 
          * method to close the file when you are finished working with it.
@@ -4911,7 +4911,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file | File}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file | File}
          * 
          * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following 
          * information.
@@ -4995,7 +4995,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -5037,7 +5037,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
          *
@@ -5074,7 +5074,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          *
          * @param settingName - The case-sensitive name of the setting to retrieve.
          * @returns An object that has property names mapped to JSON serialized values.
@@ -5085,7 +5085,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against 
          * the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user 
@@ -5132,7 +5132,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          * 
          * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
          * 
@@ -5144,7 +5144,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType 
          * will be removed.
@@ -5165,7 +5165,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for the specified eventType 
          * will be removed.
@@ -5185,7 +5185,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          * 
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the 
          * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
@@ -5228,7 +5228,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          * 
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the 
          * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
@@ -5275,7 +5275,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings | Settings}
          * 
          * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name 
          * in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as 
@@ -5319,7 +5319,7 @@ export declare namespace Office {
      * 
      * @remarks
      * 
-     * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}
+     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}
      */
     export interface DialogMessageOptions {
         /**
@@ -5344,7 +5344,7 @@ export declare namespace Office {
         * 
         * @remarks
         * 
-        * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-origin-requirement-sets | DialogOrigin 1.1}.
+        * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}.
         * The property is `undefined` on clients that do not support this requirement set.
         */
         origin: string | undefined;
@@ -5864,7 +5864,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
          * 
@@ -5902,7 +5902,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
+         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          * 
          * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
          * 

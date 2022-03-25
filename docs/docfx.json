@@ -2,7 +2,7 @@
   "build": {
     "content": [
       {
-        "files": ["**/toc.md", "**/toc.yml"],
+        "files": ["**/toc.md", "**/toc.yml", "toc.yml"],
         "exclude": [
           "common/**",
           "common_preview/**",
@@ -48,6 +48,11 @@
           "word_1_3/**"
         ],
         "src": "docs-ref-autogen",
+        "dest": "api/office_ref_toc"
+      },
+      {
+        "files": ["toc.yml"],
+        "src": "",
         "dest": "api/office_ref_toc"
       },
       {
@@ -122,6 +127,32 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": ["**/*.md"],
+        "exclude": ["manifest.md"],
+        "group": "all",
+        "src": "manifest",
+        "dest": "api/manifest"
+      },
+      {
+        "files": ["manifest.md"],
+        "group": "all",
+        "src": "manifest",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md"],
+        "exclude": ["requirement-sets.md"],
+        "group": "all",
+        "src": "requirement-sets",
+        "dest": "api/requirement-sets"
+      },
+      {
+        "files": ["requirement-sets.md"],
+        "group": "all",
+        "src": "requirement-sets",
+        "dest": "api"
       },
       {
         "files": ["overview.md"],
@@ -564,6 +595,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-Dev_Office",
+      "searchScope": ["Office Add-ins"],
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "ms.suite": "office",
@@ -766,7 +798,15 @@
         "docs-ref-autogen/word_1_2/**": "word",
         "docs-ref-autogen/word_1_2/word/**": "word",
         "docs-ref-autogen/word_1_3/**": "word",
-        "docs-ref-autogen/word_1_3/word/**": "word"
+        "docs-ref-autogen/word_1_3/word/**": "word",
+        "manifest/**": "non-product-specific",
+        "requirement-sets/**": "non-product-specific",
+        "requirement-sets/common/**": "non-product-specific",
+        "requirement-sets/excel/**": "excel",
+        "requirement-sets/onenote/**": "onenote",
+        "requirement-sets/outlook/**": "outlook",
+        "requirement-sets/powerpoint/**": "powerpoint",
+        "requirement-sets/word/**": "word"
       },
       "products": {
         "docs-ref-autogen/outlook*/**": [

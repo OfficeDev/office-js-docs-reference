@@ -157,21 +157,24 @@ export class APISet {
                 const className = clas.getClassName();
                 output += "|[" + className + "](/"
                     + relativePath + className.toLowerCase() + ")|";
-                let first: boolean = true;
-                clas.fields.forEach((field) => {
-                    // Ignore the following:
-                    // - String literal overloads.
-                    // - `load`, `set`, `track`, `untrack`, and `toJSON` methods
-                    // - The `context` property.
-                    // - Static fields.
-                    if (field.declarationString.search(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g) < 0 &&
+                // Ignore the following:
+                // - String literal overloads.
+                // - `load`, `set`, `track`, `untrack`, and `toJSON` methods
+                // - The `context` property.
+                // - Static fields.
+                let filteredFields = clas.fields.filter((field) => {
+                    return (field.declarationString.search(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g) < 0 &&
                         field.name !== "load" &&
                         field.name !== "set" &&
                         field.name !== "toJSON" &&
                         field.name !== "context" &&
                         field.name !== "track" &&
                         field.name !== "untrack" &&
-                        !field.declarationString.includes("static ")) {
+                        !field.declarationString.includes("static "));
+                });
+                let first: boolean = true;
+                if (filteredFields.length > 0) {
+                    filteredFields.forEach((field) => {
                         if (first) {
                             first = false;
                         } else {
@@ -184,16 +187,18 @@ export class APISet {
                         newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
                         if (field.type === FieldType.Property) {
                             newItemText = newItemText.replace(/\?/g, "");
-                        } 
-                        
+                        }
+
                         newItemText = newItemText.replace(/\<any\>/g, "");
-                        
+
                         let tableLine = "[" + newItemText + "]("
                             + buildFieldLink(relativePath, className, field) + ")|";
                         tableLine += extractFirstSentenceFromComment(field.comment);
                         output += tableLine + "|\n";
-                    }
-                });
+                    });
+                } else {
+                    output += "||\n";
+                }
             }
         });
         return output;

@@ -18,7 +18,7 @@ tryCatch(async () => {
 
     const officeJsonPaths: string[] = [path.resolve("../json/office"), path.resolve("../json/office_release")];
     const officeFilename = "office.api.json";
-    officeJsonPaths.forEach((officeJsonPath) =>{
+    officeJsonPaths.forEach((officeJsonPath) => {
         fsx.writeFileSync(
             officeJsonPath + '/' + officeFilename,
             fsx.readFileSync(officeJsonPath + '/' + officeFilename)
@@ -204,10 +204,10 @@ tryCatch(async () => {
     fsx.copySync(officeRuntimeJson, `../json/office_release/office-runtime.api.json`);
 
     console.log("Cleaning up What's New markdown files.");
-    let filePath = `../../docs/requirement-set-tables/outlook-preview.md`;
+    let filePath = `../../docs/includes/outlook-preview.md`;
     fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        filePath = `../../docs/requirement-set-tables/outlook-1_${i}.md`;
+        filePath = `../../docs/includes/outlook-1_${i}.md`;
         fsx.writeFileSync(filePath, cleanUpOutlookMarkdown(fsx.readFileSync(filePath).toString()));
     }
 });
@@ -276,12 +276,12 @@ function cleanUpOutlookMarkdown(markdownString : string) {
 
 function writeSnippetFileAndClearYamlIfNew(snippetsFilePath: string, snippetsContent: string, keyword: string) {
     const yamlRoot = "../yaml";
-    
+
     let existingSnippets = "";
     if (fsx.existsSync(snippetsFilePath)) {
         existingSnippets =  fsx.readFileSync(snippetsFilePath).toString();
     }
-    
+
     if (existingSnippets !== snippetsContent) {
         fsx.writeFileSync(snippetsFilePath, snippetsContent);
 
