@@ -169,7 +169,7 @@ console.log(JSON.stringify(Office.context.requirements.isSetSupported("mailbox",
 ```
 
 > [!IMPORTANT]
-> There is currently a bug where `isSetSupported('mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, refer to [Requirement sets supported by Exchange servers and Outlook clients](../outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients.md).
+> There is currently a bug where `isSetSupported('mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, refer to [Requirement sets supported by Exchange servers and Outlook clients](../outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
 
 <br>
 

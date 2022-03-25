@@ -22,7 +22,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 
 | Property | Modes | Return type | Minimum<br>requirement set |
 |---|---|---|:---:|
-| [auth](#auth-auth) | Compose<br>Read | [Auth](/javascript/api/office/office.auth?view=outlook-js-1.9&preserve-view=true) | [IdentityAPI 1.3](../requirement-sets/common/identity-api-requirement-sets.md) |
+| [auth](#auth-auth) | Compose<br>Read | [Auth](/javascript/api/office/office.auth?view=outlook-js-1.9&preserve-view=true) | [IdentityAPI 1.3](../../common/identity-api-requirement-sets.md) |
 | [contentLanguage](#contentlanguage-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [diagnostics](#diagnostics-contextinformation) | Compose<br>Read | [ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-1.9&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [displayLanguage](#displaylanguage-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
@@ -37,7 +37,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 
 #### auth: [Auth](/javascript/api/office/office.auth?view=outlook-js-1.9&preserve-view=true)
 
-Supports [single sign-on (SSO)](/office/dev/add-ins/outlook/authenticate-a-user-with-an-sso-token) by providing a method that allows the Office application to obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time. See [IdentityAPI 1.3 requirement set](../requirement-sets/common/identity-api-requirement-sets.md).
+Supports [single sign-on (SSO)](/office/dev/add-ins/outlook/authenticate-a-user-with-an-sso-token) by providing a method that allows the Office application to obtain an access token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time. See [IdentityAPI 1.3 requirement set](../../common/identity-api-requirement-sets.md).
 
 ##### Type
 
