@@ -205,14 +205,14 @@ function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: stri
     if (!hostName) {
         latestToc = fixCommonToc(tocPath, globalToc);
     } else {
-        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
+        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber, hostName === "visio");
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     return latestToc;
 }
 
-function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
+function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number, addNonApiRef: boolean): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
@@ -322,6 +322,10 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
         });
     });
 
+    if (addNonApiRef) { 
+        addNonRefTocInformation(newToc);
+    }
+
     return newToc;
 }
 
@@ -400,13 +404,16 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         });
     });
 
+    addNonRefTocInformation(newToc);
+    return newToc;
+}
+
+function addNonRefTocInformation(toc: Toc) {
     // Add manifest TOC
     let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
-    newToc.items.push(manifestYml[0]);
+    toc.items.push(manifestYml[0]);
 
     // Add requirement sets TOC
     let requirementSetYml = jsyaml.safeLoad(fsx.readFileSync(`${requirementSetRefPath}/toc.yml`).toString());
-    newToc.items.push(requirementSetYml[0]);
-
-    return newToc;
+    toc.items.push(requirementSetYml[0]);
 }
