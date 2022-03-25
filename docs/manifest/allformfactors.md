@@ -19,7 +19,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [CustomFunctionsRuntime 1.1](/office/dev/add-ins/requirement-sets/custom-functions-requirement-sets)
+- [CustomFunctionsRuntime 1.1](../requirement-sets/excel/custom-functions-requirement-sets.md)
 
 > [!NOTE]
 > This element is only supported in Excel on Windows, on Mac, and on the web. It is not supported in other Office applications or on iOS or Android.

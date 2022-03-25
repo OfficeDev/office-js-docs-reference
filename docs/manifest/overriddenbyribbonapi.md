@@ -19,7 +19,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Ribbon 1.2](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) (Required for Excel, PowerPoint, and Word.)
+- [Ribbon 1.2](../requirement-sets/common/add-in-commands-requirement-sets.md) (Required for Excel, PowerPoint, and Word.)
 
 If this element is omitted, the default is `false`. If it's used, it must be the *first* child element of its parent element.
 

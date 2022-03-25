@@ -19,9 +19,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) when the parent **VersionOverrides** is type Taskpane 1.0.
-- [Mailbox 1.3](/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3) when the parent **VersionOverrides** is type Mail 1.0.
-- [Mailbox 1.5](/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5) when the parent **VersionOverrides** is type Mail 1.1.
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **VersionOverrides** is type Taskpane 1.0.
+- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **VersionOverrides** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **VersionOverrides** is type Mail 1.1.
 
 ## Attributes
 
@@ -46,8 +46,10 @@ This attribute specifies the kind of action performed when the user selects the 
 - `ExecuteFunction`
 - `ShowTaskpane`
 
+Once the user selects a button that kicks off the `ExecuteFunction` action, the add-in times out after 5 minutes if it hasn't completed by then.
+
 > [!IMPORTANT]
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available when **xsi:type** is `ExecuteFunction`.
+> Outlook: Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available when **xsi:type** is `ExecuteFunction`.
 
 ## FunctionName
 
@@ -83,7 +85,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 > [!NOTE]
 > This element is not supported in Outlook.
@@ -137,7 +139,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 > [!NOTE]
 > This child element is not supported in Outlook add-ins.

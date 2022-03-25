@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [IdentityAPI 1.3](/office/dev/add-ins/requirement-sets/identity-api-requirement-sets)
+- [IdentityAPI 1.3](../requirement-sets/common/identity-api-requirement-sets.md)
 
 **Scopes** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
 

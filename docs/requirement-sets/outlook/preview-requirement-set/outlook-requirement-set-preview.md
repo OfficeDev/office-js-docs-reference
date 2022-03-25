@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
 > [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
+> This documentation is for a **preview** [requirement set](../requirement-sets/outlook/outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
 
 [!INCLUDE [Information about using preview APIs](../../../includes/using-preview-apis-host.md)]
 
@@ -158,4 +158,4 @@ Feature support for shared folders (that is, delegate access) was released in [r
 - [Outlook add-ins](/office/dev/add-ins/outlook/outlook-add-ins-overview)
 - [Outlook add-in code samples](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples,Add-ins)
 - [Get started](/office/dev/add-ins/quickstarts/outlook-quickstart)
-- [Requirement sets and supported clients](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets)
+- [Requirement sets and supported clients](../requirement-sets/outlook/outlook-api-requirement-sets.md)

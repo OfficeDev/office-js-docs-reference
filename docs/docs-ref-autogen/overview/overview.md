@@ -2,7 +2,7 @@
 layout: LandingPage
 ms.topic: landing-page
 title: Office JavaScript API reference 
-description: 'The Office JavaScript APIs by host and version.'
+description: The Office JavaScript APIs by host and version.
 author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific

@@ -27,8 +27,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
-- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets). Required by some child elements. See [Child elements](#child-elements).
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md)
+- [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md). Required by some child elements. See [Child elements](#child-elements).
 
 ## Attributes
 
@@ -71,7 +71,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 ### Label (Tab)
 
@@ -89,7 +89,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 ### InsertAfter
 
@@ -108,7 +108,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 ### InsertBefore
 
@@ -127,7 +127,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 
 ## Examples

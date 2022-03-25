@@ -1,6 +1,6 @@
 ---
 title: PowerPoint JavaScript API requirement sets
-description: 'Learn more about the PowerPoint JavaScript API requirement sets.'
+description: Learn more about the PowerPoint JavaScript API requirement sets.
 ms.date: 12/14/2021
 ms.prod: powerpoint
 ms.localizationpriority: high

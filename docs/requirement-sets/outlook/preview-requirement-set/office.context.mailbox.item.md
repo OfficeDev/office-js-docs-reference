@@ -1,6 +1,6 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
-description: 'Outlook Mailbox API preview requirement set version of the Item object model.'
+description: Outlook Mailbox API preview requirement set version of the Item object model.
 ms.date: 11/01/2021
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 |Requirement|Value|
 |---|---|
-|[Minimum mailbox requirement set version](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets)|1.1|
+|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)|1.1|
 |[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)|Restricted|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)|Appointment Organizer, Appointment Attendee,<br>Message Compose, or Message Read|
 

@@ -19,7 +19,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [CustomFunctionsRuntime 1.1](/office/dev/add-ins/requirement-sets/custom-functions-requirement-sets) 
+- [CustomFunctionsRuntime 1.1](../requirement-sets/excel/custom-functions-requirement-sets.md) 
 
 ## Attributes
 

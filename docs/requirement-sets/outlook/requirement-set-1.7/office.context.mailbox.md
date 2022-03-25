@@ -1,6 +1,6 @@
 ---
 title: Office.context.mailbox - requirement set 1.7
-description: 'Outlook Mailbox API requirement set 1.7 version of the Mailbox object model.'
+description: Outlook Mailbox API requirement set 1.7 version of the Mailbox object model.
 ms.date: 05/17/2021
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ Provides access to the Outlook add-in object model for Microsoft Outlook.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/office/dev/add-ins/requirement-sets/outlook-api-requirement-sets)| 1.1|
+|[Minimum mailbox requirement set version](../requirement-sets/outlook/outlook-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)| Restricted|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)| Compose or Read|
 

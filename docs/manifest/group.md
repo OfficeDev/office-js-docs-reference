@@ -21,7 +21,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets) 
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) 
 
 ## Attributes
 
@@ -87,7 +87,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.3](/office/dev/add-ins/requirement-sets/add-in-commands-requirement-sets)
+- [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 > [!NOTE]
 > This child element is not supported in Outlook add-ins.
