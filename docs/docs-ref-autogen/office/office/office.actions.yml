@@ -6,7 +6,7 @@ fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
 remarks: >-
   **Requirement set**: [SharedRuntime
-  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
+  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     summary: Associates the ID of an action with a function.
     remarks: >-
       **Requirement set**: [SharedRuntime
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ methods:
       host Office application.
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,7 +65,7 @@ methods:
       -->.
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,7 +83,7 @@ methods:
     summary: Replaces existing add-in shortcuts with custom shortcuts for the user.
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/keyboard-shortcuts-requirement-sets)
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:

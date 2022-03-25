@@ -109,7 +109,7 @@ methods:
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -152,7 +152,7 @@ methods:
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -262,7 +262,7 @@ methods:
     summary: Deletes the Custom XML Part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +286,7 @@ methods:
     summary: Deletes the Custom XML Part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -331,7 +331,7 @@ methods:
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -364,7 +364,7 @@ methods:
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -419,7 +419,7 @@ methods:
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -444,7 +444,7 @@ methods:
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -490,7 +490,7 @@ methods:
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -525,7 +525,7 @@ methods:
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples

@@ -6,7 +6,7 @@ fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
 remarks: >-
   **Requirement set**: [SharedRuntime
-  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
+  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +18,7 @@ properties:
     summary: Associates the ID of an action with a function.
     remarks: >-
       **Requirement set**: [SharedRuntime
-      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/shared-runtime-requirement-sets)
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
     syntax:

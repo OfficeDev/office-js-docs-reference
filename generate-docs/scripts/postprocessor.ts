@@ -7,11 +7,11 @@ import * as path from "path";
 
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
-class Toc {
-    
+interface Toc {
     items: [{
         name: string,
-        items: ApplicationTocNode[]
+        href?: string,
+        items?: (ApplicationTocNode | ManifestItem)[]
     }]
 }
 
@@ -34,6 +34,17 @@ interface ApplicationTocNode {
     ]
 }
 
+interface ManifestItem {
+    name: string,
+    href?: string,
+    items: [
+        {
+            name: string,
+            href: string
+        }
+    ]
+}
+
 interface IMembers {
     items: [
         {
@@ -43,11 +54,13 @@ interface IMembers {
     ]
 }
 
+const docsSource = path.resolve("../yaml");
+const docsDestination = path.resolve("../../docs/docs-ref-autogen");
+const manifestRefPath = path.resolve("../../docs/manifest");
+const requirementSetRefPath = path.resolve("../../docs/requirement-sets");
+
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
-
-    const docsSource = path.resolve("../yaml");
-    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 
     console.log(`Deleting old docs at: ${docsDestination}`);
     // delete everything except the 'overview' folder from the /docs folder
@@ -56,7 +69,7 @@ tryCatch(async () => {
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{"name": "API reference"}]};
+    let globalToc = <Toc>{items: [{name: "API reference"}]};
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote"},
@@ -65,8 +78,6 @@ tryCatch(async () => {
                                 {"name": "Visio", "href": "/javascript/api/visio"},
                                 {"name": "Word", "href": "/javascript/api/word"},
                                 {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
-    fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
-    fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
@@ -79,7 +90,7 @@ tryCatch(async () => {
     });
 
     // fix all the individual TOC files
-    globalToc.items[0].items[0].href = "../overview/overview.md"; // Stay within a moniker
+    (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
     const hostVersionMap = [{host: "excel", versions: 15}, /*not including online*/
@@ -194,14 +205,14 @@ function scrubAndWriteToc(versionFolder: string, globalToc: Toc, hostName?: stri
     if (!hostName) {
         latestToc = fixCommonToc(tocPath, globalToc);
     } else {
-        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber);
+        latestToc = fixToc(tocPath, globalToc, hostName, versionNumber, hostName === "visio");
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     return latestToc;
 }
 
-function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number): Toc {
+function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber: number, addNonApiRef: boolean): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
@@ -224,7 +235,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     }
 
     origToc.items.forEach((rootItem, rootIndex) => {
-        rootItem.items.forEach((packageItem, packageIndex) => {
+        rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
             // fix host capitalization
             let packageName;
             if (packageItem.name === 'onenote') {
@@ -263,25 +274,25 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                             let iconSetList = membersToMove.items.filter(item => {
                                 return excelIconSetFilter.indexOf(item.name) >= 0;
                             });
-                            
+
                             if (iconSetList.length > 0) {
                                 let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
                                 primaryList.unshift(excelIconSetRoot);
                             }
-                            primaryList.unshift(enumRoot);            
+                            primaryList.unshift(enumRoot);
                             if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
                                 primaryList.unshift(customFunctionsRoot);
                             }
                         } else {
                             primaryList.unshift(enumRoot);
                         }
-                    }                    
+                    }
 
                     // Address any nested namespaces
                     primaryList.forEach((namespaceItem, namespaceIndex) => {
                         // Scan UID for namespace to add to name.
                         if (namespaceItem.uid) {
-                            let regex = /\w+\.(\w+\.\w+)/g
+                            let regex = /\w+\.(\w+\.\w+)/g;
                             let matchResults = regex.exec(namespaceItem.uid);
                             if (matchResults) {
                                 namespaceItem.name = matchResults[1];
@@ -290,7 +301,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                     });
                 }
 
-                newTocNode= {
+                newTocNode = {
                     name: packageName,
                     uid: packageItem.uid,
                     items: primaryList
@@ -300,9 +311,9 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
-        topLevel.items.forEach((applicationNode) =>{
+        topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
                 newToc.items[topLevelIndex].items.push(newTocNode);
             } else {
@@ -310,6 +321,10 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
             }
         });
     });
+
+    if (addNonApiRef) { 
+        addNonRefTocInformation(newToc);
+    }
 
     return newToc;
 }
@@ -325,20 +340,20 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         name: 'Common APIs',
         uid: "office!",
         items: [] as any
-    }
+    };
 
     // create folders for common (shared) API subcategories
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
-        rootItem.items.forEach((packageItem, packageIndex) => {
+        rootItem.items.forEach((packageItem: ApplicationTocNode, packageIndex) => {
             membersToMove.items = packageItem.items;
             if (packageItem.name.toLocaleLowerCase() === 'office') {
-                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {                    
+                membersToMove.items.forEach((namespaceItem, namespaceIndex) => {
                     // Scan UID for namespace to add to name.
                      if (namespaceItem.uid) {
-                        let regex = /\w+\.(\w+\.\w+)/g
+                        let regex = /\w+\.(\w+\.\w+)/g;
                         let matchResults = regex.exec(namespaceItem.uid);
                         if (matchResults) {
                             namespaceItem.name = matchResults[1];
@@ -357,7 +372,7 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
                 });
 
                 let sharedEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                primaryList.unshift(sharedEnumRoot);            
+                primaryList.unshift(sharedEnumRoot);
                 newTocNode.items.push({
                     "name": 'Office',
                     "uid": packageItem.uid,
@@ -378,9 +393,9 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
     });
 
     const newToc = <Toc>{items: [] as any};
-    globalToc.items.forEach((topLevel, topLevelIndex) =>{
+    globalToc.items.forEach((topLevel, topLevelIndex) => {
         newToc.items.push({name: topLevel.name, items: []});
-        topLevel.items.forEach((applicationNode) =>{
+        topLevel.items.forEach((applicationNode) => {
             if (applicationNode.name === newTocNode.name) {
                 newToc.items[topLevelIndex].items.push(newTocNode);
             } else {
@@ -389,5 +404,16 @@ function fixCommonToc(tocPath: string, globalToc: Toc): Toc {
         });
     });
 
+    addNonRefTocInformation(newToc);
     return newToc;
+}
+
+function addNonRefTocInformation(toc: Toc) {
+    // Add manifest TOC
+    let manifestYml = jsyaml.safeLoad(fsx.readFileSync(`${manifestRefPath}/toc.yml`).toString());
+    toc.items.push(manifestYml[0]);
+
+    // Add requirement sets TOC
+    let requirementSetYml = jsyaml.safeLoad(fsx.readFileSync(`${requirementSetRefPath}/toc.yml`).toString());
+    toc.items.push(requirementSetYml[0]);
 }
