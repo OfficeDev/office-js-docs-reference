@@ -890,7 +890,7 @@ methods:
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
@@ -953,7 +953,7 @@ methods:
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object

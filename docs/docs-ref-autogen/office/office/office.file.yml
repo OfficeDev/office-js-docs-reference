@@ -43,7 +43,7 @@ methods:
     summary: Closes the document file.
     remarks: >-
       **Requirement set**:
-      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)
+      [File](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
       No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail.
@@ -80,7 +80,7 @@ methods:
     summary: Returns the specified slice.
     remarks: >-
       **Requirement set**:
-      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)
+      [File](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
       In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object

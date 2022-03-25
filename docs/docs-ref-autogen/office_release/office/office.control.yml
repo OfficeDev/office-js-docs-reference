@@ -11,7 +11,7 @@ remarks: >-
 
 
   **Requirement set**: [RibbonAPI
-  1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/ribbon-api-requirement-sets)
+  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface

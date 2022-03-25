@@ -39,7 +39,7 @@ methods:
       settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -92,7 +92,7 @@ methods:
       settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -160,7 +160,7 @@ methods:
     summary: Retrieves the specified setting.
     remarks: >-
       **Requirement set**:
-      [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
+      [Settings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       #### Examples
@@ -199,7 +199,7 @@ methods:
       settings held in memory.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       This method is useful in Excel, Word, and PowerPoint coauthoring scenarios when multiple instances of the same
@@ -268,7 +268,7 @@ methods:
       Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method.
     remarks: >-
       **Requirement set**:
-      [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
+      [Settings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
@@ -303,7 +303,7 @@ methods:
     summary: Removes an event handler for the settingsChanged event.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for
@@ -344,7 +344,7 @@ methods:
     summary: Removes an event handler for the settingsChanged event.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       If the optional handler parameter is omitted when calling the removeHandlerAsync method, all event handlers for
@@ -405,7 +405,7 @@ methods:
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
       **Requirement set**:
-      [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
+      [Settings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
@@ -449,7 +449,7 @@ methods:
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
       **Requirement set**:
-      [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
+      [Settings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
@@ -517,7 +517,7 @@ methods:
       Settings.saveAsync method to persist settings in the document.
     remarks: >-
       **Requirement set**:
-      [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
+      [Settings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#settings)
 
 
       The set method creates a new setting of the specified name if it does not already exist, or sets an existing
