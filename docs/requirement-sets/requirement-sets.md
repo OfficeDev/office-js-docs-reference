@@ -127,11 +127,11 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 
 ## See also
 
-- [Office Add-ins platform overview](/office/dev/add-ins/office-add-ins)
+- [Office Add-ins platform overview](/office/dev/add-ins/overview/office-add-ins)
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Common API requirement sets](common/office-add-in-requirement-sets.md)
 - [Add-in Commands requirement sets](common/add-in-commands-requirement-sets.md)
-- [API Reference documentation](/office/dev/add-ins/javascript-api-for-office)
+- [API Reference documentation](/javascript/api/overview)
 - [Update history for Microsoft 365 Apps](/officeupdates/update-history-office365-proplus-by-date)
 - [Office 2016 and 2019 update history (Click-To-Run)](/officeupdates/update-history-office-2019)
 - [Office 2013 update history (Click-To-Run)](/officeupdates/update-history-office-2013)

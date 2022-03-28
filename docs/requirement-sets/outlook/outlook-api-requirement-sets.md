@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require by using the [Requirements](/javascript/api/requirements) element in their [manifest](/office/dev/add-ins/develop/add-in-manifests). Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
+Outlook add-ins declare what API versions they require by using the [Requirements](/javascript/api/manifest/requirements) element in their [manifest](/office/dev/add-ins/develop/add-in-manifests). Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
 
 For example, the following manifest snippet indicates a minimum requirement set of 1.1.
 
@@ -112,11 +112,11 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>3</sup> Support for 1.3 in Outlook 2013 was added as part of the [December 8, 2015, update for Outlook 2013 (KB3114349)](https://support.microsoft.com/kb/3114349). Support for 1.4 in Outlook 2013 was added as part of the [September 13, 2016, update for Outlook 2013 (KB3118280)](https://support.microsoft.com/help/3118280). Support for 1.4 in Outlook 2016 (one-time purchase) was added as part of the [July 3, 2018, update for Office 2016 (KB4022223)](https://support.microsoft.com/help/4022223).
 >
-> <sup>4</sup> Support for the new Mac UI (preview) is available from Outlook version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac.md#add-in-support-in-outlook-on-new-mac-ui-preview) section.
+> <sup>4</sup> Support for the new Mac UI (preview) is available from Outlook version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac#add-in-support-in-outlook-on-new-mac-ui-preview) section.
 >
-> <sup>5</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands for Outlook Mobile](/office/dev/add-ins/outlook/add-mobile-support.md#code-considerations).
+> <sup>5</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands for Outlook Mobile](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
 >
-> <sup>6</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins.md#client-requirements-non-windows-smartphone-and-tablet).
+> <sup>6</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 
 > [!TIP]
 > You can distinguish between classic and modern Outlook in a web browser by checking your mailbox toolbar.

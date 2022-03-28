@@ -12,10 +12,10 @@ The ExcelApi 1.13 added a method to insert worksheets into a workbook from a Bas
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| [Formula changed events](/office/dev/add-ins/excel/excel-add-ins-worksheets.md#detect-formula-changes) | Track changes to formulas, including the source and type of event that caused a change. | [Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)|
-| [Formula dependents](/office/dev/add-ins/excel/excel-add-ins-ranges-precedents-dependents.md#get-the-direct-dependents-of-a-formula) | Locate the direct dependent cells of a formula. | [Range.getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)) |
-| [Insert worksheets](/office/dev/add-ins/excel/excel-add-ins-workbooks.md#insert-a-copy-of-an-existing-workbook-into-the-current-one) | Insert worksheets from another workbook into the current workbook as a Base64-encoded string. | [Workbook.insertWorksheetsFromBase64](/javascript/api/excel/excel.workbook#excel-excel-workbook-insertworksheetsfrombase64-member(1)) |
-| [PivotTable PivotLayout](/office/dev/add-ins/excel/excel-add-ins-pivottables.md#other-pivotlayout-functions) | An expansion of the PivotLayout class, including new support for alt text and empty cell management. | [PivotLayout](/javascript/api/excel/excel.pivotlayout) |
+| [Formula changed events](/office/dev/add-ins/excel/excel-add-ins-worksheets#detect-formula-changes) | Track changes to formulas, including the source and type of event that caused a change. | [Worksheet.onFormulaChanged](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-onformulachanged-member)|
+| [Formula dependents](/office/dev/add-ins/excel/excel-add-ins-ranges-precedents-dependents#get-the-direct-dependents-of-a-formula) | Locate the direct dependent cells of a formula. | [Range.getDirectDependents](/javascript/api/excel/excel.range#excel-excel-range-getdirectdependents-member(1)) |
+| [Insert worksheets](/office/dev/add-ins/excel/excel-add-ins-workbooks#insert-a-copy-of-an-existing-workbook-into-the-current-one) | Insert worksheets from another workbook into the current workbook as a Base64-encoded string. | [Workbook.insertWorksheetsFromBase64](/javascript/api/excel/excel.workbook#excel-excel-workbook-insertworksheetsfrombase64-member(1)) |
+| [PivotTable PivotLayout](/office/dev/add-ins/excel/excel-add-ins-pivottables#other-pivotlayout-functions) | An expansion of the PivotLayout class, including new support for alt text and empty cell management. | [PivotLayout](/javascript/api/excel/excel.pivotlayout) |
 
 ## API list
 

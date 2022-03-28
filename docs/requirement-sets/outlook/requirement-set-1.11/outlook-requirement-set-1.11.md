@@ -13,14 +13,14 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 
 Requirement set 1.11 includes all of the features of [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). It added the following features.
 
-- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch.md#supported-events).
+- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events).
 - Added SessionData APIs.
 
 ### Change log
 
 - Added [Office.context.mailbox.item.sessionData](office.context.mailbox.item.md#properties): Adds a new property to manage the session data of an item in Compose mode.
 - Added [Office.SessionData](/javascript/api/outlook/office.sessiondata?view=outlook-js-1.11&preserve-view=true): Adds a new object that represents the session data of a compose item.
-- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch.md#supported-events): Adds support for the following events.
+- Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events): Adds support for the following events.
 
   - `OnAppointmentAttachmentsChanged`
   - `OnAppointmentAttendeesChanged`

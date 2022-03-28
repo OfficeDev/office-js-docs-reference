@@ -147,8 +147,8 @@ tryCatch(async () => {
                     .forEach(subfilename => {
                         fsx.writeFileSync(subfolder + '/' + subfilename,
                             fsx.readFileSync(subfolder + '/' + subfilename).toString()
-                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/office/dev/add-ins/excel/custom-functions-requirement-sets")
-                                .replace(/\/office\/dev\/add-ins\/reference\/overview\/visio-javascript-reference-overview/g, "/office/dev/add-ins/excel/custom-functions-requirement-sets"));
+                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets")
+                                .replace(/\/office\/dev\/add-ins\/reference\/overview\/visio-javascript-reference-overview/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets"));
                     });
             }
         });

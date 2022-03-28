@@ -97,7 +97,7 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 ### Event-based activation
 
-This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). However, additional events are now available in preview. To learn more, refer to [Supported events](/office/dev/add-ins/outlook/autolaunch.md#supported-events).
+This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). However, additional events are now available in preview. To learn more, refer to [Supported events](/office/dev/add-ins/outlook/autolaunch#supported-events).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
 

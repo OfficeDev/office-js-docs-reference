@@ -271,7 +271,7 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 This extension point puts buttons on the ribbon for the module extension.
 
 > [!IMPORTANT]
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -314,7 +314,7 @@ This extension point puts a mode-appropriate toggle in the command surface for a
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
 >
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -357,7 +357,7 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 This extension point enables an add-in to activate based on supported events in the desktop form factor. To learn more about this scenario and for the full list of supported events, see the [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch) article.
 
 > [!IMPORTANT]
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 #### Child elements
 
@@ -384,7 +384,7 @@ This extension point enables an add-in to activate based on supported events in 
 This extension point adds an event handler for a specified event. For more information about using this extension point, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
 
 > [!IMPORTANT]
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 | Element | Description  |
 |:-----|:-----|
