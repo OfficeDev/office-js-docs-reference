@@ -49,7 +49,7 @@ This attribute specifies the kind of action performed when the user selects the 
 Once the user selects a button that kicks off the `ExecuteFunction` action, the add-in times out after 5 minutes if it hasn't completed by then.
 
 > [!IMPORTANT]
-> Outlook: Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available when **xsi:type** is `ExecuteFunction`.
+> Outlook: Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available when **xsi:type** is `ExecuteFunction`.
 
 ## FunctionName
 
@@ -181,10 +181,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.5](/office/dev/add-ins/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5)
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md)
 
 > [!IMPORTANT]
-> Although the **SupportsPinning** element was introduced in [requirement set 1.5](/office/dev/add-ins/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5), it's currently only supported for Microsoft 365 subscribers using the following:
+> Although the **SupportsPinning** element was introduced in [requirement set 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md), it's currently only supported for Microsoft 365 subscribers using the following:
 >
 > - Outlook 2016 or later on Windows (build 7628.1000 or later)
 > - Outlook 2016 or later on Mac (build 16.13.503 or later)

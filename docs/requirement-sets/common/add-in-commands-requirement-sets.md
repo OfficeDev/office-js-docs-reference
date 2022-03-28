@@ -13,7 +13,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Add-in commands are UI elements that extend the Office UI and start actions in your add-in. You can use add-in commands to add a button on the ribbon or an item to a context menu. For more information, see [Add-in commands for Excel, Word, and PowerPoint](/office/dev/add-ins/design/add-in-commands) and [Add-in commands for Outlook](/office/dev/add-ins/outlook/add-in-commands-for-outlook).
 
 > [!NOTE]
-> Outlook add-ins support add-in commands, but the APIs and manifest elements that enable add-in commands in Outlook are in the [Mailbox 1.3](/outlook/requirement-set-1.3/outlook-requirement-set-1.3) requirement set. The AddinCommands requirement sets are not applicable to Outlook.
+> Outlook add-ins support add-in commands, but the APIs and manifest elements that enable add-in commands in Outlook are in the [Mailbox 1.3](../outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) requirement set. The AddinCommands requirement sets are not applicable to Outlook.
 
 The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the build versions or number for those applications.  
 

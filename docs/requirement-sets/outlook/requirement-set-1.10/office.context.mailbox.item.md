@@ -17,10 +17,10 @@ ms.localizationpriority: medium
 |---|---|
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)|1.1|
 |[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)|Restricted|
-|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview.md#extension-points)|Appointment Organizer, Appointment Attendee,<br>Message Compose, or Message Read|
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)|Appointment Organizer, Appointment Attendee,<br>Message Compose, or Message Read|
 
 > [!IMPORTANT]
-> Android and iOS: There are limitations on when add-ins activate and which APIs are available. To learn more, refer to [Add mobile support to an Outlook add-in](/office/dev/add-ins/outlook/add-mobile-support.md#compose-mode-and-appointments).
+> Android and iOS: There are limitations on when add-ins activate and which APIs are available. To learn more, refer to [Add mobile support to an Outlook add-in](/office/dev/add-ins/outlook/add-mobile-support#compose-mode-and-appointments).
 
 ## Properties
 

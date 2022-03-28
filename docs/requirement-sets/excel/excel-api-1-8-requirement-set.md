@@ -24,7 +24,7 @@ Another round of Chart APIs brings even greater programmatic control over chart 
 
 ## Events
 
-More [events](/office/dev/add-ins/excel/excel-add-ins-events) have been added for charts. Have your add-in react to users interacting with the chart. You can also [toggle events](/office/dev/add-ins/excel/performance.md#enable-and-disable-events) firing across the entire workbook.
+More [events](/office/dev/add-ins/excel/excel-add-ins-events) have been added for charts. Have your add-in react to users interacting with the chart. You can also [toggle events](/office/dev/add-ins/excel/performance#enable-and-disable-events) firing across the entire workbook.
 
 ## API list
 
