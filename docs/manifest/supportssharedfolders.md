@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox 1.8](../requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8)
+- [Mailbox 1.8](../requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8.md)
 
 The following is an example of the **SupportsSharedFolders** element.
 
