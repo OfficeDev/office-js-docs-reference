@@ -17,7 +17,7 @@ When used in the base manifest (that is, the grandparent **Requirements** elemen
 
 ## As a great-grandchild of a VersionOverrides element
 
-Specifies a [requirement set](/office/dev/add-ins/develop/office-versions-and-requirement-sets.md#specify-office-applications-and-requirement-sets) from the Office JavaScript API that must be supported by the Office version and platform (such as Windows, Mac, web, and iOS or iPad) in order for the [VersionOverrides](versionoverrides.md) to take effect.
+Specifies a [requirement set](/office/dev/add-ins/develop/office-versions-and-requirement-sets#specify-office-applications-and-requirement-sets) from the Office JavaScript API that must be supported by the Office version and platform (such as Windows, Mac, web, and iOS or iPad) in order for the [VersionOverrides](versionoverrides.md) to take effect.
 
 **Add-in type:** Task pane, Mail
 

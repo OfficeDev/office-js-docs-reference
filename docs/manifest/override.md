@@ -193,7 +193,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ## Override element for `Runtime`
 
 > [!IMPORTANT]
-> Support for this element was introduced in [Mailbox requirement set 1.10](/office/dev/add-ins/reference/objectmodel/requirement-set-1.10/outlook-requirement-set-1.10) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
+> Support for this element was introduced in [Mailbox requirement set 1.10](../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
 
 An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
 
