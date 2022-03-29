@@ -9,7 +9,7 @@ summary: >-
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
   this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
-  Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item)
+  Model](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item)
   page.
 
 
@@ -919,7 +919,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item#events)<!--
+      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -990,7 +990,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item#events)<!--
+      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1675,7 +1675,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item#events)<!--
+      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1722,7 +1722,7 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item#events)<!--
+      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
