@@ -1,7 +1,7 @@
 ---
 title: Item element in the manifest file
 description: Specifies an item in a menu.
-ms.date: 02/04/2022
+ms.date: 03/29/2022
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +31,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |:-----|:-----|:-----|
 |  [Label](#label)     | Yes |  The text for the button. |
 |  [Supertip](supertip.md)  | Yes |  The supertip for the button.    |
-|  [Icon](icon.md)      | Yes |  An image for the button.         |
+|  [Icon](icon.md)      | No |  An image for the button.         |
 |  [Action](action.md)    | Yes |  Specifies the action to perform. There can be only one **Action** child of an **Item** element.  |
 |  [Enabled](enabled.md)    | No |  Specifies whether the control is enabled when the add-in launches.  |
 |  [OverriddenByRibbonApi](overriddenbyribbonapi.md)      | No |  Specifies whether the button should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
