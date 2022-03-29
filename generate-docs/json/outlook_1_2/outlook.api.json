@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Appointment:interface",
-              "docComment": "/**\n * The subclass of {@link Office.Item | Item} dealing with appointments.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n */\n",
+              "docComment": "/**\n * The subclass of {@link Office.Item | Item} dealing with appointments.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -214,7 +214,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AppointmentCompose:interface",
-              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
+              "docComment": "/**\n * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1684,7 +1684,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AppointmentRead:interface",
-              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
+              "docComment": "/**\n * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Appointment | Appointment}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4248,7 +4248,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Item:interface",
-              "docComment": "/**\n * The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the `itemType` property.\n *\n * To see the full member list, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, Message Compose, Message Read\n */\n",
+              "docComment": "/**\n * The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the `itemType` property.\n *\n * To see the full member list, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, Message Compose, Message Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4263,7 +4263,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.ItemCompose:interface",
-              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n */\n",
+              "docComment": "/**\n * The compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4292,7 +4292,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.ItemRead:interface",
-              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
+              "docComment": "/**\n * The read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -6317,7 +6317,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Message:interface",
-              "docComment": "/**\n * A subclass of {@link Office.Item | Item} for messages.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
+              "docComment": "/**\n * A subclass of {@link Office.Item | Item} for messages.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Child interfaces:\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -6346,7 +6346,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MessageCompose:interface",
-              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Message | Message}\n */\n",
+              "docComment": "/**\n * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemCompose | ItemCompose}\n *\n * - {@link Office.Message | Message}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -7501,7 +7501,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MessageRead:interface",
-              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Message | Message}\n */\n",
+              "docComment": "/**\n * The message read mode of {@link Office.Item | Office.context.mailbox.item}.\n *\n * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.2/office.context.mailbox.item | Object Model} page.\n *\n * Parent interfaces:\n *\n * - {@link Office.ItemRead | ItemRead}\n *\n * - {@link Office.Message | Message}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
