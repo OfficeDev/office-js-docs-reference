@@ -1175,7 +1175,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -1190,7 +1190,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -1553,7 +1553,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1575,7 +1575,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2001,7 +2001,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2021,7 +2021,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2346,7 +2346,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -2666,7 +2666,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2688,7 +2688,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3177,7 +3177,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3197,7 +3197,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -4602,7 +4602,7 @@ export declare namespace Office {
      * You can determine the type of the item by using the `itemType` property.
      *
      * To see the full member list, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
@@ -4627,7 +4627,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -4642,7 +4642,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -4959,7 +4959,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -4980,7 +4980,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5683,7 +5683,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5702,7 +5702,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5894,7 +5894,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -5909,7 +5909,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -6239,7 +6239,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6261,7 +6261,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6707,7 +6707,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6727,7 +6727,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6871,7 +6871,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -7242,7 +7242,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7264,7 +7264,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7793,7 +7793,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7813,7 +7813,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.9/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
