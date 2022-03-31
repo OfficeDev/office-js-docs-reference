@@ -44,7 +44,7 @@ properties:
 
 
       The set name of the table must follow the guidelines specified in the [Rename an Excel
-      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+      table](https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114) article.
     remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

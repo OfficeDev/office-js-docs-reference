@@ -3734,7 +3734,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param address - Optional. A string containing the comma-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
+         * @param address - Optional. A string containing the comma-separated or semicolon-separated addresses or names of the individual ranges. For example, "A1:B2, A5:B5" or "A1:B2; A5:B5". If not specified, a `RangeAreas` object for the entire worksheet is returned.
          */
         getRanges(address?: string): Excel.RangeAreas;
         /**
@@ -4135,7 +4135,7 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.WorksheetCollectionData;
     }
     /**
-     * Represents the protection of a sheet object.
+     * Represents the protection of a worksheet object.
      *
      * @remarks
      * [Api set: ExcelApi 1.2]
@@ -4679,11 +4679,11 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Range): void;
         /**
-         * Fills range from the current range to the destination range using the specified AutoFill logic.
-                     The destination range can be `null`, or can extend the source either horizontally or vertically.
-                     Discontiguous ranges are not supported.
+         * Fills a range from the current range to the destination range using the specified AutoFill logic.
+                    The destination range can be `null` or can extend the source range either horizontally or vertically.
+                    Discontiguous ranges are not supported.
                     
-                     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -4693,11 +4693,11 @@ export declare namespace Excel {
          */
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
-         * Fills range from the current range to the destination range using the specified AutoFill logic.
-                     The destination range can be `null`, or can extend the source either horizontally or vertically.
-                     Discontiguous ranges are not supported.
+         * Fills a range from the current range to the destination range using the specified AutoFill logic.
+                    The destination range can be `null` or can extend the source range either horizontally or vertically.
+                    Discontiguous ranges are not supported.
                     
-                     For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -4998,7 +4998,8 @@ export declare namespace Excel {
          */
         getLastRow(): Excel.Range;
         /**
-         * Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, the API will fail to return the result. If the RangeAreas does not exist, will return a null object.
+         * Returns a `RangeAreas` object that represents the merged areas in this range. Note that if the merged areas count in this range is more than 512, then this method will fail to return the result. If the `RangeAreas` object doesn't exist, then this function will return an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -7478,7 +7479,7 @@ export declare namespace Excel {
         /**
          * Name of the table.
                     
-                     The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                     The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -13889,7 +13890,7 @@ export declare namespace Excel {
          */
         getRangeOrNullObject(): Excel.Range;
         /**
-         * Applies the specified Autofilter object currently on the range.
+         * Applies the specified AutoFilter object currently on the range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -20631,7 +20632,7 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.9]
          *
-         * @param key - Name or ID of the shape to be retrieved.
+         * @param key - The name or ID of the shape to be retrieved.
          */
         getItem(key: string): Excel.Shape;
         /**
@@ -33434,7 +33435,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -38868,7 +38869,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -44578,7 +44579,7 @@ export declare namespace Excel {
             visibility?: boolean;
         }
         /**
-         * Represents the protection of a sheet object.
+         * Represents the protection of a worksheet object.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -45511,7 +45512,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -45637,7 +45638,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -45764,7 +45765,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

@@ -1013,8 +1013,9 @@ methods:
       parameters:
         - id: address
           description: >-
-            Optional. A string containing the comma-separated addresses or names of the individual ranges. For example,
-            "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
+            Optional. A string containing the comma-separated or semicolon-separated addresses or names of the
+            individual ranges. For example, "A1:B2, A5:B5" or "A1:B2; A5:B5". If not specified, a `RangeAreas` object
+            for the entire worksheet is returned.
           type: string
       return:
         type: '<xref uid="excel!Excel.RangeAreas:class" />'

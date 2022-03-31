@@ -32817,7 +32817,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableCollectionLoadOptions#name:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33642,7 +33642,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableData#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33872,7 +33872,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -34644,7 +34644,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableUpdateData#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -42497,7 +42497,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Table#name:member",
-                  "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

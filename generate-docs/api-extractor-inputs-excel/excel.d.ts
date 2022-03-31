@@ -21,15 +21,17 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        type: CellValueType.array | "Array";
+        type: CellValueType.array | ReferenceValueType.array | "Array";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#VALUE!";
+        basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -46,6 +48,14 @@ export declare namespace Excel {
         * @beta
         */
         elements: CellValue[][];
+        /**
+        * Represents the cell values which are referenced within `ArrayCellValue.elements`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        referencedValues?: ReferencedValue[];
     }
     /**
     * Represents types of #BLOCKED! errors.
@@ -138,12 +148,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#BLOCKED!";
+        basicValue?: "#BLOCKED!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -253,12 +265,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#BUSY!";
+        basicValue?: "#BUSY!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -375,12 +389,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#CALC!";
+        basicValue?: "#CALC!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -558,6 +574,121 @@ export declare namespace Excel {
     */
     export type CardLayout = EntityCardLayout;
     /**
+    * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface ReferenceCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: CellValueType.reference | "Reference";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: boolean | number | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+        /**
+        * Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        reference: number;
+    }
+    /**
+    * Represents a reference to the value which contains `referencedValues`.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface RootReferenceCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: ReferenceValueType.root | "Root";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: boolean | number | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+    }
+    /**
+    * Represents the types of the `ReferenceValue` object.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum ReferenceValueType {
+        /**
+        * Represents an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        array = "Array",
+        /**
+        * Represents an `EntityCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        entity = "Entity",
+        /**
+        * Represents a `RootReferenceCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        root = "Root"
+    }
+    /**
+    * Represents the value in a cell.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;
+    /**
     * Represents the types of the `CellValue` object.
     *
     * @remarks
@@ -630,6 +761,14 @@ export declare namespace Excel {
         */
         linkedEntity = "LinkedEntity",
         /**
+        * Represents a `ReferenceCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        reference = "Reference",
+        /**
         * Represents a `StringCellValue`.
         *
         * @remarks
@@ -661,7 +800,15 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & {
+    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & CellValueExtraProperties;
+    /**
+    * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface CellValueExtraProperties {
         /**
         * Represents whether this `CellValue` will be used to overwrite a cell.
         * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
@@ -681,7 +828,7 @@ export declare namespace Excel {
         * @beta
         */
         writableNote?: string;
-    };
+    }
     /**
     * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.
     *
@@ -689,16 +836,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValueAndPropertyMetadata = CellValue & {
-        /**
-        * Represents metadata about the property.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        propertyMetadata?: CellValuePropertyMetadata;
-    };
+    export type CellValueAndPropertyMetadata = CellValue & EntityPropertyExtraProperties;
     /**
     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
     *
@@ -759,12 +897,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#BUSY!";
+        basicValue?: "#BUSY!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1061,12 +1201,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#CONNECT!";
+        basicValue?: "#CONNECT!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1110,12 +1252,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#DIV/0!";
+        basicValue?: "#DIV/0!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1208,6 +1352,23 @@ export declare namespace Excel {
     */
     export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;
     /**
+    * Properties used by `CellValueAndPropertyMetadata`. These properties refer to the metadata and not to a `CellValue`.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityPropertyExtraProperties {
+        /**
+        * Represents metadata about the property.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        propertyMetadata?: CellValuePropertyMetadata;
+    }
+    /**
     * Represents an schemaless set of properties.
     *
     * @remarks
@@ -1222,15 +1383,17 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        type: CellValueType.entity | "Entity";
+        type: CellValueType.entity | ReferenceValueType.entity | "Entity";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#VALUE!";
+        basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1258,6 +1421,40 @@ export declare namespace Excel {
             [key: string]: EntityPropertyType;
         };
         /**
+        * Represents layout information for views of this entity.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        layouts?: EntityViewLayouts;
+        /**
+        * Represents information that describes the service that provided the data in this `EntityCellValue`.
+        * This information can be used for branding in entity cards.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        provider?: CellValueProviderAttributes;
+        /**
+        * Represents the cell values which are referenced within `EntityCellValue.properties`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        referencedValues?: ReferencedValue[];
+    }
+    /**
+    * Represents layout information for various views of the entity.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityViewLayouts {
+        /**
         * Represents the layout of this entity in card view.
         * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
         *
@@ -1265,7 +1462,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        cardLayout?: CardLayout;
+        card?: CardLayout;
     }
     /**
     * Represents a card layout best used for an entity.
@@ -1276,7 +1473,7 @@ export declare namespace Excel {
     */
     export interface EntityCardLayout extends CardLayoutStandardProperties {
         /**
-        * Represent the type of this layout.
+        * Represents the type of this layout.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -1472,12 +1669,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#FIELD!";
+        basicValue?: "#FIELD!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1538,7 +1737,9 @@ export declare namespace Excel {
         basicType?: RangeValueType.double | "Double";
         /**
         * Returns the number format string that is used to display this value.
-        * Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+        * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
+        * Number format strings must conform to Excel guidelines.
+        * To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -1564,12 +1765,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#GETTING_DATA";
+        basicValue?: "#GETTING_DATA" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1646,12 +1849,14 @@ export declare namespace Excel {
         type: CellValueType.linkedEntity | "LinkedEntity";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#VALUE!";
+        basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1677,7 +1882,7 @@ export declare namespace Excel {
         */
         text?: string;
         /**
-        * Represents the properties of this entity and their metadata.
+        * Represents the properties of this linked entity and their metadata.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -1689,7 +1894,16 @@ export declare namespace Excel {
             };
         };
         /**
-        * Represents information that describes the service which provided the image.
+        * Represents the layout of this linked entity in card view.
+        * If the `CardLayout` object doesn't have a layout property, it default value is "Entity".
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cardLayout?: CardLayout;
+        /**
+        * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
         * This information can be used for branding in entity cards.
         *
         * @remarks
@@ -1716,12 +1930,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#N/A!";
+        basicValue?: "#N/A!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1757,12 +1973,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#NAME?";
+        basicValue?: "#NAME?" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1798,12 +2016,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#NULL!";
+        basicValue?: "#NULL!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1839,12 +2059,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#NUM!";
+        basicValue?: "#NUM!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -1879,78 +2101,6 @@ export declare namespace Excel {
         */
         unknown = "Unknown",
         /**
-        * An error caused by a column_index_num parameter of VLOOKUP that's greater than the number of columns in the table_array parameter. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        vlookupColumnIndexGreaterThanNumColumns = "VlookupColumnIndexGreaterThanNumColumns",
-        /**
-        * An error caused by a row_index_num parameter of HLOOKUP that's greater than the number of rows in the table_array parameter. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        hlookupRowIndexGreaterThanNumRows = "HlookupRowIndexGreaterThanNumRows",
-        /**
-        * An error caused by the reference or name not existing in the linked workbook. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        externalLinksRefNotExist = "ExternalLinksRefNotExist",
-        /**
-        * An error caused by a start_row parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayStartRowOutOfBounds = "SubArrayStartRowOutOfBounds",
-        /**
-        * An error caused by a start_column parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayStartColumnOutOfBounds = "SubArrayStartColumnOutOfBounds",
-        /**
-        * An error caused by an end_row parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayEndRowOutOfBounds = "SubArrayEndRowOutOfBounds",
-        /**
-        * An error caused by an end_column parameter of SUBARRAY being out of bounds. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayEndColumnOutOfBounds = "SubArrayEndColumnOutOfBounds",
-        /**
-        * An error caused by an end_row parameter of SUBARRAY preceding the start_row parameter. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayEndRowPrecedesStartRow = "SubArrayEndRowPrecedesStartRow",
-        /**
-        * An error caused by an end_column parameter of SUBARRAY preceding the start_column parameter. Displays as error type #REF! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        subArrayEndColumnPrecedesStartColumn = "SubArrayEndColumnPrecedesStartColumn",
-        /**
         * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
         *
         * @remarks
@@ -1965,7 +2115,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        externalLinksArrayRef = "ExternalLinksArrayRef"
+        externalLinksCalculatedRef = "ExternalLinksCalculatedRef"
     }
     /**
     * Represents the value of a cell containing a #REF! error.
@@ -1985,12 +2135,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#REF!";
+        basicValue?: "#REF!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -2014,7 +2166,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" | "ExternalLinksStructuredRef" | "ExternalLinksArrayRef";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef";
     }
     /**
     * Represents types of #SPILL! errors.
@@ -2099,12 +2251,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#SPILL!";
+        basicValue?: "#SPILL!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -2366,12 +2520,14 @@ export declare namespace Excel {
         type: CellValueType.error | "Error";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#VALUE!";
+        basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -2449,12 +2605,14 @@ export declare namespace Excel {
         type: CellValueType.webImage | "WebImage";
         /**
         * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        basicValue?: "#VALUE!";
+        basicValue?: "#VALUE!" | string;
         /**
         * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
         *
@@ -9645,6 +9803,15 @@ export declare namespace Excel {
          */
         readonly protected: boolean;
         /**
+         * Specifies the protection options settings saved in the worksheet.
+                    This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly savedOptions: Excel.WorksheetProtectionOptions;
+        /**
          * Specifies if the password can be used to unlock worksheet protection.
                     This method does not change the worksheet protection state.
          *
@@ -10211,13 +10378,24 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+                    Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         valuesAsJson: CellValue[][];
+        /**
+         * A JSON representation of the values in the cells in this range.
+                    Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJsonLocal: CellValue[][];
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -12048,13 +12226,24 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this range.
-                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         valuesAsJson: CellValue[][];
+        /**
+         * A JSON representation of the values in the cells in this range.
+                    Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJsonLocal: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12453,13 +12642,24 @@ export declare namespace Excel {
         readonly value: any;
         /**
          * A JSON representation of the values in this named item.
-                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly valueAsJson: CellValue;
+        /**
+         * A JSON representation of the values in this named item.
+                    Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly valueAsJsonLocal: CellValue[][];
         /**
          * Specifies if the object is visible.
          *
@@ -12548,14 +12748,25 @@ export declare namespace Excel {
          */
         readonly values: any[][];
         /**
-         * A JSON representation of the values in the cells in this range.
-                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+         * A JSON representation of the values in this named item array.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         readonly valuesAsJson: CellValue[][];
+        /**
+         * A JSON representation of the values in this named item array.
+                    Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly valuesAsJsonLocal: CellValue[][];
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -13432,13 +13643,24 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table column.
-                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         valuesAsJson: CellValue[][];
+        /**
+         * A JSON representation of the values in the cells in this table column.
+                    Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJsonLocal: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -13541,10 +13763,11 @@ export declare namespace Excel {
                      to point at the index for which it was created.
          *
          * @remarks
-         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
+         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; ExcelApi BETA (PREVIEW ONLY) for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
+         * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         /**
@@ -13645,13 +13868,24 @@ export declare namespace Excel {
         values: any[][];
         /**
          * A JSON representation of the values in the cells in this table row.
-                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         valuesAsJson: CellValue[][];
+        /**
+         * A JSON representation of the values in the cells in this table row.
+                    Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                    Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valuesAsJsonLocal: CellValue[][];
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -15722,6 +15956,46 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         delete(): void;
+        /**
+         * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param dimension - The dimension of the axis where the data is from.
+         */
+        getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param dimensionString - The dimension of the axis where the data is from.
+         */
+        getDimensionDataSourceString(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the data source type of the chart series.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param dimension - The dimension of the axis where the data is from.
+         */
+        getDimensionDataSourceType(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
+        /**
+         * Gets the data source type of the chart series.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param dimensionString - The dimension of the axis where the data is from.
+         */
+        getDimensionDataSourceType(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"): OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
         /**
          * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
          *
@@ -18167,6 +18441,22 @@ export declare namespace Excel {
     export class ChartFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Sets and gets the uniform color fill formatting of a chart element.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        solidColor: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ChartFillUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.ChartFill): void;
         /**
          * Clears the fill color of a chart element.
          *
@@ -29673,6 +29963,35 @@ export declare namespace Excel {
         rows = "Rows"
     }
     /**
+     * Specifies whether the series data range is local range, external range, list or unknown.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ChartDataSourceType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        localRange = "LocalRange",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        externalRange = "ExternalRange",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        list = "List",
+        /**
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        unknown = "Unknown"
+    }
+    /**
      * Represents the horizontal alignment for the specified object.
      *
      * @remarks
@@ -40220,13 +40539,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -40293,13 +40623,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -40458,13 +40799,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -40482,13 +40834,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -42377,6 +42740,17 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
+        }
+        /** An interface for updating data on the ChartFill object, for use in `chartFill.set({ ... })`. */
+        export interface ChartFillUpdateData {
+            /**
+             * Sets and gets the uniform color fill formatting of a chart element.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            solidColor?: string;
         }
         /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
@@ -45641,6 +46015,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            /**
+             * Specifies the protection options settings saved in the worksheet.
+                        This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            savedOptions?: Excel.WorksheetProtectionOptions;
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -45879,13 +46262,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -46088,13 +46482,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -46178,13 +46583,24 @@ export declare namespace Excel {
             value?: any;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valueAsJson?: CellValue;
+            /**
+             * A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJsonLocal?: CellValue[][];
             /**
              * Specifies if the object is visible.
              *
@@ -46210,14 +46626,25 @@ export declare namespace Excel {
              */
             values?: any[][];
             /**
-             * A JSON representation of the values in the cells in this range.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+             * A JSON representation of the values in this named item array.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in this named item array.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -46410,13 +46837,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -46441,13 +46879,24 @@ export declare namespace Excel {
             values?: any[][];
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: CellValue[][];
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: CellValue[][];
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
@@ -48529,6 +48978,17 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontData;
+        }
+        /** An interface describing the data returned by calling `chartFill.toJSON()`. */
+        export interface ChartFillData {
+            /**
+             * Sets and gets the uniform color fill formatting of a chart element.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            solidColor?: string;
         }
         /** An interface describing the data returned by calling `chartBorder.toJSON()`. */
         export interface ChartBorderData {
@@ -53000,6 +53460,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            /**
+             * Specifies the protection options settings saved in the worksheet.
+                        This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            savedOptions?: boolean;
         }
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
@@ -53248,13 +53717,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -53457,13 +53937,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents a collection of `RangeView` objects.
@@ -53555,13 +54046,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `RangeView.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+                        Unlike `RangeView.values`, `RangeView.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `RangeView.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
@@ -53692,13 +54194,24 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valueAsJson?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJsonLocal?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies if the object is visible.
              *
@@ -53784,13 +54297,24 @@ export declare namespace Excel {
             value?: boolean;
             /**
              * A JSON representation of the values in this named item.
-                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valueAsJson?: boolean;
+            /**
+             * A JSON representation of the values in this named item.
+                        Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItem.valueAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valueAsJsonLocal?: boolean;
             /**
              * Specifies if the object is visible.
              *
@@ -53825,14 +54349,25 @@ export declare namespace Excel {
              */
             values?: boolean;
             /**
-             * A JSON representation of the values in the cells in this range.
-                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell.
+             * A JSON representation of the values in this named item array.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `NamedItemArrayValues.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * A JSON representation of the values in this named item array.
+                        Unlike `NamedItemArrayValues.values`, `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `NamedItemArrayValues.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents an Office.js binding that is defined in the workbook.
@@ -54338,13 +54873,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents a column in a table.
@@ -54395,13 +54941,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table column.
-                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableColumn.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this table column.
+                        Unlike `TableColumn.values`, `TableColumn.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableColumn.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents a collection of all the rows that are part of the table.
@@ -54436,13 +54993,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents a row in a table.
@@ -54477,13 +55045,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * A JSON representation of the values in the cells in this table row.
-                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * A JSON representation of the values in the cells in this table row.
+                        Unlike `TableRow.values`, `TableRow.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `TableRow.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
         }
         /**
          * Represents the data validation applied to the current range.
@@ -57536,6 +58115,26 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
+        }
+        /**
+         * Represents the fill formatting for a chart element.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         */
+        export interface ChartFillLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Sets and gets the uniform color fill formatting of a chart element.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            solidColor?: boolean;
         }
         /**
          * Represents the border formatting of a chart element.
@@ -61459,13 +62058,24 @@ export declare namespace Excel {
             values?: boolean;
             /**
              * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
-                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell.
+                        Unlike `Range.values`, `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the en-US locale.  To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             valuesAsJson?: boolean;
+            /**
+             * For EACH ITEM in the collection: A JSON representation of the values in the cells in this range.
+                        Unlike `Range.values`, `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
+                        Data returned from this API always aligns with the user's display locale.  To retrieve data independent of locale, use `Range.valuesAsJson`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            valuesAsJsonLocal?: boolean;
             /**
              * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *

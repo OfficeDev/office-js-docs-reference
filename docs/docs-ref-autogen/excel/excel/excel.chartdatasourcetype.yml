@@ -1,0 +1,32 @@
+### YamlMime:TSEnum
+name: Excel.ChartDataSourceType
+uid: 'excel!Excel.ChartDataSourceType:enum'
+package: excel!
+fullName: Excel.ChartDataSourceType
+summary: 'Specifies whether the series data range is local range, external range, list or unknown.'
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+fields:
+  - name: externalRange
+    uid: 'excel!Excel.ChartDataSourceType.externalRange:member'
+    package: excel!
+    summary: ''
+    value: '"ExternalRange"'
+  - name: list
+    uid: 'excel!Excel.ChartDataSourceType.list:member'
+    package: excel!
+    summary: ''
+    value: '"List"'
+  - name: localRange
+    uid: 'excel!Excel.ChartDataSourceType.localRange:member'
+    package: excel!
+    summary: ''
+    value: '"LocalRange"'
+  - name: unknown
+    uid: 'excel!Excel.ChartDataSourceType.unknown:member'
+    package: excel!
+    summary: ''
+    value: '"Unknown"'

@@ -29,16 +29,19 @@ properties:
     uid: 'excel!Excel.ArrayCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'basicValue?: "#VALUE!";'
+      content: 'basicValue?: "#VALUE!" | string;'
       return:
-        type: '"#VALUE!"'
+        type: '"#VALUE!" | string'
   - name: elements
     uid: 'excel!Excel.ArrayCellValue#elements:member'
     package: excel!
@@ -53,6 +56,20 @@ properties:
       content: 'elements: CellValue[][];'
       return:
         type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+  - name: referencedValues
+    uid: 'excel!Excel.ArrayCellValue#referencedValues:member'
+    package: excel!
+    fullName: referencedValues
+    summary: Represents the cell values which are referenced within `ArrayCellValue.elements`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: '<xref uid="excel!Excel.ReferencedValue:type" />[]'
   - name: type
     uid: 'excel!Excel.ArrayCellValue#type:member'
     package: excel!
@@ -64,6 +81,8 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.array | "Array";'
+      content: 'type: CellValueType.array | ReferenceValueType.array | "Array";'
       return:
-        type: '<xref uid="excel!Excel.CellValueType.array:member" /> | "Array"'
+        type: >-
+          <xref uid="excel!Excel.CellValueType.array:member" /> | <xref
+          uid="excel!Excel.ReferenceValueType.array:member" /> | "Array"

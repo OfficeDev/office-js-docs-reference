@@ -3,7 +3,7 @@ name: Excel.WorksheetProtection
 uid: 'excel!Excel.WorksheetProtection:class'
 package: excel!
 fullName: Excel.WorksheetProtection
-summary: Represents the protection of a sheet object.
+summary: Represents the protection of a worksheet object.
 remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

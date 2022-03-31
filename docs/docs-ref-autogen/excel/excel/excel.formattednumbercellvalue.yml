@@ -49,8 +49,10 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: >-
-      Returns the number format string that is used to display this value. Number format strings must conform to Excel
-      guidelines. To learn more, see [Review guidelines for customizing a number
+      Returns the number format string that is used to display this value. When accessed through a `valuesAsJson`
+      property, this number format string is in the en-US locale. When accessed through a `valuesAsJsonLocal` property,
+      this number format is in the user's display locale. Number format strings must conform to Excel guidelines. To
+      learn more, see [Review guidelines for customizing a number
       format](https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5)<!--
       -->.
     remarks: >-

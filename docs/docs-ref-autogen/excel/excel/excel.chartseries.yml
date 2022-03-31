@@ -828,6 +828,96 @@ methods:
       return:
         type: void
         description: ''
+  - name: getDimensionDataSourceString(dimension)
+    uid: 'excel!Excel.ChartSeries#getDimensionDataSourceString:member(1)'
+    package: excel!
+    fullName: getDimensionDataSourceString(dimension)
+    summary: >-
+      Gets the string representation of the data source of the chart series.The string representation could be
+      information such as a cell address.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string>;'
+      parameters:
+        - id: dimension
+          description: The dimension of the axis where the data is from.
+          type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getDimensionDataSourceString(dimensionString)
+    uid: 'excel!Excel.ChartSeries#getDimensionDataSourceString:member(2)'
+    package: excel!
+    fullName: getDimensionDataSourceString(dimensionString)
+    summary: >-
+      Gets the string representation of the data source of the chart series.The string representation could be
+      information such as a cell address.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getDimensionDataSourceString(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"):
+        OfficeExtension.ClientResult<string>;
+      parameters:
+        - id: dimensionString
+          description: The dimension of the axis where the data is from.
+          type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getDimensionDataSourceType(dimension)
+    uid: 'excel!Excel.ChartSeries#getDimensionDataSourceType:member(1)'
+    package: excel!
+    fullName: getDimensionDataSourceType(dimension)
+    summary: Gets the data source type of the chart series.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getDimensionDataSourceType(dimension: Excel.ChartSeriesDimension):
+        OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
+      parameters:
+        - id: dimension
+          description: The dimension of the axis where the data is from.
+          type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
+          />&gt;
+        description: ''
+  - name: getDimensionDataSourceType(dimensionString)
+    uid: 'excel!Excel.ChartSeries#getDimensionDataSourceType:member(2)'
+    package: excel!
+    fullName: getDimensionDataSourceType(dimensionString)
+    summary: Gets the data source type of the chart series.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getDimensionDataSourceType(dimensionString: "Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"):
+        OfficeExtension.ClientResult<Excel.ChartDataSourceType>;
+      parameters:
+        - id: dimensionString
+          description: The dimension of the axis where the data is from.
+          type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
+          />&gt;
+        description: ''
   - name: getDimensionValues(dimension)
     uid: 'excel!Excel.ChartSeries#getDimensionValues:member(1)'
     package: excel!
