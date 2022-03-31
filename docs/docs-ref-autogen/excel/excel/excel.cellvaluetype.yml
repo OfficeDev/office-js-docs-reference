@@ -55,6 +55,11 @@ fields:
     package: excel!
     summary: Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
     value: '"NotAvailable"'
+  - name: reference
+    uid: 'excel!Excel.CellValueType.reference:member'
+    package: excel!
+    summary: Represents a `ReferenceCellValue`<!-- -->.
+    value: '"Reference"'
   - name: string
     uid: 'excel!Excel.CellValueType.string:member'
     package: excel!

@@ -107,6 +107,22 @@ properties:
       content: 'readonly protected: boolean;'
       return:
         type: boolean
+  - name: savedOptions
+    uid: 'excel!Excel.WorksheetProtection#savedOptions:member'
+    package: excel!
+    fullName: savedOptions
+    summary: >-
+      Specifies the protection options settings saved in the worksheet. This will return the same
+      `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly savedOptions: Excel.WorksheetProtectionOptions;'
+      return:
+        type: '<xref uid="excel!Excel.WorksheetProtectionOptions:interface" />'
 methods:
   - name: checkPassword(password)
     uid: 'excel!Excel.WorksheetProtection#checkPassword:member(1)'

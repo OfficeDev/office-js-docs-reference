@@ -105,7 +105,9 @@ properties:
     fullName: valueAsJson
     summary: >-
       A JSON representation of the values in this named item. Unlike `NamedItem.value`<!-- -->, `NamedItem.valueAsJson`
-      supports all data types which can be in a cell.
+      supports all data types which can be in a cell. Examples include formatted number values and web images, in
+      addition to the standard boolean, number, and string values. Data returned from this API always aligns with the
+      en-US locale. To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -115,6 +117,25 @@ properties:
       content: 'valueAsJson?: CellValue;'
       return:
         type: '<xref uid="excel!Excel.CellValue:type" />'
+  - name: valueAsJsonLocal
+    uid: 'excel!Excel.Interfaces.NamedItemData#valueAsJsonLocal:member'
+    package: excel!
+    fullName: valueAsJsonLocal
+    summary: >-
+      A JSON representation of the values in this named item. Unlike `NamedItem.value`<!-- -->,
+      `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number
+      values and web images, in addition to the standard boolean, number, and string values. Data returned from this API
+      always aligns with the user's display locale. To retrieve data independent of locale, use
+      `NamedItem.valueAsJson`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valueAsJsonLocal?: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
   - name: visible
     uid: 'excel!Excel.Interfaces.NamedItemData#visible:member'
     package: excel!

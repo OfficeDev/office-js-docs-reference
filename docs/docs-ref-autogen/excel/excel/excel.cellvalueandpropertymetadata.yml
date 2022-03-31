@@ -11,7 +11,4 @@ remarks: >-
   \]
 isPreview: true
 isDeprecated: false
-syntax: |-
-  export type CellValueAndPropertyMetadata = CellValue & {
-          propertyMetadata?: CellValuePropertyMetadata;
-      };
+syntax: export type CellValueAndPropertyMetadata = CellValue & EntityPropertyExtraProperties;

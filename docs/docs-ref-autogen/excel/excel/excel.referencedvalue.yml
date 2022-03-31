@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: Excel.ReferencedValue
+uid: 'excel!Excel.ReferencedValue:type'
+package: excel!
+fullName: Excel.ReferencedValue
+summary: Represents the value in a cell.
+remarks: >-
+  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
+  \]
+isPreview: true
+isDeprecated: false
+syntax: export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;

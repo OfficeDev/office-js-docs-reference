@@ -15,7 +15,7 @@ properties:
     uid: 'excel!Excel.EntityCardLayout#layout:member'
     package: excel!
     fullName: layout
-    summary: Represent the type of this layout.
+    summary: Represents the type of this layout.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

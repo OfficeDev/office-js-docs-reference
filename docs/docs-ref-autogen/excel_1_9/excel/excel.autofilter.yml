@@ -229,7 +229,7 @@ methods:
     uid: 'excel!Excel.AutoFilter#reapply:member(1)'
     package: excel!
     fullName: reapply()
-    summary: Applies the specified Autofilter object currently on the range.
+    summary: Applies the specified AutoFilter object currently on the range.
     remarks: >-
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
 

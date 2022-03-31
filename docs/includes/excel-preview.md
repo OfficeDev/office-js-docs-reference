@@ -17,6 +17,7 @@
 |[ArrayCellValue](/javascript/api/excel/excel.arraycellvalue)|[basicType](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[elements](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-elements-member)|Represents the elements of the array.|
+||[referencedValues](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-referencedvalues-member)|Represents the cell values which are referenced within `ArrayCellValue.elements`.|
 ||[type](/javascript/api/excel/excel.arraycellvalue#excel-excel-arraycellvalue-type-member)|Represents the type of this cell value.|
 |[BlockedErrorCellValue](/javascript/api/excel/excel.blockederrorcellvalue)|[basicType](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.blockederrorcellvalue#excel-excel-blockederrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
@@ -51,6 +52,8 @@
 ||[licenseText](/javascript/api/excel/excel.cellvalueattributionattributes#excel-excel-cellvalueattributionattributes-licensetext-member)|Represents a name for the license that governs this property.|
 ||[sourceAddress](/javascript/api/excel/excel.cellvalueattributionattributes#excel-excel-cellvalueattributionattributes-sourceaddress-member)|Represents a URL to the source of the `CellValue`.|
 ||[sourceText](/javascript/api/excel/excel.cellvalueattributionattributes#excel-excel-cellvalueattributionattributes-sourcetext-member)|Represents a name for the source of the `CellValue`.|
+|[CellValueExtraProperties](/javascript/api/excel/excel.cellvalueextraproperties)|[writable](/javascript/api/excel/excel.cellvalueextraproperties#excel-excel-cellvalueextraproperties-writable-member)|Represents whether this `CellValue` will be used to overwrite a cell.|
+||[writableNote](/javascript/api/excel/excel.cellvalueextraproperties#excel-excel-cellvalueextraproperties-writablenote-member)|Represents an explanation about why `CellValue.writable` is specified as false.|
 |[CellValuePropertyMetadata](/javascript/api/excel/excel.cellvaluepropertymetadata)|[attribution](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-attribution-member)|Represents attribution information to describe the source and license requirements for using this property.|
 ||[excludeFrom](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-excludefrom-member)|Represents which features this property is excluded from.|
 ||[sublabel](/javascript/api/excel/excel.cellvaluepropertymetadata#excel-excel-cellvaluepropertymetadata-sublabel-member)|Represents the sublabel for this property shown in card view.|
@@ -61,6 +64,9 @@
 |[CellValueProviderAttributes](/javascript/api/excel/excel.cellvalueproviderattributes)|[description](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-description-member)|Represents the provider description property that is used in card view if no logo is specified.|
 ||[logoSourceAddress](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-logosourceaddress-member)|Represents a URL used to download an image that will be used as a logo in card view.|
 ||[logoTargetAddress](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-logotargetaddress-member)|Represents a URL that is the navigation target if the user clicks on the logo element in card view.|
+|[ChartFill](/javascript/api/excel/excel.chartfill)|[solidColor](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-solidcolor-member)|Sets and gets the uniform color fill formatting of a chart element.|
+|[ChartSeries](/javascript/api/excel/excel.chartseries)|[getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1))|Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.|
+||[getDimensionDataSourceType(dimension: Excel.ChartSeriesDimension)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1))|Gets the data source type of the chart series.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Identity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
@@ -117,13 +123,17 @@
 |[EmptyCellValue](/javascript/api/excel/excel.emptycellvalue)|[basicType](/javascript/api/excel/excel.emptycellvalue#excel-excel-emptycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.emptycellvalue#excel-excel-emptycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[type](/javascript/api/excel/excel.emptycellvalue#excel-excel-emptycellvalue-type-member)|Represents the type of this cell value.|
-|[EntityCardLayout](/javascript/api/excel/excel.entitycardlayout)|[layout](/javascript/api/excel/excel.entitycardlayout#excel-excel-entitycardlayout-layout-member)|Represent the type of this layout.|
+|[EntityCardLayout](/javascript/api/excel/excel.entitycardlayout)|[layout](/javascript/api/excel/excel.entitycardlayout#excel-excel-entitycardlayout-layout-member)|Represents the type of this layout.|
 |[EntityCellValue](/javascript/api/excel/excel.entitycellvalue)|[basicType](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
-||[cardLayout](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-cardlayout-member)|Represents the layout of this entity in card view.|
+||[layouts](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-layouts-member)|Represents layout information for views of this entity.|
 ||[properties: {            [key: string]](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
+||[provider](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-provider-member)|Represents information that describes the service that provided the data in this `EntityCellValue`.|
+||[referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)|Represents the cell values which are referenced within `EntityCellValue.properties`.|
 ||[text](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|
 ||[type](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-type-member)|Represents the type of this cell value.|
+|[EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)|[propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)|Represents metadata about the property.|
+|[EntityViewLayouts](/javascript/api/excel/excel.entityviewlayouts)|[card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)|Represents the layout of this entity in card view.|
 |[FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue)|[basicType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)|Represents the type of `FieldErrorCellValue`.|
@@ -169,10 +179,11 @@
 ||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-requestrefreshall-member(1))|Makes a request to refresh all the linked data types in the collection.|
 |[LinkedEntityCellValue](/javascript/api/excel/excel.linkedentitycellvalue)|[basicType](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[cardLayout](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-cardlayout-member)|Represents the layout of this linked entity in card view.|
 ||[id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)|Represents the service source that provided the information in this value.|
-||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
+||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this linked entity and their metadata.|
 ||[propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-propertymetadata-member)||
-||[provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)|Represents information that describes the service which provided the image.|
+||[provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)|Represents information that describes the service that provided data in this `LinkedEntityCellValue`.|
 ||[text](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|
 ||[type](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-type-member)|Represents the type of this cell value.|
 |[LinkedEntityId](/javascript/api/excel/excel.linkedentityid)|[culture](/javascript/api/excel/excel.linkedentityid#excel-excel-linkedentityid-culture-member)|Represents which language culture was used to create this `CellValue`.|
@@ -184,7 +195,9 @@
 ||[errorType](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.nameerrorcellvalue#excel-excel-nameerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[NamedItem](/javascript/api/excel/excel.nameditem)|[valueAsJson](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjson-member)|A JSON representation of the values in this named item.|
-|[NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues)|[valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
+||[valueAsJsonLocal](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-valueasjsonlocal-member)|A JSON representation of the values in this named item.|
+|[NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues)|[valuesAsJson](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjson-member)|A JSON representation of the values in this named item array.|
+||[valuesAsJsonLocal](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-valuesasjsonlocal-member)|A JSON representation of the values in this named item array.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
 |[NotAvailableErrorCellValue](/javascript/api/excel/excel.notavailableerrorcellvalue)|[basicType](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.notavailableerrorcellvalue#excel-excel-notavailableerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
@@ -211,12 +224,18 @@
 ||[type](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-type-member)|Represents the type of this cell value.|
 |[Range](/javascript/api/excel/excel.range)|[getDependents()](/javascript/api/excel/excel.range#excel-excel-range-getdependents-member(1))|Returns a `WorkbookRangeAreas` object that represents the range containing all the dependents of a cell in the same worksheet or in multiple worksheets.|
 ||[valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
+||[valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this range.|
 |[RangeView](/javascript/api/excel/excel.rangeview)|[valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
+||[valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this range.|
 |[RefErrorCellValue](/javascript/api/excel/excel.referrorcellvalue)|[basicType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errorsubtype-member)|Represents the type of `RefErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[type](/javascript/api/excel/excel.referrorcellvalue#excel-excel-referrorcellvalue-type-member)|Represents the type of this cell value.|
+|[ReferenceCellValue](/javascript/api/excel/excel.referencecellvalue)|[basicType](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[reference](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-reference-member)|Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.|
+||[type](/javascript/api/excel/excel.referencecellvalue#excel-excel-referencecellvalue-type-member)|Represents the type of this cell value.|
 |[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-refreshmode-member)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-serviceid-member)|The unique ID of the object whose refresh mode was changed.|
 ||[source](/javascript/api/excel/excel.refreshmodechangedeventargs#excel-excel-refreshmodechangedeventargs-source-member)|Gets the source of the event.|
@@ -226,6 +245,9 @@
 ||[source](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-source-member)|Gets the source of the event.|
 ||[type](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-type-member)|Gets the type of the event.|
 ||[warnings](/javascript/api/excel/excel.refreshrequestcompletedeventargs#excel-excel-refreshrequestcompletedeventargs-warnings-member)|An array that contains any warnings generated from the refresh request.|
+|[RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue)|[basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[type](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-type-member)|Represents the type of this cell value.|
 |[Shape](/javascript/api/excel/excel.shape)|[displayName](/javascript/api/excel/excel.shape#excel-excel-shape-displayname-member)|Gets the display name of the shape.|
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 |[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Represents the slicer name used in the formula.|
@@ -247,10 +269,12 @@
 ||[tableStyle](/javascript/api/excel/excel.table#excel-excel-table-tablestyle-member)|The style applied to the table.|
 |[TableCollection](/javascript/api/excel/excel.tablecollection)|[onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)|Occurs when a filter is applied on any table in a workbook, or a worksheet.|
 |[TableColumn](/javascript/api/excel/excel.tablecolumn)|[valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member)|A JSON representation of the values in the cells in this table column.|
+||[valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this table column.|
 |[TableFilteredEventArgs](/javascript/api/excel/excel.tablefilteredeventargs)|[tableId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-tableid-member)|Gets the ID of the table in which the filter is applied.|
 ||[type](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-type-member)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-worksheetid-member)|Gets the ID of the worksheet which contains the table.|
 |[TableRow](/javascript/api/excel/excel.tablerow)|[valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member)|A JSON representation of the values in the cells in this table row.|
+||[valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this table row.|
 |[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[basicType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|
@@ -285,6 +309,7 @@
 ||[isPaused](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-ispaused-member)|Specifies if worksheet protection is paused.|
 ||[pauseProtection(password?: string)](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-pauseprotection-member(1))|Pauses worksheet protection for the given worksheet object for the user in a given session.|
 ||[resumeProtection()](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-resumeprotection-member(1))|Resumes worksheet protection for the given worksheet object for the user in a given session.|
+||[savedOptions](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-savedoptions-member)|Specifies the protection options settings saved in the worksheet.|
 ||[setPassword(password?: string)](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-setpassword-member(1))|Changes the password associated with the `WorksheetProtection` object.|
 ||[updateOptions(options: Excel.WorksheetProtectionOptions)](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-updateoptions-member(1))|Change the worksheet protection options associated to the `WorksheetProtection` object.|
 |[WorksheetProtectionChangedEventArgs](/javascript/api/excel/excel.worksheetprotectionchangedeventargs)|[allowEditRangesChanged](/javascript/api/excel/excel.worksheetprotectionchangedeventargs#excel-excel-worksheetprotectionchangedeventargs-alloweditrangeschanged-member)|Specifies if any of the `AllowEditRange` objects have changed.|

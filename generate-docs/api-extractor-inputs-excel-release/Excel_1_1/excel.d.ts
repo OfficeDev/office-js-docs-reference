@@ -1418,7 +1418,7 @@ export declare namespace Excel {
         /**
          * Name of the table.
                     
-                     The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                     The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -5560,7 +5560,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -7504,7 +7504,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -9738,7 +9738,7 @@ export declare namespace Excel {
             /**
              * For EACH ITEM in the collection: Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -9812,7 +9812,7 @@ export declare namespace Excel {
             /**
              * Name of the table.
                         
-                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                         The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
