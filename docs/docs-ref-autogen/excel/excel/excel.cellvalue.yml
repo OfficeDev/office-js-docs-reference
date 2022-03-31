@@ -11,8 +11,5 @@ isPreview: true
 isDeprecated: false
 syntax: >-
   export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
-  ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | StringCellValue | ValueTypeNotAvailableCellValue |
-  WebImageCellValue & {
-          writable?: boolean;
-          writableNote?: string;
-      };
+  ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue |
+  ValueTypeNotAvailableCellValue | WebImageCellValue & CellValueExtraProperties;

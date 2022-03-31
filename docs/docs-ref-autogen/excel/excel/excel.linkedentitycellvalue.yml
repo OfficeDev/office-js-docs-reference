@@ -29,16 +29,35 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'basicValue?: "#VALUE!";'
+      content: 'basicValue?: "#VALUE!" | string;'
       return:
-        type: '"#VALUE!"'
+        type: '"#VALUE!" | string'
+  - name: cardLayout
+    uid: 'excel!Excel.LinkedEntityCellValue#cardLayout:member'
+    package: excel!
+    fullName: cardLayout
+    summary: >-
+      Represents the layout of this linked entity in card view. If the `CardLayout` object doesn't have a layout
+      property, it default value is "Entity".
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'cardLayout?: CardLayout;'
+      return:
+        type: '<xref uid="excel!Excel.CardLayout:type" />'
   - name: id
     uid: 'excel!Excel.LinkedEntityCellValue#id:member'
     package: excel!
@@ -57,7 +76,7 @@ properties:
     uid: 'excel!Excel.LinkedEntityCellValue#properties:member'
     package: excel!
     fullName: properties
-    summary: Represents the properties of this entity and their metadata.
+    summary: Represents the properties of this linked entity and their metadata.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -82,8 +101,8 @@ properties:
     package: excel!
     fullName: provider
     summary: >-
-      Represents information that describes the service which provided the image. This information can be used for
-      branding in entity cards.
+      Represents information that describes the service that provided data in this `LinkedEntityCellValue`<!-- -->. This
+      information can be used for branding in entity cards.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

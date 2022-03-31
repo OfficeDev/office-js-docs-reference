@@ -11,7 +11,7 @@
 ||[getRange()](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrange-member(1))|Returns the `Range` object that represents the range to which the AutoFilter applies.|
 ||[getRangeOrNullObject()](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-getrangeornullobject-member(1))|Returns the `Range` object that represents the range to which the AutoFilter applies.|
 ||[isDataFiltered](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-isdatafiltered-member)|Specifies if the AutoFilter has filter criteria.|
-||[reapply()](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-reapply-member(1))|Applies the specified Autofilter object currently on the range.|
+||[reapply()](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-reapply-member(1))|Applies the specified AutoFilter object currently on the range.|
 ||[remove()](/javascript/api/excel/excel.autofilter#excel-excel-autofilter-remove-member(1))|Removes the AutoFilter for the range.|
 |[CellBorder](/javascript/api/excel/excel.cellborder)|[color](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-color-member)|Represents the `color` property of a single border.|
 ||[style](/javascript/api/excel/excel.cellborder#excel-excel-cellborder-style-member)|Represents the `style` property of a single border.|
@@ -224,7 +224,7 @@
 ||[setAutoSortOnCell(cell: Range \| string, sortBy: Excel.SortBy)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setautosortoncell-member(1))|Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context.|
 |[PivotTable](/javascript/api/excel/excel.pivottable)|[enableDataValueEditing](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-enabledatavalueediting-member)|Specifies if the PivotTable allows values in the data body to be edited by the user.|
 ||[useCustomSortLists](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-usecustomsortlists-member)|Specifies if the PivotTable uses custom lists when sorting.|
-|[Range](/javascript/api/excel/excel.range)|[autoFill(destinationRange?: Range \| string, autoFillType?: Excel.AutoFillType)](/javascript/api/excel/excel.range#excel-excel-range-autofill-member(1))|Fills range from the current range to the destination range using the specified AutoFill logic.|
+|[Range](/javascript/api/excel/excel.range)|[autoFill(destinationRange?: Range \| string, autoFillType?: Excel.AutoFillType)](/javascript/api/excel/excel.range#excel-excel-range-autofill-member(1))|Fills a range from the current range to the destination range using the specified AutoFill logic.|
 ||[convertDataTypeToText()](/javascript/api/excel/excel.range#excel-excel-range-convertdatatypetotext-member(1))|Converts the range cells with data types into text.|
 ||[convertToLinkedDataType(serviceID: number, languageCulture: string)](/javascript/api/excel/excel.range#excel-excel-range-converttolinkeddatatype-member(1))|Converts the range cells into linked data types in the worksheet.|
 ||[copyFrom(sourceRange: Range \| RangeAreas \| string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean, transpose?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-copyfrom-member(1))|Copies cell data or formatting from the source range or `RangeAreas` to the current range.|

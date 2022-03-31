@@ -29,16 +29,19 @@ properties:
     uid: 'excel!Excel.RefErrorCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'basicValue?: "#REF!";'
+      content: 'basicValue?: "#REF!" | string;'
       return:
-        type: '"#REF!"'
+        type: '"#REF!" | string'
   - name: errorSubType
     uid: 'excel!Excel.RefErrorCellValue#errorSubType:member'
     package: excel!
@@ -51,18 +54,12 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        errorSubType?: RefErrorCellValueSubType | "Unknown" | "VlookupColumnIndexGreaterThanNumColumns" |
-        "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" | "SubArrayStartRowOutOfBounds" |
-        "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" | "SubArrayEndColumnOutOfBounds" |
-        "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" | "ExternalLinksStructuredRef" |
-        "ExternalLinksArrayRef";
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" |
+        "ExternalLinksCalculatedRef";
       return:
         type: >-
-          <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" |
-          "VlookupColumnIndexGreaterThanNumColumns" | "HlookupRowIndexGreaterThanNumRows" | "ExternalLinksRefNotExist" |
-          "SubArrayStartRowOutOfBounds" | "SubArrayStartColumnOutOfBounds" | "SubArrayEndRowOutOfBounds" |
-          "SubArrayEndColumnOutOfBounds" | "SubArrayEndRowPrecedesStartRow" | "SubArrayEndColumnPrecedesStartColumn" |
-          "ExternalLinksStructuredRef" | "ExternalLinksArrayRef"
+          <xref uid="excel!Excel.RefErrorCellValueSubType:enum" /> | "Unknown" | "ExternalLinksStructuredRef" |
+          "ExternalLinksCalculatedRef"
   - name: errorType
     uid: 'excel!Excel.RefErrorCellValue#errorType:member'
     package: excel!

@@ -29,32 +29,33 @@ properties:
     uid: 'excel!Excel.EntityCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'basicValue?: "#VALUE!";'
-      return:
-        type: '"#VALUE!"'
-  - name: cardLayout
-    uid: 'excel!Excel.EntityCellValue#cardLayout:member'
-    package: excel!
-    fullName: cardLayout
     summary: >-
-      Represents the layout of this entity in card view. If the `CardLayout` object does not have a layout property, it
-      is assumed to be "Entity".
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'cardLayout?: CardLayout;'
+      content: 'basicValue?: "#VALUE!" | string;'
       return:
-        type: '<xref uid="excel!Excel.CardLayout:type" />'
+        type: '"#VALUE!" | string'
+  - name: layouts
+    uid: 'excel!Excel.EntityCellValue#layouts:member'
+    package: excel!
+    fullName: layouts
+    summary: Represents layout information for views of this entity.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: EntityViewLayouts;'
+      return:
+        type: '<xref uid="excel!Excel.EntityViewLayouts:interface" />'
   - name: properties
     uid: 'excel!Excel.EntityCellValue#properties:member'
     package: excel!
@@ -75,6 +76,36 @@ properties:
           {
                       [key: string]: <xref uid="excel!Excel.EntityPropertyType:type" />;
                   }
+  - name: provider
+    uid: 'excel!Excel.EntityCellValue#provider:member'
+    package: excel!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided the data in this `EntityCellValue`<!-- -->. This
+      information can be used for branding in entity cards.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="excel!Excel.CellValueProviderAttributes:interface" />'
+  - name: referencedValues
+    uid: 'excel!Excel.EntityCellValue#referencedValues:member'
+    package: excel!
+    fullName: referencedValues
+    summary: Represents the cell values which are referenced within `EntityCellValue.properties`<!-- -->.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: '<xref uid="excel!Excel.ReferencedValue:type" />[]'
   - name: text
     uid: 'excel!Excel.EntityCellValue#text:member'
     package: excel!
@@ -100,6 +131,8 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'type: CellValueType.entity | "Entity";'
+      content: 'type: CellValueType.entity | ReferenceValueType.entity | "Entity";'
       return:
-        type: '<xref uid="excel!Excel.CellValueType.entity:member" /> | "Entity"'
+        type: >-
+          <xref uid="excel!Excel.CellValueType.entity:member" /> | <xref
+          uid="excel!Excel.ReferenceValueType.entity:member" /> | "Entity"

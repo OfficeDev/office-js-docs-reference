@@ -603,14 +603,13 @@ methods:
     package: excel!
     fullName: 'autoFill(destinationRange, autoFillType)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
-      not supported.
+      Fills a range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null` or can extend the source range either horizontally or vertically. Discontiguous ranges are not
+      supported.
 
 
-      For more information, read [Use AutoFill and Flash
-      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
-      -->.
+      For more information, see [Use AutoFill and Flash
+      Fill](https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -658,14 +657,13 @@ methods:
     package: excel!
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be `null`<!-- -->, or can extend the source either horizontally or vertically. Discontiguous ranges are
-      not supported.
+      Fills a range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be `null` or can extend the source range either horizontally or vertically. Discontiguous ranges are not
+      supported.
 
 
-      For more information, read [Use AutoFill and Flash
-      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
-      -->.
+      For more information, see [Use AutoFill and Flash
+      Fill](https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
     remarks: >-
       \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -31,16 +31,19 @@ properties:
     uid: 'excel!Excel.PlaceholderErrorCellValue#basicValue:member'
     package: excel!
     fullName: basicValue
-    summary: Represents the value that would be returned by `Range.values` for a cell with this value.
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
     remarks: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'basicValue?: "#BUSY!";'
+      content: 'basicValue?: "#BUSY!" | string;'
       return:
-        type: '"#BUSY!"'
+        type: '"#BUSY!" | string'
   - name: errorType
     uid: 'excel!Excel.PlaceholderErrorCellValue#errorType:member'
     package: excel!

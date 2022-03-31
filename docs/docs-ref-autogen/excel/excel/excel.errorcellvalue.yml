@@ -7,6 +7,35 @@ summary: Represents a cell value which contains an error.
 remarks: >-
   \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
   \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/data-types-error-values.yaml
+
+  await Excel.run(async (context) => {
+    // This method sets the value of cell A1 to a #BUSY! error using data types.
+
+    // Retrieve the Sample worksheet and cell A1 on that sheet.
+    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+    const range = sheet.getRange("A1");
+
+    // Get the error data type and set its type to `busy`. 
+    const error: Excel.ErrorCellValue = {
+      type: Excel.CellValueType.error,
+      errorType: Excel.ErrorCellValueType.busy
+    };
+
+    // Set cell A1 as the busy error.
+    range.valuesAsJson = [[error]];
+    await context.sync();
+  });
+
+  ```
 isPreview: true
 isDeprecated: false
 syntax: >-

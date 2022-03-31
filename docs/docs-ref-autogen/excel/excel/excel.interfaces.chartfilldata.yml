@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartFillData
+uid: 'excel!Excel.Interfaces.ChartFillData:interface'
+package: excel!
+fullName: Excel.Interfaces.ChartFillData
+summary: An interface describing the data returned by calling `chartFill.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: solidColor
+    uid: 'excel!Excel.Interfaces.ChartFillData#solidColor:member'
+    package: excel!
+    fullName: solidColor
+    summary: Sets and gets the uniform color fill formatting of a chart element.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'solidColor?: string;'
+      return:
+        type: string

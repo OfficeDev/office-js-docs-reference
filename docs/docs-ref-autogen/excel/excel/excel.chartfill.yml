@@ -23,6 +23,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: solidColor
+    uid: 'excel!Excel.ChartFill#solidColor:member'
+    package: excel!
+    fullName: solidColor
+    summary: Sets and gets the uniform color fill formatting of a chart element.
+    remarks: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'solidColor: string;'
+      return:
+        type: string
 methods:
   - name: clear()
     uid: 'excel!Excel.ChartFill#clear:member(1)'
@@ -48,6 +62,47 @@ methods:
     isDeprecated: false
     syntax:
       content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartFill#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ChartFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ChartFillUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartFill#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.ChartFill): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.ChartFill:class" />'
       return:
         type: void
         description: ''
