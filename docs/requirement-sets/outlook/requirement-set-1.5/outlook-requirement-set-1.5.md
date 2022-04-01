@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.5
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.5.
-ms.date: 03/30/2022
+ms.date: 04/01/2022
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +32,12 @@ Requirement set 1.5 includes all of the features of [requirement set 1.4](../req
 - Modified [Office.context.mailbox.item.addFileAttachmentAsync](office.context.mailbox.item.md#methods): A new value in the `options` dictionary called `isInline`, used to specify that an image is used inline in the message body.
 - Modified [Office.context.mailbox.item.displayReplyAllForm](office.context.mailbox.item.md#methods): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
 - Modified [Office.context.mailbox.item.displayReplyForm](office.context.mailbox.item.md#methods): A new value in the `formData.attachments` dictionary called `isInline`, used to specify that an image is used inline in the message body.
+- Added [Office.ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-1.5&preserve-view=true): Provides information about the environment in which the add-in is running.
 - Added [Office.context.diagnostics](office.context.md#properties): Gets information about the environment in which the add-in is running, including host, platform, and version information.
 - Added [Office.context.host](office.context.md#properties): Gets the Office application that is hosting the add-in.
 - Added [Office.context.platform](office.context.md#properties): Gets the platform on which the add-in is running.
+- Added [Office.HostType](office.md#hosttype-string): Specifies the host Office application in which the add-in is running.
+- Added [Office.PlatformType](office.md#platformtype-string): Specifies the OS or other platform on which the Office host application is running.
 
 ## See also
 
