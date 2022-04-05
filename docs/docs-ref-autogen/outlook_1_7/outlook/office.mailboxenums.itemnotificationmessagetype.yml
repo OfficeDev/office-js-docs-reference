@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.ItemNotificationMessageType
 summary: Specifies the notification message type for an appointment or message.
 remarks: >-
-  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

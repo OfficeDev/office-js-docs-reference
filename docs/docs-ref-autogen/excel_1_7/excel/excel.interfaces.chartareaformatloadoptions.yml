@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
 summary: Encapsulates the format properties for the overall chart area.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: border
     summary: 'Represents the border format of chart area, which includes color, linestyle, and weight.'
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     package: excel!
     fullName: font
     summary: 'Represents the font attributes (font name, font size, color, etc.) for the current object.'
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

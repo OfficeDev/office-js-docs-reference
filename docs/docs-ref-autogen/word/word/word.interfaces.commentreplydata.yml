@@ -15,8 +15,8 @@ properties:
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -29,8 +29,8 @@ properties:
     fullName: authorName
     summary: Gets the name of the comment reply's author.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -43,8 +43,8 @@ properties:
     fullName: content
     summary: Gets or sets the comment reply's content. The string is plain text.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,8 +57,8 @@ properties:
     fullName: contentRange
     summary: Gets or sets the commentReply's content range.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -71,8 +71,8 @@ properties:
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -85,8 +85,8 @@ properties:
     fullName: id
     summary: ID
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,8 +99,8 @@ properties:
     fullName: parentComment
     summary: Gets the parent comment of this reply.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:

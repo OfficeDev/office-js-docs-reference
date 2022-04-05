@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.ShapeCollection:class'
 package: powerpoint!
 fullName: PowerPoint.ShapeCollection
 summary: Represents the collection of shapes.
-remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -43,7 +43,7 @@ methods:
     summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -94,7 +94,7 @@ methods:
     summary: Adds a geometric shape to the slide. Returns a `Shape` object that represents the new shape.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -180,7 +180,7 @@ methods:
     summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -234,7 +234,7 @@ methods:
     summary: Adds a line to the slide. Returns a `Shape` object that represents the new line.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -264,7 +264,7 @@ methods:
       new text box.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -309,7 +309,7 @@ methods:
     package: powerpoint!
     fullName: getCount()
     summary: Gets the number of shapes in the collection.
-    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -322,7 +322,7 @@ methods:
     package: powerpoint!
     fullName: getItem(key)
     summary: Gets a shape using its unique ID. An error is thrown if the shape does not exist.
-    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,7 +340,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
     remarks: >-
-      \[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 
 
       #### Examples
@@ -385,7 +385,7 @@ methods:
     summary: >-
       Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to
       true is returned.
-    remarks: '\[ [API set: PowerPointApi 1.3](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

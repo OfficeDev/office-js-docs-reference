@@ -4,7 +4,7 @@ uid: 'excel!Excel.Line:class'
 package: excel!
 fullName: Excel.Line
 summary: 'Represents a line inside a worksheet. To get the corresponding `Shape` object, use `Line.shape`<!-- -->.'
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: beginArrowheadLength
     summary: Represents the length of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,7 +26,7 @@ properties:
     package: excel!
     fullName: beginArrowheadStyle
     summary: Represents the style of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,7 +38,7 @@ properties:
     package: excel!
     fullName: beginArrowheadWidth
     summary: Represents the width of the arrowhead at the beginning of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     package: excel!
     fullName: beginConnectedShape
     summary: Represents the shape to which the beginning of the specified line is attached.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +64,7 @@ properties:
     summary: >-
       Represents the connection site to which the beginning of a connector is connected. Returns `null` when the
       beginning of the line is not attached to any shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +76,7 @@ properties:
     package: excel!
     fullName: connectorType
     summary: Represents the connector type for the line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +102,7 @@ properties:
     package: excel!
     fullName: endArrowheadLength
     summary: Represents the length of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +114,7 @@ properties:
     package: excel!
     fullName: endArrowheadStyle
     summary: Represents the style of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +126,7 @@ properties:
     package: excel!
     fullName: endArrowheadWidth
     summary: Represents the width of the arrowhead at the end of the specified line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     package: excel!
     fullName: endConnectedShape
     summary: Represents the shape to which the end of the specified line is attached.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +152,7 @@ properties:
     summary: >-
       Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the
       line is not attached to any shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -164,7 +164,7 @@ properties:
     package: excel!
     fullName: id
     summary: Specifies the shape identifier.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +176,7 @@ properties:
     package: excel!
     fullName: isBeginConnected
     summary: Specifies if the beginning of the specified line is connected to a shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,7 +188,7 @@ properties:
     package: excel!
     fullName: isEndConnected
     summary: Specifies if the end of the specified line is connected to a shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +200,7 @@ properties:
     package: excel!
     fullName: shape
     summary: Returns the `Shape` object associated with the line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +214,7 @@ methods:
     fullName: 'connectBeginShape(shape, connectionSite)'
     summary: Attaches the beginning of the specified connector to a specified shape.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -256,7 +256,7 @@ methods:
     fullName: 'connectEndShape(shape, connectionSite)'
     summary: Attaches the end of the specified connector to a specified shape.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -298,7 +298,7 @@ methods:
     fullName: disconnectBeginShape()
     summary: Detaches the beginning of the specified connector from a shape.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -331,7 +331,7 @@ methods:
     fullName: disconnectEndShape()
     summary: Detaches the end of the specified connector from a shape.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples

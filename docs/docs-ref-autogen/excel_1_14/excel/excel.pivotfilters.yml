@@ -4,7 +4,7 @@ uid: 'excel!Excel.PivotFilters:interface'
 package: excel!
 fullName: Excel.PivotFilters
 summary: An interface representing all PivotFilters currently applied to a given PivotField.
-remarks: '\[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,7 +15,7 @@ properties:
     fullName: dateFilter
     summary: The PivotField's currently applied date filter. This property is `null` if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -67,7 +67,7 @@ properties:
     fullName: labelFilter
     summary: The PivotField's currently applied label filter. This property is `null` if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -113,7 +113,7 @@ properties:
     fullName: manualFilter
     summary: The PivotField's currently applied manual filter. This property is `null` if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -159,7 +159,7 @@ properties:
     fullName: valueFilter
     summary: The PivotField's currently applied value filter. This property is `null` if no value filter is applied.
     remarks: >-
-      \[ [API set: ExcelApi 1.12](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples

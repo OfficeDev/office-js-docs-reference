@@ -16,7 +16,7 @@ properties:
     summary: >-
       Returns the `RangeAreas` reference in A1-style. Address value will contain the worksheet name for each rectangular
       block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: addressLocal
     summary: Returns the `RangeAreas` reference in the user locale.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     package: excel!
     fullName: areaCount
     summary: Returns the number of rectangular ranges that comprise this `RangeAreas` object.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: areas
     summary: Returns a collection of rectangular ranges that comprise this `RangeAreas` object.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +66,7 @@ properties:
     summary: >-
       Returns the number of cells in the `RangeAreas` object, summing up the cell counts of all of the individual
       rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +78,7 @@ properties:
     package: excel!
     fullName: conditionalFormats
     summary: Returns a collection of conditional formats that intersect with any cells in this `RangeAreas` object.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +90,7 @@ properties:
     package: excel!
     fullName: dataValidation
     summary: Returns a data validation object for all ranges in the `RangeAreas`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +104,7 @@ properties:
     summary: >-
       Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all
       ranges in the `RangeAreas` object.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ properties:
     package: excel!
     fullName: isEntireColumn
     summary: 'Specifies if all the ranges on this `RangeAreas` object represent entire columns (e.g., "A:C, Q:Z").'
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +128,7 @@ properties:
     package: excel!
     fullName: isEntireRow
     summary: 'Specifies if all the ranges on this `RangeAreas` object represent entire rows (e.g., "1:3, 5:7").'
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,7 +143,7 @@ properties:
       Represents the style for all ranges in this `RangeAreas` object. If the styles of the cells are inconsistent,
       `null` will be returned. For custom styles, the style name will be returned. For built-in styles, a string
       representing a value in the `BuiltInStyle` enum will be returned.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

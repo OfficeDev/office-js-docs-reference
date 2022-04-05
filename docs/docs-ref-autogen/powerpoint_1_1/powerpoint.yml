@@ -38,7 +38,7 @@ functions:
       .pptx file.
 
 
-      \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      \[ [API set: PowerPointApi 1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

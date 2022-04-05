@@ -83,7 +83,7 @@ methods:
 
       You can iterate through the dictionary object to discover all `names` and `values`<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

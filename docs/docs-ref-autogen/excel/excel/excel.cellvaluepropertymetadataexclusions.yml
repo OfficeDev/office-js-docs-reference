@@ -4,9 +4,7 @@ uid: 'excel!Excel.CellValuePropertyMetadataExclusions:interface'
 package: excel!
 fullName: Excel.CellValuePropertyMetadataExclusions
 summary: Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,9 +16,7 @@ properties:
     summary: >-
       True represents that the property is excluded from the properties shown by auto complete. False and undefined
       represent the default behavior of including the property.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -34,9 +30,7 @@ properties:
     summary: >-
       True represents that the property is excluded from the properties used to compare cell values during recalc. False
       and undefined represent the default behavior of including the property.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,9 +44,7 @@ properties:
     summary: >-
       True represents that the property is excluded from the properties shown by card view. False and undefined
       represent the default behavior of including the property.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,9 +58,7 @@ properties:
     summary: >-
       True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE
       function. False and undefined represent the default behavior of including the property.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

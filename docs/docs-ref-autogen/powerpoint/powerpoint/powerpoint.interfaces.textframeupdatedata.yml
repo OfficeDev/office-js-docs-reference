@@ -18,7 +18,7 @@ properties:
       text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -36,7 +36,7 @@ properties:
     summary: 'Represents the bottom margin, in points, of the text frame.'
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,7 +50,7 @@ properties:
     summary: 'Represents the left margin, in points, of the text frame.'
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,7 +64,7 @@ properties:
     summary: 'Represents the right margin, in points, of the text frame.'
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -78,7 +78,7 @@ properties:
     summary: 'Represents the top margin, in points, of the text frame.'
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -94,7 +94,7 @@ properties:
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum) for details.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ properties:
     summary: Determines whether lines break automatically to fit text inside the shape.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

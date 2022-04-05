@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.FilterOn
 summary: ''
 remarks: |-
-  \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
   #### Examples
 

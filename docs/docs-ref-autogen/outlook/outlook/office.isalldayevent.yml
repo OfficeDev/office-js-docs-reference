@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.IsAllDayEvent
 summary: Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -26,7 +26,7 @@ methods:
     fullName: 'getAsync(options, callback)'
     summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -63,7 +63,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the boolean value indicating whether the event is all day or not.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -112,7 +112,7 @@ methods:
     fullName: 'setAsync(isAllDayEvent, options, callback)'
     summary: Sets the all-day event status of an appointment.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the
@@ -175,7 +175,7 @@ methods:
     fullName: 'setAsync(isAllDayEvent, callback)'
     summary: Sets the all-day event status of an appointment.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the

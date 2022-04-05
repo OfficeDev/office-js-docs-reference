@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: font
     summary: 'Represents the font attributes (font name, font size, color, etc.) for the current object.'
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

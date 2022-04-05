@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: index
     summary: Returns the index number of the row within the rows collection of the table. Zero-indexed.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
       Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,9 +46,7 @@ properties:
       and web images, in addition to the standard boolean, number, and string values. Data returned from this API always
       aligns with the en-US locale. To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`<!--
       -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,9 +63,7 @@ properties:
       values and web images, in addition to the standard boolean, number, and string values. Data returned from this API
       always aligns with the user's display locale. To retrieve data independent of locale, use
       `TableRow.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

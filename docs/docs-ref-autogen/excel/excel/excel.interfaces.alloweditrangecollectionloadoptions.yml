@@ -7,9 +7,7 @@ summary: >-
   Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet
   protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing
   of a specific range, while maintaining protection on the rest of the worksheet.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -36,9 +34,7 @@ properties:
       For EACH ITEM in the collection: Specifies the range associated with the object. Worksheet protection must be
       disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this
       method throws an `AccessDenied` error and fails to set the range.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: isPasswordProtected
     summary: 'For EACH ITEM in the collection: Specifies if the `AllowEditRange` is password protected.'
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -69,9 +63,7 @@ properties:
       `AccessDenied` error and fails to set the title. If there is already an existing `AllowEditRange` with the same
       string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to
       set the title.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

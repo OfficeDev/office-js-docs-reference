@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.NotificationMessages
 summary: The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
 remarks: >-
-  \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -41,7 +41,7 @@ methods:
 
       - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -175,7 +175,7 @@ methods:
 
       - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -217,7 +217,7 @@ methods:
     fullName: 'getAllAsync(options, callback)'
     summary: Returns all keys and messages for an item.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -287,7 +287,7 @@ methods:
     fullName: getAllAsync(callback)
     summary: Returns all keys and messages for an item.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -320,7 +320,7 @@ methods:
     fullName: 'removeAsync(key, options, callback)'
     summary: Removes a notification message for an item.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -375,7 +375,7 @@ methods:
     fullName: 'removeAsync(key, callback)'
     summary: Removes a notification message for an item.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -411,7 +411,7 @@ methods:
 
       If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -494,7 +494,7 @@ methods:
 
       If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

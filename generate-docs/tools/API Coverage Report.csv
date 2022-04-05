@@ -4123,8 +4123,8 @@ Excel.PivotTable,rowHierarchies,Method,Good,false
 Excel.PivotTable,useCustomSortLists,Method,Good,false
 Excel.PivotTable,worksheet,Method,Good,false
 Excel.PivotTable,delete(),Method,Good,true
-Excel.PivotTable,getDataSourceString(),Method,Good,false
-Excel.PivotTable,getDataSourceType(),Method,Good,false
+Excel.PivotTable,getDataSourceString(),Method,Good,true
+Excel.PivotTable,getDataSourceType(),Method,Good,true
 Excel.PivotTable,load(options),Method,Good,false
 Excel.PivotTable,load(propertyNames),Method,Good,false
 Excel.PivotTable,load(propertyNamesAndPaths),Method,Good,false

@@ -4,7 +4,7 @@ uid: 'excel!Excel.Runtime:class'
 package: excel!
 fullName: Excel.Runtime
 summary: Represents the Excel Runtime class.
-remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class

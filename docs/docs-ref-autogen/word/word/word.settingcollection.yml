@@ -4,7 +4,7 @@ uid: 'word!Word.SettingCollection:class'
 package: word!
 fullName: Word.SettingCollection
 summary: 'Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.'
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -41,9 +41,7 @@ methods:
     package: word!
     fullName: 'add(key, value)'
     summary: Creates a new setting or sets an existing setting.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -63,18 +61,13 @@ methods:
     package: word!
     fullName: deleteAll()
     summary: Deletes all settings in this add-in.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```typescript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
@@ -100,7 +93,6 @@ methods:
           await context.sync();
           console.log(count.value);
       });
-
       ```
     isPreview: true
     isDeprecated: false
@@ -114,18 +106,13 @@ methods:
     package: word!
     fullName: getCount()
     summary: Gets the count of settings.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```typescript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
@@ -151,7 +138,6 @@ methods:
           await context.sync();
           console.log(count.value);
       });
-
       ```
     isPreview: true
     isDeprecated: false
@@ -165,18 +151,13 @@ methods:
     package: word!
     fullName: getItem(key)
     summary: 'Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.'
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```typescript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
@@ -194,7 +175,6 @@ methods:
           await context.sync();
           console.log(JSON.stringify(startMonth.value));
       });
-
       ```
     isPreview: true
     isDeprecated: false
@@ -212,18 +192,13 @@ methods:
     package: word!
     fullName: getItemOrNullObject(key)
     summary: 'Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.'
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```typescript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
@@ -254,7 +229,6 @@ methods:
                   console.log(JSON.stringify(endMonth.value));
               }
       });
-
       ```
     isPreview: true
     isDeprecated: false

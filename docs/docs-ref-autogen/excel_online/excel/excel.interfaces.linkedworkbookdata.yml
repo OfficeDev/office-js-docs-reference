@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: id
     summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

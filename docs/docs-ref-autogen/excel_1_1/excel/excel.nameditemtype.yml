@@ -6,7 +6,7 @@ fullName: Excel.NamedItemType
 summary: ''
 remarks: >-
   \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-  Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+  Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 isPreview: false
 isDeprecated: false
 fields:

@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: charts
     summary: Returns a collection of charts that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,7 +28,7 @@ properties:
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     package: excel!
     fullName: name
     summary: The display name of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +52,7 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +64,7 @@ properties:
     package: excel!
     fullName: tables
     summary: Collection of tables that are part of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +78,7 @@ properties:
     summary: The visibility of the worksheet.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     isPreview: false
     isDeprecated: false
     syntax:

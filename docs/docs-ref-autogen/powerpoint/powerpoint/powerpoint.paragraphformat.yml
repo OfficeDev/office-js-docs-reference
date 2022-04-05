@@ -8,7 +8,7 @@ summary: >-
   [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class)<!-- -->.
 remarks: >-
   \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
 isPreview: true
 isDeprecated: false
 type: class
@@ -22,7 +22,7 @@ properties:
       [PowerPoint.BulletFormat](xref:powerpoint!PowerPoint.BulletFormat:class) for details.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
       details.
     remarks: >-
       \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     isPreview: true
     isDeprecated: false
     syntax:

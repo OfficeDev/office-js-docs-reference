@@ -4,7 +4,7 @@ uid: 'excel!Excel.CustomConditionalFormat:class'
 package: excel!
 fullName: Excel.CustomConditionalFormat
 summary: Represents a custom conditional format type.
-remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,7 +29,7 @@ properties:
     fullName: format
     summary: 'Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.'
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -63,7 +63,7 @@ properties:
     fullName: rule
     summary: Specifies the `Rule` object on this conditional format.
     remarks: |-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 

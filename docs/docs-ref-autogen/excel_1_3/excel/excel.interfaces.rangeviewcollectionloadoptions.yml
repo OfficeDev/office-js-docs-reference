@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeViewCollectionLoadOptions
 summary: Represents a collection of `RangeView` objects.
-remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: cellAddresses
     summary: 'For EACH ITEM in the collection: Represents the cell addresses of the `RangeView`<!-- -->.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     package: excel!
     fullName: columnCount
     summary: 'For EACH ITEM in the collection: The number of visible columns.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formula in A1-style notation. If a cell has no formula, its value
       is returned instead.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +69,7 @@ properties:
       For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and
       number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in
       German. If a cell has no formula, its value is returned instead.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +83,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the formula in R1C1-style notation. If a cell has no formula, its
       value is returned instead.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,7 +95,7 @@ properties:
     package: excel!
     fullName: index
     summary: 'For EACH ITEM in the collection: Returns a value that represents the index of the `RangeView`<!-- -->.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +107,7 @@ properties:
     package: excel!
     fullName: numberFormat
     summary: 'For EACH ITEM in the collection: Represents Excel''s number format code for the given cell.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +119,7 @@ properties:
     package: excel!
     fullName: rowCount
     summary: 'For EACH ITEM in the collection: The number of visible rows.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +133,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Text values of the specified range. The text value will not depend on the cell
       width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -147,7 +147,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be
       of type string, number, or a boolean. Cells that contain an error will return the error string.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +159,7 @@ properties:
     package: excel!
     fullName: valueTypes
     summary: 'For EACH ITEM in the collection: Represents the type of data of each cell.'
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

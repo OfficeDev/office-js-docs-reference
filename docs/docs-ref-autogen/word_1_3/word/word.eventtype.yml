@@ -6,7 +6,7 @@ fullName: Word.EventType
 summary: >-
   Provides information about the type of a raised event. For each object type, please keep the order of: deleted,
   selection changed, data changed, added.
-remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

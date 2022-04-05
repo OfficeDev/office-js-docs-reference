@@ -4,7 +4,7 @@ uid: 'word!Word.Setting:class'
 package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -28,9 +28,7 @@ properties:
     package: word!
     fullName: key
     summary: Gets the key of the setting. Read only.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -42,9 +40,7 @@ properties:
     package: word!
     fullName: value
     summary: Gets or sets the value of the setting.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,18 +53,13 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the setting.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-
+    remarks: |-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-
       ```typescript
-
       // Run a batch operation against the Word object model.
-
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
@@ -94,7 +85,6 @@ methods:
           await context.sync();
           console.log(count.value);
       });
-
       ```
     isPreview: true
     isDeprecated: false

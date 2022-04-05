@@ -7,7 +7,7 @@ summary: >-
   The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and
   get the dates and times of meeting requests in a recurring series.
 remarks: >-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -28,7 +28,7 @@ methods:
     fullName: getDuration()
     summary: Gets the duration in minutes of a usual instance in a recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -73,7 +73,7 @@ methods:
       Gets the end date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -119,7 +119,7 @@ methods:
       zone that the user or add-in set the recurrence pattern using the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -164,7 +164,7 @@ methods:
       Gets the start date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -210,7 +210,7 @@ methods:
       user/add-in set the recurrence pattern using the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm".
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -252,7 +252,7 @@ methods:
       Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
       recurrence pattern.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -301,7 +301,7 @@ methods:
     fullName: 'setEndDate(year, month, day)'
     summary: Sets the end date of a recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -353,7 +353,7 @@ methods:
     fullName: setEndDate(date)
     summary: Sets the end date of a recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -401,7 +401,7 @@ methods:
     fullName: 'setStartDate(year, month, day)'
     summary: Sets the start date of a recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -453,7 +453,7 @@ methods:
     fullName: setStartDate(date)
     summary: Sets the start date of a recurring appointment series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -503,7 +503,7 @@ methods:
       Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
       pattern is set (the item's time zone is used by default).
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -559,7 +559,7 @@ methods:
       Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
       pattern is set (the item's time zone is used by default).
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

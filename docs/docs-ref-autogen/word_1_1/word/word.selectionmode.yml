@@ -4,7 +4,7 @@ uid: 'word!Word.SelectionMode:enum'
 package: word!
 fullName: Word.SelectionMode
 summary: This enum sets where the cursor (insertion point) in the document is after a selection.
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

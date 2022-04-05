@@ -4,7 +4,7 @@ uid: 'excel!Excel.DataConnectionCollection:class'
 package: excel!
 fullName: Excel.DataConnectionCollection
 summary: Represents a collection of all the data connections that are part of the workbook or worksheet.
-remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,7 +29,7 @@ methods:
     package: excel!
     fullName: refreshAll()
     summary: Refreshes all the data connections in the collection.
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

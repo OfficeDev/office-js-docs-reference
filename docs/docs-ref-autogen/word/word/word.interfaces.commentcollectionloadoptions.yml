@@ -4,9 +4,7 @@ uid: 'word!Word.Interfaces.CommentCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CommentCollectionLoadOptions
 summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.'
-remarks: >-
-  \[ [API set: WordApiOnline BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -31,8 +29,8 @@ properties:
     fullName: authorEmail
     summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,8 +43,8 @@ properties:
     fullName: authorName
     summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -59,8 +57,8 @@ properties:
     fullName: content
     summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content as plain text.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -75,8 +73,8 @@ properties:
       For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment
       thread is resolved.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -89,8 +87,8 @@ properties:
     fullName: creationDate
     summary: 'For EACH ITEM in the collection: Gets the creation date of the comment.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -103,8 +101,8 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: ID'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -119,8 +117,8 @@ properties:
       For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment
       thread. Getting a value of true means that the comment thread is resolved.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:

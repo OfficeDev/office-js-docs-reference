@@ -6,7 +6,7 @@ fullName: Excel.CustomXmlPartScopedCollection
 summary: >-
   A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
   namespace). A scoped collection cannot be scoped any further.
-remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,7 +44,7 @@ methods:
     fullName: getCount()
     summary: Gets the number of CustomXML parts in this collection.
     remarks: >-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -96,7 +96,7 @@ methods:
     package: excel!
     fullName: getItem(id)
     summary: Gets a custom XML part based on its ID.
-    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +118,7 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -175,7 +175,7 @@ methods:
     fullName: getOnlyItem()
     summary: 'If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.'
     remarks: >-
-      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -229,7 +229,7 @@ methods:
     summary: >-
       If the collection contains exactly one item, this method returns it. Otherwise, this method returns `null`<!--
       -->.
-    remarks: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

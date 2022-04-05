@@ -4,7 +4,7 @@ uid: 'excel!Excel.PageBreakCollection:class'
 package: excel!
 fullName: Excel.PageBreakCollection
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +42,7 @@ methods:
     fullName: add(pageBreakRange)
     summary: Adds a page break before the top-left cell of the range specified.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -76,7 +76,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of page breaks in the collection.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +89,7 @@ methods:
     package: excel!
     fullName: getItem(index)
     summary: Gets a page break object via the index.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +169,7 @@ methods:
     package: excel!
     fullName: removePageBreaks()
     summary: Resets all manual page breaks in the collection.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

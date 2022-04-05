@@ -4,9 +4,7 @@ uid: 'excel!Excel.LinkedDataTypeRefreshMode:enum'
 package: excel!
 fullName: Excel.LinkedDataTypeRefreshMode
 summary: Representation of a refresh mode.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 fields:

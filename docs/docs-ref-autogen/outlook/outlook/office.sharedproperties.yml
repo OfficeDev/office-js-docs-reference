@@ -10,7 +10,7 @@ summary: >-
   For more information on how this object is used, see the [shared folders and shared
   mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission

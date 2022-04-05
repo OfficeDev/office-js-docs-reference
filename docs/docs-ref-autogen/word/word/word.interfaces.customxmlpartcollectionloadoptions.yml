@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions
 summary: 'Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.'
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -28,9 +28,7 @@ properties:
     package: word!
     fullName: id
     summary: 'For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.'
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -42,9 +40,7 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: 'For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.'
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

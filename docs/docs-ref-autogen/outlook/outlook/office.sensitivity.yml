@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.Sensitivity
 summary: Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -26,7 +26,7 @@ methods:
     fullName: 'getAsync(options, callback)'
     summary: Gets the value of the appointment sensitivity.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -65,7 +65,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the value of the appointment sensitivity.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -116,7 +116,7 @@ methods:
     fullName: 'setAsync(sensitivity, options, callback)'
     summary: Sets the value of the appointment sensitivity.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -178,7 +178,7 @@ methods:
     fullName: 'setAsync(sensitivity, callback)'
     summary: Sets the value of the appointment sensitivity.
     remarks: >-
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

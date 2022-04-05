@@ -4,7 +4,7 @@ uid: 'onenote!OneNote.Outline:class'
 package: onenote!
 fullName: OneNote.Outline
 summary: Represents a container for Paragraph objects.
-remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -28,7 +28,7 @@ properties:
     package: onenote!
     fullName: id
     summary: Gets the ID of the Outline object. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
       page. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
     package: onenote!
     fullName: paragraphs
     summary: Gets the collection of Paragraph objects in the Outline. Read-only.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ methods:
     fullName: appendHtml(html)
     summary: Adds the specified HTML to the bottom of the Outline.
     remarks: |-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
       #### Examples
 
@@ -118,7 +118,7 @@ methods:
     package: onenote!
     fullName: 'appendImage(base64EncodedImage, width, height)'
     summary: Adds the specified image to the bottom of the Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +141,7 @@ methods:
     package: onenote!
     fullName: appendRichText(paragraphText)
     summary: Adds the specified text to the bottom of the Outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +159,7 @@ methods:
     fullName: 'appendTable(rowCount, columnCount, values)'
     summary: Adds a table with the specified number of rows and columns to the bottom of the outline.
     remarks: |-
-      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
 
       #### Examples
 
@@ -211,7 +211,7 @@ methods:
     package: onenote!
     fullName: isTitle()
     summary: Check if the outline is title outline.
-    remarks: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

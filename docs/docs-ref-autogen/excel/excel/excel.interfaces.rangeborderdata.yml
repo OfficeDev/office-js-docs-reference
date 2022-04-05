@@ -16,7 +16,7 @@ properties:
     summary: >-
       HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500"), or as a named
       HTML color (e.g., "orange").
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: sideIndex
     summary: Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +46,7 @@ properties:
     summary: >-
       One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for
       details.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +65,7 @@ properties:
       Specifies a double that lightens or darkens a color for the range border, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A `null` value indicates that the border doesn't have a uniform
       `tintAndShade` setting.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +77,7 @@ properties:
     package: excel!
     fullName: weight
     summary: Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

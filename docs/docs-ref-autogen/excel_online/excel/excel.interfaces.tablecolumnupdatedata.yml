@@ -16,7 +16,7 @@ properties:
     summary: Specifies the name of the table column.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +31,7 @@ properties:
       Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

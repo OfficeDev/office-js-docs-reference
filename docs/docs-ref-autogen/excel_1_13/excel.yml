@@ -934,7 +934,7 @@ functions:
     summary: |-
       Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
 
-      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
     isPreview: false
     isDeprecated: false

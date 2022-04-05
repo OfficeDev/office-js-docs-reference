@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: types
     summary: Represents the types for each item in the named item array
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,7 +26,7 @@ properties:
     package: excel!
     fullName: values
     summary: Represents the values of each item in the named item array.
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,9 +43,7 @@ properties:
       number values and web images, in addition to the standard boolean, number, and string values. Data returned from
       this API always aligns with the en-US locale. To retrieve data in the user's display locale, use
       `NamedItemArrayValues.valuesAsJsonLocal`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -62,9 +60,7 @@ properties:
       formatted number values and web images, in addition to the standard boolean, number, and string values. Data
       returned from this API always aligns with the user's display locale. To retrieve data independent of locale, use
       `NamedItemArrayValues.valuesAsJson`<!-- -->.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

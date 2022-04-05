@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: name
     summary: The display name of the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -26,7 +26,7 @@ properties:
     package: excel!
     fullName: position
     summary: The zero-based position of the worksheet within the workbook.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     summary: The visibility of the worksheet.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
-      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     isPreview: false
     isDeprecated: false
     syntax:

@@ -7,7 +7,7 @@ summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
   paragraphs of formatted text. Currently, only rich text content controls are supported.
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -31,7 +31,7 @@ properties:
     package: word!
     fullName: appearance
     summary: 'Gets or sets the appearance of the content control. The value can be ''BoundingBox'', ''Tags'', or ''Hidden''.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +57,7 @@ properties:
     package: word!
     fullName: cannotEdit
     summary: Gets or sets a value that indicates whether the user can edit the contents of the content control.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +69,7 @@ properties:
     package: word!
     fullName: color
     summary: 'Gets or sets the color of the content control. Color is specified in ''\#RRGGBB'' format or by using the color name.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ properties:
     package: word!
     fullName: font
     summary: 'Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +93,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets an integer that represents the content control identifier. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +105,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the content control.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +119,7 @@ properties:
     summary: >-
       Gets the content control that contains the content control. Throws an error if there isn't a parent content
       control.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +133,7 @@ properties:
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
       control.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -145,7 +145,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the table that contains the content control. Throws an error if it is not contained in a table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -157,7 +157,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -171,7 +171,7 @@ properties:
     summary: >-
       Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
       cell.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +183,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +200,7 @@ properties:
 
 
       **Note**: The set operation for this property is not supported in Word on the web.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +214,7 @@ properties:
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -228,7 +228,7 @@ properties:
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +242,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
       portable between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,7 +256,7 @@ properties:
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,7 +268,7 @@ properties:
     package: word!
     fullName: tag
     summary: Gets or sets a tag to identify a content control.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,7 +280,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the content control. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,7 +292,7 @@ properties:
     package: word!
     fullName: title
     summary: Gets or sets the title for a content control.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -304,7 +304,7 @@ properties:
     package: word!
     fullName: type
     summary: Gets the content control type. Only rich text content controls are supported currently. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,7 @@ uid: 'word!Word.Table:class'
 package: word!
 fullName: Word.Table
 summary: Represents a table in a Word document.
-remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,7 +14,7 @@ properties:
     package: word!
     fullName: alignment
     summary: 'Gets or sets the alignment of the table against the page column. The value can be ''Left'', ''Centered'', or ''Right''.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,7 +40,7 @@ properties:
     package: word!
     fullName: font
     summary: 'Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +52,7 @@ properties:
     package: word!
     fullName: headerRowCount
     summary: Gets and sets the number of header rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +66,7 @@ properties:
     summary: >-
       Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
       or 'Justified'.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +78,7 @@ properties:
     package: word!
     fullName: isUniform
     summary: Indicates whether all of the table rows are uniform. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +90,7 @@ properties:
     package: word!
     fullName: nestingLevel
     summary: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +102,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +116,7 @@ properties:
     summary: >-
       Gets the content control that contains the table. Throws an error if there isn't a parent content control.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,7 +130,7 @@ properties:
     summary: >-
       Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,7 +142,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,7 +154,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +168,7 @@ properties:
     summary: >-
       Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -180,7 +180,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,7 +192,7 @@ properties:
     package: word!
     fullName: rowCount
     summary: Gets the number of rows in the table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -204,7 +204,7 @@ properties:
     package: word!
     fullName: rows
     summary: Gets all of the table rows. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -216,7 +216,7 @@ properties:
     package: word!
     fullName: shadingColor
     summary: 'Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -230,7 +230,7 @@ properties:
     summary: >-
       Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +242,7 @@ properties:
     package: word!
     fullName: styleBandedColumns
     summary: Gets and sets whether the table has banded columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -254,7 +254,7 @@ properties:
     package: word!
     fullName: styleBandedRows
     summary: Gets and sets whether the table has banded rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -268,7 +268,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -343,7 +343,7 @@ properties:
     package: word!
     fullName: styleFirstColumn
     summary: Gets and sets whether the table has a first column with a special style.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,7 +355,7 @@ properties:
     package: word!
     fullName: styleLastColumn
     summary: Gets and sets whether the table has a last column with a special style.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +367,7 @@ properties:
     package: word!
     fullName: styleTotalRow
     summary: Gets and sets whether the table has a total (last) row with a special style.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -379,7 +379,7 @@ properties:
     package: word!
     fullName: tables
     summary: Gets the child tables nested one level deeper. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -391,7 +391,7 @@ properties:
     package: word!
     fullName: values
     summary: 'Gets and sets the text values in the table, as a 2D Javascript array.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -403,7 +403,7 @@ properties:
     package: word!
     fullName: verticalAlignment
     summary: 'Gets and sets the vertical alignment of every cell in the table. The value can be ''Top'', ''Center'', or ''Bottom''.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -415,7 +415,7 @@ properties:
     package: word!
     fullName: width
     summary: Gets and sets the width of the table in points.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -430,7 +430,7 @@ methods:
     summary: >-
       Adds columns to the start or end of the table, using the first or last existing column as a template. This is
       applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -455,7 +455,7 @@ methods:
     summary: >-
       Adds columns to the start or end of the table, using the first or last existing column as a template. This is
       applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -482,7 +482,7 @@ methods:
     summary: >-
       Adds rows to the start or end of the table, using the first or last existing row as a template. The string values,
       if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -507,7 +507,7 @@ methods:
     summary: >-
       Adds rows to the start or end of the table, using the first or last existing row as a template. The string values,
       if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,7 +532,7 @@ methods:
     package: word!
     fullName: autoFitWindow()
     summary: Autofits the table columns to the width of the window.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -545,7 +545,7 @@ methods:
     package: word!
     fullName: clear()
     summary: Clears the contents of the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -558,7 +558,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the entire table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -571,7 +571,7 @@ methods:
     package: word!
     fullName: 'deleteColumns(columnIndex, columnCount)'
     summary: Deletes specific columns. This is applicable to uniform tables.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -591,7 +591,7 @@ methods:
     package: word!
     fullName: 'deleteRows(rowIndex, rowCount)'
     summary: Deletes specific rows.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -611,7 +611,7 @@ methods:
     package: word!
     fullName: distributeColumns()
     summary: Distributes the column widths evenly. This is applicable to uniform tables.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -624,7 +624,7 @@ methods:
     package: word!
     fullName: getBorder(borderLocation)
     summary: Gets the border style for the specified border.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -641,7 +641,7 @@ methods:
     package: word!
     fullName: getBorder(borderLocationString)
     summary: Gets the border style for the specified border.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -661,7 +661,7 @@ methods:
     fullName: 'getCell(rowIndex, cellIndex)'
     summary: Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.
     remarks: >-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -702,7 +702,7 @@ methods:
     summary: >-
       Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not
       exist.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -722,7 +722,7 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocation)
     summary: Gets cell padding in points.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -739,7 +739,7 @@ methods:
     package: word!
     fullName: getCellPadding(cellPaddingLocationString)
     summary: Gets cell padding in points.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -758,7 +758,7 @@ methods:
     package: word!
     fullName: getNext()
     summary: Gets the next table. Throws an error if this table is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -771,7 +771,7 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: Gets the next table. Returns a null object if this table is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -784,7 +784,7 @@ methods:
     package: word!
     fullName: getParagraphAfter()
     summary: Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -797,7 +797,7 @@ methods:
     package: word!
     fullName: getParagraphAfterOrNullObject()
     summary: Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -810,7 +810,7 @@ methods:
     package: word!
     fullName: getParagraphBefore()
     summary: Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -823,7 +823,7 @@ methods:
     package: word!
     fullName: getParagraphBeforeOrNullObject()
     summary: Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -836,7 +836,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: 'Gets the range that contains this table, or the range at the start or end of the table.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -853,7 +853,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocationString)
     summary: 'Gets the range that contains this table, or the range at the start or end of the table.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -870,7 +870,7 @@ methods:
     package: word!
     fullName: insertContentControl()
     summary: Inserts a content control on the table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -883,7 +883,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -903,7 +903,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -925,7 +925,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -953,7 +953,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1050,7 +1050,7 @@ methods:
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the table object. The search results are a
       collection of range objects.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1088,7 +1088,7 @@ methods:
     package: word!
     fullName: select(selectionMode)
     summary: 'Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1105,7 +1105,7 @@ methods:
     package: word!
     fullName: select(selectionModeString)
     summary: 'Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1163,7 +1163,7 @@ methods:
     package: word!
     fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
     summary: Sets cell padding in points.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1183,7 +1183,7 @@ methods:
     package: word!
     fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
     summary: Sets cell padding in points.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
