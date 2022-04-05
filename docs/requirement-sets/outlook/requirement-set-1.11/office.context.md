@@ -1,7 +1,7 @@
 ---
 title: Office.context - requirement set 1.11
 description: Office.Context object members available for Outlook add-ins using Mailbox API requirement set 1.11.
-ms.date: 03/30/2022
+ms.date: 04/05/2022
 ms.localizationpriority: medium
 ---
 
@@ -115,6 +115,9 @@ function write(message){
 
 Gets information about the environment in which the add-in is running.
 
+> [!NOTE]
+> For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-1.11&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
+
 ##### Type
 
 *   [ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-1.11&preserve-view=true)
@@ -188,7 +191,7 @@ function write(message){
 Gets the Office application that is hosting the add-in.
 
 > [!NOTE]
-> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the host.
+> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the host. For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-1.11&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
 ##### Type
 
@@ -217,7 +220,7 @@ console.log(JSON.stringify(Office.context.host));
 Provides the platform on which the add-in is running.
 
 > [!NOTE]
-> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the platform.
+> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the platform. For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-1.11&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
 ##### Type
 
