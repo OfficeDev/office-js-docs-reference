@@ -4,7 +4,7 @@ uid: 'excel!Excel.BindingCollection:class'
 package: excel!
 fullName: Excel.BindingCollection
 summary: Represents the collection of all the binding objects that are part of the workbook.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -28,7 +28,7 @@ properties:
     package: excel!
     fullName: count
     summary: Returns the number of bindings in the collection.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ methods:
     fullName: getItem(id)
     summary: Gets a binding object by ID.
     remarks: |-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
@@ -86,7 +86,7 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a binding object based on its position in the items array.
     remarks: |-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 

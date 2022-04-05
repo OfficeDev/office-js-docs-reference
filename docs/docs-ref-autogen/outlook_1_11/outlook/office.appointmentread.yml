@@ -98,7 +98,7 @@ properties:
     fullName: body
     summary: Gets an object that provides methods for manipulating the body of an item.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -146,7 +146,7 @@ properties:
     fullName: categories
     summary: Gets an object that provides methods for managing the item's categories.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -372,7 +372,7 @@ properties:
       object that allows you to get the set of locations (each represented by a
       [LocationDetails](xref:outlook!Office.LocationDetails:interface) object) associated with the appointment.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -660,7 +660,7 @@ properties:
     fullName: notificationMessages
     summary: Gets the notification messages for an item.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -886,7 +886,7 @@ properties:
       **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
       request of a single appointment and NOT a part of a series.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1009,7 +1009,7 @@ properties:
       The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
       items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1140,7 +1140,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1211,7 +1211,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1413,7 +1413,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1490,7 +1490,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1708,7 +1708,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1809,7 +1809,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.9](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1855,7 +1855,7 @@ methods:
       attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1968,7 +1968,7 @@ methods:
       attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2423,7 +2423,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2527,7 +2527,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2629,7 +2629,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2729,7 +2729,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2907,7 +2907,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2954,7 +2954,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

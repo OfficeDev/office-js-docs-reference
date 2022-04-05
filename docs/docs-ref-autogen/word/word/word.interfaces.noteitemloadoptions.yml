@@ -4,9 +4,7 @@ uid: 'word!Word.Interfaces.NoteItemLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.NoteItemLoadOptions
 summary: Represents a footnote or endnote.
-remarks: >-
-  \[ [API set: WordApiOnline BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -31,8 +29,8 @@ properties:
     fullName: body
     summary: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,8 +43,8 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -59,8 +57,8 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:

@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
 summary: Specifies the sensitivity type of an appointment.
 remarks: >-
-  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

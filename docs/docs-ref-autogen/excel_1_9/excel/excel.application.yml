@@ -4,7 +4,7 @@ uid: 'excel!Excel.Application:class'
 package: excel!
 fullName: Excel.Application
 summary: Represents the Excel application that manages the workbook.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: calculationEngineVersion
     summary: Returns the Excel calculation engine version used for the last full recalculation.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,8 +31,8 @@ properties:
       where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
       the user requests it.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +44,7 @@ properties:
     package: excel!
     fullName: calculationState
     summary: Returns the calculation state of the application. See `Excel.CalculationState` for details.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +72,7 @@ properties:
     summary: >-
       Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +86,7 @@ methods:
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: >-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -119,7 +119,7 @@ methods:
     fullName: calculate(calculationTypeString)
     summary: Recalculate all currently opened workbooks in Excel.
     remarks: |-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
@@ -268,7 +268,7 @@ methods:
     summary: >-
       Suspends calculation until the next `context.sync()` is called. Once set, it is the developer's responsibility to
       re-calc the workbook, to ensure that any dependencies are propagated.
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -287,7 +287,7 @@ methods:
       *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause
       the Excel window to flicker.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples

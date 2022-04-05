@@ -5,7 +5,7 @@ package: word!
 fullName: Word.InsertLocation
 summary: The insertion location types.
 remarks: >-
-  \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   To be used with an API call, such as `obj.insertSomething(newStuff, location);` If the location is "Before" or

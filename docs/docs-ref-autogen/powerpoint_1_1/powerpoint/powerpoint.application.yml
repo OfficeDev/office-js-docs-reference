@@ -4,7 +4,7 @@ uid: 'powerpoint!PowerPoint.Application:class'
 package: powerpoint!
 fullName: PowerPoint.Application
 summary: ''
-remarks: '\[ [API set: PowerPointApi 1.0](/office/dev/add-ins/reference/requirement-sets/powerpoint-api-requirement-sets) \]'
+remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class

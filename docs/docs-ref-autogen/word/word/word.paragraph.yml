@@ -4,7 +4,7 @@ uid: 'word!Word.Paragraph:class'
 package: word!
 fullName: Word.Paragraph
 summary: 'Represents a single paragraph in a selection, range, content control, or document body.'
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -15,7 +15,7 @@ properties:
     fullName: alignment
     summary: 'Gets or sets the alignment for a paragraph. The value can be ''left'', ''centered'', ''right'', or ''justified''.'
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -45,7 +45,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of content control objects in the paragraph. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,8 +72,8 @@ properties:
     fullName: endnotes
     summary: Gets the collection of endnotes in the paragraph. Read-only.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -87,7 +87,7 @@ properties:
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +101,7 @@ properties:
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,8 +114,8 @@ properties:
     fullName: footnotes
     summary: Gets the collection of footnotes in the paragraph. Read-only.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -129,7 +129,7 @@ properties:
     summary: >-
       Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -141,7 +141,7 @@ properties:
     package: word!
     fullName: isLastParagraph
     summary: Indicates the paragraph is the last one inside its parent body. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +153,7 @@ properties:
     package: word!
     fullName: isListItem
     summary: Checks whether the paragraph is a list item. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -166,7 +166,7 @@ properties:
     fullName: leftIndent
     summary: 'Gets or sets the left indent value, in points, for the paragraph.'
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -199,7 +199,7 @@ properties:
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
       12.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -229,7 +229,7 @@ properties:
     package: word!
     fullName: lineUnitAfter
     summary: 'Gets or sets the amount of spacing, in grid lines, after the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -241,7 +241,7 @@ properties:
     package: word!
     fullName: lineUnitBefore
     summary: 'Gets or sets the amount of spacing, in grid lines, before the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -253,7 +253,7 @@ properties:
     package: word!
     fullName: list
     summary: Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -265,7 +265,7 @@ properties:
     package: word!
     fullName: listItem
     summary: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +277,7 @@ properties:
     package: word!
     fullName: listItemOrNullObject
     summary: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,7 +289,7 @@ properties:
     package: word!
     fullName: listOrNullObject
     summary: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +301,7 @@ properties:
     package: word!
     fullName: outlineLevel
     summary: Gets or sets the outline level for the paragraph.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,7 +313,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the paragraph. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,7 +327,7 @@ properties:
     summary: >-
       Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,7 +341,7 @@ properties:
     summary: >-
       Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
       control. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,7 +353,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +367,7 @@ properties:
     summary: >-
       Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,7 +381,7 @@ properties:
     summary: >-
       Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -393,7 +393,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -405,7 +405,7 @@ properties:
     package: word!
     fullName: rightIndent
     summary: 'Gets or sets the right indent value, in points, for the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -418,7 +418,7 @@ properties:
     fullName: spaceAfter
     summary: 'Gets or sets the spacing, in points, after the paragraph.'
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -448,7 +448,7 @@ properties:
     package: word!
     fullName: spaceBefore
     summary: 'Gets or sets the spacing, in points, before the paragraph.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -462,7 +462,7 @@ properties:
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -476,7 +476,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -551,7 +551,7 @@ properties:
     package: word!
     fullName: tableNestingLevel
     summary: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -564,7 +564,7 @@ properties:
     fullName: text
     summary: Gets the text of the paragraph. Read-only.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -599,7 +599,7 @@ methods:
     summary: >-
       Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if
       the paragraph is already a list item.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -620,7 +620,7 @@ methods:
     fullName: clear()
     summary: Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -660,7 +660,7 @@ methods:
     fullName: delete()
     summary: Deletes the paragraph and its content from the document.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -699,7 +699,7 @@ methods:
     package: word!
     fullName: detachFromList()
     summary: 'Moves this paragraph out of its list, if the paragraph is a list item.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -713,8 +713,8 @@ methods:
     fullName: getComments()
     summary: Gets comments associated with the paragraph.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -732,7 +732,7 @@ methods:
       same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -771,7 +771,7 @@ methods:
     package: word!
     fullName: getNext()
     summary: Gets the next paragraph. Throws an error if the paragraph is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -784,7 +784,7 @@ methods:
     package: word!
     fullName: getNextOrNullObject()
     summary: Gets the next paragraph. Returns a null object if the paragraph is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -798,7 +798,7 @@ methods:
     fullName: getOoxml()
     summary: Gets the Office Open XML (OOXML) representation of the paragraph object.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -837,7 +837,7 @@ methods:
     package: word!
     fullName: getPrevious()
     summary: Gets the previous paragraph. Throws an error if the paragraph is the first one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -851,7 +851,7 @@ methods:
     fullName: getPreviousOrNullObject()
     summary: Gets the previous paragraph. Returns a null object if the paragraph is the first one.
     remarks: |-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -898,7 +898,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: 'Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -915,7 +915,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocationString)
     summary: 'Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -933,8 +933,8 @@ methods:
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -952,8 +952,8 @@ methods:
     fullName: getReviewedText(changeTrackingVersionString)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -970,7 +970,7 @@ methods:
     package: word!
     fullName: 'getTextRanges(endingMarks, trimSpacing)'
     summary: Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -994,7 +994,7 @@ methods:
     fullName: 'insertBreak(breakType, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1033,7 +1033,7 @@ methods:
     fullName: 'insertBreak(breakTypeString, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1086,7 +1086,7 @@ methods:
     fullName: insertContentControl()
     summary: Wraps the paragraph object with a rich text content control.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1129,7 +1129,7 @@ methods:
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocation)'
     summary: Inserts a document into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1149,7 +1149,7 @@ methods:
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocationString)'
     summary: Inserts a document into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1172,7 +1172,7 @@ methods:
     fullName: 'insertHtml(html, insertLocation)'
     summary: Inserts HTML into the paragraph at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1222,7 +1222,7 @@ methods:
     package: word!
     fullName: 'insertHtml(html, insertLocationString)'
     summary: Inserts HTML into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1243,7 +1243,7 @@ methods:
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     summary: Inserts a picture into the paragraph at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1296,7 +1296,7 @@ methods:
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     summary: Inserts a picture into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1318,7 +1318,7 @@ methods:
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation)'
     summary: Inserts OOXML into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1338,7 +1338,7 @@ methods:
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocationString)'
     summary: Inserts OOXML into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1358,7 +1358,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1378,7 +1378,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1400,7 +1400,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1428,7 +1428,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1457,7 +1457,7 @@ methods:
     fullName: 'insertText(text, insertLocation)'
     summary: Inserts text into the paragraph at the specified location.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1497,7 +1497,7 @@ methods:
     package: word!
     fullName: 'insertText(text, insertLocationString)'
     summary: Inserts text into the paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1586,7 +1586,7 @@ methods:
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a
       collection of range objects.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1625,7 +1625,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the paragraph.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1674,7 +1674,7 @@ methods:
     package: word!
     fullName: select(selectionModeString)
     summary: Selects and navigates the Word UI to the paragraph.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1776,7 +1776,7 @@ methods:
     fullName: 'split(delimiters, trimDelimiters, trimSpacing)'
     summary: Splits the paragraph into child ranges by using delimiters.
     remarks: >-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1834,7 +1834,7 @@ methods:
     fullName: startNewList()
     summary: Starts a new list with this paragraph. Fails if the paragraph is already a list item.
     remarks: >-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples

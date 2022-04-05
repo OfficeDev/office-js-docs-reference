@@ -4,7 +4,7 @@ uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
 package: excel!
 fullName: Excel.Interfaces.ApplicationLoadOptions
 summary: Represents the Excel application that manages the workbook.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,8 +33,8 @@ properties:
       where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
       the user requests it.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     isPreview: false
     isDeprecated: false
     syntax:

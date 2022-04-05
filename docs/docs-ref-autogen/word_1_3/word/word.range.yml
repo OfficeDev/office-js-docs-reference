@@ -4,7 +4,7 @@ uid: 'word!Word.Range:class'
 package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -14,7 +14,7 @@ properties:
     package: word!
     fullName: contentControls
     summary: Gets the collection of content control objects in the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     summary: >-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +57,7 @@ properties:
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
       when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location
       part.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +69,7 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: Gets the collection of inline picture objects in the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -81,7 +81,7 @@ properties:
     package: word!
     fullName: isEmpty
     summary: Checks whether the range length is zero. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +93,7 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of list objects in the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +108,7 @@ properties:
       Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2,
       paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
       such tables are also returned.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -120,7 +120,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: Gets the parent body of the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,7 +134,7 @@ properties:
     summary: >-
       Gets the content control that contains the range. Throws an error if there isn't a parent content control.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +148,7 @@ properties:
     summary: >-
       Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,7 +160,7 @@ properties:
     package: word!
     fullName: parentTable
     summary: Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +172,7 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -186,7 +186,7 @@ properties:
     summary: >-
       Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
       Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +198,7 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -212,7 +212,7 @@ properties:
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,7 +226,7 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +301,7 @@ properties:
     package: word!
     fullName: tables
     summary: Gets the collection of table objects in the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,7 +313,7 @@ properties:
     package: word!
     fullName: text
     summary: Gets the text of the range. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,7 +327,7 @@ methods:
     fullName: clear()
     summary: Clears the contents of the range object. The user can perform the undo operation on the cleared content.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -360,7 +360,7 @@ methods:
     package: word!
     fullName: compareLocationWith(range)
     summary: Compares this range's location with another range's location.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -378,7 +378,7 @@ methods:
     fullName: delete()
     summary: Deletes the range and its content from the document.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -413,7 +413,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
       changed. Throws an error if the two ranges do not have a union.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -432,7 +432,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
       changed. Returns a null object if the two ranges do not have a union.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -454,7 +454,7 @@ methods:
       HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact
       fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -487,7 +487,7 @@ methods:
     package: word!
     fullName: getHyperlinkRanges()
     summary: Gets hyperlink child ranges within the range.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -502,7 +502,7 @@ methods:
     summary: >-
       Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range
       is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -527,7 +527,7 @@ methods:
     summary: >-
       Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text
       range is the last one.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -551,7 +551,7 @@ methods:
     fullName: getOoxml()
     summary: Gets the OOXML representation of the range object.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -584,7 +584,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: 'Clones the range, or gets the starting or ending point of the range as a new range.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -601,7 +601,7 @@ methods:
     package: word!
     fullName: getRange(rangeLocationString)
     summary: 'Clones the range, or gets the starting or ending point of the range as a new range.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -619,7 +619,7 @@ methods:
     fullName: 'getTextRanges(endingMarks, trimSpacing)'
     summary: Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
     remarks: >-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -679,7 +679,7 @@ methods:
     package: word!
     fullName: 'insertBreak(breakType, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -700,7 +700,7 @@ methods:
     fullName: 'insertBreak(breakTypeString, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -743,7 +743,7 @@ methods:
     fullName: insertContentControl()
     summary: Wraps the range object with a rich text content control.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -788,7 +788,7 @@ methods:
     fullName: 'insertFileFromBase64(base64File, insertLocation)'
     summary: Inserts a document at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -829,7 +829,7 @@ methods:
     package: word!
     fullName: 'insertFileFromBase64(base64File, insertLocationString)'
     summary: Inserts a document at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -852,7 +852,7 @@ methods:
     fullName: 'insertHtml(html, insertLocation)'
     summary: Inserts HTML at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -892,7 +892,7 @@ methods:
     package: word!
     fullName: 'insertHtml(html, insertLocationString)'
     summary: Inserts HTML at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -912,7 +912,7 @@ methods:
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     summary: Inserts a picture at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -934,7 +934,7 @@ methods:
     package: word!
     fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
     summary: Inserts a picture at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -957,7 +957,7 @@ methods:
     fullName: 'insertOoxml(ooxml, insertLocation)'
     summary: Inserts OOXML at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1000,7 +1000,7 @@ methods:
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocationString)'
     summary: Inserts OOXML at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1021,7 +1021,7 @@ methods:
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1061,7 +1061,7 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1083,7 +1083,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1111,7 +1111,7 @@ methods:
     package: word!
     fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
     summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1140,7 +1140,7 @@ methods:
     fullName: 'insertText(text, insertLocation)'
     summary: Inserts text at the specified location.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1180,7 +1180,7 @@ methods:
     package: word!
     fullName: 'insertText(text, insertLocationString)'
     summary: Inserts text at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1202,7 +1202,7 @@ methods:
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Throws an
       error if the two ranges are not overlapped or adjacent.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1221,7 +1221,7 @@ methods:
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Returns a
       null object if the two ranges are not overlapped or adjacent.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1307,7 +1307,7 @@ methods:
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
       collection of range objects.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1346,7 +1346,7 @@ methods:
     fullName: select(selectionMode)
     summary: Selects and navigates the Word UI to the range.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -1386,7 +1386,7 @@ methods:
     package: word!
     fullName: select(selectionModeString)
     summary: Selects and navigates the Word UI to the range.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1444,7 +1444,7 @@ methods:
     package: word!
     fullName: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
     summary: Splits the range into child ranges by using delimiters.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

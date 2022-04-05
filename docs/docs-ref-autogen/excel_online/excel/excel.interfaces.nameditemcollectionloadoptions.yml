@@ -6,7 +6,7 @@ fullName: Excel.Interfaces.NamedItemCollectionLoadOptions
 summary: >-
   A collection of all the `NamedItem` objects that are part of the workbook or worksheet, depending on how it was
   reached.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,7 +30,7 @@ properties:
     package: excel!
     fullName: arrayValues
     summary: 'For EACH ITEM in the collection: Returns an object containing values and types of the named item.'
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     package: excel!
     fullName: comment
     summary: 'For EACH ITEM in the collection: Specifies the comment associated with this name.'
-    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ properties:
     package: excel!
     fullName: formula
     summary: 'For EACH ITEM in the collection: The formula of the named item. Formulas always start with an equal sign ("=").'
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +66,7 @@ properties:
     package: excel!
     fullName: name
     summary: 'For EACH ITEM in the collection: The name of the object.'
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +80,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Specifies if the name is scoped to the workbook or to a specific worksheet.
       Possible values are: Worksheet, Workbook.
-    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +96,7 @@ properties:
       `Excel.NamedItemType` for details.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +110,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will
       return the range address.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -122,7 +122,7 @@ properties:
     package: excel!
     fullName: visible
     summary: 'For EACH ITEM in the collection: Specifies if the object is visible.'
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +136,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if
       the item is scoped to the workbook instead.
-    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +153,7 @@ properties:
       For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
-    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -14,7 +14,7 @@ summary: >-
 
   **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -41,7 +41,7 @@ methods:
       **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
       appointment item in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -130,7 +130,7 @@ methods:
       **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
       appointment item in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -180,7 +180,7 @@ methods:
 
       - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -231,7 +231,7 @@ methods:
 
       - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -294,7 +294,7 @@ methods:
       **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
       mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -372,7 +372,7 @@ methods:
       **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
       mode.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

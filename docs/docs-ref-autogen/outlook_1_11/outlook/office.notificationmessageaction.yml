@@ -8,7 +8,7 @@ summary: |-
 
   **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
 remarks: >-
-  \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission

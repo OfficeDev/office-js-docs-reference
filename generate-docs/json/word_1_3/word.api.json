@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.19.4",
-    "schemaVersion": 1004,
+    "toolVersion": "7.20.0",
+    "schemaVersion": 1005,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -414,7 +414,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "createDocument"
@@ -461,7 +462,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "newObject"
@@ -747,7 +749,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -793,7 +796,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -876,14 +880,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -936,14 +942,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -1028,14 +1036,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -1089,14 +1099,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -1151,14 +1163,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -1212,14 +1226,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -1274,14 +1290,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -1335,14 +1353,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -1397,14 +1417,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -1458,14 +1480,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -1520,14 +1544,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -1581,14 +1607,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -1659,28 +1687,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -1750,28 +1782,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -1826,14 +1862,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -1887,14 +1925,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -1969,7 +2009,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -2015,7 +2056,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -2061,7 +2103,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -2316,14 +2359,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -2369,7 +2414,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -2414,7 +2460,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -2469,14 +2516,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -2522,7 +2571,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -4155,7 +4205,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "delete"
@@ -4298,7 +4349,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -4344,7 +4396,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -4398,14 +4451,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTextRanges"
@@ -4515,14 +4570,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -4575,14 +4632,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -4637,14 +4696,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -4698,14 +4759,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -4760,14 +4823,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -4821,14 +4886,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -4883,14 +4950,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -4944,14 +5013,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -5006,14 +5077,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -5067,14 +5140,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -5129,14 +5204,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -5190,14 +5267,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -5268,28 +5347,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -5359,28 +5442,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -5435,14 +5522,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -5496,14 +5585,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -5578,7 +5669,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5624,7 +5716,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5670,7 +5763,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -6007,14 +6101,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -6060,7 +6156,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -6105,7 +6202,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -6160,14 +6258,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -6213,7 +6313,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -6283,28 +6384,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "multiParagraphs",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "trimDelimiters",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "split"
@@ -6807,7 +6912,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getById"
@@ -6853,7 +6959,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getByIdOrNullObject"
@@ -6899,7 +7006,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getByTag"
@@ -6945,7 +7053,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getByTitle"
@@ -6996,7 +7105,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getByTypes"
@@ -7102,7 +7212,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -7190,7 +7301,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -7236,7 +7348,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -7283,7 +7396,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -7905,7 +8019,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -7951,7 +8066,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -7997,7 +8113,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -8052,14 +8169,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -8105,7 +8224,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -8337,14 +8457,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "value",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "add"
@@ -8481,7 +8603,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -8527,7 +8650,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItemOrNullObject"
@@ -8615,7 +8739,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -8661,7 +8786,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -8708,7 +8834,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -8988,7 +9115,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9034,7 +9162,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9080,7 +9209,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9247,14 +9377,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -9300,7 +9432,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -9550,7 +9683,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9596,7 +9730,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9642,7 +9777,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -9838,14 +9974,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -9891,7 +10029,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -10413,7 +10552,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -10459,7 +10599,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -10505,7 +10646,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -10641,14 +10783,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -10694,7 +10838,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -11527,7 +11672,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11573,7 +11719,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11619,7 +11766,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11701,14 +11849,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -11754,7 +11904,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -12343,7 +12494,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -12389,7 +12541,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -12498,14 +12651,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -12558,14 +12713,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -12650,14 +12807,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -12711,14 +12870,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -12773,14 +12934,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -12834,14 +12997,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -12896,14 +13061,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -12957,14 +13124,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -13019,14 +13188,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -13080,14 +13251,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -13142,14 +13315,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -13203,14 +13378,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -13265,14 +13442,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -13326,14 +13505,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -13380,7 +13561,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13426,7 +13608,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13472,7 +13655,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13741,7 +13925,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -13786,7 +13971,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -13841,14 +14027,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -13894,7 +14082,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -14216,7 +14405,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14262,7 +14452,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14309,7 +14500,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -32917,7 +33109,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getLevelParagraphs"
@@ -32967,7 +33160,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getLevelString"
@@ -33049,14 +33243,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -33110,14 +33306,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -33223,7 +33421,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -33269,7 +33468,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -33315,7 +33515,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -33397,14 +33598,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "alignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setLevelAlignment"
@@ -33457,14 +33660,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "alignmentString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setLevelAlignment"
@@ -33534,28 +33739,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "listBullet",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "charCode",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "fontName",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setLevelBullet"
@@ -33624,28 +33833,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "listBulletString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "charCode",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "fontName",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setLevelBullet"
@@ -33706,21 +33919,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "textIndent",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "bulletNumberPictureIndent",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setLevelIndents"
@@ -33787,21 +34003,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "listNumbering",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 7
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setLevelNumbering"
@@ -33867,21 +34086,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "listNumberingString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 7
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setLevelNumbering"
@@ -33934,14 +34156,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "startingNumber",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setLevelStartingNumber"
@@ -34296,7 +34520,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getById"
@@ -34342,7 +34567,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getByIdOrNullObject"
@@ -34448,7 +34674,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -34536,7 +34763,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -34582,7 +34810,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -34629,7 +34858,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -34822,7 +35052,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAncestor"
@@ -34868,7 +35099,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAncestorOrNullObject"
@@ -34914,7 +35146,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getDescendants"
@@ -35015,7 +35248,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -35061,7 +35295,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -35107,7 +35342,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -35162,14 +35398,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -35215,7 +35453,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -35975,14 +36214,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "level",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "attachToList"
@@ -36415,7 +36656,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -36461,7 +36703,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -36515,14 +36758,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTextRanges"
@@ -36605,14 +36850,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -36665,14 +36912,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -36757,14 +37006,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -36818,14 +37069,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -36880,14 +37133,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -36941,14 +37196,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -37003,14 +37260,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -37064,14 +37323,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -37126,14 +37387,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -37187,14 +37450,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -37249,14 +37514,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -37310,14 +37577,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -37388,28 +37657,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -37479,28 +37752,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -37555,14 +37832,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -37616,14 +37895,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -37944,7 +38225,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -37990,7 +38272,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -38036,7 +38319,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -38345,14 +38629,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -38398,7 +38684,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -38443,7 +38730,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -38498,14 +38786,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -38551,7 +38841,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -38667,21 +38958,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimDelimiters",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "split"
@@ -39179,7 +39473,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -39225,7 +39520,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -39272,7 +39568,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -39480,7 +39777,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "compareLocationWith"
@@ -39612,7 +39910,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "expandTo"
@@ -39659,7 +39958,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "expandToOrNullObject"
@@ -39805,14 +40105,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNextTextRange"
@@ -39866,14 +40168,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNextTextRangeOrNullObject"
@@ -39954,7 +40258,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -40000,7 +40305,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -40054,14 +40360,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTextRanges"
@@ -40171,14 +40479,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -40231,14 +40541,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertBreak"
@@ -40323,14 +40635,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -40384,14 +40698,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -40446,14 +40762,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -40507,14 +40825,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertHtml"
@@ -40569,14 +40889,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -40630,14 +40952,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertInlinePictureFromBase64"
@@ -40692,14 +41016,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -40753,14 +41079,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertOoxml"
@@ -40815,14 +41143,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -40876,14 +41206,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -40954,28 +41286,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -41045,28 +41381,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -41121,14 +41461,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -41182,14 +41524,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertText"
@@ -41236,7 +41580,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "intersectWith"
@@ -41283,7 +41628,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "intersectWithOrNullObject"
@@ -41385,7 +41731,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -41431,7 +41778,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -41477,7 +41825,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -41760,14 +42109,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -41813,7 +42164,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -41858,7 +42210,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -41913,14 +42266,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -41966,7 +42321,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -42036,28 +42392,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "multiParagraphs",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "trimDelimiters",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "trimSpacing",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "split"
@@ -42466,7 +42826,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -42512,7 +42873,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -42559,7 +42921,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -42850,7 +43213,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ]
                 },
@@ -42991,14 +43355,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 4,
                     "endIndex": 9
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -43086,14 +43452,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 8
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -43172,7 +43540,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 6
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -43336,7 +43705,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -43382,7 +43752,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -43428,7 +43799,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -43610,7 +43982,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "newObject"
@@ -43665,14 +44038,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -43718,7 +44093,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -43880,7 +44256,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getFooter"
@@ -43926,7 +44303,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getFooter"
@@ -43973,7 +44351,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getHeader"
@@ -44019,7 +44398,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getHeader"
@@ -44126,7 +44506,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -44172,7 +44553,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -44218,7 +44600,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -44273,14 +44656,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -44326,7 +44711,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -44621,7 +45007,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -44667,7 +45054,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -44714,7 +45102,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -48096,21 +48485,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addColumns"
@@ -48171,21 +48563,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addColumns"
@@ -48248,21 +48643,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addRows"
@@ -48324,21 +48722,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addRows"
@@ -48538,14 +48939,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteColumns"
@@ -48598,14 +49001,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteRows"
@@ -48709,7 +49114,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -48755,7 +49161,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -48809,14 +49216,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellIndex",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCell"
@@ -48870,14 +49279,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellIndex",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellOrNullObject"
@@ -48928,7 +49339,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -48978,7 +49390,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -49205,7 +49618,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -49251,7 +49665,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getRange"
@@ -49395,14 +49810,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -49456,14 +49873,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "insertParagraph"
@@ -49534,28 +49953,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -49625,28 +50048,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "insertLocationString",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertTable"
@@ -49720,7 +50147,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -49766,7 +50194,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -49812,7 +50241,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -50149,14 +50579,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -50202,7 +50634,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -50247,7 +50680,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -50302,14 +50736,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -50355,7 +50791,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -50409,14 +50846,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -50469,14 +50908,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -51032,7 +51473,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -51078,7 +51520,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -51124,7 +51567,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -51179,14 +51623,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -51232,7 +51678,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -51625,7 +52072,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -51671,7 +52119,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -51722,7 +52171,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -51772,7 +52222,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -51926,21 +52377,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertColumns"
@@ -52001,21 +52455,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "columnCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertColumns"
@@ -52078,21 +52535,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertRows"
@@ -52154,21 +52614,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertRows"
@@ -52215,7 +52678,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -52261,7 +52725,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -52307,7 +52772,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -52445,14 +52911,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -52498,7 +52966,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -52552,14 +53021,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -52612,14 +53083,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -53027,7 +53500,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53073,7 +53547,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53120,7 +53595,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53415,7 +53891,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53461,7 +53938,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53508,7 +53986,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -53843,7 +54322,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -53889,7 +54369,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getBorder"
@@ -53940,7 +54421,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -53990,7 +54472,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getCellPadding"
@@ -54145,21 +54628,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertRows"
@@ -54221,21 +54707,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "rowCount",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "values",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "insertRows"
@@ -54309,7 +54798,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -54355,7 +54845,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -54401,7 +54892,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -54542,14 +55034,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "searchOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "search"
@@ -54595,7 +55089,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -54640,7 +55135,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "select"
@@ -54695,14 +55191,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -54748,7 +55246,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -54802,14 +55301,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -54862,14 +55363,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "cellPadding",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setCellPadding"
@@ -55250,7 +55753,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -55296,7 +55800,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -55343,7 +55848,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"

@@ -14,7 +14,7 @@ summary: >-
   **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add
   or remove categories.
 remarks: >-
-  \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -37,7 +37,7 @@ methods:
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -115,7 +115,7 @@ methods:
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -157,7 +157,7 @@ methods:
     fullName: 'getAsync(options, callback)'
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -197,7 +197,7 @@ methods:
     fullName: getAsync(callback)
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -254,7 +254,7 @@ methods:
     fullName: 'removeAsync(categories, options, callback)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -323,7 +323,7 @@ methods:
     fullName: 'removeAsync(categories, callback)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

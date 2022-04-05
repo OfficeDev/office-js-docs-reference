@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.Recipients
 summary: Represents recipients of an item. Compose mode only.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -52,7 +52,7 @@ methods:
 
       - Other: No limit
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -159,7 +159,7 @@ methods:
 
       - Other: No limit
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -220,7 +220,7 @@ methods:
       `displayName` property of the associated `EmailAddressDetails` object. For more details, refer to the [related
       GitHub issue](https://github.com/OfficeDev/office-js-docs-pr/issues/2962)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -277,7 +277,7 @@ methods:
       `displayName` property of the associated `EmailAddressDetails` object. For more details, refer to the [related
       GitHub issue](https://github.com/OfficeDev/office-js-docs-pr/issues/2962)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -438,7 +438,7 @@ methods:
 
       - Other: No limit
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -504,7 +504,7 @@ methods:
 
       - Other: No limit
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

@@ -16,7 +16,7 @@ properties:
     summary: >-
       Gets or sets the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view
       by using the name property causes the sheet view to be saved.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

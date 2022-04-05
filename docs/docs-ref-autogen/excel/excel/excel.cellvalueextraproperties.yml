@@ -6,9 +6,7 @@ fullName: Excel.CellValueExtraProperties
 summary: >-
   These extra properties may appear on a `CellValue` and provide information about that `CellValue`<!-- -->, but the
   extra properties are not part of the value in the cell.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: interface
@@ -21,9 +19,7 @@ properties:
       Represents whether this `CellValue` will be used to overwrite a cell. When false, APIs which would use this
       `CellValue` to overwrite a cell will instead ignore this value without throwing an error. The default value is
       true.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -37,9 +33,7 @@ properties:
     summary: >-
       Represents an explanation about why `CellValue.writable` is specified as false. Note: This string is only
       available if `writable` is specified as false.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

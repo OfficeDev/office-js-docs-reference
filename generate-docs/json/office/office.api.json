@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.19.4",
-    "schemaVersion": 1004,
+    "toolVersion": "7.20.0",
+    "schemaVersion": 1005,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -239,7 +239,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "areShortcutsInUse"
@@ -347,7 +348,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "replaceShortcuts"
@@ -850,7 +852,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "onVisibilityModeChanged"
@@ -900,7 +903,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setStartupBehavior"
@@ -1029,7 +1033,8 @@
                           "parameterTypeTokenRange": {
                             "startIndex": 1,
                             "endIndex": 2
-                          }
+                          },
+                          "isOptional": true
                         }
                       ],
                       "name": "completed"
@@ -1482,7 +1487,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAccessToken"
@@ -1544,14 +1550,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAccessTokenAsync"
@@ -1604,7 +1612,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAccessTokenAsync"
@@ -1964,7 +1973,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "onCloseActionCancelled"
@@ -2059,28 +2069,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -2150,21 +2164,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -2253,14 +2270,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "typeParameters": [
@@ -2326,7 +2345,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "typeParameters": [
@@ -2436,21 +2456,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -2512,14 +2535,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -2594,21 +2619,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 6,
                         "endIndex": 9
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setDataAsync"
@@ -2674,14 +2702,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 7
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setDataAsync"
@@ -2882,28 +2912,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "bindingType",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromNamedItemAsync"
@@ -2982,21 +3016,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "bindingType",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromNamedItemAsync"
@@ -3076,21 +3113,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromPromptAsync"
@@ -3161,14 +3201,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromPromptAsync"
@@ -3248,21 +3290,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromSelectionAsync"
@@ -3333,14 +3378,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addFromSelectionAsync"
@@ -3438,14 +3485,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAllAsync"
@@ -3507,7 +3556,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getAllAsync"
@@ -3586,21 +3636,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByIdAsync"
@@ -3670,14 +3723,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByIdAsync"
@@ -3747,21 +3802,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "releaseByIdAsync"
@@ -3822,14 +3880,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "releaseByIdAsync"
@@ -4943,21 +5003,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodesAsync"
@@ -5027,14 +5090,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodesAsync"
@@ -5096,14 +5161,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodeValueAsync"
@@ -5156,7 +5223,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodeValueAsync"
@@ -5218,14 +5286,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTextAsync"
@@ -5278,7 +5348,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTextAsync"
@@ -5340,14 +5411,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getXmlAsync"
@@ -5400,7 +5473,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getXmlAsync"
@@ -5522,21 +5596,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setNodeValueAsync"
@@ -5597,14 +5674,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setNodeValueAsync"
@@ -5674,21 +5753,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTextAsync"
@@ -5749,14 +5831,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTextAsync"
@@ -5826,21 +5910,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setXmlAsync"
@@ -5901,14 +5988,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setXmlAsync"
@@ -6137,28 +6226,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -6228,21 +6321,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -6330,14 +6426,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteAsync"
@@ -6390,7 +6488,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteAsync"
@@ -6469,21 +6568,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodesAsync"
@@ -6553,14 +6655,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNodesAsync"
@@ -6622,14 +6726,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getXmlAsync"
@@ -6682,7 +6788,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getXmlAsync"
@@ -6814,28 +6921,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -6905,21 +7016,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -7014,21 +7128,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addAsync"
@@ -7098,14 +7215,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addAsync"
@@ -7184,21 +7303,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByIdAsync"
@@ -7268,14 +7390,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByIdAsync"
@@ -7354,21 +7478,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByNamespaceAsync"
@@ -7438,14 +7565,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getByNamespaceAsync"
@@ -7539,28 +7668,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "ns",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addNamespaceAsync"
@@ -7629,21 +7762,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "ns",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addNamespaceAsync"
@@ -7713,21 +7849,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNamespaceAsync"
@@ -7788,14 +7927,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getNamespaceAsync"
@@ -7865,21 +8006,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getPrefixAsync"
@@ -7940,14 +8084,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getPrefixAsync"
@@ -8016,14 +8162,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "addEventHandler"
@@ -8104,14 +8252,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "messageOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "messageChild"
@@ -8155,7 +8305,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "sendMessage"
@@ -8525,28 +8676,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -8616,21 +8771,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -8746,14 +8904,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getActiveViewAsync"
@@ -8806,7 +8966,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getActiveViewAsync"
@@ -8886,21 +9047,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFileAsync"
@@ -8971,14 +9135,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFileAsync"
@@ -9049,14 +9215,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFilePropertiesAsync"
@@ -9118,7 +9286,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFilePropertiesAsync"
@@ -9180,14 +9349,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getMaxResourceIndexAsync"
@@ -9240,7 +9411,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getMaxResourceIndexAsync"
@@ -9302,14 +9474,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getMaxTaskIndexAsync"
@@ -9362,7 +9536,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getMaxTaskIndexAsync"
@@ -9432,21 +9607,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getProjectFieldAsync"
@@ -9507,14 +9685,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getProjectFieldAsync"
@@ -9584,21 +9764,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getResourceByIndexAsync"
@@ -9659,14 +9842,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getResourceByIndexAsync"
@@ -9744,28 +9929,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getResourceFieldAsync"
@@ -9834,21 +10023,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getResourceFieldAsync"
@@ -9919,21 +10111,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "typeParameters": [
@@ -10008,14 +10203,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "typeParameters": [
@@ -10090,14 +10287,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedResourceAsync"
@@ -10150,7 +10349,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedResourceAsync"
@@ -10212,14 +10412,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedTaskAsync"
@@ -10272,7 +10474,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedTaskAsync"
@@ -10334,14 +10537,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedViewAsync"
@@ -10394,7 +10599,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSelectedViewAsync"
@@ -10464,21 +10670,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskAsync"
@@ -10539,14 +10748,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskAsync"
@@ -10616,21 +10827,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskByIndexAsync"
@@ -10691,14 +10905,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskByIndexAsync"
@@ -10776,28 +10992,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskFieldAsync"
@@ -10866,21 +11086,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getTaskFieldAsync"
@@ -10942,14 +11165,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getWSSUrlAsync"
@@ -11002,7 +11227,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getWSSUrlAsync"
@@ -11081,28 +11307,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "goToType",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "goToByIdAsync"
@@ -11172,21 +11402,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "goToType",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "goToByIdAsync"
@@ -11284,21 +11517,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -11360,14 +11596,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -11453,35 +11691,40 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldValue",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setResourceFieldAsync"
@@ -11558,28 +11801,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldValue",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setResourceFieldAsync"
@@ -11658,21 +11905,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setSelectedDataAsync"
@@ -11742,14 +11992,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setSelectedDataAsync"
@@ -11835,35 +12087,40 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldValue",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTaskFieldAsync"
@@ -11940,28 +12197,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldId",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "fieldValue",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTaskFieldAsync"
@@ -12685,7 +12946,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "closeAsync"
@@ -12755,14 +13017,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getSliceAsync"
@@ -13882,7 +14146,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "name": "initialize"
@@ -13952,7 +14217,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -14103,7 +14369,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 22
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -14273,7 +14540,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -14416,7 +14684,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 20
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -14638,7 +14907,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 18
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -14840,7 +15110,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 16
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15022,7 +15293,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 14
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15184,7 +15456,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15326,7 +15599,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15448,7 +15722,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15550,7 +15825,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15744,7 +16020,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 22
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -15914,7 +16191,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16057,7 +16335,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 20
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16279,7 +16558,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 18
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16481,7 +16761,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 16
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16663,7 +16944,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 14
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16825,7 +17107,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -16967,7 +17250,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -17089,7 +17373,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -17191,7 +17476,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -17264,7 +17550,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "reject"
@@ -17313,7 +17600,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -17384,7 +17672,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "typeParameters": [
@@ -17484,14 +17773,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "minVersion",
                   "parameterTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
-                  }
+                  },
+                  "isOptional": true
                 }
               ],
               "name": "isSetSupported"
@@ -18038,7 +18329,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 6
-                  }
+                  },
+                  "isOptional": true
                 }
               ],
               "name": "onReady"
@@ -27218,14 +27510,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "minVersion",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "isSetSupported"
@@ -27277,14 +27571,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "minVersionNumber",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "isSetSupported"
@@ -27350,7 +27646,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "requestCreateControls"
@@ -27400,7 +27697,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "requestUpdate"
@@ -27593,14 +27891,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "callback",
                   "parameterTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
-                  }
+                  },
+                  "isOptional": true
                 }
               ],
               "name": "select"
@@ -28162,28 +28462,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -28253,21 +28557,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -28311,7 +28618,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "get"
@@ -28373,7 +28681,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "refreshAsync"
@@ -28417,7 +28726,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "remove"
@@ -28488,21 +28798,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -28564,14 +28877,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "removeHandlerAsync"
@@ -28633,14 +28948,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "saveAsync"
@@ -28693,7 +29010,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "saveAsync"
@@ -28745,14 +29063,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "value",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -29269,21 +29589,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 6,
                         "endIndex": 9
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addColumnsAsync"
@@ -29349,14 +29672,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 7
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addColumnsAsync"
@@ -29431,21 +29756,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 6,
                         "endIndex": 9
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addRowsAsync"
@@ -29511,14 +29839,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 7
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addRowsAsync"
@@ -29580,14 +29910,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "clearFormatsAsync"
@@ -29640,7 +29972,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "clearFormatsAsync"
@@ -29728,14 +30061,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteAllDataValuesAsync"
@@ -29788,7 +30123,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "deleteAllDataValuesAsync"
@@ -29866,28 +30202,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "formats",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFormatsAsync"
@@ -29956,21 +30296,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "formats",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "getFormatsAsync"
@@ -30092,21 +30435,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setFormatsAsync"
@@ -30167,14 +30513,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setFormatsAsync"
@@ -30244,21 +30592,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTableOptionsAsync"
@@ -30319,14 +30670,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "setTableOptionsAsync"
@@ -30386,14 +30739,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "headers",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ]
                 },
@@ -30593,28 +30948,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -30693,21 +31052,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "addHandlerAsync"
@@ -30814,21 +31176,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "displayDialogAsync"
@@ -30898,14 +31263,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "displayDialogAsync"
@@ -30958,14 +31325,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "messageOptions",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "messageParent"
@@ -31009,7 +31378,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "openBrowserWindow"
@@ -31055,7 +31425,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "name": "useShortNamespace"
@@ -31334,7 +31705,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ]
                 },
@@ -31420,14 +31792,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -31498,21 +31872,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "maxDepth",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "loadRecursive"
@@ -31589,7 +31966,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "typeParameters": [
@@ -31647,7 +32025,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "trace"
@@ -32184,14 +32563,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ]
                 },
@@ -32862,21 +33243,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handlers",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 5
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
                         "startIndex": 6,
                         "endIndex": 9
-                      }
+                      },
+                      "isOptional": false
                     }
                   ]
                 },
@@ -33023,28 +33407,32 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "parentObject",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "name",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "eventInfo",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 9
-                      }
+                      },
+                      "isOptional": false
                     }
                   ]
                 },
@@ -33102,7 +33490,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "add"
@@ -33156,7 +33545,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "remove"
@@ -33752,7 +34142,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "add"
@@ -33802,7 +34193,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "add"
@@ -33848,7 +34240,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "remove"
@@ -33898,7 +34291,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "remove"

@@ -4,7 +4,7 @@ uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.RangeCollectionLoadOptions
 summary: 'Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.'
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,7 +30,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
       color, and other properties.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +45,7 @@ properties:
       For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All
       hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address
       part from the optional location part.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +57,7 @@ properties:
     package: word!
     fullName: isEmpty
     summary: 'For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +69,7 @@ properties:
     package: word!
     fullName: parentBody
     summary: 'For EACH ITEM in the collection: Gets the parent body of the range.'
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +83,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't
       a parent content control.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -97,7 +97,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there
       isn't a parent content control.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -111,7 +111,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the range. Throws an error if it is not contained in
       a table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +125,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an error if it is not
       contained in a table cell.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +139,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not
       contained in a table cell.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +153,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not
       contained in a table.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +168,7 @@ properties:
       For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +183,7 @@ properties:
       For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for
       built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
       property.
-    remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +195,7 @@ properties:
     package: word!
     fullName: text
     summary: 'For EACH ITEM in the collection: Gets the text of the range. Read-only.'
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

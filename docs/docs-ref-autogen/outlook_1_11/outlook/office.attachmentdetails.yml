@@ -8,7 +8,7 @@ summary: |-
 
   An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission

@@ -5,8 +5,7 @@ package: word!
 fullName: Word.ChangeTrackingMode
 summary: ChangeTracking mode.
 remarks: >-
-  \[ [API set: WordApiOnline BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+  \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples

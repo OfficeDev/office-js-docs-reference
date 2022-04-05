@@ -4,7 +4,7 @@ uid: 'excel!Excel.TextConditionalFormat:class'
 package: excel!
 fullName: Excel.TextConditionalFormat
 summary: Represents a specific text conditional format.
-remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,7 +29,7 @@ properties:
     fullName: format
     summary: 'Returns a format object, encapsulating the conditional format''s font, fill, borders, and other properties.'
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -64,7 +64,7 @@ properties:
     fullName: rule
     summary: The rule of the conditional format.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples

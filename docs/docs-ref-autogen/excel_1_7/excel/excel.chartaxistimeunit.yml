@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartAxisTimeUnit:enum'
 package: excel!
 fullName: Excel.ChartAxisTimeUnit
 summary: Specifies the unit of time for chart axes and data series.
-remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

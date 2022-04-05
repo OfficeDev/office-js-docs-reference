@@ -4,7 +4,7 @@ uid: 'excel!Excel.Functions:class'
 package: excel!
 fullName: Excel.Functions
 summary: An object for evaluating Excel functions.
-remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -29,7 +29,7 @@ methods:
     package: excel!
     fullName: abs(number)
     summary: 'Returns the absolute value of a number, a number without its sign.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ methods:
     package: excel!
     fullName: 'accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)'
     summary: Returns the accrued interest for a security that pays periodic interest.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -112,7 +112,7 @@ methods:
     package: excel!
     fullName: 'accrIntM(issue, settlement, rate, par, basis)'
     summary: Returns the accrued interest for a security that pays interest at maturity.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +158,7 @@ methods:
     summary: >-
       Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is
       Number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -177,7 +177,7 @@ methods:
     package: excel!
     fullName: acosh(number)
     summary: Returns the inverse hyperbolic cosine of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +196,7 @@ methods:
     package: excel!
     fullName: acot(number)
     summary: 'Returns the arccotangent of a number, in radians in the range 0 to Pi.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -215,7 +215,7 @@ methods:
     package: excel!
     fullName: acoth(number)
     summary: Returns the inverse hyperbolic cotangent of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,7 +234,7 @@ methods:
     package: excel!
     fullName: 'amorDegrc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     summary: Returns the prorated linear depreciation of an asset for each accounting period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -290,7 +290,7 @@ methods:
     package: excel!
     fullName: 'amorLinc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     summary: Returns the prorated linear depreciation of an asset for each accounting period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -346,7 +346,7 @@ methods:
     package: excel!
     fullName: and(values)
     summary: 'Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -369,7 +369,7 @@ methods:
     package: excel!
     fullName: arabic(text)
     summary: Converts a Roman numeral to Arabic.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -388,7 +388,7 @@ methods:
     package: excel!
     fullName: areas(reference)
     summary: Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -409,7 +409,7 @@ methods:
     summary: >-
       Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character
       sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -428,7 +428,7 @@ methods:
     package: excel!
     fullName: asin(number)
     summary: 'Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -447,7 +447,7 @@ methods:
     package: excel!
     fullName: asinh(number)
     summary: Returns the inverse hyperbolic sine of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -466,7 +466,7 @@ methods:
     package: excel!
     fullName: atan(number)
     summary: 'Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -485,7 +485,7 @@ methods:
     package: excel!
     fullName: 'atan2(xNum, yNum)'
     summary: 'Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -511,7 +511,7 @@ methods:
     package: excel!
     fullName: atanh(number)
     summary: Returns the inverse hyperbolic tangent of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,7 +532,7 @@ methods:
     summary: >-
       Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names,
       arrays, or references that contain numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -557,7 +557,7 @@ methods:
     summary: >-
       Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that
       contain numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -580,7 +580,7 @@ methods:
     summary: >-
       Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE
       evaluates as 1. Arguments can be numbers, names, arrays, or references.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -601,7 +601,7 @@ methods:
     package: excel!
     fullName: 'averageIf(range, criteria, averageRange)'
     summary: Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -635,7 +635,7 @@ methods:
     package: excel!
     fullName: 'averageIfs(averageRange, values)'
     summary: Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -665,7 +665,7 @@ methods:
     package: excel!
     fullName: bahtText(number)
     summary: Converts a number to text (baht).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -686,7 +686,7 @@ methods:
     package: excel!
     fullName: 'base(number, radix, minLength)'
     summary: Converts a number into a text representation with the given radix (base).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -718,7 +718,7 @@ methods:
     package: excel!
     fullName: 'besselI(x, n)'
     summary: Returns the modified Bessel function In(x).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -744,7 +744,7 @@ methods:
     package: excel!
     fullName: 'besselJ(x, n)'
     summary: Returns the Bessel function Jn(x).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -770,7 +770,7 @@ methods:
     package: excel!
     fullName: 'besselK(x, n)'
     summary: Returns the modified Bessel function Kn(x).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -796,7 +796,7 @@ methods:
     package: excel!
     fullName: 'besselY(x, n)'
     summary: Returns the Bessel function Yn(x).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -822,7 +822,7 @@ methods:
     package: excel!
     fullName: 'beta_Dist(x, alpha, beta, cumulative, A, B)'
     summary: Returns the beta probability distribution function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -873,7 +873,7 @@ methods:
     package: excel!
     fullName: 'beta_Inv(probability, alpha, beta, A, B)'
     summary: Returns the inverse of the cumulative beta probability density function (BETA.DIST).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -917,7 +917,7 @@ methods:
     package: excel!
     fullName: bin2Dec(number)
     summary: Converts a binary number to decimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -938,7 +938,7 @@ methods:
     package: excel!
     fullName: 'bin2Hex(number, places)'
     summary: Converts a binary number to hexadecimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -965,7 +965,7 @@ methods:
     package: excel!
     fullName: 'bin2Oct(number, places)'
     summary: Converts a binary number to octal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -992,7 +992,7 @@ methods:
     package: excel!
     fullName: 'binom_Dist_Range(trials, probabilityS, numberS, numberS2)'
     summary: Returns the probability of a trial result using a binomial distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1032,7 +1032,7 @@ methods:
     package: excel!
     fullName: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
     summary: Returns the individual term binomial distribution probability.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1074,7 +1074,7 @@ methods:
     summary: >-
       Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion
       value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1106,7 +1106,7 @@ methods:
     package: excel!
     fullName: 'bitand(number1, number2)'
     summary: Returns a bitwise 'And' of two numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1132,7 +1132,7 @@ methods:
     package: excel!
     fullName: 'bitlshift(number, shiftAmount)'
     summary: Returns a number shifted left by shift\_amount bits.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1158,7 +1158,7 @@ methods:
     package: excel!
     fullName: 'bitor(number1, number2)'
     summary: Returns a bitwise 'Or' of two numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1184,7 +1184,7 @@ methods:
     package: excel!
     fullName: 'bitrshift(number, shiftAmount)'
     summary: Returns a number shifted right by shift\_amount bits.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1210,7 +1210,7 @@ methods:
     package: excel!
     fullName: 'bitxor(number1, number2)'
     summary: Returns a bitwise 'Exclusive Or' of two numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1236,7 +1236,7 @@ methods:
     package: excel!
     fullName: 'ceiling_Math(number, significance, mode)'
     summary: 'Rounds a number up, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1268,7 +1268,7 @@ methods:
     package: excel!
     fullName: 'ceiling_Precise(number, significance)'
     summary: 'Rounds a number up, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1294,7 +1294,7 @@ methods:
     package: excel!
     fullName: char(number)
     summary: Returns the character specified by the code number from the character set for your computer.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1313,7 +1313,7 @@ methods:
     package: excel!
     fullName: 'chiSq_Dist_RT(x, degFreedom)'
     summary: Returns the right-tailed probability of the chi-squared distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1339,7 +1339,7 @@ methods:
     package: excel!
     fullName: 'chiSq_Dist(x, degFreedom, cumulative)'
     summary: Returns the left-tailed probability of the chi-squared distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1373,7 +1373,7 @@ methods:
     package: excel!
     fullName: 'chiSq_Inv_RT(probability, degFreedom)'
     summary: Returns the inverse of the right-tailed probability of the chi-squared distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1399,7 +1399,7 @@ methods:
     package: excel!
     fullName: 'chiSq_Inv(probability, degFreedom)'
     summary: Returns the inverse of the left-tailed probability of the chi-squared distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1425,7 +1425,7 @@ methods:
     package: excel!
     fullName: 'choose(indexNum, values)'
     summary: 'Chooses a value or action to perform from a list of values, based on an index number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1457,7 +1457,7 @@ methods:
     package: excel!
     fullName: clean(text)
     summary: Removes all nonprintable characters from text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1476,7 +1476,7 @@ methods:
     package: excel!
     fullName: code(text)
     summary: 'Returns a numeric code for the first character in a text string, in the character set used by your computer.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1495,7 +1495,7 @@ methods:
     package: excel!
     fullName: columns(array)
     summary: Returns the number of columns in an array or reference.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1514,7 +1514,7 @@ methods:
     package: excel!
     fullName: 'combin(number, numberChosen)'
     summary: Returns the number of combinations for a given number of items.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1540,7 +1540,7 @@ methods:
     package: excel!
     fullName: 'combina(number, numberChosen)'
     summary: Returns the number of combinations with repetitions for a given number of items.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1566,7 +1566,7 @@ methods:
     package: excel!
     fullName: 'complex(realNum, iNum, suffix)'
     summary: Converts real and imaginary coefficients into a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1599,7 +1599,7 @@ methods:
     package: excel!
     fullName: concatenate(values)
     summary: Joins several text strings into one text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1622,7 +1622,7 @@ methods:
     package: excel!
     fullName: 'confidence_Norm(alpha, standardDev, size)'
     summary: 'Returns the confidence interval for a population mean, using a normal distribution.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1656,7 +1656,7 @@ methods:
     package: excel!
     fullName: 'confidence_T(alpha, standardDev, size)'
     summary: 'Returns the confidence interval for a population mean, using a Student''s T distribution.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1690,7 +1690,7 @@ methods:
     package: excel!
     fullName: 'convert(number, fromUnit, toUnit)'
     summary: Converts a number from one measurement system to another.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1723,7 +1723,7 @@ methods:
     package: excel!
     fullName: cos(number)
     summary: Returns the cosine of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1742,7 +1742,7 @@ methods:
     package: excel!
     fullName: cosh(number)
     summary: Returns the hyperbolic cosine of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1761,7 +1761,7 @@ methods:
     package: excel!
     fullName: cot(number)
     summary: Returns the cotangent of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1780,7 +1780,7 @@ methods:
     package: excel!
     fullName: coth(number)
     summary: Returns the hyperbolic cotangent of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1799,7 +1799,7 @@ methods:
     package: excel!
     fullName: count(values)
     summary: Counts the number of cells in a range that contain numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1822,7 +1822,7 @@ methods:
     package: excel!
     fullName: countA(values)
     summary: Counts the number of cells in a range that are not empty.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1845,7 +1845,7 @@ methods:
     package: excel!
     fullName: countBlank(range)
     summary: Counts the number of empty cells in a specified range of cells.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1864,7 +1864,7 @@ methods:
     package: excel!
     fullName: 'countIf(range, criteria)'
     summary: Counts the number of cells within a range that meet the given condition.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1890,7 +1890,7 @@ methods:
     package: excel!
     fullName: countIfs(values)
     summary: Counts the number of cells specified by a given set of conditions or criteria.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1914,7 +1914,7 @@ methods:
     package: excel!
     fullName: 'coupDayBs(settlement, maturity, frequency, basis)'
     summary: Returns the number of days from the beginning of the coupon period to the settlement date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1953,7 +1953,7 @@ methods:
     package: excel!
     fullName: 'coupDays(settlement, maturity, frequency, basis)'
     summary: Returns the number of days in the coupon period that contains the settlement date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1991,7 +1991,7 @@ methods:
     package: excel!
     fullName: 'coupDaysNc(settlement, maturity, frequency, basis)'
     summary: Returns the number of days from the settlement date to the next coupon date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2030,7 +2030,7 @@ methods:
     package: excel!
     fullName: 'coupNcd(settlement, maturity, frequency, basis)'
     summary: Returns the next coupon date after the settlement date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2068,7 +2068,7 @@ methods:
     package: excel!
     fullName: 'coupNum(settlement, maturity, frequency, basis)'
     summary: Returns the number of coupons payable between the settlement date and maturity date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2106,7 +2106,7 @@ methods:
     package: excel!
     fullName: 'coupPcd(settlement, maturity, frequency, basis)'
     summary: Returns the previous coupon date before the settlement date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2144,7 +2144,7 @@ methods:
     package: excel!
     fullName: csc(number)
     summary: Returns the cosecant of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2163,7 +2163,7 @@ methods:
     package: excel!
     fullName: csch(number)
     summary: Returns the hyperbolic cosecant of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2182,7 +2182,7 @@ methods:
     package: excel!
     fullName: 'cumIPmt(rate, nper, pv, startPeriod, endPeriod, type)'
     summary: Returns the cumulative interest paid between two periods.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2232,7 +2232,7 @@ methods:
     package: excel!
     fullName: 'cumPrinc(rate, nper, pv, startPeriod, endPeriod, type)'
     summary: Returns the cumulative principal paid on a loan between two periods.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2282,7 +2282,7 @@ methods:
     package: excel!
     fullName: 'date(year, month, day)'
     summary: Returns the number that represents the date in Microsoft Excel date-time code.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2314,7 +2314,7 @@ methods:
     package: excel!
     fullName: datevalue(dateText)
     summary: Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2337,7 +2337,7 @@ methods:
     package: excel!
     fullName: 'daverage(database, field, criteria)'
     summary: Averages the values in a column in a list or database that match conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2373,7 +2373,7 @@ methods:
     package: excel!
     fullName: day(serialNumber)
     summary: 'Returns the day of the month, a number from 1 to 31.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2394,7 +2394,7 @@ methods:
     package: excel!
     fullName: 'days(endDate, startDate)'
     summary: Returns the number of days between the two dates.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2420,7 +2420,7 @@ methods:
     package: excel!
     fullName: 'days360(startDate, endDate, method)'
     summary: Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2452,7 +2452,7 @@ methods:
     package: excel!
     fullName: 'db(cost, salvage, life, period, month)'
     summary: Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2499,7 +2499,7 @@ methods:
     summary: >-
       Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use
       with double-byte character sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2520,7 +2520,7 @@ methods:
     summary: >-
       Counts the cells containing numbers in the field (column) of records in the database that match the conditions you
       specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2556,7 +2556,7 @@ methods:
     package: excel!
     fullName: 'dcountA(database, field, criteria)'
     summary: Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2594,7 +2594,7 @@ methods:
     summary: >-
       Returns the depreciation of an asset for a specified period using the double-declining balance method or some
       other method you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2641,7 +2641,7 @@ methods:
     package: excel!
     fullName: 'dec2Bin(number, places)'
     summary: Converts a decimal number to binary.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2668,7 +2668,7 @@ methods:
     package: excel!
     fullName: 'dec2Hex(number, places)'
     summary: Converts a decimal number to hexadecimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2695,7 +2695,7 @@ methods:
     package: excel!
     fullName: 'dec2Oct(number, places)'
     summary: Converts a decimal number to octal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2722,7 +2722,7 @@ methods:
     package: excel!
     fullName: 'decimal(number, radix)'
     summary: Converts a text representation of a number in a given base into a decimal number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2748,7 +2748,7 @@ methods:
     package: excel!
     fullName: degrees(angle)
     summary: Converts radians to degrees.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2767,7 +2767,7 @@ methods:
     package: excel!
     fullName: 'delta(number1, number2)'
     summary: Tests whether two numbers are equal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2794,7 +2794,7 @@ methods:
     package: excel!
     fullName: devSq(values)
     summary: Returns the sum of squares of deviations of data points from their sample mean.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2817,7 +2817,7 @@ methods:
     package: excel!
     fullName: 'dget(database, field, criteria)'
     summary: Extracts from a database a single record that matches the conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2853,7 +2853,7 @@ methods:
     package: excel!
     fullName: 'disc(settlement, maturity, pr, redemption, basis)'
     summary: Returns the discount rate for a security.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2897,7 +2897,7 @@ methods:
     package: excel!
     fullName: 'dmax(database, field, criteria)'
     summary: Returns the largest number in the field (column) of records in the database that match the conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2935,7 +2935,7 @@ methods:
     summary: >-
       Returns the smallest number in the field (column) of records in the database that match the conditions you
       specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2971,7 +2971,7 @@ methods:
     package: excel!
     fullName: 'dollar(number, decimals)'
     summary: 'Converts a number to text, using currency format.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2999,7 +2999,7 @@ methods:
     package: excel!
     fullName: 'dollarDe(fractionalDollar, fraction)'
     summary: 'Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3026,7 +3026,7 @@ methods:
     package: excel!
     fullName: 'dollarFr(decimalDollar, fraction)'
     summary: 'Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3053,7 +3053,7 @@ methods:
     package: excel!
     fullName: 'dproduct(database, field, criteria)'
     summary: Multiplies the values in the field (column) of records in the database that match the conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3089,7 +3089,7 @@ methods:
     package: excel!
     fullName: 'dstDev(database, field, criteria)'
     summary: Estimates the standard deviation based on a sample from selected database entries.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3125,7 +3125,7 @@ methods:
     package: excel!
     fullName: 'dstDevP(database, field, criteria)'
     summary: Calculates the standard deviation based on the entire population of selected database entries.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3161,7 +3161,7 @@ methods:
     package: excel!
     fullName: 'dsum(database, field, criteria)'
     summary: Adds the numbers in the field (column) of records in the database that match the conditions you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3197,7 +3197,7 @@ methods:
     package: excel!
     fullName: 'duration(settlement, maturity, coupon, yld, frequency, basis)'
     summary: Returns the annual duration of a security with periodic interest payments.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3247,7 +3247,7 @@ methods:
     package: excel!
     fullName: 'dvar(database, field, criteria)'
     summary: Estimates variance based on a sample from selected database entries.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3283,7 +3283,7 @@ methods:
     package: excel!
     fullName: 'dvarP(database, field, criteria)'
     summary: Calculates variance based on the entire population of selected database entries.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3319,7 +3319,7 @@ methods:
     package: excel!
     fullName: 'ecma_Ceiling(number, significance)'
     summary: 'Rounds a number up, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3345,7 +3345,7 @@ methods:
     package: excel!
     fullName: 'edate(startDate, months)'
     summary: Returns the serial number of the date that is the indicated number of months before or after the start date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3372,7 +3372,7 @@ methods:
     package: excel!
     fullName: 'effect(nominalRate, npery)'
     summary: Returns the effective annual interest rate.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3399,7 +3399,7 @@ methods:
     package: excel!
     fullName: 'eoMonth(startDate, months)'
     summary: Returns the serial number of the last day of the month before or after a specified number of months.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3426,7 +3426,7 @@ methods:
     package: excel!
     fullName: erf_Precise(X)
     summary: Returns the error function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3447,7 +3447,7 @@ methods:
     package: excel!
     fullName: 'erf(lowerLimit, upperLimit)'
     summary: Returns the error function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3474,7 +3474,7 @@ methods:
     package: excel!
     fullName: erfC_Precise(X)
     summary: Returns the complementary error function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3495,7 +3495,7 @@ methods:
     package: excel!
     fullName: erfC(x)
     summary: Returns the complementary error function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3516,7 +3516,7 @@ methods:
     package: excel!
     fullName: error_Type(errorVal)
     summary: Returns a number matching an error value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3539,7 +3539,7 @@ methods:
     package: excel!
     fullName: even(number)
     summary: Rounds a positive number up and negative number down to the nearest even integer.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3558,7 +3558,7 @@ methods:
     package: excel!
     fullName: 'exact(text1, text2)'
     summary: 'Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3584,7 +3584,7 @@ methods:
     package: excel!
     fullName: exp(number)
     summary: Returns e raised to the power of a given number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3605,7 +3605,7 @@ methods:
     package: excel!
     fullName: 'expon_Dist(x, lambda, cumulative)'
     summary: Returns the exponential distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3639,7 +3639,7 @@ methods:
     package: excel!
     fullName: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
     summary: Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3671,7 +3671,7 @@ methods:
     package: excel!
     fullName: 'f_Dist(x, degFreedom1, degFreedom2, cumulative)'
     summary: Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3713,7 +3713,7 @@ methods:
     summary: >-
       Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then
       F.INV.RT(p,...) = x.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3745,7 +3745,7 @@ methods:
     package: excel!
     fullName: 'f_Inv(probability, degFreedom1, degFreedom2)'
     summary: 'Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3777,7 +3777,7 @@ methods:
     package: excel!
     fullName: fact(number)
     summary: 'Returns the factorial of a number, equal to 1*2*3*...* Number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3796,7 +3796,7 @@ methods:
     package: excel!
     fullName: factDouble(number)
     summary: Returns the double factorial of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3817,7 +3817,7 @@ methods:
     package: excel!
     fullName: false()
     summary: Returns the logical value FALSE.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3830,7 +3830,7 @@ methods:
     package: excel!
     fullName: 'find(findText, withinText, startNum)'
     summary: Returns the starting position of one text string within another text string. FIND is case-sensitive.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3868,7 +3868,7 @@ methods:
     summary: >-
       Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with
       double-byte character sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3900,7 +3900,7 @@ methods:
     package: excel!
     fullName: fisher(x)
     summary: Returns the Fisher transformation.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3919,7 +3919,7 @@ methods:
     package: excel!
     fullName: fisherInv(y)
     summary: 'Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3938,7 +3938,7 @@ methods:
     package: excel!
     fullName: 'fixed(number, decimals, noCommas)'
     summary: Rounds a number to the specified number of decimals and returns the result as text with or without commas.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3972,7 +3972,7 @@ methods:
     package: excel!
     fullName: 'floor_Math(number, significance, mode)'
     summary: 'Rounds a number down, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4004,7 +4004,7 @@ methods:
     package: excel!
     fullName: 'floor_Precise(number, significance)'
     summary: 'Rounds a number down, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4030,7 +4030,7 @@ methods:
     package: excel!
     fullName: 'fv(rate, nper, pmt, pv, type)'
     summary: 'Returns the future value of an investment based on periodic, constant payments and a constant interest rate.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4077,7 +4077,7 @@ methods:
     package: excel!
     fullName: 'fvschedule(principal, schedule)'
     summary: Returns the future value of an initial principal after applying a series of compound interest rates.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4104,7 +4104,7 @@ methods:
     package: excel!
     fullName: 'gamma_Dist(x, alpha, beta, cumulative)'
     summary: Returns the gamma distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4146,7 +4146,7 @@ methods:
     package: excel!
     fullName: 'gamma_Inv(probability, alpha, beta)'
     summary: 'Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4180,7 +4180,7 @@ methods:
     package: excel!
     fullName: gamma(x)
     summary: Returns the Gamma function value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4199,7 +4199,7 @@ methods:
     package: excel!
     fullName: gammaLn_Precise(x)
     summary: Returns the natural logarithm of the gamma function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4220,7 +4220,7 @@ methods:
     package: excel!
     fullName: gammaLn(x)
     summary: Returns the natural logarithm of the gamma function.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4239,7 +4239,7 @@ methods:
     package: excel!
     fullName: gauss(x)
     summary: Returns 0.5 less than the standard normal cumulative distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4258,7 +4258,7 @@ methods:
     package: excel!
     fullName: gcd(values)
     summary: Returns the greatest common divisor.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4280,7 +4280,7 @@ methods:
     package: excel!
     fullName: geoMean(values)
     summary: Returns the geometric mean of an array or range of positive numeric data.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4303,7 +4303,7 @@ methods:
     package: excel!
     fullName: 'geStep(number, step)'
     summary: Tests whether a number is greater than a threshold value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4330,7 +4330,7 @@ methods:
     package: excel!
     fullName: harMean(values)
     summary: 'Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4353,7 +4353,7 @@ methods:
     package: excel!
     fullName: 'hex2Bin(number, places)'
     summary: Converts a Hexadecimal number to binary.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4380,7 +4380,7 @@ methods:
     package: excel!
     fullName: hex2Dec(number)
     summary: Converts a hexadecimal number to decimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4401,7 +4401,7 @@ methods:
     package: excel!
     fullName: 'hex2Oct(number, places)'
     summary: Converts a hexadecimal number to octal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4430,7 +4430,7 @@ methods:
     summary: >-
       Looks for a value in the top row of a table or array of values and returns the value in the same column from a row
       you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4474,7 +4474,7 @@ methods:
     package: excel!
     fullName: hour(serialNumber)
     summary: 'Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4497,7 +4497,7 @@ methods:
     package: excel!
     fullName: 'hyperlink(linkLocation, friendlyName)'
     summary: 'Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4526,7 +4526,7 @@ methods:
     package: excel!
     fullName: 'hypGeom_Dist(sampleS, numberSample, populationS, numberPop, cumulative)'
     summary: Returns the hypergeometric distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4572,7 +4572,7 @@ methods:
     package: excel!
     fullName: 'if(logicalTest, valueIfTrue, valueIfFalse)'
     summary: 'Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4607,7 +4607,7 @@ methods:
     package: excel!
     fullName: imAbs(inumber)
     summary: Returns the absolute value (modulus) of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4628,7 +4628,7 @@ methods:
     package: excel!
     fullName: imaginary(inumber)
     summary: Returns the imaginary coefficient of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4649,7 +4649,7 @@ methods:
     package: excel!
     fullName: imArgument(inumber)
     summary: 'Returns the argument q, an angle expressed in radians.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4670,7 +4670,7 @@ methods:
     package: excel!
     fullName: imConjugate(inumber)
     summary: Returns the complex conjugate of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4691,7 +4691,7 @@ methods:
     package: excel!
     fullName: imCos(inumber)
     summary: Returns the cosine of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4712,7 +4712,7 @@ methods:
     package: excel!
     fullName: imCosh(inumber)
     summary: Returns the hyperbolic cosine of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4733,7 +4733,7 @@ methods:
     package: excel!
     fullName: imCot(inumber)
     summary: Returns the cotangent of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4754,7 +4754,7 @@ methods:
     package: excel!
     fullName: imCsc(inumber)
     summary: Returns the cosecant of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4775,7 +4775,7 @@ methods:
     package: excel!
     fullName: imCsch(inumber)
     summary: Returns the hyperbolic cosecant of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4796,7 +4796,7 @@ methods:
     package: excel!
     fullName: 'imDiv(inumber1, inumber2)'
     summary: Returns the quotient of two complex numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4823,7 +4823,7 @@ methods:
     package: excel!
     fullName: imExp(inumber)
     summary: Returns the exponential of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4844,7 +4844,7 @@ methods:
     package: excel!
     fullName: imLn(inumber)
     summary: Returns the natural logarithm of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4865,7 +4865,7 @@ methods:
     package: excel!
     fullName: imLog10(inumber)
     summary: Returns the base-10 logarithm of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4886,7 +4886,7 @@ methods:
     package: excel!
     fullName: imLog2(inumber)
     summary: Returns the base-2 logarithm of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4907,7 +4907,7 @@ methods:
     package: excel!
     fullName: 'imPower(inumber, number)'
     summary: Returns a complex number raised to an integer power.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4934,7 +4934,7 @@ methods:
     package: excel!
     fullName: imProduct(values)
     summary: Returns the product of 1 to 255 complex numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4956,7 +4956,7 @@ methods:
     package: excel!
     fullName: imReal(inumber)
     summary: Returns the real coefficient of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4977,7 +4977,7 @@ methods:
     package: excel!
     fullName: imSec(inumber)
     summary: Returns the secant of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -4998,7 +4998,7 @@ methods:
     package: excel!
     fullName: imSech(inumber)
     summary: Returns the hyperbolic secant of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5019,7 +5019,7 @@ methods:
     package: excel!
     fullName: imSin(inumber)
     summary: Returns the sine of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5040,7 +5040,7 @@ methods:
     package: excel!
     fullName: imSinh(inumber)
     summary: Returns the hyperbolic sine of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5061,7 +5061,7 @@ methods:
     package: excel!
     fullName: imSqrt(inumber)
     summary: Returns the square root of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5082,7 +5082,7 @@ methods:
     package: excel!
     fullName: 'imSub(inumber1, inumber2)'
     summary: Returns the difference of two complex numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5109,7 +5109,7 @@ methods:
     package: excel!
     fullName: imSum(values)
     summary: Returns the sum of complex numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5131,7 +5131,7 @@ methods:
     package: excel!
     fullName: imTan(inumber)
     summary: Returns the tangent of a complex number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5152,7 +5152,7 @@ methods:
     package: excel!
     fullName: int(number)
     summary: Rounds a number down to the nearest integer.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5171,7 +5171,7 @@ methods:
     package: excel!
     fullName: 'intRate(settlement, maturity, investment, redemption, basis)'
     summary: Returns the interest rate for a fully invested security.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5218,7 +5218,7 @@ methods:
     summary: >-
       Returns the interest payment for a given period for an investment, based on periodic, constant payments and a
       constant interest rate.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5271,7 +5271,7 @@ methods:
     package: excel!
     fullName: 'irr(values, guess)'
     summary: Returns the internal rate of return for a series of cash flows.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5301,7 +5301,7 @@ methods:
     summary: >-
       Checks whether a value is an error (\#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!) excluding \#N/A, and
       returns TRUE or FALSE.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5326,7 +5326,7 @@ methods:
     summary: >-
       Checks whether a value is an error (\#N/A, \#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!), and returns
       TRUE or FALSE.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5349,7 +5349,7 @@ methods:
     package: excel!
     fullName: isEven(number)
     summary: Returns TRUE if the number is even.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5370,7 +5370,7 @@ methods:
     package: excel!
     fullName: isFormula(reference)
     summary: 'Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5391,7 +5391,7 @@ methods:
     package: excel!
     fullName: isLogical(value)
     summary: 'Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5414,7 +5414,7 @@ methods:
     package: excel!
     fullName: isNA(value)
     summary: 'Checks whether a value is \#N/A, and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5437,7 +5437,7 @@ methods:
     package: excel!
     fullName: isNonText(value)
     summary: 'Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5458,7 +5458,7 @@ methods:
     package: excel!
     fullName: isNumber(value)
     summary: 'Checks whether a value is a number, and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5481,7 +5481,7 @@ methods:
     package: excel!
     fullName: 'iso_Ceiling(number, significance)'
     summary: 'Rounds a number up, to the nearest integer or to the nearest multiple of significance.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5507,7 +5507,7 @@ methods:
     package: excel!
     fullName: isOdd(number)
     summary: Returns TRUE if the number is odd.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5528,7 +5528,7 @@ methods:
     package: excel!
     fullName: isoWeekNum(date)
     summary: Returns the ISO week number in the year for a given date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5549,7 +5549,7 @@ methods:
     package: excel!
     fullName: 'ispmt(rate, per, nper, pv)'
     summary: Returns the interest paid during a specific period of an investment.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5587,7 +5587,7 @@ methods:
     package: excel!
     fullName: isref(value)
     summary: 'Checks whether a value is a reference, and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5610,7 +5610,7 @@ methods:
     package: excel!
     fullName: isText(value)
     summary: 'Checks whether a value is text, and returns TRUE or FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5633,7 +5633,7 @@ methods:
     package: excel!
     fullName: kurt(values)
     summary: Returns the kurtosis of a data set.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5656,7 +5656,7 @@ methods:
     package: excel!
     fullName: 'large(array, k)'
     summary: 'Returns the k-th largest value in a data set. For example, the fifth largest number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5682,7 +5682,7 @@ methods:
     package: excel!
     fullName: lcm(values)
     summary: Returns the least common multiple.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5704,7 +5704,7 @@ methods:
     package: excel!
     fullName: 'left(text, numChars)'
     summary: Returns the specified number of characters from the start of a text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5732,7 +5732,7 @@ methods:
     summary: >-
       Returns the specified number of characters from the start of a text string. Use with double-byte character sets
       (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5758,7 +5758,7 @@ methods:
     package: excel!
     fullName: len(text)
     summary: Returns the number of characters in a text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5777,7 +5777,7 @@ methods:
     package: excel!
     fullName: lenb(text)
     summary: Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5796,7 +5796,7 @@ methods:
     package: excel!
     fullName: ln(number)
     summary: Returns the natural logarithm of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5815,7 +5815,7 @@ methods:
     package: excel!
     fullName: 'log(number, base)'
     summary: Returns the logarithm of a number to the base you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5841,7 +5841,7 @@ methods:
     package: excel!
     fullName: log10(number)
     summary: Returns the base-10 logarithm of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5862,7 +5862,7 @@ methods:
     summary: >-
       Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and
       Standard\_dev.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5904,7 +5904,7 @@ methods:
     summary: >-
       Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed
       with parameters Mean and Standard\_dev.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5936,7 +5936,7 @@ methods:
     package: excel!
     fullName: 'lookup(lookupValue, lookupVector, resultVector)'
     summary: Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5972,7 +5972,7 @@ methods:
     package: excel!
     fullName: lower(text)
     summary: Converts all letters in a text string to lowercase.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -5991,7 +5991,7 @@ methods:
     package: excel!
     fullName: 'match(lookupValue, lookupArray, matchType)'
     summary: Returns the relative position of an item in an array that matches a specified value in a specified order.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6027,7 +6027,7 @@ methods:
     package: excel!
     fullName: max(values)
     summary: Returns the largest value in a set of values. Ignores logical values and text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6050,7 +6050,7 @@ methods:
     package: excel!
     fullName: maxA(values)
     summary: Returns the largest value in a set of values. Does not ignore logical values and text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6073,7 +6073,7 @@ methods:
     package: excel!
     fullName: 'mduration(settlement, maturity, coupon, yld, frequency, basis)'
     summary: Returns the Macauley modified duration for a security with an assumed par value of $100.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6124,7 +6124,7 @@ methods:
     package: excel!
     fullName: median(values)
     summary: 'Returns the median, or the number in the middle of the set of given numbers.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6147,7 +6147,7 @@ methods:
     package: excel!
     fullName: 'mid(text, startNum, numChars)'
     summary: 'Returns the characters from the middle of a text string, given a starting position and length.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6181,7 +6181,7 @@ methods:
     summary: >-
       Returns characters from the middle of a text string, given a starting position and length. Use with double-byte
       character sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6213,7 +6213,7 @@ methods:
     package: excel!
     fullName: min(values)
     summary: Returns the smallest number in a set of values. Ignores logical values and text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6236,7 +6236,7 @@ methods:
     package: excel!
     fullName: minA(values)
     summary: Returns the smallest value in a set of values. Does not ignore logical values and text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6259,7 +6259,7 @@ methods:
     package: excel!
     fullName: minute(serialNumber)
     summary: 'Returns the minute, a number from 0 to 59.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6284,7 +6284,7 @@ methods:
     summary: >-
       Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and
       interest on reinvestment of cash.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6318,7 +6318,7 @@ methods:
     package: excel!
     fullName: 'mod(number, divisor)'
     summary: Returns the remainder after a number is divided by a divisor.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6344,7 +6344,7 @@ methods:
     package: excel!
     fullName: month(serialNumber)
     summary: 'Returns the month, a number from 1 (January) to 12 (December).'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6365,7 +6365,7 @@ methods:
     package: excel!
     fullName: 'mround(number, multiple)'
     summary: Returns a number rounded to the desired multiple.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6392,7 +6392,7 @@ methods:
     package: excel!
     fullName: multiNomial(values)
     summary: Returns the multinomial of a set of numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6414,7 +6414,7 @@ methods:
     package: excel!
     fullName: n(value)
     summary: 'Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6435,7 +6435,7 @@ methods:
     package: excel!
     fullName: na()
     summary: 'Returns the error value \#N/A (value not available).'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6450,7 +6450,7 @@ methods:
     summary: >-
       Returns the negative binomial distribution, the probability that there will be Number\_f failures before the
       Number\_s-th success, with Probability\_s probability of a success.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6490,7 +6490,7 @@ methods:
     package: excel!
     fullName: 'networkDays_Intl(startDate, endDate, weekend, holidays)'
     summary: Returns the number of whole workdays between two dates with custom weekend parameters.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6531,7 +6531,7 @@ methods:
     package: excel!
     fullName: 'networkDays(startDate, endDate, holidays)'
     summary: Returns the number of whole workdays between two dates.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6566,7 +6566,7 @@ methods:
     package: excel!
     fullName: 'nominal(effectRate, npery)'
     summary: Returns the annual nominal interest rate.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6593,7 +6593,7 @@ methods:
     package: excel!
     fullName: 'norm_Dist(x, mean, standardDev, cumulative)'
     summary: Returns the normal distribution for the specified mean and standard deviation.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6633,7 +6633,7 @@ methods:
     package: excel!
     fullName: 'norm_Inv(probability, mean, standardDev)'
     summary: Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6665,7 +6665,7 @@ methods:
     package: excel!
     fullName: 'norm_S_Dist(z, cumulative)'
     summary: Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6695,7 +6695,7 @@ methods:
     summary: >-
       Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of
       one).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6716,7 +6716,7 @@ methods:
     package: excel!
     fullName: not(logical)
     summary: 'Changes FALSE to TRUE, or TRUE to FALSE.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6735,7 +6735,7 @@ methods:
     package: excel!
     fullName: now()
     summary: Returns the current date and time formatted as a date and time.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6748,7 +6748,7 @@ methods:
     package: excel!
     fullName: 'nper(rate, pmt, pv, fv, type)'
     summary: 'Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6797,7 +6797,7 @@ methods:
     summary: >-
       Returns the net present value of an investment based on a discount rate and a series of future payments (negative
       values) and income (positive values).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6825,7 +6825,7 @@ methods:
     package: excel!
     fullName: 'numberValue(text, decimalSeparator, groupSeparator)'
     summary: Converts text to number in a locale-independent manner.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6857,7 +6857,7 @@ methods:
     package: excel!
     fullName: 'oct2Bin(number, places)'
     summary: Converts an octal number to binary.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6884,7 +6884,7 @@ methods:
     package: excel!
     fullName: oct2Dec(number)
     summary: Converts an octal number to decimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6905,7 +6905,7 @@ methods:
     package: excel!
     fullName: 'oct2Hex(number, places)'
     summary: Converts an octal number to hexadecimal.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6932,7 +6932,7 @@ methods:
     package: excel!
     fullName: odd(number)
     summary: Rounds a positive number up and negative number down to the nearest odd integer.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -6951,7 +6951,7 @@ methods:
     package: excel!
     fullName: 'oddFPrice(settlement, maturity, issue, firstCoupon, rate, yld, redemption, frequency, basis)'
     summary: Returns the price per $100 face value of a security with an odd first period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7020,7 +7020,7 @@ methods:
     package: excel!
     fullName: 'oddFYield(settlement, maturity, issue, firstCoupon, rate, pr, redemption, frequency, basis)'
     summary: Returns the yield of a security with an odd first period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7089,7 +7089,7 @@ methods:
     package: excel!
     fullName: 'oddLPrice(settlement, maturity, lastInterest, rate, yld, redemption, frequency, basis)'
     summary: Returns the price per $100 face value of a security with an odd last period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7152,7 +7152,7 @@ methods:
     package: excel!
     fullName: 'oddLYield(settlement, maturity, lastInterest, rate, pr, redemption, frequency, basis)'
     summary: Returns the yield of a security with an odd last period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7217,7 +7217,7 @@ methods:
     summary: >-
       Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are
       FALSE.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7240,7 +7240,7 @@ methods:
     package: excel!
     fullName: 'pduration(rate, pv, fv)'
     summary: Returns the number of periods required by an investment to reach a specified value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7272,7 +7272,7 @@ methods:
     package: excel!
     fullName: 'percentile_Exc(array, k)'
     summary: 'Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7298,7 +7298,7 @@ methods:
     package: excel!
     fullName: 'percentile_Inc(array, k)'
     summary: 'Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7326,7 +7326,7 @@ methods:
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the
       data set.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7362,7 +7362,7 @@ methods:
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the
       data set.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7396,7 +7396,7 @@ methods:
     package: excel!
     fullName: 'permut(number, numberChosen)'
     summary: Returns the number of permutations for a given number of objects that can be selected from the total objects.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7424,7 +7424,7 @@ methods:
     summary: >-
       Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the
       total objects.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7450,7 +7450,7 @@ methods:
     package: excel!
     fullName: phi(x)
     summary: Returns the value of the density function for a standard normal distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7469,7 +7469,7 @@ methods:
     package: excel!
     fullName: pi()
     summary: 'Returns the value of Pi, 3.14159265358979, accurate to 15 digits.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7482,7 +7482,7 @@ methods:
     package: excel!
     fullName: 'pmt(rate, nper, pv, fv, type)'
     summary: Calculates the payment for a loan based on constant payments and a constant interest rate.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7529,7 +7529,7 @@ methods:
     package: excel!
     fullName: 'poisson_Dist(x, mean, cumulative)'
     summary: Returns the Poisson distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7563,7 +7563,7 @@ methods:
     package: excel!
     fullName: 'power(number, power)'
     summary: Returns the result of a number raised to a power.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7591,7 +7591,7 @@ methods:
     summary: >-
       Returns the payment on the principal for a given investment based on periodic, constant payments and a constant
       interest rate.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7642,7 +7642,7 @@ methods:
     package: excel!
     fullName: 'price(settlement, maturity, rate, yld, redemption, frequency, basis)'
     summary: Returns the price per $100 face value of a security that pays periodic interest.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7698,7 +7698,7 @@ methods:
     package: excel!
     fullName: 'priceDisc(settlement, maturity, discount, redemption, basis)'
     summary: Returns the price per $100 face value of a discounted security.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7743,7 +7743,7 @@ methods:
     package: excel!
     fullName: 'priceMat(settlement, maturity, issue, rate, yld, basis)'
     summary: Returns the price per $100 face value of a security that pays interest at maturity.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7793,7 +7793,7 @@ methods:
     package: excel!
     fullName: product(values)
     summary: Multiplies all the numbers given as arguments.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7818,7 +7818,7 @@ methods:
     summary: >-
       Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to
       lowercase.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7839,7 +7839,7 @@ methods:
     package: excel!
     fullName: 'pv(rate, nper, pmt, fv, type)'
     summary: 'Returns the present value of an investment: the total amount that a series of future payments is worth now.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7884,7 +7884,7 @@ methods:
     package: excel!
     fullName: 'quartile_Exc(array, quart)'
     summary: 'Returns the quartile of a data set, based on percentile values from 0..1, exclusive.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7910,7 +7910,7 @@ methods:
     package: excel!
     fullName: 'quartile_Inc(array, quart)'
     summary: 'Returns the quartile of a data set, based on percentile values from 0..1, inclusive.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7936,7 +7936,7 @@ methods:
     package: excel!
     fullName: 'quotient(numerator, denominator)'
     summary: Returns the integer portion of a division.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7963,7 +7963,7 @@ methods:
     package: excel!
     fullName: radians(angle)
     summary: Converts degrees to radians.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7982,7 +7982,7 @@ methods:
     package: excel!
     fullName: rand()
     summary: 'Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -7995,7 +7995,7 @@ methods:
     package: excel!
     fullName: 'randBetween(bottom, top)'
     summary: Returns a random number between the numbers you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8024,7 +8024,7 @@ methods:
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
       value has the same rank, the average rank is returned.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8060,7 +8060,7 @@ methods:
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
       value has the same rank, the top rank of that set of values is returned.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8096,7 +8096,7 @@ methods:
     summary: >-
       Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at
       6% APR.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8149,7 +8149,7 @@ methods:
     package: excel!
     fullName: 'received(settlement, maturity, investment, discount, basis)'
     summary: Returns the amount received at maturity for a fully invested security.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8194,7 +8194,7 @@ methods:
     package: excel!
     fullName: 'replace(oldText, startNum, numChars, newText)'
     summary: Replaces part of a text string with a different text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8232,7 +8232,7 @@ methods:
     package: excel!
     fullName: 'replaceB(oldText, startNum, numBytes, newText)'
     summary: Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8270,7 +8270,7 @@ methods:
     package: excel!
     fullName: 'rept(text, numberTimes)'
     summary: Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8296,7 +8296,7 @@ methods:
     package: excel!
     fullName: 'right(text, numChars)'
     summary: Returns the specified number of characters from the end of a text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8324,7 +8324,7 @@ methods:
     summary: >-
       Returns the specified number of characters from the end of a text string. Use with double-byte character sets
       (DBCS).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8350,7 +8350,7 @@ methods:
     package: excel!
     fullName: 'roman(number, form)'
     summary: 'Converts an Arabic numeral to Roman, as text.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8376,7 +8376,7 @@ methods:
     package: excel!
     fullName: 'round(number, numDigits)'
     summary: Rounds a number to a specified number of digits.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8404,7 +8404,7 @@ methods:
     package: excel!
     fullName: 'roundDown(number, numDigits)'
     summary: 'Rounds a number down, toward zero.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8432,7 +8432,7 @@ methods:
     package: excel!
     fullName: 'roundUp(number, numDigits)'
     summary: 'Rounds a number up, away from zero.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8460,7 +8460,7 @@ methods:
     package: excel!
     fullName: rows(array)
     summary: Returns the number of rows in a reference or array.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8479,7 +8479,7 @@ methods:
     package: excel!
     fullName: 'rri(nper, pv, fv)'
     summary: Returns an equivalent interest rate for the growth of an investment.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8511,7 +8511,7 @@ methods:
     package: excel!
     fullName: sec(number)
     summary: Returns the secant of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8530,7 +8530,7 @@ methods:
     package: excel!
     fullName: sech(number)
     summary: Returns the hyperbolic secant of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8549,7 +8549,7 @@ methods:
     package: excel!
     fullName: second(serialNumber)
     summary: 'Returns the second, a number from 0 to 59.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8572,7 +8572,7 @@ methods:
     package: excel!
     fullName: 'seriesSum(x, n, m, coefficients)'
     summary: Returns the sum of a power series based on the formula.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8610,7 +8610,7 @@ methods:
     package: excel!
     fullName: sheet(value)
     summary: Returns the sheet number of the referenced sheet.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8631,7 +8631,7 @@ methods:
     package: excel!
     fullName: sheets(reference)
     summary: Returns the number of sheets in a reference.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8654,7 +8654,7 @@ methods:
     summary: >-
       Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is
       negative.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8673,7 +8673,7 @@ methods:
     package: excel!
     fullName: sin(number)
     summary: Returns the sine of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8692,7 +8692,7 @@ methods:
     package: excel!
     fullName: sinh(number)
     summary: Returns the hyperbolic sine of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8713,7 +8713,7 @@ methods:
     summary: >-
       Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a
       distribution around its mean.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8738,7 +8738,7 @@ methods:
     summary: >-
       Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its
       mean.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8761,7 +8761,7 @@ methods:
     package: excel!
     fullName: 'sln(cost, salvage, life)'
     summary: Returns the straight-line depreciation of an asset for one period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8795,7 +8795,7 @@ methods:
     package: excel!
     fullName: 'small(array, k)'
     summary: 'Returns the k-th smallest value in a data set. For example, the fifth smallest number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8821,7 +8821,7 @@ methods:
     package: excel!
     fullName: sqrt(number)
     summary: Returns the square root of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8840,7 +8840,7 @@ methods:
     package: excel!
     fullName: sqrtPi(number)
     summary: Returns the square root of (number * Pi).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8861,7 +8861,7 @@ methods:
     package: excel!
     fullName: 'standardize(x, mean, standardDev)'
     summary: Returns a normalized value from a distribution characterized by a mean and standard deviation.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8893,7 +8893,7 @@ methods:
     package: excel!
     fullName: stDev_P(values)
     summary: Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8916,7 +8916,7 @@ methods:
     package: excel!
     fullName: stDev_S(values)
     summary: Estimates standard deviation based on a sample (ignores logical values and text in the sample).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8941,7 +8941,7 @@ methods:
     summary: >-
       Estimates standard deviation based on a sample, including logical values and text. Text and the logical value
       FALSE have the value 0; the logical value TRUE has the value 1.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8966,7 +8966,7 @@ methods:
     summary: >-
       Calculates standard deviation based on an entire population, including logical values and text. Text and the
       logical value FALSE have the value 0; the logical value TRUE has the value 1.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -8989,7 +8989,7 @@ methods:
     package: excel!
     fullName: 'substitute(text, oldText, newText, instanceNum)'
     summary: Replaces existing text with new text in a text string.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9031,7 +9031,7 @@ methods:
     package: excel!
     fullName: 'subtotal(functionNum, values)'
     summary: Returns a subtotal in a list or database.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9057,7 +9057,7 @@ methods:
     package: excel!
     fullName: sum(values)
     summary: Adds all the numbers in a range of cells.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9080,7 +9080,7 @@ methods:
     package: excel!
     fullName: 'sumIf(range, criteria, sumRange)'
     summary: Adds the cells specified by a given condition or criteria.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9114,7 +9114,7 @@ methods:
     package: excel!
     fullName: 'sumIfs(sumRange, values)'
     summary: Adds the cells specified by a given set of conditions or criteria.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9145,7 +9145,7 @@ methods:
     summary: >-
       Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to
       cells that contain numbers.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9168,7 +9168,7 @@ methods:
     package: excel!
     fullName: 'syd(cost, salvage, life, per)'
     summary: Returns the sum-of-years' digits depreciation of an asset for a specified period.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9208,7 +9208,7 @@ methods:
     package: excel!
     fullName: 't_Dist_2T(x, degFreedom)'
     summary: Returns the two-tailed Student's t-distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9234,7 +9234,7 @@ methods:
     package: excel!
     fullName: 't_Dist_RT(x, degFreedom)'
     summary: Returns the right-tailed Student's t-distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9260,7 +9260,7 @@ methods:
     package: excel!
     fullName: 't_Dist(x, degFreedom, cumulative)'
     summary: Returns the left-tailed Student's t-distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9294,7 +9294,7 @@ methods:
     package: excel!
     fullName: 't_Inv_2T(probability, degFreedom)'
     summary: Returns the two-tailed inverse of the Student's t-distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9322,7 +9322,7 @@ methods:
     package: excel!
     fullName: 't_Inv(probability, degFreedom)'
     summary: Returns the left-tailed inverse of the Student's t-distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9350,7 +9350,7 @@ methods:
     package: excel!
     fullName: t(value)
     summary: 'Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9371,7 +9371,7 @@ methods:
     package: excel!
     fullName: tan(number)
     summary: Returns the tangent of an angle.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9390,7 +9390,7 @@ methods:
     package: excel!
     fullName: tanh(number)
     summary: Returns the hyperbolic tangent of a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9409,7 +9409,7 @@ methods:
     package: excel!
     fullName: 'tbillEq(settlement, maturity, discount)'
     summary: Returns the bond-equivalent yield for a treasury bill.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9442,7 +9442,7 @@ methods:
     package: excel!
     fullName: 'tbillPrice(settlement, maturity, discount)'
     summary: Returns the price per $100 face value for a treasury bill.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9475,7 +9475,7 @@ methods:
     package: excel!
     fullName: 'tbillYield(settlement, maturity, pr)'
     summary: Returns the yield for a treasury bill.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9508,7 +9508,7 @@ methods:
     package: excel!
     fullName: 'text(value, formatText)'
     summary: Converts a value to text in a specific number format.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9538,7 +9538,7 @@ methods:
     package: excel!
     fullName: 'time(hour, minute, second)'
     summary: 'Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9572,7 +9572,7 @@ methods:
     summary: >-
       Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59
       PM). Format the number with a time format after entering the formula.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9595,7 +9595,7 @@ methods:
     package: excel!
     fullName: today()
     summary: Returns the current date formatted as a date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9632,7 +9632,7 @@ methods:
     package: excel!
     fullName: trim(text)
     summary: Removes all spaces from a text string except for single spaces between words.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9651,7 +9651,7 @@ methods:
     package: excel!
     fullName: 'trimMean(array, percent)'
     summary: Returns the mean of the interior portion of a set of data values.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9677,7 +9677,7 @@ methods:
     package: excel!
     fullName: true()
     summary: Returns the logical value TRUE.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9690,7 +9690,7 @@ methods:
     package: excel!
     fullName: 'trunc(number, numDigits)'
     summary: 'Truncates a number to an integer by removing the decimal, or fractional, part of the number.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9718,7 +9718,7 @@ methods:
     summary: >-
       Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value =
       16; array = 64.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9739,7 +9739,7 @@ methods:
     package: excel!
     fullName: unichar(number)
     summary: Returns the Unicode character referenced by the given numeric value.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9760,7 +9760,7 @@ methods:
     package: excel!
     fullName: unicode(text)
     summary: Returns the number (code point) corresponding to the first character of the text.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9779,7 +9779,7 @@ methods:
     package: excel!
     fullName: upper(text)
     summary: Converts a text string to all uppercase letters.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9798,7 +9798,7 @@ methods:
     package: excel!
     fullName: 'usdollar(number, decimals)'
     summary: 'Converts a number to text, using currency format.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9824,7 +9824,7 @@ methods:
     package: excel!
     fullName: value(text)
     summary: Converts a text string that represents a number to a number.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9845,7 +9845,7 @@ methods:
     package: excel!
     fullName: var_P(values)
     summary: Calculates variance based on the entire population (ignores logical values and text in the population).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9866,7 +9866,7 @@ methods:
     package: excel!
     fullName: var_S(values)
     summary: Estimates variance based on a sample (ignores logical values and text in the sample).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9889,7 +9889,7 @@ methods:
     summary: >-
       Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the
       value 0; the logical value TRUE has the value 1.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9912,7 +9912,7 @@ methods:
     summary: >-
       Calculates variance based on the entire population, including logical values and text. Text and the logical value
       FALSE have the value 0; the logical value TRUE has the value 1.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9935,7 +9935,7 @@ methods:
     summary: >-
       Returns the depreciation of an asset for any period you specify, including partial periods, using the
       double-declining balance method or some other method you specify.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -9996,7 +9996,7 @@ methods:
     summary: >-
       Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you
       specify. By default, the table must be sorted in an ascending order.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10042,7 +10042,7 @@ methods:
     package: excel!
     fullName: 'weekday(serialNumber, returnType)'
     summary: Returns a number from 1 to 7 identifying the day of the week of a date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10070,7 +10070,7 @@ methods:
     package: excel!
     fullName: 'weekNum(serialNumber, returnType)'
     summary: Returns the week number in the year.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10097,7 +10097,7 @@ methods:
     package: excel!
     fullName: 'weibull_Dist(x, alpha, beta, cumulative)'
     summary: Returns the Weibull distribution.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10139,7 +10139,7 @@ methods:
     summary: >-
       Returns the serial number of the date before or after a specified number of workdays with custom weekend
       parameters.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10180,7 +10180,7 @@ methods:
     package: excel!
     fullName: 'workDay(startDate, days, holidays)'
     summary: Returns the serial number of the date before or after a specified number of workdays.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10215,7 +10215,7 @@ methods:
     package: excel!
     fullName: 'xirr(values, dates, guess)'
     summary: Returns the internal rate of return for a schedule of cash flows.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10247,7 +10247,7 @@ methods:
     package: excel!
     fullName: 'xnpv(rate, values, dates)'
     summary: Returns the net present value for a schedule of cash flows.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10279,7 +10279,7 @@ methods:
     package: excel!
     fullName: xor(values)
     summary: Returns a logical 'Exclusive Or' of all arguments.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10302,7 +10302,7 @@ methods:
     package: excel!
     fullName: year(serialNumber)
     summary: 'Returns the year of a date, an integer in the range 1900 - 9999.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10323,7 +10323,7 @@ methods:
     package: excel!
     fullName: 'yearFrac(startDate, endDate, basis)'
     summary: Returns the year fraction representing the number of whole days between start\_date and end\_date.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10356,7 +10356,7 @@ methods:
     package: excel!
     fullName: 'yield(settlement, maturity, rate, pr, redemption, frequency, basis)'
     summary: Returns the yield on a security that pays periodic interest.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10412,7 +10412,7 @@ methods:
     package: excel!
     fullName: 'yieldDisc(settlement, maturity, pr, redemption, basis)'
     summary: 'Returns the annual yield for a discounted security. For example, a treasury bill.'
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10457,7 +10457,7 @@ methods:
     package: excel!
     fullName: 'yieldMat(settlement, maturity, issue, rate, pr, basis)'
     summary: Returns the annual yield of a security that pays interest at maturity.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -10507,7 +10507,7 @@ methods:
     package: excel!
     fullName: 'z_Test(array, x, sigma)'
     summary: Returns the one-tailed P-value of a z-test.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

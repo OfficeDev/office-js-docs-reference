@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.19.4",
-    "schemaVersion": 1004,
+    "toolVersion": "7.20.0",
+    "schemaVersion": 1005,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -274,7 +274,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -320,7 +321,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -366,7 +368,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -421,14 +424,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -474,7 +479,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -520,7 +526,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -601,14 +608,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "show",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "showToolbar"
@@ -661,14 +670,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "show",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "showToolbar"
@@ -1123,7 +1134,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1169,7 +1181,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1215,7 +1228,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1270,14 +1284,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -1323,7 +1339,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -1369,7 +1386,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -1563,7 +1581,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -1651,7 +1670,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1697,7 +1717,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1744,7 +1765,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -1790,7 +1812,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -2979,7 +3002,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -3025,7 +3049,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -3071,7 +3096,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -3482,14 +3508,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -3535,7 +3563,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -3580,7 +3609,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setActivePage"
@@ -3626,7 +3656,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -3688,21 +3719,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "initialProps",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "show",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "showTaskPane"
@@ -3763,21 +3797,24 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "initialProps",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     },
                     {
                       "parameterName": "show",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "showTaskPane"
@@ -4239,7 +4276,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -4285,7 +4323,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -4331,7 +4370,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -4386,14 +4426,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -4439,7 +4481,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -4485,7 +4528,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -4945,7 +4989,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -4991,7 +5036,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5037,7 +5083,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5083,7 +5130,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -5277,7 +5325,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -5365,7 +5414,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5411,7 +5461,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5458,7 +5509,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -5504,7 +5556,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -10827,7 +10880,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -10873,7 +10927,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -10919,7 +10974,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11001,14 +11057,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -11054,7 +11112,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -11100,7 +11159,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -11350,7 +11410,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -11438,7 +11499,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11484,7 +11546,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11531,7 +11594,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -11577,7 +11641,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -11817,7 +11882,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "centerViewportOnShape"
@@ -11998,7 +12064,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "isShapeInViewport"
@@ -12045,7 +12112,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -12091,7 +12159,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -12137,7 +12206,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -12192,14 +12262,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -12245,7 +12317,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -12291,7 +12364,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -12337,7 +12411,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setPosition"
@@ -12527,7 +12602,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
+                      },
+                      "isOptional": true
                     }
                   ]
                 },
@@ -12627,7 +12703,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 6
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -12724,14 +12801,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 4
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 5,
                     "endIndex": 10
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -12823,14 +12902,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 4,
                     "endIndex": 9
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -12918,14 +12999,16 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 },
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 8
-                  }
+                  },
+                  "isOptional": false
                 }
               ],
               "typeParameters": [
@@ -13034,7 +13117,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13080,7 +13164,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13436,7 +13521,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13482,7 +13568,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13528,7 +13615,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -13637,14 +13725,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -13690,7 +13780,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -13736,7 +13827,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -14108,7 +14200,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -14196,7 +14289,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14242,7 +14336,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14289,7 +14384,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14335,7 +14431,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -14550,7 +14647,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14596,7 +14694,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14642,7 +14741,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -14688,7 +14788,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -14882,7 +14983,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "getItem"
@@ -14970,7 +15072,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15016,7 +15119,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15063,7 +15167,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15109,7 +15214,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -15397,42 +15503,48 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Content",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "OverlayHorizontalAlignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "OverlayVerticalAlignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Width",
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Height",
                       "parameterTypeTokenRange": {
                         "startIndex": 11,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "addOverlay"
@@ -15522,42 +15634,48 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Content",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "OverlayHorizontalAlignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 5,
                         "endIndex": 6
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "OverlayVerticalAlignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 7,
                         "endIndex": 8
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Width",
                       "parameterTypeTokenRange": {
                         "startIndex": 9,
                         "endIndex": 10
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "Height",
                       "parameterTypeTokenRange": {
                         "startIndex": 11,
                         "endIndex": 12
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "addOverlay"
@@ -15660,7 +15778,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15706,7 +15825,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15752,7 +15872,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "load"
@@ -15797,7 +15918,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "removeOverlay"
@@ -15852,14 +15974,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": true
                     }
                   ],
                   "name": "set"
@@ -15905,7 +16029,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "set"
@@ -15951,7 +16076,8 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "setMockData"
@@ -16004,14 +16130,16 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "isOptional": false
                     },
                     {
                       "parameterName": "show",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
                         "endIndex": 4
-                      }
+                      },
+                      "isOptional": false
                     }
                   ],
                   "name": "showOverlay"

@@ -4,9 +4,7 @@ uid: 'excel!Excel.CellValue:type'
 package: excel!
 fullName: Excel.CellValue
 summary: Represents the value in a cell.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 syntax: >-

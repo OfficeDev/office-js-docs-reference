@@ -4,9 +4,7 @@ uid: 'excel!Excel.CardLayoutSection:type'
 package: excel!
 fullName: Excel.CardLayoutSection
 summary: Represents the layout of a section of a card in card view.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 syntax: export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;

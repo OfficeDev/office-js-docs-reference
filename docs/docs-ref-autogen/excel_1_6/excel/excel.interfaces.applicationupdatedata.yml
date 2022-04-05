@@ -19,8 +19,8 @@ properties:
       where Excel controls recalculation but ignores changes in tables; `Manual`<!-- -->, where calculation is done when
       the user requests it.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for
-      set](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     isPreview: false
     isDeprecated: false
     syntax:

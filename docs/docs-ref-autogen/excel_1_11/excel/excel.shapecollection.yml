@@ -4,7 +4,7 @@ uid: 'excel!Excel.ShapeCollection:class'
 package: excel!
 fullName: Excel.ShapeCollection
 summary: Represents a collection of all the shapes in the worksheet.
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +42,7 @@ methods:
     fullName: addGeometricShape(geometricShapeType)
     summary: Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -80,7 +80,7 @@ methods:
     package: excel!
     fullName: addGeometricShape(geometricShapeTypeString)
     summary: Adds a geometric shape to the worksheet. Returns a `Shape` object that represents the new shape.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -162,7 +162,7 @@ methods:
       Groups a subset of shapes in this collection's worksheet. Returns a `Shape` object that represents the new group
       of shapes.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -206,7 +206,7 @@ methods:
       Creates an image from a base64-encoded string and adds it to the worksheet. Returns the `Shape` object that
       represents the new image.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -256,7 +256,7 @@ methods:
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     summary: Adds a line to worksheet. Returns a `Shape` object that represents the new line.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -305,7 +305,7 @@ methods:
     package: excel!
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
     summary: Adds a line to worksheet. Returns a `Shape` object that represents the new line.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,7 +339,7 @@ methods:
       Adds a text box to the worksheet with the provided text as the content. Returns a `Shape` object that represents
       the new text box.
     remarks: >-
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -378,7 +378,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of shapes in the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -391,7 +391,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets a shape using its name or ID.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -408,7 +408,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a shape using its position in the collection.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

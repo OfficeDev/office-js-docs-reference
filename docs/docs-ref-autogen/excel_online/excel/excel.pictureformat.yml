@@ -4,7 +4,7 @@ uid: 'excel!Excel.PictureFormat:enum'
 package: excel!
 fullName: Excel.PictureFormat
 summary: The format of the image.
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
