@@ -4,7 +4,7 @@ uid: 'excel!Excel.RangeViewCollection:class'
 package: excel!
 fullName: Excel.RangeViewCollection
 summary: Represents a collection of `RangeView` objects.
-remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -41,7 +41,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Gets the number of `RangeView` objects in the collection.
-    remarks: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +54,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Gets a `RangeView` row via its index. Zero-indexed.
-    remarks: '\[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

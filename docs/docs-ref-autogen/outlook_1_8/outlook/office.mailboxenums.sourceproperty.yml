@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.SourceProperty
 summary: Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
 remarks: >-
-  \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook

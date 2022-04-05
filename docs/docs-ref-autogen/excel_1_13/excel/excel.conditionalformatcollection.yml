@@ -4,7 +4,7 @@ uid: 'excel!Excel.ConditionalFormatCollection:class'
 package: excel!
 fullName: Excel.ConditionalFormatCollection
 summary: Represents a collection of all the conditional formats that are overlap the range.
-remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,7 +42,7 @@ methods:
     fullName: add(type)
     summary: Adds a new conditional format to the collection at the first/top priority.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -85,7 +85,7 @@ methods:
     package: excel!
     fullName: add(typeString)
     summary: Adds a new conditional format to the collection at the first/top priority.
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,7 +107,7 @@ methods:
     fullName: clearAll()
     summary: Clears all conditional formats active on the current specified range.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -142,7 +142,7 @@ methods:
     fullName: getCount()
     summary: Returns the number of conditional formats in the workbook.
     remarks: |-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
@@ -172,7 +172,7 @@ methods:
     fullName: getItem(id)
     summary: Returns a conditional format for the given ID.
     remarks: |-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
@@ -205,7 +205,7 @@ methods:
     fullName: getItemAt(index)
     summary: Returns a conditional format at the given index.
     remarks: >-
-      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples

@@ -3,7 +3,7 @@ name: Excel.IconCollections
 uid: 'excel!Excel.IconCollections:interface'
 package: excel!
 fullName: Excel.IconCollections
-summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 remarks: ''
 isPreview: false
 isDeprecated: false

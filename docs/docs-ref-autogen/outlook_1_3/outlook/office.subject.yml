@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.Subject
 summary: Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -31,7 +31,7 @@ methods:
       The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or
       message.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -73,7 +73,7 @@ methods:
       The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
       message.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -124,7 +124,7 @@ methods:
       message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
       place.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -191,7 +191,7 @@ methods:
       message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
       place.
     remarks: >-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

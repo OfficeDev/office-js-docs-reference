@@ -4,7 +4,7 @@ uid: 'excel!Excel.ChartMapLabelStrategy:enum'
 package: excel!
 fullName: Excel.ChartMapLabelStrategy
 summary: Represents the region level of a chart series layout. This only applies to region map charts.
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

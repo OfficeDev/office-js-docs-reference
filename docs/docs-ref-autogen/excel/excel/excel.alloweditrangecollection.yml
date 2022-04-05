@@ -7,9 +7,7 @@ summary: >-
   Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet
   protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing
   of a specific range, while maintaining protection on the rest of the worksheet.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -49,9 +47,7 @@ methods:
       Adds an `AllowEditRange` object to the collection. Worksheet protection must be disabled or paused for this method
       to work properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied`
       error and the add operation fails.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,9 +70,7 @@ methods:
     package: excel!
     fullName: getCount()
     summary: Returns the number of `AllowEditRange` objects in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -89,9 +83,7 @@ methods:
     package: excel!
     fullName: getItem(key)
     summary: Gets the `AllowEditRange` object by its title.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,9 +102,7 @@ methods:
     package: excel!
     fullName: getItemAt(index)
     summary: Returns an `AllowEditRange` object by its index in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -129,9 +119,7 @@ methods:
     package: excel!
     fullName: getItemOrNullObject(key)
     summary: Gets the `AllowEditRange` object by its title.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -222,9 +210,7 @@ methods:
       `UnsupportedOperation` error and fails to pause protection for the range. If the password does not match any
       `AllowEditRange` objects in the collection, then this method throws a `BadPassword` error and fails to pause
       protection for any range in the collection.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

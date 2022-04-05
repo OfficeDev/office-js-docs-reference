@@ -6,9 +6,7 @@ fullName: Word.CommentReplyCollection
 summary: >-
   Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment
   replies in one comment thread.
-remarks: >-
-  \[ [API set: WordApiOnline BETA (PREVIEW
-  ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -46,8 +44,8 @@ methods:
     fullName: getFirst()
     summary: Gets the first comment reply in the collection. Throws an error if this collection is empty.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,8 +59,8 @@ methods:
     fullName: getFirstOrNullObject()
     summary: 'Gets the first comment reply in the collection. If the collection is empty, returns a null object.'
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:
@@ -76,8 +74,8 @@ methods:
     fullName: getItem(index)
     summary: Gets a comment reply object by its index in the collection.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
     isPreview: true
     isDeprecated: false
     syntax:

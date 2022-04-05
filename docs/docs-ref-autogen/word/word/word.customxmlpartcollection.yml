@@ -4,7 +4,7 @@ uid: 'word!Word.CustomXmlPartCollection:class'
 package: word!
 fullName: Word.CustomXmlPartCollection
 summary: 'Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.'
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -41,9 +41,7 @@ methods:
     package: word!
     fullName: add(xml)
     summary: Adds a new custom XML part to the document.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,9 +58,7 @@ methods:
     package: word!
     fullName: getByNamespace(namespaceUri)
     summary: Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -79,9 +75,7 @@ methods:
     package: word!
     fullName: getCount()
     summary: Gets the number of items in the collection.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -94,9 +88,7 @@ methods:
     package: word!
     fullName: getItem(id)
     summary: Gets a custom XML part based on its ID. Read only.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -113,9 +105,7 @@ methods:
     package: word!
     fullName: getItemOrNullObject(id)
     summary: Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

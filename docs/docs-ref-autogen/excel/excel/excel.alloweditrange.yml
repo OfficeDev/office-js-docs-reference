@@ -7,9 +7,7 @@ summary: >-
   Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
   When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range,
   while maintaining protection on the rest of the worksheet.
-remarks: >-
-  \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-  \]
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -22,9 +20,7 @@ properties:
       Specifies the range associated with the object. Worksheet protection must be disabled or paused for this method to
       work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and
       fails to set the range.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -50,9 +46,7 @@ properties:
     package: excel!
     fullName: isPasswordProtected
     summary: Specifies if the `AllowEditRange` is password protected.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -68,9 +62,7 @@ properties:
       properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails
       to set the title. If there is already an existing `AllowEditRange` with the same string, or if the string is
       `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,9 +78,7 @@ methods:
       Deletes this object from the `AllowEditRangeCollection`<!-- -->. Worksheet protection must be disabled or paused
       for this method to work properly. If worksheet protection is enabled and not paused, this method throws an
       `AccessDenied` error and fails the delete operation.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -173,9 +163,7 @@ methods:
       worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause
       protection for the range. If the password is incorrect, then this method throws an `InvalidArgument` error and
       fails to pause protection for the range.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -237,9 +225,7 @@ methods:
       `null` will remove password protection from the `AllowEditRange`<!-- -->. Worksheet protection must be disabled or
       paused for this method to work properly. If worksheet protection is enabled and not paused, then this method
       throws an `AccessDenied` error and the set operation fails.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

@@ -4,7 +4,7 @@ uid: 'word!Word.CustomXmlPart:class'
 package: word!
 fullName: Word.CustomXmlPart
 summary: Represents a custom XML part.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
 type: class
@@ -28,9 +28,7 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the custom XML part. Read only.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -42,9 +40,7 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part. Read only.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,9 +53,7 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -73,8 +67,7 @@ methods:
     fullName: 'deleteAttribute(xpath, namespaceMappings, name)'
     summary: Deletes an attribute with the given name from the element identified by xpath.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -122,8 +115,7 @@ methods:
     fullName: 'deleteElement(xpath, namespaceMappings)'
     summary: Deletes the element identified by xpath.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -167,9 +159,7 @@ methods:
     package: word!
     fullName: getXml()
     summary: Gets the full XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -183,8 +173,7 @@ methods:
     fullName: 'insertAttribute(xpath, namespaceMappings, name, value)'
     summary: Inserts an attribute with the given name and value to the element identified by xpath.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -235,8 +224,7 @@ methods:
     fullName: 'insertElement(xpath, xml, namespaceMappings, index)'
     summary: Inserts the given XML under the parent element identified by xpath at child position index.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -356,8 +344,7 @@ methods:
     fullName: 'query(xpath, namespaceMappings)'
     summary: Queries the XML content of the custom XML part.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -401,9 +388,7 @@ methods:
     package: word!
     fullName: setXml(xml)
     summary: Sets the full XML content of the custom XML part.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -474,8 +459,7 @@ methods:
     fullName: 'updateAttribute(xpath, namespaceMappings, name, value)'
     summary: Updates the value of an attribute with the given name of the element identified by xpath.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for
@@ -526,8 +510,7 @@ methods:
     fullName: 'updateElement(xpath, xml, namespaceMappings)'
     summary: Updates the XML of the element identified by xpath.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       If any element in the tree has an xmlns attribute (whose value is typically, but not always, a URI), an alias for

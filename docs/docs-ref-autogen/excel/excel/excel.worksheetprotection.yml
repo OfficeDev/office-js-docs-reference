@@ -4,7 +4,7 @@ uid: 'excel!Excel.WorksheetProtection:class'
 package: excel!
 fullName: Excel.WorksheetProtection
 summary: Represents the protection of a worksheet object.
-remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,9 +18,7 @@ properties:
       objects, which work with worksheet protection properties. When worksheet protection is enabled, an
       `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest
       of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -32,9 +30,7 @@ properties:
     package: excel!
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -60,9 +56,7 @@ properties:
     package: excel!
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -74,9 +68,7 @@ properties:
     package: excel!
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -88,7 +80,7 @@ properties:
     package: excel!
     fullName: options
     summary: Specifies the protection options for the worksheet.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +92,7 @@ properties:
     package: excel!
     fullName: protected
     summary: Specifies if the worksheet is protected.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,9 +106,7 @@ properties:
     summary: >-
       Specifies the protection options settings saved in the worksheet. This will return the same
       `WorksheetProtectionOptions` object regardless of the worksheet protection state.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -131,9 +121,7 @@ methods:
     summary: >-
       Specifies if the password can be used to unlock worksheet protection. This method does not change the worksheet
       protection state.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -220,9 +208,7 @@ methods:
       Pauses worksheet protection for the given worksheet object for the user in a given session. If the password is
       incorrect, then this method throws an `UnsupportedOperation` error and fails to pause protection. This method does
       not change the protection state if worksheet protection is not enabled or already paused.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -241,7 +227,7 @@ methods:
     summary: Protects a worksheet. Fails if the worksheet has already been protected.
     remarks: >-
       \[ [API set: ExcelApi 1.2 for options; 1.7 for
-      password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -308,9 +294,7 @@ methods:
       Resumes worksheet protection for the given worksheet object for the user in a given session. Worksheet protection
       must be paused for this method to work. If worksheet protection is not paused, then this method will not change
       the protection state of the worksheet.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -328,9 +312,7 @@ methods:
       be enabled and paused for this method to work properly. If worksheet protection is disabled, this method throws an
       `InvalidOperation` error and fails to change the password. If worksheet protection is enabled and not paused, this
       method throws an `AccessDenied` error and fails to change the password.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -366,8 +348,7 @@ methods:
     fullName: unprotect(password)
     summary: Unprotects a worksheet.
     remarks: >-
-      \[ [API set: ExcelApi 1.7 for password](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi 1.7 for password](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -419,9 +400,7 @@ methods:
       Change the worksheet protection options associated to the `WorksheetProtection` object. Worksheet protection must
       be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused, this
       method throws an `AccessDenied` error and fails to change the worksheet protection options.
-    remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

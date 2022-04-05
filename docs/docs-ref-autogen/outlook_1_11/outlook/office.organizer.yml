@@ -7,7 +7,7 @@ summary: >-
   Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object
   provides a method to get the organizer value of an appointment in an Outlook add-in.
 remarks: >-
-  \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -31,7 +31,7 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
       property.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -94,7 +94,7 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object in the `asyncResult.value`
       property.
     remarks: >-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

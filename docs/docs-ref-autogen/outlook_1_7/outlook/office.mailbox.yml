@@ -189,7 +189,7 @@ properties:
       object (introduced in requirement set 1.8). For more information, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -291,7 +291,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -374,7 +374,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -424,7 +424,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -525,7 +525,7 @@ methods:
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -884,7 +884,7 @@ methods:
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
     remarks: >-
-      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1056,7 +1056,7 @@ methods:
 
       **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1166,7 +1166,7 @@ methods:
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
     remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
-      support](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1518,7 +1518,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -1563,7 +1563,7 @@ methods:
       section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.7/office.context.mailbox#events)<!--
       -->.
     remarks: >-
-      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

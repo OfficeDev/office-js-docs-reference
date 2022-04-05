@@ -8,7 +8,7 @@ summary: |-
 
   **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
 remarks: >-
-  \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+  \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -29,7 +29,7 @@ methods:
     fullName: 'clearAsync(options, callback)'
     summary: Clears all session data key-value pairs.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -85,7 +85,7 @@ methods:
     fullName: clearAsync(callback)
     summary: Clears all session data key-value pairs.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -115,7 +115,7 @@ methods:
     fullName: getAllAsync(callback)
     summary: Gets all session data key-value pairs.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -164,7 +164,7 @@ methods:
     fullName: 'getAsync(name, callback)'
     summary: Gets the session data value of the specified key.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -218,7 +218,7 @@ methods:
     fullName: 'removeAsync(name, options, callback)'
     summary: Removes a session data key-value pair.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -280,7 +280,7 @@ methods:
     fullName: 'removeAsync(name, callback)'
     summary: Removes a session data key-value pair.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -316,7 +316,7 @@ methods:
 
       **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -384,7 +384,7 @@ methods:
 
       **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
-      \[ [API set: Mailbox 1.11](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

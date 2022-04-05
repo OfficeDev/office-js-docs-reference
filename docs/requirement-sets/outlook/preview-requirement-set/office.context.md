@@ -353,4 +353,4 @@ Provides objects and methods that you can use to create and manipulate UI compon
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
-|[Applicable Outlook mode](/office/dev/add-ins/../outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|

@@ -16,7 +16,7 @@ properties:
     summary: >-
       Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range
       doesn't have a uniform formula hidden setting.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,7 +30,7 @@ properties:
     summary: >-
       Specifies if Excel locks the cells in the object. A `null` value indicates that the entire range doesn't have a
       uniform lock setting.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

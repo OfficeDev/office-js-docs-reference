@@ -6,7 +6,7 @@ fullName: Excel.Interfaces.ChartFormatStringLoadOptions
 summary: >-
   Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle`
   object.
-remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,7 +30,7 @@ properties:
     package: excel!
     fullName: font
     summary: 'Represents the font attributes, such as font name, font size, and color of a chart characters object.'
-    remarks: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -2,7 +2,7 @@
   "name": "generate-docs",
   "version": "1.0.0",
   "dependencies": {
-    "@microsoft/api-extractor": "^7.19.0",
-    "@microsoft/api-documenter": "^7.15.0"
+    "@microsoft/api-extractor": "^7.20.0",
+    "@microsoft/api-documenter": "^7.17.1"
   }
 }

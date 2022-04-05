@@ -16,7 +16,7 @@ properties:
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
       succeeded, and its result is written to the Value field. The error is always in the English locale.
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,7 +30,7 @@ properties:
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
       property is not set).
-    remarks: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

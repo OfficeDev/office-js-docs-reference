@@ -16,7 +16,7 @@ properties:
     summary: >-
       HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named
       HTML color (e.g., "orange"). Value is "" (an empty string) if no border is present or set.
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -30,7 +30,7 @@ properties:
     summary: >-
       HTML color code representing the fill color, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
       "orange").
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ properties:
     package: excel!
     fullName: gradientFill
     summary: Specifies if the data bar has a gradient.
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -28,7 +28,7 @@ properties:
 
       **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
     remarks: >-
-      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission

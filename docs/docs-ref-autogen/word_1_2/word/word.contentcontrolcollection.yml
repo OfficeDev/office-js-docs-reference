@@ -8,7 +8,7 @@ summary: >-
   bounded and potentially labeled regions in a document that serve as containers for specific types of content.
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
   only rich text content controls are supported.
-remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -48,7 +48,7 @@ methods:
       Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in
       this collection.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -85,7 +85,7 @@ methods:
     fullName: getByTag(tag)
     summary: Gets the content controls that have the specified tag.
     remarks: >-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -127,7 +127,7 @@ methods:
     fullName: getByTitle(title)
     summary: Gets the content controls that have the specified title.
     remarks: |-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -173,7 +173,7 @@ methods:
     package: word!
     fullName: getItem(index)
     summary: Gets a content control by its index in the collection.
-    remarks: '\[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

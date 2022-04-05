@@ -16,7 +16,7 @@ properties:
     package: excel!
     fullName: criteria
     summary: The criteria of the color scale. Midpoint is optional when using a two point color scale.
-    remarks: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

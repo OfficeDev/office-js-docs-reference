@@ -237,7 +237,7 @@ This extension point puts buttons on the ribbon for the form that's displayed to
 
 ### AppointmentAttendeeCommandSurface
 
-This extension point puts buttons on the ribbon for the form that's displayed to the attendee of the meeting. 
+This extension point puts buttons on the ribbon for the form that's displayed to the attendee of the meeting.
 
 #### Child elements
 
@@ -403,7 +403,7 @@ This extension point adds an event handler for a specified event. For more infor
 This extension point adds a contextual add-in activation on a specified entity type.
 
 > [!IMPORTANT]
-> Registering [Mailbox](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox#events) and [Item](/office/dev/add-ins/objectmodel/preview-requirement-set/office.context.mailbox.item#events) events is not available with this extension point.
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 The containing [VersionOverrides](versionoverrides.md) element must have an `xsi:type` attribute value of `VersionOverridesV1_1`.
 

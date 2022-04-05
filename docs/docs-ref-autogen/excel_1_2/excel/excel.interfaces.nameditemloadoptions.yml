@@ -6,7 +6,7 @@ fullName: Excel.Interfaces.NamedItemLoadOptions
 summary: >-
   Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
   below), range object, or a reference to a range. This object can be used to obtain range object associated with names.
-remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -30,7 +30,7 @@ properties:
     package: excel!
     fullName: name
     summary: The name of the object.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +44,7 @@ properties:
     summary: Specifies the type of the value returned by the name's formula. See `Excel.NamedItemType` for details.
     remarks: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +56,7 @@ properties:
     package: excel!
     fullName: value
     summary: 'Represents the value computed by the name''s formula. For a named range, will return the range address.'
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +68,7 @@ properties:
     package: excel!
     fullName: visible
     summary: Specifies if the object is visible.
-    remarks: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

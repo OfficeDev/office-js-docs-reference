@@ -4,7 +4,7 @@ uid: 'excel!Excel.SearchCriteria:interface'
 package: excel!
 fullName: Excel.SearchCriteria
 summary: Represents the search criteria to be used.
-remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,7 +17,7 @@ properties:
       Specifies if the match needs to be complete or partial. A complete match matches the entire contents of the cell.
       A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar`
       and `scatter`<!-- -->). Default is `false` (partial).
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
     package: excel!
     fullName: matchCase
     summary: Specifies if the match is case-sensitive. Default is `false` (case-insensitive).
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -41,7 +41,7 @@ properties:
     package: excel!
     fullName: searchDirection
     summary: Specifies the search direction. Default is forward. See `Excel.SearchDirection`<!-- -->.
-    remarks: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
