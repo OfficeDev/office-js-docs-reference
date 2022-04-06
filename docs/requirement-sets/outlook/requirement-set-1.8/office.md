@@ -124,6 +124,63 @@ Specifies the event associated with an event handler.
 ---
 ---
 
+#### HostType: String
+
+Specifies the host Office application in which the add-in is running.
+
+##### Type
+
+*   String
+
+##### Properties
+
+| Name | Type | Description | Minimum requirement set |
+|---|---|---|:---:|
+|`Outlook`| String | The Office host is Microsoft Outlook. | 1.5 |
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read |
+
+<br>
+
+---
+---
+
+#### PlatformType: String
+
+Specifies the OS or other platform on which the Office host application is running.
+
+##### Type
+
+*   String
+
+##### Properties
+
+| Name | Type | Description | Minimum requirement set |
+|---|---|---|:---:|
+|`Android`| String | The platform is an Android device. | 1.5 |
+|`iOS`| String | The platform is an iOS device. | 1.5 |
+|`Mac`| String | The platform is Mac. | 1.5 |
+|`OfficeOnline`| String | The platform is Office on the web (in a browser). | 1.5 |
+|`PC`| String | The platform is PC (Windows). | 1.5 |
+|`Universal`| String | The platform is WinRT. | 1.5 |
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read |
+
+<br>
+
+---
+---
+
 #### SourceProperty: String
 
 Specifies the source of the data returned by the invoked method.
