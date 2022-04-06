@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.5
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.5.
-ms.date: 04/05/2022
+ms.date: 04/06/2022
 ms.localizationpriority: medium
 ---
 
@@ -20,6 +20,7 @@ Requirement set 1.5 includes all of the features of [requirement set 1.4](../req
 - Added support for calling [REST APIs](/office/dev/add-ins/outlook/use-rest-api).
 - Added ability to mark an attachment as inline.
 - Added ability to close a task pane or dialog.
+- Added support for the [Office.context.diagnostics](office.context.md#diagnostics-contextinformation) property and its related objects.
 
 ### Change log
 
