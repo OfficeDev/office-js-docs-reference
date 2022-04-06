@@ -1,7 +1,7 @@
 ---
 title: Office namespace - requirement set 1.9
 description: Office namespace members available for Outlook add-ins using Mailbox API requirement set 1.9.
-ms.date: 05/17/2021
+ms.date: 04/06/2022
 ms.localizationpriority: medium
 ---
 
@@ -29,6 +29,8 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 | [AsyncResultStatus](#asyncresultstatus-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [CoercionType](#coerciontype-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [EventType](#eventtype-string) | Compose<br>Read | String | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| [HostType](#hosttype-string) | Compose<br>Read | String | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| [PlatformType](#platformtype-string) | Compose<br>Read | String | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [SourceProperty](#sourceproperty-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 
 ## Namespaces
@@ -116,6 +118,63 @@ Specifies the event associated with an event handler.
 |---|---|
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
+
+<br>
+
+---
+---
+
+#### HostType: String
+
+Specifies the host Office application in which the add-in is running.
+
+##### Type
+
+*   String
+
+##### Properties
+
+| Name | Type | Description | Minimum requirement set |
+|---|---|---|:---:|
+|`Outlook`| String | The Office host is Microsoft Outlook. | 1.5 |
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read |
+
+<br>
+
+---
+---
+
+#### PlatformType: String
+
+Specifies the OS or other platform on which the Office host application is running.
+
+##### Type
+
+*   String
+
+##### Properties
+
+| Name | Type | Description | Minimum requirement set |
+|---|---|---|:---:|
+|`Android`| String | The platform is an Android device. | 1.5 |
+|`iOS`| String | The platform is an iOS device. | 1.5 |
+|`Mac`| String | The platform is Mac. | 1.5 |
+|`OfficeOnline`| String | The platform is Office on the web (in a browser). | 1.5 |
+|`PC`| String | The platform is PC (Windows). | 1.5 |
+|`Universal`| String | The platform is WinRT. | 1.5 |
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5 |
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read |
 
 <br>
 
