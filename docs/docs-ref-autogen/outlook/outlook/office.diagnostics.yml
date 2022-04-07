@@ -13,6 +13,11 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  Starting with Mailbox requirement set 1.5, you can also use the
+  [Office.context.diagnostics](https://docs.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
+  property to get similar information.
 isPreview: false
 isDeprecated: false
 type: interface

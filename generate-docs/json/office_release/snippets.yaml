@@ -3607,6 +3607,10 @@
             });
         });
     }
+'Office.HostType:enum':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
 'Office.MatrixBinding#columnCount:member':
   - |-
     function showBindingColumnCount() {
@@ -3641,6 +3645,10 @@
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+'Office.PlatformType:enum':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Platform: " + contextInfo.platform);
 'Office.Settings#addHandlerAsync:member(2)':
   - |-
     function addSelectionChangedEventHandler() {
