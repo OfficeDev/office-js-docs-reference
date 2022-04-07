@@ -806,7 +806,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType:enum",
-              "docComment": "/**\n * Specifies the shape type for a `GeometricShape` object.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Specifies the shape type for a `GeometricShape` object.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

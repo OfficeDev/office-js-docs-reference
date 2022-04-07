@@ -3,13 +3,10 @@ name: PowerPoint.GeometricShapeType
 uid: 'powerpoint!PowerPoint.GeometricShapeType:enum'
 package: powerpoint!
 fullName: PowerPoint.GeometricShapeType
-summary: >-
-  Specifies the shape type for a `GeometricShape` object.
-
-
-  * \[ [API set: PowerPointApi BETA (PREVIEW
+summary: Specifies the shape type for a `GeometricShape` object.
+remarks: >-
+  \[ [API set: PowerPointApi BETA (PREVIEW
   ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-remarks: ''
 isPreview: true
 isDeprecated: false
 fields:

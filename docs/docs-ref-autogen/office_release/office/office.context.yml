@@ -98,24 +98,33 @@ properties:
     package: office!
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
-    remarks: ''
+    remarks: >-
+      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
+      requirement sets, you can use the
+      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      property to get similar information.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var contextInfo = Office.context.diagnostics;
+
+      console.log("Office application: " + contextInfo.host);
+
+      console.log("Office version: " + contextInfo.version);
+
+      console.log("Platform: " + contextInfo.platform);
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'diagnostics: ContextInformation;'
       return:
         type: '<xref uid="office!Office.ContextInformation:interface" />'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var contextInfo = Office.context.diagnostics;
-          console.log("Office application: " + contextInfo.host);
-          console.log("Office version: " + contextInfo.version);
-          console.log("Platform: " + contextInfo.platform);
-          ```
   - name: displayLanguage
     uid: 'office!Office.Context#displayLanguage:member'
     package: office!
@@ -217,13 +226,13 @@ properties:
     uid: 'office!Office.Context#host:member'
     package: office!
     fullName: host
-    summary: >-
-      Contains the Office application host in which the add-in is running.
-
-
-      **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets,
-      you can use the `Office.context.diagnostics` property to get the host.
-    remarks: ''
+    summary: Contains the Office application host in which the add-in is running.
+    remarks: >-
+      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all Mailbox
+      requirement sets, you can use the
+      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      property to get similar information.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -319,13 +328,13 @@ properties:
     uid: 'office!Office.Context#platform:member'
     package: office!
     fullName: platform
-    summary: >-
-      Provides the platform on which the add-in is running.
-
-
-      **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets,
-      you can use the `Office.context.diagnostics` property to get the platform.
-    remarks: ''
+    summary: Provides the platform on which the add-in is running.
+    remarks: >-
+      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox
+      requirement sets, you can use the
+      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      property to get similar information.
     isPreview: false
     isDeprecated: false
     syntax:

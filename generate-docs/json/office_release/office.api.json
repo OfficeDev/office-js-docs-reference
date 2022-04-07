@@ -4029,7 +4029,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#diagnostics:member",
-                  "docComment": "/**\n * Gets information about the environment in which the add-in is running.\n */\n",
+                  "docComment": "/**\n * Gets information about the environment in which the add-in is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use the {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} property to get similar information.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4109,7 +4109,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#host:member",
-                  "docComment": "/**\n * Contains the Office application host in which the add-in is running.\n *\n * **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the host.\n */\n",
+                  "docComment": "/**\n * Contains the Office application host in which the add-in is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all Mailbox requirement sets, you can use the {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} property to get similar information.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4216,7 +4216,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#platform:member",
-                  "docComment": "/**\n * Provides the platform on which the add-in is running.\n *\n * **Important**: In Outlook, this property is available from requirement set 1.5. For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the platform.\n */\n",
+                  "docComment": "/**\n * Provides the platform on which the add-in is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox requirement sets, you can use the {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} property to get similar information.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4375,7 +4375,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.ContextInformation:interface",
-              "docComment": "/**\n * Provides information about the environment in which the add-in is running.\n */\n",
+              "docComment": "/**\n * Provides information about the environment in which the add-in is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. For all Mailbox requirement sets, you can use the {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} property to get similar information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -13473,7 +13473,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "office!Office.HostType:enum",
-              "docComment": "/**\n * Specifies the host Office application in which the add-in is running.\n */\n",
+              "docComment": "/**\n * Specifies the host Office application in which the add-in is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -17967,7 +17967,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "office!Office.PlatformType:enum",
-              "docComment": "/**\n * Specifies the OS or other platform on which the Office host application is running.\n */\n",
+              "docComment": "/**\n * Specifies the OS or other platform on which the Office host application is running.\n *\n * @remarks\n *\n * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -17997,7 +17997,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.PlatformType.iOS:member",
-                  "docComment": "/**\n * The platform an iOS device.\n */\n",
+                  "docComment": "/**\n * The platform is an iOS device.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
