@@ -3,17 +3,14 @@ name: Office.MailboxEnums.AttachmentStatus
 uid: 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentStatus
-summary: >-
-  Specifies whether an attachment was added to or removed from an item.
-
-
-  * \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Specifies whether an attachment was added to or removed from an item.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

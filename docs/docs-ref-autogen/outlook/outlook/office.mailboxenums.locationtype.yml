@@ -3,17 +3,14 @@ name: Office.MailboxEnums.LocationType
 uid: 'outlook!Office.MailboxEnums.LocationType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.LocationType
-summary: >-
-  Specifies an appointment location's type.
-
-
-  * \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Specifies an appointment location's type.
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

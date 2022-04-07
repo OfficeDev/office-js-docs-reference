@@ -3,17 +3,14 @@ name: Office.MailboxEnums.RecurrenceTimeZone
 uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
 package: outlook!
 fullName: Office.MailboxEnums.RecurrenceTimeZone
-summary: >-
-  Specifies the time zone applied to the recurrence.
-
-
-  * \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Specifies the time zone applied to the recurrence.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

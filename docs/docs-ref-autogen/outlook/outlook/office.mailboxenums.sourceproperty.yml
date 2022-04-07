@@ -3,17 +3,14 @@ name: Office.MailboxEnums.SourceProperty
 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
 package: outlook!
 fullName: Office.MailboxEnums.SourceProperty
-summary: >-
-  Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
-
-
-  * \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
+remarks: >-
+  \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

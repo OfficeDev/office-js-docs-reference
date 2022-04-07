@@ -6,18 +6,12 @@ fullName: Office.MailboxEnums.InfobarActionType
 summary: >-
   Action types supported by
   [Office.EventType.InfobarClicked](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
-
-
-  * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-remarks: ''
+remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
   - name: Dismiss
     uid: 'outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member'
     package: outlook!
-    summary: |-
-      Dismiss action was selected.
-
-      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    summary: Dismiss action was selected.
     value: '1'

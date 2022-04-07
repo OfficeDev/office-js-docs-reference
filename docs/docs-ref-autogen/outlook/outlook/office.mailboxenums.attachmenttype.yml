@@ -3,14 +3,11 @@ name: Office.MailboxEnums.AttachmentType
 uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AttachmentType
-summary: >-
-  Specifies an attachment's type.
-
-
-  * **[Applicable Outlook
+summary: Specifies an attachment's type.
+remarks: >-
+  **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

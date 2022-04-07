@@ -13,9 +13,8 @@ summary: >-
 
   **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add
   or remove categories.
-
-
-  * \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+remarks: >-
+  \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Minimum permission
@@ -26,7 +25,6 @@ summary: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
