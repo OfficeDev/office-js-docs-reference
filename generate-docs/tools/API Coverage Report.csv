@@ -6029,7 +6029,7 @@ Office.Context,N/A,Class,Good,false
 Office.Context,auth,Method,Fine,false
 Office.Context,commerceAllowed,Method,Good,false
 Office.Context,contentLanguage,Method,Good,false
-Office.Context,diagnostics,Method,Fine,true
+Office.Context,diagnostics,Method,Good,false
 Office.Context,displayLanguage,Method,Good,false
 Office.Context,document,Method,Fine,true
 Office.Context,host,Method,Good,false
@@ -6041,7 +6041,7 @@ Office.Context,requirements,Method,Fine,false
 Office.Context,roamingSettings,Method,Good,false
 Office.Context,touchEnabled,Method,Good,false
 Office.Context,ui,Method,Fine,false
-Office.ContextInformation,N/A,Class,Fine,false
+Office.ContextInformation,N/A,Class,Good,false
 Office.ContextInformation,host,Method,Fine,true
 Office.ContextInformation,platform,Method,Fine,true
 Office.ContextInformation,version,Method,Fine,true
@@ -6217,7 +6217,7 @@ Office.GoToType,Slide,EnumField,Fine,false
 Office.Group,N/A,Class,Fine,false
 Office.Group,controls,Method,Good,false
 Office.Group,id,Method,Fine,false
-Office.HostType,N/A,Class,Fine,false
+Office.HostType,N/A,Class,Good,true
 Office.HostType,Access,EnumField,Good,false
 Office.HostType,Excel,EnumField,Fine,false
 Office.HostType,OneNote,EnumField,Fine,false
@@ -6259,9 +6259,9 @@ Office.OfficeTheme,bodyBackgroundColor,Method,Fine,false
 Office.OfficeTheme,bodyForegroundColor,Method,Fine,false
 Office.OfficeTheme,controlBackgroundColor,Method,Fine,false
 Office.OfficeTheme,controlForegroundColor,Method,Fine,false
-Office.PlatformType,N/A,Class,Fine,false
+Office.PlatformType,N/A,Class,Good,true
 Office.PlatformType,Android,EnumField,Fine,false
-Office.PlatformType,iOS,EnumField,Poor,false
+Office.PlatformType,iOS,EnumField,Fine,false
 Office.PlatformType,Mac,EnumField,Poor,false
 Office.PlatformType,OfficeOnline,EnumField,Fine,false
 Office.PlatformType,PC,EnumField,Poor,false

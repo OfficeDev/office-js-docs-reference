@@ -3089,6 +3089,14 @@ Office.File#getSliceAsync:member(1):
             });
         });
     }
+Office.HostType:enum:
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
+Office.PlatformType:enum:
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Platform: " + contextInfo.platform);
 Office.select:function(1):
   - |-
     // The following code example uses the select method to retrieve a binding with the id "cities" from
