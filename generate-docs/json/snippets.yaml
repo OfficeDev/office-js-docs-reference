@@ -14120,6 +14120,10 @@
         console.error(asyncResult.error);
       }
     });
+'Office.HostType:enum':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Office application: " + contextInfo.host);
 'Office.InternetHeaders#getAsync:member(1)':
   - >-
     // Link to full sample:
@@ -17026,6 +17030,10 @@
         console.log("Type: " + JSON.stringify(phoneNumber.type));
         console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
     });
+'Office.PlatformType:enum':
+  - |-
+    var contextInfo = Office.context.diagnostics;
+    console.log("Platform: " + contextInfo.platform);
 'Office.Recipients#addAsync:member(1)':
   - |-
     // The following example creates an array of EmailUser objects

@@ -4,7 +4,15 @@ uid: 'office!Office.HostType:enum'
 package: office!
 fullName: Office.HostType
 summary: Specifies the host Office application in which the add-in is running.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```javascript
+  var contextInfo = Office.context.diagnostics;
+  console.log("Office application: " + contextInfo.host);
+  ```
 isPreview: false
 isDeprecated: false
 fields:

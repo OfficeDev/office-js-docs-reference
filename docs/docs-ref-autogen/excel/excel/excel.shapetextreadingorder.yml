@@ -11,10 +11,10 @@ fields:
   - name: leftToRight
     uid: 'excel!Excel.ShapeTextReadingOrder.leftToRight:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ShapeTextReadingOrder.rightToLeft:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"RightToLeft"'

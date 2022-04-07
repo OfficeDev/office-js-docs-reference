@@ -252,10 +252,13 @@ methods:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
-      This method has the following additional signature:
+
+
+      * This method has the following additional signature:
+
 
       `set(properties: Visio.Page): void`
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

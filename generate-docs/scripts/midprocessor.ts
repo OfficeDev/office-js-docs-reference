@@ -225,6 +225,10 @@ function cleanUpJson(host: string) {
     } else {
         cleanJson = cleanUpRichApiJson(json);
     }
+
+    // Move API set in enum members from remarks, since YAML doesn't support them (neither API Documenter nor OPS schema).
+    cleanJson = cleanJson.replace(/("kind": "EnumMember",[\s\S]*?"docComment":.*)@remarks\\n/gm, `$1`);
+
     fsx.writeFileSync(`${jsonPath}/${fileName}`, cleanJson);
     console.log(`\nCompleted ${host}`);
     let currentRelease;

@@ -1295,7 +1295,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "onenote!OneNote.EventType:enum",
-              "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.9]\n */\n",
+              "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.9]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -1308,7 +1308,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.EventType.alterationSelected:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.9]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.9]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1329,7 +1329,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.EventType.inkSelectedForCorrection:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.9]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.9]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1350,7 +1350,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.EventType.reset:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.9]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.9]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1371,7 +1371,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.EventType.restrictionsCalculated:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.9]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.9]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7532,7 +7532,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.InsertLocation.after:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7553,7 +7553,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.InsertLocation.before:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19381,7 +19381,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ListType.bullet:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19402,7 +19402,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ListType.none:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19423,7 +19423,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ListType.number:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20946,7 +20946,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.completed:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20967,7 +20967,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.disabled:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20988,7 +20988,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.normal:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21009,7 +21009,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.outlookTask:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21030,7 +21030,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.taskNotSyncedYet:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21051,7 +21051,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.taskRemoved:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21072,7 +21072,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagStatus.unknown:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21108,7 +21108,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.address:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21129,7 +21129,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.contact:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21150,7 +21150,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.critical:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21171,7 +21171,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.idea:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21192,7 +21192,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.important:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21213,7 +21213,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.phoneNumber:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21234,7 +21234,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.question:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21255,7 +21255,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.toDo:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21276,7 +21276,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.toDoPriority1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21297,7 +21297,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.toDoPriority2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21318,7 +21318,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.unknown:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21339,7 +21339,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NoteTagType.website:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21375,7 +21375,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.aiueo:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21396,7 +21396,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.arabic:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21417,7 +21417,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.arabic1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21438,7 +21438,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.arabic2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21459,7 +21459,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.arabicLZ:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21480,7 +21480,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.bullet:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21501,7 +21501,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.cardtext:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21522,7 +21522,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chiManSty:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21543,7 +21543,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chnDbNum1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21564,7 +21564,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chnDbNum2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21585,7 +21585,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chnDbNum3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21606,7 +21606,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chnDbNum4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21627,7 +21627,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.chosung:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21648,7 +21648,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.circlenum:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21669,7 +21669,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.custom:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21690,7 +21690,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.daiueo:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21711,7 +21711,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.darabic:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21732,7 +21732,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.dbChar:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21753,7 +21753,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.dbNum1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21774,7 +21774,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.dbNum2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21795,7 +21795,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.dbNum3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21816,7 +21816,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.dbNum4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21837,7 +21837,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.diroha:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21858,7 +21858,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ganada:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21879,7 +21879,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.gb1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21900,7 +21900,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.gb2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21921,7 +21921,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.gb3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21942,7 +21942,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.gb4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21963,7 +21963,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hebrew1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21984,7 +21984,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hebrew2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22005,7 +22005,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hex:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22026,7 +22026,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hindi1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22047,7 +22047,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hindi2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22068,7 +22068,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.hindi3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22089,7 +22089,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.iroha:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22110,7 +22110,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.korDbNum1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22131,7 +22131,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.korDbNum2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22152,7 +22152,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.korDbNum3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22173,7 +22173,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.korDbNum4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22194,7 +22194,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.lcgreek:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22215,7 +22215,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.lcletter:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22236,7 +22236,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.lcroman:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22257,7 +22257,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.lcrus:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22278,7 +22278,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.lim:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22299,7 +22299,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.none:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22320,7 +22320,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.numInDash:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22341,7 +22341,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ordinal:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22362,7 +22362,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ordtext:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22383,7 +22383,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.sbChar:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22404,7 +22404,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.thai1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22425,7 +22425,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.thai2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22446,7 +22446,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.tpeDbNum1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22467,7 +22467,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.tpeDbNum2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22488,7 +22488,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.tpeDbNum3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22509,7 +22509,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.tpeDbNum4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22530,7 +22530,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ucgreek:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22551,7 +22551,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ucletter:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22572,7 +22572,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ucroman:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22593,7 +22593,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.ucrus:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22614,7 +22614,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.zodiac1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22635,7 +22635,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.zodiac2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22656,7 +22656,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.NumberType.zodiac3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26050,7 +26050,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.PageContentType.image:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26071,7 +26071,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.PageContentType.ink:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26092,7 +26092,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.PageContentType.other:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26113,7 +26113,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.PageContentType.outline:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28330,7 +28330,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.citation:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28351,7 +28351,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.code:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28372,7 +28372,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.dateTime:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28393,7 +28393,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading1:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28414,7 +28414,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading2:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28435,7 +28435,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading3:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28456,7 +28456,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading4:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28477,7 +28477,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading5:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28498,7 +28498,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.heading6:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28519,7 +28519,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.normal:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28540,7 +28540,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.noStyle:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28561,7 +28561,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.quote:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28582,7 +28582,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphStyle.title:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.8]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28618,7 +28618,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphType.image:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28639,7 +28639,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphType.ink:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28660,7 +28660,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphType.other:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28681,7 +28681,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphType.richText:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28702,7 +28702,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "onenote!OneNote.ParagraphType.table:member",
-                  "docComment": "/**\n * @remarks\n *\n * [Api set: OneNoteApi 1.1]\n */\n",
+                  "docComment": "/**\n *  *\n * [Api set: OneNoteApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

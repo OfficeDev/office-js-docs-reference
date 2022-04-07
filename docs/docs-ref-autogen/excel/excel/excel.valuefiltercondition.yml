@@ -20,6 +20,9 @@ fields:
 
       Required Criteria: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria:
       {`exclusive`<!-- -->}<!-- -->.
+
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Between"'
   - name: bottomN
     uid: 'excel!Excel.ValueFilterCondition.bottomN:member'
@@ -28,6 +31,8 @@ fields:
       In bottom N (`threshold`<!-- -->) \[items, percent, sum\] of value category.
 
       Required Criteria: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BottomN"'
   - name: equals
     uid: 'excel!Excel.ValueFilterCondition.equals:member'
@@ -38,6 +43,9 @@ fields:
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Optional Criteria: {`exclusive`<!-- -->}<!--
       -->.
+
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Equals"'
   - name: greaterThan
     uid: 'excel!Excel.ValueFilterCondition.greaterThan:member'
@@ -46,6 +54,8 @@ fields:
       Greater than comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: 'excel!Excel.ValueFilterCondition.greaterThanOrEqualTo:member'
@@ -54,6 +64,8 @@ fields:
       Greater than or equal to comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: 'excel!Excel.ValueFilterCondition.lessThan:member'
@@ -62,6 +74,8 @@ fields:
       Less than comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: 'excel!Excel.ValueFilterCondition.lessThanOrEqualTo:member'
@@ -70,6 +84,8 @@ fields:
       Less than or equal to comparator criterion.
 
       Required Criteria: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LessThanOrEqualTo"'
   - name: topN
     uid: 'excel!Excel.ValueFilterCondition.topN:member'
@@ -78,9 +94,14 @@ fields:
       In top N (`threshold`<!-- -->) \[items, percent, sum\] of value category.
 
       Required Criteria: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TopN"'
   - name: unknown
     uid: 'excel!Excel.ValueFilterCondition.unknown:member'
     package: excel!
-    summary: '`ValueFilterCondition` is unknown or unsupported.'
+    summary: |-
+      `ValueFilterCondition` is unknown or unsupported.
+
+      * \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

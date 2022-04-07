@@ -11,10 +11,10 @@ fields:
   - name: columns
     uid: 'excel!Excel.ChartPlotBy.columns:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Columns"'
   - name: rows
     uid: 'excel!Excel.ChartPlotBy.rows:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Rows"'

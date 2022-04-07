@@ -3,14 +3,17 @@ name: Office.MailboxEnums.RecurrenceType
 uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.RecurrenceType
-summary: Specifies the type of recurrence.
-remarks: >-
-  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Specifies the type of recurrence.
+
+
+  * \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

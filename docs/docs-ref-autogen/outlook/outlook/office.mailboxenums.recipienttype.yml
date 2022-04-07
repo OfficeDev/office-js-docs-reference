@@ -3,14 +3,17 @@ name: Office.MailboxEnums.RecipientType
 uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.RecipientType
-summary: Specifies the type of recipient for an appointment.
-remarks: >-
-  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Specifies the type of recipient for an appointment.
+
+
+  * \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

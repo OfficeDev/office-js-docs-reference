@@ -3,14 +3,17 @@ name: Office.MailboxEnums.ComposeType
 uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
-summary: Compose type.
-remarks: >-
-  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+summary: >-
+  Compose type.
+
+
+  * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

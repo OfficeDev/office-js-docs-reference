@@ -3,11 +3,14 @@ name: Office.MailboxEnums.ItemType
 uid: 'outlook!Office.MailboxEnums.ItemType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ItemType
-summary: Specifies an item's type.
-remarks: >-
-  **[Applicable Outlook
+summary: >-
+  Specifies an item's type.
+
+
+  * **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

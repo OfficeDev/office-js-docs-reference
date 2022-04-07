@@ -3,11 +3,14 @@ name: Office.MailboxEnums.EntityType
 uid: 'outlook!Office.MailboxEnums.EntityType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.EntityType
-summary: Specifies an entity's type.
-remarks: >-
-  **[Applicable Outlook
+summary: >-
+  Specifies an entity's type.
+
+
+  * **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+remarks: ''
 isPreview: false
 isDeprecated: false
 fields:

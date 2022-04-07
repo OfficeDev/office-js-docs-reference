@@ -656,7 +656,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ConnectorType.curve:member",
-                  "docComment": "/**\n * Curve connector type\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Curve connector type\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -677,7 +677,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ConnectorType.elbow:member",
-                  "docComment": "/**\n * Elbow connector type\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Elbow connector type\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -698,7 +698,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ConnectorType.straight:member",
-                  "docComment": "/**\n * Straight connector type\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Straight connector type\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -806,7 +806,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType:enum",
-              "docComment": "/**\n * Specifies the shape type for a `GeometricShape` object.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Specifies the shape type for a `GeometricShape` object.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -819,7 +819,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout1:member",
-                  "docComment": "/**\n * Callout: Line with Border and Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Line with Border and Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -840,7 +840,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout2:member",
-                  "docComment": "/**\n * Callout: Bent Line with Border and Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Bent Line with Border and Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -861,7 +861,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentBorderCallout3:member",
-                  "docComment": "/**\n * Callout: Double Bent Line with Border and Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Double Bent Line with Border and Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -882,7 +882,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentCallout1:member",
-                  "docComment": "/**\n * Callout: Line with Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Line with Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -903,7 +903,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentCallout2:member",
-                  "docComment": "/**\n * Callout: Bent Line with Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Bent Line with Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -924,7 +924,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.accentCallout3:member",
-                  "docComment": "/**\n * Callout: Double Bent Line with Accent Bar\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Double Bent Line with Accent Bar\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -945,7 +945,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonBackPrevious:member",
-                  "docComment": "/**\n * Action Button: Go Back or Previous\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Go Back or Previous\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -966,7 +966,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonBeginning:member",
-                  "docComment": "/**\n * Action Button: Go to Beginning\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Go to Beginning\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -987,7 +987,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonBlank:member",
-                  "docComment": "/**\n * Action Button: Blank\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Blank\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1008,7 +1008,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonDocument:member",
-                  "docComment": "/**\n * Action Button: Document\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Document\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1029,7 +1029,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonEnd:member",
-                  "docComment": "/**\n * Action Button: Go to End\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Go to End\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1050,7 +1050,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonForwardNext:member",
-                  "docComment": "/**\n * Action Button: Go Forward or Next\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Go Forward or Next\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1071,7 +1071,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonHelp:member",
-                  "docComment": "/**\n * Action Button: Help\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Help\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1092,7 +1092,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonHome:member",
-                  "docComment": "/**\n * Action Button: Go Home\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Go Home\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1113,7 +1113,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonInformation:member",
-                  "docComment": "/**\n * Action Button: Get Information\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Get Information\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1134,7 +1134,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonMovie:member",
-                  "docComment": "/**\n * Action Button: Video\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Video\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1155,7 +1155,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonReturn:member",
-                  "docComment": "/**\n * Action Button: Return\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Return\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1176,7 +1176,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.actionButtonSound:member",
-                  "docComment": "/**\n * Action Button: Sound\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Action Button: Sound\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1197,7 +1197,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.arc:member",
-                  "docComment": "/**\n * Arc\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arc\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1218,7 +1218,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.bentArrow:member",
-                  "docComment": "/**\n * Arrow: Bent\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Bent\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1239,7 +1239,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.bentUpArrow:member",
-                  "docComment": "/**\n * Arrow: Bent-Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Bent-Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1260,7 +1260,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.bevel:member",
-                  "docComment": "/**\n * Rectangle: Beveled\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Beveled\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1281,7 +1281,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.blockArc:member",
-                  "docComment": "/**\n * Block Arc\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Block Arc\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1302,7 +1302,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.borderCallout1:member",
-                  "docComment": "/**\n * Callout: Line\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Line\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1323,7 +1323,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.borderCallout2:member",
-                  "docComment": "/**\n * Callout: Bent Line\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Bent Line\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1344,7 +1344,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.borderCallout3:member",
-                  "docComment": "/**\n * Callout: Double Bent Line\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Double Bent Line\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1365,7 +1365,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.bracePair:member",
-                  "docComment": "/**\n * Double Brace\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Double Brace\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1386,7 +1386,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.bracketPair:member",
-                  "docComment": "/**\n * Double Bracket\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Double Bracket\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1407,7 +1407,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.callout1:member",
-                  "docComment": "/**\n * Callout: Line with No Border\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Line with No Border\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1428,7 +1428,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.callout2:member",
-                  "docComment": "/**\n * Callout: Bent Line with No Border\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Bent Line with No Border\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1449,7 +1449,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.callout3:member",
-                  "docComment": "/**\n * Callout: Double Bent Line with No Border\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Double Bent Line with No Border\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1470,7 +1470,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.can:member",
-                  "docComment": "/**\n * Cylinder\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Cylinder\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1491,7 +1491,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.chartPlus:member",
-                  "docComment": "/**\n * A Rectangle Divided Vertically and Horizontally into Four Quarters.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * A Rectangle Divided Vertically and Horizontally into Four Quarters.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1512,7 +1512,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.chartStar:member",
-                  "docComment": "/**\n * A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * A Rectangle Divided into Six Parts Along a Vertical Line and Diagonal Lines.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1533,7 +1533,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.chartX:member",
-                  "docComment": "/**\n * A Rectangle Divided into Four Parts Along Diagonal Lines.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * A Rectangle Divided into Four Parts Along Diagonal Lines.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1554,7 +1554,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.chevron:member",
-                  "docComment": "/**\n * Arrow: Chevron\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Chevron\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1575,7 +1575,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.chord:member",
-                  "docComment": "/**\n * Chord\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Chord\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1596,7 +1596,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.circularArrow:member",
-                  "docComment": "/**\n * Arrow: Circular\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Circular\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1617,7 +1617,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.cloud:member",
-                  "docComment": "/**\n * Cloud\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Cloud\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1638,7 +1638,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.cloudCallout:member",
-                  "docComment": "/**\n * Thought Bubble: Cloud\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Thought Bubble: Cloud\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1659,7 +1659,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.corner:member",
-                  "docComment": "/**\n * L-Shape\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * L-Shape\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1680,7 +1680,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.cornerTabs:member",
-                  "docComment": "/**\n * Four Right Triangles that Define a Rectangular Shape\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Four Right Triangles that Define a Rectangular Shape\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1701,7 +1701,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.cube:member",
-                  "docComment": "/**\n * Cube\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Cube\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1722,7 +1722,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.curvedDownArrow:member",
-                  "docComment": "/**\n * Arrow: Curved Down\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Curved Down\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1743,7 +1743,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.curvedLeftArrow:member",
-                  "docComment": "/**\n * Arrow: Curved Left\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Curved Left\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1764,7 +1764,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.curvedRightArrow:member",
-                  "docComment": "/**\n * Arrow: Curved Right\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Curved Right\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1785,7 +1785,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.curvedUpArrow:member",
-                  "docComment": "/**\n * Arrow: Curved Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Curved Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1806,7 +1806,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.decagon:member",
-                  "docComment": "/**\n * Decagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Decagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1827,7 +1827,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.diagonalStripe:member",
-                  "docComment": "/**\n * Diagonal Stripe\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Diagonal Stripe\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1848,7 +1848,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.diamond:member",
-                  "docComment": "/**\n * Diamond\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Diamond\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1869,7 +1869,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.dodecagon:member",
-                  "docComment": "/**\n * Dodecagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Dodecagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1890,7 +1890,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.donut:member",
-                  "docComment": "/**\n * Circle: Hollow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Circle: Hollow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1911,7 +1911,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.doubleWave:member",
-                  "docComment": "/**\n * Double Wave\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Double Wave\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1932,7 +1932,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.downArrow:member",
-                  "docComment": "/**\n * Arrow: Down\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Down\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1953,7 +1953,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.downArrowCallout:member",
-                  "docComment": "/**\n * Callout: Down Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Down Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1974,7 +1974,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.ellipse:member",
-                  "docComment": "/**\n * Oval\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Oval\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1995,7 +1995,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon:member",
-                  "docComment": "/**\n * Ribbon: Curved and Tilted Down\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Ribbon: Curved and Tilted Down\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2016,7 +2016,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.ellipseRibbon2:member",
-                  "docComment": "/**\n * Ribbon: Curved and Tilted Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Ribbon: Curved and Tilted Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2037,7 +2037,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartAlternateProcess:member",
-                  "docComment": "/**\n * Flowchart: Alternate Process\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Alternate Process\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2058,7 +2058,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartCollate:member",
-                  "docComment": "/**\n * Flowchart: Collate\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Collate\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2079,7 +2079,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartConnector:member",
-                  "docComment": "/**\n * Flowchart: Connector\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Connector\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2100,7 +2100,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartDecision:member",
-                  "docComment": "/**\n * Flowchart: Decision\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Decision\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2121,7 +2121,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartDelay:member",
-                  "docComment": "/**\n * Flowchart: Delay\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Delay\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2142,7 +2142,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartDisplay:member",
-                  "docComment": "/**\n * Flowchart: Display\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Display\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2163,7 +2163,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartDocument:member",
-                  "docComment": "/**\n * Flowchart: Document\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Document\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2184,7 +2184,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartExtract:member",
-                  "docComment": "/**\n * Flowchart: Extract\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Extract\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2205,7 +2205,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartInputOutput:member",
-                  "docComment": "/**\n * Flowchart: Data\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Data\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2226,7 +2226,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartInternalStorage:member",
-                  "docComment": "/**\n * Flowchart: Internal Storage\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Internal Storage\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2247,7 +2247,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDisk:member",
-                  "docComment": "/**\n * Flowchart: Magnetic Disk\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Magnetic Disk\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2268,7 +2268,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticDrum:member",
-                  "docComment": "/**\n * Flowchart: Direct Access Storage\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Direct Access Storage\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2289,7 +2289,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartMagneticTape:member",
-                  "docComment": "/**\n * Flowchart: Sequential Access Storage\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Sequential Access Storage\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2310,7 +2310,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartManualInput:member",
-                  "docComment": "/**\n * Flowchart: Manual Input\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Manual Input\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2331,7 +2331,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartManualOperation:member",
-                  "docComment": "/**\n * Flowchart: Manual Operation\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Manual Operation\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2352,7 +2352,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartMerge:member",
-                  "docComment": "/**\n * Flowchart: Merge\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Merge\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2373,7 +2373,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartMultidocument:member",
-                  "docComment": "/**\n * Flowchart: Multidocument\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Multidocument\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2394,7 +2394,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartOfflineStorage:member",
-                  "docComment": "/**\n * FlowChart: Offline Storage\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * FlowChart: Offline Storage\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2415,7 +2415,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartOffpageConnector:member",
-                  "docComment": "/**\n * Flowchart: Off-page Connector\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Off-page Connector\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2436,7 +2436,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartOnlineStorage:member",
-                  "docComment": "/**\n * Flowchart: Stored Data\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Stored Data\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2457,7 +2457,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartOr:member",
-                  "docComment": "/**\n * Flowchart: Or\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Or\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2478,7 +2478,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartPredefinedProcess:member",
-                  "docComment": "/**\n * Flowchart: Predefined Process\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Predefined Process\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2499,7 +2499,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartPreparation:member",
-                  "docComment": "/**\n * Flowchart: Preparation\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Preparation\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2520,7 +2520,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartProcess:member",
-                  "docComment": "/**\n * Flowchart: Process\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Process\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2541,7 +2541,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedCard:member",
-                  "docComment": "/**\n * Flowchart: Card\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Card\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2562,7 +2562,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartPunchedTape:member",
-                  "docComment": "/**\n * Flowchart: Punched Tape\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Punched Tape\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2583,7 +2583,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartSort:member",
-                  "docComment": "/**\n * Flowchart: Sort\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Sort\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2604,7 +2604,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartSummingJunction:member",
-                  "docComment": "/**\n * Flowchart: Summing Junction\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Summing Junction\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2625,7 +2625,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.flowChartTerminator:member",
-                  "docComment": "/**\n * Flowchart: Terminator\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Flowchart: Terminator\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2646,7 +2646,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.foldedCorner:member",
-                  "docComment": "/**\n * Rectangle: Folded Corner\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Folded Corner\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2667,7 +2667,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.frame:member",
-                  "docComment": "/**\n * Frame\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Frame\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2688,7 +2688,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.funnel:member",
-                  "docComment": "/**\n * Funnel\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Funnel\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2709,7 +2709,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.gear6:member",
-                  "docComment": "/**\n * Gear: A Gear with Six Teeth\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gear: A Gear with Six Teeth\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2730,7 +2730,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.gear9:member",
-                  "docComment": "/**\n * Gear: A Gear with Nine Teeth\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gear: A Gear with Nine Teeth\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2751,7 +2751,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.halfFrame:member",
-                  "docComment": "/**\n * Half Frame\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Half Frame\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2772,7 +2772,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.heart:member",
-                  "docComment": "/**\n * Heart\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Heart\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2793,7 +2793,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.heptagon:member",
-                  "docComment": "/**\n * Heptagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Heptagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2814,7 +2814,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.hexagon:member",
-                  "docComment": "/**\n * Hexagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Hexagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2835,7 +2835,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.homePlate:member",
-                  "docComment": "/**\n * Arrow: Pentagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Pentagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2856,7 +2856,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.horizontalScroll:member",
-                  "docComment": "/**\n * Scroll: Horizontal\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Scroll: Horizontal\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2877,7 +2877,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.irregularSeal1:member",
-                  "docComment": "/**\n * Explosion: 8 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Explosion: 8 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2898,7 +2898,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.irregularSeal2:member",
-                  "docComment": "/**\n * Explosion: 14 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Explosion: 14 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2919,7 +2919,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftArrow:member",
-                  "docComment": "/**\n * Arrow: Left\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Left\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2940,7 +2940,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftArrowCallout:member",
-                  "docComment": "/**\n * Callout: Left Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Left Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2961,7 +2961,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftBrace:member",
-                  "docComment": "/**\n * Left Brace\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Left Brace\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2982,7 +2982,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftBracket:member",
-                  "docComment": "/**\n * Left Bracket\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Left Bracket\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3003,7 +3003,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftCircularArrow:member",
-                  "docComment": "/**\n * Arrow: Circular with Opposite Arrow Direction\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Circular with Opposite Arrow Direction\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3024,7 +3024,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftRightArrow:member",
-                  "docComment": "/**\n * Arrow: Left-Right\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Left-Right\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3045,7 +3045,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftRightArrowCallout:member",
-                  "docComment": "/**\n * Callout: Left-Right Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Left-Right Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3066,7 +3066,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftRightCircularArrow:member",
-                  "docComment": "/**\n * Arrow: Circular with Two Arrows in Both Directions\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Circular with Two Arrows in Both Directions\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3087,7 +3087,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftRightRibbon:member",
-                  "docComment": "/**\n * Ribbon: Straight with Both Left and Right Arrows\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Ribbon: Straight with Both Left and Right Arrows\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3108,7 +3108,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftRightUpArrow:member",
-                  "docComment": "/**\n * Arrow: Left-Right-Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Left-Right-Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3129,7 +3129,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.leftUpArrow:member",
-                  "docComment": "/**\n * Arrow: Left-Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Left-Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3150,7 +3150,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.lightningBolt:member",
-                  "docComment": "/**\n * Lightning Bolt\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Lightning Bolt\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3171,7 +3171,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.lineInverse:member",
-                  "docComment": "/**\n * Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Straight Line from Top-Right Corner to Bottom-Left Corner of the Shape\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3192,7 +3192,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathDivide:member",
-                  "docComment": "/**\n * Division Sign\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Division Sign\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3213,7 +3213,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathEqual:member",
-                  "docComment": "/**\n * Equals\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Equals\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3234,7 +3234,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathMinus:member",
-                  "docComment": "/**\n * Minus Sign\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Minus Sign\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3255,7 +3255,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathMultiply:member",
-                  "docComment": "/**\n * Multiplication Sign\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Multiplication Sign\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3276,7 +3276,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathNotEqual:member",
-                  "docComment": "/**\n * Not Equal\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Not Equal\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3297,7 +3297,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.mathPlus:member",
-                  "docComment": "/**\n * Plus Sign\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Plus Sign\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3318,7 +3318,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.moon:member",
-                  "docComment": "/**\n * Moon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Moon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3339,7 +3339,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.nonIsoscelesTrapezoid:member",
-                  "docComment": "/**\n * Trapezoid which may have Non-Equal Sides\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Trapezoid which may have Non-Equal Sides\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3360,7 +3360,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.noSmoking:member",
-                  "docComment": "/**\n * \"Not Allowed\" Symbol\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * \"Not Allowed\" Symbol\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3381,7 +3381,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.notchedRightArrow:member",
-                  "docComment": "/**\n * Arrow: Notched Right\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Notched Right\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3402,7 +3402,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.octagon:member",
-                  "docComment": "/**\n * Octagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Octagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3423,7 +3423,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.parallelogram:member",
-                  "docComment": "/**\n * Parallelogram\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Parallelogram\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3444,7 +3444,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.pentagon:member",
-                  "docComment": "/**\n * Pentagon\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Pentagon\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3465,7 +3465,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.pie:member",
-                  "docComment": "/**\n * Partial Circle with Adjustable Spanning Area\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Partial Circle with Adjustable Spanning Area\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3486,7 +3486,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.pieWedge:member",
-                  "docComment": "/**\n * Partial Circle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Partial Circle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3507,7 +3507,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.plaque:member",
-                  "docComment": "/**\n * Plaque\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Plaque\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3528,7 +3528,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.plaqueTabs:member",
-                  "docComment": "/**\n * Four Quarter Circles that Define a Rectangular Shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Four Quarter Circles that Define a Rectangular Shape.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3549,7 +3549,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.plus:member",
-                  "docComment": "/**\n * Cross\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Cross\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3570,7 +3570,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.quadArrow:member",
-                  "docComment": "/**\n * Arrow: Quad\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Quad\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3591,7 +3591,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.quadArrowCallout:member",
-                  "docComment": "/**\n * Callout: Quad Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Quad Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3612,7 +3612,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rectangle:member",
-                  "docComment": "/**\n * Rectangle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3633,7 +3633,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.ribbon:member",
-                  "docComment": "/**\n * Ribbon: Tilted Down\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Ribbon: Tilted Down\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3654,7 +3654,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.ribbon2:member",
-                  "docComment": "/**\n * Ribbon: Tilted Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Ribbon: Tilted Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3675,7 +3675,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rightArrow:member",
-                  "docComment": "/**\n * Arrow: Right\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Right\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3696,7 +3696,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rightArrowCallout:member",
-                  "docComment": "/**\n * Callout: Right Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Right Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3717,7 +3717,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rightBrace:member",
-                  "docComment": "/**\n * Right Brace\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Right Brace\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3738,7 +3738,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rightBracket:member",
-                  "docComment": "/**\n * Right Bracket\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Right Bracket\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3759,7 +3759,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.rightTriangle:member",
-                  "docComment": "/**\n * Right Triangle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Right Triangle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3780,7 +3780,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.round1Rectangle:member",
-                  "docComment": "/**\n * Rectangle: Single Corner Rounded\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Single Corner Rounded\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3801,7 +3801,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.round2DiagonalRectangle:member",
-                  "docComment": "/**\n * Rectangle: Diagonal Corners Rounded\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Diagonal Corners Rounded\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3822,7 +3822,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.round2SameRectangle:member",
-                  "docComment": "/**\n * Rectangle: Top Corners Rounded\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Top Corners Rounded\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3843,7 +3843,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.roundRectangle:member",
-                  "docComment": "/**\n * Rectangle: Rounded Corners\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Rounded Corners\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3864,7 +3864,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.smileyFace:member",
-                  "docComment": "/**\n * Smiley Face\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Smiley Face\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3885,7 +3885,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.snip1Rectangle:member",
-                  "docComment": "/**\n * Rectangle: Single Corner Snipped\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Single Corner Snipped\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3906,7 +3906,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.snip2DiagonalRectangle:member",
-                  "docComment": "/**\n * Rectangle: Diagonal Corners Snipped\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Diagonal Corners Snipped\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3927,7 +3927,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.snip2SameRectangle:member",
-                  "docComment": "/**\n * Rectangle: Top Corners Snipped\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Top Corners Snipped\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3948,7 +3948,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.snipRoundRectangle:member",
-                  "docComment": "/**\n * Rectangle: Top Corners One Rounded and One Snipped\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Rectangle: Top Corners One Rounded and One Snipped\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3969,7 +3969,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.squareTabs:member",
-                  "docComment": "/**\n * Four Small Squares that Define a Rectangular Shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Four Small Squares that Define a Rectangular Shape.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3990,7 +3990,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star10:member",
-                  "docComment": "/**\n * Star: 10 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 10 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4011,7 +4011,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star12:member",
-                  "docComment": "/**\n * Star: 12 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 12 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4032,7 +4032,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star16:member",
-                  "docComment": "/**\n * Star: 16 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 16 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4053,7 +4053,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star24:member",
-                  "docComment": "/**\n * Star: 24 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 24 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4074,7 +4074,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star32:member",
-                  "docComment": "/**\n * Star: 32 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 32 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4095,7 +4095,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star4:member",
-                  "docComment": "/**\n * Star: 4 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 4 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4116,7 +4116,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star5:member",
-                  "docComment": "/**\n * Star: 5 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 5 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4137,7 +4137,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star6:member",
-                  "docComment": "/**\n * Star: 6 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 6 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4158,7 +4158,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star7:member",
-                  "docComment": "/**\n * Star: 7 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 7 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4179,7 +4179,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.star8:member",
-                  "docComment": "/**\n * Star: 8 Points\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Star: 8 Points\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4200,7 +4200,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.stripedRightArrow:member",
-                  "docComment": "/**\n * Arrow: Striped Right\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Striped Right\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4221,7 +4221,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.sun:member",
-                  "docComment": "/**\n * Sun\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sun\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4242,7 +4242,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.swooshArrow:member",
-                  "docComment": "/**\n * Arrow: Curved Right Arrow with Varying Width\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Curved Right Arrow with Varying Width\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4263,7 +4263,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.teardrop:member",
-                  "docComment": "/**\n * Teardrop\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Teardrop\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4284,7 +4284,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.trapezoid:member",
-                  "docComment": "/**\n * Trapezoid\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Trapezoid\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4305,7 +4305,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.triangle:member",
-                  "docComment": "/**\n * Isosceles Triangle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Isosceles Triangle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4326,7 +4326,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.upArrow:member",
-                  "docComment": "/**\n * Arrow: Up\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Up\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4347,7 +4347,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.upArrowCallout:member",
-                  "docComment": "/**\n * Callout: Up Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Up Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4368,7 +4368,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.upDownArrow:member",
-                  "docComment": "/**\n * Arrow: Up-Down\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: Up-Down\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4389,7 +4389,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.upDownArrowCallout:member",
-                  "docComment": "/**\n * Callout: Up-Down Arrow\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Callout: Up-Down Arrow\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4410,7 +4410,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.uturnArrow:member",
-                  "docComment": "/**\n * Arrow: U-Turn\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Arrow: U-Turn\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4431,7 +4431,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.verticalScroll:member",
-                  "docComment": "/**\n * Scroll: Vertical\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Scroll: Vertical\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4452,7 +4452,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.wave:member",
-                  "docComment": "/**\n * Wave\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Wave\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4473,7 +4473,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.wedgeEllipseCallout:member",
-                  "docComment": "/**\n * Speech Bubble: Oval\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Speech Bubble: Oval\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4494,7 +4494,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.wedgeRectCallout:member",
-                  "docComment": "/**\n * Speech Bubble: Rectangle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Speech Bubble: Rectangle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4515,7 +4515,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.GeometricShapeType.wedgeRRectCallout:member",
-                  "docComment": "/**\n * Speech Bubble: Rectangle with Corners Rounded\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Speech Bubble: Rectangle with Corners Rounded\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4551,7 +4551,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member",
-                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n *\n *  *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4572,7 +4572,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member",
-                  "docComment": "/**\n * Use the existing theme in the target presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Use the existing theme in the target presentation.\n *\n *  *\n * [Api set: PowerPointApi 1.2]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10381,7 +10381,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.center:member",
-                  "docComment": "/**\n * Align text in the center.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Align text in the center.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10402,7 +10402,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.distributed:member",
-                  "docComment": "/**\n * Distributes the text words across an entire text line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Distributes the text words across an entire text line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10423,7 +10423,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.justify:member",
-                  "docComment": "/**\n * Align text so that it is justified across the whole line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Align text so that it is justified across the whole line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10444,7 +10444,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.justifyLow:member",
-                  "docComment": "/**\n * Specifies the alignment or adjustment of kashida length in Arabic text.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies the alignment or adjustment of kashida length in Arabic text.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10465,7 +10465,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.left:member",
-                  "docComment": "/**\n * Align text to the left margin.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Align text to the left margin.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10486,7 +10486,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.right:member",
-                  "docComment": "/**\n * Align text to the right margin.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Align text to the right margin.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10507,7 +10507,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ParagraphHorizontalAlignment.thaiDistributed:member",
-                  "docComment": "/**\n * Distributes Thai text specially, because each character is treated as a word.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Distributes Thai text specially, because each character is treated as a word.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12024,7 +12024,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeAutoSize.autoSizeMixed:member",
-                  "docComment": "/**\n * A combination of automatic sizing schemes are used.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * A combination of automatic sizing schemes are used.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12045,7 +12045,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeAutoSize.autoSizeNone:member",
-                  "docComment": "/**\n * No autosizing.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * No autosizing.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12066,7 +12066,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeAutoSize.autoSizeShapeToFitText:member",
-                  "docComment": "/**\n * The shape is adjusted to fit the text.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The shape is adjusted to fit the text.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12087,7 +12087,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeAutoSize.autoSizeTextToFitShape:member",
-                  "docComment": "/**\n * The text is adjusted to fit the shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The text is adjusted to fit the shape.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13281,7 +13281,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.gradient:member",
-                  "docComment": "/**\n * Specifies that the shape should have gradient fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have gradient fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13302,7 +13302,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.noFill:member",
-                  "docComment": "/**\n * Specifies that the shape should have no fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have no fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13323,7 +13323,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.pattern:member",
-                  "docComment": "/**\n * Specifies that the shape should have pattern fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have pattern fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13344,7 +13344,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.pictureAndTexture:member",
-                  "docComment": "/**\n * Specifies that the shape should have picture or texture fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have picture or texture fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13365,7 +13365,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.slideBackground:member",
-                  "docComment": "/**\n * Specifies that the shape should have slide background fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have slide background fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13386,7 +13386,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFillType.solid:member",
-                  "docComment": "/**\n * Specifies that the shape should have regular solid fill.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the shape should have regular solid fill.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13818,7 +13818,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dash:member",
-                  "docComment": "/**\n * Underlining of text with a line containing dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a line containing dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13839,7 +13839,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick line containing dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick line containing dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13860,7 +13860,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashLong:member",
-                  "docComment": "/**\n * Underlining of text with a line containing long dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a line containing long dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13881,7 +13881,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dashLongHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick line containing long dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick line containing long dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13902,7 +13902,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDash:member",
-                  "docComment": "/**\n * Underlining of text with a line containing dots and dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a line containing dots and dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13923,7 +13923,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDashHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick line containing dots and dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick line containing dots and dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13944,7 +13944,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDotDash:member",
-                  "docComment": "/**\n * Underlining of text with a line containing double dots and dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a line containing double dots and dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13965,7 +13965,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotDotDashHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick line containing double dots and dashes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick line containing double dots and dashes.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13986,7 +13986,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dotted:member",
-                  "docComment": "/**\n * Underlining of text with a dotted line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a dotted line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14007,7 +14007,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.dottedHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick, dotted line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick, dotted line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14028,7 +14028,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.double:member",
-                  "docComment": "/**\n * Underlining of text with double lines.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with double lines.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14049,7 +14049,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.heavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14070,7 +14070,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.none:member",
-                  "docComment": "/**\n * No underlining.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * No underlining.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14091,7 +14091,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.single:member",
-                  "docComment": "/**\n * Regular single line underlining.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Regular single line underlining.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14112,7 +14112,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavy:member",
-                  "docComment": "/**\n * Underlining of text with a wavy line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a wavy line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14133,7 +14133,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavyDouble:member",
-                  "docComment": "/**\n * Underlining of text with double wavy lines.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with double wavy lines.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14154,7 +14154,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeFontUnderlineStyle.wavyHeavy:member",
-                  "docComment": "/**\n * Underlining of text with a thick, wavy line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Underlining of text with a thick, wavy line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14190,7 +14190,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.dash:member",
-                  "docComment": "/**\n * The dash line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The dash line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14211,7 +14211,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.dashDot:member",
-                  "docComment": "/**\n * The dash-dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The dash-dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14232,7 +14232,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.dashDotDot:member",
-                  "docComment": "/**\n * The dash-dot-dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The dash-dot-dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14253,7 +14253,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.longDash:member",
-                  "docComment": "/**\n * The long dash line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The long dash line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14274,7 +14274,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.longDashDot:member",
-                  "docComment": "/**\n * The long dash-dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The long dash-dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14295,7 +14295,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.longDashDotDot:member",
-                  "docComment": "/**\n * The long dash-dot-dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The long dash-dot-dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14316,7 +14316,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.roundDot:member",
-                  "docComment": "/**\n * The round dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The round dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14337,7 +14337,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.solid:member",
-                  "docComment": "/**\n * The solid line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The solid line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14358,7 +14358,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.squareDot:member",
-                  "docComment": "/**\n * The square dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The square dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14379,7 +14379,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.systemDash:member",
-                  "docComment": "/**\n * The system dash line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The system dash line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14400,7 +14400,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.systemDashDot:member",
-                  "docComment": "/**\n * The system dash-dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The system dash-dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14421,7 +14421,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineDashStyle.systemDot:member",
-                  "docComment": "/**\n * The system dot line pattern\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The system dot line pattern\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14858,7 +14858,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineStyle.single:member",
-                  "docComment": "/**\n * Single line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Single line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14879,7 +14879,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member",
-                  "docComment": "/**\n * Thick line with a thin line on each side.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Thick line with a thin line on each side.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14900,7 +14900,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineStyle.thickThin:member",
-                  "docComment": "/**\n * Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14921,7 +14921,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineStyle.thinThick:member",
-                  "docComment": "/**\n * Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14942,7 +14942,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeLineStyle.thinThin:member",
-                  "docComment": "/**\n * Two thin lines.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Two thin lines.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14978,7 +14978,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeType.geometricShape:member",
-                  "docComment": "/**\n * The shape is a geometric shape such as rectangle\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The shape is a geometric shape such as rectangle\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14999,7 +14999,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeType.group:member",
-                  "docComment": "/**\n * The shape is a group shape which contains sub-shapes\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The shape is a group shape which contains sub-shapes\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15020,7 +15020,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeType.image:member",
-                  "docComment": "/**\n * The shape is an image\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The shape is an image\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15041,7 +15041,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeType.line:member",
-                  "docComment": "/**\n * The shape is a line\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The shape is a line\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15062,7 +15062,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.ShapeType.unsupported:member",
-                  "docComment": "/**\n * The given shape's type is unsupported.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The given shape's type is unsupported.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19254,7 +19254,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.bottom:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be bottom aligned to the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be bottom aligned to the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19275,7 +19275,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.bottomCentered:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19296,7 +19296,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.middle:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be center aligned to the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be center aligned to the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19317,7 +19317,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.middleCentered:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be center aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be center aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19338,7 +19338,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.top:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be top aligned to the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be top aligned to the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19359,7 +19359,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.TextVerticalAlignment.topCentered:member",
-                  "docComment": "/**\n * Specifies that the `TextFrame` should be top aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n * @remarks\n *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Specifies that the `TextFrame` should be top aligned vertically to the `Shape`. Contents of the `TextFrame` will be centered horizontally within the `Shape`.\n *\n *  *\n * [Api set: PowerPointApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
