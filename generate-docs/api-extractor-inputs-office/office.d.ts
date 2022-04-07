@@ -395,6 +395,9 @@ export declare namespace Office {
     }
     /**
      * Specifies the host Office application in which the add-in is running.
+     * 
+     * @remarks
+     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
      */
     enum HostType {
         /**
@@ -432,6 +435,9 @@ export declare namespace Office {
     }
     /**
      * Specifies the OS or other platform on which the Office host application is running.
+     * 
+     * @remarks
+     * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
      */
     enum PlatformType {
         /**
@@ -447,7 +453,7 @@ export declare namespace Office {
          */
         Mac,
         /**
-         * The platform an iOS device.
+         * The platform is an iOS device.
          */
         iOS,
         /**
@@ -867,6 +873,12 @@ export declare namespace Office {
         contentLanguage: string;
         /**
         * Gets information about the environment in which the add-in is running.
+        * 
+        * @remarks
+        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.  
+        * For all Mailbox requirement sets, you can use the 
+        * {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+        * property to get similar information.
         */
         diagnostics: ContextInformation;
         /**
@@ -907,8 +919,12 @@ export declare namespace Office {
         /**
         * Contains the Office application host in which the add-in is running.
         *
-        * **Important**: In Outlook, this property is available from requirement set 1.5.
-        * For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the host.
+        * @remarks
+        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+        * `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all
+        * Mailbox requirement sets, you can use the 
+        * {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+        * property to get similar information.
         */
         host: HostType;
         /**
@@ -940,8 +956,12 @@ export declare namespace Office {
         /**
         * Provides the platform on which the add-in is running.
         *
-        * **Important**: In Outlook, this property is available from requirement set 1.5.
-        * For all Mailbox requirement sets, you can use the `Office.context.diagnostics` property to get the platform.
+        * @remarks
+        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+        * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
+        * Mailbox requirement sets, you can use the 
+        * {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+        * property to get similar information.
         */
         platform: PlatformType;
         /**
@@ -1566,6 +1586,12 @@ export declare namespace Office {
     }
     /**
      * Provides information about the environment in which the add-in is running.
+     * 
+     * @remarks
+     * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+     * For all Mailbox requirement sets, you can use the 
+     * {@link https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+     * property to get similar information.
      */
     export interface ContextInformation {
         /**

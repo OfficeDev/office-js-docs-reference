@@ -4316,6 +4316,10 @@ export declare namespace Office {
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     * 
+     * Starting with Mailbox requirement set 1.5, you can also use the 
+     * {@link https://docs.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics} 
+     * property to get similar information.
      */
     export interface Diagnostics {
         /**
@@ -5142,13 +5146,17 @@ export declare namespace Office {
          * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns 
          * that can be displayed.
          *
-         *  More information is under {@link Office.Diagnostics}. 
+         * More information is under {@link Office.Diagnostics}. 
          *
          * @remarks
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * 
+         * Starting with Mailbox requirement set 1.5, you can also use the 
+         * {@link https://docs.microsoft.com/javascript/api/office/office.context?view=outlook-js-1.5&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics} 
+         * property to get similar information.
          */
         diagnostics: Diagnostics;
         /**
