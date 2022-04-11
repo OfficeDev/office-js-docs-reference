@@ -11,15 +11,15 @@ fields:
   - name: center
     uid: 'excel!Excel.ChartTickLabelAlignment.center:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Center"'
   - name: left
     uid: 'excel!Excel.ChartTickLabelAlignment.left:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Left"'
   - name: right
     uid: 'excel!Excel.ChartTickLabelAlignment.right:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Right"'

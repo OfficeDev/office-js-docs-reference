@@ -11,25 +11,25 @@ fields:
   - name: bottom
     uid: 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: distributed
     uid: 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Distributed"'
   - name: justified
     uid: 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Justified"'
   - name: middle
     uid: 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Middle"'
   - name: top
     uid: 'excel!Excel.ShapeTextVerticalAlignment.top:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Top"'

@@ -11,25 +11,40 @@ fields:
   - name: column
     uid: 'excel!Excel.PivotAxis.column:member'
     package: excel!
-    summary: The column axis.
+    summary: |-
+      The column axis.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Column"'
   - name: data
     uid: 'excel!Excel.PivotAxis.data:member'
     package: excel!
-    summary: The data axis.
+    summary: |-
+      The data axis.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Data"'
   - name: filter
     uid: 'excel!Excel.PivotAxis.filter:member'
     package: excel!
-    summary: The filter axis.
+    summary: |-
+      The filter axis.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Filter"'
   - name: row
     uid: 'excel!Excel.PivotAxis.row:member'
     package: excel!
-    summary: The row axis.
+    summary: |-
+      The row axis.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Row"'
   - name: unknown
     uid: 'excel!Excel.PivotAxis.unknown:member'
     package: excel!
-    summary: The axis or region is unknown or unsupported.
+    summary: |-
+      The axis or region is unknown or unsupported.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

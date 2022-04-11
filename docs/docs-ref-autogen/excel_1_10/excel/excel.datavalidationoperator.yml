@@ -11,40 +11,40 @@ fields:
   - name: between
     uid: 'excel!Excel.DataValidationOperator.between:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Between"'
   - name: equalTo
     uid: 'excel!Excel.DataValidationOperator.equalTo:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"EqualTo"'
   - name: greaterThan
     uid: 'excel!Excel.DataValidationOperator.greaterThan:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"GreaterThan"'
   - name: greaterThanOrEqualTo
     uid: 'excel!Excel.DataValidationOperator.greaterThanOrEqualTo:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"GreaterThanOrEqualTo"'
   - name: lessThan
     uid: 'excel!Excel.DataValidationOperator.lessThan:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LessThan"'
   - name: lessThanOrEqualTo
     uid: 'excel!Excel.DataValidationOperator.lessThanOrEqualTo:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LessThanOrEqualTo"'
   - name: notBetween
     uid: 'excel!Excel.DataValidationOperator.notBetween:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NotBetween"'
   - name: notEqualTo
     uid: 'excel!Excel.DataValidationOperator.notEqualTo:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NotEqualTo"'
