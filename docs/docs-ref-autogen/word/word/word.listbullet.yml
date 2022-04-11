@@ -11,35 +11,35 @@ fields:
   - name: arrow
     uid: 'word!Word.ListBullet.arrow:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Arrow"'
   - name: checkmark
     uid: 'word!Word.ListBullet.checkmark:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Checkmark"'
   - name: custom
     uid: 'word!Word.ListBullet.custom:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Custom"'
   - name: diamonds
     uid: 'word!Word.ListBullet.diamonds:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Diamonds"'
   - name: hollow
     uid: 'word!Word.ListBullet.hollow:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Hollow"'
   - name: solid
     uid: 'word!Word.ListBullet.solid:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Solid"'
   - name: square
     uid: 'word!Word.ListBullet.square:member'
     package: word!
-    summary: ''
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Square"'

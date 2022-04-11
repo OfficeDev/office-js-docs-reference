@@ -11,15 +11,15 @@ fields:
   - name: extremeValue
     uid: 'excel!Excel.ChartGradientStyleType.extremeValue:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ExtremeValue"'
   - name: number
     uid: 'excel!Excel.ChartGradientStyleType.number:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Number"'
   - name: percent
     uid: 'excel!Excel.ChartGradientStyleType.percent:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Percent"'

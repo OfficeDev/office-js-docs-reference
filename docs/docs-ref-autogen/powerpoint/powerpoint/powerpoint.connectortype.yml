@@ -13,15 +13,30 @@ fields:
   - name: curve
     uid: 'powerpoint!PowerPoint.ConnectorType.curve:member'
     package: powerpoint!
-    summary: Curve connector type
+    summary: >-
+      Curve connector type
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Curve"'
   - name: elbow
     uid: 'powerpoint!PowerPoint.ConnectorType.elbow:member'
     package: powerpoint!
-    summary: Elbow connector type
+    summary: >-
+      Elbow connector type
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Elbow"'
   - name: straight
     uid: 'powerpoint!PowerPoint.ConnectorType.straight:member'
     package: powerpoint!
-    summary: Straight connector type
+    summary: >-
+      Straight connector type
+
+
+      * \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Straight"'
