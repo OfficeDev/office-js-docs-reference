@@ -11,10 +11,16 @@ fields:
   - name: automatic
     uid: 'excel!Excel.WorkbookLinksRefreshMode.automatic:member'
     package: excel!
-    summary: The workbook links are updated at a set interval determined by the Excel application.
+    summary: |-
+      The workbook links are updated at a set interval determined by the Excel application.
+
+      * \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: manual
     uid: 'excel!Excel.WorkbookLinksRefreshMode.manual:member'
     package: excel!
-    summary: The workbook links are updated manually.
+    summary: |-
+      The workbook links are updated manually.
+
+      * \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Manual"'

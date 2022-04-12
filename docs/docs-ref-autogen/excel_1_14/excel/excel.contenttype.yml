@@ -11,10 +11,16 @@ fields:
   - name: mention
     uid: 'excel!Excel.ContentType.mention:member'
     package: excel!
-    summary: Comment content containing mentions.
+    summary: |-
+      Comment content containing mentions.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Mention"'
   - name: plain
     uid: 'excel!Excel.ContentType.plain:member'
     package: excel!
-    summary: Indicates a plain format type for the comment content.
+    summary: |-
+      Indicates a plain format type for the comment content.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Plain"'

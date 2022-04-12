@@ -11,15 +11,15 @@ fields:
   - name: range
     uid: 'excel!Excel.BindingType.range:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Range"'
   - name: table
     uid: 'excel!Excel.BindingType.table:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Table"'
   - name: text
     uid: 'excel!Excel.BindingType.text:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Text"'

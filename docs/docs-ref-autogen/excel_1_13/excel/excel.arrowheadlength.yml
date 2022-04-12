@@ -11,15 +11,15 @@ fields:
   - name: long
     uid: 'excel!Excel.ArrowheadLength.long:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Long"'
   - name: medium
     uid: 'excel!Excel.ArrowheadLength.medium:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Medium"'
   - name: short
     uid: 'excel!Excel.ArrowheadLength.short:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Short"'

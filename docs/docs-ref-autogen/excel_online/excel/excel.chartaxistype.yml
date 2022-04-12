@@ -11,20 +11,29 @@ fields:
   - name: category
     uid: 'excel!Excel.ChartAxisType.category:member'
     package: excel!
-    summary: Axis displays categories.
+    summary: |-
+      Axis displays categories.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Category"'
   - name: invalid
     uid: 'excel!Excel.ChartAxisType.invalid:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: series
     uid: 'excel!Excel.ChartAxisType.series:member'
     package: excel!
-    summary: Axis displays data series.
+    summary: |-
+      Axis displays data series.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Series"'
   - name: value
     uid: 'excel!Excel.ChartAxisType.value:member'
     package: excel!
-    summary: Axis displays values.
+    summary: |-
+      Axis displays values.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Value"'

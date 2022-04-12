@@ -17,25 +17,40 @@ fields:
   - name: after
     uid: 'word!Word.InsertLocation.after:member'
     package: word!
-    summary: Add content after the contents of the calling object.
+    summary: |-
+      Add content after the contents of the calling object.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: 'word!Word.InsertLocation.before:member'
     package: word!
-    summary: Add content before the contents of the calling object.
+    summary: |-
+      Add content before the contents of the calling object.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: end
     uid: 'word!Word.InsertLocation.end:member'
     package: word!
-    summary: Append content to the contents of the calling object.
+    summary: |-
+      Append content to the contents of the calling object.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: replace
     uid: 'word!Word.InsertLocation.replace:member'
     package: word!
-    summary: Replace the contents of the current object.
+    summary: |-
+      Replace the contents of the current object.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Replace"'
   - name: start
     uid: 'word!Word.InsertLocation.start:member'
     package: word!
-    summary: Prepend content to the contents of the calling object.
+    summary: |-
+      Prepend content to the contents of the calling object.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

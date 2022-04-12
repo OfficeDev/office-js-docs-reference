@@ -11,15 +11,15 @@ fields:
   - name: banner
     uid: 'excel!Excel.ChartParentLabelStrategy.banner:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Banner"'
   - name: none
     uid: 'excel!Excel.ChartParentLabelStrategy.none:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: overlapping
     uid: 'excel!Excel.ChartParentLabelStrategy.overlapping:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Overlapping"'

@@ -11,25 +11,25 @@ fields:
   - name: formula
     uid: 'excel!Excel.ConditionalFormatIconRuleType.formula:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Formula"'
   - name: invalid
     uid: 'excel!Excel.ConditionalFormatIconRuleType.invalid:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: number
     uid: 'excel!Excel.ConditionalFormatIconRuleType.number:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Number"'
   - name: percent
     uid: 'excel!Excel.ConditionalFormatIconRuleType.percent:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Percent"'
   - name: percentile
     uid: 'excel!Excel.ConditionalFormatIconRuleType.percentile:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Percentile"'

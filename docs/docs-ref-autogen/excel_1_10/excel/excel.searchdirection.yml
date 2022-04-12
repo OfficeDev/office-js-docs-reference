@@ -11,10 +11,16 @@ fields:
   - name: backwards
     uid: 'excel!Excel.SearchDirection.backwards:member'
     package: excel!
-    summary: Search in reverse order.
+    summary: |-
+      Search in reverse order.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Backwards"'
   - name: forward
     uid: 'excel!Excel.SearchDirection.forward:member'
     package: excel!
-    summary: Search in forward order.
+    summary: |-
+      Search in forward order.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Forward"'

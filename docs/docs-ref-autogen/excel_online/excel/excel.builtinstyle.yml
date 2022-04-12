@@ -11,260 +11,260 @@ fields:
   - name: accent1
     uid: 'excel!Excel.BuiltInStyle.accent1:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent1"'
   - name: accent1_20
     uid: 'excel!Excel.BuiltInStyle.accent1_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent1_20"'
   - name: accent1_40
     uid: 'excel!Excel.BuiltInStyle.accent1_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent1_40"'
   - name: accent1_60
     uid: 'excel!Excel.BuiltInStyle.accent1_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent1_60"'
   - name: accent2
     uid: 'excel!Excel.BuiltInStyle.accent2:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent2"'
   - name: accent2_20
     uid: 'excel!Excel.BuiltInStyle.accent2_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent2_20"'
   - name: accent2_40
     uid: 'excel!Excel.BuiltInStyle.accent2_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent2_40"'
   - name: accent2_60
     uid: 'excel!Excel.BuiltInStyle.accent2_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent2_60"'
   - name: accent3
     uid: 'excel!Excel.BuiltInStyle.accent3:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent3"'
   - name: accent3_20
     uid: 'excel!Excel.BuiltInStyle.accent3_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent3_20"'
   - name: accent3_40
     uid: 'excel!Excel.BuiltInStyle.accent3_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent3_40"'
   - name: accent3_60
     uid: 'excel!Excel.BuiltInStyle.accent3_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent3_60"'
   - name: accent4
     uid: 'excel!Excel.BuiltInStyle.accent4:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent4"'
   - name: accent4_20
     uid: 'excel!Excel.BuiltInStyle.accent4_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent4_20"'
   - name: accent4_40
     uid: 'excel!Excel.BuiltInStyle.accent4_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent4_40"'
   - name: accent4_60
     uid: 'excel!Excel.BuiltInStyle.accent4_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent4_60"'
   - name: accent5
     uid: 'excel!Excel.BuiltInStyle.accent5:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent5"'
   - name: accent5_20
     uid: 'excel!Excel.BuiltInStyle.accent5_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent5_20"'
   - name: accent5_40
     uid: 'excel!Excel.BuiltInStyle.accent5_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent5_40"'
   - name: accent5_60
     uid: 'excel!Excel.BuiltInStyle.accent5_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent5_60"'
   - name: accent6
     uid: 'excel!Excel.BuiltInStyle.accent6:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent6"'
   - name: accent6_20
     uid: 'excel!Excel.BuiltInStyle.accent6_20:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent6_20"'
   - name: accent6_40
     uid: 'excel!Excel.BuiltInStyle.accent6_40:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent6_40"'
   - name: accent6_60
     uid: 'excel!Excel.BuiltInStyle.accent6_60:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Accent6_60"'
   - name: bad
     uid: 'excel!Excel.BuiltInStyle.bad:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bad"'
   - name: calculation
     uid: 'excel!Excel.BuiltInStyle.calculation:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Calculation"'
   - name: checkCell
     uid: 'excel!Excel.BuiltInStyle.checkCell:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"CheckCell"'
   - name: comma
     uid: 'excel!Excel.BuiltInStyle.comma:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Comma"'
   - name: currency
     uid: 'excel!Excel.BuiltInStyle.currency:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Currency"'
   - name: emphasis1
     uid: 'excel!Excel.BuiltInStyle.emphasis1:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Emphasis1"'
   - name: emphasis2
     uid: 'excel!Excel.BuiltInStyle.emphasis2:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Emphasis2"'
   - name: emphasis3
     uid: 'excel!Excel.BuiltInStyle.emphasis3:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Emphasis3"'
   - name: explanatoryText
     uid: 'excel!Excel.BuiltInStyle.explanatoryText:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ExplanatoryText"'
   - name: good
     uid: 'excel!Excel.BuiltInStyle.good:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Good"'
   - name: heading1
     uid: 'excel!Excel.BuiltInStyle.heading1:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Heading1"'
   - name: heading2
     uid: 'excel!Excel.BuiltInStyle.heading2:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Heading2"'
   - name: heading3
     uid: 'excel!Excel.BuiltInStyle.heading3:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Heading3"'
   - name: heading4
     uid: 'excel!Excel.BuiltInStyle.heading4:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Heading4"'
   - name: hlink
     uid: 'excel!Excel.BuiltInStyle.hlink:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Hlink"'
   - name: hlinkTrav
     uid: 'excel!Excel.BuiltInStyle.hlinkTrav:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"HlinkTrav"'
   - name: input
     uid: 'excel!Excel.BuiltInStyle.input:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Input"'
   - name: linkedCell
     uid: 'excel!Excel.BuiltInStyle.linkedCell:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LinkedCell"'
   - name: neutral
     uid: 'excel!Excel.BuiltInStyle.neutral:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Neutral"'
   - name: normal
     uid: 'excel!Excel.BuiltInStyle.normal:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Normal"'
   - name: note
     uid: 'excel!Excel.BuiltInStyle.note:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Note"'
   - name: output
     uid: 'excel!Excel.BuiltInStyle.output:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Output"'
   - name: percent
     uid: 'excel!Excel.BuiltInStyle.percent:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Percent"'
   - name: sheetTitle
     uid: 'excel!Excel.BuiltInStyle.sheetTitle:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SheetTitle"'
   - name: total
     uid: 'excel!Excel.BuiltInStyle.total:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Total"'
   - name: warningText
     uid: 'excel!Excel.BuiltInStyle.warningText:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"WarningText"'
   - name: wholeComma
     uid: 'excel!Excel.BuiltInStyle.wholeComma:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"WholeComma"'
   - name: wholeDollar
     uid: 'excel!Excel.BuiltInStyle.wholeDollar:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"WholeDollar"'
