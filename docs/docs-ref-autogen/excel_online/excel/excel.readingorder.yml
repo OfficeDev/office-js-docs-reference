@@ -15,14 +15,23 @@ fields:
       Reading order is determined by the language of the first character entered. If a right-to-left language character
       is entered first, reading order is right to left. If a left-to-right language character is entered first, reading
       order is left to right.
+
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Context"'
   - name: leftToRight
     uid: 'excel!Excel.ReadingOrder.leftToRight:member'
     package: excel!
-    summary: Left to right reading order
+    summary: |-
+      Left to right reading order
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
     package: excel!
-    summary: Right to left reading order
+    summary: |-
+      Right to left reading order
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RightToLeft"'

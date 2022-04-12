@@ -11,25 +11,25 @@ fields:
   - name: bottom
     uid: 'excel!Excel.VerticalAlignment.bottom:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: center
     uid: 'excel!Excel.VerticalAlignment.center:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Center"'
   - name: distributed
     uid: 'excel!Excel.VerticalAlignment.distributed:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Distributed"'
   - name: justify
     uid: 'excel!Excel.VerticalAlignment.justify:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Justify"'
   - name: top
     uid: 'excel!Excel.VerticalAlignment.top:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Top"'

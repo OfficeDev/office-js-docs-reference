@@ -13,22 +13,31 @@ fields:
   - name: all
     uid: 'excel!Excel.ClearApplyTo.all:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"All"'
   - name: contents
     uid: 'excel!Excel.ClearApplyTo.contents:member'
     package: excel!
-    summary: Clears the contents of the range.
+    summary: |-
+      Clears the contents of the range.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Contents"'
   - name: formats
     uid: 'excel!Excel.ClearApplyTo.formats:member'
     package: excel!
-    summary: Clears all formatting for the range.
+    summary: |-
+      Clears all formatting for the range.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Formats"'
   - name: hyperlinks
     uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     package: excel!
-    summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
+    summary: |-
+      Clears all hyperlinks, but leaves all content and formatting intact.
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Hyperlinks"'
   - name: removeHyperlinks
     uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
@@ -36,4 +45,7 @@ fields:
     summary: >-
       Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
       intact.
+
+
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RemoveHyperlinks"'

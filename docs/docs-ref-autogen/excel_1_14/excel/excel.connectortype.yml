@@ -11,15 +11,15 @@ fields:
   - name: curve
     uid: 'excel!Excel.ConnectorType.curve:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Curve"'
   - name: elbow
     uid: 'excel!Excel.ConnectorType.elbow:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Elbow"'
   - name: straight
     uid: 'excel!Excel.ConnectorType.straight:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Straight"'

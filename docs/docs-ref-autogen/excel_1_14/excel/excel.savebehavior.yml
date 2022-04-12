@@ -14,6 +14,9 @@ fields:
     summary: >-
       Prompts the "Save As" experience to the user if the workbook has not been saved, Ignored if the workbook was
       previously saved.
+
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Prompt"'
   - name: save
     uid: 'excel!Excel.SaveBehavior.save:member'
@@ -21,4 +24,7 @@ fields:
     summary: >-
       Save the workbook without prompting the user. If file is not saved, it will save it with default name in the
       default location.
+
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Save"'

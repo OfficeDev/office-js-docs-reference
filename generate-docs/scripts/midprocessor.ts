@@ -224,12 +224,6 @@ function cleanUpJson(host: string) {
         cleanJson = cleanUpOutlookJson(json);
     } else {
         cleanJson = cleanUpRichApiJson(json);
-
-        if (host === "excel" || host === "powerpoint" || host === "word") {
-            // Move API set in enum members from remarks, since YAML doesn't support them (neither API Documenter nor OPS schema).
-            // This only works for WXP because only they have consistent enum API set formatting.
-            cleanJson = cleanJson.replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
-        }
     }
 
     fsx.writeFileSync(`${jsonPath}/${fileName}`, cleanJson);
@@ -270,11 +264,13 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!");
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!")
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension");
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension")
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpOutlookMarkdown(markdownString : string) {
