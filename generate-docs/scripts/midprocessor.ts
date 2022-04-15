@@ -225,6 +225,7 @@ function cleanUpJson(host: string) {
     } else {
         cleanJson = cleanUpRichApiJson(json);
     }
+
     fsx.writeFileSync(`${jsonPath}/${fileName}`, cleanJson);
     console.log(`\nCompleted ${host}`);
     let currentRelease;
@@ -263,11 +264,13 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!");
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!")
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension");
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension")
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpOutlookMarkdown(markdownString : string) {

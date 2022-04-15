@@ -11,10 +11,16 @@ fields:
   - name: byColumns
     uid: 'excel!Excel.GroupOption.byColumns:member'
     package: excel!
-    summary: Group by columns.
+    summary: |-
+      Group by columns.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ByColumns"'
   - name: byRows
     uid: 'excel!Excel.GroupOption.byRows:member'
     package: excel!
-    summary: Group by rows.
+    summary: |-
+      Group by rows.
+
+      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ByRows"'

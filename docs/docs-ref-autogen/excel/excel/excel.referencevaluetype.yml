@@ -11,15 +11,24 @@ fields:
   - name: array
     uid: 'excel!Excel.ReferenceValueType.array:member'
     package: excel!
-    summary: Represents an `ArrayCellValue`<!-- -->.
+    summary: |-
+      Represents an `ArrayCellValue`<!-- -->.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Array"'
   - name: entity
     uid: 'excel!Excel.ReferenceValueType.entity:member'
     package: excel!
-    summary: Represents an `EntityCellValue`<!-- -->.
+    summary: |-
+      Represents an `EntityCellValue`<!-- -->.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Entity"'
   - name: root
     uid: 'excel!Excel.ReferenceValueType.root:member'
     package: excel!
-    summary: Represents a `RootReferenceCellValue`<!-- -->.
+    summary: |-
+      Represents a `RootReferenceCellValue`<!-- -->.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Root"'

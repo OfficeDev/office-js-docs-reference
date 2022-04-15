@@ -1,7 +1,7 @@
 ---
 title: Office.context - preview requirement set
 description: Office.Context object members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 12/03/2020
+ms.date: 04/05/2022
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +24,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 |---|---|---|:---:|
 | [auth](#auth-auth) | Compose<br>Read | [Auth](/javascript/api/office/office.auth?view=outlook-js-preview&preserve-view=true) | [IdentityAPI 1.3](../../common/identity-api-requirement-sets.md) |
 | [contentLanguage](#contentlanguage-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| [diagnostics](#diagnostics-contextinformation) | Compose<br>Read | [ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| [diagnostics](#diagnostics-contextinformation) | Compose<br>Read | [ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-preview&preserve-view=true) | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [displayLanguage](#displaylanguage-string) | Compose<br>Read | String | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [host](#host-hosttype) | Compose<br>Read | [HostType](/javascript/api/office/office.hosttype?view=outlook-js-preview&preserve-view=true) | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [mailbox](office.context.mailbox.md) | Compose<br>Read | [Mailbox](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
@@ -116,6 +116,9 @@ function write(message){
 
 Gets information about the environment in which the add-in is running.
 
+> [!NOTE]
+> For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
+
 ##### Type
 
 *   [ContextInformation](/javascript/api/office/office.contextinformation?view=outlook-js-preview&preserve-view=true)
@@ -124,7 +127,7 @@ Gets information about the environment in which the add-in is running.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.5|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
 
 ##### Example
@@ -189,7 +192,7 @@ function write(message){
 Gets the Office application that is hosting the add-in.
 
 > [!NOTE]
-> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the host.
+> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the host. For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
 ##### Type
 
@@ -267,7 +270,7 @@ function applyOfficeTheme(){
 Provides the platform on which the add-in is running.
 
 > [!NOTE]
-> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the platform.
+> Alternatively, you can use the [Office.context.diagnostics](#diagnostics-contextinformation) property to get the platform. For all Mailbox requirement sets, you can also use the [Office.context.mailbox.diagnostics](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member) property to get similar information.
 
 ##### Type
 

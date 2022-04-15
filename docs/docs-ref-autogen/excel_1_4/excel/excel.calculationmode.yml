@@ -14,14 +14,23 @@ fields:
     summary: >-
       The default recalculation behavior where Excel calculates new formula results every time the relevant data is
       changed.
+
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: automaticExceptTables
     uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     package: excel!
-    summary: 'Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.'
+    summary: |-
+      Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutomaticExceptTables"'
   - name: manual
     uid: 'excel!Excel.CalculationMode.manual:member'
     package: excel!
-    summary: Calculations only occur when the user or add-in requests them.
+    summary: |-
+      Calculations only occur when the user or add-in requests them.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Manual"'

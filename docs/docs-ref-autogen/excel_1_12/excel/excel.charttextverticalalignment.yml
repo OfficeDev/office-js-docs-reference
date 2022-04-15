@@ -11,25 +11,25 @@ fields:
   - name: bottom
     uid: 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: center
     uid: 'excel!Excel.ChartTextVerticalAlignment.center:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Center"'
   - name: distributed
     uid: 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Distributed"'
   - name: justify
     uid: 'excel!Excel.ChartTextVerticalAlignment.justify:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Justify"'
   - name: top
     uid: 'excel!Excel.ChartTextVerticalAlignment.top:member'
     package: excel!
-    summary: ''
+    summary: '* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Top"'
