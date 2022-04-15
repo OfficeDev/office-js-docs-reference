@@ -67,7 +67,7 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 >
 > <sup>2</sup> To require the Identity API set 1.3 in your Outlook add-in code, check if it's supported by calling `isSetSupported('IdentityAPI', '1.3')`. Declaring it in the Outlook add-in's manifest isn't supported. You can also determine if the API is supported by checking that it's not `undefined`. For further details, see [Using APIs from later requirement sets](outlook/outlook-api-requirement-sets.md#using-apis-from-later-requirement-sets).
 >
-> <sup>3</sup> Add-ins are no longer available for on-premises Exchange accounts on Outlook on Android, on iOS, and on mobile web (modern). However, add-ins are still supported on mobile Outlook on the web (classic) for certain iOS devices. For information about supported devices, see [Client requirements: Non-Windows smartphone and tablet](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins).
+> <sup>3</sup> Add-ins aren't supported for on-premises Exchange accounts on Outlook on Android, on iOS, and on modern mobile web. However, add-ins are supported on classic Outlook on the web for certain iOS devices. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 >
 > <sup>4</sup> Added with post-release updates.
 >
