@@ -99,7 +99,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions#id:member'
     package: word!
     fullName: id
-    summary: 'For EACH ITEM in the collection: ID'
+    summary: 'For EACH ITEM in the collection: Gets the ID of the comment reply. Read-only.'
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]

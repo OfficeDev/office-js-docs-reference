@@ -123,7 +123,7 @@ methods:
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
+          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
@@ -145,7 +145,7 @@ methods:
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
+          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
@@ -232,7 +232,7 @@ methods:
           description: Required. The level in the list.
           type: number
         - id: alignment
-          description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
+          description: 'Required. The level alignment that must be ''Left'', ''Centered'', or ''Right''.'
           type: '<xref uid="word!Word.Alignment:enum" />'
       return:
         type: void
@@ -254,7 +254,7 @@ methods:
           description: Required. The level in the list.
           type: number
         - id: alignmentString
-          description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
+          description: 'Required. The level alignment that must be ''Left'', ''Centered'', or ''Right''.'
           type: '"Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
       return:
         type: void
