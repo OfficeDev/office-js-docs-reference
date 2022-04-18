@@ -69,7 +69,7 @@ methods:
       content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
       parameters:
         - id: type
-          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          description: 'Required. The type of footer to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -120,7 +120,7 @@ methods:
       content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
         - id: typeString
-          description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          description: 'Required. The type of footer to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -156,7 +156,7 @@ methods:
       content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
       parameters:
         - id: type
-          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          description: 'Required. The type of header to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '<xref uid="word!Word.HeaderFooterType:enum" />'
       return:
         type: '<xref uid="word!Word.Body:class" />'
@@ -207,7 +207,7 @@ methods:
       content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       parameters:
         - id: typeString
-          description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          description: 'Required. The type of header to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type: '"Primary" | "FirstPage" | "EvenPages"'
       return:
         type: '<xref uid="word!Word.Body:class" />'

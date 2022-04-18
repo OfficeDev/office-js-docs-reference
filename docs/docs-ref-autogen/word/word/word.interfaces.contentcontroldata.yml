@@ -71,6 +71,20 @@ properties:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: fields
+    uid: 'word!Word.Interfaces.ContentControlData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the contentcontrol. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.ContentControlData#font:member'
     package: word!
@@ -144,10 +158,7 @@ properties:
     fullName: placeholderText
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
-      is empty.
-
-
-      **Note**: The set operation for this property is not supported in Word on the web.
+      is empty. **Note**: The set operation for this property is not supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

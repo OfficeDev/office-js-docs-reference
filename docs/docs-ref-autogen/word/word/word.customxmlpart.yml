@@ -91,7 +91,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'deleteAttribute(xpath: string, namespaceMappings: any, name: string): void;'
+      content: |-
+        deleteAttribute(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }, name: string): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -102,7 +105,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
         - id: name
           description: Required. Name of the attribute.
           type: string
@@ -139,7 +145,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'deleteElement(xpath: string, namespaceMappings: any): void;'
+      content: |-
+        deleteElement(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -150,7 +159,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
       return:
         type: void
         description: ''
@@ -197,7 +209,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'insertAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;'
+      content: |-
+        insertAttribute(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }, name: string, value: string): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -208,7 +223,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
         - id: name
           description: Required. Name of the attribute.
           type: string
@@ -248,7 +266,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number): void;'
+      content: |-
+        insertElement(xpath: string, xml: string, namespaceMappings: {
+                    [key: string]: string;
+                }, index?: number): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single parent element in XPath notation.
@@ -262,7 +283,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
         - id: index
           description: >-
             Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as
@@ -368,7 +392,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;'
+      content: |-
+        query(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }): OfficeExtension.ClientResult<string[]>;
       parameters:
         - id: xpath
           description: Required. An XPath query.
@@ -379,7 +406,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: An array where each item represents an entry matched by the XPath query.
@@ -483,7 +513,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'updateAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;'
+      content: |-
+        updateAttribute(xpath: string, namespaceMappings: {
+                    [key: string]: string;
+                }, name: string, value: string): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -494,7 +527,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
         - id: name
           description: Required. Name of the attribute.
           type: string
@@ -534,7 +570,10 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'updateElement(xpath: string, xml: string, namespaceMappings: any): void;'
+      content: |-
+        updateElement(xpath: string, xml: string, namespaceMappings: {
+                    [key: string]: string;
+                }): void;
       parameters:
         - id: xpath
           description: Required. Absolute path to the single element in XPath notation.
@@ -548,7 +587,10 @@ methods:
             corresponding namespaces. For example, `{greg: "http://calendartypes.org/xsds/GregorianCalendar"}`<!-- -->.
             The property names (such as "greg") can be any string that does not used reserved XPath characters, such as
             the forward slash "/".
-          type: any
+          type: |-
+            {
+                        [key: string]: string;
+                    }
       return:
         type: void
         description: ''

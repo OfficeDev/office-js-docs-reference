@@ -255,10 +255,7 @@ properties:
     fullName: placeholderText
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
-      is empty.
-
-
-      **Note**: The set operation for this property is not supported in Word on the web.
+      is empty. **Note**: The set operation for this property is not supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -723,7 +720,7 @@ methods:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       parameters:
         - id: rangeLocation
-          description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
+          description: 'Optional. The range location must be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
           type: '<xref uid="word!Word.RangeLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -740,7 +737,7 @@ methods:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       parameters:
         - id: rangeLocationString
-          description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
+          description: 'Optional. The range location must be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
           type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -785,7 +782,7 @@ methods:
           description: Required. Type of break.
           type: '<xref uid="word!Word.BreakType:enum" />'
         - id: insertLocation
-          description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
+          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: void
@@ -841,7 +838,7 @@ methods:
           description: Required. Type of break.
           type: '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
         - id: insertLocation
-          description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
+          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: void
@@ -862,7 +859,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -886,7 +883,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -908,7 +905,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -963,7 +960,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -987,7 +984,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -1011,7 +1008,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -1033,7 +1030,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -1089,7 +1086,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -1111,7 +1108,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -1166,7 +1163,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -1193,7 +1190,7 @@ methods:
           type: number
         - id: insertLocation
           description: >-
-            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: values
@@ -1223,7 +1220,7 @@ methods:
           type: number
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
+            Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: values
@@ -1248,7 +1245,7 @@ methods:
           type: string
         - id: insertLocation
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
@@ -1304,7 +1301,7 @@ methods:
           type: string
         - id: insertLocationString
           description: >-
-            Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
+            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
@@ -1519,7 +1516,7 @@ methods:
       content: 'select(selectionMode?: Word.SelectionMode): void;'
       parameters:
         - id: selectionMode
-          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
@@ -1536,7 +1533,7 @@ methods:
       content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
       parameters:
         - id: selectionModeString
-          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type: '"Select" | "Start" | "End"'
       return:
         type: void
