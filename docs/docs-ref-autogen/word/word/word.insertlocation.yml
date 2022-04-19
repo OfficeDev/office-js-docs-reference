@@ -3,7 +3,7 @@ name: Word.InsertLocation
 uid: 'word!Word.InsertLocation:enum'
 package: word!
 fullName: Word.InsertLocation
-summary: The insertion location types
+summary: The insertion location types.
 remarks: >-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

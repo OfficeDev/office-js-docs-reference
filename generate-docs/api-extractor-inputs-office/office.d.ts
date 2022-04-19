@@ -637,6 +637,7 @@ export declare namespace Office {
 
         /**
          * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+         * This API is only supported in Excel.
          * 
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
@@ -647,6 +648,7 @@ export declare namespace Office {
     /**
      * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
      * The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document.
+     * This API is only supported in Excel.
      * 
      * @remarks
      * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
@@ -656,6 +658,7 @@ export declare namespace Office {
         /**
          * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds.
          * This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document.
+         * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * 
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
@@ -665,6 +668,7 @@ export declare namespace Office {
 
         /**
          * Prevents the notification dialog from appearing when the user attempts to close a document.
+         * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * 
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
@@ -677,6 +681,7 @@ export declare namespace Office {
          * This event handler will be triggered if one of the following conditions is met:
          * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
          * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * @param handler - The event handler that is called when the dialog is cancelled.
          * @returns A promise that resolves when the event handler is added.
          * 

@@ -458,6 +458,11 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * 
+         * **Important**: A `recipientType` property value isn't returned by the 
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+         * and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+         * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
          */
         enum RecipientType {
             /**
@@ -3985,6 +3990,12 @@ export declare namespace Office {
         appointmentResponse: MailboxEnums.ResponseType | string;
         /**
          * Gets the email address type of a recipient.
+         * 
+         * @remarks
+         * **Important**: A `recipientType` property value isn't returned by the 
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+         * and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+         * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
          */
         recipientType: MailboxEnums.RecipientType | string;
     }
@@ -4235,6 +4246,9 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          * 
+         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * The email sender is always a user whose email address is on the Exchange server.
+         * 
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -4255,6 +4269,9 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * 
+         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * The email sender is always a user whose email address is on the Exchange server.
          * 
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                             `asyncResult`, which is an `Office.AsyncResult` object.
@@ -7500,6 +7517,9 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          * 
+         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * The appointment organizer is always a user whose email address is on the Exchange server.
+         * 
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -7517,6 +7537,9 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * 
+         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * The appointment organizer is always a user whose email address is on the Exchange server.
          * 
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                  `asyncResult`, which is an `AsyncResult` object. The `value` property of the result is the appointment's organizer value,

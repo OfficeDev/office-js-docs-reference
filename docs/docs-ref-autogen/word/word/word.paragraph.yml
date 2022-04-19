@@ -80,6 +80,20 @@ properties:
       content: 'readonly endnotes: Word.NoteItemCollection;'
       return:
         type: '<xref uid="word!Word.NoteItemCollection:class" />'
+  - name: fields
+    uid: 'word!Word.Paragraph#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of fields in the paragraph. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly fields: Word.FieldCollection;'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
   - name: firstLineIndent
     uid: 'word!Word.Paragraph#firstLineIndent:member'
     package: word!
@@ -905,7 +919,7 @@ methods:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       parameters:
         - id: rangeLocation
-          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          description: 'Optional. The range location must be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
           type: '<xref uid="word!Word.RangeLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -922,7 +936,7 @@ methods:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       parameters:
         - id: rangeLocationString
-          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          description: 'Optional. The range location must be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
           type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -941,7 +955,7 @@ methods:
       content: 'getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: changeTrackingVersion
-          description: 'Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.'
+          description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
@@ -960,7 +974,7 @@ methods:
       content: 'getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;'
       parameters:
         - id: changeTrackingVersionString
-          description: 'Optional. The changeTrackingVersion might be: Original, Current. The default value is Current.'
+          description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
@@ -1022,7 +1036,7 @@ methods:
           description: Required. The break type to add to the document.
           type: '<xref uid="word!Word.BreakType:enum" />'
         - id: insertLocation
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: void
@@ -1075,7 +1089,7 @@ methods:
           description: Required. The break type to add to the document.
           type: '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
         - id: insertLocation
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: void
@@ -1139,7 +1153,7 @@ methods:
           description: Required. The base64 encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1161,7 +1175,7 @@ methods:
           description: Required. The base64 encoded content of a .docx file.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1212,7 +1226,7 @@ methods:
           description: Required. The HTML to be inserted in the paragraph.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1232,7 +1246,7 @@ methods:
           description: Required. The HTML to be inserted in the paragraph.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1286,7 +1300,7 @@ methods:
           description: Required. The base64 encoded image to be inserted.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
@@ -1308,7 +1322,7 @@ methods:
           description: Required. The base64 encoded image to be inserted.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
@@ -1328,7 +1342,7 @@ methods:
           description: Required. The OOXML to be inserted in the paragraph.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1348,7 +1362,7 @@ methods:
           description: Required. The OOXML to be inserted in the paragraph.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1368,7 +1382,7 @@ methods:
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
@@ -1390,7 +1404,7 @@ methods:
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocationString
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
@@ -1415,7 +1429,7 @@ methods:
           description: Required. The number of columns in the table.
           type: number
         - id: insertLocation
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
@@ -1443,7 +1457,7 @@ methods:
           description: Required. The number of columns in the table.
           type: number
         - id: insertLocationString
-          description: Required. The value can be 'Before' or 'After'.
+          description: Required. The value must be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
@@ -1487,7 +1501,7 @@ methods:
           description: Required. Text to be inserted.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1507,7 +1521,7 @@ methods:
           description: Required. Text to be inserted.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.Range:class" />'
@@ -1664,7 +1678,7 @@ methods:
       content: 'select(selectionMode?: Word.SelectionMode): void;'
       parameters:
         - id: selectionMode
-          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type: '<xref uid="word!Word.SelectionMode:enum" />'
       return:
         type: void
@@ -1681,7 +1695,7 @@ methods:
       content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
       parameters:
         - id: selectionModeString
-          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type: '"Select" | "Start" | "End"'
       return:
         type: void
