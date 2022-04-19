@@ -4531,7 +4531,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.EmailAddressDetails#recipientType:member",
-                  "docComment": "/**\n * Gets the email address type of a recipient.\n */\n",
+                  "docComment": "/**\n * Gets the email address type of a recipient.\n *\n * @remarks\n *\n * **Important**: A `recipientType` property value isn't returned by the {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6690,7 +6690,7 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.RecipientType:enum",
-                  "docComment": "/**\n * Specifies the type of recipient for an appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+                  "docComment": "/**\n * Specifies the type of recipient for an appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Important**: A `recipientType` property value isn't returned by the {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
