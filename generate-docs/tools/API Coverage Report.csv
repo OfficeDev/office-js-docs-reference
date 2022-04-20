@@ -1078,6 +1078,9 @@ Excel.ChartFill,N/A,Class,Good,false
 Excel.ChartFill,context,Method,Good,false
 Excel.ChartFill,solidColor,Method,Good,false
 Excel.ChartFill,clear(),Method,Good,true
+Excel.ChartFill,load(options),Method,Good,false
+Excel.ChartFill,load(propertyNames),Method,Good,false
+Excel.ChartFill,load(propertyNamesAndPaths),Method,Good,false
 Excel.ChartFill,set(properties,Method,Good,false
 Excel.ChartFill,set(properties),Method,Fine,false
 Excel.ChartFill,setSolidColor(color),Method,Good,true
@@ -2617,7 +2620,6 @@ Excel.EventType,chartDeleted,EnumField,Fine,false
 Excel.EventType,commentAdded,EnumField,Fine,false
 Excel.EventType,commentChanged,EnumField,Fine,false
 Excel.EventType,commentDeleted,EnumField,Fine,false
-Excel.EventType,lineageActivityUpdateAvailable,EnumField,Fine,false
 Excel.EventType,linkedDataTypeLinkedDataTypeAdded,EnumField,Fine,false
 Excel.EventType,linkedDataTypeRefreshModeChanged,EnumField,Fine,false
 Excel.EventType,linkedDataTypeRefreshRequestCompleted,EnumField,Fine,false
@@ -2635,6 +2637,7 @@ Excel.EventType,visualChange,EnumField,Fine,false
 Excel.EventType,visualSelectionChanged,EnumField,Fine,false
 Excel.EventType,workbookActivated,EnumField,Fine,false
 Excel.EventType,workbookAutoSaveSettingChanged,EnumField,Fine,false
+Excel.EventType,workbookNavigationObjectChanged,EnumField,Fine,false
 Excel.EventType,worksheetActivated,EnumField,Fine,false
 Excel.EventType,worksheetAdded,EnumField,Fine,false
 Excel.EventType,worksheetCalculated,EnumField,Fine,false
@@ -2648,6 +2651,7 @@ Excel.EventType,worksheetFormulaChanged,EnumField,Fine,false
 Excel.EventType,worksheetMoved,EnumField,Fine,false
 Excel.EventType,worksheetNameChanged,EnumField,Fine,false
 Excel.EventType,worksheetProtectionChanged,EnumField,Fine,false
+Excel.EventType,worksheetRowHeightChanged,EnumField,Fine,false
 Excel.EventType,worksheetRowHiddenChanged,EnumField,Fine,false
 Excel.EventType,worksheetRowSorted,EnumField,Fine,false
 Excel.EventType,worksheetSelectionChanged,EnumField,Fine,false
@@ -5149,10 +5153,10 @@ Excel.SpecialCellValueType,text,EnumField,Fine,false
 Excel.SpillErrorCellValue,N/A,Class,Good,false
 Excel.SpillErrorCellValue,basicType,Method,Good,false
 Excel.SpillErrorCellValue,basicValue,Method,Good,false
+Excel.SpillErrorCellValue,columnCount,Method,Good,false
 Excel.SpillErrorCellValue,errorSubType,Method,Good,false
 Excel.SpillErrorCellValue,errorType,Method,Good,false
-Excel.SpillErrorCellValue,spilledColumns,Method,Good,false
-Excel.SpillErrorCellValue,spilledRows,Method,Good,false
+Excel.SpillErrorCellValue,rowCount,Method,Good,false
 Excel.SpillErrorCellValue,type,Method,Good,false
 Excel.SpillErrorCellValueSubType,N/A,Class,Good,false
 Excel.SpillErrorCellValueSubType,collision,EnumField,Good,false
@@ -7860,7 +7864,7 @@ Office.EmailAddressDetails,N/A,Class,Good,false
 Office.EmailAddressDetails,appointmentResponse,Method,Good,true
 Office.EmailAddressDetails,displayName,Method,Fine,true
 Office.EmailAddressDetails,emailAddress,Method,Poor,true
-Office.EmailAddressDetails,recipientType,Method,Good,false
+Office.EmailAddressDetails,recipientType,Method,Fine,true
 Office.EmailUser,N/A,Class,Good,true
 Office.EmailUser,displayName,Method,Fine,false
 Office.EmailUser,emailAddress,Method,Poor,false

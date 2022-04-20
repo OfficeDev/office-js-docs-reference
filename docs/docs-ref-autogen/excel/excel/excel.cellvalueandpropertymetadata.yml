@@ -9,4 +9,4 @@ summary: >-
 remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: true
 isDeprecated: false
-syntax: export type CellValueAndPropertyMetadata = CellValue & EntityPropertyExtraProperties;
+syntax: export type CellValueAndPropertyMetadata = (CellValue) & EntityPropertyExtraProperties;

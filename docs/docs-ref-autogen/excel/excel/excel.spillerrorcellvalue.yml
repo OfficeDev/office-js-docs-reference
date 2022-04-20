@@ -36,6 +36,18 @@ properties:
       content: 'basicValue?: "#SPILL!" | string;'
       return:
         type: '"#SPILL!" | string'
+  - name: columnCount
+    uid: 'excel!Excel.SpillErrorCellValue#columnCount:member'
+    package: excel!
+    fullName: columnCount
+    summary: 'Represents the number of columns that would spill if there were no \#SPILL! error.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'columnCount?: number;'
+      return:
+        type: number
   - name: errorSubType
     uid: 'excel!Excel.SpillErrorCellValue#errorSubType:member'
     package: excel!
@@ -64,28 +76,16 @@ properties:
       content: 'errorType?: ErrorCellValueType.spill | "Spill";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.spill:member" /> | "Spill"'
-  - name: spilledColumns
-    uid: 'excel!Excel.SpillErrorCellValue#spilledColumns:member'
+  - name: rowCount
+    uid: 'excel!Excel.SpillErrorCellValue#rowCount:member'
     package: excel!
-    fullName: spilledColumns
-    summary: 'Represents the number of columns that would spill if there were no \#SPILL! error.'
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'spilledColumns?: number;'
-      return:
-        type: number
-  - name: spilledRows
-    uid: 'excel!Excel.SpillErrorCellValue#spilledRows:member'
-    package: excel!
-    fullName: spilledRows
+    fullName: rowCount
     summary: 'Represents the number of rows that would spill if there were no \#SPILL! error.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'spilledRows?: number;'
+      content: 'rowCount?: number;'
       return:
         type: number
   - name: type
