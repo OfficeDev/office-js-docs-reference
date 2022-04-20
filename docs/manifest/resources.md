@@ -49,13 +49,14 @@ The following additional sizes are also supported, but not required.
 - 48x48
 - 64x64
 
-The following image/file extensions are supported:
-- bmp
-- gif
-- exif
-- jpg
-- tiff
-- png
+The following image file formats are supported.
+
+- BMP
+- EXIF
+- GIF
+- JPG
+- PNG
+- TIFF
 
 > [!IMPORTANT]
 >
