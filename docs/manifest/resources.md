@@ -49,6 +49,14 @@ The following additional sizes are also supported, but not required.
 - 48x48
 - 64x64
 
+The following image/file extensions are supported:
+- bmp
+- gif
+- exif
+- jpg
+- tiff
+- png
+
 > [!IMPORTANT]
 >
 > - If this image is your add-in's representative icon, see [Create effective listings in AppSource and within Office](/office/dev/store/create-effective-office-store-listings#create-an-icon-for-your-add-in) for size and other requirements.
