@@ -8,6 +8,6 @@ remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement
 isPreview: true
 isDeprecated: false
 syntax: >-
-  export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
+  export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue |
   ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue |
-  ValueTypeNotAvailableCellValue | WebImageCellValue & CellValueExtraProperties;
+  ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;

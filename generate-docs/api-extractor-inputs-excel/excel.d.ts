@@ -800,7 +800,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValue = ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue & CellValueExtraProperties;
+    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
     /**
     * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
     *
@@ -836,7 +836,7 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type CellValueAndPropertyMetadata = CellValue & EntityPropertyExtraProperties;
+    export type CellValueAndPropertyMetadata = (CellValue) & EntityPropertyExtraProperties;
     /**
     * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
     *
@@ -2290,7 +2290,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        spilledRows?: number;
+        rowCount?: number;
         /**
         * Represents the number of columns that would spill if there were no #SPILL! error.
         *
@@ -2298,7 +2298,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        spilledColumns?: number;
+        columnCount?: number;
     }
     /**
     * Represents the value of a cell containing a string.
@@ -12649,7 +12649,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valueAsJson: CellValue;
+        readonly valueAsJson: CellValue | string;
         /**
          * A JSON representation of the values in this named item.
                     Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
@@ -12659,7 +12659,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly valueAsJsonLocal: CellValue[][];
+        readonly valueAsJsonLocal: CellValue | string;
         /**
          * Specifies if the object is visible.
          *
@@ -18474,12 +18474,31 @@ export declare namespace Excel {
          */
         setSolidColor(color: string): void;
         /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.ChartFillLoadOptions): Excel.ChartFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartFill;
+        /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
         */
-        toJSON(): {
-            [key: string]: string;
-        };
+        toJSON(): Excel.Interfaces.ChartFillData;
     }
     /**
      * Represents the border formatting of a chart element.
@@ -33385,7 +33404,14 @@ export declare namespace Excel {
          * @remarks
          * [Api set: ExcelApi 1.7]
          */
-        lineageActivityUpdateAvailable = "LineageActivityUpdateAvailable"
+        workbookNavigationObjectChanged = "WorkbookNavigationObjectChanged",
+        /**
+         * WorksheetRowHeightChanged represents the type of event registered when the height of a worksheet row is changed.
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetRowHeightChanged = "WorksheetRowHeightChanged"
     }
     /**
      * @remarks
@@ -46590,7 +46616,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valueAsJson?: CellValue;
+            valueAsJson?: CellValue | string;
             /**
              * A JSON representation of the values in this named item.
                         Unlike `NamedItem.value`, `NamedItem.valueAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values and web images, in addition to the standard boolean, number, and string values.
@@ -46600,7 +46626,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            valueAsJsonLocal?: CellValue[][];
+            valueAsJsonLocal?: CellValue | string;
             /**
              * Specifies if the object is visible.
              *
