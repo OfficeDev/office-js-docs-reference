@@ -112,9 +112,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'valueAsJson?: CellValue;'
+      content: 'valueAsJson?: CellValue | string;'
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />'
+        type: '<xref uid="excel!Excel.CellValue:type" /> | string'
   - name: valueAsJsonLocal
     uid: 'excel!Excel.Interfaces.NamedItemData#valueAsJsonLocal:member'
     package: excel!
@@ -129,9 +129,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'valueAsJsonLocal?: CellValue[][];'
+      content: 'valueAsJsonLocal?: CellValue | string;'
       return:
-        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        type: '<xref uid="excel!Excel.CellValue:type" /> | string'
   - name: visible
     uid: 'excel!Excel.Interfaces.NamedItemData#visible:member'
     package: excel!

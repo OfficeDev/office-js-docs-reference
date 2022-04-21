@@ -255,10 +255,10 @@
 ||[slicerStyle](/javascript/api/excel/excel.slicer#excel-excel-slicer-slicerstyle-member)|The style applied to the slicer.|
 |[SpillErrorCellValue](/javascript/api/excel/excel.spillerrorcellvalue)|[basicType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[columnCount](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-columncount-member)|Represents the number of columns that would spill if there were no #SPILL! error.|
 ||[errorSubType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-errorsubtype-member)|Represents the type of `SpillErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
-||[spilledColumns](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-spilledcolumns-member)|Represents the number of columns that would spill if there were no #SPILL! error.|
-||[spilledRows](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-spilledrows-member)|Represents the number of rows that would spill if there were no #SPILL! error.|
+||[rowCount](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-rowcount-member)|Represents the number of rows that would spill if there were no #SPILL! error.|
 ||[type](/javascript/api/excel/excel.spillerrorcellvalue#excel-excel-spillerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[StringCellValue](/javascript/api/excel/excel.stringcellvalue)|[basicType](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.stringcellvalue#excel-excel-stringcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|

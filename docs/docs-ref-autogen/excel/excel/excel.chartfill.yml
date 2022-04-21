@@ -63,6 +63,73 @@ methods:
       return:
         type: void
         description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartFill#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartFillLoadOptions): Excel.ChartFill;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.ChartFillLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartFill:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartFill#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartFill;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartFill:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartFill#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartFill;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.ChartFill:class" />'
+        description: ''
   - name: 'set(properties, options)'
     uid: 'excel!Excel.ChartFill#set:member(1)'
     package: excel!
@@ -161,14 +228,8 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: |-
-        toJSON(): {
-                    [key: string]: string;
-                };
+      content: 'toJSON(): Excel.Interfaces.ChartFillData;'
       return:
-        type: |-
-          {
-                      [key: string]: string;
-                  }
+        type: '<xref uid="excel!Excel.Interfaces.ChartFillData:interface" />'
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
