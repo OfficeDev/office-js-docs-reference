@@ -5086,7 +5086,7 @@ export declare namespace Office {
          *
          * The add-in should use the `ewsUrl` property to determine the correct URL to use when making EWS calls.
          *
-         * You can pass both the token and either an attachment identifier or item identifier to a third-party system. The third-party system uses
+         * You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
          * the token as a bearer authorization token to call the Exchange Web Services (EWS)
          * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation | GetAttachment} operation or
          * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation | GetItem} operation to return an
@@ -5126,7 +5126,7 @@ export declare namespace Office {
          *
          * The token is returned as a string in the `asyncResult.value` property.
          *
-         * You can pass both the token and either an attachment identifier or item identifier to a third-party system. The third-party system uses
+         * You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
          * the token as a bearer authorization token to call the Exchange Web Services (EWS)
          * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation | GetAttachment} operation or
          * {@link https://docs.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation | GetItem} operation to return an
@@ -5174,7 +5174,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * The `getUserIdentityTokenAsync` method returns a token that you can use to identify and 
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with a third-party system}.
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/authentication | authenticate the add-in and user with an external system}.
          *
          * **Errors**:
          * 
