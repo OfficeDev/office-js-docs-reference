@@ -9,6 +9,40 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: length
+    uid: 'powerpoint!PowerPoint.Interfaces.TextRangeData#length:member'
+    package: powerpoint!
+    fullName: length
+    summary: >-
+      Gets or sets the length of the range that this `TextRange` represents. Throws an `InvalidArgument` exception when
+      set with a negative value or if the value is greater than the length of the available text from the starting
+      point.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'length?: number;'
+      return:
+        type: number
+  - name: start
+    uid: 'powerpoint!PowerPoint.Interfaces.TextRangeData#start:member'
+    package: powerpoint!
+    fullName: start
+    summary: >-
+      Gets or sets zero-based index, relative to the parent text frame, for the starting position of the range that this
+      `TextRange` represents. Throws an `InvalidArgument` exception when set with a negative value or if the value is
+      greater than the length of the text.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start?: number;'
+      return:
+        type: number
   - name: text
     uid: 'powerpoint!PowerPoint.Interfaces.TextRangeData#text:member'
     package: powerpoint!

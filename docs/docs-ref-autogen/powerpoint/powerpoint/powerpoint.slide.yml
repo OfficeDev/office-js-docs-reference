@@ -195,6 +195,25 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Slide:class" />'
         description: ''
+  - name: setSelectedShapes(shapeIds)
+    uid: 'powerpoint!PowerPoint.Slide#setSelectedShapes:member(1)'
+    package: powerpoint!
+    fullName: setSelectedShapes(shapeIds)
+    summary: Selects the specified shapes. Existing shape selection is replaced with the new selection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setSelectedShapes(shapeIds: string[]): void;'
+      parameters:
+        - id: shapeIds
+          description: 'List of shape IDs to select in the slide. If the list is empty, the selection is cleared.'
+          type: 'string[]'
+      return:
+        type: void
+        description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.Slide#toJSON:member(1)'
     package: powerpoint!
