@@ -39,6 +39,23 @@ properties:
       content: 'readonly font: PowerPoint.ShapeFont;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeFont:class" />'
+  - name: length
+    uid: 'powerpoint!PowerPoint.TextRange#length:member'
+    package: powerpoint!
+    fullName: length
+    summary: >-
+      Gets or sets the length of the range that this `TextRange` represents. Throws an `InvalidArgument` exception when
+      set with a negative value or if the value is greater than the length of the available text from the starting
+      point.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'length: number;'
+      return:
+        type: number
   - name: paragraphFormat
     uid: 'powerpoint!PowerPoint.TextRange#paragraphFormat:member'
     package: powerpoint!
@@ -55,6 +72,23 @@ properties:
       content: 'readonly paragraphFormat: PowerPoint.ParagraphFormat;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ParagraphFormat:class" />'
+  - name: start
+    uid: 'powerpoint!PowerPoint.TextRange#start:member'
+    package: powerpoint!
+    fullName: start
+    summary: >-
+      Gets or sets zero-based index, relative to the parent text frame, for the starting position of the range that this
+      `TextRange` represents. Throws an `InvalidArgument` exception when set with a negative value or if the value is
+      greater than the length of the text.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'start: number;'
+      return:
+        type: number
   - name: text
     uid: 'powerpoint!PowerPoint.TextRange#text:member'
     package: powerpoint!
@@ -70,6 +104,23 @@ properties:
       return:
         type: string
 methods:
+  - name: getParentTextFrame()
+    uid: 'powerpoint!PowerPoint.TextRange#getParentTextFrame:member(1)'
+    package: powerpoint!
+    fullName: getParentTextFrame()
+    summary: >-
+      Returns the parent [PowerPoint.TextFrame](xref:powerpoint!PowerPoint.TextFrame:class) object that holds this
+      `TextRange`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getParentTextFrame(): PowerPoint.TextFrame;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextFrame:class" />'
+        description: ''
   - name: 'getSubstring(start, length)'
     uid: 'powerpoint!PowerPoint.TextRange#getSubstring:member(1)'
     package: powerpoint!
@@ -160,6 +211,21 @@ methods:
                     }
       return:
         type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: setSelected()
+    uid: 'powerpoint!PowerPoint.TextRange#setSelected:member(1)'
+    package: powerpoint!
+    fullName: setSelected()
+    summary: Selects this `TextRange` in the current view.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setSelected(): void;'
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.TextRange#toJSON:member(1)'

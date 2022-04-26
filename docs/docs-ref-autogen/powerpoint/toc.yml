@@ -65,6 +65,8 @@ items:
             uid: 'powerpoint!PowerPoint.ShapeFont:class'
           - name: ShapeLineFormat
             uid: 'powerpoint!PowerPoint.ShapeLineFormat:class'
+          - name: ShapeScopedCollection
+            uid: 'powerpoint!PowerPoint.ShapeScopedCollection:class'
           - name: Slide
             uid: 'powerpoint!PowerPoint.Slide:class'
           - name: SlideCollection
@@ -77,6 +79,8 @@ items:
             uid: 'powerpoint!PowerPoint.SlideMaster:class'
           - name: SlideMasterCollection
             uid: 'powerpoint!PowerPoint.SlideMasterCollection:class'
+          - name: SlideScopedCollection
+            uid: 'powerpoint!PowerPoint.SlideScopedCollection:class'
           - name: Tag
             uid: 'powerpoint!PowerPoint.Tag:class'
           - name: TagCollection
