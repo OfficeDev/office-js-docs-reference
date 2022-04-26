@@ -72,6 +72,74 @@ properties:
       return:
         type: string
 methods:
+  - name: getSelectedShapes()
+    uid: 'powerpoint!PowerPoint.Presentation#getSelectedShapes:member(1)'
+    package: powerpoint!
+    fullName: getSelectedShapes()
+    summary: >-
+      Returns the selected shapes in the current slide of the presentation. If no shapes are selected, an empty
+      collection is returned.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedShapes(): PowerPoint.ShapeScopedCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.ShapeScopedCollection:class" />'
+        description: ''
+  - name: getSelectedSlides()
+    uid: 'powerpoint!PowerPoint.Presentation#getSelectedSlides:member(1)'
+    package: powerpoint!
+    fullName: getSelectedSlides()
+    summary: >-
+      Returns the selected slides in the current view of the presentation. The first item in the collection is the
+      active slide that is visible in the editing area. If no slides are selected, an empty collection is returned.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedSlides(): PowerPoint.SlideScopedCollection;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.SlideScopedCollection:class" />'
+        description: ''
+  - name: getSelectedTextRange()
+    uid: 'powerpoint!PowerPoint.Presentation#getSelectedTextRange:member(1)'
+    package: powerpoint!
+    fullName: getSelectedTextRange()
+    summary: >-
+      Returns the selected [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the current view of the
+      presentation. Throws an exception if no text is selected.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedTextRange(): PowerPoint.TextRange;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
+  - name: getSelectedTextRangeOrNullObject()
+    uid: 'powerpoint!PowerPoint.Presentation#getSelectedTextRangeOrNullObject:member(1)'
+    package: powerpoint!
+    fullName: getSelectedTextRangeOrNullObject()
+    summary: >-
+      Returns the selected [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the current view of the
+      presentation. If no text is selected, an object with an `isNullObject` property set to `true` is returned.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getSelectedTextRangeOrNullObject(): PowerPoint.TextRange;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.TextRange:class" />'
+        description: ''
   - name: 'insertSlidesFromBase64(base64File, options)'
     uid: 'powerpoint!PowerPoint.Presentation#insertSlidesFromBase64:member(1)'
     package: powerpoint!
@@ -182,6 +250,27 @@ methods:
                     }
       return:
         type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
+        description: ''
+  - name: setSelectedSlides(slideIds)
+    uid: 'powerpoint!PowerPoint.Presentation#setSelectedSlides:member(1)'
+    package: powerpoint!
+    fullName: setSelectedSlides(slideIds)
+    summary: >-
+      Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new
+      selection.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setSelectedSlides(slideIds: string[]): void;'
+      parameters:
+        - id: slideIds
+          description: 'List of slide IDs to select in the presentation. If the list is empty, selection is cleared.'
+          type: 'string[]'
+      return:
+        type: void
         description: ''
   - name: toJSON()
     uid: 'powerpoint!PowerPoint.Presentation#toJSON:member(1)'

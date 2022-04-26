@@ -181,6 +181,23 @@ methods:
       return:
         type: void
         description: ''
+  - name: getParentShape()
+    uid: 'powerpoint!PowerPoint.TextFrame#getParentShape:member(1)'
+    package: powerpoint!
+    fullName: getParentShape()
+    summary: >-
+      Returns the parent [PowerPoint.Shape](xref:powerpoint!PowerPoint.Shape:class) object that holds this
+      `TextFrame`<!-- -->.
+    remarks: >-
+      \[ [API set: PowerPointApi BETA (PREVIEW
+      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getParentShape(): PowerPoint.Shape;'
+      return:
+        type: '<xref uid="powerpoint!PowerPoint.Shape:class" />'
+        description: ''
   - name: load(options)
     uid: 'powerpoint!PowerPoint.TextFrame#load:member(1)'
     package: powerpoint!

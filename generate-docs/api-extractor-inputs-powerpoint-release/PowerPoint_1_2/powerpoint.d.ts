@@ -140,7 +140,6 @@ export declare namespace PowerPoint {
     
     
     
-    
     /**
      * Represents a single slide of a presentation.
      *
@@ -195,6 +194,7 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
+    
     /**
      * Represents the collection of slides in the presentation.
      *
@@ -290,14 +290,6 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
-        export interface TagUpdateData {
-            
-        }
-        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
-        export interface TagCollectionUpdateData {
-            items?: PowerPoint.Interfaces.TagData[];
-        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -305,6 +297,14 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
         export interface SlideLayoutCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
+        /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
+        export interface TagUpdateData {
+            
+        }
+        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
+        export interface TagCollectionUpdateData {
+            items?: PowerPoint.Interfaces.TagData[];
         }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
@@ -317,19 +317,6 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
-        }
-        /** An interface describing the data returned by calling `tag.toJSON()`. */
-        export interface TagData {
-            
-            
-        }
-        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
-        export interface TagCollectionData {
-            items?: PowerPoint.Interfaces.TagData[];
-        }
-        /** An interface describing the data returned by calling `shape.toJSON()`. */
-        export interface ShapeData {
-            
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -349,6 +336,15 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface describing the data returned by calling `tag.toJSON()`. */
+        export interface TagData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
+        export interface TagCollectionData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             /**
@@ -358,6 +354,10 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.2]
              */
             id?: string;
+        }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            
         }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
@@ -378,7 +378,6 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
-        
         
         
         
@@ -406,6 +405,7 @@ export declare namespace PowerPoint {
              */
             id?: boolean;
         }
+        
         /**
          * Represents the collection of slides in the presentation.
          *

@@ -173,205 +173,6 @@ export declare namespace PowerPoint {
         targetSlideId?: string;
     }
     /**
-     * Represents a single tag in the slide.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.3]
-     */
-    export class Tag extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        readonly key: string;
-        /**
-         * Gets the value of the tag.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        value: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.TagLoadOptions): PowerPoint.Tag;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.Tag;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.Tag;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.Tag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.TagData;
-    }
-    /**
-     * Represents the collection of tags.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.3]
-     */
-    export class TagCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: PowerPoint.Tag[];
-        /**
-         * Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the existing tag will be replaced with the given `value`.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         *
-         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
-         * @param value - The value of the tag.
-         */
-        add(key: string, value: string): void;
-        /**
-         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         *
-         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. `key` parameter is case-insensitive.
-         */
-        delete(key: string): void;
-        /**
-         * Gets the number of tags in the collection.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         * @returns The number of tags in the collection.
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a tag using its unique ID. An error is thrown if the tag does not exist.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         *
-         * @param key - The ID of the tag.
-         * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
-         */
-        getItem(key: string): PowerPoint.Tag;
-        /**
-         * Gets a tag using its zero-based index in the collection. An error is thrown if the index is out of range.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         *
-         * @param index - The index of the tag in the collection.
-         * @returns The tag at the given index. An error is thrown if index is out of range.
-         */
-        getItemAt(index: number): PowerPoint.Tag;
-        /**
-         * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         *
-         * @param key - The ID of the tag.
-         * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
-         */
-        getItemOrNullObject(key: string): PowerPoint.Tag;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TagCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.TagCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TagCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): PowerPoint.Interfaces.TagCollectionData;
-    }
-    /**
-     * Represents a single shape in the slide.
-     *
-     * @remarks
-     * [Api set: PowerPointApi 1.3]
-     */
-    export class Shape extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Returns a collection of tags in the shape.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        readonly tags: PowerPoint.TagCollection;
-        /**
-         * Gets the unique ID of the shape.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        readonly id: string;
-        /**
-         * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        delete(): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.ShapeLoadOptions): PowerPoint.Shape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.Shape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.Shape;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original PowerPoint.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): PowerPoint.Interfaces.ShapeData;
-    }
-    /**
      * Represents the collection of shapes.
      *
      * @remarks
@@ -640,6 +441,148 @@ export declare namespace PowerPoint {
         toJSON(): PowerPoint.Interfaces.SlideMasterData;
     }
     /**
+     * Represents a single tag in the slide.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
+     */
+    export class Tag extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        readonly key: string;
+        /**
+         * Gets the value of the tag.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        value: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TagLoadOptions): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Tag;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.Tag object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.TagData;
+    }
+    /**
+     * Represents the collection of tags.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
+     */
+    export class TagCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: PowerPoint.Tag[];
+        /**
+         * Adds a new tag at the end of the collection. If the `key` already exists in the collection, the value of the existing tag will be replaced with the given `value`.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         *
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. 'key' parameter is case-insensitive, but it is always capitalized when saved in the document.
+         * @param value - The value of the tag.
+         */
+        add(key: string, value: string): void;
+        /**
+         * Deletes the tag with the given `key` in this collection. Does nothing if the `key` does not exist.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         *
+         * @param key - The unique ID of a tag, which is unique within this `TagCollection`. `key` parameter is case-insensitive.
+         */
+        delete(key: string): void;
+        /**
+         * Gets the number of tags in the collection.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         * @returns The number of tags in the collection.
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a tag using its unique ID. An error is thrown if the tag does not exist.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         *
+         * @param key - The ID of the tag.
+         * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
+         */
+        getItem(key: string): PowerPoint.Tag;
+        /**
+         * Gets a tag using its zero-based index in the collection. An error is thrown if the index is out of range.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         *
+         * @param index - The index of the tag in the collection.
+         * @returns The tag at the given index. An error is thrown if index is out of range.
+         */
+        getItemAt(index: number): PowerPoint.Tag;
+        /**
+         * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         *
+         * @param key - The ID of the tag.
+         * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
+         */
+        getItemOrNullObject(key: string): PowerPoint.Tag;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.TagCollectionLoadOptions & PowerPoint.Interfaces.CollectionLoadOptions): PowerPoint.TagCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.TagCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): PowerPoint.TagCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `PowerPoint.TagCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.TagCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): PowerPoint.Interfaces.TagCollectionData;
+    }
+    /**
      * Represents a single slide of a presentation.
      *
      * @remarks
@@ -716,6 +659,63 @@ export declare namespace PowerPoint {
         * Whereas the original PowerPoint.Slide object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.SlideData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): PowerPoint.Interfaces.SlideData;
+    }
+    /**
+     * Represents a single shape in the slide.
+     *
+     * @remarks
+     * [Api set: PowerPointApi 1.3]
+     */
+    export class Shape extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Returns a collection of tags in the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        readonly tags: PowerPoint.TagCollection;
+        /**
+         * Gets the unique ID of the shape.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        readonly id: string;
+        /**
+         * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: PowerPoint.Interfaces.ShapeLoadOptions): PowerPoint.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): PowerPoint.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): PowerPoint.Shape;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original PowerPoint.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): PowerPoint.Interfaces.ShapeData;
     }
     /**
      * Represents the collection of slides in the presentation.
@@ -893,6 +893,14 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
+        export interface ShapeCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
+        export interface SlideLayoutCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideLayoutData[];
+        }
         /** An interface for updating data on the Tag object, for use in `tag.set({ ... })`. */
         export interface TagUpdateData {
             /**
@@ -907,14 +915,6 @@ export declare namespace PowerPoint {
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
         }
-        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
-        export interface ShapeCollectionUpdateData {
-            items?: PowerPoint.Interfaces.ShapeData[];
-        }
-        /** An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ... })`. */
-        export interface SlideLayoutCollectionUpdateData {
-            items?: PowerPoint.Interfaces.SlideLayoutData[];
-        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -926,37 +926,6 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
-        }
-        /** An interface describing the data returned by calling `tag.toJSON()`. */
-        export interface TagData {
-            /**
-             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            key?: string;
-            /**
-             * Gets the value of the tag.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            value?: string;
-        }
-        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
-        export interface TagCollectionData {
-            items?: PowerPoint.Interfaces.TagData[];
-        }
-        /** An interface describing the data returned by calling `shape.toJSON()`. */
-        export interface ShapeData {
-            /**
-             * Gets the unique ID of the shape.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            id?: string;
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -1000,6 +969,27 @@ export declare namespace PowerPoint {
              */
             name?: string;
         }
+        /** An interface describing the data returned by calling `tag.toJSON()`. */
+        export interface TagData {
+            /**
+             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            key?: string;
+            /**
+             * Gets the value of the tag.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            value?: string;
+        }
+        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
+        export interface TagCollectionData {
+            items?: PowerPoint.Interfaces.TagData[];
+        }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             /**
@@ -1007,6 +997,16 @@ export declare namespace PowerPoint {
              *
              * @remarks
              * [Api set: PowerPointApi 1.2]
+             */
+            id?: string;
+        }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            /**
+             * Gets the unique ID of the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: string;
         }
@@ -1028,77 +1028,6 @@ export declare namespace PowerPoint {
              */
             $all?: boolean;
             title?: boolean;
-        }
-        /**
-         * Represents a single tag in the slide.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        export interface TagLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            key?: boolean;
-            /**
-             * Gets the value of the tag.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            value?: boolean;
-        }
-        /**
-         * Represents the collection of tags.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        export interface TagCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            key?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the value of the tag.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            value?: boolean;
-        }
-        /**
-         * Represents a single shape in the slide.
-         *
-         * @remarks
-         * [Api set: PowerPointApi 1.3]
-         */
-        export interface ShapeLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Gets the unique ID of the shape.
-             *
-             * @remarks
-             * [Api set: PowerPointApi 1.3]
-             */
-            id?: boolean;
         }
         /**
          * Represents the collection of shapes.
@@ -1198,6 +1127,58 @@ export declare namespace PowerPoint {
             name?: boolean;
         }
         /**
+         * Represents a single tag in the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        export interface TagLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            key?: boolean;
+            /**
+             * Gets the value of the tag.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            value?: boolean;
+        }
+        /**
+         * Represents the collection of tags.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        export interface TagCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the tag. The `key` is unique within the owning `TagCollection` and always stored as uppercase letters within the document.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            key?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the value of the tag.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            value?: boolean;
+        }
+        /**
          * Represents a single slide of a presentation.
          *
          * @remarks
@@ -1227,6 +1208,25 @@ export declare namespace PowerPoint {
              *
              * @remarks
              * [Api set: PowerPointApi 1.2]
+             */
+            id?: boolean;
+        }
+        /**
+         * Represents a single shape in the slide.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        export interface ShapeLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets the unique ID of the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
         }
