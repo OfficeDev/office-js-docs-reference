@@ -355,7 +355,7 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 
 ### MobileLogEventAppointmentAttendee
 
-This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and UI-less. To learn more about this scenario, refer to the [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments) article.
+This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and UI-less commands. To learn more about this scenario, refer to the [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments) article.
 
 > [!NOTE]
 > This extension point is only supported on Android with a Microsoft 365 subscription.
