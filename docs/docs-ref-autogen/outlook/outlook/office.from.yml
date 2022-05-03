@@ -47,6 +47,10 @@ methods:
       Compose
 
 
+      **Important**: A `recipientType` property value isn't returned by the getAsync method. The email sender is always
+      a user whose email address is on the Exchange server.
+
+
       #### Examples
 
 
@@ -113,6 +117,10 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      **Important**: A `recipientType` property value isn't returned by the getAsync methods. The email sender is always
+      a user whose email address is on the Exchange server.
     isPreview: false
     isDeprecated: false
     syntax:

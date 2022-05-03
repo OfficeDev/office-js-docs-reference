@@ -150,7 +150,7 @@ methods:
           description: Required. The text to be inserted in to the CommentContentRange.
           type: string
         - id: insertLocation
-          description: 'Required. The value can be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
           type: '<xref uid="word!Word.InsertLocation:enum" />'
       return:
         type: '<xref uid="word!Word.CommentContentRange:class" />'
@@ -174,7 +174,7 @@ methods:
           description: Required. The text to be inserted in to the CommentContentRange.
           type: string
         - id: insertLocationString
-          description: 'Required. The value can be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
+          description: 'Required. The value must be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
       return:
         type: '<xref uid="word!Word.CommentContentRange:class" />'

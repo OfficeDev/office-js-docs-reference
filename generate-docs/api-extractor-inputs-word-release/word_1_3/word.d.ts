@@ -191,7 +191,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -200,7 +200,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -210,7 +210,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the body.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
@@ -220,7 +220,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakTypeString - Required. The break type to add to the body.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
@@ -237,7 +237,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -247,7 +247,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -257,7 +257,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -267,7 +267,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -277,7 +277,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
@@ -287,7 +287,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value must be 'Start' or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -297,7 +297,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -307,7 +307,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -317,7 +317,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -327,7 +327,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value must be 'Start' or 'End'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -338,7 +338,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param insertLocation - Required. The value must be 'Start' or 'End'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
@@ -350,7 +350,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocationString - Required. The value can be 'Start' or 'End'.
+         * @param insertLocationString - Required. The value must be 'Start' or 'End'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
@@ -361,7 +361,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -371,7 +371,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -398,7 +398,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -407,7 +407,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -582,7 +582,6 @@ export declare namespace Word {
         readonly id: number;
         /**
          * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-         *
          * **Note**: The set operation for this property is not supported in Word on the web.
          *
          * @remarks
@@ -689,7 +688,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -698,7 +697,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -718,7 +717,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. Type of break.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
@@ -728,7 +727,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakTypeString - Required. Type of break.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
@@ -738,7 +737,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -748,7 +747,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -758,7 +757,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -768,7 +767,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -778,7 +777,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
@@ -788,7 +787,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -798,7 +797,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -808,7 +807,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -818,7 +817,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -828,7 +827,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocationString - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -839,7 +838,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
@@ -851,7 +850,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param insertLocationString - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
@@ -862,7 +861,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -872,7 +871,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -899,7 +898,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -908,7 +907,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -1886,7 +1885,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -1895,7 +1894,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', or 'End'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', or 'End'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -1905,7 +1904,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param breakType - Required. The break type to add.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
@@ -1915,7 +1914,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param breakTypeString - Required. The break type to add.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
@@ -1932,7 +1931,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -1942,7 +1941,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -1952,7 +1951,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -1962,7 +1961,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -1972,7 +1971,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
@@ -1982,7 +1981,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -1992,7 +1991,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -2002,7 +2001,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2012,7 +2011,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -2022,7 +2021,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -2032,7 +2031,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -2042,7 +2041,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2051,7 +2050,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -2060,7 +2059,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -2217,7 +2216,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -2227,7 +2226,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -2237,7 +2236,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
+         * @param alignment - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
          */
         setLevelAlignment(level: number, alignment: Word.Alignment): void;
         /**
@@ -2247,7 +2246,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param level - Required. The level in the list.
-         * @param alignmentString - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.
+         * @param alignmentString - Required. The level alignment that must be 'Left', 'Centered', or 'Right'.
          */
         setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"): void;
         /**
@@ -2842,7 +2841,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -2851,7 +2850,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -2871,7 +2870,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add to the document.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
@@ -2881,7 +2880,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakTypeString - Required. The break type to add to the document.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
@@ -2898,7 +2897,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -2908,7 +2907,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2918,7 +2917,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -2928,7 +2927,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2938,7 +2937,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
@@ -2948,7 +2947,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -2958,7 +2957,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -2968,7 +2967,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -2978,7 +2977,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -2988,7 +2987,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -2999,7 +2998,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
@@ -3011,7 +3010,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
@@ -3022,7 +3021,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -3032,7 +3031,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3059,7 +3058,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -3068,7 +3067,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -3426,7 +3425,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -3435,7 +3434,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -3455,7 +3454,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakType - Required. The break type to add.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
@@ -3465,7 +3464,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param breakTypeString - Required. The break type to add.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
@@ -3482,7 +3481,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -3492,7 +3491,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3502,7 +3501,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -3512,7 +3511,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param html - Required. The HTML to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3522,7 +3521,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
@@ -3532,7 +3531,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.2]
          *
          * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
@@ -3542,7 +3541,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -3552,7 +3551,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3562,7 +3561,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -3572,7 +3571,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -3583,7 +3582,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
@@ -3595,7 +3594,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
@@ -3606,7 +3605,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
@@ -3616,7 +3615,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
@@ -3661,7 +3660,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -3670,7 +3669,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -3906,7 +3905,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(type: Word.HeaderFooterType): Word.Body;
         /**
@@ -3915,7 +3914,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param typeString - Required. The type of footer to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
@@ -3924,7 +3923,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param type - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(type: Word.HeaderFooterType): Word.Body;
         /**
@@ -3933,7 +3932,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param typeString - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.
+         * @param typeString - Required. The type of header to return. This value must be: 'Primary', 'FirstPage', or 'EvenPages'.
          */
         getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
@@ -4254,7 +4253,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
+         * @param insertLocation - Required. It must be 'Start' or 'End', corresponding to the appropriate side of the table.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -4265,7 +4264,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocationString - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
+         * @param insertLocationString - Required. It must be 'Start' or 'End', corresponding to the appropriate side of the table.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -4276,7 +4275,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Start' or 'End'.
+         * @param insertLocation - Required. It must be 'Start' or 'End'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -4287,7 +4286,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocationString - Required. It can be 'Start' or 'End'.
+         * @param insertLocationString - Required. It must be 'Start' or 'End'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -4384,7 +4383,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -4393,7 +4392,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -4444,7 +4443,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
+         * @param rangeLocation - Optional. The range location must be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocation?: Word.RangeLocation): Word.Range;
         /**
@@ -4453,7 +4452,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.
+         * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', or 'After'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
         /**
@@ -4470,7 +4469,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
@@ -4480,7 +4479,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          *
          * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
@@ -4491,7 +4490,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param insertLocation - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]): Word.Table;
@@ -4503,7 +4502,7 @@ export declare namespace Word {
          *
          * @param rowCount - Required. The number of rows in the table.
          * @param columnCount - Required. The number of columns in the table.
-         * @param insertLocationString - Required. The value can be 'Before' or 'After'.
+         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
@@ -4531,7 +4530,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -4540,7 +4539,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -4549,7 +4548,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -4559,7 +4558,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -4787,7 +4786,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -4796,7 +4795,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -4819,7 +4818,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
+         * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It must be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add
          * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
@@ -4830,7 +4829,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocationString - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. Where the new rows should be inserted, relative to the current row. It must be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add
          * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
@@ -4859,7 +4858,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionMode?: Word.SelectionMode): void;
         /**
@@ -4868,7 +4867,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         /**
@@ -4877,7 +4876,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -4887,7 +4886,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -5115,7 +5114,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;
         /**
@@ -5124,7 +5123,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
@@ -5147,7 +5146,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param insertLocation - Required. It must be 'Before' or 'After'.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -5158,7 +5157,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocationString - Required. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. It must be 'Before' or 'After'.
          * @param columnCount - Required. Number of columns to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -5169,7 +5168,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param insertLocation - Required. It must be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -5180,7 +5179,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocationString - Required. It can be 'Before' or 'After'.
+         * @param insertLocationString - Required. It must be 'Before' or 'After'.
          * @param rowCount - Required. Number of rows to add.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
@@ -5191,7 +5190,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;
@@ -5201,7 +5200,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.
+         * @param cellPaddingLocationString - Required. The cell padding location must be 'Top', 'Left', 'Bottom', or 'Right'.
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
@@ -7224,7 +7223,6 @@ export declare namespace Word {
             color?: string;
             /**
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
              * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
@@ -8130,7 +8128,6 @@ export declare namespace Word {
             id?: number;
             /**
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
              * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
@@ -9400,7 +9397,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
              * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
@@ -9568,7 +9564,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
              * **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks

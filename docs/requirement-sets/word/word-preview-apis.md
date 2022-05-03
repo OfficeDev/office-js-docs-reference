@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 02/01/2022
+ms.date: 04/18/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---
@@ -32,17 +32,17 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[ContentControlEventArgs](/javascript/api/word/word.contentcontroleventargs)|[contentControl](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-contentcontrol-member)|The object that raised the event.|
 ||[eventType](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-eventtype-member)|The event type.|
 |[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[delete()](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-delete-member(1))|Deletes the custom XML part.|
-||[deleteAttribute(xpath: string, namespaceMappings: any, name: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteattribute-member(1))|Deletes an attribute with the given name from the element identified by xpath.|
-||[deleteElement(xpath: string, namespaceMappings: any)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteelement-member(1))|Deletes the element identified by xpath.|
+||[deleteAttribute(xpath: string, namespaceMappings: {            [key: string]: string        }, name: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteattribute-member(1))|Deletes an attribute with the given name from the element identified by xpath.|
+||[deleteElement(xpath: string, namespaceMappings: {            [key: string]: string        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteelement-member(1))|Deletes the element identified by xpath.|
 ||[getXml()](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-getxml-member(1))|Gets the full XML content of the custom XML part.|
 ||[id](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-id-member)|Gets the ID of the custom XML part.|
-||[insertAttribute(xpath: string, namespaceMappings: any, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertattribute-member(1))|Inserts an attribute with the given name and value to the element identified by xpath.|
-||[insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertelement-member(1))|Inserts the given XML under the parent element identified by xpath at child position index.|
+||[insertAttribute(xpath: string, namespaceMappings: {            [key: string]: string        }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertattribute-member(1))|Inserts an attribute with the given name and value to the element identified by xpath.|
+||[insertElement(xpath: string, xml: string, namespaceMappings: {            [key: string]: string        }, index?: number)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertelement-member(1))|Inserts the given XML under the parent element identified by xpath at child position index.|
 ||[namespaceUri](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespaceuri-member)|Gets the namespace URI of the custom XML part.|
-||[query(xpath: string, namespaceMappings: any)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-query-member(1))|Queries the XML content of the custom XML part.|
+||[query(xpath: string, namespaceMappings: {            [key: string]: string        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-query-member(1))|Queries the XML content of the custom XML part.|
 ||[setXml(xml: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-setxml-member(1))|Sets the full XML content of the custom XML part.|
-||[updateAttribute(xpath: string, namespaceMappings: any, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateattribute-member(1))|Updates the value of an attribute with the given name of the element identified by xpath.|
-||[updateElement(xpath: string, xml: string, namespaceMappings: any)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateelement-member(1))|Updates the XML of the element identified by xpath.|
+||[updateAttribute(xpath: string, namespaceMappings: {            [key: string]: string        }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateattribute-member(1))|Updates the value of an attribute with the given name of the element identified by xpath.|
+||[updateElement(xpath: string, xml: string, namespaceMappings: {            [key: string]: string        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateelement-member(1))|Updates the XML of the element identified by xpath.|
 |[CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection)|[add(xml: string)](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1))|Adds a new custom XML part to the document.|
 ||[getByNamespace(namespaceUri: string)](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getbynamespace-member(1))|Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.|
 ||[getCount()](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getcount-member(1))|Gets the number of items in the collection.|
@@ -102,6 +102,7 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Body](/javascript/api/word/word.body)|[endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member)|Gets the collection of endnotes in the body.|
+||[fields](/javascript/api/word/word.body#word-word-body-fields-member)|Gets the collection of field objects in the body.|
 ||[footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)|Gets the collection of footnotes in the body.|
 ||[getComments()](/javascript/api/word/word.body#word-word-body-getcomments-member(1))|Gets comments associated with the body.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.body#word-word-body-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
@@ -113,7 +114,7 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 ||[creationDate](/javascript/api/word/word.comment#word-word-comment-creationdate-member)|Gets the creation date of the comment.|
 ||[delete()](/javascript/api/word/word.comment#word-word-comment-delete-member(1))|Deletes the comment and its replies.|
 ||[getRange()](/javascript/api/word/word.comment#word-word-comment-getrange-member(1))|Gets the range in the main document where the comment is on.|
-||[id](/javascript/api/word/word.comment#word-word-comment-id-member)|ID|
+||[id](/javascript/api/word/word.comment#word-word-comment-id-member)|Gets the ID of the comment.|
 ||[replies](/javascript/api/word/word.comment#word-word-comment-replies-member)|Gets the collection of reply objects associated with the comment.|
 ||[reply(replyText: string)](/javascript/api/word/word.comment#word-word-comment-reply-member(1))|Adds a new reply to the end of the comment thread.|
 ||[resolved](/javascript/api/word/word.comment#word-word-comment-resolved-member)|Gets or sets the comment thread's status.|
@@ -135,19 +136,36 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 ||[contentRange](/javascript/api/word/word.commentreply#word-word-commentreply-contentrange-member)|Gets or sets the commentReply's content range.|
 ||[creationDate](/javascript/api/word/word.commentreply#word-word-commentreply-creationdate-member)|Gets the creation date of the comment reply.|
 ||[delete()](/javascript/api/word/word.commentreply#word-word-commentreply-delete-member(1))|Deletes the comment reply.|
-||[id](/javascript/api/word/word.commentreply#word-word-commentreply-id-member)|ID|
+||[id](/javascript/api/word/word.commentreply#word-word-commentreply-id-member)|Gets the ID of the comment reply.|
 ||[parentComment](/javascript/api/word/word.commentreply#word-word-commentreply-parentcomment-member)|Gets the parent comment of this reply.|
 |[CommentReplyCollection](/javascript/api/word/word.commentreplycollection)|[getFirst()](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirst-member(1))|Gets the first comment reply in the collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getfirstornullobject-member(1))|Gets the first comment reply in the collection.|
 ||[getItem(index: number)](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-getitem-member(1))|Gets a comment reply object by its index in the collection.|
 ||[items](/javascript/api/word/word.commentreplycollection#word-word-commentreplycollection-items-member)|Gets the loaded child items in this collection.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member)|Gets the collection of endnotes in the contentcontrol.|
+||[fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)|Gets the collection of field objects in the contentcontrol.|
 ||[footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)|Gets the collection of footnotes in the contentcontrol.|
 ||[getComments()](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcomments-member(1))|Gets comments associated with the body.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
 |[Document](/javascript/api/word/word.document)|[changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)|Gets or sets the ChangeTracking mode.|
 ||[getEndnoteBody()](/javascript/api/word/word.document#word-word-document-getendnotebody-member(1))|Gets the document's endnotes in a single body.|
 ||[getFootnoteBody()](/javascript/api/word/word.document#word-word-document-getfootnotebody-member(1))|Gets the document's footnotes in a single body.|
+|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Gets the field's code instruction.|
+||[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
+||[getNext()](/javascript/api/word/word.field#word-word-field-getnext-member(1))|Gets the next field.|
+||[getNextOrNullObject()](/javascript/api/word/word.field#word-word-field-getnextornullobject-member(1))|Gets the next field.|
+||[getRange()](/javascript/api/word/word.field#word-word-field-getrange-member(1))|Gets the whole field as a range.|
+||[parentBody](/javascript/api/word/word.field#word-word-field-parentbody-member)|Gets the parent body of the field.|
+||[parentContentControl](/javascript/api/word/word.field#word-word-field-parentcontentcontrol-member)|Gets the content control that contains the field.|
+||[parentContentControlOrNullObject](/javascript/api/word/word.field#word-word-field-parentcontentcontrolornullobject-member)|Gets the content control that contains the field.|
+||[parentTable](/javascript/api/word/word.field#word-word-field-parenttable-member)|Gets the table that contains the field.|
+||[parentTableCell](/javascript/api/word/word.field#word-word-field-parenttablecell-member)|Gets the table cell that contains the field.|
+||[parentTableCellOrNullObject](/javascript/api/word/word.field#word-word-field-parenttablecellornullobject-member)|Gets the table cell that contains the field.|
+||[parentTableOrNullObject](/javascript/api/word/word.field#word-word-field-parenttableornullobject-member)|Gets the table that contains the field.|
+||[result](/javascript/api/word/word.field#word-word-field-result-member)|Gets the field's result data.|
+|[FieldCollection](/javascript/api/word/word.fieldcollection)|[getFirst()](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getfirst-member(1))|Gets the first field in this collection.|
+||[getFirstOrNullObject()](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getfirstornullobject-member(1))|Gets the first field in this collection.|
+||[items](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-items-member)|Gets the loaded child items in this collection.|
 |[NoteItem](/javascript/api/word/word.noteitem)|[body](/javascript/api/word/word.noteitem#word-word-noteitem-body-member)|Represents the body object of the note item.|
 ||[delete()](/javascript/api/word/word.noteitem#word-word-noteitem-delete-member(1))|Deletes the note item.|
 ||[getNext()](/javascript/api/word/word.noteitem#word-word-noteitem-getnext-member(1))|Gets the next note item of the same type.|
@@ -158,10 +176,12 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 ||[getFirstOrNullObject()](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-getfirstornullobject-member(1))|Gets the first note item in this collection.|
 ||[items](/javascript/api/word/word.noteitemcollection#word-word-noteitemcollection-items-member)|Gets the loaded child items in this collection.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member)|Gets the collection of endnotes in the paragraph.|
+||[fields](/javascript/api/word/word.paragraph#word-word-paragraph-fields-member)|Gets the collection of fields in the paragraph.|
 ||[footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)|Gets the collection of footnotes in the paragraph.|
 ||[getComments()](/javascript/api/word/word.paragraph#word-word-paragraph-getcomments-member(1))|Gets comments associated with the paragraph.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.paragraph#word-word-paragraph-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
 |[Range](/javascript/api/word/word.range)|[endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member)|Gets the collection of endnotes in the range.|
+||[fields](/javascript/api/word/word.range#word-word-range-fields-member)|Gets the collection of field objects in the range.|
 ||[footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)|Gets the collection of footnotes in the range.|
 ||[getComments()](/javascript/api/word/word.range#word-word-range-getcomments-member(1))|Gets comments associated with the range.|
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.range#word-word-range-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
@@ -169,8 +189,10 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 ||[insertEndnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertendnote-member(1))|Inserts an endnote.|
 ||[insertFootnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertfootnote-member(1))|Inserts a footnote.|
 |[Table](/javascript/api/word/word.table)|[endnotes](/javascript/api/word/word.table#word-word-table-endnotes-member)|Gets the collection of endnotes in the table.|
+||[fields](/javascript/api/word/word.table#word-word-table-fields-member)|Gets the collection of field objects in the table.|
 ||[footnotes](/javascript/api/word/word.table#word-word-table-footnotes-member)|Gets the collection of footnotes in the table.|
 |[TableRow](/javascript/api/word/word.tablerow)|[endnotes](/javascript/api/word/word.tablerow#word-word-tablerow-endnotes-member)|Gets the collection of endnotes in the table row.|
+||[fields](/javascript/api/word/word.tablerow#word-word-tablerow-fields-member)|Gets the collection of field objects in the table row.|
 ||[footnotes](/javascript/api/word/word.tablerow#word-word-tablerow-footnotes-member)|Gets the collection of footnotes in the table row.|
 
 ## See also

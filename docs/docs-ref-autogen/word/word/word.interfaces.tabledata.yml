@@ -21,6 +21,20 @@ properties:
       content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - name: fields
+    uid: 'word!Word.Interfaces.TableData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the table. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.TableData#font:member'
     package: word!

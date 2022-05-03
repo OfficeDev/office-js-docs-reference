@@ -3,7 +3,7 @@ name: Word.ChangeTrackingVersion
 uid: 'word!Word.ChangeTrackingVersion:enum'
 package: word!
 fullName: Word.ChangeTrackingVersion
-summary: Specify the current version or the original version of the document.
+summary: Specify the current version or the original version of the text.
 remarks: >-
   \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

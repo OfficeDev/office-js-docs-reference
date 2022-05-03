@@ -33,6 +33,20 @@ properties:
       content: 'cells?: Word.Interfaces.TableCellData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.TableCellData:interface" />[]'
+  - name: fields
+    uid: 'word!Word.Interfaces.TableRowData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the table row. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.TableRowData#font:member'
     package: word!

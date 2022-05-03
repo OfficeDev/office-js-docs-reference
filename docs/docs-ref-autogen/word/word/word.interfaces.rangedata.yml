@@ -9,6 +9,20 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: fields
+    uid: 'word!Word.Interfaces.RangeData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the range. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.RangeData#font:member'
     package: word!

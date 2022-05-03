@@ -97,7 +97,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentLoadOptions#id:member'
     package: word!
     fullName: id
-    summary: ID
+    summary: Gets the ID of the comment. Read-only.
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]

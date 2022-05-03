@@ -21,6 +21,20 @@ properties:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: fields
+    uid: 'word!Word.Interfaces.BodyData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the body. Read-only.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.BodyData#font:member'
     package: word!

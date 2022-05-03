@@ -44,7 +44,7 @@ fields:
     uid: 'powerpoint!PowerPoint.ShapeType.line:member'
     package: powerpoint!
     summary: >-
-      The shape is a line
+      The shape is a line.
 
 
       * \[ [API set: PowerPointApi BETA (PREVIEW

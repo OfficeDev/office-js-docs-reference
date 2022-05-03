@@ -230,7 +230,7 @@ methods:
       content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -249,7 +249,7 @@ methods:
         OfficeExtension.ClientResult<number>;
       parameters:
         - id: cellPaddingLocationString
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
         type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
@@ -294,7 +294,7 @@ methods:
       content: 'insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;'
       parameters:
         - id: insertLocation
-          description: Required. It can be 'Before' or 'After'.
+          description: Required. It must be 'Before' or 'After'.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: columnCount
           description: Required. Number of columns to add.
@@ -321,7 +321,7 @@ methods:
         values?: string[][]): void;
       parameters:
         - id: insertLocationString
-          description: Required. It can be 'Before' or 'After'.
+          description: Required. It must be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: columnCount
           description: Required. Number of columns to add.
@@ -346,7 +346,7 @@ methods:
       content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       parameters:
         - id: insertLocation
-          description: Required. It can be 'Before' or 'After'.
+          description: Required. It must be 'Before' or 'After'.
           type: '<xref uid="word!Word.InsertLocation:enum" />'
         - id: rowCount
           description: Required. Number of rows to add.
@@ -373,7 +373,7 @@ methods:
         string[][]): Word.TableRowCollection;
       parameters:
         - id: insertLocationString
-          description: Required. It can be 'Before' or 'After'.
+          description: Required. It must be 'Before' or 'After'.
           type: '"Before" | "After" | "Start" | "End" | "Replace"'
         - id: rowCount
           description: Required. Number of rows to add.
@@ -504,7 +504,7 @@ methods:
       content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocation
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
         - id: cellPadding
           description: Required. The cell padding.
@@ -524,7 +524,7 @@ methods:
       content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
       parameters:
         - id: cellPaddingLocationString
-          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
+          description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '"Top" | "Left" | "Bottom" | "Right"'
         - id: cellPadding
           description: Required. The cell padding.
