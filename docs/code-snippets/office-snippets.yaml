@@ -1503,8 +1503,9 @@ Office.Document#getFileAsync:member(1):
                 var myFile = result.value;
                 var sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-                // Now, you can call getSliceAsync to download the files,
-                // as described in the previous code segment (compressed format).
+                // Get the file slices.
+                var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                 
                 myFile.closeAsync();
             }

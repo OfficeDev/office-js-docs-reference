@@ -7310,7 +7310,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox (applies to Outlook on Windows only)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
@@ -7352,7 +7352,7 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
-         * b. **Shared mailbox**
+         * b. **Shared mailbox (applies to Outlook on Windows only)**
          *
          * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
          *
