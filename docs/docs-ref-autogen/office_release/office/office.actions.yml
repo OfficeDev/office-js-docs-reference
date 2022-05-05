@@ -15,7 +15,7 @@ properties:
     uid: 'office!Office.Actions#associate:member'
     package: office!
     fullName: associate
-    summary: Associates the ID of an action with a function.
+    summary: Associates the ID or name of an action with a function.
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)

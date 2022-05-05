@@ -6905,7 +6905,7 @@ OfficeExtension.DebugInfo,errorLocation,Method,Fine,false
 OfficeExtension.DebugInfo,fullStatements,Method,Fine,false
 OfficeExtension.DebugInfo,innerError,Method,Poor,false
 OfficeExtension.DebugInfo,message,Method,Fine,false
-OfficeExtension.DebugInfo,statements,Method,Fine,false
+OfficeExtension.DebugInfo,statement,Method,Fine,false
 OfficeExtension.DebugInfo,surroundingStatements,Method,Fine,false
 OfficeExtension.EmbeddedOptions,N/A,Class,Missing,false
 OfficeExtension.EmbeddedOptions,container,Method,Missing,false

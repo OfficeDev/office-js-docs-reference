@@ -248,7 +248,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Actions#associate:member",
-                  "docComment": "/**\n * Associates the ID of an action with a function.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param actionId - The ID of an action that is defined in an extended manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
+                  "docComment": "/**\n * Associates the ID or name of an action with a function.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18133,7 +18133,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.OfficeTheme:interface",
-              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \\> Office Account \\> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word\n *\n * `OfficeTheme` is only supported in Office on Windows.\n */\n",
+              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \\> Office Account \\> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word\n *\n * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -32289,12 +32289,12 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "office!OfficeExtension.DebugInfo#statements:member",
+                  "canonicalReference": "office!OfficeExtension.DebugInfo#statement:member",
                   "docComment": "/**\n * The statement that caused the error, if available.\n *\n * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "statements?: "
+                      "text": "statement?: "
                     },
                     {
                       "kind": "Content",
@@ -32307,7 +32307,7 @@
                   ],
                   "isOptional": true,
                   "releaseTag": "Public",
-                  "name": "statements",
+                  "name": "statement",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
