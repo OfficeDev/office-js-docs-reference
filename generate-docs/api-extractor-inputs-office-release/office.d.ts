@@ -527,16 +527,16 @@ export declare namespace Office {
      */
      export interface Actions {
         /**
-         * Associates the ID of an action with a function.
+         * Associates the ID or name of an action with a function.
          * 
-         * @param actionId - The ID of an action that is defined in an extended manifest.
+         * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
          * 
          * @remarks
          * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
-    }   
+    }
 	/**
      * Message used in the `onVisibilityModeChanged` invocation.
      */
@@ -1834,7 +1834,7 @@ export declare namespace Office {
      * 
      * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
      * 
-     * `OfficeTheme` is only supported in Office on Windows.
+     * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
      */
     export interface OfficeTheme {
         /**
@@ -8335,7 +8335,7 @@ export declare namespace OfficeExtension {
          * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
          * but will be a close approximation.
          */
-        statements?: string;
+        statement?: string;
         /**
          * The statements that closely precede and follow the statement that caused the error, if available.
          *
