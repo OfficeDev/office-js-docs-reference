@@ -74,10 +74,10 @@ properties:
       content: 'message: string;'
       return:
         type: string
-  - name: statements
-    uid: 'office!OfficeExtension.DebugInfo#statements:member'
+  - name: statement
+    uid: 'office!OfficeExtension.DebugInfo#statement:member'
     package: office!
-    fullName: statements
+    fullName: statement
     summary: >-
       The statement that caused the error, if available.
 
@@ -88,7 +88,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'statements?: string;'
+      content: 'statement?: string;'
       return:
         type: string
   - name: surroundingStatements
