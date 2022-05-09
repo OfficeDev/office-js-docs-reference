@@ -26,7 +26,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 | Element                             | Required | Description  |
 |:------------------------------------|:--------:|:-------------|
 | [ExtensionPoint](extensionpoint.md) | Yes      | Defines where an add-in exposes functionality. |
-| [FunctionFile](functionfile.md)     | Yes      | A URL to a file that contains JavaScript functions.|
+| [FunctionFile](functionfile.md)     | No      | A URL to a file that contains JavaScript functions.|
 
 ## MobileFormFactor example
 
