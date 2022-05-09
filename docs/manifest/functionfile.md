@@ -45,11 +45,11 @@ The following is an example of the **FunctionFile** element.
 
 The JavaScript in the HTML file indicated by the **FunctionFile** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for UI-less buttons.
 
-The following is an example of an HTML file defining a `trackMessage` function.
+The following is an example of the contents of a `<script>` tag in an HTML file. The code defines and registers a `trackMessage` function.
 
 ```js
 Office.initialize = function () {
-    doAuth();
+    // Your add-in's initialization logic, if any, goes here.
 }
 
 function trackMessage (event) {
@@ -58,6 +58,9 @@ function trackMessage (event) {
     // save this message
     event.completed();
 }
+
+// Register the function with Office.
+Office.actions.associate("trackMessage", trackMessage);
 ```
 
 The following code shows how to implement the function specified by the **FunctionName** element.
