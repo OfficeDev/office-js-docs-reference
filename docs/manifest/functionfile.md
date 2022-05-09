@@ -63,7 +63,7 @@ function trackMessage (event) {
 Office.actions.associate("trackMessage", trackMessage);
 ```
 
-The following code shows how to implement the function specified by the **FunctionName** element.
+You can also define and register the function specified by the **FunctionName** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
 
 ```js
 // The initialize function must be run each time a new page is loaded.
