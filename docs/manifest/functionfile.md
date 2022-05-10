@@ -1,7 +1,7 @@
 ---
 title: FunctionFile element in the manifest file
 description: Specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI.
-ms.date: 09/29/2021
+ms.date: 05/09/2022
 ms.localizationpriority: medium
 ---
 
@@ -22,14 +22,14 @@ Specifies the source code file for operations that an add-in exposes in one of t
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
-The `FunctionFile` element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the `FunctionFile` element can be no more than 32 characters and is set to the value of the `id` attribute of a `Url` element in the `Resources` element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
+The **FunctionFile** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **FunctionFile** element can be no more than 32 characters and is set to the value of the `id` attribute of a **Url** element in the **Resources** element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
 
 > [!NOTE]
 > When the add-in is configured to use a [shared runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime), the functions in the code file run in the same JavaScript runtime (and share a common global namespace) as the JavaScript in the add-in's task pane (if any).
 >
-> The `FunctionFile` element and the associated code file also have a special role to play with [custom keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts), which require a shared runtime.
+> The **FunctionFile** element and the associated code file also have a special role to play with [custom keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts), which require a shared runtime.
 
-The following is an example of the `FunctionFile` element.
+The following is an example of the **FunctionFile** element.
 
 ```XML
 <DesktopFormFactor>
@@ -43,13 +43,13 @@ The following is an example of the `FunctionFile` element.
 </DesktopFormFactor>
 ```
 
-The JavaScript in the HTML file indicated by the `FunctionFile` element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the `FunctionName` element for UI-less buttons.
+The JavaScript in the HTML file indicated by the **FunctionFile** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for UI-less buttons.
 
-The following is an example of an HTML file defining a `trackMessage` function.
+The following is an example of the contents of a `<script>` tag in an HTML file. The code defines and registers a `trackMessage` function.
 
 ```js
 Office.initialize = function () {
-    doAuth();
+    // Your add-in's initialization logic, if any, goes here.
 }
 
 function trackMessage (event) {
@@ -58,19 +58,21 @@ function trackMessage (event) {
     // save this message
     event.completed();
 }
+
+// Register the function with Office.
+Office.actions.associate("trackMessage", trackMessage);
 ```
 
-The following code shows how to implement the function used by `FunctionName`.
+You can also define and register the function specified by the **FunctionName** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
 
 ```js
-// The initialize function must be run each time a new page is loaded.
-(function () {
-    Office.initialize = function (reason) {
-        // If you need to initialize something you can do so here.
-    };
-})();
+// The initialize function must be assigned each time a new page is loaded.
+Office.initialize = function (reason) {
+    // If you need to initialize something you can do so here.
+};
 
-// Your function must be in the global namespace.
+
+// Define the function.
 function writeText(event) {
 
     // Implement your custom code here. The following code is a simple example.
@@ -88,6 +90,9 @@ function writeText(event) {
     // Calling event.completed is required. event.completed lets the platform know that processing has completed.
     event.completed();
 }
+
+// Register the function with Office.
+Office.actions.associate("writeText", writeText);
 ```
 
 > [!IMPORTANT]
