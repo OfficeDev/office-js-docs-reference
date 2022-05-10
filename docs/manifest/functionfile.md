@@ -66,12 +66,11 @@ Office.actions.associate("trackMessage", trackMessage);
 You can also define and register the function specified by the **FunctionName** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
 
 ```js
-// The initialize function must be run each time a new page is loaded.
-(function () {
-    Office.initialize = function (reason) {
-        // If you need to initialize something you can do so here.
-    };
-})();
+// The initialize function must be assigned each time a new page is loaded.
+Office.initialize = function (reason) {
+    // If you need to initialize something you can do so here.
+};
+
 
 // Define the function.
 function writeText(event) {
