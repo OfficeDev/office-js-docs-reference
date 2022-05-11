@@ -9820,7 +9820,7 @@ Word.Field,track(),Method,Good,false
 Word.Field,untrack(),Method,Good,false
 Word.FieldCollection,N/A,Class,Good,false
 Word.FieldCollection,context,Method,Good,false
-Word.FieldCollection,items,Method,Fine,false
+Word.FieldCollection,items,Method,Fine,true
 Word.FieldCollection,getFirst(),Method,Good,false
 Word.FieldCollection,getFirstOrNullObject(),Method,Good,false
 Word.FieldCollection,load(options),Method,Good,false

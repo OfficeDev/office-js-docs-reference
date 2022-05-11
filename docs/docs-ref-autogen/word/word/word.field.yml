@@ -17,6 +17,33 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+      // Gets the first field in the document body.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + field.result);
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,6 +72,33 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+      // Gets the parent body of the first field in the document.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load("parentBody/text");
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          const parentBody = field.parentBody;
+          console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -149,6 +203,33 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+      // Gets the first field in the document body.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + field.result);
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
