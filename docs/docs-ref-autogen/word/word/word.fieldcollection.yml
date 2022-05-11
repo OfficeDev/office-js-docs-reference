@@ -35,6 +35,35 @@ properties:
       content: 'readonly items: Word.Field[];'
       return:
         type: '<xref uid="word!Word.Field:class" />[]'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+          // Gets all fields in the document body.
+
+          await Word.run(async (context) => {
+            const fields = context.document.body.fields.load("items");
+
+            await context.sync();
+
+            if (fields.items.length === 0) {
+              console.log("No fields in this document.");
+            } else {
+              for (let i = 0; i < fields.items.length; i++) {
+                console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+                console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+              }
+            }
+          });
+
+          ```
 methods:
   - name: getFirst()
     uid: 'word!Word.FieldCollection#getFirst:member(1)'
