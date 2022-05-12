@@ -19,6 +19,27 @@
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
+'Word.Body#fields:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
 'Word.Body#font:member':
   - >-
     // Get the style and the font size, font name, and font color properties on
@@ -1383,6 +1404,107 @@
             console.log('The document has not changed since the last save.');
         }
         });
+'Word.Field#code:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.Field#getFirstOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.Field#parentBody:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the parent body of the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load("parentBody/text");
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        const parentBody = field.parentBody;
+        console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+      }
+    });
+'Word.Field#result:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
 'Word.Font#bold:member':
   - |-
     // Bold format text
