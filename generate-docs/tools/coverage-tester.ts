@@ -172,12 +172,12 @@ function rateClass(classYml: ApiYaml) : ClassCoverageRating {
     });
 
     classYml.properties?.forEach((field) => {
-        ymlCoverage.apiRatings.set(field.name, rateFieldDescription(field));
+        ymlCoverage.apiRatings.set(field.name, rateFieldDescription(field, false));
     });
 
     classYml.methods?.forEach((field) => {
         let name = field.name.indexOf(",") < 0 ? field.name : field.name.substring(0, field.name.indexOf(","));
-        ymlCoverage.apiRatings.set(name, rateFieldDescription(field));
+        ymlCoverage.apiRatings.set(name, rateFieldDescription(field, true));
     });
 
     return ymlCoverage;
@@ -204,28 +204,28 @@ function rateClassDescription(classYml: ApiYaml) : CoverageRating {
 }
 
 
-function rateFieldDescription(fieldYml: ApiPropertyYaml | ApiMethodYaml) : CoverageRating {
+function rateFieldDescription(fieldYml: ApiPropertyYaml | ApiMethodYaml, isMethod: boolean) : CoverageRating {
     let rating : CoverageRating;
-    let indexOfExample = Math.max(
-        fieldYml.remarks?.indexOf("#### Examples"), 
-        fieldYml.syntax.return.description?.indexOf("#### Examples")
-    );
-    
-    if (indexOfExample > 0) {
+    let indexOfExample = fieldYml.remarks?.indexOf("#### Examples");
+    if (!indexOfExample){
+        indexOfExample = fieldYml.syntax.return.description?.indexOf("#### Examples")
+    }
+
+    if (indexOfExample >= 0) {
         rating = {
-            type: fieldYml instanceof ApiPropertyYaml ? ApiType.Property : ApiType.Method,
+            type: isMethod ? ApiType.Method: ApiType.Property,
             descriptionRating: rateDescriptionString((fieldYml.summary + " " + fieldYml.remarks.substring(0, indexOfExample)).trim()),
             hasExample: true
         }
     } else {
         rating = {
-            type: fieldYml instanceof ApiPropertyYaml ? ApiType.Property : ApiType.Method,
+            type: isMethod ? ApiType.Method: ApiType.Property,
             descriptionRating: rateDescriptionString((fieldYml.summary + " " + fieldYml.remarks).trim()),
             hasExample: false
         }
     }
 
-    if (fieldYml instanceof ApiMethodYaml) {
+    if (isMethod) {
         let methodYml = fieldYml as ApiMethodYaml;
         let descriptionRatings = [rateDescriptionString(methodYml.syntax.return.description), rating.descriptionRating];
         methodYml.syntax.parameters?.forEach((parameter) => {
