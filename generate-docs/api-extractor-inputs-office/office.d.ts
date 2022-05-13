@@ -529,9 +529,6 @@ export declare namespace Office {
          * 
          * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
-         * 
-         * @remarks
-         * **Requirement set**: None
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
         /**
@@ -539,8 +536,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement sets**:
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * 
          * @beta
          * 
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
@@ -555,8 +556,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * **Requirement sets**:
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * 
          * @beta
          * 
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
@@ -567,8 +572,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+     * **Requirement sets**:
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * 
          * @beta
          * 
          * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
