@@ -56,13 +56,13 @@ tryCatch(async () => {
     // ----
     // Process office.d.ts
     // ----
-    const localReleaseDtsPath = "../script-inputs/office.d.ts";
+    const localReleaseDtsPath = "index-release.d.ts";
     if (urlToCopyOfficeJsFrom.length > 0) {
         console.log(`Pulling Office.js TypeScript definition file from: ${urlToCopyOfficeJsFrom}`);
         fsx.writeFileSync(localReleaseDtsPath, await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
-    const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
+    const localPreviewDtsPath = "index-preview.d.ts";
     if (urlToCopyPreviewOfficeJsFrom.length > 0) {
         console.log(`Pulling Office.js (preview) TypeScript definition file from: ${urlToCopyPreviewOfficeJsFrom}`);
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));

@@ -4,9 +4,7 @@ uid: 'office!Office.Actions:interface'
 package: office!
 fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
-remarks: >-
-  **Requirement set**: [SharedRuntime
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,9 +14,7 @@ properties:
     package: office!
     fullName: associate
     summary: Associates the ID or name of an action with a function.
-    remarks: >-
-      **Requirement set**: [SharedRuntime
-      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    remarks: '**Requirement set**: None'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,6 +32,8 @@ methods:
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -66,6 +64,8 @@ methods:
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -84,6 +84,8 @@ methods:
     remarks: >-
       **Requirement set**: [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+      **Requirement set**: [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:

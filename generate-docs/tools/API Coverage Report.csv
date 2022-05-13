@@ -5926,7 +5926,7 @@ Excel.WorksheetVisibilityChangedEventArgs,type,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityAfter,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityBefore,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,worksheetId,Property,Good,false
-Office.Actions,N/A,Class,Good,false
+Office.Actions,N/A,Class,Poor,false
 Office.Actions,associate,Property,Good,false
 Office.Actions,areShortcutsInUse(shortcuts),Method,Good,false
 Office.Actions,getShortcuts(),Method,Good,false
