@@ -168,20 +168,14 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "office",
+        "group": "common-js",
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
-        "src": "docs-ref-autogen/common",
-        "dest": "api"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
         "group": "common-js-preview",
-        "src": "docs-ref-autogen/common_preview",
+        "src": "docs-ref-autogen/office_release",
         "dest": "api"
       },
       {
