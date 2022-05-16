@@ -461,9 +461,13 @@
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
       },
+      "common-js": {
+        "dest": "common-js",
+        "moniker_range": "common-js || <outlook-js-preview || <excel-js-preview || <onenote-js-1.1 || <powerpoint-js-preview || <word-js-preview"
+      },
       "common-js-preview": {
         "dest": "common-js-preview",
-        "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
         "dest": "all",
